@@ -1,0 +1,8479 @@
+# Source and formulation review: acidithiobacillus_ferrivorans_medium (CultureMech:003073)
+
+- Review: 20261021T112929Z-culturemech-003073-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T11:17:48Z
+- Finished UTC: 2026-10-21T11:29:29Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact JCM 729 source separates three stock additions and two molar solutions from the receiving medium. Both local layers instead assert stock-strength solutes and two liquid doses as root g/L values, including an undiluted magnesium sum. Preparation stages and explicit hydrate identity need correction. Exact historical correspondence for the remaining numeric MIM link is unavailable, so this review is partial.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 174; batch 018 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding seventeen task batches contain 170 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 172 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003073 | data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml | generated | acidithiobacillus_ferrivorans_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003073 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:003073 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch018/174/strict.tsv |
+| validate-terms | passed | True | CultureMech:003073 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:003073 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:003073 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact historical correspondence for MediaIngredientMech:000198 | unavailable | True | CultureMech:003073 | The current index, pinned public catalog and recursive tree were available and inspected, but authoritative historical correspondence for the asserted numeric MIM ID was not recovered. Current CHEBI:77775 metadata is a separate valid assertion; no replacement correspondence is inferred. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:003073.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Exact medium, source owner and scoped stock identities
+
+identity: supported. Targets: CultureMech:003073.
+
+CultureMech:003073 resolves to one normalized owner and its generated target. The media_term J729, primary JCM 729, title and provider identity agree. JCM 151 and 244 support only their explicitly referenced stock subsections. There are no asserted organism strains, growth experiments or variant links to infer from the medium name.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:003073.
+
+94 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "input": "target",
+    "field_path": "ingredients[0].concentration",
+    "ingredient": "K2S4O6",
+    "existing": {
+      "value": "25",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Filtered molar solution added after cooling",
+    "source_amount": {
+      "value": 25,
+      "unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "main table / post-cooling filtered additions, exact K2S4O6 row",
+        "exact_source_quote": "0.1 M K 2 S 4 O 6 solution 25.0 ml",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"K2S4O6\",\n                        \"compound_id\": 386,\n                        \"attribute\": \"0.1 M\",\n                        \"amount\": 25,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Represent the original liquid dose with its exact molar stock strength and preparation stage; the dose is not a mass concentration.",
+    "explanation": "The primary and provider describe a molar solution addition in ml. Neither supports the existing numeric value as g/L. No hydrate-dependent mass conversion is inferred."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[1].concentration",
+    "ingredient": "FeSO4",
+    "existing": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Filtered molar solution added after cooling",
+    "source_amount": {
+      "value": 10,
+      "unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "main table / post-cooling filtered additions, exact FeSO4 row",
+        "exact_source_quote": "10 mM FeSO 4 solution (pH 2.0) 10.0 ml",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"FeSO4\",\n                        \"compound_id\": 595,\n                        \"attribute\": \"pH 2.0, 10 mM\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Represent the original liquid dose with its exact molar stock strength and preparation stage; the dose is not a mass concentration.",
+    "explanation": "The primary and provider describe a molar solution addition in ml. Neither supports the existing numeric value as g/L. No hydrate-dependent mass conversion is inferred."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[2].concentration",
+    "ingredient": "Na2SO4",
+    "existing": {
+      "value": "14",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "UBS stock before 100 ml addition",
+    "source_amount": {
+      "value": 14,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact Na2SO4 row",
+        "exact_source_quote": "Na 2 SO 4 14.0 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\": 14,\n                        \"unit\": \"g\",\n                        \"g_l\": 14,\n                        \"mmol_l\": 98.5638,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 14 g/L stock × 0.100 L / 1 L = 1.4 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[3].concentration",
+    "ingredient": "(NH4)2SO4",
+    "existing": {
+      "value": "30",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "UBS stock before 100 ml addition",
+    "source_amount": {
+      "value": 30,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact (NH4)2SO4 row",
+        "exact_source_quote": "(NH 4 ) 2 SO 4 30.0 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 30,\n                        \"unit\": \"g\",\n                        \"g_l\": 30,\n                        \"mmol_l\": 227.032,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 30 g/L stock × 0.100 L / 1 L = 3 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[4].concentration",
+    "ingredient": "KCl",
+    "existing": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "UBS stock before 100 ml addition",
+    "source_amount": {
+      "value": 1,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact KCl row",
+        "exact_source_quote": "KCl 1.0 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 13.4138,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 1 g/L stock × 0.100 L / 1 L = 0.1 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[5].concentration",
+    "ingredient": "MgSO4 x 7 H2O",
+    "existing": {
+      "value": "8.0",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "UBS and Trace minerals are distinct stocks with unequal doses",
+    "source_amount": {
+      "value": 5,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact MgSO4 x 7 H2O row",
+        "exact_source_quote": "MgSO 4 ·7H 2 O 5.0 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 20.286,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact MgSO4 x 7 H2O row",
+        "exact_source_quote": "MgSO 4 ·7H 2 O 3.0 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 12.1716,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Keep the two magnesium heptahydrate contributions in their separate stocks; do not sum undiluted stock strengths.",
+    "calculation": "On the provider-declared 1 L receiving basis only: 5 g/L × 0.100 L + 3 g/L × 0.010 L = 0.53 g per declared batch, not 8 g/L. This illustration does not assert a measured final volume."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[6].concentration",
+    "ingredient": "K2HPO4",
+    "existing": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "UBS stock before 100 ml addition",
+    "source_amount": {
+      "value": 0.5,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact K2HPO4 row",
+        "exact_source_quote": "K 2 HPO 4 0.5 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.87066,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.5 g/L stock × 0.100 L / 1 L = 0.05 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[7].concentration",
+    "ingredient": "Ca(NO3)2 x 4 H2O",
+    "existing": {
+      "value": "0.14",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "UBS stock before 100 ml addition",
+    "source_amount": {
+      "value": 0.14,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact Ca(NO3)2 x 4 H2O row",
+        "exact_source_quote": "Ca(NO 3 ) 2 ·4H 2 O 0.14 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Ca(NO3)2 x 4 H2O\",\n                        \"compound_id\": 213,\n                        \"amount\": 0.14,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.14,\n                        \"mmol_l\": 0.592846,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.14 g/L stock × 0.100 L / 1 L = 0.014 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[8].concentration",
+    "ingredient": "Nitrilotriacetic acid",
+    "existing": {
+      "value": "1.5",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 1.5,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact Nitrilotriacetic acid row",
+        "exact_source_quote": "Nitrilotriacetic acid 1.5 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\": 189,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.84765,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 1.5 g/L stock × 0.010 L / 1 L = 0.015 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[9].concentration",
+    "ingredient": "MnSO4 x n H2O",
+    "existing": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.5,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact MnSO4 x n H2O row",
+        "exact_source_quote": "MnSO 4 · x H 2 O 0.5 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MnSO4 x n H2O\",\n                        \"compound_id\": 1000,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.5 g/L stock × 0.010 L / 1 L = 0.005 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[10].concentration",
+    "ingredient": "NaCl",
+    "existing": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 1,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact NaCl row",
+        "exact_source_quote": "NaCl 1.0 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 17.1116,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 1 g/L stock × 0.010 L / 1 L = 0.01 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[11].concentration",
+    "ingredient": "FeSO4 x 7 H2O",
+    "existing": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.1,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact FeSO4 x 7 H2O row",
+        "exact_source_quote": "FeSO 4 ·7H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.359693,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[12].concentration",
+    "ingredient": "CoSO4 x 7 H2O",
+    "existing": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.1,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact CoSO4 x 7 H2O row",
+        "exact_source_quote": "CoSO 4 ·7H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\": 198,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.645178,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[13].concentration",
+    "ingredient": "CaCl2 x 2 H2O",
+    "existing": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.1,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact CaCl2 x 2 H2O row",
+        "exact_source_quote": "CaCl 2 ·2H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[14].concentration",
+    "ingredient": "ZnSO4 x 7 H2O",
+    "existing": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.1,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact ZnSO4 x 7 H2O row",
+        "exact_source_quote": "ZnSO 4 ·7H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[15].concentration",
+    "ingredient": "CuSO4 x 5 H2O",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.01,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact CuSO4 x 5 H2O row",
+        "exact_source_quote": "CuSO 4 ·5H 2 O 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0400503,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[16].concentration",
+    "ingredient": "AlK(SO4)2",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.01,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact AlK(SO4)2 row",
+        "exact_source_quote": "AlK(SO 4 ) 2 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"AlK(SO4)2\",\n                        \"compound_id\": 1015,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0387289,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[17].concentration",
+    "ingredient": "H3BO3",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.01,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact H3BO3 row",
+        "exact_source_quote": "H 3 BO 3 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.161708,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[18].concentration",
+    "ingredient": "Na2MoO4 x 2 H2O",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.01,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact Na2MoO4 x 2 H2O row",
+        "exact_source_quote": "Na 2 MoO 4 ·2H 2 O 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0413309,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[19].concentration",
+    "ingredient": "NiCl2 x 6 H2O",
+    "existing": {
+      "value": "0.025",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Ni-Se-W stock before 10 ml addition",
+    "source_amount": {
+      "value": 25,
+      "unit": "mg"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact NiCl2 x 6 H2O row",
+        "exact_source_quote": "NiCl 2 ·6H 2 O 25.0 mg",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[3].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 25,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.025,\n                        \"mmol_l\": 0.192903,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Ni-Se-W solution\",\n                        \"solution_id\": 3927,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.025 g/L stock × 0.010 L / 1 L = 0.00025 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[20].concentration",
+    "ingredient": "(NH4)2Ni(SO4)2 x 6 H2O",
+    "existing": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Ni-Se-W stock before 10 ml addition",
+    "source_amount": {
+      "value": 2,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact (NH4)2Ni(SO4)2 x 6 H2O row",
+        "exact_source_quote": "(NH 4 ) 2 Ni(SO 4 ) 2 ·6H 2 O 2.0 g",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[3].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2Ni(SO4)2 x 6 H2O\",\n                        \"compound_id\": 739,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 5.06346,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Ni-Se-W solution\",\n                        \"solution_id\": 3927,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 2 g/L stock × 0.010 L / 1 L = 0.02 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[21].concentration",
+    "ingredient": "Na2SeO3",
+    "existing": {
+      "value": "0.0003",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Ni-Se-W stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.3,
+      "unit": "mg"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact Na2SeO3 row",
+        "exact_source_quote": "Na 2 SeO 3 0.3 mg",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[3].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Na2SeO3\",\n                        \"compound_id\": 699,\n                        \"amount\": 0.3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0003,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Ni-Se-W solution\",\n                        \"solution_id\": 3927,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.0003 g/L stock × 0.010 L / 1 L = 3e-06 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[22].concentration",
+    "ingredient": "Na2SeO4",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Ni-Se-W stock before 10 ml addition",
+    "source_amount": {
+      "value": 10,
+      "unit": "mg"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact Na2SeO4 row",
+        "exact_source_quote": "Na 2 SeO 4 10.0 mg",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[3].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Na2SeO4\",\n                        \"compound_id\": 375,\n                        \"amount\": 10,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0529241,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Ni-Se-W solution\",\n                        \"solution_id\": 3927,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target",
+    "field_path": "ingredients[23].concentration",
+    "ingredient": "Na2WO4 x 2 H2O",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Ni-Se-W stock before 10 ml addition",
+    "source_amount": {
+      "value": 10,
+      "unit": "mg"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact Na2WO4 x 2 H2O row",
+        "exact_source_quote": "Na 2 WO 4 ·2H 2 O 10.0 mg",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[3].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 10,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0303168,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Ni-Se-W solution\",\n                        \"solution_id\": 3927,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration",
+    "ingredient": "K2S4O6",
+    "existing": {
+      "value": "25",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Filtered molar solution added after cooling",
+    "source_amount": {
+      "value": 25,
+      "unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "main table / post-cooling filtered additions, exact K2S4O6 row",
+        "exact_source_quote": "0.1 M K 2 S 4 O 6 solution 25.0 ml",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"K2S4O6\",\n                        \"compound_id\": 386,\n                        \"attribute\": \"0.1 M\",\n                        \"amount\": 25,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Represent the original liquid dose with its exact molar stock strength and preparation stage; the dose is not a mass concentration.",
+    "explanation": "The primary and provider describe a molar solution addition in ml. Neither supports the existing numeric value as g/L. No hydrate-dependent mass conversion is inferred."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration",
+    "ingredient": "FeSO4",
+    "existing": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Filtered molar solution added after cooling",
+    "source_amount": {
+      "value": 10,
+      "unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "main table / post-cooling filtered additions, exact FeSO4 row",
+        "exact_source_quote": "10 mM FeSO 4 solution (pH 2.0) 10.0 ml",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"FeSO4\",\n                        \"compound_id\": 595,\n                        \"attribute\": \"pH 2.0, 10 mM\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Represent the original liquid dose with its exact molar stock strength and preparation stage; the dose is not a mass concentration.",
+    "explanation": "The primary and provider describe a molar solution addition in ml. Neither supports the existing numeric value as g/L. No hydrate-dependent mass conversion is inferred."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration",
+    "ingredient": "Na2SO4",
+    "existing": {
+      "value": "14",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "UBS stock before 100 ml addition",
+    "source_amount": {
+      "value": 14,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact Na2SO4 row",
+        "exact_source_quote": "Na 2 SO 4 14.0 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\": 14,\n                        \"unit\": \"g\",\n                        \"g_l\": 14,\n                        \"mmol_l\": 98.5638,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 14 g/L stock × 0.100 L / 1 L = 1.4 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration",
+    "ingredient": "(NH4)2SO4",
+    "existing": {
+      "value": "30",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "UBS stock before 100 ml addition",
+    "source_amount": {
+      "value": 30,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact (NH4)2SO4 row",
+        "exact_source_quote": "(NH 4 ) 2 SO 4 30.0 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 30,\n                        \"unit\": \"g\",\n                        \"g_l\": 30,\n                        \"mmol_l\": 227.032,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 30 g/L stock × 0.100 L / 1 L = 3 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration",
+    "ingredient": "KCl",
+    "existing": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "UBS stock before 100 ml addition",
+    "source_amount": {
+      "value": 1,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact KCl row",
+        "exact_source_quote": "KCl 1.0 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 13.4138,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 1 g/L stock × 0.100 L / 1 L = 0.1 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration",
+    "ingredient": "MgSO4 x 7 H2O",
+    "existing": {
+      "value": "8.0",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "UBS and Trace minerals are distinct stocks with unequal doses",
+    "source_amount": {
+      "value": 5,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact MgSO4 x 7 H2O row",
+        "exact_source_quote": "MgSO 4 ·7H 2 O 5.0 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 20.286,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact MgSO4 x 7 H2O row",
+        "exact_source_quote": "MgSO 4 ·7H 2 O 3.0 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 12.1716,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Keep the two magnesium heptahydrate contributions in their separate stocks; do not sum undiluted stock strengths.",
+    "calculation": "On the provider-declared 1 L receiving basis only: 5 g/L × 0.100 L + 3 g/L × 0.010 L = 0.53 g per declared batch, not 8 g/L. This illustration does not assert a measured final volume."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration",
+    "ingredient": "K2HPO4",
+    "existing": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "UBS stock before 100 ml addition",
+    "source_amount": {
+      "value": 0.5,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact K2HPO4 row",
+        "exact_source_quote": "K 2 HPO 4 0.5 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.87066,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.5 g/L stock × 0.100 L / 1 L = 0.05 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration",
+    "ingredient": "Ca(NO3)2 x 4 H2O",
+    "existing": {
+      "value": "0.14",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "UBS stock before 100 ml addition",
+    "source_amount": {
+      "value": 0.14,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact Ca(NO3)2 x 4 H2O row",
+        "exact_source_quote": "Ca(NO 3 ) 2 ·4H 2 O 0.14 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Ca(NO3)2 x 4 H2O\",\n                        \"compound_id\": 213,\n                        \"amount\": 0.14,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.14,\n                        \"mmol_l\": 0.592846,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.14 g/L stock × 0.100 L / 1 L = 0.014 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration",
+    "ingredient": "Nitrilotriacetic acid",
+    "existing": {
+      "value": "1.5",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 1.5,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact Nitrilotriacetic acid row",
+        "exact_source_quote": "Nitrilotriacetic acid 1.5 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\": 189,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.84765,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 1.5 g/L stock × 0.010 L / 1 L = 0.015 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration",
+    "ingredient": "MnSO4 x n H2O",
+    "existing": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.5,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact MnSO4 x n H2O row",
+        "exact_source_quote": "MnSO 4 · x H 2 O 0.5 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MnSO4 x n H2O\",\n                        \"compound_id\": 1000,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.5 g/L stock × 0.010 L / 1 L = 0.005 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration",
+    "ingredient": "NaCl",
+    "existing": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 1,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact NaCl row",
+        "exact_source_quote": "NaCl 1.0 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 17.1116,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 1 g/L stock × 0.010 L / 1 L = 0.01 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration",
+    "ingredient": "FeSO4 x 7 H2O",
+    "existing": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.1,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact FeSO4 x 7 H2O row",
+        "exact_source_quote": "FeSO 4 ·7H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.359693,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration",
+    "ingredient": "CoSO4 x 7 H2O",
+    "existing": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.1,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact CoSO4 x 7 H2O row",
+        "exact_source_quote": "CoSO 4 ·7H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\": 198,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.645178,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration",
+    "ingredient": "CaCl2 x 2 H2O",
+    "existing": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.1,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact CaCl2 x 2 H2O row",
+        "exact_source_quote": "CaCl 2 ·2H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration",
+    "ingredient": "ZnSO4 x 7 H2O",
+    "existing": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.1,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact ZnSO4 x 7 H2O row",
+        "exact_source_quote": "ZnSO 4 ·7H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration",
+    "ingredient": "CuSO4 x 5 H2O",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.01,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact CuSO4 x 5 H2O row",
+        "exact_source_quote": "CuSO 4 ·5H 2 O 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0400503,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration",
+    "ingredient": "AlK(SO4)2",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.01,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact AlK(SO4)2 row",
+        "exact_source_quote": "AlK(SO 4 ) 2 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"AlK(SO4)2\",\n                        \"compound_id\": 1015,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0387289,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration",
+    "ingredient": "H3BO3",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.01,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact H3BO3 row",
+        "exact_source_quote": "H 3 BO 3 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.161708,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[18].concentration",
+    "ingredient": "Na2MoO4 x 2 H2O",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Trace stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.01,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact Na2MoO4 x 2 H2O row",
+        "exact_source_quote": "Na 2 MoO 4 ·2H 2 O 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0413309,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration",
+    "ingredient": "NiCl2 x 6 H2O",
+    "existing": {
+      "value": "0.025",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Ni-Se-W stock before 10 ml addition",
+    "source_amount": {
+      "value": 25,
+      "unit": "mg"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact NiCl2 x 6 H2O row",
+        "exact_source_quote": "NiCl 2 ·6H 2 O 25.0 mg",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[3].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 25,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.025,\n                        \"mmol_l\": 0.192903,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Ni-Se-W solution\",\n                        \"solution_id\": 3927,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.025 g/L stock × 0.010 L / 1 L = 0.00025 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration",
+    "ingredient": "(NH4)2Ni(SO4)2 x 6 H2O",
+    "existing": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Ni-Se-W stock before 10 ml addition",
+    "source_amount": {
+      "value": 2,
+      "unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact (NH4)2Ni(SO4)2 x 6 H2O row",
+        "exact_source_quote": "(NH 4 ) 2 Ni(SO 4 ) 2 ·6H 2 O 2.0 g",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[3].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2Ni(SO4)2 x 6 H2O\",\n                        \"compound_id\": 739,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 5.06346,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Ni-Se-W solution\",\n                        \"solution_id\": 3927,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 2 g/L stock × 0.010 L / 1 L = 0.02 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[21].concentration",
+    "ingredient": "Na2SeO3",
+    "existing": {
+      "value": "0.0003",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Ni-Se-W stock before 10 ml addition",
+    "source_amount": {
+      "value": 0.3,
+      "unit": "mg"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact Na2SeO3 row",
+        "exact_source_quote": "Na 2 SeO 3 0.3 mg",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[3].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Na2SeO3\",\n                        \"compound_id\": 699,\n                        \"amount\": 0.3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0003,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Ni-Se-W solution\",\n                        \"solution_id\": 3927,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.0003 g/L stock × 0.010 L / 1 L = 3e-06 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[22].concentration",
+    "ingredient": "Na2SeO4",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Ni-Se-W stock before 10 ml addition",
+    "source_amount": {
+      "value": 10,
+      "unit": "mg"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact Na2SeO4 row",
+        "exact_source_quote": "Na 2 SeO 4 10.0 mg",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[3].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Na2SeO4\",\n                        \"compound_id\": 375,\n                        \"amount\": 10,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0529241,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Ni-Se-W solution\",\n                        \"solution_id\": 3927,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[23].concentration",
+    "ingredient": "Na2WO4 x 2 H2O",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "decision": "correct",
+    "source_stage": "Ni-Se-W stock before 10 ml addition",
+    "source_amount": {
+      "value": 10,
+      "unit": "mg"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact Na2WO4 x 2 H2O row",
+        "exact_source_quote": "Na 2 WO 4 ·2H 2 O 10.0 mg",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[3].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 10,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0303168,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Ni-Se-W solution\",\n                        \"solution_id\": 3927,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ],
+    "proposed": "Retain the source amount in its stock composition and represent the stock addition separately; do not retain undiluted stock strength as a receiving-medium root concentration.",
+    "calculation": "On the provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This is a stage-error illustration, not an independently measured final concentration."
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "solutions (missing UBS solution addition)",
+    "decision": "add",
+    "source_stage": "Main JCM 729 recipe before its pH adjustment/autoclaving",
+    "source_amount": {
+      "value": 100,
+      "unit": "ml"
+    },
+    "proposed": "Preserve the exact stock identity, original batch dose and separate composition. Verify local dependency anomalies before linking rather than copying them silently.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "main table / post-cooling filtered additions, exact UBS solution row",
+        "exact_source_quote": "UBS solution (see below) 100.0 ml",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"UBS solution\",\n                        \"solution_id\": 4655,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "solutions (missing Trace minerals addition)",
+    "decision": "add",
+    "source_stage": "Main JCM 729 recipe before its pH adjustment/autoclaving",
+    "source_amount": {
+      "value": 10,
+      "unit": "ml"
+    },
+    "proposed": "Preserve the exact stock identity, original batch dose and separate composition. Verify local dependency anomalies before linking rather than copying them silently.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "main table / post-cooling filtered additions, exact Trace minerals row",
+        "exact_source_quote": "Trace minerals (see Medium No. 151 ) 10.0 ml",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "solutions (missing Ni-Se-W solution addition)",
+    "decision": "add",
+    "source_stage": "Main JCM 729 recipe before its pH adjustment/autoclaving",
+    "source_amount": {
+      "value": 10,
+      "unit": "ml"
+    },
+    "proposed": "Preserve the exact stock identity, original batch dose and separate composition. Verify local dependency anomalies before linking rather than copying them silently.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "main table / post-cooling filtered additions, exact Ni-Se-W solution row",
+        "exact_source_quote": "Ni-Se-W solution (see Medium No. 244 ) 10.0 ml",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Ni-Se-W solution\",\n                        \"solution_id\": 3927,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "solutions / preparation_steps (missing stage-specific water amount)",
+    "decision": "add",
+    "source_stage": "Main recipe water",
+    "source_amount": {
+      "value": 845,
+      "unit": "ml"
+    },
+    "proposed": "Preserve the source water addition in the named stage. The stock primaries say 1.0 L; provider 1000 ml is numerically equivalent. Water alone does not prove measured final volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "main table / post-cooling filtered additions, exact Distilled water row",
+        "exact_source_quote": "Distilled water 845.0 ml",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 845,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "solutions / preparation_steps (missing stage-specific water amount)",
+    "decision": "add",
+    "source_stage": "UBS stock water",
+    "source_amount": {
+      "value": 1000,
+      "unit": "ml"
+    },
+    "proposed": "Preserve the source water addition in the named stage. The stock primaries say 1.0 L; provider 1000 ml is numerically equivalent. Water alone does not prove measured final volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact Distilled water row",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "solutions / preparation_steps (missing stage-specific water amount)",
+    "decision": "add",
+    "source_stage": "Trace minerals stock water",
+    "source_amount": {
+      "value": 1000,
+      "unit": "ml"
+    },
+    "proposed": "Preserve the source water addition in the named stage. The stock primaries say 1.0 L; provider 1000 ml is numerically equivalent. Water alone does not prove measured final volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact Distilled water row",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[2].recipe[12]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "solutions / preparation_steps (missing stage-specific water amount)",
+    "decision": "add",
+    "source_stage": "Ni-Se-W stock water",
+    "source_amount": {
+      "value": 1000,
+      "unit": "ml"
+    },
+    "proposed": "Preserve the source water addition in the named stage. The stock primaries say 1.0 L; provider 1000 ml is numerically equivalent. Water alone does not prove measured final volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact Distilled water row",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[3].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "solutions (missing molar stock strength)",
+    "decision": "add",
+    "source_stage": "Separately filter-sterilized solution added after cooling",
+    "source_amount": {
+      "value": 0.1,
+      "unit": "M"
+    },
+    "proposed": "Preserve the source molarity separately from its ml dose; do not replace it with an unsupported g/L amount.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "main table / post-cooling filtered additions, exact K2S4O6 row",
+        "exact_source_quote": "0.1 M K 2 S 4 O 6 solution 25.0 ml",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"K2S4O6\",\n                        \"compound_id\": 386,\n                        \"attribute\": \"0.1 M\",\n                        \"amount\": 25,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "solutions (missing molar stock strength)",
+    "decision": "add",
+    "source_stage": "Separately filter-sterilized solution added after cooling",
+    "source_amount": {
+      "value": 10,
+      "unit": "mM"
+    },
+    "proposed": "Preserve the source molarity separately from its ml dose; do not replace it with an unsupported g/L amount.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "main table / post-cooling filtered additions, exact FeSO4 row",
+        "exact_source_quote": "10 mM FeSO 4 solution (pH 2.0) 10.0 ml",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"FeSO4\",\n                        \"compound_id\": 595,\n                        \"attribute\": \"pH 2.0, 10 mM\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "solutions / preparation_steps (missing ferrous solution pH)",
+    "decision": "add",
+    "source_stage": "10 mM FeSO4 stock only, before its 10 ml addition",
+    "source_amount": {
+      "value": 2.0,
+      "unit": "pH"
+    },
+    "proposed": "Keep pH 2.0 on this stock, distinct from the receiving medium pH 2.5 and trace-stock pH steps.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "main table / post-cooling filtered additions, exact FeSO4 row",
+        "exact_source_quote": "10 mM FeSO 4 solution (pH 2.0) 10.0 ml",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "mediadiveJ729api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J729",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"FeSO4\",\n                        \"compound_id\": 595,\n                        \"attribute\": \"pH 2.0, 10 mM\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d"
+      }
+    ]
+  },
+  {
+    "input": "target",
+    "field_path": "ph_value; preparation_steps[0]",
+    "existing": 2.5,
+    "decision": "evidence_only",
+    "source_stage": "Main mixture adjustment before autoclaving and later filtered additions",
+    "proposed": "Retain the supported target pH and its already stated stage with exact claim evidence; this is not a measured final pH assertion.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "Main preparation sentence",
+        "exact_source_quote": "adjust pH to 2.5 with H 2 SO 4 and autoclave.",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      }
+    ]
+  },
+  {
+    "input": "target",
+    "field_path": "preparation_steps[1]",
+    "existing": 6.5,
+    "decision": "correct",
+    "source_stage": "NTA dissolution before other trace minerals",
+    "proposed": "Move this correct numeric instruction into the explicitly identified Trace minerals stock preparation. Root-level placement currently obscures its scope.",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection, immediately following stock table",
+        "exact_source_quote": "adjust pH to 6.5 with KOH solution.",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      }
+    ]
+  },
+  {
+    "input": "target",
+    "field_path": "preparation_steps[1]",
+    "existing": 7.0,
+    "decision": "correct",
+    "source_stage": "Completed trace stock, not the receiving medium",
+    "proposed": "Move this correct numeric instruction into the explicitly identified Trace minerals stock preparation. Root-level placement currently obscures its scope.",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection, immediately following stock table",
+        "exact_source_quote": "Adjust final pH to 7.0.",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      }
+    ]
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ph_value; preparation_steps[0]",
+    "existing": 2.5,
+    "decision": "evidence_only",
+    "source_stage": "Main mixture adjustment before autoclaving and later filtered additions",
+    "proposed": "Retain the supported target pH and its already stated stage with exact claim evidence; this is not a measured final pH assertion.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "Main preparation sentence",
+        "exact_source_quote": "adjust pH to 2.5 with H 2 SO 4 and autoclave.",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      }
+    ]
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "preparation_steps[1]",
+    "existing": 6.5,
+    "decision": "correct",
+    "source_stage": "NTA dissolution before other trace minerals",
+    "proposed": "Move this correct numeric instruction into the explicitly identified Trace minerals stock preparation. Root-level placement currently obscures its scope.",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection, immediately following stock table",
+        "exact_source_quote": "adjust pH to 6.5 with KOH solution.",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      }
+    ]
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "preparation_steps[1]",
+    "existing": 7.0,
+    "decision": "correct",
+    "source_stage": "Completed trace stock, not the receiving medium",
+    "proposed": "Move this correct numeric instruction into the explicitly identified Trace minerals stock preparation. Root-level placement currently obscures its scope.",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection, immediately following stock table",
+        "exact_source_quote": "Adjust final pH to 7.0.",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "preparation_steps[0] (temperature)",
+    "decision": "add",
+    "source_stage": "Source default for main autoclaving only; separately filter-sterilized additions retain their override",
+    "source_amount": {
+      "value": 121,
+      "unit": "C"
+    },
+    "proposed": "Preserve the qualified JCM default without extending it to the filtered solutions.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "Source-wide default header, read with the JCM 729 preparation overrides",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "preparation_steps[0] (duration)",
+    "decision": "add",
+    "source_stage": "Source default for main autoclaving only; separately filter-sterilized additions retain their override",
+    "source_amount": {
+      "value": 15,
+      "unit": "min"
+    },
+    "proposed": "Preserve the qualified JCM default without extending it to the filtered solutions.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "Source-wide default header, read with the JCM 729 preparation overrides",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "preparation_steps (unquantified acid/base addition)",
+    "decision": "not_quantified",
+    "source_stage": "Main pH-adjustment acid",
+    "proposed": "Retain titration context. The named source supplies neither a fixed dose nor solution strength; do not import strengths from other sections or media.",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "Main preparation sentence",
+        "exact_source_quote": "adjust pH to 2.5 with H 2 SO 4",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      }
+    ]
+  },
+  {
+    "input": "target and normalized owner",
+    "field_path": "preparation_steps (unquantified acid/base addition)",
+    "decision": "not_quantified",
+    "source_stage": "Trace-stock KOH",
+    "proposed": "Retain titration context. The named source supplies neither a fixed dose nor solution strength; do not import strengths from other sections or media.",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals preparation paragraph only",
+        "exact_source_quote": "adjust pH to 6.5 with KOH solution.",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      }
+    ]
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml (dependency context only)",
+    "field_path": "composition[0].concentration",
+    "existing": {
+      "value": "14",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 4655, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact Na2SO4 row",
+        "exact_source_quote": "Na 2 SO 4 14.0 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "solution4655",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/4655",
+        "source_locator": "$.data.recipe[0]",
+        "exact_source_quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\": 110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 14,\n                \"unit\": \"g\",\n                \"g_l\": 14,\n                \"mmol_l\": 98.5638,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml (dependency context only)",
+    "field_path": "composition[1].concentration",
+    "existing": {
+      "value": "30",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 4655, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact (NH4)2SO4 row",
+        "exact_source_quote": "(NH 4 ) 2 SO 4 30.0 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "solution4655",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/4655",
+        "source_locator": "$.data.recipe[1]",
+        "exact_source_quote": "{\n                \"recipe_order\": 2,\n                \"compound\": \"(NH4)2SO4\",\n                \"compound_id\": 27,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 30,\n                \"unit\": \"g\",\n                \"g_l\": 30,\n                \"mmol_l\": 227.032,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml (dependency context only)",
+    "field_path": "composition[2].concentration",
+    "existing": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 4655, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact KCl row",
+        "exact_source_quote": "KCl 1.0 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "solution4655",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/4655",
+        "source_locator": "$.data.recipe[2]",
+        "exact_source_quote": "{\n                \"recipe_order\": 3,\n                \"compound\": \"KCl\",\n                \"compound_id\": 61,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 1,\n                \"mmol_l\": 13.4138,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml (dependency context only)",
+    "field_path": "composition[3].concentration",
+    "existing": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 4655, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact MgSO4 x 7 H2O row",
+        "exact_source_quote": "MgSO 4 ·7H 2 O 5.0 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "solution4655",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/4655",
+        "source_locator": "$.data.recipe[3]",
+        "exact_source_quote": "{\n                \"recipe_order\": 4,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 20.286,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml (dependency context only)",
+    "field_path": "composition[4].concentration",
+    "existing": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 4655, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact K2HPO4 row",
+        "exact_source_quote": "K 2 HPO 4 0.5 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "solution4655",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/4655",
+        "source_locator": "$.data.recipe[4]",
+        "exact_source_quote": "{\n                \"recipe_order\": 5,\n                \"compound\": \"K2HPO4\",\n                \"compound_id\": 10,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 2.87066,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml (dependency context only)",
+    "field_path": "composition[5].concentration",
+    "existing": {
+      "value": "0.14",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 4655, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact Ca(NO3)2 x 4 H2O row",
+        "exact_source_quote": "Ca(NO 3 ) 2 ·4H 2 O 0.14 g",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "solution4655",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/4655",
+        "source_locator": "$.data.recipe[5]",
+        "exact_source_quote": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Ca(NO3)2 x 4 H2O\",\n                \"compound_id\": 213,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.14,\n                \"unit\": \"g\",\n                \"g_l\": 0.14,\n                \"mmol_l\": 0.592846,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml (dependency context only)",
+    "field_path": "composition[6].concentration",
+    "existing": {
+      "value": "1",
+      "unit": "L"
+    },
+    "source_stage": "Standalone stock 4655, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm729",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729",
+        "source_locator": "UBS solution subsection, exact Distilled water row",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434",
+        "parsed_text_sha256": "ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54"
+      },
+      {
+        "source_key": "solution4655",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/4655",
+        "source_locator": "$.data.recipe[6]",
+        "exact_source_quote": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[0].concentration",
+    "existing": {
+      "value": "1.5",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact Nitrilotriacetic acid row",
+        "exact_source_quote": "Nitrilotriacetic acid 1.5 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[0]",
+        "exact_source_quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Nitrilotriacetic acid\",\n                \"compound_id\": 189,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\": \"g\",\n                \"g_l\": 1.5,\n                \"mmol_l\": 7.84765,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[1].concentration",
+    "existing": {
+      "value": "3",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact MgSO4 x 7 H2O row",
+        "exact_source_quote": "MgSO 4 ·7H 2 O 3.0 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[1]",
+        "exact_source_quote": "{\n                \"recipe_order\": 2,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\": \"g\",\n                \"g_l\": 3,\n                \"mmol_l\": 12.1716,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[2].concentration",
+    "existing": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact MnSO4 x n H2O row",
+        "exact_source_quote": "MnSO 4 · x H 2 O 0.5 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[2]",
+        "exact_source_quote": "{\n                \"recipe_order\": 3,\n                \"compound\": \"MnSO4 x n H2O\",\n                \"compound_id\": 1000,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.5,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[3].concentration",
+    "existing": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact NaCl row",
+        "exact_source_quote": "NaCl 1.0 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[3]",
+        "exact_source_quote": "{\n                \"recipe_order\": 4,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 1,\n                \"mmol_l\": 17.1116,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[4].concentration",
+    "existing": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact FeSO4 x 7 H2O row",
+        "exact_source_quote": "FeSO 4 ·7H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[4]",
+        "exact_source_quote": "{\n                \"recipe_order\": 5,\n                \"compound\": \"FeSO4 x 7 H2O\",\n                \"compound_id\": 12,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.359693,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[5].concentration",
+    "existing": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact CoSO4 x 7 H2O row",
+        "exact_source_quote": "CoSO 4 ·7H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[5]",
+        "exact_source_quote": "{\n                \"recipe_order\": 6,\n                \"compound\": \"CoSO4 x 7 H2O\",\n                \"compound_id\": 198,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.645178,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[6].concentration",
+    "existing": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact CaCl2 x 2 H2O row",
+        "exact_source_quote": "CaCl 2 ·2H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[6]",
+        "exact_source_quote": "{\n                \"recipe_order\": 7,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.680203,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[7].concentration",
+    "existing": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact ZnSO4 x 7 H2O row",
+        "exact_source_quote": "ZnSO 4 ·7H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[7]",
+        "exact_source_quote": "{\n                \"recipe_order\": 8,\n                \"compound\": \"ZnSO4 x 7 H2O\",\n                \"compound_id\": 35,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.347752,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[8].concentration",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact CuSO4 x 5 H2O row",
+        "exact_source_quote": "CuSO 4 ·5H 2 O 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[8]",
+        "exact_source_quote": "{\n                \"recipe_order\": 9,\n                \"compound\": \"CuSO4 x 5 H2O\",\n                \"compound_id\": 121,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\": \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0400503,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[9].concentration",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact AlK(SO4)2 row",
+        "exact_source_quote": "AlK(SO 4 ) 2 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[9]",
+        "exact_source_quote": "{\n                \"recipe_order\": 10,\n                \"compound\": \"AlK(SO4)2\",\n                \"compound_id\": 1015,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\": \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0387289,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[10].concentration",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact H3BO3 row",
+        "exact_source_quote": "H 3 BO 3 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[10]",
+        "exact_source_quote": "{\n                \"recipe_order\": 11,\n                \"compound\": \"H3BO3\",\n                \"compound_id\": 37,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\": \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.161708,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[11].concentration",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact Na2MoO4 x 2 H2O row",
+        "exact_source_quote": "Na 2 MoO 4 ·2H 2 O 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[11]",
+        "exact_source_quote": "{\n                \"recipe_order\": 12,\n                \"compound\": \"Na2MoO4 x 2 H2O\",\n                \"compound_id\": 9,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\": \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0413309,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml (dependency context only)",
+    "field_path": "composition[12].concentration",
+    "existing": {
+      "value": "1000",
+      "unit": "PERCENT_V_V"
+    },
+    "source_stage": "Standalone stock 3804, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals subsection only, exact Distilled water row",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "solution3804",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3804",
+        "source_locator": "$.data.recipe[12]",
+        "exact_source_quote": "{\n                \"recipe_order\": 13,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c"
+      }
+    ],
+    "decision": "correct",
+    "proposed": "Correct the dependency water representation to the source batch addition of 1000 ml / 1 L; 1000% v/v is not supported. Do not infer a measured final volume."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml (dependency context only)",
+    "field_path": "composition[0].concentration",
+    "existing": {
+      "value": "0.025",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3927, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact NiCl2 x 6 H2O row",
+        "exact_source_quote": "NiCl 2 ·6H 2 O 25.0 mg",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "solution3927",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3927",
+        "source_locator": "$.data.recipe[0]",
+        "exact_source_quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"NiCl2 x 6 H2O\",\n                \"compound_id\": 40,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 25,\n                \"unit\": \"mg\",\n                \"g_l\": 0.025,\n                \"mmol_l\": 0.192903,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml (dependency context only)",
+    "field_path": "composition[1].concentration",
+    "existing": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3927, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact (NH4)2Ni(SO4)2 x 6 H2O row",
+        "exact_source_quote": "(NH 4 ) 2 Ni(SO 4 ) 2 ·6H 2 O 2.0 g",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "solution3927",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3927",
+        "source_locator": "$.data.recipe[1]",
+        "exact_source_quote": "{\n                \"recipe_order\": 2,\n                \"compound\": \"(NH4)2Ni(SO4)2 x 6 H2O\",\n                \"compound_id\": 739,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": 2,\n                \"mmol_l\": 5.06346,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml (dependency context only)",
+    "field_path": "composition[2].concentration",
+    "existing": {
+      "value": "0.0003",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3927, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact Na2SeO3 row",
+        "exact_source_quote": "Na 2 SeO 3 0.3 mg",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "solution3927",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3927",
+        "source_locator": "$.data.recipe[2]",
+        "exact_source_quote": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Na2SeO3\",\n                \"compound_id\": 699,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"mg\",\n                \"g_l\": 0.0003,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml (dependency context only)",
+    "field_path": "composition[3].concentration",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3927, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact Na2SeO4 row",
+        "exact_source_quote": "Na 2 SeO 4 10.0 mg",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "solution3927",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3927",
+        "source_locator": "$.data.recipe[3]",
+        "exact_source_quote": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Na2SeO4\",\n                \"compound_id\": 375,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"mg\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0529241,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml (dependency context only)",
+    "field_path": "composition[4].concentration",
+    "existing": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "source_stage": "Standalone stock 3927, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact Na2WO4 x 2 H2O row",
+        "exact_source_quote": "Na 2 WO 4 ·2H 2 O 10.0 mg",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "solution3927",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3927",
+        "source_locator": "$.data.recipe[4]",
+        "exact_source_quote": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Na2WO4 x 2 H2O\",\n                \"compound_id\": 249,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"mg\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0303168,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  },
+  {
+    "input": "data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml (dependency context only)",
+    "field_path": "composition[5].concentration",
+    "existing": {
+      "value": "1",
+      "unit": "L"
+    },
+    "source_stage": "Standalone stock 3927, before use in JCM 729",
+    "source_snippets": [
+      {
+        "source_key": "jcm244",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244",
+        "source_locator": "Ni-Se-W solution subsection only, exact Distilled water row",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e",
+        "parsed_text_sha256": "2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de"
+      },
+      {
+        "source_key": "solution3927",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/3927",
+        "source_locator": "$.data.recipe[5]",
+        "exact_source_quote": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1"
+      }
+    ],
+    "decision": "verified",
+    "explanation": "The existing amount, unit, provider-declared stock basis and attached exact evidence match. Verification is limited to this concentration claim; hydrate grounding is assessed separately. No evidence or undiluted concentration is inherited by the receiving medium."
+  }
+]
+
+### Identifier metadata, exact secondary keys and supplied-form scope
+
+grounding: concern. Targets: CultureMech:003073.
+
+24 distinct primary/current-secondary identifiers resolve. 0 label instances differ from current canonical labels; 0 asserted current secondary keys lack an exact pinned index row. Legacy numeric links are assessed separately and are not established by CHEBI correspondence. Target linkage is 24/24 primary and 23/24 secondary ingredient instances; this measures presence, not source validity.
+
+{"label_drift": [], "missing_secondary_keys": [], "legacy_instances": [{"input": "target", "field_path": "ingredients[22].mediaingredientmech_term", "term": {"id": "MediaIngredientMech:000198", "label": "Na2SeO4"}}, {"input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml", "field_path": "ingredients[22].mediaingredientmech_term", "term": {"id": "MediaIngredientMech:000198", "label": "Na2SeO4"}}], "coverage_scale": "0–100 percent; each ingredient instance counted once", "denominator": 24, "primary_percent": 100.0, "secondary_percent": 95.83333333333333}
+
+### Explicit hydrates, variable hydration and solution identity
+
+grounding: concern. Targets: CultureMech:003073.
+
+The Ni-Se-W primary specifies NiCl2·6H2O, but CHEBI:34887 has an anhydrous Cl2Ni structure. MnSO4·xH2O leaves its hydration number unspecified; CHEBI:86360 does not encode that variable hydrate and cannot supply a hydrate-specific molecular weight. The molar FeSO4 solution does not identify a supplied anhydrous solid, so CHEBI:75832 must not silently establish its preparation form. AlK(SO4)2 has no stated hydration in either scoped source; no conventional hydrate is added. Other explicit hydrate identities and the two separate nickel and selenium salts are preserved.
+
+### Main versus stock preparation and qualified sterilization
+
+completeness: concern. Targets: CultureMech:003073.
+
+Both local layers retain the main pH 2.5 adjustment and later filtered-addition instruction, but omit those solution doses/strengths and the main solvent amount. The second root preparation step is actually the Trace minerals NTA/KOH preparation at pH 6.5 then 7.0. The qualified JCM 729 default supplies main autoclaving temperature/time. Neither scoped acid/base instruction supplies a fixed titration dose or strength.
+
+### Defined liquid formulation and source boundaries
+
+scope: supported. Targets: CultureMech:003073.
+
+DEFINED and LIQUID fit the exact source formulation of named inorganic salts and nitrilotriacetic acid with no undefined extract or gelling agent. This categorical fit does not validate concentrations or exact hydrate specificity. Bacterial category and the medium title do not establish strain-level growth evidence or optimal conditions.
+
+### Existing stock evidence and remaining local stock artifacts
+
+ownership: concern. Targets: CultureMech:003073.
+
+The exact 4655, 3804 and 3927 dependencies resolve. Their 25 matching concentration claims have attached evidence, while Trace minerals water remains an unsupported 1000% v/v representation. Their legacy placeholder ingredients and incomplete_composition flags coexist with populated composition arrays; these context artifacts are not copied into the target or treated as additional reviewed targets. Dependency concentration evidence does not repair source-form grounding or receiving-medium scope.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:003073.
+
+19 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+## Findings
+
+### f1: Stock strengths and liquid doses are asserted as root mass concentrations
+
+blocker / open / confirmed; issue key: culturemech.003073.stock-and-dose-flattening.
+
+Both layers encode the 25 ml tetrathionate and 10 ml ferrous solution additions as 25 and 10 g/L. Other root values equal undiluted UBS, Trace minerals or Ni-Se-W stock strengths. Magnesium is 8 g/L from the recorded sum of 5 and 3, although these values belong to stocks added at different doses. Stock identities, doses, strengths and stage-specific water are absent from the representation.
+
+### f2: Trace-stock preparation is placed at the receiving-medium root
+
+major / open / confirmed; issue key: culturemech.003073.stock-preparation-scope.
+
+The second root preparation instruction adjusts NTA to pH 6.5 then the mixture to 7.0, but the exact JCM 151 paragraph applies only to Trace minerals. The main JCM 729 pH is 2.5. Both layers also omit the qualified main sterilization temperature/time. This stage ambiguity can change which preparation the stored instructions describe.
+
+### f3: Explicit nickel hydrate and variable manganese hydration are not represented exactly
+
+major / open / confirmed; issue key: culturemech.003073.hydrate-scope.
+
+NiCl2 hexahydrate is mapped to an anhydrous nickel dichloride structure. The variable MnSO4 hydrate does not provide a specific hydration number for molecular-weight conversion, while its asserted structure contains no water. The separate molar FeSO4 solution does not establish a supplied anhydrous solid. Canonical labels and successful term checks establish identifier existence, not these exact source forms.
+
+### f4: Supported pH and preparation lack narrow attached evidence
+
+minor / open / confirmed; issue key: culturemech.003073.claim-evidence-gap.
+
+The target and maintained owner lack attached claim evidence for the supported main pH and retained preparation text. Valid standalone stock evidence belongs only to those stock concentration claims and cannot support the incorrect receiving-medium concentrations.
+
+### f5: The remaining numeric MIM link lacks verified historical correspondence
+
+minor / open / confirmed; issue key: culturemech.003073.legacy-secondary-correspondence.
+
+MediaIngredientMech:000198 remains on Na2SeO4 in both layers. The current pinned index and public catalog were checked, but historical identifier-to-ingredient correspondence was not recovered. Live CHEBI:77775 resolves independently and is not proof of the legacy mapping.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the exact JCM 729 stock/addition structure in the maintained owner, with original source units and declared bases. Preserve separate magnesium contributions and molar solution strengths. Verify the Trace minerals dependency water representation before referencing it; retain valid existing dependency evidence without inheriting it into the target.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Move the NTA/KOH instructions under the Trace minerals stock and retain the main pH stage. Add the qualified JCM 729 main sterilization conditions without overriding separately filtered additions or importing parent-media procedures.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Reconcile explicit source hydration and retain variable/unspecified forms without inventing molecular weights, stock masses or replacement IDs. Keep the existing amount evidence scoped separately from material-form grounding.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Attach exact source snippets to the correct owner claims after resolving stage representation. Preserve the independently valid stock evidence and original access/hash provenance.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Recover exact historical correspondence or explicitly preserve the unresolved legacy link for separately authorized curation. Do not infer a replacement solely from the primary CHEBI term or repeated corpus usage.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch018/174/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch018/174/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml:1:id: CultureMech:003073<br>./data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml:1:id: CultureMech:003073<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch018/source-preflight-bound/174/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 34 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729; Entire JCM 729 recipe, UBS subsection, preparation and qualified default sterilization header | supports | Exact accession JCM 729 identifies this formulation. Main additions, separately filtered molar solutions and UBS composition are distinct stages. The default header applies unless otherwise stated; it does not override filter sterilization. |
+| trace-primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151; Trace minerals subsection and immediately following NTA/KOH paragraph only | supports | JCM 729 explicitly references this trace stock. Other JCM 151 basal ingredients, sulfur, vitamins, atmosphere and cultivation statements are outside this review. |
+| nise-primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244; Ni-Se-W solution subsection only | supports | JCM 729 explicitly references this stock. Both nickel salts and both selenium salts are concurrent listed ingredients; no alternatives are stated. Parent JCM 244 formulation, gases and cultivation conditions are outside scope. |
+| provider | https://mediadive.dsmz.de/rest/medium/J729; $.data.medium and all four $.data.solutions, including recipe attributes and steps | supports | Provider medium J729 and solution IDs 4654, 4655, 3804 and 3927 corroborate the source stage structure. Each declares 1000 ml; this is provider metadata, not an independently measured final volume. Provider computed mmol_l columns are not used for hydrate-dependent conversions. |
+| stock4655 | https://mediadive.dsmz.de/rest/solution/4655; $.data, every recipe object, declared volume and preparation | supports | Exact standalone stock context; existing claim evidence is checked against the captured raw objects and historical response hash. This is not a separate complete record review or receiving-medium evidence. |
+| stock3804 | https://mediadive.dsmz.de/rest/solution/3804; $.data, every recipe object, declared volume and preparation | supports | Exact standalone stock context; existing claim evidence is checked against the captured raw objects and historical response hash. This is not a separate complete record review or receiving-medium evidence. |
+| stock3927 | https://mediadive.dsmz.de/rest/solution/3927; $.data, every recipe object, declared volume and preparation | supports | Exact standalone stock context; existing claim evidence is checked against the captured raw objects and historical response hash. This is not a separate complete record review or receiving-medium evidence. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch018/174/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:26710 resolves to sodium chloride. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:32149 resolves to sodium sulfate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:32588 resolves to potassium chloride. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:33118 resolves to boric acid. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:34887 resolves to nickel dichloride. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:44557 resolves to nitrilotriacetic acid. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi48843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_48843; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:48843 resolves to disodium selenite. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:62946 resolves to ammonium sulfate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:63939 resolves to sodium tungstate dihydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi75832 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75832; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:75832 resolves to iron(2+) sulfate (anhydrous). Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi77775 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_77775; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:77775 resolves to sodium selenate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi86149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86149; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:86149 resolves to ammonium nickel sulfate hexahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi86159 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86159; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:86159 resolves to calcium nitrate tetrahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi86360 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86360; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:86360 resolves to manganese(II) sulfate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi86463 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86463; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:86463 resolves to potassium aluminium sulfate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi86466 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86466; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:86466 resolves to potassium tetrathionate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Entire pinned index exact identifier lookup; adjacent source revision/hash | context_only | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "asserted_secondary_rows": {"CHEBI:131527": [{"label": "Dibasic potassium phosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Dipotassium hydrogen phosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Dipotassium hydrogenorthophosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Dipotassium monohydrogen phosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Dipotassium monophosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Dipotassium orthophosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Dipotassium phosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Hydrogen dipotassium phosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "K 2HPO4", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "K2HPO", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "K2HPO4(Sigma P 3786)", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KH2HPO4", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Phosphoric acid, dipotassium salt", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium dibasic phosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium monohydrogen phosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium monophosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium phosphate (dibasic)", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium phosphate dibasic", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "1% Sodium Chloride", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "chlorure de sodium", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "cloruro sodico", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "common salt", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Kochsalz", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaCl (Fisher S271-500)", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaCl(Fisher S271-500)", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "natrii chloridum", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Natriumchlorid", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "rock salt", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "salt", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium Chloride", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "table salt", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label": "Copper (II) sulfate pentahydrate", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper sulfate pentahydrate", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper sulphate(5.H2O)", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(2+) sulfate (1:1) pentahydrate", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(2+) sulfate pentahydrate", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(2+) sulfate--water (1/5)", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(II) sulfate pentahydrate", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(II) sulfate, pentahydrate", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "cupric sulfate pentahydrate", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO .5H O", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4 . 5H2O", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4 .5H2O", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4 x 5H2O", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4 · 5H2O", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4 ⋅ 5H2O", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4*5 H2O", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4.5H2O", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4·5H2O", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4・5H2O", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": ".MgSO4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "bitter salt", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "epsom salt", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "epsomite", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulfate (1:1) heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate (1:1) heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate anhydrous", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Magnesium sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulphate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulphate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulphate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium(II) sulfate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO .7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO 4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO 4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO 4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO 4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO2 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2·7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4 . 7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 . H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H20", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H20", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O (100 mM)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O solution (25%)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O to 15.0 g).", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 · 7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 ·7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO47H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO47H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4x7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4x7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4·7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O (Sigma 230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O (Sigma 230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(CAS: 10034-99-8)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(CAS: 10034-99-8)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(Sigma 230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(Sigma 230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid magnesium salt", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid magnesium salt heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid magnesium salt heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulphate of magnesia", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32149": [{"label": "disodium sulfate", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "disodium sulphate", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Glauber's salt", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Glaubersalz", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2SO4", "match_type": "preferred_term", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaSO4", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Natriumsulfat", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "salt cake", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium Sulfate", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium sulphate", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "zinc sulfate (1:1) heptahydrate", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Zinc sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "zinc sulfate heptahydrate (1:1:7)", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "zinc(2+) sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "zinc(2+) sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Zn2SO4·7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 . 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 .7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 x 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 · 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 × 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 ⋅ 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4*7 H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4*7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4-7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4·7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4∙7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4⋅7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4・7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4･7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "[KCl]", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Kaliumchlorid", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Kaon-Cl 10", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl (Fisher P 217)", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl(CAS: 7447-40-7)", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl(CAS:7447-40-7)", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl(Fisher P 217)", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Klor-con", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Klotrix", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium chloride", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "muriate of potash", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium Chloride", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sylvite", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "[B(OH)3]", "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "B(OH)3", "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Boric acid", "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "boron trihydroxide", "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "H BO", "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "H3BO", "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "H3BO3(Baker 0084)", "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "orthoboric acid", "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "trihydroxidoboron", "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "[NiCl2]", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nickel chloride", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "nickel chloride", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "nickel dichloride", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "nickel(2+) chloride", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nickel(II) chloride", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "nickel(II) chloride", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NiCl 2", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label": "alpha,alpha',alpha''-trimethylaminetricarboxylic acid", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Complexon I", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "H3nta", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Komplexon I", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "N(CH2-COOH)3", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "N,N-bis(carboxymethyl)glycine", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "nitrilo-2,2',2''-triacetic acid", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nitrilotriacetic acid (NTA)", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nitrilotriessigsaeure", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "tri(carboxymethyl)amine", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "triglycine", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Triglycollamic acid", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Trilon A", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:48843": [{"label": "disodium selenite", "match_type": "synonym", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "disodium selenium trioxide", "match_type": "synonym", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2Se2O3", "match_type": "synonym", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2SeO3", "match_type": "preferred_term", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Natriumselenit", "match_type": "synonym", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "selenious acid (H2SeO3) disodium salt", "match_type": "synonym", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "selenious acid disodium salt", "match_type": "synonym", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "selenious acid, disodium salt", "match_type": "synonym", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "selenious acid, sodium salt (1:2)", "match_type": "synonym", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium selenite", "match_type": "synonym", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2 SO4", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2S4", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2SO4(Fisher A 702)", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ammonium Sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium sulfate (2:1)", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium sulphate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "diammonium sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "diazanium sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "mascagnite", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid ammonium salt (1:2)", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid, diammonium salt", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulphate of ammonia", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Disodium tetraoxotungstate", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na-tungstate x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO2 x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO2.2H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4 . 2H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4 x 2 H2O (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4 × 2H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4*2H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4.2H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4·2H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4•2H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4・2H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaWO4·2H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium dioxido(dioxo)tungsten--water (1/2)", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium orthotungstate dihydrate", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium tetraoxotungstate(VI)", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium tungstate dihydrate", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium tungstate(VI)", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium tungstate(VI) dihydrate", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium tungsten oxide", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium wolframate", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Tungstic acid, disodium salt", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Tungstic acid, sodium salt, dihydrate", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Disodium molybdate dihydrate", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Molybdic acid, disodium salt, dihydrate", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2 MoO4 x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2Mo4 x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MO4.2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4 . 2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4 . H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4 x 2 H2O (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4 x 2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4 · 2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4 · H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4 ⋅ 2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4*2 H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4*2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4-2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4. 2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4.2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4.H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4xH2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4·2H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4·2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4⋅2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4・2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO7 x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO7O4 x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO7・2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoSO4", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoSO4 x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaMoO4", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaMoO4 x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaMoO4 · 2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaMoO4.2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium dioxido(dioxo)molybdenum--water (1/2)", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium Molybdate Dihydrate", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium molybdate(VI) dihydrate", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium orthomolybdate dihydrate", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75832": [{"label": "Fe(II)SO4", "match_type": "synonym", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ferrous sulfate", "match_type": "synonym", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ferrous sulfate (anh.)", "match_type": "synonym", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO .7H O", "match_type": "synonym", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4", "match_type": "preferred_term", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "iron sulfate (1:1)", "match_type": "synonym", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate", "match_type": "synonym", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate (anh.)", "match_type": "synonym", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate (anhydrous)", "match_type": "ontology_label", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Iron(II) sulfate", "match_type": "synonym", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "iron(II) sulfate (1:1)", "match_type": "synonym", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "Fe SO4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ferrous sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ferrous sulfate.7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 . 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 x 7H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7H2O", "ontology_id": "CHEBI:75836", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "FeSO4 x 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 x7 H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7H2O", "ontology_id": "CHEBI:75836", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "FeSO4 x7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 · 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 ⋅ 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4·7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4⋅7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4・7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Iron (II) sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7H2O", "ontology_id": "CHEBI:75836", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Iron(II) sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86149": [{"label": "(NH4)2Ni(SO4)2", "match_type": "preferred_term", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2 x 6 H2O (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2 x 6 H2O (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2.6H2O", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2·6H2O", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2•6H2O", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2•6H2O", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2・6H2O", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium nickel sulfate hexahydrate", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium nickel sulfate hexahydrate", "match_type": "ontology_label", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ammonium nickel(2+) sulfate hexahydrate", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium nickel(2+) sulfate--water (2/1/2/6)", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium nickel(2+) sulfate--water (2/1/2/6)", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium nickel(II) sulfate hexahydrate", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Diammonium nickel disulfate hexahydrate", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nickel ammonium sulfate hexahydrate", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nickel diammonium disulfate hexahydrate", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl 2 X 2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2  x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 . 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x  2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O (50 g/l stock solution)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O (5M)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O solution (7%)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 · 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 × 2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 × 2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CaCl2*2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2*2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CaCl2. 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2.2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl22H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status": "REJECTED", "ambiguity": "resolved:owned"}, {"label": "CaCl22H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}, {"label": "CaCl2x 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2x2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2·2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2•2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2•2H2O (Sigma C-3881)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2•2H2O(CAS: 10035-04-8)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2•2H2O(Sigma C-3881)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Calcium chloride dihydrate", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "calcium chloride dihydrate", "match_type": "ontology_label", "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "calcium chloride--water (1/2)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "calcium chloride--water (1/2)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status": "REJECTED", "ambiguity": "unique"}], "CHEBI:86159": [{"label": "(1)  Ca(NO3)2", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(1)  Ca(NO3)2.4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2 x 4 H2O (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2 · 4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2.4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2x4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2·4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2•4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2•4H2O(CAS: 13477-34-4)", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2・4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Calcium dinitrate tetrahydrate", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Calcium nitrate tetrahydrate", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "calcium nitrate--water (1/4)", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86463": [{"label": "AlK(SO4)2", "match_type": "preferred_term", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Aluminium potassium bis(sulphate)", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "aluminium potassium sulfate (1/1/2)", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Aluminum potassium alum", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Aluminum potassium disulfate", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Aluminum potassium sulfate", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "aluminum potassium sulfate", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Burnt potassium alum", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KAl(SO4)2", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na SiO .9H O", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potash alum", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "potassium alum", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "potassium aluminium sulfate", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium aluminum alum", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "potassium aluminum disulfate", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO .7H O", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86466": [{"label": "Dipotassium tetrathionate", "match_type": "synonym", "identifier": "CHEBI:86466", "preferred_term": "K2S4O6", "ontology_id": "CHEBI:86466", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "K2S4O6", "match_type": "preferred_term", "identifier": "CHEBI:86466", "preferred_term": "K2S4O6", "ontology_id": "CHEBI:86466", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium tetrathionate", "match_type": "synonym", "identifier": "CHEBI:86466", "preferred_term": "K2S4O6", "ontology_id": "CHEBI:86466", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Tetrathionic acid, dipotassium salt", "match_type": "synonym", "identifier": "CHEBI:86466", "preferred_term": "K2S4O6", "ontology_id": "CHEBI:86466", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "Cobalt sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "cobalt(2+) sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CoSO4 . 7H2O", "match_type": "synonym", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CoSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CoSO4 ⋅ 7H2O", "match_type": "synonym", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CoSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CoSO4·7H2O", "match_type": "synonym", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CoSO4・7H2O", "match_type": "synonym", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing_current_keys": [], "legacy_instances": [{"input": "target", "field_path": "ingredients[22].mediaingredientmech_term", "term": {"id": "MediaIngredientMech:000198", "label": "Na2SeO4"}}, {"input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml", "field_path": "ingredients[22].mediaingredientmech_term", "term": {"id": "MediaIngredientMech:000198", "label": "Na2SeO4"}}]} |
+| legacy-catalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Entire 2953-row pinned public ingredient catalog at revision 6643131b0f12ab40b66f98135245fca04027e0e9 | context_only | Current catalog was available and inspected; no exact legacy numeric ID occurs. This bounded current snapshot does not establish the historical correspondence of MediaIngredientMech:000198. |
+| legacy-tree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Entire untruncated recursive Git tree for the same pinned revision | context_only | Current repository identity and tree were available. Their lack of the historical numeric object does not verify its asserted correspondence or justify a guessed replacement. |
+| legacy-search | owned repository and pinned MIM index; Exact legacy ID lookup including ignored/hidden files | context_only | data/normalized_yaml/archaea/modified_picrophilus_medium.yaml:245:    id: MediaIngredientMech:000198<br>data/normalized_yaml/fungal/ferrous_iron_yeast_extract_medium.yaml:174:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/KOMODO_792_PYROLOBUS_FUMARII_MEDIUM.yaml:206:    id: MediaIngredientMech:000198<br>data/normalized_yaml/specialized/modified_marine_medium.yaml:118:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/KOMODO_1083_ACIDULIPROFUNDUM_medium.yaml:213:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/KOMODO_766_THERMOCOCCUS_CHITINOPHAGUS_MEDIUM.yaml:66:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/pyrobaculum_aerophilum_medium.yaml:54:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/methanogen_ms_i_medium.yaml:226:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/pyrolobus_medium.yaml:228:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/pyrolobus_fumarii_medium.yaml:215:    id: MediaIngredientMech:000198<br>data/normalized_yaml/specialized/anaerobic_alkaline_glucose_medium.yaml:182:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/methanosphaera_medium.yaml:54:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/aciduliprofundum_medium.yaml:212:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/methanosphaera_medium_i.yaml:55:    id: MediaIngredientMech:000198<br>data/normalized_yaml/specialized/fe_iii_reducer_marine_enrichment_medium.yaml:128:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/thermofilum_medium.yaml:86:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/thermococcus_chitinophagus_medium.yaml:65:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/pfennig_thermofilum_medium.yaml:182:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/archaeoglobus_infectus_medium.yaml:199:    id: MediaIngredientMech:000198<br>data/normalized_yaml/archaea/JCM_J355_METHANOSPHAERA_MEDIUM.yaml:57:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/syphc_medium.yaml:212:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/modified_sulfate_reducing_bacteria_medium.yaml:128:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/thermogutta_hypogea_medium.yaml:177:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/plantomycetaceae_medium.yaml:150:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml:242:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/sypc_medium.yaml:137:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/JCM_J470_VULCANIBACILLUS_MEDIUM.yaml:210:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/kiritimatiella_tyg_medium.yaml:175:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/desulfamplus_medium.yaml:223:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/mo_cfxi_medium.yaml:182:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/halarsenatibacter_medium.yaml:115:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/spirochaeta_cellobiosiphila_medium.yaml:136:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/tanner_mod2_medium.yaml:215:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/maridesulfovibrio_medium.yaml:161:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/vulcanithermus_medium.yaml:265:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/meiothermus_hypogaeus_medium.yaml:213:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/nautilia_nitratireducens_medium.yaml:208:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/KOMODO_977_VULCANITHERMUS_medium.yaml:266:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/KOMODO_1042_VULCANIBACILLUS_medium.yaml:211:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/ignavibacteria_medium.yaml:140:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/congregibacter_syphc_medium.yaml:184:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/thermovibrio_ammonificans_medium.yaml:205:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/mariprofundus_es_medium.yaml:220:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/desulfuromusa_ferrireducens_medium.yaml:171:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/KOMODO_1030_SMITHELLA_medium.yaml:193:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/aquifex_medium.yaml:137:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/caminibacter_mediatlanticus_medium.yaml:205:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/thermincola_medium_co.yaml:206:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/for_dsm_22131.yaml:211:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/alkaliphilus_crotonatoxidans_medium.yaml:199:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/acidithrix_ferrooydans_medium.yaml:245:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/thermodesulfitimonas_medium.yaml:225:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/methylomonas_medium_surf.yaml:285:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/svx8_medium.yaml:183:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/fe_iii_reducer_freshwater_enrichment_medium.yaml:84:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/smithella_medium.yaml:192:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/modified_desulfoglaeba_medium.yaml:210:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/st65_medium.yaml:183:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/methylomonas_medium_wsc.yaml:286:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/acidihalobacter_prosperus_f5_medium.yaml:161:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/jcm_medium_no_244.yaml:216:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/es_medium_marine.yaml:219:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/medium_for_sm250.yaml:144:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/KOMODO_1041_SYFAC_medium.yaml:172:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/ytps_medium.yaml:134:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/1_2_sme_medium_for_ya.yaml:213:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/metallibacterium_medium.yaml:194:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/thermohalobacter_medium.yaml:233:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/methylocystis_medium_nls.yaml:84:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/KOMODO_1049_SELENATE_REDUCER_MEDIUM.yaml:114:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/thermodesulfobacterium_hydrogenophilum_medium.yaml:142:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/desulfoglaeba_medium.yaml:211:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/vulcanibacillus_medium.yaml:212:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/thermoanaerobaculum_aquaticum_medium.yaml:235:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/JCM_J889_METALLIBACTERIUM_MEDIUM.yaml:197:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/sea_salts_tyg_medium.yaml:176:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/hydrogenophilus_hirschii_medium.yaml:116:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/dissulfurimicrobium_hydrothermale_medium.yaml:163:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/KOMODO_534_MODIFIED_SME_MEDIUM.yaml:130:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/KOMODO_1092_THERMOSULFIDIBACTER_medium.yaml:162:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/ms_sulf_medium.yaml:226:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/sypg_medium.yaml:185:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/marispirochaeta_medium.yaml:153:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/thermobacter_roseum_medium.yaml:277:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/geobacter_nbaf_medium.yaml:104:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/gallionella_es_medium.yaml:199:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/thermincola_medium.yaml:207:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/for_dsm_15698_and_dsm_24425.yaml:206:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/for_dsm_17682.yaml:162:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/plantomycetaceae_medium_sbp2.yaml:253:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/desulfosporosinus_acidiphilus_medium.yaml:266:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/selenate_reducer_medium.yaml:114:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/freshwater_iron_gel_medium.yaml:64:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/modified_sme_medium.yaml:127:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/thermocrinis_albus_medium.yaml:135:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/sylc_medium.yaml:162:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/thermosulfidibacter_medium.yaml:161:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/medium_for_z_1701_z_1702.yaml:106:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/arc51_medium.yaml:200:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/hydrogenothermus_medium.yaml:148:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/dsm_16658.yaml:206:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/seawater_pyruvate_thiosulfate_medium.yaml:294:    id: MediaIngredientMech:000198<br>data/normalized_yaml/bacterial/acetobacterium_submarinus_medium.yaml:42:    id: MediaIngredientMech:000198<br> |
+| history-metadata | data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml; data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 10, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml", "events": 9, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | The current importer reads the first solution and recognizes referenced stocks or percent-attributed liquid rows; molarity-attributed liquid rows without solution IDs are outside that percent predicate. Current cleanup explicitly no longer sums disagreeing duplicates, and the current merge compares formulation assertions. The stored magnesium note/history documents an older sum; inspected current code is not a replay or proof of historical execution. |
+| writer-1 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | The current importer reads the first solution and recognizes referenced stocks or percent-attributed liquid rows; molarity-attributed liquid rows without solution IDs are outside that percent predicate. Current cleanup explicitly no longer sums disagreeing duplicates, and the current merge compares formulation assertions. The stored magnesium note/history documents an older sum; inspected current code is not a replay or proof of historical execution. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | The current importer reads the first solution and recognizes referenced stocks or percent-attributed liquid rows; molarity-attributed liquid rows without solution IDs are outside that percent predicate. Current cleanup explicitly no longer sums disagreeing duplicates, and the current merge compares formulation assertions. The stored magnesium note/history documents an older sum; inspected current code is not a replay or proof of historical execution. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Partial coverage is specifically due to unavailable authoritative historical correspondence for MediaIngredientMech:000198. Current primary, provider, ontology and MIM catalog access succeeded; their completed lookups are not classified as unavailable.
+- Only CultureMech:003073 is reviewed. Three standalone stocks are dependency context, not separately reviewed records. JCM 151 and 244 contribute only their explicitly referenced stock sections. No organism growth, measured final volume, unknown acid/base dose, hydrate-dependent molar conversion or parent-medium procedure is inferred.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T112929Z-culturemech-003073-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acidithiobacillus_ferrivorans_medium (CultureMech:003073)'
+started_at: '2026-10-21T11:17:48Z'
+finished_at: '2026-10-21T11:29:29Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact JCM 729 source separates three stock additions and two molar solutions
+  from the receiving medium. Both local layers instead assert stock-strength solutes
+  and two liquid doses as root g/L values, including an undiluted magnesium sum. Preparation
+  stages and explicit hydrate identity need correction. Exact historical correspondence
+  for the remaining numeric MIM link is unavailable, so this review is partial.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    sha256: 78c07ba1140cc7399854ee443bd6e3b72f62774c12923749af511250de8fa1d3
+    role: target
+  - path: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    sha256: 10b428639b2a71da4ff09246a296dc87c120bb3043441e096ea2fc53448ce357
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml
+    sha256: edf6198bdd9a6507d1892bac8f5de2eeac7e66ca388fb4a40bc0b73daf49dfe8
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml
+    sha256: b126def4e003a536ab9c08f8be60f310476f43609ecb80755a6d6ff2eb1cf70f
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml
+    sha256: c6c76ef9766f2c107c69077fccef221a5c7694bfb6e5070af7e6fc8eb18b641e
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 174; batch 018 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding seventeen task batches
+    contain 170 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 172 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003073
+targets:
+- target_id: CultureMech:003073
+  path: data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+  label: acidithiobacillus_ferrivorans_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch018/174/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch018/174/strict.tsv"
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:003073
+- check_id: legacy-mim-historical-correspondence
+  name: Exact historical correspondence for MediaIngredientMech:000198
+  required: true
+  status: unavailable
+  summary: The current index, pinned public catalog and recursive tree were available
+    and inspected, but authoritative historical correspondence for the asserted numeric
+    MIM ID was not recovered. Current CHEBI:77775 metadata is a separate valid assertion;
+    no replacement correspondence is inferred.
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - legacy-catalog
+  - legacy-tree
+  - legacy-search
+  - mim
+  - chebi77775
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T11:29:28Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:29:28Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:18:50.778326Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch018/174/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:18:52.722805Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch018/174/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:18:57.747369Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:00.115177Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T11:29:28Z'
+  support: supports
+  summary: './data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml:1:id:
+    CultureMech:003073
+
+    ./data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml:1:id: CultureMech:003073
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/source-preflight-bound/174/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T11:29:28Z'
+  support: supports
+  summary: 34 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: cc582942fe12c5630a274ecd71001b0ee240b89fe9fcf9f630ebd0a1cd79b9fa
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729
+  locator: Entire JCM 729 recipe, UBS subsection, preparation and qualified default
+    sterilization header
+  accessed_at: '2026-10-21T11:02:39.601826Z'
+  support: supports
+  summary: Exact accession JCM 729 identifies this formulation. Main additions, separately
+    filtered molar solutions and UBS composition are distinct stages. The default
+    header applies unless otherwise stated; it does not override filter sterilization.
+  snapshot_sha256: cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434
+- evidence_id: trace-primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+  locator: Trace minerals subsection and immediately following NTA/KOH paragraph only
+  accessed_at: '2026-10-21T09:01:28.851101Z'
+  support: supports
+  summary: JCM 729 explicitly references this trace stock. Other JCM 151 basal ingredients,
+    sulfur, vitamins, atmosphere and cultivation statements are outside this review.
+  snapshot_sha256: 6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7
+- evidence_id: nise-primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244
+  locator: Ni-Se-W solution subsection only
+  accessed_at: '2026-10-20T07:00:02.868822Z'
+  support: supports
+  summary: JCM 729 explicitly references this stock. Both nickel salts and both selenium
+    salts are concurrent listed ingredients; no alternatives are stated. Parent JCM
+    244 formulation, gases and cultivation conditions are outside scope.
+  snapshot_sha256: 112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e
+- evidence_id: provider
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J729
+  locator: $.data.medium and all four $.data.solutions, including recipe attributes
+    and steps
+  accessed_at: '2026-10-21T11:02:37.578860Z'
+  support: supports
+  summary: Provider medium J729 and solution IDs 4654, 4655, 3804 and 3927 corroborate
+    the source stage structure. Each declares 1000 ml; this is provider metadata,
+    not an independently measured final volume. Provider computed mmol_l columns are
+    not used for hydrate-dependent conversions.
+  snapshot_sha256: 0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d
+- evidence_id: stock4655
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/4655
+  locator: $.data, every recipe object, declared volume and preparation
+  accessed_at: '2026-10-21T11:05:17.429591Z'
+  support: supports
+  summary: Exact standalone stock context; existing claim evidence is checked against
+    the captured raw objects and historical response hash. This is not a separate
+    complete record review or receiving-medium evidence.
+  snapshot_sha256: 9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c
+- evidence_id: stock3804
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/3804
+  locator: $.data, every recipe object, declared volume and preparation
+  accessed_at: '2026-10-21T11:05:17.429431Z'
+  support: supports
+  summary: Exact standalone stock context; existing claim evidence is checked against
+    the captured raw objects and historical response hash. This is not a separate
+    complete record review or receiving-medium evidence.
+  snapshot_sha256: aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c
+- evidence_id: stock3927
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/3927
+  locator: $.data, every recipe object, declared volume and preparation
+  accessed_at: '2026-10-21T11:05:17.429539Z'
+  support: supports
+  summary: Exact standalone stock context; existing claim evidence is checked against
+    the captured raw objects and historical response hash. This is not a separate
+    complete record review or receiving-medium evidence.
+  snapshot_sha256: caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/174/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T11:29:28Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 28a000ecf4a4acaba02f60f1a359f7137bb31b46ab57f25d51d0095d23a56a74
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identity/label
+    existence is separate from exact supplied form and source-specific ingredient
+    support.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identity/label existence is separate
+    from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identity/label
+    existence is separate from exact supplied form and source-specific ingredient
+    support.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identity/label
+    existence is separate from exact supplied form and source-specific ingredient
+    support.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32149
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-20T07:18:34.792120Z'
+  support: supports
+  summary: CHEBI:32149 resolves to sodium sulfate. Identity/label existence is separate
+    from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identity/label existence is
+    separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identity/label existence is separate
+    from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identity/label existence is
+    separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi44557
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:46:15.250117Z'
+  support: supports
+  summary: CHEBI:44557 resolves to nitrilotriacetic acid. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi48843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_48843
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T10:07:16.976958Z'
+  support: supports
+  summary: CHEBI:48843 resolves to disodium selenite. Identity/label existence is
+    separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: f8b54c90292c3ea1c215cbb96e7b9302304ba97f07c586c66f09b6689b9f2d91
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identity/label existence is separate
+    from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75832
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75832
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T11:02:38.851895Z'
+  support: supports
+  summary: CHEBI:75832 resolves to iron(2+) sulfate (anhydrous). Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: b9119cb3893b1a8171f719ef3e8fe6e5775a4fd59575baec8cd6da953801d089
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi77775
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_77775
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:09.354177Z'
+  support: supports
+  summary: CHEBI:77775 resolves to sodium selenate. Identity/label existence is separate
+    from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: a1a4ab87bbf08908fef7df53a788a85d9f6eee32350f082895e0563d6344c908
+- evidence_id: chebi86149
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86149
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:08.844455Z'
+  support: supports
+  summary: CHEBI:86149 resolves to ammonium nickel sulfate hexahydrate. Identity/label
+    existence is separate from exact supplied form and source-specific ingredient
+    support.
+  snapshot_sha256: 930d93c33f6115f19153868ae36f0153b69406fd555708237a7ccccfb010cd97
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86159
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86159
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T10:35:29.712666Z'
+  support: supports
+  summary: CHEBI:86159 resolves to calcium nitrate tetrahydrate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: d2b0e9caef5876c00ed00136113d600d34a071b137bdd8c661c734ad5435682f
+- evidence_id: chebi86360
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86360
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:05.958063Z'
+  support: supports
+  summary: CHEBI:86360 resolves to manganese(II) sulfate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: ee3b60385f389c4eeb301cfe59996112ffa9c3c135268559b79e91810a14932b
+- evidence_id: chebi86463
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86463
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T11:02:39.332956Z'
+  support: supports
+  summary: CHEBI:86463 resolves to potassium aluminium sulfate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 59060418cddd95e8401be3d2518a69fbcd26a4f4e6f0597b2c8c03834a87812e
+- evidence_id: chebi86466
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86466
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T10:35:29.714424Z'
+  support: supports
+  summary: CHEBI:86466 resolves to potassium tetrathionate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 8615f5a4f3b7210ec429cec78659e70bc7472cbd8573475ac23c212408617f01
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identity/label
+    existence is separate from exact supplied form and source-specific ingredient
+    support.
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned index exact identifier lookup; adjacent source revision/hash
+  accessed_at: '2026-10-21T11:29:28Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "asserted_secondary_rows":
+    {"CHEBI:131527": [{"label": "Dibasic potassium phosphate", "match_type": "synonym",
+    "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Dipotassium hydrogen
+    phosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term":
+    "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Dipotassium hydrogenorthophosphate", "match_type": "synonym",
+    "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Dipotassium monohydrogen
+    phosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term":
+    "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Dipotassium monophosphate", "match_type": "synonym", "identifier":
+    "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Dipotassium orthophosphate", "match_type":
+    "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label":
+    "Dipotassium phosphate", "match_type": "synonym", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Hydrogen dipotassium phosphate", "match_type":
+    "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label":
+    "K 2HPO4", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term":
+    "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "K2HPO", "match_type": "synonym", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "K2HPO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "K2HPO4(Sigma P 3786)", "match_type":
+    "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label":
+    "KH2HPO4", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term":
+    "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Phosphoric acid, dipotassium salt", "match_type": "synonym",
+    "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium dibasic
+    phosphate", "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term":
+    "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Potassium monohydrogen phosphate", "match_type": "synonym",
+    "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium monophosphate",
+    "match_type": "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4",
+    "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Potassium phosphate (dibasic)", "match_type": "synonym", "identifier":
+    "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Potassium phosphate dibasic", "match_type":
+    "synonym", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710":
+    [{"label": "1% Sodium Chloride", "match_type": "synonym", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "chlorure de sodium", "match_type": "synonym",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "cloruro sodico",
+    "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl",
+    "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "common salt", "match_type": "synonym", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Kochsalz", "match_type": "synonym", "identifier":
+    "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "NaCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaCl (Fisher S271-500)",
+    "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl",
+    "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "NaCl(Fisher S271-500)", "match_type": "synonym", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "natrii chloridum", "match_type": "synonym",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Natriumchlorid",
+    "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl",
+    "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "rock salt", "match_type": "synonym", "identifier": "CHEBI:26710", "preferred_term":
+    "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "salt", "match_type": "synonym", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Sodium Chloride", "match_type": "synonym",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "table salt", "match_type":
+    "synonym", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id":
+    "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440":
+    [{"label": "Copper (II) sulfate pentahydrate", "match_type": "synonym", "identifier":
+    "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper sulfate
+    pentahydrate", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term":
+    "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "copper sulphate(5.H2O)", "match_type": "synonym", "identifier":
+    "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(2+) sulfate
+    (1:1) pentahydrate", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term":
+    "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "copper(2+) sulfate pentahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id":
+    "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(2+)
+    sulfate--water (1/5)", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term":
+    "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "copper(II) sulfate pentahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id":
+    "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(II)
+    sulfate, pentahydrate", "match_type": "synonym", "identifier": "CHEBI:31440",
+    "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "cupric sulfate pentahydrate", "match_type":
+    "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id":
+    "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO
+    .5H O", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term":
+    "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CuSO4 . 5H2O", "match_type": "synonym", "identifier": "CHEBI:31440",
+    "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4 .5H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id":
+    "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4
+    x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term":
+    "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CuSO4 x 5H2O", "match_type": "synonym", "identifier": "CHEBI:31440",
+    "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4 · 5H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id":
+    "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4
+    ⋅ 5H2O", "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term":
+    "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CuSO4*5 H2O", "match_type": "synonym", "identifier": "CHEBI:31440",
+    "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4.5H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id":
+    "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuSO4·5H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31440", "preferred_term": "CuSO4
+    x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CuSO4・5H2O", "match_type": "synonym", "identifier": "CHEBI:31440",
+    "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": ".MgSO4", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": ".MgSO4 x 7 H2O", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4 x 7 H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "bitter salt", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "epsom salt", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "epsomite", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label":
+    "magnesium sulfate (1:1) heptahydrate", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate
+    (1:1) heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "magnesium sulfate anhydrous", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Magnesium sulfate
+    heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate
+    heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water
+    (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "magnesium sulfate--water (1/7)", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water
+    (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "magnesium sulphate", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulphate
+    heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "magnesium sulphate heptahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium(II) sulfate",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO .7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO
+    4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO 4", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO 4 x 7 H2O", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO
+    4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO x 7 H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "MgSO2 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2 x 7 H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2·7H2O", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4
+    . 7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "MgSO4 . H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H20", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4
+    x 7 H20", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O (0.1%
+    w/v)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "MgSO4 x 7 H2O (100 mM)", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O solution (25%)",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "MgSO4 x 7 H2O to 15.0 g).", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "MgSO4 x7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 · 7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "MgSO4 ·7H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4.7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4.7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO47H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO47H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4x7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4x7H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·7H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4·7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4•7H2O (Sigma 230391)", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O (Sigma
+    230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4•7H2O(CAS: 10034-99-8)", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(CAS:
+    10034-99-8)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4•7H2O(Sigma 230391)", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(Sigma
+    230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "sulfuric acid magnesium salt", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric
+    acid magnesium salt heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid magnesium salt heptahydrate",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "sulphate of magnesia", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32149": [{"label": "disodium sulfate",
+    "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4",
+    "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "disodium sulphate", "match_type": "synonym", "identifier": "CHEBI:32149",
+    "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Glauber''s salt", "match_type": "synonym",
+    "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Glaubersalz", "match_type":
+    "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id":
+    "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2SO4",
+    "match_type": "preferred_term", "identifier": "CHEBI:32149", "preferred_term":
+    "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "NaSO4", "match_type": "synonym", "identifier": "CHEBI:32149",
+    "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Natriumsulfat", "match_type": "synonym", "identifier":
+    "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "salt cake", "match_type": "synonym",
+    "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium Sulfate",
+    "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4",
+    "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "sodium sulphate", "match_type": "synonym", "identifier": "CHEBI:32149",
+    "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32312": [{"label": "zinc sulfate (1:1) heptahydrate",
+    "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4
+    x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Zinc sulfate heptahydrate", "match_type": "synonym", "identifier":
+    "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "zinc sulfate heptahydrate
+    (1:1:7)", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "zinc(2+) sulfate heptahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "zinc(2+)
+    sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Zn2SO4·7H2O", "match_type": "synonym", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 . 7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4
+    .7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 x 7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4
+    x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ZnSO4 · 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 × 7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4
+    ⋅ 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ZnSO4*7 H2O", "match_type": "synonym", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4*7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4-7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4
+    x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ZnSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4·7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4∙7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4
+    x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ZnSO4⋅7H2O", "match_type": "synonym", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4・7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4･7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4
+    x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32588": [{"label": "[KCl]", "match_type": "synonym", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Kaliumchlorid", "match_type": "synonym",
+    "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Kaon-Cl 10", "match_type":
+    "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl",
+    "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term":
+    "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "KCl (Fisher P 217)", "match_type": "synonym", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "KCl(CAS: 7447-40-7)", "match_type":
+    "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl(CAS:7447-40-7)",
+    "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl",
+    "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "KCl(Fisher P 217)", "match_type": "synonym", "identifier": "CHEBI:32588",
+    "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Klor-con", "match_type": "synonym", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Klotrix", "match_type": "synonym",
+    "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium chloride",
+    "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl",
+    "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "muriate of potash", "match_type": "synonym", "identifier": "CHEBI:32588",
+    "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Potassium Chloride", "match_type": "synonym",
+    "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sylvite", "match_type":
+    "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118":
+    [{"label": "[B(OH)3]", "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term":
+    "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "B(OH)3", "match_type": "synonym", "identifier": "CHEBI:33118",
+    "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Boric acid", "match_type": "synonym", "identifier":
+    "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "boron trihydroxide", "match_type":
+    "synonym", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id":
+    "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "H
+    BO", "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term": "H3BO3",
+    "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "H3BO", "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term":
+    "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118",
+    "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "H3BO3(Baker 0084)", "match_type": "synonym",
+    "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "orthoboric acid",
+    "match_type": "synonym", "identifier": "CHEBI:33118", "preferred_term": "H3BO3",
+    "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "trihydroxidoboron", "match_type": "synonym", "identifier": "CHEBI:33118",
+    "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:34887": [{"label": "[NiCl2]", "match_type": "synonym",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nickel chloride",
+    "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2",
+    "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "nickel chloride", "match_type": "synonym", "identifier": "CHEBI:34887",
+    "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "nickel dichloride", "match_type": "synonym",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "nickel(2+) chloride",
+    "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2",
+    "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Nickel(II) chloride", "match_type": "synonym", "identifier": "CHEBI:34887",
+    "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "nickel(II) chloride", "match_type": "synonym",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NiCl 2", "match_type":
+    "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id":
+    "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NiCl2",
+    "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term":
+    "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:44557": [{"label": "alpha,alpha'',alpha''''-trimethylaminetricarboxylic
+    acid", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term":
+    "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Complexon I", "match_type": "synonym", "identifier":
+    "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "H3nta", "match_type":
+    "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid",
+    "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Komplexon I", "match_type": "synonym", "identifier": "CHEBI:44557",
+    "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "N(CH2-COOH)3", "match_type": "synonym",
+    "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id":
+    "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "N,N-bis(carboxymethyl)glycine",
+    "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic
+    acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "nitrilo-2,2'',2''''-triacetic acid", "match_type": "synonym",
+    "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id":
+    "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nitrilotriacetic
+    acid", "match_type": "preferred_term", "identifier": "CHEBI:44557", "preferred_term":
+    "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Nitrilotriacetic acid (NTA)", "match_type":
+    "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid",
+    "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Nitrilotriessigsaeure", "match_type": "synonym", "identifier": "CHEBI:44557",
+    "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "tri(carboxymethyl)amine", "match_type":
+    "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid",
+    "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "triglycine", "match_type": "synonym", "identifier": "CHEBI:44557",
+    "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Triglycollamic acid", "match_type":
+    "synonym", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid",
+    "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Trilon A", "match_type": "synonym", "identifier": "CHEBI:44557", "preferred_term":
+    "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:48843": [{"label": "disodium selenite", "match_type":
+    "synonym", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id":
+    "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "disodium
+    selenium trioxide", "match_type": "synonym", "identifier": "CHEBI:48843", "preferred_term":
+    "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Na2Se2O3", "match_type": "synonym", "identifier": "CHEBI:48843",
+    "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Na2SeO3", "match_type": "preferred_term", "identifier":
+    "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Natriumselenit", "match_type": "synonym",
+    "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "selenious acid
+    (H2SeO3) disodium salt", "match_type": "synonym", "identifier": "CHEBI:48843",
+    "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "selenious acid disodium salt", "match_type":
+    "synonym", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id":
+    "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "selenious
+    acid, disodium salt", "match_type": "synonym", "identifier": "CHEBI:48843", "preferred_term":
+    "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "selenious acid, sodium salt (1:2)", "match_type": "synonym",
+    "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium selenite",
+    "match_type": "synonym", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3",
+    "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:62946": [{"label": "(NH4)2 SO4", "match_type": "synonym", "identifier":
+    "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2S4", "match_type": "synonym",
+    "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "(NH4)2SO4(Fisher A 702)", "match_type": "synonym", "identifier": "CHEBI:62946",
+    "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Ammonium Sulfate", "match_type":
+    "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id":
+    "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium
+    sulfate (2:1)", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term":
+    "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ammonium sulphate", "match_type": "synonym", "identifier":
+    "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "diammonium sulfate", "match_type":
+    "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id":
+    "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "diazanium
+    sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term":
+    "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "mascagnite", "match_type": "synonym", "identifier": "CHEBI:62946",
+    "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid ammonium salt (1:2)",
+    "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "sulfuric acid, diammonium salt", "match_type": "synonym", "identifier":
+    "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "sulphate of ammonia", "match_type":
+    "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id":
+    "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939":
+    [{"label": "Disodium tetraoxotungstate", "match_type": "synonym", "identifier":
+    "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na-tungstate x
+    2 H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term":
+    "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Na2WO2 x 2 H2O", "match_type": "synonym", "identifier":
+    "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO2.2H2O", "match_type":
+    "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id":
+    "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4
+    . 2H2O", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term":
+    "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4 x 2 H2O
+    (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term":
+    "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Na2WO4 × 2H2O", "match_type": "synonym", "identifier": "CHEBI:63939",
+    "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4*2H2O", "match_type": "synonym",
+    "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id":
+    "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4.2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4
+    x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Na2WO4·2H2O", "match_type": "synonym", "identifier": "CHEBI:63939",
+    "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4•2H2O", "match_type": "synonym",
+    "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id":
+    "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2WO4・2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4
+    x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "NaWO4·2H2O", "match_type": "synonym", "identifier": "CHEBI:63939",
+    "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "sodium dioxido(dioxo)tungsten--water
+    (1/2)", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term":
+    "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "sodium orthotungstate dihydrate", "match_type": "synonym",
+    "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id":
+    "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium
+    tetraoxotungstate(VI)", "match_type": "synonym", "identifier": "CHEBI:63939",
+    "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Sodium tungstate dihydrate", "match_type":
+    "synonym", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id":
+    "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium
+    tungstate(VI)", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term":
+    "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "sodium tungstate(VI) dihydrate", "match_type": "synonym",
+    "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id":
+    "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium
+    tungsten oxide", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term":
+    "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Sodium wolframate", "match_type": "synonym", "identifier":
+    "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Tungstic acid,
+    disodium salt", "match_type": "synonym", "identifier": "CHEBI:63939", "preferred_term":
+    "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Tungstic acid, sodium salt, dihydrate", "match_type": "synonym",
+    "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id":
+    "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213":
+    [{"label": "Disodium molybdate dihydrate", "match_type": "synonym", "identifier":
+    "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Molybdic acid,
+    disodium salt, dihydrate", "match_type": "synonym", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Na2 MoO4 x 2 H2O", "match_type":
+    "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2Mo4
+    x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Na2MO4.2H2O", "match_type": "synonym", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4 . 2H2O", "match_type": "synonym",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label":
+    "Na2MoO4 . H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4 x 2 H2O
+    (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "Na2MoO4 x 2H2O", "match_type": "synonym", "identifier":
+    "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4 · 2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O",
+    "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "Na2MoO4 · H2O", "match_type": "synonym", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4 ⋅ 2H2O", "match_type":
+    "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label":
+    "Na2MoO4*2 H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Na2MoO4*2H2O", "match_type": "synonym", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4-2H2O", "match_type": "synonym",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4.
+    2H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "Na2MoO4.2H2O", "match_type": "synonym", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4.H2O", "match_type": "synonym",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label":
+    "Na2MoO4xH2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "Na2MoO4·2H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4·2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4
+    x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Na2MoO4⋅2H2O", "match_type": "synonym", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4·2H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "Na2MoO4・2H2O", "match_type": "synonym",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4·2H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label":
+    "Na2MoO7 x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Na2MoO7O4 x 2 H2O", "match_type": "synonym", "identifier":
+    "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO7・2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4
+    x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Na2MoSO4", "match_type": "synonym", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoSO4 x 2 H2O", "match_type":
+    "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaMoO4",
+    "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4
+    x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "NaMoO4 x 2 H2O", "match_type": "synonym", "identifier":
+    "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaMoO4 · 2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4
+    x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "NaMoO4.2H2O", "match_type": "synonym", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "sodium dioxido(dioxo)molybdenum--water
+    (1/2)", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Sodium Molybdate Dihydrate", "match_type": "synonym", "identifier":
+    "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium molybdate(VI)
+    dihydrate", "match_type": "synonym", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "sodium orthomolybdate dihydrate", "match_type": "synonym",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75832":
+    [{"label": "Fe(II)SO4", "match_type": "synonym", "identifier": "CHEBI:75832",
+    "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Ferrous sulfate", "match_type": "synonym",
+    "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ferrous sulfate
+    (anh.)", "match_type": "synonym", "identifier": "CHEBI:75832", "preferred_term":
+    "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "FeSO .7H O", "match_type": "synonym", "identifier": "CHEBI:75832",
+    "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "FeSO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "iron sulfate (1:1)", "match_type":
+    "synonym", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id":
+    "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "iron(2+)
+    sulfate", "match_type": "synonym", "identifier": "CHEBI:75832", "preferred_term":
+    "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "iron(2+) sulfate (anh.)", "match_type": "synonym", "identifier":
+    "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate (anhydrous)", "match_type":
+    "ontology_label", "identifier": "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id":
+    "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Iron(II)
+    sulfate", "match_type": "synonym", "identifier": "CHEBI:75832", "preferred_term":
+    "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "iron(II) sulfate (1:1)", "match_type": "synonym", "identifier":
+    "CHEBI:75832", "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "Fe SO4 x 7 H2O",
+    "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4
+    x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ferrous sulfate heptahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ferrous
+    sulfate.7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "FeSO4 . 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4
+    x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "FeSO4 x 7H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:75836", "preferred_term": "FeSO4 x 7H2O", "ontology_id": "CHEBI:75836",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "FeSO4 x 7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4
+    x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "FeSO4 x7 H2O", "match_type": "synonym", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "FeSO4 x7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4
+    · 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "FeSO4 ⋅ 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4.7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4·7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4
+    x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "FeSO4⋅7H2O", "match_type": "synonym", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4・7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Iron
+    (II) sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate heptahydrate", "match_type":
+    "ontology_label", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O",
+    "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "iron(2+) sulfate heptahydrate", "match_type": "ontology_label", "identifier":
+    "CHEBI:75836", "preferred_term": "FeSO4 x 7H2O", "ontology_id": "CHEBI:75836",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate--water
+    (1/7)", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Iron(II) sulfate heptahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86149":
+    [{"label": "(NH4)2Ni(SO4)2", "match_type": "preferred_term", "identifier": "CHEBI:86149",
+    "preferred_term": "(NH4)2Ni(SO4)2", "ontology_id": "CHEBI:86149", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2 x 6 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2
+    x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "(NH4)2Ni(SO4)2 x 6 H2O (0.1% w/v)", "match_type": "synonym",
+    "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2", "ontology_id":
+    "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2
+    x 6 H2O (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term":
+    "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2.6H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id":
+    "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2·6H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2
+    x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "(NH4)2Ni(SO4)2•6H2O", "match_type": "synonym", "identifier":
+    "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2", "ontology_id": "CHEBI:86149",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2Ni(SO4)2•6H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2
+    x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "(NH4)2Ni(SO4)2・6H2O", "match_type": "synonym", "identifier":
+    "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium nickel
+    sulfate hexahydrate", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term":
+    "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "ammonium nickel sulfate hexahydrate", "match_type":
+    "ontology_label", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2",
+    "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Ammonium nickel(2+) sulfate hexahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id":
+    "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium
+    nickel(2+) sulfate--water (2/1/2/6)", "match_type": "synonym", "identifier": "CHEBI:86149",
+    "preferred_term": "(NH4)2Ni(SO4)2", "ontology_id": "CHEBI:86149", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ammonium nickel(2+) sulfate--water
+    (2/1/2/6)", "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term":
+    "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "ammonium nickel(II) sulfate hexahydrate", "match_type":
+    "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6
+    H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Diammonium nickel disulfate hexahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id":
+    "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nickel
+    ammonium sulfate hexahydrate", "match_type": "synonym", "identifier": "CHEBI:86149",
+    "preferred_term": "(NH4)2Ni(SO4)2 x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Nickel diammonium disulfate hexahydrate",
+    "match_type": "synonym", "identifier": "CHEBI:86149", "preferred_term": "(NH4)2Ni(SO4)2
+    x 6 H2O", "ontology_id": "CHEBI:86149", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86158": [{"label": "CaCl 2 X 2 H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2  x
+    2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2 . 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x  2 H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2
+    x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2 x 2 H2O (0.1% w/v)", "match_type": "synonym", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O (50
+    g/l stock solution)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2 x 2 H2O (5M)", "match_type": "synonym", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O solution
+    (7%)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2 x 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x2H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2
+    · 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2 × 2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 × 2 H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CaCl2*2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2
+    x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2*2H2O", "match_type": "synonym", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "CaCl2. 2H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2.2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2
+    x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl22H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "REJECTED", "ambiguity": "resolved:owned"}, {"label": "CaCl22H2O", "match_type":
+    "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}, {"label":
+    "CaCl2x 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2x2H2O", "match_type": "synonym", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2·2H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2•2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2
+    x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2•2H2O (Sigma C-3881)", "match_type": "synonym", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2•2H2O(CAS:
+    10035-04-8)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2•2H2O(Sigma C-3881)", "match_type": "synonym", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Calcium chloride
+    dihydrate", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "calcium chloride dihydrate", "match_type": "ontology_label",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "calcium chloride--water
+    (1/2)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "calcium chloride--water (1/2)", "match_type": "synonym",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}], "CHEBI:86159": [{"label":
+    "(1)  Ca(NO3)2", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term":
+    "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "(1)  Ca(NO3)2.4H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id":
+    "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2
+    x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86159", "preferred_term":
+    "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Ca(NO3)2 x 4 H2O (0.1% w/v)", "match_type":
+    "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O",
+    "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Ca(NO3)2 · 4H2O", "match_type": "synonym", "identifier": "CHEBI:86159",
+    "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2.4H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id":
+    "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2x4H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2
+    x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Ca(NO3)2·4H2O", "match_type": "synonym", "identifier": "CHEBI:86159",
+    "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2•4H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id":
+    "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2•4H2O(CAS:
+    13477-34-4)", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term":
+    "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Ca(NO3)2・4H2O", "match_type": "synonym", "identifier":
+    "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Calcium dinitrate
+    tetrahydrate", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term":
+    "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Calcium nitrate tetrahydrate", "match_type":
+    "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O",
+    "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "calcium nitrate--water (1/4)", "match_type": "synonym", "identifier":
+    "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86463": [{"label":
+    "AlK(SO4)2", "match_type": "preferred_term", "identifier": "CHEBI:86463", "preferred_term":
+    "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Aluminium potassium bis(sulphate)", "match_type": "synonym",
+    "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "aluminium potassium
+    sulfate (1/1/2)", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term":
+    "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Aluminum potassium alum", "match_type": "synonym", "identifier":
+    "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Aluminum potassium disulfate", "match_type":
+    "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id":
+    "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Aluminum
+    potassium sulfate", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term":
+    "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "aluminum potassium sulfate", "match_type": "synonym", "identifier":
+    "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Burnt potassium alum", "match_type":
+    "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id":
+    "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KAl(SO4)2",
+    "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2",
+    "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Na SiO .9H O", "match_type": "synonym", "identifier": "CHEBI:86463",
+    "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Potash alum", "match_type": "synonym",
+    "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "potassium alum",
+    "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2",
+    "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "potassium aluminium sulfate", "match_type": "synonym", "identifier":
+    "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Potassium aluminum alum", "match_type":
+    "synonym", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id":
+    "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "potassium
+    aluminum disulfate", "match_type": "synonym", "identifier": "CHEBI:86463", "preferred_term":
+    "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ZnSO .7H O", "match_type": "synonym", "identifier": "CHEBI:86463",
+    "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86466": [{"label": "Dipotassium tetrathionate",
+    "match_type": "synonym", "identifier": "CHEBI:86466", "preferred_term": "K2S4O6",
+    "ontology_id": "CHEBI:86466", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "K2S4O6", "match_type": "preferred_term", "identifier": "CHEBI:86466",
+    "preferred_term": "K2S4O6", "ontology_id": "CHEBI:86466", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Potassium tetrathionate", "match_type": "synonym",
+    "identifier": "CHEBI:86466", "preferred_term": "K2S4O6", "ontology_id": "CHEBI:86466",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Tetrathionic acid,
+    dipotassium salt", "match_type": "synonym", "identifier": "CHEBI:86466", "preferred_term":
+    "K2S4O6", "ontology_id": "CHEBI:86466", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:91244": [{"label": "Cobalt sulfate heptahydrate", "match_type":
+    "synonym", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id":
+    "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "cobalt(2+)
+    sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:91244",
+    "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "CoSO4 . 7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id":
+    "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CoSO4
+    x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term":
+    "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CoSO4 ⋅ 7H2O", "match_type": "synonym", "identifier": "CHEBI:91244",
+    "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "CoSO4.7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id":
+    "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CoSO4·7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:91244", "preferred_term": "CoSO4
+    x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CoSO4・7H2O", "match_type": "synonym", "identifier": "CHEBI:91244",
+    "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, "missing_current_keys": [], "legacy_instances":
+    [{"input": "target", "field_path": "ingredients[22].mediaingredientmech_term",
+    "term": {"id": "MediaIngredientMech:000198", "label": "Na2SeO4"}}, {"input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[22].mediaingredientmech_term", "term": {"id": "MediaIngredientMech:000198",
+    "label": "Na2SeO4"}}]}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: legacy-catalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Entire 2953-row pinned public ingredient catalog at revision 6643131b0f12ab40b66f98135245fca04027e0e9
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: context_only
+  summary: Current catalog was available and inspected; no exact legacy numeric ID
+    occurs. This bounded current snapshot does not establish the historical correspondence
+    of MediaIngredientMech:000198.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: legacy-tree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Entire untruncated recursive Git tree for the same pinned revision
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: context_only
+  summary: Current repository identity and tree were available. Their lack of the
+    historical numeric object does not verify its asserted correspondence or justify
+    a guessed replacement.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: legacy-search
+  kind: search
+  reference: owned repository and pinned MIM index
+  locator: Exact legacy ID lookup including ignored/hidden files
+  accessed_at: '2026-10-21T11:29:28Z'
+  support: context_only
+  summary: 'data/normalized_yaml/archaea/modified_picrophilus_medium.yaml:245:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/fungal/ferrous_iron_yeast_extract_medium.yaml:174:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/KOMODO_792_PYROLOBUS_FUMARII_MEDIUM.yaml:206:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/specialized/modified_marine_medium.yaml:118:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/KOMODO_1083_ACIDULIPROFUNDUM_medium.yaml:213:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/KOMODO_766_THERMOCOCCUS_CHITINOPHAGUS_MEDIUM.yaml:66:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/pyrobaculum_aerophilum_medium.yaml:54:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/methanogen_ms_i_medium.yaml:226:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/pyrolobus_medium.yaml:228:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/pyrolobus_fumarii_medium.yaml:215:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/specialized/anaerobic_alkaline_glucose_medium.yaml:182:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/methanosphaera_medium.yaml:54:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/aciduliprofundum_medium.yaml:212:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/methanosphaera_medium_i.yaml:55:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/specialized/fe_iii_reducer_marine_enrichment_medium.yaml:128:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/thermofilum_medium.yaml:86:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/thermococcus_chitinophagus_medium.yaml:65:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/pfennig_thermofilum_medium.yaml:182:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/archaeoglobus_infectus_medium.yaml:199:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/archaea/JCM_J355_METHANOSPHAERA_MEDIUM.yaml:57:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/syphc_medium.yaml:212:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/modified_sulfate_reducing_bacteria_medium.yaml:128:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/thermogutta_hypogea_medium.yaml:177:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/plantomycetaceae_medium.yaml:150:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml:242:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/sypc_medium.yaml:137:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/JCM_J470_VULCANIBACILLUS_MEDIUM.yaml:210:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/kiritimatiella_tyg_medium.yaml:175:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/desulfamplus_medium.yaml:223:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/mo_cfxi_medium.yaml:182:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/halarsenatibacter_medium.yaml:115:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/spirochaeta_cellobiosiphila_medium.yaml:136:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/tanner_mod2_medium.yaml:215:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/maridesulfovibrio_medium.yaml:161:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/vulcanithermus_medium.yaml:265:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/meiothermus_hypogaeus_medium.yaml:213:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/nautilia_nitratireducens_medium.yaml:208:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/KOMODO_977_VULCANITHERMUS_medium.yaml:266:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/KOMODO_1042_VULCANIBACILLUS_medium.yaml:211:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/ignavibacteria_medium.yaml:140:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/congregibacter_syphc_medium.yaml:184:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/thermovibrio_ammonificans_medium.yaml:205:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/mariprofundus_es_medium.yaml:220:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/desulfuromusa_ferrireducens_medium.yaml:171:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/KOMODO_1030_SMITHELLA_medium.yaml:193:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/aquifex_medium.yaml:137:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/caminibacter_mediatlanticus_medium.yaml:205:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/thermincola_medium_co.yaml:206:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/for_dsm_22131.yaml:211:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/alkaliphilus_crotonatoxidans_medium.yaml:199:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/acidithrix_ferrooydans_medium.yaml:245:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/thermodesulfitimonas_medium.yaml:225:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/methylomonas_medium_surf.yaml:285:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/svx8_medium.yaml:183:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/fe_iii_reducer_freshwater_enrichment_medium.yaml:84:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/smithella_medium.yaml:192:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/modified_desulfoglaeba_medium.yaml:210:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/st65_medium.yaml:183:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/methylomonas_medium_wsc.yaml:286:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/acidihalobacter_prosperus_f5_medium.yaml:161:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/jcm_medium_no_244.yaml:216:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/es_medium_marine.yaml:219:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/medium_for_sm250.yaml:144:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/KOMODO_1041_SYFAC_medium.yaml:172:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/ytps_medium.yaml:134:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/1_2_sme_medium_for_ya.yaml:213:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/metallibacterium_medium.yaml:194:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/thermohalobacter_medium.yaml:233:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/methylocystis_medium_nls.yaml:84:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/KOMODO_1049_SELENATE_REDUCER_MEDIUM.yaml:114:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/thermodesulfobacterium_hydrogenophilum_medium.yaml:142:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/desulfoglaeba_medium.yaml:211:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/vulcanibacillus_medium.yaml:212:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/thermoanaerobaculum_aquaticum_medium.yaml:235:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/JCM_J889_METALLIBACTERIUM_MEDIUM.yaml:197:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/sea_salts_tyg_medium.yaml:176:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/hydrogenophilus_hirschii_medium.yaml:116:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/dissulfurimicrobium_hydrothermale_medium.yaml:163:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/KOMODO_534_MODIFIED_SME_MEDIUM.yaml:130:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/KOMODO_1092_THERMOSULFIDIBACTER_medium.yaml:162:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/ms_sulf_medium.yaml:226:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/sypg_medium.yaml:185:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/marispirochaeta_medium.yaml:153:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/thermobacter_roseum_medium.yaml:277:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/geobacter_nbaf_medium.yaml:104:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/gallionella_es_medium.yaml:199:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/thermincola_medium.yaml:207:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/for_dsm_15698_and_dsm_24425.yaml:206:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/for_dsm_17682.yaml:162:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/plantomycetaceae_medium_sbp2.yaml:253:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/desulfosporosinus_acidiphilus_medium.yaml:266:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/selenate_reducer_medium.yaml:114:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/freshwater_iron_gel_medium.yaml:64:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/modified_sme_medium.yaml:127:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/thermocrinis_albus_medium.yaml:135:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/sylc_medium.yaml:162:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/thermosulfidibacter_medium.yaml:161:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/medium_for_z_1701_z_1702.yaml:106:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/arc51_medium.yaml:200:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/hydrogenothermus_medium.yaml:148:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/dsm_16658.yaml:206:    id: MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/seawater_pyruvate_thiosulfate_medium.yaml:294:    id:
+    MediaIngredientMech:000198
+
+    data/normalized_yaml/bacterial/acetobacterium_submarinus_medium.yaml:42:    id:
+    MediaIngredientMech:000198
+
+    '
+  search_scope: rg --no-ignore --hidden -n -F MediaIngredientMech:000198 data/normalized_yaml
+    src/culturemech/data/mediaingredientmech; current repeated assertions are not
+    historical identity evidence.
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml; data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T11:29:28Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 10, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "events": 9, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:29:28Z'
+  support: context_only
+  summary: The current importer reads the first solution and recognizes referenced
+    stocks or percent-attributed liquid rows; molarity-attributed liquid rows without
+    solution IDs are outside that percent predicate. Current cleanup explicitly no
+    longer sums disagreeing duplicates, and the current merge compares formulation
+    assertions. The stored magnesium note/history documents an older sum; inspected
+    current code is not a replay or proof of historical execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:29:28Z'
+  support: context_only
+  summary: The current importer reads the first solution and recognizes referenced
+    stocks or percent-attributed liquid rows; molarity-attributed liquid rows without
+    solution IDs are outside that percent predicate. Current cleanup explicitly no
+    longer sums disagreeing duplicates, and the current merge compares formulation
+    assertions. The stored magnesium note/history documents an older sum; inspected
+    current code is not a replay or proof of historical execution.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:29:28Z'
+  support: context_only
+  summary: The current importer reads the first solution and recognizes referenced
+    stocks or percent-attributed liquid rows; molarity-attributed liquid rows without
+    solution IDs are outside that percent predicate. Current cleanup explicitly no
+    longer sums disagreeing duplicates, and the current merge compares formulation
+    assertions. The stored magnesium note/history documents an older sum; inspected
+    current code is not a replay or proof of historical execution.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact medium, source owner and scoped stock identities
+  outcome: supported
+  summary: CultureMech:003073 resolves to one normalized owner and its generated target.
+    The media_term J729, primary JCM 729, title and provider identity agree. JCM 151
+    and 244 support only their explicitly referenced stock subsections. There are
+    no asserted organism strains, growth experiments or variant links to infer from
+    the medium name.
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - trace-primary
+  - nise-primary
+  - provider
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 94 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[0].concentration\"\
+    ,\n    \"ingredient\": \"K2S4O6\",\n    \"existing\": {\n      \"value\": \"25\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"\
+    source_stage\": \"Filtered molar solution added after cooling\",\n    \"source_amount\"\
+    : {\n      \"value\": 25,\n      \"unit\": \"ml\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm729\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\",\n        \"source_locator\"\
+    : \"main table / post-cooling filtered additions, exact K2S4O6 row\",\n      \
+    \  \"exact_source_quote\": \"0.1 M K 2 S 4 O 6 solution 25.0 ml\",\n        \"\
+    snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"K2S4O6\\\",\\n                        \\\"compound_id\\\": 386,\\\
+    n                        \\\"attribute\\\": \\\"0.1 M\\\",\\n                \
+    \        \\\"amount\\\": 25,\\n                        \\\"unit\\\": \\\"ml\\\"\
+    ,\\n                        \\\"optional\\\": 0\\n                    }\",\n \
+    \       \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Represent the original liquid dose with\
+    \ its exact molar stock strength and preparation stage; the dose is not a mass\
+    \ concentration.\",\n    \"explanation\": \"The primary and provider describe\
+    \ a molar solution addition in ml. Neither supports the existing numeric value\
+    \ as g/L. No hydrate-dependent mass conversion is inferred.\"\n  },\n  {\n   \
+    \ \"input\": \"target\",\n    \"field_path\": \"ingredients[1].concentration\"\
+    ,\n    \"ingredient\": \"FeSO4\",\n    \"existing\": {\n      \"value\": \"10\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"\
+    source_stage\": \"Filtered molar solution added after cooling\",\n    \"source_amount\"\
+    : {\n      \"value\": 10,\n      \"unit\": \"ml\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm729\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\",\n        \"source_locator\"\
+    : \"main table / post-cooling filtered additions, exact FeSO4 row\",\n       \
+    \ \"exact_source_quote\": \"10 mM FeSO 4 solution (pH 2.0) 10.0 ml\",\n      \
+    \  \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"FeSO4\\\",\\n                        \\\"compound_id\\\": 595,\\\
+    n                        \\\"attribute\\\": \\\"pH 2.0, 10 mM\\\",\\n        \
+    \                \\\"amount\\\": 10,\\n                        \\\"unit\\\": \\\
+    \"ml\\\",\\n                        \\\"optional\\\": 0\\n                   \
+    \ }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Represent the original liquid dose with\
+    \ its exact molar stock strength and preparation stage; the dose is not a mass\
+    \ concentration.\",\n    \"explanation\": \"The primary and provider describe\
+    \ a molar solution addition in ml. Neither supports the existing numeric value\
+    \ as g/L. No hydrate-dependent mass conversion is inferred.\"\n  },\n  {\n   \
+    \ \"input\": \"target\",\n    \"field_path\": \"ingredients[2].concentration\"\
+    ,\n    \"ingredient\": \"Na2SO4\",\n    \"existing\": {\n      \"value\": \"14\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"\
+    source_stage\": \"UBS stock before 100 ml addition\",\n    \"source_amount\":\
+    \ {\n      \"value\": 14,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm729\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\",\n        \"source_locator\"\
+    : \"UBS solution subsection, exact Na2SO4 row\",\n        \"exact_source_quote\"\
+    : \"Na 2 SO 4 14.0 g\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Na2SO4\\\",\\n                        \\\"compound_id\\\": 110,\\\
+    n                        \\\"amount\\\": 14,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 14,\\n                 \
+    \       \\\"mmol_l\\\": 98.5638,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 14 g/L stock × 0.100 L / 1 L = 1.4 g/L. This is\
+    \ a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[3].concentration\"\
+    ,\n    \"ingredient\": \"(NH4)2SO4\",\n    \"existing\": {\n      \"value\": \"\
+    30\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n \
+    \   \"source_stage\": \"UBS stock before 100 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 30,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm729\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\",\n        \"source_locator\"\
+    : \"UBS solution subsection, exact (NH4)2SO4 row\",\n        \"exact_source_quote\"\
+    : \"(NH 4 ) 2 SO 4 30.0 g\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 30,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 30,\\n     \
+    \                   \\\"mmol_l\\\": 227.032,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 30 g/L stock × 0.100 L / 1 L = 3 g/L. This is\
+    \ a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[4].concentration\"\
+    ,\n    \"ingredient\": \"KCl\",\n    \"existing\": {\n      \"value\": \"1\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"UBS stock before 100 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 1,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact KCl row\",\n \
+    \       \"exact_source_quote\": \"KCl 1.0 g\",\n        \"snapshot_sha256\": \"\
+    cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n        \"\
+    parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n                  \
+    \      \\\"mmol_l\\\": 13.4138,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 1 g/L stock × 0.100 L / 1 L = 0.1 g/L. This is\
+    \ a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[5].concentration\"\
+    ,\n    \"ingredient\": \"MgSO4 x 7 H2O\",\n    \"existing\": {\n      \"value\"\
+    : \"8.0\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"UBS and Trace minerals are distinct stocks with unequal\
+    \ doses\",\n    \"source_amount\": {\n      \"value\": 5,\n      \"unit\": \"\
+    g\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact MgSO4 x 7 H2O\
+    \ row\",\n        \"exact_source_quote\": \"MgSO 4 ·7H 2 O 5.0 g\",\n        \"\
+    snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 5,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n      \
+    \                  \\\"mmol_l\\\": 20.286,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact MgSO4 x 7 H2O row\",\n        \"exact_source_quote\"\
+    : \"MgSO 4 ·7H 2 O 3.0 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 3,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 3,\\n      \
+    \                  \\\"mmol_l\\\": 12.1716,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Keep the two magnesium heptahydrate contributions\
+    \ in their separate stocks; do not sum undiluted stock strengths.\",\n    \"calculation\"\
+    : \"On the provider-declared 1 L receiving basis only: 5 g/L × 0.100 L + 3 g/L\
+    \ × 0.010 L = 0.53 g per declared batch, not 8 g/L. This illustration does not\
+    \ assert a measured final volume.\"\n  },\n  {\n    \"input\": \"target\",\n \
+    \   \"field_path\": \"ingredients[6].concentration\",\n    \"ingredient\": \"\
+    K2HPO4\",\n    \"existing\": {\n      \"value\": \"0.5\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\": \"UBS\
+    \ stock before 100 ml addition\",\n    \"source_amount\": {\n      \"value\":\
+    \ 0.5,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact K2HPO4 row\",\n\
+    \        \"exact_source_quote\": \"K 2 HPO 4 0.5 g\",\n        \"snapshot_sha256\"\
+    : \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n    \
+    \    \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\": 10,\\\
+    n                        \\\"amount\\\": 0.5,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n                \
+    \        \\\"mmol_l\\\": 2.87066,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.5 g/L stock × 0.100 L / 1 L = 0.05 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[7].concentration\"\
+    ,\n    \"ingredient\": \"Ca(NO3)2 x 4 H2O\",\n    \"existing\": {\n      \"value\"\
+    : \"0.14\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"UBS stock before 100 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 0.14,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm729\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\",\n        \"source_locator\"\
+    : \"UBS solution subsection, exact Ca(NO3)2 x 4 H2O row\",\n        \"exact_source_quote\"\
+    : \"Ca(NO 3 ) 2 ·4H 2 O 0.14 g\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Ca(NO3)2 x 4 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 213,\\n                        \\\"amount\\\": 0.14,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.14,\\\
+    n                        \\\"mmol_l\\\": 0.592846,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.14 g/L stock × 0.100 L / 1 L = 0.014 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[8].concentration\"\
+    ,\n    \"ingredient\": \"Nitrilotriacetic acid\",\n    \"existing\": {\n     \
+    \ \"value\": \"1.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\":\
+    \ \"correct\",\n    \"source_stage\": \"Trace stock before 10 ml addition\",\n\
+    \    \"source_amount\": {\n      \"value\": 1.5,\n      \"unit\": \"g\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact Nitrilotriacetic\
+    \ acid row\",\n        \"exact_source_quote\": \"Nitrilotriacetic acid 1.5 g\"\
+    ,\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Nitrilotriacetic acid\\\",\\n                        \\\"compound_id\\\
+    \": 189,\\n                        \\\"amount\\\": 1.5,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.5,\\n\
+    \                        \\\"mmol_l\\\": 7.84765,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 1.5 g/L stock × 0.010 L / 1 L = 0.015 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[9].concentration\"\
+    ,\n    \"ingredient\": \"MnSO4 x n H2O\",\n    \"existing\": {\n      \"value\"\
+    : \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Trace stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 0.5,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact MnSO4 x n H2O row\",\n        \"exact_source_quote\"\
+    : \"MnSO 4 · x H 2 O 0.5 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"MnSO4 x n H2O\\\",\\n                        \\\"compound_id\\\
+    \": 1000,\\n                        \\\"amount\\\": 0.5,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.5 g/L stock × 0.010 L / 1 L = 0.005 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[10].concentration\"\
+    ,\n    \"ingredient\": \"NaCl\",\n    \"existing\": {\n      \"value\": \"1\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"\
+    source_stage\": \"Trace stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 1,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact NaCl row\",\n        \"exact_source_quote\"\
+    : \"NaCl 1.0 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\": 43,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n                  \
+    \      \\\"mmol_l\\\": 17.1116,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 1 g/L stock × 0.010 L / 1 L = 0.01 g/L. This is\
+    \ a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[11].concentration\"\
+    ,\n    \"ingredient\": \"FeSO4 x 7 H2O\",\n    \"existing\": {\n      \"value\"\
+    : \"0.1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Trace stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 0.1,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact FeSO4 x 7 H2O row\",\n        \"exact_source_quote\"\
+    : \"FeSO 4 ·7H 2 O 0.1 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.359693,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[12].concentration\"\
+    ,\n    \"ingredient\": \"CoSO4 x 7 H2O\",\n    \"existing\": {\n      \"value\"\
+    : \"0.1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Trace stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 0.1,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact CoSO4 x 7 H2O row\",\n        \"exact_source_quote\"\
+    : \"CoSO 4 ·7H 2 O 0.1 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"CoSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 198,\\n                        \\\"amount\\\": 0.1,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n\
+    \                        \\\"mmol_l\\\": 0.645178,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[13].concentration\"\
+    ,\n    \"ingredient\": \"CaCl2 x 2 H2O\",\n    \"existing\": {\n      \"value\"\
+    : \"0.1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Trace stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 0.1,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact CaCl2 x 2 H2O row\",\n        \"exact_source_quote\"\
+    : \"CaCl 2 ·2H 2 O 0.1 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"amount\\\": 0.1,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n  \
+    \                      \\\"mmol_l\\\": 0.680203,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[14].concentration\"\
+    ,\n    \"ingredient\": \"ZnSO4 x 7 H2O\",\n    \"existing\": {\n      \"value\"\
+    : \"0.1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Trace stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 0.1,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact ZnSO4 x 7 H2O row\",\n        \"exact_source_quote\"\
+    : \"ZnSO 4 ·7H 2 O 0.1 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.347752,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[15].concentration\"\
+    ,\n    \"ingredient\": \"CuSO4 x 5 H2O\",\n    \"existing\": {\n      \"value\"\
+    : \"0.01\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Trace stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 0.01,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact CuSO4 x 5 H2O row\",\n        \"exact_source_quote\"\
+    : \"CuSO 4 ·5H 2 O 0.01 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"CuSO4 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 121,\\n                        \\\"amount\\\": 0.01,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\\
+    n                        \\\"mmol_l\\\": 0.0400503,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[16].concentration\"\
+    ,\n    \"ingredient\": \"AlK(SO4)2\",\n    \"existing\": {\n      \"value\": \"\
+    0.01\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n\
+    \    \"source_stage\": \"Trace stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 0.01,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact AlK(SO4)2 row\",\n        \"exact_source_quote\"\
+    : \"AlK(SO 4 ) 2 0.01 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"AlK(SO4)2\\\",\\n                        \\\"compound_id\\\
+    \": 1015,\\n                        \\\"amount\\\": 0.01,\\n                 \
+    \       \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\\
+    n                        \\\"mmol_l\\\": 0.0387289,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[17].concentration\"\
+    ,\n    \"ingredient\": \"H3BO3\",\n    \"existing\": {\n      \"value\": \"0.01\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"\
+    source_stage\": \"Trace stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 0.01,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact H3BO3 row\",\n        \"exact_source_quote\"\
+    : \"H 3 BO 3 0.01 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"H3BO3\\\",\\n                        \\\"compound_id\\\":\
+    \ 37,\\n                        \\\"amount\\\": 0.01,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\n \
+    \                       \\\"mmol_l\\\": 0.161708,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[18].concentration\"\
+    ,\n    \"ingredient\": \"Na2MoO4 x 2 H2O\",\n    \"existing\": {\n      \"value\"\
+    : \"0.01\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Trace stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 0.01,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact Na2MoO4 x 2 H2O row\",\n        \"exact_source_quote\"\
+    : \"Na 2 MoO 4 ·2H 2 O 0.01 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[11]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 12,\\n                        \\\
+    \"compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 9,\\n                        \\\"amount\\\": 0.01,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\n\
+    \                        \\\"mmol_l\\\": 0.0413309,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[19].concentration\"\
+    ,\n    \"ingredient\": \"NiCl2 x 6 H2O\",\n    \"existing\": {\n      \"value\"\
+    : \"0.025\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Ni-Se-W stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 25,\n      \"unit\": \"mg\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm244\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\",\n        \"source_locator\"\
+    : \"Ni-Se-W solution subsection only, exact NiCl2 x 6 H2O row\",\n        \"exact_source_quote\"\
+    : \"NiCl 2 ·6H 2 O 25.0 mg\",\n        \"snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 40,\\n                        \\\"amount\\\": 25,\\n                     \
+    \   \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.025,\\\
+    n                        \\\"mmol_l\\\": 0.192903,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    solution\\\": \\\"Ni-Se-W solution\\\",\\n                        \\\"solution_id\\\
+    \": 3927,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.025 g/L stock × 0.010 L / 1 L = 0.00025 g/L.\
+    \ This is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[20].concentration\"\
+    ,\n    \"ingredient\": \"(NH4)2Ni(SO4)2 x 6 H2O\",\n    \"existing\": {\n    \
+    \  \"value\": \"2\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"\
+    correct\",\n    \"source_stage\": \"Ni-Se-W stock before 10 ml addition\",\n \
+    \   \"source_amount\": {\n      \"value\": 2,\n      \"unit\": \"g\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm244\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\"\
+    ,\n        \"source_locator\": \"Ni-Se-W solution subsection only, exact (NH4)2Ni(SO4)2\
+    \ x 6 H2O row\",\n        \"exact_source_quote\": \"(NH 4 ) 2 Ni(SO 4 ) 2 ·6H\
+    \ 2 O 2.0 g\",\n        \"snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2Ni(SO4)2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 739,\\n                        \\\"amount\\\": 2,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2,\\n    \
+    \                    \\\"mmol_l\\\": 5.06346,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    solution\\\": \\\"Ni-Se-W solution\\\",\\n                        \\\"solution_id\\\
+    \": 3927,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 2 g/L stock × 0.010 L / 1 L = 0.02 g/L. This is\
+    \ a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[21].concentration\"\
+    ,\n    \"ingredient\": \"Na2SeO3\",\n    \"existing\": {\n      \"value\": \"\
+    0.0003\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Ni-Se-W stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 0.3,\n      \"unit\": \"mg\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm244\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\",\n        \"source_locator\"\
+    : \"Ni-Se-W solution subsection only, exact Na2SeO3 row\",\n        \"exact_source_quote\"\
+    : \"Na 2 SeO 3 0.3 mg\",\n        \"snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"Na2SeO3\\\",\\n                        \\\"compound_id\\\":\
+    \ 699,\\n                        \\\"amount\\\": 0.3,\\n                     \
+    \   \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0003,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    solution\\\": \\\"Ni-Se-W solution\\\",\\n                        \\\"solution_id\\\
+    \": 3927,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.0003 g/L stock × 0.010 L / 1 L = 3e-06 g/L.\
+    \ This is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[22].concentration\"\
+    ,\n    \"ingredient\": \"Na2SeO4\",\n    \"existing\": {\n      \"value\": \"\
+    0.01\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n\
+    \    \"source_stage\": \"Ni-Se-W stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 10,\n      \"unit\": \"mg\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm244\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\",\n        \"source_locator\"\
+    : \"Ni-Se-W solution subsection only, exact Na2SeO4 row\",\n        \"exact_source_quote\"\
+    : \"Na 2 SeO 4 10.0 mg\",\n        \"snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Na2SeO4\\\",\\n                        \\\"compound_id\\\":\
+    \ 375,\\n                        \\\"amount\\\": 10,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.01,\\n \
+    \                       \\\"mmol_l\\\": 0.0529241,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    solution\\\": \\\"Ni-Se-W solution\\\",\\n                        \\\"solution_id\\\
+    \": 3927,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"ingredients[23].concentration\"\
+    ,\n    \"ingredient\": \"Na2WO4 x 2 H2O\",\n    \"existing\": {\n      \"value\"\
+    : \"0.01\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Ni-Se-W stock before 10 ml addition\",\n    \"source_amount\"\
+    : {\n      \"value\": 10,\n      \"unit\": \"mg\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm244\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\",\n        \"source_locator\"\
+    : \"Ni-Se-W solution subsection only, exact Na2WO4 x 2 H2O row\",\n        \"\
+    exact_source_quote\": \"Na 2 WO 4 ·2H 2 O 10.0 mg\",\n        \"snapshot_sha256\"\
+    : \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\",\n    \
+    \    \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Na2WO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 249,\\n                        \\\"amount\\\": 10,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.01,\\\
+    n                        \\\"mmol_l\\\": 0.0303168,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    solution\\\": \\\"Ni-Se-W solution\\\",\\n                        \\\"solution_id\\\
+    \": 3927,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[0].concentration\",\n    \"ingredient\":\
+    \ \"K2S4O6\",\n    \"existing\": {\n      \"value\": \"25\",\n      \"unit\":\
+    \ \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\": \"\
+    Filtered molar solution added after cooling\",\n    \"source_amount\": {\n   \
+    \   \"value\": 25,\n      \"unit\": \"ml\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"main table / post-cooling filtered additions,\
+    \ exact K2S4O6 row\",\n        \"exact_source_quote\": \"0.1 M K 2 S 4 O 6 solution\
+    \ 25.0 ml\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"K2S4O6\\\",\\n                        \\\"compound_id\\\": 386,\\\
+    n                        \\\"attribute\\\": \\\"0.1 M\\\",\\n                \
+    \        \\\"amount\\\": 25,\\n                        \\\"unit\\\": \\\"ml\\\"\
+    ,\\n                        \\\"optional\\\": 0\\n                    }\",\n \
+    \       \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Represent the original liquid dose with\
+    \ its exact molar stock strength and preparation stage; the dose is not a mass\
+    \ concentration.\",\n    \"explanation\": \"The primary and provider describe\
+    \ a molar solution addition in ml. Neither supports the existing numeric value\
+    \ as g/L. No hydrate-dependent mass conversion is inferred.\"\n  },\n  {\n   \
+    \ \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[1].concentration\",\n    \"ingredient\":\
+    \ \"FeSO4\",\n    \"existing\": {\n      \"value\": \"10\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\": \"Filtered\
+    \ molar solution added after cooling\",\n    \"source_amount\": {\n      \"value\"\
+    : 10,\n      \"unit\": \"ml\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"main table / post-cooling filtered additions,\
+    \ exact FeSO4 row\",\n        \"exact_source_quote\": \"10 mM FeSO 4 solution\
+    \ (pH 2.0) 10.0 ml\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"FeSO4\\\",\\n                        \\\"compound_id\\\": 595,\\\
+    n                        \\\"attribute\\\": \\\"pH 2.0, 10 mM\\\",\\n        \
+    \                \\\"amount\\\": 10,\\n                        \\\"unit\\\": \\\
+    \"ml\\\",\\n                        \\\"optional\\\": 0\\n                   \
+    \ }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Represent the original liquid dose with\
+    \ its exact molar stock strength and preparation stage; the dose is not a mass\
+    \ concentration.\",\n    \"explanation\": \"The primary and provider describe\
+    \ a molar solution addition in ml. Neither supports the existing numeric value\
+    \ as g/L. No hydrate-dependent mass conversion is inferred.\"\n  },\n  {\n   \
+    \ \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[2].concentration\",\n    \"ingredient\":\
+    \ \"Na2SO4\",\n    \"existing\": {\n      \"value\": \"14\",\n      \"unit\":\
+    \ \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\": \"\
+    UBS stock before 100 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 14,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact Na2SO4 row\",\n\
+    \        \"exact_source_quote\": \"Na 2 SO 4 14.0 g\",\n        \"snapshot_sha256\"\
+    : \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n    \
+    \    \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Na2SO4\\\",\\n                        \\\"compound_id\\\": 110,\\\
+    n                        \\\"amount\\\": 14,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 14,\\n                 \
+    \       \\\"mmol_l\\\": 98.5638,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 14 g/L stock × 0.100 L / 1 L = 1.4 g/L. This is\
+    \ a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"ingredient\":\
+    \ \"(NH4)2SO4\",\n    \"existing\": {\n      \"value\": \"30\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\": \"\
+    UBS stock before 100 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 30,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact (NH4)2SO4 row\"\
+    ,\n        \"exact_source_quote\": \"(NH 4 ) 2 SO 4 30.0 g\",\n        \"snapshot_sha256\"\
+    : \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n    \
+    \    \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 30,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 30,\\n     \
+    \                   \\\"mmol_l\\\": 227.032,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 30 g/L stock × 0.100 L / 1 L = 3 g/L. This is\
+    \ a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[4].concentration\",\n    \"ingredient\":\
+    \ \"KCl\",\n    \"existing\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"decision\": \"correct\",\n    \"source_stage\": \"UBS stock before\
+    \ 100 ml addition\",\n    \"source_amount\": {\n      \"value\": 1,\n      \"\
+    unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact KCl row\",\n \
+    \       \"exact_source_quote\": \"KCl 1.0 g\",\n        \"snapshot_sha256\": \"\
+    cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n        \"\
+    parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n                  \
+    \      \\\"mmol_l\\\": 13.4138,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 1 g/L stock × 0.100 L / 1 L = 0.1 g/L. This is\
+    \ a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[5].concentration\",\n    \"ingredient\":\
+    \ \"MgSO4 x 7 H2O\",\n    \"existing\": {\n      \"value\": \"8.0\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"UBS and Trace minerals are distinct stocks with unequal doses\",\n    \"source_amount\"\
+    : {\n      \"value\": 5,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm729\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\",\n        \"source_locator\"\
+    : \"UBS solution subsection, exact MgSO4 x 7 H2O row\",\n        \"exact_source_quote\"\
+    : \"MgSO 4 ·7H 2 O 5.0 g\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 5,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n      \
+    \                  \\\"mmol_l\\\": 20.286,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact MgSO4 x 7 H2O row\",\n        \"exact_source_quote\"\
+    : \"MgSO 4 ·7H 2 O 3.0 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 3,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 3,\\n      \
+    \                  \\\"mmol_l\\\": 12.1716,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Keep the two magnesium heptahydrate contributions\
+    \ in their separate stocks; do not sum undiluted stock strengths.\",\n    \"calculation\"\
+    : \"On the provider-declared 1 L receiving basis only: 5 g/L × 0.100 L + 3 g/L\
+    \ × 0.010 L = 0.53 g per declared batch, not 8 g/L. This illustration does not\
+    \ assert a measured final volume.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[6].concentration\",\n    \"ingredient\":\
+    \ \"K2HPO4\",\n    \"existing\": {\n      \"value\": \"0.5\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\": \"\
+    UBS stock before 100 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 0.5,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact K2HPO4 row\",\n\
+    \        \"exact_source_quote\": \"K 2 HPO 4 0.5 g\",\n        \"snapshot_sha256\"\
+    : \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n    \
+    \    \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\": 10,\\\
+    n                        \\\"amount\\\": 0.5,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n                \
+    \        \\\"mmol_l\\\": 2.87066,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.5 g/L stock × 0.100 L / 1 L = 0.05 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[7].concentration\",\n    \"ingredient\":\
+    \ \"Ca(NO3)2 x 4 H2O\",\n    \"existing\": {\n      \"value\": \"0.14\",\n   \
+    \   \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"UBS stock before 100 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 0.14,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact Ca(NO3)2 x 4 H2O\
+    \ row\",\n        \"exact_source_quote\": \"Ca(NO 3 ) 2 ·4H 2 O 0.14 g\",\n  \
+    \      \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Ca(NO3)2 x 4 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 213,\\n                        \\\"amount\\\": 0.14,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.14,\\\
+    n                        \\\"mmol_l\\\": 0.592846,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.14 g/L stock × 0.100 L / 1 L = 0.014 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[8].concentration\",\n    \"ingredient\":\
+    \ \"Nitrilotriacetic acid\",\n    \"existing\": {\n      \"value\": \"1.5\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Trace stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 1.5,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact Nitrilotriacetic\
+    \ acid row\",\n        \"exact_source_quote\": \"Nitrilotriacetic acid 1.5 g\"\
+    ,\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Nitrilotriacetic acid\\\",\\n                        \\\"compound_id\\\
+    \": 189,\\n                        \\\"amount\\\": 1.5,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.5,\\n\
+    \                        \\\"mmol_l\\\": 7.84765,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 1.5 g/L stock × 0.010 L / 1 L = 0.015 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[9].concentration\",\n    \"ingredient\":\
+    \ \"MnSO4 x n H2O\",\n    \"existing\": {\n      \"value\": \"0.5\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Trace stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 0.5,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact MnSO4 x\
+    \ n H2O row\",\n        \"exact_source_quote\": \"MnSO 4 · x H 2 O 0.5 g\",\n\
+    \        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"MnSO4 x n H2O\\\",\\n                        \\\"compound_id\\\
+    \": 1000,\\n                        \\\"amount\\\": 0.5,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.5 g/L stock × 0.010 L / 1 L = 0.005 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[10].concentration\",\n    \"ingredient\"\
+    : \"NaCl\",\n    \"existing\": {\n      \"value\": \"1\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\": \"Trace\
+    \ stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\": 1,\n\
+    \      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact NaCl row\"\
+    ,\n        \"exact_source_quote\": \"NaCl 1.0 g\",\n        \"snapshot_sha256\"\
+    : \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\",\n    \
+    \    \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\": 43,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n                  \
+    \      \\\"mmol_l\\\": 17.1116,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 1 g/L stock × 0.010 L / 1 L = 0.01 g/L. This is\
+    \ a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[11].concentration\",\n    \"ingredient\"\
+    : \"FeSO4 x 7 H2O\",\n    \"existing\": {\n      \"value\": \"0.1\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Trace stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 0.1,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact FeSO4 x\
+    \ 7 H2O row\",\n        \"exact_source_quote\": \"FeSO 4 ·7H 2 O 0.1 g\",\n  \
+    \      \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.359693,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[12].concentration\",\n    \"ingredient\"\
+    : \"CoSO4 x 7 H2O\",\n    \"existing\": {\n      \"value\": \"0.1\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Trace stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 0.1,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact CoSO4 x\
+    \ 7 H2O row\",\n        \"exact_source_quote\": \"CoSO 4 ·7H 2 O 0.1 g\",\n  \
+    \      \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"CoSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 198,\\n                        \\\"amount\\\": 0.1,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n\
+    \                        \\\"mmol_l\\\": 0.645178,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[13].concentration\",\n    \"ingredient\"\
+    : \"CaCl2 x 2 H2O\",\n    \"existing\": {\n      \"value\": \"0.1\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Trace stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 0.1,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact CaCl2 x\
+    \ 2 H2O row\",\n        \"exact_source_quote\": \"CaCl 2 ·2H 2 O 0.1 g\",\n  \
+    \      \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"amount\\\": 0.1,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n  \
+    \                      \\\"mmol_l\\\": 0.680203,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[14].concentration\",\n    \"ingredient\"\
+    : \"ZnSO4 x 7 H2O\",\n    \"existing\": {\n      \"value\": \"0.1\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Trace stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 0.1,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact ZnSO4 x\
+    \ 7 H2O row\",\n        \"exact_source_quote\": \"ZnSO 4 ·7H 2 O 0.1 g\",\n  \
+    \      \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.347752,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.1 g/L stock × 0.010 L / 1 L = 0.001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[15].concentration\",\n    \"ingredient\"\
+    : \"CuSO4 x 5 H2O\",\n    \"existing\": {\n      \"value\": \"0.01\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Trace stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 0.01,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact CuSO4 x\
+    \ 5 H2O row\",\n        \"exact_source_quote\": \"CuSO 4 ·5H 2 O 0.01 g\",\n \
+    \       \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"CuSO4 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 121,\\n                        \\\"amount\\\": 0.01,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\\
+    n                        \\\"mmol_l\\\": 0.0400503,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[16].concentration\",\n    \"ingredient\"\
+    : \"AlK(SO4)2\",\n    \"existing\": {\n      \"value\": \"0.01\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\": \"\
+    Trace stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 0.01,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact AlK(SO4)2\
+    \ row\",\n        \"exact_source_quote\": \"AlK(SO 4 ) 2 0.01 g\",\n        \"\
+    snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"AlK(SO4)2\\\",\\n                        \\\"compound_id\\\
+    \": 1015,\\n                        \\\"amount\\\": 0.01,\\n                 \
+    \       \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\\
+    n                        \\\"mmol_l\\\": 0.0387289,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[17].concentration\",\n    \"ingredient\"\
+    : \"H3BO3\",\n    \"existing\": {\n      \"value\": \"0.01\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\": \"\
+    Trace stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 0.01,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact H3BO3 row\"\
+    ,\n        \"exact_source_quote\": \"H 3 BO 3 0.01 g\",\n        \"snapshot_sha256\"\
+    : \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\",\n    \
+    \    \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"H3BO3\\\",\\n                        \\\"compound_id\\\":\
+    \ 37,\\n                        \\\"amount\\\": 0.01,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\n \
+    \                       \\\"mmol_l\\\": 0.161708,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[18].concentration\",\n    \"ingredient\"\
+    : \"Na2MoO4 x 2 H2O\",\n    \"existing\": {\n      \"value\": \"0.01\",\n    \
+    \  \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Trace stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 0.01,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact Na2MoO4\
+    \ x 2 H2O row\",\n        \"exact_source_quote\": \"Na 2 MoO 4 ·2H 2 O 0.01 g\"\
+    ,\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[11]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 12,\\n                        \\\
+    \"compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 9,\\n                        \\\"amount\\\": 0.01,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\n\
+    \                        \\\"mmol_l\\\": 0.0413309,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[19].concentration\",\n    \"ingredient\"\
+    : \"NiCl2 x 6 H2O\",\n    \"existing\": {\n      \"value\": \"0.025\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Ni-Se-W stock before 10 ml addition\",\n    \"source_amount\": {\n      \"\
+    value\": 25,\n      \"unit\": \"mg\"\n    },\n    \"source_snippets\": [\n   \
+    \   {\n        \"source_key\": \"jcm244\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\"\
+    ,\n        \"source_locator\": \"Ni-Se-W solution subsection only, exact NiCl2\
+    \ x 6 H2O row\",\n        \"exact_source_quote\": \"NiCl 2 ·6H 2 O 25.0 mg\",\n\
+    \        \"snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 40,\\n                        \\\"amount\\\": 25,\\n                     \
+    \   \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.025,\\\
+    n                        \\\"mmol_l\\\": 0.192903,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    solution\\\": \\\"Ni-Se-W solution\\\",\\n                        \\\"solution_id\\\
+    \": 3927,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.025 g/L stock × 0.010 L / 1 L = 0.00025 g/L.\
+    \ This is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[20].concentration\",\n    \"ingredient\"\
+    : \"(NH4)2Ni(SO4)2 x 6 H2O\",\n    \"existing\": {\n      \"value\": \"2\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Ni-Se-W stock before 10 ml addition\",\n    \"source_amount\": {\n      \"\
+    value\": 2,\n      \"unit\": \"g\"\n    },\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"jcm244\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\"\
+    ,\n        \"source_locator\": \"Ni-Se-W solution subsection only, exact (NH4)2Ni(SO4)2\
+    \ x 6 H2O row\",\n        \"exact_source_quote\": \"(NH 4 ) 2 Ni(SO 4 ) 2 ·6H\
+    \ 2 O 2.0 g\",\n        \"snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2Ni(SO4)2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 739,\\n                        \\\"amount\\\": 2,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2,\\n    \
+    \                    \\\"mmol_l\\\": 5.06346,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    solution\\\": \\\"Ni-Se-W solution\\\",\\n                        \\\"solution_id\\\
+    \": 3927,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 2 g/L stock × 0.010 L / 1 L = 0.02 g/L. This is\
+    \ a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[21].concentration\",\n    \"ingredient\"\
+    : \"Na2SeO3\",\n    \"existing\": {\n      \"value\": \"0.0003\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\": \"\
+    Ni-Se-W stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 0.3,\n      \"unit\": \"mg\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm244\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\"\
+    ,\n        \"source_locator\": \"Ni-Se-W solution subsection only, exact Na2SeO3\
+    \ row\",\n        \"exact_source_quote\": \"Na 2 SeO 3 0.3 mg\",\n        \"snapshot_sha256\"\
+    : \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\",\n    \
+    \    \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"Na2SeO3\\\",\\n                        \\\"compound_id\\\":\
+    \ 699,\\n                        \\\"amount\\\": 0.3,\\n                     \
+    \   \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0003,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    solution\\\": \\\"Ni-Se-W solution\\\",\\n                        \\\"solution_id\\\
+    \": 3927,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.0003 g/L stock × 0.010 L / 1 L = 3e-06 g/L.\
+    \ This is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[22].concentration\",\n    \"ingredient\"\
+    : \"Na2SeO4\",\n    \"existing\": {\n      \"value\": \"0.01\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\": \"\
+    Ni-Se-W stock before 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 10,\n      \"unit\": \"mg\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"jcm244\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\"\
+    ,\n        \"source_locator\": \"Ni-Se-W solution subsection only, exact Na2SeO4\
+    \ row\",\n        \"exact_source_quote\": \"Na 2 SeO 4 10.0 mg\",\n        \"\
+    snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Na2SeO4\\\",\\n                        \\\"compound_id\\\":\
+    \ 375,\\n                        \\\"amount\\\": 10,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.01,\\n \
+    \                       \\\"mmol_l\\\": 0.0529241,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    solution\\\": \\\"Ni-Se-W solution\\\",\\n                        \\\"solution_id\\\
+    \": 3927,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ingredients[23].concentration\",\n    \"ingredient\"\
+    : \"Na2WO4 x 2 H2O\",\n    \"existing\": {\n      \"value\": \"0.01\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Ni-Se-W stock before 10 ml addition\",\n    \"source_amount\": {\n      \"\
+    value\": 10,\n      \"unit\": \"mg\"\n    },\n    \"source_snippets\": [\n   \
+    \   {\n        \"source_key\": \"jcm244\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\"\
+    ,\n        \"source_locator\": \"Ni-Se-W solution subsection only, exact Na2WO4\
+    \ x 2 H2O row\",\n        \"exact_source_quote\": \"Na 2 WO 4 ·2H 2 O 10.0 mg\"\
+    ,\n        \"snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Na2WO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 249,\\n                        \\\"amount\\\": 10,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.01,\\\
+    n                        \\\"mmol_l\\\": 0.0303168,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    solution\\\": \\\"Ni-Se-W solution\\\",\\n                        \\\"solution_id\\\
+    \": 3927,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ],\n    \"proposed\": \"Retain the source amount in its stock composition\
+    \ and represent the stock addition separately; do not retain undiluted stock strength\
+    \ as a receiving-medium root concentration.\",\n    \"calculation\": \"On the\
+    \ provider-declared bases only: 0.01 g/L stock × 0.010 L / 1 L = 0.0001 g/L. This\
+    \ is a stage-error illustration, not an independently measured final concentration.\"\
+    \n  },\n  {\n    \"input\": \"target and normalized owner\",\n    \"field_path\"\
+    : \"solutions (missing UBS solution addition)\",\n    \"decision\": \"add\",\n\
+    \    \"source_stage\": \"Main JCM 729 recipe before its pH adjustment/autoclaving\"\
+    ,\n    \"source_amount\": {\n      \"value\": 100,\n      \"unit\": \"ml\"\n \
+    \   },\n    \"proposed\": \"Preserve the exact stock identity, original batch\
+    \ dose and separate composition. Verify local dependency anomalies before linking\
+    \ rather than copying them silently.\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"main table / post-cooling filtered additions,\
+    \ exact UBS solution row\",\n        \"exact_source_quote\": \"UBS solution (see\
+    \ below) 100.0 ml\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    solution\\\": \\\"UBS solution\\\",\\n                        \\\"solution_id\\\
+    \": 4655,\\n                        \\\"amount\\\": 100,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"solutions (missing Trace minerals addition)\",\n    \"\
+    decision\": \"add\",\n    \"source_stage\": \"Main JCM 729 recipe before its pH\
+    \ adjustment/autoclaving\",\n    \"source_amount\": {\n      \"value\": 10,\n\
+    \      \"unit\": \"ml\"\n    },\n    \"proposed\": \"Preserve the exact stock\
+    \ identity, original batch dose and separate composition. Verify local dependency\
+    \ anomalies before linking rather than copying them silently.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm729\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\",\n        \"source_locator\"\
+    : \"main table / post-cooling filtered additions, exact Trace minerals row\",\n\
+    \        \"exact_source_quote\": \"Trace minerals (see Medium No. 151 ) 10.0 ml\"\
+    ,\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"solutions (missing Ni-Se-W solution addition)\",\n    \"\
+    decision\": \"add\",\n    \"source_stage\": \"Main JCM 729 recipe before its pH\
+    \ adjustment/autoclaving\",\n    \"source_amount\": {\n      \"value\": 10,\n\
+    \      \"unit\": \"ml\"\n    },\n    \"proposed\": \"Preserve the exact stock\
+    \ identity, original batch dose and separate composition. Verify local dependency\
+    \ anomalies before linking rather than copying them silently.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm729\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\",\n        \"source_locator\"\
+    : \"main table / post-cooling filtered additions, exact Ni-Se-W solution row\"\
+    ,\n        \"exact_source_quote\": \"Ni-Se-W solution (see Medium No. 244 ) 10.0\
+    \ ml\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    solution\\\": \\\"Ni-Se-W solution\\\",\\n                        \\\"solution_id\\\
+    \": 3927,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"solutions / preparation_steps (missing stage-specific water\
+    \ amount)\",\n    \"decision\": \"add\",\n    \"source_stage\": \"Main recipe\
+    \ water\",\n    \"source_amount\": {\n      \"value\": 845,\n      \"unit\": \"\
+    ml\"\n    },\n    \"proposed\": \"Preserve the source water addition in the named\
+    \ stage. The stock primaries say 1.0 L; provider 1000 ml is numerically equivalent.\
+    \ Water alone does not prove measured final volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm729\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\",\n        \"source_locator\"\
+    : \"main table / post-cooling filtered additions, exact Distilled water row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 845.0 ml\",\n        \"snapshot_sha256\"\
+    : \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n    \
+    \    \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 845,\\n                     \
+    \   \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"solutions / preparation_steps (missing stage-specific water\
+    \ amount)\",\n    \"decision\": \"add\",\n    \"source_stage\": \"UBS stock water\"\
+    ,\n    \"source_amount\": {\n      \"value\": 1000,\n      \"unit\": \"ml\"\n\
+    \    },\n    \"proposed\": \"Preserve the source water addition in the named stage.\
+    \ The stock primaries say 1.0 L; provider 1000 ml is numerically equivalent. Water\
+    \ alone does not prove measured final volume.\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact Distilled water\
+    \ row\",\n        \"exact_source_quote\": \"Distilled water 1.0 L\",\n       \
+    \ \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"solutions / preparation_steps (missing stage-specific water\
+    \ amount)\",\n    \"decision\": \"add\",\n    \"source_stage\": \"Trace minerals\
+    \ stock water\",\n    \"source_amount\": {\n      \"value\": 1000,\n      \"unit\"\
+    : \"ml\"\n    },\n    \"proposed\": \"Preserve the source water addition in the\
+    \ named stage. The stock primaries say 1.0 L; provider 1000 ml is numerically\
+    \ equivalent. Water alone does not prove measured final volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals subsection only, exact Distilled water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1.0 L\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[12]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 13,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"solutions / preparation_steps (missing stage-specific water\
+    \ amount)\",\n    \"decision\": \"add\",\n    \"source_stage\": \"Ni-Se-W stock\
+    \ water\",\n    \"source_amount\": {\n      \"value\": 1000,\n      \"unit\":\
+    \ \"ml\"\n    },\n    \"proposed\": \"Preserve the source water addition in the\
+    \ named stage. The stock primaries say 1.0 L; provider 1000 ml is numerically\
+    \ equivalent. Water alone does not prove measured final volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm244\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\",\n        \"source_locator\"\
+    : \"Ni-Se-W solution subsection only, exact Distilled water row\",\n        \"\
+    exact_source_quote\": \"Distilled water 1.0 L\",\n        \"snapshot_sha256\"\
+    : \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\",\n    \
+    \    \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"solutions (missing molar stock strength)\",\n    \"decision\"\
+    : \"add\",\n    \"source_stage\": \"Separately filter-sterilized solution added\
+    \ after cooling\",\n    \"source_amount\": {\n      \"value\": 0.1,\n      \"\
+    unit\": \"M\"\n    },\n    \"proposed\": \"Preserve the source molarity separately\
+    \ from its ml dose; do not replace it with an unsupported g/L amount.\",\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\",\n     \
+    \   \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"main table / post-cooling filtered additions,\
+    \ exact K2S4O6 row\",\n        \"exact_source_quote\": \"0.1 M K 2 S 4 O 6 solution\
+    \ 25.0 ml\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"K2S4O6\\\",\\n                        \\\"compound_id\\\": 386,\\\
+    n                        \\\"attribute\\\": \\\"0.1 M\\\",\\n                \
+    \        \\\"amount\\\": 25,\\n                        \\\"unit\\\": \\\"ml\\\"\
+    ,\\n                        \\\"optional\\\": 0\\n                    }\",\n \
+    \       \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"solutions (missing molar stock strength)\",\n    \"decision\"\
+    : \"add\",\n    \"source_stage\": \"Separately filter-sterilized solution added\
+    \ after cooling\",\n    \"source_amount\": {\n      \"value\": 10,\n      \"unit\"\
+    : \"mM\"\n    },\n    \"proposed\": \"Preserve the source molarity separately\
+    \ from its ml dose; do not replace it with an unsupported g/L amount.\",\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\",\n     \
+    \   \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"main table / post-cooling filtered additions,\
+    \ exact FeSO4 row\",\n        \"exact_source_quote\": \"10 mM FeSO 4 solution\
+    \ (pH 2.0) 10.0 ml\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"FeSO4\\\",\\n                        \\\"compound_id\\\": 595,\\\
+    n                        \\\"attribute\\\": \\\"pH 2.0, 10 mM\\\",\\n        \
+    \                \\\"amount\\\": 10,\\n                        \\\"unit\\\": \\\
+    \"ml\\\",\\n                        \\\"optional\\\": 0\\n                   \
+    \ }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"solutions / preparation_steps (missing ferrous solution\
+    \ pH)\",\n    \"decision\": \"add\",\n    \"source_stage\": \"10 mM FeSO4 stock\
+    \ only, before its 10 ml addition\",\n    \"source_amount\": {\n      \"value\"\
+    : 2.0,\n      \"unit\": \"pH\"\n    },\n    \"proposed\": \"Keep pH 2.0 on this\
+    \ stock, distinct from the receiving medium pH 2.5 and trace-stock pH steps.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"main table / post-cooling filtered additions,\
+    \ exact FeSO4 row\",\n        \"exact_source_quote\": \"10 mM FeSO 4 solution\
+    \ (pH 2.0) 10.0 ml\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ729api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J729\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"FeSO4\\\",\\n                        \\\"compound_id\\\": 595,\\\
+    n                        \\\"attribute\\\": \\\"pH 2.0, 10 mM\\\",\\n        \
+    \                \\\"amount\\\": 10,\\n                        \\\"unit\\\": \\\
+    \"ml\\\",\\n                        \\\"optional\\\": 0\\n                   \
+    \ }\",\n        \"snapshot_sha256\": \"0f1fed8d7d5a69e04843916b588b7a708fb08e451a137a47056dd2cf3e77133d\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"\
+    ph_value; preparation_steps[0]\",\n    \"existing\": 2.5,\n    \"decision\": \"\
+    evidence_only\",\n    \"source_stage\": \"Main mixture adjustment before autoclaving\
+    \ and later filtered additions\",\n    \"proposed\": \"Retain the supported target\
+    \ pH and its already stated stage with exact claim evidence; this is not a measured\
+    \ final pH assertion.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"Main preparation sentence\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 2.5 with H 2 SO 4 and autoclave.\",\n        \"snapshot_sha256\"\
+    : \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n    \
+    \    \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"\
+    preparation_steps[1]\",\n    \"existing\": 6.5,\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"NTA dissolution before other trace minerals\",\n  \
+    \  \"proposed\": \"Move this correct numeric instruction into the explicitly identified\
+    \ Trace minerals stock preparation. Root-level placement currently obscures its\
+    \ scope.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection, immediately following\
+    \ stock table\",\n        \"exact_source_quote\": \"adjust pH to 6.5 with KOH\
+    \ solution.\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target\",\n    \"field_path\": \"\
+    preparation_steps[1]\",\n    \"existing\": 7.0,\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Completed trace stock, not the receiving medium\",\n\
+    \    \"proposed\": \"Move this correct numeric instruction into the explicitly\
+    \ identified Trace minerals stock preparation. Root-level placement currently\
+    \ obscures its scope.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection, immediately following\
+    \ stock table\",\n        \"exact_source_quote\": \"Adjust final pH to 7.0.\"\
+    ,\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"ph_value; preparation_steps[0]\",\n    \"existing\":\
+    \ 2.5,\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"Main mixture\
+    \ adjustment before autoclaving and later filtered additions\",\n    \"proposed\"\
+    : \"Retain the supported target pH and its already stated stage with exact claim\
+    \ evidence; this is not a measured final pH assertion.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm729\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\",\n        \"source_locator\"\
+    : \"Main preparation sentence\",\n        \"exact_source_quote\": \"adjust pH\
+    \ to 2.5 with H 2 SO 4 and autoclave.\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"preparation_steps[1]\",\n    \"existing\": 6.5,\n   \
+    \ \"decision\": \"correct\",\n    \"source_stage\": \"NTA dissolution before other\
+    \ trace minerals\",\n    \"proposed\": \"Move this correct numeric instruction\
+    \ into the explicitly identified Trace minerals stock preparation. Root-level\
+    \ placement currently obscures its scope.\",\n    \"source_snippets\": [\n   \
+    \   {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection, immediately following\
+    \ stock table\",\n        \"exact_source_quote\": \"adjust pH to 6.5 with KOH\
+    \ solution.\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml\"\
+    ,\n    \"field_path\": \"preparation_steps[1]\",\n    \"existing\": 7.0,\n   \
+    \ \"decision\": \"correct\",\n    \"source_stage\": \"Completed trace stock, not\
+    \ the receiving medium\",\n    \"proposed\": \"Move this correct numeric instruction\
+    \ into the explicitly identified Trace minerals stock preparation. Root-level\
+    \ placement currently obscures its scope.\",\n    \"source_snippets\": [\n   \
+    \   {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection, immediately following\
+    \ stock table\",\n        \"exact_source_quote\": \"Adjust final pH to 7.0.\"\
+    ,\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"preparation_steps[0] (temperature)\",\n    \"decision\"\
+    : \"add\",\n    \"source_stage\": \"Source default for main autoclaving only;\
+    \ separately filter-sterilized additions retain their override\",\n    \"source_amount\"\
+    : {\n      \"value\": 121,\n      \"unit\": \"C\"\n    },\n    \"proposed\": \"\
+    Preserve the qualified JCM default without extending it to the filtered solutions.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"Source-wide default header, read with the JCM\
+    \ 729 preparation overrides\",\n        \"exact_source_quote\": \"Unless otherwise\
+    \ stated, sterilize media by autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\"\
+    : \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n    \
+    \    \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"preparation_steps[0] (duration)\",\n    \"decision\": \"\
+    add\",\n    \"source_stage\": \"Source default for main autoclaving only; separately\
+    \ filter-sterilized additions retain their override\",\n    \"source_amount\"\
+    : {\n      \"value\": 15,\n      \"unit\": \"min\"\n    },\n    \"proposed\":\
+    \ \"Preserve the qualified JCM default without extending it to the filtered solutions.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"Source-wide default header, read with the JCM\
+    \ 729 preparation overrides\",\n        \"exact_source_quote\": \"Unless otherwise\
+    \ stated, sterilize media by autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\"\
+    : \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n    \
+    \    \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"preparation_steps (unquantified acid/base addition)\",\n\
+    \    \"decision\": \"not_quantified\",\n    \"source_stage\": \"Main pH-adjustment\
+    \ acid\",\n    \"proposed\": \"Retain titration context. The named source supplies\
+    \ neither a fixed dose nor solution strength; do not import strengths from other\
+    \ sections or media.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm729\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"Main preparation sentence\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 2.5 with H 2 SO 4\",\n        \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"target and normalized owner\",\n\
+    \    \"field_path\": \"preparation_steps (unquantified acid/base addition)\",\n\
+    \    \"decision\": \"not_quantified\",\n    \"source_stage\": \"Trace-stock KOH\"\
+    ,\n    \"proposed\": \"Retain titration context. The named source supplies neither\
+    \ a fixed dose nor solution strength; do not import strengths from other sections\
+    \ or media.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals preparation paragraph only\",\n\
+    \        \"exact_source_quote\": \"adjust pH to 6.5 with KOH solution.\",\n  \
+    \      \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      }\n    ]\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[0].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"14\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_stage\": \"Standalone stock 4655, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact Na2SO4 row\",\n\
+    \        \"exact_source_quote\": \"Na 2 SO 4 14.0 g\",\n        \"snapshot_sha256\"\
+    : \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n    \
+    \    \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"solution4655\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/4655\",\n        \"source_locator\"\
+    : \"$.data.recipe[0]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 1,\\n                \\\"compound\\\": \\\"Na2SO4\\\"\
+    ,\\n                \\\"compound_id\\\": 110,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 14,\\n                \\\"unit\\\": \\\"g\\\",\\n      \
+    \          \\\"g_l\\\": 14,\\n                \\\"mmol_l\\\": 98.5638,\\n    \
+    \            \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[1].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"30\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_stage\": \"Standalone stock 4655, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact (NH4)2SO4 row\"\
+    ,\n        \"exact_source_quote\": \"(NH 4 ) 2 SO 4 30.0 g\",\n        \"snapshot_sha256\"\
+    : \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n    \
+    \    \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"solution4655\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/4655\",\n        \"source_locator\"\
+    : \"$.data.recipe[1]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 2,\\n                \\\"compound\\\": \\\"(NH4)2SO4\\\
+    \",\\n                \\\"compound_id\\\": 27,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 30,\\n                \\\"unit\\\": \\\"g\\\",\\n      \
+    \          \\\"g_l\\\": 30,\\n                \\\"mmol_l\\\": 227.032,\\n    \
+    \            \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[2].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_stage\": \"Standalone stock 4655, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact KCl row\",\n \
+    \       \"exact_source_quote\": \"KCl 1.0 g\",\n        \"snapshot_sha256\": \"\
+    cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n        \"\
+    parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"solution4655\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/4655\",\n        \"source_locator\"\
+    : \"$.data.recipe[2]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 3,\\n                \\\"compound\\\": \\\"KCl\\\",\\\
+    n                \\\"compound_id\\\": 61,\\n                \\\"solution\\\":\
+    \ null,\\n                \\\"solution_id\\\": null,\\n                \\\"condition\\\
+    \": null,\\n                \\\"attribute\\\": null,\\n                \\\"amount\\\
+    \": 1,\\n                \\\"unit\\\": \\\"g\\\",\\n                \\\"g_l\\\"\
+    : 1,\\n                \\\"mmol_l\\\": 13.4138,\\n                \\\"optional\\\
+    \": 0\\n            }\",\n        \"snapshot_sha256\": \"9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c\"\
+    \n      }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The\
+    \ existing amount, unit, provider-declared stock basis and attached exact evidence\
+    \ match. Verification is limited to this concentration claim; hydrate grounding\
+    \ is assessed separately. No evidence or undiluted concentration is inherited\
+    \ by the receiving medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[3].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_stage\": \"Standalone stock 4655, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact MgSO4 x 7 H2O\
+    \ row\",\n        \"exact_source_quote\": \"MgSO 4 ·7H 2 O 5.0 g\",\n        \"\
+    snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"solution4655\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/4655\",\n        \"source_locator\"\
+    : \"$.data.recipe[3]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 4,\\n                \\\"compound\\\": \\\"MgSO4 x 7\
+    \ H2O\\\",\\n                \\\"compound_id\\\": 8,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 5,\\n                \\\"unit\\\": \\\"g\\\",\\n       \
+    \         \\\"g_l\\\": 5,\\n                \\\"mmol_l\\\": 20.286,\\n       \
+    \         \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[4].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 4655, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact K2HPO4 row\",\n\
+    \        \"exact_source_quote\": \"K 2 HPO 4 0.5 g\",\n        \"snapshot_sha256\"\
+    : \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\",\n    \
+    \    \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"solution4655\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/4655\",\n        \"source_locator\"\
+    : \"$.data.recipe[4]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 5,\\n                \\\"compound\\\": \\\"K2HPO4\\\"\
+    ,\\n                \\\"compound_id\\\": 10,\\n                \\\"solution\\\"\
+    : null,\\n                \\\"solution_id\\\": null,\\n                \\\"condition\\\
+    \": null,\\n                \\\"attribute\\\": null,\\n                \\\"amount\\\
+    \": 0.5,\\n                \\\"unit\\\": \\\"g\\\",\\n                \\\"g_l\\\
+    \": 0.5,\\n                \\\"mmol_l\\\": 2.87066,\\n                \\\"optional\\\
+    \": 0\\n            }\",\n        \"snapshot_sha256\": \"9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c\"\
+    \n      }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The\
+    \ existing amount, unit, provider-declared stock basis and attached exact evidence\
+    \ match. Verification is limited to this concentration claim; hydrate grounding\
+    \ is assessed separately. No evidence or undiluted concentration is inherited\
+    \ by the receiving medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[5].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.14\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 4655, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact Ca(NO3)2 x 4 H2O\
+    \ row\",\n        \"exact_source_quote\": \"Ca(NO 3 ) 2 ·4H 2 O 0.14 g\",\n  \
+    \      \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"solution4655\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/4655\",\n        \"source_locator\"\
+    : \"$.data.recipe[5]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 6,\\n                \\\"compound\\\": \\\"Ca(NO3)2 x\
+    \ 4 H2O\\\",\\n                \\\"compound_id\\\": 213,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 0.14,\\n                \\\"unit\\\": \\\"g\\\
+    \",\\n                \\\"g_l\\\": 0.14,\\n                \\\"mmol_l\\\": 0.592846,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[6].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"1\",\n      \"unit\": \"L\"\n    },\n\
+    \    \"source_stage\": \"Standalone stock 4655, before use in JCM 729\",\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"jcm729\",\n     \
+    \   \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729\"\
+    ,\n        \"source_locator\": \"UBS solution subsection, exact Distilled water\
+    \ row\",\n        \"exact_source_quote\": \"Distilled water 1.0 L\",\n       \
+    \ \"snapshot_sha256\": \"cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434\"\
+    ,\n        \"parsed_text_sha256\": \"ff3deb5732ba74e5e8589e7e7271986f6e2c1281f87d70110c3d52ebafa74f54\"\
+    \n      },\n      {\n        \"source_key\": \"solution4655\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/4655\",\n        \"source_locator\"\
+    : \"$.data.recipe[6]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 7,\\n                \\\"compound\\\": \\\"Distilled\
+    \ water\\\",\\n                \\\"compound_id\\\": 4,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 1000,\\n                \\\"unit\\\": \\\"ml\\\
+    \",\\n                \\\"g_l\\\": null,\\n                \\\"mmol_l\\\": null,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"9e7dc4ecafb2ad2e9094bb5840e6b8b94285fbcc3a7c475c3b9470965658846c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[0].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"1.5\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact Nitrilotriacetic\
+    \ acid row\",\n        \"exact_source_quote\": \"Nitrilotriacetic acid 1.5 g\"\
+    ,\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[0]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 1,\\n                \\\"compound\\\": \\\"Nitrilotriacetic\
+    \ acid\\\",\\n                \\\"compound_id\\\": 189,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 1.5,\\n                \\\"unit\\\": \\\"g\\\"\
+    ,\\n                \\\"g_l\\\": 1.5,\\n                \\\"mmol_l\\\": 7.84765,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[1].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"3\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact MgSO4 x\
+    \ 7 H2O row\",\n        \"exact_source_quote\": \"MgSO 4 ·7H 2 O 3.0 g\",\n  \
+    \      \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[1]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 2,\\n                \\\"compound\\\": \\\"MgSO4 x 7\
+    \ H2O\\\",\\n                \\\"compound_id\\\": 8,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 3,\\n                \\\"unit\\\": \\\"g\\\",\\n       \
+    \         \\\"g_l\\\": 3,\\n                \\\"mmol_l\\\": 12.1716,\\n      \
+    \          \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[2].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact MnSO4 x\
+    \ n H2O row\",\n        \"exact_source_quote\": \"MnSO 4 · x H 2 O 0.5 g\",\n\
+    \        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[2]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 3,\\n                \\\"compound\\\": \\\"MnSO4 x n\
+    \ H2O\\\",\\n                \\\"compound_id\\\": 1000,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 0.5,\\n                \\\"unit\\\": \\\"g\\\"\
+    ,\\n                \\\"g_l\\\": 0.5,\\n                \\\"mmol_l\\\": null,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[3].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact NaCl row\"\
+    ,\n        \"exact_source_quote\": \"NaCl 1.0 g\",\n        \"snapshot_sha256\"\
+    : \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\",\n    \
+    \    \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[3]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 4,\\n                \\\"compound\\\": \\\"NaCl\\\",\\\
+    n                \\\"compound_id\\\": 43,\\n                \\\"solution\\\":\
+    \ null,\\n                \\\"solution_id\\\": null,\\n                \\\"condition\\\
+    \": null,\\n                \\\"attribute\\\": null,\\n                \\\"amount\\\
+    \": 1,\\n                \\\"unit\\\": \\\"g\\\",\\n                \\\"g_l\\\"\
+    : 1,\\n                \\\"mmol_l\\\": 17.1116,\\n                \\\"optional\\\
+    \": 0\\n            }\",\n        \"snapshot_sha256\": \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\
+    \n      }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The\
+    \ existing amount, unit, provider-declared stock basis and attached exact evidence\
+    \ match. Verification is limited to this concentration claim; hydrate grounding\
+    \ is assessed separately. No evidence or undiluted concentration is inherited\
+    \ by the receiving medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[4].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact FeSO4 x\
+    \ 7 H2O row\",\n        \"exact_source_quote\": \"FeSO 4 ·7H 2 O 0.1 g\",\n  \
+    \      \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[4]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 5,\\n                \\\"compound\\\": \\\"FeSO4 x 7\
+    \ H2O\\\",\\n                \\\"compound_id\\\": 12,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 0.1,\\n                \\\"unit\\\": \\\"g\\\",\\n     \
+    \           \\\"g_l\\\": 0.1,\\n                \\\"mmol_l\\\": 0.359693,\\n \
+    \               \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[5].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact CoSO4 x\
+    \ 7 H2O row\",\n        \"exact_source_quote\": \"CoSO 4 ·7H 2 O 0.1 g\",\n  \
+    \      \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[5]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 6,\\n                \\\"compound\\\": \\\"CoSO4 x 7\
+    \ H2O\\\",\\n                \\\"compound_id\\\": 198,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 0.1,\\n                \\\"unit\\\": \\\"g\\\"\
+    ,\\n                \\\"g_l\\\": 0.1,\\n                \\\"mmol_l\\\": 0.645178,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[6].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact CaCl2 x\
+    \ 2 H2O row\",\n        \"exact_source_quote\": \"CaCl 2 ·2H 2 O 0.1 g\",\n  \
+    \      \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[6]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 7,\\n                \\\"compound\\\": \\\"CaCl2 x 2\
+    \ H2O\\\",\\n                \\\"compound_id\\\": 7,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 0.1,\\n                \\\"unit\\\": \\\"g\\\",\\n     \
+    \           \\\"g_l\\\": 0.1,\\n                \\\"mmol_l\\\": 0.680203,\\n \
+    \               \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[7].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact ZnSO4 x\
+    \ 7 H2O row\",\n        \"exact_source_quote\": \"ZnSO 4 ·7H 2 O 0.1 g\",\n  \
+    \      \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[7]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 8,\\n                \\\"compound\\\": \\\"ZnSO4 x 7\
+    \ H2O\\\",\\n                \\\"compound_id\\\": 35,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 0.1,\\n                \\\"unit\\\": \\\"g\\\",\\n     \
+    \           \\\"g_l\\\": 0.1,\\n                \\\"mmol_l\\\": 0.347752,\\n \
+    \               \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[8].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact CuSO4 x\
+    \ 5 H2O row\",\n        \"exact_source_quote\": \"CuSO 4 ·5H 2 O 0.01 g\",\n \
+    \       \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[8]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 9,\\n                \\\"compound\\\": \\\"CuSO4 x 5\
+    \ H2O\\\",\\n                \\\"compound_id\\\": 121,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 0.01,\\n                \\\"unit\\\": \\\"g\\\
+    \",\\n                \\\"g_l\\\": 0.01,\\n                \\\"mmol_l\\\": 0.0400503,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[9].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact AlK(SO4)2\
+    \ row\",\n        \"exact_source_quote\": \"AlK(SO 4 ) 2 0.01 g\",\n        \"\
+    snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[9]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 10,\\n                \\\"compound\\\": \\\"AlK(SO4)2\\\
+    \",\\n                \\\"compound_id\\\": 1015,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 0.01,\\n                \\\"unit\\\": \\\"g\\\",\\n    \
+    \            \\\"g_l\\\": 0.01,\\n                \\\"mmol_l\\\": 0.0387289,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[10].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact H3BO3 row\"\
+    ,\n        \"exact_source_quote\": \"H 3 BO 3 0.01 g\",\n        \"snapshot_sha256\"\
+    : \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\",\n    \
+    \    \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[10]\",\n        \"exact_source_quote\": \"{\\n             \
+    \   \\\"recipe_order\\\": 11,\\n                \\\"compound\\\": \\\"H3BO3\\\"\
+    ,\\n                \\\"compound_id\\\": 37,\\n                \\\"solution\\\"\
+    : null,\\n                \\\"solution_id\\\": null,\\n                \\\"condition\\\
+    \": null,\\n                \\\"attribute\\\": null,\\n                \\\"amount\\\
+    \": 0.01,\\n                \\\"unit\\\": \\\"g\\\",\\n                \\\"g_l\\\
+    \": 0.01,\\n                \\\"mmol_l\\\": 0.161708,\\n                \\\"optional\\\
+    \": 0\\n            }\",\n        \"snapshot_sha256\": \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\
+    \n      }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The\
+    \ existing amount, unit, provider-declared stock basis and attached exact evidence\
+    \ match. Verification is limited to this concentration claim; hydrate grounding\
+    \ is assessed separately. No evidence or undiluted concentration is inherited\
+    \ by the receiving medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[11].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact Na2MoO4\
+    \ x 2 H2O row\",\n        \"exact_source_quote\": \"Na 2 MoO 4 ·2H 2 O 0.01 g\"\
+    ,\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[11]\",\n        \"exact_source_quote\": \"{\\n             \
+    \   \\\"recipe_order\\\": 12,\\n                \\\"compound\\\": \\\"Na2MoO4\
+    \ x 2 H2O\\\",\\n                \\\"compound_id\\\": 9,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 0.01,\\n                \\\"unit\\\": \\\"g\\\
+    \",\\n                \\\"g_l\\\": 0.01,\\n                \\\"mmol_l\\\": 0.0413309,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[12].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"1000\",\n      \"unit\": \"PERCENT_V_V\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3804, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals subsection only, exact Distilled\
+    \ water row\",\n        \"exact_source_quote\": \"Distilled water 1.0 L\",\n \
+    \       \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"solution3804\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3804\",\n        \"source_locator\"\
+    : \"$.data.recipe[12]\",\n        \"exact_source_quote\": \"{\\n             \
+    \   \\\"recipe_order\\\": 13,\\n                \\\"compound\\\": \\\"Distilled\
+    \ water\\\",\\n                \\\"compound_id\\\": 4,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 1000,\\n                \\\"unit\\\": \\\"ml\\\
+    \",\\n                \\\"g_l\\\": null,\\n                \\\"mmol_l\\\": null,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c\"\n     \
+    \ }\n    ],\n    \"decision\": \"correct\",\n    \"proposed\": \"Correct the dependency\
+    \ water representation to the source batch addition of 1000 ml / 1 L; 1000% v/v\
+    \ is not supported. Do not infer a measured final volume.\"\n  },\n  {\n    \"\
+    input\": \"data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[0].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.025\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3927, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm244\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\"\
+    ,\n        \"source_locator\": \"Ni-Se-W solution subsection only, exact NiCl2\
+    \ x 6 H2O row\",\n        \"exact_source_quote\": \"NiCl 2 ·6H 2 O 25.0 mg\",\n\
+    \        \"snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"solution3927\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3927\",\n        \"source_locator\"\
+    : \"$.data.recipe[0]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 1,\\n                \\\"compound\\\": \\\"NiCl2 x 6\
+    \ H2O\\\",\\n                \\\"compound_id\\\": 40,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 25,\\n                \\\"unit\\\": \\\"mg\\\",\\n     \
+    \           \\\"g_l\\\": 0.025,\\n                \\\"mmol_l\\\": 0.192903,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[1].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"2\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_stage\": \"Standalone stock 3927, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm244\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\"\
+    ,\n        \"source_locator\": \"Ni-Se-W solution subsection only, exact (NH4)2Ni(SO4)2\
+    \ x 6 H2O row\",\n        \"exact_source_quote\": \"(NH 4 ) 2 Ni(SO 4 ) 2 ·6H\
+    \ 2 O 2.0 g\",\n        \"snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"solution3927\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3927\",\n        \"source_locator\"\
+    : \"$.data.recipe[1]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 2,\\n                \\\"compound\\\": \\\"(NH4)2Ni(SO4)2\
+    \ x 6 H2O\\\",\\n                \\\"compound_id\\\": 739,\\n                \\\
+    \"solution\\\": null,\\n                \\\"solution_id\\\": null,\\n        \
+    \        \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\\
+    n                \\\"amount\\\": 2,\\n                \\\"unit\\\": \\\"g\\\"\
+    ,\\n                \\\"g_l\\\": 2,\\n                \\\"mmol_l\\\": 5.06346,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[2].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.0003\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3927, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm244\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\"\
+    ,\n        \"source_locator\": \"Ni-Se-W solution subsection only, exact Na2SeO3\
+    \ row\",\n        \"exact_source_quote\": \"Na 2 SeO 3 0.3 mg\",\n        \"snapshot_sha256\"\
+    : \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\",\n    \
+    \    \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"solution3927\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3927\",\n        \"source_locator\"\
+    : \"$.data.recipe[2]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 3,\\n                \\\"compound\\\": \\\"Na2SeO3\\\"\
+    ,\\n                \\\"compound_id\\\": 699,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 0.3,\\n                \\\"unit\\\": \\\"mg\\\",\\n    \
+    \            \\\"g_l\\\": 0.0003,\\n                \\\"mmol_l\\\": null,\\n \
+    \               \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[3].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3927, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm244\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\"\
+    ,\n        \"source_locator\": \"Ni-Se-W solution subsection only, exact Na2SeO4\
+    \ row\",\n        \"exact_source_quote\": \"Na 2 SeO 4 10.0 mg\",\n        \"\
+    snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"solution3927\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3927\",\n        \"source_locator\"\
+    : \"$.data.recipe[3]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 4,\\n                \\\"compound\\\": \\\"Na2SeO4\\\"\
+    ,\\n                \\\"compound_id\\\": 375,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 10,\\n                \\\"unit\\\": \\\"mg\\\",\\n     \
+    \           \\\"g_l\\\": 0.01,\\n                \\\"mmol_l\\\": 0.0529241,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[4].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_stage\": \"Standalone stock 3927, before use in JCM 729\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm244\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\"\
+    ,\n        \"source_locator\": \"Ni-Se-W solution subsection only, exact Na2WO4\
+    \ x 2 H2O row\",\n        \"exact_source_quote\": \"Na 2 WO 4 ·2H 2 O 10.0 mg\"\
+    ,\n        \"snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"solution3927\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3927\",\n        \"source_locator\"\
+    : \"$.data.recipe[4]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 5,\\n                \\\"compound\\\": \\\"Na2WO4 x 2\
+    \ H2O\\\",\\n                \\\"compound_id\\\": 249,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 10,\\n                \\\"unit\\\": \\\"mg\\\"\
+    ,\\n                \\\"g_l\\\": 0.01,\\n                \\\"mmol_l\\\": 0.0303168,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  },\n  {\n    \"input\": \"data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml\
+    \ (dependency context only)\",\n    \"field_path\": \"composition[5].concentration\"\
+    ,\n    \"existing\": {\n      \"value\": \"1\",\n      \"unit\": \"L\"\n    },\n\
+    \    \"source_stage\": \"Standalone stock 3927, before use in JCM 729\",\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"jcm244\",\n     \
+    \   \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244\"\
+    ,\n        \"source_locator\": \"Ni-Se-W solution subsection only, exact Distilled\
+    \ water row\",\n        \"exact_source_quote\": \"Distilled water 1.0 L\",\n \
+    \       \"snapshot_sha256\": \"112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e\"\
+    ,\n        \"parsed_text_sha256\": \"2bb027f9289d35c561243d5792b016da226a9c93ef75c22a1fe0aac82ef921de\"\
+    \n      },\n      {\n        \"source_key\": \"solution3927\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3927\",\n        \"source_locator\"\
+    : \"$.data.recipe[5]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 6,\\n                \\\"compound\\\": \\\"Distilled\
+    \ water\\\",\\n                \\\"compound_id\\\": 4,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 1000,\\n                \\\"unit\\\": \\\"ml\\\
+    \",\\n                \\\"g_l\\\": null,\\n                \\\"mmol_l\\\": null,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"caa10636bda26689be80d785771728757006fa8684fca25be747364aab85d6b1\"\n     \
+    \ }\n    ],\n    \"decision\": \"verified\",\n    \"explanation\": \"The existing\
+    \ amount, unit, provider-declared stock basis and attached exact evidence match.\
+    \ Verification is limited to this concentration claim; hydrate grounding is assessed\
+    \ separately. No evidence or undiluted concentration is inherited by the receiving\
+    \ medium.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Identifier metadata, exact secondary keys and supplied-form scope
+  outcome: concern
+  summary: 24 distinct primary/current-secondary identifiers resolve. 0 label instances
+    differ from current canonical labels; 0 asserted current secondary keys lack an
+    exact pinned index row. Legacy numeric links are assessed separately and are not
+    established by CHEBI correspondence. Target linkage is 24/24 primary and 23/24
+    secondary ingredient instances; this measures presence, not source validity.
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - record
+  - mim
+  - chebi131527
+  - chebi26710
+  - chebi31440
+  - chebi31795
+  - chebi32149
+  - chebi32312
+  - chebi32588
+  - chebi33118
+  - chebi34887
+  - chebi44557
+  - chebi48843
+  - chebi62946
+  - chebi63939
+  - chebi75213
+  - chebi75832
+  - chebi75836
+  - chebi77775
+  - chebi86149
+  - chebi86158
+  - chebi86159
+  - chebi86360
+  - chebi86463
+  - chebi86466
+  - chebi91244
+  details: '{"label_drift": [], "missing_secondary_keys": [], "legacy_instances":
+    [{"input": "target", "field_path": "ingredients[22].mediaingredientmech_term",
+    "term": {"id": "MediaIngredientMech:000198", "label": "Na2SeO4"}}, {"input": "data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml",
+    "field_path": "ingredients[22].mediaingredientmech_term", "term": {"id": "MediaIngredientMech:000198",
+    "label": "Na2SeO4"}}], "coverage_scale": "0–100 percent; each ingredient instance
+    counted once", "denominator": 24, "primary_percent": 100.0, "secondary_percent":
+    95.83333333333333}'
+- assessment_id: chemical-forms
+  area: grounding
+  topic: Explicit hydrates, variable hydration and solution identity
+  outcome: concern
+  summary: The Ni-Se-W primary specifies NiCl2·6H2O, but CHEBI:34887 has an anhydrous
+    Cl2Ni structure. MnSO4·xH2O leaves its hydration number unspecified; CHEBI:86360
+    does not encode that variable hydrate and cannot supply a hydrate-specific molecular
+    weight. The molar FeSO4 solution does not identify a supplied anhydrous solid,
+    so CHEBI:75832 must not silently establish its preparation form. AlK(SO4)2 has
+    no stated hydration in either scoped source; no conventional hydrate is added.
+    Other explicit hydrate identities and the two separate nickel and selenium salts
+    are preserved.
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - primary
+  - trace-primary
+  - nise-primary
+  - provider
+  - chebi34887
+  - chebi86360
+  - chebi75832
+  - chebi86463
+  - chebi86149
+- assessment_id: preparation
+  area: completeness
+  topic: Main versus stock preparation and qualified sterilization
+  outcome: concern
+  summary: Both local layers retain the main pH 2.5 adjustment and later filtered-addition
+    instruction, but omit those solution doses/strengths and the main solvent amount.
+    The second root preparation step is actually the Trace minerals NTA/KOH preparation
+    at pH 6.5 then 7.0. The qualified JCM 729 default supplies main autoclaving temperature/time.
+    Neither scoped acid/base instruction supplies a fixed titration dose or strength.
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - record
+  - primary
+  - trace-primary
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Defined liquid formulation and source boundaries
+  outcome: supported
+  summary: DEFINED and LIQUID fit the exact source formulation of named inorganic
+    salts and nitrilotriacetic acid with no undefined extract or gelling agent. This
+    categorical fit does not validate concentrations or exact hydrate specificity.
+    Bacterial category and the medium title do not establish strain-level growth evidence
+    or optimal conditions.
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - record
+  - primary
+  - trace-primary
+  - nise-primary
+  - provider
+- assessment_id: dependency-context
+  area: ownership
+  topic: Existing stock evidence and remaining local stock artifacts
+  outcome: concern
+  summary: The exact 4655, 3804 and 3927 dependencies resolve. Their 25 matching concentration
+    claims have attached evidence, while Trace minerals water remains an unsupported
+    1000% v/v representation. Their legacy placeholder ingredients and incomplete_composition
+    flags coexist with populated composition arrays; these context artifacts are not
+    copied into the target or treated as additional reviewed targets. Dependency concentration
+    evidence does not repair source-form grounding or receiving-medium scope.
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - stock4655
+  - stock3804
+  - stock3927
+  - quantity-inventory
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 19 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:003073
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+findings:
+- finding_id: f1
+  issue_key: culturemech.003073.stock-and-dose-flattening
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stock strengths and liquid doses are asserted as root mass concentrations
+  description: Both layers encode the 25 ml tetrathionate and 10 ml ferrous solution
+    additions as 25 and 10 g/L. Other root values equal undiluted UBS, Trace minerals
+    or Ni-Se-W stock strengths. Magnesium is 8 g/L from the recorded sum of 5 and
+    3, although these values belong to stocks added at different doses. Stock identities,
+    doses, strengths and stage-specific water are absent from the representation.
+  target_ids:
+  - CultureMech:003073
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps[0]
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - trace-primary
+  - nise-primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.003073.stock-preparation-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Trace-stock preparation is placed at the receiving-medium root
+  description: The second root preparation instruction adjusts NTA to pH 6.5 then
+    the mixture to 7.0, but the exact JCM 151 paragraph applies only to Trace minerals.
+    The main JCM 729 pH is 2.5. Both layers also omit the qualified main sterilization
+    temperature/time. This stage ambiguity can change which preparation the stored
+    instructions describe.
+  target_ids:
+  - CultureMech:003073
+  field_paths:
+  - preparation_steps[0]
+  - preparation_steps[1]
+  evidence_ids:
+  - record
+  - primary
+  - trace-primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.003073.hydrate-scope
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Explicit nickel hydrate and variable manganese hydration are not represented
+    exactly
+  description: NiCl2 hexahydrate is mapped to an anhydrous nickel dichloride structure.
+    The variable MnSO4 hydrate does not provide a specific hydration number for molecular-weight
+    conversion, while its asserted structure contains no water. The separate molar
+    FeSO4 solution does not establish a supplied anhydrous solid. Canonical labels
+    and successful term checks establish identifier existence, not these exact source
+    forms.
+  target_ids:
+  - CultureMech:003073
+  field_paths:
+  - ingredients[1].term
+  - ingredients[9].term
+  - ingredients[19].term
+  - ingredients[19].mediaingredientmech_chebi_term
+  evidence_ids:
+  - primary
+  - trace-primary
+  - nise-primary
+  - chebi75832
+  - chebi86360
+  - chebi34887
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.003073.claim-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Supported pH and preparation lack narrow attached evidence
+  description: The target and maintained owner lack attached claim evidence for the
+    supported main pH and retained preparation text. Valid standalone stock evidence
+    belongs only to those stock concentration claims and cannot support the incorrect
+    receiving-medium concentrations.
+  target_ids:
+  - CultureMech:003073
+  field_paths:
+  - ph_value
+  - preparation_steps
+  - ingredients
+  evidence_ids:
+  - record
+  - primary
+  - trace-primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: culturemech.003073.legacy-secondary-correspondence
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The remaining numeric MIM link lacks verified historical correspondence
+  description: MediaIngredientMech:000198 remains on Na2SeO4 in both layers. The current
+    pinned index and public catalog were checked, but historical identifier-to-ingredient
+    correspondence was not recovered. Live CHEBI:77775 resolves independently and
+    is not proof of the legacy mapping.
+  target_ids:
+  - CultureMech:003073
+  field_paths:
+  - ingredients[22].mediaingredientmech_term
+  evidence_ids:
+  - record
+  - mim
+  - legacy-catalog
+  - legacy-tree
+  - legacy-search
+  - chebi77775
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the exact JCM 729 stock/addition structure in the maintained
+    owner, with original source units and declared bases. Preserve separate magnesium
+    contributions and molar solution strengths. Verify the Trace minerals dependency
+    water representation before referencing it; retain valid existing dependency evidence
+    without inheriting it into the target.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003073
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Move the NTA/KOH instructions under the Trace minerals stock and retain
+    the main pH stage. Add the qualified JCM 729 main sterilization conditions without
+    overriding separately filtered additions or importing parent-media procedures.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003073
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Reconcile explicit source hydration and retain variable/unspecified
+    forms without inventing molecular weights, stock masses or replacement IDs. Keep
+    the existing amount evidence scoped separately from material-form grounding.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003073
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Attach exact source snippets to the correct owner claims after resolving
+    stage representation. Preserve the independently valid stock evidence and original
+    access/hash provenance.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003073
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Recover exact historical correspondence or explicitly preserve the
+    unresolved legacy link for separately authorized curation. Do not infer a replacement
+    solely from the primary CHEBI term or repeated corpus usage.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:003073
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J729_ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Partial coverage is specifically due to unavailable authoritative historical correspondence
+  for MediaIngredientMech:000198. Current primary, provider, ontology and MIM catalog
+  access succeeded; their completed lookups are not classified as unavailable.
+- Only CultureMech:003073 is reviewed. Three standalone stocks are dependency context,
+  not separately reviewed records. JCM 151 and 244 contribute only their explicitly
+  referenced stock sections. No organism growth, measured final volume, unknown acid/base
+  dose, hydrate-dependent molar conversion or parent-medium procedure is inferred.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-018
+- generated-medium
+```

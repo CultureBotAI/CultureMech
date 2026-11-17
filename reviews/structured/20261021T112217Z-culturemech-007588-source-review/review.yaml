@@ -1,0 +1,2140 @@
+schema_version: 1.0.0
+review_id: 20261021T112217Z-culturemech-007588-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acidithrix_ferrooydans_medium (CultureMech:007588)'
+started_at: '2026-10-21T11:17:57Z'
+finished_at: '2026-10-21T11:22:17Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The generated TOGO M1070 / JCM 1012 record predates a substantial maintained-owner
+  repair. The owner restores the source stocks and preparation, but its per-litre
+  annotations exceed the literal source batch basis, its ferrous stock hides an explicit
+  molarity, and a manganese hydrate is assigned an anhydrous ontology structure. Restore
+  the generated record only after these maintained-source issues and claim-level evidence
+  are resolved.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml
+    sha256: e96aa6b935350e34626234310213157df5c8d2c74b95723e6f52bd9170c29ebf
+    role: target
+  - path: data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml
+    sha256: 290433e6204999b98296f516fb77589d6df2c07e922d780683ae0ed53353844d
+    role: context
+  - path: data/normalized_yaml/archaea/TOGO_M236_Stetteria_Medium.yaml
+    sha256: 896b03b57a4d9f36bab8fb2e36f7daf634aea74dfeb264676540f08f1d7e712f
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml
+    sha256: 5932e733fdc26a7e3c7bf97e0514f0eb46992cd01890ec4c950926f41cf6cabb
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M752_Acidithiobacillus_Ferrivorans_Medium.yaml
+    sha256: df0c75c61aecb1ea6881ff4ba96e06c16782e1e81df6217b30e7c7121f3eda4a
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml
+    sha256: edf6198bdd9a6507d1892bac8f5de2eeac7e66ca388fb4a40bc0b73daf49dfe8
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3927_Ni-Se-W_solution.yaml
+    sha256: b126def4e003a536ab9c08f8be60f310476f43609ecb80755a6d6ff2eb1cf70f
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_4655_UBS_solution.yaml
+    sha256: c6c76ef9766f2c107c69077fccef221a5c7694bfb6e5070af7e6fc8eb18b641e
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/enrich_solutions_with_chebi.py
+    sha256: b4054fb4f13ecfb8362d421c549dfd34f1e94823caa107f2d1bf2d4462697b29
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_io.py
+    sha256: bff4715f85d7ff2ff681b88f0a2de2667e5767d7a2c196bd50a37d5d329957ac
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/repair_togo_m1070_score15.py
+    sha256: 6db06a90d2efde35b0ca68600b4eeb3cf9245c98848f6f53e2082b46f57a068a
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 178; batch 018 item 8 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding seventeen task batches
+    contain 170 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 172 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007588
+targets:
+- target_id: CultureMech:007588
+  path: data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml
+  label: acidithrix_ferrooydans_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch018/178/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch018/178/strict.tsv"
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007588
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T11:22:15Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:22:15Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:34.234617Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch018/178/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:36.140884Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch018/178/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:38.607154Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:40.240245Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T11:22:15Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml:1:id: CultureMech:007588
+
+    ./data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml:1:id:
+    CultureMech:007588
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/source-preflight-bound/178/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T11:22:15Z'
+  support: supports
+  summary: 57 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: b3cb042660fa03fb52f7b2d813b584cf9c076189fbc35a200afee0eae674f8ac
+- evidence_id: togoM1070
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1070
+  locator: $.meta, $.components[0:2], $.comments[0]
+  accessed_at: '2026-10-21T11:01:45.773323Z'
+  support: supports
+  summary: Exact TOGO M1070 identifies JCM 1012 and supplies two preparation stages.
+  snapshot_sha256: 109f27f167e7674d09d5cb00d6bfbe7c7de224fceb636904274df107614e8bfd
+- evidence_id: jcm1012
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1012
+  locator: JCM 1012 complete recipe, post-cooling addition and page default
+  accessed_at: '2026-10-21T11:01:47.845691Z'
+  support: supports
+  summary: Primary lists 1 L water plus 100, 10, 10 and later 5 ml stocks, two batch
+    masses, pH and separate ferrous-stock filtration.
+  snapshot_sha256: 130739a6160be3fe84c48c468a5330ae843d02fe12372a1742cec3066192751d
+- evidence_id: jcm729
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=729
+  locator: UBS solution subsection only
+  accessed_at: '2026-10-21T11:01:48.262005Z'
+  support: supports
+  summary: Only UBS composition is imported into this review; the parent medium and
+    its receiving additions are excluded.
+  snapshot_sha256: cf89bec9118a2e3ef375fec750818ba87a8cbdda72d027413b63fe9f9f99b434
+- evidence_id: jcm151
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+  locator: Trace minerals subsection only
+  accessed_at: '2026-10-21T09:01:28.851101Z'
+  support: supports
+  summary: Only the trace-stock composition and its nitrilotriacetic-acid/KOH sequence
+    are relevant.
+  snapshot_sha256: 6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7
+- evidence_id: jcm244
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=244
+  locator: Ni-Se-W solution subsection only
+  accessed_at: '2026-10-20T07:00:02.868822Z'
+  support: supports
+  summary: Both nickel compounds and both selenium compounds are literal simultaneous
+    stock components, not alternatives.
+  snapshot_sha256: 112072cc87d6839b575287734b39edcce1bd55c1660d8b221ccc679d496ae97e
+- evidence_id: togoM752
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M752
+  locator: $.components[2]
+  accessed_at: '2026-10-21T11:01:46.303415Z'
+  support: supports
+  summary: Exact UBS stock provider rows corroborate JCM 729.
+  snapshot_sha256: 3533b816eefa2b2c266fccad9f30f9e8ef4d84cb1917eb8e1411ce9a3bbce182
+- evidence_id: togoM142
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+  locator: $.components[2], $.comments[1]
+  accessed_at: '2026-10-21T09:28:25.414106Z'
+  support: supports
+  summary: Exact trace-stock provider rows retain unquantified KOH and both stock
+    pH stages.
+  snapshot_sha256: 610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33
+- evidence_id: togoM236
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M236
+  locator: $.components[2]
+  accessed_at: '2026-10-21T11:01:46.291272Z'
+  support: supports
+  summary: Exact Ni-Se-W stock provider rows; unrelated parent conditions excluded.
+  snapshot_sha256: 22033637522251f2e6d6f1eb0d048bd092a0894eb2636e6eb127102af6822d68
+- evidence_id: mediadiveJ1012api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1012
+  locator: $.data.medium; $.data.solutions[0:4]
+  accessed_at: '2026-10-21T11:01:45.045955Z'
+  support: supports
+  summary: Provider declares 1125 ml for main solution and 1000 ml for each referenced
+    stock. These declared bases are not measured final volumes or primary make-up
+    instructions.
+  snapshot_sha256: 297b7f6631e1a9e2f9f1ca014ae14965ee978b42f69a21d4ca6873638e5b23b0
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/178/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T11:22:15Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 175ebe9cc5e58429e703901933e39a9beaf8cdbcb9d01701866dd8accc33629d
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: 'CHEBI:131527: dipotassium hydrogen phosphate. Source-specific forms are
+    assessed separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: 'CHEBI:15377: water. Source-specific forms are assessed separately; valid
+    ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: 'CHEBI:17234: glucose. Source-specific forms are assessed separately; valid
+    ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: 'CHEBI:26710: sodium chloride. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi26836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T07:29:13.222926Z'
+  support: supports
+  summary: 'CHEBI:26836: sulfuric acid. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 19e202cd697eed2be3130d5b0b29cc0c1d18575ad103110877303ee678779737
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: 'CHEBI:31440: copper(II) sulfate pentahydrate. Source-specific forms are
+    assessed separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: 'CHEBI:31795: magnesium sulfate heptahydrate. Source-specific forms are
+    assessed separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32035
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32035
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T06:57:47.017507Z'
+  support: supports
+  summary: 'CHEBI:32035: potassium hydroxide. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 6ed3df00965b4707265cfced80411c4b1937b727f8c2093addbc467f88ce2ec8
+- evidence_id: chebi32149
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T07:18:34.792120Z'
+  support: supports
+  summary: 'CHEBI:32149: sodium sulfate. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: 'CHEBI:32312: zinc sulfate heptahydrate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: 'CHEBI:32588: potassium chloride. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: 'CHEBI:33118: boric acid. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi44557
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:46:15.250117Z'
+  support: supports
+  summary: 'CHEBI:44557: nitrilotriacetic acid. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi53542
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T07:33:31.075912Z'
+  support: supports
+  summary: 'CHEBI:53542: nickel chloride hexahydrate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 423c21fd3715257bbccc1ad83ef3b8e438ffe20f02418e2b202886237c4ea112
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: 'CHEBI:62946: ammonium sulfate. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: 'CHEBI:63939: sodium tungstate dihydrate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: 'CHEBI:75213: sodium molybdate dihydrate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75832
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75832
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T11:01:47.645147Z'
+  support: supports
+  summary: 'CHEBI:75832: iron(2+) sulfate (anhydrous). Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: b9119cb3893b1a8171f719ef3e8fe6e5775a4fd59575baec8cd6da953801d089
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: 'CHEBI:75836: iron(2+) sulfate heptahydrate. Source-specific forms are
+    assessed separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi77775
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_77775
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:09.354177Z'
+  support: supports
+  summary: 'CHEBI:77775: sodium selenate. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: a1a4ab87bbf08908fef7df53a788a85d9f6eee32350f082895e0563d6344c908
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: 'CHEBI:86158: calcium chloride dihydrate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86360
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86360
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:05.958063Z'
+  support: supports
+  summary: 'CHEBI:86360: manganese(II) sulfate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: ee3b60385f389c4eeb301cfe59996112ffa9c3c135268559b79e91810a14932b
+- evidence_id: chebi86463
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86463
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T11:01:47.791068Z'
+  support: supports
+  summary: 'CHEBI:86463: potassium aluminium sulfate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 59060418cddd95e8401be3d2518a69fbcd26a4f4e6f0597b2c8c03834a87812e
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: 'CHEBI:91244: cobalt(2+) sulfate heptahydrate. Source-specific forms are
+    assessed separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: chemical-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/178/chemical-grounding-context.json
+  locator: Every primary and current CHEBI-based secondary ingredient term in the
+    target and maintained owners
+  accessed_at: '2026-10-21T11:22:15Z'
+  support: context_only
+  summary: Full OLS annotations, local instance locators, label differences, pinned
+    exact-key MIM rows and layer-specific linkage metrics.
+  snapshot_sha256: d22c4e3d43f301d40940492b8daf1dd2b771639f35b95deed82296cde1974421
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact identifier rows and pinned metadata source commit; no fuzzy replacements
+  accessed_at: '2026-10-21T11:22:15Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "current_secondary_rows":
+    {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water",
+    "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term":
+    "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term",
+    "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label":
+    "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term":
+    "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:26836": [{"label": "H2SO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:26836", "preferred_term": "H2SO4", "ontology_id": "CHEBI:26836",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label":
+    "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440",
+    "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32035": [{"label": "KOH", "match_type":
+    "preferred_term", "identifier": "CHEBI:32035", "preferred_term": "KOH", "ontology_id":
+    "CHEBI:32035", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32149":
+    [{"label": "Na2SO4", "match_type": "preferred_term", "identifier": "CHEBI:32149",
+    "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O",
+    "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id":
+    "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557":
+    [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53542": [{"label":
+    "Nickel (II) chloride hexahydrate", "match_type": "preferred_term", "identifier":
+    "CHEBI:53542", "preferred_term": "Nickel (II) chloride hexahydrate", "ontology_id":
+    "CHEBI:53542", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946":
+    [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946",
+    "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term":
+    "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75832":
+    [{"label": "FeSO4", "match_type": "preferred_term", "identifier": "CHEBI:75832",
+    "preferred_term": "FeSO4", "ontology_id": "CHEBI:75832", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O",
+    "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:77775": [{"label": "Na2SeO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:77775", "preferred_term": "Na2SeO4", "ontology_id": "CHEBI:77775", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86360": [{"label": "MnSO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:86360", "preferred_term": "MnSO4", "ontology_id": "CHEBI:86360",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86463": [{"label":
+    "AlK(SO4)2", "match_type": "preferred_term", "identifier": "CHEBI:86463", "preferred_term":
+    "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id":
+    "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing":
+    []}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T11:22:15Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 11, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml",
+    "events": 11, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/repair_togo_m1070_score15.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:22:15Z'
+  support: context_only
+  summary: The exact repair writer embeds per-litre units, fixed source annotations
+    and the two form assertions. Current TOGO import code already separates primary
+    and local stock sections, but raw-unit parsing still maps g/mg/ml to per-litre
+    enums and local volume inference can use a water anchor. The current merge enforces
+    formulation equality. These current code facts do not prove which historical code
+    produced the older target.
+  snapshot_sha256: 6db06a90d2efde35b0ca68600b4eeb3cf9245c98848f6f53e2082b46f57a068a
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:22:15Z'
+  support: context_only
+  summary: The exact repair writer embeds per-litre units, fixed source annotations
+    and the two form assertions. Current TOGO import code already separates primary
+    and local stock sections, but raw-unit parsing still maps g/mg/ml to per-litre
+    enums and local volume inference can use a water anchor. The current merge enforces
+    formulation equality. These current code facts do not prove which historical code
+    produced the older target.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:22:15Z'
+  support: context_only
+  summary: The exact repair writer embeds per-litre units, fixed source annotations
+    and the two form assertions. Current TOGO import code already separates primary
+    and local stock sections, but raw-unit parsing still maps g/mg/ml to per-litre
+    enums and local volume inference can use a water anchor. The current merge enforces
+    formulation equality. These current code facts do not prove which historical code
+    produced the older target.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact accession, generated freshness and repaired owner
+  outcome: supported
+  summary: CultureMech:007588 is TOGO M1070, original JCM_M1012. The single maintained
+    owner has the same stable ID. Its September repair is later than the target's
+    August merge event; this local history establishes staleness, not an external
+    source chronology.
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - togoM1070
+  - jcm1012
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 41 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence. All 44 ingredient and stock-dose concentration instances across
+    the target and maintained owners are explicitly covered; additional rows retain
+    preparation quantities and source-only components.
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"ingredient_or_context\": \"\
+    Distilled water\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.0\",\n          \"unit\": \"L\"\n        },\n  \
+    \      \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"1 L water as the listed batch solvent, not 1 g/L\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1070\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1070\",\n\
+    \        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"109f27f167e7674d09d5cb00d6bfbe7c7de224fceb636904274df107614e8bfd\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary lists batch amounts. Main\
+    \ liquid additions total 1125 ml arithmetically, while the primary does not specify\
+    \ final make-up; provider 1125 ml is a distinct declared basis. No density or\
+    \ final-volume inference. The owner water is already 1 L but lacks an attached\
+    \ exact snippet; its mass rows and source notes incorrectly call the literal g\
+    \ amounts g/L.\"\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"ingredient_or_context\"\
+    : \"Yeast extract\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"0.2 g yeast extract in the listed batch\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM1070\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1070\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract\\\",\\n          \\\"volume\\\"\
+    : 0.2,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    109f27f167e7674d09d5cb00d6bfbe7c7de224fceb636904274df107614e8bfd\"\n      }\n\
+    \    ],\n    \"rationale\": \"The primary lists batch amounts. Main liquid additions\
+    \ total 1125 ml arithmetically, while the primary does not specify final make-up;\
+    \ provider 1125 ml is a distinct declared basis. No density or final-volume inference.\
+    \ The owner water is already 1 L but lacks an attached exact snippet; its mass\
+    \ rows and source notes incorrectly call the literal g amounts g/L.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q3\",\n    \"ingredient_or_context\": \"Glucose\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.9\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.9\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"0.9 g glucose in the listed batch\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"togoM1070\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1070\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Glucose\\\",\\n          \\\"volume\\\": 0.9,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"109f27f167e7674d09d5cb00d6bfbe7c7de224fceb636904274df107614e8bfd\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary lists batch amounts. Main\
+    \ liquid additions total 1125 ml arithmetically, while the primary does not specify\
+    \ final make-up; provider 1125 ml is a distinct declared basis. No density or\
+    \ final-volume inference. The owner water is already 1 L but lacks an attached\
+    \ exact snippet; its mass rows and source notes incorrectly call the literal g\
+    \ amounts g/L.\"\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"ingredient_or_context\"\
+    : \"H2SO4\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"H2SO4 amount unspecified; adjust main batch to pH 2.5\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1070\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1070\",\n\
+    \        \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H2SO4\\\"\",\n        \"snapshot_sha256\": \"\
+    109f27f167e7674d09d5cb00d6bfbe7c7de224fceb636904274df107614e8bfd\"\n      }\n\
+    \    ],\n    \"rationale\": \"Variable acid amount is source-supported as pH adjustment,\
+    \ not a numeric mineral dose.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n   \
+    \ \"ingredient_or_context\": \"UBS solution receiving dose\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100.0\",\n          \"unit\": \"ML_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Literal 100 ml aliquot in the JCM 1012 batch; FeSO4 is added after cooling.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1070\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1070\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"UBS solution (see Medium [M752])\\\",\\n     \
+    \     \\\"volume\\\": 100,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"109f27f167e7674d09d5cb00d6bfbe7c7de224fceb636904274df107614e8bfd\"\
+    \n      }\n    ],\n    \"rationale\": \"Generated G_PER_L is dimensionally wrong.\
+    \ The owner restores volume but labels the unnormalized aliquot ML_PER_L; 1 L\
+    \ water is not an explicit 1 L final medium. Retain aliquot and batch context;\
+    \ do not simply divide by an assumed volume.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q6\",\n    \"ingredient_or_context\": \"Trace minerals receiving dose\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"solutions[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"ML_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Literal 10 ml aliquot in the JCM 1012 batch; FeSO4 is added after cooling.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1070\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1070\"\
+    ,\n        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace minerals (see Medium [M142])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"109f27f167e7674d09d5cb00d6bfbe7c7de224fceb636904274df107614e8bfd\"\
+    \n      }\n    ],\n    \"rationale\": \"Generated G_PER_L is dimensionally wrong.\
+    \ The owner restores volume but labels the unnormalized aliquot ML_PER_L; 1 L\
+    \ water is not an explicit 1 L final medium. Retain aliquot and batch context;\
+    \ do not simply divide by an assumed volume.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q7\",\n    \"ingredient_or_context\": \"Ni-Se-W solution receiving dose\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"solutions[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"ML_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Literal 10 ml aliquot in the JCM 1012 batch; FeSO4 is added after cooling.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1070\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1070\"\
+    ,\n        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Ni-Se-W solution (see Medium [M236])\\\",\\n \
+    \         \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n      \
+    \  \"snapshot_sha256\": \"109f27f167e7674d09d5cb00d6bfbe7c7de224fceb636904274df107614e8bfd\"\
+    \n      }\n    ],\n    \"rationale\": \"Generated G_PER_L is dimensionally wrong.\
+    \ The owner restores volume but labels the unnormalized aliquot ML_PER_L; 1 L\
+    \ water is not an explicit 1 L final medium. Retain aliquot and batch context;\
+    \ do not simply divide by an assumed volume.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q8\",\n    \"ingredient_or_context\": \"1 M FeSO4 solution (pH 2.0) receiving\
+    \ dose\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.0\",\n          \"unit\": \"ML_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Literal 5 ml aliquot in the JCM 1012 batch; FeSO4 is added after cooling.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1070\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1070\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"1 M FeSO4 solution (pH 2.0)\\\",\\n          \\\
+    \"volume\\\": 5,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\
+    \": 1,\\n          \\\"conc_unit\\\": \\\"M\\\"\",\n        \"snapshot_sha256\"\
+    : \"109f27f167e7674d09d5cb00d6bfbe7c7de224fceb636904274df107614e8bfd\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Generated G_PER_L is dimensionally wrong. The\
+    \ owner restores volume but labels the unnormalized aliquot ML_PER_L; 1 L water\
+    \ is not an explicit 1 L final medium. Retain aliquot and batch context; do not\
+    \ simply divide by an assumed volume.\"\n  },\n  {\n    \"quantity_id\": \"q9\"\
+    ,\n    \"ingredient_or_context\": \"UBS solution: Na2SO4\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[0].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[0].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"14.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 14,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM752\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M752\"\
+    ,\n        \"source_locator\": \"$.components[2].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2SO4\\\",\\n          \\\"volume\\\": 14,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"3533b816eefa2b2c266fccad9f30f9e8ef4d84cb1917eb8e1411ce9a3bbce182\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"ingredient_or_context\"\
+    : \"UBS solution: (NH4)2SO4\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[1].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[1].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"30.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 30,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM752\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M752\"\
+    ,\n        \"source_locator\": \"$.components[2].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"(NH4)2SO4\\\",\\n          \\\"volume\\\": 30,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"3533b816eefa2b2c266fccad9f30f9e8ef4d84cb1917eb8e1411ce9a3bbce182\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"ingredient_or_context\"\
+    : \"UBS solution: KCl\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[2].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[2].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"1.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 1,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM752\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M752\"\
+    ,\n        \"source_locator\": \"$.components[2].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KCl\\\",\\n          \\\"volume\\\": 1,\\n   \
+    \       \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"3533b816eefa2b2c266fccad9f30f9e8ef4d84cb1917eb8e1411ce9a3bbce182\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"ingredient_or_context\"\
+    : \"UBS solution: MgSO4 x 7H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[3].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[3].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"5.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 5,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM752\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M752\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4・7H2O\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"3533b816eefa2b2c266fccad9f30f9e8ef4d84cb1917eb8e1411ce9a3bbce182\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"ingredient_or_context\"\
+    : \"UBS solution: K2HPO4\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[4].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[4].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 0.5,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM752\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M752\"\
+    ,\n        \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"3533b816eefa2b2c266fccad9f30f9e8ef4d84cb1917eb8e1411ce9a3bbce182\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"ingredient_or_context\"\
+    : \"UBS solution: Ca(NO3)2 x 4H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[5].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[5].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.14\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 0.14,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM752\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M752\"\
+    ,\n        \"source_locator\": \"$.components[2].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Ca(NO3)2・4H2O\\\",\\n          \\\"volume\\\"\
+    : 0.14,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    3533b816eefa2b2c266fccad9f30f9e8ef4d84cb1917eb8e1411ce9a3bbce182\"\n      }\n\
+    \    ],\n    \"rationale\": \"The generated stock is empty; the owner retains\
+    \ this exact numeric stock amount. Correct its annotation that the primary literally\
+    \ lists g/L or mg/L: the primary/provider raw rows list g or mg. Any retained\
+    \ per-litre scalar must explicitly cite the provider nominal 1000 ml basis, remain\
+    \ inside this stock, and gain narrow evidence. No final-medium concentration is\
+    \ calculated.\"\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"ingredient_or_context\"\
+    : \"UBS solution: Distilled water\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[6].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[6].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"1.0\",\n          \"unit\": \"L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"\
+    proposed_source_scope\": {\n      \"stock_only\": true,\n      \"source_amount\"\
+    : 1,\n      \"source_unit\": \"L\",\n      \"basis\": \"Listed stock batch with\
+    \ 1 L water; provider declares 1000 ml. Preserve both statements without calling\
+    \ water a measured final make-up.\"\n    },\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"togoM752\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M752\"\
+    ,\n        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"3533b816eefa2b2c266fccad9f30f9e8ef4d84cb1917eb8e1411ce9a3bbce182\"\
+    \n      }\n    ],\n    \"rationale\": \"Keep the source water aliquot and attach\
+    \ narrow evidence; do not move stock water into the receiving medium.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q16\",\n    \"ingredient_or_context\": \"Trace minerals:\
+    \ Nitrilotriacetic acid\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[0].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[0].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 1.5,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM142\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Nitrilotriacetic acid\\\",\\n          \\\"volume\\\
+    \": 1.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\":\
+    \ \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner retains\
+    \ this exact numeric stock amount. Correct its annotation that the primary literally\
+    \ lists g/L or mg/L: the primary/provider raw rows list g or mg. Any retained\
+    \ per-litre scalar must explicitly cite the provider nominal 1000 ml basis, remain\
+    \ inside this stock, and gain narrow evidence. No final-medium concentration is\
+    \ calculated.\"\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"ingredient_or_context\"\
+    : \"Trace minerals: MgSO4 x 7H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[1].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[1].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"3.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 3,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM142\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4・7H2O\\\",\\n          \\\"volume\\\": 3,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"ingredient_or_context\"\
+    : \"Trace minerals: MnSO4 x n H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[2].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[2].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 0.5,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM142\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnSO4・xH2O\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"ingredient_or_context\"\
+    : \"Trace minerals: NaCl\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[3].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[3].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"1.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 1,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM142\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 1,\\n  \
+    \        \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"ingredient_or_context\"\
+    : \"Trace minerals: FeSO4 x 7H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[4].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[4].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 0.1,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM142\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeSO4・7H2O\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"ingredient_or_context\"\
+    : \"Trace minerals: CoSO4 x 7H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[5].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[5].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 0.1,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM142\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoSO4・7H2O\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"ingredient_or_context\"\
+    : \"Trace minerals: CaCl2 x 2H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[6].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[6].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 0.1,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM142\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2・2H2O\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"ingredient_or_context\"\
+    : \"Trace minerals: ZnSO4 x 7H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[7].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[7].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 0.1,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM142\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnSO4・7H2O\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"ingredient_or_context\"\
+    : \"Trace minerals: CuSO4 x 5H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[8].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[8].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 0.01,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM142\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuSO4・5H2O\\\",\\n          \\\"volume\\\": 0.01,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"ingredient_or_context\"\
+    : \"Trace minerals: AlK(SO4)2\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[9].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[9].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 0.01,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM142\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[12]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"AlK(SO4)2\\\",\\n          \\\"volume\\\": 0.01,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"ingredient_or_context\"\
+    : \"Trace minerals: H3BO3\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[10].concentration\",\n \
+    \       \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[10].concentration\",\n \
+    \       \"stored\": {\n          \"value\": \"0.01\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      }\n    ],\n  \
+    \  \"proposed_source_scope\": {\n      \"stock_only\": true,\n      \"source_amount\"\
+    : 0.01,\n      \"source_unit\": \"g\",\n      \"basis\": \"Listed stock batch\
+    \ with 1 L water; provider declares 1000 ml. Preserve both statements without\
+    \ calling water a measured final make-up.\"\n    },\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM142\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\",\n     \
+    \   \"source_locator\": \"$.components[2].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H3BO3\\\",\\n          \\\"volume\\\": 0.01,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"ingredient_or_context\"\
+    : \"Trace minerals: Na2MoO4 x 2H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[11].concentration\",\n \
+    \       \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[11].concentration\",\n \
+    \       \"stored\": {\n          \"value\": \"0.01\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      }\n    ],\n  \
+    \  \"proposed_source_scope\": {\n      \"stock_only\": true,\n      \"source_amount\"\
+    : 0.01,\n      \"source_unit\": \"g\",\n      \"basis\": \"Listed stock batch\
+    \ with 1 L water; provider declares 1000 ml. Preserve both statements without\
+    \ calling water a measured final make-up.\"\n    },\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM142\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\",\n     \
+    \   \"source_locator\": \"$.components[2].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4・2H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.01,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\n      }\n\
+    \    ],\n    \"rationale\": \"The generated stock is empty; the owner retains\
+    \ this exact numeric stock amount. Correct its annotation that the primary literally\
+    \ lists g/L or mg/L: the primary/provider raw rows list g or mg. Any retained\
+    \ per-litre scalar must explicitly cite the provider nominal 1000 ml basis, remain\
+    \ inside this stock, and gain narrow evidence. No final-medium concentration is\
+    \ calculated.\"\n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"ingredient_or_context\"\
+    : \"Trace minerals: Distilled water\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[12].concentration\",\n \
+    \       \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[12].concentration\",\n \
+    \       \"stored\": {\n          \"value\": \"1.0\",\n          \"unit\": \"L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"\
+    proposed_source_scope\": {\n      \"stock_only\": true,\n      \"source_amount\"\
+    : 1,\n      \"source_unit\": \"L\",\n      \"basis\": \"Listed stock batch with\
+    \ 1 L water; provider declares 1000 ml. Preserve both statements without calling\
+    \ water a measured final make-up.\"\n    },\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"togoM142\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      }\n    ],\n    \"rationale\": \"Keep the source water aliquot and attach\
+    \ narrow evidence; do not move stock water into the receiving medium.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q29\",\n    \"ingredient_or_context\": \"Trace minerals:\
+    \ KOH solution\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[13].concentration\",\n \
+    \       \"stored\": null,\n        \"decision\": \"not_quantified\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[13].concentration\",\n \
+    \       \"stored\": {\n          \"value\": \"variable\",\n          \"unit\"\
+    : \"VARIABLE\"\n        },\n        \"decision\": \"not_quantified\"\n      }\n\
+    \    ],\n    \"proposed_source_scope\": {\n      \"stock_only\": true,\n     \
+    \ \"source_amount\": null,\n      \"source_unit\": null,\n      \"basis\": \"\
+    Listed stock batch with 1 L water; provider declares 1000 ml. Preserve both statements\
+    \ without calling water a measured final make-up.\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM142\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\",\n     \
+    \   \"source_locator\": \"$.components[2].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KOH solution\\\"\",\n        \"snapshot_sha256\"\
+    : \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\n     \
+    \ }\n    ],\n    \"rationale\": \"KOH has no specified quantity; retain nitrilotriacetic\
+    \ acid first, KOH to pH 6.5, then minerals and final pH 7.0. Do not import another\
+    \ parent stock's preparation.\"\n  },\n  {\n    \"quantity_id\": \"q30\",\n  \
+    \  \"ingredient_or_context\": \"Ni-Se-W solution: NiCl2 x 6H2O\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition[0].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition[0].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"25.0\",\n          \"unit\": \"MG_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 25,\n      \"source_unit\"\
+    : \"mg\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM236\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M236\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NiCl2・6H2O\\\",\\n          \\\"volume\\\": 25,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"22033637522251f2e6d6f1eb0d048bd092a0894eb2636e6eb127102af6822d68\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"ingredient_or_context\"\
+    : \"Ni-Se-W solution: (NH4)2Ni(SO4)2 x 6H2O\",\n    \"decision\": \"add\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition[1].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition[1].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"2.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 2,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM236\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M236\"\
+    ,\n        \"source_locator\": \"$.components[2].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"(NH4)2Ni(SO4)2・6H2O\\\",\\n          \\\"volume\\\
+    \": 2,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    22033637522251f2e6d6f1eb0d048bd092a0894eb2636e6eb127102af6822d68\"\n      }\n\
+    \    ],\n    \"rationale\": \"The generated stock is empty; the owner retains\
+    \ this exact numeric stock amount. Correct its annotation that the primary literally\
+    \ lists g/L or mg/L: the primary/provider raw rows list g or mg. Any retained\
+    \ per-litre scalar must explicitly cite the provider nominal 1000 ml basis, remain\
+    \ inside this stock, and gain narrow evidence. No final-medium concentration is\
+    \ calculated.\"\n  },\n  {\n    \"quantity_id\": \"q32\",\n    \"ingredient_or_context\"\
+    : \"Ni-Se-W solution: Na2SeO3\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition[2].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition[2].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.3\",\n          \"unit\": \"MG_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 0.3,\n      \"source_unit\"\
+    : \"mg\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM236\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M236\"\
+    ,\n        \"source_locator\": \"$.components[2].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2SeO3\\\",\\n          \\\"volume\\\": 0.3,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"22033637522251f2e6d6f1eb0d048bd092a0894eb2636e6eb127102af6822d68\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q33\",\n    \"ingredient_or_context\"\
+    : \"Ni-Se-W solution: Na2SeO4\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition[3].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition[3].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"10.0\",\n          \"unit\": \"MG_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 10,\n      \"source_unit\"\
+    : \"mg\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM236\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M236\"\
+    ,\n        \"source_locator\": \"$.components[2].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2SeO4\\\",\\n          \\\"volume\\\": 10,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"22033637522251f2e6d6f1eb0d048bd092a0894eb2636e6eb127102af6822d68\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q34\",\n    \"ingredient_or_context\"\
+    : \"Ni-Se-W solution: Na2WO4 x 2H2O\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition[4].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition[4].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"10.0\",\n          \"unit\": \"MG_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"stock_only\": true,\n      \"source_amount\": 10,\n      \"source_unit\"\
+    : \"mg\",\n      \"basis\": \"Listed stock batch with 1 L water; provider declares\
+    \ 1000 ml. Preserve both statements without calling water a measured final make-up.\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM236\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M236\"\
+    ,\n        \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2WO4・2H2O\\\",\\n          \\\"volume\\\": 10,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"22033637522251f2e6d6f1eb0d048bd092a0894eb2636e6eb127102af6822d68\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated stock is empty; the owner\
+    \ retains this exact numeric stock amount. Correct its annotation that the primary\
+    \ literally lists g/L or mg/L: the primary/provider raw rows list g or mg. Any\
+    \ retained per-litre scalar must explicitly cite the provider nominal 1000 ml\
+    \ basis, remain inside this stock, and gain narrow evidence. No final-medium concentration\
+    \ is calculated.\"\n  },\n  {\n    \"quantity_id\": \"q35\",\n    \"ingredient_or_context\"\
+    : \"Ni-Se-W solution: Distilled water\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition[5].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition[5].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"1.0\",\n          \"unit\": \"L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"\
+    proposed_source_scope\": {\n      \"stock_only\": true,\n      \"source_amount\"\
+    : 1,\n      \"source_unit\": \"L\",\n      \"basis\": \"Listed stock batch with\
+    \ 1 L water; provider declares 1000 ml. Preserve both statements without calling\
+    \ water a measured final make-up.\"\n    },\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"togoM236\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M236\"\
+    ,\n        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"22033637522251f2e6d6f1eb0d048bd092a0894eb2636e6eb127102af6822d68\"\
+    \n      }\n    ],\n    \"rationale\": \"Keep the source water aliquot and attach\
+    \ narrow evidence; do not move stock water into the receiving medium.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q36\",\n    \"ingredient_or_context\": \"Ferrous\
+    \ sulfate stock strength\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].composition[0].concentration\",\n  \
+    \      \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].composition[0].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"variable\",\n          \"unit\":\
+    \ \"VARIABLE\"\n        },\n        \"decision\": \"correct\"\n      }\n    ],\n\
+    \    \"proposed_source_scope\": \"1 MOLAR within the ferrous sulfate stock; pH\
+    \ 2.0, filter-sterilized. Source does not identify the supplied hydrate.\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1070\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1070\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"1 M FeSO4 solution (pH 2.0)\\\",\\n          \\\
+    \"volume\\\": 5,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\
+    \": 1,\\n          \\\"conc_unit\\\": \\\"M\\\"\",\n        \"snapshot_sha256\"\
+    : \"109f27f167e7674d09d5cb00d6bfbe7c7de224fceb636904274df107614e8bfd\"\n     \
+    \ }\n    ],\n    \"rationale\": \"VARIABLE must not conceal the source-explicit\
+    \ 1 M amount. No mass conversion or replacement hydrate ID is supported.\"\n \
+    \ },\n  {\n    \"quantity_id\": \"q37\",\n    \"ingredient_or_context\": \"Main\
+    \ pH\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 2.5,\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"adjust pH 2.5\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm1012\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1012\"\
+    ,\n        \"source_locator\": \"JCM 1012 preparation sentence\",\n        \"\
+    exact_source_quote\": \"adjust pH 2.5\",\n        \"snapshot_sha256\": \"130739a6160be3fe84c48c468a5330ae843d02fe12372a1742cec3066192751d\"\
+    ,\n        \"parsed_text_sha256\": \"b54c511ca1c65a982a98da666f082d7139c15332e6488842a427363c6e06205e\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the exact preparation stage. The\
+    \ owner already records the main and stock pH values and ordered stock procedure;\
+    \ the source default time/temperature is absent from both layers. No parent-medium\
+    \ culture conditions transfer.\"\n  },\n  {\n    \"quantity_id\": \"q38\",\n \
+    \   \"ingredient_or_context\": \"Ferrous stock pH\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].preparation_notes\",\n        \"stored\"\
+    : \"pH 2.0 in preferred_term\",\n        \"decision\": \"evidence_only\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].preparation_notes\",\n        \"stored\"\
+    : \"pH 2.0 in preferred_term and notes\",\n        \"decision\": \"evidence_only\"\
+    \n      }\n    ],\n    \"proposed_source_scope\": \"1 M FeSO 4 solution (pH 2.0)\
+    \ 5.0 ml\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1012\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1012\"\
+    ,\n        \"source_locator\": \"JCM 1012 post-cooling row\",\n        \"exact_source_quote\"\
+    : \"1 M FeSO 4 solution (pH 2.0) 5.0 ml\",\n        \"snapshot_sha256\": \"130739a6160be3fe84c48c468a5330ae843d02fe12372a1742cec3066192751d\"\
+    ,\n        \"parsed_text_sha256\": \"b54c511ca1c65a982a98da666f082d7139c15332e6488842a427363c6e06205e\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the exact preparation stage. The\
+    \ owner already records the main and stock pH values and ordered stock procedure;\
+    \ the source default time/temperature is absent from both layers. No parent-medium\
+    \ culture conditions transfer.\"\n  },\n  {\n    \"quantity_id\": \"q39\",\n \
+    \   \"ingredient_or_context\": \"Trace stock pH sequence\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].preparation_notes\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].preparation_notes\",\n        \"stored\"\
+    : \"Dissolve nitrilotriacetic acid, adjust pH to 6.5 with KOH solution, add minerals,\
+    \ then adjust final pH to 7.0.\",\n        \"decision\": \"evidence_only\"\n \
+    \     }\n    ],\n    \"proposed_source_scope\": \"Dissolve nitrilotriacetic acid\
+    \ and adjust pH to 6.5 with KOH solution.\",\n    \"source_snippets\": [\n   \
+    \   {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals final preparation\",\n       \
+    \ \"exact_source_quote\": \"Dissolve nitrilotriacetic acid and adjust pH to 6.5\
+    \ with KOH solution.\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the exact preparation stage. The\
+    \ owner already records the main and stock pH values and ordered stock procedure;\
+    \ the source default time/temperature is absent from both layers. No parent-medium\
+    \ culture conditions transfer.\"\n  },\n  {\n    \"quantity_id\": \"q40\",\n \
+    \   \"ingredient_or_context\": \"Trace stock final pH\",\n    \"decision\": \"\
+    add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].preparation_notes\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].preparation_notes\",\n        \"stored\"\
+    : \"Dissolve nitrilotriacetic acid, adjust pH to 6.5 with KOH solution, add minerals,\
+    \ then adjust final pH to 7.0.\",\n        \"decision\": \"evidence_only\"\n \
+    \     }\n    ],\n    \"proposed_source_scope\": \"Adjust final pH to 7.0.\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm151\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals final preparation\",\n       \
+    \ \"exact_source_quote\": \"Adjust final pH to 7.0.\",\n        \"snapshot_sha256\"\
+    : \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\",\n    \
+    \    \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the exact preparation stage. The\
+    \ owner already records the main and stock pH values and ordered stock procedure;\
+    \ the source default time/temperature is absent from both layers. No parent-medium\
+    \ culture conditions transfer.\"\n  },\n  {\n    \"quantity_id\": \"q41\",\n \
+    \   \"ingredient_or_context\": \"JCM default sterilization\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null,\n   \
+    \     \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": {\n       \
+    \   \"method\": \"AUTOCLAVE\"\n        },\n        \"decision\": \"add\"\n   \
+    \   }\n    ],\n    \"proposed_source_scope\": \"autoclaving at 121°C for 15 min.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1012\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1012\"\
+    ,\n        \"source_locator\": \"JCM page default unless otherwise stated\",\n\
+    \        \"exact_source_quote\": \"autoclaving at 121°C for 15 min.\",\n     \
+    \   \"snapshot_sha256\": \"130739a6160be3fe84c48c468a5330ae843d02fe12372a1742cec3066192751d\"\
+    ,\n        \"parsed_text_sha256\": \"b54c511ca1c65a982a98da666f082d7139c15332e6488842a427363c6e06205e\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the exact preparation stage. The\
+    \ owner already records the main and stock pH values and ordered stock procedure;\
+    \ the source default time/temperature is absent from both layers. No parent-medium\
+    \ culture conditions transfer.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Source-specific forms and current CHEBI-based secondary correspondence
+  outcome: concern
+  summary: '24 distinct asserted chemical IDs resolve as nonobsolete. 2 local label
+    instances differ from canonical labels. 24 of 24 distinct current CHEBI-based
+    secondary keys have exact mapped preferred-term rows in the pinned index; unresolved
+    keys: []. This does not validate historical legacy MIM IDs, supplied hydrates,
+    stereochemistry or catalog products. The manganese stock term and its copied secondary
+    label require correction; source-unspecified ferrous sulfate must not be promoted
+    to a verified anhydrous supply form. Legacy sulfur IDs occur only in excluded
+    parent-medium ingredients, not in this target or its restored stock components.'
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - record
+  - chemical-context
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi15377
+  - chebi17234
+  - chebi26710
+  - chebi26836
+  - chebi31440
+  - chebi31795
+  - chebi32035
+  - chebi32149
+  - chebi32312
+  - chebi32588
+  - chebi33118
+  - chebi44557
+  - chebi53542
+  - chebi62946
+  - chebi63939
+  - chebi75213
+  - chebi75832
+  - chebi75836
+  - chebi77775
+  - chebi86158
+  - chebi86360
+  - chebi86463
+  - chebi91244
+  details: '{"metrics": [{"input": "data/merge_yaml/merged/ACIDITHRIX_FERROOYDANS_MEDIUM.yaml",
+    "ingredient_instances": 4, "primary": 3, "current_secondary": 3, "primary_percent":
+    75.0, "current_secondary_percent": 75.0}, {"input": "data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml",
+    "ingredient_instances": 32, "primary": 28, "current_secondary": 28, "primary_percent":
+    87.5, "current_secondary_percent": 87.5}], "definition": "Ingredient-instance
+    linkage percentages on a 0–100 scale, using each stated layer denominator; these
+    are not scientific correctness scores.", "label_drift": [{"input": "data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml",
+    "field_path": "solutions[1].composition[2].term", "label": "manganese(II) sulfate
+    hydrate", "id": "CHEBI:86360", "canonical_label": "manganese(II) sulfate"}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml",
+    "field_path": "solutions[1].composition[2].mediaingredientmech_chebi_term", "label":
+    "manganese(II) sulfate hydrate", "id": "CHEBI:86360", "canonical_label": "manganese(II)
+    sulfate"}]}'
+- assessment_id: preparation
+  area: completeness
+  topic: Source-scoped preparation, conditions and physical-state branches
+  outcome: concern
+  summary: Target omits preparation, main pH and sterilization; owner restores acidification,
+    autoclaving, cooling and filtered ferrous addition. Preserve those repairs and
+    the trace-stock KOH sequence. Add only the exact JCM default cycle where applicable;
+    do not transfer JCM 151 or 244 receiving-medium gases, sulfur handling or culture
+    conditions.
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1012
+  - jcm729
+  - jcm151
+  - jcm244
+  - togoM1070
+  - mediadiveJ1012api
+- assessment_id: classification
+  area: scope
+  topic: Medium classification, applications and organism claim scope
+  outcome: supported
+  summary: COMPLEX/SEMI_DEFINED and LIQUID are consistent with the mixture of defined
+    salts/glucose and undefined yeast extract. No strain-growth, optimum, temperature
+    or taxonomic claim is inferred from the title or parent media. Unmapped mixtures
+    remain unresolved rather than receiving invented molecular IDs.
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1012
+  - jcm729
+  - jcm151
+  - jcm244
+  - togoM1070
+  - mediadiveJ1012api
+- assessment_id: forms
+  area: grounding
+  topic: Exact supplied chemical forms and mixture identity
+  outcome: concern
+  summary: Owner solutions[1].composition[2] labels CHEBI:86360 as a hydrate although
+    its canonical label and Mn.O4S structure are anhydrous; JCM 151 explicitly leaves
+    hydrate count variable. Both primary and secondary fields are affected. Owner
+    solutions[3].composition[0] asserts anhydrous CHEBI:75832 although JCM 1012 specifies
+    only FeSO4 in a 1 M stock. Keep that latter supply-form uncertainty explicit;
+    do not invent a hydrate or use a hydrate molecular weight.
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - record
+  - chemical-context
+  - owner-0
+  - jcm1012
+  - jcm729
+  - jcm151
+  - jcm244
+  - togoM1070
+  - mediadiveJ1012api
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Claim-level formulation evidence and current annotations
+  outcome: concern
+  summary: Neither target nor owner attaches exact ingredient/stock amount snippets.
+    Owner source strings and eight references improve provenance but its g/L and ml/L
+    statements are not literal transcriptions of the cited batch recipe. Existing
+    curated flags and repair history do not verify this basis; append a clarification
+    after an authorized correction.
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - owner-0
+  - jcm1012
+  - jcm729
+  - jcm151
+  - jcm244
+  - togoM1070
+  - mediadiveJ1012api
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 22 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained repair writer and generated freshness
+  outcome: concern
+  summary: Future fixes belong to the normalized TOGO M1070 owner and its explicit
+    repair writer; regenerate the stale target only after evidence, basis and form
+    review. Preserve the existing September repair event and append a new factual
+    clarification.
+  target_ids:
+  - CultureMech:007588
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-0
+  - writer-1
+  - writer-2
+findings:
+- finding_id: f1
+  issue_key: cm007588-batch-and-stock-representation
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: The generated recipe loses stock definitions and misstates batch quantities
+  description: The target records 1 L water as 1 G_PER_L and four volumetric aliquots
+    as G_PER_L, with empty stocks. The owner repairs water and nested composition,
+    but repeats literal 100/10/10/5 ml aliquots as ML_PER_L despite 1 L water plus
+    additional liquids, and calls the raw 0.2/0.9 g masses g/L. Its stock notes likewise
+    state primary g/L where sources list batch g/mg, and its explicit 1 M FeSO4 component
+    remains VARIABLE. The inventory preserves all actual values and source bases;
+    provider 1125 ml is not an unqualified primary final volume.
+  target_ids:
+  - CultureMech:007588
+  field_paths:
+  - ingredients[*].concentration
+  - solutions
+  - notes
+  evidence_ids:
+  - record
+  - owner-0
+  - quantity-inventory
+  - jcm1012
+  - jcm729
+  - jcm151
+  - jcm244
+  - togoM1070
+  - mediadiveJ1012api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm007588-stock-form-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The repaired manganese hydrate is grounded to an anhydrous structure
+  description: The maintained owner solutions[1].composition[2].term and mediaingredientmech_chebi_term
+    both assert CHEBI:86360 with a noncanonical hydrate label; the source names MnSO4
+    with unspecified hydration. A label rewrite alone would hide the source-form issue.
+    The separate ferrous-stock source also does not establish the asserted anhydrous
+    supply form.
+  target_ids:
+  - CultureMech:007588
+  field_paths:
+  - solutions[1].composition
+  - solutions[3].composition
+  evidence_ids:
+  - owner-0
+  - jcm151
+  - jcm1012
+  - chemical-context
+  - chebi86360
+  - chebi75832
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm007588-preparation-evidence-recovery
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Retain repaired preparation and add source-scoped evidence before regeneration
+  description: The target omits the preparation restored in the owner. Both layers
+    lack the explicit JCM default cycle and narrow formulation snippets; the owner
+    already preserves pH 2.5, filtered 1 M FeSO4 at pH 2.0 after cooling, and the
+    trace-stock KOH pH sequence. These distinct stages materially define the source
+    recipe and must survive regeneration.
+  target_ids:
+  - CultureMech:007588
+  field_paths:
+  - preparation_steps
+  - sterilization
+  - ph_value
+  - solutions
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - quantity-inventory
+  - jcm1012
+  - jcm729
+  - jcm151
+  - jcm244
+  - togoM1070
+  - mediadiveJ1012api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Correct maintained batch/dose annotations, encode or explicitly preserve
+    the 1 M stock strength, attach exact source snippets and keep every component
+    in its named stock. Use schema-supported evidence/notes for batch masses when
+    no faithful scalar unit exists. Preserve owner repairs; then regenerate the target.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007588
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Resolve exact source/form correspondence in the owner and repair writer.
+    Preserve unspecified hydration and avoid unsupported replacement IDs or molar-to-mass
+    conversions; update both primary and secondary fields consistently.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007588
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve and evidence the existing owner steps, add the applicable
+    exact JCM cycle, and retain stock-specific KOH and final pH context. Do not import
+    unrelated parent-medium instructions. Append history rather than replacing the
+    prior repair event.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007588
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- All required exact formulation and in-scope current chemical-key sources were available.
+  The primary does not state a measured final volume; the review is complete as an
+  assessment while final-medium conversions remain unsupported.
+- Only UBS, trace minerals and Ni-Se-W subsections of the parent media were assessed.
+  Parent organisms, unrelated compositions, variant citations and legacy sulfur IDs
+  outside these stock sections were excluded.
+- The native concentration enum lacks plain batch g/mg/ml units. Preserve original
+  quantities in evidence and preparation context rather than inventing a per-litre
+  denominator or schema slot.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-018
+- generated-medium
