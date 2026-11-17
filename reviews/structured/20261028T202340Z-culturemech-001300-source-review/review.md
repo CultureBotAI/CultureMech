@@ -1,0 +1,2245 @@
+# Scientific review: DESULFONEMA LIMICOLA MEDIUM
+
+- Review: 20261028T202340Z-culturemech-001300-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T20:15:46.173431Z
+- Finished UTC: 2026-10-28T20:23:40.778184Z
+- Reviewer: Codex tsb_source_check (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact source supports the retained source-stage rates and main preparation, but both documents flatten multiple solution stages and omit their receiving topology. HCl mass conversion lacks a percentage basis, two chemical identities contradict supplied forms, and two valid stock methods need explicit scope. Current and historical support is credited without inventing final-volume or growth claims.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch077 index 10
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001300 | data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml | generated | desulfonema_limicola_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:001300 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:001300 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:001300 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:001300 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### Exact DSM201 source
+
+identity: supported. Targets: CultureMech:001300.
+
+The selected singleton and maintained owner identify DSM201. The fresh primary and provider agree on that identity. Embedded parent numbers locate only the stock definitions printed in this exact primary; no whole parent medium is transferred.
+
+### Classification and optional branches
+
+consistency: concern. Targets: CultureMech:001300.
+
+Liquid complex/undefined is appropriate for the basal formulation containing clarified rumen fluid. The conditional washed-agar or aluminum-phosphate alternatives do not make the basal liquid classification wrong. The high_metal flag lacks an inspected threshold/justification; source B–I wording remains ambiguous.
+
+### Original native checks
+
+schema: supported. Targets: CultureMech:001300.
+
+All four original checks exited zero; reference validation checked zero references. These shape/label checks do not authenticate chemical supplied forms or multi-solution topology.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:001300.
+
+62 current concentration fields are covered by 56 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema":"fresh-b077-quantity-inventory-v1","target":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","quantity_field_count":62,"decisions":[{"quantity_id":"q1","label":"Na2SO4","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"3.22581","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"3.22581","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Solution A. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 37-37","quote":"Na2SO4                                                    3.00        g","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3.22581,\n                        \"mmol_l\": 22.7106,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q2","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"16.129","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"16.129","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Solution A. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 38-38","quote":"NaCl                                                     15.00        g","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 16.129,\n                        \"mmol_l\": 275.993,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q3","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"2.36559","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"2.36559","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Solution A. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 39-39","quote":"MgCl2 x 6 H2O                                             2.20        g","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 2.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.36559,\n                        \"mmol_l\": 11.6358,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q4","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.16129","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.16129","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Solution A. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 40-40","quote":"CaCl2 x 2 H2O                                             0.15        g","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.16129,\n                        \"mmol_l\": 1.0971,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q5","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.537634","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.537634","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Solution A. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 41-41","quote":"KCl                                                       0.50        g","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.537634,\n                        \"mmol_l\": 7.21173,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q6","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.215054","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.215054","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Solution A. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 42-42","quote":"KH2PO4                                                    0.20        g","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.215054,\n                        \"mmol_l\": 1.58029,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q7","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.322581","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.322581","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Solution A. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 43-43","quote":"NH4Cl                                                     0.30        g","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.322581,\n                        \"mmol_l\": 6.03067,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q8","label":"Sodium resazurin","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.000537634","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.000537634","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Solution A. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. The resazurin attribute is explicitly0.1%w/v, so its batch mass is supported; supplied sodium-salt identity remains a separate issue. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 44-44","quote":"Sodium resazurin (0.1% w/v)                               0.50       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000537634,\n                        \"mmol_l\": 0.00214052,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q9","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"50","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"50","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Solution C. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Solution C","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 59-59","quote":"Na2CO3                                                      1.50        g","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 50,\n                        \"mmol_l\": 471.752,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q10","label":"Na-acetate x 3 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"250","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"250","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Solution D. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Solution D","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 64-64","quote":"Na-acetate x 3 H2O                                          2.50        g","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[4].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na-acetate x 3 H2O\",\n                        \"compound_id\": 294,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 250,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q11","label":"Disodium succinate","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"100","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"100","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Solution E. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Solution E","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 69-69","quote":"Disodium succinate                                          0.10        g","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[5].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Disodium succinate\",\n                        \"compound_id\": 1189,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 100,\n                        \"mmol_l\": 617.094,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q12","label":"Na2S x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"40","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"40","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Solution H. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Solution H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 82-82","quote":"Na2S x 9 H2O                                                0.40        g","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[8].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 40,\n                        \"mmol_l\": 166.54,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q13","label":"HCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5","unit":"G_PER_L"},"decision":"unsupported"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5","unit":"G_PER_L"},"decision":"unsupported"}],"decision":"unsupported","rationale":"The source provides 10 ml HCl labelled25% in SL-10, with explicit final stock make-up1000 ml. The percentage basis and density are not specified, so the provider2.5g_l and local mass concentration are not chemically verified. Preserve the original volume/attribute and stock stage; do not infer25%w/v or density.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 87-87","quote":"HCl (25%)                                                  10.00      ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q14","label":"FeCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"1.5","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"1.5","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Trace element solution SL-10. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 88-88","quote":"FeCl2 x 4 H2O                                               1.50       g","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q15","label":"ZnCl2","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.07","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.07","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Trace element solution SL-10. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 89-89","quote":"ZnCl2                                                      70.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q16","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Trace element solution SL-10. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 90-90","quote":"MnCl2 x 4 H2O                                             100.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q17","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.006","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.006","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Trace element solution SL-10. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 91-91","quote":"H3BO3                                                       6.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q18","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.19","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.19","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Trace element solution SL-10. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 92-92","quote":"CoCl2 x 6 H2O                                             190.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q19","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.002","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.002","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Trace element solution SL-10. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 93-93","quote":"CuCl2 x 2 H2O                                               2.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q20","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.024","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.024","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Trace element solution SL-10. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 94-94","quote":"NiCl2 x 6 H2O                                              24.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q21","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.036","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.036","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Trace element solution SL-10. The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 95-95","quote":"Na2MoO4 x 2 H2O                                            36.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q22","label":"Biotin","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.02","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.02","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Wolin's vitamin solution (10x). The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin's vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 120-120","quote":"Biotin                                               20.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q23","label":"Folic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Wolin's vitamin solution (10x). The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin's vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 121-121","quote":"Folic acid                                           20.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q24","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Wolin's vitamin solution (10x). The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin's vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 122-122","quote":"Pyridoxine hydrochloride                            100.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q25","label":"Thiamine HCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Wolin's vitamin solution (10x). The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin's vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 123-123","quote":"Thiamine HCl                                         50.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q26","label":"Riboflavin","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Wolin's vitamin solution (10x). The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin's vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 124-124","quote":"Riboflavin                                           50.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q27","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Wolin's vitamin solution (10x). The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin's vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 125-125","quote":"Nicotinic acid                                       50.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q28","label":"Calcium D-(+)-pantothenate","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Wolin's vitamin solution (10x). The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin's vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 126-126","quote":"Calcium D-(+)-pantothenate                           50.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q29","label":"Vitamin B12","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.001","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.001","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Wolin's vitamin solution (10x). The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin's vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 127-127","quote":"Vitamin B12                                           1.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q30","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Wolin's vitamin solution (10x). The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin's vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 128-128","quote":"p-Aminobenzoic acid                                  50.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q31","label":"(DL)-alpha-Lipoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The exact provider declares this rate for Wolin's vitamin solution (10x). The primary quantity agrees on that stage. Both documents put the rate among complete-medium ingredients, losing the named solution boundary and receiving dose. Retain the source mass and supported stage rate when restoring that solution; do not treat it as a final-medium rate. Listed stock water alone is not measured final volume; explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin's vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 129-129","quote":"(DL)-alpha-Lipoic acid                               50.00      mg","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q32","label":"Solution A receiving dose","local_fields":[],"decision":"correct","rationale":"Restore the exact source batch dose as a named solution descriptor. The provider main volume1003 ml equals the listed addition sum, but the primary does not explicitly state measured final volume. No final-medium normalization is inferred.","source_stage":"Main batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 3-3","quote":"Solution A                                              930.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\": 416,\n                        \"amount\": 930,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q33","label":"Solution B receiving dose","local_fields":[],"decision":"correct","rationale":"Restore the exact source batch dose as a named solution descriptor. The provider main volume1003 ml equals the listed addition sum, but the primary does not explicitly state measured final volume. No final-medium normalization is inferred.","source_stage":"Main batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 4-4","quote":"Solution B                                                1.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\": 417,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q34","label":"Solution C receiving dose","local_fields":[],"decision":"correct","rationale":"Restore the exact source batch dose as a named solution descriptor. The provider main volume1003 ml equals the listed addition sum, but the primary does not explicitly state measured final volume. No final-medium normalization is inferred.","source_stage":"Main batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 5-5","quote":"Solution C                                               30.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Solution C\",\n                        \"solution_id\": 418,\n                        \"amount\": 30,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q35","label":"Solution D receiving dose","local_fields":[],"decision":"correct","rationale":"Restore the exact source batch dose as a named solution descriptor. The provider main volume1003 ml equals the listed addition sum, but the primary does not explicitly state measured final volume. No final-medium normalization is inferred.","source_stage":"Main batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 6-6","quote":"Solution D                                               10.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\": 419,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q36","label":"Solution E receiving dose","local_fields":[],"decision":"correct","rationale":"Restore the exact source batch dose as a named solution descriptor. The provider main volume1003 ml equals the listed addition sum, but the primary does not explicitly state measured final volume. No final-medium normalization is inferred.","source_stage":"Main batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 7-7","quote":"Solution E                                                1.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"solution\": \"Solution E\",\n                        \"solution_id\": 420,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q37","label":"Solution F receiving dose","local_fields":[],"decision":"correct","rationale":"Restore the exact source batch dose as a named solution descriptor. The provider main volume1003 ml equals the listed addition sum, but the primary does not explicitly state measured final volume. No final-medium normalization is inferred.","source_stage":"Main batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 8-8","quote":"Solution F                                                1.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Solution F\",\n                        \"solution_id\": 421,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q38","label":"Solution G receiving dose","local_fields":[],"decision":"correct","rationale":"Restore the exact source batch dose as a named solution descriptor. The provider main volume1003 ml equals the listed addition sum, but the primary does not explicitly state measured final volume. No final-medium normalization is inferred.","source_stage":"Main batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 9-9","quote":"Solution G                                               20.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Solution G\",\n                        \"solution_id\": 422,\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q39","label":"Solution H receiving dose","local_fields":[],"decision":"correct","rationale":"Restore the exact source batch dose as a named solution descriptor. The provider main volume1003 ml equals the listed addition sum, but the primary does not explicitly state measured final volume. No final-medium normalization is inferred.","source_stage":"Main batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 10-10","quote":"Solution H                                               10.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Solution H\",\n                        \"solution_id\": 423,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q40","label":"Water input: Solution A","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact water input in its own solution. Only SL-10 separately has explicit final make-up; the other water listings do not independently establish final volume.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 45-45","quote":"Distilled water                                         930.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 930,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q41","label":"Water input: Solution C","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact water input in its own solution. Only SL-10 separately has explicit final make-up; the other water listings do not independently establish final volume.","source_stage":"Solution C","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 60-60","quote":"Distilled water                                            30.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[3].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 30,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q42","label":"Water input: Solution D","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact water input in its own solution. Only SL-10 separately has explicit final make-up; the other water listings do not independently establish final volume.","source_stage":"Solution D","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 65-65","quote":"Distilled water                                            10.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[4].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q43","label":"Water input: Solution E","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact water input in its own solution. Only SL-10 separately has explicit final make-up; the other water listings do not independently establish final volume.","source_stage":"Solution E","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 70-70","quote":"Distilled water                                             1.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[5].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q44","label":"Water input: Solution H","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact water input in its own solution. Only SL-10 separately has explicit final make-up; the other water listings do not independently establish final volume.","source_stage":"Solution H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 83-83","quote":"Distilled water                                            10.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[8].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q45","label":"Water input: Trace element solution SL-10","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact water input in its own solution. Only SL-10 separately has explicit final make-up; the other water listings do not independently establish final volume.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 96-96","quote":"Distilled water                                           990.00      ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q46","label":"Water input: Wolin's vitamin solution (10x)","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact water input in its own solution. Only SL-10 separately has explicit final make-up; the other water listings do not independently establish final volume.","source_stage":"Wolin's vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 130-130","quote":"Distilled water                                    1000.00      ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[10]","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q47","label":"Nested reference in Solution B","local_fields":[],"decision":"correct","rationale":"The receiving subsolution refers to this exact named preparation and dose. Preserve the nested reference chain without flattening its ingredient concentrations or substituting another stock. Clarified rumen fluid is retained as a complex ingredient without invented composition.","source_stage":"Solution B","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 55-55","quote":"Trace element solution SL-10                                1.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q48","label":"Nested reference in Solution F","local_fields":[],"decision":"correct","rationale":"The receiving subsolution refers to this exact named preparation and dose. Preserve the nested reference chain without flattening its ingredient concentrations or substituting another stock. Clarified rumen fluid is retained as a complex ingredient without invented composition.","source_stage":"Solution F","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 74-74","quote":"Wolin's vitamin solution (10x)                              1.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[6].recipe[0]","quote":"{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q49","label":"Nested reference in Solution G","local_fields":[],"decision":"correct","rationale":"The receiving subsolution refers to this exact named preparation and dose. Preserve the nested reference chain without flattening its ingredient concentrations or substituting another stock. Clarified rumen fluid is retained as a complex ingredient without invented composition.","source_stage":"Solution G","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 78-78","quote":"Clarified rumen fluid, clarified                           20.00       ml","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[7].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"solution\": \"Clarified rumen fluid\",\n                        \"solution_id\": 2618,\n                        \"condition\": \"clarified\",\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q50","label":"Retained main preparation 1","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"preparation_steps[0]","stored":{"step_number":1,"action":"AUTOCLAVE","description":"Solution A is sparged with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to reach a pH of around 6, then distributed under same gas atmosphere into anoxic Hungate-type tubes and autoclaved."}},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"preparation_steps[0]","stored":{"step_number":1,"action":"AUTOCLAVE","description":"Solution A is sparged with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to reach a pH of around 6, then distributed under same gas atmosphere into anoxic Hungate-type tubes and autoclaved."}}],"decision":"evidence_only","rationale":"The complete retained text and its numeric controls match the exact current source. Preserve gas atmosphere, timing, separate sterilization, receiving order and source-defined conditional alternatives. A single action code does not enumerate every subordinate action. The reference to B–I in the alternative paragraph is source text and remains unresolved because the formulation defines A–H.","source_stage":"Main preparation and explicitly conditional source alternatives","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 12-14","quote":"1. Solution A is sparged with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to reach a\npH of around 6, then distributed under same gas atmosphere into anoxic Hungate-type\ntubes and autoclaved.","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\": \"Solution A is sparged with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to reach a pH of around 6, then distributed under same gas atmosphere into anoxic Hungate-type tubes and autoclaved.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q51","label":"Retained main preparation 2","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"preparation_steps[1]","stored":{"step_number":2,"action":"AUTOCLAVE","description":"Solutions B, D, E, G, and H are autoclaved separately under 100% N2 gas. Solution C is autoclaved under 80% N2 and 20% CO2 gas atmosphere. Solution F is prepared under 100% N2 gas and sterilized by filtration. To complete the medium appropriate amounts of solutions B to H are added to the sterile solution A in the sequence as indicated. Adjust pH of the complete medium to 7.6, if necessary."}},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"preparation_steps[1]","stored":{"step_number":2,"action":"AUTOCLAVE","description":"Solutions B, D, E, G, and H are autoclaved separately under 100% N2 gas. Solution C is autoclaved under 80% N2 and 20% CO2 gas atmosphere. Solution F is prepared under 100% N2 gas and sterilized by filtration. To complete the medium appropriate amounts of solutions B to H are added to the sterile solution A in the sequence as indicated. Adjust pH of the complete medium to 7.6, if necessary."}}],"decision":"evidence_only","rationale":"The complete retained text and its numeric controls match the exact current source. Preserve gas atmosphere, timing, separate sterilization, receiving order and source-defined conditional alternatives. A single action code does not enumerate every subordinate action. The reference to B–I in the alternative paragraph is source text and remains unresolved because the formulation defines A–H.","source_stage":"Main preparation and explicitly conditional source alternatives","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 15-19","quote":"2. Solutions B, D, E, G, and H are autoclaved separately under 100% N2 gas. Solution C is\nautoclaved under 80% N2 and 20% CO2 gas atmosphere. Solution F is prepared under\n100% N2 gas and sterilized by filtration. To complete the medium appropriate amounts of\nsolutions B to H are added to the sterile solution A in the sequence as indicated. Adjust pH\nof the complete medium to 7.6, if necessary.","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].steps[1]","quote":"{\n                        \"step\": \"Solutions B, D, E, G, and H are autoclaved separately under 100% N2 gas. Solution C is autoclaved under 80% N2 and 20% CO2 gas atmosphere. Solution F is prepared under 100% N2 gas and sterilized by filtration. To complete the medium appropriate amounts of solutions B to H are added to the sterile solution A in the sequence as indicated. Adjust pH of the complete medium to 7.6, if necessary.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q52","label":"Retained main preparation 3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"preparation_steps[2]","stored":{"step_number":3,"action":"FILTER_STERILIZE","description":"Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution freshly prepared under N2 and filter-sterilized) just before inoculation may stimulate growth at the beginning. For transfers use 5 - 10% inoculum."}},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"preparation_steps[2]","stored":{"step_number":3,"action":"FILTER_STERILIZE","description":"Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution freshly prepared under N2 and filter-sterilized) just before inoculation may stimulate growth at the beginning. For transfers use 5 - 10% inoculum."}}],"decision":"evidence_only","rationale":"The complete retained text and its numeric controls match the exact current source. Preserve gas atmosphere, timing, separate sterilization, receiving order and source-defined conditional alternatives. A single action code does not enumerate every subordinate action. The reference to B–I in the alternative paragraph is source text and remains unresolved because the formulation defines A–H.","source_stage":"Main preparation and explicitly conditional source alternatives","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 20-22","quote":"3. Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution\nfreshly prepared under N2 and filter-sterilized) just before inoculation may stimulate\ngrowth at the beginning. For transfers use 5 - 10% inoculum.","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].steps[2]","quote":"{\n                        \"step\": \"Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution freshly prepared under N2 and filter-sterilized) just before inoculation may stimulate growth at the beginning. For transfers use 5 - 10% inoculum.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q53","label":"Retained main preparation 4","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"preparation_steps[3]","stored":{"step_number":4,"action":"AUTOCLAVE","description":"Cultures of Desulfonema spp. show usually improved growth in media containing an artificial light sediment of aluminum phosphate. Alternatively, a viscous medium prepared with 1 - 2 g washed agar per liter can be used (Widdel et al., Arch. Microbiol. 134:286-294 (1983)): Agar (Difco) is washed three times for one hour with distilled water at room temperature. Finally, the agar is suspended (c. 20.0 g/l) in distilled water and autoclaved. 50 ml of the hot agar is added to the hot sterile medium part A (when preparing part A calculated for 1 liter, subtract the volume of the agar solution). After cooling to room temperature complete the medium by adding part B to I. For mass cultures the aluminum phosphate as artificial sediment can be used."}},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"preparation_steps[3]","stored":{"step_number":4,"action":"AUTOCLAVE","description":"Cultures of Desulfonema spp. show usually improved growth in media containing an artificial light sediment of aluminum phosphate. Alternatively, a viscous medium prepared with 1 - 2 g washed agar per liter can be used (Widdel et al., Arch. Microbiol. 134:286-294 (1983)): Agar (Difco) is washed three times for one hour with distilled water at room temperature. Finally, the agar is suspended (c. 20.0 g/l) in distilled water and autoclaved. 50 ml of the hot agar is added to the hot sterile medium part A (when preparing part A calculated for 1 liter, subtract the volume of the agar solution). After cooling to room temperature complete the medium by adding part B to I. For mass cultures the aluminum phosphate as artificial sediment can be used."}}],"decision":"evidence_only","rationale":"The complete retained text and its numeric controls match the exact current source. Preserve gas atmosphere, timing, separate sterilization, receiving order and source-defined conditional alternatives. A single action code does not enumerate every subordinate action. The reference to B–I in the alternative paragraph is source text and remains unresolved because the formulation defines A–H.","source_stage":"Main preparation and explicitly conditional source alternatives","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 23-31","quote":"4. Cultures of Desulfonema spp. show usually improved growth in media containing an\nartificial light sediment of aluminum phosphate. Alternatively, a viscous medium prepared\nwith 1 - 2 g washed agar per liter can be used (Widdel et al., Arch. Microbiol. 134:286-294\n(1983)): Agar (Difco) is washed three times for one hour with distilled water at room\ntemperature. Finally, the agar is suspended (c. 20.0 g/l) in distilled water and autoclaved.\n50 ml of the hot agar is added to the hot sterile medium part A (when preparing part A\ncalculated for 1 liter, subtract the volume of the agar solution). After cooling to room\ntemperature complete the medium by adding part B to I. For mass cultures the aluminum\nphosphate as artificial sediment can be used.","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].steps[3]","quote":"{\n                        \"step\": \"Cultures of Desulfonema spp. show usually improved growth in media containing an artificial light sediment of aluminum phosphate. Alternatively, a viscous medium prepared with 1 - 2 g washed agar per liter can be used (Widdel et al., Arch. Microbiol. 134:286-294 (1983)): Agar (Difco) is washed three times for one hour with distilled water at room temperature. Finally, the agar is suspended (c. 20.0 g/l) in distilled water and autoclaved. 50 ml of the hot agar is added to the hot sterile medium part A (when preparing part A calculated for 1 liter, subtract the volume of the agar solution). After cooling to room temperature complete the medium by adding part B to I. For mass cultures the aluminum phosphate as artificial sediment can be used.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q54","label":"Retained final pH","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ph_value","stored":7.6},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ph_value","stored":7.6}],"decision":"evidence_only","rationale":"The scalar7.6 matches the source final-medium instruction and provider metadata; it is distinct from the approximate pH6 during preparation of A.","source_stage":"Complete medium","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 18-19","quote":"solutions B to H are added to the sterile solution A in the sequence as indicated. Adjust pH\nof the complete medium to 7.6, if necessary.","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.medium","quote":"{\n            \"id\": 201,\n            \"name\": \"DESULFONEMA LIMICOLA MEDIUM\",\n            \"complex_medium\": \"yes\",\n            \"min_pH\": 7.6,\n            \"max_pH\": 7.6,\n            \"source\": \"DSMZ\",\n            \"link\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf\"\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q55","label":"Retained SL-10 make-up instruction","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"preparation_steps[4]","stored":{"step_number":5,"action":"DISSOLVE","description":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"preparation_steps[4]","stored":{"step_number":5,"action":"DISSOLVE","description":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}}],"decision":"correct","rationale":"The instruction, including final1000ml, is fully supported for SL-10 and retained verbatim. Its unqualified main-step placement requires correction to a named SL-10 preparation container; it does not define the final medium volume.","source_stage":"SL-10 only","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 86-86","quote":"Trace element solution SL-10 (from medium 320)","quote_basis":"derivative text"},{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 98-99","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].steps[0]","quote":"{\n                        \"step\": \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q56","label":"Retained rumen-fluid preparation","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"preparation_steps[5]","stored":{"step_number":6,"action":"AUTOCLAVE","description":"Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."}},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"preparation_steps[5]","stored":{"step_number":6,"action":"AUTOCLAVE","description":"Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."}}],"decision":"correct","rationale":"The retained121°C/15min,27000g/20min,100%N2/15min,30%vial fill and−20°C storage controls match the primary rumen-fluid subsection. Attach this unchanged text to the rumen-fluid stock rather than the main medium. The provider volume1000 metadata is not a primary instruction to prepare that final stock volume.","source_stage":"Clarified rumen fluid only","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt lines 110-115","quote":"Clarified rumen fluid (from medium 1310)\nRumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is\nfiltered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g\nfor 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min,\ndispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then\nstored frozen at -20°C.","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[10].steps[0]","quote":"{\n                        \"step\": \"Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121\\u00b0C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20\\u00b0C.\"\n                    }","quote_basis":"raw UTF-8"}]}],"document_scopes":{"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml":null},"scope":"Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: concern. Targets: CultureMech:001300.
+
+All current slots and exact MIM rows were assessed against fresh OLS scientific definitions. Sodium acetate trihydrate is correct; calcium D-pantothenate agrees with CHEBI:31345 stereochemistry. The generic lipoic-acid concept does not itself certify a racemate, so the explicit DL source label is preserved. Vitamin B12 remains a class without molar conversion. Sodium resazurin and nickel hydrate are confirmed form contradictions. Exact NiCl2 x6H2O MIM rows are REJECTED while fresh OLS supports the hydrate; cobalt hexahydrate has mixed spelling-row statuses with the same chemically matching ID. Canonical-label agreement and identifier presence do not establish supplied form or mapping acceptance.
+
+### Existing repair credit and writer limits
+
+provenance: concern. Targets: CultureMech:001300.
+
+All three complete historical reports and the exact selected parent row were read. The fresh API201 full raw digest equals the historical digest, and54 unique decoded source objects match current data. Null concentration snippets remain false; equal current bytes authenticate content rather than the historical access event. Historical unchanged owner bytes and all six retained preparation texts are credited. Existing stage flattening persists; current conservative merge and first-solution importer behavior are not attributed retroactively. Current prep parsing still loses solution boundaries.
+
+## Findings
+
+### f1: Restore solution A–H and their nested preparations
+
+major / open / confirmed; issue key: culturemech-001300-multi-solution-flattening.
+
+Both documents flatten all31 component rates from A, C, D, E, H, SL-10 and Wolin vitamins into one ingredient list. These are provider stage rates, not final-medium concentrations. Restore the explicit A–H receiving doses and nested B/SL-10, F/Wolin and G/rumen-fluid references, preserving all supported original masses and conditional alternatives. Clarified rumen fluid20ml is absent as a structured receiving ingredient. API main volume1003ml alone does not prove measured final volume.
+
+### f2: Preserve the unspecified HCl percentage basis
+
+major / open / confirmed; issue key: culturemech-001300-hcl-percent-basis.
+
+The local2.5G_PER_L HCl originates from a provider conversion of10ml labelled25% in SL-10. The primary gives no percentage basis or density. Even with explicit final stock make-up, the mass conversion is unsupported. Preserve the exact volume and attribute in the correct stock until basis evidence is available.
+
+### f3: Reconcile sodium resazurin and nickel hexahydrate
+
+major / open / confirmed; issue key: culturemech-001300-salt-hydrate-identity.
+
+The exact source specifies sodium resazurin and NiCl2·6H2O. Resazurin primary slots assert neutral CHEBI:8806 (C12H7NO4); nickel primary and secondary slots assert anhydrous CHEBI:34887. Fresh CHEBI:53542 supports the stated nickel hydrate. Correct only the actual asserted slots after exact-form verification; preserve source mass, w/v attribute and stage. Sodium acetate CHEBI:32138 already is the correct trihydrate and needs no form correction.
+
+### f4: Attach retained stock methods to their own solutions
+
+major / open / confirmed; issue key: culturemech-001300-stock-method-placement.
+
+Both documents already retain the complete main preparation and the two additional stock methods. The SL-10 make-up and clarified-rumen-fluid instructions are unqualified main preparation_steps[4] and[5]. Move those unchanged texts and numeric controls under their respective stocks, preserving the valid main method. Current importer concatenates steps from all source solutions without maintaining their stage context.
+
+### f5: Retain source ambiguity and justify the high-metal flag
+
+minor / open / confirmed; issue key: culturemech-001300-unresolved-source-metadata.
+
+The preserved alternative-method text says B–I although the source formulation defines A–H; do not invent solution I or silently rewrite the quotation. The local high_metal:true assertion has no source-defined threshold or attached justification in the inspected materials. Keep the basal liquid/complex classification and conditional agar alternative distinct, and resolve these bounded metadata assertions with explicit evidence.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Both documents flatten all31 component rates from A, C, D, E, H, SL-10 and Wolin vitamins into one ingredient list. These are provider stage rates, not final-medium concentrations. Restore the explicit A–H receiving doses and nested B/SL-10, F/Wolin and G/rumen-fluid references, preserving all supported original masses and conditional alternatives. Clarified rumen fluid20ml is absent as a structured receiving ingredient. API main volume1003ml alone does not prove measured final volume.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+The local2.5G_PER_L HCl originates from a provider conversion of10ml labelled25% in SL-10. The primary gives no percentage basis or density. Even with explicit final stock make-up, the mass conversion is unsupported. Preserve the exact volume and attribute in the correct stock until basis evidence is available.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+The exact source specifies sodium resazurin and NiCl2·6H2O. Resazurin primary slots assert neutral CHEBI:8806 (C12H7NO4); nickel primary and secondary slots assert anhydrous CHEBI:34887. Fresh CHEBI:53542 supports the stated nickel hydrate. Correct only the actual asserted slots after exact-form verification; preserve source mass, w/v attribute and stage. Sodium acetate CHEBI:32138 already is the correct trihydrate and needs no form correction.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+Both documents already retain the complete main preparation and the two additional stock methods. The SL-10 make-up and clarified-rumen-fluid instructions are unqualified main preparation_steps[4] and[5]. Move those unchanged texts and numeric controls under their respective stocks, preserving the valid main method. Current importer concatenates steps from all source solutions without maintaining their stage context.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+- Verify the current preparation parser preserves solution identity for each step while retaining every numeric control and conditional alternative.
+
+### a5
+
+The preserved alternative-method text says B–I although the source formulation defines A–H; do not invent solution I or silently rewrite the quotation. The local high_metal:true assertion has no source-defined threshold or attached justification in the inspected materials. Keep the basal liquid/complex classification and conditional agar alternative distinct, and resolve these bounded metadata assertions with explicit evidence.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| dsm201 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf; REVIEW_WORK/batch077/source07-08-10/dsm201.json; exact original raw/text/hash/time metadata | context_only | Exact primary 201; source identity screened first; embedded stock sections and conditional variants retain distinct scopes. |
+| api201 | https://mediadive.dsmz.de/rest/medium/201; REVIEW_WORK/batch077/source07-08-10/api201.json; exact original raw/text/hash/time metadata | context_only | Exact current provider 201; explicit stage-specific rates do not establish received final-medium amounts. |
+| chebi53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542; REVIEW_WORK/batch077/source07-08-10/chebi53542.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| target | data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| report-17 | reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-18 | reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/desulfonema_limicola_medium.yaml.md; Complete report | context_only | Historical report; exact headers are retained in the reading sidecar and neighboring-record mentions remain comparison-only. Old source/check claims are not newly executed. |
+| report-19 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.md; Complete report | context_only | Historical report; exact headers are retained in the reading sidecar and neighboring-record mentions remain comparison-only. Old source/check claims are not newly executed. |
+| report-20 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfonema_limicola_medium.md; Complete report | context_only | Historical report; exact headers are retained in the reading sidecar and neighboring-record mentions remain comparison-only. Old source/check claims are not newly executed. |
+| historical-reading | REVIEW_WORK/batch077/record10/historical-reading.json; Complete artifact; exact original input paths and hashes retained | context_only | Lossless exact report cells and independently joined current decoded source objects. |
+| historical-selected-parent-rows | REVIEW_WORK/batch077/record10/historical-selected-parent-rows.json; Complete artifact; exact original input paths and hashes retained | context_only | Exact selected historical parent objects; parent provenance only, not automatic original source authentication. |
+| complete-document-reader | REVIEW_WORK/batch077/record10/complete-document-reader.json; Complete artifact; exact original input paths and hashes retained | context_only | Complete exact target and owner parsed documents with lossless long-string pooling. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition, _is_api_stock_addition, _api_stock_name, _parse_api_solutions, _normalize_unit, _classify_preparation_action | context_only | Current parser excludes percent-stock additions from primary ingredients, preserves referenced stock amounts/attributes separately and prioritizes explicit provider g_l. It skips source water; bare units alone do not establish a final-volume basis. Current code is not historical execution proof. |
+| writer-matcher | src/culturemech/merge/matcher.py; group_formulations | context_only | Current group_formulations uses conservative FormulationFingerprinter; ingredient similarity is only candidate discovery. |
+| historical-object-joins | REVIEW_WORK/batch077/record10/historical-current-object-joins.json; Complete exact decoded-object comparisons | context_only | Historical object correspondence is distinct from raw-response authentication. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; REVIEW_WORK/batch077/source07-08-10/chebi32149.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; REVIEW_WORK/batch077/source07-08-10/chebi26710.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; REVIEW_WORK/batch077/source07-08-10/chebi86345.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; REVIEW_WORK/batch077/source07-08-10/chebi86158.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; REVIEW_WORK/batch077/source07-08-10/chebi32588.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; REVIEW_WORK/batch077/source07-08-10/chebi63036.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; REVIEW_WORK/batch077/source07-08-10/chebi31206.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; REVIEW_WORK/batch077/source07-08-10/chebi8806.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; REVIEW_WORK/batch077/source07-08-10/chebi29377.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi32138 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32138; REVIEW_WORK/batch077/source07-08-10/chebi32138.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi63675 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63675; REVIEW_WORK/batch077/source07-08-10/chebi63675.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; REVIEW_WORK/batch077/source07-08-10/chebi76209.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883; REVIEW_WORK/batch077/source07-08-10/chebi17883.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; REVIEW_WORK/batch077/source07-08-10/chebi86249.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; REVIEW_WORK/batch077/source07-08-10/chebi49976.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; REVIEW_WORK/batch077/source07-08-10/chebi86368.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; REVIEW_WORK/batch077/source07-08-10/chebi33118.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; REVIEW_WORK/batch077/source07-08-10/chebi53503.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; REVIEW_WORK/batch077/source07-08-10/chebi86318.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; REVIEW_WORK/batch077/source07-08-10/chebi34887.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; REVIEW_WORK/batch077/source07-08-10/chebi75213.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; REVIEW_WORK/batch077/source07-08-10/chebi15956.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; REVIEW_WORK/batch077/source07-08-10/chebi27470.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; REVIEW_WORK/batch077/source07-08-10/chebi30961.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; REVIEW_WORK/batch077/source07-08-10/chebi49105.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; REVIEW_WORK/batch077/source07-08-10/chebi17015.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; REVIEW_WORK/batch077/source07-08-10/chebi15940.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; REVIEW_WORK/batch077/source07-08-10/chebi31345.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; REVIEW_WORK/batch077/source07-08-10/chebi176843.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; REVIEW_WORK/batch077/source07-08-10/chebi30753.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; REVIEW_WORK/batch077/source07-08-10/chebi16494.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| quantities | REVIEW_WORK/batch077/record10/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch077/record10/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch077/record10/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch077/record10/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch077/record10/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch077/record10/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch077/record10/existing-claim-authentication.json; Complete sidecar | context_only | No attached claims in this scoped sidecar; historical object joins are separate evidence. |
+| check-schema | REVIEW_WORK/batch077/record10/schema-result.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch077/record10/strict-result.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch077/record10/terms-result.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch077/record10/references-result.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- The primary does not explicitly state final medium volume. API1003ml is the sum of the A–H additions; no final normalization is derived from that alone.
+- Source HCl25% lacks a percentage basis/density; source resazurin0.1%w/v and optional dithionite5%w/v are explicit and treated separately.
+- No local source evidence is attached. Retained supported text is evidence_only, and old null snippet claims are not promoted to verified.
+- The bibliographic mention Widdel et al.(1983) is retained as source context only; the paper was not independently recovered and no separate growth assertion is attached.
+- Provider mmol_l values, including possible pantothenate formula-unit conventions and hydrate assumptions, were not used to recalculate any local mass.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T202340Z-culturemech-001300-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: DESULFONEMA LIMICOLA MEDIUM'
+started_at: '2026-10-28T20:15:46.173431Z'
+finished_at: '2026-10-28T20:23:40.778184Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, fresh
+    sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact source supports the retained source-stage rates and main preparation,
+  but both documents flatten multiple solution stages and omit their receiving topology.
+  HCl mass conversion lacks a percentage basis, two chemical identities contradict
+  supplied forms, and two valid stock methods need explicit scope. Current and historical
+  support is credited without inventing final-volume or growth claims.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml
+    sha256: 0feab4c092aa0519d3c9052a96ee52400bd76b7aff5b64cb466e74398345aa9f
+    role: target
+  - path: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+    sha256: 4d64e5fce9697ba29e8347999d47fd04010d7bdb8367c682aca3e7a46c9a2061
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json
+    sha256: 1ada7bec3dbf8c0a4bb2e448ab02750c2cfd126352f8488695ed34cf2a821f5c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/desulfonema_limicola_medium.yaml.md
+    sha256: f001326853978f4917ef693ede555318657752baa4ce7493a14efcc8c7243deb
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.md
+    sha256: 1eff167b229cbcd79bec01c959694e2c1ad4d2bfa7bba2026027fef6b927b7d9
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfonema_limicola_medium.md
+    sha256: 898453c6a95aa78530accd4e20be345514170821df6bd7d6d3cc13a6a8ad6e06
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/fetch_komodo_base_volumes.py
+    sha256: 9dad49c380422b2e7d3f40b4ff713d59360d22f6eec9b55068e050099cb9cffa
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/propose_media_variant_links.py
+    sha256: bd5b0b86c9457e42ca52ba2b253e5842c7f414093ba15aaeb4f9f0d682b5f4c2
+    role: context
+  - path: scripts/record_io.py
+    sha256: bff4715f85d7ff2ff681b88f0a2de2667e5767d7a2c196bd50a37d5d329957ac
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/remove_invalid_chebi_ids.py
+    sha256: a6c2f7577812081230fd5fe008182c09eace4ef7818857f8026ec8d5e0b760e0
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch077 index 10
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001300
+targets:
+- target_id: CultureMech:001300
+  path: data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml
+  label: desulfonema_limicola_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+    role: maintained source
+  ownership_note: Exact declared maintained contributors resolved against stable identity;
+    stocks and other source variants remain scoped comparisons.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001300
+  command: just validate-schema data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001300
+  command: just validate-strict data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml
+    --out REVIEW_WORK/batch077/record10/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001300
+  command: just validate-terms data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001300
+  command: just validate-references data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: dsm201
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf
+  accessed_at: '2026-10-28T20:15:18.507323Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/dsm201.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact primary 201; source identity screened first; embedded stock sections
+    and conditional variants retain distinct scopes.
+  snapshot_sha256: f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c
+- evidence_id: api201
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/201
+  accessed_at: '2026-10-28T20:15:18.352510Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/api201.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current provider 201; explicit stage-specific rates do not establish
+    received final-medium amounts.
+  snapshot_sha256: 19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1
+- evidence_id: chebi53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542
+  accessed_at: '2026-10-28T20:15:23.948263Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi53542.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 423c21fd3715257bbccc1ad83ef3b8e438ffe20f02418e2b202886237c4ea112
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T20:23:40.650604Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: 0feab4c092aa0519d3c9052a96ee52400bd76b7aff5b64cb466e74398345aa9f
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T20:23:40.650780Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: 4d64e5fce9697ba29e8347999d47fd04010d7bdb8367c682aca3e7a46c9a2061
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T20:23:40.650813Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T20:23:40.651112Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T20:23:40.651135Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T20:23:40.651156Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-17
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T20:23:40.651181Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 1ada7bec3dbf8c0a4bb2e448ab02750c2cfd126352f8488695ed34cf2a821f5c
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/desulfonema_limicola_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T20:23:40.656746Z'
+  support: context_only
+  summary: Historical report; exact headers are retained in the reading sidecar and
+    neighboring-record mentions remain comparison-only. Old source/check claims are
+    not newly executed.
+  snapshot_sha256: f001326853978f4917ef693ede555318657752baa4ce7493a14efcc8c7243deb
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T20:23:40.656816Z'
+  support: context_only
+  summary: Historical report; exact headers are retained in the reading sidecar and
+    neighboring-record mentions remain comparison-only. Old source/check claims are
+    not newly executed.
+  snapshot_sha256: 1eff167b229cbcd79bec01c959694e2c1ad4d2bfa7bba2026027fef6b927b7d9
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfonema_limicola_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T20:23:40.656851Z'
+  support: context_only
+  summary: Historical report; exact headers are retained in the reading sidecar and
+    neighboring-record mentions remain comparison-only. Old source/check claims are
+    not newly executed.
+  snapshot_sha256: 898453c6a95aa78530accd4e20be345514170821df6bd7d6d3cc13a6a8ad6e06
+- evidence_id: historical-reading
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record10/historical-reading.json
+  accessed_at: '2026-10-28T20:23:40.669932Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Lossless exact report cells and independently joined current decoded source
+    objects.
+  snapshot_sha256: 3802d73a6eb6d95dab3eb5390c7020eb17058e31bc0863fa978a40d6e7950f5c
+- evidence_id: historical-selected-parent-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record10/historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T20:23:40.669994Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Exact selected historical parent objects; parent provenance only, not automatic
+    original source authentication.
+  snapshot_sha256: d2278befa871a7a4ac09c9e5dfeaf76325e7d8dfe982fed256fc29d1cf577b10
+- evidence_id: complete-document-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record10/complete-document-reader.json
+  accessed_at: '2026-10-28T20:23:40.670201Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Complete exact target and owner parsed documents with lossless long-string
+    pooling.
+  snapshot_sha256: c2b7c7163dd5f4496db44d5bf8858af5533338674e9c8689dc03c255e680a82c
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _is_api_stock_addition, _api_stock_name, _parse_api_solutions,
+    _normalize_unit, _classify_preparation_action
+  accessed_at: '2026-10-28T20:23:40.670245Z'
+  support: context_only
+  summary: Current parser excludes percent-stock additions from primary ingredients,
+    preserves referenced stock amounts/attributes separately and prioritizes explicit
+    provider g_l. It skips source water; bare units alone do not establish a final-volume
+    basis. Current code is not historical execution proof.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-matcher
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations
+  accessed_at: '2026-10-28T20:23:40.670284Z'
+  support: context_only
+  summary: Current group_formulations uses conservative FormulationFingerprinter;
+    ingredient similarity is only candidate discovery.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: historical-object-joins
+  kind: prior_review
+  reference: REVIEW_WORK/batch077/record10/historical-current-object-joins.json
+  accessed_at: '2026-10-28T20:23:40.670311Z'
+  locator: Complete exact decoded-object comparisons
+  support: context_only
+  summary: Historical object correspondence is distinct from raw-response authentication.
+  snapshot_sha256: 8e3c1c2f1b4fa64300e684e9dc9f7eb527b02d3b4469e7b24de7239a36baef5a
+- evidence_id: chebi32149
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  accessed_at: '2026-10-28T20:15:23.142587Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi32149.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  accessed_at: '2026-10-28T20:15:21.951307Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi26710.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  accessed_at: '2026-10-28T20:15:25.149053Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi86345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  accessed_at: '2026-10-28T20:15:25.053040Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi86158.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  accessed_at: '2026-10-28T20:15:23.287417Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi32588.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  accessed_at: '2026-10-28T20:15:24.366371Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi63036.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  accessed_at: '2026-10-28T20:15:22.546932Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi31206.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  accessed_at: '2026-10-28T20:15:25.661606Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi8806.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  accessed_at: '2026-10-28T20:15:22.051139Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi29377.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi32138
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32138
+  accessed_at: '2026-10-28T20:15:22.637307Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi32138.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 74faec6ae9b146967356e528305ebfcaaceca793993fd6cca01e1cf3af2b470b
+- evidence_id: chebi63675
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63675
+  accessed_at: '2026-10-28T20:15:24.455028Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi63675.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 4c54df9f2d63f54dea26d64e4ec9fedeb486c2c2abe44b70c5c621512f1fdd3c
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  accessed_at: '2026-10-28T20:15:24.966183Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi76209.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  accessed_at: '2026-10-28T20:15:21.445816Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi17883.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  accessed_at: '2026-10-28T20:15:25.087881Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi86249.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  accessed_at: '2026-10-28T20:15:23.898177Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi49976.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  accessed_at: '2026-10-28T20:15:25.592115Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi86368.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  accessed_at: '2026-10-28T20:15:23.259312Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi33118.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  accessed_at: '2026-10-28T20:15:23.887095Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi53503.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  accessed_at: '2026-10-28T20:15:25.114132Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi86318.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  accessed_at: '2026-10-28T20:15:23.354506Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi34887.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  accessed_at: '2026-10-28T20:15:24.516192Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi75213.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  accessed_at: '2026-10-28T20:15:20.802391Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi15956.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  accessed_at: '2026-10-28T20:15:21.966049Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi27470.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  accessed_at: '2026-10-28T20:15:22.074441Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi30961.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  accessed_at: '2026-10-28T20:15:23.862461Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi49105.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  accessed_at: '2026-10-28T20:15:21.475839Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi17015.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  accessed_at: '2026-10-28T20:15:20.855753Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi15940.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  accessed_at: '2026-10-28T20:15:22.756511Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi31345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  accessed_at: '2026-10-28T20:15:21.310428Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi176843.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  accessed_at: '2026-10-28T20:15:22.072398Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi30753.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  accessed_at: '2026-10-28T20:15:21.321105Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi16494.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record10/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:23:40.776282Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: 5fc4114ab26195eb32c53c94fceb9c4fe50291c0606861497c48049348c74b1a
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record10/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:23:40.776379Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: dede5c3d019a5ccb2a94f101a9e0f76dac6f68834e59e28028e7bae802c94201
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record10/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:23:40.776518Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: 978098ee54221e52384f7c4aa56953ac9b3280b5d8156b45b2a2c34edac51aea
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record10/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:23:40.776580Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: 66fe69f973f603bdc864fd08751953a58c0fafa37c3e68a3b2ebc2b7fd64c513
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record10/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:23:40.776632Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: 95430f73adf57813fc6d24863544c9ce4b46565ece7070b26117dbeddf13685a
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record10/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:23:40.776652Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 8ab63252c3cc113eca2cac934aece6b59446e22404b40f54840a74d205e045ca
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record10/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:23:40.776671Z'
+  support: context_only
+  summary: No attached claims in this scoped sidecar; historical object joins are
+    separate evidence.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch077/record10/schema-result.json
+  accessed_at: '2026-10-28T20:15:47.273218Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: a04142d4f48b8a88b30726692156e722c1c6276f66a088c9fe1183cba34540e8
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch077/record10/strict-result.json
+  accessed_at: '2026-10-28T20:15:48.346697Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: f870b07aa38aea295a00f067f9a7bbdb36d426281a483d5688fe075d367ec5af
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch077/record10/terms-result.json
+  accessed_at: '2026-10-28T20:15:49.419177Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: bbbfc7f1e69083157f7cb83aec0bbd3b0f0ec9e0451b0a4249a68860c8a6f0bb
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch077/record10/references-result.json
+  accessed_at: '2026-10-28T20:15:50.370864Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 28d84e1cb57536925055f944d5944f19954f558aa584cbc5f2e071ba9a3d5bde
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact DSM201 source
+  outcome: supported
+  summary: The selected singleton and maintained owner identify DSM201. The fresh
+    primary and provider agree on that identity. Embedded parent numbers locate only
+    the stock definitions printed in this exact primary; no whole parent medium is
+    transferred.
+  target_ids:
+  - CultureMech:001300
+  evidence_ids:
+  - target
+  - owner
+  - dsm201
+  - api201
+- assessment_id: classification
+  area: consistency
+  topic: Classification and optional branches
+  outcome: concern
+  summary: Liquid complex/undefined is appropriate for the basal formulation containing
+    clarified rumen fluid. The conditional washed-agar or aluminum-phosphate alternatives
+    do not make the basal liquid classification wrong. The high_metal flag lacks an
+    inspected threshold/justification; source B–I wording remains ambiguous.
+  target_ids:
+  - CultureMech:001300
+  evidence_ids:
+  - dsm201
+  - api201
+  - target
+  - owner
+- assessment_id: schema
+  area: schema
+  topic: Original native checks
+  outcome: supported
+  summary: All four original checks exited zero; reference validation checked zero
+    references. These shape/label checks do not authenticate chemical supplied forms
+    or multi-solution topology.
+  target_ids:
+  - CultureMech:001300
+  evidence_ids:
+  - check-schema
+  - check-strict
+  - check-terms
+  - check-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 62 current concentration fields are covered by 56 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:001300
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b077-quantity-inventory-v1","target":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","quantity_field_count":62,"decisions":[{"quantity_id":"q1","label":"Na2SO4","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"3.22581","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"3.22581","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Solution A. The primary quantity agrees
+    on that stage. Both documents put the rate among complete-medium ingredients,
+    losing the named solution boundary and receiving dose. Retain the source mass
+    and supported stage rate when restoring that solution; do not treat it as a final-medium
+    rate. Listed stock water alone is not measured final volume; explicit provider
+    g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 37-37","quote":"Na2SO4                                                    3.00        g","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\":
+    110,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3.22581,\n                        \"mmol_l\":
+    22.7106,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q2","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"16.129","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"16.129","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Solution A. The primary quantity agrees
+    on that stage. Both documents put the rate among complete-medium ingredients,
+    losing the named solution boundary and receiving dose. Retain the source mass
+    and supported stage rate when restoring that solution; do not treat it as a final-medium
+    rate. Listed stock water alone is not measured final volume; explicit provider
+    g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 38-38","quote":"NaCl                                                     15.00        g","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 16.129,\n                        \"mmol_l\":
+    275.993,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q3","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"2.36559","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"2.36559","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Solution A. The primary quantity agrees
+    on that stage. Both documents put the rate among complete-medium ingredients,
+    losing the named solution boundary and receiving dose. Retain the source mass
+    and supported stage rate when restoring that solution; do not treat it as a final-medium
+    rate. Listed stock water alone is not measured final volume; explicit provider
+    g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 39-39","quote":"MgCl2 x 6 H2O                                             2.20        g","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 2.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.36559,\n                        \"mmol_l\":
+    11.6358,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q4","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.16129","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.16129","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Solution A. The primary quantity agrees
+    on that stage. Both documents put the rate among complete-medium ingredients,
+    losing the named solution boundary and receiving dose. Retain the source mass
+    and supported stage rate when restoring that solution; do not treat it as a final-medium
+    rate. Listed stock water alone is not measured final volume; explicit provider
+    g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 40-40","quote":"CaCl2 x 2 H2O                                             0.15        g","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.16129,\n                        \"mmol_l\":
+    1.0971,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q5","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.537634","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.537634","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Solution A. The primary quantity agrees
+    on that stage. Both documents put the rate among complete-medium ingredients,
+    losing the named solution boundary and receiving dose. Retain the source mass
+    and supported stage rate when restoring that solution; do not treat it as a final-medium
+    rate. Listed stock water alone is not measured final volume; explicit provider
+    g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 41-41","quote":"KCl                                                       0.50        g","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.537634,\n                        \"mmol_l\":
+    7.21173,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q6","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.215054","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.215054","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Solution A. The primary quantity agrees
+    on that stage. Both documents put the rate among complete-medium ingredients,
+    losing the named solution boundary and receiving dose. Retain the source mass
+    and supported stage rate when restoring that solution; do not treat it as a final-medium
+    rate. Listed stock water alone is not measured final volume; explicit provider
+    g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 42-42","quote":"KH2PO4                                                    0.20        g","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.215054,\n                        \"mmol_l\":
+    1.58029,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q7","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.322581","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.322581","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Solution A. The primary quantity agrees
+    on that stage. Both documents put the rate among complete-medium ingredients,
+    losing the named solution boundary and receiving dose. Retain the source mass
+    and supported stage rate when restoring that solution; do not treat it as a final-medium
+    rate. Listed stock water alone is not measured final volume; explicit provider
+    g_l is credited on its declared stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 43-43","quote":"NH4Cl                                                     0.30        g","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.322581,\n                        \"mmol_l\":
+    6.03067,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q8","label":"Sodium resazurin","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.000537634","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.000537634","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Solution A. The primary quantity agrees
+    on that stage. Both documents put the rate among complete-medium ingredients,
+    losing the named solution boundary and receiving dose. Retain the source mass
+    and supported stage rate when restoring that solution; do not treat it as a final-medium
+    rate. The resazurin attribute is explicitly0.1%w/v, so its batch mass is supported;
+    supplied sodium-salt identity remains a separate issue. Listed stock water alone
+    is not measured final volume; explicit provider g_l is credited on its declared
+    stage basis.","source_stage":"Solution A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 44-44","quote":"Sodium resazurin (0.1% w/v)                               0.50       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000537634,\n                        \"mmol_l\": 0.00214052,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q9","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"50","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"50","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Solution C. The primary quantity agrees
+    on that stage. Both documents put the rate among complete-medium ingredients,
+    losing the named solution boundary and receiving dose. Retain the source mass
+    and supported stage rate when restoring that solution; do not treat it as a final-medium
+    rate. Listed stock water alone is not measured final volume; explicit provider
+    g_l is credited on its declared stage basis.","source_stage":"Solution C","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 59-59","quote":"Na2CO3                                                      1.50        g","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 50,\n                        \"mmol_l\":
+    471.752,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q10","label":"Na-acetate x 3 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"250","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"250","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Solution D. The primary quantity agrees
+    on that stage. Both documents put the rate among complete-medium ingredients,
+    losing the named solution boundary and receiving dose. Retain the source mass
+    and supported stage rate when restoring that solution; do not treat it as a final-medium
+    rate. Listed stock water alone is not measured final volume; explicit provider
+    g_l is credited on its declared stage basis.","source_stage":"Solution D","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 64-64","quote":"Na-acetate x 3 H2O                                          2.50        g","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[4].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Na-acetate x 3 H2O\",\n                        \"compound_id\":
+    294,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 250,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q11","label":"Disodium
+    succinate","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"100","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"100","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Solution E. The primary quantity agrees
+    on that stage. Both documents put the rate among complete-medium ingredients,
+    losing the named solution boundary and receiving dose. Retain the source mass
+    and supported stage rate when restoring that solution; do not treat it as a final-medium
+    rate. Listed stock water alone is not measured final volume; explicit provider
+    g_l is credited on its declared stage basis.","source_stage":"Solution E","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 69-69","quote":"Disodium succinate                                          0.10        g","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[5].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Disodium succinate\",\n                        \"compound_id\":
+    1189,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 100,\n                        \"mmol_l\":
+    617.094,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q12","label":"Na2S x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"40","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"40","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Solution H. The primary quantity agrees
+    on that stage. Both documents put the rate among complete-medium ingredients,
+    losing the named solution boundary and receiving dose. Retain the source mass
+    and supported stage rate when restoring that solution; do not treat it as a final-medium
+    rate. Listed stock water alone is not measured final volume; explicit provider
+    g_l is credited on its declared stage basis.","source_stage":"Solution H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 82-82","quote":"Na2S x 9 H2O                                                0.40        g","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[8].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 40,\n                        \"mmol_l\":
+    166.54,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q13","label":"HCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5","unit":"G_PER_L"},"decision":"unsupported"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5","unit":"G_PER_L"},"decision":"unsupported"}],"decision":"unsupported","rationale":"The
+    source provides 10 ml HCl labelled25% in SL-10, with explicit final stock make-up1000
+    ml. The percentage basis and density are not specified, so the provider2.5g_l
+    and local mass concentration are not chemically verified. Preserve the original
+    volume/attribute and stock stage; do not infer25%w/v or density.","source_stage":"Trace
+    element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 87-87","quote":"HCl (25%)                                                  10.00      ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\":
+    68,\n                        \"attribute\": \"25%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q14","label":"FeCl2
+    x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"1.5","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"1.5","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Trace element solution SL-10. The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting
+    these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 88-88","quote":"FeCl2 x 4 H2O                                               1.50       g","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.54482,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q15","label":"ZnCl2","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.07","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.07","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Trace element solution SL-10. The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting
+    these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 89-89","quote":"ZnCl2                                                      70.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\":
+    64,\n                        \"amount\": 70,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\":
+    0.513573,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q16","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Trace element solution SL-10. The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting
+    these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 90-90","quote":"MnCl2 x 4 H2O                                             100.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.505293,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q17","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.006","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.006","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Trace element solution SL-10. The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting
+    these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 91-91","quote":"H3BO3                                                       6.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 6,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\":
+    0.0970246,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q18","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.19","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.19","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Trace element solution SL-10. The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting
+    these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 92-92","quote":"CoCl2 x 6 H2O                                             190.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 190,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\":
+    1.46335,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q19","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.002","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.002","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Trace element solution SL-10. The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting
+    these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 93-93","quote":"CuCl2 x 2 H2O                                               2.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 2,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\":
+    0.0117314,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q20","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.024","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.024","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Trace element solution SL-10. The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting
+    these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 94-94","quote":"NiCl2 x 6 H2O                                              24.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 24,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\":
+    0.185187,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q21","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.036","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.036","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Trace element solution SL-10. The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. The primary explicitly makes SL-10 up to1000 ml, supporting
+    these solid-component stock rates.","source_stage":"Trace element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 95-95","quote":"Na2MoO4 x 2 H2O                                            36.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 36,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\":
+    0.148791,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q22","label":"Biotin","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.02","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.02","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Wolin''s vitamin solution (10x). The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. Listed stock water alone is not measured final volume;
+    explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin''s
+    vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 120-120","quote":"Biotin                                               20.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\":
+    46,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q23","label":"Folic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Wolin''s vitamin solution (10x). The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. Listed stock water alone is not measured final volume;
+    explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin''s
+    vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 121-121","quote":"Folic acid                                           20.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\":
+    138,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0453104,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q24","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Wolin''s vitamin solution (10x). The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. Listed stock water alone is not measured final volume;
+    explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin''s
+    vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 122-122","quote":"Pyridoxine hydrochloride                            100.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.486287,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q25","label":"Thiamine HCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Wolin''s vitamin solution (10x). The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. Listed stock water alone is not measured final volume;
+    explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin''s
+    vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 123-123","quote":"Thiamine HCl                                         50.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\":
+    1207,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.148236,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q26","label":"Riboflavin","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Wolin''s vitamin solution (10x). The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. Listed stock water alone is not measured final volume;
+    explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin''s
+    vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 124-124","quote":"Riboflavin                                           50.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\":
+    136,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.132837,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q27","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Wolin''s vitamin solution (10x). The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. Listed stock water alone is not measured final volume;
+    explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin''s
+    vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 125-125","quote":"Nicotinic acid                                       50.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.406141,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q28","label":"Calcium D-(+)-pantothenate","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Wolin''s vitamin solution (10x). The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. Listed stock water alone is not measured final volume;
+    explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin''s
+    vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 126-126","quote":"Calcium D-(+)-pantothenate                           50.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\":
+    1512,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.209846,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q29","label":"Vitamin B12","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.001","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.001","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Wolin''s vitamin solution (10x). The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. Listed stock water alone is not measured final volume;
+    explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin''s
+    vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 127-127","quote":"Vitamin B12                                           1.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q30","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Wolin''s vitamin solution (10x). The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. Listed stock water alone is not measured final volume;
+    explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin''s
+    vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 128-128","quote":"p-Aminobenzoic acid                                  50.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.364591,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q31","label":"(DL)-alpha-Lipoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.05","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    exact provider declares this rate for Wolin''s vitamin solution (10x). The primary
+    quantity agrees on that stage. Both documents put the rate among complete-medium
+    ingredients, losing the named solution boundary and receiving dose. Retain the
+    source mass and supported stage rate when restoring that solution; do not treat
+    it as a final-medium rate. Listed stock water alone is not measured final volume;
+    explicit provider g_l is credited on its declared stage basis.","source_stage":"Wolin''s
+    vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 129-129","quote":"(DL)-alpha-Lipoic acid                               50.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\":
+    252,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.24233,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q32","label":"Solution A receiving dose","local_fields":[],"decision":"correct","rationale":"Restore
+    the exact source batch dose as a named solution descriptor. The provider main
+    volume1003 ml equals the listed addition sum, but the primary does not explicitly
+    state measured final volume. No final-medium normalization is inferred.","source_stage":"Main
+    batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 3-3","quote":"Solution A                                              930.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    416,\n                        \"amount\": 930,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q33","label":"Solution B receiving dose","local_fields":[],"decision":"correct","rationale":"Restore
+    the exact source batch dose as a named solution descriptor. The provider main
+    volume1003 ml equals the listed addition sum, but the primary does not explicitly
+    state measured final volume. No final-medium normalization is inferred.","source_stage":"Main
+    batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 4-4","quote":"Solution B                                                1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\":
+    417,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q34","label":"Solution C receiving dose","local_fields":[],"decision":"correct","rationale":"Restore
+    the exact source batch dose as a named solution descriptor. The provider main
+    volume1003 ml equals the listed addition sum, but the primary does not explicitly
+    state measured final volume. No final-medium normalization is inferred.","source_stage":"Main
+    batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 5-5","quote":"Solution C                                               30.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"solution\": \"Solution C\",\n                        \"solution_id\":
+    418,\n                        \"amount\": 30,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q35","label":"Solution D receiving dose","local_fields":[],"decision":"correct","rationale":"Restore
+    the exact source batch dose as a named solution descriptor. The provider main
+    volume1003 ml equals the listed addition sum, but the primary does not explicitly
+    state measured final volume. No final-medium normalization is inferred.","source_stage":"Main
+    batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 6-6","quote":"Solution D                                               10.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    419,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q36","label":"Solution E receiving dose","local_fields":[],"decision":"correct","rationale":"Restore
+    the exact source batch dose as a named solution descriptor. The provider main
+    volume1003 ml equals the listed addition sum, but the primary does not explicitly
+    state measured final volume. No final-medium normalization is inferred.","source_stage":"Main
+    batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 7-7","quote":"Solution E                                                1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"solution\": \"Solution E\",\n                        \"solution_id\":
+    420,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q37","label":"Solution F receiving dose","local_fields":[],"decision":"correct","rationale":"Restore
+    the exact source batch dose as a named solution descriptor. The provider main
+    volume1003 ml equals the listed addition sum, but the primary does not explicitly
+    state measured final volume. No final-medium normalization is inferred.","source_stage":"Main
+    batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 8-8","quote":"Solution F                                                1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"solution\": \"Solution F\",\n                        \"solution_id\":
+    421,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q38","label":"Solution G receiving dose","local_fields":[],"decision":"correct","rationale":"Restore
+    the exact source batch dose as a named solution descriptor. The provider main
+    volume1003 ml equals the listed addition sum, but the primary does not explicitly
+    state measured final volume. No final-medium normalization is inferred.","source_stage":"Main
+    batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 9-9","quote":"Solution G                                               20.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"solution\": \"Solution G\",\n                        \"solution_id\":
+    422,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q39","label":"Solution H receiving dose","local_fields":[],"decision":"correct","rationale":"Restore
+    the exact source batch dose as a named solution descriptor. The provider main
+    volume1003 ml equals the listed addition sum, but the primary does not explicitly
+    state measured final volume. No final-medium normalization is inferred.","source_stage":"Main
+    batch A–H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 10-10","quote":"Solution H                                               10.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Solution H\",\n                        \"solution_id\":
+    423,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q40","label":"Water input: Solution A","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact water input in its own solution. Only SL-10 separately has explicit
+    final make-up; the other water listings do not independently establish final volume.","source_stage":"Solution
+    A","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 45-45","quote":"Distilled water                                         930.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 930,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q41","label":"Water input: Solution C","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact water input in its own solution. Only SL-10 separately has explicit
+    final make-up; the other water listings do not independently establish final volume.","source_stage":"Solution
+    C","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 60-60","quote":"Distilled water                                            30.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[3].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 30,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q42","label":"Water input: Solution D","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact water input in its own solution. Only SL-10 separately has explicit
+    final make-up; the other water listings do not independently establish final volume.","source_stage":"Solution
+    D","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 65-65","quote":"Distilled water                                            10.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[4].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q43","label":"Water input: Solution E","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact water input in its own solution. Only SL-10 separately has explicit
+    final make-up; the other water listings do not independently establish final volume.","source_stage":"Solution
+    E","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 70-70","quote":"Distilled water                                             1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[5].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q44","label":"Water input: Solution H","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact water input in its own solution. Only SL-10 separately has explicit
+    final make-up; the other water listings do not independently establish final volume.","source_stage":"Solution
+    H","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 83-83","quote":"Distilled water                                            10.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[8].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q45","label":"Water input: Trace element solution SL-10","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact water input in its own solution. Only SL-10 separately has explicit
+    final make-up; the other water listings do not independently establish final volume.","source_stage":"Trace
+    element solution SL-10","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 96-96","quote":"Distilled water                                           990.00      ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 990,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q46","label":"Water input: Wolin''s vitamin solution
+    (10x)","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact
+    water input in its own solution. Only SL-10 separately has explicit final make-up;
+    the other water listings do not independently establish final volume.","source_stage":"Wolin''s
+    vitamin solution (10x)","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 130-130","quote":"Distilled water                                    1000.00      ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[11].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q47","label":"Nested reference in Solution B","local_fields":[],"decision":"correct","rationale":"The
+    receiving subsolution refers to this exact named preparation and dose. Preserve
+    the nested reference chain without flattening its ingredient concentrations or
+    substituting another stock. Clarified rumen fluid is retained as a complex ingredient
+    without invented composition.","source_stage":"Solution B","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 55-55","quote":"Trace element solution SL-10                                1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q48","label":"Nested reference in Solution F","local_fields":[],"decision":"correct","rationale":"The
+    receiving subsolution refers to this exact named preparation and dose. Preserve
+    the nested reference chain without flattening its ingredient concentrations or
+    substituting another stock. Clarified rumen fluid is retained as a complex ingredient
+    without invented composition.","source_stage":"Solution F","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 74-74","quote":"Wolin''s vitamin solution (10x)                              1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[6].recipe[0]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q49","label":"Nested reference in Solution G","local_fields":[],"decision":"correct","rationale":"The
+    receiving subsolution refers to this exact named preparation and dose. Preserve
+    the nested reference chain without flattening its ingredient concentrations or
+    substituting another stock. Clarified rumen fluid is retained as a complex ingredient
+    without invented composition.","source_stage":"Solution G","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 78-78","quote":"Clarified rumen fluid, clarified                           20.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[7].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Clarified rumen fluid\",\n                        \"solution_id\":
+    2618,\n                        \"condition\": \"clarified\",\n                        \"amount\":
+    20,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q50","label":"Retained
+    main preparation 1","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"preparation_steps[0]","stored":{"step_number":1,"action":"AUTOCLAVE","description":"Solution
+    A is sparged with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to reach a pH
+    of around 6, then distributed under same gas atmosphere into anoxic Hungate-type
+    tubes and autoclaved."}},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"preparation_steps[0]","stored":{"step_number":1,"action":"AUTOCLAVE","description":"Solution
+    A is sparged with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to reach a pH
+    of around 6, then distributed under same gas atmosphere into anoxic Hungate-type
+    tubes and autoclaved."}}],"decision":"evidence_only","rationale":"The complete
+    retained text and its numeric controls match the exact current source. Preserve
+    gas atmosphere, timing, separate sterilization, receiving order and source-defined
+    conditional alternatives. A single action code does not enumerate every subordinate
+    action. The reference to B–I in the alternative paragraph is source text and remains
+    unresolved because the formulation defines A–H.","source_stage":"Main preparation
+    and explicitly conditional source alternatives","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 12-14","quote":"1. Solution A is sparged with 80% N2 and 20% CO2 gas mixture
+    for 30 - 45 min to reach a\npH of around 6, then distributed under same gas atmosphere
+    into anoxic Hungate-type\ntubes and autoclaved.","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Solution A is sparged with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to
+    reach a pH of around 6, then distributed under same gas atmosphere into anoxic
+    Hungate-type tubes and autoclaved.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q51","label":"Retained main preparation 2","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"preparation_steps[1]","stored":{"step_number":2,"action":"AUTOCLAVE","description":"Solutions
+    B, D, E, G, and H are autoclaved separately under 100% N2 gas. Solution C is autoclaved
+    under 80% N2 and 20% CO2 gas atmosphere. Solution F is prepared under 100% N2
+    gas and sterilized by filtration. To complete the medium appropriate amounts of
+    solutions B to H are added to the sterile solution A in the sequence as indicated.
+    Adjust pH of the complete medium to 7.6, if necessary."}},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"preparation_steps[1]","stored":{"step_number":2,"action":"AUTOCLAVE","description":"Solutions
+    B, D, E, G, and H are autoclaved separately under 100% N2 gas. Solution C is autoclaved
+    under 80% N2 and 20% CO2 gas atmosphere. Solution F is prepared under 100% N2
+    gas and sterilized by filtration. To complete the medium appropriate amounts of
+    solutions B to H are added to the sterile solution A in the sequence as indicated.
+    Adjust pH of the complete medium to 7.6, if necessary."}}],"decision":"evidence_only","rationale":"The
+    complete retained text and its numeric controls match the exact current source.
+    Preserve gas atmosphere, timing, separate sterilization, receiving order and source-defined
+    conditional alternatives. A single action code does not enumerate every subordinate
+    action. The reference to B–I in the alternative paragraph is source text and remains
+    unresolved because the formulation defines A–H.","source_stage":"Main preparation
+    and explicitly conditional source alternatives","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 15-19","quote":"2. Solutions B, D, E, G, and H are autoclaved separately
+    under 100% N2 gas. Solution C is\nautoclaved under 80% N2 and 20% CO2 gas atmosphere.
+    Solution F is prepared under\n100% N2 gas and sterilized by filtration. To complete
+    the medium appropriate amounts of\nsolutions B to H are added to the sterile solution
+    A in the sequence as indicated. Adjust pH\nof the complete medium to 7.6, if necessary.","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].steps[1]","quote":"{\n                        \"step\":
+    \"Solutions B, D, E, G, and H are autoclaved separately under 100% N2 gas. Solution
+    C is autoclaved under 80% N2 and 20% CO2 gas atmosphere. Solution F is prepared
+    under 100% N2 gas and sterilized by filtration. To complete the medium appropriate
+    amounts of solutions B to H are added to the sterile solution A in the sequence
+    as indicated. Adjust pH of the complete medium to 7.6, if necessary.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q52","label":"Retained main preparation 3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"preparation_steps[2]","stored":{"step_number":3,"action":"FILTER_STERILIZE","description":"Note:
+    Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution
+    freshly prepared under N2 and filter-sterilized) just before inoculation may stimulate
+    growth at the beginning. For transfers use 5 - 10% inoculum."}},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"preparation_steps[2]","stored":{"step_number":3,"action":"FILTER_STERILIZE","description":"Note:
+    Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution
+    freshly prepared under N2 and filter-sterilized) just before inoculation may stimulate
+    growth at the beginning. For transfers use 5 - 10% inoculum."}}],"decision":"evidence_only","rationale":"The
+    complete retained text and its numeric controls match the exact current source.
+    Preserve gas atmosphere, timing, separate sterilization, receiving order and source-defined
+    conditional alternatives. A single action code does not enumerate every subordinate
+    action. The reference to B–I in the alternative paragraph is source text and remains
+    unresolved because the formulation defines A–H.","source_stage":"Main preparation
+    and explicitly conditional source alternatives","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 20-22","quote":"3. Note: Addition of 10 - 20 mg sodium dithionite per liter
+    (e.g. from 5% (w/v) solution\nfreshly prepared under N2 and filter-sterilized)
+    just before inoculation may stimulate\ngrowth at the beginning. For transfers
+    use 5 - 10% inoculum.","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].steps[2]","quote":"{\n                        \"step\":
+    \"Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v)
+    solution freshly prepared under N2 and filter-sterilized) just before inoculation
+    may stimulate growth at the beginning. For transfers use 5 - 10% inoculum.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q53","label":"Retained main preparation 4","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"preparation_steps[3]","stored":{"step_number":4,"action":"AUTOCLAVE","description":"Cultures
+    of Desulfonema spp. show usually improved growth in media containing an artificial
+    light sediment of aluminum phosphate. Alternatively, a viscous medium prepared
+    with 1 - 2 g washed agar per liter can be used (Widdel et al., Arch. Microbiol.
+    134:286-294 (1983)): Agar (Difco) is washed three times for one hour with distilled
+    water at room temperature. Finally, the agar is suspended (c. 20.0 g/l) in distilled
+    water and autoclaved. 50 ml of the hot agar is added to the hot sterile medium
+    part A (when preparing part A calculated for 1 liter, subtract the volume of the
+    agar solution). After cooling to room temperature complete the medium by adding
+    part B to I. For mass cultures the aluminum phosphate as artificial sediment can
+    be used."}},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"preparation_steps[3]","stored":{"step_number":4,"action":"AUTOCLAVE","description":"Cultures
+    of Desulfonema spp. show usually improved growth in media containing an artificial
+    light sediment of aluminum phosphate. Alternatively, a viscous medium prepared
+    with 1 - 2 g washed agar per liter can be used (Widdel et al., Arch. Microbiol.
+    134:286-294 (1983)): Agar (Difco) is washed three times for one hour with distilled
+    water at room temperature. Finally, the agar is suspended (c. 20.0 g/l) in distilled
+    water and autoclaved. 50 ml of the hot agar is added to the hot sterile medium
+    part A (when preparing part A calculated for 1 liter, subtract the volume of the
+    agar solution). After cooling to room temperature complete the medium by adding
+    part B to I. For mass cultures the aluminum phosphate as artificial sediment can
+    be used."}}],"decision":"evidence_only","rationale":"The complete retained text
+    and its numeric controls match the exact current source. Preserve gas atmosphere,
+    timing, separate sterilization, receiving order and source-defined conditional
+    alternatives. A single action code does not enumerate every subordinate action.
+    The reference to B–I in the alternative paragraph is source text and remains unresolved
+    because the formulation defines A–H.","source_stage":"Main preparation and explicitly
+    conditional source alternatives","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 23-31","quote":"4. Cultures of Desulfonema spp. show usually improved growth
+    in media containing an\nartificial light sediment of aluminum phosphate. Alternatively,
+    a viscous medium prepared\nwith 1 - 2 g washed agar per liter can be used (Widdel
+    et al., Arch. Microbiol. 134:286-294\n(1983)): Agar (Difco) is washed three times
+    for one hour with distilled water at room\ntemperature. Finally, the agar is suspended
+    (c. 20.0 g/l) in distilled water and autoclaved.\n50 ml of the hot agar is added
+    to the hot sterile medium part A (when preparing part A\ncalculated for 1 liter,
+    subtract the volume of the agar solution). After cooling to room\ntemperature
+    complete the medium by adding part B to I. For mass cultures the aluminum\nphosphate
+    as artificial sediment can be used.","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[0].steps[3]","quote":"{\n                        \"step\":
+    \"Cultures of Desulfonema spp. show usually improved growth in media containing
+    an artificial light sediment of aluminum phosphate. Alternatively, a viscous medium
+    prepared with 1 - 2 g washed agar per liter can be used (Widdel et al., Arch.
+    Microbiol. 134:286-294 (1983)): Agar (Difco) is washed three times for one hour
+    with distilled water at room temperature. Finally, the agar is suspended (c. 20.0
+    g/l) in distilled water and autoclaved. 50 ml of the hot agar is added to the
+    hot sterile medium part A (when preparing part A calculated for 1 liter, subtract
+    the volume of the agar solution). After cooling to room temperature complete the
+    medium by adding part B to I. For mass cultures the aluminum phosphate as artificial
+    sediment can be used.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q54","label":"Retained
+    final pH","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"ph_value","stored":7.6},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"ph_value","stored":7.6}],"decision":"evidence_only","rationale":"The
+    scalar7.6 matches the source final-medium instruction and provider metadata; it
+    is distinct from the approximate pH6 during preparation of A.","source_stage":"Complete
+    medium","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 18-19","quote":"solutions B to H are added to the sterile solution A in
+    the sequence as indicated. Adjust pH\nof the complete medium to 7.6, if necessary.","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.medium","quote":"{\n            \"id\":
+    201,\n            \"name\": \"DESULFONEMA LIMICOLA MEDIUM\",\n            \"complex_medium\":
+    \"yes\",\n            \"min_pH\": 7.6,\n            \"max_pH\": 7.6,\n            \"source\":
+    \"DSMZ\",\n            \"link\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf\"\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q55","label":"Retained SL-10 make-up instruction","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"preparation_steps[4]","stored":{"step_number":5,"action":"DISSOLVE","description":"First
+    dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml."}},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"preparation_steps[4]","stored":{"step_number":5,"action":"DISSOLVE","description":"First
+    dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml."}}],"decision":"correct","rationale":"The instruction,
+    including final1000ml, is fully supported for SL-10 and retained verbatim. Its
+    unqualified main-step placement requires correction to a named SL-10 preparation
+    container; it does not define the final medium volume.","source_stage":"SL-10
+    only","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 86-86","quote":"Trace element solution SL-10 (from medium 320)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 98-99","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[9].steps[0]","quote":"{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q56","label":"Retained rumen-fluid preparation","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml","field_path":"preparation_steps[5]","stored":{"step_number":6,"action":"AUTOCLAVE","description":"Rumen
+    fluid from cow or sheep (obtained from fistulated animals or abattoir refuse)
+    is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged
+    at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2
+    gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to
+    30% of volume and then stored frozen at -20°C."}},{"path":"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml","field_path":"preparation_steps[5]","stored":{"step_number":6,"action":"AUTOCLAVE","description":"Rumen
+    fluid from cow or sheep (obtained from fistulated animals or abattoir refuse)
+    is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged
+    at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2
+    gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to
+    30% of volume and then stored frozen at -20°C."}}],"decision":"correct","rationale":"The
+    retained121°C/15min,27000g/20min,100%N2/15min,30%vial fill and−20°C storage controls
+    match the primary rumen-fluid subsection. Attach this unchanged text to the rumen-fluid
+    stock rather than the main medium. The provider volume1000 metadata is not a primary
+    instruction to prepare that final stock volume.","source_stage":"Clarified rumen
+    fluid only","sources":[{"evidence_id":"dsm201","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium201.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm201.raw","raw_sha256":"f2745cb4730267353652ce7534d0ef6828628a2c12b9db0a2fa032c83657d72c","text_sha256":"04c940931ec1540df2f5e19beb20231b8793fe5943fb2ff263c3a2a9e9dfda37","accessed_at":"2026-10-28T20:15:18.507323Z","locator":"dsm201.txt
+    lines 110-115","quote":"Clarified rumen fluid (from medium 1310)\nRumen fluid
+    from cow or sheep (obtained from fistulated animals or abattoir refuse) is\nfiltered
+    through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000
+    g\nfor 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for
+    15 min,\ndispensed under same gas atmosphere into anoxic serum vials to 30% of
+    volume and then\nstored frozen at -20°C.","quote_basis":"derivative text"},{"evidence_id":"api201","reference":"https://mediadive.dsmz.de/rest/medium/201","raw_path":"REVIEW_WORK/batch077/source07-08-10/api201.raw","raw_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","text_sha256":"19be6d9092740be26338f387a2cde34c0e6542d864266e36ec6a5b38c7ab91f1","accessed_at":"2026-10-28T20:15:18.352510Z","locator":"data.solutions[10].steps[0]","quote":"{\n                        \"step\":
+    \"Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir
+    refuse) is filtered through muslin, autoclaved at 121\\u00b0C for 15 min and then
+    centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
+    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
+    vials to 30% of volume and then stored frozen at -20\\u00b0C.\"\n                    }","quote_basis":"raw
+    UTF-8"}]}],"document_scopes":{"data/merge_yaml/merged/DESULFONEMA_LIMICOLA_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: All current slots and exact MIM rows were assessed against fresh OLS scientific
+    definitions. Sodium acetate trihydrate is correct; calcium D-pantothenate agrees
+    with CHEBI:31345 stereochemistry. The generic lipoic-acid concept does not itself
+    certify a racemate, so the explicit DL source label is preserved. Vitamin B12
+    remains a class without molar conversion. Sodium resazurin and nickel hydrate
+    are confirmed form contradictions. Exact NiCl2 x6H2O MIM rows are REJECTED while
+    fresh OLS supports the hydrate; cobalt hexahydrate has mixed spelling-row statuses
+    with the same chemically matching ID. Canonical-label agreement and identifier
+    presence do not establish supplied form or mapping acceptance.
+  target_ids:
+  - CultureMech:001300
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: concern
+  summary: All three complete historical reports and the exact selected parent row
+    were read. The fresh API201 full raw digest equals the historical digest, and54
+    unique decoded source objects match current data. Null concentration snippets
+    remain false; equal current bytes authenticate content rather than the historical
+    access event. Historical unchanged owner bytes and all six retained preparation
+    texts are credited. Existing stage flattening persists; current conservative merge
+    and first-solution importer behavior are not attributed retroactively. Current
+    prep parsing still loses solution boundaries.
+  target_ids:
+  - CultureMech:001300
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - historical-object-joins
+  - writer-mediadive
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-001300-multi-solution-flattening
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore solution A–H and their nested preparations
+  description: Both documents flatten all31 component rates from A, C, D, E, H, SL-10
+    and Wolin vitamins into one ingredient list. These are provider stage rates, not
+    final-medium concentrations. Restore the explicit A–H receiving doses and nested
+    B/SL-10, F/Wolin and G/rumen-fluid references, preserving all supported original
+    masses and conditional alternatives. Clarified rumen fluid20ml is absent as a
+    structured receiving ingredient. API main volume1003ml alone does not prove measured
+    final volume.
+  target_ids:
+  - CultureMech:001300
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - target
+  - owner
+  - dsm201
+  - api201
+  - writer-mediadive
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+    role: maintained source
+- finding_id: f2
+  issue_key: culturemech-001300-hcl-percent-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preserve the unspecified HCl percentage basis
+  description: The local2.5G_PER_L HCl originates from a provider conversion of10ml
+    labelled25% in SL-10. The primary gives no percentage basis or density. Even with
+    explicit final stock make-up, the mass conversion is unsupported. Preserve the
+    exact volume and attribute in the correct stock until basis evidence is available.
+  target_ids:
+  - CultureMech:001300
+  field_paths:
+  - ingredients[12].concentration
+  evidence_ids:
+  - dsm201
+  - api201
+  - quantities
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+    role: maintained source
+- finding_id: f3
+  issue_key: culturemech-001300-salt-hydrate-identity
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Reconcile sodium resazurin and nickel hexahydrate
+  description: The exact source specifies sodium resazurin and NiCl2·6H2O. Resazurin
+    primary slots assert neutral CHEBI:8806 (C12H7NO4); nickel primary and secondary
+    slots assert anhydrous CHEBI:34887. Fresh CHEBI:53542 supports the stated nickel
+    hydrate. Correct only the actual asserted slots after exact-form verification;
+    preserve source mass, w/v attribute and stage. Sodium acetate CHEBI:32138 already
+    is the correct trihydrate and needs no form correction.
+  target_ids:
+  - CultureMech:001300
+  field_paths:
+  - ingredients[7].term
+  - ingredients[19].term
+  - ingredients[19].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsm201
+  - api201
+  - chebi8806
+  - chebi34887
+  - chebi53542
+  - chebi32138
+  - groundings
+  rule_id: review-yaml-record/grounding
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+    role: maintained source
+- finding_id: f4
+  issue_key: culturemech-001300-stock-method-placement
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Attach retained stock methods to their own solutions
+  description: Both documents already retain the complete main preparation and the
+    two additional stock methods. The SL-10 make-up and clarified-rumen-fluid instructions
+    are unqualified main preparation_steps[4] and[5]. Move those unchanged texts and
+    numeric controls under their respective stocks, preserving the valid main method.
+    Current importer concatenates steps from all source solutions without maintaining
+    their stage context.
+  target_ids:
+  - CultureMech:001300
+  field_paths:
+  - preparation_steps[4]
+  - preparation_steps[5]
+  - solutions
+  evidence_ids:
+  - dsm201
+  - api201
+  - writer-mediadive
+  rule_id: review-yaml-record/representation
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: maintained preparation-stage parser
+- finding_id: f5
+  issue_key: culturemech-001300-unresolved-source-metadata
+  category: consistency
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Retain source ambiguity and justify the high-metal flag
+  description: The preserved alternative-method text says B–I although the source
+    formulation defines A–H; do not invent solution I or silently rewrite the quotation.
+    The local high_metal:true assertion has no source-defined threshold or attached
+    justification in the inspected materials. Keep the basal liquid/complex classification
+    and conditional agar alternative distinct, and resolve these bounded metadata
+    assertions with explicit evidence.
+  target_ids:
+  - CultureMech:001300
+  field_paths:
+  - preparation_steps[3]
+  - high_metal
+  evidence_ids:
+  - dsm201
+  - api201
+  - target
+  - owner
+  rule_id: review-yaml-record/consistency
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+    role: maintained source
+actions:
+- action_id: a1
+  description: Both documents flatten all31 component rates from A, C, D, E, H, SL-10
+    and Wolin vitamins into one ingredient list. These are provider stage rates, not
+    final-medium concentrations. Restore the explicit A–H receiving doses and nested
+    B/SL-10, F/Wolin and G/rumen-fluid references, preserving all supported original
+    masses and conditional alternatives. Clarified rumen fluid20ml is absent as a
+    structured receiving ingredient. API main volume1003ml alone does not prove measured
+    final volume.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001300
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: The local2.5G_PER_L HCl originates from a provider conversion of10ml
+    labelled25% in SL-10. The primary gives no percentage basis or density. Even with
+    explicit final stock make-up, the mass conversion is unsupported. Preserve the
+    exact volume and attribute in the correct stock until basis evidence is available.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001300
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: The exact source specifies sodium resazurin and NiCl2·6H2O. Resazurin
+    primary slots assert neutral CHEBI:8806 (C12H7NO4); nickel primary and secondary
+    slots assert anhydrous CHEBI:34887. Fresh CHEBI:53542 supports the stated nickel
+    hydrate. Correct only the actual asserted slots after exact-form verification;
+    preserve source mass, w/v attribute and stage. Sodium acetate CHEBI:32138 already
+    is the correct trihydrate and needs no form correction.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001300
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: Both documents already retain the complete main preparation and the
+    two additional stock methods. The SL-10 make-up and clarified-rumen-fluid instructions
+    are unqualified main preparation_steps[4] and[5]. Move those unchanged texts and
+    numeric controls under their respective stocks, preserving the valid main method.
+    Current importer concatenates steps from all source solutions without maintaining
+    their stage context.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001300
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: maintained preparation-stage parser
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  - Verify the current preparation parser preserves solution identity for each step
+    while retaining every numeric control and conditional alternative.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a5
+  description: The preserved alternative-method text says B–I although the source
+    formulation defines A–H; do not invent solution I or silently rewrite the quotation.
+    The local high_metal:true assertion has no source-defined threshold or attached
+    justification in the inspected materials. Keep the basal liquid/complex classification
+    and conditional agar alternative distinct, and resolve these bounded metadata
+    assertions with explicit evidence.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:001300
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonema_limicola_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- The primary does not explicitly state final medium volume. API1003ml is the sum
+  of the A–H additions; no final normalization is derived from that alone.
+- Source HCl25% lacks a percentage basis/density; source resazurin0.1%w/v and optional
+  dithionite5%w/v are explicit and treated separately.
+- No local source evidence is attached. Retained supported text is evidence_only,
+  and old null snippet claims are not promoted to verified.
+- The bibliographic mention Widdel et al.(1983) is retained as source context only;
+  the paper was not independently recovered and no separate growth assertion is attached.
+- Provider mmol_l values, including possible pantothenate formula-unit conventions
+  and hydrate assumptions, were not used to recalculate any local mass.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```
