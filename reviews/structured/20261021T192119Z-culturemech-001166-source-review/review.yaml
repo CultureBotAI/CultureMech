@@ -1,0 +1,2302 @@
+schema_version: 1.0.0
+review_id: 20261021T192119Z-culturemech-001166-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alicyclobacillus_cellulosilyticus_medium (CultureMech:001166)'
+started_at: '2026-10-21T19:13:55Z'
+finished_at: '2026-10-21T19:21:19Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Both exact current primaries add 1 mL each of 25%, 7% and 2% mineral stocks.
+  The generated target and JCM owner misrepresent these doses as 1 g/L salts, while
+  the DSM owner uses unverified converted masses. Reconcile nominal volume conventions
+  and the unsupported lower-mineral variant claim; preserve three authenticated JCM
+  owner claims and five derivative-only DSM claims separately.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml
+    sha256: 013939b670c56ecdf9a6d8535ec511cbefb7d21a797058b182f8f237c10ae45d
+    role: target
+  - path: data/normalized_yaml/bacterial/573c_medium.yaml
+    sha256: 5754cc2ee601583c11ca20d1ca08c604678dfc5919924e36cb487b81c47888df
+    role: context
+  - path: data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+    sha256: baf7a3debf35cdb59aaf30f60387545d91ad6355236f7738dc16133aeb888079
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/plan.json
+    sha256: 087b43514367d268b48e568b66203c146b81601303e5c8e3508f3c91e0fcbf26
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml.md
+    sha256: 5b759013a61295a40533cfbd22cba0e9cc958a63fb0eebdfa2d6b207abac2310
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json
+    sha256: 0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/bacterial/573c_medium.yaml.md
+    sha256: f1d748cc770123aee653812ba0f997fdd44a69fe8fe5135123a15ff0fa15559c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 346; batch 035 item 6 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-four task batches
+    contain 340 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 343 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001166
+targets:
+- target_id: CultureMech:001166
+  path: data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml
+  label: alicyclobacillus_cellulosilyticus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/573c_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch035/346/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-035/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch035/346/strict.tsv"
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001166
+- check_id: mediadive1684-source-access
+  name: 'Exact source content access: mediadive1684'
+  required: false
+  status: unavailable
+  summary: Exact DSM1684 API attempt returned HTTP 503. The primary PDF remains available;
+    this failed response is not historical recipe evidence.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - mediadive1684-attempt
+- check_id: mediadive1684Retry1-source-access
+  name: 'Exact source content access: mediadive1684Retry1'
+  required: false
+  status: unavailable
+  summary: Exact DSM1684 API attempt returned HTTP 503. The primary PDF remains available;
+    this failed response is not historical recipe evidence.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - mediadive1684Retry1-attempt
+- check_id: dsm1684-historical-response
+  name: Exact historical DSM1684 response correspondence
+  required: true
+  status: unavailable
+  summary: Five attached DSM owner amount claims match decoded historical plans, but
+    the cited f7d0883a… response bytes were not recovered in the documented search.
+    Both current API attempts returned 503. The current PDF verifies batch masses
+    and stock doses, not the historical nominal g/L conversion.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - historical-access-scope
+  - historical-plan-0
+  - mediadive1684-attempt
+  - mediadive1684Retry1-attempt
+- check_id: current-mim-exact-key
+  name: Completed exact current MIM CHEBI-key lookup
+  required: true
+  status: passed
+  summary: All seven asserted mediaingredientmech_chebi_term keys were searched in
+    the pinned complete current index. Six have preferred mapped rows; CHEBI:85146
+    has none. The completed negative result is a curation gap, not unavailable access
+    or the reason for partial completion.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - mim
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/573c_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:14:32.442307Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch035/346/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:14:33.634595Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-035/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch035/346/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:14:34.979659Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:14:35.870718Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: supports
+  summary: './data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml:1:id:
+    CultureMech:001166
+
+    ./data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml:1:id:
+    CultureMech:001166
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch035/source-preflight-bound/346/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: supports
+  summary: 12 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 5ab9561ea4909f35ceed8849730158a529536fe18cd992b3b6609c587e50edcb
+- evidence_id: dsmz1684
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf
+  locator: DSMZ1684 PDF page 1, complete recipe and preparation
+  accessed_at: '2026-10-21T19:02:24.471669Z'
+  support: supports
+  summary: The exact DSM primary prints six dry additions, three 1 mL mineral-stock
+    doses with unspecified percent bases, 1000 mL water, separate stock sterilization
+    and distinct liquid/agar pH ranges. It does not state a measured final volume.
+  quote: Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium.
+  snapshot_sha256: 105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417
+- evidence_id: jcm1052
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052
+  locator: Exact JCM1052 / 573C recipe table, local preparation paragraph and page-level
+    default
+  accessed_at: '2026-10-21T08:17:30.934118Z'
+  support: supports
+  summary: The exact JCM primary gives the same dry masses and mineral-stock doses;
+    its liquid pH range is 4.8–5.0. BD-Difco product qualifiers and the default 121°C/15
+    min cycle stay attributed to this source.
+  quote: Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.
+  snapshot_sha256: aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661
+- evidence_id: mediadiveJ1052
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1052
+  locator: $.data.medium; $.data.solutions[0].volume, recipe[0:10], steps
+  accessed_at: '2026-10-21T08:17:23.770261Z'
+  support: supports
+  summary: The captured J1052 response declares nominal volume 1003 mL and g_l for
+    the six dry additions; mineral rows are 1 mL stock additions, not g/L. Its exact
+    raw hash matches the three attached historical owner snippets, although this capture
+    was actually accessed on October 21.
+  quote: '"volume": 1003'
+  snapshot_sha256: 13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f
+- evidence_id: mediadive1684-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1684
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:02:22.562986Z'
+  support: context_only
+  summary: Exact DSM1684 API attempt returned HTTP 503. The primary PDF remains available;
+    this failed response is not historical recipe evidence.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1684Retry1-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1684
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:03:30.869535Z'
+  support: context_only
+  summary: Exact DSM1684 API attempt returned HTTP 503. The primary PDF remains available;
+    this failed response is not historical recipe evidence.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: historical-plan-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/plan.json
+  locator: $.records[284]; all nine decoded claims and source metadata
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: All ingredient claim objects were read and compared to the owner. Five
+    DSM and three JCM attached snippets match their respective decoded plans. A plan
+    object is derivative evidence and does not authenticate its cited remote raw hash.
+  snapshot_sha256: 087b43514367d268b48e568b66203c146b81601303e5c8e3508f3c91e0fcbf26
+- evidence_id: historical-plan-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json
+  locator: $.records[42]; all nine decoded claims and source metadata
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: All ingredient claim objects were read and compared to the owner. Five
+    DSM and three JCM attached snippets match their respective decoded plans. A plan
+    object is derivative evidence and does not authenticate its cited remote raw hash.
+  snapshot_sha256: 0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54
+- evidence_id: historical-report-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml.md
+  locator: Complete record report, source metadata and nine amount-decision rows
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: Report source hashes, dates, decisions and explanations were read. These
+    retained reports preserve historical claims; they are not substitutes for unavailable
+    DSM1684 raw response bytes.
+  snapshot_sha256: 5b759013a61295a40533cfbd22cba0e9cc958a63fb0eebdfa2d6b207abac2310
+- evidence_id: historical-report-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/bacterial/573c_medium.yaml.md
+  locator: Complete record report, source metadata and nine amount-decision rows
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: Report source hashes, dates, decisions and explanations were read. These
+    retained reports preserve historical claims; they are not substitutes for unavailable
+    DSM1684 raw response bytes.
+  snapshot_sha256: f1d748cc770123aee653812ba0f997fdd44a69fe8fe5135123a15ff0fa15559c
+- evidence_id: historical-access-scope
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch035/source-preflight-bound/346/evidence-context-original.json
+  locator: historical_capture_search; existing_owner_evidence_recheck; historical_decoded_claim_comparison
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: Ignored-inclusive bounded reports/scripts search and decoded-string hashing
+    did not recover DSM1684 raw f7d0883a…; this is not universal absence. J1052 raw
+    13fea4a5… is available with actual access 2026-10-21T08:17:23.770261Z, matching
+    the hash cited by owner claims dated 2026-10-07T15:18:38.761770+00:00. Preserve
+    both dates.
+  snapshot_sha256: 9729f09ca801fcf08b327d1c86775e18d6648060f5c4b757516ad00af58ffe3d
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch035/346/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: bca7f81bd90982d9e699a8132d878b02e4eae6caf1a32c31c042899cc06ea251
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, label, obsolete flag, description and supplied formula/structure
+    metadata
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 has a matching nonobsolete canonical label. Source chemical
+    form is assessed separately; a valid label is not proof of sodium-salt specificity
+    or an existing MIM mapping.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, label, obsolete flag, description and supplied formula/structure
+    metadata
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 has a matching nonobsolete canonical label. Source chemical
+    form is assessed separately; a valid label is not proof of sodium-salt specificity
+    or an existing MIM mapping.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, label, obsolete flag, description and supplied formula/structure
+    metadata
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 has a matching nonobsolete canonical label. Source chemical
+    form is assessed separately; a valid label is not proof of sodium-salt specificity
+    or an existing MIM mapping.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, label, obsolete flag, description and supplied formula/structure
+    metadata
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 has a matching nonobsolete canonical label. Source chemical
+    form is assessed separately; a valid label is not proof of sodium-salt specificity
+    or an existing MIM mapping.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi85146
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_85146
+  locator: Exact OLS obo_id, label, obsolete flag, description and supplied formula/structure
+    metadata
+  accessed_at: '2026-10-21T19:02:24.908862Z'
+  support: supports
+  summary: CHEBI:85146 has a matching nonobsolete canonical label. Source chemical
+    form is assessed separately; a valid label is not proof of sodium-salt specificity
+    or an existing MIM mapping.
+  snapshot_sha256: 6de00321284c118e5008f497bf181cb82a948ac88cf16af35e2270f7273e28f1
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, label, obsolete flag, description and supplied formula/structure
+    metadata
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 has a matching nonobsolete canonical label. Source chemical
+    form is assessed separately; a valid label is not proof of sodium-salt specificity
+    or an existing MIM mapping.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: Exact OLS obo_id, label, obsolete flag, description and supplied formula/structure
+    metadata
+  accessed_at: '2026-10-21T08:17:30.289392Z'
+  support: supports
+  summary: CHEBI:86254 has a matching nonobsolete canonical label. Source chemical
+    form is assessed separately; a valid label is not proof of sodium-salt specificity
+    or an existing MIM mapping.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete pinned index exact CHEBI-key preferred-term lookup; adjacent metadata
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:85146":
+    [], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234":
+    [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234",
+    "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86254": [{"label": "FeCl3 x 6 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86254", "preferred_term": "FeCl3 x 6 H2O", "ontology_id":
+    "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/Alicyclobacillus_cellulosilyticus_Medium.yaml;
+    data/normalized_yaml/bacterial/573c_medium.yaml; data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/573c_medium.yaml",
+    "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: Current MediaDive parsing explicitly separates percent-marked mL stock
+    additions from primary ingredients and excludes solvent water from ingredient
+    edges; its amount unit normalization still does not establish physical final volume.
+    Variant-link application copies proposed notes/relationships without authenticating
+    formulation differences. Current grouping does not resolve source/version quantities.
+    These are present writer responsibilities, not proof of the historical execution
+    that produced these bytes.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/apply_media_variant_links.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: Current MediaDive parsing explicitly separates percent-marked mL stock
+    additions from primary ingredients and excludes solvent water from ingredient
+    edges; its amount unit normalization still does not establish physical final volume.
+    Variant-link application copies proposed notes/relationships without authenticating
+    formulation differences. Current grouping does not resolve source/version quantities.
+    These are present writer responsibilities, not proof of the historical execution
+    that produced these bytes.
+  snapshot_sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:21:18Z'
+  support: context_only
+  summary: Current MediaDive parsing explicitly separates percent-marked mL stock
+    additions from primary ingredients and excludes solvent water from ingredient
+    edges; its amount unit normalization still does not establish physical final volume.
+    Variant-link application copies proposed notes/relationships without authenticating
+    formulation differences. Current grouping does not resolve source/version quantities.
+    These are present writer responsibilities, not proof of the historical execution
+    that produced these bytes.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 20 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"ingredient_or_context\": \"\
+    Carboxymethylcellulose (CMC), sodium salt\",\n    \"field_path\": \"ingredients[0].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"2.49252\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_amount\": 2.5,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Main recipe dry addition\",\n    \"primary_source_evidence_id\": \"dsmz1684\"\
+    ,\n    \"decision\": \"conflict\",\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"dsmz1684\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning Carboxymethylcellulose\
+    \ (CMC), sodium salt\",\n        \"exact_source_quote\": \"Carboxymethylcellulose\
+    \ (CMC), sodium salt                    2.50      g\",\n        \"snapshot_sha256\"\
+    : \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\",\n    \
+    \    \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"Carboxymethyl cellulose,\
+    \ sodium salt 2.5 g\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Carboxymethyl cellulose\\\",\\n                        \\\"\
+    compound_id\\\": 989,\\n                        \\\"condition\\\": \\\" sodium\
+    \ salt\\\",\\n                        \\\"amount\\\": 2.5,\\n                \
+    \        \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2.49252,\\\
+    n                        \\\"mmol_l\\\": 10.3764,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.49252\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"conflict\",\n        \"rationale\": \"Primary\
+    \ batch mass 2.5 g. On the J1052 provider-declared 1003 mL basis, 2.5/1.003 =\
+    \ 2.492522432701894317048853440 g/L; API g_l is 2.49252, retained at its reported\
+    \ precision rather than silently normalized. The historical DSM derivative claims\
+    \ a nominal 1000 mL denominator. Neither denominator is an independently measured\
+    \ final volume. No polymer or complex-product molarity is inferred. Target numerals\
+    \ track J1052 while its primary media identity/preparation also retains DSM1684;\
+    \ reconcile provenance and attach evidence before endorsing the combined claim.\
+    \ The sodium-salt qualifier is retained in notes; the generic polymer ID does\
+    \ not fully establish that supplied form.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/573c_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2.49252\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"Primary batch mass 2.5 g. On the\
+    \ J1052 provider-declared 1003 mL basis, 2.5/1.003 = 2.492522432701894317048853440\
+    \ g/L; API g_l is 2.49252, retained at its reported precision rather than silently\
+    \ normalized. The historical DSM derivative claims a nominal 1000 mL denominator.\
+    \ Neither denominator is an independently measured final volume. No polymer or\
+    \ complex-product molarity is inferred. Correct nominal J1052 number has no attached\
+    \ same-layer amount evidence; add scoped evidence. The sodium-salt qualifier is\
+    \ retained in notes; the generic polymer ID does not fully establish that supplied\
+    \ form.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"Primary batch\
+    \ mass 2.5 g. On the J1052 provider-declared 1003 mL basis, 2.5/1.003 = 2.492522432701894317048853440\
+    \ g/L; API g_l is 2.49252, retained at its reported precision rather than silently\
+    \ normalized. The historical DSM derivative claims a nominal 1000 mL denominator.\
+    \ Neither denominator is an independently measured final volume. No polymer or\
+    \ complex-product molarity is inferred. Preserve existing historical evidence\
+    \ where present, but mark its raw/nominal-basis correspondence unresolved. The\
+    \ current primary independently supports the batch mass only. The sodium-salt\
+    \ qualifier is retained in notes; the generic polymer ID does not fully establish\
+    \ that supplied form.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Primary\
+    \ batch mass 2.5 g. On the J1052 provider-declared 1003 mL basis, 2.5/1.003 =\
+    \ 2.492522432701894317048853440 g/L; API g_l is 2.49252, retained at its reported\
+    \ precision rather than silently normalized. The historical DSM derivative claims\
+    \ a nominal 1000 mL denominator. Neither denominator is an independently measured\
+    \ final volume. No polymer or complex-product molarity is inferred.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q2\",\n    \"ingredient_or_context\": \"(NH4)2SO4\"\
+    ,\n    \"field_path\": \"ingredients[1].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"1.29611\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1.3,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Main recipe dry addition\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz1684\",\n    \"decision\": \"conflict\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1684\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning (NH4)2SO4\",\n\
+    \        \"exact_source_quote\": \"(NH4)2SO4                                 \
+    \                   1.30      g\",\n        \"snapshot_sha256\": \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\"\
+    ,\n        \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"(NH 4 ) 2 SO 4\
+    \ 1.3 g\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 1.3,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.29611,\\\
+    n                        \\\"mmol_l\\\": 9.80862,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.29611\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"conflict\",\n        \"rationale\": \"Primary\
+    \ batch mass 1.3 g. On the J1052 provider-declared 1003 mL basis, 1.3/1.003 =\
+    \ 1.296111665004985044865403789 g/L; API g_l is 1.29611, retained at its reported\
+    \ precision rather than silently normalized. The historical DSM derivative claims\
+    \ a nominal 1000 mL denominator. Neither denominator is an independently measured\
+    \ final volume. No polymer or complex-product molarity is inferred. Target numerals\
+    \ track J1052 while its primary media identity/preparation also retains DSM1684;\
+    \ reconcile provenance and attach evidence before endorsing the combined claim.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.29611\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"verified\",\n        \"rationale\": \"Primary\
+    \ batch mass 1.3 g. On the J1052 provider-declared 1003 mL basis, 1.3/1.003 =\
+    \ 1.296111665004985044865403789 g/L; API g_l is 1.29611, retained at its reported\
+    \ precision rather than silently normalized. The historical DSM derivative claims\
+    \ a nominal 1000 mL denominator. Neither denominator is an independently measured\
+    \ final volume. No polymer or complex-product molarity is inferred. Correct nominal\
+    \ J1052 value has attached exact same-layer raw/hash evidence.\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"Primary batch\
+    \ mass 1.3 g. On the J1052 provider-declared 1003 mL basis, 1.3/1.003 = 1.296111665004985044865403789\
+    \ g/L; API g_l is 1.29611, retained at its reported precision rather than silently\
+    \ normalized. The historical DSM derivative claims a nominal 1000 mL denominator.\
+    \ Neither denominator is an independently measured final volume. No polymer or\
+    \ complex-product molarity is inferred. Preserve existing historical evidence\
+    \ where present, but mark its raw/nominal-basis correspondence unresolved. The\
+    \ current primary independently supports the batch mass only.\"\n      }\n   \
+    \ ],\n    \"arithmetic_and_scope\": \"Primary batch mass 1.3 g. On the J1052 provider-declared\
+    \ 1003 mL basis, 1.3/1.003 = 1.296111665004985044865403789 g/L; API g_l is 1.29611,\
+    \ retained at its reported precision rather than silently normalized. The historical\
+    \ DSM derivative claims a nominal 1000 mL denominator. Neither denominator is\
+    \ an independently measured final volume. No polymer or complex-product molarity\
+    \ is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"ingredient_or_context\"\
+    : \"KH2PO4\",\n    \"field_path\": \"ingredients[2].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.368893\",\n      \"unit\": \"G_PER_L\"\n    },\n   \
+    \ \"source_amount\": 0.37,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Main recipe dry addition\",\n    \"primary_source_evidence_id\": \"dsmz1684\"\
+    ,\n    \"decision\": \"conflict\",\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"dsmz1684\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning KH2PO4\",\n \
+    \       \"exact_source_quote\": \"KH2PO4                                     \
+    \                  0.37      g\",\n        \"snapshot_sha256\": \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\"\
+    ,\n        \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"KH 2 PO 4 0.37\
+    \ g\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.37,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.368893,\\n     \
+    \                   \\\"mmol_l\\\": 2.71074,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[2].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.368893\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"conflict\",\n        \"rationale\": \"Primary\
+    \ batch mass 0.37 g. On the J1052 provider-declared 1003 mL basis, 0.37/1.003\
+    \ = 0.3688933200398803589232303091 g/L; API g_l is 0.368893, retained at its reported\
+    \ precision rather than silently normalized. The historical DSM derivative claims\
+    \ a nominal 1000 mL denominator. Neither denominator is an independently measured\
+    \ final volume. No polymer or complex-product molarity is inferred. Target numerals\
+    \ track J1052 while its primary media identity/preparation also retains DSM1684;\
+    \ reconcile provenance and attach evidence before endorsing the combined claim.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.368893\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"verified\",\n        \"rationale\": \"Primary\
+    \ batch mass 0.37 g. On the J1052 provider-declared 1003 mL basis, 0.37/1.003\
+    \ = 0.3688933200398803589232303091 g/L; API g_l is 0.368893, retained at its reported\
+    \ precision rather than silently normalized. The historical DSM derivative claims\
+    \ a nominal 1000 mL denominator. Neither denominator is an independently measured\
+    \ final volume. No polymer or complex-product molarity is inferred. Correct nominal\
+    \ J1052 value has attached exact same-layer raw/hash evidence.\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.37\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"Primary\
+    \ batch mass 0.37 g. On the J1052 provider-declared 1003 mL basis, 0.37/1.003\
+    \ = 0.3688933200398803589232303091 g/L; API g_l is 0.368893, retained at its reported\
+    \ precision rather than silently normalized. The historical DSM derivative claims\
+    \ a nominal 1000 mL denominator. Neither denominator is an independently measured\
+    \ final volume. No polymer or complex-product molarity is inferred. Preserve existing\
+    \ historical evidence where present, but mark its raw/nominal-basis correspondence\
+    \ unresolved. The current primary independently supports the batch mass only.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"Primary batch mass 0.37 g.\
+    \ On the J1052 provider-declared 1003 mL basis, 0.37/1.003 = 0.3688933200398803589232303091\
+    \ g/L; API g_l is 0.368893, retained at its reported precision rather than silently\
+    \ normalized. The historical DSM derivative claims a nominal 1000 mL denominator.\
+    \ Neither denominator is an independently measured final volume. No polymer or\
+    \ complex-product molarity is inferred.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q4\",\n    \"ingredient_or_context\": \"Glucose\",\n    \"field_path\": \"ingredients[3].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"0.997009\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_amount\": 1,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Main recipe dry addition\",\n    \"primary_source_evidence_id\": \"dsmz1684\"\
+    ,\n    \"decision\": \"conflict\",\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"dsmz1684\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning Glucose\",\n\
+    \        \"exact_source_quote\": \"Glucose                                   \
+    \                   1.00      g\",\n        \"snapshot_sha256\": \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\"\
+    ,\n        \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"Glucose 1.0 g\"\
+    ,\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Glucose\\\",\\n                        \\\"compound_id\\\":\
+    \ 5,\\n                        \\\"amount\\\": 1,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.997009,\\n   \
+    \                     \\\"mmol_l\\\": 5.53402,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[3].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.997009\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"conflict\",\n        \"rationale\": \"Primary\
+    \ batch mass 1 g. On the J1052 provider-declared 1003 mL basis, 1/1.003 = 0.9970089730807577268195413759\
+    \ g/L; API g_l is 0.997009, retained at its reported precision rather than silently\
+    \ normalized. The historical DSM derivative claims a nominal 1000 mL denominator.\
+    \ Neither denominator is an independently measured final volume. No polymer or\
+    \ complex-product molarity is inferred. Target numerals track J1052 while its\
+    \ primary media identity/preparation also retains DSM1684; reconcile provenance\
+    \ and attach evidence before endorsing the combined claim.\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.997009\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"verified\",\n        \"rationale\": \"Primary\
+    \ batch mass 1 g. On the J1052 provider-declared 1003 mL basis, 1/1.003 = 0.9970089730807577268195413759\
+    \ g/L; API g_l is 0.997009, retained at its reported precision rather than silently\
+    \ normalized. The historical DSM derivative claims a nominal 1000 mL denominator.\
+    \ Neither denominator is an independently measured final volume. No polymer or\
+    \ complex-product molarity is inferred. Correct nominal J1052 value has attached\
+    \ exact same-layer raw/hash evidence.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"Primary batch\
+    \ mass 1 g. On the J1052 provider-declared 1003 mL basis, 1/1.003 = 0.9970089730807577268195413759\
+    \ g/L; API g_l is 0.997009, retained at its reported precision rather than silently\
+    \ normalized. The historical DSM derivative claims a nominal 1000 mL denominator.\
+    \ Neither denominator is an independently measured final volume. No polymer or\
+    \ complex-product molarity is inferred. Preserve existing historical evidence\
+    \ where present, but mark its raw/nominal-basis correspondence unresolved. The\
+    \ current primary independently supports the batch mass only.\"\n      }\n   \
+    \ ],\n    \"arithmetic_and_scope\": \"Primary batch mass 1 g. On the J1052 provider-declared\
+    \ 1003 mL basis, 1/1.003 = 0.9970089730807577268195413759 g/L; API g_l is 0.997009,\
+    \ retained at its reported precision rather than silently normalized. The historical\
+    \ DSM derivative claims a nominal 1000 mL denominator. Neither denominator is\
+    \ an independently measured final volume. No polymer or complex-product molarity\
+    \ is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"ingredient_or_context\"\
+    : \"Yeast extract\",\n    \"field_path\": \"ingredients[4].concentration\",\n\
+    \    \"local\": {\n      \"value\": \"0.249252\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_amount\": 0.25,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Main recipe dry addition\",\n    \"primary_source_evidence_id\": \"dsmz1684\"\
+    ,\n    \"decision\": \"conflict\",\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"dsmz1684\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning Yeast extract\"\
+    ,\n        \"exact_source_quote\": \"Yeast extract                           \
+    \                     0.25      g\",\n        \"snapshot_sha256\": \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\"\
+    ,\n        \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"Yeast extract (BD-Difco)\
+    \ 0.25 g\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"attribute\\\": \\\"BD-Difco\\\",\\n    \
+    \                    \\\"amount\\\": 0.25,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.249252,\\n           \
+    \             \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.249252\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"conflict\",\n        \"rationale\": \"Primary\
+    \ batch mass 0.25 g. On the J1052 provider-declared 1003 mL basis, 0.25/1.003\
+    \ = 0.2492522432701894317048853440 g/L; API g_l is 0.249252, retained at its reported\
+    \ precision rather than silently normalized. The historical DSM derivative claims\
+    \ a nominal 1000 mL denominator. Neither denominator is an independently measured\
+    \ final volume. No polymer or complex-product molarity is inferred. Target numerals\
+    \ track J1052 while its primary media identity/preparation also retains DSM1684;\
+    \ reconcile provenance and attach evidence before endorsing the combined claim.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.249252\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\
+    Primary batch mass 0.25 g. On the J1052 provider-declared 1003 mL basis, 0.25/1.003\
+    \ = 0.2492522432701894317048853440 g/L; API g_l is 0.249252, retained at its reported\
+    \ precision rather than silently normalized. The historical DSM derivative claims\
+    \ a nominal 1000 mL denominator. Neither denominator is an independently measured\
+    \ final volume. No polymer or complex-product molarity is inferred. Correct nominal\
+    \ J1052 number has no attached same-layer amount evidence; add scoped evidence.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"Primary\
+    \ batch mass 0.25 g. On the J1052 provider-declared 1003 mL basis, 0.25/1.003\
+    \ = 0.2492522432701894317048853440 g/L; API g_l is 0.249252, retained at its reported\
+    \ precision rather than silently normalized. The historical DSM derivative claims\
+    \ a nominal 1000 mL denominator. Neither denominator is an independently measured\
+    \ final volume. No polymer or complex-product molarity is inferred. Preserve existing\
+    \ historical evidence where present, but mark its raw/nominal-basis correspondence\
+    \ unresolved. The current primary independently supports the batch mass only.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"Primary batch mass 0.25 g.\
+    \ On the J1052 provider-declared 1003 mL basis, 0.25/1.003 = 0.2492522432701894317048853440\
+    \ g/L; API g_l is 0.249252, retained at its reported precision rather than silently\
+    \ normalized. The historical DSM derivative claims a nominal 1000 mL denominator.\
+    \ Neither denominator is an independently measured final volume. No polymer or\
+    \ complex-product molarity is inferred.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q6\",\n    \"ingredient_or_context\": \"Tryptone\",\n    \"field_path\": \"ingredients[5].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"0.897308\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_amount\": 0.9,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Main recipe dry addition\",\n    \"primary_source_evidence_id\": \"dsmz1684\"\
+    ,\n    \"decision\": \"conflict\",\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"dsmz1684\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning Tryptone\",\n\
+    \        \"exact_source_quote\": \"Tryptone                                  \
+    \                   0.90      g\",\n        \"snapshot_sha256\": \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\"\
+    ,\n        \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"Tryptone (BD-Difco)\
+    \ 0.9 g\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Tryptone\\\",\\n                        \\\"compound_id\\\"\
+    : 71,\\n                        \\\"attribute\\\": \\\"BD-Difco\\\",\\n      \
+    \                  \\\"amount\\\": 0.9,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 0.897308,\\n             \
+    \           \\\"mmol_l\\\": 12.6239,\\n                        \\\"optional\\\"\
+    : 0\\n                    }\",\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[5].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.897308\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"conflict\",\n        \"rationale\": \"Primary\
+    \ batch mass 0.9 g. On the J1052 provider-declared 1003 mL basis, 0.9/1.003 =\
+    \ 0.8973080757726819541375872383 g/L; API g_l is 0.897308, retained at its reported\
+    \ precision rather than silently normalized. The historical DSM derivative claims\
+    \ a nominal 1000 mL denominator. Neither denominator is an independently measured\
+    \ final volume. No polymer or complex-product molarity is inferred. Target numerals\
+    \ track J1052 while its primary media identity/preparation also retains DSM1684;\
+    \ reconcile provenance and attach evidence before endorsing the combined claim.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.897308\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\
+    Primary batch mass 0.9 g. On the J1052 provider-declared 1003 mL basis, 0.9/1.003\
+    \ = 0.8973080757726819541375872383 g/L; API g_l is 0.897308, retained at its reported\
+    \ precision rather than silently normalized. The historical DSM derivative claims\
+    \ a nominal 1000 mL denominator. Neither denominator is an independently measured\
+    \ final volume. No polymer or complex-product molarity is inferred. Correct nominal\
+    \ J1052 number has no attached same-layer amount evidence; add scoped evidence.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.9\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"Primary batch\
+    \ mass 0.9 g. On the J1052 provider-declared 1003 mL basis, 0.9/1.003 = 0.8973080757726819541375872383\
+    \ g/L; API g_l is 0.897308, retained at its reported precision rather than silently\
+    \ normalized. The historical DSM derivative claims a nominal 1000 mL denominator.\
+    \ Neither denominator is an independently measured final volume. No polymer or\
+    \ complex-product molarity is inferred. Preserve existing historical evidence\
+    \ where present, but mark its raw/nominal-basis correspondence unresolved. The\
+    \ current primary independently supports the batch mass only.\"\n      }\n   \
+    \ ],\n    \"arithmetic_and_scope\": \"Primary batch mass 0.9 g. On the J1052 provider-declared\
+    \ 1003 mL basis, 0.9/1.003 = 0.8973080757726819541375872383 g/L; API g_l is 0.897308,\
+    \ retained at its reported precision rather than silently normalized. The historical\
+    \ DSM derivative claims a nominal 1000 mL denominator. Neither denominator is\
+    \ an independently measured final volume. No polymer or complex-product molarity\
+    \ is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"ingredient_or_context\"\
+    : \"MgSO4 x 7 H2O solution (25%)\",\n    \"field_path\": \"ingredients[6].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 1,\n    \"source_unit\": \"mL\",\n    \"source_stage\"\
+    : \"Mineral stock dose into basal medium\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz1684\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1684\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning MgSO4 x 7 H2O\
+    \ solution (25%)\",\n        \"exact_source_quote\": \"MgSO4 x 7 H2O solution\
+    \ (25%)                                 1.00     ml\",\n        \"snapshot_sha256\"\
+    : \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\",\n    \
+    \    \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"25% MgSO 4 ·7H\
+    \ 2 O solution 1.0 ml\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"attribute\\\": \\\"25%\\\",\\n          \
+    \              \\\"amount\\\": 1,\\n                        \\\"unit\\\": \\\"\
+    ml\\\",\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[6].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Both\
+    \ current primaries add 1 mL of the 25% hydrated-salt stock. The percentage basis\
+    \ is unspecified. Target/JCM 1 G_PER_L is a volume-to-mass misrepresentation.\
+    \ The DSM value could follow a conditional w/v calculation on a nominal litre\
+    \ but those assumptions are not established; do not infer final dissolved mass\
+    \ or concentration. Restore the stock dose/strength and its separate sterilization\
+    \ scope.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Both current primaries\
+    \ add 1 mL of the 25% hydrated-salt stock. The percentage basis is unspecified.\
+    \ Target/JCM 1 G_PER_L is a volume-to-mass misrepresentation. The DSM value could\
+    \ follow a conditional w/v calculation on a nominal litre but those assumptions\
+    \ are not established; do not infer final dissolved mass or concentration. Restore\
+    \ the stock dose/strength and its separate sterilization scope.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"Both current\
+    \ primaries add 1 mL of the 25% hydrated-salt stock. The percentage basis is unspecified.\
+    \ Target/JCM 1 G_PER_L is a volume-to-mass misrepresentation. The DSM value could\
+    \ follow a conditional w/v calculation on a nominal litre but those assumptions\
+    \ are not established; do not infer final dissolved mass or concentration. Restore\
+    \ the stock dose/strength and its separate sterilization scope.\"\n      }\n \
+    \   ],\n    \"arithmetic_and_scope\": \"Both current primaries add 1 mL of the\
+    \ 25% hydrated-salt stock. The percentage basis is unspecified. Target/JCM 1 G_PER_L\
+    \ is a volume-to-mass misrepresentation. The DSM value could follow a conditional\
+    \ w/v calculation on a nominal litre but those assumptions are not established;\
+    \ do not infer final dissolved mass or concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q8\",\n    \"ingredient_or_context\": \"CaCl2 x 2 H2O solution (7%)\",\n \
+    \   \"field_path\": \"ingredients[7].concentration\",\n    \"local\": {\n    \
+    \  \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"mL\",\n    \"source_stage\": \"Mineral stock dose\
+    \ into basal medium\",\n    \"primary_source_evidence_id\": \"dsmz1684\",\n  \
+    \  \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1684\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning CaCl2 x 2 H2O\
+    \ solution (7%)\",\n        \"exact_source_quote\": \"CaCl2 x 2 H2O solution (7%)\
+    \                                  1.00     ml\",\n        \"snapshot_sha256\"\
+    : \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\",\n    \
+    \    \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"7% CaCl 2 ·2H 2\
+    \ O solution 1.0 ml\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"attribute\\\": \\\"7%\\\",\\n           \
+    \             \\\"amount\\\": 1,\\n                        \\\"unit\\\": \\\"\
+    ml\\\",\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[7].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Both\
+    \ current primaries add 1 mL of the 7% hydrated-salt stock. The percentage basis\
+    \ is unspecified. Target/JCM 1 G_PER_L is a volume-to-mass misrepresentation.\
+    \ The DSM value could follow a conditional w/v calculation on a nominal litre\
+    \ but those assumptions are not established; do not infer final dissolved mass\
+    \ or concentration. Restore the stock dose/strength and its separate sterilization\
+    \ scope.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Both current primaries\
+    \ add 1 mL of the 7% hydrated-salt stock. The percentage basis is unspecified.\
+    \ Target/JCM 1 G_PER_L is a volume-to-mass misrepresentation. The DSM value could\
+    \ follow a conditional w/v calculation on a nominal litre but those assumptions\
+    \ are not established; do not infer final dissolved mass or concentration. Restore\
+    \ the stock dose/strength and its separate sterilization scope.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"Both current\
+    \ primaries add 1 mL of the 7% hydrated-salt stock. The percentage basis is unspecified.\
+    \ Target/JCM 1 G_PER_L is a volume-to-mass misrepresentation. The DSM value could\
+    \ follow a conditional w/v calculation on a nominal litre but those assumptions\
+    \ are not established; do not infer final dissolved mass or concentration. Restore\
+    \ the stock dose/strength and its separate sterilization scope.\"\n      }\n \
+    \   ],\n    \"arithmetic_and_scope\": \"Both current primaries add 1 mL of the\
+    \ 7% hydrated-salt stock. The percentage basis is unspecified. Target/JCM 1 G_PER_L\
+    \ is a volume-to-mass misrepresentation. The DSM value could follow a conditional\
+    \ w/v calculation on a nominal litre but those assumptions are not established;\
+    \ do not infer final dissolved mass or concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q9\",\n    \"ingredient_or_context\": \"FeCl3 x 6 H2O solution (2%)\",\n \
+    \   \"field_path\": \"ingredients[8].concentration\",\n    \"local\": {\n    \
+    \  \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"mL\",\n    \"source_stage\": \"Mineral stock dose\
+    \ into basal medium\",\n    \"primary_source_evidence_id\": \"dsmz1684\",\n  \
+    \  \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1684\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning FeCl3 x 6 H2O\
+    \ solution (2%)\",\n        \"exact_source_quote\": \"FeCl3 x 6 H2O solution (2%)\
+    \                                  1.00     ml\",\n        \"snapshot_sha256\"\
+    : \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\",\n    \
+    \    \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"2% FeCl 3 ·6H 2\
+    \ O solution 1.0 ml\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"FeCl3 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 82,\\n                        \\\"attribute\\\": \\\"2%\\\",\\n          \
+    \              \\\"amount\\\": 1,\\n                        \\\"unit\\\": \\\"\
+    ml\\\",\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[8].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Both\
+    \ current primaries add 1 mL of the 2% hydrated-salt stock. The percentage basis\
+    \ is unspecified. Target/JCM 1 G_PER_L is a volume-to-mass misrepresentation.\
+    \ The DSM value could follow a conditional w/v calculation on a nominal litre\
+    \ but those assumptions are not established; do not infer final dissolved mass\
+    \ or concentration. Restore the stock dose/strength and its separate sterilization\
+    \ scope.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Both current primaries\
+    \ add 1 mL of the 2% hydrated-salt stock. The percentage basis is unspecified.\
+    \ Target/JCM 1 G_PER_L is a volume-to-mass misrepresentation. The DSM value could\
+    \ follow a conditional w/v calculation on a nominal litre but those assumptions\
+    \ are not established; do not infer final dissolved mass or concentration. Restore\
+    \ the stock dose/strength and its separate sterilization scope.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"Both current\
+    \ primaries add 1 mL of the 2% hydrated-salt stock. The percentage basis is unspecified.\
+    \ Target/JCM 1 G_PER_L is a volume-to-mass misrepresentation. The DSM value could\
+    \ follow a conditional w/v calculation on a nominal litre but those assumptions\
+    \ are not established; do not infer final dissolved mass or concentration. Restore\
+    \ the stock dose/strength and its separate sterilization scope.\"\n      }\n \
+    \   ],\n    \"arithmetic_and_scope\": \"Both current primaries add 1 mL of the\
+    \ 2% hydrated-salt stock. The percentage basis is unspecified. Target/JCM 1 G_PER_L\
+    \ is a volume-to-mass misrepresentation. The DSM value could follow a conditional\
+    \ w/v calculation on a nominal litre but those assumptions are not established;\
+    \ do not infer final dissolved mass or concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q10\",\n    \"ingredient_or_context\": \"MgSO4 x 7 H2O solution (25%) strength\"\
+    ,\n    \"field_path\": \"solutions\",\n    \"local\": null,\n    \"source_amount\"\
+    : 25,\n    \"source_unit\": \"% (basis unspecified)\",\n    \"source_stage\":\
+    \ \"Separately sterilized mineral stock\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz1684\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsmz1684\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning MgSO4 x 7 H2O\
+    \ solution (25%)\",\n        \"exact_source_quote\": \"MgSO4 x 7 H2O solution\
+    \ (25%)                                 1.00     ml\",\n        \"snapshot_sha256\"\
+    : \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\",\n    \
+    \    \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"25% MgSO 4 ·7H\
+    \ 2 O solution 1.0 ml\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"attribute\\\": \\\"25%\\\",\\n          \
+    \              \\\"amount\\\": 1,\\n                        \\\"unit\\\": \\\"\
+    ml\\\",\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Retain the literal 25%\
+    \ stock strength with unspecified percentage basis. No w/v, v/v, density, preparation\
+    \ recipe or final g/L is inferred; a stock object is absent in all three layers.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Retain the literal 25% stock\
+    \ strength with unspecified percentage basis. No w/v, v/v, density, preparation\
+    \ recipe or final g/L is inferred; a stock object is absent in all three layers.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Retain the literal 25% stock\
+    \ strength with unspecified percentage basis. No w/v, v/v, density, preparation\
+    \ recipe or final g/L is inferred; a stock object is absent in all three layers.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"Retain the literal 25% stock\
+    \ strength with unspecified percentage basis. No w/v, v/v, density, preparation\
+    \ recipe or final g/L is inferred; a stock object is absent in all three layers.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"ingredient_or_context\": \"\
+    CaCl2 x 2 H2O solution (7%) strength\",\n    \"field_path\": \"solutions\",\n\
+    \    \"local\": null,\n    \"source_amount\": 7,\n    \"source_unit\": \"% (basis\
+    \ unspecified)\",\n    \"source_stage\": \"Separately sterilized mineral stock\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz1684\",\n    \"decision\": \"add\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1684\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning CaCl2 x 2 H2O\
+    \ solution (7%)\",\n        \"exact_source_quote\": \"CaCl2 x 2 H2O solution (7%)\
+    \                                  1.00     ml\",\n        \"snapshot_sha256\"\
+    : \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\",\n    \
+    \    \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"7% CaCl 2 ·2H 2\
+    \ O solution 1.0 ml\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"attribute\\\": \\\"7%\\\",\\n           \
+    \             \\\"amount\\\": 1,\\n                        \\\"unit\\\": \\\"\
+    ml\\\",\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Retain the literal 7%\
+    \ stock strength with unspecified percentage basis. No w/v, v/v, density, preparation\
+    \ recipe or final g/L is inferred; a stock object is absent in all three layers.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Retain the literal 7% stock\
+    \ strength with unspecified percentage basis. No w/v, v/v, density, preparation\
+    \ recipe or final g/L is inferred; a stock object is absent in all three layers.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Retain the literal 7% stock\
+    \ strength with unspecified percentage basis. No w/v, v/v, density, preparation\
+    \ recipe or final g/L is inferred; a stock object is absent in all three layers.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"Retain the literal 7% stock\
+    \ strength with unspecified percentage basis. No w/v, v/v, density, preparation\
+    \ recipe or final g/L is inferred; a stock object is absent in all three layers.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"ingredient_or_context\": \"\
+    FeCl3 x 6 H2O solution (2%) strength\",\n    \"field_path\": \"solutions\",\n\
+    \    \"local\": null,\n    \"source_amount\": 2,\n    \"source_unit\": \"% (basis\
+    \ unspecified)\",\n    \"source_stage\": \"Separately sterilized mineral stock\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz1684\",\n    \"decision\": \"add\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1684\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning FeCl3 x 6 H2O\
+    \ solution (2%)\",\n        \"exact_source_quote\": \"FeCl3 x 6 H2O solution (2%)\
+    \                                  1.00     ml\",\n        \"snapshot_sha256\"\
+    : \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\",\n    \
+    \    \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"2% FeCl 3 ·6H 2\
+    \ O solution 1.0 ml\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"FeCl3 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 82,\\n                        \\\"attribute\\\": \\\"2%\\\",\\n          \
+    \              \\\"amount\\\": 1,\\n                        \\\"unit\\\": \\\"\
+    ml\\\",\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Retain the literal 2%\
+    \ stock strength with unspecified percentage basis. No w/v, v/v, density, preparation\
+    \ recipe or final g/L is inferred; a stock object is absent in all three layers.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Retain the literal 2% stock\
+    \ strength with unspecified percentage basis. No w/v, v/v, density, preparation\
+    \ recipe or final g/L is inferred; a stock object is absent in all three layers.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Retain the literal 2% stock\
+    \ strength with unspecified percentage basis. No w/v, v/v, density, preparation\
+    \ recipe or final g/L is inferred; a stock object is absent in all three layers.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"Retain the literal 2% stock\
+    \ strength with unspecified percentage basis. No w/v, v/v, density, preparation\
+    \ recipe or final g/L is inferred; a stock object is absent in all three layers.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"ingredient_or_context\": \"\
+    Recipe water input\",\n    \"field_path\": \"preparation_steps\",\n    \"local\"\
+    : [\n      {\n        \"step_number\": 1,\n        \"action\": \"AUTOCLAVE\",\n\
+    \        \"description\": \"Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 -\
+    \ 6.0 agar medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution and\
+    \ FeCl3 x 6 H2O solution separately.\"\n      },\n      {\n        \"step_number\"\
+    : 2,\n        \"action\": \"MIX\",\n        \"description\": \"Aseptically add\
+    \ all solutions to the basal medium.\"\n      }\n    ],\n    \"source_amount\"\
+    : 1000,\n    \"source_unit\": \"mL\",\n    \"source_stage\": \"Basal recipe water\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz1684\",\n    \"decision\": \"add\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1684\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 recipe row beginning Distilled water\"\
+    ,\n        \"exact_source_quote\": \"Distilled water                         \
+    \                  1000.00     ml\",\n        \"snapshot_sha256\": \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\"\
+    ,\n        \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"Distilled water\
+    \ 1.0 L\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : [\n          {\n            \"step_number\": 1,\n            \"action\": \"\
+    AUTOCLAVE\",\n            \"description\": \"Adjust to pH 4.8-5.0 (liquid medium)\
+    \ and pH 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O\
+    \ solution and FeCl3 x 6 H2O solution separately.\"\n          },\n          {\n\
+    \            \"step_number\": 2,\n            \"action\": \"MIX\",\n         \
+    \   \"description\": \"Aseptically add all solutions to the basal medium.\"\n\
+    \          }\n        ],\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"Restore the stated 1000 mL / 1.0 L water input as preparation volume. It is\
+    \ not a measured final volume after dry solutes and stocks; neither water density\
+    \ nor final-volume equality is assumed.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/573c_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": [\n          {\n            \"step_number\"\
+    : 1,\n            \"action\": \"AUTOCLAVE\",\n            \"description\": \"\
+    Adjust pH to 4.8 - 5.0. Separately autoclave MgSO4 x 7H2O solution, CaCl2 x 2H2O\
+    \ solution and FeCl3 x 6H2O solution. Aseptically add all solutions to the medium.\"\
+    \n          }\n        ],\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"Restore the stated 1000 mL / 1.0 L water input as preparation volume. It is\
+    \ not a measured final volume after dry solutes and stocks; neither water density\
+    \ nor final-volume equality is assumed.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Adjust to pH 4.8-5.0 (liquid medium) and pH\
+    \ 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution\
+    \ and FeCl3 x 6 H2O solution separately.\"\n          },\n          {\n      \
+    \      \"step_number\": 2,\n            \"action\": \"MIX\",\n            \"description\"\
+    : \"Aseptically add all solutions to the basal medium.\"\n          }\n      \
+    \  ],\n        \"decision\": \"add\",\n        \"rationale\": \"Restore the stated\
+    \ 1000 mL / 1.0 L water input as preparation volume. It is not a measured final\
+    \ volume after dry solutes and stocks; neither water density nor final-volume\
+    \ equality is assumed.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Restore\
+    \ the stated 1000 mL / 1.0 L water input as preparation volume. It is not a measured\
+    \ final volume after dry solutes and stocks; neither water density nor final-volume\
+    \ equality is assumed.\"\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"ingredient_or_context\"\
+    : \"Nominal J1052 denominator versus physical final volume\",\n    \"field_path\"\
+    : \"preparation_steps\",\n    \"local\": [\n      {\n        \"step_number\":\
+    \ 1,\n        \"action\": \"AUTOCLAVE\",\n        \"description\": \"Adjust to\
+    \ pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7\
+    \ H2O solution, CaCl2 x 2 H2O solution and FeCl3 x 6 H2O solution separately.\"\
+    \n      },\n      {\n        \"step_number\": 2,\n        \"action\": \"MIX\"\
+    ,\n        \"description\": \"Aseptically add all solutions to the basal medium.\"\
+    \n      }\n    ],\n    \"source_amount\": 1003,\n    \"source_unit\": \"mL (provider\
+    \ declaration)\",\n    \"source_stage\": \"Provider nominal main formulation\"\
+    ,\n    \"primary_source_evidence_id\": \"jcm1052\",\n    \"decision\": \"conflict\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ1052\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1052\",\n\
+    \        \"source_locator\": \"$.data.solutions[0].volume\",\n        \"exact_source_quote\"\
+    : \"\\\"volume\\\": 1003\",\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1684\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\",\n   \
+    \     \"source_locator\": \"PDF page 1 recipe row beginning Distilled water\"\
+    ,\n        \"exact_source_quote\": \"Distilled water                         \
+    \                  1000.00     ml\",\n        \"snapshot_sha256\": \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\"\
+    ,\n        \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 recipe table\",\n        \"exact_source_quote\": \"Distilled water\
+    \ 1.0 L\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : [\n          {\n            \"step_number\": 1,\n            \"action\": \"\
+    AUTOCLAVE\",\n            \"description\": \"Adjust to pH 4.8-5.0 (liquid medium)\
+    \ and pH 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O\
+    \ solution and FeCl3 x 6 H2O solution separately.\"\n          },\n          {\n\
+    \            \"step_number\": 2,\n            \"action\": \"MIX\",\n         \
+    \   \"description\": \"Aseptically add all solutions to the basal medium.\"\n\
+    \          }\n        ],\n        \"decision\": \"conflict\",\n        \"rationale\"\
+    : \"The API explicitly declares 1003 mL; listed liquid inputs also sum 1000 +\
+    \ 1 + 1 + 1 = 1003 mL. This agreement does not establish a measured final 1.003\
+    \ L volume. Historical DSM1000 mL remains a derivative-only nominal convention,\
+    \ not proof of a different physical recipe. Preserve the source attribution rather\
+    \ than transferring denominators between owners.\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\",\n        \"\
+    field_path\": \"preparation_steps\",\n        \"stored\": [\n          {\n   \
+    \         \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\",\n      \
+    \      \"description\": \"Adjust pH to 4.8 - 5.0. Separately autoclave MgSO4 x\
+    \ 7H2O solution, CaCl2 x 2H2O solution and FeCl3 x 6H2O solution. Aseptically\
+    \ add all solutions to the medium.\"\n          }\n        ],\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"The API explicitly declares 1003 mL; listed\
+    \ liquid inputs also sum 1000 + 1 + 1 + 1 = 1003 mL. This agreement does not establish\
+    \ a measured final 1.003 L volume. Historical DSM1000 mL remains a derivative-only\
+    \ nominal convention, not proof of a different physical recipe. Preserve the source\
+    \ attribution rather than transferring denominators between owners.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Adjust to pH 4.8-5.0 (liquid medium) and pH\
+    \ 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution\
+    \ and FeCl3 x 6 H2O solution separately.\"\n          },\n          {\n      \
+    \      \"step_number\": 2,\n            \"action\": \"MIX\",\n            \"description\"\
+    : \"Aseptically add all solutions to the basal medium.\"\n          }\n      \
+    \  ],\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The API\
+    \ explicitly declares 1003 mL; listed liquid inputs also sum 1000 + 1 + 1 + 1\
+    \ = 1003 mL. This agreement does not establish a measured final 1.003 L volume.\
+    \ Historical DSM1000 mL remains a derivative-only nominal convention, not proof\
+    \ of a different physical recipe. Preserve the source attribution rather than\
+    \ transferring denominators between owners.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"The API explicitly declares 1003 mL; listed liquid inputs also sum 1000 +\
+    \ 1 + 1 + 1 = 1003 mL. This agreement does not establish a measured final 1.003\
+    \ L volume. Historical DSM1000 mL remains a derivative-only nominal convention,\
+    \ not proof of a different physical recipe.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q15\",\n    \"ingredient_or_context\": \"Liquid medium pH range\",\n    \"\
+    field_path\": \"preparation_steps[0].description\",\n    \"local\": \"Adjust to\
+    \ pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7\
+    \ H2O solution, CaCl2 x 2 H2O solution and FeCl3 x 6 H2O solution separately.\"\
+    ,\n    \"source_amount\": \"4.8–5.0\",\n    \"source_unit\": \"pH\",\n    \"source_stage\"\
+    : \"Liquid medium preparation\",\n    \"primary_source_evidence_id\": \"dsmz1684\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz1684\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 preparation paragraph\",\n       \
+    \ \"exact_source_quote\": \"Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 -\
+    \ 6.0 agar medium.\",\n        \"snapshot_sha256\": \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\"\
+    ,\n        \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 local preparation paragraph\",\n        \"exact_source_quote\": \"\
+    Adjust pH to 4.8 - 5.0.\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps[0].description\",\n   \
+    \     \"stored\": \"Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar\
+    \ medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution and FeCl3 x\
+    \ 6 H2O solution separately.\",\n        \"decision\": \"evidence_only\",\n  \
+    \      \"rationale\": \"The literal liquid pH endpoints are present in the first\
+    \ preparation description of each local layer, but lack attached preparation evidence;\
+    \ retain and evidence them without replacing them by the single provider value\
+    \ 4.9.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 4.8 - 5.0. Separately autoclave MgSO4 x 7H2O solution, CaCl2\
+    \ x 2H2O solution and FeCl3 x 6H2O solution. Aseptically add all solutions to\
+    \ the medium.\",\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"The literal liquid pH endpoints are present in the first preparation description\
+    \ of each local layer, but lack attached preparation evidence; retain and evidence\
+    \ them without replacing them by the single provider value 4.9.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium. Autoclave\
+    \ MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution and FeCl3 x 6 H2O solution separately.\"\
+    ,\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"The literal\
+    \ liquid pH endpoints are present in the first preparation description of each\
+    \ local layer, but lack attached preparation evidence; retain and evidence them\
+    \ without replacing them by the single provider value 4.9.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"The literal liquid pH endpoints are present in\
+    \ the first preparation description of each local layer, but lack attached preparation\
+    \ evidence; retain and evidence them without replacing them by the single provider\
+    \ value 4.9.\"\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"ingredient_or_context\"\
+    : \"Conditional DSM agar-medium pH\",\n    \"field_path\": \"preparation_steps[0].description\"\
+    ,\n    \"local\": \"Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar\
+    \ medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution and FeCl3 x\
+    \ 6 H2O solution separately.\",\n    \"source_amount\": \"5.5–6.0\",\n    \"source_unit\"\
+    : \"pH\",\n    \"source_stage\": \"DSM agar branch only\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz1684\",\n    \"decision\": \"evidence_only\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1684\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\",\n       \
+    \ \"source_locator\": \"PDF page 1 preparation paragraph\",\n        \"exact_source_quote\"\
+    : \"Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium.\",\n  \
+    \      \"snapshot_sha256\": \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\"\
+    ,\n        \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps[0].description\",\n   \
+    \     \"stored\": \"Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar\
+    \ medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution and FeCl3 x\
+    \ 6 H2O solution separately.\",\n        \"decision\": \"evidence_only\",\n  \
+    \      \"rationale\": \"The DSM primary alone prints pH 5.5–6.0 for the agar branch.\
+    \ Target and DSM owner already retain this conditional text. Do not transfer the\
+    \ branch to J1052 or invent an agar dose.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/573c_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": \"Adjust pH to 4.8\
+    \ - 5.0. Separately autoclave MgSO4 x 7H2O solution, CaCl2 x 2H2O solution and\
+    \ FeCl3 x 6H2O solution. Aseptically add all solutions to the medium.\",\n   \
+    \     \"decision\": \"unsupported\",\n        \"rationale\": \"The DSM primary\
+    \ alone prints pH 5.5–6.0 for the agar branch. Target and DSM owner already retain\
+    \ this conditional text. Do not transfer the branch to J1052 or invent an agar\
+    \ dose.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium. Autoclave\
+    \ MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution and FeCl3 x 6 H2O solution separately.\"\
+    ,\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"The DSM\
+    \ primary alone prints pH 5.5–6.0 for the agar branch. Target and DSM owner already\
+    \ retain this conditional text. Do not transfer the branch to J1052 or invent\
+    \ an agar dose.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The DSM primary\
+    \ alone prints pH 5.5–6.0 for the agar branch. Target and DSM owner already retain\
+    \ this conditional text. Do not transfer the branch to J1052 or invent an agar\
+    \ dose.\"\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"ingredient_or_context\"\
+    : \"Provider scalar pH annotation\",\n    \"field_path\": \"ph_value\",\n    \"\
+    local\": null,\n    \"source_amount\": 4.9,\n    \"source_unit\": \"pH\",\n  \
+    \  \"source_stage\": \"J1052 provider annotation\",\n    \"primary_source_evidence_id\"\
+    : \"jcm1052\",\n    \"decision\": \"evidence_only\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.medium.min_pH\",\n        \"exact_source_quote\": \"\\\"min_pH\\\"\
+    : 4.9\",\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1052\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1052\",\n        \"source_locator\"\
+    : \"$.data.medium.max_pH\",\n        \"exact_source_quote\": \"\\\"max_pH\\\"\
+    : 4.9\",\n        \"snapshot_sha256\": \"13fea4a53d138253dcf7066d84245c4440f445e448e29733de30c0d48337d62f\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 local preparation paragraph\",\n        \"exact_source_quote\": \"\
+    Adjust pH to 4.8 - 5.0.\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"J1052 API min_pH\
+    \ and max_pH are both 4.9, within the primary 4.8–5.0 range. The JCM owner has\
+    \ this scalar without attached evidence; retain it only as the provider annotation\
+    \ alongside the primary range. Target and DSM owner have no scalar claim and need\
+    \ no automatic copy.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.9,\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"J1052 API min_pH and\
+    \ max_pH are both 4.9, within the primary 4.8–5.0 range. The JCM owner has this\
+    \ scalar without attached evidence; retain it only as the provider annotation\
+    \ alongside the primary range. Target and DSM owner have no scalar claim and need\
+    \ no automatic copy.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"unsupported\",\n        \"rationale\": \"J1052 API min_pH and max_pH\
+    \ are both 4.9, within the primary 4.8–5.0 range. The JCM owner has this scalar\
+    \ without attached evidence; retain it only as the provider annotation alongside\
+    \ the primary range. Target and DSM owner have no scalar claim and need no automatic\
+    \ copy.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"J1052 API min_pH and\
+    \ max_pH are both 4.9, within the primary 4.8–5.0 range. The JCM owner has this\
+    \ scalar without attached evidence; retain it only as the provider annotation\
+    \ alongside the primary range. Target and DSM owner have no scalar claim and need\
+    \ no automatic copy.\"\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"ingredient_or_context\"\
+    : \"JCM default sterilization temperature\",\n    \"field_path\": \"preparation_steps\"\
+    ,\n    \"local\": [\n      {\n        \"step_number\": 1,\n        \"action\"\
+    : \"AUTOCLAVE\",\n        \"description\": \"Adjust to pH 4.8-5.0 (liquid medium)\
+    \ and pH 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O\
+    \ solution and FeCl3 x 6 H2O solution separately.\"\n      },\n      {\n     \
+    \   \"step_number\": 2,\n        \"action\": \"MIX\",\n        \"description\"\
+    : \"Aseptically add all solutions to the basal medium.\"\n      }\n    ],\n  \
+    \  \"source_amount\": 121,\n    \"source_unit\": \"°C\",\n    \"source_stage\"\
+    : \"JCM default with separately sterilized stocks\",\n    \"primary_source_evidence_id\"\
+    : \"jcm1052\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"jcm1052\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\"\
+    ,\n        \"source_locator\": \"JCM1052 page-level default\",\n        \"exact_source_quote\"\
+    : \"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.\"\
+    ,\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 local preparation\",\n        \"exact_source_quote\": \"Separately\
+    \ autoclave MgSO 4 ·7H 2 O solution, CaCl 2 ·2H 2 O solution and FeCl 3 ·6H 2\
+    \ O solution.\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : [\n          {\n            \"step_number\": 1,\n            \"action\": \"\
+    AUTOCLAVE\",\n            \"description\": \"Adjust to pH 4.8-5.0 (liquid medium)\
+    \ and pH 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O\
+    \ solution and FeCl3 x 6 H2O solution separately.\"\n          },\n          {\n\
+    \            \"step_number\": 2,\n            \"action\": \"MIX\",\n         \
+    \   \"description\": \"Aseptically add all solutions to the basal medium.\"\n\
+    \          }\n        ],\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The JCM page default applies unless otherwise stated; local J1052 instructions\
+    \ separately sterilize the three stocks, then add them aseptically. Retain that\
+    \ separation when adding the default cycle. DSM1684 gives no cycle and must not\
+    \ acquire one by unmarked cross-source transfer.\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\",\n        \"\
+    field_path\": \"preparation_steps\",\n        \"stored\": [\n          {\n   \
+    \         \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\",\n      \
+    \      \"description\": \"Adjust pH to 4.8 - 5.0. Separately autoclave MgSO4 x\
+    \ 7H2O solution, CaCl2 x 2H2O solution and FeCl3 x 6H2O solution. Aseptically\
+    \ add all solutions to the medium.\"\n          }\n        ],\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"The JCM page default applies unless otherwise\
+    \ stated; local J1052 instructions separately sterilize the three stocks, then\
+    \ add them aseptically. Retain that separation when adding the default cycle.\
+    \ DSM1684 gives no cycle and must not acquire one by unmarked cross-source transfer.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Adjust to pH 4.8-5.0 (liquid medium) and pH\
+    \ 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution\
+    \ and FeCl3 x 6 H2O solution separately.\"\n          },\n          {\n      \
+    \      \"step_number\": 2,\n            \"action\": \"MIX\",\n            \"description\"\
+    : \"Aseptically add all solutions to the basal medium.\"\n          }\n      \
+    \  ],\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The JCM\
+    \ page default applies unless otherwise stated; local J1052 instructions separately\
+    \ sterilize the three stocks, then add them aseptically. Retain that separation\
+    \ when adding the default cycle. DSM1684 gives no cycle and must not acquire one\
+    \ by unmarked cross-source transfer.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"The JCM page default applies unless otherwise stated; local J1052 instructions\
+    \ separately sterilize the three stocks, then add them aseptically. Retain that\
+    \ separation when adding the default cycle. DSM1684 gives no cycle and must not\
+    \ acquire one by unmarked cross-source transfer.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q19\",\n    \"ingredient_or_context\": \"JCM default sterilization duration\"\
+    ,\n    \"field_path\": \"preparation_steps\",\n    \"local\": [\n      {\n   \
+    \     \"step_number\": 1,\n        \"action\": \"AUTOCLAVE\",\n        \"description\"\
+    : \"Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium. Autoclave\
+    \ MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution and FeCl3 x 6 H2O solution separately.\"\
+    \n      },\n      {\n        \"step_number\": 2,\n        \"action\": \"MIX\"\
+    ,\n        \"description\": \"Aseptically add all solutions to the basal medium.\"\
+    \n      }\n    ],\n    \"source_amount\": 15,\n    \"source_unit\": \"min\",\n\
+    \    \"source_stage\": \"JCM default with separately sterilized stocks\",\n  \
+    \  \"primary_source_evidence_id\": \"jcm1052\",\n    \"decision\": \"add\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1052\",\n \
+    \       \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\"\
+    ,\n        \"source_locator\": \"JCM1052 page-level default\",\n        \"exact_source_quote\"\
+    : \"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.\"\
+    ,\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1052\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052\",\n        \"source_locator\"\
+    : \"JCM1052 local preparation\",\n        \"exact_source_quote\": \"Separately\
+    \ autoclave MgSO 4 ·7H 2 O solution, CaCl 2 ·2H 2 O solution and FeCl 3 ·6H 2\
+    \ O solution.\",\n        \"snapshot_sha256\": \"aefecf69b068ba9afa0f51d77559623a2d3010d96c27c3140be9c80685674661\"\
+    ,\n        \"parsed_text_sha256\": \"4986f1865565d69c3ce56af6b0f45c7cb28316fb7bd2336511f462a9e69971f5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : [\n          {\n            \"step_number\": 1,\n            \"action\": \"\
+    AUTOCLAVE\",\n            \"description\": \"Adjust to pH 4.8-5.0 (liquid medium)\
+    \ and pH 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O\
+    \ solution and FeCl3 x 6 H2O solution separately.\"\n          },\n          {\n\
+    \            \"step_number\": 2,\n            \"action\": \"MIX\",\n         \
+    \   \"description\": \"Aseptically add all solutions to the basal medium.\"\n\
+    \          }\n        ],\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The JCM page default applies unless otherwise stated; local J1052 instructions\
+    \ separately sterilize the three stocks, then add them aseptically. Retain that\
+    \ separation when adding the default cycle. DSM1684 gives no cycle and must not\
+    \ acquire one by unmarked cross-source transfer.\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/573c_medium.yaml\",\n        \"\
+    field_path\": \"preparation_steps\",\n        \"stored\": [\n          {\n   \
+    \         \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\",\n      \
+    \      \"description\": \"Adjust pH to 4.8 - 5.0. Separately autoclave MgSO4 x\
+    \ 7H2O solution, CaCl2 x 2H2O solution and FeCl3 x 6H2O solution. Aseptically\
+    \ add all solutions to the medium.\"\n          }\n        ],\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"The JCM page default applies unless otherwise\
+    \ stated; local J1052 instructions separately sterilize the three stocks, then\
+    \ add them aseptically. Retain that separation when adding the default cycle.\
+    \ DSM1684 gives no cycle and must not acquire one by unmarked cross-source transfer.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Adjust to pH 4.8-5.0 (liquid medium) and pH\
+    \ 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution\
+    \ and FeCl3 x 6 H2O solution separately.\"\n          },\n          {\n      \
+    \      \"step_number\": 2,\n            \"action\": \"MIX\",\n            \"description\"\
+    : \"Aseptically add all solutions to the basal medium.\"\n          }\n      \
+    \  ],\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The JCM\
+    \ page default applies unless otherwise stated; local J1052 instructions separately\
+    \ sterilize the three stocks, then add them aseptically. Retain that separation\
+    \ when adding the default cycle. DSM1684 gives no cycle and must not acquire one\
+    \ by unmarked cross-source transfer.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"The JCM page default applies unless otherwise stated; local J1052 instructions\
+    \ separately sterilize the three stocks, then add them aseptically. Retain that\
+    \ separation when adding the default cycle. DSM1684 gives no cycle and must not\
+    \ acquire one by unmarked cross-source transfer.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q20\",\n    \"ingredient_or_context\": \"Agar branch gelling-agent amount\"\
+    ,\n    \"field_path\": \"solutions\",\n    \"local\": null,\n    \"source_amount\"\
+    : null,\n    \"source_unit\": \"not quantified\",\n    \"source_stage\": \"DSM\
+    \ agar branch only\",\n    \"primary_source_evidence_id\": \"dsmz1684\",\n   \
+    \ \"decision\": \"not_quantified\",\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"dsmz1684\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 preparation paragraph\",\n       \
+    \ \"exact_source_quote\": \"Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 -\
+    \ 6.0 agar medium.\",\n        \"snapshot_sha256\": \"105dde0e2d58ff085ba733f79eac99ea47271f79af10088b177a4f9693904417\"\
+    ,\n        \"parsed_text_sha256\": \"234d7f909cd72031990cb622ae0f3518fb15502cadff005d9b94d860417b5941\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n\
+    \        \"decision\": \"not_quantified\",\n        \"rationale\": \"DSM mentions\
+    \ an agar-medium branch but gives no agar amount. Preserve the liquid formulation\
+    \ and flag the unquantified branch; do not borrow an agar concentration or claim\
+    \ the liquid recipe requires agar.\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/573c_medium.yaml\",\n        \"field_path\": \"\
+    solutions\",\n        \"stored\": null,\n        \"decision\": \"unsupported\"\
+    ,\n        \"rationale\": \"DSM mentions an agar-medium branch but gives no agar\
+    \ amount. Preserve the liquid formulation and flag the unquantified branch; do\
+    \ not borrow an agar concentration or claim the liquid recipe requires agar.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"not_quantified\",\n        \"rationale\": \"DSM mentions an\
+    \ agar-medium branch but gives no agar amount. Preserve the liquid formulation\
+    \ and flag the unquantified branch; do not borrow an agar concentration or claim\
+    \ the liquid recipe requires agar.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"DSM mentions an agar-medium branch but gives no agar amount. Preserve the\
+    \ liquid formulation and flag the unquantified branch; do not borrow an agar concentration\
+    \ or claim the liquid recipe requires agar.\"\n  }\n]"
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 22 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: identity
+  area: identity
+  topic: Two exact collection accessions and maintained owners
+  outcome: supported
+  summary: DSM1684 / CultureMech:001166 and JCM1052 / CultureMech:002235 are both
+    exact maintained contributors. Merge metadata resolves both distinct paths. Their
+    current primaries agree on the six dry additions and three mineral doses; the
+    DSM agar branch and JCM vendor/default-cycle details remain source-specific.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - record
+  - dsmz1684
+  - jcm1052
+  - mediadiveJ1052
+  - owner-0
+  - owner-1
+- assessment_id: source-stage-consistency
+  area: consistency
+  topic: All local quantities and source-only preparation contexts
+  outcome: concern
+  summary: Twenty decisions cover all 27 ingredient concentrations, the one stored
+    scalar pH, three unspecified-basis stock strengths, water, nominal volume and
+    both primary pH/sterilization contexts. Current primaries support matching batch
+    recipes, not a lower-dose mineral variant. Nominal provider concentrations and
+    physical final concentrations remain distinct.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - quantity-inventory
+  - dsmz1684
+  - jcm1052
+  - mediadiveJ1052
+  - owner-0
+  - owner-1
+- assessment_id: grounding
+  area: grounding
+  topic: Canonical labels, supplied forms and secondary-key gap
+  outcome: concern
+  summary: Seven distinct primary IDs resolve to matching nonobsolete labels in all
+    three layers, including hydrated MgSO4, CaCl2 and FeCl3. CMC sodium salt is more
+    specific than generic CHEBI:85146; notes retain sodium salt, but that does not
+    establish an exact salt identity. Current MIM lookup finds six of seven asserted
+    CHEBI-based keys; CHEBI:85146 is absent. Target primary/secondary asserted coverage
+    is 7/9 (77.78%) each; current preferred-key support is 6/9 (66.67%). Yeast extract
+    and tryptone remain ungrounded complex products. No legacy MIM ID is currently
+    asserted.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi17234
+  - chebi31795
+  - chebi62946
+  - chebi63036
+  - chebi85146
+  - chebi86158
+  - chebi86254
+- assessment_id: preparation
+  area: completeness
+  topic: Present instructions and missing structured stock representation
+  outcome: concern
+  summary: Every layer already retains liquid pH, separate mineral-stock sterilization
+    and aseptic addition. Target/DSM also retain the conditional agar pH; it is incorrect
+    to call preparation absent. Missing stock doses/strengths and water must be represented
+    in the proper stage. JCM default 121°C/15 min is source-scoped and absent from
+    its owner; DSM has no printed cycle. Agar quantity and measured final volume remain
+    unknown.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - dsmz1684
+  - jcm1052
+  - quantity-inventory
+  - owner-0
+  - owner-1
+- assessment_id: variant-identity
+  area: scope
+  topic: Reciprocal links versus current chemical differences
+  outcome: concern
+  summary: 'Both reciprocal paths and stable IDs resolve, but the lower-Mg/Ca/Fe narrative
+    is unsupported by the two current primaries: each adds 1 mL of the same 25%, 7%
+    and 2% stocks. The apparent local differences arise from incompatible representations
+    and nominal denominator conventions. Do not infer historical chronology or automatically
+    collapse source identities; reassess the relationship using scoped formulations.'
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - record
+  - dsmz1684
+  - jcm1052
+  - writer-1
+  - owner-0
+  - owner-1
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Three authenticated and five derivative-only owner claims
+  outcome: concern
+  summary: Only the JCM owner ingredients 1–3 have attached literal snippets matching
+    the exact available raw response and cited hash; those three nominal g/L claims
+    are verified only in that owner. The five DSM owner claims match local decoded
+    plans/reports but their cited raw response is unavailable. Target has no ingredient
+    evidence or formal reference list. Preserve owner history and timestamps; a later
+    access yielding matching bytes is not a newly authenticated October 7 retrieval.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - mediadiveJ1052
+  - historical-access-scope
+  - historical-plan-0
+  - historical-plan-1
+  - historical-report-0
+  - historical-report-1
+  - quantity-inventory
+  - owner-0
+  - owner-1
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid formulation and growth restraint
+  outcome: supported
+  summary: Yeast extract and tryptone support COMPLEX/UNDEFINED. LIQUID describes
+    the main formulation; the DSM agar pH sentence is a separate unquantified branch.
+    Bacterial filing and the medium title do not prove strain-specific growth. No
+    target organisms, taxonomy accessions, DOI/PMID, high_metal or KG match are asserted,
+    so those lanes introduce no unsupported claims.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - record
+  - dsmz1684
+  - jcm1052
+  - owner-0
+  - owner-1
+- assessment_id: ownership
+  area: provenance
+  topic: Maintained correction and generated reconciliation
+  outcome: concern
+  summary: Retain both owner source identities and all append-only history. The target
+    takes J1052 base numerals while retaining DSM identity/preparation and has lost
+    all eight owner evidence attachments. Reconcile owner quantities, source-specific
+    conditions and relationship assertions first, then regenerate with explicit evidence
+    provenance; do not repair only the generated target.
+  target_ids:
+  - CultureMech:001166
+  evidence_ids:
+  - record
+  - history-metadata
+  - writer-0
+  - writer-1
+  - writer-2
+  - owner-0
+  - owner-1
+findings:
+- finding_id: f1
+  issue_key: cm001166-mineral-stock-scope
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Mineral stock doses are represented as unsupported salt concentrations
+  description: Both primaries add 1 mL each of 25% MgSO4·7H2O, 7% CaCl2·2H2O and 2%
+    FeCl3·6H2O solutions. Target and JCM owner instead state 1 g/L for each salt.
+    DSM owner states 0.25, 0.07 and 0.02 g/L, which require unestablished percentage
+    and volume assumptions. Structured stocks and the 1000 mL water input are absent,
+    although separate sterilization instructions survive.
+  target_ids:
+  - CultureMech:001166
+  field_paths:
+  - ingredients[6].concentration
+  - ingredients[7].concentration
+  - ingredients[8].concentration
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - dsmz1684
+  - jcm1052
+  - mediadiveJ1052
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/573c_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm001166-nominal-basis-reconciliation
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated amounts and evidence combine different nominal source conventions
+  description: The target uses the six J1052 nominal g/L values but retains DSM1684
+    identity and preparation; it carries none of the owners’ eight amount-evidence
+    objects. J1052 declares 1003 mL, whereas retained DSM derivative evidence cites
+    1000 mL. Both primaries give the same batch masses and liquid inputs, without
+    measured final volume. Five DSM attached claims remain unauthenticated against
+    their cited raw bytes.
+  target_ids:
+  - CultureMech:001166
+  field_paths:
+  - media_term
+  - ingredients
+  - references
+  - curation_history
+  evidence_ids:
+  - dsmz1684
+  - jcm1052
+  - mediadiveJ1052
+  - historical-access-scope
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/573c_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm001166-unproven-mineral-variant
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The asserted lower-mineral variant lacks current source support
+  description: Reciprocal parent/child links explicitly claim DSM1684 lowers MgSO4,
+    CaCl2 and FeCl3 relative to 573C. The two current primaries instead print the
+    same three stock strengths and 1 mL doses. Differences between flattened local
+    values do not establish a real concentration variant.
+  target_ids:
+  - CultureMech:001166
+  field_paths:
+  - parent_media
+  - variant_relationship
+  - variant_modifications
+  - variant_children
+  evidence_ids:
+  - dsmz1684
+  - jcm1052
+  - quantity-inventory
+  - writer-1
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/573c_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm001166-cmc-current-mapping-gap
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: CMC sodium-salt specificity and current secondary mapping need review
+  description: The source supplies sodium carboxymethylcellulose; CHEBI:85146 is a
+    generic carboxymethylcellulose polymer term. Sodium-salt notes are present, but
+    the asserted current mediaingredientmech_chebi_term key has no preferred mapped
+    row in the pinned MIM index. Other six asserted keys and all canonical labels
+    resolve.
+  target_ids:
+  - CultureMech:001166
+  field_paths:
+  - ingredients[0].term
+  - ingredients[0].mediaingredientmech_chebi_term
+  - ingredients[0].notes
+  evidence_ids:
+  - dsmz1684
+  - jcm1052
+  - chebi85146
+  - mim
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/573c_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.2
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore source-scoped stock additions and literal strengths with unknown
+    percent basis, water input and separate sterilization/aseptic-addition sequence.
+    Do not infer w/v or final g/L. Add the JCM default cycle only to the appropriate
+    attributed source formulation; preserve the DSM unknown cycle and unquantified
+    agar branch.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001166
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/573c_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Keep the primary batch quantities and each nominal convention separately
+    attributed. Preserve the three authenticated JCM owner claims without transferring
+    their verified status to target; preserve and explicitly qualify the five historical
+    DSM claims until exact raw correspondence is recovered. Reconcile maintained owners
+    before regeneration, retaining original timestamps and source-version limits.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001166
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/573c_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Reassess the exact source relationship after stock and denominator
+    reconciliation. Remove or qualify the unsupported lower-dose assertion through
+    an append-only curation event; retain source-specific agar/default-cycle/vendor
+    differences and do not infer an undocumented historical chronology or automatic
+    synonym merge.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001166
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/573c_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve the source sodium-salt qualifier and assess whether a more
+    exact supported identity is available. Reconcile the absent current MIM key explicitly
+    rather than inventing a mapping or treating valid CHEBI metadata as proof of salt
+    identity. Keep complex-product and polymer molarity unasserted.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001166
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/573c_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact DSM1684 API attempt returned HTTP 503. The primary PDF remains available;
+  this failed response is not historical recipe evidence.
+- Exact DSM1684 API attempt returned HTTP 503. The primary PDF remains available;
+  this failed response is not historical recipe evidence.
+- Partial completion is due to required historical DSM1684 raw-response correspondence,
+  not the completed negative current MIM lookup. Both current primary recipes were
+  available and fully assessed.
+- Listed liquid inputs, provider-declared volumes and measured final volumes are distinct.
+  Stock percentage bases and the DSM agar amount remain unspecified. No density, w/v
+  basis, replacement ontology ID or historical recipe chronology was inferred.
+- This scientific assessment preceded formal review validation and saving; their actual
+  results are recorded separately.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-035
+- generated-medium
