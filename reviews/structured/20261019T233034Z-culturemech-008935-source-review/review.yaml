@@ -1,0 +1,1231 @@
+schema_version: 1.0.0
+review_id: 20261019T233034Z-culturemech-008935-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 10_mixotrophic_nitrobacter_medium (CultureMech:008935)'
+started_at: '2026-10-19T07:31:41Z'
+finished_at: '2026-10-19T23:30:34Z'
+reviewer:
+  identity: OpenAI Codex with delegated source and validator checks
+  kind: agent
+  independence: independent
+  independence_basis: Review team did not author or edit the assessed recipe bytes;
+    findings were assessed against the frozen checkout and inspected source documents.
+    This is an agent review, not experimental verification.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M2350 identifies DSMZ 756b, but the target collapses main medium and
+  two stock recipes, corrupts water and stock units, and links two unrelated MediaDive
+  stocks. It also assigns orthomolybdate to source heptamolybdate, loses a hydrate
+  in a MIM link, omits pH 8.6, and carries an unsupported high-metal annotation. Correct
+  the maintained TOGO input and regenerate.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+    sha256: 625ff3079b3896fe512a466bee27b3ec4bc17536da49ca44c5ad396661e3c928
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    sha256: ca7345e48bd29c2912888f3bdcb69665ffd5d64662a08e04c9a49a9f4d95c33e
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_6127_Stock_solution.yaml
+    sha256: 3d050662a522836fb52a7e34bf4d09624e5768faece286eb687320244b11f447
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml
+    sha256: 955006bc9e48d5032fd4cd252d70fb954591eb54cd393da5bb89b3b763702987
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 8 of the first ten uncovered paths in Python lexicographic repository-relative
+    path order. Initial scripts/record_review.py list validated 34 existing bundles,
+    whose targets covered 0 of 6320 merged records. This bundle selects only the named
+    record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008935
+targets:
+- target_id: CultureMech:008935
+  path: data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  label: 10_mixotrophic_nitrobacter_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:008935
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work/008/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work/008/strict.tsv"
+  target_ids:
+  - CultureMech:008935
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:008935
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:008935
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:008935
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-19T07:40:27Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-19T07:40:27Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T07:33:55.319288Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work/008/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-19T07:33:57.660230Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work/008/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T07:34:00.113740Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T07:34:01.709909Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: dsmz756b
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium756b.pdf
+  locator: PDF page1; derivative formulation paragraph
+  accessed_at: '2026-10-19T07:32:40Z'
+  support: supports
+  summary: Official DSMZ 756b references medium 756, specifies the reduced organic
+    component rates plus NaNO2, and requires pH 8.6 adjusted with NaOH or KOH.
+  snapshot_sha256: 7fbbffa365d7caf969c8f42f9a0f1e1d837e3abe8f3a5d9a9e7d58ecfb1c2303
+- evidence_id: dsmz756
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium756.pdf
+  locator: PDF page1; main recipe, Stock solution, and Trace element solution sections
+  accessed_at: '2026-10-19T07:34:05Z'
+  support: supports
+  summary: Official DSMZ 756 separates the main batch, mineral stock, and trace-element
+    stock, including separate water additions and stock doses.
+  snapshot_sha256: 25b51d5a442ba5acd085e47e6134dcecdb602b25b64b22386206367f8c12315a
+- evidence_id: togo2350
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2350
+  locator: $.meta; $.components[0..2]; $.comments[0]
+  accessed_at: '2026-10-19T07:34:04Z'
+  support: supports
+  summary: TOGO M2350 supplies title/original DSMZ 756b URL and retains three component
+    groups with paragraph indices, stock names, original amount units, and pH 8.6
+    comment.
+  snapshot_sha256: 61fd9c9babdecc67f846999939d2939d348646aff04ec977c97252e0b2d579f0
+- evidence_id: wrong-trace
+  kind: database
+  reference: https://mediadive.dsmz.de/solutions/6187
+  locator: Internal Solution-ID S6187; compound table and media listing
+  accessed_at: '2026-10-19T07:32:40Z'
+  support: supports
+  summary: MediaDive solutionS6187 contains EDTA and chloride salts and belongs to
+    the C46 medium listing; this differs from the intended DSMZ 756 sulfate/borate/heptamolybdate
+    stock.
+  snapshot_sha256: bc2e3198af217ae32d5bef2085b4d3c7821b85948c15a9cc3bb3a57749a3c5ae
+- evidence_id: wrong-stock
+  kind: database
+  reference: https://mediadive.dsmz.de/solutions/6127
+  locator: Internal Solution-ID S6127; compound table and media listing
+  accessed_at: '2026-10-19T07:32:40Z'
+  support: supports
+  summary: MediaDive solutionS6127 contains nitrate and two hydrogenphosphates and
+    is associated with C12/C104; this differs from the four-component DSMZ 756 mineral
+    stock.
+  snapshot_sha256: f26ded502846b625097d0999f0f78b9ff0d372d0ceb879b02980fec7c3f5a73a
+- evidence_id: local-trace
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml
+  locator: Entire captured SolutionRecipe; ID, term and composition
+  accessed_at: '2026-10-19T07:40:27Z'
+  support: refutes
+  summary: The referenced solution file exists and its identity-discriminating composition
+    matches its official MediaDive page; it does not match the stock required by DSMZ
+    756.
+- evidence_id: local-stock
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_6127_Stock_solution.yaml
+  locator: Entire captured SolutionRecipe; ID, term and composition
+  accessed_at: '2026-10-19T07:40:27Z'
+  support: refutes
+  summary: The referenced solution file exists and its identity-discriminating composition
+    matches its official MediaDive page; it does not match the stock required by DSMZ
+    756.
+- evidence_id: solution-search
+  kind: search
+  reference: Local isolated clone; rg --files --no-ignore --hidden -g !.git/**
+  locator: Exact mentioned solution filenames
+  accessed_at: '2026-10-19T07:40:27Z'
+  support: supports
+  summary: 'Both references are present: data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml;
+    data/normalized_yaml/bacterial/mediadive_6127_Stock_solution.yaml. No absence
+    claim is made.'
+  search_scope: Entire isolated clone, including hidden and gitignored paths, except
+    .git internals. Exact filenames mediadive_6187_Trace_element_solution.yaml and
+    mediadive_6127_Stock_solution.yaml; no scope-wide correctness conclusion from
+    other hits.
+- evidence_id: chebi-15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:15377
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:35:29.424979Z'
+  support: supports
+  summary: HTTP 200; CHEBI:15377 is water; formula H2O. Identity and supplied form
+    inspected; this does not establish a recipe amount or role.
+  snapshot_sha256: 1a98a50fba3aa8ec10dc2fd5c355cd22bc1a955252adbd43f4042fd2f1a3ee5d
+- evidence_id: chebi-26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:26710
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:35:35.012347Z'
+  support: supports
+  summary: HTTP 200; CHEBI:26710 is sodium chloride; formula Cl.Na. Identity and supplied
+    form inspected; this does not establish a recipe amount or role.
+  snapshot_sha256: 20d037f64aa7b26b83d04556c47a29bc5d4808bbdf7d25027e18ad22a5c5f02f
+- evidence_id: chebi-31440
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:31440
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:35:36.975326Z'
+  support: supports
+  summary: HTTP 200; CHEBI:31440 is copper(II) sulfate pentahydrate; formula Cu.5H2O.O4S.
+    Identity and supplied form inspected; this does not establish a recipe amount
+    or role.
+  snapshot_sha256: 6aca221bb26d6f9c97525b9990c069375af4a7f30643ae4260775e5febdf211c
+- evidence_id: chebi-31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:31795
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:35:38.958022Z'
+  support: supports
+  summary: HTTP 200; CHEBI:31795 is magnesium sulfate heptahydrate; formula 7H2O.Mg.O4S.
+    Identity and supplied form inspected; this does not establish a recipe amount
+    or role.
+  snapshot_sha256: 3ce9de4739bdf41bafd0b99fb9db23c45dfe90cf5ccc0ac3f59e5b2e351f8981
+- evidence_id: chebi-32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:32312
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:35:43.150782Z'
+  support: supports
+  summary: HTTP 200; CHEBI:32312 is zinc sulfate heptahydrate; formula 7H2O.O4S.Zn.
+    Identity and supplied form inspected; this does not establish a recipe amount
+    or role.
+  snapshot_sha256: eedd67fbc71945af9f7f2807aab72b85a32ef47ffefe6f6e34e65824f22459f0
+- evidence_id: chebi-32599
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:32599
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:35:47.353697Z'
+  support: supports
+  summary: HTTP 200; CHEBI:32599 is magnesium sulfate; formula Mg.O4S. Identity and
+    supplied form inspected; this does not establish a recipe amount or role.
+  snapshot_sha256: 3b05d10bdc37fe5074d0e91a3396d1c6f73224ed144ef845b501deaced552da2
+- evidence_id: chebi-3311
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:3311
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:35:49.185827Z'
+  support: supports
+  summary: HTTP 200; CHEBI:3311 is calcium carbonate; formula CO3.Ca. Identity and
+    supplied form inspected; this does not establish a recipe amount or role.
+  snapshot_sha256: 8e330b45ae253a95b304812ef4ee06458b446160da52e3b9288c3f52924356d3
+- evidence_id: chebi-33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:33118
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:35:51.337449Z'
+  support: supports
+  summary: HTTP 200; CHEBI:33118 is boric acid; formula H3BO3. Identity and supplied
+    form inspected; this does not establish a recipe amount or role.
+  snapshot_sha256: e6ea5a9802ccf07e8d32e55942416aed8b01643d38ce1ff4eddbcde491eb1784
+- evidence_id: chebi-50144
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:50144
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:35:54.978898Z'
+  support: supports
+  summary: HTTP 200; CHEBI:50144 is sodium pyruvate; formula C3H3O3.Na. Identity and
+    supplied form inspected; this does not establish a recipe amount or role.
+  snapshot_sha256: 6def5decf9b629ef71fab11391190026cedcf849430f722138abe779b875fb53
+- evidence_id: chebi-63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:63036
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:35:58.460228Z'
+  support: supports
+  summary: HTTP 200; CHEBI:63036 is potassium dihydrogen phosphate; formula H2O4P.K.
+    Identity and supplied form inspected; this does not establish a recipe amount
+    or role.
+  snapshot_sha256: 7f59ea7835ed69b5701f6678706fb16794fdabc27c193b74e658279d466144ee
+- evidence_id: chebi-75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:75836
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:36:02.216120Z'
+  support: supports
+  summary: HTTP 200; CHEBI:75836 is iron(2+) sulfate heptahydrate; formula Fe.7H2O.O4S.
+    Identity and supplied form inspected; this does not establish a recipe amount
+    or role.
+  snapshot_sha256: 430069facbcf0adea7542008573574a848badc1ce488ce7f60db91eb1bbeb322
+- evidence_id: chebi-78870
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:78870
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:36:04.163290Z'
+  support: supports
+  summary: HTTP 200; CHEBI:78870 is sodium nitrite; formula NO2.Na. Identity and supplied
+    form inspected; this does not establish a recipe amount or role.
+  snapshot_sha256: 9a396bcfa78e2b70d56d8c8d1ab690e409108b6111e139b0c82b823c3e9bd630
+- evidence_id: chebi-86364
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:86364
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:36:05.944685Z'
+  support: supports
+  summary: HTTP 200; CHEBI:86364 is manganese(II) sulfate monohydrate; formula H2O.Mn.O4S.
+    Identity and supplied form inspected; this does not establish a recipe amount
+    or role.
+  snapshot_sha256: 6bd4e910e4ad74235e79a7e2e956e4a6e5e889962e0236d10f77393521ef982d
+- evidence_id: chebi-91249
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:91249
+  locator: ChEBI ID, ChEBI Name, Formula, definition and ontology form
+  accessed_at: '2026-10-19T07:36:07.814972Z'
+  support: supports
+  summary: HTTP 200; CHEBI:91249 is ammonium molybdate; formula 2H4N.MoO4. Identity
+    and supplied form inspected; this does not establish a recipe amount or role.
+  snapshot_sha256: 1253ebba75376733b0474040df7a17df9fed29ca5a3ad7bf4abb0335d00882b1
+- evidence_id: mim-index
+  kind: database
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All asserted mediaingredientmech_chebi_term IDs; metadata source commit
+    6643131b0f12ab40b66f98135245fca04027e0e9
+  accessed_at: '2026-10-19T07:40:27Z'
+  support: supports
+  summary: Every asserted MIM CHEBI ID occurs in the packaged index. Index membership
+    is a linkage check, not proof of correct hydrate identity.
+- evidence_id: mim-metadata
+  kind: database
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Source commit and SHA256
+  accessed_at: '2026-10-19T07:40:27Z'
+  support: context_only
+  summary: Pinned source commit and label-index SHA256 correspond to the input captured
+    by inspection.
+- evidence_id: schema-metal
+  kind: authority
+  reference: src/culturemech/schema/culturemech.yaml
+  locator: MediaRecipe.attributes.high_metal description and comments
+  accessed_at: '2026-10-19T07:40:27Z'
+  support: context_only
+  summary: high_metal asserts total metal concentration at or above 1049.84 mM; the
+    stated metal set includes alkali/alkaline-earth and transition metals. This is
+    a quantitative annotation, not a generic presence flag.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:008935
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Source accession and derivative formulation
+  outcome: supported
+  summary: TOGO M2350 resolves to DSMZ 756b with matching title. Medium756b explicitly
+    derives from756; reading that base is necessary to recover the two intended stocks
+    and main preparation boundary.
+  target_ids:
+  - CultureMech:008935
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz756b
+  - dsmz756
+  - togo2350
+  dimensions:
+  - name: record_kind
+    value: generated MediaRecipe
+    definition: Single maintained TOGO normalized owner.
+    evidence_ids:
+    - record
+    - owner-0
+  - name: source_accession
+    value: TOGO M2350; DSMZ 756b with explicit DSMZ 756 dependency
+    definition: The derivative recipe changes organic ingredient quantities and nitrite/pH
+      context; no name-based substitution.
+    evidence_ids:
+    - togo2350
+    - dsmz756b
+    - dsmz756
+- assessment_id: chemistry
+  area: grounding
+  topic: Every asserted chemical identity and exact supplied form
+  outcome: concern
+  summary: All 14 unique target CHEBI IDs resolve. Primary mappings cover 13/15 direct
+    ingredient instances; MIM links cover 12/15. These unweighted linkage counts do
+    not measure scientific accuracy.
+  target_ids:
+  - CultureMech:008935
+  evidence_ids:
+  - record
+  - mim-index
+  - mim-metadata
+  - chebi-15377
+  - chebi-26710
+  - chebi-31440
+  - chebi-31795
+  - chebi-32312
+  - chebi-32599
+  - chebi-3311
+  - chebi-33118
+  - chebi-50144
+  - chebi-63036
+  - chebi-75836
+  - chebi-78870
+  - chebi-86364
+  - chebi-91249
+  details: '| Field | Supplied component | Primary CHEBI; official label/form | MIM
+    link | Decision |
+
+    |---|---|---|---|---|
+
+    | ingredients[0] | Distilled water | CHEBI:15377; water; H2O | CHEBI:15377 | Matches
+    supplied form and official label |
+
+    | ingredients[1] | Yeast extract | absent | absent | Undefined mixture; no forced
+    single-chemical assignment |
+
+    | ingredients[2] | Na-pyruvate | CHEBI:50144; sodium pyruvate; C3H3O3.Na | CHEBI:50144
+    | Matches supplied form and official label |
+
+    | ingredients[3] | NaNO2 | CHEBI:78870; sodium nitrite; NO2.Na | CHEBI:78870 |
+    Matches supplied form and official label |
+
+    | ingredients[4] | Peptone | absent | absent | Undefined mixture; no forced single-chemical
+    assignment |
+
+    | ingredients[5] | H3BO3 | CHEBI:33118; boric acid; H3BO3 | CHEBI:33118 | Matches
+    supplied form and official label |
+
+    | ingredients[6] | FeSO4 x 7 H2O | CHEBI:75836; iron(2+) sulfate heptahydrate;
+    Fe.7H2O.O4S | CHEBI:75836 | Matches supplied form and official label |
+
+    | ingredients[7] | ZnSO4 x 7 H2O | CHEBI:32312; zinc sulfate heptahydrate; 7H2O.O4S.Zn
+    | CHEBI:32312 | Matches supplied form and official label |
+
+    | ingredients[8] | CuSO4 x 5 H2O | CHEBI:31440; copper(II) sulfate pentahydrate;
+    Cu.5H2O.O4S | CHEBI:31440 | Matches supplied form and official label |
+
+    | ingredients[9] | MnSO4 x H2O | CHEBI:86364; manganese(II) sulfate monohydrate;
+    H2O.Mn.O4S | CHEBI:86364 | Matches supplied form and official label |
+
+    | ingredients[10] | (NH4)6Mo7O24 | CHEBI:91249; ammonium molybdate; 2H4N.MoO4
+    | absent | Conflict: orthomolybdate ID does not match heptamolybdate formula |
+
+    | ingredients[11] | MgSO4 x 7 H2O | CHEBI:31795; magnesium sulfate heptahydrate;
+    7H2O.Mg.O4S | CHEBI:32599 | Primary hydrate matches; MIM link loses seven waters
+    |
+
+    | ingredients[12] | NaCl | CHEBI:26710; sodium chloride; Cl.Na | CHEBI:26710 |
+    Matches supplied form and official label |
+
+    | ingredients[13] | KH2PO4 | CHEBI:63036; potassium dihydrogen phosphate; H2O4P.K
+    | CHEBI:63036 | Matches supplied form and official label |
+
+    | ingredients[14] | CaCO3 | CHEBI:3311; calcium carbonate; CO3.Ca | CHEBI:3311
+    | Matches supplied form and official label |'
+  dimensions:
+  - name: chemical_form_scope
+    value: Exact salt, hydrate, and stoichiometry
+    definition: Every primary and secondary CHEBI assertion in the generated target;
+      source concentration support assessed separately.
+    evidence_ids:
+    - record
+    - mim-index
+    - mim-metadata
+    - chebi-15377
+    - chebi-26710
+    - chebi-31440
+    - chebi-31795
+    - chebi-32312
+    - chebi-32599
+    - chebi-3311
+    - chebi-33118
+    - chebi-50144
+    - chebi-63036
+    - chebi-75836
+    - chebi-78870
+    - chebi-86364
+    - chebi-91249
+- assessment_id: amounts
+  area: quantity
+  topic: All15 ingredient amounts and both stock additions
+  outcome: concern
+  summary: Four direct organic/nitrite rates are supported. Eleven remaining ingredient
+    rows and both stock doses conflict with the source hierarchy or units. Stock ingredients
+    and stock additions coexist, creating potential double counting; stock water was
+    summed into main water.
+  target_ids:
+  - CultureMech:008935
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz756b
+  - dsmz756
+  - togo2350
+  details: '| Claim | Component | Encoded quantity | Inspected source amount and stage
+    | Decision |
+
+    |---|---|---|---|---|
+
+    | ingredients[0] | Distilled water | 2899 G_PER_L | 899 mL main water plus separate1000
+    mL water for each stock | conflict: summed different preparation stages and changed
+    volume to mass |
+
+    | ingredients[1] | Yeast extract | 0.15 G_PER_L | 0.15 g/L main medium, DSMZ 756b
+    | verified |
+
+    | ingredients[2] | Na-pyruvate | 0.055 G_PER_L | 0.055 g/L main medium, DSMZ 756b
+    | verified |
+
+    | ingredients[3] | NaNO2 | 2 G_PER_L | 2 g/L main medium, DSMZ 756b | verified
+    |
+
+    | ingredients[4] | Peptone | 0.15 G_PER_L | 0.15 g/L main medium, DSMZ 756b |
+    verified |
+
+    | ingredients[5] | H3BO3 | 49.4 G_PER_L | 49.4 mg in trace-stock batch with 1000
+    mL water | conflict: unit and stock boundary |
+
+    | ingredients[6] | FeSO4 x7H2O | 97.3 G_PER_L | 97.3 mg in trace-stock batch with
+    1000 mL water | conflict: unit and stock boundary |
+
+    | ingredients[7] | ZnSO4 x7H2O | 43.1 G_PER_L | 43.1 mg in trace-stock batch with
+    1000 mL water | conflict: unit and stock boundary |
+
+    | ingredients[8] | CuSO4 x5H2O | 25 G_PER_L | 25 mg in trace-stock batch with
+    1000 mL water | conflict: unit and stock boundary |
+
+    | ingredients[9] | MnSO4 xH2O | 33.8 G_PER_L | 33.8 mg in trace-stock batch with
+    1000 mL water | conflict: unit and stock boundary |
+
+    | ingredients[10] | (NH4)6Mo7O24 | 37.1 G_PER_L | 37.1 mg in trace-stock batch
+    with 1000 mL water | conflict: unit, stock boundary, and chemical ID |
+
+    | ingredients[11] | MgSO4 x7H2O | 0.5 G_PER_L | 0.5 g in mineral-stock batch with
+    1000 mL water | conflict: stock quantity presented as direct-medium rate |
+
+    | ingredients[12] | NaCl | 5 G_PER_L | 5 g in mineral-stock batch with 1000 mL
+    water | conflict: stock quantity presented as direct-medium rate |
+
+    | ingredients[13] | KH2PO4 | 1.5 G_PER_L | 1.5 g in mineral-stock batch with 1000
+    mL water | conflict: stock quantity presented as direct-medium rate |
+
+    | ingredients[14] | CaCO3 | 0.07 G_PER_L | 0.07 g in mineral-stock batch with
+    1000 mL water | conflict: stock quantity presented as direct-medium rate |
+
+    | solutions[0] | Trace element solution | 1 G_PER_L | 1 mL stock addition to main
+    recipe | conflict: volume dose represented as mass concentration and wrong stock
+    ID |
+
+    | solutions[1] | Stock solution | 100 G_PER_L | 100 mL stock addition to main
+    recipe | conflict: volume dose represented as mass concentration and wrong stock
+    ID |'
+  dimensions:
+  - name: concentration_decisions
+    value: 'verified: ingredients[1..4]; conflict: ingredients[0,5..14], solutions[0..1]'
+    definition: Complete enumeration of every target concentration claim; decisions
+      are review context, not record fields.
+    evidence_ids:
+    - record
+    - dsmz756b
+    - dsmz756
+    - togo2350
+  - name: preparation_stages
+    value: main medium; trace stock; mineral stock
+    definition: Source groups remain separate; water addition is not treated as a
+      measured final volume.
+    evidence_ids:
+    - dsmz756
+    - togo2350
+- assessment_id: stocks
+  area: identity
+  topic: Referenced stock resolution and composition
+  outcome: concern
+  summary: Both mentioned files exist, but their compositions are different stocks
+    from the ones explicitly required by DSMZ 756. Correct formulation identity cannot
+    be established by generic solution labels.
+  target_ids:
+  - CultureMech:008935
+  evidence_ids:
+  - record
+  - solution-search
+  - local-trace
+  - local-stock
+  - wrong-trace
+  - wrong-stock
+  - dsmz756
+  details: Trace target 6187 resolves to CultureMech:014886; stock target 6127 resolves
+    to CultureMech:014831. The former is an EDTA/chloride recipe and the latter a
+    nitrate/phosphate recipe. The intended trace stock is sulfate/borate/heptamolybdate;
+    intended mineral stock is CaCO3, NaCl, MgSO4·7H2O, KH2PO4. These records must
+    not be repurposed to denote the intended stocks.
+- assessment_id: conditions
+  area: completeness
+  topic: Preparation, pH, classification, and growth assertions
+  outcome: concern
+  summary: Source pH 8.6 adjustment is missing. COMPLEX/UNDEFINED and LIQUID are consistent
+    with the source ingredients/formulation, but high_metal is unsupported by a valid
+    concentration calculation after the demonstrated unit, identity, and stock errors.
+    No organism growth assertion is established by the name.
+  target_ids:
+  - CultureMech:008935
+  evidence_ids:
+  - record
+  - dsmz756b
+  - togo2350
+  - schema-metal
+  details: The reviewed sources specify adjustment with NaOH or KOH. No incubation
+    temperature, atmosphere, vessel, shelf life, or sterilization cycle is supplied
+    by these source recipes; none was invented. Source-imported role notes are context,
+    not newly verified growth mechanisms. The automatic high_metal threshold requires
+    correct exact-form molar conversion and stock dilution; this target has neither
+    a valid calculation nor trustworthy direct ingredient rates for that purpose.
+- assessment_id: provenance
+  area: provenance
+  topic: Maintained owner, transformation, and evidence placement
+  outcome: concern
+  summary: The normalized TOGO owner already contains the flattened composition and
+    incorrect references; regeneration alone will reproduce these problems. The target
+    retains source URLs in notes but no claim-level evidence. The official TOGO response
+    still preserves the compartments and units needed for curation.
+  target_ids:
+  - CultureMech:008935
+  evidence_ids:
+  - record
+  - owner-0
+  - togo2350
+  - dsmz756b
+  - dsmz756
+  details: Curation history reports a solution migration, duplicate ingredient merge,
+    primary hydrate correction, and generated merge. These are provenance observations,
+    not evidence that every intermediate change was scientifically sound. Correct
+    the maintained normalized owner or its source-specific importer if reimport would
+    overwrite curation, then regenerate; do not edit the merged target.
+findings:
+- finding_id: f1
+  issue_key: CultureMech-008935-wrong-matching-stock-identities
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Generic stock labels resolve to unrelated formulations
+  description: Both referenced files exist, but MediaDive 6187 and 6127 denote different
+    formulations from the stocks defined by the source medium 756. Following the links
+    substitutes EDTA/chloride and nitrate/phosphate recipes for the required stocks
+    and changes the medium identity.
+  target_ids:
+  - CultureMech:008935
+  field_paths:
+  - solutions[0].term
+  - solutions[0].notes
+  - solutions[1].term
+  - solutions[1].notes
+  evidence_ids:
+  - record
+  - solution-search
+  - local-trace
+  - local-stock
+  - wrong-trace
+  - wrong-stock
+  - dsmz756
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1.5
+  native_severity: P1
+  normalization_reason: P1.5 normally covers an unresolved solution reference. Here
+    both files resolve, but their chemical identities are wrong for the target source;
+    this equivalent critical formulation impact is normalized to blocker, rather than
+    falsely reporting missing files.
+- finding_id: f2
+  issue_key: CultureMech-008935-stock-compartments-and-dose-units
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Flattened stock recipes corrupt amounts and permit double counting
+  description: Six trace-stock mg amounts were copied numerically into direct G_PER_L
+    entries; four mineral-stock batch masses were also asserted as direct-medium rates.
+    The two stock additions remain present with G_PER_L rather than source mL doses.
+    This drops stock boundaries, omits mg-to-g scaling, and permits simultaneous counting
+    of stock components and stock doses.
+  target_ids:
+  - CultureMech:008935
+  field_paths:
+  - ingredients[5].concentration
+  - ingredients[6].concentration
+  - ingredients[7].concentration
+  - ingredients[8].concentration
+  - ingredients[9].concentration
+  - ingredients[10].concentration
+  - ingredients[11].concentration
+  - ingredients[12].concentration
+  - ingredients[13].concentration
+  - ingredients[14].concentration
+  - solutions[0].concentration
+  - solutions[1].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz756
+  - dsmz756b
+  - togo2350
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: CultureMech-008935-water-summed-across-stock-stages
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Water from three preparations is summed into one mass rate
+  description: The 2899 G_PER_L water entry is the arithmetic sum 899+1000+1000 of
+    main-medium water and two separate stock-water additions, originally in mL. These
+    are different batches and cannot be added as one medium concentration; no density
+    conversion or final-volume evidence supports the mass unit.
+  target_ids:
+  - CultureMech:008935
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[0].notes
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz756
+  - togo2350
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: CultureMech-008935-ammonium-heptamolybdate-wrong-chebi
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Orthomolybdate ID is assigned to heptamolybdate
+  description: ingredients[10] and the source specify (NH4)6Mo7O24, whereas CHEBI:91249
+    denotes ammonium orthomolybdate with formula 2H4N.MoO4. The identifier exists
+    and its stored label is canonical, but it denotes a different stoichiometry.
+  target_ids:
+  - CultureMech:008935
+  field_paths:
+  - ingredients[10].term
+  evidence_ids:
+  - record
+  - dsmz756
+  - togo2350
+  - chebi-91249
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f5
+  issue_key: CultureMech-008935-mgso4-heptahydrate-mim-mismatch
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Secondary ingredient link loses the magnesium sulfate hydrate
+  description: Primary CHEBI:31795 matches MgSO4·7H2O, but mediaingredientmech_chebi_term
+    still points to CHEBI:32599, formula Mg.O4S. The exact supplied hydrate and secondary
+    ingredient identity differ despite the recorded primary-term correction.
+  target_ids:
+  - CultureMech:008935
+  field_paths:
+  - ingredients[11].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz756
+  - chebi-31795
+  - chebi-32599
+  - mim-index
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f6
+  issue_key: CultureMech-008935-source-ph-adjustment-omitted
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Required source pH 8.6 adjustment is missing
+  description: DSMZ 756b and TOGO M2350 explicitly require adjustment to pH 8.6 with
+    NaOH or KOH. The target has neither ph_value nor a preparation step carrying this
+    condition, omitting a specified part of the derivative recipe.
+  target_ids:
+  - CultureMech:008935
+  field_paths:
+  - ph_value
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz756b
+  - togo2350
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f7
+  issue_key: CultureMech-008935-high-metal-classification-unverified
+  category: consistency
+  severity: major
+  status: open
+  certainty: confirmed
+  title: High-metal flag lacks a valid concentration basis
+  description: The schema defines high_metal as total metal concentration at least
+    1049.84 mM. The target flag is true, but the record contains incorrect mass units,
+    collapsed stock dilutions, and a wrong molybdate identity; no valid calculation
+    or evidence supports that threshold classification. This review does not assert
+    an exact corrected metal total.
+  target_ids:
+  - CultureMech:008935
+  field_paths:
+  - high_metal
+  evidence_ids:
+  - record
+  - schema-metal
+  - dsmz756
+  - dsmz756b
+  - togo2350
+  - chebi-91249
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Resolve the exact intended DSMZ 756 trace and mineral stocks, use verified
+    matching identities or exact inline compositions, and correct the normalized owner.
+    Retain the unrelated solution records under their existing identities.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008935
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - just validate-schema data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-strict data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-terms data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-references data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - Reinspect primary-source formulation and claim-level evidence after authorized
+    owner curation; regenerate merged records and run just verify-merges and just
+    audit-merge-freshness.
+  - Both solution references resolve to the exact source-specific composition; generic
+    name similarity is not accepted.
+- action_id: a2
+  description: Reconstruct the main recipe and two stock compartments from the source.
+    Preserve stock mass units and volume doses; derive final-medium quantities only
+    with an explicit justified final-volume basis, without double counting.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008935
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - just validate-schema data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-strict data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-terms data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-references data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - Reinspect primary-source formulation and claim-level evidence after authorized
+    owner curation; regenerate merged records and run just verify-merges and just
+    audit-merge-freshness.
+  - All 17 target amount claims have source-linked decisions and stock/preparation
+    locators.
+  - Every source mg amount and mL stock dose is retained with dimensionally correct
+    units; stock mass is never silently promoted to direct-medium mass.
+- action_id: a3
+  description: Restore each water addition to its preparation compartment and preserve
+    source volume units; remove the cross-stage duplicate-merging interpretation in
+    the maintained owner.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008935
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - just validate-schema data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-strict data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-terms data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-references data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - Reinspect primary-source formulation and claim-level evidence after authorized
+    owner curation; regenerate merged records and run just verify-merges and just
+    audit-merge-freshness.
+  - Main water 899 mL and each stock-water 1000 mL remain distinct and are not interpreted
+    as measured final volume.
+- action_id: a4
+  description: Remove the incorrect CHEBI:91249 assertion. Verify the exact source
+    heptamolybdate form and assign a matching current identifier, or document unresolved
+    grounding. No alternative ID is proposed without verification.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008935
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - just validate-schema data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-strict data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-terms data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-references data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - Reinspect primary-source formulation and claim-level evidence after authorized
+    owner curation; regenerate merged records and run just verify-merges and just
+    audit-merge-freshness.
+  - Official identifier formula and source (NH4)6Mo7O24 identity agree; label similarity
+    alone is insufficient.
+- action_id: a5
+  description: Resolve the MIM link using the packaged resolver and verified exact
+    hydrate; preserve the correct primary form, and document any unresolved secondary
+    mapping.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:008935
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - just validate-schema data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-strict data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-terms data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-references data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - Reinspect primary-source formulation and claim-level evidence after authorized
+    owner curation; regenerate merged records and run just verify-merges and just
+    audit-merge-freshness.
+  - Primary and secondary identity preserve seven waters or unresolved linkage is
+    explicitly retained; no anhydrous molar mass is used for the hydrate.
+- action_id: a6
+  description: Add the source-specific pH condition and preparation context to the
+    maintained owner with source-linked evidence. Do not substitute base medium 756
+    pH 7.4.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:008935
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - just validate-schema data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-strict data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-terms data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-references data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - Reinspect primary-source formulation and claim-level evidence after authorized
+    owner curation; regenerate merged records and run just verify-merges and just
+    audit-merge-freshness.
+  - The derivative-medium pH 8.6 and allowed NaOH/KOH adjustment are represented with
+    an exact source locator.
+- action_id: a7
+  description: After correcting formulation and exact forms, recompute the annotation
+    through the maintained analysis path using justified stock dilution/final-volume
+    inputs; leave it unresolved if that calculation cannot be supported.
+  finding_ids:
+  - f7
+  target_ids:
+  - CultureMech:008935
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2350_10_Mixotrophic_Nitrobacter_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - just validate-schema data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-strict data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-terms data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - just validate-references data/merge_yaml/merged/10_mixotrophic_nitrobacter_medium.yaml
+  - Reinspect primary-source formulation and claim-level evidence after authorized
+    owner curation; regenerate merged records and run just verify-merges and just
+    audit-merge-freshness.
+  - Any retained high_metal assertion supplies the qualifying metal set, exact-form
+    molecular masses, stock dilution arithmetic, final-volume basis, and total compared
+    with 1049.84 mM.
+limitations:
+- The correct intended stock compositions are established by DSMZ 756, explicitly
+  referenced by DSMZ 756b. No replacement internal stock identifier was minted or
+  guessed.
+- Only identity-discriminating composition of the two incorrectly linked solution
+  records was assessed; their own full scientific correctness is outside this one-medium
+  target scope.
+- No final-medium molar concentrations were asserted from stock-water amounts. Correct
+  stock doses, exact chemical forms, and final-volume basis must be retained before
+  deriving final concentrations or metal totals.
+- Source role notes retain imported context; no organism growth, functional-role mechanism,
+  or optimum growth condition was inferred from the medium name.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. The reference recipe performed zero excerpt checks for this target; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-001
+- generated-medium
