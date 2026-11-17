@@ -1,0 +1,3264 @@
+# Scientific review of cedears_standard_medium_2
+
+- Review: 20261028T142112Z-cedears-standard-medium-2-batch069
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T13:49:19.216049Z
+- Finished UTC: 2026-10-28T14:21:12.632814Z
+- Reviewer: Codex independent record reviewer (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Cedears2 identity is verified, but its receiving recipe flattens stock stages and links to two non-equivalent standalone stocks. All 74 selected concentrations plus thirteen dependency fields were assessed. Source-specific quantities, supplied forms and missing preparation need curation; the owner water repair and eight authenticated standalone claims are retained.
+
+## Scope And Provenance
+
+Full selected target and maintained owners, every quantity and unchanged claim; separately scoped source dependencies and current writers.
+
+Selection: Authoritative batch069 selection index 6 at base 9ea7ff33d354e37b791df96a880005153e446ce3. Fresh review, not reconstruction of lost historical bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008684 | data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml | generated | cedears_standard_medium_2 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:008684 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-strict | passed | True | CultureMech:008684 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-terms | passed | True | CultureMech:008684 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-references | passed | True | CultureMech:008684 | Exit 0; original full stdout/stderr read. Zero reference checks. |
+
+## Scientific And Domain Assessments
+
+### NBRC1404 and exact linked-stock identities
+
+identity: concern. Targets: CultureMech:008684.
+
+TOGO M2093 and NBRC1404 identify Cedears Standard Medium 2. The selected 6241 vitamin link has three vitamins and 100 mL final volume, not the source nine-vitamin stock; 6187 is an EDTA-based stock rather than the source NTA-based fourteen-mineral stock. Eight current standalone claims authenticate their own provider bytes; they do not cure these receiving-link mismatches.
+
+### Classification and collection context
+
+consistency: concern. Targets: CultureMech:008684.
+
+The selected LIQUID state is supported. Both selected layers currently assert COMPLEX and composition_type UNDEFINED, although the primary lists named salts, vitamins and acetate rather than chemically undefined extracts. These composition labels need source-aware reassessment; the existing quantity and form gaps do not themselves establish an undefined ingredient. NBRC111850 identifies environmental Serpentinimonas maccroryi and lists 1404/1562 as recommended media. This is collection guidance, not a primary growth experiment or permission to transfer Medium 3 composition.
+
+### Historical assertions and current writers
+
+provenance: concern. Targets: CultureMech:008684.
+
+Both full October reports were read and had zero source-checked claims. No legacy numeric MIM identifiers occur in the selected target/owner. All eight standalone attached provider excerpts/digests match current raw bytes; that authenticates claim payloads but not historical access times. Current exact-key absence for pantothenate is a snapshot limitation, not historical invalidity. Dependency naive timestamps and automated low-confidence categorization remain provenance limitations rather than invented dates. Current conservative merging preserves scientific fields and rejects incompatible formulations. Inspected writer behavior is described separately by exact file and function; it does not prove historical execution.
+
+### Every concentration and source-only amount/stage
+
+quantity: concern. Targets: CultureMech:008684.
+
+All 74 selected target/owner concentration fields have explicit decisions; source-only stock, liquid, control and denominator gaps are retained separately.
+
+{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:008684", "selected_concentration_field_count": 74, "selected_concentration_fields_covered": 74, "decisions": [{"decision_id": "q1", "subject": "Distilled water", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "3.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "1.0", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "receiving medium", "interpretation": "NBRC1404 lists 1 L water for the receiving batch. The target stores a historical sum 3 g/L; the current owner has already collapsed it to 1 g/L. Credit that narrow owner repair while correcting the residual wrong unit. The vitamin and trace stocks each list their own 1 L water; neither is additive as a full batch to this medium. No final liquid volume is measured.", "sources": [{"locator": "$.components[0].items[0]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[14]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Distilled water\n1\nL", "quote_representation": "HTML tr[14] DOM text"}, {"locator": "HTML tr[29]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Distilled water\n1\nL", "quote_representation": "HTML tr[29] DOM text"}, {"locator": "HTML tr[46]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Distilled water\n1\nL", "quote_representation": "HTML tr[46] DOM text"}]}, {"decision_id": "q2", "subject": "CaCl2·2H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.39", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.39", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "receiving medium", "interpretation": "The target and owner sum 0.29 g receiving-batch calcium chloride dihydrate with 0.1 g from a separate trace-stock batch to 0.39 g/L. Keep 0.29 g in the receiving batch and 0.1 g inside the trace stock; only 10 mL of that stock is added. No final calcium concentration follows without a verified stock and final-medium denominator.", "sources": [{"locator": "$.components[0].items[1]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"CaCl2·2H2O\",\n          \"volume\": 0.29,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\": \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[8]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CaCl\n2\n·2H\n2\nO\n0.29\ng", "quote_representation": "HTML tr[8] DOM text"}, {"locator": "$.components[2].items[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"CaCl2·2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\": \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[36]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CaCl\n2\n·2H\n2\nO\n0.1\ng", "quote_representation": "HTML tr[36] DOM text"}, {"locator": "HTML tr[13]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Trace element solution**\n10\nml", "quote_representation": "HTML tr[13] DOM text"}]}, {"decision_id": "q3", "subject": "NH4Cl", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.0403", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.0403", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium", "interpretation": "The same numerical value is supported as an absolute source batch mass, but its local G_PER_L basis is not established by 1 L listed water plus stocks. Preserve source mass/form and stage without inventing a replacement final concentration.", "sources": [{"locator": "$.components[0].items[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"NH4Cl\",\n          \"volume\": 0.0403,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001008\",\n          \"gmo_id\": \"GMO_001008\",\n          \"label\": \"Ammonium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[5]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "NH\n4\nCl\n0.0403\ng", "quote_representation": "HTML tr[5] DOM text"}]}, {"decision_id": "q4", "subject": "K2HPO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "0.0401", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "0.0401", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium", "interpretation": "The same numerical value is supported as an absolute source batch mass, but its local G_PER_L basis is not established by 1 L listed water plus stocks. Preserve source mass/form and stage without inventing a replacement final concentration.", "sources": [{"locator": "$.components[0].items[3]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"K2HPO4\",\n          \"volume\": 0.0401,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001009\",\n          \"gmo_id\": \"GMO_001009\",\n          \"label\": \"Potassium phosphate dibasic\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[7]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "K\n2\nHPO\n4\n0.0401\ng", "quote_representation": "HTML tr[7] DOM text"}]}, {"decision_id": "q5", "subject": "MgCl2·6H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "0.0203", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "0.0203", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium", "interpretation": "The same numerical value is supported as an absolute source batch mass, but its local G_PER_L basis is not established by 1 L listed water plus stocks. Preserve source mass/form and stage without inventing a replacement final concentration.", "sources": [{"locator": "$.components[0].items[4]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"MgCl2·6H2O\",\n          \"volume\": 0.0203,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001013\",\n          \"gmo_id\": \"GMO_001013\",\n          \"label\": \"Magnesium chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[6]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "MgCl\n2\n·6H\n2\nO\n0.0203\ng", "quote_representation": "HTML tr[6] DOM text"}]}, {"decision_id": "q6", "subject": "Sodium acetate", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "0.33", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "0.33", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium", "interpretation": "The same numerical value is supported as an absolute source batch mass, but its local G_PER_L basis is not established by 1 L listed water plus stocks. Preserve source mass/form and stage without inventing a replacement final concentration.", "sources": [{"locator": "$.components[0].items[5]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Sodium acetate\",\n          \"volume\": 0.33,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001031\",\n          \"gmo_id\": \"GMO_001031\",\n          \"label\": \"Sodium acetate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[11]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Sodium acetate\n0.33\ng", "quote_representation": "HTML tr[11] DOM text"}]}, {"decision_id": "q7", "subject": "Na2SO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "0.0142", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "0.0142", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium", "interpretation": "The same numerical value is supported as an absolute source batch mass, but its local G_PER_L basis is not established by 1 L listed water plus stocks. Preserve source mass/form and stage without inventing a replacement final concentration.", "sources": [{"locator": "$.components[0].items[6]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Na2SO4\",\n          \"volume\": 0.0142,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001052\",\n          \"gmo_id\": \"GMO_001052\",\n          \"label\": \"Sodium sulfate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[4]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Na\n2\nSO\n4\n0.0142\ng", "quote_representation": "HTML tr[4] DOM text"}]}, {"decision_id": "q8", "subject": "CaCO3", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "2", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium", "interpretation": "The same numerical value is supported as an absolute source batch mass, but its local G_PER_L basis is not established by 1 L listed water plus stocks. Preserve source mass/form and stage without inventing a replacement final concentration.", "sources": [{"locator": "$.components[0].items[7]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"CaCO3\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001063\",\n          \"gmo_id\": \"GMO_001063\",\n          \"label\": \"Calcium carbonate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000066\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000066\",\n              \"label\": \"Protective agent\"\n            },\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[9]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CaCO\n3\n2\ng", "quote_representation": "HTML tr[9] DOM text"}]}, {"decision_id": "q9", "subject": "CAPS", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "3.32", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "3.32", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium", "interpretation": "The same numerical value is supported as an absolute source batch mass, but its local G_PER_L basis is not established by 1 L listed water plus stocks. Preserve source mass/form and stage without inventing a replacement final concentration.", "sources": [{"locator": "$.components[0].items[8]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"CAPS\",\n          \"volume\": 3.32,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002374\",\n          \"gmo_id\": \"GMO_002374\",\n          \"label\": \"CAPS\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[10]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CAPS\n3.32\ng", "quote_representation": "HTML tr[10] DOM text"}]}, {"decision_id": "q10", "subject": "NaOH", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}], "decision": "unsupported", "stage": "pH adjustment and gas handling", "interpretation": "VARIABLE is a default quantity, not a measured dose. NaOH adjusts pH 11 without a fixed amount; N2 is the autoclaving atmosphere before exchange to N2/H2/O2 (59/35/6). Preserve these source stages and do not infer a liquid concentration, pressure or gas amount.", "sources": [{"locator": "$.comments[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\": 4,\n      \"comment\": \"Mix ingredients except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a N2 atmosphere. Add the filter-sterile vitamin solution, and exchange N2 to a gas mixture of N2/H2/O2 (59/35/6) in the headspace.\"\n    }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[17]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Mix ingredients except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a N\n2\natmosphere. Add the filter-sterile vitamin solution, and exchange N\n2\nto a gas mixture of N\n2\n/H\n2\n/O\n2\n(59/35/6) in the headspace.", "quote_representation": "HTML tr[17] DOM text"}]}, {"decision_id": "q11", "subject": "N2", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}], "decision": "unsupported", "stage": "pH adjustment and gas handling", "interpretation": "VARIABLE is a default quantity, not a measured dose. NaOH adjusts pH 11 without a fixed amount; N2 is the autoclaving atmosphere before exchange to N2/H2/O2 (59/35/6). Preserve these source stages and do not infer a liquid concentration, pressure or gas amount.", "sources": [{"locator": "$.comments[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\": 4,\n      \"comment\": \"Mix ingredients except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a N2 atmosphere. Add the filter-sterile vitamin solution, and exchange N2 to a gas mixture of N2/H2/O2 (59/35/6) in the headspace.\"\n    }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[17]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Mix ingredients except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a N\n2\natmosphere. Add the filter-sterile vitamin solution, and exchange N\n2\nto a gas mixture of N\n2\n/H\n2\n/O\n2\n(59/35/6) in the headspace.", "quote_representation": "HTML tr[17] DOM text"}]}, {"decision_id": "q12", "subject": "Oxygen gas", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}], "decision": "unsupported", "stage": "pH adjustment and gas handling", "interpretation": "VARIABLE is a default quantity, not a measured dose. NaOH adjusts pH 11 without a fixed amount; N2 is the autoclaving atmosphere before exchange to N2/H2/O2 (59/35/6). Preserve these source stages and do not infer a liquid concentration, pressure or gas amount.", "sources": [{"locator": "$.comments[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\": 4,\n      \"comment\": \"Mix ingredients except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a N2 atmosphere. Add the filter-sterile vitamin solution, and exchange N2 to a gas mixture of N2/H2/O2 (59/35/6) in the headspace.\"\n    }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[17]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Mix ingredients except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a N\n2\natmosphere. Add the filter-sterile vitamin solution, and exchange N\n2\nto a gas mixture of N\n2\n/H\n2\n/O\n2\n(59/35/6) in the headspace.", "quote_representation": "HTML tr[17] DOM text"}]}, {"decision_id": "q13", "subject": "Hydrogen gas", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}], "decision": "unsupported", "stage": "pH adjustment and gas handling", "interpretation": "VARIABLE is a default quantity, not a measured dose. NaOH adjusts pH 11 without a fixed amount; N2 is the autoclaving atmosphere before exchange to N2/H2/O2 (59/35/6). Preserve these source stages and do not infer a liquid concentration, pressure or gas amount.", "sources": [{"locator": "$.comments[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\": 4,\n      \"comment\": \"Mix ingredients except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a N2 atmosphere. Add the filter-sterile vitamin solution, and exchange N2 to a gas mixture of N2/H2/O2 (59/35/6) in the headspace.\"\n    }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[17]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Mix ingredients except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a N\n2\natmosphere. Add the filter-sterile vitamin solution, and exchange N\n2\nto a gas mixture of N\n2\n/H\n2\n/O\n2\n(59/35/6) in the headspace.", "quote_representation": "HTML tr[17] DOM text"}]}, {"decision_id": "q14", "subject": "Biotin", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "2", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation": "This amount is specified in mg in the separate vitamin-stock batch, not the same number in g/L of final medium. Restore the exact vitamin stock with its 1 L water input and 10 mL receiving dose; neither stock nor final-medium measured volume is inferred.", "sources": [{"locator": "$.components[1].items[1]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001025\",\n          \"gmo_id\": \"GMO_001025\",\n          \"label\": \"Biotin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[20]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Biotin\n2\nmg", "quote_representation": "HTML tr[20] DOM text"}]}, {"decision_id": "q15", "subject": "p-Aminobenzoic acid", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "1", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation": "This amount is specified in mg in the separate vitamin-stock batch, not the same number in g/L of final medium. Restore the exact vitamin stock with its 1 L water input and 10 mL receiving dose; neither stock nor final-medium measured volume is inferred.", "sources": [{"locator": "$.components[1].items[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"p-Aminobenzoic acid\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001026\",\n          \"gmo_id\": \"GMO_001026\",\n          \"label\": \"4-Aminobenzoic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[27]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "p\n-Aminobenzoic acid\n1\nmg", "quote_representation": "HTML tr[27] DOM text"}]}, {"decision_id": "q16", "subject": "Thiamine-HCl", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation": "This amount is specified in mg in the separate vitamin-stock batch, not the same number in g/L of final medium. Restore the exact vitamin stock with its 1 L water input and 10 mL receiving dose; neither stock nor final-medium measured volume is inferred.", "sources": [{"locator": "$.components[1].items[3]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Thiamine-HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001027\",\n          \"gmo_id\": \"GMO_001027\",\n          \"label\": \"Thiamine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[23]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Thiamine-HCl\n5\nmg", "quote_representation": "HTML tr[23] DOM text"}]}, {"decision_id": "q17", "subject": "Ca-pantothenate", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation": "This amount is specified in mg in the separate vitamin-stock batch, not the same number in g/L of final medium. Restore the exact vitamin stock with its 1 L water input and 10 mL receiving dose; neither stock nor final-medium measured volume is inferred. Calcium pantothenate is not the free (R)-pantothenate anion; do not infer a stereochemical form from the source name.", "sources": [{"locator": "$.components[1].items[4]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Ca-pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001028\",\n          \"gmo_id\": \"GMO_001028\",\n          \"label\": \"Calcium pantothenate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[26]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Ca-pantothenate\n5\nmg", "quote_representation": "HTML tr[26] DOM text"}]}, {"decision_id": "q18", "subject": "Pyridoxine-HCl", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "10", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "10", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation": "This amount is specified in mg in the separate vitamin-stock batch, not the same number in g/L of final medium. Restore the exact vitamin stock with its 1 L water input and 10 mL receiving dose; neither stock nor final-medium measured volume is inferred.", "sources": [{"locator": "$.components[1].items[5]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Pyridoxine-HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001029\",\n          \"gmo_id\": \"GMO_001029\",\n          \"label\": \"Pyridoxine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[22]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Pyridoxine-HCl\n10\nmg", "quote_representation": "HTML tr[22] DOM text"}]}, {"decision_id": "q19", "subject": "Folic acid", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "2", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation": "This amount is specified in mg in the separate vitamin-stock batch, not the same number in g/L of final medium. Restore the exact vitamin stock with its 1 L water input and 10 mL receiving dose; neither stock nor final-medium measured volume is inferred.", "sources": [{"locator": "$.components[1].items[6]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001033\",\n          \"gmo_id\": \"GMO_001033\",\n          \"label\": \"Folic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[21]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Folic acid\n2\nmg", "quote_representation": "HTML tr[21] DOM text"}]}, {"decision_id": "q20", "subject": "Vitamin B12", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation": "This amount is specified in mg in the separate vitamin-stock batch, not the same number in g/L of final medium. Restore the exact vitamin stock with its 1 L water input and 10 mL receiving dose; neither stock nor final-medium measured volume is inferred. Preserve the generic Vitamin B12 source identity and 0.01 mg; do not transfer cyanocobalamin or the much different dose from the incorrectly linked 6241 stock.", "sources": [{"locator": "$.components[1].items[7]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Vitamin B12\",\n          \"volume\": 0.01,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001034\",\n          \"gmo_id\": \"GMO_001034\",\n          \"label\": \"Cobalamin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[28]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Vitamin B\n12\n0.01\nmg", "quote_representation": "HTML tr[28] DOM text"}]}, {"decision_id": "q21", "subject": "Riboflavin", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation": "This amount is specified in mg in the separate vitamin-stock batch, not the same number in g/L of final medium. Restore the exact vitamin stock with its 1 L water input and 10 mL receiving dose; neither stock nor final-medium measured volume is inferred.", "sources": [{"locator": "$.components[1].items[8]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001037\",\n          \"gmo_id\": \"GMO_001037\",\n          \"label\": \"Riboflavin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[24]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Riboflavin\n5\nmg", "quote_representation": "HTML tr[24] DOM text"}]}, {"decision_id": "q22", "subject": "Nicotinic acid", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[21].concentration", "original": {"value": "5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[21].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation": "This amount is specified in mg in the separate vitamin-stock batch, not the same number in g/L of final medium. Restore the exact vitamin stock with its 1 L water input and 10 mL receiving dose; neither stock nor final-medium measured volume is inferred.", "sources": [{"locator": "$.components[1].items[9]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001038\",\n          \"gmo_id\": \"GMO_001038\",\n          \"label\": \"Nicotinic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[25]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Nicotinic acid\n5\nmg", "quote_representation": "HTML tr[25] DOM text"}]}, {"decision_id": "q23", "subject": "NaCl", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[22].concentration", "original": {"value": "1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[22].concentration", "original": {"value": "1", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[1]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\": \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[41]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "NaCl\n1\ng", "quote_representation": "HTML tr[41] DOM text"}]}, {"decision_id": "q24", "subject": "Na2MoO4·2H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[23].concentration", "original": {"value": "0.024", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[23].concentration", "original": {"value": "0.024", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[3]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Na2MoO4·2H2O\",\n          \"volume\": 0.024,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\": \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[40]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Na\n2\nMoO\n4\n·2H\n2\nO\n0.024\ng", "quote_representation": "HTML tr[40] DOM text"}]}, {"decision_id": "q25", "subject": "H3BO3", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[24].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[24].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[4]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\": \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[39]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "H\n3\nBO\n3\n0.01\ng", "quote_representation": "HTML tr[39] DOM text"}]}, {"decision_id": "q26", "subject": "MnCl2·4H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[25].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[25].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[5]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"MnCl2·4H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001020\",\n          \"gmo_id\": \"GMO_001020\",\n          \"label\": \"Manganese chloride tetrahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[34]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "MnCl\n2\n·4H\n2\nO\n0.1\ng", "quote_representation": "HTML tr[34] DOM text"}]}, {"decision_id": "q27", "subject": "CoCl2·6H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[26].concentration", "original": {"value": "0.024", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[26].concentration", "original": {"value": "0.024", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock. The source hexahydrate label is retained, while the asserted anhydrous CHEBI term is a separate supplied-form mismatch.", "sources": [{"locator": "$.components[2].items[6]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"CoCl2·6H2O\",\n          \"volume\": 0.024,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001021\",\n          \"gmo_id\": \"GMO_001021\",\n          \"label\": \"Cobalt dichloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[35]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CoCl\n2\n·6H\n2\nO\n0.024\ng", "quote_representation": "HTML tr[35] DOM text"}]}, {"decision_id": "q28", "subject": "NiCl2·6H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[27].concentration", "original": {"value": "0.12", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[27].concentration", "original": {"value": "0.12", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock. The source hexahydrate label is retained, while the asserted anhydrous CHEBI term is a separate supplied-form mismatch.", "sources": [{"locator": "$.components[2].items[7]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"NiCl2·6H2O\",\n          \"volume\": 0.12,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001022\",\n          \"gmo_id\": \"GMO_001022\",\n          \"label\": \"Nickel chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[42]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "NiCl\n2\n·6H\n2\nO\n0.12\ng", "quote_representation": "HTML tr[42] DOM text"}]}, {"decision_id": "q29", "subject": "CuCl2·2H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[28].concentration", "original": {"value": "0.025", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[28].concentration", "original": {"value": "0.025", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[8]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"CuCl2·2H2O\",\n          \"volume\": 0.025,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001024\",\n          \"gmo_id\": \"GMO_001024\",\n          \"label\": \"Copper(II) chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[38]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CuCl\n2\n·2H\n2\nO\n0.025\ng", "quote_representation": "HTML tr[38] DOM text"}]}, {"decision_id": "q30", "subject": "ZnCl2", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[29].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[29].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[9]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"ZnCl2\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001035\",\n          \"gmo_id\": \"GMO_001035\",\n          \"label\": \"Zinc chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[37]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "ZnCl\n2\n0.1\ng", "quote_representation": "HTML tr[37] DOM text"}]}, {"decision_id": "q31", "subject": "FeCl3·6H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[30].concentration", "original": {"value": "1.35", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[30].concentration", "original": {"value": "1.35", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[10]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"FeCl3·6H2O\",\n          \"volume\": 1.35,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001047\",\n          \"gmo_id\": \"GMO_001047\",\n          \"label\": \"Iron(III) chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[33]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "FeCl\n3\n·6H\n2\nO\n1.35\ng", "quote_representation": "HTML tr[33] DOM text"}]}, {"decision_id": "q32", "subject": "KAl(SO4)2·12H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[31].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[31].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[11]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"KAl(SO4)2·12H2O\",\n          \"volume\": 0.02,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001051\",\n          \"gmo_id\": \"GMO_001051\",\n          \"label\": \"Aluminum potassium sulfate dodecahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[45]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "KAl(SO\n4\n)\n2\n·12H\n2\nO\n0.02\ng", "quote_representation": "HTML tr[45] DOM text"}]}, {"decision_id": "q33", "subject": "Nitrilotriacetic acid (NTA)", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[32].concentration", "original": {"value": "12.8", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[32].concentration", "original": {"value": "12.8", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[12]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Nitrilotriacetic acid (NTA)\",\n          \"volume\": 12.8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\",\n          \"gmo_id\": \"GMO_001053\",\n          \"label\": \"Nitrilotriacetic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[32]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Nitrilotriacetic acid (NTA)\n12.8\ng", "quote_representation": "HTML tr[32] DOM text"}]}, {"decision_id": "q34", "subject": "Na2WO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[33].concentration", "original": {"value": "0.004", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[33].concentration", "original": {"value": "0.004", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[13]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Na2WO4\",\n          \"volume\": 0.004,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001086\",\n          \"gmo_id\": \"GMO_001086\",\n          \"label\": \"Sodium tungstate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[44]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Na\n2\nWO\n4\n0.004\ng", "quote_representation": "HTML tr[44] DOM text"}]}, {"decision_id": "q35", "subject": "Na2SeO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "ingredients[34].concentration", "original": {"value": "0.004", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "ingredients[34].concentration", "original": {"value": "0.004", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation": "The source amount is an absolute mass inside the separate NTA-based trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock stage and the independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[14]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Na2SeO4\",\n          \"volume\": 0.004,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001602\",\n          \"gmo_id\": \"GMO_001602\",\n          \"label\": \"Sodium selenate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[43]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Na\n2\nSeO\n4\n0.004\ng", "quote_representation": "HTML tr[43] DOM text"}]}, {"decision_id": "q36", "subject": "Vitamin solution*", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "solutions[0].concentration", "original": {"value": "10", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "solutions[0].concentration", "original": {"value": "10", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "stock addition to receiving batch", "interpretation": "The source specifies 10 mL (0.01 L) of its own embedded stock, not 10 g/L. The local provider link resolves to a different recipe; generic stock-name agreement is insufficient.", "sources": [{"locator": "$.components[0].items[9]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Vitamin solution*\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M2093\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[12]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Vitamin solution*\n10\nml", "quote_representation": "HTML tr[12] DOM text"}]}, {"decision_id": "q37", "subject": "Trace element solution**", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path": "solutions[1].concentration", "original": {"value": "10", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml", "field_path": "solutions[1].concentration", "original": {"value": "10", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "stock addition to receiving batch", "interpretation": "The source specifies 10 mL (0.01 L) of its own embedded stock, not 10 g/L. The local provider link resolves to a different recipe; generic stock-name agreement is insufficient.", "sources": [{"locator": "$.components[0].items[10]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Trace element solution**\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M2093\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[13]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Trace element solution**\n10\nml", "quote_representation": "HTML tr[13] DOM text"}]}, {"decision_id": "q38", "subject": "Separate stock water input", "local_fields": [], "decision": "add", "stage": "vitamin stock", "interpretation": "Retain this stock-specific 1 L water input separately from receiving-medium water. It is not a measured final stock volume and must not be added wholesale to the medium.", "sources": [{"locator": "$.components[1].items[0]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[29]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Distilled water\n1\nL", "quote_representation": "HTML tr[29] DOM text"}]}, {"decision_id": "q39", "subject": "Separate stock water input", "local_fields": [], "decision": "add", "stage": "trace stock", "interpretation": "Retain this stock-specific 1 L water input separately from receiving-medium water. It is not a measured final stock volume and must not be added wholesale to the medium.", "sources": [{"locator": "$.components[2].items[0]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[46]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Distilled water\n1\nL", "quote_representation": "HTML tr[46] DOM text"}]}, {"decision_id": "q40", "subject": "Trace-stock calcium amount", "local_fields": [], "decision": "add", "stage": "trace stock only", "interpretation": "Retain 0.1 g CaCl2·2H2O inside the trace stock, separately from receiving-batch 0.29 g. This is not an additional 0.1 g directly added to the receiving medium.", "sources": [{"locator": "$.components[2].items[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\": \"CaCl2·2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\": \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[36]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CaCl\n2\n·2H\n2\nO\n0.1\ng", "quote_representation": "HTML tr[36] DOM text"}]}, {"decision_id": "q41", "subject": "Medium pH and sterilization sequence", "local_fields": [], "decision": "add", "stage": "receiving medium", "interpretation": "Restore pH 11 adjusted with NaOH, autoclaving under N2 except vitamins, then filter-sterile vitamin addition. No autoclave temperature/time or filter pore size is supplied by this primary; none is invented.", "sources": [{"locator": "$.comments[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\": 4,\n      \"comment\": \"Mix ingredients except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a N2 atmosphere. Add the filter-sterile vitamin solution, and exchange N2 to a gas mixture of N2/H2/O2 (59/35/6) in the headspace.\"\n    }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[17]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Mix ingredients except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a N\n2\natmosphere. Add the filter-sterile vitamin solution, and exchange N\n2\nto a gas mixture of N\n2\n/H\n2\n/O\n2\n(59/35/6) in the headspace.", "quote_representation": "HTML tr[17] DOM text"}]}, {"decision_id": "q42", "subject": "Gas replacement ratio", "local_fields": [], "decision": "add", "stage": "post-sterilization headspace", "interpretation": "Restore N2/H2/O2 (59/35/6) as a source gas-mixture ratio. Do not infer pressure, gas volume or final liquid concentration.", "sources": [{"locator": "$.comments[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\": 4,\n      \"comment\": \"Mix ingredients except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a N2 atmosphere. Add the filter-sterile vitamin solution, and exchange N2 to a gas mixture of N2/H2/O2 (59/35/6) in the headspace.\"\n    }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[17]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Mix ingredients except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a N\n2\natmosphere. Add the filter-sterile vitamin solution, and exchange N\n2\nto a gas mixture of N\n2\n/H\n2\n/O\n2\n(59/35/6) in the headspace.", "quote_representation": "HTML tr[17] DOM text"}]}, {"decision_id": "q43", "subject": "Trace-stock pH sequence", "local_fields": [], "decision": "add", "stage": "NTA trace stock", "interpretation": "Dissolve NTA, adjust to pH 6.5 with NaOH, add minerals, then final stock pH 7.0. These stock controls are distinct from receiving-medium pH 11; NaOH strength/dose is unspecified.", "sources": [{"locator": "$.comments[6]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093", "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31", "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\": 10,\n      \"comment\": \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add minerals. Final pH 7.0.\"\n    }", "quote_representation": "raw JSON object"}, {"locator": "HTML tr[48]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add minerals. Final pH 7.0.", "quote_representation": "HTML tr[48] DOM text"}]}, {"decision_id": "q44", "subject": "stock6241 Cyanocobalamine", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml", "field_path": "composition[0].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "verified", "stage": "separate linked standalone stock; no receiving transfer", "interpretation": "Existing attached claim and original digest authenticate this provider stock g_l=0.1. Retain its amount and stock-only scope; it does not support the receiving NBRC1404 recipe. No provider mmol_l value is adopted as independently form-correct.", "sources": [{"locator": "$.data.recipe[0]", "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241", "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Cyanocobalamine\",\n                \"compound_id\": 847,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.073779,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q45", "subject": "stock6241 Thiamine HCl", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml", "field_path": "composition[1].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "verified", "stage": "separate linked standalone stock; no receiving transfer", "interpretation": "Existing attached claim and original digest authenticate this provider stock g_l=0.1. Retain its amount and stock-only scope; it does not support the receiving NBRC1404 recipe. No provider mmol_l value is adopted as independently form-correct.", "sources": [{"locator": "$.data.recipe[1]", "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241", "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Thiamine HCl\",\n                \"compound_id\": 1207,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.296472,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q46", "subject": "stock6241 Biotin", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml", "field_path": "composition[2].concentration", "original": {"value": "2000.0", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "separate linked standalone stock; no receiving transfer", "interpretation": "The provider specifies 200 µg biotin and explicitly makes up to 100 mL. Therefore 200 µg × 10^-6 g/µg ÷ 0.1 L = 0.002 g/L in this standalone stock, not 2000 g/L. This supported stock correction is not transferable to NBRC1404 vitamin amounts.", "sources": [{"locator": "$.data.recipe[2]", "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241", "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Biotin\",\n                \"compound_id\": 46,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 200,\n                \"unit\": \"\\u03bcg\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]", "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241", "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\": null,\n                \"step\": \"Make up to 100 ml with distilled water.\"\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q47", "subject": "stock6241 Distilled water", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml", "field_path": "composition[3].concentration", "original": {"value": "1000.0", "unit": "PERCENT_V_V"}}], "decision": "conflict", "stage": "separate linked standalone stock; no receiving transfer", "interpretation": "The explicit make-up instruction is 100 mL final stock volume, not 1000% v/v water. Preserve make-up water separately; do not represent an impossible solvent percentage.", "sources": [{"locator": "$.data.recipe[3]", "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241", "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]", "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241", "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\": null,\n                \"step\": \"Make up to 100 ml with distilled water.\"\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q48", "subject": "stock6241 placeholder ingredient", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}], "decision": "unsupported", "stage": "structural placeholder", "interpretation": "See source for composition is not an ingredient or quantified dose. The complete structured composition is present; remove the placeholder and reassess its stale incomplete_composition flag only after the actual remaining defects are resolved.", "sources": [{"locator": "$.data", "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241", "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n        \"id\": 6241,\n        \"name\": \"Vitamin solution\",\n        \"volume\": 100,\n        \"recipe\": [\n            {\n                \"recipe_order\": 2,\n                \"compound\": \"Cyanocobalamine\",\n                \"compound_id\": 847,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.073779,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\": \"Thiamine HCl\",\n                \"compound_id\": 1207,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.296472,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\": \"Biotin\",\n                \"compound_id\": 46,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 200,\n                \"unit\": \"\\u03bcg\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }\n        ],\n        \"steps\": [\n            {\n                \"recipe_order\": null,\n                \"step\": \"Make up to 100 ml with distilled water.\"\n            }\n        ],\n        \"equipment\": []\n    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q49", "subject": "stock6241 retained preparation", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml", "field_path": "preparation_notes", "original": "Make up to 100 ml with distilled water.\n\nOriginal volume: 100 mL"}], "decision": "evidence_only", "stage": "separate standalone stock preparation", "interpretation": "Retain the source-specific make-up or ordered-addition instruction. It does not establish equivalence to the NBRC1404 stock.", "sources": [{"locator": "$.data.steps[0]", "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241", "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\": null,\n                \"step\": \"Make up to 100 ml with distilled water.\"\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q50", "subject": "stock6187 Na2-EDTA", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path": "composition[0].concentration", "original": {"value": "0.75", "unit": "G_PER_L"}}], "decision": "verified", "stage": "separate linked standalone stock; no receiving transfer", "interpretation": "Existing attached claim and original digest authenticate this provider stock g_l=0.75. Retain its amount and stock-only scope; it does not support the receiving NBRC1404 recipe. No provider mmol_l value is adopted as independently form-correct.", "sources": [{"locator": "$.data.recipe[0]", "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Na2-EDTA\",\n                \"compound_id\": 34,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.75,\n                \"unit\": \"g\",\n                \"g_l\": 0.75,\n                \"mmol_l\": 2.23078,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q51", "subject": "stock6187 Distilled water", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path": "composition[1].concentration", "original": {"value": "1000", "unit": "PERCENT_V_V"}}], "decision": "conflict", "stage": "separate linked standalone stock; no receiving transfer", "interpretation": "The provider adds 1000 mL water before minerals; this absolute water input is not 1000% v/v and does not establish measured final volume.", "sources": [{"locator": "$.data.recipe[1]", "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]", "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\": 3,\n                \"step\": \"Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals in exactly the \\r\\nfollowing sequence:\"\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q52", "subject": "stock6187 FeCl3 x 6 H2O", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path": "composition[2].concentration", "original": {"value": "0.097", "unit": "G_PER_L"}}], "decision": "verified", "stage": "separate linked standalone stock; no receiving transfer", "interpretation": "Existing attached claim and original digest authenticate this provider stock g_l=0.097. Retain its amount and stock-only scope; it does not support the receiving NBRC1404 recipe. No provider mmol_l value is adopted as independently form-correct.", "sources": [{"locator": "$.data.recipe[2]", "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\": 4,\n                \"compound\": \"FeCl3 x 6 H2O\",\n                \"compound_id\": 82,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 97,\n                \"unit\": \"mg\",\n                \"g_l\": 0.097,\n                \"mmol_l\": 0.358866,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q53", "subject": "stock6187 MnCl2 x 4 H2O", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path": "composition[3].concentration", "original": {"value": "0.041", "unit": "G_PER_L"}}], "decision": "verified", "stage": "separate linked standalone stock; no receiving transfer", "interpretation": "Existing attached claim and original digest authenticate this provider stock g_l=0.041. Retain its amount and stock-only scope; it does not support the receiving NBRC1404 recipe. No provider mmol_l value is adopted as independently form-correct.", "sources": [{"locator": "$.data.recipe[3]", "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\": 5,\n                \"compound\": \"MnCl2 x 4 H2O\",\n                \"compound_id\": 36,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 41,\n                \"unit\": \"mg\",\n                \"g_l\": 0.041,\n                \"mmol_l\": 0.20717,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q54", "subject": "stock6187 ZnCl2 x 6 H2O", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path": "composition[4].concentration", "original": {"value": "0.005", "unit": "G_PER_L"}}], "decision": "verified", "stage": "separate linked standalone stock; no receiving transfer", "interpretation": "Existing attached claim and original digest authenticate this provider stock g_l=0.005. Retain its amount and stock-only scope; it does not support the receiving NBRC1404 recipe. No provider mmol_l value is adopted as independently form-correct.", "sources": [{"locator": "$.data.recipe[4]", "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\": 6,\n                \"compound\": \"ZnCl2 x 6 H2O\",\n                \"compound_id\": 2351,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0204583,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q55", "subject": "stock6187 CoCl2 x 6 H2O", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path": "composition[5].concentration", "original": {"value": "0.002", "unit": "G_PER_L"}}], "decision": "verified", "stage": "separate linked standalone stock; no receiving transfer", "interpretation": "Existing attached claim and original digest authenticate this provider stock g_l=0.002. Retain its amount and stock-only scope; it does not support the receiving NBRC1404 recipe. No provider mmol_l value is adopted as independently form-correct.", "sources": [{"locator": "$.data.recipe[5]", "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\": 7,\n                \"compound\": \"CoCl2 x 6 H2O\",\n                \"compound_id\": 38,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"mg\",\n                \"g_l\": 0.002,\n                \"mmol_l\": 0.0154037,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q56", "subject": "stock6187 Na2MoO4 x 2 H2O", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path": "composition[6].concentration", "original": {"value": "0.004", "unit": "G_PER_L"}}], "decision": "verified", "stage": "separate linked standalone stock; no receiving transfer", "interpretation": "Existing attached claim and original digest authenticate this provider stock g_l=0.004. Retain its amount and stock-only scope; it does not support the receiving NBRC1404 recipe. No provider mmol_l value is adopted as independently form-correct.", "sources": [{"locator": "$.data.recipe[6]", "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Na2MoO4 x 2 H2O\",\n                \"compound_id\": 9,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\": \"mg\",\n                \"g_l\": 0.004,\n                \"mmol_l\": 0.0165323,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q57", "subject": "stock6187 placeholder ingredient", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}], "decision": "unsupported", "stage": "structural placeholder", "interpretation": "See source for composition is not an ingredient or quantified dose. The complete structured composition is present; remove the placeholder and reassess its stale incomplete_composition flag only after the actual remaining defects are resolved.", "sources": [{"locator": "$.data", "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n        \"id\": 6187,\n        \"name\": \"Trace element solution\",\n        \"volume\": 1000,\n        \"recipe\": [\n            {\n                \"recipe_order\": 1,\n                \"compound\": \"Na2-EDTA\",\n                \"compound_id\": 34,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.75,\n                \"unit\": \"g\",\n                \"g_l\": 0.75,\n                \"mmol_l\": 2.23078,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\": \"FeCl3 x 6 H2O\",\n                \"compound_id\": 82,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 97,\n                \"unit\": \"mg\",\n                \"g_l\": 0.097,\n                \"mmol_l\": 0.358866,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\": \"MnCl2 x 4 H2O\",\n                \"compound_id\": 36,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 41,\n                \"unit\": \"mg\",\n                \"g_l\": 0.041,\n                \"mmol_l\": 0.20717,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\": \"ZnCl2 x 6 H2O\",\n                \"compound_id\": 2351,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0204583,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\": \"CoCl2 x 6 H2O\",\n                \"compound_id\": 38,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"mg\",\n                \"g_l\": 0.002,\n                \"mmol_l\": 0.0154037,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\": \"Na2MoO4 x 2 H2O\",\n                \"compound_id\": 9,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\": \"mg\",\n                \"g_l\": 0.004,\n                \"mmol_l\": 0.0165323,\n                \"optional\": 0\n            }\n        ],\n        \"steps\": [\n            {\n                \"recipe_order\": 3,\n                \"step\": \"Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals in exactly the \\r\\nfollowing sequence:\"\n            }\n        ],\n        \"equipment\": []\n    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q58", "subject": "stock6187 retained preparation", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path": "preparation_notes", "original": "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals in exactly the \r\nfollowing sequence:"}], "decision": "evidence_only", "stage": "separate standalone stock preparation", "interpretation": "Retain the source-specific make-up or ordered-addition instruction. It does not establish equivalence to the NBRC1404 stock.", "sources": [{"locator": "$.data.steps[0]", "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\": 3,\n                \"step\": \"Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals in exactly the \\r\\nfollowing sequence:\"\n            }", "quote_representation": "raw JSON object"}]}], "local_field_census_reference": "REVIEW_WORK/batch069/record06/grounding-inventory.json", "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization, stock composition, working dose and preparation controls are separate. No source edits or automatic curation performed."}
+
+### Primary, secondary and legacy linkage census
+
+grounding: concern. Targets: CultureMech:008684.
+
+data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml: primary 34/35, secondary 29/35; data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml: primary 34/35, secondary 29/35. These are ingredient-instance linkage fractions, not accuracy scores. Solution terms are audited separately. Every actually asserted CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows. 0 numeric legacy MediaIngredientMech mentions occur across the complete selected documents, with exact locators in the inventory; NNNNNN is a historical placeholder, not an ID. Complex commercial/product components are not forced to pure-compound IDs.
+
+### Scope and source limits
+
+scope: supported. Targets: CultureMech:008684.
+
+Complete selected target and exact maintained owners reviewed. Dependencies transfer only their explicitly named stock subsection; unrelated parent media and source prescriptions are not growth evidence.
+
+### Native structural checks
+
+schema: supported. Targets: CultureMech:008684.
+
+All four canonical commands passed once; strict schema TSV contains only its header and reference validation checked zero references on the generated target. This does not certify quantities or chemical forms.
+
+## Findings
+
+### f1: Separate batch masses, water and stock doses are represented as final concentrations
+
+major / open / confirmed; issue key: culturemech-008684-flattened-stages-and-unit-bases.
+
+The selected layers combine receiving calcium 0.29 g with trace-stock calcium 0.1 g, flatten mg vitamin doses and g trace-stock masses into final g/L, and encode two 10 mL doses as 10 g/L. Main same-digit mass rates lack a verified final volume. The owner water collapse from 3 to 1 is credited, but 1 g/L remains the wrong unit.
+
+### f2: Both generic stock names resolve to different formulas
+
+major / open / confirmed; issue key: culturemech-008684-wrong-generic-stock-links.
+
+MediaDive 6241 contains cyanocobalamin, thiamine and biotin in 100 mL; NBRC1404 names nine vitamins with 1 L water. MediaDive 6187 has six non-water components including EDTA; NBRC1404 has fourteen non-water components including NTA. The linked standalone records are genuine but not equivalent to these source stocks.
+
+### f3: Source pH, gas exchange and stock handling are missing
+
+major / open / confirmed; issue key: culturemech-008684-missing-ph-gas-and-stock-preparation.
+
+The selected layers omit receiving pH 11, N2 autoclaving, later filter-sterile vitamins, headspace 59/35/6 and the separate trace-stock pH 6.5→7.0 sequence. VARIABLE gas/reagent rows do not preserve those stages.
+
+### f4: Calcium pantothenate and two hydrates are mapped to different forms
+
+major / open / confirmed; issue key: culturemech-008684-supplied-forms.
+
+The selected calcium-pantothenate rows assert CHEBI:29032 free (R)-pantothenate; CoCl2·6H2O asserts anhydrous 35696 and NiCl2·6H2O asserts anhydrous 34887. Current OLS confirms these distinctions. The generic vitamin B12 mapping is retained without forcing cyanocobalamin from the unrelated stock.
+
+### f5: Linked standalone stocks retain separate biotin, water and placeholder defects
+
+major / open / confirmed; issue key: culturemech-008684-linked-stock-residual-defects.
+
+Within 6241, 200 µg biotin made up to 100 mL supports 0.002 g/L, not 2000 g/L; both stocks encode water as 1000% v/v. Placeholder ingredient rows and incomplete_composition flags persist despite structured composition. The 6187 zinc hexahydrate label is paired with anhydrous CHEBI:49976, a separate form qualification. These findings concern the linked records only, not replacements for NBRC1404.
+
+### f6: The generated target predates the maintained water repair
+
+minor / open / confirmed; issue key: culturemech-008684-generated-water-staleness.
+
+The target retains 3 g/L water while the owner has the September identical-duplicate collapse to 1 g/L. This narrow improvement does not fix its wrong unit or stage. Current cleanup avoids summing conflicting values, and the conservative merger preserves scientific content rather than validating source equivalence.
+
+### f7: Composition labels retain an unsupported complex-medium default
+
+minor / open / confirmed; issue key: culturemech-008684-defined-composition-classification.
+
+Both selected layers assert COMPLEX and UNDEFINED despite a primary recipe made of named salts, vitamins and acetate. LIQUID remains supported. Reassess the composition axis against the source rather than treating unresolved dose or chemical-form details as an undefined extract.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Reconstruct source-specific receiving and stock stages; retain absolute batch masses and volumes with claim-scoped evidence. Preserve correctly named source constituents and current owner corrections. Do not derive final concentrations from listed water.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action2
+
+Replace the receiving links with exact source stock definitions or explicit scoped inline compositions. Preserve the standalone recipes and their valid evidence; never overwrite them to force name-based equivalence.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action3
+
+Add only the exact source instructions with root-level evidence scoped to the changed fields. Leave unspecified autoclave parameters, gas pressure, filter pore size, reagent strength and doses unknown.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action4
+
+Resolve the exact supplied calcium salt and hydrate forms from authoritative identifiers; retain uncertain stereochemistry explicitly. Preserve source masses and do not substitute anhydrous molar arithmetic.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action5
+
+Repair each standalone stock only against its own exact provider source: preserve all eight authenticated rate claims, correct biotin and water representation, reconcile zinc supplied form and remove placeholders/flags only when warranted. Keep these operations separate from receiving-link repair.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action6
+
+Repair the maintained source-aware structure first, then regenerate and inspect exact output freshness. Preserve all original events, including the narrow prior repair, and append verified context with the actual current curation date.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action7
+
+Reassess medium_type and composition_type from the exact primary ingredients and current enum definitions, preserving LIQUID. Record the distinction between a chemically defined ingredient list and unresolved representation of its quantities or forms.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local0 | data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local1 | data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| validate-schema | REVIEW_WORK/batch069/record06/validate-schema-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-strict | REVIEW_WORK/batch069/record06/validate-strict-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Strict TSV is header-only. |
+| validate-terms | REVIEW_WORK/batch069/record06/validate-terms-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-references | REVIEW_WORK/batch069/record06/validate-references-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Zero references checked, not scientific source verification. |
+| nbrc1404 | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current primary captured text and available rendered PDF pages read: exact main recipe, separate stock tables, preparation and any strain-specific prescriptions. A source formulation is distinct from experimental growth evidence. |
+| togo2093 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Current TOGO source identity, complete component paragraphs, units, stock references and comments read; exact primary collection source checked independently. Batch inputs and bare percentages are not silently normalized. |
+| nbrc111850 | https://www.nite.go.jp/nbrc/dbrp/dataview?dataId=STNB0000000111850; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Official collection identity and medium association read; environmental isolation supports scope screening. Collection guidance is not a new experimental growth measurement. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:15377 = water; definition ['An oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms']; formula ['H2O']; mass ['18.015']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:15940 = nicotinic acid; definition ['A pyridinemonocarboxylic acid that is pyridine in which the hydrogen at position 3 is replaced by a carboxy group.']; formula ['C6H5NO2']; mass ['123.111']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:15956 = biotin; definition ['An organic heterobicyclic compound that consists of 2-oxohexahydro-1&lt;em&gt;H&lt;/em&gt;-thieno[3,4-&lt;em&gt;d&lt;/em&gt;]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring. The parent of the class of biotins.']; formula ['C10H16N2O3S']; mass ['244.316']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:17015 = riboflavin; definition ['&lt;small&gt;D&lt;/small&gt;-Ribitol in which the hydroxy group at position 5 is substituted by a 7,8-dimethyl-2,4-dioxo-3,4-dihydrobenzo[&lt;em&gt;g&lt;/em&gt;]pteridin-10(2&lt;em&gt;H&lt;/em&gt;)-yl moiety. It is a nutritional factor found in milk, eggs, malted barley, liver, kidney, heart, and leafy vegetables, but the richest natural source is yeast. The free form occurs only in the retina of the eye, in whey, and in urine; its principal forms in tissues and cells are as flavin mononucleotide and flavin-adenine dinucleotide.']; formula ['C17H20N4O6']; mass ['376.369']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi17439 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17439; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:17439 = cyanocob(III)alamin; definition ['A complex cob(III)alamin in which cobalt is positioned in the centre of a planar corrin tetrapyrrole ring and bound axially to a 5,6-dimethylbenzimidazole moiety and a cyano group. It is one of several forms of the vitamin known as vitamin B12.']; formula ['C63H88CoN14O14P']; mass ['1355.388']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:176843 = vitamin B12; definition ['Any member of a group of cobalamin vitamers that exhibit biological activity against vitamin B&lt;small&gt;&lt;sub&gt;12&lt;/sub&gt;&lt;/small&gt; deficiency. Vitamin B&lt;small&gt;&lt;sub&gt;12&lt;/sub&gt;&lt;/small&gt; deficiency is associated with low red blood cell count and anemia. The vitamers are found in foods such as cereals, meat, fish, and poultry. The vitamers include adenosylcobalamin, hydroxocobalamin, cyanocobalamin, aquacobalamin, nitritocobalamin and methylcobabalamin (also includes their ionized, salt and phosphate derivatives).']; formula None; mass None; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:17997 = dinitrogen; definition ['An elemental molecule consisting of two trivalently-bonded nitrogen atoms.']; formula ['N2']; mass ['28.014']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi18276 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18276; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:18276 = dihydrogen; definition ['An elemental molecule consisting of two hydrogens joined by a single bond.']; formula ['H2']; mass ['2.016']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi191088 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_191088; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:191088 = Cyclohexylaminopropanesulfonic acid; definition []; formula ['C9H19NO3S']; mass ['221.322']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:27470 = folic acid; definition ['An &lt;em&gt;N&lt;/em&gt;-acyl-amino acid that is a form of the water-soluble vitamin B&lt;small&gt;&lt;sub&gt;9&lt;/sub&gt;&lt;/small&gt;. Its biologically active forms (tetrahydrofolate and others) are essential for nucleotide biosynthesis and homocysteine remethylation.']; formula ['C19H19N7O6']; mass ['441.404']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi29032 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29032; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:29032 = (R)-pantothenate; definition ['A pantothenate that is the conjugate base of (&lt;i&gt;R&lt;/i&gt;)-pantothenic acid, obtained by deprotonation of the carboxy group.']; formula ['C9H16NO5']; mass ['218.229']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:30753 = 4-aminobenzoic acid; definition ['An aminobenzoic acid in which the amino group is &lt;em&gt;para&lt;/em&gt; to the carboxy group.']; formula ['C7H7NO2']; mass ['137.138']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:30961 = pyridoxine hydrochloride; definition ['The hydrochloride salt of pyridoxine.']; formula ['C8H11NO3.HCl']; mass ['205.641']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:31206 = ammonium chloride; definition ['An inorganic chloride having ammonium as the counterion.']; formula ['Cl.H4N']; mass ['53.492']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:32145 = sodium hydroxide; definition []; formula ['HO.Na']; mass ['39.997']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:32149 = sodium sulfate; definition []; formula ['2Na.O4S']; mass ['142.043']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi32954 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:32954 = sodium acetate; definition []; formula ['C2H3O2.Na']; mass ['82.034']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi3311 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3311; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:3311 = calcium carbonate; definition ['A calcium salt with formula CCaO&lt;small&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/small&gt;.']; formula ['CO3.Ca']; mass ['100.086']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:33118 = boric acid; definition []; formula ['H3BO3']; mass ['61.833']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:34887 = nickel dichloride; definition ['A compound of nickel and chloride in which the ratio of nickel (in the +2 oxidation state) to chloride is 1:2.']; formula ['Cl2Ni']; mass ['129.599']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi35696 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:35696 = cobalt dichloride; definition ['A cobalt salt in which the cobalt metal is in the +2 oxidation state and the counter-anion is chloride. It is used as an indicator for water in desiccants.']; formula ['2Cl.Co']; mass ['129.839']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:44557 = nitrilotriacetic acid; definition []; formula ['C6H9NO6']; mass ['191.139']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:49105 = thiamine hydrochloride; definition ['A hydrochloride obtained by combining thiamine chloride with one molar equivalent of hydrochloric acid.']; formula ['C12H17N4OS.Cl.HCl']; mass ['337.276']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:49976 = zinc dichloride; definition ['A compound of zinc and chloride ions in the ratio 1:2. It exists in four crystalline forms, in each of which the Zn&lt;small&gt;&lt;sup&gt;2+&lt;/small&gt;&lt;/sup&gt; ions are trigonal planar coordinated to four chloride ions.']; formula ['2Cl.Zn']; mass ['136.296']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:53503 = cobalt chloride hexahydrate; definition ['A hydrate of cobalt chloride containing cobalt (in +2 oxidation state), chloride and water moieties in the ratio 1:2:6.']; formula ['2Cl.Co.6H2O']; mass ['237.929']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi63940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63940; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:63940 = sodium tungstate; definition ['An inorganic sodium salt having tungstate as the counterion. Combines with hydrogen peroxide for the oxidation of secondary amines to nitrones.']; formula ['2Na.O4W']; mass ['293.816']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi64734 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:64734 = EDTA disodium salt (anhydrous); definition ['An organic sodium salt that is the anhydrous form of the disodium salt of ethylenediaminetetraacetic acid (EDTA).']; formula ['C10H14N2O8.2Na']; mass ['336.208']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:75213 = sodium molybdate dihydrate; definition ['A hydrate that is the dihydrate form of sodium molybdate.']; formula ['2H2O.MoO4.2Na']; mass ['241.946']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi77775 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_77775; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:77775 = sodium selenate; definition ['An inorganic sodium salt having selenate as the counterion.']; formula ['2Na.O4Se']; mass ['188.936']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O']; mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86254 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86254 = iron trichloride hexahydrate; definition ['A hydrate that is the hexahydrate form of iron trichloride.']; formula ['Cl3Fe.6H2O']; mass ['270.294']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86318 = copper(II) chloride dihydrate; definition ['A hydrate that is the dihydrate form of copper(II) chloride. It occurs naturally as the mineral eriochalcite.']; formula ['Cl2Cu.2H2O']; mass ['170.482']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86345 = magnesium dichloride hexahydrate; definition ['A hydrate that is the hexahydrate form of magnesium dichloride.']; formula ['2Cl.6H2O.Mg']; mass ['203.301']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86368 = manganese(II) chloride tetrahydrate; definition ['A hydrate that is the tetrahydrate form of manganese(II) chloride.']; formula ['Cl2Mn.4H2O']; mass ['197.904']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86465 = potassium aluminium sulfate dodecahydrate; definition ['A hydrate resulting from the the formal combination of anhydrous potassium aluminium sulfate with 12 mol eq. of water.']; formula ['Al.12H2O.K.2O4S']; mass ['474.386']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| stock6241 | https://mediadive.dsmz.de/rest/solution/6241; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Exact linked standalone provider recipe and preparation read as a separate stock identity. Its identity and quantities are compared with the receiving primary source; a shared generic stock name does not establish equivalence. |
+| stock6187 | https://mediadive.dsmz.de/rest/solution/6187; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Exact linked standalone provider recipe and preparation read as a separate stock identity. Its identity and quantities are compared with the receiving primary source; a shared generic stock name does not establish equivalence. |
+| grounding | REVIEW_WORK/batch069/record06/grounding-inventory.json; documents; ols_scientific_projection; mim_index | supports | Complete selected-layer term slots and current packaged MIM CSV exact-identifier joins with row locators and metadata commit; includes separately scoped dependency context. No fuzzy mapping or historical-validity inference. |
+| history0 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cedears_standard_medium_2.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history1 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Cedears_Standard_Medium_2.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history-auth | REVIEW_WORK/batch069/record06/historical-authentication.json; reports | supports | Exact report headers, source digest and every quoted API object reconciled; all reports fully read with duplicate cells pooled. Current primary sources independently govern scientific decisions. |
+| writer52 | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current _merge_ingredient_group collapses equal duplicate values without summing them and retains the first conflicting value with a flag. This behavior is distinct from historical summed-amount artifacts and does not authenticate source-specific stock or product structure. |
+| writer53 | scripts/cleanup_recipe_ingredients.py; merge_duplicate_ingredients; merge_ingredient_group | context_only | Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group retains the first concentration, flags differing values and selects the first CHEBI. It cannot establish source stages or justify collapsing independent supplemental and product-contained components. |
+| writer54 | scripts/migrate_solutions_from_ingredients.py; _is_solution; _resolve_solution; _migrate_media_file | context_only | Current _is_solution uses name patterns, _resolve_solution keeps concentrations while creating empty reference stubs or matching a name-indexed solution, and _migrate_media_file appends those solutions and history. It does not reconstruct nested source batches or authenticate copied unit/basis. |
+| writer55 | scripts/repair_merged_duplicates.py; repair_ingredient; repair_record | context_only | Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS duplicate notes. This bounded repair is not a general solution for product decomposition, stock flattening or differing source formulations. |
+| writer56 | src/culturemech/import/togo_importer.py; _extract_primary_components; _solution_from_item; _extract_assembled_solutions; _parse_unit; _extract_preparation_steps; _convert_to_culturemech; _extract_ph | context_only | Current _extract_primary_components, _solution_from_item and _extract_assembled_solutions distinguish primary sections, nested stocks and assembled solutions. _parse_unit maps bare g/mg/ml to per-litre enum labels, while L remains L; those enum choices still require a verified source basis. _extract_preparation_steps retains comments. _convert_to_culturemech sets COMPLEX by default, and _extract_ph reads its supplied object. These present behaviors neither authenticate historical execution nor prove that all source metadata survived the old import. |
+| writer57 | src/culturemech/merge/formulation.py; formulation_content; merge_formulation_evidence | context_only | Current formulation_content retains exact scientific quantities, preparation and other scientific fields; merge_formulation_evidence rejects incompatible projections and unions evidence at matching scopes. A source-equivalence claim is not established by shared ingredient identities. |
+| writer58 | src/culturemech/merge/matcher.py; group_formulations; group_recipes | context_only | Current group_formulations calls group_recipes with fail_on_invalid=True and FormulationFingerprinter. Expected standalone or unfingerprintable records are excluded; malformed or unexpected inputs raise. Valid records are grouped by full scientific content. This guard does not retrieve or authenticate source recipes. |
+| writer59 | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group routes a single maintained owner with merge metadata; multiple owners pass through conservative merge_formulation_evidence. Regenerating from an unrepaired owner retains its defects. Current conservative behavior is credited and does not establish how the old generated record was produced. |
+| dep-stock6241 | data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml; composition; preparation_notes; ingredients; data_quality_flags; evidence; history | supports | Entire linked standalone stock read and assessed against its own exact provider source. It is a different recipe from the receiving NBRC1404 stock and must not be rewritten to match that source. |
+| dep-stock6187 | data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml; composition; preparation_notes; ingredients; data_quality_flags; evidence; history | supports | Entire linked standalone stock read and assessed against its own exact provider source. It is a different recipe from the receiving NBRC1404 stock and must not be rewritten to match that source. |
+| solution-import-writer | scripts/import_mediadive_solutions.py; _convert_unit; _normalize_concentration; _convert_ingredient; _convert_solution | context_only | Current _convert_ingredient prefers provider g_l; otherwise _normalize_concentration scales numeric amounts by declared volume and _convert_unit maps units. The current map still labels mL as PERCENT_V_V and defaults unrecognized units to G_PER_L, so it is not a safe automatic repair for the observed water and microgram cases. _convert_solution preserves preparation text. No historical execution is inferred. |
+| solution-review-writer | scripts/review_solution_concentration_evidence.py; all_claims; rounded_equal; decide | context_only | Current decide verifies provider mass-rate arithmetic, preserves exact matching existing rates, and returns conflicts without automatic replacement. Water with preparation instructions and mass rows lacking g_l remain unsupported for manual review. Existing evidence-only updates therefore do not certify unresolved water/biotin or all chemical forms. |
+| quantity-inventory | REVIEW_WORK/batch069/record06/quantity-inventory.json; decisions | supports | Complete explicit decisions with exact current local values, per-layer locators, source quotes/hash/time, stage and arithmetic limits. |
+
+## Limits And Additional Notes
+
+- The shared 6241/6187 captures retain their original acquisition times and immutable metadata. Their recipes are assessed separately and never substituted into NBRC1404.
+- Listed 1 L water does not establish final medium or stock volume. The sole explicit final-volume instruction used for arithmetic is 6241 make-up to 100 mL. Provider mmol_l values were not adopted as independent chemical-form validation.
+- No new target-organism growth claim follows from the collection page. Source growth conditions remain collection context; no source edits, native save or publication occurred.
+- Read-only scientific review. No source edits, native save, Git mutation or publication. All raw captures, failed access bodies, commands, times and original stdout/stderr remain in the adjacent private evidence directory.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T142112Z-cedears-standard-medium-2-batch069
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of cedears_standard_medium_2
+started_at: '2026-10-28T13:49:19.216049Z'
+finished_at: '2026-10-28T14:21:12.632814Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Cedears2 identity is verified, but its receiving recipe flattens stock stages
+  and links to two non-equivalent standalone stocks. All 74 selected concentrations
+  plus thirteen dependency fields were assessed. Source-specific quantities, supplied
+  forms and missing preparation need curation; the owner water repair and eight authenticated
+  standalone claims are retained.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml
+    sha256: fe9ef07948dbb118125a462573ed25c003fb39f44a4f8feb5859af9fd0606f69
+    role: target
+  - path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    sha256: ef3f6fdeaad352ebcc1a8180a4d9f4de22fee7f3cd655b99734ef958a13dea5b
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml
+    sha256: 955006bc9e48d5032fd4cd252d70fb954591eb54cd393da5bb89b3b763702987
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml
+    sha256: 993f6c076ae708ef824e3637f0b5a8eb9afb742877a80f5c6dc445c376efc43f
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Cedears_Standard_Medium_2.md
+    sha256: 9332640a423098cf3eda540acf2a2aa1f970b3e8010eb5627f96cb6706fb2d31
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cedears_standard_medium_2.md
+    sha256: 7d42a2ec9240d366aaf761aa450fa5a985aab9b77ee4386315d0f115045e8c2f
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/fetch_mediadive_solution_volumes.py
+    sha256: 408cdfa3f5c446e8f9c32ac98d7ea8a3a36553b23c032f3b7551f6a1661fd39a
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch069 selection index 6 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008684
+targets:
+- target_id: CultureMech:008684
+  path: data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml
+  label: cedears_standard_medium_2
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:008684
+  command: just validate-schema data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:008684
+  command: just validate-strict data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml
+    --workers 1 --out REVIEW_WORK/batch069/record06/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:008684
+  command: just validate-terms data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:008684
+  command: just validate-references data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T14:03:51.137863Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: fe9ef07948dbb118125a462573ed25c003fb39f44a4f8feb5859af9fd0606f69
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T14:03:51.138021Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: ef3f6fdeaad352ebcc1a8180a4d9f4de22fee7f3cd655b99734ef958a13dea5b
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch069/record06/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T13:49:20.301240Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 3cd3e1bacae09a2e710a117e9c8bc70de0cb7ddff866aeae7ee0a54b8dfb5e23
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch069/record06/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T13:49:21.284082Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: 5713596be69a8a577b1c5bf2323b060168c6a0802488b83948f8ef55e7c6fd72
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch069/record06/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T13:49:22.361373Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 6024a0038b21e36cd3c2caca90a8535227ad5a648e1d7def85af7f51e7521f5b
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch069/record06/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T13:49:23.172601Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: 02ea77a1fafc9c7b779c1a88d1f1502db3c0bc99bf4a30e43e3f866f81606726
+- evidence_id: nbrc1404
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:49:59.382061Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe
+- evidence_id: togo2093
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:49:59.371427Z'
+  support: supports
+  summary: Current TOGO source identity, complete component paragraphs, units, stock
+    references and comments read; exact primary collection source checked independently.
+    Batch inputs and bare percentages are not silently normalized.
+  snapshot_sha256: 19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31
+- evidence_id: nbrc111850
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/dbrp/dataview?dataId=STNB0000000111850
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:49:59.149246Z'
+  support: supports
+  summary: Official collection identity and medium association read; environmental
+    isolation supports scope screening. Collection guidance is not a new experimental
+    growth measurement.
+  snapshot_sha256: 0a9ba6c925d23bdf3aa71c28f9621f20956ab0dd7190089fab6e231dd8db43dc
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:59.106746Z'
+  support: supports
+  summary: OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition
+    ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula
+    ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:59.018378Z'
+  support: supports
+  summary: OLS current exact CHEBI:15377 = water; definition ['An oxygen hydride consisting
+    of an oxygen atom that is covalently bonded to two hydrogen atoms']; formula ['H2O'];
+    mass ['18.015']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:58.893793Z'
+  support: supports
+  summary: OLS current exact CHEBI:15940 = nicotinic acid; definition ['A pyridinemonocarboxylic
+    acid that is pyridine in which the hydrogen at position 3 is replaced by a carboxy
+    group.']; formula ['C6H5NO2']; mass ['123.111']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:58.705649Z'
+  support: supports
+  summary: OLS current exact CHEBI:15956 = biotin; definition ['An organic heterobicyclic
+    compound that consists of 2-oxohexahydro-1<em>H</em>-thieno[3,4-<em>d</em>]imidazole
+    having a valeric acid substituent attached to the tetrahydrothiophene ring. The
+    parent of the class of biotins.']; formula ['C10H16N2O3S']; mass ['244.316'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:58.644649Z'
+  support: supports
+  summary: OLS current exact CHEBI:17015 = riboflavin; definition ['<small>D</small>-Ribitol
+    in which the hydroxy group at position 5 is substituted by a 7,8-dimethyl-2,4-dioxo-3,4-dihydrobenzo[<em>g</em>]pteridin-10(2<em>H</em>)-yl
+    moiety. It is a nutritional factor found in milk, eggs, malted barley, liver,
+    kidney, heart, and leafy vegetables, but the richest natural source is yeast.
+    The free form occurs only in the retina of the eye, in whey, and in urine; its
+    principal forms in tissues and cells are as flavin mononucleotide and flavin-adenine
+    dinucleotide.']; formula ['C17H20N4O6']; mass ['376.369']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi17439
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17439
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:58.408393Z'
+  support: supports
+  summary: OLS current exact CHEBI:17439 = cyanocob(III)alamin; definition ['A complex
+    cob(III)alamin in which cobalt is positioned in the centre of a planar corrin
+    tetrapyrrole ring and bound axially to a 5,6-dimethylbenzimidazole moiety and
+    a cyano group. It is one of several forms of the vitamin known as vitamin B12.'];
+    formula ['C63H88CoN14O14P']; mass ['1355.388']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: 210a9fbc1db1c75e6053f4e23d098851ad5c63f087c736061f7664d9a393dbdd
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:58.373235Z'
+  support: supports
+  summary: OLS current exact CHEBI:176843 = vitamin B12; definition ['Any member of
+    a group of cobalamin vitamers that exhibit biological activity against vitamin
+    B<small><sub>12</sub></small> deficiency. Vitamin B<small><sub>12</sub></small>
+    deficiency is associated with low red blood cell count and anemia. The vitamers
+    are found in foods such as cereals, meat, fish, and poultry. The vitamers include
+    adenosylcobalamin, hydroxocobalamin, cyanocobalamin, aquacobalamin, nitritocobalamin
+    and methylcobabalamin (also includes their ionized, salt and phosphate derivatives).'];
+    formula None; mass None; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi17997
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:58.368661Z'
+  support: supports
+  summary: OLS current exact CHEBI:17997 = dinitrogen; definition ['An elemental molecule
+    consisting of two trivalently-bonded nitrogen atoms.']; formula ['N2']; mass ['28.014'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi18276
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18276
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:58.220300Z'
+  support: supports
+  summary: OLS current exact CHEBI:18276 = dihydrogen; definition ['An elemental molecule
+    consisting of two hydrogens joined by a single bond.']; formula ['H2']; mass ['2.016'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 47a32d9cfe41e3759385a0e4e002e9fa208fe1511d84e3d0d1f9f1ca9ce6e86d
+- evidence_id: chebi191088
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_191088
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:57.828366Z'
+  support: supports
+  summary: OLS current exact CHEBI:191088 = Cyclohexylaminopropanesulfonic acid; definition
+    []; formula ['C9H19NO3S']; mass ['221.322']; obsolete=False. Literal label is
+    distinct from supplied-form equivalence.
+  snapshot_sha256: 3e59e3e927d67241217afdf479a60747568bfc8c6c39919bbadd091ba9f8589b
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:57.767241Z'
+  support: supports
+  summary: OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic
+    chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass
+    ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:57.719832Z'
+  support: supports
+  summary: OLS current exact CHEBI:27470 = folic acid; definition ['An <em>N</em>-acyl-amino
+    acid that is a form of the water-soluble vitamin B<small><sub>9</sub></small>.
+    Its biologically active forms (tetrahydrofolate and others) are essential for
+    nucleotide biosynthesis and homocysteine remethylation.']; formula ['C19H19N7O6'];
+    mass ['441.404']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi29032
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29032
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:57.692456Z'
+  support: supports
+  summary: OLS current exact CHEBI:29032 = (R)-pantothenate; definition ['A pantothenate
+    that is the conjugate base of (<i>R</i>)-pantothenic acid, obtained by deprotonation
+    of the carboxy group.']; formula ['C9H16NO5']; mass ['218.229']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 09b8e88386839f2c0111bf74dfd64335371f99f9e069def6ef7e28d88d0e0d48
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:57.531574Z'
+  support: supports
+  summary: OLS current exact CHEBI:30753 = 4-aminobenzoic acid; definition ['An aminobenzoic
+    acid in which the amino group is <em>para</em> to the carboxy group.']; formula
+    ['C7H7NO2']; mass ['137.138']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:57.496873Z'
+  support: supports
+  summary: OLS current exact CHEBI:30961 = pyridoxine hydrochloride; definition ['The
+    hydrochloride salt of pyridoxine.']; formula ['C8H11NO3.HCl']; mass ['205.641'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:57.114172Z'
+  support: supports
+  summary: OLS current exact CHEBI:31206 = ammonium chloride; definition ['An inorganic
+    chloride having ammonium as the counterion.']; formula ['Cl.H4N']; mass ['53.492'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:57.092941Z'
+  support: supports
+  summary: OLS current exact CHEBI:32145 = sodium hydroxide; definition []; formula
+    ['HO.Na']; mass ['39.997']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi32149
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:57.092866Z'
+  support: supports
+  summary: OLS current exact CHEBI:32149 = sodium sulfate; definition []; formula
+    ['2Na.O4S']; mass ['142.043']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi32954
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:56.588136Z'
+  support: supports
+  summary: OLS current exact CHEBI:32954 = sodium acetate; definition []; formula
+    ['C2H3O2.Na']; mass ['82.034']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b
+- evidence_id: chebi3311
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3311
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:56.475684Z'
+  support: supports
+  summary: OLS current exact CHEBI:3311 = calcium carbonate; definition ['A calcium
+    salt with formula CCaO<small><sub>3</sub></small>.']; formula ['CO3.Ca']; mass
+    ['100.086']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 5413cec912ec253d62ba7a3f4ce7f0a9312ba8d1cb756713003f77a6e849d4b2
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:56.465654Z'
+  support: supports
+  summary: OLS current exact CHEBI:33118 = boric acid; definition []; formula ['H3BO3'];
+    mass ['61.833']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:56.009016Z'
+  support: supports
+  summary: OLS current exact CHEBI:34887 = nickel dichloride; definition ['A compound
+    of nickel and chloride in which the ratio of nickel (in the +2 oxidation state)
+    to chloride is 1:2.']; formula ['Cl2Ni']; mass ['129.599']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi35696
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:55.951873Z'
+  support: supports
+  summary: OLS current exact CHEBI:35696 = cobalt dichloride; definition ['A cobalt
+    salt in which the cobalt metal is in the +2 oxidation state and the counter-anion
+    is chloride. It is used as an indicator for water in desiccants.']; formula ['2Cl.Co'];
+    mass ['129.839']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: d9d394d79450b1671c699eaa08d3ef5d66d1f14909f1bd9c464b3d457e37a7ca
+- evidence_id: chebi44557
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:55.855946Z'
+  support: supports
+  summary: OLS current exact CHEBI:44557 = nitrilotriacetic acid; definition []; formula
+    ['C6H9NO6']; mass ['191.139']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:55.854894Z'
+  support: supports
+  summary: OLS current exact CHEBI:49105 = thiamine hydrochloride; definition ['A
+    hydrochloride obtained by combining thiamine chloride with one molar equivalent
+    of hydrochloric acid.']; formula ['C12H17N4OS.Cl.HCl']; mass ['337.276']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:55.331705Z'
+  support: supports
+  summary: OLS current exact CHEBI:49976 = zinc dichloride; definition ['A compound
+    of zinc and chloride ions in the ratio 1:2. It exists in four crystalline forms,
+    in each of which the Zn<small><sup>2+</small></sup> ions are trigonal planar coordinated
+    to four chloride ions.']; formula ['2Cl.Zn']; mass ['136.296']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:55.259534Z'
+  support: supports
+  summary: OLS current exact CHEBI:53503 = cobalt chloride hexahydrate; definition
+    ['A hydrate of cobalt chloride containing cobalt (in +2 oxidation state), chloride
+    and water moieties in the ratio 1:2:6.']; formula ['2Cl.Co.6H2O']; mass ['237.929'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi63940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63940
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:55.255342Z'
+  support: supports
+  summary: OLS current exact CHEBI:63940 = sodium tungstate; definition ['An inorganic
+    sodium salt having tungstate as the counterion. Combines with hydrogen peroxide
+    for the oxidation of secondary amines to nitrones.']; formula ['2Na.O4W']; mass
+    ['293.816']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: c40f4b9c14d073989f58af77af0f1ffe969948e21d2bbe05a08c919f776aaf5c
+- evidence_id: chebi64734
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:55.251916Z'
+  support: supports
+  summary: OLS current exact CHEBI:64734 = EDTA disodium salt (anhydrous); definition
+    ['An organic sodium salt that is the anhydrous form of the disodium salt of ethylenediaminetetraacetic
+    acid (EDTA).']; formula ['C10H14N2O8.2Na']; mass ['336.208']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 95b7557b1867dcce37a69714dbad0a6a6a6c11c66dde39c6793a2307a7fb0e1c
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:55.248942Z'
+  support: supports
+  summary: OLS current exact CHEBI:75213 = sodium molybdate dihydrate; definition
+    ['A hydrate that is the dihydrate form of sodium molybdate.']; formula ['2H2O.MoO4.2Na'];
+    mass ['241.946']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi77775
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_77775
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:55.246893Z'
+  support: supports
+  summary: OLS current exact CHEBI:77775 = sodium selenate; definition ['An inorganic
+    sodium salt having selenate as the counterion.']; formula ['2Na.O4Se']; mass ['188.936'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: a1a4ab87bbf08908fef7df53a788a85d9f6eee32350f082895e0563d6344c908
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:54.344715Z'
+  support: supports
+  summary: OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O'];
+    mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86254
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:54.344680Z'
+  support: supports
+  summary: OLS current exact CHEBI:86254 = iron trichloride hexahydrate; definition
+    ['A hydrate that is the hexahydrate form of iron trichloride.']; formula ['Cl3Fe.6H2O'];
+    mass ['270.294']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:54.344635Z'
+  support: supports
+  summary: OLS current exact CHEBI:86318 = copper(II) chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of copper(II) chloride. It occurs naturally
+    as the mineral eriochalcite.']; formula ['Cl2Cu.2H2O']; mass ['170.482']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:54.344575Z'
+  support: supports
+  summary: OLS current exact CHEBI:86345 = magnesium dichloride hexahydrate; definition
+    ['A hydrate that is the hexahydrate form of magnesium dichloride.']; formula ['2Cl.6H2O.Mg'];
+    mass ['203.301']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:54.344492Z'
+  support: supports
+  summary: OLS current exact CHEBI:86368 = manganese(II) chloride tetrahydrate; definition
+    ['A hydrate that is the tetrahydrate form of manganese(II) chloride.']; formula
+    ['Cl2Mn.4H2O']; mass ['197.904']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi86465
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:54.344222Z'
+  support: supports
+  summary: OLS current exact CHEBI:86465 = potassium aluminium sulfate dodecahydrate;
+    definition ['A hydrate resulting from the the formal combination of anhydrous
+    potassium aluminium sulfate with 12 mol eq. of water.']; formula ['Al.12H2O.K.2O4S'];
+    mass ['474.386']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 5e74b8136b972b18b427c70e758e12dfe013a6ca671501cddc936038299f7c2c
+- evidence_id: stock6241
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/6241
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:46:48.741169Z'
+  support: supports
+  summary: Exact linked standalone provider recipe and preparation read as a separate
+    stock identity. Its identity and quantities are compared with the receiving primary
+    source; a shared generic stock name does not establish equivalence.
+  snapshot_sha256: d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1
+- evidence_id: stock6187
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/6187
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:46:48.741220Z'
+  support: supports
+  summary: Exact linked standalone provider recipe and preparation read as a separate
+    stock identity. Its identity and quantities are compared with the receiving primary
+    source; a shared generic stock name does not establish equivalence.
+  snapshot_sha256: d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch069/record06/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T14:03:51.142346Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: a5729c3880dc9fe7090bcbf6c5061b8e59c0580b3190e4bdf2d980ae7c912b95
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cedears_standard_medium_2.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T14:03:51.142703Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 7d42a2ec9240d366aaf761aa450fa5a985aab9b77ee4386315d0f115045e8c2f
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Cedears_Standard_Medium_2.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T14:03:51.142725Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 9332640a423098cf3eda540acf2a2aa1f970b3e8010eb5627f96cb6706fb2d31
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record06/historical-authentication.json
+  locator: reports
+  accessed_at: '2026-10-28T14:03:51.142744Z'
+  support: supports
+  summary: Exact report headers, source digest and every quoted API object reconciled;
+    all reports fully read with duplicate cells pooled. Current primary sources independently
+    govern scientific decisions.
+  snapshot_sha256: b4a9feac1aa21f81572bbaa67c6451e055701c5ba34bb371ef0752a9029aff26
+- evidence_id: writer52
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T14:03:51.142798Z'
+  support: context_only
+  summary: Current _merge_ingredient_group collapses equal duplicate values without
+    summing them and retains the first conflicting value with a flag. This behavior
+    is distinct from historical summed-amount artifacts and does not authenticate
+    source-specific stock or product structure.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer53
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients; merge_ingredient_group
+  accessed_at: '2026-10-28T14:03:51.142820Z'
+  support: context_only
+  summary: Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group
+    retains the first concentration, flags differing values and selects the first
+    CHEBI. It cannot establish source stages or justify collapsing independent supplemental
+    and product-contained components.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer54
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: _is_solution; _resolve_solution; _migrate_media_file
+  accessed_at: '2026-10-28T14:03:51.142848Z'
+  support: context_only
+  summary: Current _is_solution uses name patterns, _resolve_solution keeps concentrations
+    while creating empty reference stubs or matching a name-indexed solution, and
+    _migrate_media_file appends those solutions and history. It does not reconstruct
+    nested source batches or authenticate copied unit/basis.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer55
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: repair_ingredient; repair_record
+  accessed_at: '2026-10-28T14:03:51.142870Z'
+  support: context_only
+  summary: Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS
+    duplicate notes. This bounded repair is not a general solution for product decomposition,
+    stock flattening or differing source formulations.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: writer56
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _extract_primary_components; _solution_from_item; _extract_assembled_solutions;
+    _parse_unit; _extract_preparation_steps; _convert_to_culturemech; _extract_ph
+  accessed_at: '2026-10-28T14:03:51.142908Z'
+  support: context_only
+  summary: Current _extract_primary_components, _solution_from_item and _extract_assembled_solutions
+    distinguish primary sections, nested stocks and assembled solutions. _parse_unit
+    maps bare g/mg/ml to per-litre enum labels, while L remains L; those enum choices
+    still require a verified source basis. _extract_preparation_steps retains comments.
+    _convert_to_culturemech sets COMPLEX by default, and _extract_ph reads its supplied
+    object. These present behaviors neither authenticate historical execution nor
+    prove that all source metadata survived the old import.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer57
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; merge_formulation_evidence
+  accessed_at: '2026-10-28T14:03:51.142929Z'
+  support: context_only
+  summary: Current formulation_content retains exact scientific quantities, preparation
+    and other scientific fields; merge_formulation_evidence rejects incompatible projections
+    and unions evidence at matching scopes. A source-equivalence claim is not established
+    by shared ingredient identities.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer58
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations; group_recipes
+  accessed_at: '2026-10-28T14:03:51.142948Z'
+  support: context_only
+  summary: Current group_formulations calls group_recipes with fail_on_invalid=True
+    and FormulationFingerprinter. Expected standalone or unfingerprintable records
+    are excluded; malformed or unexpected inputs raise. Valid records are grouped
+    by full scientific content. This guard does not retrieve or authenticate source
+    recipes.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer59
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T14:03:51.142968Z'
+  support: context_only
+  summary: Current merge_group routes a single maintained owner with merge metadata;
+    multiple owners pass through conservative merge_formulation_evidence. Regenerating
+    from an unrepaired owner retains its defects. Current conservative behavior is
+    credited and does not establish how the old generated record was produced.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: dep-stock6241
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml
+  locator: composition; preparation_notes; ingredients; data_quality_flags; evidence;
+    history
+  accessed_at: '2026-10-28T14:03:51.166459Z'
+  support: supports
+  summary: Entire linked standalone stock read and assessed against its own exact
+    provider source. It is a different recipe from the receiving NBRC1404 stock and
+    must not be rewritten to match that source.
+  snapshot_sha256: 993f6c076ae708ef824e3637f0b5a8eb9afb742877a80f5c6dc445c376efc43f
+- evidence_id: dep-stock6187
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml
+  locator: composition; preparation_notes; ingredients; data_quality_flags; evidence;
+    history
+  accessed_at: '2026-10-28T14:03:51.171297Z'
+  support: supports
+  summary: Entire linked standalone stock read and assessed against its own exact
+    provider source. It is a different recipe from the receiving NBRC1404 stock and
+    must not be rewritten to match that source.
+  snapshot_sha256: 955006bc9e48d5032fd4cd252d70fb954591eb54cd393da5bb89b3b763702987
+- evidence_id: solution-import-writer
+  kind: record_content
+  reference: scripts/import_mediadive_solutions.py
+  locator: _convert_unit; _normalize_concentration; _convert_ingredient; _convert_solution
+  accessed_at: '2026-10-28T14:03:51.171899Z'
+  support: context_only
+  summary: Current _convert_ingredient prefers provider g_l; otherwise _normalize_concentration
+    scales numeric amounts by declared volume and _convert_unit maps units. The current
+    map still labels mL as PERCENT_V_V and defaults unrecognized units to G_PER_L,
+    so it is not a safe automatic repair for the observed water and microgram cases.
+    _convert_solution preserves preparation text. No historical execution is inferred.
+  snapshot_sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+- evidence_id: solution-review-writer
+  kind: record_content
+  reference: scripts/review_solution_concentration_evidence.py
+  locator: all_claims; rounded_equal; decide
+  accessed_at: '2026-10-28T14:03:51.171929Z'
+  support: context_only
+  summary: Current decide verifies provider mass-rate arithmetic, preserves exact
+    matching existing rates, and returns conflicts without automatic replacement.
+    Water with preparation instructions and mass rows lacking g_l remain unsupported
+    for manual review. Existing evidence-only updates therefore do not certify unresolved
+    water/biotin or all chemical forms.
+  snapshot_sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record06/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T14:20:38.347494Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: fd2b5337af9e8aebd3498f68ec556835a77729c6bedaa8e568c6a98d877ba14d
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: NBRC1404 and exact linked-stock identities
+  outcome: concern
+  summary: TOGO M2093 and NBRC1404 identify Cedears Standard Medium 2. The selected
+    6241 vitamin link has three vitamins and 100 mL final volume, not the source nine-vitamin
+    stock; 6187 is an EDTA-based stock rather than the source NTA-based fourteen-mineral
+    stock. Eight current standalone claims authenticate their own provider bytes;
+    they do not cure these receiving-link mismatches.
+  target_ids:
+  - CultureMech:008684
+  evidence_ids:
+  - nbrc1404
+  - togo2093
+  - stock6241
+  - stock6187
+- assessment_id: a2
+  area: consistency
+  topic: Classification and collection context
+  outcome: concern
+  summary: The selected LIQUID state is supported. Both selected layers currently
+    assert COMPLEX and composition_type UNDEFINED, although the primary lists named
+    salts, vitamins and acetate rather than chemically undefined extracts. These composition
+    labels need source-aware reassessment; the existing quantity and form gaps do
+    not themselves establish an undefined ingredient. NBRC111850 identifies environmental
+    Serpentinimonas maccroryi and lists 1404/1562 as recommended media. This is collection
+    guidance, not a primary growth experiment or permission to transfer Medium 3 composition.
+  target_ids:
+  - CultureMech:008684
+  evidence_ids:
+  - nbrc111850
+  - nbrc1404
+  - local0
+- assessment_id: a3
+  area: provenance
+  topic: Historical assertions and current writers
+  outcome: concern
+  summary: Both full October reports were read and had zero source-checked claims.
+    No legacy numeric MIM identifiers occur in the selected target/owner. All eight
+    standalone attached provider excerpts/digests match current raw bytes; that authenticates
+    claim payloads but not historical access times. Current exact-key absence for
+    pantothenate is a snapshot limitation, not historical invalidity. Dependency naive
+    timestamps and automated low-confidence categorization remain provenance limitations
+    rather than invented dates. Current conservative merging preserves scientific
+    fields and rejects incompatible formulations. Inspected writer behavior is described
+    separately by exact file and function; it does not prove historical execution.
+  target_ids:
+  - CultureMech:008684
+  evidence_ids:
+  - history-auth
+  - writer52
+  - writer53
+  - writer54
+  - writer55
+  - writer56
+  - writer57
+  - writer58
+  - writer59
+- assessment_id: a4
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 74 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:008684
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:008684",
+    "selected_concentration_field_count": 74, "selected_concentration_fields_covered":
+    74, "decisions": [{"decision_id": "q1", "subject": "Distilled water", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path":
+    "ingredients[0].concentration", "original": {"value": "3.0", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "1.0", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "receiving medium", "interpretation":
+    "NBRC1404 lists 1 L water for the receiving batch. The target stores a historical
+    sum 3 g/L; the current owner has already collapsed it to 1 g/L. Credit that narrow
+    owner repair while correcting the residual wrong unit. The vitamin and trace stocks
+    each list their own 1 L water; neither is additive as a full batch to this medium.
+    No final liquid volume is measured.", "sources": [{"locator": "$.components[0].items[0]",
+    "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[14]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Distilled water\n1\nL",
+    "quote_representation": "HTML tr[14] DOM text"}, {"locator": "HTML tr[29]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Distilled
+    water\n1\nL", "quote_representation": "HTML tr[29] DOM text"}, {"locator": "HTML
+    tr[46]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Distilled
+    water\n1\nL", "quote_representation": "HTML tr[46] DOM text"}]}, {"decision_id":
+    "q2", "subject": "CaCl2·2H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.39", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.39", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "receiving medium", "interpretation":
+    "The target and owner sum 0.29 g receiving-batch calcium chloride dihydrate with
+    0.1 g from a separate trace-stock batch to 0.39 g/L. Keep 0.29 g in the receiving
+    batch and 0.1 g inside the trace stock; only 10 mL of that stock is added. No
+    final calcium concentration follows without a verified stock and final-medium
+    denominator.", "sources": [{"locator": "$.components[0].items[1]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CaCl2·2H2O\",\n          \"volume\": 0.29,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\":
+    \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[8]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CaCl\n2\n·2H\n2\nO\n0.29\ng",
+    "quote_representation": "HTML tr[8] DOM text"}, {"locator": "$.components[2].items[2]",
+    "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CaCl2·2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\":
+    \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[36]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CaCl\n2\n·2H\n2\nO\n0.1\ng",
+    "quote_representation": "HTML tr[36] DOM text"}, {"locator": "HTML tr[13]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Trace element
+    solution**\n10\nml", "quote_representation": "HTML tr[13] DOM text"}]}, {"decision_id":
+    "q3", "subject": "NH4Cl", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.0403",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.0403",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium",
+    "interpretation": "The same numerical value is supported as an absolute source
+    batch mass, but its local G_PER_L basis is not established by 1 L listed water
+    plus stocks. Preserve source mass/form and stage without inventing a replacement
+    final concentration.", "sources": [{"locator": "$.components[0].items[2]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"NH4Cl\",\n          \"volume\": 0.0403,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001008\",\n          \"gmo_id\": \"GMO_001008\",\n          \"label\":
+    \"Ammonium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[5]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "NH\n4\nCl\n0.0403\ng", "quote_representation":
+    "HTML tr[5] DOM text"}]}, {"decision_id": "q4", "subject": "K2HPO4", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path":
+    "ingredients[3].concentration", "original": {"value": "0.0401", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.0401",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium",
+    "interpretation": "The same numerical value is supported as an absolute source
+    batch mass, but its local G_PER_L basis is not established by 1 L listed water
+    plus stocks. Preserve source mass/form and stage without inventing a replacement
+    final concentration.", "sources": [{"locator": "$.components[0].items[3]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"K2HPO4\",\n          \"volume\": 0.0401,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001009\",\n          \"gmo_id\": \"GMO_001009\",\n          \"label\":
+    \"Potassium phosphate dibasic\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[7]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "K\n2\nHPO\n4\n0.0401\ng",
+    "quote_representation": "HTML tr[7] DOM text"}]}, {"decision_id": "q5", "subject":
+    "MgCl2·6H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.0203",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.0203",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium",
+    "interpretation": "The same numerical value is supported as an absolute source
+    batch mass, but its local G_PER_L basis is not established by 1 L listed water
+    plus stocks. Preserve source mass/form and stage without inventing a replacement
+    final concentration.", "sources": [{"locator": "$.components[0].items[4]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"MgCl2·6H2O\",\n          \"volume\": 0.0203,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001013\",\n          \"gmo_id\": \"GMO_001013\",\n          \"label\":
+    \"Magnesium chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[6]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "MgCl\n2\n·6H\n2\nO\n0.0203\ng",
+    "quote_representation": "HTML tr[6] DOM text"}]}, {"decision_id": "q6", "subject":
+    "Sodium acetate", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.33", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.33", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium", "interpretation":
+    "The same numerical value is supported as an absolute source batch mass, but its
+    local G_PER_L basis is not established by 1 L listed water plus stocks. Preserve
+    source mass/form and stage without inventing a replacement final concentration.",
+    "sources": [{"locator": "$.components[0].items[5]", "source_key": "togo2093",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Sodium acetate\",\n          \"volume\": 0.33,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001031\",\n          \"gmo_id\": \"GMO_001031\",\n          \"label\":
+    \"Sodium acetate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[11]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Sodium acetate\n0.33\ng",
+    "quote_representation": "HTML tr[11] DOM text"}]}, {"decision_id": "q7", "subject":
+    "Na2SO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.0142",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.0142",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium",
+    "interpretation": "The same numerical value is supported as an absolute source
+    batch mass, but its local G_PER_L basis is not established by 1 L listed water
+    plus stocks. Preserve source mass/form and stage without inventing a replacement
+    final concentration.", "sources": [{"locator": "$.components[0].items[6]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Na2SO4\",\n          \"volume\": 0.0142,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001052\",\n          \"gmo_id\": \"GMO_001052\",\n          \"label\":
+    \"Sodium sulfate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[4]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Na\n2\nSO\n4\n0.0142\ng",
+    "quote_representation": "HTML tr[4] DOM text"}]}, {"decision_id": "q8", "subject":
+    "CaCO3", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium", "interpretation":
+    "The same numerical value is supported as an absolute source batch mass, but its
+    local G_PER_L basis is not established by 1 L listed water plus stocks. Preserve
+    source mass/form and stage without inventing a replacement final concentration.",
+    "sources": [{"locator": "$.components[0].items[7]", "source_key": "togo2093",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CaCO3\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001063\",\n          \"gmo_id\": \"GMO_001063\",\n          \"label\":
+    \"Calcium carbonate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000066\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000066\",\n              \"label\": \"Protective
+    agent\"\n            },\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[9]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CaCO\n3\n2\ng", "quote_representation":
+    "HTML tr[9] DOM text"}]}, {"decision_id": "q9", "subject": "CAPS", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path":
+    "ingredients[8].concentration", "original": {"value": "3.32", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "3.32", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "receiving medium", "interpretation":
+    "The same numerical value is supported as an absolute source batch mass, but its
+    local G_PER_L basis is not established by 1 L listed water plus stocks. Preserve
+    source mass/form and stage without inventing a replacement final concentration.",
+    "sources": [{"locator": "$.components[0].items[8]", "source_key": "togo2093",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CAPS\",\n          \"volume\": 3.32,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_002374\",\n          \"gmo_id\": \"GMO_002374\",\n          \"label\":
+    \"CAPS\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[10]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CAPS\n3.32\ng",
+    "quote_representation": "HTML tr[10] DOM text"}]}, {"decision_id": "q10", "subject":
+    "NaOH", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "unsupported", "stage": "pH adjustment and
+    gas handling", "interpretation": "VARIABLE is a default quantity, not a measured
+    dose. NaOH adjusts pH 11 without a fixed amount; N2 is the autoclaving atmosphere
+    before exchange to N2/H2/O2 (59/35/6). Preserve these source stages and do not
+    infer a liquid concentration, pressure or gas amount.", "sources": [{"locator":
+    "$.comments[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    4,\n      \"comment\": \"Mix ingredients except for vitamin solution, adjust pH
+    to 11 with NaOH, and autoclave under a N2 atmosphere. Add the filter-sterile vitamin
+    solution, and exchange N2 to a gas mixture of N2/H2/O2 (59/35/6) in the headspace.\"\n    }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[17]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Mix ingredients
+    except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a
+    N\n2\natmosphere. Add the filter-sterile vitamin solution, and exchange N\n2\nto
+    a gas mixture of N\n2\n/H\n2\n/O\n2\n(59/35/6) in the headspace.", "quote_representation":
+    "HTML tr[17] DOM text"}]}, {"decision_id": "q11", "subject": "N2", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path":
+    "ingredients[10].concentration", "original": {"value": "variable", "unit": "VARIABLE"}},
+    {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "unsupported", "stage": "pH adjustment and
+    gas handling", "interpretation": "VARIABLE is a default quantity, not a measured
+    dose. NaOH adjusts pH 11 without a fixed amount; N2 is the autoclaving atmosphere
+    before exchange to N2/H2/O2 (59/35/6). Preserve these source stages and do not
+    infer a liquid concentration, pressure or gas amount.", "sources": [{"locator":
+    "$.comments[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    4,\n      \"comment\": \"Mix ingredients except for vitamin solution, adjust pH
+    to 11 with NaOH, and autoclave under a N2 atmosphere. Add the filter-sterile vitamin
+    solution, and exchange N2 to a gas mixture of N2/H2/O2 (59/35/6) in the headspace.\"\n    }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[17]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Mix ingredients
+    except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a
+    N\n2\natmosphere. Add the filter-sterile vitamin solution, and exchange N\n2\nto
+    a gas mixture of N\n2\n/H\n2\n/O\n2\n(59/35/6) in the headspace.", "quote_representation":
+    "HTML tr[17] DOM text"}]}, {"decision_id": "q12", "subject": "Oxygen gas", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path":
+    "ingredients[11].concentration", "original": {"value": "variable", "unit": "VARIABLE"}},
+    {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "unsupported", "stage": "pH adjustment and
+    gas handling", "interpretation": "VARIABLE is a default quantity, not a measured
+    dose. NaOH adjusts pH 11 without a fixed amount; N2 is the autoclaving atmosphere
+    before exchange to N2/H2/O2 (59/35/6). Preserve these source stages and do not
+    infer a liquid concentration, pressure or gas amount.", "sources": [{"locator":
+    "$.comments[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    4,\n      \"comment\": \"Mix ingredients except for vitamin solution, adjust pH
+    to 11 with NaOH, and autoclave under a N2 atmosphere. Add the filter-sterile vitamin
+    solution, and exchange N2 to a gas mixture of N2/H2/O2 (59/35/6) in the headspace.\"\n    }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[17]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Mix ingredients
+    except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a
+    N\n2\natmosphere. Add the filter-sterile vitamin solution, and exchange N\n2\nto
+    a gas mixture of N\n2\n/H\n2\n/O\n2\n(59/35/6) in the headspace.", "quote_representation":
+    "HTML tr[17] DOM text"}]}, {"decision_id": "q13", "subject": "Hydrogen gas", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path":
+    "ingredients[12].concentration", "original": {"value": "variable", "unit": "VARIABLE"}},
+    {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "unsupported", "stage": "pH adjustment and
+    gas handling", "interpretation": "VARIABLE is a default quantity, not a measured
+    dose. NaOH adjusts pH 11 without a fixed amount; N2 is the autoclaving atmosphere
+    before exchange to N2/H2/O2 (59/35/6). Preserve these source stages and do not
+    infer a liquid concentration, pressure or gas amount.", "sources": [{"locator":
+    "$.comments[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    4,\n      \"comment\": \"Mix ingredients except for vitamin solution, adjust pH
+    to 11 with NaOH, and autoclave under a N2 atmosphere. Add the filter-sterile vitamin
+    solution, and exchange N2 to a gas mixture of N2/H2/O2 (59/35/6) in the headspace.\"\n    }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[17]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Mix ingredients
+    except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a
+    N\n2\natmosphere. Add the filter-sterile vitamin solution, and exchange N\n2\nto
+    a gas mixture of N\n2\n/H\n2\n/O\n2\n(59/35/6) in the headspace.", "quote_representation":
+    "HTML tr[17] DOM text"}]}, {"decision_id": "q14", "subject": "Biotin", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path":
+    "ingredients[13].concentration", "original": {"value": "2", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation":
+    "This amount is specified in mg in the separate vitamin-stock batch, not the same
+    number in g/L of final medium. Restore the exact vitamin stock with its 1 L water
+    input and 10 mL receiving dose; neither stock nor final-medium measured volume
+    is inferred.", "sources": [{"locator": "$.components[1].items[1]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001025\",\n          \"gmo_id\": \"GMO_001025\",\n          \"label\":
+    \"Biotin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[20]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Biotin\n2\nmg",
+    "quote_representation": "HTML tr[20] DOM text"}]}, {"decision_id": "q15", "subject":
+    "p-Aminobenzoic acid", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation":
+    "This amount is specified in mg in the separate vitamin-stock batch, not the same
+    number in g/L of final medium. Restore the exact vitamin stock with its 1 L water
+    input and 10 mL receiving dose; neither stock nor final-medium measured volume
+    is inferred.", "sources": [{"locator": "$.components[1].items[2]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"p-Aminobenzoic acid\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001026\",\n          \"gmo_id\": \"GMO_001026\",\n          \"label\":
+    \"4-Aminobenzoic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[27]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "p\n-Aminobenzoic
+    acid\n1\nmg", "quote_representation": "HTML tr[27] DOM text"}]}, {"decision_id":
+    "q16", "subject": "Thiamine-HCl", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation":
+    "This amount is specified in mg in the separate vitamin-stock batch, not the same
+    number in g/L of final medium. Restore the exact vitamin stock with its 1 L water
+    input and 10 mL receiving dose; neither stock nor final-medium measured volume
+    is inferred.", "sources": [{"locator": "$.components[1].items[3]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Thiamine-HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001027\",\n          \"gmo_id\": \"GMO_001027\",\n          \"label\":
+    \"Thiamine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[23]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Thiamine-HCl\n5\nmg",
+    "quote_representation": "HTML tr[23] DOM text"}]}, {"decision_id": "q17", "subject":
+    "Ca-pantothenate", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation":
+    "This amount is specified in mg in the separate vitamin-stock batch, not the same
+    number in g/L of final medium. Restore the exact vitamin stock with its 1 L water
+    input and 10 mL receiving dose; neither stock nor final-medium measured volume
+    is inferred. Calcium pantothenate is not the free (R)-pantothenate anion; do not
+    infer a stereochemical form from the source name.", "sources": [{"locator": "$.components[1].items[4]",
+    "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Ca-pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001028\",\n          \"gmo_id\": \"GMO_001028\",\n          \"label\":
+    \"Calcium pantothenate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[26]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Ca-pantothenate\n5\nmg",
+    "quote_representation": "HTML tr[26] DOM text"}]}, {"decision_id": "q18", "subject":
+    "Pyridoxine-HCl", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation":
+    "This amount is specified in mg in the separate vitamin-stock batch, not the same
+    number in g/L of final medium. Restore the exact vitamin stock with its 1 L water
+    input and 10 mL receiving dose; neither stock nor final-medium measured volume
+    is inferred.", "sources": [{"locator": "$.components[1].items[5]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Pyridoxine-HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001029\",\n          \"gmo_id\": \"GMO_001029\",\n          \"label\":
+    \"Pyridoxine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[22]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Pyridoxine-HCl\n10\nmg",
+    "quote_representation": "HTML tr[22] DOM text"}]}, {"decision_id": "q19", "subject":
+    "Folic acid", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation":
+    "This amount is specified in mg in the separate vitamin-stock batch, not the same
+    number in g/L of final medium. Restore the exact vitamin stock with its 1 L water
+    input and 10 mL receiving dose; neither stock nor final-medium measured volume
+    is inferred.", "sources": [{"locator": "$.components[1].items[6]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001033\",\n          \"gmo_id\": \"GMO_001033\",\n          \"label\":
+    \"Folic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[21]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Folic acid\n2\nmg",
+    "quote_representation": "HTML tr[21] DOM text"}]}, {"decision_id": "q20", "subject":
+    "Vitamin B12", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.01", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.01", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation":
+    "This amount is specified in mg in the separate vitamin-stock batch, not the same
+    number in g/L of final medium. Restore the exact vitamin stock with its 1 L water
+    input and 10 mL receiving dose; neither stock nor final-medium measured volume
+    is inferred. Preserve the generic Vitamin B12 source identity and 0.01 mg; do
+    not transfer cyanocobalamin or the much different dose from the incorrectly linked
+    6241 stock.", "sources": [{"locator": "$.components[1].items[7]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Vitamin B12\",\n          \"volume\": 0.01,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001034\",\n          \"gmo_id\": \"GMO_001034\",\n          \"label\":
+    \"Cobalamin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[28]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Vitamin B\n12\n0.01\nmg",
+    "quote_representation": "HTML tr[28] DOM text"}]}, {"decision_id": "q21", "subject":
+    "Riboflavin", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation":
+    "This amount is specified in mg in the separate vitamin-stock batch, not the same
+    number in g/L of final medium. Restore the exact vitamin stock with its 1 L water
+    input and 10 mL receiving dose; neither stock nor final-medium measured volume
+    is inferred.", "sources": [{"locator": "$.components[1].items[8]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001037\",\n          \"gmo_id\": \"GMO_001037\",\n          \"label\":
+    \"Riboflavin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[24]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Riboflavin\n5\nmg",
+    "quote_representation": "HTML tr[24] DOM text"}]}, {"decision_id": "q22", "subject":
+    "Nicotinic acid", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[21].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[21].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 vitamin stock", "interpretation":
+    "This amount is specified in mg in the separate vitamin-stock batch, not the same
+    number in g/L of final medium. Restore the exact vitamin stock with its 1 L water
+    input and 10 mL receiving dose; neither stock nor final-medium measured volume
+    is inferred.", "sources": [{"locator": "$.components[1].items[9]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001038\",\n          \"gmo_id\": \"GMO_001038\",\n          \"label\":
+    \"Nicotinic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[25]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Nicotinic
+    acid\n5\nmg", "quote_representation": "HTML tr[25] DOM text"}]}, {"decision_id":
+    "q23", "subject": "NaCl", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[22].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[22].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation":
+    "The source amount is an absolute mass inside the separate NTA-based trace stock,
+    not a final-medium G_PER_L rate. Restore its listed form and stock stage and the
+    independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187
+    stock.", "sources": [{"locator": "$.components[2].items[1]", "source_key": "togo2093",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\":
+    \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[41]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "NaCl\n1\ng", "quote_representation":
+    "HTML tr[41] DOM text"}]}, {"decision_id": "q24", "subject": "Na2MoO4·2H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path":
+    "ingredients[23].concentration", "original": {"value": "0.024", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[23].concentration", "original": {"value": "0.024",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock",
+    "interpretation": "The source amount is an absolute mass inside the separate NTA-based
+    trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock
+    stage and the independently stated 10 mL receiving dose. Do not substitute the
+    EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[3]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Na2MoO4·2H2O\",\n          \"volume\": 0.024,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\":
+    \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[40]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Na\n2\nMoO\n4\n·2H\n2\nO\n0.024\ng",
+    "quote_representation": "HTML tr[40] DOM text"}]}, {"decision_id": "q25", "subject":
+    "H3BO3", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[24].concentration", "original": {"value": "0.01", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[24].concentration", "original": {"value": "0.01", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation":
+    "The source amount is an absolute mass inside the separate NTA-based trace stock,
+    not a final-medium G_PER_L rate. Restore its listed form and stock stage and the
+    independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187
+    stock.", "sources": [{"locator": "$.components[2].items[4]", "source_key": "togo2093",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\":
+    \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[39]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "H\n3\nBO\n3\n0.01\ng", "quote_representation":
+    "HTML tr[39] DOM text"}]}, {"decision_id": "q26", "subject": "MnCl2·4H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path":
+    "ingredients[25].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[25].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation":
+    "The source amount is an absolute mass inside the separate NTA-based trace stock,
+    not a final-medium G_PER_L rate. Restore its listed form and stock stage and the
+    independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187
+    stock.", "sources": [{"locator": "$.components[2].items[5]", "source_key": "togo2093",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"MnCl2·4H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001020\",\n          \"gmo_id\": \"GMO_001020\",\n          \"label\":
+    \"Manganese chloride tetrahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[34]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "MnCl\n2\n·4H\n2\nO\n0.1\ng",
+    "quote_representation": "HTML tr[34] DOM text"}]}, {"decision_id": "q27", "subject":
+    "CoCl2·6H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[26].concentration", "original": {"value": "0.024",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[26].concentration", "original": {"value": "0.024",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock",
+    "interpretation": "The source amount is an absolute mass inside the separate NTA-based
+    trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock
+    stage and the independently stated 10 mL receiving dose. Do not substitute the
+    EDTA-based 6187 stock. The source hexahydrate label is retained, while the asserted
+    anhydrous CHEBI term is a separate supplied-form mismatch.", "sources": [{"locator":
+    "$.components[2].items[6]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CoCl2·6H2O\",\n          \"volume\": 0.024,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001021\",\n          \"gmo_id\": \"GMO_001021\",\n          \"label\":
+    \"Cobalt dichloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[35]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CoCl\n2\n·6H\n2\nO\n0.024\ng",
+    "quote_representation": "HTML tr[35] DOM text"}]}, {"decision_id": "q28", "subject":
+    "NiCl2·6H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[27].concentration", "original": {"value": "0.12", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[27].concentration", "original": {"value": "0.12", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation":
+    "The source amount is an absolute mass inside the separate NTA-based trace stock,
+    not a final-medium G_PER_L rate. Restore its listed form and stock stage and the
+    independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187
+    stock. The source hexahydrate label is retained, while the asserted anhydrous
+    CHEBI term is a separate supplied-form mismatch.", "sources": [{"locator": "$.components[2].items[7]",
+    "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"NiCl2·6H2O\",\n          \"volume\": 0.12,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001022\",\n          \"gmo_id\": \"GMO_001022\",\n          \"label\":
+    \"Nickel chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[42]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "NiCl\n2\n·6H\n2\nO\n0.12\ng",
+    "quote_representation": "HTML tr[42] DOM text"}]}, {"decision_id": "q29", "subject":
+    "CuCl2·2H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[28].concentration", "original": {"value": "0.025",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[28].concentration", "original": {"value": "0.025",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock",
+    "interpretation": "The source amount is an absolute mass inside the separate NTA-based
+    trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock
+    stage and the independently stated 10 mL receiving dose. Do not substitute the
+    EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[8]", "source_key":
+    "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CuCl2·2H2O\",\n          \"volume\": 0.025,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001024\",\n          \"gmo_id\": \"GMO_001024\",\n          \"label\":
+    \"Copper(II) chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[38]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CuCl\n2\n·2H\n2\nO\n0.025\ng",
+    "quote_representation": "HTML tr[38] DOM text"}]}, {"decision_id": "q30", "subject":
+    "ZnCl2", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[29].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[29].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation":
+    "The source amount is an absolute mass inside the separate NTA-based trace stock,
+    not a final-medium G_PER_L rate. Restore its listed form and stock stage and the
+    independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187
+    stock.", "sources": [{"locator": "$.components[2].items[9]", "source_key": "togo2093",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"ZnCl2\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001035\",\n          \"gmo_id\": \"GMO_001035\",\n          \"label\":
+    \"Zinc chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[37]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "ZnCl\n2\n0.1\ng", "quote_representation":
+    "HTML tr[37] DOM text"}]}, {"decision_id": "q31", "subject": "FeCl3·6H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml", "field_path":
+    "ingredients[30].concentration", "original": {"value": "1.35", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[30].concentration", "original": {"value": "1.35", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation":
+    "The source amount is an absolute mass inside the separate NTA-based trace stock,
+    not a final-medium G_PER_L rate. Restore its listed form and stock stage and the
+    independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187
+    stock.", "sources": [{"locator": "$.components[2].items[10]", "source_key": "togo2093",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"FeCl3·6H2O\",\n          \"volume\": 1.35,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001047\",\n          \"gmo_id\": \"GMO_001047\",\n          \"label\":
+    \"Iron(III) chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[33]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "FeCl\n3\n·6H\n2\nO\n1.35\ng",
+    "quote_representation": "HTML tr[33] DOM text"}]}, {"decision_id": "q32", "subject":
+    "KAl(SO4)2·12H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[31].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[31].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation":
+    "The source amount is an absolute mass inside the separate NTA-based trace stock,
+    not a final-medium G_PER_L rate. Restore its listed form and stock stage and the
+    independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187
+    stock.", "sources": [{"locator": "$.components[2].items[11]", "source_key": "togo2093",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"KAl(SO4)2·12H2O\",\n          \"volume\": 0.02,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001051\",\n          \"gmo_id\": \"GMO_001051\",\n          \"label\":
+    \"Aluminum potassium sulfate dodecahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[45]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "KAl(SO\n4\n)\n2\n·12H\n2\nO\n0.02\ng",
+    "quote_representation": "HTML tr[45] DOM text"}]}, {"decision_id": "q33", "subject":
+    "Nitrilotriacetic acid (NTA)", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[32].concentration", "original": {"value": "12.8", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[32].concentration", "original": {"value": "12.8", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock", "interpretation":
+    "The source amount is an absolute mass inside the separate NTA-based trace stock,
+    not a final-medium G_PER_L rate. Restore its listed form and stock stage and the
+    independently stated 10 mL receiving dose. Do not substitute the EDTA-based 6187
+    stock.", "sources": [{"locator": "$.components[2].items[12]", "source_key": "togo2093",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Nitrilotriacetic acid (NTA)\",\n          \"volume\": 12.8,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\",\n          \"gmo_id\":
+    \"GMO_001053\",\n          \"label\": \"Nitrilotriacetic acid\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[32]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Nitrilotriacetic acid (NTA)\n12.8\ng",
+    "quote_representation": "HTML tr[32] DOM text"}]}, {"decision_id": "q34", "subject":
+    "Na2WO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[33].concentration", "original": {"value": "0.004",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[33].concentration", "original": {"value": "0.004",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock",
+    "interpretation": "The source amount is an absolute mass inside the separate NTA-based
+    trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock
+    stage and the independently stated 10 mL receiving dose. Do not substitute the
+    EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[13]",
+    "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Na2WO4\",\n          \"volume\": 0.004,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001086\",\n          \"gmo_id\": \"GMO_001086\",\n          \"label\":
+    \"Sodium tungstate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[44]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Na\n2\nWO\n4\n0.004\ng",
+    "quote_representation": "HTML tr[44] DOM text"}]}, {"decision_id": "q35", "subject":
+    "Na2SeO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "ingredients[34].concentration", "original": {"value": "0.004",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "ingredients[34].concentration", "original": {"value": "0.004",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "NBRC1404 NTA trace stock",
+    "interpretation": "The source amount is an absolute mass inside the separate NTA-based
+    trace stock, not a final-medium G_PER_L rate. Restore its listed form and stock
+    stage and the independently stated 10 mL receiving dose. Do not substitute the
+    EDTA-based 6187 stock.", "sources": [{"locator": "$.components[2].items[14]",
+    "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Na2SeO4\",\n          \"volume\": 0.004,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001602\",\n          \"gmo_id\": \"GMO_001602\",\n          \"label\":
+    \"Sodium selenate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[43]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Na\n2\nSeO\n4\n0.004\ng",
+    "quote_representation": "HTML tr[43] DOM text"}]}, {"decision_id": "q36", "subject":
+    "Vitamin solution*", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "solutions[0].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "solutions[0].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "stock addition to receiving batch",
+    "interpretation": "The source specifies 10 mL (0.01 L) of its own embedded stock,
+    not 10 g/L. The local provider link resolves to a different recipe; generic stock-name
+    agreement is insufficient.", "sources": [{"locator": "$.components[0].items[9]",
+    "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Vitamin solution*\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M2093\",\n          \"properties\": [],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[12]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Vitamin solution*\n10\nml",
+    "quote_representation": "HTML tr[12] DOM text"}]}, {"decision_id": "q37", "subject":
+    "Trace element solution**", "local_fields": [{"record_path": "data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml",
+    "field_path": "solutions[1].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml",
+    "field_path": "solutions[1].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "stock addition to receiving batch",
+    "interpretation": "The source specifies 10 mL (0.01 L) of its own embedded stock,
+    not 10 g/L. The local provider link resolves to a different recipe; generic stock-name
+    agreement is insufficient.", "sources": [{"locator": "$.components[0].items[10]",
+    "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Trace element solution**\",\n          \"volume\": 10,\n          \"unit\":
+    \"ml\",\n          \"reference_media_id\": \"M2093\",\n          \"properties\":
+    [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"},
+    {"locator": "HTML tr[13]", "source_key": "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Trace element
+    solution**\n10\nml", "quote_representation": "HTML tr[13] DOM text"}]}, {"decision_id":
+    "q38", "subject": "Separate stock water input", "local_fields": [], "decision":
+    "add", "stage": "vitamin stock", "interpretation": "Retain this stock-specific
+    1 L water input separately from receiving-medium water. It is not a measured final
+    stock volume and must not be added wholesale to the medium.", "sources": [{"locator":
+    "$.components[1].items[0]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[29]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Distilled water\n1\nL",
+    "quote_representation": "HTML tr[29] DOM text"}]}, {"decision_id": "q39", "subject":
+    "Separate stock water input", "local_fields": [], "decision": "add", "stage":
+    "trace stock", "interpretation": "Retain this stock-specific 1 L water input separately
+    from receiving-medium water. It is not a measured final stock volume and must
+    not be added wholesale to the medium.", "sources": [{"locator": "$.components[2].items[0]",
+    "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[46]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Distilled water\n1\nL",
+    "quote_representation": "HTML tr[46] DOM text"}]}, {"decision_id": "q40", "subject":
+    "Trace-stock calcium amount", "local_fields": [], "decision": "add", "stage":
+    "trace stock only", "interpretation": "Retain 0.1 g CaCl2·2H2O inside the trace
+    stock, separately from receiving-batch 0.29 g. This is not an additional 0.1 g
+    directly added to the receiving medium.", "sources": [{"locator": "$.components[2].items[2]",
+    "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CaCl2·2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\":
+    \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "HTML tr[36]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "CaCl\n2\n·2H\n2\nO\n0.1\ng",
+    "quote_representation": "HTML tr[36] DOM text"}]}, {"decision_id": "q41", "subject":
+    "Medium pH and sterilization sequence", "local_fields": [], "decision": "add",
+    "stage": "receiving medium", "interpretation": "Restore pH 11 adjusted with NaOH,
+    autoclaving under N2 except vitamins, then filter-sterile vitamin addition. No
+    autoclave temperature/time or filter pore size is supplied by this primary; none
+    is invented.", "sources": [{"locator": "$.comments[2]", "source_key": "togo2093",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    4,\n      \"comment\": \"Mix ingredients except for vitamin solution, adjust pH
+    to 11 with NaOH, and autoclave under a N2 atmosphere. Add the filter-sterile vitamin
+    solution, and exchange N2 to a gas mixture of N2/H2/O2 (59/35/6) in the headspace.\"\n    }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[17]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Mix ingredients
+    except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a
+    N\n2\natmosphere. Add the filter-sterile vitamin solution, and exchange N\n2\nto
+    a gas mixture of N\n2\n/H\n2\n/O\n2\n(59/35/6) in the headspace.", "quote_representation":
+    "HTML tr[17] DOM text"}]}, {"decision_id": "q42", "subject": "Gas replacement
+    ratio", "local_fields": [], "decision": "add", "stage": "post-sterilization headspace",
+    "interpretation": "Restore N2/H2/O2 (59/35/6) as a source gas-mixture ratio. Do
+    not infer pressure, gas volume or final liquid concentration.", "sources": [{"locator":
+    "$.comments[2]", "source_key": "togo2093", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    4,\n      \"comment\": \"Mix ingredients except for vitamin solution, adjust pH
+    to 11 with NaOH, and autoclave under a N2 atmosphere. Add the filter-sterile vitamin
+    solution, and exchange N2 to a gas mixture of N2/H2/O2 (59/35/6) in the headspace.\"\n    }",
+    "quote_representation": "raw JSON object"}, {"locator": "HTML tr[17]", "source_key":
+    "nbrc1404", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404",
+    "source_raw_sha256": "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe",
+    "source_text_sha256": "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302",
+    "accessed_at": "2026-10-28T13:49:59.382061Z", "exact_source_quote": "Mix ingredients
+    except for vitamin solution, adjust pH to 11 with NaOH, and autoclave under a
+    N\n2\natmosphere. Add the filter-sterile vitamin solution, and exchange N\n2\nto
+    a gas mixture of N\n2\n/H\n2\n/O\n2\n(59/35/6) in the headspace.", "quote_representation":
+    "HTML tr[17] DOM text"}]}, {"decision_id": "q43", "subject": "Trace-stock pH sequence",
+    "local_fields": [], "decision": "add", "stage": "NTA trace stock", "interpretation":
+    "Dissolve NTA, adjust to pH 6.5 with NaOH, add minerals, then final stock pH 7.0.
+    These stock controls are distinct from receiving-medium pH 11; NaOH strength/dose
+    is unspecified.", "sources": [{"locator": "$.comments[6]", "source_key": "togo2093",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2093",
+    "source_raw_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "source_text_sha256": "19034358d3edcf3d09d52ec15cbc2710c2df65528bd8b5cff5af5f72a7e5fa31",
+    "accessed_at": "2026-10-28T13:49:59.371427Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    10,\n      \"comment\": \"First dissolve nitrilotriacetic acid and adjust pH to
+    6.5 with NaOH, and then add minerals. Final pH 7.0.\"\n    }", "quote_representation":
+    "raw JSON object"}, {"locator": "HTML tr[48]", "source_key": "nbrc1404", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1404", "source_raw_sha256":
+    "a119f516e8c405aaa912421680a4cd7f0cca54e736881b89c4d8384b7bcb3dbe", "source_text_sha256":
+    "3f1b4594efee56a10205d949cf939de646e3b7c1e6e27590dcd16445df1c3302", "accessed_at":
+    "2026-10-28T13:49:59.382061Z", "exact_source_quote": "First dissolve nitrilotriacetic
+    acid and adjust pH to 6.5 with NaOH, and then add minerals. Final pH 7.0.", "quote_representation":
+    "HTML tr[48] DOM text"}]}, {"decision_id": "q44", "subject": "stock6241 Cyanocobalamine",
+    "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml",
+    "field_path": "composition[0].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "verified", "stage": "separate linked standalone stock;
+    no receiving transfer", "interpretation": "Existing attached claim and original
+    digest authenticate this provider stock g_l=0.1. Retain its amount and stock-only
+    scope; it does not support the receiving NBRC1404 recipe. No provider mmol_l value
+    is adopted as independently form-correct.", "sources": [{"locator": "$.data.recipe[0]",
+    "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241",
+    "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\":
+    2,\n                \"compound\": \"Cyanocobalamine\",\n                \"compound_id\":
+    847,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.073779,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q45", "subject": "stock6241 Thiamine HCl", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml",
+    "field_path": "composition[1].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "verified", "stage": "separate linked standalone stock;
+    no receiving transfer", "interpretation": "Existing attached claim and original
+    digest authenticate this provider stock g_l=0.1. Retain its amount and stock-only
+    scope; it does not support the receiving NBRC1404 recipe. No provider mmol_l value
+    is adopted as independently form-correct.", "sources": [{"locator": "$.data.recipe[1]",
+    "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241",
+    "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\":
+    3,\n                \"compound\": \"Thiamine HCl\",\n                \"compound_id\":
+    1207,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.296472,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q46", "subject": "stock6241 Biotin", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml",
+    "field_path": "composition[2].concentration", "original": {"value": "2000.0",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "separate linked standalone
+    stock; no receiving transfer", "interpretation": "The provider specifies 200 µg
+    biotin and explicitly makes up to 100 mL. Therefore 200 µg × 10^-6 g/µg ÷ 0.1
+    L = 0.002 g/L in this standalone stock, not 2000 g/L. This supported stock correction
+    is not transferable to NBRC1404 vitamin amounts.", "sources": [{"locator": "$.data.recipe[2]",
+    "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241",
+    "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\":
+    4,\n                \"compound\": \"Biotin\",\n                \"compound_id\":
+    46,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 200,\n                \"unit\":
+    \"\\u03bcg\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]",
+    "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241",
+    "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\":
+    null,\n                \"step\": \"Make up to 100 ml with distilled water.\"\n            }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q47", "subject":
+    "stock6241 Distilled water", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml",
+    "field_path": "composition[3].concentration", "original": {"value": "1000.0",
+    "unit": "PERCENT_V_V"}}], "decision": "conflict", "stage": "separate linked standalone
+    stock; no receiving transfer", "interpretation": "The explicit make-up instruction
+    is 100 mL final stock volume, not 1000% v/v water. Preserve make-up water separately;
+    do not represent an impossible solvent percentage.", "sources": [{"locator": "$.data.recipe[3]",
+    "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241",
+    "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\":
+    5,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]",
+    "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241",
+    "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\":
+    null,\n                \"step\": \"Make up to 100 ml with distilled water.\"\n            }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q48", "subject":
+    "stock6241 placeholder ingredient", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "unsupported", "stage": "structural placeholder",
+    "interpretation": "See source for composition is not an ingredient or quantified
+    dose. The complete structured composition is present; remove the placeholder and
+    reassess its stale incomplete_composition flag only after the actual remaining
+    defects are resolved.", "sources": [{"locator": "$.data", "source_key": "stock6241",
+    "reference": "https://mediadive.dsmz.de/rest/solution/6241", "source_raw_sha256":
+    "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "source_text_sha256":
+    "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1", "accessed_at":
+    "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n        \"id\": 6241,\n        \"name\":
+    \"Vitamin solution\",\n        \"volume\": 100,\n        \"recipe\": [\n            {\n                \"recipe_order\":
+    2,\n                \"compound\": \"Cyanocobalamine\",\n                \"compound_id\":
+    847,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.073779,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 3,\n                \"compound\":
+    \"Thiamine HCl\",\n                \"compound_id\": 1207,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.296472,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"Biotin\",\n                \"compound_id\": 46,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 200,\n                \"unit\":
+    \"\\u03bcg\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ],\n        \"steps\": [\n            {\n                \"recipe_order\":
+    null,\n                \"step\": \"Make up to 100 ml with distilled water.\"\n            }\n        ],\n        \"equipment\":
+    []\n    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q49",
+    "subject": "stock6241 retained preparation", "local_fields": [{"record_path":
+    "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml", "field_path":
+    "preparation_notes", "original": "Make up to 100 ml with distilled water.\n\nOriginal
+    volume: 100 mL"}], "decision": "evidence_only", "stage": "separate standalone
+    stock preparation", "interpretation": "Retain the source-specific make-up or ordered-addition
+    instruction. It does not establish equivalence to the NBRC1404 stock.", "sources":
+    [{"locator": "$.data.steps[0]", "source_key": "stock6241", "reference": "https://mediadive.dsmz.de/rest/solution/6241",
+    "source_raw_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "source_text_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1",
+    "accessed_at": "2026-10-28T13:46:48.741169Z", "exact_source_quote": "{\n                \"recipe_order\":
+    null,\n                \"step\": \"Make up to 100 ml with distilled water.\"\n            }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q50", "subject":
+    "stock6187 Na2-EDTA", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml",
+    "field_path": "composition[0].concentration", "original": {"value": "0.75", "unit":
+    "G_PER_L"}}], "decision": "verified", "stage": "separate linked standalone stock;
+    no receiving transfer", "interpretation": "Existing attached claim and original
+    digest authenticate this provider stock g_l=0.75. Retain its amount and stock-only
+    scope; it does not support the receiving NBRC1404 recipe. No provider mmol_l value
+    is adopted as independently form-correct.", "sources": [{"locator": "$.data.recipe[0]",
+    "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187",
+    "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916",
+    "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916",
+    "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Na2-EDTA\",\n                \"compound_id\":
+    34,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.75,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.75,\n                \"mmol_l\": 2.23078,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q51", "subject": "stock6187 Distilled water", "local_fields": [{"record_path":
+    "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path":
+    "composition[1].concentration", "original": {"value": "1000", "unit": "PERCENT_V_V"}}],
+    "decision": "conflict", "stage": "separate linked standalone stock; no receiving
+    transfer", "interpretation": "The provider adds 1000 mL water before minerals;
+    this absolute water input is not 1000% v/v and does not establish measured final
+    volume.", "sources": [{"locator": "$.data.recipe[1]", "source_key": "stock6187",
+    "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256":
+    "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256":
+    "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at":
+    "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\":
+    2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]",
+    "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187",
+    "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916",
+    "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916",
+    "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\":
+    3,\n                \"step\": \"Add to 1000 ml of distilled water 0.75 g Na2EDTA
+    and the minerals in exactly the \\r\\nfollowing sequence:\"\n            }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q52", "subject": "stock6187 FeCl3 x 6 H2O",
+    "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml",
+    "field_path": "composition[2].concentration", "original": {"value": "0.097", "unit":
+    "G_PER_L"}}], "decision": "verified", "stage": "separate linked standalone stock;
+    no receiving transfer", "interpretation": "Existing attached claim and original
+    digest authenticate this provider stock g_l=0.097. Retain its amount and stock-only
+    scope; it does not support the receiving NBRC1404 recipe. No provider mmol_l value
+    is adopted as independently form-correct.", "sources": [{"locator": "$.data.recipe[2]",
+    "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187",
+    "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916",
+    "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916",
+    "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\":
+    4,\n                \"compound\": \"FeCl3 x 6 H2O\",\n                \"compound_id\":
+    82,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 97,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.097,\n                \"mmol_l\": 0.358866,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q53", "subject": "stock6187 MnCl2 x 4 H2O", "local_fields": [{"record_path":
+    "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path":
+    "composition[3].concentration", "original": {"value": "0.041", "unit": "G_PER_L"}}],
+    "decision": "verified", "stage": "separate linked standalone stock; no receiving
+    transfer", "interpretation": "Existing attached claim and original digest authenticate
+    this provider stock g_l=0.041. Retain its amount and stock-only scope; it does
+    not support the receiving NBRC1404 recipe. No provider mmol_l value is adopted
+    as independently form-correct.", "sources": [{"locator": "$.data.recipe[3]", "source_key":
+    "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256":
+    "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256":
+    "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at":
+    "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\":
+    5,\n                \"compound\": \"MnCl2 x 4 H2O\",\n                \"compound_id\":
+    36,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 41,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.041,\n                \"mmol_l\": 0.20717,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q54", "subject": "stock6187 ZnCl2 x 6 H2O", "local_fields": [{"record_path":
+    "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path":
+    "composition[4].concentration", "original": {"value": "0.005", "unit": "G_PER_L"}}],
+    "decision": "verified", "stage": "separate linked standalone stock; no receiving
+    transfer", "interpretation": "Existing attached claim and original digest authenticate
+    this provider stock g_l=0.005. Retain its amount and stock-only scope; it does
+    not support the receiving NBRC1404 recipe. No provider mmol_l value is adopted
+    as independently form-correct.", "sources": [{"locator": "$.data.recipe[4]", "source_key":
+    "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256":
+    "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256":
+    "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at":
+    "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\":
+    6,\n                \"compound\": \"ZnCl2 x 6 H2O\",\n                \"compound_id\":
+    2351,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0204583,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q55", "subject": "stock6187 CoCl2 x 6 H2O", "local_fields": [{"record_path":
+    "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path":
+    "composition[5].concentration", "original": {"value": "0.002", "unit": "G_PER_L"}}],
+    "decision": "verified", "stage": "separate linked standalone stock; no receiving
+    transfer", "interpretation": "Existing attached claim and original digest authenticate
+    this provider stock g_l=0.002. Retain its amount and stock-only scope; it does
+    not support the receiving NBRC1404 recipe. No provider mmol_l value is adopted
+    as independently form-correct.", "sources": [{"locator": "$.data.recipe[5]", "source_key":
+    "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256":
+    "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256":
+    "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at":
+    "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\":
+    7,\n                \"compound\": \"CoCl2 x 6 H2O\",\n                \"compound_id\":
+    38,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.002,\n                \"mmol_l\": 0.0154037,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q56", "subject": "stock6187 Na2MoO4 x 2 H2O", "local_fields": [{"record_path":
+    "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path":
+    "composition[6].concentration", "original": {"value": "0.004", "unit": "G_PER_L"}}],
+    "decision": "verified", "stage": "separate linked standalone stock; no receiving
+    transfer", "interpretation": "Existing attached claim and original digest authenticate
+    this provider stock g_l=0.004. Retain its amount and stock-only scope; it does
+    not support the receiving NBRC1404 recipe. No provider mmol_l value is adopted
+    as independently form-correct.", "sources": [{"locator": "$.data.recipe[6]", "source_key":
+    "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187", "source_raw_sha256":
+    "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "source_text_sha256":
+    "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916", "accessed_at":
+    "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\":
+    8,\n                \"compound\": \"Na2MoO4 x 2 H2O\",\n                \"compound_id\":
+    9,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.004,\n                \"mmol_l\": 0.0165323,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q57", "subject": "stock6187 placeholder ingredient", "local_fields": [{"record_path":
+    "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path":
+    "ingredients[0].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}],
+    "decision": "unsupported", "stage": "structural placeholder", "interpretation":
+    "See source for composition is not an ingredient or quantified dose. The complete
+    structured composition is present; remove the placeholder and reassess its stale
+    incomplete_composition flag only after the actual remaining defects are resolved.",
+    "sources": [{"locator": "$.data", "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187",
+    "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916",
+    "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916",
+    "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n        \"id\":
+    6187,\n        \"name\": \"Trace element solution\",\n        \"volume\": 1000,\n        \"recipe\":
+    [\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"Na2-EDTA\",\n                \"compound_id\": 34,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.75,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.75,\n                \"mmol_l\": 2.23078,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 4,\n                \"compound\":
+    \"FeCl3 x 6 H2O\",\n                \"compound_id\": 82,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 97,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.097,\n                \"mmol_l\": 0.358866,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 5,\n                \"compound\":
+    \"MnCl2 x 4 H2O\",\n                \"compound_id\": 36,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 41,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.041,\n                \"mmol_l\": 0.20717,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 6,\n                \"compound\":
+    \"ZnCl2 x 6 H2O\",\n                \"compound_id\": 2351,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0204583,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 7,\n                \"compound\":
+    \"CoCl2 x 6 H2O\",\n                \"compound_id\": 38,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.002,\n                \"mmol_l\": 0.0154037,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 8,\n                \"compound\":
+    \"Na2MoO4 x 2 H2O\",\n                \"compound_id\": 9,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.004,\n                \"mmol_l\": 0.0165323,\n                \"optional\":
+    0\n            }\n        ],\n        \"steps\": [\n            {\n                \"recipe_order\":
+    3,\n                \"step\": \"Add to 1000 ml of distilled water 0.75 g Na2EDTA
+    and the minerals in exactly the \\r\\nfollowing sequence:\"\n            }\n        ],\n        \"equipment\":
+    []\n    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q58",
+    "subject": "stock6187 retained preparation", "local_fields": [{"record_path":
+    "data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml", "field_path":
+    "preparation_notes", "original": "Add to 1000 ml of distilled water 0.75 g Na2EDTA
+    and the minerals in exactly the \r\nfollowing sequence:"}], "decision": "evidence_only",
+    "stage": "separate standalone stock preparation", "interpretation": "Retain the
+    source-specific make-up or ordered-addition instruction. It does not establish
+    equivalence to the NBRC1404 stock.", "sources": [{"locator": "$.data.steps[0]",
+    "source_key": "stock6187", "reference": "https://mediadive.dsmz.de/rest/solution/6187",
+    "source_raw_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916",
+    "source_text_sha256": "d31ecb8b693ab4516fccb451babae9631a8a073b47acec0285b57f55ba309916",
+    "accessed_at": "2026-10-28T13:46:48.741220Z", "exact_source_quote": "{\n                \"recipe_order\":
+    3,\n                \"step\": \"Add to 1000 ml of distilled water 0.75 g Na2EDTA
+    and the minerals in exactly the \\r\\nfollowing sequence:\"\n            }", "quote_representation":
+    "raw JSON object"}]}], "local_field_census_reference": "REVIEW_WORK/batch069/record06/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a5
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: concern
+  summary: 'data/merge_yaml/merged/Cedears_Standard_Medium_2.yaml: primary 34/35,
+    secondary 29/35; data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml:
+    primary 34/35, secondary 29/35. These are ingredient-instance linkage fractions,
+    not accuracy scores. Solution terms are audited separately. Every actually asserted
+    CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows.
+    0 numeric legacy MediaIngredientMech mentions occur across the complete selected
+    documents, with exact locators in the inventory; NNNNNN is a historical placeholder,
+    not an ID. Complex commercial/product components are not forced to pure-compound
+    IDs.'
+  target_ids:
+  - CultureMech:008684
+  evidence_ids:
+  - grounding
+- assessment_id: a6
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and exact maintained owners reviewed. Dependencies
+    transfer only their explicitly named stock subsection; unrelated parent media
+    and source prescriptions are not growth evidence.
+  target_ids:
+  - CultureMech:008684
+  evidence_ids:
+  - local0
+- assessment_id: a7
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:008684
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-008684-flattened-stages-and-unit-bases
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate batch masses, water and stock doses are represented as final concentrations
+  description: The selected layers combine receiving calcium 0.29 g with trace-stock
+    calcium 0.1 g, flatten mg vitamin doses and g trace-stock masses into final g/L,
+    and encode two 10 mL doses as 10 g/L. Main same-digit mass rates lack a verified
+    final volume. The owner water collapse from 3 to 1 is credited, but 1 g/L remains
+    the wrong unit.
+  target_ids:
+  - CultureMech:008684
+  field_paths:
+  - ingredients
+  - solutions[0].concentration
+  - solutions[1].concentration
+  evidence_ids:
+  - nbrc1404
+  - togo2093
+  rule_id: review-ingredient-concentrations/stock-stage-and-unit-fidelity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-008684-wrong-generic-stock-links
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Both generic stock names resolve to different formulas
+  description: MediaDive 6241 contains cyanocobalamin, thiamine and biotin in 100
+    mL; NBRC1404 names nine vitamins with 1 L water. MediaDive 6187 has six non-water
+    components including EDTA; NBRC1404 has fourteen non-water components including
+    NTA. The linked standalone records are genuine but not equivalent to these source
+    stocks.
+  target_ids:
+  - CultureMech:008684
+  field_paths:
+  - solutions[0].term
+  - solutions[1].term
+  evidence_ids:
+  - stock6241
+  - stock6187
+  - nbrc1404
+  rule_id: review-yaml-record/source-stock-identity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-008684-missing-ph-gas-and-stock-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source pH, gas exchange and stock handling are missing
+  description: The selected layers omit receiving pH 11, N2 autoclaving, later filter-sterile
+    vitamins, headspace 59/35/6 and the separate trace-stock pH 6.5→7.0 sequence.
+    VARIABLE gas/reagent rows do not preserve those stages.
+  target_ids:
+  - CultureMech:008684
+  field_paths:
+  - ph_value
+  - preparation_steps
+  - ingredients[9].concentration
+  - ingredients[10].concentration
+  - ingredients[11].concentration
+  - ingredients[12].concentration
+  evidence_ids:
+  - nbrc1404
+  - togo2093
+  rule_id: review-yaml-record/source-preparation-completeness
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-008684-supplied-forms
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Calcium pantothenate and two hydrates are mapped to different forms
+  description: The selected calcium-pantothenate rows assert CHEBI:29032 free (R)-pantothenate;
+    CoCl2·6H2O asserts anhydrous 35696 and NiCl2·6H2O asserts anhydrous 34887. Current
+    OLS confirms these distinctions. The generic vitamin B12 mapping is retained without
+    forcing cyanocobalamin from the unrelated stock.
+  target_ids:
+  - CultureMech:008684
+  field_paths:
+  - ingredients[16].term
+  - ingredients[16].mediaingredientmech_chebi_term
+  - ingredients[26].term
+  - ingredients[27].term
+  - ingredients[27].mediaingredientmech_chebi_term
+  evidence_ids:
+  - chebi29032
+  - chebi35696
+  - chebi34887
+  - chebi53503
+  - grounding
+  - nbrc1404
+  rule_id: review-yaml-record/exact-supplied-form
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+- finding_id: f5
+  issue_key: culturemech-008684-linked-stock-residual-defects
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Linked standalone stocks retain separate biotin, water and placeholder defects
+  description: Within 6241, 200 µg biotin made up to 100 mL supports 0.002 g/L, not
+    2000 g/L; both stocks encode water as 1000% v/v. Placeholder ingredient rows and
+    incomplete_composition flags persist despite structured composition. The 6187
+    zinc hexahydrate label is paired with anhydrous CHEBI:49976, a separate form qualification.
+    These findings concern the linked records only, not replacements for NBRC1404.
+  target_ids:
+  - CultureMech:008684
+  field_paths:
+  - data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml::composition[2].concentration
+  - data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml::composition[3].concentration
+  - data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml::composition[1].concentration
+  - data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml::composition[4].chebi_term
+  - data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml::ingredients[0]
+  - data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml::ingredients[0]
+  - data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml::data_quality_flags
+  - data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml::data_quality_flags
+  evidence_ids:
+  - stock6241
+  - stock6187
+  - chebi49976
+  - grounding
+  rule_id: review-ingredient-concentrations/scoped-dependency-fidelity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml
+    role: separately assessed linked vitamin-stock dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml
+    role: separately assessed linked trace-stock dependency
+- finding_id: f6
+  issue_key: culturemech-008684-generated-water-staleness
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The generated target predates the maintained water repair
+  description: The target retains 3 g/L water while the owner has the September identical-duplicate
+    collapse to 1 g/L. This narrow improvement does not fix its wrong unit or stage.
+    Current cleanup avoids summing conflicting values, and the conservative merger
+    preserves scientific content rather than validating source equivalence.
+  target_ids:
+  - CultureMech:008684
+  field_paths:
+  - ingredients[0].concentration
+  - curation_history
+  evidence_ids:
+  - local0
+  - local1
+  rule_id: review-yaml-record/generated-freshness
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+- finding_id: f7
+  issue_key: culturemech-008684-defined-composition-classification
+  category: consistency
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Composition labels retain an unsupported complex-medium default
+  description: Both selected layers assert COMPLEX and UNDEFINED despite a primary
+    recipe made of named salts, vitamins and acetate. LIQUID remains supported. Reassess
+    the composition axis against the source rather than treating unresolved dose or
+    chemical-form details as an undefined extract.
+  target_ids:
+  - CultureMech:008684
+  field_paths:
+  - medium_type
+  - composition_type
+  evidence_ids:
+  - nbrc1404
+  - togo2093
+  - local0
+  - local1
+  rule_id: review-yaml-record/source-composition-classification
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded classification
+    defect; the formulation and source-stage corrections are separately prioritized
+    as major.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Reconstruct source-specific receiving and stock stages; retain absolute
+    batch masses and volumes with claim-scoped evidence. Preserve correctly named
+    source constituents and current owner corrections. Do not derive final concentrations
+    from listed water.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008684
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Replace the receiving links with exact source stock definitions or
+    explicit scoped inline compositions. Preserve the standalone recipes and their
+    valid evidence; never overwrite them to force name-based equivalence.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008684
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Add only the exact source instructions with root-level evidence scoped
+    to the changed fields. Leave unspecified autoclave parameters, gas pressure, filter
+    pore size, reagent strength and doses unknown.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008684
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action4
+  description: Resolve the exact supplied calcium salt and hydrate forms from authoritative
+    identifiers; retain uncertain stereochemistry explicitly. Preserve source masses
+    and do not substitute anhydrous molar arithmetic.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008684
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action5
+  description: 'Repair each standalone stock only against its own exact provider source:
+    preserve all eight authenticated rate claims, correct biotin and water representation,
+    reconcile zinc supplied form and remove placeholders/flags only when warranted.
+    Keep these operations separate from receiving-link repair.'
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:008684
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml
+    role: separately assessed linked vitamin-stock dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_6187_Trace_element_solution.yaml
+    role: separately assessed linked trace-stock dependency
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action6
+  description: Repair the maintained source-aware structure first, then regenerate
+    and inspect exact output freshness. Preserve all original events, including the
+    narrow prior repair, and append verified context with the actual current curation
+    date.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:008684
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action7
+  description: Reassess medium_type and composition_type from the exact primary ingredients
+    and current enum definitions, preserving LIQUID. Record the distinction between
+    a chemically defined ingredient list and unresolved representation of its quantities
+    or forms.
+  finding_ids:
+  - f7
+  target_ids:
+  - CultureMech:008684
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cedears_standard_medium_2.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- The shared 6241/6187 captures retain their original acquisition times and immutable
+  metadata. Their recipes are assessed separately and never substituted into NBRC1404.
+- Listed 1 L water does not establish final medium or stock volume. The sole explicit
+  final-volume instruction used for arithmetic is 6241 make-up to 100 mL. Provider
+  mmol_l values were not adopted as independent chemical-form validation.
+- No new target-organism growth claim follows from the collection page. Source growth
+  conditions remain collection context; no source edits, native save or publication
+  occurred.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
+```

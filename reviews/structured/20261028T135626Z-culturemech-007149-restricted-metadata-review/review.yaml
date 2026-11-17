@@ -1,0 +1,569 @@
+schema_version: 1.0.0
+review_id: 20261028T135626Z-culturemech-007149-restricted-metadata-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Metadata-only review: Calvo et al'
+started_at: '2026-10-28T13:47:15.694409Z'
+finished_at: '2026-10-28T13:56:26.873304Z'
+reviewer:
+  identity: Codex batch006_validation
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Independent read-only identity/bibliography/taxonomy and provenance
+    assessment; operational contents excluded.
+skill: review-yaml-record
+completion: partial
+verdict: pass_with_limitations
+scientific_review: false
+summary: Partial metadata-only review of the exact target and owner. Fresh publication
+  and taxonomy metadata support the maintained title-level citation; the generated
+  target omits that later bibliography. The Salmonella-associated paper limits this
+  review to non-operational metadata. All quantities and preparation remain unchanged
+  and unassessed.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/Calvo_et_al.yaml
+    sha256: 7dfcfc3cc4035a77bcaac946d23b8796b3bb63e3c124a196276997ca36b2b9ae
+    role: target
+  - path: data/normalized_yaml/bacterial/calvo_et_al.yaml
+    sha256: f6e060530c7679ac1330672c084a0f367998ae42acc363c011358cdf73a5b8cd
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan.json
+    sha256: a05ee06ef6b30c85fe1ccc4c5e729fe52c5d453d20f64aa3c9758491d919666b
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Calvo_et_al.md
+    sha256: 04ecb5adaed686ac363b07509e5a4c826bcbd3121761a1c5753a4ff0026d2e91
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/calvo_et_al.md
+    sha256: e9bdd73ddf28bfafb40b7c925cf32f126a72865c2006d0c8ba085dd1814e1522
+    role: context
+  - path: reports/yaml_record_review/20260922T030518Z-Calvo_et_al.md
+    sha256: 7c2dc245981c2429fcd9d39cb49c935440c7e6677e0680185a0fbd31e9159f11
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Restricted identity, bibliography, title-level taxonomy, provenance
+    and schema only; operational assessment excluded.
+  selection: Authoritative batch069 record02
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007149
+targets:
+- target_id: CultureMech:007149
+  path: data/merge_yaml/merged/Calvo_et_al.yaml
+  label: calvo_et_al
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calvo_et_al.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:007149
+  command: just validate-schema data/merge_yaml/merged/Calvo_et_al.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+  summary: Actual exit0; structural diagnostics only.
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:007149
+  command: just validate-strict data/merge_yaml/merged/Calvo_et_al.yaml --out REVIEW_WORK/batch069/record02/strict.tsv
+    --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+  summary: Actual exit0; structural diagnostics only.
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:007149
+  command: just validate-terms data/merge_yaml/merged/Calvo_et_al.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+  summary: Actual exit0; structural diagnostics only.
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:007149
+  command: just validate-references data/merge_yaml/merged/Calvo_et_al.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+  summary: Actual exit0; structural diagnostics only.
+evidence:
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/Calvo_et_al.yaml
+  locator: Complete scoped metadata
+  accessed_at: '2026-10-28T13:56:26.851474Z'
+  support: context_only
+  summary: Exact selected document bytes inspected; metadata assessed, operational
+    contents preserved privately without scientific assessment.
+  snapshot_sha256: 7dfcfc3cc4035a77bcaac946d23b8796b3bb63e3c124a196276997ca36b2b9ae
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/calvo_et_al.yaml
+  locator: Complete scoped metadata
+  accessed_at: '2026-10-28T13:56:26.851687Z'
+  support: context_only
+  summary: Exact selected document bytes inspected; metadata assessed, operational
+    contents preserved privately without scientific assessment.
+  snapshot_sha256: f6e060530c7679ac1330672c084a0f367998ae42acc363c011358cdf73a5b8cd
+- evidence_id: pubmed5337359
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=5337359&retmode=json
+  locator: result.5337359 bibliographic fields
+  accessed_at: '2026-10-28T13:47:51.364378Z'
+  support: context_only
+  summary: Fresh bibliography or taxonomy metadata only; no experimental result, formulation,
+    strain-growth or cultivation assertion is adopted.
+  snapshot_sha256: b12bfa62f4ff92a87cb058d230b695edff1bcec09985863b55cd0295cc908eb6
+- evidence_id: crossrefCalvo
+  kind: database
+  reference: https://api.crossref.org/works/10.1126/science.156.3778.1107
+  locator: message DOI/title/author/date fields only; abstract excluded
+  accessed_at: '2026-10-28T13:47:51.439931Z'
+  support: context_only
+  summary: Fresh bibliography or taxonomy metadata only; no experimental result, formulation,
+    strain-growth or cultivation assertion is adopted.
+  snapshot_sha256: c5418b7fe0a62ffaa542714c5e57120a8cbca8fb62aef231882710ba69972dc7
+- evidence_id: tax90371
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=90371&retmode=xml
+  locator: TaxaSet/Taxon TaxId/ScientificName/Rank/OtherNames only
+  accessed_at: '2026-10-28T13:47:51.606855Z'
+  support: context_only
+  summary: Fresh bibliography or taxonomy metadata only; no experimental result, formulation,
+    strain-growth or cultivation assertion is adopted.
+  snapshot_sha256: c8a95c70d1f866f5b55637b57579791ed125702968a4f1fd25a893c14d099d1c
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record02/quantity-inventory.json
+  locator: Complete scoped metadata
+  accessed_at: '2026-10-28T13:56:26.870902Z'
+  support: context_only
+  summary: Private unchanged/not_assessed inventory; values excluded from public details.
+  snapshot_sha256: f050a6055af8e2572cf92c6bdc0a38b3e7315b4af27ec4bd2337b064028f13d0
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record02/field-census.json
+  locator: Complete scoped metadata
+  accessed_at: '2026-10-28T13:56:26.870951Z'
+  support: context_only
+  summary: Private exact scalar inventory; no operational assessment.
+  snapshot_sha256: eabd24a9ea0d887f3d3c6e99cbbbc2aa134fc880a1a19feacec89cd1db830d41
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record02/grounding-inventory.json
+  locator: Complete scoped metadata
+  accessed_at: '2026-10-28T13:56:26.871018Z'
+  support: context_only
+  summary: Existing identifiers and MIM membership only.
+  snapshot_sha256: eca93fec17f7c8ddc85987a3909314977c8abe16fa31a97a2340ba4b540ae1b5
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record02/history-inventory.json
+  locator: Complete scoped metadata
+  accessed_at: '2026-10-28T13:56:26.871071Z'
+  support: context_only
+  summary: Complete original histories; no retrospective operational validation.
+  snapshot_sha256: 62b94eeab3354be9e925933ea133ad97b6bc9448d6098acee5b2491871ead3b1
+- evidence_id: reports
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record02/historical-reading-metadata-only.json
+  locator: Complete scoped metadata
+  accessed_at: '2026-10-28T13:56:26.871105Z'
+  support: context_only
+  summary: Three exact report headers only; no historical formulation claims adopted.
+  snapshot_sha256: 6b162eb25d4333298fc2945a24375d179225cb7b8767c3c1adf9722562e2192b
+- evidence_id: bibliography
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record02/bibliographic-identity.json
+  locator: Complete scoped metadata
+  accessed_at: '2026-10-28T13:56:26.871135Z'
+  support: context_only
+  summary: Fresh publication/title-level organism/taxonomy identity.
+  snapshot_sha256: 77be1afc57e61fe2597cf31cde790d10d8244f447c755cb6f01fa4cf1ea04c73
+- evidence_id: reader
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record02/complete-document-reader.json
+  locator: Complete scoped metadata
+  accessed_at: '2026-10-28T13:56:26.871165Z'
+  support: context_only
+  summary: Exact target/owner metadata and original hashes.
+  snapshot_sha256: a2debdfedd979d493baead62f45149fd7636e1cb647343988062b2a1a147cf3c
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact identifier OR ontology_id row union
+  accessed_at: '2026-10-28T13:56:26.871197Z'
+  support: context_only
+  summary: Current packaged exact rows only, without historical or chemical certification.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Full metadata
+  accessed_at: '2026-10-28T13:56:26.871755Z'
+  support: context_only
+  summary: Packaged version/checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group singleton branch
+  accessed_at: '2026-10-28T13:56:26.871789Z'
+  support: context_only
+  summary: Current singleton merge copies the owner and adds lineage. The selected
+    target predates the maintained bibliography; current code is not proof of its
+    historical execution. No operational regeneration is recommended.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-mediadb
+  kind: record_content
+  reference: src/culturemech/import/mediadb_importer.py
+  locator: MediaDBImporter._create_preparation_steps
+  accessed_at: '2026-10-28T13:56:26.871830Z'
+  support: context_only
+  summary: Current importer creates fixed generic preparation prose. This is provenance
+    context only; no operational adequacy or corrective preparation is assessed.
+  snapshot_sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch069/record02/validate-schema.json
+  accessed_at: '2026-10-28T13:47:16.707520Z'
+  support: supports
+  summary: Original once-only canonical schema exit0; full actual argv/time/streams
+    retained. Structural checks do not certify scientific content.
+  snapshot_sha256: d73f5af97fbc2db4bd7e9b46c3a7904e2716a987af5371c1274e385611a7dfac
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch069/record02/validate-strict.json
+  accessed_at: '2026-10-28T13:47:17.611503Z'
+  support: supports
+  summary: Original once-only canonical strict exit0; full actual argv/time/streams
+    retained. Structural checks do not certify scientific content.
+  snapshot_sha256: 291d3672971ad8cee3027f3c5aa7e2d9e1f224acabfa07bb811f284d45b3b62e
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch069/record02/validate-terms.json
+  accessed_at: '2026-10-28T13:47:18.615682Z'
+  support: supports
+  summary: Original once-only canonical terms exit0; full actual argv/time/streams
+    retained. Structural checks do not certify scientific content.
+  snapshot_sha256: 4a23277d668f3e031193dee05e2072c0c3615e933d40bfd58101935a6ca323d0
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch069/record02/validate-references.json
+  accessed_at: '2026-10-28T13:47:19.252202Z'
+  support: supports
+  summary: Original once-only canonical references exit0; full actual argv/time/streams
+    retained. Structural checks do not certify scientific content.
+  snapshot_sha256: a8517bb8142a682d726015e8dca5983d3e77c47e6765d2270a8b7c3a7fa232c3
+assessments:
+- assessment_id: identity
+  area: identity
+  outcome: supported
+  topic: Exact record and bibliography identity
+  summary: Target and sole owner share CultureMech:007149 and MEDIADB:251. The maintained
+    reference PMID5337359 resolves to the 1967 Calvo and Calvo Science article and
+    DOI10.1126/science.156.3778.1107; this is a bibliographic lead, not proof that
+    the selected formulation matches the study.
+  target_ids:
+  - CultureMech:007149
+  evidence_ids:
+  - target
+  - owner
+  - bibliography
+  - pubmed5337359
+  - crossrefCalvo
+- assessment_id: taxonomy
+  area: scope
+  outcome: supported
+  topic: Title-level organism scope
+  summary: The title names historical Salmonella typhimurium. Current NCBITaxon:90371
+    has scientific name Salmonella enterica subsp. enterica serovar Typhimurium and
+    rank no rank. No strain, growth association, experimental result or scope beyond
+    the title is inferred.
+  target_ids:
+  - CultureMech:007149
+  evidence_ids:
+  - tax90371
+  - bibliography
+  - owner
+- assessment_id: scope
+  area: scope
+  outcome: supported
+  topic: Restricted boundary
+  summary: Review is limited to identity, bibliography, taxonomy, provenance and schema.
+    Formulation, all concentrations and supplied chemical forms, stocks, preparation,
+    incubation and growth claims remain unchanged and unassessed.
+  target_ids:
+  - CultureMech:007149
+  evidence_ids:
+  - reader
+  - quantities
+- assessment_id: schema
+  area: schema
+  outcome: supported
+  topic: Original diagnostics
+  summary: All four documented commands ran once and passed. Strict reports zero errors
+    and references checks zero citations; these results do not authenticate the paper,
+    recipe or experimental claims.
+  target_ids:
+  - CultureMech:007149
+  evidence_ids:
+  - check-schema
+  - check-strict
+  - check-terms
+  - check-references
+- assessment_id: quantities
+  area: quantity
+  outcome: not_applicable
+  topic: Operational quantities excluded
+  summary: All 12 existing concentration fields are privately inventoried unchanged/not_assessed.
+    No values, corrective units or formulation guidance are provided publicly.
+  target_ids:
+  - CultureMech:007149
+  evidence_ids:
+  - quantities
+  - census
+- assessment_id: grounding
+  area: grounding
+  outcome: not_applicable
+  topic: Chemical assessment excluded
+  summary: Existing chemical ID/label slots and packaged snapshot membership are inventoried
+    structurally only; no new operational ontology or supplied-form assessment is
+    claimed.
+  target_ids:
+  - CultureMech:007149
+  evidence_ids:
+  - grounding
+  - mim
+  - mim-meta
+- assessment_id: provenance
+  area: provenance
+  outcome: concern
+  topic: Generated bibliography is stale
+  summary: The owner has the October14 bibliographic-only event and scoped reference
+    that the selected target lacks. The generic Mazumdar2014 import reference identifies
+    database provenance, not the Calvo experimental article. Original events and historical
+    reports are retained without operational reauthentication.
+  target_ids:
+  - CultureMech:007149
+  evidence_ids:
+  - target
+  - owner
+  - history
+  - reports
+  - writer-merge
+  - writer-mediadb
+findings:
+- finding_id: f1
+  issue_key: culturemech-007149-bibliographic-staleness
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generated metadata omits the maintained scoped bibliography
+  description: Preserve the owner’s qualified PMID/DOI and title-level taxonomy citation
+    in a separately bounded metadata follow-up. The generated target lacks this later
+    bibliographic context. Keep the MediaDB/database provenance distinct from the
+    experimental article, and retain every original event unchanged; any correction
+    is a new verified metadata event. No recipe equivalence, operational regeneration
+    or scientific promotion follows.
+  target_ids:
+  - CultureMech:007149
+  field_paths:
+  - references
+  - curation_history
+  evidence_ids:
+  - target
+  - owner
+  - bibliography
+  - history
+  - writer-merge
+  rule_id: review-yaml-record/bibliographic-provenance-staleness
+  native_severity: P3
+  normalization_reason: 'Custom provenance rule, minor P3: stale metadata without
+    an asserted operational formulation defect.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calvo_et_al.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: a1
+  description: Preserve the owner’s qualified PMID/DOI and title-level taxonomy citation
+    in a separately bounded metadata follow-up. The generated target lacks this later
+    bibliographic context. Keep the MediaDB/database provenance distinct from the
+    experimental article, and retain every original event unchanged; any correction
+    is a new verified metadata event. No recipe equivalence, operational regeneration
+    or scientific promotion follows.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007149
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calvo_et_al.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Original history and all operational fields remain unchanged.
+  - PMID/DOI/title/authors/year and title-level taxonomy agree with exact verified
+    metadata, with bibliographic-only scope explicit.
+  - No growth assertion, recipe equivalence, strain inference, operational regeneration
+    or scientific validation is introduced.
+  generator: Metadata-only provenance follow-up
+limitations:
+- 'scientific_review is false: no cultivation, formulation, amount, unit, stock, supplied-form,
+  preparation, incubation, optimization or experimental correction is supplied.'
+- Publication identity and title-level taxonomy do not authenticate the MediaDB recipe-to-paper
+  equivalence or a specific strain.
+- Crossref may include an abstract in its raw metadata response; that abstract is
+  excluded from assessment, as are all full-paper sections. No operational MediaDB
+  recipe or paper was newly fetched.
+- Current MIM rows are structural membership only; no chemical-form certification
+  or historical validity is inferred.
+- Historical report tables and the operational parent-plan payload are excluded; their
+  hashes and exact metadata headers remain provenance only.
+- All existing quantities and numeric preparation fields are unchanged/not_assessed
+  privately and omitted from public details.
+- No formal review save, native rerun, source/recipe edits, Git/STATE mutation or
+  publication was performed.

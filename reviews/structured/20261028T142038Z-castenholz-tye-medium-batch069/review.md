@@ -1,0 +1,2524 @@
+# Scientific review of castenholz_tye_medium
+
+- Review: 20261028T142038Z-castenholz-tye-medium-batch069
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T13:49:15.079979Z
+- Finished UTC: 2026-10-28T14:20:38.232587Z
+- Reviewer: Codex independent record reviewer (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact ATCC461 primary is available through both URLs and corroborates a multi-stock Castenholz TYE assembly. All 72 selected concentration fields were assessed. The flattened hierarchy, agar branches, omitted preparation and specific source/form conflicts require curation; no final-volume or acid-density conversion is invented.
+
+## Scope And Provenance
+
+Full selected target and maintained owners, every quantity and unchanged claim; separately scoped source dependencies and current writers.
+
+Selection: Authoritative batch069 selection index 5 at base 9ea7ff33d354e37b791df96a880005153e446ce3. Fresh review, not reconstruction of lost historical bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008899 | data/merge_yaml/merged/Castenholz_TYE_medium.yaml | generated | castenholz_tye_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:008899 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-strict | passed | True | CultureMech:008899 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-terms | passed | True | CultureMech:008899 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-references | passed | True | CultureMech:008899 | Exit 0; original full stdout/stderr read. Zero reference checks. |
+
+## Scientific And Domain Assessments
+
+### Exact ATCC source and two TOGO owners
+
+identity: supported. Targets: CultureMech:008899.
+
+Both inspected TOGO M2311 and M2312 records point to the same original ATCC URL. That URL and the resolved current ATCC461 URL returned identical PDF bytes. The source is Castenholz TYE medium; the two local owner accessions remain distinct provenance layers. No strain-specific growth claim follows from the recipe.
+
+### Physical state and composition scope
+
+consistency: concern. Targets: CultureMech:008899.
+
+COMPLEX/UNDEFINED is consistent with tryptone and yeast extract. SOLID_AGAR is valid for either selected solid branch, but the generic record loses the optional-liquid alternative and conflates two mutually alternative agar rows. Classification itself is not claimed wrong for a solid preparation.
+
+### Historical assertions and current writers
+
+provenance: concern. Targets: CultureMech:008899.
+
+All three full October reports recorded zero source-checked quantities and are derivative triage only. Current source captures authenticate both ATCC routes independently. Historical duplicate notes document water summation, but current cleanup no longer sums conflicting values and current full-formulation merge guards are credited. Both owners require source-aware repair before safe regeneration; matching names do not prove all provenance is interchangeable. Current conservative merging preserves scientific fields and rejects incompatible formulations. Inspected writer behavior is described separately by exact file and function; it does not prove historical execution.
+
+### Every concentration and source-only amount/stage
+
+quantity: concern. Targets: CultureMech:008899.
+
+All 72 selected target/owner concentration fields have explicit decisions; source-only stock, liquid, control and denominator gaps are retained separately.
+
+{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:008899", "selected_concentration_field_count": 72, "selected_concentration_fields_covered": 72, "decisions": [{"decision_id": "q1", "subject": "DI Water", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "3500.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "3500.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "3500.0", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "receiving-medium branch", "interpretation": "The stored 3500 g/L sums five different water batches: 400 mL receiving water, 1000 mL salts-stock water, 1000 mL Nitsch water, 100 mL FeCl3-stock water and 1000 mL TYE water. Keep these five absolute inputs separate; no mass conversion, combined batch or final volume is established.", "sources": [{"locator": "$.components[0].items[0]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"DI Water\",\n          \"volume\": 400,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\": \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[0].items[0]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"DI Water\",\n          \"volume\": 400,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\": \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "DI Water ……………………………………………... 400.0 mL", "quote_representation": "captured extracted text"}, {"locator": "$.components[1].items[7]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"DI Water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\": \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[2].items[6]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"DI Water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\": \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[3].items[1]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"DI Water\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\": \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[4].items[1]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"DI Water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\": \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q2", "subject": "Agar (alternative)", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "30", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "30", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "30", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "receiving-medium branch", "interpretation": "The source provides 30 g agar as an alternative to the optional 15 g branch. It is not additive with that branch, and the local 30 g/L denominator is not independently established by 500+100+400 mL listed inputs. Retain the absolute alternative amount and branch.", "sources": [{"locator": "$.components[0].items[1]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"Agar (alternative)\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\": \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\": \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[0].items[1]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"Agar (alternative)\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\": \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\": \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 8-8", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Agar (alternative) ……………………………………. 30.0 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject": "Castenholz Salts, 2x", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "500", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "500", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "500", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "receiving-medium branch", "interpretation": "This is the 500 mL dose of 2x Castenholz salts stock, not 500 g/L of a direct ingredient. Move it to a scoped stock descriptor with its source batch composition. The 2x label is relative strength, not an independent final-volume measurement.", "sources": [{"locator": "$.components[0].items[2]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"Castenholz Salts, 2x\",\n          \"volume\": 500,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M2311\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[0].items[2]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"Castenholz Salts, 2x\",\n          \"volume\": 500,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M2312\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Castenholz Salts, 2x (see below) ……………………. 500.0 mL", "quote_representation": "captured extracted text"}]}, {"decision_id": "q4", "subject": "NaCl", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "0.016", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "0.016", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "0.016", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water.", "sources": [{"locator": "$.components[1].items[0]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 0.016,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\": \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[1].items[0]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"NaCl\",\n          \"volume\": 0.016,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\": \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 24-24", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "NaCl ……………………………………………………. 0.016 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q5", "subject": "NaNO3", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "1.4", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "1.4", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "1.4", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water.", "sources": [{"locator": "$.components[1].items[1]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"NaNO3\",\n          \"volume\": 1.4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001049\",\n          \"gmo_id\": \"GMO_001049\",\n          \"label\": \"Sodium nitrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[1].items[1]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"NaNO3\",\n          \"volume\": 1.4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001049\",\n          \"gmo_id\": \"GMO_001049\",\n          \"label\": \"Sodium nitrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 26-26", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "NaNO3 …………………………………………………. 1.4 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q6", "subject": "Nitrilotriacetic acid", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water.", "sources": [{"locator": "$.components[1].items[2]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\",\n          \"gmo_id\": \"GMO_001053\",\n          \"label\": \"Nitrilotriacetic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[1].items[2]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001053\",\n          \"gmo_id\": \"GMO_001053\",\n          \"label\": \"Nitrilotriacetic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 19-19", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Nitrilotriacetic acid …………………………………….. 0.2 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q7", "subject": "KNO3", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "0.21", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "0.21", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "0.21", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water.", "sources": [{"locator": "$.components[1].items[3]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"KNO3\",\n          \"volume\": 0.21,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001056\",\n          \"gmo_id\": \"GMO_001056\",\n          \"label\": \"Potassium nitrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[1].items[3]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"KNO3\",\n          \"volume\": 0.21,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001056\",\n          \"gmo_id\": \"GMO_001056\",\n          \"label\": \"Potassium nitrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 25-25", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "KNO3 …………………………………………………... 0.21 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q8", "subject": "Na2HPO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "0.22", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "0.22", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "0.22", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water.", "sources": [{"locator": "$.components[1].items[4]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"Na2HPO4\",\n          \"volume\": 0.22,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001069\",\n          \"gmo_id\": \"GMO_001069\",\n          \"label\": \"Disodium phosphate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[1].items[4]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"Na2HPO4\",\n          \"volume\": 0.22,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001069\",\n          \"gmo_id\": \"GMO_001069\",\n          \"label\": \"Disodium phosphate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 27-27", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Na2HPO4 ………………………………………............. 0.22 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q9", "subject": "CaSO4 · 2H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "0.12", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "0.12", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "0.12", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water.", "sources": [{"locator": "$.components[1].items[5]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"CaSO4 · 2H2O\",\n          \"volume\": 0.12,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001087\",\n          \"gmo_id\": \"GMO_001087\",\n          \"label\": \"Calcium sulfate dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[1].items[5]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"CaSO4 · 2H2O\",\n          \"volume\": 0.12,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001087\",\n          \"gmo_id\": \"GMO_001087\",\n          \"label\": \"Calcium sulfate dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 22-22", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "CaSO4 x 2H2O ………………………………………… 0.12 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q10", "subject": "MgSO4·H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water. The primary specifies MgSO4·7H2O; TOGO and the local preferred term say monohydrate, while both asserted CHEBI slots correctly name heptahydrate. Resolve the source/label mismatch without changing the primary-supported hydrate ID blindly.", "sources": [{"locator": "$.components[1].items[6]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"MgSO4·H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001587\",\n          \"gmo_id\": \"GMO_001587\",\n          \"label\": \"Magnesium sulfate monohydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[1].items[6]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"MgSO4·H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001587\",\n          \"gmo_id\": \"GMO_001587\",\n          \"label\": \"Magnesium sulfate monohydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 23-23", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "MgSO4 x 7H2O ………………………………………... 0.2 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q11", "subject": "Agar (if needed)", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "30", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "30", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "30", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "receiving-medium branch", "interpretation": "Current ATCC461 specifies optional agar 15 g (labelled 1.5%), whereas both TOGO records place an Agar (if needed) 30 g row inside the salts section. Preserve this source discrepancy and restore the primary optional branch with evidence; do not add it to the 30 g alternative or infer the percentage basis.", "sources": [{"locator": "$.components[1].items[8]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"Agar (if needed)\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\": \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\": \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[1].items[8]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"Agar (if needed)\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\": \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\": \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Agar (if required, 1.5%) ……………………………... 15.0 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q12", "subject": "Na2MoO4·2H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "0.025", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "0.025", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "0.025", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water. ATCC prints Na2MoO4 without hydrate, whereas TOGO/local specify dihydrate; that supplied-form difference remains explicit and must not be silently harmonized.", "sources": [{"locator": "$.components[2].items[0]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"Na2MoO4·2H2O\",\n          \"volume\": 0.025,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\": \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[2].items[0]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"Na2MoO4·2H2O\",\n          \"volume\": 0.025,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\": \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 42-42", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Na2MoO4 ……………………………………......... 0.025 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q13", "subject": "H3BO3", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water. ATCC literally prints H3BO4, whereas TOGO/local say H3BO3. The primary spelling is chemically ambiguous; preserve it as a source conflict, not an authenticated correction to either formula.", "sources": [{"locator": "$.components[2].items[1]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\": \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[2].items[1]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\": \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 40-40", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "H3BO4 …………………………………………….. 0.5 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q14", "subject": "CoCl2·6H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "0.046", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "0.046", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "0.046", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water. Both sources specify cobalt chloride hexahydrate; the local CHEBI:35696 instead describes anhydrous cobalt dichloride.", "sources": [{"locator": "$.components[2].items[2]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"CoCl2·6H2O\",\n          \"volume\": 0.046,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001021\",\n          \"gmo_id\": \"GMO_001021\",\n          \"label\": \"Cobalt dichloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[2].items[2]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"CoCl2·6H2O\",\n          \"volume\": 0.046,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001021\",\n          \"gmo_id\": \"GMO_001021\",\n          \"label\": \"Cobalt dichloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 43-43", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "CoCl2 x 6H2O …………………………………….. 0.046 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q15", "subject": "ZnSO4·7H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water. ATCC prints ZnSO4 without hydrate while TOGO/local specify heptahydrate; no anhydrous-to-hydrate mass conversion is justified.", "sources": [{"locator": "$.components[2].items[3]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"ZnSO4·7H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\",\n          \"gmo_id\": \"GMO_001023\",\n          \"label\": \"Zinc sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[2].items[3]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"ZnSO4·7H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\",\n          \"gmo_id\": \"GMO_001023\",\n          \"label\": \"Zinc sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 39-39", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "ZnSO4 …………………………………………….. 0.5 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q16", "subject": "CuSO4·5H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "0.016", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "0.016", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "0.016", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water. ATCC literally prints CUSO4 without hydrate while TOGO/local specify CuSO4·5H2O; capitalization/hydrate differences remain source-qualified.", "sources": [{"locator": "$.components[2].items[4]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"CuSO4·5H2O\",\n          \"volume\": 0.016,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\",\n          \"gmo_id\": \"GMO_001039\",\n          \"label\": \"Copper(II) sulfate pentahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[2].items[4]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"CuSO4·5H2O\",\n          \"volume\": 0.016,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\",\n          \"gmo_id\": \"GMO_001039\",\n          \"label\": \"Copper(II) sulfate pentahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 41-41", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "CUSO4 …………………………………………….. 0.016 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q17", "subject": "H2SO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water. ATCC prints 0.5 g H2SO4, whereas TOGO specifies 0.5 mL. Neither a density nor acid strength is supplied; do not interconvert these quantities.", "sources": [{"locator": "$.components[2].items[5]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"H2SO4\",\n          \"volume\": 0.5,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001482\",\n          \"gmo_id\": \"GMO_001482\",\n          \"label\": \"Sulfuric acid solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[2].items[5]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"H2SO4\",\n          \"volume\": 0.5,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001482\",\n          \"gmo_id\": \"GMO_001482\",\n          \"label\": \"Sulfuric acid solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 37-37", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "H2SO4 ……………………………………………... 0.5 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q18", "subject": "MnSO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "2.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "2.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "2.2", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water.", "sources": [{"locator": "$.components[2].items[7]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"MnSO4\",\n          \"volume\": 2.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001763\",\n          \"gmo_id\": \"GMO_001763\",\n          \"label\": \"Manganese sulfate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[2].items[7]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"MnSO4\",\n          \"volume\": 2.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001763\",\n          \"gmo_id\": \"GMO_001763\",\n          \"label\": \"Manganese sulfate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 38-38", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "MnSO4 …………………………………………….. 2.2 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q19", "subject": "FeCl3", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "0.03", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "0.03", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "0.03", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "FeCl3 stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water. FeCl3 is 0.03 g with 100 mL listed water, not 0.03 g/L final medium. The 0.03% heading is retained as labelled; no measured final stock volume is assumed.", "sources": [{"locator": "$.components[3].items[0]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"FeCl3\",\n          \"volume\": 0.03,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001122\",\n          \"gmo_id\": \"GMO_001122\",\n          \"label\": \"Iron(III) chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[3].items[0]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"FeCl3\",\n          \"volume\": 0.03,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001122\",\n          \"gmo_id\": \"GMO_001122\",\n          \"label\": \"Iron(III) chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 49-49", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "FeCl3…………………………………………… 0.03 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q20", "subject": "Yeast extract", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "10", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "10", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "10", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "TYE stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water. The 1% TYE heading coexists with separate 10 g yeast-extract and 10 g tryptone rows in 1000 mL listed water; do not reinterpret that heading as a verified total-solids percentage.", "sources": [{"locator": "$.components[4].items[0]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\": \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[4].items[0]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\": \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 55-55", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Yeast Extract …………………………………... 10.0 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q21", "subject": "Tryptone (BD 211705)", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "10", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "10", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "10", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "TYE stock", "interpretation": "The stated source mass belongs to this separate stock batch; the current top-level G_PER_L representation loses that stage and has no verified final-medium denominator. Retain source mass/form within the stock and its separately specified receiving dose; do not multiply or dilute into a new final concentration from listed water. The 1% TYE heading coexists with separate 10 g yeast-extract and 10 g tryptone rows in 1000 mL listed water; do not reinterpret that heading as a verified total-solids percentage.", "sources": [{"locator": "$.components[4].items[2]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"Tryptone (BD 211705)\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001043\",\n          \"gmo_id\": \"GMO_001043\",\n          \"label\": \"Bacto &amp;trade; Tryptone\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[4].items[2]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"Tryptone (BD 211705)\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001043\",\n          \"gmo_id\": \"GMO_001043\",\n          \"label\": \"Bacto &amp;trade; Tryptone\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 54-54", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Tryptone ……………………………………….. 10.0 g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q22", "subject": "1% TYE Solution", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "solutions[0].concentration", "original": {"value": "100", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "solutions[0].concentration", "original": {"value": "100", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "solutions[0].concentration", "original": {"value": "100", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "TYE addition to final assembly", "interpretation": "The source specifies 100 mL TYE to the receiving assembly, not the same number in g/L. Populate composition and retain exact stage; do not treat these nested doses as final-medium rates.", "sources": [{"locator": "$.components[0].items[3]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"1% TYE Solution\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M2311\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[0].items[3]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"1% TYE Solution\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M2312\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "1% TYE Solution (see below) ..……………………… 100.0 mL", "quote_representation": "captured extracted text"}]}, {"decision_id": "q23", "subject": "Nitsch's Trace Elements (see below)", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "solutions[1].concentration", "original": {"value": "2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "solutions[1].concentration", "original": {"value": "2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "solutions[1].concentration", "original": {"value": "2", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "nested addition to Castenholz salts stock", "interpretation": "The source specifies 2 mL of this separate stock into the salts stock, not the same number in g/L. Populate composition and retain exact stage; do not treat these nested doses as final-medium rates.", "sources": [{"locator": "$.components[1].items[9]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"Nitsch's Trace Elements (see below)\",\n          \"volume\": 2,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M2311\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[1].items[9]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"Nitsch's Trace Elements (see below)\",\n          \"volume\": 2,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M2312\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 20-20", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Nitsch's trace elements (see below) ……………………. 2.0 mL", "quote_representation": "captured extracted text"}]}, {"decision_id": "q24", "subject": "FeCl3 solution (0.03%, see below) ", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "solutions[2].concentration", "original": {"value": "2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml", "field_path": "solutions[2].concentration", "original": {"value": "2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml", "field_path": "solutions[2].concentration", "original": {"value": "2", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "nested addition to Castenholz salts stock", "interpretation": "The source specifies 2 mL of this separate stock into the salts stock, not the same number in g/L. Populate composition and retain exact stage; do not treat these nested doses as final-medium rates.", "sources": [{"locator": "$.components[1].items[10]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\": \"FeCl3 solution (0.03%, see below) \",\n          \"volume\": 2,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M2311\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[1].items[10]", "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\": \"FeCl3 solution (0.03%, see below) \",\n          \"volume\": 2,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M2312\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 21-21", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "FeCl3 solution (0.03%, see below) …………………….. 2.0 mL", "quote_representation": "captured extracted text"}]}, {"decision_id": "q25", "subject": "Main heating and sterilization", "local_fields": [], "decision": "add", "stage": "source-only preparation control", "interpretation": "Heat/mix TYE, DI water and optional agar; autoclave at 121°C. No main-stage duration is given here; do not transfer the TYE-stock 15-minute duration automatically.", "sources": [{"locator": "extracted-text lines 10-10", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Heat and mix TYE solution, DI water and agar (if required). Autoclave at 121 o C.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q26", "subject": "Aseptic salt addition", "local_fields": [], "decision": "add", "stage": "source-only preparation control", "interpretation": "Add salt solution aseptically after the stated main preparation; this is distinct from autoclaving the salts.", "sources": [{"locator": "extracted-text lines 12-12", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Aseptically add salt solution.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q27", "subject": "Receiving pH", "local_fields": [], "decision": "add", "stage": "source-only preparation control", "interpretation": "Final medium pH is 7.6; it is absent locally and distinct from stock pH 8.2.", "sources": [{"locator": "extracted-text lines 14-14", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Adjust for final pH 7.6", "quote_representation": "captured extracted text"}]}, {"decision_id": "q28", "subject": "Stock pH", "local_fields": [], "decision": "add", "stage": "source-only preparation control", "interpretation": "The salts stock is adjusted to pH 8.2. No titrant identity or quantity is supplied.", "sources": [{"locator": "extracted-text lines 30-30", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Adjust pH to 8.2.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q29", "subject": "Stock filtration", "local_fields": [], "decision": "add", "stage": "source-only preparation control", "interpretation": "Filter sterilize the salts portion prior to use; no pore size is supplied.", "sources": [{"locator": "extracted-text lines 32-32", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Filter sterilize portion prior to use.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q30", "subject": "Stock storage", "local_fields": [], "decision": "add", "stage": "source-only preparation control", "interpretation": "The salts stock may be stored at 2–5°C for one year; this is not incubation temperature or a growth result.", "sources": [{"locator": "extracted-text lines 34-34", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "May be stored at 2-5o C for one year.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q31", "subject": "Trace and Fe stock mixing", "local_fields": [], "decision": "add", "stage": "source-only preparation control", "interpretation": "Nitsch and FeCl3 preparations are mixed and added to the salts stock, as their respective source sections specify.", "sources": [{"locator": "extracted-text lines 46-46", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Mix and add to salt solution", "quote_representation": "captured extracted text"}, {"locator": "extracted-text lines 51-51", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Mix and add to salt solution.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q32", "subject": "TYE sterilization", "local_fields": [], "decision": "add", "stage": "source-only preparation control", "interpretation": "TYE stock is autoclaved at 121°C for 15 minutes. This duration belongs to the TYE section.", "sources": [{"locator": "extracted-text lines 58-58", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Autoclave at 121o C for 15 minutes.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q33", "subject": "Dispensing", "local_fields": [], "decision": "add", "stage": "source-only preparation control", "interpretation": "Dispensing is as required; the source supplies no fixed vessel or aliquot volume.", "sources": [{"locator": "extracted-text lines 16-16", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1", "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec", "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74", "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Dispense as required.", "quote_representation": "captured extracted text"}]}], "local_field_census_reference": "REVIEW_WORK/batch069/record05/grounding-inventory.json", "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization, stock composition, working dose and preparation controls are separate. No source edits or automatic curation performed."}
+
+### Primary, secondary and legacy linkage census
+
+grounding: concern. Targets: CultureMech:008899.
+
+data/merge_yaml/merged/Castenholz_TYE_medium.yaml: primary 15/21, secondary 12/21; data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml: primary 15/21, secondary 12/21; data/normalized_yaml/bacterial/castenholz_tye_medium.yaml: primary 15/21, secondary 12/21. These are ingredient-instance linkage fractions, not accuracy scores. Solution terms are audited separately. Every actually asserted CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows. 3 numeric legacy MediaIngredientMech mentions occur across the complete selected documents, with exact locators in the inventory; NNNNNN is a historical placeholder, not an ID. Complex commercial/product components are not forced to pure-compound IDs.
+
+### Scope and source limits
+
+scope: supported. Targets: CultureMech:008899.
+
+Complete selected target and exact maintained owners reviewed. Dependencies transfer only their explicitly named stock subsection; unrelated parent media and source prescriptions are not growth evidence.
+
+### Native structural checks
+
+schema: supported. Targets: CultureMech:008899.
+
+All four canonical commands passed once; strict schema TSV contains only its header and reference validation checked zero references on the generated target. This does not certify quantities or chemical forms.
+
+## Findings
+
+### f1: Five separate batches and nested doses are flattened into final-medium quantities
+
+major / open / confirmed; issue key: culturemech-008899-flattened-stock-hierarchy.
+
+Water is summed across five separate batches as 3500 g/L; the 500 mL salts dose, 100 mL TYE dose and nested 2 mL doses are recorded as mass concentrations. Every stock component is also represented as a top-level final rate, and all three solution compositions are empty.
+
+### f2: Optional and alternative agar branches are conflated
+
+major / open / confirmed; issue key: culturemech-008899-agar-branch-conflation.
+
+ATCC461 gives optional 15 g agar labelled 1.5% and a 30 g alternative. Both TOGO owners instead retain two 30 g rows, including one inside the salts section. These must not be summed or treated as two additions. SOLID_AGAR remains valid for the solid branch; the missing branch context is the defect.
+
+### f3: Source forms and sulfuric-acid units need explicit reconciliation
+
+major / open / confirmed; issue key: culturemech-008899-source-form-and-unit-disagreements.
+
+The primary MgSO4 heptahydrate agrees with current CHEBI slots but conflicts with the monohydrate label. Cobalt hexahydrate is asserted as anhydrous CHEBI:35696. Primary Nitsch rows also differ from TOGO for H2SO4 g versus mL, boron formula H3BO4 versus H3BO3, and unspecified versus hydrated Mo/Zn/Cu forms. The literal primary differences are unresolved, not silently corrected.
+
+### f4: Staged preparation, stock controls and pH are absent
+
+major / open / confirmed; issue key: culturemech-008899-missing-source-preparation.
+
+The selected layers omit main pH 7.6, stock pH 8.2, filtration, aseptic stock addition, stock storage and separate TYE sterilization. Native structural passes do not verify these source controls.
+
+### f5: The nitrate secondary linkage remains a legacy identifier
+
+minor / open / confirmed; issue key: culturemech-008899-legacy-nitrate-link.
+
+Each selected layer retains MediaIngredientMech:000170 for KNO3 while the primary CHEBI:63043 is current and source-compatible. The packaged CSV has no exact row under the legacy identifier; this is a current snapshot limitation rather than historical invalidity or authoritative deprecation.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Reconstruct the primary stock hierarchy in each maintained owner, preserving exact source masses, absolute water/dose volumes and nested stages. Do not compute final concentrations from nominal listed water; retain resolvable content as evidence-backed batch notes if the schema has no appropriate absolute-mass slot.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action2
+
+Represent the optional 15 g and alternative 30 g branches explicitly with the exact primary source context; preserve a liquid alternative without declaring the current solid classification intrinsically wrong.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action3
+
+Preserve a source-qualified discrepancy ledger. Retain the primary-supported Mg heptahydrate identity while correcting its label only with evidence; resolve cobalt hydrate accurately. Do not guess the boron formula, acid density/strength or unprinted hydrate forms.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action4
+
+Add the exact stage-specific instructions and root-level evidence scoped to each field. Keep unspecified main autoclave duration, filter pore size and percentage bases unresolved; do not copy stock controls to the receiving medium.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action5
+
+Resolve the secondary link through current exact MIM evidence or retain a clearly qualified unresolved legacy association. Preserve the valid primary nitrate mapping and append verified correction provenance without rewriting old events.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local0 | data/merge_yaml/merged/Castenholz_TYE_medium.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local1 | data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local2 | data/normalized_yaml/bacterial/castenholz_tye_medium.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| validate-schema | REVIEW_WORK/batch069/record05/validate-schema-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-strict | REVIEW_WORK/batch069/record05/validate-strict-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Strict TSV is header-only. |
+| validate-terms | REVIEW_WORK/batch069/record05/validate-terms-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-references | REVIEW_WORK/batch069/record05/validate-references-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Zero references checked, not scientific source verification. |
+| atcc461 | https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current primary captured text and available rendered PDF pages read: exact main recipe, separate stock tables, preparation and any strain-specific prescriptions. A source formulation is distinct from experimental growth evidence. |
+| atccOld | https://www.atcc.org/~/media/40D6184E15BC4586AE200B0FB00A64CE.ashx; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current primary captured text and available rendered PDF pages read: exact main recipe, separate stock tables, preparation and any strain-specific prescriptions. A source formulation is distinct from experimental growth evidence. |
+| togo2311 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Current TOGO source identity, complete component paragraphs, units, stock references and comments read; exact primary collection source checked independently. Batch inputs and bare percentages are not silently normalized. |
+| togo2312 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Current TOGO source identity, complete component paragraphs, units, stock references and comments read; exact primary collection source checked independently. Batch inputs and bare percentages are not silently normalized. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi26836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:26836 = sulfuric acid; definition ['A sulfur oxoacid that consists of two oxo and two hydroxy groups joined covalently to a central sulfur atom.']; formula ['H2O4S']; mass ['98.079']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi30808 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30808; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:30808 = iron trichloride; definition []; formula ['Cl3Fe']; mass ['162.204']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:31440 = copper(II) sulfate pentahydrate; definition ['The pentahydrate of copper(2+) sulfate. A bright blue crystalline solid.']; formula ['Cu.5H2O.O4S']; mass ['249.684']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:31795 = magnesium sulfate heptahydrate; definition ['A hydrate that is the heptahydrate form of magnesium sulfate.']; formula ['7H2O.Mg.O4S']; mass ['246.473']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:32312 = zinc sulfate heptahydrate; definition ['A hydrate that is the heptahydrate form of zinc sulfate.']; formula ['7H2O.O4S.Zn']; mass ['287.558']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi32583 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32583; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:32583 = calcium sulfate dihydrate; definition []; formula ['Ca.2H2O.O4S']; mass ['172.171']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:33118 = boric acid; definition []; formula ['H3BO3']; mass ['61.833']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi34683 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:34683 = disodium hydrogenphosphate; definition []; formula ['HO4P.2Na']; mass ['141.958']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi35696 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:35696 = cobalt dichloride; definition ['A cobalt salt in which the cobalt metal is in the +2 oxidation state and the counter-anion is chloride. It is used as an indicator for water in desiccants.']; formula ['2Cl.Co']; mass ['129.839']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:44557 = nitrilotriacetic acid; definition []; formula ['C6H9NO6']; mass ['191.139']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi63005 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:63005 = sodium nitrate; definition ['The inorganic nitrate salt of sodium.']; formula ['NO3.Na']; mass ['84.994']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi63043 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63043; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:63043 = potassium nitrate; definition ['The inorganic nitrate salt of potassium.']; formula ['K.NO3']; mass ['101.102']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:75213 = sodium molybdate dihydrate; definition ['A hydrate that is the dihydrate form of sodium molybdate.']; formula ['2H2O.MoO4.2Na']; mass ['241.946']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86360 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86360; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86360 = manganese(II) sulfate; definition ['A metal sulfate in which the metal component is manganese in the +2 oxidation state.']; formula ['Mn.O4S']; mass ['151.001']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| grounding | REVIEW_WORK/batch069/record05/grounding-inventory.json; documents; ols_scientific_projection; mim_index | supports | Complete selected-layer term slots and current packaged MIM CSV exact-identifier joins with row locators and metadata commit; includes separately scoped dependency context. No fuzzy mapping or historical-validity inference. |
+| history0 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/castenholz_tye_medium.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history1 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history2 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Castenholz_TYE_medium.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history-auth | REVIEW_WORK/batch069/record05/historical-authentication.json; reports | supports | Exact report headers, source digest and every quoted API object reconciled; all reports fully read with duplicate cells pooled. Current primary sources independently govern scientific decisions. |
+| writer31 | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current _merge_ingredient_group collapses equal duplicate values without summing them and retains the first conflicting value with a flag. This behavior is distinct from historical summed-amount artifacts and does not authenticate source-specific stock or product structure. |
+| writer32 | scripts/cleanup_recipe_ingredients.py; merge_duplicate_ingredients; merge_ingredient_group | context_only | Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group retains the first concentration, flags differing values and selects the first CHEBI. It cannot establish source stages or justify collapsing independent supplemental and product-contained components. |
+| writer33 | scripts/migrate_solutions_from_ingredients.py; _is_solution; _resolve_solution; _migrate_media_file | context_only | Current _is_solution uses name patterns, _resolve_solution keeps concentrations while creating empty reference stubs or matching a name-indexed solution, and _migrate_media_file appends those solutions and history. It does not reconstruct nested source batches or authenticate copied unit/basis. |
+| writer34 | scripts/repair_merged_duplicates.py; repair_ingredient; repair_record | context_only | Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS duplicate notes. This bounded repair is not a general solution for product decomposition, stock flattening or differing source formulations. |
+| writer35 | src/culturemech/import/togo_importer.py; _extract_primary_components; _solution_from_item; _extract_assembled_solutions; _parse_unit; _extract_preparation_steps; _convert_to_culturemech; _extract_ph | context_only | Current _extract_primary_components, _solution_from_item and _extract_assembled_solutions distinguish primary sections, nested stocks and assembled solutions. _parse_unit maps bare g/mg/ml to per-litre enum labels, while L remains L; those enum choices still require a verified source basis. _extract_preparation_steps retains comments. _convert_to_culturemech sets COMPLEX by default, and _extract_ph reads its supplied object. These present behaviors neither authenticate historical execution nor prove that all source metadata survived the old import. |
+| writer36 | src/culturemech/merge/formulation.py; formulation_content; merge_formulation_evidence | context_only | Current formulation_content retains exact scientific quantities, preparation and other scientific fields; merge_formulation_evidence rejects incompatible projections and unions evidence at matching scopes. A source-equivalence claim is not established by shared ingredient identities. |
+| writer37 | src/culturemech/merge/matcher.py; group_formulations; group_recipes | context_only | Current group_formulations calls group_recipes with fail_on_invalid=True and FormulationFingerprinter. Expected standalone or unfingerprintable records are excluded; malformed or unexpected inputs raise. Valid records are grouped by full scientific content. This guard does not retrieve or authenticate source recipes. |
+| writer38 | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group routes a single maintained owner with merge metadata; multiple owners pass through conservative merge_formulation_evidence. Regenerating from an unrepaired owner retains its defects. Current conservative behavior is credited and does not establish how the old generated record was produced. |
+| quantity-inventory | REVIEW_WORK/batch069/record05/quantity-inventory.json; decisions | supports | Complete explicit decisions with exact current local values, per-layer locators, source quotes/hash/time, stage and arithmetic limits. |
+
+## Limits And Additional Notes
+
+- ATCC literally prints H3BO4 and CUSO4, and leaves some hydrate forms unspecified. TOGO provides different spellings/forms; this review records rather than silently resolves those source discrepancies.
+- Listed component volumes do not establish measured final stock or medium volumes. The 1% TYE, 0.03% FeCl3 and 1.5% agar labels are retained with their source context and unresolved percentage basis.
+- No primary organism-growth experiment was assessed. Both maintained owners are reviewed separately; no source edit, reimport or native save was performed.
+- Read-only scientific review. No source edits, native save, Git mutation or publication. All raw captures, failed access bodies, commands, times and original stdout/stderr remain in the adjacent private evidence directory.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T142038Z-castenholz-tye-medium-batch069
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of castenholz_tye_medium
+started_at: '2026-10-28T13:49:15.079979Z'
+finished_at: '2026-10-28T14:20:38.232587Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact ATCC461 primary is available through both URLs and corroborates
+  a multi-stock Castenholz TYE assembly. All 72 selected concentration fields were
+  assessed. The flattened hierarchy, agar branches, omitted preparation and specific
+  source/form conflicts require curation; no final-volume or acid-density conversion
+  is invented.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Castenholz_TYE_medium.yaml
+    sha256: 9858308f0cfd4241c84b73b9309f7897aac973348fa26329dba3d03c1d795de1
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+    sha256: 71da0f61b978daa473ee6c8a304740a100b9f7013b1269dfe4fbcee83e11e025
+    role: context
+  - path: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+    sha256: 0c4d9c38fc879ac2818f727719398ddf8cf65ab4e6fe3bdf7124e97c1c671aa7
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Castenholz_TYE_medium.md
+    sha256: 8c60b5a2f32ab1b8da5474ad00ffa31af4af5ccd6afa05612a256dc101bf1da6
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.md
+    sha256: eb5babe72b7c23d8d9b9b8cbbc5d4030b4a39eb03f4da133c0edc7c87304cf6a
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/castenholz_tye_medium.md
+    sha256: 3a215f569bfb8bbe34d451e2ee71290a11ae1f7fd95285412a91638be038e414
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/fetch_mediadive_solution_volumes.py
+    sha256: 408cdfa3f5c446e8f9c32ac98d7ea8a3a36553b23c032f3b7551f6a1661fd39a
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch069 selection index 5 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008899
+targets:
+- target_id: CultureMech:008899
+  path: data/merge_yaml/merged/Castenholz_TYE_medium.yaml
+  label: castenholz_tye_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:008899
+  command: just validate-schema data/merge_yaml/merged/Castenholz_TYE_medium.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:008899
+  command: just validate-strict data/merge_yaml/merged/Castenholz_TYE_medium.yaml
+    --workers 1 --out REVIEW_WORK/batch069/record05/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:008899
+  command: just validate-terms data/merge_yaml/merged/Castenholz_TYE_medium.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:008899
+  command: just validate-references data/merge_yaml/merged/Castenholz_TYE_medium.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/Castenholz_TYE_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T13:59:19.352434Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 9858308f0cfd4241c84b73b9309f7897aac973348fa26329dba3d03c1d795de1
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T13:59:19.352598Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 71da0f61b978daa473ee6c8a304740a100b9f7013b1269dfe4fbcee83e11e025
+- evidence_id: local2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T13:59:19.352625Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 0c4d9c38fc879ac2818f727719398ddf8cf65ab4e6fe3bdf7124e97c1c671aa7
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch069/record05/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T13:49:16.171961Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: c6a836578afb11ae63f3d794233e98fecfa701b0ecc749121ec3d907f0502ba5
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch069/record05/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T13:49:17.163001Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: 27138de92d68f237c2f1b8a1111dd0c63a17c233468654115c0e3061c1b62805
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch069/record05/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T13:49:18.237909Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 2cdcf2da51fb380c0b17dee5d69194ff3914dbdbb15fdbd82540608a088aa381
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch069/record05/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T13:49:18.970105Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: 1968161c413ca4d2775b5ae2dd45ae09872153d559f110b2b6a2d757c09fa5e1
+- evidence_id: atcc461
+  kind: primary_source
+  reference: https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:50:00.929887Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: 2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec
+- evidence_id: atccOld
+  kind: primary_source
+  reference: https://www.atcc.org/~/media/40D6184E15BC4586AE200B0FB00A64CE.ashx
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:50:00.854957Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: 2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec
+- evidence_id: togo2311
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:50:00.764194Z'
+  support: supports
+  summary: Current TOGO source identity, complete component paragraphs, units, stock
+    references and comments read; exact primary collection source checked independently.
+    Batch inputs and bare percentages are not silently normalized.
+  snapshot_sha256: 11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7
+- evidence_id: togo2312
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:50:00.738504Z'
+  support: supports
+  summary: Current TOGO source identity, complete component paragraphs, units, stock
+    references and comments read; exact primary collection source checked independently.
+    Batch inputs and bare percentages are not silently normalized.
+  snapshot_sha256: 6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:57.767241Z'
+  support: supports
+  summary: OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic
+    chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass
+    ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi26836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:50:00.692168Z'
+  support: supports
+  summary: OLS current exact CHEBI:26836 = sulfuric acid; definition ['A sulfur oxoacid
+    that consists of two oxo and two hydroxy groups joined covalently to a central
+    sulfur atom.']; formula ['H2O4S']; mass ['98.079']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: 19e202cd697eed2be3130d5b0b29cc0c1d18575ad103110877303ee678779737
+- evidence_id: chebi30808
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30808
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:50:00.333754Z'
+  support: supports
+  summary: OLS current exact CHEBI:30808 = iron trichloride; definition []; formula
+    ['Cl3Fe']; mass ['162.204']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 3053606ef0cc9275ce2a4d374db1f6d2f61ceb59c93b3c69c5e0c437c121060c
+- evidence_id: chebi31440
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:50:00.333649Z'
+  support: supports
+  summary: OLS current exact CHEBI:31440 = copper(II) sulfate pentahydrate; definition
+    ['The pentahydrate of copper(2+) sulfate. A bright blue crystalline solid.'];
+    formula ['Cu.5H2O.O4S']; mass ['249.684']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:50:00.247038Z'
+  support: supports
+  summary: OLS current exact CHEBI:31795 = magnesium sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of magnesium sulfate.']; formula ['7H2O.Mg.O4S'];
+    mass ['246.473']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:50:00.104166Z'
+  support: supports
+  summary: OLS current exact CHEBI:32312 = zinc sulfate heptahydrate; definition ['A
+    hydrate that is the heptahydrate form of zinc sulfate.']; formula ['7H2O.O4S.Zn'];
+    mass ['287.558']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32583
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32583
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:50:00.005159Z'
+  support: supports
+  summary: OLS current exact CHEBI:32583 = calcium sulfate dihydrate; definition [];
+    formula ['Ca.2H2O.O4S']; mass ['172.171']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: e0851fb219d91e71915c9d74b56d917e393753c4cdb94ade75821d447f4aec3c
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:56.465654Z'
+  support: supports
+  summary: OLS current exact CHEBI:33118 = boric acid; definition []; formula ['H3BO3'];
+    mass ['61.833']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34683
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:59.979683Z'
+  support: supports
+  summary: OLS current exact CHEBI:34683 = disodium hydrogenphosphate; definition
+    []; formula ['HO4P.2Na']; mass ['141.958']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: chebi35696
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:55.951873Z'
+  support: supports
+  summary: OLS current exact CHEBI:35696 = cobalt dichloride; definition ['A cobalt
+    salt in which the cobalt metal is in the +2 oxidation state and the counter-anion
+    is chloride. It is used as an indicator for water in desiccants.']; formula ['2Cl.Co'];
+    mass ['129.839']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: d9d394d79450b1671c699eaa08d3ef5d66d1f14909f1bd9c464b3d457e37a7ca
+- evidence_id: chebi44557
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:55.855946Z'
+  support: supports
+  summary: OLS current exact CHEBI:44557 = nitrilotriacetic acid; definition []; formula
+    ['C6H9NO6']; mass ['191.139']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi63005
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:59.719118Z'
+  support: supports
+  summary: OLS current exact CHEBI:63005 = sodium nitrate; definition ['The inorganic
+    nitrate salt of sodium.']; formula ['NO3.Na']; mass ['84.994']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 1ec6a815a0e22ba0d12f84ad998bef39b9e6b80cf90c25cd1ab51903bbb54da3
+- evidence_id: chebi63043
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63043
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:59.696923Z'
+  support: supports
+  summary: OLS current exact CHEBI:63043 = potassium nitrate; definition ['The inorganic
+    nitrate salt of potassium.']; formula ['K.NO3']; mass ['101.102']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: c324450e6330a169c708c32a7908b6df0276f4dc76da413e473b563928f61c13
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:55.248942Z'
+  support: supports
+  summary: OLS current exact CHEBI:75213 = sodium molybdate dihydrate; definition
+    ['A hydrate that is the dihydrate form of sodium molybdate.']; formula ['2H2O.MoO4.2Na'];
+    mass ['241.946']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86360
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86360
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:49:59.644755Z'
+  support: supports
+  summary: OLS current exact CHEBI:86360 = manganese(II) sulfate; definition ['A metal
+    sulfate in which the metal component is manganese in the +2 oxidation state.'];
+    formula ['Mn.O4S']; mass ['151.001']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: ee3b60385f389c4eeb301cfe59996112ffa9c3c135268559b79e91810a14932b
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch069/record05/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T13:59:19.359801Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: e441d625dd0e69261cfcafe72b1711cdc2237a77c3d27de8b31f4a3b8cf0124d
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/castenholz_tye_medium.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T13:59:19.360191Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 3a215f569bfb8bbe34d451e2ee71290a11ae1f7fd95285412a91638be038e414
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T13:59:19.360214Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: eb5babe72b7c23d8d9b9b8cbbc5d4030b4a39eb03f4da133c0edc7c87304cf6a
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Castenholz_TYE_medium.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T13:59:19.360234Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 8c60b5a2f32ab1b8da5474ad00ffa31af4af5ccd6afa05612a256dc101bf1da6
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record05/historical-authentication.json
+  locator: reports
+  accessed_at: '2026-10-28T13:59:19.360254Z'
+  support: supports
+  summary: Exact report headers, source digest and every quoted API object reconciled;
+    all reports fully read with duplicate cells pooled. Current primary sources independently
+    govern scientific decisions.
+  snapshot_sha256: 8af3f25d8a68348a191e9926d200df6b08b89d7d43d2cfd0837caf48afdd8e35
+- evidence_id: writer31
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T13:59:19.360315Z'
+  support: context_only
+  summary: Current _merge_ingredient_group collapses equal duplicate values without
+    summing them and retains the first conflicting value with a flag. This behavior
+    is distinct from historical summed-amount artifacts and does not authenticate
+    source-specific stock or product structure.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer32
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients; merge_ingredient_group
+  accessed_at: '2026-10-28T13:59:19.360341Z'
+  support: context_only
+  summary: Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group
+    retains the first concentration, flags differing values and selects the first
+    CHEBI. It cannot establish source stages or justify collapsing independent supplemental
+    and product-contained components.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer33
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: _is_solution; _resolve_solution; _migrate_media_file
+  accessed_at: '2026-10-28T13:59:19.360372Z'
+  support: context_only
+  summary: Current _is_solution uses name patterns, _resolve_solution keeps concentrations
+    while creating empty reference stubs or matching a name-indexed solution, and
+    _migrate_media_file appends those solutions and history. It does not reconstruct
+    nested source batches or authenticate copied unit/basis.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer34
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: repair_ingredient; repair_record
+  accessed_at: '2026-10-28T13:59:19.360395Z'
+  support: context_only
+  summary: Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS
+    duplicate notes. This bounded repair is not a general solution for product decomposition,
+    stock flattening or differing source formulations.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: writer35
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _extract_primary_components; _solution_from_item; _extract_assembled_solutions;
+    _parse_unit; _extract_preparation_steps; _convert_to_culturemech; _extract_ph
+  accessed_at: '2026-10-28T13:59:19.360440Z'
+  support: context_only
+  summary: Current _extract_primary_components, _solution_from_item and _extract_assembled_solutions
+    distinguish primary sections, nested stocks and assembled solutions. _parse_unit
+    maps bare g/mg/ml to per-litre enum labels, while L remains L; those enum choices
+    still require a verified source basis. _extract_preparation_steps retains comments.
+    _convert_to_culturemech sets COMPLEX by default, and _extract_ph reads its supplied
+    object. These present behaviors neither authenticate historical execution nor
+    prove that all source metadata survived the old import.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer36
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; merge_formulation_evidence
+  accessed_at: '2026-10-28T13:59:19.360463Z'
+  support: context_only
+  summary: Current formulation_content retains exact scientific quantities, preparation
+    and other scientific fields; merge_formulation_evidence rejects incompatible projections
+    and unions evidence at matching scopes. A source-equivalence claim is not established
+    by shared ingredient identities.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer37
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations; group_recipes
+  accessed_at: '2026-10-28T13:59:19.360484Z'
+  support: context_only
+  summary: Current group_formulations calls group_recipes with fail_on_invalid=True
+    and FormulationFingerprinter. Expected standalone or unfingerprintable records
+    are excluded; malformed or unexpected inputs raise. Valid records are grouped
+    by full scientific content. This guard does not retrieve or authenticate source
+    recipes.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer38
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T13:59:19.360506Z'
+  support: context_only
+  summary: Current merge_group routes a single maintained owner with merge metadata;
+    multiple owners pass through conservative merge_formulation_evidence. Regenerating
+    from an unrepaired owner retains its defects. Current conservative behavior is
+    credited and does not establish how the old generated record was produced.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record05/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T14:20:38.232587Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: 6ccdf75cf2e6fc03038ede707148d11e111dcc63ae1702a658b21366f8b9230d
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact ATCC source and two TOGO owners
+  outcome: supported
+  summary: Both inspected TOGO M2311 and M2312 records point to the same original
+    ATCC URL. That URL and the resolved current ATCC461 URL returned identical PDF
+    bytes. The source is Castenholz TYE medium; the two local owner accessions remain
+    distinct provenance layers. No strain-specific growth claim follows from the recipe.
+  target_ids:
+  - CultureMech:008899
+  evidence_ids:
+  - atcc461
+  - atccOld
+  - togo2311
+  - togo2312
+- assessment_id: a2
+  area: consistency
+  topic: Physical state and composition scope
+  outcome: concern
+  summary: COMPLEX/UNDEFINED is consistent with tryptone and yeast extract. SOLID_AGAR
+    is valid for either selected solid branch, but the generic record loses the optional-liquid
+    alternative and conflates two mutually alternative agar rows. Classification itself
+    is not claimed wrong for a solid preparation.
+  target_ids:
+  - CultureMech:008899
+  evidence_ids:
+  - atcc461
+  - local0
+- assessment_id: a3
+  area: provenance
+  topic: Historical assertions and current writers
+  outcome: concern
+  summary: All three full October reports recorded zero source-checked quantities
+    and are derivative triage only. Current source captures authenticate both ATCC
+    routes independently. Historical duplicate notes document water summation, but
+    current cleanup no longer sums conflicting values and current full-formulation
+    merge guards are credited. Both owners require source-aware repair before safe
+    regeneration; matching names do not prove all provenance is interchangeable. Current
+    conservative merging preserves scientific fields and rejects incompatible formulations.
+    Inspected writer behavior is described separately by exact file and function;
+    it does not prove historical execution.
+  target_ids:
+  - CultureMech:008899
+  evidence_ids:
+  - history-auth
+  - writer31
+  - writer32
+  - writer33
+  - writer34
+  - writer35
+  - writer36
+  - writer37
+  - writer38
+- assessment_id: a4
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 72 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:008899
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:008899",
+    "selected_concentration_field_count": 72, "selected_concentration_fields_covered":
+    72, "decisions": [{"decision_id": "q1", "subject": "DI Water", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path":
+    "ingredients[0].concentration", "original": {"value": "3500.0", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "3500.0",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "3500.0",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "receiving-medium branch",
+    "interpretation": "The stored 3500 g/L sums five different water batches: 400
+    mL receiving water, 1000 mL salts-stock water, 1000 mL Nitsch water, 100 mL FeCl3-stock
+    water and 1000 mL TYE water. Keep these five absolute inputs separate; no mass
+    conversion, combined batch or final volume is established.", "sources": [{"locator":
+    "$.components[0].items[0]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"DI Water\",\n          \"volume\": 400,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\":
+    \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[0].items[0]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"DI Water\",\n          \"volume\": 400,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\":
+    \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "DI Water
+    ……………………………………………... 400.0 mL", "quote_representation": "captured extracted text"},
+    {"locator": "$.components[1].items[7]", "source_key": "togo2312", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256":
+    "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256":
+    "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at":
+    "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"DI Water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\":
+    \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[2].items[6]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"DI Water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\":
+    \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[3].items[1]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"DI Water\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\":
+    \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[4].items[1]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"DI Water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\":
+    \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q2", "subject": "Agar (alternative)", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path":
+    "ingredients[1].concentration", "original": {"value": "30", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "30", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "30", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "receiving-medium branch", "interpretation":
+    "The source provides 30 g agar as an alternative to the optional 15 g branch.
+    It is not additive with that branch, and the local 30 g/L denominator is not independently
+    established by 500+100+400 mL listed inputs. Retain the absolute alternative amount
+    and branch.", "sources": [{"locator": "$.components[0].items[1]", "source_key":
+    "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Agar (alternative)\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\":
+    \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\":
+    \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.components[0].items[1]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Agar (alternative)\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\":
+    \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\":
+    \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 8-8", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Agar (alternative)
+    ……………………………………. 30.0 g", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q3", "subject": "Castenholz Salts, 2x", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[2].concentration",
+    "original": {"value": "500", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "500", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "500", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "receiving-medium branch", "interpretation":
+    "This is the 500 mL dose of 2x Castenholz salts stock, not 500 g/L of a direct
+    ingredient. Move it to a scoped stock descriptor with its source batch composition.
+    The 2x label is relative strength, not an independent final-volume measurement.",
+    "sources": [{"locator": "$.components[0].items[2]", "source_key": "togo2311",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Castenholz Salts, 2x\",\n          \"volume\": 500,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M2311\",\n          \"properties\": [],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.components[0].items[2]",
+    "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Castenholz Salts, 2x\",\n          \"volume\": 500,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M2312\",\n          \"properties\": [],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines
+    4-4", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Castenholz
+    Salts, 2x (see below) ……………………. 500.0 mL", "quote_representation": "captured extracted
+    text"}]}, {"decision_id": "q4", "subject": "NaCl", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[3].concentration",
+    "original": {"value": "0.016", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.016", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.016", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.",
+    "sources": [{"locator": "$.components[1].items[0]", "source_key": "togo2311",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"NaCl\",\n          \"volume\": 0.016,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\":
+    \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[1].items[0]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"NaCl\",\n          \"volume\": 0.016,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\":
+    \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 24-24", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "NaCl …………………………………………………….
+    0.016 g", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q5", "subject": "NaNO3", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "1.4", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "1.4", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "1.4", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.",
+    "sources": [{"locator": "$.components[1].items[1]", "source_key": "togo2311",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"NaNO3\",\n          \"volume\": 1.4,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001049\",\n          \"gmo_id\": \"GMO_001049\",\n          \"label\":
+    \"Sodium nitrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[1].items[1]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"NaNO3\",\n          \"volume\": 1.4,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001049\",\n          \"gmo_id\": \"GMO_001049\",\n          \"label\":
+    \"Sodium nitrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 26-26", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "NaNO3 ………………………………………………….
+    1.4 g", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q6", "subject": "Nitrilotriacetic acid", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.2", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.",
+    "sources": [{"locator": "$.components[1].items[2]", "source_key": "togo2311",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Nitrilotriacetic acid\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001053\",\n          \"gmo_id\": \"GMO_001053\",\n          \"label\":
+    \"Nitrilotriacetic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[1].items[2]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Nitrilotriacetic acid\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001053\",\n          \"gmo_id\": \"GMO_001053\",\n          \"label\":
+    \"Nitrilotriacetic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 19-19", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Nitrilotriacetic
+    acid …………………………………….. 0.2 g", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q7", "subject": "KNO3", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.21", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.21", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.21", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.",
+    "sources": [{"locator": "$.components[1].items[3]", "source_key": "togo2311",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"KNO3\",\n          \"volume\": 0.21,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001056\",\n          \"gmo_id\": \"GMO_001056\",\n          \"label\":
+    \"Potassium nitrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[1].items[3]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"KNO3\",\n          \"volume\": 0.21,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001056\",\n          \"gmo_id\": \"GMO_001056\",\n          \"label\":
+    \"Potassium nitrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 25-25", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "KNO3 …………………………………………………...
+    0.21 g", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q8", "subject": "Na2HPO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.22", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.22", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.22", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.",
+    "sources": [{"locator": "$.components[1].items[4]", "source_key": "togo2311",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Na2HPO4\",\n          \"volume\": 0.22,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001069\",\n          \"gmo_id\": \"GMO_001069\",\n          \"label\":
+    \"Disodium phosphate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.components[1].items[4]",
+    "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Na2HPO4\",\n          \"volume\": 0.22,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001069\",\n          \"gmo_id\": \"GMO_001069\",\n          \"label\":
+    \"Disodium phosphate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines
+    27-27", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Na2HPO4 ……………………………………….............
+    0.22 g", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q9", "subject": "CaSO4 · 2H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.12", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.12", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.12", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.",
+    "sources": [{"locator": "$.components[1].items[5]", "source_key": "togo2311",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CaSO4 · 2H2O\",\n          \"volume\": 0.12,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001087\",\n          \"gmo_id\": \"GMO_001087\",\n          \"label\":
+    \"Calcium sulfate dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[1].items[5]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CaSO4 · 2H2O\",\n          \"volume\": 0.12,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001087\",\n          \"gmo_id\": \"GMO_001087\",\n          \"label\":
+    \"Calcium sulfate dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 22-22", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "CaSO4 x 2H2O
+    ………………………………………… 0.12 g", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q10", "subject": "MgSO4·H2O", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[9].concentration",
+    "original": {"value": "0.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.2", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Castenholz salts stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.
+    The primary specifies MgSO4·7H2O; TOGO and the local preferred term say monohydrate,
+    while both asserted CHEBI slots correctly name heptahydrate. Resolve the source/label
+    mismatch without changing the primary-supported hydrate ID blindly.", "sources":
+    [{"locator": "$.components[1].items[6]", "source_key": "togo2311", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256":
+    "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256":
+    "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at":
+    "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"MgSO4·H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001587\",\n          \"gmo_id\": \"GMO_001587\",\n          \"label\":
+    \"Magnesium sulfate monohydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[1].items[6]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"MgSO4·H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001587\",\n          \"gmo_id\": \"GMO_001587\",\n          \"label\":
+    \"Magnesium sulfate monohydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 23-23", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "MgSO4 x 7H2O
+    ………………………………………... 0.2 g", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q11", "subject": "Agar (if needed)", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[10].concentration",
+    "original": {"value": "30", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "30", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "30", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "receiving-medium branch", "interpretation":
+    "Current ATCC461 specifies optional agar 15 g (labelled 1.5%), whereas both TOGO
+    records place an Agar (if needed) 30 g row inside the salts section. Preserve
+    this source discrepancy and restore the primary optional branch with evidence;
+    do not add it to the 30 g alternative or infer the percentage basis.", "sources":
+    [{"locator": "$.components[1].items[8]", "source_key": "togo2311", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256":
+    "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256":
+    "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at":
+    "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Agar (if needed)\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\":
+    \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\":
+    \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.components[1].items[8]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Agar (if needed)\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\":
+    \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\":
+    \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Agar (if
+    required, 1.5%) ……………………………... 15.0 g", "quote_representation": "captured extracted
+    text"}]}, {"decision_id": "q12", "subject": "Na2MoO4·2H2O", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[11].concentration",
+    "original": {"value": "0.025", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "0.025",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "0.025",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.
+    ATCC prints Na2MoO4 without hydrate, whereas TOGO/local specify dihydrate; that
+    supplied-form difference remains explicit and must not be silently harmonized.",
+    "sources": [{"locator": "$.components[2].items[0]", "source_key": "togo2311",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Na2MoO4·2H2O\",\n          \"volume\": 0.025,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\":
+    \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[2].items[0]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Na2MoO4·2H2O\",\n          \"volume\": 0.025,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\":
+    \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 42-42", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Na2MoO4 …………………………………….........
+    0.025 g", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q13", "subject": "H3BO3", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.
+    ATCC literally prints H3BO4, whereas TOGO/local say H3BO3. The primary spelling
+    is chemically ambiguous; preserve it as a source conflict, not an authenticated
+    correction to either formula.", "sources": [{"locator": "$.components[2].items[1]",
+    "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"H3BO3\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\":
+    \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[2].items[1]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"H3BO3\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\":
+    \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 40-40", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "H3BO4 ……………………………………………..
+    0.5 g", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q14", "subject": "CoCl2·6H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "0.046",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "0.046",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "0.046",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.
+    Both sources specify cobalt chloride hexahydrate; the local CHEBI:35696 instead
+    describes anhydrous cobalt dichloride.", "sources": [{"locator": "$.components[2].items[2]",
+    "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CoCl2·6H2O\",\n          \"volume\": 0.046,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001021\",\n          \"gmo_id\": \"GMO_001021\",\n          \"label\":
+    \"Cobalt dichloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[2].items[2]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CoCl2·6H2O\",\n          \"volume\": 0.046,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001021\",\n          \"gmo_id\": \"GMO_001021\",\n          \"label\":
+    \"Cobalt dichloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 43-43", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "CoCl2 x 6H2O
+    …………………………………….. 0.046 g", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q15", "subject": "ZnSO4·7H2O", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[14].concentration",
+    "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.
+    ATCC prints ZnSO4 without hydrate while TOGO/local specify heptahydrate; no anhydrous-to-hydrate
+    mass conversion is justified.", "sources": [{"locator": "$.components[2].items[3]",
+    "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"ZnSO4·7H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001023\",\n          \"gmo_id\": \"GMO_001023\",\n          \"label\":
+    \"Zinc sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[2].items[3]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"ZnSO4·7H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001023\",\n          \"gmo_id\": \"GMO_001023\",\n          \"label\":
+    \"Zinc sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 39-39", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "ZnSO4 ……………………………………………..
+    0.5 g", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q16", "subject": "CuSO4·5H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.016",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.016",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.016",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.
+    ATCC literally prints CUSO4 without hydrate while TOGO/local specify CuSO4·5H2O;
+    capitalization/hydrate differences remain source-qualified.", "sources": [{"locator":
+    "$.components[2].items[4]", "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CuSO4·5H2O\",\n          \"volume\": 0.016,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001039\",\n          \"gmo_id\": \"GMO_001039\",\n          \"label\":
+    \"Copper(II) sulfate pentahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[2].items[4]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CuSO4·5H2O\",\n          \"volume\": 0.016,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001039\",\n          \"gmo_id\": \"GMO_001039\",\n          \"label\":
+    \"Copper(II) sulfate pentahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 41-41", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "CUSO4 ……………………………………………..
+    0.016 g", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q17", "subject": "H2SO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.
+    ATCC prints 0.5 g H2SO4, whereas TOGO specifies 0.5 mL. Neither a density nor
+    acid strength is supplied; do not interconvert these quantities.", "sources":
+    [{"locator": "$.components[2].items[5]", "source_key": "togo2311", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256":
+    "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256":
+    "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at":
+    "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"H2SO4\",\n          \"volume\": 0.5,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001482\",\n          \"gmo_id\": \"GMO_001482\",\n          \"label\":
+    \"Sulfuric acid solution\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[2].items[5]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"H2SO4\",\n          \"volume\": 0.5,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001482\",\n          \"gmo_id\": \"GMO_001482\",\n          \"label\":
+    \"Sulfuric acid solution\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 37-37", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "H2SO4 ……………………………………………...
+    0.5 g", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q18", "subject": "MnSO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "2.2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "2.2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "2.2", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Nitsch trace stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.",
+    "sources": [{"locator": "$.components[2].items[7]", "source_key": "togo2311",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"MnSO4\",\n          \"volume\": 2.2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001763\",\n          \"gmo_id\": \"GMO_001763\",\n          \"label\":
+    \"Manganese sulfate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[2].items[7]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"MnSO4\",\n          \"volume\": 2.2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001763\",\n          \"gmo_id\": \"GMO_001763\",\n          \"label\":
+    \"Manganese sulfate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 38-38", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "MnSO4 ……………………………………………..
+    2.2 g", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q19", "subject": "FeCl3", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.03", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.03", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.03", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "FeCl3 stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.
+    FeCl3 is 0.03 g with 100 mL listed water, not 0.03 g/L final medium. The 0.03%
+    heading is retained as labelled; no measured final stock volume is assumed.",
+    "sources": [{"locator": "$.components[3].items[0]", "source_key": "togo2311",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"FeCl3\",\n          \"volume\": 0.03,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001122\",\n          \"gmo_id\": \"GMO_001122\",\n          \"label\":
+    \"Iron(III) chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.components[3].items[0]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"FeCl3\",\n          \"volume\": 0.03,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001122\",\n          \"gmo_id\": \"GMO_001122\",\n          \"label\":
+    \"Iron(III) chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 49-49", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "FeCl3……………………………………………
+    0.03 g", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q20", "subject": "Yeast extract", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "TYE stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.
+    The 1% TYE heading coexists with separate 10 g yeast-extract and 10 g tryptone
+    rows in 1000 mL listed water; do not reinterpret that heading as a verified total-solids
+    percentage.", "sources": [{"locator": "$.components[4].items[0]", "source_key":
+    "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Yeast extract\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\":
+    \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.components[4].items[0]", "source_key": "togo2312",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Yeast extract\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\":
+    \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 55-55", "source_key": "atcc461",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Yeast Extract
+    …………………………………... 10.0 g", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q21", "subject": "Tryptone (BD 211705)", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "ingredients[20].concentration",
+    "original": {"value": "10", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "TYE stock", "interpretation":
+    "The stated source mass belongs to this separate stock batch; the current top-level
+    G_PER_L representation loses that stage and has no verified final-medium denominator.
+    Retain source mass/form within the stock and its separately specified receiving
+    dose; do not multiply or dilute into a new final concentration from listed water.
+    The 1% TYE heading coexists with separate 10 g yeast-extract and 10 g tryptone
+    rows in 1000 mL listed water; do not reinterpret that heading as a verified total-solids
+    percentage.", "sources": [{"locator": "$.components[4].items[2]", "source_key":
+    "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Tryptone (BD 211705)\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001043\",\n          \"gmo_id\": \"GMO_001043\",\n          \"label\":
+    \"Bacto &trade; Tryptone\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.components[4].items[2]",
+    "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Tryptone (BD 211705)\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001043\",\n          \"gmo_id\": \"GMO_001043\",\n          \"label\":
+    \"Bacto &trade; Tryptone\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines
+    54-54", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Tryptone
+    ……………………………………….. 10.0 g", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q22", "subject": "1% TYE Solution", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Castenholz_TYE_medium.yaml", "field_path": "solutions[0].concentration",
+    "original": {"value": "100", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "solutions[0].concentration", "original": {"value": "100", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "solutions[0].concentration", "original": {"value": "100", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "TYE addition to final assembly",
+    "interpretation": "The source specifies 100 mL TYE to the receiving assembly,
+    not the same number in g/L. Populate composition and retain exact stage; do not
+    treat these nested doses as final-medium rates.", "sources": [{"locator": "$.components[0].items[3]",
+    "source_key": "togo2311", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311",
+    "source_raw_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "source_text_sha256": "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7",
+    "accessed_at": "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"1% TYE Solution\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M2311\",\n          \"properties\": [],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.components[0].items[3]",
+    "source_key": "togo2312", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312",
+    "source_raw_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "source_text_sha256": "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d",
+    "accessed_at": "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"1% TYE Solution\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M2312\",\n          \"properties\": [],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines
+    5-5", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "1% TYE Solution
+    (see below) ..……………………… 100.0 mL", "quote_representation": "captured extracted
+    text"}]}, {"decision_id": "q23", "subject": "Nitsch''s Trace Elements (see below)",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "solutions[1].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "solutions[1].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "solutions[1].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "nested addition to Castenholz
+    salts stock", "interpretation": "The source specifies 2 mL of this separate stock
+    into the salts stock, not the same number in g/L. Populate composition and retain
+    exact stage; do not treat these nested doses as final-medium rates.", "sources":
+    [{"locator": "$.components[1].items[9]", "source_key": "togo2311", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256":
+    "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256":
+    "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at":
+    "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Nitsch''s Trace Elements (see below)\",\n          \"volume\": 2,\n          \"unit\":
+    \"ml\",\n          \"reference_media_id\": \"M2311\",\n          \"properties\":
+    [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"},
+    {"locator": "$.components[1].items[9]", "source_key": "togo2312", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256":
+    "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256":
+    "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at":
+    "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Nitsch''s Trace Elements (see below)\",\n          \"volume\": 2,\n          \"unit\":
+    \"ml\",\n          \"reference_media_id\": \"M2312\",\n          \"properties\":
+    [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"},
+    {"locator": "extracted-text lines 20-20", "source_key": "atcc461", "reference":
+    "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Nitsch''s
+    trace elements (see below) ……………………. 2.0 mL", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q24", "subject": "FeCl3 solution (0.03%,
+    see below) ", "local_fields": [{"record_path": "data/merge_yaml/merged/Castenholz_TYE_medium.yaml",
+    "field_path": "solutions[2].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml",
+    "field_path": "solutions[2].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/castenholz_tye_medium.yaml",
+    "field_path": "solutions[2].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "nested addition to Castenholz
+    salts stock", "interpretation": "The source specifies 2 mL of this separate stock
+    into the salts stock, not the same number in g/L. Populate composition and retain
+    exact stage; do not treat these nested doses as final-medium rates.", "sources":
+    [{"locator": "$.components[1].items[10]", "source_key": "togo2311", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2311", "source_raw_sha256":
+    "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "source_text_sha256":
+    "11975f19d933be9996f83d5ae0f09160bd9630973ba40c4d2ce4fa346bdb52b7", "accessed_at":
+    "2026-10-28T13:50:00.764194Z", "exact_source_quote": "{\n          \"component_name\":
+    \"FeCl3 solution (0.03%, see below) \",\n          \"volume\": 2,\n          \"unit\":
+    \"ml\",\n          \"reference_media_id\": \"M2311\",\n          \"properties\":
+    [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"},
+    {"locator": "$.components[1].items[10]", "source_key": "togo2312", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2312", "source_raw_sha256":
+    "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "source_text_sha256":
+    "6f4329ad43abfc54c9603e01a6ab81364cc8400002c9226709007149e4bfb66d", "accessed_at":
+    "2026-10-28T13:50:00.738504Z", "exact_source_quote": "{\n          \"component_name\":
+    \"FeCl3 solution (0.03%, see below) \",\n          \"volume\": 2,\n          \"unit\":
+    \"ml\",\n          \"reference_media_id\": \"M2312\",\n          \"properties\":
+    [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"},
+    {"locator": "extracted-text lines 21-21", "source_key": "atcc461", "reference":
+    "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "FeCl3 solution
+    (0.03%, see below) …………………….. 2.0 mL", "quote_representation": "captured extracted
+    text"}]}, {"decision_id": "q25", "subject": "Main heating and sterilization",
+    "local_fields": [], "decision": "add", "stage": "source-only preparation control",
+    "interpretation": "Heat/mix TYE, DI water and optional agar; autoclave at 121°C.
+    No main-stage duration is given here; do not transfer the TYE-stock 15-minute
+    duration automatically.", "sources": [{"locator": "extracted-text lines 10-10",
+    "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Heat and
+    mix TYE solution, DI water and agar (if required). Autoclave at 121 o C.", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q26", "subject": "Aseptic salt
+    addition", "local_fields": [], "decision": "add", "stage": "source-only preparation
+    control", "interpretation": "Add salt solution aseptically after the stated main
+    preparation; this is distinct from autoclaving the salts.", "sources": [{"locator":
+    "extracted-text lines 12-12", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Aseptically
+    add salt solution.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q27", "subject": "Receiving pH", "local_fields": [], "decision": "add", "stage":
+    "source-only preparation control", "interpretation": "Final medium pH is 7.6;
+    it is absent locally and distinct from stock pH 8.2.", "sources": [{"locator":
+    "extracted-text lines 14-14", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Adjust for
+    final pH 7.6", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q28", "subject": "Stock pH", "local_fields": [], "decision": "add", "stage":
+    "source-only preparation control", "interpretation": "The salts stock is adjusted
+    to pH 8.2. No titrant identity or quantity is supplied.", "sources": [{"locator":
+    "extracted-text lines 30-30", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Adjust pH
+    to 8.2.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q29", "subject": "Stock filtration", "local_fields": [], "decision": "add", "stage":
+    "source-only preparation control", "interpretation": "Filter sterilize the salts
+    portion prior to use; no pore size is supplied.", "sources": [{"locator": "extracted-text
+    lines 32-32", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Filter sterilize
+    portion prior to use.", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q30", "subject": "Stock storage", "local_fields": [], "decision":
+    "add", "stage": "source-only preparation control", "interpretation": "The salts
+    stock may be stored at 2–5°C for one year; this is not incubation temperature
+    or a growth result.", "sources": [{"locator": "extracted-text lines 34-34", "source_key":
+    "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "May be stored
+    at 2-5o C for one year.", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q31", "subject": "Trace and Fe stock mixing", "local_fields":
+    [], "decision": "add", "stage": "source-only preparation control", "interpretation":
+    "Nitsch and FeCl3 preparations are mixed and added to the salts stock, as their
+    respective source sections specify.", "sources": [{"locator": "extracted-text
+    lines 46-46", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Mix and add
+    to salt solution", "quote_representation": "captured extracted text"}, {"locator":
+    "extracted-text lines 51-51", "source_key": "atcc461", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Mix and add
+    to salt solution.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q32", "subject": "TYE sterilization", "local_fields": [], "decision": "add",
+    "stage": "source-only preparation control", "interpretation": "TYE stock is autoclaved
+    at 121°C for 15 minutes. This duration belongs to the TYE section.", "sources":
+    [{"locator": "extracted-text lines 58-58", "source_key": "atcc461", "reference":
+    "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Autoclave
+    at 121o C for 15 minutes.", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q33", "subject": "Dispensing", "local_fields": [], "decision":
+    "add", "stage": "source-only preparation control", "interpretation": "Dispensing
+    is as required; the source supplies no fixed vessel or aliquot volume.", "sources":
+    [{"locator": "extracted-text lines 16-16", "source_key": "atcc461", "reference":
+    "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/4/6/1/atcc-medium-0461.pdf?rev=bff9110e66d84574902d6861de8bace1",
+    "source_raw_sha256": "2a086911333487a89a6e55c0812274fe7fb2b1f8d8158961493695e2bfe980ec",
+    "source_text_sha256": "d94124845ec04e2e8ad4a502f7f6b0eaf43b567eb7fb5e75143bb0cd4b153b74",
+    "accessed_at": "2026-10-28T13:50:00.929887Z", "exact_source_quote": "Dispense
+    as required.", "quote_representation": "captured extracted text"}]}], "local_field_census_reference":
+    "REVIEW_WORK/batch069/record05/grounding-inventory.json", "source_only_gaps_are_explicit":
+    true, "note": "Batch amounts, provider normalization, stock composition, working
+    dose and preparation controls are separate. No source edits or automatic curation
+    performed."}'
+- assessment_id: a5
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: concern
+  summary: 'data/merge_yaml/merged/Castenholz_TYE_medium.yaml: primary 15/21, secondary
+    12/21; data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml: primary
+    15/21, secondary 12/21; data/normalized_yaml/bacterial/castenholz_tye_medium.yaml:
+    primary 15/21, secondary 12/21. These are ingredient-instance linkage fractions,
+    not accuracy scores. Solution terms are audited separately. Every actually asserted
+    CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows.
+    3 numeric legacy MediaIngredientMech mentions occur across the complete selected
+    documents, with exact locators in the inventory; NNNNNN is a historical placeholder,
+    not an ID. Complex commercial/product components are not forced to pure-compound
+    IDs.'
+  target_ids:
+  - CultureMech:008899
+  evidence_ids:
+  - grounding
+- assessment_id: a6
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and exact maintained owners reviewed. Dependencies
+    transfer only their explicitly named stock subsection; unrelated parent media
+    and source prescriptions are not growth evidence.
+  target_ids:
+  - CultureMech:008899
+  evidence_ids:
+  - local0
+- assessment_id: a7
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:008899
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-008899-flattened-stock-hierarchy
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Five separate batches and nested doses are flattened into final-medium quantities
+  description: Water is summed across five separate batches as 3500 g/L; the 500 mL
+    salts dose, 100 mL TYE dose and nested 2 mL doses are recorded as mass concentrations.
+    Every stock component is also represented as a top-level final rate, and all three
+    solution compositions are empty.
+  target_ids:
+  - CultureMech:008899
+  field_paths:
+  - ingredients
+  - solutions
+  - ingredients[0].concentration
+  - ingredients[2].concentration
+  evidence_ids:
+  - atcc461
+  - togo2311
+  - togo2312
+  rule_id: review-ingredient-concentrations/stock-stage-and-unit-fidelity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-008899-agar-branch-conflation
+  category: consistency
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Optional and alternative agar branches are conflated
+  description: ATCC461 gives optional 15 g agar labelled 1.5% and a 30 g alternative.
+    Both TOGO owners instead retain two 30 g rows, including one inside the salts
+    section. These must not be summed or treated as two additions. SOLID_AGAR remains
+    valid for the solid branch; the missing branch context is the defect.
+  target_ids:
+  - CultureMech:008899
+  field_paths:
+  - ingredients[1]
+  - ingredients[10]
+  - physical_state
+  evidence_ids:
+  - atcc461
+  - togo2311
+  - togo2312
+  rule_id: review-yaml-record/source-variant-identity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-008899-source-form-and-unit-disagreements
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source forms and sulfuric-acid units need explicit reconciliation
+  description: The primary MgSO4 heptahydrate agrees with current CHEBI slots but
+    conflicts with the monohydrate label. Cobalt hexahydrate is asserted as anhydrous
+    CHEBI:35696. Primary Nitsch rows also differ from TOGO for H2SO4 g versus mL,
+    boron formula H3BO4 versus H3BO3, and unspecified versus hydrated Mo/Zn/Cu forms.
+    The literal primary differences are unresolved, not silently corrected.
+  target_ids:
+  - CultureMech:008899
+  field_paths:
+  - ingredients[9].preferred_term
+  - ingredients[13].term
+  - ingredients[11]
+  - ingredients[12]
+  - ingredients[14]
+  - ingredients[15]
+  - ingredients[16]
+  evidence_ids:
+  - atcc461
+  - togo2311
+  - togo2312
+  - chebi31795
+  - chebi35696
+  - grounding
+  rule_id: review-yaml-record/exact-supplied-form
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-008899-missing-source-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Staged preparation, stock controls and pH are absent
+  description: The selected layers omit main pH 7.6, stock pH 8.2, filtration, aseptic
+    stock addition, stock storage and separate TYE sterilization. Native structural
+    passes do not verify these source controls.
+  target_ids:
+  - CultureMech:008899
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - solutions[0].preparation_notes
+  - solutions[1].preparation_notes
+  - solutions[2].preparation_notes
+  evidence_ids:
+  - atcc461
+  rule_id: review-yaml-record/source-preparation-completeness
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f5
+  issue_key: culturemech-008899-legacy-nitrate-link
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The nitrate secondary linkage remains a legacy identifier
+  description: Each selected layer retains MediaIngredientMech:000170 for KNO3 while
+    the primary CHEBI:63043 is current and source-compatible. The packaged CSV has
+    no exact row under the legacy identifier; this is a current snapshot limitation
+    rather than historical invalidity or authoritative deprecation.
+  target_ids:
+  - CultureMech:008899
+  field_paths:
+  - ingredients[6].mediaingredientmech_term
+  evidence_ids:
+  - chebi63043
+  - grounding
+  rule_id: review-yaml-record/current-secondary-linkage
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Reconstruct the primary stock hierarchy in each maintained owner, preserving
+    exact source masses, absolute water/dose volumes and nested stages. Do not compute
+    final concentrations from nominal listed water; retain resolvable content as evidence-backed
+    batch notes if the schema has no appropriate absolute-mass slot.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008899
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Represent the optional 15 g and alternative 30 g branches explicitly
+    with the exact primary source context; preserve a liquid alternative without declaring
+    the current solid classification intrinsically wrong.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008899
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Preserve a source-qualified discrepancy ledger. Retain the primary-supported
+    Mg heptahydrate identity while correcting its label only with evidence; resolve
+    cobalt hydrate accurately. Do not guess the boron formula, acid density/strength
+    or unprinted hydrate forms.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008899
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action4
+  description: Add the exact stage-specific instructions and root-level evidence scoped
+    to each field. Keep unspecified main autoclave duration, filter pore size and
+    percentage bases unresolved; do not copy stock controls to the receiving medium.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008899
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action5
+  description: Resolve the secondary link through current exact MIM evidence or retain
+    a clearly qualified unresolved legacy association. Preserve the valid primary
+    nitrate mapping and append verified correction provenance without rewriting old
+    events.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:008899
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2312_Castenholz_TYE_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/castenholz_tye_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- ATCC literally prints H3BO4 and CUSO4, and leaves some hydrate forms unspecified.
+  TOGO provides different spellings/forms; this review records rather than silently
+  resolves those source discrepancies.
+- Listed component volumes do not establish measured final stock or medium volumes.
+  The 1% TYE, 0.03% FeCl3 and 1.5% agar labels are retained with their source context
+  and unresolved percentage basis.
+- No primary organism-growth experiment was assessed. Both maintained owners are reviewed
+  separately; no source edit, reimport or native save was performed.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
+```

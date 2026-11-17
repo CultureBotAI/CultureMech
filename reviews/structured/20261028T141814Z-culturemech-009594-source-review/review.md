@@ -1,0 +1,2733 @@
+# Scientific review: Caminibacter Mediatlanticus Medium
+
+- Review: 20261028T141814Z-culturemech-009594-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T13:47:19.507467Z
+- Finished UTC: 2026-10-28T14:18:14.958393Z
+- Reviewer: Codex batch006_validation (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact source is established, but both selected layers flatten three assembly stocks and the Wolfe stock, sum incompatible stages and use mass units for liquid additions. Three linked same-named stocks are different formulations. The review credits source batch digits, current hydrate repairs and the exact attached claim in its separate stock, while identifying missing preparation, independent stock unit defects and classification/provenance limits.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch069 index 03
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009594 | data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml | generated | caminibacter_mediatlanticus_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:009594 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:009594 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:009594 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:009594 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### Exact selected source identity
+
+identity: supported. Targets: CultureMech:009594.
+
+TOGO M3122 and DSM792b name the selected medium, and the sole maintained contributor preserves the stable record identity. The DSM16658 catalogue is environmental Caminibacter identity context only; no new strain-growth assertion is inferred. Same-named stock links require separate correction.
+
+### Composition and physical state
+
+representation: concern. Targets: CultureMech:009594.
+
+The exact source lists named inorganic compounds and resolved stock formulations, and MediaDive marks complex_medium no. The inherited COMPLEX/UNDEFINED metadata needs source-based reconciliation. The liquid state is consistent; no automatic duplicate collapse or strain-growth assertion follows.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:009594.
+
+78 current concentration fields are covered by 52 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema":"fresh-b069-quantity-inventory-v1","target":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","quantity_field_count":78,"decisions":[{"quantity_id":"q1","label":"Carbon dioxide gas","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"VARIABLE does not invent a mass dose. The source describes a distinct gas-handling stage, not a final dissolved ingredient concentration. Nitrogen gas and N2 are the same chemical in different preparation contexts; do not sum or delete their stage-specific roles blindly.","source_stage":"Gas preparation context, not final solute amount","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[0].items[3]","quote":"{\n          \"component_name\": \"Carbon dioxide gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002260\",\n          \"gmo_id\": \"GMO_002260\",\n          \"label\": \"Carbon dioxide gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\": \"Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic serum vials (e.g., 20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under 100% N2 gas. To complete the medium appropriate amounts of solutions B and C are added to solution A. Adjust pH of the complete medium to 5.7.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q2","label":"Hydrogen gas","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"VARIABLE does not invent a mass dose. The source describes a distinct gas-handling stage, not a final dissolved ingredient concentration. Nitrogen gas and N2 are the same chemical in different preparation contexts; do not sum or delete their stage-specific roles blindly.","source_stage":"Gas preparation context, not final solute amount","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[0].items[4]","quote":"{\n          \"component_name\": \"Hydrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002263\",\n          \"gmo_id\": \"GMO_002263\",\n          \"label\": \"Hydrogen gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"Gas\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\": \"Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic serum vials (e.g., 20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under 100% N2 gas. To complete the medium appropriate amounts of solutions B and C are added to solution A. Adjust pH of the complete medium to 5.7.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q3","label":"Nitrogen gas","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"VARIABLE does not invent a mass dose. The source describes a distinct gas-handling stage, not a final dissolved ingredient concentration. Nitrogen gas and N2 are the same chemical in different preparation contexts; do not sum or delete their stage-specific roles blindly.","source_stage":"Gas preparation context, not final solute amount","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[2].items[4]","quote":"{\n          \"component_name\": \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\": \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\": \"Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic serum vials (e.g., 20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under 100% N2 gas. To complete the medium appropriate amounts of solutions B and C are added to solution A. Adjust pH of the complete medium to 5.7.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q4","label":"N2","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"VARIABLE does not invent a mass dose. The source describes a distinct gas-handling stage, not a final dissolved ingredient concentration. Nitrogen gas and N2 are the same chemical in different preparation contexts; do not sum or delete their stage-specific roles blindly.","source_stage":"Gas preparation context, not final solute amount","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[3].items[2]","quote":"{\n          \"component_name\": \"N2\",\n          \"conc_value\": 100,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\": \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"Gas\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\": \"Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic serum vials (e.g., 20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under 100% N2 gas. To complete the medium appropriate amounts of solutions B and C are added to solution A. Adjust pH of the complete medium to 5.7.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q5","label":"Sodium resazurin (0.1% w/v)","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source quantity is a liquid addition with its own supplied strength or stock identity, not the stored mass concentration. Preserve the explicitly stated w/v basis where present and the source receiving stage; do not guess a measured final volume or replace a stock addition with its undiluted composition.","source_stage":"Solution A receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\": \"Sodium resazurin (0.1% w/v)\",\n          \"volume\": 0.5,\n          \"unit\": \"ml\",\n          \"conc_value\": 0.1,\n          \"conc_unit\": \"(w/v)\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001453\",\n          \"gmo_id\": \"GMO_001453\",\n          \"label\": \"Sodium resazurin solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000055\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\": \"pH dependent redox indicator\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[10]","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000505561,\n                        \"mmol_l\": 0.00201282,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 31-31","quote":"Sodium resazurin (0.1% w/v)                               0.50       ml","quote_basis":"derivative text"}]},{"quantity_id":"q6","label":"SrCl2 x 6 H2O (0.1% w/v)","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"7","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"7","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source quantity is a liquid addition with its own supplied strength or stock identity, not the stored mass concentration. Preserve the explicitly stated w/v basis where present and the source receiving stage; do not guess a measured final volume or replace a stock addition with its undiluted composition.","source_stage":"Solution A receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\": \"SrCl2 x 6 H2O (0.1% w/v)\",\n          \"volume\": 7,\n          \"unit\": \"ml\",\n          \"conc_value\": 0.1,\n          \"conc_unit\": \"(w/v)\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001955\",\n          \"gmo_id\": \"GMO_001955\",\n          \"label\": \"Strontium chloride hexahydrate solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"SrCl2 x 6 H2O\",\n                        \"compound_id\": 176,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 7,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.00707786,\n                        \"mmol_l\": 0.0265469,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 28-28","quote":"SrCl2 x 6 H2O (0.1% w/v)                                  7.00       ml","quote_basis":"derivative text"}]},{"quantity_id":"q7","label":"KI (0.01% w/v)","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source quantity is a liquid addition with its own supplied strength or stock identity, not the stored mass concentration. Preserve the explicitly stated w/v basis where present and the source receiving stage; do not guess a measured final volume or replace a stock addition with its undiluted composition.","source_stage":"Solution A receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\": \"KI (0.01% w/v)\",\n          \"volume\": 0.5,\n          \"unit\": \"ml\",\n          \"conc_value\": 0.01,\n          \"conc_unit\": \"(w/v)\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001957\",\n          \"gmo_id\": \"GMO_001957\",\n          \"label\": \"Potassium iodide solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"KI\",\n                        \"compound_id\": 354,\n                        \"attribute\": \"0.01% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 5.05561e-5,\n                        \"mmol_l\": 0.000194938,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 29-29","quote":"KI (0.01% w/v)                                            0.50       ml","quote_basis":"derivative text"}]},{"quantity_id":"q8","label":"Wolfe's mineral elixir","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source quantity is a liquid addition with its own supplied strength or stock identity, not the stored mass concentration. Preserve the explicitly stated w/v basis where present and the source receiving stage; do not guess a measured final volume or replace a stock addition with its undiluted composition.","source_stage":"Solution A receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[11]","quote":"{\n          \"component_name\": \"Wolfe's mineral elixir\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M3122\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"solution\": \"Wolfe's mineral elixir\",\n                        \"solution_id\": 1605,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 30-30","quote":"Wolfe's mineral elixir                                    1.00       ml","quote_basis":"derivative text"}]},{"quantity_id":"q9","label":"Four distinct water inputs","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2000.0","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2000.0","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The stored 2000 G_PER_L is the numeric sum of water volume inputs for A, B, C and the separate Wolfe stock. This sum neither represents a source final-medium water amount nor a mass concentration. The original input-water rows and source batches must remain distinct.","source_stage":"A/B/C and independent Wolfe stock water","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[3]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 980,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[2].items[0]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[3].items[0]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[0]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0]","quote":"{\n                \"id\": 1610,\n                \"name\": \"Main sol. 792b\",\n                \"volume\": 1009,\n                \"recipe\": [\n                    {\n                        \"recipe_order\": 1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\": 1611,\n                        \"amount\": 989,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 2,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\": 1612,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"solution\": \"Solution C\",\n                        \"solution_id\": 1613,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\": [\n                    {\n                        \"step\": \"Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic serum vials (e.g., 20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under 100% N2 gas. To complete the medium appropriate amounts of solutions B and C are added to solution A. Adjust pH of the complete medium to 5.7.\"\n                    },\n                    {\n                        \"step\": \"After inoculation pressurize vials to 2 bar overpressure with sterile 80% H2 and 20% CO2 gas mixture.\"\n                    },\n                    {\n                        \"step\": \"Note: Solution A has to be prepared freshly. It cannot be stored for a long period of time.\"\n                    }\n                ],\n                \"equipment\": {\n                    \"4971\": \"Gassing station\",\n                    \"4972\": \"Serum bottle\",\n                    \"4973\": \"Autoclave\"\n                }\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q10","label":"MgSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"33.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"33.5","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The two source quantities belong to Solution A and the undiluted Wolfe stock. Their numeric sum is invalid as a final-medium total because the amounts refer to different solution-stage bases. Preserve both occurrences and their separate receiving volume; no direct sum or inferred final litre is supported.","source_stage":"Separate A and Wolfe stock occurrences","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[4]","quote":"{\n          \"component_name\": \"MgSO4 x 7 H2O\",\n          \"volume\": 3.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\",\n          \"gmo_id\": \"GMO_001002\",\n          \"label\": \"Magnesium sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[1]","quote":"{\n          \"component_name\": \"MgSO4 x 7 H2O\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\",\n          \"gmo_id\": \"GMO_001002\",\n          \"label\": \"Magnesium sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 3.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 3.53893,\n                        \"mmol_l\": 14.3581,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 30,\n                        \"unit\": \"g\",\n                        \"g_l\": 30,\n                        \"mmol_l\": 121.716,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 22-22","quote":"MgSO4 x 7 H2O                                             3.50        g","quote_basis":"derivative text"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 58-58","quote":"MgSO4 x 7 H2O                                            30.00        g","quote_basis":"derivative text"}]},{"quantity_id":"q11","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"40.0","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"40.0","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The two source quantities belong to Solution A and the undiluted Wolfe stock. Their numeric sum is invalid as a final-medium total because the amounts refer to different solution-stage bases. Preserve both occurrences and their separate receiving volume; no direct sum or inferred final litre is supported.","source_stage":"Separate A and Wolfe stock occurrences","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[5]","quote":"{\n          \"component_name\": \"NaCl\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\": \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[2]","quote":"{\n          \"component_name\": \"NaCl\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\": \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 30,\n                        \"unit\": \"g\",\n                        \"g_l\": 30.3337,\n                        \"mmol_l\": 519.057,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"mmol_l\": 171.116,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 21-21","quote":"NaCl                                                     30.00        g","quote_basis":"derivative text"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 60-60","quote":"NaCl                                                     10.00        g","quote_basis":"derivative text"}]},{"quantity_id":"q12","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1.75","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1.75","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The two source quantities belong to Solution A and the undiluted Wolfe stock. Their numeric sum is invalid as a final-medium total because the amounts refer to different solution-stage bases. Preserve both occurrences and their separate receiving volume; no direct sum or inferred final litre is supported.","source_stage":"Separate A and Wolfe stock occurrences","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[6]","quote":"{\n          \"component_name\": \"CaCl2 x 2 H2O\",\n          \"volume\": 0.75,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\": \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[3]","quote":"{\n          \"component_name\": \"CaCl2 x 2 H2O\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\": \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.75,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.758342,\n                        \"mmol_l\": 5.15826,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 6.80203,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 24-24","quote":"CaCl2 x 2 H2O                                             0.75        g","quote_basis":"derivative text"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 63-63","quote":"CaCl2 x 2 H2O                                             1.00        g","quote_basis":"derivative text"}]},{"quantity_id":"q13","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"15.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"15.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The two source quantities belong to Solution A and the undiluted Wolfe stock. Their numeric sum is invalid as a final-medium total because the amounts refer to different solution-stage bases. Preserve both occurrences and their separate receiving volume; no direct sum or inferred final litre is supported. This row also adds a milligram amount to a gram amount without unit conversion, so even the pre-stage numeric sum is inconsistent.","source_stage":"Separate A and Wolfe stock occurrences","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[8]","quote":"{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 15,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\": \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[5]","quote":"{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\": \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 15,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0151668,\n                        \"mmol_l\": 0.245259,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 1.61708,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 27-27","quote":"H3BO3                                                    15.00       mg","quote_basis":"derivative text"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 67-67","quote":"H3BO3                                                     0.10        g","quote_basis":"derivative text"}]},{"quantity_id":"q14","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"2.75","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"2.75","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The primary source and TOGO support these digits as Solution A batch grams. The unqualified local G_PER_L is not established by input water. MediaDive supplies a distinct explicit g_l normalization on its declared 989 ml stock basis; that provider basis must not be silently relabeled as the final receiving-medium concentration.","source_stage":"Solution A batch","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[7]","quote":"{\n          \"component_name\": \"MgCl2 x 6 H2O\",\n          \"volume\": 2.75,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001013\",\n          \"gmo_id\": \"GMO_001013\",\n          \"label\": \"Magnesium chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 2.75,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.78059,\n                        \"mmol_l\": 13.6771,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 23-23","quote":"MgCl2 x 6 H2O                                             2.75        g","quote_basis":"derivative text"}]},{"quantity_id":"q15","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.33","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.33","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The primary source and TOGO support these digits as Solution A batch grams. The unqualified local G_PER_L is not established by input water. MediaDive supplies a distinct explicit g_l normalization on its declared 989 ml stock basis; that provider basis must not be silently relabeled as the final receiving-medium concentration.","source_stage":"Solution A batch","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[9]","quote":"{\n          \"component_name\": \"KCl\",\n          \"volume\": 0.33,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\",\n          \"gmo_id\": \"GMO_001017\",\n          \"label\": \"Potassium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.33367,\n                        \"mmol_l\": 4.47579,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 25-25","quote":"KCl                                                       0.33        g","quote_basis":"derivative text"}]},{"quantity_id":"q16","label":"NaBr","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The primary source and TOGO support these digits as Solution A batch grams. The unqualified local G_PER_L is not established by input water. MediaDive supplies a distinct explicit g_l normalization on its declared 989 ml stock basis; that provider basis must not be silently relabeled as the final receiving-medium concentration.","source_stage":"Solution A batch","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[10]","quote":"{\n          \"component_name\": \"NaBr\",\n          \"volume\": 0.05,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001073\",\n          \"gmo_id\": \"GMO_001073\",\n          \"label\": \"Sodium bromide\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"NaBr\",\n                        \"compound_id\": 353,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0505561,\n                        \"mmol_l\": 0.491361,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 26-26","quote":"NaBr                                                      0.05        g","quote_basis":"derivative text"}]},{"quantity_id":"q17","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The stored digits reproduce the separate B or C batch mass, but they are flattened into an unqualified direct G_PER_L ingredient. The current provider explicitly reports the stock g_l on its 10 ml basis; neither stock concentration nor batch grams may be transferred to the assembled medium without retaining the receiving volumes and denominator.","source_stage":"Separate Solution B or C stock","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[2].items[1]","quote":"{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\": \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 50,\n                        \"mmol_l\": 367.417,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 38-38","quote":"KH2PO4                                                    0.50        g","quote_basis":"derivative text"}]},{"quantity_id":"q18","label":"KNO3","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The stored digits reproduce the separate B or C batch mass, but they are flattened into an unqualified direct G_PER_L ingredient. The current provider explicitly reports the stock g_l on its 10 ml basis; neither stock concentration nor batch grams may be transferred to the assembled medium without retaining the receiving volumes and denominator.","source_stage":"Separate Solution B or C stock","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[2].items[2]","quote":"{\n          \"component_name\": \"KNO3\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001056\",\n          \"gmo_id\": \"GMO_001056\",\n          \"label\": \"Potassium nitrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KNO3\",\n                        \"compound_id\": 191,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 100,\n                        \"mmol_l\": 989.09,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 37-37","quote":"KNO3                                                      1.00        g","quote_basis":"derivative text"}]},{"quantity_id":"q19","label":"Na2S x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.15","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.15","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The stored digits reproduce the separate B or C batch mass, but they are flattened into an unqualified direct G_PER_L ingredient. The current provider explicitly reports the stock g_l on its 10 ml basis; neither stock concentration nor batch grams may be transferred to the assembled medium without retaining the receiving volumes and denominator.","source_stage":"Separate Solution B or C stock","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[3].items[1]","quote":"{\n          \"component_name\": \"Na2S x 9 H2O\",\n          \"volume\": 0.15,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001014\",\n          \"gmo_id\": \"GMO_001014\",\n          \"label\": \"Sodium sulfide nonahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000064\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000064\",\n              \"label\": \"Reducing agent\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 62.4526,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 44-44","quote":"Na2S x 9 H2O                                              0.15        g","quote_basis":"derivative text"}]},{"quantity_id":"q20","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source supports this mass and the provider stock-only g_l for Wolfe elixir. The selected records flatten that stock-strength number into a direct ingredient and lose the stock addition stage. Preserve the source stock row and hydrate identity; it is not evidence for the same final-medium concentration.","source_stage":"Wolfe stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[4]","quote":"{\n          \"component_name\": \"Na2MoO4 x 2 H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\": \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[10]","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.413309,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 68-68","quote":"Na2MoO4 x 2 H2O                                           0.10        g","quote_basis":"derivative text"}]},{"quantity_id":"q21","label":"FeSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source supports this mass and the provider stock-only g_l for Wolfe elixir. The selected records flatten that stock-strength number into a direct ingredient and lose the stock addition stage. Preserve the source stock row and hydrate identity; it is not evidence for the same final-medium concentration.","source_stage":"Wolfe stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[6]","quote":"{\n          \"component_name\": \"FeSO4 x 7 H2O\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\",\n          \"gmo_id\": \"GMO_001016\",\n          \"label\": \"Iron(II) sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 3.59693,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 61-61","quote":"FeSO4 x 7 H2O                                             1.00        g","quote_basis":"derivative text"}]},{"quantity_id":"q22","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"1.8","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"1.8","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source supports this mass and the provider stock-only g_l for Wolfe elixir. The selected records flatten that stock-strength number into a direct ingredient and lose the stock addition stage. Preserve the source stock row and hydrate identity; it is not evidence for the same final-medium concentration.","source_stage":"Wolfe stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[7]","quote":"{\n          \"component_name\": \"CoCl2 x 6 H2O\",\n          \"volume\": 1.8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001021\",\n          \"gmo_id\": \"GMO_001021\",\n          \"label\": \"Cobalt dichloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 1.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.8,\n                        \"mmol_l\": 13.8633,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 62-62","quote":"CoCl2 x 6 H2O                                             1.80        g","quote_basis":"derivative text"}]},{"quantity_id":"q23","label":"ZnSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"1.8","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"1.8","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source supports this mass and the provider stock-only g_l for Wolfe elixir. The selected records flatten that stock-strength number into a direct ingredient and lose the stock addition stage. Preserve the source stock row and hydrate identity; it is not evidence for the same final-medium concentration.","source_stage":"Wolfe stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[8]","quote":"{\n          \"component_name\": \"ZnSO4 x 7 H2O\",\n          \"volume\": 1.8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001023\",\n          \"gmo_id\": \"GMO_001023\",\n          \"label\": \"Zinc sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 1.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.8,\n                        \"mmol_l\": 6.25954,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 64-64","quote":"ZnSO4 x 7 H2O                                             1.80        g","quote_basis":"derivative text"}]},{"quantity_id":"q24","label":"CuSO4 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source supports this mass and the provider stock-only g_l for Wolfe elixir. The selected records flatten that stock-strength number into a direct ingredient and lose the stock addition stage. Preserve the source stock row and hydrate identity; it is not evidence for the same final-medium concentration.","source_stage":"Wolfe stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[9]","quote":"{\n          \"component_name\": \"CuSO4 x 5 H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001039\",\n          \"gmo_id\": \"GMO_001039\",\n          \"label\": \"Copper(II) sulfate pentahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.400503,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 65-65","quote":"CuSO4 x 5 H2O                                             0.10        g","quote_basis":"derivative text"}]},{"quantity_id":"q25","label":"AlK(SO4)2 x 12 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.18","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.18","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source supports this mass and the provider stock-only g_l for Wolfe elixir. The selected records flatten that stock-strength number into a direct ingredient and lose the stock addition stage. Preserve the source stock row and hydrate identity; it is not evidence for the same final-medium concentration.","source_stage":"Wolfe stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[10]","quote":"{\n          \"component_name\": \"AlK(SO4)2 x 12 H2O\",\n          \"volume\": 0.18,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001051\",\n          \"gmo_id\": \"GMO_001051\",\n          \"label\": \"Aluminum potassium sulfate dodecahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"AlK(SO4)2 x 12 H2O\",\n                        \"compound_id\": 908,\n                        \"amount\": 0.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\": 0.379436,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 66-66","quote":"AlK(SO4)2 x 12 H2O                                        0.18        g","quote_basis":"derivative text"}]},{"quantity_id":"q26","label":"Na2WO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source supports this mass and the provider stock-only g_l for Wolfe elixir. The selected records flatten that stock-strength number into a direct ingredient and lose the stock addition stage. Preserve the source stock row and hydrate identity; it is not evidence for the same final-medium concentration.","source_stage":"Wolfe stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[11]","quote":"{\n          \"component_name\": \"Na2WO4 x 2 H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001057\",\n          \"gmo_id\": \"GMO_001057\",\n          \"label\": \"Sodium tungstate dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[12]","quote":"{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.303168,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 70-70","quote":"Na2WO4 x 2 H2O                                            0.10        g","quote_basis":"derivative text"}]},{"quantity_id":"q27","label":"MnSO4 x H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source supports this mass and the provider stock-only g_l for Wolfe elixir. The selected records flatten that stock-strength number into a direct ingredient and lose the stock addition stage. Preserve the source stock row and hydrate identity; it is not evidence for the same final-medium concentration.","source_stage":"Wolfe stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[12]","quote":"{\n          \"component_name\": \"MnSO4 x H2O\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001081\",\n          \"gmo_id\": \"GMO_001081\",\n          \"label\": \"Manganese sulfate monohydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\": 14,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 29.583,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 59-59","quote":"MnSO4 x H2O                                               5.00        g","quote_basis":"derivative text"}]},{"quantity_id":"q28","label":"(NH4)2Ni(SO4)2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[27].concentration","stored":{"value":"2.8","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[27].concentration","stored":{"value":"2.8","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source supports this mass and the provider stock-only g_l for Wolfe elixir. The selected records flatten that stock-strength number into a direct ingredient and lose the stock addition stage. Preserve the source stock row and hydrate identity; it is not evidence for the same final-medium concentration.","source_stage":"Wolfe stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[13]","quote":"{\n          \"component_name\": \"(NH4)2Ni(SO4)2 x 6 H2O\",\n          \"volume\": 2.8,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001102\",\n          \"gmo_id\": \"GMO_001102\",\n          \"label\": \"Ammonium nickel(II) sulfate hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[11]","quote":"{\n                        \"recipe_order\": 12,\n                        \"compound\": \"(NH4)2Ni(SO4)2 x 6 H2O\",\n                        \"compound_id\": 739,\n                        \"amount\": 2.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.8,\n                        \"mmol_l\": 7.08884,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 69-69","quote":"(NH4)2Ni(SO4)2 x 6 H2O                                    2.80        g","quote_basis":"derivative text"}]},{"quantity_id":"q29","label":"Na2SeO4","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source supports this mass and the provider stock-only g_l for Wolfe elixir. The selected records flatten that stock-strength number into a direct ingredient and lose the stock addition stage. Preserve the source stock row and hydrate identity; it is not evidence for the same final-medium concentration.","source_stage":"Wolfe stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[14]","quote":"{\n          \"component_name\": \"Na2SeO4\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001602\",\n          \"gmo_id\": \"GMO_001602\",\n          \"label\": \"Sodium selenate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Na2SeO4\",\n                        \"compound_id\": 375,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.529241,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 71-71","quote":"Na2SeO4                                                   0.10        g","quote_basis":"derivative text"}]},{"quantity_id":"q30","label":"Solution A","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"989","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"989","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The primary and TOGO source give a liquid stock addition, while the selected field uses G_PER_L. Preserve this exact source assembly and distinguish the provider declared 1009 ml recipe normalization from a measured final-volume claim. The current local provider reference points to a different same-named stock.","source_stage":"A/B/C receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[0].items[0]","quote":"{\n          \"component_name\": \"Solution A\",\n          \"volume\": 989,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M3122\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\": 1611,\n                        \"amount\": 989,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 3-3","quote":"Solution A                                              989.00       ml","quote_basis":"derivative text"}]},{"quantity_id":"q31","label":"Solution B","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The primary and TOGO source give a liquid stock addition, while the selected field uses G_PER_L. Preserve this exact source assembly and distinguish the provider declared 1009 ml recipe normalization from a measured final-volume claim. The current local provider reference points to a different same-named stock.","source_stage":"A/B/C receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[0].items[1]","quote":"{\n          \"component_name\": \"Solution B\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M3122\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\": 1612,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 4-4","quote":"Solution B                                               10.00       ml","quote_basis":"derivative text"}]},{"quantity_id":"q32","label":"Solution C","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[2].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[2].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The primary and TOGO source give a liquid stock addition, while the selected field uses G_PER_L. Preserve this exact source assembly and distinguish the provider declared 1009 ml recipe normalization from a measured final-volume claim. The current local provider reference points to a different same-named stock.","source_stage":"A/B/C receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[0].items[2]","quote":"{\n          \"component_name\": \"Solution C\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M3122\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Solution C\",\n                        \"solution_id\": 1613,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 5-5","quote":"Solution C                                               10.00       ml","quote_basis":"derivative text"}]},{"quantity_id":"q33","label":"Wolfe stock acid adjustment","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[3].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[3].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"VARIABLE preserves the absence of a specified addition amount. Diluted sulfuric acid is a stock pH adjustment reagent; the source does not supply a strength or dose to invent. The meaningful stock role is lost in an empty generic solution descriptor.","source_stage":"Wolfe stock preparation only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[15]","quote":"{\n          \"component_name\": \"H2SO4 solution\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001482\",\n          \"gmo_id\": \"GMO_001482\",\n          \"label\": \"Sulfuric acid solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].steps[0]","quote":"{\n                        \"step\": \"First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.\"\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt lines 74-74","quote":"First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.","quote_basis":"derivative text"}]},{"quantity_id":"q34","label":"Independent provider 5342: Yeast extract","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[0].concentration","stored":{"value":"2","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The separate provider gives this digit as batch grams and explicitly makes up 500 ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization basis. This finding is confined to the independently linked stock; its ingredients must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[0]","quote":"{\n                \"recipe_order\": 1,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"BD-Difco\",\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Add components to distilled water and bring volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q35","label":"Independent provider 5342: Casamino acids","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[1].concentration","stored":{"value":"2","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The separate provider gives this digit as batch grams and explicitly makes up 500 ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization basis. This finding is confined to the independently linked stock; its ingredients must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[1]","quote":"{\n                \"recipe_order\": 2,\n                \"compound\": \"Casamino acids\",\n                \"compound_id\": 101,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"BD-Difco\",\n                \"amount\": 2,\n                \"unit\": \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Add components to distilled water and bring volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q36","label":"Independent provider 5342: Na glutamate","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[2].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The separate provider gives this digit as batch grams and explicitly makes up 500 ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization basis. This finding is confined to the independently linked stock; its ingredients must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[2]","quote":"{\n                \"recipe_order\": 3,\n                \"compound\": \"Na glutamate\",\n                \"compound_id\": 839,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Add components to distilled water and bring volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q37","label":"Independent provider 5342: Trisodium citrate x 2 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[3].concentration","stored":{"value":"3","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The separate provider gives this digit as batch grams and explicitly makes up 500 ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization basis. This finding is confined to the independently linked stock; its ingredients must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[3]","quote":"{\n                \"recipe_order\": 4,\n                \"compound\": \"Trisodium citrate x 2 H2O\",\n                \"compound_id\": 1249,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\": \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Add components to distilled water and bring volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q38","label":"Independent provider 5342: MgSO4 x 7 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The separate provider gives this digit as batch grams and explicitly makes up 500 ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization basis. This finding is confined to the independently linked stock; its ingredients must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[4]","quote":"{\n                \"recipe_order\": 5,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\": 8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Add components to distilled water and bring volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q39","label":"Independent provider 5342: CaSO4 x 2 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[5].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The separate provider gives this digit as batch grams and explicitly makes up 500 ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization basis. This finding is confined to the independently linked stock; its ingredients must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[5]","quote":"{\n                \"recipe_order\": 6,\n                \"compound\": \"CaSO4 x 2 H2O\",\n                \"compound_id\": 190,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Add components to distilled water and bring volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q40","label":"Independent provider 5342: KCl","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[6].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The separate provider gives this digit as batch grams and explicitly makes up 500 ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization basis. This finding is confined to the independently linked stock; its ingredients must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[6]","quote":"{\n                \"recipe_order\": 7,\n                \"compound\": \"KCl\",\n                \"compound_id\": 61,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Add components to distilled water and bring volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q41","label":"Independent provider 5342: NaCl","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[7].concentration","stored":{"value":"100","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The separate provider gives this digit as batch grams and explicitly makes up 500 ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization basis. This finding is confined to the independently linked stock; its ingredients must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[7]","quote":"{\n                \"recipe_order\": 8,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Add components to distilled water and bring volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q42","label":"Independent provider 5342 preparation","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"preparation_notes","stored":"Add components to distilled water and bring volume to 500 ml."}],"decision":"evidence_only","rationale":"The existing stock preparation is supported by its own exact source. Its explicit make-up volume and any conditional combination or agar instruction remain within this distinct provider formulation, not the selected DSM792b recipe.","source_stage":"Independent provider stock only","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Add components to distilled water and bring volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q43","label":"Independent provider 5343: Na2CO3","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml","field_path":"composition[0].concentration","stored":{"value":"80","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The separate provider gives this digit as batch grams and explicitly makes up 500 ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization basis. This finding is confined to the independently linked stock; its ingredients must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5343","reference":"https://mediadive.dsmz.de/rest/solution/5343","raw_path":"REVIEW_WORK/batch069/source01-03/solution5343.bin","raw_sha256":"28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0","text_sha256":"c0479e4688de7a7a37c893768def70a30b7ebec0c2d0d444f8443c0b04b6f1b8","accessed_at":"2026-10-28T13:47:51.159872Z","locator":"data.recipe[0]","quote":"{\n                \"recipe_order\": 1,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\": 32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 80,\n                \"unit\": \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5343","reference":"https://mediadive.dsmz.de/rest/solution/5343","raw_path":"REVIEW_WORK/batch069/source01-03/solution5343.bin","raw_sha256":"28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0","text_sha256":"c0479e4688de7a7a37c893768def70a30b7ebec0c2d0d444f8443c0b04b6f1b8","accessed_at":"2026-10-28T13:47:51.159872Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Add components to distilled water and bring volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q44","label":"Independent provider 5343: NaCl","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml","field_path":"composition[1].concentration","stored":{"value":"100","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The separate provider gives this digit as batch grams and explicitly makes up 500 ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization basis. This finding is confined to the independently linked stock; its ingredients must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5343","reference":"https://mediadive.dsmz.de/rest/solution/5343","raw_path":"REVIEW_WORK/batch069/source01-03/solution5343.bin","raw_sha256":"28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0","text_sha256":"c0479e4688de7a7a37c893768def70a30b7ebec0c2d0d444f8443c0b04b6f1b8","accessed_at":"2026-10-28T13:47:51.159872Z","locator":"data.recipe[1]","quote":"{\n                \"recipe_order\": 2,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5343","reference":"https://mediadive.dsmz.de/rest/solution/5343","raw_path":"REVIEW_WORK/batch069/source01-03/solution5343.bin","raw_sha256":"28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0","text_sha256":"c0479e4688de7a7a37c893768def70a30b7ebec0c2d0d444f8443c0b04b6f1b8","accessed_at":"2026-10-28T13:47:51.159872Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Add components to distilled water and bring volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q45","label":"Independent provider 5343 preparation","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml","field_path":"preparation_notes","stored":"Add components to distilled water and bring volume to 500 ml.\nAutoclave solutions A and B separately and combine them after cooling. For preparation of solid medium, add 18.0 g agar to Solution A (500 ml), combine them after cooling to 60-70C, mix well and quickly distribute into sterile petri dishes or test tubes."}],"decision":"evidence_only","rationale":"The existing stock preparation is supported by its own exact source. Its explicit make-up volume and any conditional combination or agar instruction remain within this distinct provider formulation, not the selected DSM792b recipe.","source_stage":"Independent provider stock only","sources":[{"evidence_id":"solution5343","reference":"https://mediadive.dsmz.de/rest/solution/5343","raw_path":"REVIEW_WORK/batch069/source01-03/solution5343.bin","raw_sha256":"28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0","text_sha256":"c0479e4688de7a7a37c893768def70a30b7ebec0c2d0d444f8443c0b04b6f1b8","accessed_at":"2026-10-28T13:47:51.159872Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Add components to distilled water and bring volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5343","reference":"https://mediadive.dsmz.de/rest/solution/5343","raw_path":"REVIEW_WORK/batch069/source01-03/solution5343.bin","raw_sha256":"28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0","text_sha256":"c0479e4688de7a7a37c893768def70a30b7ebec0c2d0d444f8443c0b04b6f1b8","accessed_at":"2026-10-28T13:47:51.159872Z","locator":"data.steps[1]","quote":"{\n                \"recipe_order\": null,\n                \"step\": \"Autoclave solutions A and B separately and combine them after cooling. For preparation of solid medium, add 18.0 g agar to Solution A (500 ml), combine them after cooling to 60-70C, mix well and quickly distribute into sterile petri dishes or test tubes.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q46","label":"Independent provider5312 tetrathionate","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml","field_path":"composition[0].concentration","stored":{"value":"30","unit":"G_PER_L"}}],"decision":"verified","rationale":"The existing attached literal claim and stored digest match the current exact response; the explicit provider g_l supports 30 G_PER_L within this tetrathionate stock. This authenticates the claim content, not the historical access event and not its substitution for the selected sulfide Solution C.","source_stage":"Independent provider5312 stock only","sources":[{"evidence_id":"solution5312","reference":"https://mediadive.dsmz.de/rest/solution/5312","raw_path":"REVIEW_WORK/batch069/source01-03/solution5312.bin","raw_sha256":"6766811e685137e51045e0a5a2c301954772fa34dd3ed711eb541ef862e480b9","text_sha256":"8ad8e01259abb79853b0fbd163e29d55b6ba03e25c1850adc04c240f212a7c34","accessed_at":"2026-10-28T13:47:51.159959Z","locator":"data.recipe[0]","quote":"{\n                \"recipe_order\": 1,\n                \"compound\": \"K2S4O6\",\n                \"compound_id\": 386,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 30,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q47","label":"Independent provider5312 water","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml","field_path":"composition[1].concentration","stored":{"value":"1000.0","unit":"PERCENT_V_V"}}],"decision":"conflict","rationale":"The source specifies water as a volume input to a 10 ml stock. It does not support the local 1000 PERCENT_V_V; preserve the volume statement without inferring a new receiving-medium dose.","source_stage":"Independent provider5312 stock only","sources":[{"evidence_id":"solution5312","reference":"https://mediadive.dsmz.de/rest/solution/5312","raw_path":"REVIEW_WORK/batch069/source01-03/solution5312.bin","raw_sha256":"6766811e685137e51045e0a5a2c301954772fa34dd3ed711eb541ef862e480b9","text_sha256":"8ad8e01259abb79853b0fbd163e29d55b6ba03e25c1850adc04c240f212a7c34","accessed_at":"2026-10-28T13:47:51.159959Z","locator":"data.recipe[1]","quote":"{\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5312","reference":"https://mediadive.dsmz.de/rest/solution/5312","raw_path":"REVIEW_WORK/batch069/source01-03/solution5312.bin","raw_sha256":"6766811e685137e51045e0a5a2c301954772fa34dd3ed711eb541ef862e480b9","text_sha256":"8ad8e01259abb79853b0fbd163e29d55b6ba03e25c1850adc04c240f212a7c34","accessed_at":"2026-10-28T13:47:51.159959Z","locator":"data","quote":"{\n        \"id\": 5312,\n        \"name\": \"Solution C\",\n        \"volume\": 10,\n        \"recipe\": [\n            {\n                \"recipe_order\": 1,\n                \"compound\": \"K2S4O6\",\n                \"compound_id\": 386,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 30,\n                \"mmol_l\": null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }\n        ],\n        \"steps\": [\n            {\n                \"recipe_order\": null,\n                \"step\": \"Sterilize by filtration.\"\n            }\n        ],\n        \"equipment\": {\n            \"2115\": \"Filter\"\n        }\n    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q48","label":"Independent provider5312 preparation","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml","field_path":"preparation_notes","stored":"Sterilize by filtration.\n\nOriginal volume: 10 mL"}],"decision":"evidence_only","rationale":"The existing filtration and original batch-volume note are supported within this separate stock. They are not the preparation of DSM792b Solution C.","source_stage":"Independent provider5312 stock only","sources":[{"evidence_id":"solution5312","reference":"https://mediadive.dsmz.de/rest/solution/5312","raw_path":"REVIEW_WORK/batch069/source01-03/solution5312.bin","raw_sha256":"6766811e685137e51045e0a5a2c301954772fa34dd3ed711eb541ef862e480b9","text_sha256":"8ad8e01259abb79853b0fbd163e29d55b6ba03e25c1850adc04c240f212a7c34","accessed_at":"2026-10-28T13:47:51.159959Z","locator":"data","quote":"{\n        \"id\": 5312,\n        \"name\": \"Solution C\",\n        \"volume\": 10,\n        \"recipe\": [\n            {\n                \"recipe_order\": 1,\n                \"compound\": \"K2S4O6\",\n                \"compound_id\": 386,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 30,\n                \"mmol_l\": null,\n                \"optional\": 0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }\n        ],\n        \"steps\": [\n            {\n                \"recipe_order\": null,\n                \"step\": \"Sterilize by filtration.\"\n            }\n        ],\n        \"equipment\": {\n            \"2115\": \"Filter\"\n        }\n    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q49","label":"Source-only complete main preparation 1","local_fields":[],"decision":"evidence_only","rationale":"This exact source paragraph supplies numeric preparation and stage context absent from both selected layers. Keep the source scope and examples explicit; do not invent additional rates or growth claims.","source_stage":"Source-only DSM792b assembly/preparation","sources":[{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\": \"Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic serum vials (e.g., 20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under 100% N2 gas. To complete the medium appropriate amounts of solutions B and C are added to solution A. Adjust pH of the complete medium to 5.7.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q50","label":"Source-only complete main preparation 2","local_fields":[],"decision":"evidence_only","rationale":"This exact source paragraph supplies numeric preparation and stage context absent from both selected layers. Keep the source scope and examples explicit; do not invent additional rates or growth claims.","source_stage":"Source-only DSM792b assembly/preparation","sources":[{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[1]","quote":"{\n                        \"step\": \"After inoculation pressurize vials to 2 bar overpressure with sterile 80% H2 and 20% CO2 gas mixture.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q51","label":"Source-only complete main preparation 3","local_fields":[],"decision":"evidence_only","rationale":"This exact source paragraph supplies numeric preparation and stage context absent from both selected layers. Keep the source scope and examples explicit; do not invent additional rates or growth claims.","source_stage":"Source-only DSM792b assembly/preparation","sources":[{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[2]","quote":"{\n                        \"step\": \"Note: Solution A has to be prepared freshly. It cannot be stored for a long period of time.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q52","label":"Source-only Wolfe preparation","local_fields":[],"decision":"evidence_only","rationale":"The stock pH and order of addition are explicit, while acid strength and addition quantity remain unspecified.","source_stage":"Wolfe stock preparation only","sources":[{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].steps[0]","quote":"{\n                        \"step\": \"First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.\"\n                    }","quote_basis":"raw UTF-8"}]}],"document_scopes":{"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml":null,"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml":null,"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml":["preferred_term","term","composition","preparation_notes"],"data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml":["preferred_term","term","composition","preparation_notes"],"data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml":["preferred_term","term","composition","preparation_notes"]},"scope":"Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: concern. Targets: CultureMech:009594.
+
+Every asserted chemical identifier was joined to a current non-obsolete OLS object and the exact packaged MIM pool. The selected hydrate-specific primary terms remain supported; magnesium secondary32599 is generic versus primary31795. Separately linked5342 citrate53258 does not encode the supplied dihydrate. Legacy000170 current absence is not historical invalidity. Missing terms and stock provider accessions are not treated as chemical identity certification. No new alternative identifier, supplier grade or stoichiometric conversion is guessed.
+
+### Existing repair credit and writer limits
+
+provenance: concern. Targets: CultureMech:009594.
+
+Complete selected and owner histories, all three exact reports and scoped parent rows were read. The two October reports deferred all33 source checks. The September report records genuine stage/unit concerns; a recommended blanket per-litre conversion and forced source-duplicate collapse are not automatically adopted. Current import, cleanup, formulation and singleton-merge safeguards are distinguished from historical execution. The separately scoped5312 claim authenticates current raw content, not the original access event.
+
+## Findings
+
+### f1: Separate stock batches have been flattened and summed
+
+major / open / confirmed; issue key: culturemech-009594-source-stage-unit-flattening.
+
+Restore A, B, C and Wolfe stock boundaries, receiving additions and amount units. Water, magnesium, sodium and calcium rows combine different stages; boric acid additionally combines milligram and gram digits. Liquid additions are mislabeled mass concentrations, while stock-only concentrations appear at the final-medium level. Preserve supported batch amounts and explicit provider normalization separately; source water is not measured final volume.
+
+### f2: Three same-named stock links identify different formulations
+
+major / open / confirmed; issue key: culturemech-009594-stock-reference-identity.
+
+The local links5342,5343 and5312 resolve to different provider compositions. Exact DSM792b currently identifies its source stocks as1611,1612 and1613; names A/B/C alone are insufficient. Reconcile exact source-local identity before curating the selected medium. Preserve the verified tetrathionate claim only in its own stock and never transfer it to the selected sulfide stock.
+
+### f3: Source pH and staged preparation are missing
+
+major / open / confirmed; issue key: culturemech-009594-source-preparation-context.
+
+Preserve the complete source-specific assembly, atmosphere, treatment order, freshness and pH context with root-level evidence. Gas VARIABLE entries and the empty acid descriptor do not encode these stages or justify invented amounts. Replace the four Unknown solution names with accurately scoped names after resolving identity.
+
+### f4: The independently linked stocks contain unit-basis defects
+
+major / open / confirmed; issue key: culturemech-009594-linked-stock-quantity-bases.
+
+Within the separately scoped linked records, A and B retain batch grams but label them per litre despite their explicit 500 ml make-up instructions. C retains a verified stock solute concentration, but water is mislabeled1000 percent. Reconcile these independent records only on their own evidence; they remain different formulations from DSM792b.
+
+### f5: Specific primary hydrates and secondary identifiers need reconciliation
+
+minor / open / confirmed; issue key: culturemech-009594-hydrate-and-linkage-scope.
+
+Retain the correct magnesium heptahydrate primary annotation while reconciling its generic secondary sulfate assertion. In separately linked5342, the supplied citrate name says dihydrate while its primary ontology term is generic citrate. The current snapshot absence of legacy000170 is only a present membership result; preserve its history and evaluate exact current linkage without declaring that the historical identifier was invalid. Missing sodium-resazurin and iodide primary terms require source-specific grounding, not guessed IDs.
+
+### f6: Complex and undefined classification lacks source support
+
+minor / open / confirmed; issue key: culturemech-009594-defined-composition-metadata.
+
+Reconcile the inherited COMPLEX/UNDEFINED fields against the exact named source constituents and resolved source stocks. Do not use the wrongly linked yeast-containing comparison stock as evidence that the selected medium is complex. Preserve the supported liquid state.
+
+### f7: Current source support needs precise linkage and historical qualification
+
+minor / open / confirmed; issue key: culturemech-009594-claim-history-provenance.
+
+Attach checked claims to their actual ingredient or root-level stage; retain original curation events and append verified context only. Both October reports explicitly performed zero source checks. The September report identifies real stage concerns but its universal per-litre and duplicate-collapse recommendations are not adopted without exact formulation reconciliation. Current code behavior does not authenticate past execution.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore A, B, C and Wolfe stock boundaries, receiving additions and amount units. Water, magnesium, sodium and calcium rows combine different stages; boric acid additionally combines milligram and gram digits. Liquid additions are mislabeled mass concentrations, while stock-only concentrations appear at the final-medium level. Preserve supported batch amounts and explicit provider normalization separately; source water is not measured final volume.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+The local links5342,5343 and5312 resolve to different provider compositions. Exact DSM792b currently identifies its source stocks as1611,1612 and1613; names A/B/C alone are insufficient. Reconcile exact source-local identity before curating the selected medium. Preserve the verified tetrathionate claim only in its own stock and never transfer it to the selected sulfide stock.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+Preserve the complete source-specific assembly, atmosphere, treatment order, freshness and pH context with root-level evidence. Gas VARIABLE entries and the empty acid descriptor do not encode these stages or justify invented amounts. Replace the four Unknown solution names with accurately scoped names after resolving identity.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+Within the separately scoped linked records, A and B retain batch grams but label them per litre despite their explicit 500 ml make-up instructions. C retains a verified stock solute concentration, but water is mislabeled1000 percent. Reconcile these independent records only on their own evidence; they remain different formulations from DSM792b.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a5
+
+Retain the correct magnesium heptahydrate primary annotation while reconciling its generic secondary sulfate assertion. In separately linked5342, the supplied citrate name says dihydrate while its primary ontology term is generic citrate. The current snapshot absence of legacy000170 is only a present membership result; preserve its history and evaluate exact current linkage without declaring that the historical identifier was invalid. Missing sodium-resazurin and iodide primary terms require source-specific grounding, not guessed IDs.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a6
+
+Reconcile the inherited COMPLEX/UNDEFINED fields against the exact named source constituents and resolved source stocks. Do not use the wrongly linked yeast-containing comparison stock as evidence that the selected medium is complex. Preserve the supported liquid state.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a7
+
+Attach checked claims to their actual ingredient or root-level stage; retain original curation events and append verified context only. Both October reports explicitly performed zero source checks. The September report identifies real stage concerns but its universal per-litre and duplicate-collapse recommendations are not adopted without exact formulation reconciliation. Current code behavior does not authenticate past execution.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| dsm792b | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf; REVIEW_WORK/batch069/source01-03/dsm792b.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| api792b | https://mediadive.dsmz.de/rest/medium/792b; REVIEW_WORK/batch069/source01-03/api792b.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| togoM3122 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122; REVIEW_WORK/batch069/source01-03-supplement/togoM3122.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact selected source or existing ontology assertion; identityDSM captures used for scope identity only. |
+| togo3122 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmdb_id?gmdb_id=M3122; REVIEW_WORK/batch069/source01-03/togo3122.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| solution5342 | https://mediadive.dsmz.de/rest/solution/5342; REVIEW_WORK/batch069/source01-03/solution5342.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| solution5343 | https://mediadive.dsmz.de/rest/solution/5343; REVIEW_WORK/batch069/source01-03/solution5343.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| solution5312 | https://mediadive.dsmz.de/rest/solution/5312; REVIEW_WORK/batch069/source01-03/solution5312.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| identityDSM16658 | https://www.dsmz.de/collection/catalogue/details/culture/DSM-16658; REVIEW_WORK/batch069/source01-03/identityDSM16658.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| target | data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| report-19 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-20 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-21 | reports/yaml_record_review/20260922T030812Z-Caminibacter_Mediatlanticus_Medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| dependency5342 | data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml; term, composition, preparation_notes | context_only | Complete linked stock read, with scientific scope limited to term, composition and preparation notes. Name alone does not identify the selected source stock. |
+| dependency5343 | data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml; term, composition, preparation_notes | context_only | Complete linked stock read, with scientific scope limited to term, composition and preparation notes. Name alone does not identify the selected source stock. |
+| dependency5312 | data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml; term, composition, preparation_notes | context_only | Complete linked stock read, with scientific scope limited to term, composition and preparation notes. Name alone does not identify the selected source stock. |
+| writer-togo | src/culturemech/import/togo_importer.py; TogoImporter._extract_primary_components, _assembled_solution_sections, _local_solution_composition, _extract_preparation_steps, _parse_unit, _extract_ph | context_only | Current primary-section and local-stock extraction preserve distinct assembled solutions when their source boundaries can be resolved; fallback parsing and unit normalization are separate. _extract_ph reads root ph, whereas this actual payload places ph under meta. The current body is not proof of historical execution. |
+| writer-cleanup | scripts/cleanup_media_quality.py; MediaQualityFixer._merge_ingredient_group | context_only | Current cleanup collapses identical values and flags differing concentrations; it does not sum different source stages. Current safeguards do not repair the already flattened historical records. |
+| historical-reading | REVIEW_WORK/batch069/record03/historical-reading.json; Complete artifact; exact original input paths and hashes retained | context_only | Lossless exact report cells and independently joined current decoded source objects. |
+| historical-selected-parent-rows | REVIEW_WORK/batch069/record03/historical-selected-parent-rows.json; Complete artifact; exact original input paths and hashes retained | context_only | Exact selected historical parent objects; parent provenance only, not automatic original source authentication. |
+| complete-document-reader | REVIEW_WORK/batch069/record03/complete-document-reader.json; Complete artifact; exact original input paths and hashes retained | context_only | Complete exact target and owner parsed documents with lossless long-string pooling. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition, _is_api_stock_addition, _api_stock_name, _parse_api_solutions, _normalize_unit, _classify_preparation_action | context_only | Current parser keeps only primary compounds and separately preserves referenced stocks. It still prioritizes provider g_l and normalizes bare g/ml/% to per-litre/w-v enums without independently establishing the basis; the action classifier tests temperature before cool. Current behavior is not historical execution proof. |
+| writer-matcher | src/culturemech/merge/matcher.py; group_formulations | context_only | Current group_formulations uses conservative FormulationFingerprinter; ingredient similarity is only candidate discovery. |
+| chebi16526 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_16526; REVIEW_WORK/batch069/source01-03/chebi16526.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi18276 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_18276; REVIEW_WORK/batch069/source01-03/chebi18276.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi36385 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_36385; REVIEW_WORK/batch069/source01-03/chebi36385.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15377; REVIEW_WORK/batch069/source01-03/chebi15377.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31795; REVIEW_WORK/batch069/source01-03/chebi31795.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi32599 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32599; REVIEW_WORK/batch069/source01-03/chebi32599.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_26710; REVIEW_WORK/batch069/source01-03/chebi26710.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86158; REVIEW_WORK/batch069/source01-03/chebi86158.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86345; REVIEW_WORK/batch069/source01-03/chebi86345.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_33118; REVIEW_WORK/batch069/source01-03/chebi33118.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32588; REVIEW_WORK/batch069/source01-03/chebi32588.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi63004 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63004; REVIEW_WORK/batch069/source01-03/chebi63004.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63036; REVIEW_WORK/batch069/source01-03/chebi63036.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi63043 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63043; REVIEW_WORK/batch069/source01-03/chebi63043.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17997; REVIEW_WORK/batch069/source01-03/chebi17997.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_76209; REVIEW_WORK/batch069/source01-03/chebi76209.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75213; REVIEW_WORK/batch069/source01-03/chebi75213.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75836; REVIEW_WORK/batch069/source01-03/chebi75836.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53503; REVIEW_WORK/batch069/source01-03/chebi53503.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32312; REVIEW_WORK/batch069/source01-03/chebi32312.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31440; REVIEW_WORK/batch069/source01-03/chebi31440.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86465; REVIEW_WORK/batch069/source01-03/chebi86465.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63939; REVIEW_WORK/batch069/source01-03/chebi63939.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi86364 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86364; REVIEW_WORK/batch069/source01-03/chebi86364.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi86149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86149; REVIEW_WORK/batch069/source01-03/chebi86149.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi77775 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_77775; REVIEW_WORK/batch069/source01-03/chebi77775.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi64220 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_64220; REVIEW_WORK/batch069/source01-03/chebi64220.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi53258 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53258; REVIEW_WORK/batch069/source01-03/chebi53258.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi32583 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32583; REVIEW_WORK/batch069/source01-03/chebi32583.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_29377; REVIEW_WORK/batch069/source01-03/chebi29377.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| chebi86466 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86466; REVIEW_WORK/batch069/source01-03/chebi86466.json; exact original raw/text/hash/time metadata | context_only | Fresh batch069 capture. Exact ordinary selected source, referenced stock identity comparison, or existing ontology assertion; DSM catalogue identity only. |
+| quantities | REVIEW_WORK/batch069/record03/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch069/record03/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch069/record03/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch069/record03/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch069/record03/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch069/record03/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch069/record03/existing-claim-authentication.json; Complete sidecar | supports | Existing literal and raw-digest matches; current content authentication is separate from original retrieval provenance. |
+| check-schema | REVIEW_WORK/batch069/record03/validate-schema.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch069/record03/validate-strict.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch069/record03/validate-terms.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch069/record03/validate-references.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- The exact primary792b source is fully available, including its Wolfe table; comparison stock5342/5343/5312 evidence cannot be transferred to the selected recipe.
+- Source receiving volumes and provider989/10/10/1009 ml normalizations do not establish an experimentally measured final-medium volume.
+- The initial misspelled TOGO route returned404; the later exact gmid route returned200. Both original retrieval records are preserved.
+- Dependency placeholder ingredients and unrelated parent scientific fields are excluded from positive formulation evidence; complete original parent files remain pinned.
+- Current source identity does not establish equivalence to every same-named maintained sibling, or permission to collapse distinct records.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T141814Z-culturemech-009594-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: Caminibacter Mediatlanticus Medium'
+started_at: '2026-10-28T13:47:19.507467Z'
+finished_at: '2026-10-28T14:18:14.958393Z'
+reviewer:
+  identity: Codex batch006_validation
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, exact
+    captured sources, fresh scoped primary sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact source is established, but both selected layers flatten three assembly
+  stocks and the Wolfe stock, sum incompatible stages and use mass units for liquid
+  additions. Three linked same-named stocks are different formulations. The review
+  credits source batch digits, current hydrate repairs and the exact attached claim
+  in its separate stock, while identifying missing preparation, independent stock
+  unit defects and classification/provenance limits.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml
+    sha256: b4321608318939dc3a86b3d6613e36d517fdc752be39946921ea62c68904727c
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    sha256: 10b5e06aa5069f2fdde9f6d64d182aae17b5dfa48ec2ce57456033eba85ebde5
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml
+    sha256: b62be1d475240198979f708052c230a10a5d650e51572aef8af89354e9da54d6
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+    sha256: fbc65564968b86b312f7795ff5c4527f199c51d04dc2764452d46bb5ba339566
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+    sha256: 84a4c07adfb1f11f32159a52f5e575738eb641428074b0958a68b8d5ba265ba5
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.md
+    sha256: 1d5efecfcfd610a6c224ff9907119bbdecfedf3ac7cfad7b7a158a39c98e3ab9
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.md
+    sha256: f944180d5ffb75f69c9dd386ee78d351bbad79c291a6890e0eab5b8f87ecaff7
+    role: context
+  - path: reports/yaml_record_review/20260922T030812Z-Caminibacter_Mediatlanticus_Medium.md
+    sha256: 13616482609f8debb5d6df1f1a35d7d32f9d9c9bded43d98ecf01a3b159b9ae4
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch069 index 03
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009594
+targets:
+- target_id: CultureMech:009594
+  path: data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml
+  label: caminibacter_mediatlanticus_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:009594
+  command: just validate-schema data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:009594
+  command: just validate-strict data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml
+    --out REVIEW_WORK/batch069/record03/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:009594
+  command: just validate-terms data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:009594
+  command: just validate-references data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: dsm792b
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf
+  accessed_at: '2026-10-28T13:47:50.319722Z'
+  locator: REVIEW_WORK/batch069/source01-03/dsm792b.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d
+- evidence_id: api792b
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/792b
+  accessed_at: '2026-10-28T13:47:50.150496Z'
+  locator: REVIEW_WORK/batch069/source01-03/api792b.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a
+- evidence_id: togoM3122
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122
+  accessed_at: '2026-10-28T13:49:10.524485Z'
+  locator: REVIEW_WORK/batch069/source01-03-supplement/togoM3122.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact selected source or existing ontology assertion;
+    identityDSM captures used for scope identity only.
+  snapshot_sha256: 8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8
+- evidence_id: togo3122
+  kind: search
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmdb_id?gmdb_id=M3122
+  accessed_at: '2026-10-28T13:47:50.640269Z'
+  locator: REVIEW_WORK/batch069/source01-03/togo3122.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
+  search_scope: One exact public GET of https://togomedium.org/sparqlist/api/gmdb_medium_by_gmdb_id?gmdb_id=M3122;
+    retained status 404. No exhaustive repository or literature absence claim.
+- evidence_id: solution5342
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5342
+  accessed_at: '2026-10-28T13:47:51.025311Z'
+  locator: REVIEW_WORK/batch069/source01-03/solution5342.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240
+- evidence_id: solution5343
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5343
+  accessed_at: '2026-10-28T13:47:51.159872Z'
+  locator: REVIEW_WORK/batch069/source01-03/solution5343.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0
+- evidence_id: solution5312
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5312
+  accessed_at: '2026-10-28T13:47:51.159959Z'
+  locator: REVIEW_WORK/batch069/source01-03/solution5312.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 6766811e685137e51045e0a5a2c301954772fa34dd3ed711eb541ef862e480b9
+- evidence_id: identityDSM16658
+  kind: primary_source
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-16658
+  accessed_at: '2026-10-28T13:47:52.711916Z'
+  locator: REVIEW_WORK/batch069/source01-03/identityDSM16658.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 306428bd9b4745b7d9baf350ef35739d0a2644db699cb6f0504f50bb91f280b9
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T14:04:25.202692Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: b4321608318939dc3a86b3d6613e36d517fdc752be39946921ea62c68904727c
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T14:04:25.202864Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: 10b5e06aa5069f2fdde9f6d64d182aae17b5dfa48ec2ce57456033eba85ebde5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T14:04:25.202897Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T14:04:25.203209Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T14:04:25.203234Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T14:04:25.203258Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T14:04:25.203289Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 1d5efecfcfd610a6c224ff9907119bbdecfedf3ac7cfad7b7a158a39c98e3ab9
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T14:04:25.203325Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: f944180d5ffb75f69c9dd386ee78d351bbad79c291a6890e0eab5b8f87ecaff7
+- evidence_id: report-21
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T030812Z-Caminibacter_Mediatlanticus_Medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T14:04:25.203351Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 13616482609f8debb5d6df1f1a35d7d32f9d9c9bded43d98ecf01a3b159b9ae4
+- evidence_id: dependency5342
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+  locator: term, composition, preparation_notes
+  accessed_at: '2026-10-28T14:04:25.205819Z'
+  support: context_only
+  summary: Complete linked stock read, with scientific scope limited to term, composition
+    and preparation notes. Name alone does not identify the selected source stock.
+  snapshot_sha256: fbc65564968b86b312f7795ff5c4527f199c51d04dc2764452d46bb5ba339566
+- evidence_id: dependency5343
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+  locator: term, composition, preparation_notes
+  accessed_at: '2026-10-28T14:04:25.206987Z'
+  support: context_only
+  summary: Complete linked stock read, with scientific scope limited to term, composition
+    and preparation notes. Name alone does not identify the selected source stock.
+  snapshot_sha256: 84a4c07adfb1f11f32159a52f5e575738eb641428074b0958a68b8d5ba265ba5
+- evidence_id: dependency5312
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml
+  locator: term, composition, preparation_notes
+  accessed_at: '2026-10-28T14:04:25.208792Z'
+  support: context_only
+  summary: Complete linked stock read, with scientific scope limited to term, composition
+    and preparation notes. Name alone does not identify the selected source stock.
+  snapshot_sha256: b62be1d475240198979f708052c230a10a5d650e51572aef8af89354e9da54d6
+- evidence_id: writer-togo
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: TogoImporter._extract_primary_components, _assembled_solution_sections,
+    _local_solution_composition, _extract_preparation_steps, _parse_unit, _extract_ph
+  accessed_at: '2026-10-28T14:04:25.230005Z'
+  support: context_only
+  summary: Current primary-section and local-stock extraction preserve distinct assembled
+    solutions when their source boundaries can be resolved; fallback parsing and unit
+    normalization are separate. _extract_ph reads root ph, whereas this actual payload
+    places ph under meta. The current body is not proof of historical execution.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: MediaQualityFixer._merge_ingredient_group
+  accessed_at: '2026-10-28T14:04:25.230065Z'
+  support: context_only
+  summary: Current cleanup collapses identical values and flags differing concentrations;
+    it does not sum different source stages. Current safeguards do not repair the
+    already flattened historical records.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: historical-reading
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record03/historical-reading.json
+  accessed_at: '2026-10-28T14:04:25.230103Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Lossless exact report cells and independently joined current decoded source
+    objects.
+  snapshot_sha256: 45b44f27584ed4c1035ccffc5f855ff074bd6fa1003a91872895164d630170c2
+- evidence_id: historical-selected-parent-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record03/historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T14:04:25.230147Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Exact selected historical parent objects; parent provenance only, not automatic
+    original source authentication.
+  snapshot_sha256: ebbeeec2af788f3f66891dd0e06fd75ce2f4c3111f61f9f7b94ca5d6a83e163b
+- evidence_id: complete-document-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record03/complete-document-reader.json
+  accessed_at: '2026-10-28T14:04:25.230353Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Complete exact target and owner parsed documents with lossless long-string
+    pooling.
+  snapshot_sha256: 09b6f1ea93637a2c3992eea6c462d6a3985d6adda0becebee432dc2d00a284b6
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _is_api_stock_addition, _api_stock_name, _parse_api_solutions,
+    _normalize_unit, _classify_preparation_action
+  accessed_at: '2026-10-28T14:04:25.230511Z'
+  support: context_only
+  summary: Current parser keeps only primary compounds and separately preserves referenced
+    stocks. It still prioritizes provider g_l and normalizes bare g/ml/% to per-litre/w-v
+    enums without independently establishing the basis; the action classifier tests
+    temperature before cool. Current behavior is not historical execution proof.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-matcher
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations
+  accessed_at: '2026-10-28T14:04:25.230550Z'
+  support: context_only
+  summary: Current group_formulations uses conservative FormulationFingerprinter;
+    ingredient similarity is only candidate discovery.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: chebi16526
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_16526
+  accessed_at: '2026-10-28T13:47:53.390013Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi16526.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: a46d1979945f86fa259f0c40d36d152254b9b4a949a60bbfbb7ef7d01b247561
+- evidence_id: chebi18276
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_18276
+  accessed_at: '2026-10-28T13:47:54.177605Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi18276.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: ce8012cf1de413b6c7fbf591125f8a666316a00f6cf7a1add46293e860b9fc13
+- evidence_id: chebi36385
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_36385
+  accessed_at: '2026-10-28T13:47:58.511559Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi36385.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: f095dcdb7a7e08ef3bfe3d0bd32a124ac695f4cec062b2a15478a184e0bd40bb
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15377
+  accessed_at: '2026-10-28T13:47:52.232073Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi15377.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 42561686e12ba0831d99216248ea8c0b3338b461b0b77dd988f3096ad8678e59
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31795
+  accessed_at: '2026-10-28T13:47:55.943998Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi31795.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 1635f67d01e00cabdef4ed0d9ef6d5383787c56bd0447051deb90ad353b499a2
+- evidence_id: chebi32599
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32599
+  accessed_at: '2026-10-28T13:48:14.409532Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi32599.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 1a3fd204bffef0735a8d1a12385aec1c330013f84a182acc909368cd164cf821
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_26710
+  accessed_at: '2026-10-28T13:47:54.637669Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi26710.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: b145f4ff9b90ebb993ff576d9ab35a6c10b7c42a3b99e18feffcc8d75c0e1e50
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86158
+  accessed_at: '2026-10-28T13:48:18.256276Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi86158.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: df8f702eb5b9d3e50209bfa2b0c4b6f1db30c116e56a58e348cbd4bf3bc0ebc1
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86345
+  accessed_at: '2026-10-28T13:48:25.335589Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi86345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 015a33a158257cc5cba8a8e62de382053399be060366af5d95074883bb22b86e
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_33118
+  accessed_at: '2026-10-28T13:47:58.003852Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi33118.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: f23e1405347fa9d8a0826d4dd1279b7cdec8361390d20e439154dcbbd386a2d4
+- evidence_id: chebi32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32588
+  accessed_at: '2026-10-28T13:47:57.921824Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi32588.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 8fc333e98ee953346b5c291b9e5765e77d03cc46740a1282af3e5f4ad355de1a
+- evidence_id: chebi63004
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63004
+  accessed_at: '2026-10-28T13:48:17.645870Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi63004.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: a541ff82243b2a3bb4c2b908cb3758c8c1acddad55e8b45010130907d345d23c
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63036
+  accessed_at: '2026-10-28T13:48:18.079547Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi63036.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 913baf38abc38dd61f05c5d636fd6532b70a668673a1f5762f290d2b67270164
+- evidence_id: chebi63043
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63043
+  accessed_at: '2026-10-28T13:48:15.404543Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi63043.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 27d2a6a8a75a261941f0290b29dab700e2a3dc13dbf882f1624793e18ea2fa62
+- evidence_id: chebi17997
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17997
+  accessed_at: '2026-10-28T13:47:54.026187Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi17997.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 3072b950418eb270c362b75526cb52e64d918480d57dcafd96d75961002f3d3e
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_76209
+  accessed_at: '2026-10-28T13:48:17.314799Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi76209.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 3eece7d96d2433ff020ece90db55323d138c5c828b78198f91d26b3eafa91f9f
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75213
+  accessed_at: '2026-10-28T13:48:16.712313Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi75213.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 0271a149a298ff837ad8f690ce8cb0acf111f5d25c5efaf6fa828401ab951d56
+- evidence_id: chebi75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75836
+  accessed_at: '2026-10-28T13:48:17.308459Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi75836.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: e12b865122aab78645385260e1e83ff28f3c45365cb67c9181166628f68974b3
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53503
+  accessed_at: '2026-10-28T13:47:59.834974Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi53503.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 31dc996638b0cc1341ed24fcb38ec344af726c99d376ac94e952210fcb9ed583
+- evidence_id: chebi32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32312
+  accessed_at: '2026-10-28T13:47:57.329006Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi32312.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 6bf1390236046f1cb7b21e2fc324fccba6e6eac2bc4e519f12d998f0edce671b
+- evidence_id: chebi31440
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31440
+  accessed_at: '2026-10-28T13:47:55.899493Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi31440.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 453e496e1e59b82bb42cd3252d410b9dc77d0c11e49f3da70496a82978e80505
+- evidence_id: chebi86465
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86465
+  accessed_at: '2026-10-28T13:48:21.210506Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi86465.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: a92ebf989cf31be7db75a945ec7fe016d45b72d65e2a8b7f0522d3670209a527
+- evidence_id: chebi63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63939
+  accessed_at: '2026-10-28T13:48:16.073511Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi63939.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: f2fb7b5c3e7fec44d19e40f18cfbfa699c6010ad22cb76a9d2acd2b60950d98e
+- evidence_id: chebi86364
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86364
+  accessed_at: '2026-10-28T13:48:20.138564Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi86364.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 0e8fbfc2ee82502bd7a5b4b3ba6cfaaae0ad1779400d07af8e2e0f726af793e9
+- evidence_id: chebi86149
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86149
+  accessed_at: '2026-10-28T13:48:17.901113Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi86149.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 9ee3973c20f9163e601b4e2f02f826caa36ef9e2534536f15ad171a9a588cc9e
+- evidence_id: chebi77775
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_77775
+  accessed_at: '2026-10-28T13:48:17.916917Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi77775.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: 5008b98b44052285c50b20bb5dac656a18aa813f4b7fddc1947b0431cbfaa6ad
+- evidence_id: chebi64220
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_64220
+  accessed_at: '2026-10-28T13:48:16.696631Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi64220.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: bfcb10e4e9228ff925fe7041bafcc00d23296d3a60406d99115604743f7ad3ee
+- evidence_id: chebi53258
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53258
+  accessed_at: '2026-10-28T13:48:16.119151Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi53258.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: b8957ecd07249ac706769b79430c64d26de9a7dc75b36c65db4a13ff6cd8a504
+- evidence_id: chebi32583
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32583
+  accessed_at: '2026-10-28T13:47:57.401442Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi32583.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: bb76fa6464f579ff9218bf3c39d0374635193572c64fffc9e98c9d20aca283b1
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_29377
+  accessed_at: '2026-10-28T13:47:55.340097Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi29377.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: dee64859233d0b0898eba91901a001f1faaa5eaab37f7beb7e98318ab8c19569
+- evidence_id: chebi86466
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86466
+  accessed_at: '2026-10-28T13:48:20.922854Z'
+  locator: REVIEW_WORK/batch069/source01-03/chebi86466.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Fresh batch069 capture. Exact ordinary selected source, referenced stock
+    identity comparison, or existing ontology assertion; DSM catalogue identity only.
+  snapshot_sha256: f7a01569fb0c1622963bb58f252d061623e52d845a2e220b0f63962f8b2b09a1
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record03/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:04:25.351529Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: f3de5efd5e7fc364fee68ba2ded6e04a94b6c0f9dda912bba8cded99c135955d
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record03/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:04:25.351634Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: ce60c5a532c62903c3d45050921696913de0bcd06b4c2d8c49dc7e3f69518561
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record03/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:04:25.351768Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: a55f83a24560ec6835d5a903cfe61a2b5541a3795aaa577f61ac653cefdc264b
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record03/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:04:25.351849Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: 177c9d8bf8d5facb0f77c598291d4cb83008b1cfd401ea57afe4352f5db2fb58
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record03/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:04:25.351917Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: 1d176819792157596db563ef99dd069198611d2555a13c971593c301e0eeafb8
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record03/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:04:25.351950Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 5795bac0c08829fe746d6a9b7dc9aa93b6ce5495f1adf32877c9a810925c8e20
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch069/record03/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:04:25.351970Z'
+  support: supports
+  summary: Existing literal and raw-digest matches; current content authentication
+    is separate from original retrieval provenance.
+  snapshot_sha256: 9797d13a151587f4acda241495bb4ede852e3c3fd24724ed0fcf19cace19dd23
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch069/record03/validate-schema.json
+  accessed_at: '2026-10-28T13:47:20.512077Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 3188e01f6eb3f33898f4903dcd57364c31bc151e9b1c6d701ab1fed8a7c7d2c6
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch069/record03/validate-strict.json
+  accessed_at: '2026-10-28T13:47:21.432330Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 3b67e7811dfa7fd39438ca7d6432a0611dd38c144b186857e1d7afa0220b627b
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch069/record03/validate-terms.json
+  accessed_at: '2026-10-28T13:47:22.436984Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 742e45273d7823f883eac3eabfce911863ca5f682738aaf8d3250d233af8e79b
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch069/record03/validate-references.json
+  accessed_at: '2026-10-28T13:47:23.180043Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: e037cfdbd80ba966138d099815df8e4c7df33837031e6e3a6d0adef90a2eeeef
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact selected source identity
+  outcome: supported
+  summary: TOGO M3122 and DSM792b name the selected medium, and the sole maintained
+    contributor preserves the stable record identity. The DSM16658 catalogue is environmental
+    Caminibacter identity context only; no new strain-growth assertion is inferred.
+    Same-named stock links require separate correction.
+  target_ids:
+  - CultureMech:009594
+  evidence_ids:
+  - target
+  - owner
+  - togoM3122
+  - api792b
+  - dsm792b
+  - identityDSM16658
+- assessment_id: classification
+  area: representation
+  topic: Composition and physical state
+  outcome: concern
+  summary: The exact source lists named inorganic compounds and resolved stock formulations,
+    and MediaDive marks complex_medium no. The inherited COMPLEX/UNDEFINED metadata
+    needs source-based reconciliation. The liquid state is consistent; no automatic
+    duplicate collapse or strain-growth assertion follows.
+  target_ids:
+  - CultureMech:009594
+  evidence_ids:
+  - target
+  - owner
+  - dsm792b
+  - api792b
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 78 current concentration fields are covered by 52 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:009594
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b069-quantity-inventory-v1","target":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","quantity_field_count":78,"decisions":[{"quantity_id":"q1","label":"Carbon
+    dioxide gas","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"VARIABLE
+    does not invent a mass dose. The source describes a distinct gas-handling stage,
+    not a final dissolved ingredient concentration. Nitrogen gas and N2 are the same
+    chemical in different preparation contexts; do not sum or delete their stage-specific
+    roles blindly.","source_stage":"Gas preparation context, not final solute amount","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[0].items[3]","quote":"{\n          \"component_name\":
+    \"Carbon dioxide gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002260\",\n          \"gmo_id\":
+    \"GMO_002260\",\n          \"label\": \"Carbon dioxide gas\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\":
+    []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
+    it anoxic, then dispense under same gas atmosphere into anoxic serum vials (e.g.,
+    20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved separately
+    under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under 100% N2
+    gas. To complete the medium appropriate amounts of solutions B and C are added
+    to solution A. Adjust pH of the complete medium to 5.7.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q2","label":"Hydrogen gas","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"VARIABLE
+    does not invent a mass dose. The source describes a distinct gas-handling stage,
+    not a final dissolved ingredient concentration. Nitrogen gas and N2 are the same
+    chemical in different preparation contexts; do not sum or delete their stage-specific
+    roles blindly.","source_stage":"Gas preparation context, not final solute amount","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[0].items[4]","quote":"{\n          \"component_name\":
+    \"Hydrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002263\",\n          \"gmo_id\":
+    \"GMO_002263\",\n          \"label\": \"Hydrogen gas\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"Gas\"\n            }\n          ],\n          \"roles\":
+    []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
+    it anoxic, then dispense under same gas atmosphere into anoxic serum vials (e.g.,
+    20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved separately
+    under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under 100% N2
+    gas. To complete the medium appropriate amounts of solutions B and C are added
+    to solution A. Adjust pH of the complete medium to 5.7.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q3","label":"Nitrogen gas","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"VARIABLE
+    does not invent a mass dose. The source describes a distinct gas-handling stage,
+    not a final dissolved ingredient concentration. Nitrogen gas and N2 are the same
+    chemical in different preparation contexts; do not sum or delete their stage-specific
+    roles blindly.","source_stage":"Gas preparation context, not final solute amount","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[2].items[4]","quote":"{\n          \"component_name\":
+    \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\":
+    \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\":
+    []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
+    it anoxic, then dispense under same gas atmosphere into anoxic serum vials (e.g.,
+    20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved separately
+    under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under 100% N2
+    gas. To complete the medium appropriate amounts of solutions B and C are added
+    to solution A. Adjust pH of the complete medium to 5.7.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q4","label":"N2","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"VARIABLE
+    does not invent a mass dose. The source describes a distinct gas-handling stage,
+    not a final dissolved ingredient concentration. Nitrogen gas and N2 are the same
+    chemical in different preparation contexts; do not sum or delete their stage-specific
+    roles blindly.","source_stage":"Gas preparation context, not final solute amount","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[3].items[2]","quote":"{\n          \"component_name\":
+    \"N2\",\n          \"conc_value\": 100,\n          \"conc_unit\": \"%\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\": \"GMO_002261\",\n          \"label\":
+    \"Nitrogen gas\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\":
+    \"Gas\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
+    it anoxic, then dispense under same gas atmosphere into anoxic serum vials (e.g.,
+    20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved separately
+    under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under 100% N2
+    gas. To complete the medium appropriate amounts of solutions B and C are added
+    to solution A. Adjust pH of the complete medium to 5.7.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q5","label":"Sodium resazurin (0.1% w/v)","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source quantity is a liquid addition with its own supplied strength or stock identity,
+    not the stored mass concentration. Preserve the explicitly stated w/v basis where
+    present and the source receiving stage; do not guess a measured final volume or
+    replace a stock addition with its undiluted composition.","source_stage":"Solution
+    A receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\":
+    \"Sodium resazurin (0.1% w/v)\",\n          \"volume\": 0.5,\n          \"unit\":
+    \"ml\",\n          \"conc_value\": 0.1,\n          \"conc_unit\": \"(w/v)\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001453\",\n          \"gmo_id\": \"GMO_001453\",\n          \"label\":
+    \"Sodium resazurin solution\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\":
+    \"Solution\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000055\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\":
+    \"pH dependent redox indicator\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000505561,\n                        \"mmol_l\": 0.00201282,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 31-31","quote":"Sodium resazurin (0.1% w/v)                               0.50       ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q6","label":"SrCl2 x 6 H2O (0.1% w/v)","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"7","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"7","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source quantity is a liquid addition with its own supplied strength or stock identity,
+    not the stored mass concentration. Preserve the explicitly stated w/v basis where
+    present and the source receiving stage; do not guess a measured final volume or
+    replace a stock addition with its undiluted composition.","source_stage":"Solution
+    A receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\":
+    \"SrCl2 x 6 H2O (0.1% w/v)\",\n          \"volume\": 7,\n          \"unit\": \"ml\",\n          \"conc_value\":
+    0.1,\n          \"conc_unit\": \"(w/v)\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001955\",\n          \"gmo_id\":
+    \"GMO_001955\",\n          \"label\": \"Strontium chloride hexahydrate solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"SrCl2 x 6 H2O\",\n                        \"compound_id\":
+    176,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    7,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00707786,\n                        \"mmol_l\": 0.0265469,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 28-28","quote":"SrCl2 x 6 H2O (0.1% w/v)                                  7.00       ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q7","label":"KI (0.01% w/v)","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source quantity is a liquid addition with its own supplied strength or stock identity,
+    not the stored mass concentration. Preserve the explicitly stated w/v basis where
+    present and the source receiving stage; do not guess a measured final volume or
+    replace a stock addition with its undiluted composition.","source_stage":"Solution
+    A receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\":
+    \"KI (0.01% w/v)\",\n          \"volume\": 0.5,\n          \"unit\": \"ml\",\n          \"conc_value\":
+    0.01,\n          \"conc_unit\": \"(w/v)\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001957\",\n          \"gmo_id\":
+    \"GMO_001957\",\n          \"label\": \"Potassium iodide solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"KI\",\n                        \"compound_id\":
+    354,\n                        \"attribute\": \"0.01% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    5.05561e-5,\n                        \"mmol_l\": 0.000194938,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 29-29","quote":"KI (0.01% w/v)                                            0.50       ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q8","label":"Wolfe''s mineral elixir","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source quantity is a liquid addition with its own supplied strength or stock identity,
+    not the stored mass concentration. Preserve the explicitly stated w/v basis where
+    present and the source receiving stage; do not guess a measured final volume or
+    replace a stock addition with its undiluted composition.","source_stage":"Solution
+    A receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[11]","quote":"{\n          \"component_name\":
+    \"Wolfe''s mineral elixir\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M3122\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"solution\": \"Wolfe''s mineral elixir\",\n                        \"solution_id\":
+    1605,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 30-30","quote":"Wolfe''s mineral elixir                                    1.00       ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q9","label":"Four distinct water inputs","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2000.0","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2000.0","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    stored 2000 G_PER_L is the numeric sum of water volume inputs for A, B, C and
+    the separate Wolfe stock. This sum neither represents a source final-medium water
+    amount nor a mass concentration. The original input-water rows and source batches
+    must remain distinct.","source_stage":"A/B/C and independent Wolfe stock water","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[3]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 980,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[2].items[0]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[3].items[0]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[0]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0]","quote":"{\n                \"id\":
+    1610,\n                \"name\": \"Main sol. 792b\",\n                \"volume\":
+    1009,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    1611,\n                        \"amount\": 989,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\":
+    1612,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    3,\n                        \"solution\": \"Solution C\",\n                        \"solution_id\":
+    1613,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\":
+    [\n                    {\n                        \"step\": \"Sparge solution
+    A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then
+    dispense under same gas atmosphere into anoxic serum vials (e.g., 20 ml medium
+    in 100 ml bottles) and autoclave. Solution B is autoclaved separately under 80%
+    N2 and 20% CO2 gas mixture and solution C is autoclaved under 100% N2 gas. To
+    complete the medium appropriate amounts of solutions B and C are added to solution
+    A. Adjust pH of the complete medium to 5.7.\"\n                    },\n                    {\n                        \"step\":
+    \"After inoculation pressurize vials to 2 bar overpressure with sterile 80% H2
+    and 20% CO2 gas mixture.\"\n                    },\n                    {\n                        \"step\":
+    \"Note: Solution A has to be prepared freshly. It cannot be stored for a long
+    period of time.\"\n                    }\n                ],\n                \"equipment\":
+    {\n                    \"4971\": \"Gassing station\",\n                    \"4972\":
+    \"Serum bottle\",\n                    \"4973\": \"Autoclave\"\n                }\n            }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q10","label":"MgSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"33.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"33.5","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    two source quantities belong to Solution A and the undiluted Wolfe stock. Their
+    numeric sum is invalid as a final-medium total because the amounts refer to different
+    solution-stage bases. Preserve both occurrences and their separate receiving volume;
+    no direct sum or inferred final litre is supported.","source_stage":"Separate
+    A and Wolfe stock occurrences","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[4]","quote":"{\n          \"component_name\":
+    \"MgSO4 x 7 H2O\",\n          \"volume\": 3.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001002\",\n          \"gmo_id\": \"GMO_001002\",\n          \"label\":
+    \"Magnesium sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[1]","quote":"{\n          \"component_name\":
+    \"MgSO4 x 7 H2O\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001002\",\n          \"gmo_id\": \"GMO_001002\",\n          \"label\":
+    \"Magnesium sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 3.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3.53893,\n                        \"mmol_l\":
+    14.3581,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 30,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 30,\n                        \"mmol_l\":
+    121.716,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 22-22","quote":"MgSO4 x 7 H2O                                             3.50        g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 58-58","quote":"MgSO4 x 7 H2O                                            30.00        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q11","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"40.0","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"40.0","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    two source quantities belong to Solution A and the undiluted Wolfe stock. Their
+    numeric sum is invalid as a final-medium total because the amounts refer to different
+    solution-stage bases. Preserve both occurrences and their separate receiving volume;
+    no direct sum or inferred final litre is supported.","source_stage":"Separate
+    A and Wolfe stock occurrences","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[5]","quote":"{\n          \"component_name\":
+    \"NaCl\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\":
+    \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[2]","quote":"{\n          \"component_name\":
+    \"NaCl\",\n          \"volume\": 10,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\":
+    \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 30,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 30.3337,\n                        \"mmol_l\":
+    519.057,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 10,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 10,\n                        \"mmol_l\":
+    171.116,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 21-21","quote":"NaCl                                                     30.00        g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 60-60","quote":"NaCl                                                     10.00        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q12","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1.75","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1.75","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    two source quantities belong to Solution A and the undiluted Wolfe stock. Their
+    numeric sum is invalid as a final-medium total because the amounts refer to different
+    solution-stage bases. Preserve both occurrences and their separate receiving volume;
+    no direct sum or inferred final litre is supported.","source_stage":"Separate
+    A and Wolfe stock occurrences","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[6]","quote":"{\n          \"component_name\":
+    \"CaCl2 x 2 H2O\",\n          \"volume\": 0.75,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\":
+    \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[3]","quote":"{\n          \"component_name\":
+    \"CaCl2 x 2 H2O\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\":
+    \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.75,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.758342,\n                        \"mmol_l\":
+    5.15826,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    6.80203,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 24-24","quote":"CaCl2 x 2 H2O                                             0.75        g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 63-63","quote":"CaCl2 x 2 H2O                                             1.00        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q13","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"15.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"15.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    two source quantities belong to Solution A and the undiluted Wolfe stock. Their
+    numeric sum is invalid as a final-medium total because the amounts refer to different
+    solution-stage bases. Preserve both occurrences and their separate receiving volume;
+    no direct sum or inferred final litre is supported. This row also adds a milligram
+    amount to a gram amount without unit conversion, so even the pre-stage numeric
+    sum is inconsistent.","source_stage":"Separate A and Wolfe stock occurrences","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[8]","quote":"{\n          \"component_name\":
+    \"H3BO3\",\n          \"volume\": 15,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\":
+    \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[5]","quote":"{\n          \"component_name\":
+    \"H3BO3\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\":
+    \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 15,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.0151668,\n                        \"mmol_l\":
+    0.245259,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    1.61708,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 27-27","quote":"H3BO3                                                    15.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 67-67","quote":"H3BO3                                                     0.10        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q14","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"2.75","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"2.75","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    primary source and TOGO support these digits as Solution A batch grams. The unqualified
+    local G_PER_L is not established by input water. MediaDive supplies a distinct
+    explicit g_l normalization on its declared 989 ml stock basis; that provider basis
+    must not be silently relabeled as the final receiving-medium concentration.","source_stage":"Solution
+    A batch","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[7]","quote":"{\n          \"component_name\":
+    \"MgCl2 x 6 H2O\",\n          \"volume\": 2.75,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001013\",\n          \"gmo_id\": \"GMO_001013\",\n          \"label\":
+    \"Magnesium chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 2.75,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.78059,\n                        \"mmol_l\":
+    13.6771,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 23-23","quote":"MgCl2 x 6 H2O                                             2.75        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q15","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.33","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.33","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    primary source and TOGO support these digits as Solution A batch grams. The unqualified
+    local G_PER_L is not established by input water. MediaDive supplies a distinct
+    explicit g_l normalization on its declared 989 ml stock basis; that provider basis
+    must not be silently relabeled as the final receiving-medium concentration.","source_stage":"Solution
+    A batch","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[9]","quote":"{\n          \"component_name\":
+    \"KCl\",\n          \"volume\": 0.33,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001017\",\n          \"gmo_id\": \"GMO_001017\",\n          \"label\":
+    \"Potassium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.33,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.33367,\n                        \"mmol_l\":
+    4.47579,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 25-25","quote":"KCl                                                       0.33        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q16","label":"NaBr","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    primary source and TOGO support these digits as Solution A batch grams. The unqualified
+    local G_PER_L is not established by input water. MediaDive supplies a distinct
+    explicit g_l normalization on its declared 989 ml stock basis; that provider basis
+    must not be silently relabeled as the final receiving-medium concentration.","source_stage":"Solution
+    A batch","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[1].items[10]","quote":"{\n          \"component_name\":
+    \"NaBr\",\n          \"volume\": 0.05,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001073\",\n          \"gmo_id\": \"GMO_001073\",\n          \"label\":
+    \"Sodium bromide\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"NaBr\",\n                        \"compound_id\":
+    353,\n                        \"amount\": 0.05,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0505561,\n                        \"mmol_l\":
+    0.491361,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 26-26","quote":"NaBr                                                      0.05        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q17","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    stored digits reproduce the separate B or C batch mass, but they are flattened
+    into an unqualified direct G_PER_L ingredient. The current provider explicitly
+    reports the stock g_l on its 10 ml basis; neither stock concentration nor batch
+    grams may be transferred to the assembled medium without retaining the receiving
+    volumes and denominator.","source_stage":"Separate Solution B or C stock","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[2].items[1]","quote":"{\n          \"component_name\":
+    \"KH2PO4\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\":
+    \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 50,\n                        \"mmol_l\":
+    367.417,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 38-38","quote":"KH2PO4                                                    0.50        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q18","label":"KNO3","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    stored digits reproduce the separate B or C batch mass, but they are flattened
+    into an unqualified direct G_PER_L ingredient. The current provider explicitly
+    reports the stock g_l on its 10 ml basis; neither stock concentration nor batch
+    grams may be transferred to the assembled medium without retaining the receiving
+    volumes and denominator.","source_stage":"Separate Solution B or C stock","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[2].items[2]","quote":"{\n          \"component_name\":
+    \"KNO3\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001056\",\n          \"gmo_id\": \"GMO_001056\",\n          \"label\":
+    \"Potassium nitrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KNO3\",\n                        \"compound_id\":
+    191,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 100,\n                        \"mmol_l\":
+    989.09,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 37-37","quote":"KNO3                                                      1.00        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q19","label":"Na2S x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.15","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.15","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    stored digits reproduce the separate B or C batch mass, but they are flattened
+    into an unqualified direct G_PER_L ingredient. The current provider explicitly
+    reports the stock g_l on its 10 ml basis; neither stock concentration nor batch
+    grams may be transferred to the assembled medium without retaining the receiving
+    volumes and denominator.","source_stage":"Separate Solution B or C stock","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[3].items[1]","quote":"{\n          \"component_name\":
+    \"Na2S x 9 H2O\",\n          \"volume\": 0.15,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001014\",\n          \"gmo_id\": \"GMO_001014\",\n          \"label\":
+    \"Sodium sulfide nonahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000064\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000064\",\n              \"label\": \"Reducing
+    agent\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\":
+    62.4526,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 44-44","quote":"Na2S x 9 H2O                                              0.15        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q20","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source supports this mass and the provider stock-only g_l for Wolfe elixir. The
+    selected records flatten that stock-strength number into a direct ingredient and
+    lose the stock addition stage. Preserve the source stock row and hydrate identity;
+    it is not evidence for the same final-medium concentration.","source_stage":"Wolfe
+    stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[4]","quote":"{\n          \"component_name\":
+    \"Na2MoO4 x 2 H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\":
+    \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.413309,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 68-68","quote":"Na2MoO4 x 2 H2O                                           0.10        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q21","label":"FeSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source supports this mass and the provider stock-only g_l for Wolfe elixir. The
+    selected records flatten that stock-strength number into a direct ingredient and
+    lose the stock addition stage. Preserve the source stock row and hydrate identity;
+    it is not evidence for the same final-medium concentration.","source_stage":"Wolfe
+    stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[6]","quote":"{\n          \"component_name\":
+    \"FeSO4 x 7 H2O\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001016\",\n          \"gmo_id\": \"GMO_001016\",\n          \"label\":
+    \"Iron(II) sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\":
+    12,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    3.59693,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 61-61","quote":"FeSO4 x 7 H2O                                             1.00        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q22","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"1.8","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"1.8","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source supports this mass and the provider stock-only g_l for Wolfe elixir. The
+    selected records flatten that stock-strength number into a direct ingredient and
+    lose the stock addition stage. Preserve the source stock row and hydrate identity;
+    it is not evidence for the same final-medium concentration.","source_stage":"Wolfe
+    stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[7]","quote":"{\n          \"component_name\":
+    \"CoCl2 x 6 H2O\",\n          \"volume\": 1.8,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001021\",\n          \"gmo_id\": \"GMO_001021\",\n          \"label\":
+    \"Cobalt dichloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 1.8,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.8,\n                        \"mmol_l\":
+    13.8633,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 62-62","quote":"CoCl2 x 6 H2O                                             1.80        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q23","label":"ZnSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"1.8","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"1.8","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source supports this mass and the provider stock-only g_l for Wolfe elixir. The
+    selected records flatten that stock-strength number into a direct ingredient and
+    lose the stock addition stage. Preserve the source stock row and hydrate identity;
+    it is not evidence for the same final-medium concentration.","source_stage":"Wolfe
+    stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[8]","quote":"{\n          \"component_name\":
+    \"ZnSO4 x 7 H2O\",\n          \"volume\": 1.8,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001023\",\n          \"gmo_id\": \"GMO_001023\",\n          \"label\":
+    \"Zinc sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\":
+    35,\n                        \"amount\": 1.8,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.8,\n                        \"mmol_l\":
+    6.25954,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 64-64","quote":"ZnSO4 x 7 H2O                                             1.80        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q24","label":"CuSO4 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source supports this mass and the provider stock-only g_l for Wolfe elixir. The
+    selected records flatten that stock-strength number into a direct ingredient and
+    lose the stock addition stage. Preserve the source stock row and hydrate identity;
+    it is not evidence for the same final-medium concentration.","source_stage":"Wolfe
+    stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[9]","quote":"{\n          \"component_name\":
+    \"CuSO4 x 5 H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001039\",\n          \"gmo_id\": \"GMO_001039\",\n          \"label\":
+    \"Copper(II) sulfate pentahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\":
+    121,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.400503,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 65-65","quote":"CuSO4 x 5 H2O                                             0.10        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q25","label":"AlK(SO4)2 x 12 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.18","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.18","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source supports this mass and the provider stock-only g_l for Wolfe elixir. The
+    selected records flatten that stock-strength number into a direct ingredient and
+    lose the stock addition stage. Preserve the source stock row and hydrate identity;
+    it is not evidence for the same final-medium concentration.","source_stage":"Wolfe
+    stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[10]","quote":"{\n          \"component_name\":
+    \"AlK(SO4)2 x 12 H2O\",\n          \"volume\": 0.18,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001051\",\n          \"gmo_id\": \"GMO_001051\",\n          \"label\":
+    \"Aluminum potassium sulfate dodecahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"AlK(SO4)2 x 12 H2O\",\n                        \"compound_id\":
+    908,\n                        \"amount\": 0.18,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\":
+    0.379436,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 66-66","quote":"AlK(SO4)2 x 12 H2O                                        0.18        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q26","label":"Na2WO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source supports this mass and the provider stock-only g_l for Wolfe elixir. The
+    selected records flatten that stock-strength number into a direct ingredient and
+    lose the stock addition stage. Preserve the source stock row and hydrate identity;
+    it is not evidence for the same final-medium concentration.","source_stage":"Wolfe
+    stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[11]","quote":"{\n          \"component_name\":
+    \"Na2WO4 x 2 H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001057\",\n          \"gmo_id\": \"GMO_001057\",\n          \"label\":
+    \"Sodium tungstate dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[12]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\":
+    249,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.303168,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 70-70","quote":"Na2WO4 x 2 H2O                                            0.10        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q27","label":"MnSO4 x H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source supports this mass and the provider stock-only g_l for Wolfe elixir. The
+    selected records flatten that stock-strength number into a direct ingredient and
+    lose the stock addition stage. Preserve the source stock row and hydrate identity;
+    it is not evidence for the same final-medium concentration.","source_stage":"Wolfe
+    stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[12]","quote":"{\n          \"component_name\":
+    \"MnSO4 x H2O\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001081\",\n          \"gmo_id\": \"GMO_001081\",\n          \"label\":
+    \"Manganese sulfate monohydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\":
+    14,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\":
+    29.583,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 59-59","quote":"MnSO4 x H2O                                               5.00        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q28","label":"(NH4)2Ni(SO4)2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[27].concentration","stored":{"value":"2.8","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[27].concentration","stored":{"value":"2.8","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source supports this mass and the provider stock-only g_l for Wolfe elixir. The
+    selected records flatten that stock-strength number into a direct ingredient and
+    lose the stock addition stage. Preserve the source stock row and hydrate identity;
+    it is not evidence for the same final-medium concentration.","source_stage":"Wolfe
+    stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[13]","quote":"{\n          \"component_name\":
+    \"(NH4)2Ni(SO4)2 x 6 H2O\",\n          \"volume\": 2.8,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001102\",\n          \"gmo_id\": \"GMO_001102\",\n          \"label\":
+    \"Ammonium nickel(II) sulfate hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[11]","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"(NH4)2Ni(SO4)2 x 6 H2O\",\n                        \"compound_id\":
+    739,\n                        \"amount\": 2.8,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.8,\n                        \"mmol_l\":
+    7.08884,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 69-69","quote":"(NH4)2Ni(SO4)2 x 6 H2O                                    2.80        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q29","label":"Na2SeO4","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source supports this mass and the provider stock-only g_l for Wolfe elixir. The
+    selected records flatten that stock-strength number into a direct ingredient and
+    lose the stock addition stage. Preserve the source stock row and hydrate identity;
+    it is not evidence for the same final-medium concentration.","source_stage":"Wolfe
+    stock only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[14]","quote":"{\n          \"component_name\":
+    \"Na2SeO4\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001602\",\n          \"gmo_id\": \"GMO_001602\",\n          \"label\":
+    \"Sodium selenate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Na2SeO4\",\n                        \"compound_id\":
+    375,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.529241,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 71-71","quote":"Na2SeO4                                                   0.10        g","quote_basis":"derivative
+    text"}]},{"quantity_id":"q30","label":"Solution A","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"989","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"989","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    primary and TOGO source give a liquid stock addition, while the selected field
+    uses G_PER_L. Preserve this exact source assembly and distinguish the provider
+    declared 1009 ml recipe normalization from a measured final-volume claim. The
+    current local provider reference points to a different same-named stock.","source_stage":"A/B/C
+    receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[0].items[0]","quote":"{\n          \"component_name\":
+    \"Solution A\",\n          \"volume\": 989,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M3122\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    1611,\n                        \"amount\": 989,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 3-3","quote":"Solution A                                              989.00       ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q31","label":"Solution B","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    primary and TOGO source give a liquid stock addition, while the selected field
+    uses G_PER_L. Preserve this exact source assembly and distinguish the provider
+    declared 1009 ml recipe normalization from a measured final-volume claim. The
+    current local provider reference points to a different same-named stock.","source_stage":"A/B/C
+    receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[0].items[1]","quote":"{\n          \"component_name\":
+    \"Solution B\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M3122\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\":
+    1612,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 4-4","quote":"Solution B                                               10.00       ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q32","label":"Solution C","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[2].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[2].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    primary and TOGO source give a liquid stock addition, while the selected field
+    uses G_PER_L. Preserve this exact source assembly and distinguish the provider
+    declared 1009 ml recipe normalization from a measured final-volume claim. The
+    current local provider reference points to a different same-named stock.","source_stage":"A/B/C
+    receiving additions","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[0].items[2]","quote":"{\n          \"component_name\":
+    \"Solution C\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M3122\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"solution\": \"Solution C\",\n                        \"solution_id\":
+    1613,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 5-5","quote":"Solution C                                               10.00       ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q33","label":"Wolfe stock acid adjustment","local_fields":[{"path":"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[3].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml","field_path":"solutions[3].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"VARIABLE
+    preserves the absence of a specified addition amount. Diluted sulfuric acid is
+    a stock pH adjustment reagent; the source does not supply a strength or dose to
+    invent. The meaningful stock role is lost in an empty generic solution descriptor.","source_stage":"Wolfe
+    stock preparation only","sources":[{"evidence_id":"togoM3122","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3122","raw_path":"REVIEW_WORK/batch069/source01-03-supplement/togoM3122.bin","raw_sha256":"8c7e51dbb019e68f69a133fcafdf47151f5be2e8a3f0e9d8d52e29e0d11e64d8","text_sha256":"be0ff284cc54f230830d1571a4711a7386f1ccc50017ab13100baeafc40fd8d4","accessed_at":"2026-10-28T13:49:10.524485Z","locator":"components[4].items[15]","quote":"{\n          \"component_name\":
+    \"H2SO4 solution\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001482\",\n          \"gmo_id\":
+    \"GMO_001482\",\n          \"label\": \"Sulfuric acid solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].steps[0]","quote":"{\n                        \"step\":
+    \"First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.\"\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm792b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium792b.pdf","raw_path":"REVIEW_WORK/batch069/source01-03/dsm792b.bin","raw_sha256":"872911b48dbe9595b26f9fd8ba5a85e6d09d47395cea5a6a9c1748b4eeabc83d","text_sha256":"c855b280a6164442099c644ff62a1e350db26a9aea67aa14c39e2f8a54caaadf","accessed_at":"2026-10-28T13:47:50.319722Z","locator":"dsm792b.txt
+    lines 74-74","quote":"First adjust pH to 1.0 with diluted H2SO4, then add and
+    dissolve the salts.","quote_basis":"derivative text"}]},{"quantity_id":"q34","label":"Independent
+    provider 5342: Yeast extract","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[0].concentration","stored":{"value":"2","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    separate provider gives this digit as batch grams and explicitly makes up 500
+    ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization
+    basis. This finding is confined to the independently linked stock; its ingredients
+    must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent
+    stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[0]","quote":"{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\":
+    16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"BD-Difco\",\n                \"amount\":
+    2,\n                \"unit\": \"g\",\n                \"g_l\": null,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Add components to distilled water and bring
+    volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q35","label":"Independent
+    provider 5342: Casamino acids","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[1].concentration","stored":{"value":"2","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    separate provider gives this digit as batch grams and explicitly makes up 500
+    ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization
+    basis. This finding is confined to the independently linked stock; its ingredients
+    must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent
+    stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[1]","quote":"{\n                \"recipe_order\":
+    2,\n                \"compound\": \"Casamino acids\",\n                \"compound_id\":
+    101,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"BD-Difco\",\n                \"amount\":
+    2,\n                \"unit\": \"g\",\n                \"g_l\": null,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Add components to distilled water and bring
+    volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q36","label":"Independent
+    provider 5342: Na glutamate","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[2].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    separate provider gives this digit as batch grams and explicitly makes up 500
+    ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization
+    basis. This finding is confined to the independently linked stock; its ingredients
+    must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent
+    stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[2]","quote":"{\n                \"recipe_order\":
+    3,\n                \"compound\": \"Na glutamate\",\n                \"compound_id\":
+    839,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Add components to distilled water and bring
+    volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q37","label":"Independent
+    provider 5342: Trisodium citrate x 2 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[3].concentration","stored":{"value":"3","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    separate provider gives this digit as batch grams and explicitly makes up 500
+    ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization
+    basis. This finding is confined to the independently linked stock; its ingredients
+    must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent
+    stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[3]","quote":"{\n                \"recipe_order\":
+    4,\n                \"compound\": \"Trisodium citrate x 2 H2O\",\n                \"compound_id\":
+    1249,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Add components to distilled water and bring
+    volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q38","label":"Independent
+    provider 5342: MgSO4 x 7 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    separate provider gives this digit as batch grams and explicitly makes up 500
+    ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization
+    basis. This finding is confined to the independently linked stock; its ingredients
+    must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent
+    stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[4]","quote":"{\n                \"recipe_order\":
+    5,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\":
+    8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Add components to distilled water and bring
+    volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q39","label":"Independent
+    provider 5342: CaSO4 x 2 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[5].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    separate provider gives this digit as batch grams and explicitly makes up 500
+    ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization
+    basis. This finding is confined to the independently linked stock; its ingredients
+    must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent
+    stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[5]","quote":"{\n                \"recipe_order\":
+    6,\n                \"compound\": \"CaSO4 x 2 H2O\",\n                \"compound_id\":
+    190,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Add components to distilled water and bring
+    volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q40","label":"Independent
+    provider 5342: KCl","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[6].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    separate provider gives this digit as batch grams and explicitly makes up 500
+    ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization
+    basis. This finding is confined to the independently linked stock; its ingredients
+    must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent
+    stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[6]","quote":"{\n                \"recipe_order\":
+    7,\n                \"compound\": \"KCl\",\n                \"compound_id\": 61,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Add components to distilled water and bring
+    volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q41","label":"Independent
+    provider 5342: NaCl","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"composition[7].concentration","stored":{"value":"100","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    separate provider gives this digit as batch grams and explicitly makes up 500
+    ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization
+    basis. This finding is confined to the independently linked stock; its ingredients
+    must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent
+    stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.recipe[7]","quote":"{\n                \"recipe_order\":
+    8,\n                \"compound\": \"NaCl\",\n                \"compound_id\":
+    43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\":
+    \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Add components to distilled water and bring
+    volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q42","label":"Independent
+    provider 5342 preparation","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml","field_path":"preparation_notes","stored":"Add
+    components to distilled water and bring volume to 500 ml."}],"decision":"evidence_only","rationale":"The
+    existing stock preparation is supported by its own exact source. Its explicit
+    make-up volume and any conditional combination or agar instruction remain within
+    this distinct provider formulation, not the selected DSM792b recipe.","source_stage":"Independent
+    provider stock only","sources":[{"evidence_id":"solution5342","reference":"https://mediadive.dsmz.de/rest/solution/5342","raw_path":"REVIEW_WORK/batch069/source01-03/solution5342.bin","raw_sha256":"4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240","text_sha256":"093a98a5a1720e4202899cb4d4e6b2ca85db9a02f84abebbd2b47bf4d54da677","accessed_at":"2026-10-28T13:47:51.025311Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Add components to distilled water and bring
+    volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q43","label":"Independent
+    provider 5343: Na2CO3","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml","field_path":"composition[0].concentration","stored":{"value":"80","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    separate provider gives this digit as batch grams and explicitly makes up 500
+    ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization
+    basis. This finding is confined to the independently linked stock; its ingredients
+    must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent
+    stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5343","reference":"https://mediadive.dsmz.de/rest/solution/5343","raw_path":"REVIEW_WORK/batch069/source01-03/solution5343.bin","raw_sha256":"28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0","text_sha256":"c0479e4688de7a7a37c893768def70a30b7ebec0c2d0d444f8443c0b04b6f1b8","accessed_at":"2026-10-28T13:47:51.159872Z","locator":"data.recipe[0]","quote":"{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Na2CO3\",\n                \"compound_id\":
+    32,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 80,\n                \"unit\":
+    \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5343","reference":"https://mediadive.dsmz.de/rest/solution/5343","raw_path":"REVIEW_WORK/batch069/source01-03/solution5343.bin","raw_sha256":"28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0","text_sha256":"c0479e4688de7a7a37c893768def70a30b7ebec0c2d0d444f8443c0b04b6f1b8","accessed_at":"2026-10-28T13:47:51.159872Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Add components to distilled water and bring
+    volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q44","label":"Independent
+    provider 5343: NaCl","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml","field_path":"composition[1].concentration","stored":{"value":"100","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    separate provider gives this digit as batch grams and explicitly makes up 500
+    ml. The local record labels the unchanged digit G_PER_L, losing that twofold normalization
+    basis. This finding is confined to the independently linked stock; its ingredients
+    must not be substituted into DSM792b A or B.","source_stage":"Wrongly linked independent
+    stock; its own explicit 500 ml basis","sources":[{"evidence_id":"solution5343","reference":"https://mediadive.dsmz.de/rest/solution/5343","raw_path":"REVIEW_WORK/batch069/source01-03/solution5343.bin","raw_sha256":"28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0","text_sha256":"c0479e4688de7a7a37c893768def70a30b7ebec0c2d0d444f8443c0b04b6f1b8","accessed_at":"2026-10-28T13:47:51.159872Z","locator":"data.recipe[1]","quote":"{\n                \"recipe_order\":
+    2,\n                \"compound\": \"NaCl\",\n                \"compound_id\":
+    43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\":
+    \"g\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5343","reference":"https://mediadive.dsmz.de/rest/solution/5343","raw_path":"REVIEW_WORK/batch069/source01-03/solution5343.bin","raw_sha256":"28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0","text_sha256":"c0479e4688de7a7a37c893768def70a30b7ebec0c2d0d444f8443c0b04b6f1b8","accessed_at":"2026-10-28T13:47:51.159872Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Add components to distilled water and bring
+    volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q45","label":"Independent
+    provider 5343 preparation","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml","field_path":"preparation_notes","stored":"Add
+    components to distilled water and bring volume to 500 ml.\nAutoclave solutions
+    A and B separately and combine them after cooling. For preparation of solid medium,
+    add 18.0 g agar to Solution A (500 ml), combine them after cooling to 60-70C,
+    mix well and quickly distribute into sterile petri dishes or test tubes."}],"decision":"evidence_only","rationale":"The
+    existing stock preparation is supported by its own exact source. Its explicit
+    make-up volume and any conditional combination or agar instruction remain within
+    this distinct provider formulation, not the selected DSM792b recipe.","source_stage":"Independent
+    provider stock only","sources":[{"evidence_id":"solution5343","reference":"https://mediadive.dsmz.de/rest/solution/5343","raw_path":"REVIEW_WORK/batch069/source01-03/solution5343.bin","raw_sha256":"28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0","text_sha256":"c0479e4688de7a7a37c893768def70a30b7ebec0c2d0d444f8443c0b04b6f1b8","accessed_at":"2026-10-28T13:47:51.159872Z","locator":"data.steps[0]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Add components to distilled water and bring
+    volume to 500 ml.\"\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5343","reference":"https://mediadive.dsmz.de/rest/solution/5343","raw_path":"REVIEW_WORK/batch069/source01-03/solution5343.bin","raw_sha256":"28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0","text_sha256":"c0479e4688de7a7a37c893768def70a30b7ebec0c2d0d444f8443c0b04b6f1b8","accessed_at":"2026-10-28T13:47:51.159872Z","locator":"data.steps[1]","quote":"{\n                \"recipe_order\":
+    null,\n                \"step\": \"Autoclave solutions A and B separately and
+    combine them after cooling. For preparation of solid medium, add 18.0 g agar to
+    Solution A (500 ml), combine them after cooling to 60-70C, mix well and quickly
+    distribute into sterile petri dishes or test tubes.\"\n            }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q46","label":"Independent provider5312 tetrathionate","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml","field_path":"composition[0].concentration","stored":{"value":"30","unit":"G_PER_L"}}],"decision":"verified","rationale":"The
+    existing attached literal claim and stored digest match the current exact response;
+    the explicit provider g_l supports 30 G_PER_L within this tetrathionate stock.
+    This authenticates the claim content, not the historical access event and not
+    its substitution for the selected sulfide Solution C.","source_stage":"Independent
+    provider5312 stock only","sources":[{"evidence_id":"solution5312","reference":"https://mediadive.dsmz.de/rest/solution/5312","raw_path":"REVIEW_WORK/batch069/source01-03/solution5312.bin","raw_sha256":"6766811e685137e51045e0a5a2c301954772fa34dd3ed711eb541ef862e480b9","text_sha256":"8ad8e01259abb79853b0fbd163e29d55b6ba03e25c1850adc04c240f212a7c34","accessed_at":"2026-10-28T13:47:51.159959Z","locator":"data.recipe[0]","quote":"{\n                \"recipe_order\":
+    1,\n                \"compound\": \"K2S4O6\",\n                \"compound_id\":
+    386,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 30,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q47","label":"Independent
+    provider5312 water","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml","field_path":"composition[1].concentration","stored":{"value":"1000.0","unit":"PERCENT_V_V"}}],"decision":"conflict","rationale":"The
+    source specifies water as a volume input to a 10 ml stock. It does not support
+    the local 1000 PERCENT_V_V; preserve the volume statement without inferring a
+    new receiving-medium dose.","source_stage":"Independent provider5312 stock only","sources":[{"evidence_id":"solution5312","reference":"https://mediadive.dsmz.de/rest/solution/5312","raw_path":"REVIEW_WORK/batch069/source01-03/solution5312.bin","raw_sha256":"6766811e685137e51045e0a5a2c301954772fa34dd3ed711eb541ef862e480b9","text_sha256":"8ad8e01259abb79853b0fbd163e29d55b6ba03e25c1850adc04c240f212a7c34","accessed_at":"2026-10-28T13:47:51.159959Z","locator":"data.recipe[1]","quote":"{\n                \"recipe_order\":
+    2,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"},{"evidence_id":"solution5312","reference":"https://mediadive.dsmz.de/rest/solution/5312","raw_path":"REVIEW_WORK/batch069/source01-03/solution5312.bin","raw_sha256":"6766811e685137e51045e0a5a2c301954772fa34dd3ed711eb541ef862e480b9","text_sha256":"8ad8e01259abb79853b0fbd163e29d55b6ba03e25c1850adc04c240f212a7c34","accessed_at":"2026-10-28T13:47:51.159959Z","locator":"data","quote":"{\n        \"id\":
+    5312,\n        \"name\": \"Solution C\",\n        \"volume\": 10,\n        \"recipe\":
+    [\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"K2S4O6\",\n                \"compound_id\": 386,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 30,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ],\n        \"steps\": [\n            {\n                \"recipe_order\":
+    null,\n                \"step\": \"Sterilize by filtration.\"\n            }\n        ],\n        \"equipment\":
+    {\n            \"2115\": \"Filter\"\n        }\n    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q48","label":"Independent
+    provider5312 preparation","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml","field_path":"preparation_notes","stored":"Sterilize
+    by filtration.\n\nOriginal volume: 10 mL"}],"decision":"evidence_only","rationale":"The
+    existing filtration and original batch-volume note are supported within this separate
+    stock. They are not the preparation of DSM792b Solution C.","source_stage":"Independent
+    provider5312 stock only","sources":[{"evidence_id":"solution5312","reference":"https://mediadive.dsmz.de/rest/solution/5312","raw_path":"REVIEW_WORK/batch069/source01-03/solution5312.bin","raw_sha256":"6766811e685137e51045e0a5a2c301954772fa34dd3ed711eb541ef862e480b9","text_sha256":"8ad8e01259abb79853b0fbd163e29d55b6ba03e25c1850adc04c240f212a7c34","accessed_at":"2026-10-28T13:47:51.159959Z","locator":"data","quote":"{\n        \"id\":
+    5312,\n        \"name\": \"Solution C\",\n        \"volume\": 10,\n        \"recipe\":
+    [\n            {\n                \"recipe_order\": 1,\n                \"compound\":
+    \"K2S4O6\",\n                \"compound_id\": 386,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 30,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            },\n            {\n                \"recipe_order\": 2,\n                \"compound\":
+    \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }\n        ],\n        \"steps\": [\n            {\n                \"recipe_order\":
+    null,\n                \"step\": \"Sterilize by filtration.\"\n            }\n        ],\n        \"equipment\":
+    {\n            \"2115\": \"Filter\"\n        }\n    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q49","label":"Source-only
+    complete main preparation 1","local_fields":[],"decision":"evidence_only","rationale":"This
+    exact source paragraph supplies numeric preparation and stage context absent from
+    both selected layers. Keep the source scope and examples explicit; do not invent
+    additional rates or growth claims.","source_stage":"Source-only DSM792b assembly/preparation","sources":[{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
+    it anoxic, then dispense under same gas atmosphere into anoxic serum vials (e.g.,
+    20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved separately
+    under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under 100% N2
+    gas. To complete the medium appropriate amounts of solutions B and C are added
+    to solution A. Adjust pH of the complete medium to 5.7.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q50","label":"Source-only complete main preparation
+    2","local_fields":[],"decision":"evidence_only","rationale":"This exact source
+    paragraph supplies numeric preparation and stage context absent from both selected
+    layers. Keep the source scope and examples explicit; do not invent additional
+    rates or growth claims.","source_stage":"Source-only DSM792b assembly/preparation","sources":[{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[1]","quote":"{\n                        \"step\":
+    \"After inoculation pressurize vials to 2 bar overpressure with sterile 80% H2
+    and 20% CO2 gas mixture.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q51","label":"Source-only
+    complete main preparation 3","local_fields":[],"decision":"evidence_only","rationale":"This
+    exact source paragraph supplies numeric preparation and stage context absent from
+    both selected layers. Keep the source scope and examples explicit; do not invent
+    additional rates or growth claims.","source_stage":"Source-only DSM792b assembly/preparation","sources":[{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[0].steps[2]","quote":"{\n                        \"step\":
+    \"Note: Solution A has to be prepared freshly. It cannot be stored for a long
+    period of time.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q52","label":"Source-only
+    Wolfe preparation","local_fields":[],"decision":"evidence_only","rationale":"The
+    stock pH and order of addition are explicit, while acid strength and addition
+    quantity remain unspecified.","source_stage":"Wolfe stock preparation only","sources":[{"evidence_id":"api792b","reference":"https://mediadive.dsmz.de/rest/medium/792b","raw_path":"REVIEW_WORK/batch069/source01-03/api792b.bin","raw_sha256":"d2a442efbec60db6e9fd2e08c46ad8352e373dfe6b7512ed6a9fb5b0f588ac2a","text_sha256":"0aebecca317434a56285bcb5d678d0a19ee6b1e9747ea0997b1b36fd0b8d34f0","accessed_at":"2026-10-28T13:47:50.150496Z","locator":"data.solutions[4].steps[0]","quote":"{\n                        \"step\":
+    \"First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.\"\n                    }","quote_basis":"raw
+    UTF-8"}]}],"document_scopes":{"data/merge_yaml/merged/Caminibacter_Mediatlanticus_Medium.yaml":null,"data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml":null,"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml":["preferred_term","term","composition","preparation_notes"],"data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml":["preferred_term","term","composition","preparation_notes"],"data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml":["preferred_term","term","composition","preparation_notes"]},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: Every asserted chemical identifier was joined to a current non-obsolete
+    OLS object and the exact packaged MIM pool. The selected hydrate-specific primary
+    terms remain supported; magnesium secondary32599 is generic versus primary31795.
+    Separately linked5342 citrate53258 does not encode the supplied dihydrate. Legacy000170
+    current absence is not historical invalidity. Missing terms and stock provider
+    accessions are not treated as chemical identity certification. No new alternative
+    identifier, supplier grade or stoichiometric conversion is guessed.
+  target_ids:
+  - CultureMech:009594
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: concern
+  summary: Complete selected and owner histories, all three exact reports and scoped
+    parent rows were read. The two October reports deferred all33 source checks. The
+    September report records genuine stage/unit concerns; a recommended blanket per-litre
+    conversion and forced source-duplicate collapse are not automatically adopted.
+    Current import, cleanup, formulation and singleton-merge safeguards are distinguished
+    from historical execution. The separately scoped5312 claim authenticates current
+    raw content, not the original access event.
+  target_ids:
+  - CultureMech:009594
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-009594-source-stage-unit-flattening
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate stock batches have been flattened and summed
+  description: Restore A, B, C and Wolfe stock boundaries, receiving additions and
+    amount units. Water, magnesium, sodium and calcium rows combine different stages;
+    boric acid additionally combines milligram and gram digits. Liquid additions are
+    mislabeled mass concentrations, while stock-only concentrations appear at the
+    final-medium level. Preserve supported batch amounts and explicit provider normalization
+    separately; source water is not measured final volume.
+  target_ids:
+  - CultureMech:009594
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - quantities
+  - dsm792b
+  - api792b
+  - togoM3122
+  - writer-togo
+  - writer-cleanup
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-009594-stock-reference-identity
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Three same-named stock links identify different formulations
+  description: The local links5342,5343 and5312 resolve to different provider compositions.
+    Exact DSM792b currently identifies its source stocks as1611,1612 and1613; names
+    A/B/C alone are insufficient. Reconcile exact source-local identity before curating
+    the selected medium. Preserve the verified tetrathionate claim only in its own
+    stock and never transfer it to the selected sulfide stock.
+  target_ids:
+  - CultureMech:009594
+  field_paths:
+  - solutions[0].term
+  - solutions[1].term
+  - solutions[2].term
+  - solutions[0].notes
+  - solutions[1].notes
+  - solutions[2].notes
+  evidence_ids:
+  - api792b
+  - solution5342
+  - solution5343
+  - solution5312
+  - dependency5342
+  - dependency5343
+  - dependency5312
+  rule_id: review-yaml-record/identity
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-009594-source-preparation-context
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source pH and staged preparation are missing
+  description: Preserve the complete source-specific assembly, atmosphere, treatment
+    order, freshness and pH context with root-level evidence. Gas VARIABLE entries
+    and the empty acid descriptor do not encode these stages or justify invented amounts.
+    Replace the four Unknown solution names with accurately scoped names after resolving
+    identity.
+  target_ids:
+  - CultureMech:009594
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - evidence
+  - solutions[0].name
+  - solutions[1].name
+  - solutions[2].name
+  - solutions[3].name
+  evidence_ids:
+  - quantities
+  - dsm792b
+  - api792b
+  - writer-togo
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: Native missing-preparation rule normalized to major because
+    the entire source-specific staged process and pH context are absent.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-009594-linked-stock-quantity-bases
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The independently linked stocks contain unit-basis defects
+  description: Within the separately scoped linked records, A and B retain batch grams
+    but label them per litre despite their explicit 500 ml make-up instructions. C
+    retains a verified stock solute concentration, but water is mislabeled1000 percent.
+    Reconcile these independent records only on their own evidence; they remain different
+    formulations from DSM792b.
+  target_ids:
+  - CultureMech:009594
+  field_paths:
+  - data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml::composition
+  - data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml::composition
+  - data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml::composition[1].concentration
+  evidence_ids:
+  - quantities
+  - dependency5342
+  - dependency5343
+  - dependency5312
+  - solution5342
+  - solution5343
+  - solution5312
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml
+    role: scoped dependency
+- finding_id: f5
+  issue_key: culturemech-009594-hydrate-and-linkage-scope
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Specific primary hydrates and secondary identifiers need reconciliation
+  description: Retain the correct magnesium heptahydrate primary annotation while
+    reconciling its generic secondary sulfate assertion. In separately linked5342,
+    the supplied citrate name says dihydrate while its primary ontology term is generic
+    citrate. The current snapshot absence of legacy000170 is only a present membership
+    result; preserve its history and evaluate exact current linkage without declaring
+    that the historical identifier was invalid. Missing sodium-resazurin and iodide
+    primary terms require source-specific grounding, not guessed IDs.
+  target_ids:
+  - CultureMech:009594
+  field_paths:
+  - ingredients[6].mediaingredientmech_chebi_term
+  - ingredients[15].mediaingredientmech_term
+  - ingredients[2].term
+  - ingredients[4].term
+  - data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml::composition[3].chebi_term
+  evidence_ids:
+  - groundings
+  - dsm792b
+  - solution5342
+  - history
+  rule_id: review-yaml-record/supplied-form-and-linkage
+  native_severity: P3
+  normalization_reason: 'Custom supplied-form/linkage rule aligned with minor P3:
+    the selected primary hydrate is already correct, and the generic secondary/dependency
+    terms are valid accessions rather than proven invalid IDs.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+    role: scoped dependency
+- finding_id: f6
+  issue_key: culturemech-009594-defined-composition-metadata
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Complex and undefined classification lacks source support
+  description: Reconcile the inherited COMPLEX/UNDEFINED fields against the exact
+    named source constituents and resolved source stocks. Do not use the wrongly linked
+    yeast-containing comparison stock as evidence that the selected medium is complex.
+    Preserve the supported liquid state.
+  target_ids:
+  - CultureMech:009594
+  field_paths:
+  - medium_type
+  - composition_type
+  evidence_ids:
+  - dsm792b
+  - api792b
+  - togoM3122
+  rule_id: review-yaml-record/composition-classification
+  native_severity: P3
+  normalization_reason: Custom composition classification rule aligned with minor
+    P3; this is not the native organism-category mismatch rule.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+- finding_id: f7
+  issue_key: culturemech-009594-claim-history-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Current source support needs precise linkage and historical qualification
+  description: Attach checked claims to their actual ingredient or root-level stage;
+    retain original curation events and append verified context only. Both October
+    reports explicitly performed zero source checks. The September report identifies
+    real stage concerns but its universal per-litre and duplicate-collapse recommendations
+    are not adopted without exact formulation reconciliation. Current code behavior
+    does not authenticate past execution.
+  target_ids:
+  - CultureMech:009594
+  field_paths:
+  - evidence
+  - curation_history
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - historical-reading
+  - writer-togo
+  - writer-cleanup
+  - writer-merger
+  rule_id: review-yaml-record/provenance
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: a1
+  description: Restore A, B, C and Wolfe stock boundaries, receiving additions and
+    amount units. Water, magnesium, sodium and calcium rows combine different stages;
+    boric acid additionally combines milligram and gram digits. Liquid additions are
+    mislabeled mass concentrations, while stock-only concentrations appear at the
+    final-medium level. Preserve supported batch amounts and explicit provider normalization
+    separately; source water is not measured final volume.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009594
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: The local links5342,5343 and5312 resolve to different provider compositions.
+    Exact DSM792b currently identifies its source stocks as1611,1612 and1613; names
+    A/B/C alone are insufficient. Reconcile exact source-local identity before curating
+    the selected medium. Preserve the verified tetrathionate claim only in its own
+    stock and never transfer it to the selected sulfide stock.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009594
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: Preserve the complete source-specific assembly, atmosphere, treatment
+    order, freshness and pH context with root-level evidence. Gas VARIABLE entries
+    and the empty acid descriptor do not encode these stages or justify invented amounts.
+    Replace the four Unknown solution names with accurately scoped names after resolving
+    identity.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009594
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: Within the separately scoped linked records, A and B retain batch grams
+    but label them per litre despite their explicit 500 ml make-up instructions. C
+    retains a verified stock solute concentration, but water is mislabeled1000 percent.
+    Reconcile these independent records only on their own evidence; they remain different
+    formulations from DSM792b.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:009594
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml
+    role: scoped dependency
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a5
+  description: Retain the correct magnesium heptahydrate primary annotation while
+    reconciling its generic secondary sulfate assertion. In separately linked5342,
+    the supplied citrate name says dihydrate while its primary ontology term is generic
+    citrate. The current snapshot absence of legacy000170 is only a present membership
+    result; preserve its history and evaluate exact current linkage without declaring
+    that the historical identifier was invalid. Missing sodium-resazurin and iodide
+    primary terms require source-specific grounding, not guessed IDs.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:009594
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+    role: scoped dependency
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a6
+  description: Reconcile the inherited COMPLEX/UNDEFINED fields against the exact
+    named source constituents and resolved source stocks. Do not use the wrongly linked
+    yeast-containing comparison stock as evidence that the selected medium is complex.
+    Preserve the supported liquid state.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:009594
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a7
+  description: Attach checked claims to their actual ingredient or root-level stage;
+    retain original curation events and append verified context only. Both October
+    reports explicitly performed zero source checks. The September report identifies
+    real stage concerns but its universal per-litre and duplicate-collapse recommendations
+    are not adopted without exact formulation reconciliation. Current code behavior
+    does not authenticate past execution.
+  finding_ids:
+  - f7
+  target_ids:
+  - CultureMech:009594
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M3122_Caminibacter_Mediatlanticus_Medium.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- The exact primary792b source is fully available, including its Wolfe table; comparison
+  stock5342/5343/5312 evidence cannot be transferred to the selected recipe.
+- Source receiving volumes and provider989/10/10/1009 ml normalizations do not establish
+  an experimentally measured final-medium volume.
+- The initial misspelled TOGO route returned404; the later exact gmid route returned200.
+  Both original retrieval records are preserved.
+- Dependency placeholder ingredients and unrelated parent scientific fields are excluded
+  from positive formulation evidence; complete original parent files remain pinned.
+- Current source identity does not establish equivalence to every same-named maintained
+  sibling, or permission to collapse distinct records.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```
