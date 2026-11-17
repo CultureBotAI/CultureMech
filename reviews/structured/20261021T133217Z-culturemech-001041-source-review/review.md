@@ -1,0 +1,4733 @@
+# Source and formulation review: alkaliphilus_transvaalensis_medium (CultureMech:001041)
+
+- Review: 20261021T133217Z-culturemech-001041-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T13:27:14Z
+- Finished UTC: 2026-10-21T13:32:17Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 1565 explicitly defines a 1000 mL main recipe, but the target and maintained owner flatten two nested stocks and sum five incompatible stock contributions. Source-specific nickel hydration is also mismatched. All available formulation stages are assessed; coverage is partial only because historical legacy MediaIngredientMech:000171 correspondence remains unavailable.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence. Required historical legacy-secondary correspondence remains unresolved; all available current formulation and owner layers are assessed.
+
+Selection: Task review 228; batch 023 item 8 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-two task batches contain 220 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 223 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001041 | data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml | generated | alkaliphilus_transvaalensis_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001041 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001041 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-023/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch023/228/strict.tsv |
+| validate-terms | passed | True | CultureMech:001041 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001041 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001041 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Completed exact current legacy lookup | passed | True | CultureMech:001041 | Exact 000171 is absent in the complete current snapshot. This is a completed negative result. |
+| Required historical legacy correspondence | unavailable | True | CultureMech:001041 | The historical MediaIngredientMech:000171 to NaNO3 correspondence is not available in the bound evidence. This required unresolved historical check is the reason for partial coverage. Current absence alone neither validates nor refutes the historical identity. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001041.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:001041.
+
+50 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Yeast extract direct main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "2 g in the explicitly 1000 mL main recipe; local 2 g/L agrees.",
+    "rationale": "Matching existing amount lacks attached claim evidence. Preserve source labels and BD Bacto qualifiers; source-generic citrate is not evidence for an unspecified alternative hydrate or product.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD Bacto\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      },
+      {
+        "source_key": "dsmz1565",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf",
+        "source_locator": "Page 1 header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df",
+        "parsed_text_sha256": "f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Tryptone direct main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "2 g in the explicitly 1000 mL main recipe; local 2 g/L agrees.",
+    "rationale": "Matching existing amount lacks attached claim evidence. Preserve source labels and BD Bacto qualifiers; source-generic citrate is not evidence for an unspecified alternative hydrate or product.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"attribute\": \"BD Bacto\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      },
+      {
+        "source_key": "dsmz1565",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf",
+        "source_locator": "Page 1 header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df",
+        "parsed_text_sha256": "f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "Na2-tartrate x 2 H2O direct main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "1 g in the explicitly 1000 mL main recipe; local 1 g/L agrees.",
+    "rationale": "Matching existing amount lacks attached claim evidence. Preserve source labels and BD Bacto qualifiers; source-generic citrate is not evidence for an unspecified alternative hydrate or product.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Na2-tartrate x 2 H2O\",\n                        \"compound_id\": 1423,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      },
+      {
+        "source_key": "dsmz1565",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf",
+        "source_locator": "Page 1 header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df",
+        "parsed_text_sha256": "f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "Na3-citrate direct main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "1 g in the explicitly 1000 mL main recipe; local 1 g/L agrees.",
+    "rationale": "Matching existing amount lacks attached claim evidence. Preserve source labels and BD Bacto qualifiers; source-generic citrate is not evidence for an unspecified alternative hydrate or product.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Na3-citrate\",\n                        \"compound_id\": 205,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 3.87493,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      },
+      {
+        "source_key": "dsmz1565",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf",
+        "source_locator": "Page 1 header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df",
+        "parsed_text_sha256": "f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "NaNO3 direct main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "0.25 g in the explicitly 1000 mL main recipe; local 0.25 g/L agrees.",
+    "rationale": "Matching existing amount lacks attached claim evidence. Preserve source labels and BD Bacto qualifiers; source-generic citrate is not evidence for an unspecified alternative hydrate or product.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"NaNO3\",\n                        \"compound_id\": 187,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.25,\n                        \"mmol_l\": 2.94135,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      },
+      {
+        "source_key": "dsmz1565",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf",
+        "source_locator": "Page 1 header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df",
+        "parsed_text_sha256": "f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "(NH4)2SO4 direct main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "0.25 g in the explicitly 1000 mL main recipe; local 0.25 g/L agrees.",
+    "rationale": "Matching existing amount lacks attached claim evidence. Preserve source labels and BD Bacto qualifiers; source-generic citrate is not evidence for an unspecified alternative hydrate or product.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.25,\n                        \"mmol_l\": 1.89193,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      },
+      {
+        "source_key": "dsmz1565",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf",
+        "source_locator": "Page 1 header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df",
+        "parsed_text_sha256": "f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Ferric citrate monohydrate direct main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "0.2 g in the explicitly 1000 mL main recipe; local 0.2 g/L agrees.",
+    "rationale": "Matching existing amount lacks attached claim evidence. Preserve source labels and BD Bacto qualifiers; source-generic citrate is not evidence for an unspecified alternative hydrate or product.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Ferric citrate monohydrate\",\n                        \"compound_id\": 2378,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.760572,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      },
+      {
+        "source_key": "dsmz1565",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf",
+        "source_locator": "Page 1 header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df",
+        "parsed_text_sha256": "f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Na2SO4 direct main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "1 g in the explicitly 1000 mL main recipe; local 1 g/L agrees.",
+    "rationale": "Matching existing amount lacks attached claim evidence. Preserve source labels and BD Bacto qualifiers; source-generic citrate is not evidence for an unspecified alternative hydrate or product.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 7.04027,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      },
+      {
+        "source_key": "dsmz1565",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf",
+        "source_locator": "Page 1 header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df",
+        "parsed_text_sha256": "f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Na2CO3 direct main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "1.25",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "1.25",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "1.25 g in the explicitly 1000 mL main recipe; local 1.25 g/L agrees.",
+    "rationale": "Matching existing amount lacks attached claim evidence. Preserve source labels and BD Bacto qualifiers; source-generic citrate is not evidence for an unspecified alternative hydrate or product.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 1.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.25,\n                        \"mmol_l\": 11.7938,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      },
+      {
+        "source_key": "dsmz1565",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf",
+        "source_locator": "Page 1 header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df",
+        "parsed_text_sha256": "f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "NaHCO3 direct main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "2.5 g in the explicitly 1000 mL main recipe; local 2.5 g/L agrees.",
+    "rationale": "Matching existing amount lacks attached claim evidence. Preserve source labels and BD Bacto qualifiers; source-generic citrate is not evidence for an unspecified alternative hydrate or product.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 29.7594,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      },
+      {
+        "source_key": "dsmz1565",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf",
+        "source_locator": "Page 1 header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df",
+        "parsed_text_sha256": "f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Na2S2O3 x 5 H2O direct main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "2 g in the explicitly 1000 mL main recipe; local 2 g/L agrees.",
+    "rationale": "Matching existing amount lacks attached claim evidence. Preserve source labels and BD Bacto qualifiers; source-generic citrate is not evidence for an unspecified alternative hydrate or product.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2S2O3 x 5 H2O\",\n                        \"compound_id\": 65,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 8.05847,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      },
+      {
+        "source_key": "dsmz1565",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf",
+        "source_locator": "Page 1 header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df",
+        "parsed_text_sha256": "f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "NaCl seawater-stage amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "30.703",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "30.703",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 30 g in source stock 3957, not as a direct main concentration. Seawater lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main receives 100 mL seawater.",
+    "rationale": "Restore nested scope before dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but is not independently measured final stock volume. Nickel is explicitly hexahydrate, unlike local CHEBI:34887.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 30,\n                        \"unit\": \"g\",\n                        \"g_l\": 29.703,\n                        \"mmol_l\": 508.264,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "K2HPO4 seawater-stage amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.138614",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.138614",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.14 g in source stock 3957, not as a direct main concentration. Seawater lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.14,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.138614,\n                        \"mmol_l\": 0.795826,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "CaCl2 x 2 H2O seawater-stage amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.238614",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.238614",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.14 g in source stock 3957, not as a direct main concentration. Seawater lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main receives 100 mL seawater.",
+    "rationale": "Restore nested scope before dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but is not independently measured final stock volume. Nickel is explicitly hexahydrate, unlike local CHEBI:34887.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.14,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.138614,\n                        \"mmol_l\": 0.942855,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "MgSO4 x 7 H2O seawater-stage amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "6.36634",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "6.36634",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 3.4 g in source stock 3957, not as a direct main concentration. Seawater lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main receives 100 mL seawater.",
+    "rationale": "Restore nested scope before dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but is not independently measured final stock volume. Nickel is explicitly hexahydrate, unlike local CHEBI:34887.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 3.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 3.36634,\n                        \"mmol_l\": 13.6579,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "MgCl2 x 6 H2O seawater-stage amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "4.13861",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "4.13861",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 4.18 g in source stock 3957, not as a direct main concentration. Seawater lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 4.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.13861,\n                        \"mmol_l\": 20.3569,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "KCl seawater-stage amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.326733",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.326733",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.33 g in source stock 3957, not as a direct main concentration. Seawater lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326733,\n                        \"mmol_l\": 4.38273,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "NiCl2 x 6 H2O seawater-stage amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.03049505",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.03049505",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.5 mg in source stock 3957, not as a direct main concentration. Seawater lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main receives 100 mL seawater.",
+    "rationale": "Restore nested scope before dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but is not independently measured final stock volume. Nickel is explicitly hexahydrate, unlike local CHEBI:34887.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.00049505,\n                        \"mmol_l\": 0.00381986,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "Na2SeO3 x 5 H2O seawater-stage amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.00079505",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.00079505",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.5 mg in source stock 3957, not as a direct main concentration. Seawater lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main receives 100 mL seawater.",
+    "rationale": "Restore nested scope before dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but is not independently measured final stock volume. Nickel is explicitly hexahydrate, unlike local CHEBI:34887.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[1].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 0.5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.00049505,\n                        \"mmol_l\": 0.00188222,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q20",
+    "component_or_context": "Fe(NH4)2(SO4)2 x 6 H2O seawater-stage amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.00990099",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.00990099",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.01 g in source stock 3957, not as a direct main concentration. Seawater lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[1].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Fe(NH4)2(SO4)2 x 6 H2O\",\n                        \"compound_id\": 247,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.00990099,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q21",
+    "component_or_context": "Nitrilotriacetic acid mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 1.5 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\": 189,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.84765,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q22",
+    "component_or_context": "MgSO4 x 7 H2O mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "6.36634",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "6.36634",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 3 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "Restore nested scope before dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but is not independently measured final stock volume. Nickel is explicitly hexahydrate, unlike local CHEBI:34887.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 12.1716,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q23",
+    "component_or_context": "MnSO4 x H2O mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.5 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\": 14,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.9583,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q24",
+    "component_or_context": "NaCl mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "30.703",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "30.703",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 1 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "Restore nested scope before dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but is not independently measured final stock volume. Nickel is explicitly hexahydrate, unlike local CHEBI:34887.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 17.1116,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q25",
+    "component_or_context": "FeSO4 x 7 H2O mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.1 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.359693,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q26",
+    "component_or_context": "CoSO4 x 7 H2O mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.18 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\": 198,\n                        \"amount\": 0.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\": 1.16132,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q27",
+    "component_or_context": "CaCl2 x 2 H2O mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.238614",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.238614",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.1 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "Restore nested scope before dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but is not independently measured final stock volume. Nickel is explicitly hexahydrate, unlike local CHEBI:34887.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q28",
+    "component_or_context": "ZnSO4 x 7 H2O mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.18 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\": 0.625954,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q29",
+    "component_or_context": "CuSO4 x 5 H2O mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.01 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0400503,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q30",
+    "component_or_context": "AlK(SO4)2 x 12 H2O mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.02 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"AlK(SO4)2 x 12 H2O\",\n                        \"compound_id\": 908,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0421596,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q31",
+    "component_or_context": "H3BO3 mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.01 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.161708,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q32",
+    "component_or_context": "Na2MoO4 x 2 H2O mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.01 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0413309,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q33",
+    "component_or_context": "NiCl2 x 6 H2O mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.03049505",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.03049505",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.03 g in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "Restore nested scope before dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but is not independently measured final stock volume. Nickel is explicitly hexahydrate, unlike local CHEBI:34887.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[12]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.231483,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q34",
+    "component_or_context": "Na2SeO3 x 5 H2O mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.00079505",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.00079505",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.3 mg in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "Restore nested scope before dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but is not independently measured final stock volume. Nickel is explicitly hexahydrate, unlike local CHEBI:34887.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[13]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 0.3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0003,\n                        \"mmol_l\": 0.00114062,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q35",
+    "component_or_context": "Na2WO4 x 2 H2O mineral-stock amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "Retain 0.4 mg in source stock 241, not as a direct main concentration. Mineral lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100 mL seawater.",
+    "rationale": "The local number is an undiluted stock-stage value placed at the main root. Preserve the source amount and receiving hierarchy; do not multiply by an assumed measured stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[14]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 0.4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0004,\n                        \"mmol_l\": 0.00121267,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q36",
+    "component_or_context": "Main receives seawater",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "100 ml in source stage 3238.",
+    "rationale": "Restore omitted dose/solvent stage explicitly. Water is a volume, not a solute g/L. Main final volume is explicitly 1000 mL; stock listed water and provider volume declarations remain separately identified.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"MJ(-N) synthetic seawater\",\n                        \"solution_id\": 3957,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q37",
+    "component_or_context": "Main water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "900 ml in source stage 3238.",
+    "rationale": "Restore omitted dose/solvent stage explicitly. Water is a volume, not a solute g/L. Main final volume is explicitly 1000 mL; stock listed water and provider volume declarations remain separately identified.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].recipe[12]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 900,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q38",
+    "component_or_context": "Seawater receives mineral stock",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "10 ml in source stage 3957.",
+    "rationale": "Restore omitted dose/solvent stage explicitly. Water is a volume, not a solute g/L. Main final volume is explicitly 1000 mL; stock listed water and provider volume declarations remain separately identified.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[1].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q39",
+    "component_or_context": "Seawater water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "1000 ml in source stage 3957.",
+    "rationale": "Restore omitted dose/solvent stage explicitly. Water is a volume, not a solute g/L. Main final volume is explicitly 1000 mL; stock listed water and provider volume declarations remain separately identified.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[1].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q40",
+    "component_or_context": "Mineral stock water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "1000 ml in source stage 241.",
+    "rationale": "Restore omitted dose/solvent stage explicitly. Water is a volume, not a solute g/L. Main final volume is explicitly 1000 mL; stock listed water and provider volume declarations remain separately identified.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].recipe[15]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q41",
+    "component_or_context": "Explicit main final volume",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2]",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "preparation_steps[2]",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "1000 mL final main recipe, as explicitly labeled by the current primary.",
+    "rationale": "Do not describe the main denominator as unspecified. This does not prove a measured final volume for either nested stock.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1565",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf",
+        "source_locator": "Page 1 header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df",
+        "parsed_text_sha256": "f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q42",
+    "component_or_context": "Nitrogen proportion",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "100% nitrogen source atmosphere, confined to the main and separately named thiosulfate stock.",
+    "rationale": "Existing main prose is retained; attach claim-scoped source evidence without inventing a sterilization cycle.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].steps[0].step",
+        "exact_source_quote": "100% N2 gas",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q43",
+    "component_or_context": "Main sparging duration",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "Source main duration 30–45 minutes.",
+    "rationale": "Existing main prose is retained; attach claim-scoped source evidence without inventing a sterilization cycle.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].steps[0].step",
+        "exact_source_quote": "30 - 45 min",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q44",
+    "component_or_context": "Initial main pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "Main initial pH 10 after carbonate/bicarbonate; distinct from stock endpoints.",
+    "rationale": "Existing main prose is retained; attach claim-scoped source evidence without inventing a sterilization cycle.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].steps[0].step",
+        "exact_source_quote": "adjust pH to 10 with KOH",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q45",
+    "component_or_context": "Complete main pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 9.8,
+          "max": 10.0
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 9.8,
+          "max": 10.0
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "Complete main pH 9.8–10.0.",
+    "rationale": "Existing main prose is retained; attach claim-scoped source evidence without inventing a sterilization cycle.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].steps[0].step",
+        "exact_source_quote": "Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q46",
+    "component_or_context": "Mineral initial pH",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "First dissolve nitrilotriacetic acid, adjust this stock to pH 6.5 with KOH, then add minerals.",
+    "rationale": "Local preparation_steps[1] wrongly puts a stock-specific adjustment at the main root. Restore the stock scope, preserving the original literal order.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].steps[0].step",
+        "exact_source_quote": "adjust pH to 6.5 with KOH",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q47",
+    "component_or_context": "Mineral final pH",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "After minerals, adjust mineral stock to pH 7.0 with KOH.",
+    "rationale": "Local preparation_steps[1] wrongly puts a stock-specific adjustment at the main root. Restore the stock scope, preserving the original literal order.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].steps[0].step",
+        "exact_source_quote": "Adjust final to pH 7.0 with KOH.",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q48",
+    "component_or_context": "Mineral KOH dose",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "KOH dose and strength are not quantified; preserve the two ordered stock endpoints.",
+    "rationale": "Local preparation_steps[1] wrongly puts a stock-specific adjustment at the main root. Restore the stock scope, preserving the original literal order.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[2].steps[0].step",
+        "exact_source_quote": "with KOH",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q49",
+    "component_or_context": "Main KOH dose",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "KOH dose and strength are unspecified for the main adjustment.",
+    "rationale": "Do not invent an amount from the pH endpoint.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].steps[0].step",
+        "exact_source_quote": "adjust pH to 10 with KOH",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q50",
+    "component_or_context": "Thiosulfate stock strength and receiving volume",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 9.8 - 10.0.",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": "Retain the specified final main thiosulfate mass and separate stock preparation; stock strength and receiving volume are unquantified.",
+    "rationale": "Preserve the staged filtration instruction rather than inventing a stock recipe or a default autoclave cycle.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive1565api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1565",
+        "source_locator": "$.data.solutions[0].steps[0].step",
+        "exact_source_quote": "Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration.",
+        "snapshot_sha256": "2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c"
+      }
+    ]
+  }
+]
+
+### Asserted ontology and pinned secondary identifier metadata
+
+grounding: concern. Targets: CultureMech:001041.
+
+27 distinct asserted primary/secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 27/30 primary and 26/30 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. The separate legacy MediaIngredientMech:000171 has unresolved historical correspondence; its current exact absence is a completed lookup. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 30: primary 90.00%; secondary 86.67%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Source accession and maintained ownership
+
+identity: supported. Targets: CultureMech:001041.
+
+Stable CM001041 and its sole normalized owner resolve exactly to DSMZ 1565. No other recipe or parent 141 formulation is interchangeable with the explicitly named mineral subsection.
+
+### Claim-level amount support and source scope
+
+evidence: concern. Targets: CultureMech:001041.
+
+The local layers have import provenance but no attached amount evidence. The inventory covers every local concentration and scoped source-only quantity using literal excerpts, exact source locators, units, stages and original capture hashes. Provider-declared volume is kept separate from measured assembled final volume.
+
+### Preparation stages, source-only additions and owner differences
+
+completeness: concern. Targets: CultureMech:001041.
+
+Main preparation is retained, including thiosulfate filtration after autoclaving. Mineral pH 6.5 then 7.0 is mislocated at preparation_steps[1]; restore nested scope. The separate normalized stock dependency 3957 lacks its nested mineral dose, while 241 retains a repaired composition; these dependencies require source-scoped checks before reuse, not substitution for the primary.
+
+### Composition and physical-state classification
+
+scope: supported. Targets: CultureMech:001041.
+
+COMPLEX/UNDEFINED is supported by yeast extract and tryptone. LIQUID is supported by the formulation. Salts and water alone do not explain the complex components.
+
+### Supplied forms and chemical specificity
+
+grounding: concern. Targets: CultureMech:001041.
+
+Explicit supplied hydrates were compared with OLS formulas. Nickel hexahydrate conflicts with anhydrous CHEBI:34887 in both local primary and CHEBI secondary slots. Ferric citrate monohydrate, hydrated seawater salts and mineral sulfates retain their source forms. Unlinked complex ingredients and tartrate are optional linkage gaps, not evidence of a wrong chemical ID.
+
+### Growth, organism taxonomy and graph claims
+
+scope: not_applicable. Targets: CultureMech:001041.
+
+The title, generic Microbial cultivation application and catalog Aerobic flags are not experimental growth or taxonomy evidence. No growth assertions, current taxonomy IDs or graph membership are added. Explicit source strain qualifiers remain formulation scope only.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:001041.
+
+21 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Authoritative inputs and current writer scope
+
+provenance: concern. Targets: CultureMech:001041.
+
+Current MediaDive code separates first-stage ingredients and stock references and retains provider g_l values, but collects preparation steps from all solutions at the main root. Current DSMZ resolver copies ingredients/solutions but not preparation; current lossless merge requires scientific-field equality. Current cleanup flags disagreeing duplicate values rather than summing them. Current code is context, not proof of a particular historical execution. Correct every exact normalized contributor, attach claim-scoped evidence and append provenance clarification; regenerate derived products only after separately authorized correction.
+
+## Findings
+
+### f1: Two nested stock stages are flattened into false main concentrations
+
+blocker / open / confirmed; issue key: nested-stock-flattening.
+
+All 19 stock-only local ingredient positions are presented as direct main concentrations; five positions also sum values normalized at different stock stages. The 100 mL seawater dose, its internal 10 mL mineral dose and all three water quantities are absent. Main final volume is explicitly 1000 mL; seawater provider normalization 1010 mL does not license undiluted stock values at the main root.
+
+### f2: Mineral pH instructions are assigned to the main preparation
+
+major / open / confirmed; issue key: stock-preparation-scope.
+
+preparation_steps[1] contains mineral-stock NTA/KOH pH 6.5 then 7.0, while the main source requires initial pH 10 and complete pH 9.8–10.0. Root placement obscures which preparation receives the adjustment.
+
+### f3: Explicit nickel hexahydrate is mapped to anhydrous nickel dichloride
+
+major / open / confirmed; issue key: nickel-supplied-form.
+
+ingredients[17] names NiCl2 x 6 H2O in both contributing stocks, but primary and CHEBI secondary slots assert CHEBI:34887 with formula Cl2Ni. Label resolution alone does not validate the supplied hydrate.
+
+### f4: Legacy secondary correspondence remains historically unresolved
+
+minor / open / confirmed; issue key: legacy-secondary-history.
+
+ingredients[4].mediaingredientmech_term asserts MediaIngredientMech:000171 for sodium nitrate. The complete current index/catalog/tree lack that exact key. This is a current snapshot gap, not proof that the historical chemical correspondence was wrong.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Correct the exact normalized owner: preserve 11 direct main amounts, restore both nested stock compositions and receiving doses, restore water volumes, and undo all five sums without double counting. Use explicit main volume and qualified stock bases for any later arithmetic. Check normalized stock dependencies 3957/241 before linking; append provenance clarification and regenerate only after authorized correction.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Move the exact mineral sequence into its stock scope; retain main preparation and separate thiosulfate filtration. Preserve unquantified KOH and thiosulfate stock strength/volume, and do not import unrelated DSMZ 141 preparation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Verify and assign the exact hexahydrate ontology and secondary correspondence in the maintained owner before regeneration. Preserve the two separate source amounts; no unverified replacement ID is proposed.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Recover the exact historical object or explicit replacement evidence before changing this secondary link. Preserve valid independently supported primary identity and append clarification; do not guess a replacement from a similar label.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch023/228/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-023/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch023/228/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml:1:id: CultureMech:001041<br>./data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml:1:id: CultureMech:001041<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch023/source-preflight-bound/228/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 35 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-owner-context | /private/tmp/culturemech-review-work-batch023/source-preflight-bound/228/evidence-context-original.json; Complete frozen target/owners, source stages, exact secondary lookup and ignored-inclusive relationships | context_only | Full captured records re-read and compared by exact equality with fresh inspected records. Context is supporting provenance; exact bound primary/provider captures independently support scientific claims. |
+| mimPinnedCatalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Complete exact pinned ingredient catalog or nontruncated repository tree | supports | The complete pinned current snapshot lacks exact legacy 000171. This negative lookup does not recover historical correspondence or prove a chemically incorrect old link. |
+| mimPinnedTree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Complete exact pinned ingredient catalog or nontruncated repository tree | supports | The complete pinned current snapshot lacks exact legacy 000171. This negative lookup does not recover historical correspondence or prove a chemically incorrect old link. |
+| legacy-lookup | src/culturemech/data/mediaingredientmech/label_index.csv; Complete pinned index, full ingredient catalog and nontruncated tree | context_only | Exact 000171 absent from 9077 index rows, 2953 catalog objects and 7384 tree entries. No fuzzy replacement inferred. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf; Pages 1–2: main recipe, MJ(-N) seawater and Modified Wolin mineral subsections | supports | The primary explicitly states final main volume 1000 mL. It gives a 100 mL seawater addition to main, and a separate 10 mL mineral addition inside the seawater stock. Preserve all three stages and original mg/g/mL units. |
+| provider | https://mediadive.dsmz.de/rest/medium/1565; data.solutions[0:3], IDs 3238/3957/241; complete recipes and steps | supports | Provider main volume is 1000 mL, seawater 1010 mL and mineral 1000 mL. Provider stock normalizations are not direct final-medium concentrations. |
+| stock-primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf; Page 2: Modified Wolin mineral subsection only | supports | The exact named mineral stock agrees with the explicit DSMZ 1565 mineral subsection. No other parent-medium, vitamin, gas, pressure or strain instructions transfer. |
+| solution3957 | https://mediadive.dsmz.de/rest/solution/3957; data.id/name/volume/recipe/steps | supports | Exact referenced stock identity and stages checked; no substitution by a similarly named stock. |
+| solution241 | https://mediadive.dsmz.de/rest/solution/241; data.id/name/volume/recipe/steps | supports | Exact referenced stock identity and stages checked; no substitution by a similarly named stock. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch023/228/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi144434 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_144434; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:144434 resolves to iron(III) citrate monohydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32149 resolves to sodium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32150 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32150; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32150 resolves to sodium thiosulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32588 resolves to potassium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34887 resolves to nickel dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi53258 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53258; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:53258 resolves to sodium citrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63005 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63005 resolves to sodium nitrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi76181 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76181; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:76181 resolves to ferrous ammonium sulfate hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86364 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86364 resolves to manganese(II) sulfate monohydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:144434": [{"label": "Ferric citrate monohydrate", "match_type": "preferred_term", "identifier": "CHEBI:144434", "preferred_term": "Ferric citrate monohydrate", "ontology_id": "CHEBI:144434", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32149": [{"label": "Na2SO4", "match_type": "preferred_term", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32150": [{"label": "Na2S2O3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32150", "preferred_term": "Na2S2O3 x 5 H2O", "ontology_id": "CHEBI:32150", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53258": [{"label": "Trisodium citrate", "match_type": "preferred_term", "identifier": "CHEBI:53258", "preferred_term": "Trisodium citrate", "ontology_id": "CHEBI:53258", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76181": [{"label": "Fe(NH4)2(SO4)2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76181", "preferred_term": "Fe(NH4)2(SO4)2 x 6 H2O", "ontology_id": "CHEBI:76181", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label": "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86465", "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml; data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 11, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml", "events": 10, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive code separates first-stage ingredients and stock references and retains provider g_l values, but collects preparation steps from all solutions at the main root. Current DSMZ resolver copies ingredients/solutions but not preparation; current lossless merge requires scientific-field equality. Current cleanup flags disagreeing duplicate values rather than summing them. Current code is context, not proof of a particular historical execution. Correct every exact normalized contributor, attach claim-scoped evidence and append provenance clarification; regenerate derived products only after separately authorized correction. |
+| writer-1 | src/culturemech/enrich/dsmz_resolver.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive code separates first-stage ingredients and stock references and retains provider g_l values, but collects preparation steps from all solutions at the main root. Current DSMZ resolver copies ingredients/solutions but not preparation; current lossless merge requires scientific-field equality. Current cleanup flags disagreeing duplicate values rather than summing them. Current code is context, not proof of a particular historical execution. Correct every exact normalized contributor, attach claim-scoped evidence and append provenance clarification; regenerate derived products only after separately authorized correction. |
+| writer-2 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive code separates first-stage ingredients and stock references and retains provider g_l values, but collects preparation steps from all solutions at the main root. Current DSMZ resolver copies ingredients/solutions but not preparation; current lossless merge requires scientific-field equality. Current cleanup flags disagreeing duplicate values rather than summing them. Current code is context, not proof of a particular historical execution. Correct every exact normalized contributor, attach claim-scoped evidence and append provenance clarification; regenerate derived products only after separately authorized correction. |
+| writer-3 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive code separates first-stage ingredients and stock references and retains provider g_l values, but collects preparation steps from all solutions at the main root. Current DSMZ resolver copies ingredients/solutions but not preparation; current lossless merge requires scientific-field equality. Current cleanup flags disagreeing duplicate values rather than summing them. Current code is context, not proof of a particular historical execution. Correct every exact normalized contributor, attach claim-scoped evidence and append provenance clarification; regenerate derived products only after separately authorized correction. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Historical MediaIngredientMech:000171 correspondence is unresolved. Current exact absence is separately a completed lookup; no historical deletion, wrong chemical identity or replacement identifier is inferred.
+- Only exact per-record bound captures are used. Current collection and provider differences do not establish their temporal order or the historical imported formulation.
+- Source stock concentrations, receiving doses and listed water amounts do not independently establish a measured final mixture volume. No density, percent basis, exact hydration, default sterilization cycle or stock volume is invented.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T133217Z-culturemech-001041-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alkaliphilus_transvaalensis_medium (CultureMech:001041)'
+started_at: '2026-10-21T13:27:14Z'
+finished_at: '2026-10-21T13:32:17Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 1565 explicitly defines a 1000 mL main recipe, but the target and maintained
+  owner flatten two nested stocks and sum five incompatible stock contributions. Source-specific
+  nickel hydration is also mismatched. All available formulation stages are assessed;
+  coverage is partial only because historical legacy MediaIngredientMech:000171 correspondence
+  remains unavailable.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml
+    sha256: 9c39091fd379385afe9f0f2735f1a4da55ea546f4766d884730e82143008b2c9
+    role: target
+  - path: data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml
+    sha256: 01c842b76ec479c49450044d974046f7226bda0cf1500653fb5cbf9d1622ea23
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_241_Modified_Wolin_s_mineral_solution.yaml
+    sha256: 3ad6e16dcff1f675260d599c644e49992fa8d76623e0889caaba21fd1e22bfab
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3957_MJ_-N_synthetic_seawater.yaml
+    sha256: bc49981603a4cae92245ce0fb03160098f7f468ea9786f7de25a55db6ee28db2
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence. Required historical legacy-secondary
+    correspondence remains unresolved; all available current formulation and owner
+    layers are assessed.
+  selection: Task review 228; batch 023 item 8 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-two task batches
+    contain 220 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 223 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001041
+targets:
+- target_id: CultureMech:001041
+  path: data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml
+  label: alkaliphilus_transvaalensis_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch023/228/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-023/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch023/228/strict.tsv"
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001041
+- check_id: current-legacy-negative-lookup
+  name: Completed exact current legacy lookup
+  required: true
+  status: passed
+  summary: Exact 000171 is absent in the complete current snapshot. This is a completed
+    negative result.
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - legacy-lookup
+  - mimPinnedCatalog
+  - mimPinnedTree
+- check_id: historical-legacy-correspondence
+  name: Required historical legacy correspondence
+  required: true
+  status: unavailable
+  summary: The historical MediaIngredientMech:000171 to NaNO3 correspondence is not
+    available in the bound evidence. This required unresolved historical check is
+    the reason for partial coverage. Current absence alone neither validates nor refutes
+    the historical identity.
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - record
+  - legacy-lookup
+  - mimPinnedCatalog
+  - mimPinnedTree
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:28:05.057536Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch023/228/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:28:06.407802Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-023/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch023/228/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:28:08.222623Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:28:09.420055Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml:1:id:
+    CultureMech:001041
+
+    ./data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml:1:id:
+    CultureMech:001041
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch023/source-preflight-bound/228/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: supports
+  summary: 35 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 15096b1e6a495bd48a3586e4dc669c2f20d8eaa8a3ef83a6f1856e6b06370069
+- evidence_id: bound-owner-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch023/source-preflight-bound/228/evidence-context-original.json
+  locator: Complete frozen target/owners, source stages, exact secondary lookup and
+    ignored-inclusive relationships
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: context_only
+  summary: Full captured records re-read and compared by exact equality with fresh
+    inspected records. Context is supporting provenance; exact bound primary/provider
+    captures independently support scientific claims.
+  snapshot_sha256: 275c308cc8d44b94034a24a1aa5fc16f20dd0228a67e958ab5ded472372bff7b
+- evidence_id: mimPinnedCatalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Complete exact pinned ingredient catalog or nontruncated repository tree
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: supports
+  summary: The complete pinned current snapshot lacks exact legacy 000171. This negative
+    lookup does not recover historical correspondence or prove a chemically incorrect
+    old link.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mimPinnedTree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Complete exact pinned ingredient catalog or nontruncated repository tree
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: supports
+  summary: The complete pinned current snapshot lacks exact legacy 000171. This negative
+    lookup does not recover historical correspondence or prove a chemically incorrect
+    old link.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: legacy-lookup
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete pinned index, full ingredient catalog and nontruncated tree
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: context_only
+  summary: Exact 000171 absent from 9077 index rows, 2953 catalog objects and 7384
+    tree entries. No fuzzy replacement inferred.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+  search_scope: Full pinned structures; exact identifier/path scan includes the complete
+    tree rather than an ignore-filtered filesystem search.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf
+  locator: 'Pages 1–2: main recipe, MJ(-N) seawater and Modified Wolin mineral subsections'
+  accessed_at: '2026-10-21T13:16:21.694082Z'
+  support: supports
+  summary: The primary explicitly states final main volume 1000 mL. It gives a 100
+    mL seawater addition to main, and a separate 10 mL mineral addition inside the
+    seawater stock. Preserve all three stages and original mg/g/mL units.
+  snapshot_sha256: 121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df
+- evidence_id: provider
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1565
+  locator: data.solutions[0:3], IDs 3238/3957/241; complete recipes and steps
+  accessed_at: '2026-10-21T13:16:20.702645Z'
+  support: supports
+  summary: Provider main volume is 1000 mL, seawater 1010 mL and mineral 1000 mL.
+    Provider stock normalizations are not direct final-medium concentrations.
+  snapshot_sha256: 2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c
+- evidence_id: stock-primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf
+  locator: 'Page 2: Modified Wolin mineral subsection only'
+  accessed_at: '2026-10-21T10:13:12.306566Z'
+  support: supports
+  summary: The exact named mineral stock agrees with the explicit DSMZ 1565 mineral
+    subsection. No other parent-medium, vitamin, gas, pressure or strain instructions
+    transfer.
+  snapshot_sha256: 8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8
+- evidence_id: solution3957
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/3957
+  locator: data.id/name/volume/recipe/steps
+  accessed_at: '2026-10-21T13:20:07.509740Z'
+  support: supports
+  summary: Exact referenced stock identity and stages checked; no substitution by
+    a similarly named stock.
+  snapshot_sha256: 7a1f1f3504f68b14d94fc5ab9d635f66a7380de86b6a241bd787c339be7aac26
+- evidence_id: solution241
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/241
+  locator: data.id/name/volume/recipe/steps
+  accessed_at: '2026-10-21T10:37:16.846684Z'
+  support: supports
+  summary: Exact referenced stock identity and stages checked; no substitution by
+    a similarly named stock.
+  snapshot_sha256: 50cc42c209f550b7abc4a5f48b455553516220b6ef9613f481941f9e15f0b25d
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch023/228/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: d3ebeacd25b3307bcab10a1a8b51c8c88f9a2b946d8d2be35b26ff62cee2611d
+- evidence_id: chebi131361
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:27.980786Z'
+  support: supports
+  summary: CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi144434
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_144434
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T13:16:22.567841Z'
+  support: supports
+  summary: CHEBI:144434 resolves to iron(III) citrate monohydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: febb94d4abc513680f0672883ef9de35ecf9048bb4c4b12c0eeaa66e5d4b2112
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32149
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:18:34.792120Z'
+  support: supports
+  summary: CHEBI:32149 resolves to sodium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi32150
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32150
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:01:47.429763Z'
+  support: supports
+  summary: CHEBI:32150 resolves to sodium thiosulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 910d65eb9be29c9371cb79a32bcbe81bdb57d8143d21fbf7c4a1a915b5a79999
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi44557
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:46:15.250117Z'
+  support: supports
+  summary: CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi53258
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53258
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:54.823692Z'
+  support: supports
+  summary: CHEBI:53258 resolves to sodium citrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2a35c6dc3532c2276c6b19aef0992260e14b1fc36423fa3eb812bb94f63c4371
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63005
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T04:02:36.443517Z'
+  support: supports
+  summary: CHEBI:63005 resolves to sodium nitrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 1ec6a815a0e22ba0d12f84ad998bef39b9e6b80cf90c25cd1ab51903bbb54da3
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi76181
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76181
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:28:27.017914Z'
+  support: supports
+  summary: CHEBI:76181 resolves to ferrous ammonium sulfate hexahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 1ca5b1ee73ce8d8fd35e60c7f45baacd870b6f5fdce0a02345be62e7622dbaa5
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86364
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:35.036768Z'
+  support: supports
+  summary: CHEBI:86364 resolves to manganese(II) sulfate monohydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: chebi86465
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:08.054799Z'
+  support: supports
+  summary: CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 5e74b8136b972b18b427c70e758e12dfe013a6ca671501cddc936038299f7c2c
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361":
+    [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361",
+    "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:144434":
+    [{"label": "Ferric citrate monohydrate", "match_type": "preferred_term", "identifier":
+    "CHEBI:144434", "preferred_term": "Ferric citrate monohydrate", "ontology_id":
+    "CHEBI:144434", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate
+    solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term":
+    "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O",
+    "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier":
+    "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32149": [{"label": "Na2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id":
+    "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32150":
+    [{"label": "Na2S2O3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32150",
+    "preferred_term": "Na2S2O3 x 5 H2O", "ontology_id": "CHEBI:32150", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id":
+    "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887":
+    [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887",
+    "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:44557": [{"label": "Nitrilotriacetic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic
+    acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:53258": [{"label": "Trisodium citrate", "match_type": "preferred_term",
+    "identifier": "CHEBI:53258", "preferred_term": "Trisodium citrate", "ontology_id":
+    "CHEBI:53258", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:62946":
+    [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946",
+    "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term":
+    "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836":
+    [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:76181": [{"label": "Fe(NH4)2(SO4)2 x
+    6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76181", "preferred_term":
+    "Fe(NH4)2(SO4)2 x 6 H2O", "ontology_id": "CHEBI:76181", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O",
+    "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term",
+    "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id":
+    "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2
+    x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label":
+    "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86465",
+    "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term":
+    "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml; data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 11, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml", "events":
+    10, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: context_only
+  summary: Current MediaDive code separates first-stage ingredients and stock references
+    and retains provider g_l values, but collects preparation steps from all solutions
+    at the main root. Current DSMZ resolver copies ingredients/solutions but not preparation;
+    current lossless merge requires scientific-field equality. Current cleanup flags
+    disagreeing duplicate values rather than summing them. Current code is context,
+    not proof of a particular historical execution. Correct every exact normalized
+    contributor, attach claim-scoped evidence and append provenance clarification;
+    regenerate derived products only after separately authorized correction.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: context_only
+  summary: Current MediaDive code separates first-stage ingredients and stock references
+    and retains provider g_l values, but collects preparation steps from all solutions
+    at the main root. Current DSMZ resolver copies ingredients/solutions but not preparation;
+    current lossless merge requires scientific-field equality. Current cleanup flags
+    disagreeing duplicate values rather than summing them. Current code is context,
+    not proof of a particular historical execution. Correct every exact normalized
+    contributor, attach claim-scoped evidence and append provenance clarification;
+    regenerate derived products only after separately authorized correction.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: context_only
+  summary: Current MediaDive code separates first-stage ingredients and stock references
+    and retains provider g_l values, but collects preparation steps from all solutions
+    at the main root. Current DSMZ resolver copies ingredients/solutions but not preparation;
+    current lossless merge requires scientific-field equality. Current cleanup flags
+    disagreeing duplicate values rather than summing them. Current code is context,
+    not proof of a particular historical execution. Correct every exact normalized
+    contributor, attach claim-scoped evidence and append provenance clarification;
+    regenerate derived products only after separately authorized correction.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T13:32:16Z'
+  support: context_only
+  summary: Current MediaDive code separates first-stage ingredients and stock references
+    and retains provider g_l values, but collects preparation steps from all solutions
+    at the main root. Current DSMZ resolver copies ingredients/solutions but not preparation;
+    current lossless merge requires scientific-field equality. Current cleanup flags
+    disagreeing duplicate values rather than summing them. Current code is context,
+    not proof of a particular historical execution. Correct every exact normalized
+    contributor, attach claim-scoped evidence and append provenance clarification;
+    regenerate derived products only after separately authorized correction.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 50 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Yeast extract direct main amount\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"2 g in the explicitly 1000 mL main recipe; local 2 g/L agrees.\",\n    \"\
+    rationale\": \"Matching existing amount lacks attached claim evidence. Preserve\
+    \ source labels and BD Bacto qualifiers; source-generic citrate is not evidence\
+    \ for an unspecified alternative hydrate or product.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"attribute\\\": \\\"BD Bacto\\\",\\n    \
+    \                    \\\"amount\\\": 2,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 2,\\n                    \
+    \    \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1565\",\n        \"source_url\":\
+    \ \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf\",\n   \
+    \     \"source_locator\": \"Page 1 header\",\n        \"exact_source_quote\":\
+    \ \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df\"\
+    ,\n        \"parsed_text_sha256\": \"f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\"\
+    : \"Tryptone direct main amount\",\n    \"decision\": \"evidence_only\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"2 g in the explicitly 1000 mL main recipe; local 2 g/L agrees.\",\n    \"\
+    rationale\": \"Matching existing amount lacks attached claim evidence. Preserve\
+    \ source labels and BD Bacto qualifiers; source-generic citrate is not evidence\
+    \ for an unspecified alternative hydrate or product.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"Tryptone\\\",\\n                        \\\"compound_id\\\"\
+    : 71,\\n                        \\\"attribute\\\": \\\"BD Bacto\\\",\\n      \
+    \                  \\\"amount\\\": 2,\\n                        \\\"unit\\\":\
+    \ \\\"g\\\",\\n                        \\\"g_l\\\": 2,\\n                    \
+    \    \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1565\",\n        \"source_url\":\
+    \ \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf\",\n   \
+    \     \"source_locator\": \"Page 1 header\",\n        \"exact_source_quote\":\
+    \ \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df\"\
+    ,\n        \"parsed_text_sha256\": \"f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\"\
+    : \"Na2-tartrate x 2 H2O direct main amount\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"1 g in the explicitly 1000 mL main recipe; local 1 g/L agrees.\",\n    \"\
+    rationale\": \"Matching existing amount lacks attached claim evidence. Preserve\
+    \ source labels and BD Bacto qualifiers; source-generic citrate is not evidence\
+    \ for an unspecified alternative hydrate or product.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Na2-tartrate x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 1423,\\n                        \\\"amount\\\": 1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n   \
+    \                     \\\"optional\\\": 0\\n                    }\",\n       \
+    \ \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1565\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf\",\n   \
+    \     \"source_locator\": \"Page 1 header\",\n        \"exact_source_quote\":\
+    \ \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df\"\
+    ,\n        \"parsed_text_sha256\": \"f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\"\
+    : \"Na3-citrate direct main amount\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"1 g in the explicitly 1000 mL main recipe; local 1 g/L agrees.\",\n    \"\
+    rationale\": \"Matching existing amount lacks attached claim evidence. Preserve\
+    \ source labels and BD Bacto qualifiers; source-generic citrate is not evidence\
+    \ for an unspecified alternative hydrate or product.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Na3-citrate\\\",\\n                        \\\"compound_id\\\
+    \": 205,\\n                        \\\"amount\\\": 1,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n    \
+    \                    \\\"mmol_l\\\": 3.87493,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1565\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf\",\n   \
+    \     \"source_locator\": \"Page 1 header\",\n        \"exact_source_quote\":\
+    \ \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df\"\
+    ,\n        \"parsed_text_sha256\": \"f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\"\
+    : \"NaNO3 direct main amount\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"0.25 g in the explicitly 1000 mL main recipe; local 0.25 g/L agrees.\",\n\
+    \    \"rationale\": \"Matching existing amount lacks attached claim evidence.\
+    \ Preserve source labels and BD Bacto qualifiers; source-generic citrate is not\
+    \ evidence for an unspecified alternative hydrate or product.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"NaNO3\\\",\\n                        \\\"compound_id\\\": 187,\\\
+    n                        \\\"amount\\\": 0.25,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.25,\\n         \
+    \               \\\"mmol_l\\\": 2.94135,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1565\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf\",\n   \
+    \     \"source_locator\": \"Page 1 header\",\n        \"exact_source_quote\":\
+    \ \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df\"\
+    ,\n        \"parsed_text_sha256\": \"f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\"\
+    : \"(NH4)2SO4 direct main amount\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"0.25 g in the explicitly 1000 mL main recipe; local 0.25 g/L agrees.\",\n\
+    \    \"rationale\": \"Matching existing amount lacks attached claim evidence.\
+    \ Preserve source labels and BD Bacto qualifiers; source-generic citrate is not\
+    \ evidence for an unspecified alternative hydrate or product.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 0.25,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.25,\\n \
+    \                       \\\"mmol_l\\\": 1.89193,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1565\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf\",\n   \
+    \     \"source_locator\": \"Page 1 header\",\n        \"exact_source_quote\":\
+    \ \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df\"\
+    ,\n        \"parsed_text_sha256\": \"f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\"\
+    : \"Ferric citrate monohydrate direct main amount\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"0.2 g in the explicitly 1000 mL main recipe; local 0.2 g/L agrees.\",\n  \
+    \  \"rationale\": \"Matching existing amount lacks attached claim evidence. Preserve\
+    \ source labels and BD Bacto qualifiers; source-generic citrate is not evidence\
+    \ for an unspecified alternative hydrate or product.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"Ferric citrate monohydrate\\\",\\n                        \\\
+    \"compound_id\\\": 2378,\\n                        \\\"amount\\\": 0.2,\\n   \
+    \                     \\\"unit\\\": \\\"g\\\",\\n                        \\\"\
+    g_l\\\": 0.2,\\n                        \\\"mmol_l\\\": 0.760572,\\n         \
+    \               \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1565\",\n        \"source_url\":\
+    \ \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf\",\n   \
+    \     \"source_locator\": \"Page 1 header\",\n        \"exact_source_quote\":\
+    \ \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df\"\
+    ,\n        \"parsed_text_sha256\": \"f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\"\
+    : \"Na2SO4 direct main amount\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"1 g in the explicitly 1000 mL main recipe; local 1 g/L agrees.\",\n    \"\
+    rationale\": \"Matching existing amount lacks attached claim evidence. Preserve\
+    \ source labels and BD Bacto qualifiers; source-generic citrate is not evidence\
+    \ for an unspecified alternative hydrate or product.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Na2SO4\\\",\\n                        \\\"compound_id\\\": 110,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n                  \
+    \      \\\"mmol_l\\\": 7.04027,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1565\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf\",\n   \
+    \     \"source_locator\": \"Page 1 header\",\n        \"exact_source_quote\":\
+    \ \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df\"\
+    ,\n        \"parsed_text_sha256\": \"f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\"\
+    : \"Na2CO3 direct main amount\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"1.25 g in the explicitly 1000 mL main recipe; local 1.25 g/L agrees.\",\n\
+    \    \"rationale\": \"Matching existing amount lacks attached claim evidence.\
+    \ Preserve source labels and BD Bacto qualifiers; source-generic citrate is not\
+    \ evidence for an unspecified alternative hydrate or product.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"Na2CO3\\\",\\n                        \\\"compound_id\\\"\
+    : 32,\\n                        \\\"amount\\\": 1.25,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.25,\\n \
+    \                       \\\"mmol_l\\\": 11.7938,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1565\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf\",\n   \
+    \     \"source_locator\": \"Page 1 header\",\n        \"exact_source_quote\":\
+    \ \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df\"\
+    ,\n        \"parsed_text_sha256\": \"f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\"\
+    : \"NaHCO3 direct main amount\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"2.5 g in the explicitly 1000 mL main recipe; local 2.5 g/L agrees.\",\n  \
+    \  \"rationale\": \"Matching existing amount lacks attached claim evidence. Preserve\
+    \ source labels and BD Bacto qualifiers; source-generic citrate is not evidence\
+    \ for an unspecified alternative hydrate or product.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"NaHCO3\\\",\\n                        \\\"compound_id\\\"\
+    : 55,\\n                        \\\"amount\\\": 2.5,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2.5,\\n   \
+    \                     \\\"mmol_l\\\": 29.7594,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1565\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf\",\n   \
+    \     \"source_locator\": \"Page 1 header\",\n        \"exact_source_quote\":\
+    \ \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df\"\
+    ,\n        \"parsed_text_sha256\": \"f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\"\
+    : \"Na2S2O3 x 5 H2O direct main amount\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"2 g in the explicitly 1000 mL main recipe; local 2 g/L agrees.\",\n    \"\
+    rationale\": \"Matching existing amount lacks attached claim evidence. Preserve\
+    \ source labels and BD Bacto qualifiers; source-generic citrate is not evidence\
+    \ for an unspecified alternative hydrate or product.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[11]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 12,\\n                        \\\
+    \"compound\\\": \\\"Na2S2O3 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 65,\\n                        \\\"amount\\\": 2,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2,\\n     \
+    \                   \\\"mmol_l\\\": 8.05847,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1565\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf\",\n   \
+    \     \"source_locator\": \"Page 1 header\",\n        \"exact_source_quote\":\
+    \ \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df\"\
+    ,\n        \"parsed_text_sha256\": \"f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\"\
+    : \"NaCl seawater-stage amount\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30.703\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30.703\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 30 g in source stock 3957, not as a direct main concentration. Seawater\
+    \ lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main\
+    \ receives 100 mL seawater.\",\n    \"rationale\": \"Restore nested scope before\
+    \ dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium\
+    \ 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite\
+    \ 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but\
+    \ is not independently measured final stock volume. Nickel is explicitly hexahydrate,\
+    \ unlike local CHEBI:34887.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"NaCl\\\",\\n                  \
+    \      \\\"compound_id\\\": 43,\\n                        \\\"amount\\\": 30,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 29.703,\\n                        \\\"mmol_l\\\": 508.264,\\n     \
+    \                   \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\"\
+    : \"K2HPO4 seawater-stage amount\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.138614\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.138614\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.14 g in source stock 3957, not as a direct main concentration. Seawater\
+    \ lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main\
+    \ receives 100 mL seawater.\",\n    \"rationale\": \"The local number is an undiluted\
+    \ stock-stage value placed at the main root. Preserve the source amount and receiving\
+    \ hierarchy; do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\": 10,\\\
+    n                        \\\"amount\\\": 0.14,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.138614,\\n     \
+    \                   \\\"mmol_l\\\": 0.795826,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\"\
+    : \"CaCl2 x 2 H2O seawater-stage amount\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.238614\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.238614\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.14 g in source stock 3957, not as a direct main concentration. Seawater\
+    \ lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main\
+    \ receives 100 mL seawater.\",\n    \"rationale\": \"Restore nested scope before\
+    \ dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium\
+    \ 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite\
+    \ 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but\
+    \ is not independently measured final stock volume. Nickel is explicitly hexahydrate,\
+    \ unlike local CHEBI:34887.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 7,\\n                        \\\"amount\\\
+    \": 0.14,\\n                        \\\"unit\\\": \\\"g\\\",\\n              \
+    \          \\\"g_l\\\": 0.138614,\\n                        \\\"mmol_l\\\": 0.942855,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"component_or_context\"\
+    : \"MgSO4 x 7 H2O seawater-stage amount\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6.36634\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6.36634\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 3.4 g in source stock 3957, not as a direct main concentration. Seawater\
+    \ lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main\
+    \ receives 100 mL seawater.\",\n    \"rationale\": \"Restore nested scope before\
+    \ dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium\
+    \ 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite\
+    \ 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but\
+    \ is not independently measured final stock volume. Nickel is explicitly hexahydrate,\
+    \ unlike local CHEBI:34887.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 8,\\n                        \\\"amount\\\
+    \": 3.4,\\n                        \\\"unit\\\": \\\"g\\\",\\n               \
+    \         \\\"g_l\\\": 3.36634,\\n                        \\\"mmol_l\\\": 13.6579,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"component_or_context\"\
+    : \"MgCl2 x 6 H2O seawater-stage amount\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.13861\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.13861\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 4.18 g in source stock 3957, not as a direct main concentration. Seawater\
+    \ lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main\
+    \ receives 100 mL seawater.\",\n    \"rationale\": \"The local number is an undiluted\
+    \ stock-stage value placed at the main root. Preserve the source amount and receiving\
+    \ hierarchy; do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 79,\\n                        \\\"amount\\\": 4.18,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 4.13861,\\\
+    n                        \\\"mmol_l\\\": 20.3569,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"component_or_context\"\
+    : \"KCl seawater-stage amount\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.326733\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.326733\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.33 g in source stock 3957, not as a direct main concentration. Seawater\
+    \ lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main\
+    \ receives 100 mL seawater.\",\n    \"rationale\": \"The local number is an undiluted\
+    \ stock-stage value placed at the main root. Preserve the source amount and receiving\
+    \ hierarchy; do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 0.33,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.326733,\\n     \
+    \                   \\\"mmol_l\\\": 4.38273,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"component_or_context\"\
+    : \"NiCl2 x 6 H2O seawater-stage amount\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03049505\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03049505\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.5 mg in source stock 3957, not as a direct main concentration. Seawater\
+    \ lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main\
+    \ receives 100 mL seawater.\",\n    \"rationale\": \"Restore nested scope before\
+    \ dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium\
+    \ 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite\
+    \ 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but\
+    \ is not independently measured final stock volume. Nickel is explicitly hexahydrate,\
+    \ unlike local CHEBI:34887.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[6]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 7,\\\
+    n                        \\\"compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 40,\\n                        \\\"amount\\\
+    \": 0.5,\\n                        \\\"unit\\\": \\\"mg\\\",\\n              \
+    \          \\\"g_l\\\": 0.00049505,\\n                        \\\"mmol_l\\\":\
+    \ 0.00381986,\\n                        \\\"optional\\\": 0\\n               \
+    \     }\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"component_or_context\"\
+    : \"Na2SeO3 x 5 H2O seawater-stage amount\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00079505\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00079505\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.5 mg in source stock 3957, not as a direct main concentration. Seawater\
+    \ lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main\
+    \ receives 100 mL seawater.\",\n    \"rationale\": \"Restore nested scope before\
+    \ dilution. Local five sums combine stock-stage values: NaCl 29.703+1, calcium\
+    \ 0.138614+0.1, magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite\
+    \ 0.00049505+0.0003. The nominal provider 1010 mL seawater basis is explicit but\
+    \ is not independently measured final stock volume. Nickel is explicitly hexahydrate,\
+    \ unlike local CHEBI:34887.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[7]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 8,\\\
+    n                        \\\"compound\\\": \\\"Na2SeO3 x 5 H2O\\\",\\n       \
+    \                 \\\"compound_id\\\": 107,\\n                        \\\"amount\\\
+    \": 0.5,\\n                        \\\"unit\\\": \\\"mg\\\",\\n              \
+    \          \\\"g_l\\\": 0.00049505,\\n                        \\\"mmol_l\\\":\
+    \ 0.00188222,\\n                        \\\"optional\\\": 0\\n               \
+    \     }\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"component_or_context\"\
+    : \"Fe(NH4)2(SO4)2 x 6 H2O seawater-stage amount\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00990099\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00990099\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.01 g in source stock 3957, not as a direct main concentration. Seawater\
+    \ lists 1000 mL water plus 10 mL mineral stock; provider declares 1010 mL. Main\
+    \ receives 100 mL seawater.\",\n    \"rationale\": \"The local number is an undiluted\
+    \ stock-stage value placed at the main root. Preserve the source amount and receiving\
+    \ hierarchy; do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Fe(NH4)2(SO4)2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 247,\\n                        \\\"amount\\\": 0.01,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.00990099,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"component_or_context\"\
+    : \"Nitrilotriacetic acid mineral-stock amount\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 1.5 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"The local number is an undiluted stock-stage\
+    \ value placed at the main root. Preserve the source amount and receiving hierarchy;\
+    \ do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Nitrilotriacetic acid\\\",\\n                        \\\"compound_id\\\
+    \": 189,\\n                        \\\"amount\\\": 1.5,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.5,\\n\
+    \                        \\\"mmol_l\\\": 7.84765,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"component_or_context\"\
+    : \"MgSO4 x 7 H2O mineral-stock amount\",\n    \"decision\": \"correct\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6.36634\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6.36634\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 3 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"Restore nested scope before dilution.\
+    \ Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1,\
+    \ magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003.\
+    \ The nominal provider 1010 mL seawater basis is explicit but is not independently\
+    \ measured final stock volume. Nickel is explicitly hexahydrate, unlike local\
+    \ CHEBI:34887.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 8,\\n                        \\\"amount\\\
+    \": 3,\\n                        \\\"unit\\\": \\\"g\\\",\\n                 \
+    \       \\\"g_l\\\": 3,\\n                        \\\"mmol_l\\\": 12.1716,\\n\
+    \                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"component_or_context\"\
+    : \"MnSO4 x H2O mineral-stock amount\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.5 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"The local number is an undiluted stock-stage\
+    \ value placed at the main root. Preserve the source amount and receiving hierarchy;\
+    \ do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"MnSO4 x H2O\\\",\\n                        \\\"compound_id\\\
+    \": 14,\\n                        \\\"amount\\\": 0.5,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n \
+    \                       \\\"mmol_l\\\": 2.9583,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"component_or_context\"\
+    : \"NaCl mineral-stock amount\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30.703\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30.703\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 1 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"Restore nested scope before dilution.\
+    \ Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1,\
+    \ magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003.\
+    \ The nominal provider 1010 mL seawater basis is explicit but is not independently\
+    \ measured final stock volume. Nickel is explicitly hexahydrate, unlike local\
+    \ CHEBI:34887.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"NaCl\\\",\\n                  \
+    \      \\\"compound_id\\\": 43,\\n                        \\\"amount\\\": 1,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 1,\\n                        \\\"mmol_l\\\": 17.1116,\\n          \
+    \              \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"component_or_context\"\
+    : \"FeSO4 x 7 H2O mineral-stock amount\",\n    \"decision\": \"correct\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.1 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"The local number is an undiluted stock-stage\
+    \ value placed at the main root. Preserve the source amount and receiving hierarchy;\
+    \ do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.359693,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"component_or_context\"\
+    : \"CoSO4 x 7 H2O mineral-stock amount\",\n    \"decision\": \"correct\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.18 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"The local number is an undiluted stock-stage\
+    \ value placed at the main root. Preserve the source amount and receiving hierarchy;\
+    \ do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"CoSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 198,\\n                        \\\"amount\\\": 0.18,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.18,\\\
+    n                        \\\"mmol_l\\\": 1.16132,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"component_or_context\"\
+    : \"CaCl2 x 2 H2O mineral-stock amount\",\n    \"decision\": \"correct\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.238614\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.238614\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.1 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"Restore nested scope before dilution.\
+    \ Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1,\
+    \ magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003.\
+    \ The nominal provider 1010 mL seawater basis is explicit but is not independently\
+    \ measured final stock volume. Nickel is explicitly hexahydrate, unlike local\
+    \ CHEBI:34887.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[6]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 7,\\\
+    n                        \\\"compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 7,\\n                        \\\"amount\\\
+    \": 0.1,\\n                        \\\"unit\\\": \\\"g\\\",\\n               \
+    \         \\\"g_l\\\": 0.1,\\n                        \\\"mmol_l\\\": 0.680203,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"component_or_context\"\
+    : \"ZnSO4 x 7 H2O mineral-stock amount\",\n    \"decision\": \"correct\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.18 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"The local number is an undiluted stock-stage\
+    \ value placed at the main root. Preserve the source amount and receiving hierarchy;\
+    \ do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 0.18,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.18,\\\
+    n                        \\\"mmol_l\\\": 0.625954,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"component_or_context\"\
+    : \"CuSO4 x 5 H2O mineral-stock amount\",\n    \"decision\": \"correct\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.01 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"The local number is an undiluted stock-stage\
+    \ value placed at the main root. Preserve the source amount and receiving hierarchy;\
+    \ do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"CuSO4 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 121,\\n                        \\\"amount\\\": 0.01,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\\
+    n                        \\\"mmol_l\\\": 0.0400503,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"component_or_context\"\
+    : \"AlK(SO4)2 x 12 H2O mineral-stock amount\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.02 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"The local number is an undiluted stock-stage\
+    \ value placed at the main root. Preserve the source amount and receiving hierarchy;\
+    \ do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"AlK(SO4)2 x 12 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 908,\\n                        \\\"amount\\\": 0.02,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.02,\\\
+    n                        \\\"mmol_l\\\": 0.0421596,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"component_or_context\"\
+    : \"H3BO3 mineral-stock amount\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.01 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"The local number is an undiluted stock-stage\
+    \ value placed at the main root. Preserve the source amount and receiving hierarchy;\
+    \ do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"H3BO3\\\",\\n                        \\\"compound_id\\\":\
+    \ 37,\\n                        \\\"amount\\\": 0.01,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\n \
+    \                       \\\"mmol_l\\\": 0.161708,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q32\",\n    \"component_or_context\"\
+    : \"Na2MoO4 x 2 H2O mineral-stock amount\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.01 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"The local number is an undiluted stock-stage\
+    \ value placed at the main root. Preserve the source amount and receiving hierarchy;\
+    \ do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[11]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 12,\\n                        \\\
+    \"compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 9,\\n                        \\\"amount\\\": 0.01,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\n\
+    \                        \\\"mmol_l\\\": 0.0413309,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q33\",\n    \"component_or_context\"\
+    : \"NiCl2 x 6 H2O mineral-stock amount\",\n    \"decision\": \"correct\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03049505\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03049505\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.03 g in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"Restore nested scope before dilution.\
+    \ Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1,\
+    \ magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003.\
+    \ The nominal provider 1010 mL seawater basis is explicit but is not independently\
+    \ measured final stock volume. Nickel is explicitly hexahydrate, unlike local\
+    \ CHEBI:34887.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[12]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 13,\\\
+    n                        \\\"compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 40,\\n                        \\\"amount\\\
+    \": 0.03,\\n                        \\\"unit\\\": \\\"g\\\",\\n              \
+    \          \\\"g_l\\\": 0.03,\\n                        \\\"mmol_l\\\": 0.231483,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q34\",\n    \"component_or_context\"\
+    : \"Na2SeO3 x 5 H2O mineral-stock amount\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00079505\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00079505\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.3 mg in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"Restore nested scope before dilution.\
+    \ Local five sums combine stock-stage values: NaCl 29.703+1, calcium 0.138614+0.1,\
+    \ magnesium sulfate 3.36634+3, nickel 0.00049505+0.03 and selenite 0.00049505+0.0003.\
+    \ The nominal provider 1010 mL seawater basis is explicit but is not independently\
+    \ measured final stock volume. Nickel is explicitly hexahydrate, unlike local\
+    \ CHEBI:34887.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[13]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 14,\\\
+    n                        \\\"compound\\\": \\\"Na2SeO3 x 5 H2O\\\",\\n       \
+    \                 \\\"compound_id\\\": 107,\\n                        \\\"amount\\\
+    \": 0.3,\\n                        \\\"unit\\\": \\\"mg\\\",\\n              \
+    \          \\\"g_l\\\": 0.0003,\\n                        \\\"mmol_l\\\": 0.00114062,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q35\",\n    \"component_or_context\"\
+    : \"Na2WO4 x 2 H2O mineral-stock amount\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Retain 0.4 mg in source stock 241, not as a direct main concentration. Mineral\
+    \ lists 1000 mL water; seawater receives 10 mL mineral, then main receives 100\
+    \ mL seawater.\",\n    \"rationale\": \"The local number is an undiluted stock-stage\
+    \ value placed at the main root. Preserve the source amount and receiving hierarchy;\
+    \ do not multiply by an assumed measured stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[14]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 15,\\n                        \\\
+    \"compound\\\": \\\"Na2WO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 249,\\n                        \\\"amount\\\": 0.4,\\n                   \
+    \     \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0004,\\\
+    n                        \\\"mmol_l\\\": 0.00121267,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q36\",\n    \"component_or_context\"\
+    : \"Main receives seawater\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"100 ml in source stage 3238.\",\n    \"rationale\": \"Restore omitted dose/solvent\
+    \ stage explicitly. Water is a volume, not a solute g/L. Main final volume is\
+    \ explicitly 1000 mL; stock listed water and provider volume declarations remain\
+    \ separately identified.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"solution\\\": \\\"MJ(-N) synthetic seawater\\\",\\\
+    n                        \\\"solution_id\\\": 3957,\\n                       \
+    \ \\\"amount\\\": 100,\\n                        \\\"unit\\\": \\\"ml\\\",\\n\
+    \                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q37\",\n    \"component_or_context\"\
+    : \"Main water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"900 ml in source stage 3238.\",\n    \"rationale\": \"Restore omitted dose/solvent\
+    \ stage explicitly. Water is a volume, not a solute g/L. Main final volume is\
+    \ explicitly 1000 mL; stock listed water and provider volume declarations remain\
+    \ separately identified.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[12]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 13,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 900,\\n                        \\\"unit\\\": \\\"ml\\\",\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q38\",\n    \"component_or_context\"\
+    : \"Seawater receives mineral stock\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"10 ml in source stage 3957.\",\n    \"rationale\": \"Restore omitted dose/solvent\
+    \ stage explicitly. Water is a volume, not a solute g/L. Main final volume is\
+    \ explicitly 1000 mL; stock listed water and provider volume declarations remain\
+    \ separately identified.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[9]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 10,\\\
+    n                        \\\"solution\\\": \\\"Modified Wolin's mineral solution\\\
+    \",\\n                        \\\"solution_id\\\": 241,\\n                   \
+    \     \\\"amount\\\": 10,\\n                        \\\"unit\\\": \\\"ml\\\",\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q39\",\n    \"component_or_context\"\
+    : \"Seawater water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"1000 ml in source stage 3957.\",\n    \"rationale\": \"Restore omitted dose/solvent\
+    \ stage explicitly. Water is a volume, not a solute g/L. Main final volume is\
+    \ explicitly 1000 mL; stock listed water and provider volume declarations remain\
+    \ separately identified.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[10]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 11,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q40\",\n    \"component_or_context\"\
+    : \"Mineral stock water\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"1000 ml in source stage 241.\",\n    \"rationale\": \"Restore omitted dose/solvent\
+    \ stage explicitly. Water is a volume, not a solute g/L. Main final volume is\
+    \ explicitly 1000 mL; stock listed water and provider volume declarations remain\
+    \ separately identified.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[15]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 16,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q41\",\n    \"component_or_context\"\
+    : \"Explicit main final volume\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2]\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2]\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"1000 mL final main recipe, as explicitly labeled by the current primary.\"\
+    ,\n    \"rationale\": \"Do not describe the main denominator as unspecified. This\
+    \ does not prove a measured final volume for either nested stock.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1565\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1565.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1000 ml\",\n        \"snapshot_sha256\": \"121af76278b7fac036dbc1e3ea9808a3d4341c1723eb0f307ff0102f9add89df\"\
+    ,\n        \"parsed_text_sha256\": \"f9933c98e97b84c53986f00ef6b66a69d76af03e12aa83f0e73ee94f8b66017f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q42\",\n    \"component_or_context\"\
+    : \"Nitrogen proportion\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then\
+    \ sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve\
+    \ carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under\
+    \ 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 9.8 - 10.0.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then\
+    \ sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve\
+    \ carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under\
+    \ 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 9.8 - 10.0.\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ],\n    \"proposed_source_representation\": \"100% nitrogen source atmosphere,\
+    \ confined to the main and separately named thiosulfate stock.\",\n    \"rationale\"\
+    : \"Existing main prose is retained; attach claim-scoped source evidence without\
+    \ inventing a sterilization cycle.\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n      \
+    \  \"exact_source_quote\": \"100% N2 gas\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q43\",\n    \"component_or_context\"\
+    : \"Main sparging duration\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then\
+    \ sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve\
+    \ carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under\
+    \ 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 9.8 - 10.0.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then\
+    \ sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve\
+    \ carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under\
+    \ 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 9.8 - 10.0.\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ],\n    \"proposed_source_representation\": \"Source main duration 30–45\
+    \ minutes.\",\n    \"rationale\": \"Existing main prose is retained; attach claim-scoped\
+    \ source evidence without inventing a sterilization cycle.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].steps[0].step\",\n        \"exact_source_quote\": \"30\
+    \ - 45 min\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q44\",\n    \"component_or_context\"\
+    : \"Initial main pH\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then\
+    \ sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve\
+    \ carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under\
+    \ 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 9.8 - 10.0.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then\
+    \ sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve\
+    \ carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under\
+    \ 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 9.8 - 10.0.\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ],\n    \"proposed_source_representation\": \"Main initial pH 10 after carbonate/bicarbonate;\
+    \ distinct from stock endpoints.\",\n    \"rationale\": \"Existing main prose\
+    \ is retained; attach claim-scoped source evidence without inventing a sterilization\
+    \ cycle.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1565api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n        \"\
+    exact_source_quote\": \"adjust pH to 10 with KOH\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q45\",\n    \"component_or_context\"\
+    : \"Complete main pH\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then\
+    \ sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve\
+    \ carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under\
+    \ 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 9.8 - 10.0.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then\
+    \ sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve\
+    \ carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under\
+    \ 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 9.8 - 10.0.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 9.8,\n          \"max\": 10.0\n        },\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 9.8,\n          \"max\": 10.0\n        },\n        \"decision\": \"evidence_only\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": \"Complete main pH\
+    \ 9.8–10.0.\",\n    \"rationale\": \"Existing main prose is retained; attach claim-scoped\
+    \ source evidence without inventing a sterilization cycle.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].steps[0].step\",\n        \"exact_source_quote\": \"Adjust\
+    \ the pH of the complete medium to 9.8 - 10.0.\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q46\",\n    \"component_or_context\"\
+    : \"Mineral initial pH\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": \"First dissolve nitrilotriacetic\
+    \ acid, adjust this stock to pH 6.5 with KOH, then add minerals.\",\n    \"rationale\"\
+    : \"Local preparation_steps[1] wrongly puts a stock-specific adjustment at the\
+    \ main root. Restore the stock scope, preserving the original literal order.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1565api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\",\n \
+    \       \"source_locator\": \"$.data.solutions[2].steps[0].step\",\n        \"\
+    exact_source_quote\": \"adjust pH to 6.5 with KOH\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q47\",\n    \"component_or_context\"\
+    : \"Mineral final pH\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": \"After minerals, adjust\
+    \ mineral stock to pH 7.0 with KOH.\",\n    \"rationale\": \"Local preparation_steps[1]\
+    \ wrongly puts a stock-specific adjustment at the main root. Restore the stock\
+    \ scope, preserving the original literal order.\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"mediadive1565api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1565\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].steps[0].step\",\n        \"exact_source_quote\": \"Adjust\
+    \ final to pH 7.0 with KOH.\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q48\",\n    \"component_or_context\"\
+    : \"Mineral KOH dose\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": \"KOH dose and strength\
+    \ are not quantified; preserve the two ordered stock endpoints.\",\n    \"rationale\"\
+    : \"Local preparation_steps[1] wrongly puts a stock-specific adjustment at the\
+    \ main root. Restore the stock scope, preserving the original literal order.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1565api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\",\n \
+    \       \"source_locator\": \"$.data.solutions[2].steps[0].step\",\n        \"\
+    exact_source_quote\": \"with KOH\",\n        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q49\",\n    \"component_or_context\"\
+    : \"Main KOH dose\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then\
+    \ sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve\
+    \ carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under\
+    \ 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 9.8 - 10.0.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then\
+    \ sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve\
+    \ carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under\
+    \ 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 9.8 - 10.0.\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ],\n    \"proposed_source_representation\": \"KOH dose and strength are unspecified\
+    \ for the main adjustment.\",\n    \"rationale\": \"Do not invent an amount from\
+    \ the pH endpoint.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1565api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n      \
+    \  \"exact_source_quote\": \"adjust pH to 10 with KOH\",\n        \"snapshot_sha256\"\
+    : \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q50\",\n    \"component_or_context\"\
+    : \"Thiosulfate stock strength and receiving volume\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then\
+    \ sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve\
+    \ carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under\
+    \ 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 9.8 - 10.0.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except carbonate, bicarbonate, and thiosulfate, then\
+    \ sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve\
+    \ carbonate and bicarbonate, adjust pH to 10 with KOH, then dispense medium under\
+    \ 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared\
+    \ under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete\
+    \ medium to 9.8 - 10.0.\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ],\n    \"proposed_source_representation\": \"Retain the specified final\
+    \ main thiosulfate mass and separate stock preparation; stock strength and receiving\
+    \ volume are unquantified.\",\n    \"rationale\": \"Preserve the staged filtration\
+    \ instruction rather than inventing a stock recipe or a default autoclave cycle.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1565api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1565\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n        \"\
+    exact_source_quote\": \"Add thiosulfate to the autoclaved medium from an anoxic\
+    \ stock solution prepared under 100% N2 gas and sterilized by filtration.\",\n\
+    \        \"snapshot_sha256\": \"2d98e5a85916b1d49218762278b04368bddb0bfeff39ca2f1be984c373e0287c\"\
+    \n      }\n    ]\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and pinned secondary identifier metadata
+  outcome: concern
+  summary: '27 distinct asserted primary/secondary IDs resolve to matching nonobsolete
+    labels in all inspected layers. Target linkage: 27/30 primary and 26/30 secondary
+    instances; all asserted current mediaingredientmech_chebi_term keys have exact
+    pinned MIM rows. The separate legacy MediaIngredientMech:000171 has unresolved
+    historical correspondence; its current exact absence is a completed lookup. Exact
+    supplied-form mismatch is addressed separately; valid IDs and labels do not establish
+    correct source grounding.'
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131361
+  - chebi131527
+  - chebi144434
+  - chebi26710
+  - chebi29377
+  - chebi31440
+  - chebi31795
+  - chebi32139
+  - chebi32149
+  - chebi32150
+  - chebi32312
+  - chebi32588
+  - chebi33118
+  - chebi34887
+  - chebi44557
+  - chebi53258
+  - chebi62946
+  - chebi63005
+  - chebi63939
+  - chebi75213
+  - chebi75836
+  - chebi76181
+  - chebi86158
+  - chebi86345
+  - chebi86364
+  - chebi86465
+  - chebi91244
+  - legacy-lookup
+  - mimPinnedCatalog
+  - mimPinnedTree
+  details: 'Instance coverage on a 0–100 percent scale, denominator 30: primary 90.00%;
+    secondary 86.67%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: identity
+  area: identity
+  topic: Source accession and maintained ownership
+  outcome: supported
+  summary: Stable CM001041 and its sole normalized owner resolve exactly to DSMZ 1565.
+    No other recipe or parent 141 formulation is interchangeable with the explicitly
+    named mineral subsection.
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - record
+  - id-search
+  - bound-owner-context
+  - owner-0
+  - primary
+  - provider
+  - stock-primary
+  - solution3957
+  - solution241
+- assessment_id: evidence
+  area: evidence
+  topic: Claim-level amount support and source scope
+  outcome: concern
+  summary: The local layers have import provenance but no attached amount evidence.
+    The inventory covers every local concentration and scoped source-only quantity
+    using literal excerpts, exact source locators, units, stages and original capture
+    hashes. Provider-declared volume is kept separate from measured assembled final
+    volume.
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - primary
+  - provider
+  - stock-primary
+  - solution3957
+  - solution241
+- assessment_id: preparation
+  area: completeness
+  topic: Preparation stages, source-only additions and owner differences
+  outcome: concern
+  summary: Main preparation is retained, including thiosulfate filtration after autoclaving.
+    Mineral pH 6.5 then 7.0 is mislocated at preparation_steps[1]; restore nested
+    scope. The separate normalized stock dependency 3957 lacks its nested mineral
+    dose, while 241 retains a repaired composition; these dependencies require source-scoped
+    checks before reuse, not substitution for the primary.
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - primary
+  - provider
+  - stock-primary
+  - solution3957
+  - solution241
+- assessment_id: classification
+  area: scope
+  topic: Composition and physical-state classification
+  outcome: supported
+  summary: COMPLEX/UNDEFINED is supported by yeast extract and tryptone. LIQUID is
+    supported by the formulation. Salts and water alone do not explain the complex
+    components.
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - stock-primary
+  - solution3957
+  - solution241
+- assessment_id: forms
+  area: grounding
+  topic: Supplied forms and chemical specificity
+  outcome: concern
+  summary: Explicit supplied hydrates were compared with OLS formulas. Nickel hexahydrate
+    conflicts with anhydrous CHEBI:34887 in both local primary and CHEBI secondary
+    slots. Ferric citrate monohydrate, hydrated seawater salts and mineral sulfates
+    retain their source forms. Unlinked complex ingredients and tartrate are optional
+    linkage gaps, not evidence of a wrong chemical ID.
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - stock-primary
+  - solution3957
+  - solution241
+- assessment_id: growth
+  area: scope
+  topic: Growth, organism taxonomy and graph claims
+  outcome: not_applicable
+  summary: The title, generic Microbial cultivation application and catalog Aerobic
+    flags are not experimental growth or taxonomy evidence. No growth assertions,
+    current taxonomy IDs or graph membership are added. Explicit source strain qualifiers
+    remain formulation scope only.
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - stock-primary
+  - solution3957
+  - solution241
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 21 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: writer
+  area: provenance
+  topic: Authoritative inputs and current writer scope
+  outcome: concern
+  summary: Current MediaDive code separates first-stage ingredients and stock references
+    and retains provider g_l values, but collects preparation steps from all solutions
+    at the main root. Current DSMZ resolver copies ingredients/solutions but not preparation;
+    current lossless merge requires scientific-field equality. Current cleanup flags
+    disagreeing duplicate values rather than summing them. Current code is context,
+    not proof of a particular historical execution. Correct every exact normalized
+    contributor, attach claim-scoped evidence and append provenance clarification;
+    regenerate derived products only after separately authorized correction.
+  target_ids:
+  - CultureMech:001041
+  evidence_ids:
+  - record
+  - writer-0
+  - writer-1
+  - writer-2
+  - writer-3
+findings:
+- finding_id: f1
+  issue_key: nested-stock-flattening
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Two nested stock stages are flattened into false main concentrations
+  description: All 19 stock-only local ingredient positions are presented as direct
+    main concentrations; five positions also sum values normalized at different stock
+    stages. The 100 mL seawater dose, its internal 10 mL mineral dose and all three
+    water quantities are absent. Main final volume is explicitly 1000 mL; seawater
+    provider normalization 1010 mL does not license undiluted stock values at the
+    main root.
+  target_ids:
+  - CultureMech:001041
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: stock-preparation-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Mineral pH instructions are assigned to the main preparation
+  description: preparation_steps[1] contains mineral-stock NTA/KOH pH 6.5 then 7.0,
+    while the main source requires initial pH 10 and complete pH 9.8–10.0. Root placement
+    obscures which preparation receives the adjustment.
+  target_ids:
+  - CultureMech:001041
+  field_paths:
+  - preparation_steps[1]
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3.5
+  normalization_reason: P3.5 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: nickel-supplied-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Explicit nickel hexahydrate is mapped to anhydrous nickel dichloride
+  description: ingredients[17] names NiCl2 x 6 H2O in both contributing stocks, but
+    primary and CHEBI secondary slots assert CHEBI:34887 with formula Cl2Ni. Label
+    resolution alone does not validate the supplied hydrate.
+  target_ids:
+  - CultureMech:001041
+  field_paths:
+  - ingredients[17].term
+  - ingredients[17].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - chebi34887
+  - primary
+  - provider
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: legacy-secondary-history
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Legacy secondary correspondence remains historically unresolved
+  description: ingredients[4].mediaingredientmech_term asserts MediaIngredientMech:000171
+    for sodium nitrate. The complete current index/catalog/tree lack that exact key.
+    This is a current snapshot gap, not proof that the historical chemical correspondence
+    was wrong.
+  target_ids:
+  - CultureMech:001041
+  field_paths:
+  - ingredients[4].mediaingredientmech_term
+  evidence_ids:
+  - record
+  - legacy-lookup
+  - mimPinnedCatalog
+  - mimPinnedTree
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: 'Correct the exact normalized owner: preserve 11 direct main amounts,
+    restore both nested stock compositions and receiving doses, restore water volumes,
+    and undo all five sums without double counting. Use explicit main volume and qualified
+    stock bases for any later arithmetic. Check normalized stock dependencies 3957/241
+    before linking; append provenance clarification and regenerate only after authorized
+    correction.'
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001041
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Move the exact mineral sequence into its stock scope; retain main preparation
+    and separate thiosulfate filtration. Preserve unquantified KOH and thiosulfate
+    stock strength/volume, and do not import unrelated DSMZ 141 preparation.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001041
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Verify and assign the exact hexahydrate ontology and secondary correspondence
+    in the maintained owner before regeneration. Preserve the two separate source
+    amounts; no unverified replacement ID is proposed.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001041
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Recover the exact historical object or explicit replacement evidence
+    before changing this secondary link. Preserve valid independently supported primary
+    identity and append clarification; do not guess a replacement from a similar label.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001041
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliphilus_transvaalensis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Historical MediaIngredientMech:000171 correspondence is unresolved. Current exact
+  absence is separately a completed lookup; no historical deletion, wrong chemical
+  identity or replacement identifier is inferred.
+- Only exact per-record bound captures are used. Current collection and provider differences
+  do not establish their temporal order or the historical imported formulation.
+- Source stock concentrations, receiving doses and listed water amounts do not independently
+  establish a measured final mixture volume. No density, percent basis, exact hydration,
+  default sterilization cycle or stock volume is invented.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-023
+- generated-medium
+```
