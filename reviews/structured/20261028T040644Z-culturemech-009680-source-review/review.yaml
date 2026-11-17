@@ -1,0 +1,1126 @@
+schema_version: 1.0.0
+review_id: 20261028T040644Z-culturemech-009680-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: Source review of TOGO M3248 basal salts with tetrathionate
+started_at: '2026-10-28T03:58:44.827940Z'
+finished_at: '2026-10-28T04:06:44.350543Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or change the assessed scientific records.
+    Fresh current-source and exact-input review; not experimental validation.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M3248 identity and five basal-salt amounts are supported. Water units,
+  potassium-salt identity, source conditions, classification and generated freshness
+  need curation; scoped source-evidence attachment is also missing. Five major and
+  one minor finding; no source records changed.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/Basal_salts_solution_supplemented_with_tetrathionate.yaml
+    sha256: c05dc923d19483501daccf7862c95822d477ed30cb3f72f00bfcea3f7fb7c60a
+    role: target
+  - path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    sha256: 5ac7e4a6e1dbcbee12e87d3a2146e3a9fbcae00e96f2b3d31394c1ec22d124f2
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Basal_salts_solution_supplemented_with_tetrathionate.md
+    sha256: 859dca3017295bdcf4ba51eed8b4cdbeb75f624281b1f5523b41f80355c458fe
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.md
+    sha256: b3f1ed5358a43cb2b88646e34b940e14d2db12f26d61ddacc20fd7eb54a2645a
+    role: context
+  - path: reports/yaml_record_review/20260921T184832Z-Basal_salts_solution_supplemented_with_tetrathionate.md
+    sha256: c0af6ca7774a9df457d62ca260bf84c28e6c8c09502816df1fac3024c1f31e84
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Complete one-record review including its exact maintained owner, all
+    direct quantities and identities, source conditions, roles, provenance and generated-state
+    consistency.
+  selection: 'Batch 054 item 10 of the first ten Python-sorted uncovered paths after
+    recovery. Successful native list outputs cover 463 of 6,325 current corpus paths;
+    missing historical bundles are not counted. Fresh origin/main base: 9ea7ff33d354e37b791df96a880005153e446ce3.
+    This is a fresh observation, not reconstruction of a lost review.'
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009680
+  exclusions:
+  - target: elemental-sulfur alternative in TOGO comments
+    reason: Different electron-donor variant; its amount and autoclaving condition
+      are not transferred.
+targets:
+- target_id: CultureMech:009680
+  path: data/merge_yaml/merged/Basal_salts_solution_supplemented_with_tetrathionate.yaml
+  label: basal_salts_solution_supplemented_with_tetrathionate
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Basal_salts_solution_supplemented_with_tetrathionate.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Basal_salts_solution_supplemented_with_tetrathionate.yaml
+    --workers 1 --out REVIEW_WORK/batch054/record10/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch054/record10/strict.tsv"
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Basal_salts_solution_supplemented_with_tetrathionate.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Basal_salts_solution_supplemented_with_tetrathionate.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - validate-references
+- check_id: history-scope
+  name: Embedded history review
+  status: passed
+  required: false
+  summary: Both entire embedded histories read and compared. The standalone history-tree
+    validator is not a focused test of these embedded curation entries; no invented
+    focused command was run. No history edited.
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - target
+  - owner
+  - defaulter
+- check_id: structured-adapter
+  name: iModulonDB applicability
+  status: not_applicable
+  required: false
+  summary: No gene, locus, regulator, pathway or transcriptomic dataset is claimed.
+    Expression-module membership would not establish the formulation.
+  target_ids:
+  - CultureMech:009680
+evidence:
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/Basal_salts_solution_supplemented_with_tetrathionate.yaml
+  accessed_at: '2026-10-28T04:05:26.892911Z'
+  support: context_only
+  summary: 'Entire generated MediaRecipe read: eight direct ingredients, six primary
+    CHEBI terms and six MIM CHEBI links, no stocks, source note and TOGO accession,
+    no scoped amount evidence, no pH or preparation, and eleven embedded curation
+    events.'
+  locator: entire file
+  snapshot_sha256: c05dc923d19483501daccf7862c95822d477ed30cb3f72f00bfcea3f7fb7c60a
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+  accessed_at: '2026-10-28T04:05:26.893144Z'
+  support: context_only
+  summary: Entire normalized owner read. It retains the same eight amounts and classification
+    but additionally assigns tetrathionate(2-) CHEBI:15226 and records the August
+    20 MIM grounding event.
+  locator: entire file
+  snapshot_sha256: 5ac7e4a6e1dbcbee12e87d3a2146e3a9fbcae00e96f2b3d31394c1ec22d124f2
+- evidence_id: mim
+  kind: database
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  accessed_at: '2026-10-28T04:05:26.893479Z'
+  support: context_only
+  summary: Exact-label rows resolve the six linked ingredients; Tetrathionate maps
+    to the bare ion, whereas Potassium tetrathionate and K2S4O6 map to CHEBI:86466.
+    Generic name matching is insufficient to identify the supplied salt.
+  locator: label rows NH4Cl, K2HPO4, MgCl2.6H2O, KCl, Ca(NO3)2, HCl, Tetrathionate,
+    Potassium tetrathionate, K2S4O6
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-metadata
+  kind: database
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  accessed_at: '2026-10-28T04:05:26.893508Z'
+  support: context_only
+  summary: Packaged snapshot SHA256 and 9077 data-row count independently match the
+    CSV; source commit is the metadata-pinned MIM revision, not a claim about its
+    latest upstream state.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  accessed_at: '2026-10-28T04:05:26.893544Z'
+  support: context_only
+  summary: Current _parse_unit already maps l to L; do not repeat the historical recommendation
+    to add that mapping. The converter defaults medium_type to COMPLEX. _extract_ph
+    reads a top-level ph, while this captured API has meta.ph; verify the ingestion
+    boundary before altering that code.
+  locator: _ingredient_from_item; _parse_unit; _extract_ph; _convert_to_culturemech
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: generator
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  accessed_at: '2026-10-28T04:05:26.893570Z'
+  support: context_only
+  summary: Current single-source merge copies the normalized recipe and adds merge
+    metadata. The selected generated bytes predate the normalized grounding event;
+    this is stale output, not evidence that the present merger discards the term.
+  locator: RecipeMerger.merge_group single-source branch
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: defaulter
+  kind: record_content
+  reference: src/culturemech/validation/schema_defaulter.py
+  accessed_at: '2026-10-28T04:05:26.893594Z'
+  support: context_only
+  summary: A missing ingredient concentration receives variable/VARIABLE; this explains
+    the recorded default event but is not evidence for an acid dose.
+  locator: ingredient concentration default branch
+  snapshot_sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+- evidence_id: schema
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  accessed_at: '2026-10-28T04:05:26.893654Z'
+  support: context_only
+  summary: The current ConcentrationUnitEnum includes L for volume-only entries and
+    VARIABLE; reviewed source water volume need not be represented as a mass concentration.
+  locator: ConcentrationUnitEnum
+  snapshot_sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+- evidence_id: history-record
+  kind: prior_review
+  reference: reports/yaml_record_review/20260921T184832Z-Basal_salts_solution_supplemented_with_tetrathionate.md
+  accessed_at: '2026-10-28T04:05:26.893682Z'
+  support: context_only
+  summary: Historical report read in full as a lead only; its assertions are reassessed
+    against current bytes and fresh source captures, and its old validator/runtime
+    statements are not current check results.
+  snapshot_sha256: c0af6ca7774a9df457d62ca260bf84c28e6c8c09502816df1fac3024c1f31e84
+- evidence_id: history-target-amounts
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Basal_salts_solution_supplemented_with_tetrathionate.md
+  accessed_at: '2026-10-28T04:05:26.893710Z'
+  support: context_only
+  summary: Historical report read in full as a lead only; its assertions are reassessed
+    against current bytes and fresh source captures, and its old validator/runtime
+    statements are not current check results.
+  snapshot_sha256: 859dca3017295bdcf4ba51eed8b4cdbeb75f624281b1f5523b41f80355c458fe
+- evidence_id: history-owner-amounts
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.md
+  accessed_at: '2026-10-28T04:05:26.893735Z'
+  support: context_only
+  summary: Historical report read in full as a lead only; its assertions are reassessed
+    against current bytes and fresh source captures, and its old validator/runtime
+    statements are not current check results.
+  snapshot_sha256: b3f1ed5358a43cb2b88646e34b940e14d2db12f26d61ddacc20fd7eb54a2645a
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch054/record10/identity-search.json
+  accessed_at: '2026-10-28T04:05:27.238799Z'
+  support: context_only
+  summary: Exactly one normalized owner and one generated target carry this ID in
+    the searched corpus. The registry row points to that same owner.
+  snapshot_sha256: 7932f521d22be52dd862f41684325f81af06a45daa6844d668d95234f746f315
+  search_scope: Exact anchored ID search over all normalized and merged YAML paths,
+    including hidden and ignored files; ID registry independently read. This is not
+    a global existence claim.
+- evidence_id: registry
+  kind: record_content
+  reference: data/culturemech_id_registry.tsv
+  accessed_at: '2026-10-28T04:05:27.239379Z'
+  support: context_only
+  summary: The CultureMech:009680 registry row names the exact normalized owner.
+  locator: culturemech_id=CultureMech:009680
+  snapshot_sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+- evidence_id: togo
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3248
+  accessed_at: '2026-10-28T03:59:13.239373Z'
+  support: supports
+  summary: Fresh complete TOGO M3248 API response identifies this medium and lists
+    eight direct components. meta.src_url is empty; the comments do not identify the
+    strain or a DOI/PMID. Elemental sulfur is an alternative, excluded from this tetrathionate
+    target.
+  locator: $.meta; $.components[0].items; $.comments
+  snapshot_sha256: 55381578d2cc16a1b09788aae12258422ae032555c48f997fb19066716428dc2
+- evidence_id: q0
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3248
+  accessed_at: '2026-10-28T03:59:13.239373Z'
+  support: supports
+  summary: Ammonium chloride amount is directly expressed per liter.
+  locator: $.comments[0].comment
+  quote: 0.6 g/L NH4Cl
+  snapshot_sha256: 55381578d2cc16a1b09788aae12258422ae032555c48f997fb19066716428dc2
+- evidence_id: q1
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3248
+  accessed_at: '2026-10-28T03:59:13.239373Z'
+  support: supports
+  summary: Dipotassium hydrogen phosphate amount is directly expressed per liter.
+  locator: $.comments[0].comment
+  quote: 0.1 g/L K2HPO4
+  snapshot_sha256: 55381578d2cc16a1b09788aae12258422ae032555c48f997fb19066716428dc2
+- evidence_id: q2
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3248
+  accessed_at: '2026-10-28T03:59:13.239373Z'
+  support: supports
+  summary: Magnesium chloride amount explicitly retains six waters of hydration.
+  locator: $.comments[0].comment
+  quote: 0.2 g/L MgCl2.6H2O
+  snapshot_sha256: 55381578d2cc16a1b09788aae12258422ae032555c48f997fb19066716428dc2
+- evidence_id: q3
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3248
+  accessed_at: '2026-10-28T03:59:13.239373Z'
+  support: supports
+  summary: The comment uses KCI typography; the structured component_name is KCl and
+    the label is potassium chloride, resolving identity without silently altering
+    this quotation.
+  locator: $.comments[0].comment
+  quote: 0.10 g/L KCI
+  snapshot_sha256: 55381578d2cc16a1b09788aae12258422ae032555c48f997fb19066716428dc2
+- evidence_id: q4
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3248
+  accessed_at: '2026-10-28T03:59:13.239373Z'
+  support: supports
+  summary: Calcium nitrate amount is explicit; no hydrate is named.
+  locator: $.comments[0].comment
+  quote: 0.01 g/L Ca(NO3)2
+  snapshot_sha256: 55381578d2cc16a1b09788aae12258422ae032555c48f997fb19066716428dc2
+- evidence_id: q6
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3248
+  accessed_at: '2026-10-28T03:59:13.239373Z'
+  support: supports
+  summary: The named supplement is potassium tetrathionate at the stated molarity,
+    not the counterion-free tetrathionate ion.
+  locator: $.comments[0].comment
+  quote: 20 mM K2S4O6
+  snapshot_sha256: 55381578d2cc16a1b09788aae12258422ae032555c48f997fb19066716428dc2
+- evidence_id: q5
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3248
+  accessed_at: '2026-10-28T03:59:13.239373Z'
+  support: supports
+  summary: This is water added to prepare the medium, not an explicitly stated final
+    mixed volume after acid addition.
+  locator: $.comments[1].comment
+  quote: 1 L
+  snapshot_sha256: 55381578d2cc16a1b09788aae12258422ae032555c48f997fb19066716428dc2
+- evidence_id: ph
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3248
+  accessed_at: '2026-10-28T03:59:13.239373Z'
+  support: supports
+  summary: Source pH is 4, adjusted with trace-metal-grade HCl; no acid concentration
+    or fixed dose is supplied.
+  locator: $.comments[1].comment
+  quote: adjusted to 4
+  snapshot_sha256: 55381578d2cc16a1b09788aae12258422ae032555c48f997fb19066716428dc2
+- evidence_id: sterilization
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M3248
+  accessed_at: '2026-10-28T03:59:13.239373Z'
+  support: supports
+  summary: The tetrathionate preparation uses filtration; the autoclaving instruction
+    belongs to the separate elemental-sulfur alternative.
+  locator: $.comments[2].comment
+  quote: filter sterilized
+  snapshot_sha256: 55381578d2cc16a1b09788aae12258422ae032555c48f997fb19066716428dc2
+- evidence_id: chebi-31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  accessed_at: '2026-10-28T03:59:13.144924Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride; formula ['Cl.H4N'] and charge
+    [0.0] inspected along with synonyms and definition.
+  locator: $._embedded.terms[0]
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi-131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  accessed_at: '2026-10-28T03:59:13.358880Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate; formula ['HO4P.2K']
+    and charge [0.0] inspected along with synonyms and definition.
+  locator: $._embedded.terms[0]
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi-86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  accessed_at: '2026-10-28T03:59:13.239234Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate; formula ['2Cl.6H2O.Mg']
+    and charge [0.0] inspected along with synonyms and definition.
+  locator: $._embedded.terms[0]
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi-32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  accessed_at: '2026-10-28T03:59:13.865336Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride; formula ['Cl.K'] and charge
+    [0.0] inspected along with synonyms and definition.
+  locator: $._embedded.terms[0]
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi-64205
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64205
+  accessed_at: '2026-10-28T03:59:13.987081Z'
+  support: supports
+  summary: CHEBI:64205 resolves to calcium nitrate; formula ['Ca.2NO3'] and charge
+    [0.0] inspected along with synonyms and definition.
+  locator: $._embedded.terms[0]
+  snapshot_sha256: cf808711c3d8005562d7cb492a9da7abcb7a9ae6334934a1f4c5bafd1bd86062
+- evidence_id: chebi-17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  accessed_at: '2026-10-28T03:59:14.135096Z'
+  support: supports
+  summary: CHEBI:17883 resolves to hydrogen chloride; formula ['HCl'] and charge [0.0]
+    inspected along with synonyms and definition.
+  locator: $._embedded.terms[0]
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi-15226
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15226
+  accessed_at: '2026-10-28T03:59:14.197675Z'
+  support: supports
+  summary: CHEBI:15226 resolves to tetrathionate(2-); formula ['O6S4'] and charge
+    [-2.0] inspected along with synonyms and definition.
+  locator: $._embedded.terms[0]
+  snapshot_sha256: 525cd72903813cca5d019b1b2a19cafddc6ce9e812bb5a10bc4f780dc63bacdc
+- evidence_id: chebi-86466
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86466
+  accessed_at: '2026-10-28T03:59:14.510239Z'
+  support: supports
+  summary: CHEBI:86466 resolves to potassium tetrathionate; formula ['2K.O6S4'] and
+    charge [0.0] inspected along with synonyms and definition.
+  locator: $._embedded.terms[0]
+  snapshot_sha256: 8615f5a4f3b7210ec429cec78659e70bc7472cbd8573475ac23c212408617f01
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch054/record10/validate-schema-result.json
+  accessed_at: '2026-10-28T03:58:46.352327Z'
+  support: supports
+  summary: Original command, actual times, exit and full stdout/stderr retained; output
+    read in full.
+  snapshot_sha256: cdfd1f8b8cf493f27409b24e1b5bbeed10dca22d7073ce6c8e185f8aac06e228
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch054/record10/validate-strict-result.json
+  accessed_at: '2026-10-28T03:58:47.511116Z'
+  support: supports
+  summary: Original command, actual times, exit and full stdout/stderr retained; output
+    read in full.
+  snapshot_sha256: cf54a1210102e922abe1926216bac57108ab964cfc8439d8eb6aebdc94bd8d8c
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch054/record10/validate-terms-result.json
+  accessed_at: '2026-10-28T03:58:50.122106Z'
+  support: supports
+  summary: Original command, actual times, exit and full stdout/stderr retained; output
+    read in full.
+  snapshot_sha256: 94a15a8f002fbda4e08f4725e4aa3dcb85d69763f3770adf41d09e6a13f4b69e
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch054/record10/validate-references-result.json
+  accessed_at: '2026-10-28T03:58:51.175317Z'
+  support: supports
+  summary: Original command, actual times, exit and full stdout/stderr retained; output
+    read in full.
+  snapshot_sha256: 2ab1d4439922fc4b8914802955d78ed7ab24ac5bca3fbe3d414aa00204724dd0
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Accession, record kind, generated ownership and variant boundary
+  outcome: supported
+  summary: The reviewed object is one generated MediaRecipe for TOGO M3248, owned
+    by the single normalized file; the word solution in its title does not make it
+    a standalone stock.
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - target
+  - owner
+  - registry
+  - identity-search
+  - togo
+  - generator
+  details: The TOGO title, identifier, ingredient set and single-owner lineage agree.
+    Sulfur-only preparation is a distinct alternative; do not import its amount or
+    autoclaving time into this target. The formulation fingerprint is not proof of
+    concentration equivalence.
+- assessment_id: quantities
+  area: quantity
+  topic: Every direct amount in both target and maintained owner
+  outcome: concern
+  summary: 'All sixteen concentration fields were assessed: ten basal-salt values
+    are source-verified, two tetrathionate molarities are verified with a chemical-identity
+    correction, two water mass units need correction, and two acid entries are source-unquantified
+    pH adjustments.'
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - target
+  - owner
+  - togo
+  - q0
+  - q1
+  - q2
+  - q3
+  - q4
+  - q5
+  - q6
+  - ph
+  - schema
+  details: There are eight direct ingredients in each file, no solutions, nested compositions
+    or variant amounts. Five basal-salt concentrations are explicitly g/L in the source
+    comment, so they do not depend on inferring a final volume from the water row.
+    No density, molecular-weight, percentage, stock-strength or final-volume conversion
+    was performed.
+  dimensions:
+  - name: quantity-0
+    value: verified
+    definition: 'Both generated and normalized ingredients[0].concentration: NH4Cl;
+      existing {"value": "0.6", "unit": "G_PER_L"}. Source directly states the same
+      g/L amount.'
+    evidence_ids:
+    - q0
+  - name: quantity-1
+    value: verified
+    definition: 'Both generated and normalized ingredients[1].concentration: K2HPO4;
+      existing {"value": "0.1", "unit": "G_PER_L"}. Source directly states the same
+      g/L amount.'
+    evidence_ids:
+    - q1
+  - name: quantity-2
+    value: verified
+    definition: 'Both generated and normalized ingredients[2].concentration: MgCl2.6H2O;
+      existing {"value": "0.2", "unit": "G_PER_L"}. Exact hexahydrate form and g/L
+      amount retained.'
+    evidence_ids:
+    - q2
+  - name: quantity-3
+    value: verified
+    definition: 'Both generated and normalized ingredients[3].concentration: KCl;
+      existing {"value": "0.1", "unit": "G_PER_L"}. API component KCl resolves the
+      comment typography KCI; numerical value agrees.'
+    evidence_ids:
+    - q3
+  - name: quantity-4
+    value: verified
+    definition: 'Both generated and normalized ingredients[4].concentration: Ca(NO3)2;
+      existing {"value": "0.01", "unit": "G_PER_L"}. Source formula has no hydrate;
+      retain the directly stated g/L value.'
+    evidence_ids:
+    - q4
+  - name: quantity-5
+    value: correct
+    definition: 'Both generated and normalized ingredients[5].concentration: Deionized
+      water; existing {"value": "1", "unit": "G_PER_L"}. Replace mass concentration
+      with the source-explicit water amount 1 L, using volume unit L and preparation-stage
+      context; do not assert a final mixed volume.'
+    evidence_ids:
+    - q5
+  - name: quantity-6
+    value: verified
+    definition: 'Both generated and normalized ingredients[6].concentration: Tetrathionate;
+      existing {"value": "20", "unit": "MILLIMOLAR"}. 20 MILLIMOLAR is supported for
+      K2S4O6; fix the identity while retaining the molarity.'
+    evidence_ids:
+    - q6
+  - name: quantity-7
+    value: not_quantified
+    definition: 'Both generated and normalized ingredients[7].concentration: HCl;
+      existing {"value": "variable", "unit": "VARIABLE"}. No stock strength or fixed
+      dose is supplied. Describe acid addition to the stated pH, with evidence; variable
+      is a default, not a measured dose.'
+    evidence_ids:
+    - ph
+    - defaulter
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied chemical forms, identifier labels and MIM linkage
+  outcome: concern
+  summary: Six existing primary CHEBI IDs and labels resolve correctly for their stated
+    chemical identities; the additional normalized tetrathionate ion term is too broad
+    for the supplied potassium salt.
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - target
+  - owner
+  - mim
+  - mim-metadata
+  - chebi-31206
+  - chebi-131527
+  - chebi-86345
+  - chebi-32588
+  - chebi-64205
+  - chebi-17883
+  - chebi-15226
+  - chebi-86466
+  - q6
+  details: HCl CHEBI:17883 identifies the solute and does not establish acid-solution
+    strength. No replacement stock concentration is inferred. The source explicitly
+    states potassium tetrathionate, while the owner grounds generic Tetrathionate
+    to the charge -2 ion; CHEBI:86466 denotes the neutral dipotassium salt. Water
+    and tetrathionate have no MIM link in the selected generated record; linkage is
+    not a scientific accuracy score.
+  metrics:
+  - name: Generated primary CHEBI linkage
+    value: 75.0
+    unit: percent
+    definition: Six of eight direct ingredient instances have a primary term.id.
+    denominator: 8
+    minimum: 0
+    maximum: 100
+  - name: Generated MIM CHEBI linkage
+    value: 75.0
+    unit: percent
+    definition: Six of eight direct ingredient instances have mediaingredientmech_chebi_term.id.
+    denominator: 8
+    minimum: 0
+    maximum: 100
+- assessment_id: preparation
+  area: completeness
+  topic: pH, acid role and sterilization boundary
+  outcome: concern
+  summary: The source pH and tetrathionate-specific filtration requirement are absent
+    from both local formulations.
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - target
+  - owner
+  - ph
+  - sterilization
+  - togo
+  - defaulter
+  details: The source assigns trace-metal-grade HCl to pH adjustment; the imported
+    Solvating media annotation does not describe that role adequately. No incubation
+    temperature, time, atmosphere, storage duration, vessel or fixed HCl dose is established
+    by the inspected source. Optional missing values are not filled from typical practice.
+- assessment_id: classification
+  area: representation
+  topic: Medium type, composition and physical state
+  outcome: concern
+  summary: The liquid state and cultivation application are consistent with the aqueous
+    source; COMPLEX and UNDEFINED conflict with its chemically specified inorganic
+    formulation.
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - target
+  - owner
+  - togo
+  - importer
+  details: Defined composition is an inference from the identified salts, water and
+    acid adjustment, rather than an asserted organism-growth result. Source role annotations
+    for nitrogen, phosphate buffer, minerals and water are retained as database annotations;
+    no organism-specific nutritional essentiality or optimality is inferred.
+- assessment_id: provenance
+  area: provenance
+  topic: Source claims, existing repairs, references and history
+  outcome: concern
+  summary: The source note is resolvable, but no claim-level evidence is attached
+    to the eight quantities or source conditions. The generated target also lacks
+    the later normalized grounding event.
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - target
+  - owner
+  - togo
+  - history-record
+  - history-target-amounts
+  - history-owner-amounts
+  - generator
+  - importer
+  - validate-references
+  details: The September report is historical, not a new source capture; October reports
+    explicitly source-checked 0/8 amount rows and are not scientific verification.
+    The current importer already supports L, so a new L mapping is not requested.
+    The existing normalized grounding is acknowledged but needs salt-specific correction
+    before regeneration. Both reference validation and the target reference collection
+    have zero scoped citation checks; that passing result does not verify the recipe
+    against the TOGO source.
+- assessment_id: growth
+  area: scope
+  topic: Organisms, growth evidence and unsupported completeness additions
+  outcome: supported
+  summary: No organism-specific growth assertion is made, and none is added.
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - target
+  - owner
+  - togo
+  details: The complete API mentions an unnamed strain but provides no scientific
+    name, strain identifier, original source URL, DOI or PMID. Empty organism fields
+    are appropriate under this evidence limit. No taxonomic parent is guessed, no
+    experimental growth result is inferred from the medium name, and the source does
+    not justify inventing citations.
+- assessment_id: schema
+  area: schema
+  topic: Native validation scope
+  outcome: supported
+  summary: The four required native commands pass; strict validation reports one file
+    and no errors.
+  target_ids:
+  - CultureMech:009680
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+  details: The canonical term gate does not bind all chemistry term slots, so separate
+    OLS identity and formula checks supplied the chemistry assessment. A zero-reference
+    pass is not source validation. These deterministic results do not override the
+    scientific findings.
+findings:
+- finding_id: F1
+  issue_key: CM009680-water-volume
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Water volume is encoded as a mass concentration
+  description: Both local records store 1 G_PER_L deionized water; the source states
+    an input amount of 1 L. This is not a verified final-volume marker and does not
+    justify a density-based conversion. Current schema and importer already support
+    the volume unit L.
+  target_ids:
+  - CultureMech:009680
+  field_paths:
+  - ingredients[5].concentration
+  evidence_ids:
+  - target
+  - owner
+  - q5
+  - schema
+  - importer
+  rule_id: concentration-evidence-contract
+  native_severity: major
+  normalization_reason: The discrepancy changes the interpretation or completeness
+    of the sourced formulation.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+- finding_id: F2
+  issue_key: CM009680-potassium-tetrathionate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The supplied potassium salt is not represented exactly
+  description: The selected target has ungrounded generic Tetrathionate; the maintained
+    owner adds CHEBI:15226 for the bare ion. The source explicitly identifies K2S4O6,
+    which is represented by CHEBI:86466. Preserve the verified 20 mM amount while
+    correcting exact chemical identity.
+  target_ids:
+  - CultureMech:009680
+  field_paths:
+  - ingredients[6].preferred_term
+  - ingredients[6].term
+  evidence_ids:
+  - target
+  - owner
+  - q6
+  - mim
+  - chebi-15226
+  - chebi-86466
+  rule_id: single-record-checklist
+  native_severity: major
+  normalization_reason: The discrepancy changes the interpretation or completeness
+    of the sourced formulation.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+- finding_id: F3
+  issue_key: CM009680-source-conditions
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source pH and tetrathionate preparation conditions are missing
+  description: Neither local record captures source pH4 or the tetrathionate filtration
+    requirement. HCl appears as a default variable concentration and generic solvent
+    annotation rather than the stated pH-adjustment context. Do not transfer the elemental-sulfur
+    autoclaving instruction.
+  target_ids:
+  - CultureMech:009680
+  field_paths:
+  - ph_value
+  - preparation_steps
+  - ingredients[7].notes
+  - ingredients[7].concentration
+  evidence_ids:
+  - target
+  - owner
+  - ph
+  - sterilization
+  - togo
+  - defaulter
+  rule_id: P3.4/P3.6
+  native_severity: P3
+  normalization_reason: Escalated to major because these source-explicit conditions
+    materially distinguish the acidified tetrathionate formulation and its preparation
+    from the sulfur alternative.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+- finding_id: F4
+  issue_key: CM009680-defined-classification
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Defined inorganic formulation is labelled complex and undefined
+  description: Both local records classify this chemically specified salts formulation
+    as COMPLEX/UNDEFINED. The ingredients and source context support defined composition;
+    imported defaults should not substitute for a classification decision.
+  target_ids:
+  - CultureMech:009680
+  field_paths:
+  - medium_type
+  - composition_type
+  evidence_ids:
+  - target
+  - owner
+  - togo
+  - importer
+  rule_id: single-record-checklist
+  native_severity: major
+  normalization_reason: The discrepancy changes the interpretation or completeness
+    of the sourced formulation.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+- finding_id: F5
+  issue_key: CM009680-stale-merge
+  category: consistency
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated record predates the maintained grounding update
+  description: The normalized owner has an August20 grounding event and term on tetrathionate,
+    while the generated record retains the August6 state without them. Correct the
+    salt identity first, then regenerate; blindly propagating the present ion grounding
+    would retain the chemical error.
+  target_ids:
+  - CultureMech:009680
+  field_paths:
+  - ingredients[6].term
+  - curation_history
+  - merged_from
+  evidence_ids:
+  - target
+  - owner
+  - generator
+  rule_id: single-record-checklist
+  native_severity: major
+  normalization_reason: The discrepancy changes the interpretation or completeness
+    of the sourced formulation.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+- finding_id: F6
+  issue_key: CM009680-claim-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Supported amounts and conditions lack attached source evidence
+  description: The source URL exists in notes, but neither record attaches exact source
+    evidence to amount or preparation claims. The zero-reference validator pass does
+    not close this gap. Add scoped persistent-source references and short excerpts
+    without inventing an original paper or strain identity.
+  target_ids:
+  - CultureMech:009680
+  field_paths:
+  - ingredients[*].evidence
+  - evidence
+  - references
+  evidence_ids:
+  - target
+  - owner
+  - togo
+  - validate-references
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: Escalated to minor because a recoverable source exists, yet
+    the omitted claim linkage makes the material source corrections difficult to audit.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+actions:
+- action_id: A1
+  description: Correct the normalized water row to the source amount 1 L and retain
+    that it is input solvent volume, not a proven final mixed volume.
+  finding_ids:
+  - F1
+  target_ids:
+  - CultureMech:009680
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+  acceptance_checks:
+  - The corrected amount uses existing schema-supported volume semantics, cites the
+    exact source context, and passes native schema and strict validation.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on the corrected normalized record.
+- action_id: A2
+  description: Curate the normalized supplement as potassium tetrathionate with the
+    verified salt identifier while preserving 20 mM; review any MIM linkage against
+    the exact supplied form.
+  finding_ids:
+  - F2
+  target_ids:
+  - CultureMech:009680
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+  acceptance_checks:
+  - The CHEBI label/formula and source K2S4O6 agree; the bare-ion ID is not used for
+    the added salt.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on the corrected normalized record.
+- action_id: A3
+  description: Add source pH, acid-adjustment role and tetrathionate-specific preparation
+    evidence to the maintained owner.
+  finding_ids:
+  - F3
+  target_ids:
+  - CultureMech:009680
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+  acceptance_checks:
+  - The source-specific filtration instruction is retained, sulfur-only conditions
+    remain excluded, and no fixed acid strength or dose is invented.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on the corrected normalized record.
+- action_id: A4
+  description: Reassess normalized composition and medium-type classification from
+    the sourced chemically specified formulation.
+  finding_ids:
+  - F4
+  target_ids:
+  - CultureMech:009680
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+  acceptance_checks:
+  - Defined composition and corresponding native type are justified with source evidence
+    and validate against the current schema.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on the corrected normalized record.
+- action_id: A5
+  description: Attach scoped source evidence and resolvable bibliographic metadata
+    to the supported amounts and preparation claims.
+  finding_ids:
+  - F6
+  target_ids:
+  - CultureMech:009680
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+  acceptance_checks:
+  - Each retained or corrected amount has a traceable source locator; unknown paper
+    authors, year and organism remain explicit rather than invented.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on the corrected normalized record.
+- action_id: A6
+  description: Regenerate the derived record after the maintained source corrections;
+    verify exact source ownership and updated grounding without introducing a new
+    formulation.
+  finding_ids:
+  - F5
+  target_ids:
+  - CultureMech:009680
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_salts_solution_supplemented_with_tetrathionate.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  acceptance_checks:
+  - Run just verify-merges and just audit-merge-freshness; inspect the regenerated
+    target against its normalized owner and sourced formulation.
+  generator: src/culturemech/merge/merge_recipes.py
+  depends_on:
+  - A1
+  - A2
+  - A3
+  - A4
+  - A5
+limitations:
+- The TOGO API does not identify the unnamed strain or an original publication URL/DOI/PMID;
+  no growth assertion or bibliographic identity is inferred.
+- No final mixed volume, HCl stock strength or fixed acid dose is established; none
+  was calculated.
+- The separate standalone history-tree validator is not a focused embedded-history
+  validator. Embedded events were read and compared without editing.
+- The review establishes source correspondence and bounded curation needs; it does
+  not experimentally validate cultivation or claim organism-specific optimality.
+notes:
+- All scientific input bytes still match the pre-assessment native inspection. Required
+  command results are fresh captures, not reused from historical reports.
+- Current importer L support is credited. Validate the meta.ph ingestion boundary
+  before changing the importer; this review does not assert that every upstream loader
+  presents the same shape.
+- Exact primary API and OLS responses with URL, UTC access and SHA256 are retained
+  in REVIEW_WORK/batch054/record10/sources.
+- No records, histories, generated products or shared checkout files were edited.
+tags:
+- source-review
+- generated-record
+- togo
+- tetrathionate
+- batch-054

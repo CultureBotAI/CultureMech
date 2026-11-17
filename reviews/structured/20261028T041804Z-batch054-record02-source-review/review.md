@@ -1,0 +1,1259 @@
+# BTT medium: preserve JCM and DSM variants and refresh stale evidence
+
+- Review: 20261028T041804Z-batch054-record02-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T03:58:33.602968Z
+- Finished UTC: 2026-10-28T04:18:04.251843Z
+- Reviewer: Codex independent source reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The selected JCM1178 formulation has 15 g/L agar and pH 5.5; DSM1109 has 20 g/L agar and pH 5.5–6.0. Existing CONCENTRATION_VARIANT links are credited. Two current provider responses exactly recover the historical raw digests cited in maintained owners, but the generated target omits their evidence and newer grounding. Water and source-scoped preparation remain incomplete.
+
+## Scope And Provenance
+
+Full selected record and exact maintained contributors; external source limits explicitly retained.
+
+Selection: Actual batch054 native selection index 02.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:002349 | data/merge_yaml/merged/BTT_MEDIUM.yaml | generated | btt_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:002349 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-strict | passed | True | CultureMech:002349 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-terms | passed | True | CultureMech:002349 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-references | passed | True | CultureMech:002349 | Native reference checker performed zero reference checks; this is not claim authentication. |
+
+## Scientific And Domain Assessments
+
+### Two supported formulations with existing variant links
+
+identity: supported. Targets: CultureMech:002349.
+
+Selected JCM1178 amounts and pH match current JCM and its provider. DSM1109 has distinct agar/pH and optional MES. Target variant_children and maintained parent_media already label CONCENTRATION_VARIANT; this is credited rather than described as absent.
+
+### Exact historical raw recovery
+
+evidence: supported. Targets: CultureMech:002349.
+
+Both current API response hashes exactly match owner citations and all ten snippets literally occur in those bytes. This authenticates the quoted provider objects, with fresh capture times kept separate from historical access annotations.
+
+### Complete quantity and numeric preparation audit
+
+quantity: concern. Targets: CultureMech:002349.
+
+Every local concentration field has an explicit disposition; source-only doses, batch volumes and conditional preparation are separate from receiving-medium rates.
+
+[{"quantity_id": "q1", "topic": "Glucose", "source": {"evidence_id": "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523", "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "10", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q2", "topic": "Yeast extract", "source": {"evidence_id": "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523", "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q3", "topic": "Meat extract", "source": {"evidence_id": "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523", "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q4", "topic": "Casitone", "source": {"evidence_id": "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523", "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q5", "topic": "Agar", "source": {"evidence_id": "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523", "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "15", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q6", "topic": "Glucose", "source": {"evidence_id": "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523", "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "10", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q7", "topic": "Yeast extract", "source": {"evidence_id": "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523", "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q8", "topic": "Meat extract", "source": {"evidence_id": "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523", "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q9", "topic": "Casitone", "source": {"evidence_id": "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523", "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q10", "topic": "Agar", "source": {"evidence_id": "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523", "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "15", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q11", "topic": "Glucose", "source": {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume. Current DSM1109 correspondence is corroborated; exact KOMODO HTML remains unavailable and is not authenticated by transfer.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "10", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume. Current DSM1109 correspondence is corroborated; exact KOMODO HTML remains unavailable and is not authenticated by transfer."}]}, {"quantity_id": "q12", "topic": "Yeast extract", "source": {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume. Current DSM1109 correspondence is corroborated; exact KOMODO HTML remains unavailable and is not authenticated by transfer.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume. Current DSM1109 correspondence is corroborated; exact KOMODO HTML remains unavailable and is not authenticated by transfer."}]}, {"quantity_id": "q13", "topic": "Meat extract", "source": {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume. Current DSM1109 correspondence is corroborated; exact KOMODO HTML remains unavailable and is not authenticated by transfer.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume. Current DSM1109 correspondence is corroborated; exact KOMODO HTML remains unavailable and is not authenticated by transfer."}]}, {"quantity_id": "q14", "topic": "Casitone", "source": {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume. Current DSM1109 correspondence is corroborated; exact KOMODO HTML remains unavailable and is not authenticated by transfer.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume. Current DSM1109 correspondence is corroborated; exact KOMODO HTML remains unavailable and is not authenticated by transfer."}]}, {"quantity_id": "q15", "topic": "Agar", "source": {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume. Current DSM1109 correspondence is corroborated; exact KOMODO HTML remains unavailable and is not authenticated by transfer.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "20", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume. Current DSM1109 correspondence is corroborated; exact KOMODO HTML remains unavailable and is not authenticated by transfer."}]}, {"quantity_id": "q16", "topic": "Glucose", "source": {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "10", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q17", "topic": "Yeast extract", "source": {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q18", "topic": "Meat extract", "source": {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q19", "topic": "Casitone", "source": {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q20", "topic": "Agar", "source": {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "20", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution basis. This does not independently measure final volume."}]}, {"quantity_id": "q21", "topic": "Variant-scoped pH", "source": {"evidence_id": "jcm1178", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1178", "raw_path": "REVIEW_WORK/batch054/source01-03/jcm1178.bin", "raw_sha256": "3d8f08ba9d868a32b695453c9c4875fb4fd44fc81b630e0092df9e9c43014610", "locator": "Recipe footer", "accessed_at": "2026-10-28T03:59:20.966778+00:00", "quote": "Adjust pH to 5.5."}, "decision": "evidence_only", "rationale": "JCM and DSM pH scopes are separate and already represented locally.", "layer_assessments": [{"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "ph_value", "stored_value": 5.5, "decision": "evidence_only", "rationale": "Retain selected JCM pH 5.5."}, {"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "preparation_steps[0].description", "stored_value": "Adjust pH to 5.5.", "decision": "evidence_only", "rationale": "Existing adjustment instruction retained."}]}, {"quantity_id": "q22", "topic": "Variant-scoped pH", "source": {"evidence_id": "jcm1178", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1178", "raw_path": "REVIEW_WORK/batch054/source01-03/jcm1178.bin", "raw_sha256": "3d8f08ba9d868a32b695453c9c4875fb4fd44fc81b630e0092df9e9c43014610", "locator": "Recipe footer", "accessed_at": "2026-10-28T03:59:20.966778+00:00", "quote": "Adjust pH to 5.5."}, "decision": "evidence_only", "rationale": "JCM and DSM pH scopes are separate and already represented locally.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "ph_value", "stored_value": 5.5, "decision": "evidence_only", "rationale": "Retain selected JCM pH 5.5."}, {"path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "preparation_steps[0].description", "stored_value": "Adjust pH to 5.5.", "decision": "evidence_only", "rationale": "Existing adjustment instruction retained."}]}, {"quantity_id": "q23", "topic": "Variant-scoped pH", "source": {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator": "$.data.medium.min_pH/max_pH and solutions[0].steps[0]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale": "JCM and DSM pH scopes are separate and already represented locally.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml", "field_path": "ph_range", "stored_value": {"min": 5.5, "max": 6.0}, "decision": "evidence_only", "rationale": "Retain DSM1109 pH range; do not overwrite JCM selected pH."}]}, {"quantity_id": "q24", "topic": "Variant-scoped pH", "source": {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator": "$.data.medium.min_pH/max_pH and solutions[0].steps[0]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale": "JCM and DSM pH scopes are separate and already represented locally.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "ph_range", "stored_value": {"min": 5.5, "max": 6.0}, "decision": "evidence_only", "rationale": "Retain DSM1109 pH range; do not overwrite JCM selected pH."}, {"path": "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "preparation_steps[0].description", "stored_value": "Adjust to pH 5.5 - 6.0 (can optionally be buffered with 25 mM MES).", "decision": "evidence_only", "rationale": "Already retains pH range and optional 25 mM MES."}]}, {"quantity_id": "q25", "topic": "Water inputs", "source": {"evidence_id": "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523", "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"}, "decision": "add", "rationale": "JCM gives 1 L distilled water and DSM gives 1000 mL water. The ingredient-edge omission is intentional in current code; the actionable gap is missing explicit solvent/batch context in preparation. Do not infer final volume from water alone. DSM support is separately api1109 recipe[5].", "layer_assessments": [{"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action": "ADJUST_PH", "description": "Adjust pH to 5.5."}], "decision": "add", "rationale": "Retain the explicit solvent input in preparation or batch-volume context, not as a required water chemical edge. Current importer intentionally excludes pure-water ingredient edges."}, {"path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action": "ADJUST_PH", "description": "Adjust pH to 5.5."}], "decision": "add", "rationale": "Retain the explicit solvent input in preparation or batch-volume context, not as a required water chemical edge. Current importer intentionally excludes pure-water ingredient edges."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "Retain the explicit solvent input in preparation or batch-volume context, not as a required water chemical edge. Current importer intentionally excludes pure-water ingredient edges.", "missing": true}, {"path": "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action": "MIX", "description": "Adjust to pH 5.5 - 6.0 (can optionally be buffered with 25 mM MES)."}], "decision": "add", "rationale": "Retain the explicit solvent input in preparation or batch-volume context, not as a required water chemical edge. Current importer intentionally excludes pure-water ingredient edges."}]}, {"quantity_id": "q26", "topic": "JCM header sterilization", "source": {"evidence_id": "jcm1178", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1178", "raw_path": "REVIEW_WORK/batch054/source01-03/jcm1178.bin", "raw_sha256": "3d8f08ba9d868a32b695453c9c4875fb4fd44fc81b630e0092df9e9c43014610", "locator": "Page header", "accessed_at": "2026-10-28T03:59:20.966778+00:00", "quote": "121°C for 15 min."}, "decision": "add", "rationale": "The general JCM instruction applies unless otherwise stated. It is not transferred as an independently sourced DSM1109 or KOMODO cycle.", "layer_assessments": [{"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action": "ADJUST_PH", "description": "Adjust pH to 5.5."}], "decision": "add", "rationale": "Add the JCM page header instruction to the JCM variant only; existing pH step remains credited."}, {"path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action": "ADJUST_PH", "description": "Adjust pH to 5.5."}], "decision": "add", "rationale": "Add the JCM page header instruction to the JCM variant only; existing pH step remains credited."}]}, {"quantity_id": "q27", "topic": "Optional MES", "source": {"evidence_id": "dsm1109", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1109.pdf", "raw_path": "REVIEW_WORK/batch054/source01-03/dsm1109.bin", "raw_sha256": "e198fdfba2000cfc01b42fdda3f2c189621298acf1b45ed3f2f5c59990a0a94f", "locator": "Recipe footer", "accessed_at": "2026-10-28T03:59:21.608650+00:00", "quote": "25 mM MES"}, "decision": "mixed", "rationale": "This optional DSM buffer is not a mandatory ingredient or JCM1178 correction.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "preparation_steps[0].description", "stored_value": "Adjust to pH 5.5 - 6.0 (can optionally be buffered with 25 mM MES).", "decision": "evidence_only", "rationale": "Existing DSM owner already includes optional MES; retain its conditional scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "unsupported", "rationale": "DSM context supports a possible source-specific addition, but exact KOMODO content is unavailable; do not assert this as a verified KOMODO instruction.", "missing": true}]}]
+
+### Current ontology and MIM correspondence
+
+grounding: supported. Targets: CultureMech:002349.
+
+The grounding inventory enumerates every asserted identifier and exact preferred label. Current catalog joins establish present correspondence only; unmapped mixtures are not assigned invented chemical identities. Maintained FOODON:03315426 and MICRO:0000606 labels use initial capitals, whereas current OLS labels are yeast extract and casitone. This is a case-only canonical-label difference, not a chemical-identity mismatch; preserve the scoped identities and normalize label case during curation.
+
+### History and evidence scope
+
+provenance: supported. Targets: CultureMech:002349.
+
+Complete owner and target histories were read. Current source bytes and inspected code are independent evidence; historical timestamps remain historical claims unless an exact cited raw digest is recovered.
+
+### Growth and taxonomic evidence
+
+scope: unknown. Targets: CultureMech:002349.
+
+Generic cultivation applications and bacterial filing are not strain-level growth evidence. No organism-specific growth, temperature or atmosphere is inferred from names or source catalog identifiers.
+
+### Canonical diagnostics
+
+schema: supported. Targets: CultureMech:002349.
+
+All four original canonical diagnostics passed. Reference checks were zero; structural and term diagnostics do not establish formulation accuracy.
+
+## Findings
+
+### f1: Generated target omits authenticated owner evidence and newer grounding
+
+major / open / confirmed; issue key: culturemech-002349-generated-target-omits-authenticated-owner-evidence-and-newer-grounding.
+
+Maintained JCM and DSM owners contain source-specific concentration evidence; all ten historical snippets are now authenticated. The selected target lacks those attachments and its yeast extract lacks the owner FOODON mapping. Regenerate only within compatible formulation scope; do not combine 15 g and 20 g agar evidence into one formulation.
+
+### f2: Solvent and JCM sterilization are not represented
+
+major / open / confirmed; issue key: culturemech-002349-solvent-and-jcm-sterilization-are-not-represented.
+
+The sources explicitly list water, but its amount is absent from preparation context. Current MediaDive code intentionally excludes pure-water chemical ingredient edges; that omission alone is not a defect. The JCM page header supplies 121°C for 15 min while selected/JCM preparation contains only pH adjustment. DSM optional MES is already preserved in its owner and must remain conditional.
+
+### f3: Historical duplicate wording needs qualification despite variant links
+
+minor / open / confirmed; issue key: culturemech-002349-historical-duplicate-wording-needs-qualification-despite-variant-links.
+
+The generated merge history describes three duplicate recipes while current owners and source evidence distinguish concentration variants. Existing CONCENTRATION_VARIANT links correctly expose that distinction; retain them and qualify historical duplicate wording as an old ingredient-signature grouping. KOMODO import timestamp contains the malformed .fZ suffix.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Preserve the existing variant links and current owner evidence, then regenerate compatible outputs so the selected JCM variant carries its own evidence and supported grounding. Keep DSM evidence on the DSM variant.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action2
+
+Record source-specific solvent/batch context in preparation and the JCM header sterilization in the JCM variant. Preserve the deliberate exclusion of pure-water chemical edges, existing pH instructions and conditional DSM MES; do not infer a DSM cycle from JCM.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action3
+
+Keep the original history, append a precise provenance qualification on maintained contributors, and avoid presenting the old duplicate count as formulation identity. Preserve the unavailable KOMODO page as an access limitation.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local-target | data/merge_yaml/merged/BTT_MEDIUM.yaml; Complete document | context_only | Complete selected generated record; no changes made. |
+| owner-1 | data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| owner-2 | data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| owner-3 | data/normalized_yaml/bacterial/btt_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| jcm1178 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1178; Exact source identity and scoped formulation/preparation | supports | Exact JCM1178 recipe and general header sterilization instruction; selected 15 g agar variant. |
+| dsm1109 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1109.pdf; Exact source identity and scoped formulation/preparation | supports | Exact DSM1109 with 20 g agar, pH 5.5–6.0 and optional 25 mM MES; separate from JCM1178. |
+| apiJ1178 | https://mediadive.dsmz.de/rest/medium/J1178; Exact source identity and scoped formulation/preparation | supports | Current raw response exactly matches the historical response digest cited by the maintained JCM1178 owner. Exact source-specific g_l rows, water input and preparation are retained; complete hashes are in snapshot_sha256 and the historical authentication sidecar. |
+| api1109 | https://mediadive.dsmz.de/rest/medium/1109; Exact source identity and scoped formulation/preparation | supports | Current raw response exactly matches the historical response digest cited by the maintained DSM1109 owner. Exact source-specific g_l rows, water input and preparation are retained; complete hashes are in snapshot_sha256 and the historical authentication sidecar. |
+| komodo1109 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1109; Exact source identity and scoped formulation/preparation | unknown | Exact source endpoint returned 403. No KOMODO HTML recipe or anaerobic-growth claim authenticated. |
+| historical-raw | REVIEW_WORK/batch054/record02/historical-raw-authentication.json | supports | All ten attached owner evidence snippets join literally and as parsed objects to current raw responses with exactly the historical response digests. Current requests have current times; old access claims are not rewritten. |
+| writer-merge | src/culturemech/merge/merger.py; merge_group | context_only | merge_group sends multiple contributors to merge_formulation_evidence; it does not establish biological equivalence from names. |
+| writer-formulation | src/culturemech/merge/formulation.py; merge_formulation_evidence | context_only | merge_formulation_evidence requires equal formulation content and unions scoped evidence only after compatibility. Current guards already reject incompatible formulations; no claim that current code caused this historical artifact. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17234; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_2509; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| foodon03315426 | https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http://purl.obolibrary.org/obo/FOODON_03315426; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| micro0000606 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http://purl.obolibrary.org/obo/MICRO_0000606; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| quantities | REVIEW_WORK/batch054/record02/quantity-inventory.json | context_only | Complete local concentration and source-stage decision inventory; includes exact local paths and source failure limits. |
+| grounding | REVIEW_WORK/batch054/record02/grounding-inventory.json | context_only | All recursive asserted identifier/label slots, exact current OLS objects and current packaged MIM preferred-row joins. |
+| history | REVIEW_WORK/batch054/record02/history-and-evidence-inventory.json | context_only | Complete current history, references and attached evidence; source-specific claims are assessed without authenticating historical execution from code. |
+| scalars | REVIEW_WORK/batch054/record02/scalar-census.json | context_only | Lossless scalar census of the selected target and all maintained contributors. |
+| validate-schema | REVIEW_WORK/batch054/record02/validate-schema.json | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed<br> |
+| validate-strict | REVIEW_WORK/batch054/record02/validate-strict.json | supports | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch054/record02/strict.tsv<br> |
+| validate-terms | REVIEW_WORK/batch054/record02/validate-terms.json | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed<br> |
+| validate-references | REVIEW_WORK/batch054/record02/validate-references.json | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed<br> |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition and _parse_api_solutions | context_only | Current importer uses only the primary solution, preserves referenced stocks separately, and deliberately excludes pure-water chemical ingredient edges. This is current implementation context, not proof of historical execution. |
+
+## Limits And Additional Notes
+
+- The exact KOMODO1109 endpoint returned HTTP403; source-specific KOMODO page content and the unstructured Aerobic:No note remain unverified.
+- Provider g_l supports declared recipe concentrations, not an independent final-volume measurement. The optional DSM MES condition and JCM header cycle remain variant-scoped.
+- No strain-level growth or taxonomic assertion is inferred from generic cultivation labels. Current ontology identity does not validate product-specific extract composition.
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T041804Z-batch054-record02-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'BTT medium: preserve JCM and DSM variants and refresh stale evidence'
+started_at: '2026-10-28T03:58:33.602968Z'
+finished_at: '2026-10-28T04:18:04.251843Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The selected JCM1178 formulation has 15 g/L agar and pH 5.5; DSM1109 has
+  20 g/L agar and pH 5.5–6.0. Existing CONCENTRATION_VARIANT links are credited. Two
+  current provider responses exactly recover the historical raw digests cited in maintained
+  owners, but the generated target omits their evidence and newer grounding. Water
+  and source-scoped preparation remain incomplete.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BTT_MEDIUM.yaml
+    sha256: 41f2bf45171828a5ca117c959f3ca383d4320350830d7a48bb4e09e62221eb25
+    role: target
+  - path: data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml
+    sha256: 325292f3914c223af4a055edf889ed0bd6ce7e62cad7d21784f4d0a52e69a044
+    role: context
+  - path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
+    sha256: 2db51c70aff1db7bb479af44b53e2831a69d2e5d2425fde29be98e36e871e929
+    role: context
+  - path: data/normalized_yaml/bacterial/btt_medium.yaml
+    sha256: a3cf18fae26122249dfef1c42d5d5ca2719ef577bdd293eb282ba5db97a4cecc
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; external source
+    limits explicitly retained.
+  selection: Actual batch054 native selection index 02.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002349
+targets:
+- target_id: CultureMech:002349
+  path: data/merge_yaml/merged/BTT_MEDIUM.yaml
+  label: btt_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/btt_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:002349
+  command: just validate-schema data/merge_yaml/merged/BTT_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:002349
+  command: just validate-strict data/merge_yaml/merged/BTT_MEDIUM.yaml --out REVIEW_WORK/batch054/record02/strict.tsv
+    --workers 1
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:002349
+  command: just validate-terms data/merge_yaml/merged/BTT_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:002349
+  command: just validate-references data/merge_yaml/merged/BTT_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/BTT_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T04:07:40.752535Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: 41f2bf45171828a5ca117c959f3ca383d4320350830d7a48bb4e09e62221eb25
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T04:07:40.752535Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 325292f3914c223af4a055edf889ed0bd6ce7e62cad7d21784f4d0a52e69a044
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T04:07:40.752535Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 2db51c70aff1db7bb479af44b53e2831a69d2e5d2425fde29be98e36e871e929
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/btt_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T04:07:40.752535Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: a3cf18fae26122249dfef1c42d5d5ca2719ef577bdd293eb282ba5db97a4cecc
+- evidence_id: jcm1178
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1178
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T03:59:20.966778Z'
+  support: supports
+  summary: Exact JCM1178 recipe and general header sterilization instruction; selected
+    15 g agar variant.
+  snapshot_sha256: 3d8f08ba9d868a32b695453c9c4875fb4fd44fc81b630e0092df9e9c43014610
+- evidence_id: dsm1109
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1109.pdf
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T03:59:21.608650Z'
+  support: supports
+  summary: Exact DSM1109 with 20 g agar, pH 5.5–6.0 and optional 25 mM MES; separate
+    from JCM1178.
+  snapshot_sha256: e198fdfba2000cfc01b42fdda3f2c189621298acf1b45ed3f2f5c59990a0a94f
+- evidence_id: apiJ1178
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1178
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T04:02:49.011826Z'
+  support: supports
+  summary: Current raw response exactly matches the historical response digest cited
+    by the maintained JCM1178 owner. Exact source-specific g_l rows, water input and
+    preparation are retained; complete hashes are in snapshot_sha256 and the historical
+    authentication sidecar.
+  snapshot_sha256: 0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523
+- evidence_id: api1109
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1109
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T04:02:48.916482Z'
+  support: supports
+  summary: Current raw response exactly matches the historical response digest cited
+    by the maintained DSM1109 owner. Exact source-specific g_l rows, water input and
+    preparation are retained; complete hashes are in snapshot_sha256 and the historical
+    authentication sidecar.
+  snapshot_sha256: 8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb
+- evidence_id: komodo1109
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1109
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T03:59:21.188601Z'
+  support: unknown
+  summary: Exact source endpoint returned 403. No KOMODO HTML recipe or anaerobic-growth
+    claim authenticated.
+  snapshot_sha256: c2e0a43f699d4c952ca0fca7ea2e1425b7f6f61e6aff5ec5afee661f0dc29344
+- evidence_id: historical-raw
+  kind: record_content
+  reference: REVIEW_WORK/batch054/record02/historical-raw-authentication.json
+  accessed_at: '2026-10-28T04:07:40.765697Z'
+  support: supports
+  summary: All ten attached owner evidence snippets join literally and as parsed objects
+    to current raw responses with exactly the historical response digests. Current
+    requests have current times; old access claims are not rewritten.
+  snapshot_sha256: 1d2347c1e8bcf0bf2e7624b844c672b196bb9c953b7350c5849bb67db4f110a5
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T04:07:40.752535Z'
+  support: context_only
+  summary: merge_group sends multiple contributors to merge_formulation_evidence;
+    it does not establish biological equivalence from names.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: merge_formulation_evidence
+  accessed_at: '2026-10-28T04:07:40.752535Z'
+  support: context_only
+  summary: merge_formulation_evidence requires equal formulation content and unions
+    scoped evidence only after compatibility. Current guards already reject incompatible
+    formulations; no claim that current code caused this historical artifact.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: chebi17234
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17234
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T03:59:22.470692Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2d78d31a7829da999c31ae102da842c5b5c37a5d334be6389539d92ecd786de7
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_2509
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T03:59:22.926393Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 348b20478bba221cc21e285237104281145111be6ea3aa30d381d6eae19c0a90
+- evidence_id: foodon03315426
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http://purl.obolibrary.org/obo/FOODON_03315426
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T04:02:49.823623Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 73e813d7b7d5a59707f5f316566e11b00d2bb1d74b01d54f9e419edd632da9e0
+- evidence_id: micro0000606
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http://purl.obolibrary.org/obo/MICRO_0000606
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T04:02:49.902311Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 7afde6aaed7bc129033bf86f6db5c8924edb1ccfd96188e6c29c893c9b5205e6
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch054/record02/quantity-inventory.json
+  accessed_at: '2026-10-28T04:07:40.775084Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: e64eac0670ece769dd5f750d9d87462b5cea59e3ed7f32c75a9110c66e8293b6
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch054/record02/grounding-inventory.json
+  accessed_at: '2026-10-28T04:07:40.775136Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: c07efa888fc7a34431955c46e1a13be1d37b344a99c8345f6c1bc89108043586
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch054/record02/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T04:07:40.775168Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: f0bbc65a0b8f704242a22a7f172c642f13b6b2ecabef324e80cc4a066ead597f
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch054/record02/scalar-census.json
+  accessed_at: '2026-10-28T04:07:40.775199Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 278508a42e2ba31ab377a4b7366be4708edcf7275c038bc275bd5934e7779f32
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch054/record02/validate-schema.json
+  accessed_at: '2026-10-28T03:58:35.046758Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: 2a9acb47ff2a4b9a2db0331489be5eb2343479b4172631f1d97ca8e2a4677908
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch054/record02/validate-strict.json
+  accessed_at: '2026-10-28T03:58:36.177210Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch054/record02/strict.tsv\n"
+  snapshot_sha256: 787882fe7073d51d40431dea0ff7ff1278ecdc8b9e2ec93016bbb31f9ebda087
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch054/record02/validate-terms.json
+  accessed_at: '2026-10-28T03:58:38.368143Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: ae40adac7a3b079717ac35bb3d964cf8c97b7f8d64740322812eb478e5cd9afe
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch054/record02/validate-references.json
+  accessed_at: '2026-10-28T03:58:39.377902Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: fcacbcb3cb3ed2041692197d1e3d6db9221103cbc9b71b3c7470d4efec334a64
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition and _parse_api_solutions
+  accessed_at: '2026-10-28T04:11:33.745974Z'
+  support: context_only
+  summary: Current importer uses only the primary solution, preserves referenced stocks
+    separately, and deliberately excludes pure-water chemical ingredient edges. This
+    is current implementation context, not proof of historical execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Two supported formulations with existing variant links
+  outcome: supported
+  summary: Selected JCM1178 amounts and pH match current JCM and its provider. DSM1109
+    has distinct agar/pH and optional MES. Target variant_children and maintained
+    parent_media already label CONCENTRATION_VARIANT; this is credited rather than
+    described as absent.
+  target_ids:
+  - CultureMech:002349
+  evidence_ids:
+  - local-target
+  - owner-1
+  - owner-2
+  - owner-3
+  - jcm1178
+  - dsm1109
+- assessment_id: a2
+  area: evidence
+  topic: Exact historical raw recovery
+  outcome: supported
+  summary: Both current API response hashes exactly match owner citations and all
+    ten snippets literally occur in those bytes. This authenticates the quoted provider
+    objects, with fresh capture times kept separate from historical access annotations.
+  target_ids:
+  - CultureMech:002349
+  evidence_ids:
+  - historical-raw
+  - apiJ1178
+  - api1109
+- assessment_id: a3
+  area: quantity
+  topic: Complete quantity and numeric preparation audit
+  outcome: concern
+  summary: Every local concentration field has an explicit disposition; source-only
+    doses, batch volumes and conditional preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:002349
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "Glucose", "source": {"evidence_id": "apiJ1178",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin",
+    "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "ingredients[0].concentration",
+    "stored_value": {"value": "10", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q2", "topic": "Yeast extract", "source": {"evidence_id":
+    "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "ingredients[1].concentration",
+    "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q3", "topic": "Meat extract", "source": {"evidence_id":
+    "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "ingredients[2].concentration",
+    "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q4", "topic": "Casitone", "source": {"evidence_id":
+    "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "ingredients[3].concentration",
+    "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q5", "topic": "Agar", "source": {"evidence_id":
+    "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "ingredients[4].concentration",
+    "stored_value": {"value": "15", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q6", "topic": "Glucose", "source": {"evidence_id":
+    "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "ingredients[0].concentration",
+    "stored_value": {"value": "10", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q7", "topic": "Yeast extract", "source": {"evidence_id":
+    "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "ingredients[1].concentration",
+    "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q8", "topic": "Meat extract", "source": {"evidence_id":
+    "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "ingredients[2].concentration",
+    "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q9", "topic": "Casitone", "source": {"evidence_id":
+    "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "ingredients[3].concentration",
+    "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q10", "topic": "Agar", "source": {"evidence_id":
+    "apiJ1178", "reference": "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin", "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "ingredients[4].concentration",
+    "stored_value": {"value": "15", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q11", "topic": "Glucose", "source": {"evidence_id":
+    "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume. Current DSM1109 correspondence is
+    corroborated; exact KOMODO HTML remains unavailable and is not authenticated by
+    transfer.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "10",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact
+    source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution
+    basis. This does not independently measure final volume. Current DSM1109 correspondence
+    is corroborated; exact KOMODO HTML remains unavailable and is not authenticated
+    by transfer."}]}, {"quantity_id": "q12", "topic": "Yeast extract", "source": {"evidence_id":
+    "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume. Current DSM1109 correspondence is
+    corroborated; exact KOMODO HTML remains unavailable and is not authenticated by
+    transfer.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "1", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant
+    rate: the provider explicitly declares g_l on its 1000 mL main-solution basis.
+    This does not independently measure final volume. Current DSM1109 correspondence
+    is corroborated; exact KOMODO HTML remains unavailable and is not authenticated
+    by transfer."}]}, {"quantity_id": "q13", "topic": "Meat extract", "source": {"evidence_id":
+    "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume. Current DSM1109 correspondence is
+    corroborated; exact KOMODO HTML remains unavailable and is not authenticated by
+    transfer.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "1", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant
+    rate: the provider explicitly declares g_l on its 1000 mL main-solution basis.
+    This does not independently measure final volume. Current DSM1109 correspondence
+    is corroborated; exact KOMODO HTML remains unavailable and is not authenticated
+    by transfer."}]}, {"quantity_id": "q14", "topic": "Casitone", "source": {"evidence_id":
+    "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume. Current DSM1109 correspondence is
+    corroborated; exact KOMODO HTML remains unavailable and is not authenticated by
+    transfer.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "2", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact source-variant
+    rate: the provider explicitly declares g_l on its 1000 mL main-solution basis.
+    This does not independently measure final volume. Current DSM1109 correspondence
+    is corroborated; exact KOMODO HTML remains unavailable and is not authenticated
+    by transfer."}]}, {"quantity_id": "q15", "topic": "Agar", "source": {"evidence_id":
+    "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume. Current DSM1109 correspondence is
+    corroborated; exact KOMODO HTML remains unavailable and is not authenticated by
+    transfer.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "20",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Retain the exact
+    source-variant rate: the provider explicitly declares g_l on its 1000 mL main-solution
+    basis. This does not independently measure final volume. Current DSM1109 correspondence
+    is corroborated; exact KOMODO HTML remains unavailable and is not authenticated
+    by transfer."}]}, {"quantity_id": "q16", "topic": "Glucose", "source": {"evidence_id":
+    "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "ingredients[0].concentration",
+    "stored_value": {"value": "10", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q17", "topic": "Yeast extract", "source": {"evidence_id":
+    "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "ingredients[1].concentration",
+    "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q18", "topic": "Meat extract", "source": {"evidence_id":
+    "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "ingredients[2].concentration",
+    "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q19", "topic": "Casitone", "source": {"evidence_id":
+    "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "ingredients[3].concentration",
+    "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q20", "topic": "Agar", "source": {"evidence_id":
+    "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"},
+    "decision": "evidence_only", "rationale": "Retain the exact source-variant rate:
+    the provider explicitly declares g_l on its 1000 mL main-solution basis. This
+    does not independently measure final volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "ingredients[4].concentration",
+    "stored_value": {"value": "20", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "Retain the exact source-variant rate: the provider explicitly declares
+    g_l on its 1000 mL main-solution basis. This does not independently measure final
+    volume."}]}, {"quantity_id": "q21", "topic": "Variant-scoped pH", "source": {"evidence_id":
+    "jcm1178", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1178",
+    "raw_path": "REVIEW_WORK/batch054/source01-03/jcm1178.bin", "raw_sha256": "3d8f08ba9d868a32b695453c9c4875fb4fd44fc81b630e0092df9e9c43014610",
+    "locator": "Recipe footer", "accessed_at": "2026-10-28T03:59:20.966778+00:00",
+    "quote": "Adjust pH to 5.5."}, "decision": "evidence_only", "rationale": "JCM
+    and DSM pH scopes are separate and already represented locally.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "ph_value",
+    "stored_value": 5.5, "decision": "evidence_only", "rationale": "Retain selected
+    JCM pH 5.5."}, {"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path":
+    "preparation_steps[0].description", "stored_value": "Adjust pH to 5.5.", "decision":
+    "evidence_only", "rationale": "Existing adjustment instruction retained."}]},
+    {"quantity_id": "q22", "topic": "Variant-scoped pH", "source": {"evidence_id":
+    "jcm1178", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1178",
+    "raw_path": "REVIEW_WORK/batch054/source01-03/jcm1178.bin", "raw_sha256": "3d8f08ba9d868a32b695453c9c4875fb4fd44fc81b630e0092df9e9c43014610",
+    "locator": "Recipe footer", "accessed_at": "2026-10-28T03:59:20.966778+00:00",
+    "quote": "Adjust pH to 5.5."}, "decision": "evidence_only", "rationale": "JCM
+    and DSM pH scopes are separate and already represented locally.", "layer_assessments":
+    [{"path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path":
+    "ph_value", "stored_value": 5.5, "decision": "evidence_only", "rationale": "Retain
+    selected JCM pH 5.5."}, {"path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml",
+    "field_path": "preparation_steps[0].description", "stored_value": "Adjust pH to
+    5.5.", "decision": "evidence_only", "rationale": "Existing adjustment instruction
+    retained."}]}, {"quantity_id": "q23", "topic": "Variant-scoped pH", "source":
+    {"evidence_id": "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109",
+    "raw_path": "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256":
+    "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb", "locator":
+    "$.data.medium.min_pH/max_pH and solutions[0].steps[0]", "accessed_at": "2026-10-28T04:02:48.916482+00:00"},
+    "decision": "evidence_only", "rationale": "JCM and DSM pH scopes are separate
+    and already represented locally.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml",
+    "field_path": "ph_range", "stored_value": {"min": 5.5, "max": 6.0}, "decision":
+    "evidence_only", "rationale": "Retain DSM1109 pH range; do not overwrite JCM selected
+    pH."}]}, {"quantity_id": "q24", "topic": "Variant-scoped pH", "source": {"evidence_id":
+    "api1109", "reference": "https://mediadive.dsmz.de/rest/medium/1109", "raw_path":
+    "REVIEW_WORK/batch054/source01-03-extra/api1109.bin", "raw_sha256": "8fb6ddf5aaa0000cc3f34ce762c01cdacd9ab07114d93e3a7486daee0c580afb",
+    "locator": "$.data.medium.min_pH/max_pH and solutions[0].steps[0]", "accessed_at":
+    "2026-10-28T04:02:48.916482+00:00"}, "decision": "evidence_only", "rationale":
+    "JCM and DSM pH scopes are separate and already represented locally.", "layer_assessments":
+    [{"path": "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "ph_range",
+    "stored_value": {"min": 5.5, "max": 6.0}, "decision": "evidence_only", "rationale":
+    "Retain DSM1109 pH range; do not overwrite JCM selected pH."}, {"path": "data/normalized_yaml/bacterial/btt_medium.yaml",
+    "field_path": "preparation_steps[0].description", "stored_value": "Adjust to pH
+    5.5 - 6.0 (can optionally be buffered with 25 mM MES).", "decision": "evidence_only",
+    "rationale": "Already retains pH range and optional 25 mM MES."}]}, {"quantity_id":
+    "q25", "topic": "Water inputs", "source": {"evidence_id": "apiJ1178", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J1178", "raw_path": "REVIEW_WORK/batch054/source01-03-extra/apiJ1178.bin",
+    "raw_sha256": "0564a0abb9fdf6a1befe43b258bf686aadc01e30f16211e44a4fe08880789523",
+    "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T04:02:49.011826+00:00"},
+    "decision": "add", "rationale": "JCM gives 1 L distilled water and DSM gives 1000
+    mL water. The ingredient-edge omission is intentional in current code; the actionable
+    gap is missing explicit solvent/batch context in preparation. Do not infer final
+    volume from water alone. DSM support is separately api1109 recipe[5].", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml", "field_path": "preparation_steps",
+    "stored_value": [{"step_number": 1, "action": "ADJUST_PH", "description": "Adjust
+    pH to 5.5."}], "decision": "add", "rationale": "Retain the explicit solvent input
+    in preparation or batch-volume context, not as a required water chemical edge.
+    Current importer intentionally excludes pure-water ingredient edges."}, {"path":
+    "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml", "field_path": "preparation_steps",
+    "stored_value": [{"step_number": 1, "action": "ADJUST_PH", "description": "Adjust
+    pH to 5.5."}], "decision": "add", "rationale": "Retain the explicit solvent input
+    in preparation or batch-volume context, not as a required water chemical edge.
+    Current importer intentionally excludes pure-water ingredient edges."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml", "field_path": "preparation_steps",
+    "stored_value": null, "decision": "add", "rationale": "Retain the explicit solvent
+    input in preparation or batch-volume context, not as a required water chemical
+    edge. Current importer intentionally excludes pure-water ingredient edges.", "missing":
+    true}, {"path": "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path":
+    "preparation_steps", "stored_value": [{"step_number": 1, "action": "MIX", "description":
+    "Adjust to pH 5.5 - 6.0 (can optionally be buffered with 25 mM MES)."}], "decision":
+    "add", "rationale": "Retain the explicit solvent input in preparation or batch-volume
+    context, not as a required water chemical edge. Current importer intentionally
+    excludes pure-water ingredient edges."}]}, {"quantity_id": "q26", "topic": "JCM
+    header sterilization", "source": {"evidence_id": "jcm1178", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1178",
+    "raw_path": "REVIEW_WORK/batch054/source01-03/jcm1178.bin", "raw_sha256": "3d8f08ba9d868a32b695453c9c4875fb4fd44fc81b630e0092df9e9c43014610",
+    "locator": "Page header", "accessed_at": "2026-10-28T03:59:20.966778+00:00", "quote":
+    "121°C for 15 min."}, "decision": "add", "rationale": "The general JCM instruction
+    applies unless otherwise stated. It is not transferred as an independently sourced
+    DSM1109 or KOMODO cycle.", "layer_assessments": [{"path": "data/merge_yaml/merged/BTT_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action":
+    "ADJUST_PH", "description": "Adjust pH to 5.5."}], "decision": "add", "rationale":
+    "Add the JCM page header instruction to the JCM variant only; existing pH step
+    remains credited."}, {"path": "data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action":
+    "ADJUST_PH", "description": "Adjust pH to 5.5."}], "decision": "add", "rationale":
+    "Add the JCM page header instruction to the JCM variant only; existing pH step
+    remains credited."}]}, {"quantity_id": "q27", "topic": "Optional MES", "source":
+    {"evidence_id": "dsm1109", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1109.pdf",
+    "raw_path": "REVIEW_WORK/batch054/source01-03/dsm1109.bin", "raw_sha256": "e198fdfba2000cfc01b42fdda3f2c189621298acf1b45ed3f2f5c59990a0a94f",
+    "locator": "Recipe footer", "accessed_at": "2026-10-28T03:59:21.608650+00:00",
+    "quote": "25 mM MES"}, "decision": "mixed", "rationale": "This optional DSM buffer
+    is not a mandatory ingredient or JCM1178 correction.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/btt_medium.yaml", "field_path": "preparation_steps[0].description",
+    "stored_value": "Adjust to pH 5.5 - 6.0 (can optionally be buffered with 25 mM
+    MES).", "decision": "evidence_only", "rationale": "Existing DSM owner already
+    includes optional MES; retain its conditional scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "unsupported",
+    "rationale": "DSM context supports a possible source-specific addition, but exact
+    KOMODO content is unavailable; do not assert this as a verified KOMODO instruction.",
+    "missing": true}]}]'
+- assessment_id: a4
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: supported
+  summary: The grounding inventory enumerates every asserted identifier and exact
+    preferred label. Current catalog joins establish present correspondence only;
+    unmapped mixtures are not assigned invented chemical identities. Maintained FOODON:03315426
+    and MICRO:0000606 labels use initial capitals, whereas current OLS labels are
+    yeast extract and casitone. This is a case-only canonical-label difference, not
+    a chemical-identity mismatch; preserve the scoped identities and normalize label
+    case during curation.
+  target_ids:
+  - CultureMech:002349
+  evidence_ids:
+  - grounding
+- assessment_id: a5
+  area: provenance
+  topic: History and evidence scope
+  outcome: supported
+  summary: Complete owner and target histories were read. Current source bytes and
+    inspected code are independent evidence; historical timestamps remain historical
+    claims unless an exact cited raw digest is recovered.
+  target_ids:
+  - CultureMech:002349
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a6
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:002349
+  evidence_ids:
+  - local-target
+- assessment_id: a7
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:002349
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated target omits authenticated owner evidence and newer grounding
+  description: Maintained JCM and DSM owners contain source-specific concentration
+    evidence; all ten historical snippets are now authenticated. The selected target
+    lacks those attachments and its yeast extract lacks the owner FOODON mapping.
+    Regenerate only within compatible formulation scope; do not combine 15 g and 20
+    g agar evidence into one formulation.
+  target_ids:
+  - CultureMech:002349
+  field_paths:
+  - ingredients
+  - curation_history
+  evidence_ids:
+  - local-target
+  - owner-1
+  - owner-3
+  - historical-raw
+  - writer-formulation
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/btt_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+  issue_key: culturemech-002349-generated-target-omits-authenticated-owner-evidence-and-newer-grounding
+- finding_id: f2
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Solvent and JCM sterilization are not represented
+  description: The sources explicitly list water, but its amount is absent from preparation
+    context. Current MediaDive code intentionally excludes pure-water chemical ingredient
+    edges; that omission alone is not a defect. The JCM page header supplies 121°C
+    for 15 min while selected/JCM preparation contains only pH adjustment. DSM optional
+    MES is already preserved in its owner and must remain conditional.
+  target_ids:
+  - CultureMech:002349
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - local-target
+  - owner-1
+  - owner-3
+  - jcm1178
+  - dsm1109
+  - apiJ1178
+  - api1109
+  - writer-mediadive
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/btt_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+  issue_key: culturemech-002349-solvent-and-jcm-sterilization-are-not-represented
+- finding_id: f3
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical duplicate wording needs qualification despite variant links
+  description: The generated merge history describes three duplicate recipes while
+    current owners and source evidence distinguish concentration variants. Existing
+    CONCENTRATION_VARIANT links correctly expose that distinction; retain them and
+    qualify historical duplicate wording as an old ingredient-signature grouping.
+    KOMODO import timestamp contains the malformed .fZ suffix.
+  target_ids:
+  - CultureMech:002349
+  field_paths:
+  - curation_history
+  - merged_from
+  - variant_children
+  evidence_ids:
+  - local-target
+  - owner-2
+  - jcm1178
+  - dsm1109
+  - writer-formulation
+  rule_id: source-stage-or-identity
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/btt_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+  issue_key: culturemech-002349-historical-duplicate-wording-needs-qualification-despite-variant-links
+actions:
+- action_id: action1
+  description: Preserve the existing variant links and current owner evidence, then
+    regenerate compatible outputs so the selected JCM variant carries its own evidence
+    and supported grounding. Keep DSM evidence on the DSM variant.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002349
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/btt_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: Record source-specific solvent/batch context in preparation and the
+    JCM header sterilization in the JCM variant. Preserve the deliberate exclusion
+    of pure-water chemical edges, existing pH instructions and conditional DSM MES;
+    do not infer a DSM cycle from JCM.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002349
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/btt_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: Keep the original history, append a precise provenance qualification
+    on maintained contributors, and avoid presenting the old duplicate count as formulation
+    identity. Preserve the unavailable KOMODO page as an access limitation.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:002349
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/btt_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- The exact KOMODO1109 endpoint returned HTTP403; source-specific KOMODO page content
+  and the unstructured Aerobic:No note remain unverified.
+- Provider g_l supports declared recipe concentrations, not an independent final-volume
+  measurement. The optional DSM MES condition and JCM header cycle remain variant-scoped.
+- No strain-level growth or taxonomic assertion is inferred from generic cultivation
+  labels. Current ontology identity does not validate product-specific extract composition.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this
+  author.
+```
