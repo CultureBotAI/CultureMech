@@ -230,6 +230,41 @@ curation_history:
     remain unresolved; no conversion, parent amount change, new native growth assertion,
     alteration of existing evidence, owner merge or publication.
   source: doi:10.1128/spectrum.00069-23; doi:10.3389/fenrg.2015.00020
+- timestamp: '2026-11-16T21:32:58.578148+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "SET_CONCENTRATION", "evidence":
+    [{"explanation": "Materials and Methods, Algal strains and cultivation conditions.
+    Supports only the named descriptor/event at the stated stage. Reported medium
+    concentration, not stock or amount added; complete basal formula remains unresolved.
+    Source inspected 2026-11-16; SHA256 35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1128/spectrum.00069-23", "snippet": "1.5 M NaCl", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "MOLAR", "value": "1.5"},
+    "notes": "Reported medium concentration, not stock or amount added; complete basal
+    formula remains unresolved.", "preferred_term": "sodium chloride"}, "source_modification_index":
+    0, "source_text": "The study reports 1.5 M NaCl in its 2ASW culture medium. This
+    is a reported medium concentration, not a stock concentration or inferred amount
+    to add.", "stage": "reported 2ASW culture medium"}], "variant_index": 0, "variant_name":
+    "2asw_1_5_m_nacl"}, {"ingredient_changes": [{"action": "REPLACE", "evidence":
+    [{"explanation": "Materials and Methods, Strains and media. Supports only the
+    named descriptor/event at the stated stage. Undefined sea-salt mixture; no brand,
+    constituent list or pure-NaCl equivalence inferred. Source inspected 2026-11-16;
+    SHA256 8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a. No parent
+    formulation, growth, ontology identity, or missing dose is inferred.", "reference":
+    "doi:10.3389/fenrg.2015.00020", "snippet": "33.6 g/L of sea salts", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "G_PER_L", "value": "33.6"},
+    "notes": "Undefined sea-salt mixture; no brand, constituent list or pure-NaCl
+    equivalence inferred.", "preferred_term": "sea salts"}, "replaced_ingredient":
+    {"preferred_term": "sodium chloride"}, "source_modification_index": 0, "source_text":
+    "Use the study-reported 33.6 g/L sea salts in place of NaCl; this is an undefined
+    sea-salt mixture, not 33.6 g/L pure sodium chloride.", "stage": "modified 2ASW
+    maintenance medium"}], "variant_index": 1, "variant_name": "2asw_sea_salt_substitution_33_6_g_l"}]}'
 references:
 - reference: doi:10.1128/spectrum.00069-23
   title: Roles of Two Phytoene Synthases and Orange Protein in Carotenoid Metabolism
@@ -399,6 +434,29 @@ variants:
       cultivation applies to this study formulation only. Table S2 is uninspected.
       Taxonomy checked against NCBI EFetch archived 2026-10-14 at references_cache/papers/taxonomy/2asw-20261014.xml.
       Species mappings do not verify exact strain identity. '
+  ingredient_changes:
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: sodium chloride
+      concentration:
+        value: '1.5'
+        unit: MOLAR
+      notes: Reported medium concentration, not stock or amount added; complete basal
+        formula remains unresolved.
+    stage: reported 2ASW culture medium
+    source_modification_index: 0
+    source_text: The study reports 1.5 M NaCl in its 2ASW culture medium. This is
+      a reported medium concentration, not a stock concentration or inferred amount
+      to add.
+    evidence:
+    - reference: doi:10.1128/spectrum.00069-23
+      supports: SUPPORT
+      snippet: 1.5 M NaCl
+      explanation: Materials and Methods, Algal strains and cultivation conditions.
+        Supports only the named descriptor/event at the stated stage. Reported medium
+        concentration, not stock or amount added; complete basal formula remains unresolved.
+        Source inspected 2026-11-16; SHA256 35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 - name: 2asw_sea_salt_substitution_33_6_g_l
   relationship: SUBSTITUTED_COMPONENT_VARIANT
   description: Modified 2ASW maintenance medium in Hiibel et al. (2015), with sea
@@ -422,3 +480,27 @@ variants:
       2ASW to the 18 Dunaliella strain rows in Table 1, whose scientific names and
       taxonomy qualifications are preserved in this paper''s citation notes. Centrate
       results are not parent or maintenance-medium growth metrics.'
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: sea salts
+      concentration:
+        value: '33.6'
+        unit: G_PER_L
+      notes: Undefined sea-salt mixture; no brand, constituent list or pure-NaCl equivalence
+        inferred.
+    stage: modified 2ASW maintenance medium
+    source_modification_index: 0
+    source_text: Use the study-reported 33.6 g/L sea salts in place of NaCl; this
+      is an undefined sea-salt mixture, not 33.6 g/L pure sodium chloride.
+    evidence:
+    - reference: doi:10.3389/fenrg.2015.00020
+      supports: SUPPORT
+      snippet: 33.6 g/L of sea salts
+      explanation: Materials and Methods, Strains and media. Supports only the named
+        descriptor/event at the stated stage. Undefined sea-salt mixture; no brand,
+        constituent list or pure-NaCl equivalence inferred. Source inspected 2026-11-16;
+        SHA256 8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a. No
+        parent formulation, growth, ontology identity, or missing dose is inferred.
+    replaced_ingredient:
+      preferred_term: sodium chloride

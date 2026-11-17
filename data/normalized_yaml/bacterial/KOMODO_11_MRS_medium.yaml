@@ -239,6 +239,28 @@ variants:
       5 g/L yeast extract.
     explanation: The source directly reports quantitative growth kinetics for Lactiplantibacillus
       plantarum BG24 in original and modified MRS broth.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: yeast extract
+      concentration:
+        value: '5'
+        unit: G_PER_L
+      notes: Source-reported enrichment amount; do not calculate total yeast extract
+        including basal MRS. Abstract evidence only.
+    stage: pH 6.5 MRS enrichment
+    source_modification_index: 1
+    source_text: Compare original MRS broth at pH 5.7 with MRS broth at pH 6.5 enriched
+      with 5 g/L yeast extract.
+    evidence:
+    - reference: PMID:38194015
+      supports: SUPPORT
+      snippet: 5 g/L yeast extract
+      explanation: Primary article abstract indexed by Europe PMC; full methods not
+        reviewed. Supports only the named descriptor/event at the stated stage. Source-reported
+        enrichment amount; do not calculate total yeast extract including basal MRS.
+        Abstract evidence only. Source inspected 2026-11-16; SHA256 6374babdb789d4cf4ece64f8539d8bbd78dd9710139d6196c752fd9cf3ffff91.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 curation_history:
 - timestamp: 2026-01-27T01:15:01.fZ
   curator: komodo-web-import
@@ -289,6 +311,27 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 3 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-11-16T21:32:59.138247+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports
+    only the named descriptor/event at the stated stage. Source-reported enrichment
+    amount; do not calculate total yeast extract including basal MRS. Abstract evidence
+    only. Source inspected 2026-11-16; SHA256 6374babdb789d4cf4ece64f8539d8bbd78dd9710139d6196c752fd9cf3ffff91.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "PMID:38194015", "snippet": "5 g/L yeast extract", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "G_PER_L", "value": "5"}, "notes": "Source-reported
+    enrichment amount; do not calculate total yeast extract including basal MRS. Abstract
+    evidence only.", "preferred_term": "yeast extract"}, "source_modification_index":
+    1, "source_text": "Compare original MRS broth at pH 5.7 with MRS broth at pH 6.5
+    enriched with 5 g/L yeast extract.", "stage": "pH 6.5 MRS enrichment"}], "variant_index":
+    1, "variant_name": "mrs_broth_bg24_ph_yeast_extract_optimization"}]}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Heyndrickxia coagulans

@@ -131,6 +131,47 @@ curation_history:
     citation aliases; added one species-level MM germination association with auxotroph
     limitation. Preserved concentrations, preparation, variants and prior history.
   source: doi:10.4148/1941-4765.1175
+- timestamp: '2026-11-16T21:33:01.487002+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation":
+    "Page 26, Minimal Medium and 20 X Nitrate salts. Supports only the named descriptor/event
+    at the stated stage. Quoted stock-volume instruction: ''Add distilled water to
+    1 liter.'' Replaces 10.4 g/L heptahydrate in the 20X nitrate stock. The stock
+    addition stays 50 mL/L; no final-medium conversion asserted. Source inspected
+    2026-11-16; SHA256 22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.4148/1941-4765.1175", "snippet": "5.2 g if anhydrous", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"per_volume": "per liter of 20X
+    nitrate stock, not final medium", "unit": "G_PER_L", "value": "5.2"}, "notes":
+    "Quoted stock-volume instruction: ''Add distilled water to 1 liter.'' Replaces
+    10.4 g/L heptahydrate in the 20X nitrate stock. The stock addition stays 50 mL/L;
+    no final-medium conversion asserted.", "preferred_term": "magnesium sulfate, anhydrous"},
+    "replaced_ingredient": {"preferred_term": "magnesium sulfate heptahydrate"}, "source_modification_index":
+    0, "source_text": "In the 20X nitrate stock, replace 10.4 g magnesium sulfate
+    heptahydrate per 1 L stock with 5.2 g anhydrous magnesium sulfate per 1 L stock.
+    Keep the stock addition at 50 mL/L final medium.", "stage": "20X nitrate stock
+    preparation"}], "variant_index": 0, "variant_name": "Anhydrous magnesium sulfate
+    option"}, {"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Page 26, Minimal Medium and 20 X Nitrate salts. Supports only the named descriptor/event
+    at the stated stage. Quoted MM preparation instruction: ''Make to 1 liter with
+    distilled water.'' Literal dose: 18 g added to that preparation. No separately
+    established post-agar final volume or g/L value asserted; not the CM 15-g option.
+    Source inspected 2026-11-16; SHA256 22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.4148/1941-4765.1175", "snippet": "add 18 g agar", "supports":
+    "SUPPORT"}], "ingredient": {"notes": "Quoted MM preparation instruction: ''Make
+    to 1 liter with distilled water.'' Literal dose: 18 g added to that preparation.
+    No separately established post-agar final volume or g/L value asserted; not the
+    CM 15-g option.", "preferred_term": "agar"}, "source_modification_index": 0, "source_text":
+    "Add 18 g agar to the one-litre MM preparation for solid medium; retain the source''s
+    autoclaving step.", "stage": "solid minimal-medium preparation before autoclaving"}],
+    "variant_index": 1, "variant_name": "Solid minimal medium"}]}'
 media_term:
   preferred_term: MediaDB Medium 308
   term:
@@ -482,6 +523,34 @@ variants:
       not an extra ingredient. Separate volume excerpt: ''Add distilled water to 1
       liter.'' Thus 5.2 g / 1 L = 5.2 g/L anhydrous salt in stock; 5.2 * 0.050 = 0.26
       g/L final medium. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09.'
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: magnesium sulfate, anhydrous
+      concentration:
+        value: '5.2'
+        unit: G_PER_L
+        per_volume: per liter of 20X nitrate stock, not final medium
+      notes: 'Quoted stock-volume instruction: ''Add distilled water to 1 liter.''
+        Replaces 10.4 g/L heptahydrate in the 20X nitrate stock. The stock addition
+        stays 50 mL/L; no final-medium conversion asserted.'
+    stage: 20X nitrate stock preparation
+    source_modification_index: 0
+    source_text: In the 20X nitrate stock, replace 10.4 g magnesium sulfate heptahydrate
+      per 1 L stock with 5.2 g anhydrous magnesium sulfate per 1 L stock. Keep the
+      stock addition at 50 mL/L final medium.
+    evidence:
+    - reference: doi:10.4148/1941-4765.1175
+      supports: SUPPORT
+      snippet: 5.2 g if anhydrous
+      explanation: 'Page 26, Minimal Medium and 20 X Nitrate salts. Supports only
+        the named descriptor/event at the stated stage. Quoted stock-volume instruction:
+        ''Add distilled water to 1 liter.'' Replaces 10.4 g/L heptahydrate in the
+        20X nitrate stock. The stock addition stays 50 mL/L; no final-medium conversion
+        asserted. Source inspected 2026-11-16; SHA256 22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.'
+    replaced_ingredient:
+      preferred_term: magnesium sulfate heptahydrate
 - name: Solid minimal medium
   relationship: PHYSICAL_STATE_VARIANT
   modifications:
@@ -495,6 +564,27 @@ variants:
       g). Separate excerpt: ''Make to 1 liter with distilled water.'' Source states
       18 g per one-litre preparation; no separate post-agar final volume is invented.
       Base remains LIQUID. Source: doi:10.4148/1941-4765.1175; accessed 2026-10-09.'
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: agar
+      notes: 'Quoted MM preparation instruction: ''Make to 1 liter with distilled
+        water.'' Literal dose: 18 g added to that preparation. No separately established
+        post-agar final volume or g/L value asserted; not the CM 15-g option.'
+    stage: solid minimal-medium preparation before autoclaving
+    source_modification_index: 0
+    source_text: Add 18 g agar to the one-litre MM preparation for solid medium; retain
+      the source's autoclaving step.
+    evidence:
+    - reference: doi:10.4148/1941-4765.1175
+      supports: SUPPORT
+      snippet: add 18 g agar
+      explanation: 'Page 26, Minimal Medium and 20 X Nitrate salts. Supports only
+        the named descriptor/event at the stated stage. Quoted MM preparation instruction:
+        ''Make to 1 liter with distilled water.'' Literal dose: 18 g added to that
+        preparation. No separately established post-agar final volume or g/L value
+        asserted; not the CM 15-g option. Source inspected 2026-11-16; SHA256 22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.'
 references:
 - reference: doi:10.4148/1941-4765.1175
   title: Fundamentals of growth, storage, genetics and microscopy of Aspergillus nidulans

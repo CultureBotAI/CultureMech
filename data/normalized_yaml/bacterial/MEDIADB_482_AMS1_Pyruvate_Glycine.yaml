@@ -239,6 +239,271 @@ curation_history:
     HTCC1062 negative/ambiguous results and taxonomy inventory. Preserved all parent
     amounts, preparation and prior history; no KGX export.
   source: doi:10.1038/ncomms5346
+- timestamp: '2026-11-16T21:33:55.907125+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "311cb0ca79971c03b8a2a334da32709c3be1315c8cf63cb1dc51b31f85200317",
+    "variants": [{"ingredient_changes": [{"action": "SET_CONCENTRATION", "evidence":
+    [{"explanation": "2013 Glycine substitution experiments / 2014 Methods Organism
+    source, p.5. The 2014 PDF page was visually inspected because extracted text corrupts
+    the micro symbol. Primary source inspected 2026-11-16; no ontology identity or
+    mass conversion inferred.", "reference": "doi:10.1038/ncomms5346", "snippet":
+    "pyruvate (100 µM)", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MICROMOLAR", "value": "100"}, "preferred_term": "Pyruvate"}, "source_modification_index":
+    0, "source_text": "Relative to this imported parent: pyruvate 100 micromolar (parent
+    1 millimolar); glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar
+    (parent DL-methionine 50 micromolar). The paper does not resolve methionine stereochemistry.",
+    "stage": "2014 alternate-phosphorus utilization assay"}, {"action": "REPLACE",
+    "evidence": [{"explanation": "The same assay paragraph states the methionine dose
+    without stereochemistry. The new descriptor deliberately does not certify the
+    imported DL form. Primary source inspected 2026-11-16; no ontology identity or
+    mass conversion inferred.", "reference": "doi:10.1038/ncomms5346", "snippet":
+    "methionine (5 µM)", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MICROMOLAR", "value": "5"}, "notes": "Stereochemistry unspecified by
+    the source; imported DL-methionine identity is not certified.", "preferred_term":
+    "Methionine"}, "replaced_ingredient": {"preferred_term": "DL-methionine"}, "source_modification_index":
+    0, "source_text": "Relative to this imported parent: pyruvate 100 micromolar (parent
+    1 millimolar); glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar
+    (parent DL-methionine 50 micromolar). The paper does not resolve methionine stereochemistry.",
+    "stage": "2014 alternate-phosphorus utilization assay"}, {"action": "SET_CONCENTRATION",
+    "evidence": [{"explanation": "2014 Methods Organism source, p.5, alternate-phosphorus
+    assay; PDF page visually inspected. Primary source inspected 2026-11-16; no ontology
+    identity or mass conversion inferred.", "reference": "doi:10.1038/ncomms5346",
+    "snippet": "glycine (5 µM)", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MICROMOLAR", "value": "5"}, "preferred_term": "Glycine"}, "source_modification_index":
+    0, "source_text": "Relative to this imported parent: pyruvate 100 micromolar (parent
+    1 millimolar); glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar
+    (parent DL-methionine 50 micromolar). The paper does not resolve methionine stereochemistry.",
+    "stage": "2014 alternate-phosphorus utilization assay"}, {"action": "REPLACE",
+    "evidence": [{"explanation": "Assay Methods overrides the basal iron dose with
+    1 micromolar FeCl3. Carini 2013 Table 1 specifies FeCl3·6H2O for AMS1; the basal
+    117 nM is not retained. Primary source inspected 2026-11-16; no ontology identity
+    or mass conversion inferred.", "reference": "doi:10.1038/ncomms5346", "snippet":
+    "FeCl3 (1 µM)", "supports": "SUPPORT"}, {"explanation": "AMS1 Table 1 specifies
+    the hexahydrate. This snippet supports form only; the separate assay Methods supplies
+    the overriding 1 micromolar dose.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "FeCl3·6H2O117 nm", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MICROMOLAR", "value": "1"}, "notes": "Hydrate from the explicitly referenced
+    AMS1 base formulation; dose from the assay Methods.", "preferred_term": "Iron(III)
+    chloride hexahydrate"}, "replaced_ingredient": {"preferred_term": "Iron(III) chloride"},
+    "source_modification_index": 1, "source_text": "FeCl3 1 micromolar (parent 117
+    nanomolar). The AMS1 base source specifies FeCl3.6H2O, but its 117 nanomolar dose
+    is overridden by the main assay.", "stage": "2014 alternate-phosphorus utilization
+    assay"}, {"action": "REPLACE", "evidence": [{"explanation": "Carini 2013 Table
+    1, Vitamins, final-concentration column; the complete mixture is retained for
+    the study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "B16 μm", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "MICROMOLAR", "value": "6"}, "notes":
+    "Molecular and salt forms of B-number vitamin labels remain unspecified by this
+    source.", "preferred_term": "B1"}, "replaced_ingredient": {"preferred_term": "Thiamine"},
+    "source_modification_index": 2, "source_text": "Full vitamin mixture: B1 6 micromolar,
+    B3 800 nanomolar, B5 425 nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar,
+    B12 700 picomolar, myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent
+    contains only biotin 4 nanomolar and thiamine 60 micromolar.", "stage": "2014
+    alternate-phosphorus utilization assay"}, {"action": "ADD", "evidence": [{"explanation":
+    "Carini 2013 Table 1, Vitamins, final-concentration column; the complete mixture
+    is retained for the study assay. B-number labels are literal source designations,
+    not an assertion of a particular vitamer/salt. The 2014 Methods repeats the same
+    mixture. Primary source inspected 2026-11-16; no ontology identity or mass conversion
+    inferred.", "reference": "doi:10.1038/ismej.2012.122", "snippet": "B3800 nm",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "NANOMOLAR",
+    "value": "800"}, "notes": "Molecular and salt forms of B-number vitamin labels
+    remain unspecified by this source.", "preferred_term": "B3"}, "source_modification_index":
+    2, "source_text": "Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5
+    425 nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+    myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+    biotin 4 nanomolar and thiamine 60 micromolar.", "stage": "2014 alternate-phosphorus
+    utilization assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013
+    Table 1, Vitamins, final-concentration column; the complete mixture is retained
+    for the study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "B5425 nm", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "NANOMOLAR", "value": "425"},
+    "notes": "Molecular and salt forms of B-number vitamin labels remain unspecified
+    by this source.", "preferred_term": "B5"}, "source_modification_index": 2, "source_text":
+    "Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6
+    500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar, myo-inositol
+    6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only biotin 4 nanomolar
+    and thiamine 60 micromolar.", "stage": "2014 alternate-phosphorus utilization
+    assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013 Table 1,
+    Vitamins, final-concentration column; the complete mixture is retained for the
+    study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "B6500 nm", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "NANOMOLAR", "value": "500"},
+    "notes": "Molecular and salt forms of B-number vitamin labels remain unspecified
+    by this source.", "preferred_term": "B6"}, "source_modification_index": 2, "source_text":
+    "Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6
+    500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar, myo-inositol
+    6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only biotin 4 nanomolar
+    and thiamine 60 micromolar.", "stage": "2014 alternate-phosphorus utilization
+    assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013 Table 1,
+    Vitamins, final-concentration column; the complete mixture is retained for the
+    study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "B94 nm", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "NANOMOLAR", "value": "4"}, "notes":
+    "Molecular and salt forms of B-number vitamin labels remain unspecified by this
+    source.", "preferred_term": "B9"}, "source_modification_index": 2, "source_text":
+    "Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6
+    500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar, myo-inositol
+    6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only biotin 4 nanomolar
+    and thiamine 60 micromolar.", "stage": "2014 alternate-phosphorus utilization
+    assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013 Table 1,
+    Vitamins, final-concentration column; the complete mixture is retained for the
+    study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "B12700 pM", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "PICOMOLAR", "value": "700"},
+    "notes": "Molecular and salt forms of B-number vitamin labels remain unspecified
+    by this source.", "preferred_term": "B12"}, "source_modification_index": 2, "source_text":
+    "Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6
+    500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar, myo-inositol
+    6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only biotin 4 nanomolar
+    and thiamine 60 micromolar.", "stage": "2014 alternate-phosphorus utilization
+    assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013 Table 1,
+    Vitamins, final-concentration column; the complete mixture is retained for the
+    study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "Myo-inositol6 μm", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "MICROMOLAR", "value": "6"},
+    "preferred_term": "Myo-inositol"}, "source_modification_index": 2, "source_text":
+    "Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6
+    500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar, myo-inositol
+    6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only biotin 4 nanomolar
+    and thiamine 60 micromolar.", "stage": "2014 alternate-phosphorus utilization
+    assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013 Table 1,
+    Vitamins, final-concentration column; the complete mixture is retained for the
+    study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "4-Aminobenzoic acid60 nm",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "NANOMOLAR",
+    "value": "60"}, "preferred_term": "4-Aminobenzoic acid"}, "source_modification_index":
+    2, "source_text": "Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5
+    425 nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+    myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+    biotin 4 nanomolar and thiamine 60 micromolar.", "stage": "2014 alternate-phosphorus
+    utilization assay"}, {"action": "REPLACE", "evidence": [{"explanation": "Carini
+    2013 AMS1 Table 1, explicit compound form and final concentration. Preserve stated
+    molar dose, with no molecular-weight or mass conversion. Primary source inspected
+    2026-11-16; no ontology identity or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "MgSO4·7H2O2.8 mm", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MILLIMOLAR", "value": "2.8"}, "preferred_term": "Magnesium sulfate heptahydrate"},
+    "replaced_ingredient": {"preferred_term": "Magnesium sulfate"}, "source_modification_index":
+    3, "source_text": "AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent
+    magnesium sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O,
+    MnCl2.4H2O, ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding
+    parent forms are anhydrous or unspecified. Retain Table 1 molar doses for these
+    unchanged-dose salts, without mass conversion.", "stage": "2014 alternate-phosphorus
+    utilization assay"}, {"action": "REPLACE", "evidence": [{"explanation": "Carini
+    2013 AMS1 Table 1, explicit compound form and final concentration. Preserve stated
+    molar dose, with no molecular-weight or mass conversion. Primary source inspected
+    2026-11-16; no ontology identity or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "CaCl2·2H2O10 mm", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MILLIMOLAR", "value": "10"}, "preferred_term": "Calcium chloride dihydrate"},
+    "replaced_ingredient": {"preferred_term": "Calcium chloride anhydrous"}, "source_modification_index":
+    3, "source_text": "AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent
+    magnesium sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O,
+    MnCl2.4H2O, ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding
+    parent forms are anhydrous or unspecified. Retain Table 1 molar doses for these
+    unchanged-dose salts, without mass conversion.", "stage": "2014 alternate-phosphorus
+    utilization assay"}, {"action": "REPLACE", "evidence": [{"explanation": "Carini
+    2013 AMS1 Table 1, explicit compound form and final concentration. Preserve stated
+    molar dose, with no molecular-weight or mass conversion. Primary source inspected
+    2026-11-16; no ontology identity or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "MnCl2·4H2O9 nm", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "NANOMOLAR", "value": "9"}, "preferred_term": "Manganese chloride tetrahydrate"},
+    "replaced_ingredient": {"preferred_term": "Manganese chloride"}, "source_modification_index":
+    3, "source_text": "AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent
+    magnesium sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O,
+    MnCl2.4H2O, ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding
+    parent forms are anhydrous or unspecified. Retain Table 1 molar doses for these
+    unchanged-dose salts, without mass conversion.", "stage": "2014 alternate-phosphorus
+    utilization assay"}, {"action": "REPLACE", "evidence": [{"explanation": "Carini
+    2013 AMS1 Table 1, explicit compound form and final concentration. Preserve stated
+    molar dose, with no molecular-weight or mass conversion. Primary source inspected
+    2026-11-16; no ontology identity or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "ZnSO4·7H2O800 pM", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "PICOMOLAR", "value": "800"}, "preferred_term": "Zinc sulfate heptahydrate"},
+    "replaced_ingredient": {"preferred_term": "Zinc sulfate"}, "source_modification_index":
+    3, "source_text": "AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent
+    magnesium sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O,
+    MnCl2.4H2O, ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding
+    parent forms are anhydrous or unspecified. Retain Table 1 molar doses for these
+    unchanged-dose salts, without mass conversion.", "stage": "2014 alternate-phosphorus
+    utilization assay"}, {"action": "REPLACE", "evidence": [{"explanation": "Carini
+    2013 AMS1 Table 1, explicit compound form and final concentration. Preserve stated
+    molar dose, with no molecular-weight or mass conversion. Primary source inspected
+    2026-11-16; no ontology identity or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "CoCl2·6H2O500 pM", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "PICOMOLAR", "value": "500"}, "preferred_term": "Cobalt chloride hexahydrate"},
+    "replaced_ingredient": {"preferred_term": "Cobalt chloride"}, "source_modification_index":
+    3, "source_text": "AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent
+    magnesium sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O,
+    MnCl2.4H2O, ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding
+    parent forms are anhydrous or unspecified. Retain Table 1 molar doses for these
+    unchanged-dose salts, without mass conversion.", "stage": "2014 alternate-phosphorus
+    utilization assay"}, {"action": "REPLACE", "evidence": [{"explanation": "Carini
+    2013 AMS1 Table 1, explicit compound form and final concentration. Preserve stated
+    molar dose, with no molecular-weight or mass conversion. Primary source inspected
+    2026-11-16; no ontology identity or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "Na2MoO4·2H2O300 pM", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "PICOMOLAR", "value": "300"}, "preferred_term": "Sodium molybdate dihydrate"},
+    "replaced_ingredient": {"preferred_term": "Sodium molybdate"}, "source_modification_index":
+    3, "source_text": "AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent
+    magnesium sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O,
+    MnCl2.4H2O, ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding
+    parent forms are anhydrous or unspecified. Retain Table 1 molar doses for these
+    unchanged-dose salts, without mass conversion.", "stage": "2014 alternate-phosphorus
+    utilization assay"}, {"action": "REPLACE", "evidence": [{"explanation": "Carini
+    2013 AMS1 Table 1, explicit compound form and final concentration. Preserve stated
+    molar dose, with no molecular-weight or mass conversion. Primary source inspected
+    2026-11-16; no ontology identity or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "NiCl2·6H2O1 nm", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "NANOMOLAR", "value": "1"}, "preferred_term": "Nickel chloride hexahydrate"},
+    "replaced_ingredient": {"preferred_term": "Nickel chloride"}, "source_modification_index":
+    3, "source_text": "AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent
+    magnesium sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O,
+    MnCl2.4H2O, ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding
+    parent forms are anhydrous or unspecified. Retain Table 1 molar doses for these
+    unchanged-dose salts, without mass conversion.", "stage": "2014 alternate-phosphorus
+    utilization assay"}, {"action": "REMOVE", "evidence": [{"explanation": "2014 Methods
+    Organism source omits added phosphate from the AMS1 assay base. This refers to
+    phosphate of the original Table 1 AMS1 formulation, not a claim that the imported
+    parent currently contains it or that residual phosphate is zero. Primary source
+    inspected 2026-11-16; no ontology identity or mass conversion inferred.", "reference":
+    "doi:10.1038/ncomms5346", "snippet": "without added Pi", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "Sodium dihydrogen phosphate"}, "source_modification_index":
+    4, "source_text": "No phosphate is added to the alternate-P assay base; omit the
+    phosphate of original AMS1 Table 1. This is not a claim of zero residual phosphate:
+    the Figure 2 inoculum was previously grown on phosphate.", "stage": "2014 alternate-phosphorus
+    assay base preparation"}, {"action": "SET_CONCENTRATION", "evidence": [{"explanation":
+    "2014 Methods alternate-phosphorus experiment, p.5: each listed P source tested
+    separately. Preserve source chemical label without certifying the imported stereoisomer
+    or protonation state. The glucose Figure 1 label conflict is retained in source_text.
+    Primary source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ncomms5346", "snippet": "1.0 µM MPn", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "MICROMOLAR", "value": "1.0"}, "notes":
+    "Separate P-source assay, not a simultaneous mixture; unspecified stereochemistry/salt
+    form remains unresolved.", "preferred_term": "Methylphosphonic acid"}, "source_modification_index":
+    5, "source_text": "Added methylphosphonic acid: 1.0 micromolar final, numerically
+    equal to the parent''s 0.001 millimolar. This supports the assay, not the complete
+    parent recipe. Use the paper''s substrate identity; no additional protonation/salt-form
+    equivalence is asserted.", "stage": "2014 alternate-phosphorus utilization assay"}],
+    "variant_index": 0, "variant_name": "Carini 2014 AMS1 methylphosphonic acid utilization
+    assay"}]}'
 media_term:
   preferred_term: MediaDB Medium 482
   term:
@@ -409,6 +674,472 @@ variants:
       after autoclaving and sparging. The pH of the resulting AMS1 typically ranged
       from 7.5 to 7.7. ''. No parent amount or preparation step is changed or newly
       certified; this evidence is attached to the named study variant only.'
+  ingredient_changes:
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: Pyruvate
+      concentration:
+        value: '100'
+        unit: MICROMOLAR
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 0
+    source_text: 'Relative to this imported parent: pyruvate 100 micromolar (parent
+      1 millimolar); glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar
+      (parent DL-methionine 50 micromolar). The paper does not resolve methionine
+      stereochemistry.'
+    evidence:
+    - reference: doi:10.1038/ncomms5346
+      supports: SUPPORT
+      snippet: pyruvate (100 µM)
+      explanation: 2013 Glycine substitution experiments / 2014 Methods Organism source,
+        p.5. The 2014 PDF page was visually inspected because extracted text corrupts
+        the micro symbol. Primary source inspected 2026-11-16; no ontology identity
+        or mass conversion inferred.
+  - action: REPLACE
+    ingredient:
+      preferred_term: Methionine
+      concentration:
+        value: '5'
+        unit: MICROMOLAR
+      notes: Stereochemistry unspecified by the source; imported DL-methionine identity
+        is not certified.
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 0
+    source_text: 'Relative to this imported parent: pyruvate 100 micromolar (parent
+      1 millimolar); glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar
+      (parent DL-methionine 50 micromolar). The paper does not resolve methionine
+      stereochemistry.'
+    evidence:
+    - reference: doi:10.1038/ncomms5346
+      supports: SUPPORT
+      snippet: methionine (5 µM)
+      explanation: The same assay paragraph states the methionine dose without stereochemistry.
+        The new descriptor deliberately does not certify the imported DL form. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: DL-methionine
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: Glycine
+      concentration:
+        value: '5'
+        unit: MICROMOLAR
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 0
+    source_text: 'Relative to this imported parent: pyruvate 100 micromolar (parent
+      1 millimolar); glycine 5 micromolar (parent 50 micromolar); methionine 5 micromolar
+      (parent DL-methionine 50 micromolar). The paper does not resolve methionine
+      stereochemistry.'
+    evidence:
+    - reference: doi:10.1038/ncomms5346
+      supports: SUPPORT
+      snippet: glycine (5 µM)
+      explanation: 2014 Methods Organism source, p.5, alternate-phosphorus assay;
+        PDF page visually inspected. Primary source inspected 2026-11-16; no ontology
+        identity or mass conversion inferred.
+  - action: REPLACE
+    ingredient:
+      preferred_term: Iron(III) chloride hexahydrate
+      concentration:
+        value: '1'
+        unit: MICROMOLAR
+      notes: Hydrate from the explicitly referenced AMS1 base formulation; dose from
+        the assay Methods.
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 1
+    source_text: FeCl3 1 micromolar (parent 117 nanomolar). The AMS1 base source specifies
+      FeCl3.6H2O, but its 117 nanomolar dose is overridden by the main assay.
+    evidence:
+    - reference: doi:10.1038/ncomms5346
+      supports: SUPPORT
+      snippet: FeCl3 (1 µM)
+      explanation: Assay Methods overrides the basal iron dose with 1 micromolar FeCl3.
+        Carini 2013 Table 1 specifies FeCl3·6H2O for AMS1; the basal 117 nM is not
+        retained. Primary source inspected 2026-11-16; no ontology identity or mass
+        conversion inferred.
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: FeCl3·6H2O117 nm
+      explanation: AMS1 Table 1 specifies the hexahydrate. This snippet supports form
+        only; the separate assay Methods supplies the overriding 1 micromolar dose.
+    replaced_ingredient:
+      preferred_term: Iron(III) chloride
+  - action: REPLACE
+    ingredient:
+      preferred_term: B1
+      concentration:
+        value: '6'
+        unit: MICROMOLAR
+      notes: Molecular and salt forms of B-number vitamin labels remain unspecified
+        by this source.
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B16 μm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Thiamine
+  - action: ADD
+    ingredient:
+      preferred_term: B3
+      concentration:
+        value: '800'
+        unit: NANOMOLAR
+      notes: Molecular and salt forms of B-number vitamin labels remain unspecified
+        by this source.
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B3800 nm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: B5
+      concentration:
+        value: '425'
+        unit: NANOMOLAR
+      notes: Molecular and salt forms of B-number vitamin labels remain unspecified
+        by this source.
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B5425 nm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: B6
+      concentration:
+        value: '500'
+        unit: NANOMOLAR
+      notes: Molecular and salt forms of B-number vitamin labels remain unspecified
+        by this source.
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B6500 nm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: B9
+      concentration:
+        value: '4'
+        unit: NANOMOLAR
+      notes: Molecular and salt forms of B-number vitamin labels remain unspecified
+        by this source.
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B94 nm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: B12
+      concentration:
+        value: '700'
+        unit: PICOMOLAR
+      notes: Molecular and salt forms of B-number vitamin labels remain unspecified
+        by this source.
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B12700 pM
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: Myo-inositol
+      concentration:
+        value: '6'
+        unit: MICROMOLAR
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: Myo-inositol6 μm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: 4-Aminobenzoic acid
+      concentration:
+        value: '60'
+        unit: NANOMOLAR
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: 4-Aminobenzoic acid60 nm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: REPLACE
+    ingredient:
+      preferred_term: Magnesium sulfate heptahydrate
+      concentration:
+        value: '2.8'
+        unit: MILLIMOLAR
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 3
+    source_text: AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium
+      sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O,
+      ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms
+      are anhydrous or unspecified. Retain Table 1 molar doses for these unchanged-dose
+      salts, without mass conversion.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: MgSO4·7H2O2.8 mm
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Magnesium sulfate
+  - action: REPLACE
+    ingredient:
+      preferred_term: Calcium chloride dihydrate
+      concentration:
+        value: '10'
+        unit: MILLIMOLAR
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 3
+    source_text: AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium
+      sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O,
+      ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms
+      are anhydrous or unspecified. Retain Table 1 molar doses for these unchanged-dose
+      salts, without mass conversion.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: CaCl2·2H2O10 mm
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Calcium chloride anhydrous
+  - action: REPLACE
+    ingredient:
+      preferred_term: Manganese chloride tetrahydrate
+      concentration:
+        value: '9'
+        unit: NANOMOLAR
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 3
+    source_text: AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium
+      sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O,
+      ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms
+      are anhydrous or unspecified. Retain Table 1 molar doses for these unchanged-dose
+      salts, without mass conversion.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: MnCl2·4H2O9 nm
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Manganese chloride
+  - action: REPLACE
+    ingredient:
+      preferred_term: Zinc sulfate heptahydrate
+      concentration:
+        value: '800'
+        unit: PICOMOLAR
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 3
+    source_text: AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium
+      sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O,
+      ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms
+      are anhydrous or unspecified. Retain Table 1 molar doses for these unchanged-dose
+      salts, without mass conversion.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: ZnSO4·7H2O800 pM
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Zinc sulfate
+  - action: REPLACE
+    ingredient:
+      preferred_term: Cobalt chloride hexahydrate
+      concentration:
+        value: '500'
+        unit: PICOMOLAR
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 3
+    source_text: AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium
+      sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O,
+      ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms
+      are anhydrous or unspecified. Retain Table 1 molar doses for these unchanged-dose
+      salts, without mass conversion.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: CoCl2·6H2O500 pM
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Cobalt chloride
+  - action: REPLACE
+    ingredient:
+      preferred_term: Sodium molybdate dihydrate
+      concentration:
+        value: '300'
+        unit: PICOMOLAR
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 3
+    source_text: AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium
+      sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O,
+      ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms
+      are anhydrous or unspecified. Retain Table 1 molar doses for these unchanged-dose
+      salts, without mass conversion.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: Na2MoO4·2H2O300 pM
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Sodium molybdate
+  - action: REPLACE
+    ingredient:
+      preferred_term: Nickel chloride hexahydrate
+      concentration:
+        value: '1'
+        unit: NANOMOLAR
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 3
+    source_text: AMS1 Table 1 base uses MgSO4.7H2O at 2.8 millimolar, not parent magnesium
+      sulfate 28 millimolar. Source hydrate forms also specify CaCl2.2H2O, MnCl2.4H2O,
+      ZnSO4.7H2O, CoCl2.6H2O, Na2MoO4.2H2O and NiCl2.6H2O; corresponding parent forms
+      are anhydrous or unspecified. Retain Table 1 molar doses for these unchanged-dose
+      salts, without mass conversion.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: NiCl2·6H2O1 nm
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Nickel chloride
+  - action: REMOVE
+    ingredient:
+      preferred_term: Sodium dihydrogen phosphate
+    stage: 2014 alternate-phosphorus assay base preparation
+    source_modification_index: 4
+    source_text: 'No phosphate is added to the alternate-P assay base; omit the phosphate
+      of original AMS1 Table 1. This is not a claim of zero residual phosphate: the
+      Figure 2 inoculum was previously grown on phosphate.'
+    evidence:
+    - reference: doi:10.1038/ncomms5346
+      supports: SUPPORT
+      snippet: without added Pi
+      explanation: 2014 Methods Organism source omits added phosphate from the AMS1
+        assay base. This refers to phosphate of the original Table 1 AMS1 formulation,
+        not a claim that the imported parent currently contains it or that residual
+        phosphate is zero. Primary source inspected 2026-11-16; no ontology identity
+        or mass conversion inferred.
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: Methylphosphonic acid
+      concentration:
+        value: '1.0'
+        unit: MICROMOLAR
+      notes: Separate P-source assay, not a simultaneous mixture; unspecified stereochemistry/salt
+        form remains unresolved.
+    stage: 2014 alternate-phosphorus utilization assay
+    source_modification_index: 5
+    source_text: 'Added methylphosphonic acid: 1.0 micromolar final, numerically equal
+      to the parent''s 0.001 millimolar. This supports the assay, not the complete
+      parent recipe. Use the paper''s substrate identity; no additional protonation/salt-form
+      equivalence is asserted.'
+    evidence:
+    - reference: doi:10.1038/ncomms5346
+      supports: SUPPORT
+      snippet: 1.0 µM MPn
+      explanation: '2014 Methods alternate-phosphorus experiment, p.5: each listed
+        P source tested separately. Preserve source chemical label without certifying
+        the imported stereoisomer or protonation state. The glucose Figure 1 label
+        conflict is retained in source_text. Primary source inspected 2026-11-16;
+        no ontology identity or mass conversion inferred.'
 target_organisms:
 - preferred_term: Candidatus Pelagibacter sp. HTCC7211
   strain: HTCC7211

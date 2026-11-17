@@ -369,6 +369,109 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-11-16T21:36:31.607993+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected
+    2026-11-16. Only Reed2001 alternative buffer is structured; Hartzell PIPES preparation
+    remains held for its primary source. Do not combine with Hartzell formulation
+    or infer unspecified hydrate.", "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
+    "snippet": "20 mM Tris and 20 mM maleic acid", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "MILLIMOLAR", "value": "20"}, "notes": "Only Reed2001
+    alternative buffer is structured; Hartzell PIPES preparation remains held for
+    its primary source. Do not combine with Hartzell formulation or infer unspecified
+    hydrate.", "preferred_term": "Tris"}, "notes": "A scoped change event, not a fully
+    expanded variant or a parent-formulation amendment. No chemical identifier is
+    inferred.", "source_modification_index": 1, "source_text": "PIPES buffer 20 ml
+    of 1 M per L; base medium adjusted to pH 6.7 (Hartzell 1999). Reed 2001 variant
+    uses Tris+maleic acid 20 mM each, pH 6.1.", "stage": "Reed2001 modified STL cultivation
+    of A. fulgidus"}, {"action": "ADD", "evidence": [{"explanation": "Materials and
+    Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16.
+    Only Reed2001 alternative buffer is structured; Hartzell PIPES preparation remains
+    held for its primary source. Do not combine with Hartzell formulation or infer
+    unspecified hydrate.", "reference": "doi:10.1128/jb.183.24.7007-7016.2001", "snippet":
+    "20 mM Tris and 20 mM maleic acid", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MILLIMOLAR", "value": "20"}, "notes": "Only Reed2001 alternative buffer
+    is structured; Hartzell PIPES preparation remains held for its primary source.
+    Do not combine with Hartzell formulation or infer unspecified hydrate.", "preferred_term":
+    "maleic acid"}, "notes": "A scoped change event, not a fully expanded variant
+    or a parent-formulation amendment. No chemical identifier is inferred.", "source_modification_index":
+    1, "source_text": "PIPES buffer 20 ml of 1 M per L; base medium adjusted to pH
+    6.7 (Hartzell 1999). Reed 2001 variant uses Tris+maleic acid 20 mM each, pH 6.1.",
+    "stage": "Reed2001 modified STL cultivation of A. fulgidus"}, {"action": "ADD",
+    "evidence": [{"explanation": "Materials and Methods, Archaeoglobus growth and
+    harvest; primary source inspected 2026-11-16. Only Reed2001 DL-sodium-lactate
+    concentration structured; Hartzell30% stock7mL/L preparation remains held. Do
+    not combine with Hartzell formulation or infer unspecified hydrate.", "reference":
+    "doi:10.1128/jb.183.24.7007-7016.2001", "snippet": "22 mM dl-sodium lactate",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "MILLIMOLAR",
+    "value": "22"}, "notes": "Only Reed2001 DL-sodium-lactate concentration structured;
+    Hartzell30% stock7mL/L preparation remains held. Do not combine with Hartzell
+    formulation or infer unspecified hydrate.", "preferred_term": "DL-sodium lactate"},
+    "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "source_modification_index":
+    2, "source_text": "Carbon/electron donor: sodium lactate 7 ml of 30% (w/v) per
+    L (Hartzell 1999); DL-sodium lactate ~22 mM (Reed 2001).", "stage": "Reed2001
+    modified STL cultivation of A. fulgidus"}, {"action": "ADD", "evidence": [{"explanation":
+    "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected
+    2026-11-16. Only Reed2001 yeast-extract condition structured; Wolfe-vitamin replacement
+    belongs to unresolved Hartzell alternative. Do not combine with Hartzell formulation
+    or infer unspecified hydrate.", "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
+    "snippet": "0.5 g of yeast extract per liter", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "G_PER_L", "value": "0.5"}, "notes": "Only Reed2001
+    yeast-extract condition structured; Wolfe-vitamin replacement belongs to unresolved
+    Hartzell alternative. Do not combine with Hartzell formulation or infer unspecified
+    hydrate.", "preferred_term": "yeast extract"}, "notes": "A scoped change event,
+    not a fully expanded variant or a parent-formulation amendment. No chemical identifier
+    is inferred.", "source_modification_index": 3, "source_text": "Yeast extract 0.5
+    g/L (replaceable by Wolfe''s vitamin mixture 10 ml/L for defined medium).", "stage":
+    "Reed2001 modified STL cultivation of A. fulgidus"}, {"action": "ADD", "evidence":
+    [{"explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary
+    source inspected 2026-11-16. Only Reed2001 final reductant concentrations structured;
+    Hartzell combined-stock preparation remains held. Do not combine with Hartzell
+    formulation or infer unspecified hydrate.", "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
+    "snippet": "1 mM Na2S and 1 mM Na2S2O3", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "MILLIMOLAR", "value": "1"}, "notes": "Only Reed2001
+    final reductant concentrations structured; Hartzell combined-stock preparation
+    remains held. Do not combine with Hartzell formulation or infer unspecified hydrate.",
+    "preferred_term": "Na2S"}, "notes": "A scoped change event, not a fully expanded
+    variant or a parent-formulation amendment. No chemical identifier is inferred.",
+    "source_modification_index": 5, "source_text": "Reductant: Na2S 100 mM + Na2S2O3
+    200 mM stock added at 0.5% v/v after autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM
+    each (Reed).", "stage": "Reed2001 modified STL cultivation of A. fulgidus"}, {"action":
+    "ADD", "evidence": [{"explanation": "Materials and Methods, Archaeoglobus growth
+    and harvest; primary source inspected 2026-11-16. Only Reed2001 final reductant
+    concentrations structured; Hartzell combined-stock preparation remains held. Do
+    not combine with Hartzell formulation or infer unspecified hydrate.", "reference":
+    "doi:10.1128/jb.183.24.7007-7016.2001", "snippet": "1 mM Na2S and 1 mM Na2S2O3",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "MILLIMOLAR",
+    "value": "1"}, "notes": "Only Reed2001 final reductant concentrations structured;
+    Hartzell combined-stock preparation remains held. Do not combine with Hartzell
+    formulation or infer unspecified hydrate.", "preferred_term": "Na2S2O3"}, "notes":
+    "A scoped change event, not a fully expanded variant or a parent-formulation amendment.
+    No chemical identifier is inferred.", "source_modification_index": 5, "source_text":
+    "Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v after autoclaving
+    (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed).", "stage": "Reed2001 modified STL
+    cultivation of A. fulgidus"}, {"action": "ADD", "evidence": [{"explanation": "Materials
+    and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16.
+    Source says0.2% resazurin was added without an unambiguous final-dose basis/stock
+    volume; no concentration promoted. Stored biomass underN2 is not evidence of culture
+    sparging.", "reference": "doi:10.1128/jb.183.24.7007-7016.2001", "snippet": "0.2%
+    resazurin was added as a reduction indicator", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Source says0.2% resazurin was added without an unambiguous final-dose
+    basis/stock volume; no concentration promoted. Stored biomass underN2 is not evidence
+    of culture sparging.", "preferred_term": "resazurin"}, "notes": "A scoped change
+    event, not a fully expanded variant or a parent-formulation amendment. No chemical
+    identifier is inferred.", "source_modification_index": 6, "source_text": "Resazurin
+    redox indicator; anaerobic, boiled and N2-sparged; good growth 75-82C (Hartzell),
+    83C in glass carboys (Reed).", "stage": "Reed2001 modified STL reduction indicator"}],
+    "variant_index": 0, "variant_name": "stl_medium_archaeoglobus_variant"}]}'
 solutions:
 - preferred_term: Trace Elements Solution
   term:
@@ -438,3 +541,162 @@ variants:
     snippet: cells were grown anaerobically at 83C in glass carboys ... modified sulfate-thiosulfate-lactate
       (STL) medium 3 ... 20 mM Tris plus maleic acid, pH 6.1; DL-sodium lactate 22
       mM; yeast extract 0.5 g/L; Na2S and Na2S2O3 1 mM; resazurin.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: Tris
+      concentration:
+        value: '20'
+        unit: MILLIMOLAR
+      notes: Only Reed2001 alternative buffer is structured; Hartzell PIPES preparation
+        remains held for its primary source. Do not combine with Hartzell formulation
+        or infer unspecified hydrate.
+    stage: Reed2001 modified STL cultivation of A. fulgidus
+    evidence:
+    - reference: doi:10.1128/jb.183.24.7007-7016.2001
+      supports: SUPPORT
+      snippet: 20 mM Tris and 20 mM maleic acid
+      explanation: Materials and Methods, Archaeoglobus growth and harvest; primary
+        source inspected 2026-11-16. Only Reed2001 alternative buffer is structured;
+        Hartzell PIPES preparation remains held for its primary source. Do not combine
+        with Hartzell formulation or infer unspecified hydrate.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 1
+    source_text: PIPES buffer 20 ml of 1 M per L; base medium adjusted to pH 6.7 (Hartzell
+      1999). Reed 2001 variant uses Tris+maleic acid 20 mM each, pH 6.1.
+  - action: ADD
+    ingredient:
+      preferred_term: maleic acid
+      concentration:
+        value: '20'
+        unit: MILLIMOLAR
+      notes: Only Reed2001 alternative buffer is structured; Hartzell PIPES preparation
+        remains held for its primary source. Do not combine with Hartzell formulation
+        or infer unspecified hydrate.
+    stage: Reed2001 modified STL cultivation of A. fulgidus
+    evidence:
+    - reference: doi:10.1128/jb.183.24.7007-7016.2001
+      supports: SUPPORT
+      snippet: 20 mM Tris and 20 mM maleic acid
+      explanation: Materials and Methods, Archaeoglobus growth and harvest; primary
+        source inspected 2026-11-16. Only Reed2001 alternative buffer is structured;
+        Hartzell PIPES preparation remains held for its primary source. Do not combine
+        with Hartzell formulation or infer unspecified hydrate.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 1
+    source_text: PIPES buffer 20 ml of 1 M per L; base medium adjusted to pH 6.7 (Hartzell
+      1999). Reed 2001 variant uses Tris+maleic acid 20 mM each, pH 6.1.
+  - action: ADD
+    ingredient:
+      preferred_term: DL-sodium lactate
+      concentration:
+        value: '22'
+        unit: MILLIMOLAR
+      notes: Only Reed2001 DL-sodium-lactate concentration structured; Hartzell30%
+        stock7mL/L preparation remains held. Do not combine with Hartzell formulation
+        or infer unspecified hydrate.
+    stage: Reed2001 modified STL cultivation of A. fulgidus
+    evidence:
+    - reference: doi:10.1128/jb.183.24.7007-7016.2001
+      supports: SUPPORT
+      snippet: 22 mM dl-sodium lactate
+      explanation: Materials and Methods, Archaeoglobus growth and harvest; primary
+        source inspected 2026-11-16. Only Reed2001 DL-sodium-lactate concentration
+        structured; Hartzell30% stock7mL/L preparation remains held. Do not combine
+        with Hartzell formulation or infer unspecified hydrate.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 2
+    source_text: 'Carbon/electron donor: sodium lactate 7 ml of 30% (w/v) per L (Hartzell
+      1999); DL-sodium lactate ~22 mM (Reed 2001).'
+  - action: ADD
+    ingredient:
+      preferred_term: yeast extract
+      concentration:
+        value: '0.5'
+        unit: G_PER_L
+      notes: Only Reed2001 yeast-extract condition structured; Wolfe-vitamin replacement
+        belongs to unresolved Hartzell alternative. Do not combine with Hartzell formulation
+        or infer unspecified hydrate.
+    stage: Reed2001 modified STL cultivation of A. fulgidus
+    evidence:
+    - reference: doi:10.1128/jb.183.24.7007-7016.2001
+      supports: SUPPORT
+      snippet: 0.5 g of yeast extract per liter
+      explanation: Materials and Methods, Archaeoglobus growth and harvest; primary
+        source inspected 2026-11-16. Only Reed2001 yeast-extract condition structured;
+        Wolfe-vitamin replacement belongs to unresolved Hartzell alternative. Do not
+        combine with Hartzell formulation or infer unspecified hydrate.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 3
+    source_text: Yeast extract 0.5 g/L (replaceable by Wolfe's vitamin mixture 10
+      ml/L for defined medium).
+  - action: ADD
+    ingredient:
+      preferred_term: Na2S
+      concentration:
+        value: '1'
+        unit: MILLIMOLAR
+      notes: Only Reed2001 final reductant concentrations structured; Hartzell combined-stock
+        preparation remains held. Do not combine with Hartzell formulation or infer
+        unspecified hydrate.
+    stage: Reed2001 modified STL cultivation of A. fulgidus
+    evidence:
+    - reference: doi:10.1128/jb.183.24.7007-7016.2001
+      supports: SUPPORT
+      snippet: 1 mM Na2S and 1 mM Na2S2O3
+      explanation: Materials and Methods, Archaeoglobus growth and harvest; primary
+        source inspected 2026-11-16. Only Reed2001 final reductant concentrations
+        structured; Hartzell combined-stock preparation remains held. Do not combine
+        with Hartzell formulation or infer unspecified hydrate.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 5
+    source_text: 'Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v
+      after autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed).'
+  - action: ADD
+    ingredient:
+      preferred_term: Na2S2O3
+      concentration:
+        value: '1'
+        unit: MILLIMOLAR
+      notes: Only Reed2001 final reductant concentrations structured; Hartzell combined-stock
+        preparation remains held. Do not combine with Hartzell formulation or infer
+        unspecified hydrate.
+    stage: Reed2001 modified STL cultivation of A. fulgidus
+    evidence:
+    - reference: doi:10.1128/jb.183.24.7007-7016.2001
+      supports: SUPPORT
+      snippet: 1 mM Na2S and 1 mM Na2S2O3
+      explanation: Materials and Methods, Archaeoglobus growth and harvest; primary
+        source inspected 2026-11-16. Only Reed2001 final reductant concentrations
+        structured; Hartzell combined-stock preparation remains held. Do not combine
+        with Hartzell formulation or infer unspecified hydrate.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 5
+    source_text: 'Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v
+      after autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed).'
+  - action: ADD
+    ingredient:
+      preferred_term: resazurin
+      notes: Source says0.2% resazurin was added without an unambiguous final-dose
+        basis/stock volume; no concentration promoted. Stored biomass underN2 is not
+        evidence of culture sparging.
+    stage: Reed2001 modified STL reduction indicator
+    evidence:
+    - reference: doi:10.1128/jb.183.24.7007-7016.2001
+      supports: SUPPORT
+      snippet: 0.2% resazurin was added as a reduction indicator
+      explanation: Materials and Methods, Archaeoglobus growth and harvest; primary
+        source inspected 2026-11-16. Source says0.2% resazurin was added without an
+        unambiguous final-dose basis/stock volume; no concentration promoted. Stored
+        biomass underN2 is not evidence of culture sparging.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 6
+    source_text: Resazurin redox indicator; anaerobic, boiled and N2-sparged; good
+      growth 75-82C (Hartzell), 83C in glass carboys (Reed).

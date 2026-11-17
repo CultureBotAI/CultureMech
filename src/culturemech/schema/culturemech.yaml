@@ -1841,6 +1841,16 @@ classes:
         range: string
         multivalued: true
 
+      ingredient_changes:
+        description: >-
+          Evidence-backed ingredient changes scoped to this variant and its
+          preparation or experimental stage. These are not additions to the
+          parent formulation. Retain modifications as the source text; removals
+          and replaced ingredients are context, never positive occurrences.
+        range: VariantIngredientChange
+        multivalued: true
+        inlined_as_list: true
+
       purpose:
         description: Why this variant exists
         range: string
@@ -1855,6 +1865,115 @@ classes:
         range: EvidenceItem
         multivalued: true
         inlined_as_list: true
+
+  VariantIngredientChange:
+    description: >-
+      A curated ingredient change bound to one exact variant modification.
+      Ingredient identity may remain unresolved. ADD, SET_CONCENTRATION and the
+      new ingredient of REPLACE are scoped change events, not a fully expanded
+      variant recipe. REMOVE and replaced_ingredient do not assert presence.
+      Semantic validation additionally binds source_text to modifications at
+      source_modification_index and checks relationship and evidence context.
+    attributes:
+      action:
+        description: Operation on the ingredient in the stated variant stage
+        range: VariantIngredientChangeActionEnum
+        required: true
+
+      ingredient:
+        description: >-
+          Ingredient added, removed, or assigned a concentration; for REPLACE,
+          this is the new ingredient. REMOVE identifies only the omitted target.
+        range: IngredientDescriptor
+        required: true
+        inlined: true
+        range_expression:
+          slot_conditions:
+            preferred_term:
+              pattern: '\S'
+
+      replaced_ingredient:
+        description: >-
+          Old ingredient replaced by ingredient. Required only for REPLACE and
+          forbidden for other actions; this descriptor does not assert presence.
+        range: IngredientDescriptor
+        inlined: true
+        range_expression:
+          slot_conditions:
+            preferred_term:
+              pattern: '\S'
+
+      stage:
+        description: >-
+          Explicit preparation or experimental context, such as pre-experiment
+          stock culture or one assay treatment. Do not infer parent-medium
+          equivalence or combine separate stages or alternative doses.
+        range: string
+        required: true
+        pattern: '\S'
+
+      source_modification_index:
+        description: >-
+          Zero-based index into this MediaVariant's modifications list within
+          the source snapshot. Must identify the exact source_text string.
+        range: integer
+        required: true
+        minimum_value: 0
+
+      source_text:
+        description: >-
+          Exact, unaltered modifications[source_modification_index] string.
+          This binding is checked by semantic validation; it is not a substitute
+          for external scientific evidence or a stable cross-revision ID.
+        range: string
+        required: true
+        pattern: '\S'
+
+      evidence:
+        description: >-
+          Claim-scoped source evidence for this operation, ingredient and stage.
+          At least one item must SUPPORT the claim. Each item needs its source
+          reference, verbatim snippet and explanatory context; structural
+          validation cannot establish the scientific truth of the evidence.
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+        has_member:
+          range_expression:
+            slot_conditions:
+              supports:
+                equals_string: SUPPORT
+                required: true
+
+      notes:
+        description: Qualifications, unresolved identity or source-basis limitations
+        range: string
+    rules:
+      - preconditions:
+          slot_conditions:
+            action:
+              equals_string: REPLACE
+        postconditions:
+          slot_conditions:
+            replaced_ingredient:
+              required: true
+        elseconditions:
+          slot_conditions:
+            replaced_ingredient:
+              value_presence: ABSENT
+      - preconditions:
+          slot_conditions:
+            action:
+              equals_string: SET_CONCENTRATION
+        postconditions:
+          slot_conditions:
+            ingredient:
+              range_expression:
+                slot_conditions:
+                  concentration:
+                    required: true
 
   MediaRecipeReference:
     description: Reference to another CultureMech media recipe record
@@ -2735,6 +2854,10 @@ enums:
         description: milligrams per liter
       MICROG_PER_L:
         description: micrograms per liter
+      MICROG_PER_ML:
+        description: micrograms per milliliter
+      NG_PER_L:
+        description: nanograms per liter; retain source treatment and preparation basis
       MOLAR:
         description: moles per liter
         meaning: UO:0000062
@@ -2742,6 +2865,15 @@ enums:
         description: millimoles per liter
       MICROMOLAR:
         description: micromoles per liter
+      NANOMOLAR:
+        description: nanomoles per liter
+      PICOMOLAR:
+        description: picomoles per liter
+      PPM:
+        description: >-
+          Parts per million as stated by the source. Mass/mass, mass/volume or
+          volume/volume basis must not be inferred. Preserve the explicit basis
+          or its uncertainty in ingredient notes and do not convert silently.
       PERCENT_W_V:
         description: percent weight per volume
       PERCENT_W_W:
@@ -2948,6 +3080,20 @@ enums:
         description: Dehalogenase enzyme for halogenated compounds
       FLUORIDE_EXPORTER:
         description: Fluoride-specific exporter
+
+  VariantIngredientChangeActionEnum:
+    description: Operation on an ingredient within a named variant stage
+    permissible_values:
+      ADD:
+        description: Add the stated ingredient in this variant stage
+      REMOVE:
+        description: Omit the stated ingredient; does not assert positive presence
+      REPLACE:
+        description: Replace replaced_ingredient with ingredient in this variant stage
+      SET_CONCENTRATION:
+        description: >-
+          Assign the stated concentration in this variant stage, including an
+          explicitly reported zero dose; does not expand the parent formulation
 
   VariantTypeEnum:
     description: Type of chemical variant relationship to parent

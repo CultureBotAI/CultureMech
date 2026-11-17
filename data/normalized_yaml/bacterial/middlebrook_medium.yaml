@@ -1207,6 +1207,217 @@ curation_history:
     \"\",\n                        \"attribute\": \"albumin fraction V\",\n                        \"amount\":
     5,\n                        \"unit\": \"g\",\n                        \"g_l\":
     50,\n                        \"optional\": 0\n                    }"}]'
+- timestamp: '2026-11-16T21:33:13.542127+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "575937e6b9739016d8b43f48ea23efba290d69a3445c311bc95223991cc18049",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16;
+    supports this source-scoped variant assertion, not equivalence of the whole parent
+    recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\";
+    row columns transcribed with whitespace normalized. These are batch input amounts;
+    the water row is an input, not a separately measured final volume. Exact excerpt
+    clarification for issue763; scientific payload unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "(NH4)2SO4 0.500 g", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal alternative preparation input: 0.5 g. Do not add to the commercial route
+    or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved.",
+    "preferred_term": "(NH4)2SO4"}, "source_modification_index": 0, "source_text":
+    "Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "stage":
+    "from-scratch alternative to commercial 7H10 preparation"}, {"action": "ADD",
+    "evidence": [{"explanation": "Page 1, alternative Bacto Middlebrook 7H10 table.
+    Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
+    not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed
+    \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized.
+    These are batch input amounts; the water row is an input, not a separately measured
+    final volume. Exact excerpt clarification for issue763; scientific payload unchanged.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "KH2PO4 1.500 g", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal alternative preparation input: 1.5 g. Do not add to the commercial route
+    or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved.",
+    "preferred_term": "KH2PO4"}, "source_modification_index": 1, "source_text": "Alternative
+    preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "stage": "from-scratch alternative
+    to commercial 7H10 preparation"}, {"action": "ADD", "evidence": [{"explanation":
+    "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16;
+    supports this source-scoped variant assertion, not equivalence of the whole parent
+    recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\";
+    row columns transcribed with whitespace normalized. These are batch input amounts;
+    the water row is an input, not a separately measured final volume. Exact excerpt
+    clarification for issue763; scientific payload unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Na2HPO4 1.500 g", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal alternative preparation input: 1.5 g. Do not add to the commercial route
+    or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved.",
+    "preferred_term": "Na2HPO4"}, "source_modification_index": 2, "source_text": "Alternative
+    preparation input: Na2HPO4 1.5 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "stage": "from-scratch alternative
+    to commercial 7H10 preparation"}, {"action": "ADD", "evidence": [{"explanation":
+    "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16;
+    supports this source-scoped variant assertion, not equivalence of the whole parent
+    recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\";
+    row columns transcribed with whitespace normalized. These are batch input amounts;
+    the water row is an input, not a separately measured final volume. Exact excerpt
+    clarification for issue763; scientific payload unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Na-citrate 0.400 g", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal alternative preparation input: 0.4 g. Do not add to the commercial route
+    or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved.",
+    "preferred_term": "Sodium citrate"}, "source_modification_index": 3, "source_text":
+    "Alternative preparation input: Sodium citrate 0.4 g; not an additional input
+    to the commercial preparation. No final-medium concentration is inferred.", "stage":
+    "from-scratch alternative to commercial 7H10 preparation"}, {"action": "ADD",
+    "evidence": [{"explanation": "Page 1, alternative Bacto Middlebrook 7H10 table.
+    Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
+    not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed
+    \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized.
+    These are batch input amounts; the water row is an input, not a separately measured
+    final volume. Exact excerpt clarification for issue763; scientific payload unchanged.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "MgSO4 0.025 g", "supports": "SUPPORT"}], "ingredient": {"notes": "Literal
+    alternative preparation input: 0.025 g. Do not add to the commercial route or
+    infer final concentration/volume. Unstated salt/hydrate forms remain unresolved.",
+    "preferred_term": "MgSO4"}, "source_modification_index": 4, "source_text": "Alternative
+    preparation input: MgSO4 0.025 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "stage": "from-scratch alternative
+    to commercial 7H10 preparation"}, {"action": "ADD", "evidence": [{"explanation":
+    "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16;
+    supports this source-scoped variant assertion, not equivalence of the whole parent
+    recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\";
+    row columns transcribed with whitespace normalized. These are batch input amounts;
+    the water row is an input, not a separately measured final volume. Exact excerpt
+    clarification for issue763; scientific payload unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "CaCl2 0.500 mg", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal alternative preparation input: 0.5 mg. Do not add to the commercial route
+    or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved.",
+    "preferred_term": "CaCl2"}, "source_modification_index": 5, "source_text": "Alternative
+    preparation input: CaCl2 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "stage": "from-scratch alternative
+    to commercial 7H10 preparation"}, {"action": "ADD", "evidence": [{"explanation":
+    "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16;
+    supports this source-scoped variant assertion, not equivalence of the whole parent
+    recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\";
+    row columns transcribed with whitespace normalized. These are batch input amounts;
+    the water row is an input, not a separately measured final volume. Exact excerpt
+    clarification for issue763; scientific payload unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "ZnSO4 1.000 mg", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal alternative preparation input: 1 mg. Do not add to the commercial route
+    or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved.",
+    "preferred_term": "ZnSO4"}, "source_modification_index": 6, "source_text": "Alternative
+    preparation input: ZnSO4 1 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "stage": "from-scratch alternative
+    to commercial 7H10 preparation"}, {"action": "ADD", "evidence": [{"explanation":
+    "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16;
+    supports this source-scoped variant assertion, not equivalence of the whole parent
+    recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\";
+    row columns transcribed with whitespace normalized. These are batch input amounts;
+    the water row is an input, not a separately measured final volume. Exact excerpt
+    clarification for issue763; scientific payload unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "CuSO4 1.000 mg", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal alternative preparation input: 1 mg. Do not add to the commercial route
+    or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved.",
+    "preferred_term": "CuSO4"}, "source_modification_index": 7, "source_text": "Alternative
+    preparation input: CuSO4 1 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "stage": "from-scratch alternative
+    to commercial 7H10 preparation"}, {"action": "ADD", "evidence": [{"explanation":
+    "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16;
+    supports this source-scoped variant assertion, not equivalence of the whole parent
+    recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\";
+    row columns transcribed with whitespace normalized. These are batch input amounts;
+    the water row is an input, not a separately measured final volume. Exact excerpt
+    clarification for issue763; scientific payload unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "L-Glutamic acid 0.500 g", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal alternative preparation input: 0.5 g. Do not add to the commercial route
+    or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved.",
+    "preferred_term": "L-Glutamic acid"}, "source_modification_index": 8, "source_text":
+    "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional input
+    to the commercial preparation. No final-medium concentration is inferred.", "stage":
+    "from-scratch alternative to commercial 7H10 preparation"}, {"action": "ADD",
+    "evidence": [{"explanation": "Page 1, alternative Bacto Middlebrook 7H10 table.
+    Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
+    not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed
+    \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized.
+    These are batch input amounts; the water row is an input, not a separately measured
+    final volume. Exact excerpt clarification for issue763; scientific payload unchanged.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Ferric ammonium citrate 0.040 g", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Literal alternative preparation input: 0.04 g. Do not add to the commercial
+    route or infer final concentration/volume. Unstated salt/hydrate forms remain
+    unresolved.", "preferred_term": "Ferric ammonium citrate"}, "source_modification_index":
+    9, "source_text": "Alternative preparation input: Ferric ammonium citrate 0.04
+    g; not an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "stage": "from-scratch alternative to commercial 7H10 preparation"},
+    {"action": "ADD", "evidence": [{"explanation": "Page 1, alternative Bacto Middlebrook
+    7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant
+    assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative
+    table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace
+    normalized. These are batch input amounts; the water row is an input, not a separately
+    measured final volume. Exact excerpt clarification for issue763; scientific payload
+    unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Pyridoxine 1.000 mg", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal alternative preparation input: 1 mg. Do not add to the commercial route
+    or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved.",
+    "preferred_term": "Pyridoxine"}, "source_modification_index": 10, "source_text":
+    "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the
+    commercial preparation. No final-medium concentration is inferred.", "stage":
+    "from-scratch alternative to commercial 7H10 preparation"}, {"action": "ADD",
+    "evidence": [{"explanation": "Page 1, alternative Bacto Middlebrook 7H10 table.
+    Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
+    not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed
+    \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized.
+    These are batch input amounts; the water row is an input, not a separately measured
+    final volume. Exact excerpt clarification for issue763; scientific payload unchanged.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Biotin 0.500 mg", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal alternative preparation input: 0.5 mg. Do not add to the commercial route
+    or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved.",
+    "preferred_term": "Biotin"}, "source_modification_index": 11, "source_text": "Alternative
+    preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "stage": "from-scratch alternative
+    to commercial 7H10 preparation"}, {"action": "ADD", "evidence": [{"explanation":
+    "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16;
+    supports this source-scoped variant assertion, not equivalence of the whole parent
+    recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\";
+    row columns transcribed with whitespace normalized. These are batch input amounts;
+    the water row is an input, not a separately measured final volume. Exact excerpt
+    clarification for issue763; scientific payload unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Malachite green 0.250 mg", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Literal alternative preparation input: 0.25 mg. Do not add to the commercial
+    route or infer final concentration/volume. Unstated salt/hydrate forms remain
+    unresolved.", "preferred_term": "Malachite green"}, "source_modification_index":
+    12, "source_text": "Alternative preparation input: Malachite green 0.25 mg; not
+    an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "stage": "from-scratch alternative to commercial 7H10 preparation"},
+    {"action": "ADD", "evidence": [{"explanation": "Page 1, alternative Bacto Middlebrook
+    7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant
+    assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative
+    table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace
+    normalized. These are batch input amounts; the water row is an input, not a separately
+    measured final volume. Exact excerpt clarification for issue763; scientific payload
+    unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Bacto agar 15.000 g", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal alternative preparation input: 15 g. Do not add to the commercial route
+    or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved.",
+    "preferred_term": "Agar"}, "source_modification_index": 13, "source_text": "Alternative
+    preparation input: Agar 15 g; not an additional input to the commercial preparation.
+    No final-medium concentration is inferred.", "stage": "from-scratch alternative
+    to commercial 7H10 preparation"}, {"action": "ADD", "evidence": [{"explanation":
+    "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16;
+    supports this source-scoped variant assertion, not equivalence of the whole parent
+    recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\";
+    row columns transcribed with whitespace normalized. These are batch input amounts;
+    the water row is an input, not a separately measured final volume. Exact excerpt
+    clarification for issue763; scientific payload unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+    "snippet": "Distilled water 1000.000 ml", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Literal alternative preparation input: 1000 ml. Do not add to the commercial
+    route or infer final concentration/volume. Unstated salt/hydrate forms remain
+    unresolved.", "preferred_term": "Distilled water"}, "source_modification_index":
+    14, "source_text": "Alternative preparation input: Distilled water 1000 ml; not
+    an additional input to the commercial preparation. No final-medium concentration
+    is inferred.", "stage": "from-scratch alternative to commercial 7H10 preparation"}],
+    "variant_index": 0, "variant_name": "From-scratch alternative to commercial 7H10"}]}'
 solutions:
 - preferred_term: Bacto Middlebrook OADC enrichment
   concentration:
@@ -1849,6 +2060,323 @@ variants:
       equivalence to the commercial route. No unstated density, final volume, percent
       basis or chemical identifier is inferred. Locator=original recipe table/text;
       accessed=2026-10-09T00:07:53.271442+00:00; capture SHA256=8f4d6801aab892b40a988bba7e499d582097489fae3871d760fbabc22e8e1757.'
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: (NH4)2SO4
+      notes: 'Literal alternative preparation input: 0.5 g. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: (NH4)2SO4 0.500 g
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 0
+    source_text: 'Alternative preparation input: (NH4)2SO4 0.5 g; not an additional
+      input to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: KH2PO4
+      notes: 'Literal alternative preparation input: 1.5 g. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: KH2PO4 1.500 g
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 1
+    source_text: 'Alternative preparation input: KH2PO4 1.5 g; not an additional input
+      to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: Na2HPO4
+      notes: 'Literal alternative preparation input: 1.5 g. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: Na2HPO4 1.500 g
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 2
+    source_text: 'Alternative preparation input: Na2HPO4 1.5 g; not an additional
+      input to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: Sodium citrate
+      notes: 'Literal alternative preparation input: 0.4 g. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: Na-citrate 0.400 g
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 3
+    source_text: 'Alternative preparation input: Sodium citrate 0.4 g; not an additional
+      input to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: MgSO4
+      notes: 'Literal alternative preparation input: 0.025 g. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: MgSO4 0.025 g
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 4
+    source_text: 'Alternative preparation input: MgSO4 0.025 g; not an additional
+      input to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: CaCl2
+      notes: 'Literal alternative preparation input: 0.5 mg. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: CaCl2 0.500 mg
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 5
+    source_text: 'Alternative preparation input: CaCl2 0.5 mg; not an additional input
+      to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: ZnSO4
+      notes: 'Literal alternative preparation input: 1 mg. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: ZnSO4 1.000 mg
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 6
+    source_text: 'Alternative preparation input: ZnSO4 1 mg; not an additional input
+      to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: CuSO4
+      notes: 'Literal alternative preparation input: 1 mg. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: CuSO4 1.000 mg
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 7
+    source_text: 'Alternative preparation input: CuSO4 1 mg; not an additional input
+      to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: L-Glutamic acid
+      notes: 'Literal alternative preparation input: 0.5 g. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: L-Glutamic acid 0.500 g
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 8
+    source_text: 'Alternative preparation input: L-Glutamic acid 0.5 g; not an additional
+      input to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: Ferric ammonium citrate
+      notes: 'Literal alternative preparation input: 0.04 g. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: Ferric ammonium citrate 0.040 g
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 9
+    source_text: 'Alternative preparation input: Ferric ammonium citrate 0.04 g; not
+      an additional input to the commercial preparation. No final-medium concentration
+      is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: Pyridoxine
+      notes: 'Literal alternative preparation input: 1 mg. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: Pyridoxine 1.000 mg
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 10
+    source_text: 'Alternative preparation input: Pyridoxine 1 mg; not an additional
+      input to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: Biotin
+      notes: 'Literal alternative preparation input: 0.5 mg. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: Biotin 0.500 mg
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 11
+    source_text: 'Alternative preparation input: Biotin 0.5 mg; not an additional
+      input to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: Malachite green
+      notes: 'Literal alternative preparation input: 0.25 mg. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: Malachite green 0.250 mg
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 12
+    source_text: 'Alternative preparation input: Malachite green 0.25 mg; not an additional
+      input to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: Agar
+      notes: 'Literal alternative preparation input: 15 g. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: Bacto agar 15.000 g
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 13
+    source_text: 'Alternative preparation input: Agar 15 g; not an additional input
+      to the commercial preparation. No final-medium concentration is inferred.'
+  - action: ADD
+    ingredient:
+      preferred_term: Distilled water
+      notes: 'Literal alternative preparation input: 1000 ml. Do not add to the commercial
+        route or infer final concentration/volume. Unstated salt/hydrate forms remain
+        unresolved.'
+    stage: from-scratch alternative to commercial 7H10 preparation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+      supports: SUPPORT
+      snippet: Distilled water 1000.000 ml
+      explanation: Page 1, alternative Bacto Middlebrook 7H10 table. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ645 p.1 alternative table headed "Bacto Middlebrook
+        7H10 agar:"; row columns transcribed with whitespace normalized. These are
+        batch input amounts; the water row is an input, not a separately measured
+        final volume. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
+    source_modification_index: 14
+    source_text: 'Alternative preparation input: Distilled water 1000 ml; not an additional
+      input to the commercial preparation. No final-medium concentration is inferred.'
 variant_children:
 - path: data/normalized_yaml/bacterial/middelbrook_medium.yaml
   id: CultureMech:006190

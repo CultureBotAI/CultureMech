@@ -332,6 +332,26 @@ curation_history:
     source-version limitations; no quantitative growth metric or parent concentration
     certification.
   source: doi:10.1371/journal.pcbi.1000822; doi:10.1128/AEM.65.3.1214-1221.1999
+- timestamp: '2026-11-16T21:33:57.071462+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "311cb0ca79971c03b8a2a334da32709c3be1315c8cf63cb1dc51b31f85200317",
+    "variants": [{"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation":
+    "Methods, Culture medium: modified M1 recipe explicitly supplies monobasic sodium
+    phosphate monohydrate; replace the imported dibasic-phosphate descriptor only
+    in this batch variant. Primary source inspected 2026-11-16; no ontology identity
+    or mass conversion inferred.", "reference": "doi:10.1371/journal.pcbi.1000822",
+    "snippet": "4.35 mM NaH2PO4•H2O", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MILLIMOLAR", "value": "4.35"}, "preferred_term": "Sodium dihydrogen
+    phosphate monohydrate"}, "replaced_ingredient": {"preferred_term": "Dibasic sodium
+    phosphate"}, "source_modification_index": 0, "source_text": "Use the paper''s
+    4.35 mM sodium dihydrogen phosphate monohydrate (NaH2PO4.H2O), not the parent''s
+    dibasic sodium phosphate.", "stage": "modified M1 batch culture"}], "variant_index":
+    0, "variant_name": "Pinchuk 2010 reported batch M1 with 20 mM D,L-lactate"}]}'
 media_term:
   preferred_term: MediaDB Medium 178
   term:
@@ -454,6 +474,27 @@ variants:
       salts, while the parent contains boric acid and some anhydrous/generalized terms.
       The original stock formula and final-volume basis remain unresolved at ingredient-normalization
       level. Parent amounts, terms and generic preparation are unchanged. '
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: Sodium dihydrogen phosphate monohydrate
+      concentration:
+        value: '4.35'
+        unit: MILLIMOLAR
+    stage: modified M1 batch culture
+    source_modification_index: 0
+    source_text: Use the paper's 4.35 mM sodium dihydrogen phosphate monohydrate (NaH2PO4.H2O),
+      not the parent's dibasic sodium phosphate.
+    evidence:
+    - reference: doi:10.1371/journal.pcbi.1000822
+      supports: SUPPORT
+      snippet: 4.35 mM NaH2PO4•H2O
+      explanation: 'Methods, Culture medium: modified M1 recipe explicitly supplies
+        monobasic sodium phosphate monohydrate; replace the imported dibasic-phosphate
+        descriptor only in this batch variant. Primary source inspected 2026-11-16;
+        no ontology identity or mass conversion inferred.'
+    replaced_ingredient:
+      preferred_term: Dibasic sodium phosphate
 target_organisms:
 - preferred_term: Shewanella oneidensis MR-1
   strain: MR-1 (wild type)

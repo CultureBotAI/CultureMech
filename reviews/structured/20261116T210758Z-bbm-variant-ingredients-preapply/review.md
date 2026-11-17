@@ -1,0 +1,350 @@
+# Independent pre-application review of two BBM variant ingredient assertions
+
+- Review: 20261116T210758Z-bbm-variant-ingredients-preapply
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-11-16T21:07:40Z
+- Finished UTC: 2026-11-16T21:07:58Z
+- Reviewer: codex-independent-reviewer (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Both proposed ADD assertions preserve the source's distinct experimental stages, stated doses and uncertainty. No material finding in the two-assertion scope. This is an independent agent review, not human REVIEWED status, post-application verification, or release acceptance.
+
+## Scope And Provenance
+
+Two proposed ingredient_changes in the existing bbm_estradiol_exposure_assay variant of one normalized recipe. Read the complete recipe for context; scientifically assess only the proposed estradiol and NH4Cl assertions.
+
+Selection: Exact decision file records[0].variants[0].ingredient_changes[0:2], bound to variants[0].modifications[2] and [3] at the recorded recipe preimage.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 02e005db42246b8a04ece9df4b5657e036fa5697.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000034 | data/normalized_yaml/algae/Bold_Basal_Medium.yaml # variants[0].modifications[2:4] and the two proposed ingredient_changes in conf/variant_ingredient_curation/bbm-canary-683.json | maintained | Bold Basal Medium — two proposed stage-scoped ingredient assertions |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Native source and target inspection | passed | True | CultureMech:000034 | The native inspector captured the exact recipe preimage, decision, source XML and schema. Hashes match the supplied canary boundary. |
+| Independent reading of primary Methods 2.1–2.3 | passed | True | CultureMech:000034 | Read the actual pinned XML sections, including surrounding preparation, dose-basis and control descriptions. Compared the two proposed assertions and their exact source_text to the recipe and primary methods. |
+| Applied-record and export verification | not_applicable | False | CultureMech:000034 | The target is intentionally unmodified in this pre-application scientific review. Application, focused native validation, no-op replay and downstream accounting require separate receipts. |
+
+## Scientific And Domain Assessments
+
+### Proposed ingredient_changes[0] — active estradiol exposure
+
+quantity: supported. Targets: CultureMech:000034.
+
+ADD is supported at assay-exposure stage. The semicolon-separated values are explicitly qualified as separate treatment levels, preserving precision and the no-hormone control. No continuous range, simultaneous mixture or powder-dose conversion is claimed.
+
+### Proposed ingredient_changes[1] — NH4Cl stock-culture amendment
+
+scope: supported. Targets: CultureMech:000034.
+
+ADD is supported only at the stated pre-experiment algal stock-culture stage. The source's 4.5 ppm is retained with its unspecified basis; no mass/volume conversion or later assay-medium inheritance is introduced.
+
+### Exact source binding and preservation of excluded claims
+
+provenance: supported. Targets: CultureMech:000034.
+
+The two proposals identify existing modification indices and exact text at the pinned recipe preimage. Conditions, base formulation and prior history remain outside the applied assertion set. The schema provides explicit stage-scoped change events rather than a fully expanded variant recipe.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| e2-source | doi:10.3390/plants11131669; PMC9269517, Methods 2.3, sec2dot3-plants-11-01669 | supports | The primary methods specify five separate active-E2 exposure levels, the no-hormone control and stock preparation based on a 5% active fraction of the commercial powder. |
+| ammonium-source | doi:10.3390/plants11131669; PMC9269517, Methods 2.1, sec2dot1-plants-11-01669, algal stock-culture paragraph | supports | The amendment belongs to the earlier algal stock culture; the passage does not specify a ppm conversion basis or establish a universal final assay dose. |
+| stage-context | doi:10.3390/plants11131669; PMC9269517, Methods 2.1–2.3 and BBM reference 45 | context_only | Inspected the flask, pH-adjustment and study-medium context. Vessel capacity is not a demonstrated culture working volume. The study citation does not establish exact identity with the UTEX parent. The pH method names alternative titrants, but those are outside the proposed changes. |
+| proposal | conf/variant_ingredient_curation/bbm-canary-683.json; records[0].variants[0].ingredient_changes[0:2] | supports | Both changes carry their own stage, source modification index, exact source text, concentration, scoped DOI evidence and uncertainty notes. No ontology ID or parent formulation addition is asserted. |
+| recipe-context | data/normalized_yaml/algae/Bold_Basal_Medium.yaml; Whole-record context; variants[0].modifications[2:4], description, evidence and references | supports | The proposal matches the existing prose exactly and retains the already explicit distinction between study-specific stages and the UTEX parent. Existing recipe ingredients and earlier history are not rewritten. |
+
+## Limits And Additional Notes
+
+- Review is complete only for the two proposed assertions. Other record content was read for context and is not scientifically recertified.
+- Exact study-BBM versus UTEX-parent equivalence remains unestablished and is explicitly retained as a limit.
+- NH4Cl ppm basis remains unspecified; no conversion is approved. Chemical ontology resolution and downstream MIM admission were not assessed.
+- The two condition rows remain unchanged. The primary paper's titrants are not newly structured, and the review makes no ingredient-absence claim about those methods.
+- The record has not been changed by this reviewer. Native application/export verification and broader corpus review remain separate; no human REVIEWED status or release approval is granted.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261116T210758Z-bbm-variant-ingredients-preapply
+kind: record
+repository: CultureBotAI/CultureMech
+title: Independent pre-application review of two BBM variant ingredient assertions
+started_at: '2026-11-16T21:07:40Z'
+finished_at: '2026-11-16T21:07:58Z'
+reviewer:
+  identity: codex-independent-reviewer
+  kind: agent
+  independence: independent
+  independence_basis: The reviewer did not author the decision file, schema extension
+    or mutator and made no scientific-record edits. Earlier involvement was limited
+    to read-only queue planning and source discovery; this pass independently compared
+    the frozen proposal with the primary methods.
+skill: curate-yaml-record; review-ingredient-concentrations
+completion: completed
+verdict: pass_with_limitations
+native_verdict: The two specified proposed ingredient assertions are supported for
+  guarded canary application; the rest of the record is not recertified.
+scientific_review: true
+summary: Both proposed ADD assertions preserve the source's distinct experimental
+  stages, stated doses and uncertainty. No material finding in the two-assertion scope.
+  This is an independent agent review, not human REVIEWED status, post-application
+  verification, or release acceptance.
+source:
+  git_revision: 02e005db42246b8a04ece9df4b5657e036fa5697
+  state: working_tree
+  inputs:
+  - path: .temp/variant-683/sources/PMC9269517.xml
+    sha256: 3ff76eaa32856926a1815722096aa190382ec6fbfd59aff05346ab5c3d95166f
+    role: primary article context
+  - path: conf/variant_ingredient_curation/bbm-canary-683.json
+    sha256: 31a6892dbab3957905e4fac2a8408f0b3bcdfa51f6dc6b2fcb6019bb6f8d2a28
+    role: proposed two-assertion decision
+  - path: data/normalized_yaml/algae/Bold_Basal_Medium.yaml
+    sha256: acb96b82f986ecdbeaefaa21a1795e61188087e0b961bb9b03f777816c515aa1
+    role: target
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 0c8ba1303413fcc950271d7111c2855036370844d4ac65107487242d1da9d00f
+    role: representation context
+scope:
+  description: Two proposed ingredient_changes in the existing bbm_estradiol_exposure_assay
+    variant of one normalized recipe. Read the complete recipe for context; scientifically
+    assess only the proposed estradiol and NH4Cl assertions.
+  selection: Exact decision file records[0].variants[0].ingredient_changes[0:2], bound
+    to variants[0].modifications[2] and [3] at the recorded recipe preimage.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000034
+  exclusions:
+  - target: Other ingredients, stocks, taxonomy, growth claims, supplier IDs, global
+      conditions and historical curation
+    reason: Read as context but not revalidated or recertified in this two-assertion
+      review.
+  - target: variants[0].modifications[0:2]
+    reason: Existing pH and aeration rows are unchanged. The source's titrants are
+      not new claims in this canary.
+  - target: Other 392 variant queue rows and downstream MIM/KGM release
+    reason: Outside this single-record pre-application canary review.
+targets:
+- target_id: CultureMech:000034
+  path: data/normalized_yaml/algae/Bold_Basal_Medium.yaml
+  label: Bold Basal Medium — two proposed stage-scoped ingredient assertions
+  kind: maintained
+  record_class: MediaRecipe
+  selector: variants[0].modifications[2:4] and the two proposed ingredient_changes
+    in conf/variant_ingredient_curation/bbm-canary-683.json
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/Bold_Basal_Medium.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: inspect-inputs
+  name: Native source and target inspection
+  status: passed
+  required: true
+  summary: The native inspector captured the exact recipe preimage, decision, source
+    XML and schema. Hashes match the supplied canary boundary.
+  target_ids:
+  - CultureMech:000034
+  command: .venv/bin/python scripts/record_review.py inspect --targets .temp/variant-683/bbm-independent-review-targets.yaml
+    --input conf/variant_ingredient_curation/bbm-canary-683.json --input src/culturemech/schema/culturemech.yaml
+    --input .temp/variant-683/sources/PMC9269517.xml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - proposal
+  - recipe-context
+- check_id: primary-methods
+  name: Independent reading of primary Methods 2.1–2.3
+  status: passed
+  required: true
+  summary: Read the actual pinned XML sections, including surrounding preparation,
+    dose-basis and control descriptions. Compared the two proposed assertions and
+    their exact source_text to the recipe and primary methods.
+  target_ids:
+  - CultureMech:000034
+  command: xmllint --xpath '//sec[@id="sec2dot1-plants-11-01669"] | //sec[@id="sec2dot2-plants-11-01669"]
+    | //sec[@id="sec2dot3-plants-11-01669"]' .temp/variant-683/sources/PMC9269517.xml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - e2-source
+  - ammonium-source
+  - stage-context
+- check_id: post-application
+  name: Applied-record and export verification
+  status: not_applicable
+  required: false
+  summary: The target is intentionally unmodified in this pre-application scientific
+    review. Application, focused native validation, no-op replay and downstream accounting
+    require separate receipts.
+  target_ids:
+  - CultureMech:000034
+evidence:
+- evidence_id: e2-source
+  kind: primary_source
+  reference: doi:10.3390/plants11131669
+  locator: PMC9269517, Methods 2.3, sec2dot3-plants-11-01669
+  accessed_at: '2026-11-16T21:07:40Z'
+  support: supports
+  summary: The primary methods specify five separate active-E2 exposure levels, the
+    no-hormone control and stock preparation based on a 5% active fraction of the
+    commercial powder.
+  quote: 0.25, 0.75, 2.50, 5.0, and 15.0 ng/L
+  snapshot_sha256: 3ff76eaa32856926a1815722096aa190382ec6fbfd59aff05346ab5c3d95166f
+- evidence_id: ammonium-source
+  kind: primary_source
+  reference: doi:10.3390/plants11131669
+  locator: PMC9269517, Methods 2.1, sec2dot1-plants-11-01669, algal stock-culture
+    paragraph
+  accessed_at: '2026-11-16T21:07:40Z'
+  support: supports
+  summary: The amendment belongs to the earlier algal stock culture; the passage does
+    not specify a ppm conversion basis or establish a universal final assay dose.
+  quote: NH4Cl was added to 4.5 ppm
+  snapshot_sha256: 3ff76eaa32856926a1815722096aa190382ec6fbfd59aff05346ab5c3d95166f
+- evidence_id: stage-context
+  kind: primary_source
+  reference: doi:10.3390/plants11131669
+  locator: PMC9269517, Methods 2.1–2.3 and BBM reference 45
+  accessed_at: '2026-11-16T21:07:40Z'
+  support: context_only
+  summary: Inspected the flask, pH-adjustment and study-medium context. Vessel capacity
+    is not a demonstrated culture working volume. The study citation does not establish
+    exact identity with the UTEX parent. The pH method names alternative titrants,
+    but those are outside the proposed changes.
+  snapshot_sha256: 3ff76eaa32856926a1815722096aa190382ec6fbfd59aff05346ab5c3d95166f
+- evidence_id: proposal
+  kind: record_content
+  reference: conf/variant_ingredient_curation/bbm-canary-683.json
+  locator: records[0].variants[0].ingredient_changes[0:2]
+  accessed_at: '2026-11-16T21:07:40Z'
+  support: supports
+  summary: Both changes carry their own stage, source modification index, exact source
+    text, concentration, scoped DOI evidence and uncertainty notes. No ontology ID
+    or parent formulation addition is asserted.
+  snapshot_sha256: 31a6892dbab3957905e4fac2a8408f0b3bcdfa51f6dc6b2fcb6019bb6f8d2a28
+- evidence_id: recipe-context
+  kind: record_content
+  reference: data/normalized_yaml/algae/Bold_Basal_Medium.yaml
+  locator: Whole-record context; variants[0].modifications[2:4], description, evidence
+    and references
+  accessed_at: '2026-11-16T21:07:40Z'
+  support: supports
+  summary: The proposal matches the existing prose exactly and retains the already
+    explicit distinction between study-specific stages and the UTEX parent. Existing
+    recipe ingredients and earlier history are not rewritten.
+  snapshot_sha256: acb96b82f986ecdbeaefaa21a1795e61188087e0b961bb9b03f777816c515aa1
+assessments:
+- assessment_id: estradiol-assertion
+  area: quantity
+  topic: Proposed ingredient_changes[0] — active estradiol exposure
+  outcome: supported
+  summary: ADD is supported at assay-exposure stage. The semicolon-separated values
+    are explicitly qualified as separate treatment levels, preserving precision and
+    the no-hormone control. No continuous range, simultaneous mixture or powder-dose
+    conversion is claimed.
+  target_ids:
+  - CultureMech:000034
+  evidence_ids:
+  - e2-source
+  - proposal
+  - recipe-context
+  dimensions:
+  - name: native_concentration_decision
+    value: add
+    definition: Source-supported structured concentration assertion added to the variant
+      change event, not to base ingredients.
+    evidence_ids:
+    - e2-source
+    - proposal
+  - name: identity_scope
+    value: Source-named active 17-beta-estradiol; ontology identity not asserted
+    definition: Chemical name is preserved without inventing a mapped identifier or
+      equating the commercial formulation to pure active material.
+    evidence_ids:
+    - e2-source
+    - proposal
+- assessment_id: ammonium-assertion
+  area: scope
+  topic: Proposed ingredient_changes[1] — NH4Cl stock-culture amendment
+  outcome: supported
+  summary: ADD is supported only at the stated pre-experiment algal stock-culture
+    stage. The source's 4.5 ppm is retained with its unspecified basis; no mass/volume
+    conversion or later assay-medium inheritance is introduced.
+  target_ids:
+  - CultureMech:000034
+  evidence_ids:
+  - ammonium-source
+  - proposal
+  - recipe-context
+  dimensions:
+  - name: native_concentration_decision
+    value: add
+    definition: Source-literal concentration retained at the cited stock-culture stage
+      with conversion explicitly withheld.
+    evidence_ids:
+    - ammonium-source
+    - proposal
+- assessment_id: change-boundary
+  area: provenance
+  topic: Exact source binding and preservation of excluded claims
+  outcome: supported
+  summary: The two proposals identify existing modification indices and exact text
+    at the pinned recipe preimage. Conditions, base formulation and prior history
+    remain outside the applied assertion set. The schema provides explicit stage-scoped
+    change events rather than a fully expanded variant recipe.
+  target_ids:
+  - CultureMech:000034
+  evidence_ids:
+  - proposal
+  - recipe-context
+  - stage-context
+  metrics:
+  - name: Proposed ingredient assertions independently assessed
+    value: 2
+    unit: assertions
+    definition: Number of assertions in this exact two-item proposal compared with
+      inspected primary methods; not a corpus accuracy metric.
+    denominator: 2
+    minimum: 0
+    maximum: 2
+findings: []
+actions: []
+limitations:
+- Review is complete only for the two proposed assertions. Other record content was
+  read for context and is not scientifically recertified.
+- Exact study-BBM versus UTEX-parent equivalence remains unestablished and is explicitly
+  retained as a limit.
+- NH4Cl ppm basis remains unspecified; no conversion is approved. Chemical ontology
+  resolution and downstream MIM admission were not assessed.
+- The two condition rows remain unchanged. The primary paper's titrants are not newly
+  structured, and the review makes no ingredient-absence claim about those methods.
+- The record has not been changed by this reviewer. Native application/export verification
+  and broader corpus review remain separate; no human REVIEWED status or release approval
+  is granted.
+links:
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC9269517/
+```

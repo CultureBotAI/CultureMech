@@ -506,9 +506,14 @@
                 "G_PER_L",
                 "MG_PER_L",
                 "MICROG_PER_L",
+                "MICROG_PER_ML",
+                "NG_PER_L",
                 "MOLAR",
                 "MILLIMOLAR",
                 "MICROMOLAR",
+                "NANOMOLAR",
+                "PICOMOLAR",
+                "PPM",
                 "PERCENT_W_V",
                 "PERCENT_W_W",
                 "PERCENT_V_V",
@@ -2277,6 +2282,16 @@
                     "description": "Evidence supporting the variant",
                     "items": {
                         "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "ingredient_changes": {
+                    "description": "Evidence-backed ingredient changes scoped to this variant and its preparation or experimental stage. These are not additions to the parent formulation. Retain modifications as the source text; removals and replaced ingredients are context, never positive occurrences.",
+                    "items": {
+                        "$ref": "#/$defs/VariantIngredientChange"
                     },
                     "type": [
                         "array",
@@ -4296,6 +4311,177 @@
             ],
             "title": "UpdateEvent",
             "type": "object"
+        },
+        "VariantIngredientChange": {
+            "additionalProperties": false,
+            "allOf": [
+                {
+                    "else": {
+                        "not": {
+                            "required": [
+                                "replaced_ingredient"
+                            ]
+                        },
+                        "properties": {
+                            "replaced_ingredient": {}
+                        }
+                    },
+                    "if": {
+                        "properties": {
+                            "action": {
+                                "const": "REPLACE"
+                            }
+                        },
+                        "required": [
+                            "action"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "replaced_ingredient": {}
+                        },
+                        "required": [
+                            "replaced_ingredient"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "action": {
+                                "const": "SET_CONCENTRATION"
+                            }
+                        },
+                        "required": [
+                            "action"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "ingredient": {
+                                "allOf": [
+                                    {
+                                        "properties": {
+                                            "concentration": {}
+                                        },
+                                        "required": [
+                                            "concentration"
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "ingredient"
+                        ]
+                    }
+                }
+            ],
+            "description": "A curated ingredient change bound to one exact variant modification. Ingredient identity may remain unresolved. ADD, SET_CONCENTRATION and the new ingredient of REPLACE are scoped change events, not a fully expanded variant recipe. REMOVE and replaced_ingredient do not assert presence. Semantic validation additionally binds source_text to modifications at source_modification_index and checks relationship and evidence context.",
+            "properties": {
+                "action": {
+                    "$ref": "#/$defs/VariantIngredientChangeActionEnum",
+                    "description": "Operation on the ingredient in the stated variant stage"
+                },
+                "evidence": {
+                    "contains": {
+                        "allOf": [
+                            {
+                                "properties": {
+                                    "supports": {
+                                        "const": "SUPPORT"
+                                    }
+                                },
+                                "required": [
+                                    "supports"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": "Claim-scoped source evidence for this operation, ingredient and stage. At least one item must SUPPORT the claim. Each item needs its source reference, verbatim snippet and explanatory context; structural validation cannot establish the scientific truth of the evidence.",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "ingredient": {
+                    "$ref": "#/$defs/IngredientDescriptor",
+                    "allOf": [
+                        {
+                            "properties": {
+                                "preferred_term": {
+                                    "pattern": "\\S"
+                                }
+                            }
+                        }
+                    ],
+                    "description": "Ingredient added, removed, or assigned a concentration; for REPLACE, this is the new ingredient. REMOVE identifies only the omitted target."
+                },
+                "notes": {
+                    "description": "Qualifications, unresolved identity or source-basis limitations",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "replaced_ingredient": {
+                    "allOf": [
+                        {
+                            "properties": {
+                                "preferred_term": {
+                                    "pattern": "\\S"
+                                }
+                            }
+                        }
+                    ],
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/IngredientDescriptor"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Old ingredient replaced by ingredient. Required only for REPLACE and forbidden for other actions; this descriptor does not assert presence."
+                },
+                "source_modification_index": {
+                    "description": "Zero-based index into this MediaVariant's modifications list within the source snapshot. Must identify the exact source_text string.",
+                    "minimum": 0,
+                    "type": "integer"
+                },
+                "source_text": {
+                    "description": "Exact, unaltered modifications[source_modification_index] string. This binding is checked by semantic validation; it is not a substitute for external scientific evidence or a stable cross-revision ID.",
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "stage": {
+                    "description": "Explicit preparation or experimental context, such as pre-experiment stock culture or one assay treatment. Do not infer parent-medium equivalence or combine separate stages or alternative doses.",
+                    "pattern": "\\S",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "action",
+                "ingredient",
+                "stage",
+                "source_modification_index",
+                "source_text",
+                "evidence"
+            ],
+            "title": "VariantIngredientChange",
+            "type": "object"
+        },
+        "VariantIngredientChangeActionEnum": {
+            "description": "Operation on an ingredient within a named variant stage",
+            "enum": [
+                "ADD",
+                "REMOVE",
+                "REPLACE",
+                "SET_CONCENTRATION"
+            ],
+            "title": "VariantIngredientChangeActionEnum",
+            "type": "string"
         },
         "VariantTypeEnum": {
             "description": "Type of chemical variant relationship to parent",

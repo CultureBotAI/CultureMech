@@ -138,6 +138,94 @@ curation_history:
     mention-only results remain notes. Primary sources and Markdown archived; no export
     or quantitative growth metric.
   source: doi:10.1186/1471-2180-11-66
+- timestamp: '2026-11-16T21:33:13.861679+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "575937e6b9739016d8b43f48ea23efba290d69a3445c311bc95223991cc18049",
+    "variants": [{"ingredient_changes": [{"action": "SET_CONCENTRATION", "evidence":
+    [{"explanation": "Methods, Bacterial strains, media and growth conditions. Primary
+    source inspected 2026-11-16; supports this source-scoped variant assertion, not
+    equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth
+    conditions. Separate basis statement: \"After sterilization the following components
+    were added to the final concentration indicated\". MM lacks the separate MMP addition;
+    no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification
+    for issue763; scientific payload unchanged.", "reference": "doi:10.1186/1471-2180-11-66",
+    "snippet": "10 μg ml-1 biotin", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MICROG_PER_ML", "value": "10"}, "notes": "Reported final culture concentration;
+    no unreported salt form or parent molar-equivalence claim.", "preferred_term":
+    "biotin"}, "source_modification_index": 0, "source_text": "Use the reported 10
+    micrograms/mL biotin and 10 micrograms/mL thiamine, rather than certifying the
+    parent''s 0.00409316 mM biotin and 0.033243 mM thiamine as equivalent. Salt form
+    and molecular-weight conversions are not inferred.", "stage": "separately filter-sterilized
+    vitamin addition after base sterilization"}, {"action": "SET_CONCENTRATION", "evidence":
+    [{"explanation": "Methods, Bacterial strains, media and growth conditions. Primary
+    source inspected 2026-11-16; supports this source-scoped variant assertion, not
+    equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth
+    conditions. Separate basis statement: \"After sterilization the following components
+    were added to the final concentration indicated\". MM lacks the separate MMP addition;
+    no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification
+    for issue763; scientific payload unchanged.", "reference": "doi:10.1186/1471-2180-11-66",
+    "snippet": "10 μg ml-1 thiamine", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MICROG_PER_ML", "value": "10"}, "notes": "Reported final culture concentration;
+    no unreported salt form or parent molar-equivalence claim.", "preferred_term":
+    "thiamine"}, "source_modification_index": 0, "source_text": "Use the reported
+    10 micrograms/mL biotin and 10 micrograms/mL thiamine, rather than certifying
+    the parent''s 0.00409316 mM biotin and 0.033243 mM thiamine as equivalent. Salt
+    form and molecular-weight conversions are not inferred.", "stage": "separately
+    filter-sterilized vitamin addition after base sterilization"}, {"action": "REPLACE",
+    "evidence": [{"explanation": "Methods, medium formulation. Primary source inspected
+    2026-11-16; supports this source-scoped variant assertion, not equivalence of
+    the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions.
+    Separate basis statement: \"After sterilization the following components were
+    added to the final concentration indicated\". MM lacks the separate MMP addition;
+    no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification
+    for issue763; scientific payload unchanged.", "reference": "doi:10.1186/1471-2180-11-66",
+    "snippet": "1.49 mM CaCl2 2H2O (autoclaved separately)", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "MILLIMOLAR", "value": "1.49"}, "notes":
+    "Reported final concentration of the stated dihydrate; equal molarity does not
+    establish equal supplied form.", "preferred_term": "CaCl2 dihydrate"}, "replaced_ingredient":
+    {"notes": "Displaced parent descriptor; not a positive variant ingredient.", "preferred_term":
+    "Calcium chloride anhydrous"}, "source_modification_index": 1, "source_text":
+    "Specify 1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate; the parent instead
+    labels calcium chloride anhydrous and does not specify the iron salt hydrate.
+    Equal molar numbers do not establish identical supplied chemical forms.", "stage":
+    "separately autoclaved calcium addition after base sterilization"}, {"action":
+    "REPLACE", "evidence": [{"explanation": "Methods, medium formulation. Primary
+    source inspected 2026-11-16; supports this source-scoped variant assertion, not
+    equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth
+    conditions. Separate basis statement: \"After sterilization the following components
+    were added to the final concentration indicated\". MM lacks the separate MMP addition;
+    no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification
+    for issue763; scientific payload unchanged.", "reference": "doi:10.1186/1471-2180-11-66",
+    "snippet": "0.0184 mM FeCl3 6H2O (filter sterilized)", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "MILLIMOLAR", "value": "0.0184"}, "notes":
+    "Reported final concentration of stated hexahydrate; do not inherit the unspecified
+    parent form.", "preferred_term": "FeCl3 hexahydrate"}, "replaced_ingredient":
+    {"notes": "Displaced parent descriptor; not a positive variant ingredient.", "preferred_term":
+    "Iron(III) chloride"}, "source_modification_index": 1, "source_text": "Specify
+    1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate; the parent instead labels
+    calcium chloride anhydrous and does not specify the iron salt hydrate. Equal molar
+    numbers do not establish identical supplied chemical forms.", "stage": "filter-sterilized
+    iron addition after base sterilization"}, {"action": "SET_CONCENTRATION", "evidence":
+    [{"explanation": "Methods, MMP formulation. Primary source inspected 2026-11-16;
+    supports this source-scoped variant assertion, not equivalence of the whole parent
+    recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate
+    basis statement: \"After sterilization the following components were added to
+    the final concentration indicated\". MM lacks the separate MMP addition; no physical
+    removal or doubled calcium-salt dose is implied. Exact excerpt clarification for
+    issue763; scientific payload unchanged.", "reference": "doi:10.1186/1471-2180-11-66",
+    "snippet": "MMP contains the same components plus 1 μM calcium pantothenate",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "MICROMOLAR",
+    "value": "1"}, "notes": "Source concentration of the calcium salt; not twice this
+    amount and not a pantothenate-anion dose.", "preferred_term": "calcium pantothenate"},
+    "source_modification_index": 4, "source_text": "Include 1 micromolar calcium pantothenate,
+    equivalent to the existing 0.001 mM salt entry (1/1000 mM); do not double it or
+    reinterpret it as a pantothenate-anion dose.", "stage": "MMP final formulation"}],
+    "variant_index": 0, "variant_name": "Villasenor 2011 MMP reported formulation"}]}'
 media_term:
   preferred_term: MediaDB Medium 172
   term:
@@ -245,6 +333,137 @@ variants:
       growth is asserted, with no normalized growth metric. Antibiotic concentrations
       are listed generally but not assigned to individual plotted assays, so no antibiotic
       addition or antibiotic-free claim is inferred. '
+  ingredient_changes:
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: biotin
+      notes: Reported final culture concentration; no unreported salt form or parent
+        molar-equivalence claim.
+      concentration:
+        value: '10'
+        unit: MICROG_PER_ML
+    stage: separately filter-sterilized vitamin addition after base sterilization
+    evidence:
+    - reference: doi:10.1186/1471-2180-11-66
+      supports: SUPPORT
+      snippet: 10 μg ml-1 biotin
+      explanation: 'Methods, Bacterial strains, media and growth conditions. Primary
+        source inspected 2026-11-16; supports this source-scoped variant assertion,
+        not equivalence of the whole parent recipe. Villasenor Methods, Bacterial
+        strains/media/growth conditions. Separate basis statement: "After sterilization
+        the following components were added to the final concentration indicated".
+        MM lacks the separate MMP addition; no physical removal or doubled calcium-salt
+        dose is implied. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
+    source_modification_index: 0
+    source_text: Use the reported 10 micrograms/mL biotin and 10 micrograms/mL thiamine,
+      rather than certifying the parent's 0.00409316 mM biotin and 0.033243 mM thiamine
+      as equivalent. Salt form and molecular-weight conversions are not inferred.
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: thiamine
+      notes: Reported final culture concentration; no unreported salt form or parent
+        molar-equivalence claim.
+      concentration:
+        value: '10'
+        unit: MICROG_PER_ML
+    stage: separately filter-sterilized vitamin addition after base sterilization
+    evidence:
+    - reference: doi:10.1186/1471-2180-11-66
+      supports: SUPPORT
+      snippet: 10 μg ml-1 thiamine
+      explanation: 'Methods, Bacterial strains, media and growth conditions. Primary
+        source inspected 2026-11-16; supports this source-scoped variant assertion,
+        not equivalence of the whole parent recipe. Villasenor Methods, Bacterial
+        strains/media/growth conditions. Separate basis statement: "After sterilization
+        the following components were added to the final concentration indicated".
+        MM lacks the separate MMP addition; no physical removal or doubled calcium-salt
+        dose is implied. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
+    source_modification_index: 0
+    source_text: Use the reported 10 micrograms/mL biotin and 10 micrograms/mL thiamine,
+      rather than certifying the parent's 0.00409316 mM biotin and 0.033243 mM thiamine
+      as equivalent. Salt form and molecular-weight conversions are not inferred.
+  - action: REPLACE
+    ingredient:
+      preferred_term: CaCl2 dihydrate
+      notes: Reported final concentration of the stated dihydrate; equal molarity
+        does not establish equal supplied form.
+      concentration:
+        value: '1.49'
+        unit: MILLIMOLAR
+    stage: separately autoclaved calcium addition after base sterilization
+    evidence:
+    - reference: doi:10.1186/1471-2180-11-66
+      supports: SUPPORT
+      snippet: 1.49 mM CaCl2 2H2O (autoclaved separately)
+      explanation: 'Methods, medium formulation. Primary source inspected 2026-11-16;
+        supports this source-scoped variant assertion, not equivalence of the whole
+        parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions.
+        Separate basis statement: "After sterilization the following components were
+        added to the final concentration indicated". MM lacks the separate MMP addition;
+        no physical removal or doubled calcium-salt dose is implied. Exact excerpt
+        clarification for issue763; scientific payload unchanged.'
+    replaced_ingredient:
+      preferred_term: Calcium chloride anhydrous
+      notes: Displaced parent descriptor; not a positive variant ingredient.
+    source_modification_index: 1
+    source_text: Specify 1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate;
+      the parent instead labels calcium chloride anhydrous and does not specify the
+      iron salt hydrate. Equal molar numbers do not establish identical supplied chemical
+      forms.
+  - action: REPLACE
+    ingredient:
+      preferred_term: FeCl3 hexahydrate
+      notes: Reported final concentration of stated hexahydrate; do not inherit the
+        unspecified parent form.
+      concentration:
+        value: '0.0184'
+        unit: MILLIMOLAR
+    stage: filter-sterilized iron addition after base sterilization
+    evidence:
+    - reference: doi:10.1186/1471-2180-11-66
+      supports: SUPPORT
+      snippet: 0.0184 mM FeCl3 6H2O (filter sterilized)
+      explanation: 'Methods, medium formulation. Primary source inspected 2026-11-16;
+        supports this source-scoped variant assertion, not equivalence of the whole
+        parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions.
+        Separate basis statement: "After sterilization the following components were
+        added to the final concentration indicated". MM lacks the separate MMP addition;
+        no physical removal or doubled calcium-salt dose is implied. Exact excerpt
+        clarification for issue763; scientific payload unchanged.'
+    replaced_ingredient:
+      preferred_term: Iron(III) chloride
+      notes: Displaced parent descriptor; not a positive variant ingredient.
+    source_modification_index: 1
+    source_text: Specify 1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate;
+      the parent instead labels calcium chloride anhydrous and does not specify the
+      iron salt hydrate. Equal molar numbers do not establish identical supplied chemical
+      forms.
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: calcium pantothenate
+      notes: Source concentration of the calcium salt; not twice this amount and not
+        a pantothenate-anion dose.
+      concentration:
+        value: '1'
+        unit: MICROMOLAR
+    stage: MMP final formulation
+    evidence:
+    - reference: doi:10.1186/1471-2180-11-66
+      supports: SUPPORT
+      snippet: MMP contains the same components plus 1 μM calcium pantothenate
+      explanation: 'Methods, MMP formulation. Primary source inspected 2026-11-16;
+        supports this source-scoped variant assertion, not equivalence of the whole
+        parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions.
+        Separate basis statement: "After sterilization the following components were
+        added to the final concentration indicated". MM lacks the separate MMP addition;
+        no physical removal or doubled calcium-salt dose is implied. Exact excerpt
+        clarification for issue763; scientific payload unchanged.'
+    source_modification_index: 4
+    source_text: Include 1 micromolar calcium pantothenate, equivalent to the existing
+      0.001 mM salt entry (1/1000 mM); do not double it or reinterpret it as a pantothenate-anion
+      dose.
 target_organisms:
 - preferred_term: Rhizobium etli CFN42
   strain: CFN42

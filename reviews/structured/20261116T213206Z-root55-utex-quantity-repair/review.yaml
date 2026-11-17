@@ -1,0 +1,896 @@
+schema_version: 1.0.0
+review_id: 20261116T213206Z-root55-utex-quantity-repair
+kind: batch
+repository: CultureBotAI/CultureMech
+title: Follow-up review of root55 and UTEX quantitative evidence repairs
+started_at: '2026-11-16T21:32:06Z'
+finished_at: '2026-11-16T21:32:06Z'
+reviewer:
+  identity: codex-root-quantity-repair-reviewer
+  kind: agent
+  independence: self_review
+  independence_basis: Root authored original scientific payload; another agent authored
+    this evidence-only repair. This bounded follow-up does not replace the prior independent
+    scientific review, retained and pinned as an input.
+skill: review-ingredient-concentrations; curate-yaml-record
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+native_verdict: Issue763 evidence finding is addressed for these95 unchanged events;
+  prior independent claim review remains applicable to the unchanged scientific payload.
+summary: 'Reviewed all changed excerpts against the already inspected primary sources:
+  Mattanovich XLS exact cells and stock/header bases; DSMZ645 table amounts; DSMZ670
+  strain-specific quantities and titrant strengths; Villasenor final vitamin/hydrate
+  amounts; Nordkvist distinct timed and initial acetate treatments; UTEX optional
+  agar/batch directions. The evidence repair adds exact quantity and separately located
+  basis excerpts without changing scientific payload or source coordinates.'
+source:
+  git_revision: 93d23e4415213bb92890db6f8330e18247ad2553
+  state: working_tree
+  inputs:
+  - path: conf/variant_ingredient_curation/remaining-families-683.json
+    sha256: 575937e6b9739016d8b43f48ea23efba290d69a3445c311bc95223991cc18049
+    role: context
+  - path: conf/variant_ingredient_curation/utex-optional-683.json
+    sha256: 053b2ac82a0c3681d84f53714b129366f2e7b2f9f2d8da1acc6b72c471491e88
+    role: context
+  - path: data/normalized_yaml/algae/1_2_soil_seawater_medium.yaml
+    sha256: cc315b57b42604dbee66cdcd3c3dff02f6824427a19c7138b06f988425cf496c
+    role: target
+  - path: data/normalized_yaml/algae/1_3_soil_seawater_medium.yaml
+    sha256: f45f1bbd7ca69eae0256383db80e00f10e4e110bf36202e5f83369b71090f4d4
+    role: target
+  - path: data/normalized_yaml/algae/1_4_soil_seawater_medium.yaml
+    sha256: 4aba44da9167a8dda61c42769c84471f67de05bd43ace1ca01be93a453eff6b8
+    role: target
+  - path: data/normalized_yaml/algae/1_5_soil_seawater_medium.yaml
+    sha256: 6cf1b3611f8f28202f71db13646da805ba8042f6fd140d89037d3836defc3dd9
+    role: target
+  - path: data/normalized_yaml/algae/Euglena_Medium.yaml
+    sha256: 6039deb632108f0a728d85ef06dc94a497bac35c59828425c719d0a0f5e48d05
+    role: target
+  - path: data/normalized_yaml/algae/J_Medium.yaml
+    sha256: 26dbea63c625a5de074f1a0b747093a5b24e0447da85f25b852c34126682e26f
+    role: target
+  - path: data/normalized_yaml/algae/Malt_Medium.yaml
+    sha256: ccd72158dddffb1f292d7cede17497b34ce47c56f4e12a60b981b3b873a55ff6
+    role: target
+  - path: data/normalized_yaml/algae/Polytomella_Medium.yaml
+    sha256: 1df5444b239e8af4b0fb10628b1cb03813df861fd8bdf386c98ee97bab02d11a
+    role: target
+  - path: data/normalized_yaml/algae/Trebouxia_Medium.yaml
+    sha256: b5d933b4953f956ce390dbebe1991f5e8d4c96032a6a8dfdf2fda2bdc7083efe
+    role: target
+  - path: data/normalized_yaml/algae/Volvocacean_Medium.yaml
+    sha256: b0a4159590a114e5f0a3ef38ae5998b0d480879e164b23d4c4fb5638c9261fab
+    role: target
+  - path: data/normalized_yaml/algae/bg_11_0_36_nacl_medium.yaml
+    sha256: 28d5909ae33d9433ef191e63d871bc967d53ad9a652c5a6fa2d96de9be7eae6d
+    role: target
+  - path: data/normalized_yaml/algae/bg_11_1_nacl_medium.yaml
+    sha256: 1376c84c05ddf5b79822c8f7b073c7a168fad109d5b45c047c7f690a502955f8
+    role: target
+  - path: data/normalized_yaml/algae/soil_seawater_medium.yaml
+    sha256: 7f96da69c2c4704e84710195d4ebf793ac99c6d7dbc387c09d60994ed7240ed8
+    role: target
+  - path: data/normalized_yaml/bacterial/batch_medium_mattanovich_et_al.yaml
+    sha256: d7b12adb212b6b16f5e7a85937ffd25fde85333511f88da0b46b0c8b611a58be
+    role: target
+  - path: data/normalized_yaml/bacterial/for_dsm_9463.yaml
+    sha256: bd20a7cc5a3d31e5fc81cae9d1d73410edd7c99e3ca9f07d7fef9858e819d656
+    role: target
+  - path: data/normalized_yaml/bacterial/for_dsm_9466.yaml
+    sha256: e69e4d049c712d303e2a7ab5659bfdcec254c72b8c23a2708d1691cf99007f4e
+    role: target
+  - path: data/normalized_yaml/bacterial/for_dsm_9467.yaml
+    sha256: 3bd89db4acaafe29f61d1b188d61844bd35dda1a7a7b01367ac55d40de806b0a
+    role: target
+  - path: data/normalized_yaml/bacterial/for_dsm_9468.yaml
+    sha256: d100dc4c4829f6b4464b39d8102e0c2beae8bc71a9441dba3b7aae7631d1d7cf
+    role: target
+  - path: data/normalized_yaml/bacterial/middlebrook_medium.yaml
+    sha256: 68ca41b5eade9b7647d79438c98c0df3e7aa934c083b14f114c1b3dea909e7e4
+    role: target
+  - path: data/normalized_yaml/bacterial/mm_biotin_and_thiamine_villasenor_et_al.yaml
+    sha256: 21bfadf3357db089631be2d8fc51cc0bcf708008d25a2c39312b444d5d4f8a94
+    role: target
+  - path: data/normalized_yaml/bacterial/mmp_biotin_thiamine_and_ca_pantothenate_villasenor_et_al.yaml
+    sha256: beff164c28f466345446b01ead1845aff3dc1ef68c83de1ddd7f70843f68d18e
+    role: target
+  - path: data/normalized_yaml/bacterial/ms10_medium_supplements_acetate_for_batch_cultivation.yaml
+    sha256: 29eda3f5b5a054ddfbf63568d9ef4b2fe47b0975b5e7c472b5a51a0dfacf584e
+    role: target
+  - path: data/normalized_yaml/bacterial/ms10_medium_supplements_for_batch_cultivation.yaml
+    sha256: f874b38ced2ec1c852960b16efe30802b4e0122d43c38799728f82ff2ccf7296
+    role: target
+  - path: data/normalized_yaml/bacterial/ms10_medium_supplements_for_batch_cultivation_modified.yaml
+    sha256: 2d3e28217c23c1bfcca8eb2982903127653c2ca5dc9f23b45ccbd1663d2d2aeb
+    role: target
+  - path: reviews/structured/20261116T212755Z-root55-utex-independent-claims/review.yaml
+    sha256: 77418f475d1da8c9db20c87fe5b9bcd4e967d3a4252c14e528ba21a49e9ed320
+    role: context
+scope:
+  description: Evidence-only corrections in24 recipes/95 events; original independent
+    review retained.
+  selection: Two exact proposal hashes in the retained helper and checkpoint93d23e
+    originals.
+  coverage: partial
+  population_size: 24
+  reviewed_target_ids:
+  - CultureMech:007250
+  - CultureMech:006260
+  - CultureMech:006262
+  - CultureMech:006263
+  - CultureMech:006264
+  - CultureMech:001782
+  - CultureMech:007062
+  - CultureMech:007063
+  - CultureMech:007315
+  - CultureMech:007314
+  - CultureMech:007316
+  - CultureMech:000005
+  - CultureMech:000007
+  - CultureMech:000009
+  - CultureMech:000011
+  - CultureMech:000168
+  - CultureMech:000172
+  - CultureMech:000175
+  - CultureMech:000186
+  - CultureMech:000234
+  - CultureMech:000236
+  - CultureMech:000026
+  - CultureMech:000027
+  - CultureMech:000221
+  exclusions:
+  - target: Whole-record scientific certification and held rows
+    reason: Bounded follow-up of accepted events' excerpts only.
+targets:
+- target_id: CultureMech:007250
+  path: data/normalized_yaml/bacterial/batch_medium_mattanovich_et_al.yaml
+  label: Mattanovich 2009 glucose chemostat formulation
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/batch_medium_mattanovich_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006260
+  path: data/normalized_yaml/bacterial/for_dsm_9463.yaml
+  label: DSM 9463 current DSMZ 670 source formulation
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_9463.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006262
+  path: data/normalized_yaml/bacterial/for_dsm_9466.yaml
+  label: DSM 9466 current DSMZ 670 source formulation
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_9466.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006263
+  path: data/normalized_yaml/bacterial/for_dsm_9467.yaml
+  label: DSM 9467 current DSMZ 670 source formulation
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_9467.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006264
+  path: data/normalized_yaml/bacterial/for_dsm_9468.yaml
+  label: DSM 9468 current DSMZ 670 source formulation
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_9468.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001782
+  path: data/normalized_yaml/bacterial/middlebrook_medium.yaml
+  label: From-scratch alternative to commercial 7H10
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/middlebrook_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007062
+  path: data/normalized_yaml/bacterial/mm_biotin_and_thiamine_villasenor_et_al.yaml
+  label: Villasenor 2011 MM reported formulation
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mm_biotin_and_thiamine_villasenor_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007063
+  path: data/normalized_yaml/bacterial/mmp_biotin_thiamine_and_ca_pantothenate_villasenor_et_al.yaml
+  label: Villasenor 2011 MMP reported formulation
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mmp_biotin_thiamine_and_ca_pantothenate_villasenor_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007315
+  path: data/normalized_yaml/bacterial/ms10_medium_supplements_acetate_for_batch_cultivation.yaml
+  label: Nordkvist 2003 microaerobic MS10 with timed acetate addition
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ms10_medium_supplements_acetate_for_batch_cultivation.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007314
+  path: data/normalized_yaml/bacterial/ms10_medium_supplements_for_batch_cultivation.yaml
+  label: Nordkvist 2003 reported microaerobic MS10 with manganese sulfate
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ms10_medium_supplements_for_batch_cultivation.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007316
+  path: data/normalized_yaml/bacterial/ms10_medium_supplements_for_batch_cultivation_modified.yaml
+  label: Nordkvist 2003 microaerobic MS10 without lipoic acid and with acetate
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ms10_medium_supplements_for_batch_cultivation_modified.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000005
+  path: data/normalized_yaml/algae/1_2_soil_seawater_medium.yaml
+  label: 1/2 Soil+Seawater Medium with optional calcium carbonate
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/1_2_soil_seawater_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000007
+  path: data/normalized_yaml/algae/1_3_soil_seawater_medium.yaml
+  label: 1/3 Soil+Seawater Medium with optional calcium carbonate
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/1_3_soil_seawater_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000009
+  path: data/normalized_yaml/algae/1_4_soil_seawater_medium.yaml
+  label: 1/4 Soil+Seawater Medium with optional calcium carbonate
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/1_4_soil_seawater_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000011
+  path: data/normalized_yaml/algae/1_5_soil_seawater_medium.yaml
+  label: 1/5 Soil+Seawater Medium with optional calcium carbonate
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/1_5_soil_seawater_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000168
+  path: data/normalized_yaml/algae/Euglena_Medium.yaml
+  label: Euglena Medium with agar
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/Euglena_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000172
+  path: data/normalized_yaml/algae/J_Medium.yaml
+  label: J Medium with 1.25% agar
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/J_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000175
+  path: data/normalized_yaml/algae/Malt_Medium.yaml
+  label: Malt Medium with agar
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/Malt_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000186
+  path: data/normalized_yaml/algae/Polytomella_Medium.yaml
+  label: Polytomella Medium with agar
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/Polytomella_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000234
+  path: data/normalized_yaml/algae/Trebouxia_Medium.yaml
+  label: Trebouxia Medium with agar
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/Trebouxia_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000236
+  path: data/normalized_yaml/algae/Volvocacean_Medium.yaml
+  label: Optional agar formulation
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/Volvocacean_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000026
+  path: data/normalized_yaml/algae/bg_11_0_36_nacl_medium.yaml
+  label: Optional agar formulation
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg_11_0_36_nacl_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000027
+  path: data/normalized_yaml/algae/bg_11_1_nacl_medium.yaml
+  label: Optional agar formulation
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg_11_1_nacl_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000221
+  path: data/normalized_yaml/algae/soil_seawater_medium.yaml
+  label: Soil+Seawater Medium with optional calcium carbonate
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/soil_seawater_medium.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: repair-scope
+  name: Only excerpts and explanation fields changed
+  status: passed
+  required: true
+  summary: Compared against committed checkpoint; identities, actions, doses, stages,
+    exact source text and dispositions unchanged.
+  target_ids:
+  - CultureMech:007250
+  - CultureMech:006260
+  - CultureMech:006262
+  - CultureMech:006263
+  - CultureMech:006264
+  - CultureMech:001782
+  - CultureMech:007062
+  - CultureMech:007063
+  - CultureMech:007315
+  - CultureMech:007314
+  - CultureMech:007316
+  - CultureMech:000005
+  - CultureMech:000007
+  - CultureMech:000009
+  - CultureMech:000011
+  - CultureMech:000168
+  - CultureMech:000172
+  - CultureMech:000175
+  - CultureMech:000186
+  - CultureMech:000234
+  - CultureMech:000236
+  - CultureMech:000026
+  - CultureMech:000027
+  - CultureMech:000221
+- check_id: source-reading
+  name: Manual source comparison of repaired excerpts
+  status: passed
+  required: true
+  summary: 'Reviewed all changed excerpts against the already inspected primary sources:
+    Mattanovich XLS exact cells and stock/header bases; DSMZ645 table amounts; DSMZ670
+    strain-specific quantities and titrant strengths; Villasenor final vitamin/hydrate
+    amounts; Nordkvist distinct timed and initial acetate treatments; UTEX optional
+    agar/batch directions. The evidence repair adds exact quantity and separately
+    located basis excerpts without changing scientific payload or source coordinates.'
+  target_ids:
+  - CultureMech:007250
+  - CultureMech:006260
+  - CultureMech:006262
+  - CultureMech:006263
+  - CultureMech:006264
+  - CultureMech:001782
+  - CultureMech:007062
+  - CultureMech:007063
+  - CultureMech:007315
+  - CultureMech:007314
+  - CultureMech:007316
+  - CultureMech:000005
+  - CultureMech:000007
+  - CultureMech:000009
+  - CultureMech:000011
+  - CultureMech:000168
+  - CultureMech:000172
+  - CultureMech:000175
+  - CultureMech:000186
+  - CultureMech:000234
+  - CultureMech:000236
+  - CultureMech:000026
+  - CultureMech:000027
+  - CultureMech:000221
+  evidence_ids:
+  - claims-007250
+  - claims-006260
+  - claims-006262
+  - claims-006263
+  - claims-006264
+  - claims-001782
+  - claims-007062
+  - claims-007063
+  - claims-007315
+  - claims-007314
+  - claims-007316
+  - claims-000005
+  - claims-000007
+  - claims-000009
+  - claims-000011
+  - claims-000168
+  - claims-000172
+  - claims-000175
+  - claims-000186
+  - claims-000234
+  - claims-000236
+  - claims-000026
+  - claims-000027
+  - claims-000221
+evidence:
+- evidence_id: claims-007250
+  kind: primary_source
+  reference: doi:10.1186/1475-2859-8-29
+  locator: Additional file3, A21 and A24–A33; parent descriptor comparison; Additional
+    file3, cellA20; Additional file3, cellA22; Additional file3, cellA39; Additional
+    file3, cellsA13,A15; Additional file3, cellsA13,A16; Additional file3, cellsA13,A17;
+    Additional file3, cellsA13,A18; Additional file3, cellsA13,A19; Additional file3,
+    cellsA13,A20; Additional file3, cellsA13,A21; Additional file3, cellsA13–A14;
+    Additional file3, cellsA24,A25; Additional file3, cellsA24,A26; Additional file3,
+    cellsA24,A27; Additional file3, cellsA24,A28; Additional file3, cellsA24,A29;
+    Additional file3, cellsA24,A30; Additional file3, cellsA24,A31; Additional file3,
+    cellsA24,A32; Additional file3, cellsA24,A33
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Mattanovich Additional file 3 A13–A22 supports chemostat quantities per
+    liter; A24–A33 separately defines trace stock per liter; A39 distinguishes dynamic
+    ammonium-hydroxide pH control from initial HCl. The proposal retains stock doses/compositions
+    in separate stages, removes the old flattened entries and does not infer final
+    constituent molarity. Exact chemical forms and amounts agree with the inspected
+    XLS cells.
+- evidence_id: claims-006260
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
+  locator: Page1, For DSM9463
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Current official DSMZ670 (2022) prescription supports the strain-specific
+    sulfur/glucose/yeast-extract additions, ferrous-sulfate omissions, pH titrant
+    strengths and retained FeSO4 stock for DSM9468. Water-batch change is explicitly
+    held; normality is not converted. This does not certify the historical imported
+    parent's version.
+- evidence_id: claims-006262
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
+  locator: Page1, For DSM9466
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Current official DSMZ670 (2022) prescription supports the strain-specific
+    sulfur/glucose/yeast-extract additions, ferrous-sulfate omissions, pH titrant
+    strengths and retained FeSO4 stock for DSM9468. Water-batch change is explicitly
+    held; normality is not converted. This does not certify the historical imported
+    parent's version.
+- evidence_id: claims-006263
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
+  locator: Page1, For DSM9467
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Current official DSMZ670 (2022) prescription supports the strain-specific
+    sulfur/glucose/yeast-extract additions, ferrous-sulfate omissions, pH titrant
+    strengths and retained FeSO4 stock for DSM9468. Water-batch change is explicitly
+    held; normality is not converted. This does not certify the historical imported
+    parent's version.
+- evidence_id: claims-006264
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
+  locator: Page1, For DSM9468; Page1, base table and preparation step1; Page1, preparation
+    step1
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Current official DSMZ670 (2022) prescription supports the strain-specific
+    sulfur/glucose/yeast-extract additions, ferrous-sulfate omissions, pH titrant
+    strengths and retained FeSO4 stock for DSM9468. Water-batch change is explicitly
+    held; normality is not converted. This does not certify the historical imported
+    parent's version.
+- evidence_id: claims-001782
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf
+  locator: Page 1, alternative Bacto Middlebrook 7H10 table
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Official DSMZ645 alternative table supports all fifteen named inputs and
+    literal batch masses/volume. Each ADD belongs to the from-scratch alternative
+    to the commercial route; it does not materialize a union with the commercial parent.
+    The separate OADC formula and full executable preparation are outside these rows.
+- evidence_id: claims-007062
+  kind: primary_source
+  reference: doi:10.1186/1471-2180-11-66
+  locator: Methods, Bacterial strains, media and growth conditions; Methods, distinction
+    between MM and MMP; Methods, medium formulation
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Villasenor Methods explicitly states final 10 micrograms/mL biotin and
+    thiamine, separately sterilized calcium dihydrate and iron hexahydrate, and MM
+    without the MMP calcium-pantothenate supplement. Negative event is omission, not
+    positive ingredient presence or physical removal.
+- evidence_id: claims-007063
+  kind: primary_source
+  reference: doi:10.1186/1471-2180-11-66
+  locator: Methods, Bacterial strains, media and growth conditions; Methods, MMP formulation;
+    Methods, medium formulation
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Villasenor Methods supports the same vitamin/salt preparation plus 1 micromolar
+    calcium pantothenate in MMP. Source amount denotes calcium salt; no doubling,
+    anion reinterpretation or molecular-weight conversion is introduced.
+- evidence_id: claims-007315
+  kind: primary_source
+  reference: doi:10.1128/AEM.69.6.3462-3468.2003
+  locator: Figure1B caption; Materials and Methods, Strain and growth conditions
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: 'Nordkvist original ASM Methods and Figure 1/Table 2 independently read:
+    MnSO4 mass concentration, timed 0.3 g/L sodium acetate after 7 h 38 min, and separate
+    0.82 g/L acetate without DL-6,8-thioctic acid agree with the proposal. Preculture
+    phosphate basis remains explicitly held; growth outcomes are not recertified.'
+- evidence_id: claims-007314
+  kind: primary_source
+  reference: doi:10.1128/AEM.69.6.3462-3468.2003
+  locator: Materials and Methods, Strain and growth conditions
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: 'Nordkvist original ASM Methods and Figure 1/Table 2 independently read:
+    MnSO4 mass concentration, timed 0.3 g/L sodium acetate after 7 h 38 min, and separate
+    0.82 g/L acetate without DL-6,8-thioctic acid agree with the proposal. Preculture
+    phosphate basis remains explicitly held; growth outcomes are not recertified.'
+- evidence_id: claims-007316
+  kind: primary_source
+  reference: doi:10.1128/AEM.69.6.3462-3468.2003
+  locator: Figure1C caption; Materials and Methods, Strain and growth conditions
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: 'Nordkvist original ASM Methods and Figure 1/Table 2 independently read:
+    MnSO4 mass concentration, timed 0.3 g/L sodium acetate after 7 h 38 min, and separate
+    0.82 g/L acetate without DL-6,8-thioctic acid agree with the proposal. Preculture
+    phosphate basis remains explicitly held; growth outcomes are not recertified.'
+- evidence_id: claims-000005
+  kind: primary_source
+  reference: https://utex.org/products/one-half-soil-plus-seawater-medium
+  locator: Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX
+    collection page inspected 2026-11-16. This ingredient occurrence is scoped to
+    the optional variant, not a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+- evidence_id: claims-000007
+  kind: primary_source
+  reference: https://utex.org/products/one-third-soil-plus-seawater-medium
+  locator: Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX
+    collection page inspected 2026-11-16. This ingredient occurrence is scoped to
+    the optional variant, not a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+- evidence_id: claims-000009
+  kind: primary_source
+  reference: https://utex.org/products/one-fourth-soil-plus-seawater-medium
+  locator: Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX
+    collection page inspected 2026-11-16. This ingredient occurrence is scoped to
+    the optional variant, not a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+- evidence_id: claims-000011
+  kind: primary_source
+  reference: https://utex.org/products/one-fifth-soil-plus-seawater-medium
+  locator: Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX
+    collection page inspected 2026-11-16. This ingredient occurrence is scoped to
+    the optional variant, not a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+- evidence_id: claims-000168
+  kind: primary_source
+  reference: https://utex.org/products/euglena-medium
+  locator: Directions, optional agar instruction; primary UTEX collection page inspected
+    2026-11-16. This ingredient occurrence is scoped to the optional variant, not
+    a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+- evidence_id: claims-000172
+  kind: primary_source
+  reference: https://utex.org/products/j-medium
+  locator: Directions, optional agar instruction; primary UTEX collection page inspected
+    2026-11-16. This ingredient occurrence is scoped to the optional variant, not
+    a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+- evidence_id: claims-000175
+  kind: primary_source
+  reference: https://utex.org/products/malt-medium
+  locator: Directions, optional agar instruction; primary UTEX collection page inspected
+    2026-11-16. This ingredient occurrence is scoped to the optional variant, not
+    a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+- evidence_id: claims-000186
+  kind: primary_source
+  reference: https://utex.org/products/polytomella-medium
+  locator: Directions, optional agar instruction; primary UTEX collection page inspected
+    2026-11-16. This ingredient occurrence is scoped to the optional variant, not
+    a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+- evidence_id: claims-000234
+  kind: primary_source
+  reference: https://utex.org/products/trebouxia-medium
+  locator: Directions, optional agar instruction; primary UTEX collection page inspected
+    2026-11-16. This ingredient occurrence is scoped to the optional variant, not
+    a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+- evidence_id: claims-000236
+  kind: primary_source
+  reference: https://utex.org/products/volvocacean-medium
+  locator: Directions, optional agar instruction; primary UTEX collection page inspected
+    2026-11-16. This ingredient occurrence is scoped to the optional variant, not
+    a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+- evidence_id: claims-000026
+  kind: primary_source
+  reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
+  locator: Agar media, step 2; primary UTEX collection page inspected 2026-11-16.
+    This ingredient occurrence is scoped to the optional variant, not a change to
+    the liquid parent.; Agar media, step 3; primary UTEX collection page inspected
+    2026-11-16. This ingredient occurrence is scoped to the optional variant, not
+    a change to the liquid parent.; Agar media, step 3; water notation dH2O; primary
+    UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped
+    to the optional variant, not a change to the liquid parent.; Agar media, step
+    6; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence
+    is scoped to the optional variant, not a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+- evidence_id: claims-000027
+  kind: primary_source
+  reference: https://utex.org/products/bg-11-plus-1-percent-nacl-medium
+  locator: Agar media, step 2; primary UTEX collection page inspected 2026-11-16.
+    This ingredient occurrence is scoped to the optional variant, not a change to
+    the liquid parent.; Agar media, step 3; primary UTEX collection page inspected
+    2026-11-16. This ingredient occurrence is scoped to the optional variant, not
+    a change to the liquid parent.; Agar media, step 3; water notation dH2O; primary
+    UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped
+    to the optional variant, not a change to the liquid parent.; Agar media, step
+    6; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence
+    is scoped to the optional variant, not a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+- evidence_id: claims-000221
+  kind: primary_source
+  reference: https://utex.org/products/soil-plus-seawater-medium
+  locator: Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX
+    collection page inspected 2026-11-16. This ingredient occurrence is scoped to
+    the optional variant, not a change to the liquid parent.
+  accessed_at: '2026-11-16T21:27:55Z'
+  support: supports
+  summary: Independently read the exact UTEX collection recipe page and optional-preparation
+    instruction. Named carbonate, agar, water and thiosulfate inputs agree with the
+    source; 200 mL batch or separate 500 mL portions and cooling/combining stages
+    are retained. Source does not quantify thiosulfate on the salt-variant pages;
+    no linked-base dose is inherited. J Medium's source-designated 1.25% agar is supported
+    by its paired 12.5 g and 1 L instruction.
+assessments:
+- assessment_id: quantity-excerpts
+  area: scope
+  topic: Exact quantity/unit/basis support
+  outcome: supported
+  summary: 'Reviewed all changed excerpts against the already inspected primary sources:
+    Mattanovich XLS exact cells and stock/header bases; DSMZ645 table amounts; DSMZ670
+    strain-specific quantities and titrant strengths; Villasenor final vitamin/hydrate
+    amounts; Nordkvist distinct timed and initial acetate treatments; UTEX optional
+    agar/batch directions. The evidence repair adds exact quantity and separately
+    located basis excerpts without changing scientific payload or source coordinates.'
+  target_ids:
+  - CultureMech:007250
+  - CultureMech:006260
+  - CultureMech:006262
+  - CultureMech:006263
+  - CultureMech:006264
+  - CultureMech:001782
+  - CultureMech:007062
+  - CultureMech:007063
+  - CultureMech:007315
+  - CultureMech:007314
+  - CultureMech:007316
+  - CultureMech:000005
+  - CultureMech:000007
+  - CultureMech:000009
+  - CultureMech:000011
+  - CultureMech:000168
+  - CultureMech:000172
+  - CultureMech:000175
+  - CultureMech:000186
+  - CultureMech:000234
+  - CultureMech:000236
+  - CultureMech:000026
+  - CultureMech:000027
+  - CultureMech:000221
+  evidence_ids:
+  - claims-007250
+  - claims-006260
+  - claims-006262
+  - claims-006263
+  - claims-006264
+  - claims-001782
+  - claims-007062
+  - claims-007063
+  - claims-007315
+  - claims-007314
+  - claims-007316
+  - claims-000005
+  - claims-000007
+  - claims-000009
+  - claims-000011
+  - claims-000168
+  - claims-000172
+  - claims-000175
+  - claims-000186
+  - claims-000234
+  - claims-000236
+  - claims-000026
+  - claims-000027
+  - claims-000221
+findings: []
+actions: []
+limitations:
+- Self-review follow-up; initial scientific review by another agent is separately
+  preserved.
+- No whole-recipe approval, unsupported dose conversion, universal base membership
+  or held-claim clearance.
+- Native application, whole-catalog audit and MIM adoption remain separate gates.
+links:
+- https://github.com/CultureBotAI/CultureMech/issues/763
+- https://github.com/CultureBotAI/CultureMech/pull/764

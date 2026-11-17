@@ -560,6 +560,28 @@ curation_history:
     source-duplicate links are preserved, not newly validated by this recipe evidence.
     The imported ''Aerobic: No'' annotation is retained as unverified metadata, not
     used to select either preparation." (evidence_only)'
+- timestamp: '2026-11-16T21:32:06.674060+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Page 1, preparation alternatives. Supports only the named descriptor/event at
+    the stated stage. Literal source dose: 5 mL per common basal batch. Final volume
+    and purity unspecified. This alternative excludes methane-air incubation; no mL/L
+    or percent conversion. Source inspected 2026-11-16; SHA256 e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+    "snippet": "Add 5 ml methanol", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified.
+    This alternative excludes methane-air incubation; no mL/L or percent conversion.",
+    "preferred_term": "methanol"}, "source_modification_index": 0, "source_text":
+    "Add 5 ml methanol to the source''s common basal batch; do not combine this option
+    with the methane-air alternative.", "stage": "methanol preparation alternative"}],
+    "variant_index": 0, "variant_name": "Methanol preparation option"}]}'
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_125_modified_for_dsm_23675.yaml
   relationship: SOURCE_DUPLICATE
@@ -647,6 +669,26 @@ variants:
       and strain-modified source-duplicate links are preserved, not newly validated
       by this recipe evidence. Locator=$.data.solutions[0].steps[0].step. Retrieved
       2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: methanol
+      notes: 'Literal source dose: 5 mL per common basal batch. Final volume and purity
+        unspecified. This alternative excludes methane-air incubation; no mL/L or
+        percent conversion.'
+    stage: methanol preparation alternative
+    source_modification_index: 0
+    source_text: Add 5 ml methanol to the source's common basal batch; do not combine
+      this option with the methane-air alternative.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf
+      supports: SUPPORT
+      snippet: Add 5 ml methanol
+      explanation: 'Page 1, preparation alternatives. Supports only the named descriptor/event
+        at the stated stage. Literal source dose: 5 mL per common basal batch. Final
+        volume and purity unspecified. This alternative excludes methane-air incubation;
+        no mL/L or percent conversion. Source inspected 2026-11-16; SHA256 e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.'
 - name: Methane-air incubation option
   relationship: DERIVED_FROM
   description: Source-listed incubation alternative to methanol addition; common basal

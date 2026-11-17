@@ -418,6 +418,49 @@ curation_history:
   notes: UTEX prepares Artificial Seawater Medium from dH2O, salts, Tricine buffer,
     P-II Metal Solution, Chelated Iron Solution, NH4Cl, and Vitamin B12 adjusted to
     pH 8.1 and 18 ppt salinity.
+- timestamp: '2026-11-16T21:36:31.024942+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Results, ASW nitrogen/phosphorus additions and Figure 2 buffered condition; primary
+    source inspected 2026-11-16. Names resolved from the primary Results, not guessed
+    from generic nitrogen/phosphorus prose. Does not certify equivalence to the local
+    UTEX artificial-seawater parent.", "reference": "doi:10.3389/fmicb.2015.00326",
+    "snippet": "nitrogen source (5 mM NH4Cl)", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "MILLIMOLAR", "value": "5"}, "notes": "Names resolved
+    from the primary Results, not guessed from generic nitrogen/phosphorus prose.
+    Does not certify equivalence to the local UTEX artificial-seawater parent.", "preferred_term":
+    "NH4Cl"}, "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "source_modification_index":
+    1, "source_text": "Supplement with nitrogen and phosphorus sources.", "stage":
+    "nitrogen-and-phosphorus-supplemented Marine Art SF-1 ASW"}, {"action": "ADD",
+    "evidence": [{"explanation": "Results, ASW nitrogen/phosphorus additions and Figure
+    2 buffered condition; primary source inspected 2026-11-16. Explicit phosphorus
+    source; no hydrate or other phosphate identity inferred.", "reference": "doi:10.3389/fmicb.2015.00326",
+    "snippet": "phosphorus source (0.22 mM K2HPO4)", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "MILLIMOLAR", "value": "0.22"}, "notes": "Explicit
+    phosphorus source; no hydrate or other phosphate identity inferred.", "preferred_term":
+    "K2HPO4"}, "notes": "A scoped change event, not a fully expanded variant or a
+    parent-formulation amendment. No chemical identifier is inferred.", "source_modification_index":
+    1, "source_text": "Supplement with nitrogen and phosphorus sources.", "stage":
+    "nitrogen-and-phosphorus-supplemented Marine Art SF-1 ASW"}, {"action": "ADD",
+    "evidence": [{"explanation": "Results, ASW nitrogen/phosphorus additions and Figure
+    2 buffered condition; primary source inspected 2026-11-16. The source calls the
+    preparation HEPES-KOH. No separate KOH dose, chemical salt form or buffer-component
+    stoichiometry inferred.", "reference": "doi:10.3389/fmicb.2015.00326", "snippet":
+    "20 mM HEPES-KOH (pH 7.8)", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MILLIMOLAR", "value": "20"}, "notes": "The source calls the preparation
+    HEPES-KOH. No separate KOH dose, chemical salt form or buffer-component stoichiometry
+    inferred.", "preferred_term": "HEPES-KOH buffer"}, "notes": "A scoped change event,
+    not a fully expanded variant or a parent-formulation amendment. No chemical identifier
+    is inferred.", "source_modification_index": 2, "source_text": "Add HEPES buffer
+    when improved overall growth is needed.", "stage": "buffered ASW with nitrogen
+    and phosphorus sources, pH7.8 buffer"}], "variant_index": 1, "variant_name": "np_supplemented_asw_synechocystis_pcc6803"}]}'
 references:
 - reference: UTEX:artificial-seawater-medium
 - reference: https://utex.org/products/artificial-seawater-medium
@@ -460,6 +503,69 @@ variants:
       (ASW) medium supplemented with nitrogen and phosphorus sources.
     explanation: Literature evidence supports an artificial-seawater variant for Synechocystis
       sp. PCC 6803 growth.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: NH4Cl
+      concentration:
+        value: '5'
+        unit: MILLIMOLAR
+      notes: Names resolved from the primary Results, not guessed from generic nitrogen/phosphorus
+        prose. Does not certify equivalence to the local UTEX artificial-seawater
+        parent.
+    stage: nitrogen-and-phosphorus-supplemented Marine Art SF-1 ASW
+    evidence:
+    - reference: doi:10.3389/fmicb.2015.00326
+      supports: SUPPORT
+      snippet: nitrogen source (5 mM NH4Cl)
+      explanation: Results, ASW nitrogen/phosphorus additions and Figure 2 buffered
+        condition; primary source inspected 2026-11-16. Names resolved from the primary
+        Results, not guessed from generic nitrogen/phosphorus prose. Does not certify
+        equivalence to the local UTEX artificial-seawater parent.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 1
+    source_text: Supplement with nitrogen and phosphorus sources.
+  - action: ADD
+    ingredient:
+      preferred_term: K2HPO4
+      concentration:
+        value: '0.22'
+        unit: MILLIMOLAR
+      notes: Explicit phosphorus source; no hydrate or other phosphate identity inferred.
+    stage: nitrogen-and-phosphorus-supplemented Marine Art SF-1 ASW
+    evidence:
+    - reference: doi:10.3389/fmicb.2015.00326
+      supports: SUPPORT
+      snippet: phosphorus source (0.22 mM K2HPO4)
+      explanation: Results, ASW nitrogen/phosphorus additions and Figure 2 buffered
+        condition; primary source inspected 2026-11-16. Explicit phosphorus source;
+        no hydrate or other phosphate identity inferred.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 1
+    source_text: Supplement with nitrogen and phosphorus sources.
+  - action: ADD
+    ingredient:
+      preferred_term: HEPES-KOH buffer
+      concentration:
+        value: '20'
+        unit: MILLIMOLAR
+      notes: The source calls the preparation HEPES-KOH. No separate KOH dose, chemical
+        salt form or buffer-component stoichiometry inferred.
+    stage: buffered ASW with nitrogen and phosphorus sources, pH7.8 buffer
+    evidence:
+    - reference: doi:10.3389/fmicb.2015.00326
+      supports: SUPPORT
+      snippet: 20 mM HEPES-KOH (pH 7.8)
+      explanation: Results, ASW nitrogen/phosphorus additions and Figure 2 buffered
+        condition; primary source inspected 2026-11-16. The source calls the preparation
+        HEPES-KOH. No separate KOH dose, chemical salt form or buffer-component stoichiometry
+        inferred.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 2
+    source_text: Add HEPES buffer when improved overall growth is needed.
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Hemiaulus hauckii

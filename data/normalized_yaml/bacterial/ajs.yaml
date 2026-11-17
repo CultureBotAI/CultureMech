@@ -234,6 +234,29 @@ curation_history:
     stocks, concentrations, physical state, evidence and links. No new native growth
     assertion, record merge or publication.
   source: doi:10.1038/srep10036; PMID:25963242
+- timestamp: '2026-11-16T21:33:00.018914+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation":
+    "Methods, culture conditions and bacterial interference experiment. Supports only
+    the named descriptor/event at the stated stage. Replaces the canonical acidification
+    instruction only. Strength and dose are unspecified; pH is not a concentration.
+    Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1038/srep10036", "snippet": "pH 1.5 using hydrochloric acid",
+    "supports": "SUPPORT"}], "ingredient": {"notes": "Replaces the canonical acidification
+    instruction only. Strength and dose are unspecified; pH is not a concentration.",
+    "preferred_term": "hydrochloric acid"}, "replaced_ingredient": {"preferred_term":
+    "sulfuric acid"}, "source_modification_index": 0, "source_text": "Use hydrochloric
+    acid for the reported adjustment to pH 1.5, rather than inheriting the canonical
+    sulfuric-acid instruction. HCl strength and dose are not quantified; no dose or
+    substitution arithmetic is inferred.", "stage": "AJS pH adjustment"}], "variant_index":
+    0, "variant_name": "ajs_hydrochloric_acid_ph_1_5"}]}'
 references:
 - reference: doi:10.1038/srep10036
   title: 'Proteomic-based biotyping reveals hidden diversity within a microalgae culture
@@ -304,3 +327,25 @@ variants:
       but not its concentration or volume: concentration_decision=not_quantified.
       The inspected CCAP AJS PDF page 1 instead specifies concentrated H2SO4. This
       is a study difference, not a correction of the parent. No conversion.'
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: hydrochloric acid
+      notes: Replaces the canonical acidification instruction only. Strength and dose
+        are unspecified; pH is not a concentration.
+    stage: AJS pH adjustment
+    source_modification_index: 0
+    source_text: Use hydrochloric acid for the reported adjustment to pH 1.5, rather
+      than inheriting the canonical sulfuric-acid instruction. HCl strength and dose
+      are not quantified; no dose or substitution arithmetic is inferred.
+    evidence:
+    - reference: doi:10.1038/srep10036
+      supports: SUPPORT
+      snippet: pH 1.5 using hydrochloric acid
+      explanation: Methods, culture conditions and bacterial interference experiment.
+        Supports only the named descriptor/event at the stated stage. Replaces the
+        canonical acidification instruction only. Strength and dose are unspecified;
+        pH is not a concentration. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
+    replaced_ingredient:
+      preferred_term: sulfuric acid

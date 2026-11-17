@@ -1,0 +1,2039 @@
+{
+  "schema_version": 1,
+  "source_queue_sha256": "dd5faea741da0a11e8eb86cad2976e8bf51d42884c601e96973eba61748330ca",
+  "source_inspections": {
+    "middlebrook": {
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+      "sha256": "e97e19295e3f61a6bcfaae355a2df1e9a4eb444f4b68177ad3b48b351d92932a"
+    },
+    "dsm670": {
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "sha256": "e21dbc3f7c16cf301001aaa5ca4ca7aa57fb486cbccba0995c46e094946917ab"
+    },
+    "villasenor": {
+      "reference": "doi:10.1186/1471-2180-11-66",
+      "sha256": "0a6cc057afb3f2dfe558b722d9b34169150ff0bb03cd811a1f1d35837d02a06a"
+    },
+    "mattanovich": {
+      "reference": "doi:10.1186/1475-2859-8-29",
+      "sha256": "5a9895037d69eec142443c94b3a81ed40ff75e09a51c5c6f404c7c8e14b90bc8"
+    },
+    "nordkvist": {
+      "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
+      "sha256": null
+    }
+  },
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/batch_medium_mattanovich_et_al.yaml",
+      "recipe_id": "CultureMech:007250",
+      "expected_sha256": "d7b12adb212b6b16f5e7a85937ffd25fde85333511f88da0b46b0c8b611a58be",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Mattanovich 2009 glucose chemostat formulation",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "glucose monohydrate",
+                "concentration": {
+                  "value": "50.0",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "chemostat medium preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "50.0g glucose · H2O",
+                  "explanation": "Additional file3, cellsA13–A14. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A14; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Glycerol",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 0,
+              "source_text": "Replace the batch parent's glycerol (433.27 mM) with glucose monohydrate at the source's 50.0 g per liter of chemostat medium."
+            },
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "citric acid",
+                "concentration": {
+                  "value": "0.9",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "chemostat medium preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "0.9g citric acid",
+                  "explanation": "Additional file3, cellsA13,A15. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A15; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Citrate",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 1,
+              "source_text": "Use 0.9 g/L citric acid, 1.7 g/L KCl and 4.35 g/L (NH4)2HPO4, replacing the parent's molar citrate, KCl and ammonium-phosphate entries; preserve the source's chemical forms and mass basis."
+            },
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "KCl",
+                "concentration": {
+                  "value": "1.7",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "chemostat medium preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1.7 g KCl",
+                  "explanation": "Additional file3, cellsA13,A16. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A16; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 1,
+              "source_text": "Use 0.9 g/L citric acid, 1.7 g/L KCl and 4.35 g/L (NH4)2HPO4, replacing the parent's molar citrate, KCl and ammonium-phosphate entries; preserve the source's chemical forms and mass basis."
+            },
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "(NH4)2HPO4",
+                "concentration": {
+                  "value": "4.35",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "chemostat medium preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "4.35 g (NH4)2HPO4",
+                  "explanation": "Additional file3, cellsA13,A17. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A17; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Ammonium phosphate",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 1,
+              "source_text": "Use 0.9 g/L citric acid, 1.7 g/L KCl and 4.35 g/L (NH4)2HPO4, replacing the parent's molar citrate, KCl and ammonium-phosphate entries; preserve the source's chemical forms and mass basis."
+            },
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "CaCl2 dihydrate",
+                "concentration": {
+                  "value": "0.01",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "chemostat medium preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "0.01 g CaCl2 · 2H2O",
+                  "explanation": "Additional file3, cellsA13,A18. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A18; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Calcium chloride anhydrous",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 2,
+              "source_text": "Use 0.01 g/L CaCl2 dihydrate and 0.65 g/L MgSO4 heptahydrate rather than inheriting the parent's batch amounts and anhydrous/unspecified forms."
+            },
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "MgSO4 heptahydrate",
+                "concentration": {
+                  "value": "0.65",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "chemostat medium preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "0.65 g MgSO4 · 7H2O",
+                  "explanation": "Additional file3, cellsA13,A19. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A19; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Magnesium sulfate",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 2,
+              "source_text": "Use 0.01 g/L CaCl2 dihydrate and 0.65 g/L MgSO4 heptahydrate rather than inheriting the parent's batch amounts and anhydrous/unspecified forms."
+            },
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "biotin stock (0.2 g/L)",
+                "notes": "Literal0.2g/L biotin stock, added1ml per liter of chemostat medium. Mixture-level descriptor; no inferred final biotin molarity.",
+                "concentration": {
+                  "value": "1",
+                  "unit": "ML_PER_L"
+                }
+              },
+              "stage": "stock addition to chemostat medium",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1 mL of Biotin (0.2 g L-1)",
+                  "explanation": "Additional file3, cellsA13,A20. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A20; separately located A13 header: \"Chemostat medium contained per Liter\". Parenthetical 0.2 g L-1 is the biotin stock strength; 1 mL is the stock volume added per liter of chemostat medium. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Biotin",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 3,
+              "source_text": "Add 1 mL of 0.2 g/L biotin stock per liter of chemostat medium instead of inheriting the parent's direct biotin molarity."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "biotin",
+                "concentration": {
+                  "value": "0.2",
+                  "unit": "G_PER_L",
+                  "per_volume": "per liter of biotin stock, not final medium"
+                }
+              },
+              "stage": "biotin stock preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1 mL of Biotin (0.2 g L-1)",
+                  "explanation": "Additional file3, cellA20. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A20; separately located A13 header: \"Chemostat medium contained per Liter\". Parenthetical 0.2 g L-1 is the biotin stock strength; 1 mL is the stock volume added per liter of chemostat medium. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 3,
+              "source_text": "Add 1 mL of 0.2 g/L biotin stock per liter of chemostat medium instead of inheriting the parent's direct biotin molarity."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Sulfate",
+                "notes": "Removed as a flattened final-medium entry; source stock constituents are retained separately at their stock-preparation stage."
+              },
+              "stage": "replacement of flattened parent trace entries by a stock addition",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "Replace the parent's nine flattened trace/acid entries (sulfate, boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per liter of chemostat medium. Do not retain both the flattened ingredients and this stock dose."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Boric acid",
+                "notes": "Removed as a flattened final-medium entry; source stock constituents are retained separately at their stock-preparation stage."
+              },
+              "stage": "replacement of flattened parent trace entries by a stock addition",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "Replace the parent's nine flattened trace/acid entries (sulfate, boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per liter of chemostat medium. Do not retain both the flattened ingredients and this stock dose."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Sodium molybdate",
+                "notes": "Removed as a flattened final-medium entry; source stock constituents are retained separately at their stock-preparation stage."
+              },
+              "stage": "replacement of flattened parent trace entries by a stock addition",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "Replace the parent's nine flattened trace/acid entries (sulfate, boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per liter of chemostat medium. Do not retain both the flattened ingredients and this stock dose."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Manganese sulfate",
+                "notes": "Removed as a flattened final-medium entry; source stock constituents are retained separately at their stock-preparation stage."
+              },
+              "stage": "replacement of flattened parent trace entries by a stock addition",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "Replace the parent's nine flattened trace/acid entries (sulfate, boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per liter of chemostat medium. Do not retain both the flattened ingredients and this stock dose."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Ferrous sulfate",
+                "notes": "Removed as a flattened final-medium entry; source stock constituents are retained separately at their stock-preparation stage."
+              },
+              "stage": "replacement of flattened parent trace entries by a stock addition",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "Replace the parent's nine flattened trace/acid entries (sulfate, boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per liter of chemostat medium. Do not retain both the flattened ingredients and this stock dose."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Cobalt chloride",
+                "notes": "Removed as a flattened final-medium entry; source stock constituents are retained separately at their stock-preparation stage."
+              },
+              "stage": "replacement of flattened parent trace entries by a stock addition",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "Replace the parent's nine flattened trace/acid entries (sulfate, boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per liter of chemostat medium. Do not retain both the flattened ingredients and this stock dose."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Cupric sulfate",
+                "notes": "Removed as a flattened final-medium entry; source stock constituents are retained separately at their stock-preparation stage."
+              },
+              "stage": "replacement of flattened parent trace entries by a stock addition",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "Replace the parent's nine flattened trace/acid entries (sulfate, boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per liter of chemostat medium. Do not retain both the flattened ingredients and this stock dose."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Zinc Chloride",
+                "notes": "Removed as a flattened final-medium entry; source stock constituents are retained separately at their stock-preparation stage."
+              },
+              "stage": "replacement of flattened parent trace entries by a stock addition",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "Replace the parent's nine flattened trace/acid entries (sulfate, boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per liter of chemostat medium. Do not retain both the flattened ingredients and this stock dose."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Sodium iodide",
+                "notes": "Removed as a flattened final-medium entry; source stock constituents are retained separately at their stock-preparation stage."
+              },
+              "stage": "replacement of flattened parent trace entries by a stock addition",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "Replace the parent's nine flattened trace/acid entries (sulfate, boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per liter of chemostat medium. Do not retain both the flattened ingredients and this stock dose."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "trace-salts stock solution",
+                "notes": "Stock dose, not concentrations of its individual constituents.",
+                "concentration": {
+                  "value": "1.6",
+                  "unit": "ML_PER_L"
+                }
+              },
+              "stage": "stock addition to chemostat medium",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, cellsA13,A21. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A21; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "Replace the parent's nine flattened trace/acid entries (sulfate, boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per liter of chemostat medium. Do not retain both the flattened ingredients and this stock dose."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CuSO4 pentahydrate",
+                "notes": "Only the source-stated hydrate/form is retained; stock is added separately at1.6ml/L.",
+                "concentration": {
+                  "value": "6.0",
+                  "unit": "G_PER_L",
+                  "per_volume": "per liter of trace-salts stock, not final medium"
+                }
+              },
+              "stage": "trace-salts stock preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "6.0 g CuSO4 · 5H2O",
+                  "explanation": "Additional file3, cellsA24,A25. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A25; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 5,
+              "source_text": "Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are stock amounts, not final-medium amounts; no acid density or molar conversion is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "NaI",
+                "notes": "Only the source-stated hydrate/form is retained; stock is added separately at1.6ml/L.",
+                "concentration": {
+                  "value": "0.08",
+                  "unit": "G_PER_L",
+                  "per_volume": "per liter of trace-salts stock, not final medium"
+                }
+              },
+              "stage": "trace-salts stock preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "0.08 g NaI",
+                  "explanation": "Additional file3, cellsA24,A26. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A26; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 5,
+              "source_text": "Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are stock amounts, not final-medium amounts; no acid density or molar conversion is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "MnSO4 monohydrate",
+                "notes": "Only the source-stated hydrate/form is retained; stock is added separately at1.6ml/L.",
+                "concentration": {
+                  "value": "3.0",
+                  "unit": "G_PER_L",
+                  "per_volume": "per liter of trace-salts stock, not final medium"
+                }
+              },
+              "stage": "trace-salts stock preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "3.0 g MnSO4 ·H2O",
+                  "explanation": "Additional file3, cellsA24,A27. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A27; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 5,
+              "source_text": "Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are stock amounts, not final-medium amounts; no acid density or molar conversion is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Na2MoO4 dihydrate",
+                "notes": "Only the source-stated hydrate/form is retained; stock is added separately at1.6ml/L.",
+                "concentration": {
+                  "value": "0.2",
+                  "unit": "G_PER_L",
+                  "per_volume": "per liter of trace-salts stock, not final medium"
+                }
+              },
+              "stage": "trace-salts stock preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "0.2g Na2MoO4 · 2H2O",
+                  "explanation": "Additional file3, cellsA24,A28. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A28; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 5,
+              "source_text": "Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are stock amounts, not final-medium amounts; no acid density or molar conversion is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "H3BO3",
+                "notes": "Only the source-stated hydrate/form is retained; stock is added separately at1.6ml/L.",
+                "concentration": {
+                  "value": "0.02",
+                  "unit": "G_PER_L",
+                  "per_volume": "per liter of trace-salts stock, not final medium"
+                }
+              },
+              "stage": "trace-salts stock preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "0.02 g H3BO3",
+                  "explanation": "Additional file3, cellsA24,A29. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A29; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 5,
+              "source_text": "Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are stock amounts, not final-medium amounts; no acid density or molar conversion is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CoCl2",
+                "notes": "Only the source-stated hydrate/form is retained; stock is added separately at1.6ml/L.",
+                "concentration": {
+                  "value": "0.5",
+                  "unit": "G_PER_L",
+                  "per_volume": "per liter of trace-salts stock, not final medium"
+                }
+              },
+              "stage": "trace-salts stock preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "0.5 g CoCl2",
+                  "explanation": "Additional file3, cellsA24,A30. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A30; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 5,
+              "source_text": "Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are stock amounts, not final-medium amounts; no acid density or molar conversion is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "ZnCl2",
+                "notes": "Only the source-stated hydrate/form is retained; stock is added separately at1.6ml/L.",
+                "concentration": {
+                  "value": "20.0",
+                  "unit": "G_PER_L",
+                  "per_volume": "per liter of trace-salts stock, not final medium"
+                }
+              },
+              "stage": "trace-salts stock preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "20.0 g ZnCl2",
+                  "explanation": "Additional file3, cellsA24,A31. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A31; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 5,
+              "source_text": "Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are stock amounts, not final-medium amounts; no acid density or molar conversion is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "FeSO4 heptahydrate",
+                "notes": "Only the source-stated hydrate/form is retained; stock is added separately at1.6ml/L.",
+                "concentration": {
+                  "value": "5.0",
+                  "unit": "G_PER_L",
+                  "per_volume": "per liter of trace-salts stock, not final medium"
+                }
+              },
+              "stage": "trace-salts stock preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "5.0 g FeSO4 · 7H2O",
+                  "explanation": "Additional file3, cellsA24,A32. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A32; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 5,
+              "source_text": "Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are stock amounts, not final-medium amounts; no acid density or molar conversion is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "H2SO4 (95–98% w/w)",
+                "notes": "Source reagent strength95–98%w/w. No density, molar conversion or pure-acid final concentration inferred.",
+                "concentration": {
+                  "value": "5",
+                  "unit": "ML_PER_L",
+                  "per_volume": "per liter of trace-salts stock, not final medium"
+                }
+              },
+              "stage": "trace-salts stock preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "5 mL H2SO4 (95-98% w/w)",
+                  "explanation": "Additional file3, cellsA24,A33. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A33; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 5,
+              "source_text": "Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are stock amounts, not final-medium amounts; no acid density or molar conversion is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "HCl",
+                "notes": "25%HCl to pH5.0; percentage basis and fixed titrant volume unspecified."
+              },
+              "stage": "initial chemostat medium pH adjustment",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "pH set to 5.0 using 25% HCl",
+                  "explanation": "Additional file3, cellA22. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A22; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 6,
+              "source_text": "Set initial medium pH to 5.0 using 25% HCl as stated in the supplement; its percentage basis and a fixed titrant volume are not specified. The chemostat pH was controlled at 5.0 with 25% ammonium hydroxide. The inspected source does not establish the parent's generic final-medium filter-sterilization procedure, so that procedure is not inherited as verified study preparation."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "ammonium hydroxide",
+                "notes": "25%ammonium hydroxide for pH5.0 control; percentage basis and delivered dose unspecified."
+              },
+              "stage": "chemostat pH control during cultivation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1475-2859-8-29",
+                  "supports": "SUPPORT",
+                  "snippet": "pH = 5.0 (controlled with 25% ammonium hydroxide)",
+                  "explanation": "Additional file3, cellA39. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A39 within the section headed A35 \"Chemostat parameters\". Percentage basis is not supplied. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 6,
+              "source_text": "Set initial medium pH to 5.0 using 25% HCl as stated in the supplement; its percentage basis and a fixed titrant volume are not specified. The chemostat pH was controlled at 5.0 with 25% ammonium hydroxide. The inspected source does not establish the parent's generic final-medium filter-sterilization procedure, so that procedure is not inherited as verified study preparation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9463.yaml",
+      "recipe_id": "CultureMech:006260",
+      "expected_sha256": "bd20a7cc5a3d31e5fc81cae9d1d73410edd7c99e3ca9f07d7fef9858e819d656",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 9463 current DSMZ 670 source formulation",
+          "ingredient_changes": [
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "FeSO4 x 7 H2O"
+              },
+              "stage": "current DSMZ670 strain-specific formulation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "omit FeSO4 x 7 H2O from the medium",
+                  "explanation": "Page1, For DSM9463. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching DSM9463/9466/9467 prescription; line wrapping normalized. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Omit FeSO4 x 7 H2O; add 5.00 g/L powdered sulfur sterilized by steaming in a boiling water bath for 3 hours on each of 3 successive days."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "powdered sulfur",
+                "notes": "Steam in a boiling water bath for3hours on each of3successive days; this is a reported final-medium mass concentration.",
+                "concentration": {
+                  "value": "5.00",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "sterilized sulfur addition before use",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "add 5.00 g/l of powdered sulfur",
+                  "explanation": "Page1, For DSM9463. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching strain-specific prescription. The immediately following steaming instruction concerns sulfur sterilization. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Omit FeSO4 x 7 H2O; add 5.00 g/L powdered sulfur sterilized by steaming in a boiling water bath for 3 hours on each of 3 successive days."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "H2SO4",
+                "notes": "Titrant strength 1 N; adjust to pH3.5. Fixed dose is unspecified; do not convert normality to molarity or a final-medium concentration."
+              },
+              "stage": "pH adjustment before autoclaving",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Adjust pH to 3.5 with 1 N H2SO4 prior to autoclaving",
+                  "explanation": "Page1, For DSM9463. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do not supply a fixed acid dose. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 3,
+              "source_text": "Current source retains pH 3.5 using 1 N H2SO4 before autoclaving."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9466.yaml",
+      "recipe_id": "CultureMech:006262",
+      "expected_sha256": "e69e4d049c712d303e2a7ab5659bfdcec254c72b8c23a2708d1691cf99007f4e",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 9466 current DSMZ 670 source formulation",
+          "ingredient_changes": [
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "FeSO4 x 7 H2O"
+              },
+              "stage": "current DSMZ670 strain-specific formulation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "omit FeSO4 x 7 H2O from the medium",
+                  "explanation": "Page1, For DSM9466. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching DSM9463/9466/9467 prescription; line wrapping normalized. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Omit FeSO4 x 7 H2O; add 5.00 g/L powdered sulfur sterilized by steaming in a boiling water bath for 3 hours on each of 3 successive days."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "powdered sulfur",
+                "notes": "Steam in a boiling water bath for3hours on each of3successive days; this is a reported final-medium mass concentration.",
+                "concentration": {
+                  "value": "5.00",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "sterilized sulfur addition before use",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "add 5.00 g/l of powdered sulfur",
+                  "explanation": "Page1, For DSM9466. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching strain-specific prescription. The immediately following steaming instruction concerns sulfur sterilization. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Omit FeSO4 x 7 H2O; add 5.00 g/L powdered sulfur sterilized by steaming in a boiling water bath for 3 hours on each of 3 successive days."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "H2SO4",
+                "notes": "Titrant strength 1 N; adjust to pH3.0. Fixed dose is unspecified; do not convert normality to molarity or a final-medium concentration."
+              },
+              "stage": "pH adjustment before autoclaving",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Adjust pH to 3.0 with 1 N H2SO4 prior to autoclaving",
+                  "explanation": "Page1, For DSM9466. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do not supply a fixed acid dose. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 3,
+              "source_text": "Current source: pH 3.0 using 1 N H2SO4, versus archived pH 3.5. Add 0.20 g/L yeast extract from a sterile stock; its strength, dose and sterilization method are unspecified."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "yeast extract",
+                "notes": "Reported final concentration; stock strength, dose and sterilization method are unspecified.",
+                "concentration": {
+                  "value": "0.20",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "sterile stock addition before use",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "0.20 g/l of yeast",
+                  "explanation": "Page1, For DSM9466. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching DSM9466/9467 prescription; line wrapping normalized. Yeast extract is a final-medium addition supplied from a sterile stock, whose concentration is not specified. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 3,
+              "source_text": "Current source: pH 3.0 using 1 N H2SO4, versus archived pH 3.5. Add 0.20 g/L yeast extract from a sterile stock; its strength, dose and sterilization method are unspecified."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9467.yaml",
+      "recipe_id": "CultureMech:006263",
+      "expected_sha256": "3bd89db4acaafe29f61d1b188d61844bd35dda1a7a7b01367ac55d40de806b0a",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 9467 current DSMZ 670 source formulation",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "H2SO4",
+                "notes": "Titrant strength 1 N; adjust to pH3.0. Fixed dose is unspecified; do not convert normality to molarity or a final-medium concentration."
+              },
+              "stage": "pH adjustment before autoclaving",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Adjust pH to 3.0 with 1 N H2SO4 prior to autoclaving",
+                  "explanation": "Page1, For DSM9467. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do not supply a fixed acid dose. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Current source: pH 3.0 with 1 N H2SO4, not archived 2 N acid; omit iron. Add 2.00 g/L D-glucose and 0.1 g/L yeast extract from filter-sterilized stocks of unspecified strength/dose, rather than the archived stock specifications."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "FeSO4 x 7 H2O"
+              },
+              "stage": "current DSMZ670 strain-specific formulation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "omit FeSO4 x 7 H2O from the medium",
+                  "explanation": "Page1, For DSM9467. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching DSM9463/9466/9467 prescription; line wrapping normalized. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Current source: pH 3.0 with 1 N H2SO4, not archived 2 N acid; omit iron. Add 2.00 g/L D-glucose and 0.1 g/L yeast extract from filter-sterilized stocks of unspecified strength/dose, rather than the archived stock specifications."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "D-glucose",
+                "notes": "Final concentration; stock strength and volume unspecified.",
+                "concentration": {
+                  "value": "2.00",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "filter-sterilized stock addition before use",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "add 2.00 g/l D-glucose",
+                  "explanation": "Page1, For DSM9467. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, DSM9467. The subsequent clause specifies filter-sterilized stock solutions. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Current source: pH 3.0 with 1 N H2SO4, not archived 2 N acid; omit iron. Add 2.00 g/L D-glucose and 0.1 g/L yeast extract from filter-sterilized stocks of unspecified strength/dose, rather than the archived stock specifications."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "yeast extract",
+                "notes": "Final concentration; stock strength and volume unspecified.",
+                "concentration": {
+                  "value": "0.1",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "filter-sterilized stock addition before use",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "0.1 g/l yeast extract",
+                  "explanation": "Page1, For DSM9467. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching DSM9466/9467 prescription; line wrapping normalized. Yeast extract is a final-medium addition supplied from a sterile stock, whose concentration is not specified. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Current source: pH 3.0 with 1 N H2SO4, not archived 2 N acid; omit iron. Add 2.00 g/L D-glucose and 0.1 g/L yeast extract from filter-sterilized stocks of unspecified strength/dose, rather than the archived stock specifications."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9468.yaml",
+      "recipe_id": "CultureMech:006264",
+      "expected_sha256": "d100dc4c4829f6b4464b39d8102e0c2beae8bc71a9441dba3b7aae7631d1d7cf",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 9468 current DSMZ 670 source formulation",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "H2SO4",
+                "notes": "Titrant strength 4 N; adjust to pH1.6. Fixed dose is unspecified; do not convert normality to molarity or a final-medium concentration."
+              },
+              "stage": "pH adjustment before autoclaving",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Adjust pH to 1.6 with 4 N H2SO4 prior to autoclaving",
+                  "explanation": "Page1, For DSM9468. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do not supply a fixed acid dose. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Current source: pH 1.6 with 4 N H2SO4 and 50 ml of 40% w/v FeSO4 x 7 H2O stock per recipe batch. Stock is made in 0.2 N H2SO4 and filter-sterilized under 100% N2; the old per-5-ml-base ratio and autoclaving alternative are not asserted for this version."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "notes": "50ml of this stock is added per recipe batch before use; no final-volume normalization. Filter sterilized under100%N2.",
+                "concentration": {
+                  "value": "40",
+                  "unit": "PERCENT_W_V",
+                  "per_volume": "stock solution, not final medium"
+                }
+              },
+              "stage": "ferrous sulfate stock preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "40% (w/v) stock solution",
+                  "explanation": "Page1, base table and preparation step1. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1 step1; separate exact solvent excerpt: \"prepared with 0.2 N H2SO4\". Table stock-volume column states \"50.00 ml\"; the batch water input is 950.00 ml. No further final-volume normalization is asserted. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Current source: pH 1.6 with 4 N H2SO4 and 50 ml of 40% w/v FeSO4 x 7 H2O stock per recipe batch. Stock is made in 0.2 N H2SO4 and filter-sterilized under 100% N2; the old per-5-ml-base ratio and autoclaving alternative are not asserted for this version."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "H2SO4",
+                "notes": "Stock prepared with0.2N sulfuric acid; preserve normality without molar conversion. Gas atmosphere is context, not an extra liquid ingredient."
+              },
+              "stage": "ferrous sulfate stock solvent",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "prepared with 0.2 N H2SO4",
+                  "explanation": "Page1, preparation step1. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1 preparation step1, ferrous-sulfate stock solvent; normality is retained without conversion. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Current source: pH 1.6 with 4 N H2SO4 and 50 ml of 40% w/v FeSO4 x 7 H2O stock per recipe batch. Stock is made in 0.2 N H2SO4 and filter-sterilized under 100% N2; the old per-5-ml-base ratio and autoclaving alternative are not asserted for this version."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/middlebrook_medium.yaml",
+      "recipe_id": "CultureMech:001782",
+      "expected_sha256": "68ca41b5eade9b7647d79438c98c0df3e7aa934c083b14f114c1b3dea909e7e4",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "From-scratch alternative to commercial 7H10",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "(NH4)2SO4",
+                "notes": "Literal alternative preparation input: 0.5 g. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "(NH4)2SO4 0.500 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 0,
+              "source_text": "Alternative preparation input: (NH4)2SO4 0.5 g; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "KH2PO4",
+                "notes": "Literal alternative preparation input: 1.5 g. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "KH2PO4 1.500 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 1,
+              "source_text": "Alternative preparation input: KH2PO4 1.5 g; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Na2HPO4",
+                "notes": "Literal alternative preparation input: 1.5 g. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Na2HPO4 1.500 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Alternative preparation input: Na2HPO4 1.5 g; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Sodium citrate",
+                "notes": "Literal alternative preparation input: 0.4 g. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Na-citrate 0.400 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 3,
+              "source_text": "Alternative preparation input: Sodium citrate 0.4 g; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "MgSO4",
+                "notes": "Literal alternative preparation input: 0.025 g. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "MgSO4 0.025 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "Alternative preparation input: MgSO4 0.025 g; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CaCl2",
+                "notes": "Literal alternative preparation input: 0.5 mg. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "CaCl2 0.500 mg",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 5,
+              "source_text": "Alternative preparation input: CaCl2 0.5 mg; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "ZnSO4",
+                "notes": "Literal alternative preparation input: 1 mg. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "ZnSO4 1.000 mg",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 6,
+              "source_text": "Alternative preparation input: ZnSO4 1 mg; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CuSO4",
+                "notes": "Literal alternative preparation input: 1 mg. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "CuSO4 1.000 mg",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 7,
+              "source_text": "Alternative preparation input: CuSO4 1 mg; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "L-Glutamic acid",
+                "notes": "Literal alternative preparation input: 0.5 g. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "L-Glutamic acid 0.500 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 8,
+              "source_text": "Alternative preparation input: L-Glutamic acid 0.5 g; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Ferric ammonium citrate",
+                "notes": "Literal alternative preparation input: 0.04 g. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Ferric ammonium citrate 0.040 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 9,
+              "source_text": "Alternative preparation input: Ferric ammonium citrate 0.04 g; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Pyridoxine",
+                "notes": "Literal alternative preparation input: 1 mg. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Pyridoxine 1.000 mg",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 10,
+              "source_text": "Alternative preparation input: Pyridoxine 1 mg; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Biotin",
+                "notes": "Literal alternative preparation input: 0.5 mg. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Biotin 0.500 mg",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 11,
+              "source_text": "Alternative preparation input: Biotin 0.5 mg; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Malachite green",
+                "notes": "Literal alternative preparation input: 0.25 mg. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Malachite green 0.250 mg",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 12,
+              "source_text": "Alternative preparation input: Malachite green 0.25 mg; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Agar",
+                "notes": "Literal alternative preparation input: 15 g. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Bacto agar 15.000 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 13,
+              "source_text": "Alternative preparation input: Agar 15 g; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Distilled water",
+                "notes": "Literal alternative preparation input: 1000 ml. Do not add to the commercial route or infer final concentration/volume. Unstated salt/hydrate forms remain unresolved."
+              },
+              "stage": "from-scratch alternative to commercial 7H10 preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Distilled water 1000.000 ml",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 14,
+              "source_text": "Alternative preparation input: Distilled water 1000 ml; not an additional input to the commercial preparation. No final-medium concentration is inferred."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mm_biotin_and_thiamine_villasenor_et_al.yaml",
+      "recipe_id": "CultureMech:007062",
+      "expected_sha256": "21bfadf3357db089631be2d8fc51cc0bcf708008d25a2c39312b444d5d4f8a94",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Villasenor 2011 MM reported formulation",
+          "ingredient_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "biotin",
+                "notes": "Reported final culture concentration; no unreported salt form or parent molar-equivalence claim.",
+                "concentration": {
+                  "value": "10",
+                  "unit": "MICROG_PER_ML"
+                }
+              },
+              "stage": "separately filter-sterilized vitamin addition after base sterilization",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1471-2180-11-66",
+                  "supports": "SUPPORT",
+                  "snippet": "10 μg ml-1 biotin",
+                  "explanation": "Methods, Bacterial strains, media and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 0,
+              "source_text": "Use the reported 10 micrograms/mL biotin and 10 micrograms/mL thiamine, rather than certifying the parent's 0.00409316 mM biotin and 0.033243 mM thiamine as equivalent. Salt form and molecular-weight conversions are not inferred."
+            },
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "thiamine",
+                "notes": "Reported final culture concentration; no unreported salt form or parent molar-equivalence claim.",
+                "concentration": {
+                  "value": "10",
+                  "unit": "MICROG_PER_ML"
+                }
+              },
+              "stage": "separately filter-sterilized vitamin addition after base sterilization",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1471-2180-11-66",
+                  "supports": "SUPPORT",
+                  "snippet": "10 μg ml-1 thiamine",
+                  "explanation": "Methods, Bacterial strains, media and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 0,
+              "source_text": "Use the reported 10 micrograms/mL biotin and 10 micrograms/mL thiamine, rather than certifying the parent's 0.00409316 mM biotin and 0.033243 mM thiamine as equivalent. Salt form and molecular-weight conversions are not inferred."
+            },
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "CaCl2 dihydrate",
+                "notes": "Reported final concentration of the stated dihydrate; equal molarity does not establish equal supplied form.",
+                "concentration": {
+                  "value": "1.49",
+                  "unit": "MILLIMOLAR"
+                }
+              },
+              "stage": "separately autoclaved calcium addition after base sterilization",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1471-2180-11-66",
+                  "supports": "SUPPORT",
+                  "snippet": "1.49 mM CaCl2 2H2O (autoclaved separately)",
+                  "explanation": "Methods, medium formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Calcium chloride anhydrous",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 1,
+              "source_text": "Specify 1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate; the parent instead labels calcium chloride anhydrous and does not specify the iron salt hydrate. Equal molar numbers do not establish identical supplied chemical forms."
+            },
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "FeCl3 hexahydrate",
+                "notes": "Reported final concentration of stated hexahydrate; do not inherit the unspecified parent form.",
+                "concentration": {
+                  "value": "0.0184",
+                  "unit": "MILLIMOLAR"
+                }
+              },
+              "stage": "filter-sterilized iron addition after base sterilization",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1471-2180-11-66",
+                  "supports": "SUPPORT",
+                  "snippet": "0.0184 mM FeCl3 6H2O (filter sterilized)",
+                  "explanation": "Methods, medium formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Iron(III) chloride",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 1,
+              "source_text": "Specify 1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate; the parent instead labels calcium chloride anhydrous and does not specify the iron salt hydrate. Equal molar numbers do not establish identical supplied chemical forms."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "calcium pantothenate",
+                "notes": "Explicit exclusion from MM, not a positive growth-medium occurrence or a claim that material was physically removed."
+              },
+              "stage": "MM formulation (without MMP supplement)",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1471-2180-11-66",
+                  "supports": "SUPPORT",
+                  "snippet": "MMP contains the same components plus 1 μM calcium pantothenate",
+                  "explanation": "Methods, distinction between MM and MMP. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "No calcium pantothenate is added in MM; the separate MMP formulation contains that supplement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/mmp_biotin_thiamine_and_ca_pantothenate_villasenor_et_al.yaml",
+      "recipe_id": "CultureMech:007063",
+      "expected_sha256": "beff164c28f466345446b01ead1845aff3dc1ef68c83de1ddd7f70843f68d18e",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Villasenor 2011 MMP reported formulation",
+          "ingredient_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "biotin",
+                "notes": "Reported final culture concentration; no unreported salt form or parent molar-equivalence claim.",
+                "concentration": {
+                  "value": "10",
+                  "unit": "MICROG_PER_ML"
+                }
+              },
+              "stage": "separately filter-sterilized vitamin addition after base sterilization",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1471-2180-11-66",
+                  "supports": "SUPPORT",
+                  "snippet": "10 μg ml-1 biotin",
+                  "explanation": "Methods, Bacterial strains, media and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 0,
+              "source_text": "Use the reported 10 micrograms/mL biotin and 10 micrograms/mL thiamine, rather than certifying the parent's 0.00409316 mM biotin and 0.033243 mM thiamine as equivalent. Salt form and molecular-weight conversions are not inferred."
+            },
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "thiamine",
+                "notes": "Reported final culture concentration; no unreported salt form or parent molar-equivalence claim.",
+                "concentration": {
+                  "value": "10",
+                  "unit": "MICROG_PER_ML"
+                }
+              },
+              "stage": "separately filter-sterilized vitamin addition after base sterilization",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1471-2180-11-66",
+                  "supports": "SUPPORT",
+                  "snippet": "10 μg ml-1 thiamine",
+                  "explanation": "Methods, Bacterial strains, media and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 0,
+              "source_text": "Use the reported 10 micrograms/mL biotin and 10 micrograms/mL thiamine, rather than certifying the parent's 0.00409316 mM biotin and 0.033243 mM thiamine as equivalent. Salt form and molecular-weight conversions are not inferred."
+            },
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "CaCl2 dihydrate",
+                "notes": "Reported final concentration of the stated dihydrate; equal molarity does not establish equal supplied form.",
+                "concentration": {
+                  "value": "1.49",
+                  "unit": "MILLIMOLAR"
+                }
+              },
+              "stage": "separately autoclaved calcium addition after base sterilization",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1471-2180-11-66",
+                  "supports": "SUPPORT",
+                  "snippet": "1.49 mM CaCl2 2H2O (autoclaved separately)",
+                  "explanation": "Methods, medium formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Calcium chloride anhydrous",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 1,
+              "source_text": "Specify 1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate; the parent instead labels calcium chloride anhydrous and does not specify the iron salt hydrate. Equal molar numbers do not establish identical supplied chemical forms."
+            },
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "FeCl3 hexahydrate",
+                "notes": "Reported final concentration of stated hexahydrate; do not inherit the unspecified parent form.",
+                "concentration": {
+                  "value": "0.0184",
+                  "unit": "MILLIMOLAR"
+                }
+              },
+              "stage": "filter-sterilized iron addition after base sterilization",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1471-2180-11-66",
+                  "supports": "SUPPORT",
+                  "snippet": "0.0184 mM FeCl3 6H2O (filter sterilized)",
+                  "explanation": "Methods, medium formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Iron(III) chloride",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 1,
+              "source_text": "Specify 1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate; the parent instead labels calcium chloride anhydrous and does not specify the iron salt hydrate. Equal molar numbers do not establish identical supplied chemical forms."
+            },
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "calcium pantothenate",
+                "notes": "Source concentration of the calcium salt; not twice this amount and not a pantothenate-anion dose.",
+                "concentration": {
+                  "value": "1",
+                  "unit": "MICROMOLAR"
+                }
+              },
+              "stage": "MMP final formulation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1186/1471-2180-11-66",
+                  "supports": "SUPPORT",
+                  "snippet": "MMP contains the same components plus 1 μM calcium pantothenate",
+                  "explanation": "Methods, MMP formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 4,
+              "source_text": "Include 1 micromolar calcium pantothenate, equivalent to the existing 0.001 mM salt entry (1/1000 mM); do not double it or reinterpret it as a pantothenate-anion dose."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ms10_medium_supplements_acetate_for_batch_cultivation.yaml",
+      "recipe_id": "CultureMech:007315",
+      "expected_sha256": "29eda3f5b5a054ddfbf63568d9ef4b2fe47b0975b5e7c472b5a51a0dfacf584e",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Nordkvist 2003 microaerobic MS10 with timed acetate addition",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "MnSO4",
+                "notes": "Hydrate not specified; retain reported mass concentration without molar conversion.",
+                "concentration": {
+                  "value": "1.25e-5",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "microaerobic reactor medium preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
+                  "supports": "SUPPORT",
+                  "snippet": "MnSO4 (1.25 × 10−5 g · liter−1)",
+                  "explanation": "Materials and Methods, Strain and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Nordkvist original ASM Methods, Strain and growth conditions; subscripts/superscripts rendered in plain text. Hydration not specified. This supplement applies to the defined MS10 culture medium. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Manganese chloride",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 0,
+              "source_text": "Use source-specified MnSO4 at 1.25e-5 g/liter, not the parent's manganese chloride. Hydration is not specified; no molar conversion is applied."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "sodium acetate",
+                "notes": "Added during cultivation; not an initial-medium concentration or parent molar-equivalence claim.",
+                "concentration": {
+                  "value": "0.3",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "timed addition after7h38min of microaerobic cultivation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
+                  "supports": "SUPPORT",
+                  "snippet": "0.3 g of sodium acetate liter−1 was added after 7 h 38 min",
+                  "explanation": "Figure1B caption. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Nordkvist Figure1B caption. This is a timed addition during cultivation, not an initial concentration; superscript exponent rendered in plain text. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Add 0.3 g/liter sodium acetate after 7 h 38 min of microaerobic cultivation; do not interpret the parent's static 3.657 mM acetate as an initial concentration."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ms10_medium_supplements_for_batch_cultivation.yaml",
+      "recipe_id": "CultureMech:007314",
+      "expected_sha256": "f874b38ced2ec1c852960b16efe30802b4e0122d43c38799728f82ff2ccf7296",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Nordkvist 2003 reported microaerobic MS10 with manganese sulfate",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "MnSO4",
+                "notes": "Hydrate not specified; retain reported mass concentration without molar conversion.",
+                "concentration": {
+                  "value": "1.25e-5",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "microaerobic reactor medium preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
+                  "supports": "SUPPORT",
+                  "snippet": "MnSO4 (1.25 × 10−5 g · liter−1)",
+                  "explanation": "Materials and Methods, Strain and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Nordkvist original ASM Methods, Strain and growth conditions; subscripts/superscripts rendered in plain text. Hydration not specified. This supplement applies to the defined MS10 culture medium. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Manganese chloride",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 0,
+              "source_text": "Use source-specified MnSO4 at 1.25e-5 g/liter, not the parent's manganese chloride. Hydration is not specified; no molar conversion is applied."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ms10_medium_supplements_for_batch_cultivation_modified.yaml",
+      "recipe_id": "CultureMech:007316",
+      "expected_sha256": "2d3e28217c23c1bfcca8eb2982903127653c2ca5dc9f23b45ccbd1663d2d2aeb",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Nordkvist 2003 microaerobic MS10 without lipoic acid and with acetate",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "MnSO4",
+                "notes": "Hydrate not specified; retain reported mass concentration without molar conversion.",
+                "concentration": {
+                  "value": "1.25e-5",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "microaerobic reactor medium preparation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
+                  "supports": "SUPPORT",
+                  "snippet": "MnSO4 (1.25 × 10−5 g · liter−1)",
+                  "explanation": "Materials and Methods, Strain and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Nordkvist original ASM Methods, Strain and growth conditions; subscripts/superscripts rendered in plain text. Hydration not specified. This supplement applies to the defined MS10 culture medium. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "Manganese chloride",
+                "notes": "Displaced parent descriptor; not a positive variant ingredient."
+              },
+              "source_modification_index": 0,
+              "source_text": "Use source-specified MnSO4 at 1.25e-5 g/liter, not the parent's manganese chloride. Hydration is not specified; no molar conversion is applied."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "DL-6,8-thioctic acid"
+              },
+              "stage": "Figure1C microaerobic treatment formulation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
+                  "supports": "SUPPORT",
+                  "snippet": "without dl-6,8-thioctic acid",
+                  "explanation": "Figure1C caption. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Nordkvist Figure1C caption and Table2 heading; source explicitly excludes this component from the modified treatment. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Use the Figure 1C treatment without DL-6,8-thioctic acid and with 0.82 g/liter sodium acetate; retain this reported mass basis without certifying the parent's 9.996 mM conversion."
+            },
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "sodium acetate",
+                "notes": "Separate Figure1C formulation, not Figure1B timed feed and not certification of the parent's9.996mM conversion.",
+                "concentration": {
+                  "value": "0.82",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "Figure1C microaerobic treatment formulation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
+                  "supports": "SUPPORT",
+                  "snippet": "with 0.82 g of sodium acetate liter−1",
+                  "explanation": "Figure1C caption. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Nordkvist Figure1C caption; separate treatment without dl-6,8-thioctic acid, not the timed Figure1B addition. Exact excerpt clarification for issue763; scientific payload unchanged."
+                }
+              ],
+              "source_modification_index": 2,
+              "source_text": "Use the Figure 1C treatment without DL-6,8-thioctic acid and with 0.82 g/liter sodium acetate; retain this reported mass basis without certifying the parent's 9.996 mM conversion."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dispositions": [
+    {
+      "queue_row_number": 220,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 221,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 3
+    },
+    {
+      "queue_row_number": 222,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 2
+    },
+    {
+      "queue_row_number": 223,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 2
+    },
+    {
+      "queue_row_number": 224,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 10
+    },
+    {
+      "queue_row_number": 225,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 9
+    },
+    {
+      "queue_row_number": 226,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 2
+    },
+    {
+      "queue_row_number": 290,
+      "status": "HELD_MODEL",
+      "reason": "Water identity already exists in the parent. The change is an absolute950ml batch input versus1000ml, not a concentration; quantity-only representation gap #760. Do not encode it as added950ml or950ml/L.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 291,
+      "status": "CONDITION_ONLY",
+      "reason": "Autoclave/incubation conditions, with no additional named ingredient assertion.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 292,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 2
+    },
+    {
+      "queue_row_number": 293,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 294,
+      "status": "HELD_MODEL",
+      "reason": "Water identity already exists in the parent. The change is an absolute950ml batch input versus1000ml, not a concentration; quantity-only representation gap #760. Do not encode it as added950ml or950ml/L.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 295,
+      "status": "CONDITION_ONLY",
+      "reason": "Autoclave/incubation conditions, with no additional named ingredient assertion.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 296,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 2
+    },
+    {
+      "queue_row_number": 297,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 2
+    },
+    {
+      "queue_row_number": 298,
+      "status": "HELD_MODEL",
+      "reason": "Water identity already exists in the parent. The change is an absolute950ml batch input versus1000ml, not a concentration; quantity-only representation gap #760. Do not encode it as added950ml or950ml/L.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 299,
+      "status": "CONDITION_ONLY",
+      "reason": "Autoclave/incubation conditions, with no additional named ingredient assertion.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 300,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 4
+    },
+    {
+      "queue_row_number": 301,
+      "status": "HELD_MODEL",
+      "reason": "Water identity already exists in the parent. The change is an absolute950ml batch input versus1000ml, not a concentration; quantity-only representation gap #760. Do not encode it as added950ml or950ml/L.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 302,
+      "status": "CONDITION_ONLY",
+      "reason": "Autoclave/incubation conditions, with no additional named ingredient assertion.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 303,
+      "status": "STRUCTURED",
+      "reason": "Stock composition/titrant identities structured. The50ml per-batch stock addition remains exact notes, not a separately computed final concentration.",
+      "assertion_count": 3
+    },
+    {
+      "queue_row_number": 321,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 322,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 323,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 324,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 325,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 326,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 327,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 328,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 329,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 330,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 331,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 332,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 333,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 334,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 335,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 336,
+      "status": "ALREADY_STRUCTURED",
+      "reason": "The 1000 ml water input is represented by row335; remaining text is route/volume/pH context without a named titrant.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 350,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 2
+    },
+    {
+      "queue_row_number": 351,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 2
+    },
+    {
+      "queue_row_number": 352,
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Source confirms parent succinate10mM, NH4Cl10mM, K2HPO4 1.26mM and MgSO4 0.83mM. No new change or inferred counterion/hydrate; scoped source text remains intact.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 353,
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Named components are represented in the parent and rows350–352. This row supplies preparation sequence; new assertions already carry the relevant addition stages, with no generic filtration inherited.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 354,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 355,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 2
+    },
+    {
+      "queue_row_number": 356,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 2
+    },
+    {
+      "queue_row_number": 357,
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Source confirms parent succinate10mM, NH4Cl10mM, K2HPO4 1.26mM and MgSO4 0.83mM. No new change or inferred counterion/hydrate; scoped source text remains intact.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 358,
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Named components are represented in the parent and rows355–357. This row supplies preparation sequence; new assertions already carry the relevant addition stages, with no generic filtration inherited.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 359,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 372,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 373,
+      "status": "HELD_EVIDENCE",
+      "reason": "Preculture has threefold phosphate relative to reactor, but exact reactor phosphate requires the full1995MS10base source. Retain scope without inferring quantities or normalizing parent values.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 374,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 375,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 376,
+      "status": "HELD_EVIDENCE",
+      "reason": "Preculture has threefold phosphate relative to reactor, but exact reactor phosphate requires the full1995MS10base source. Retain scope without inferring quantities or normalizing parent values.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 377,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 378,
+      "status": "HELD_EVIDENCE",
+      "reason": "Preculture has threefold phosphate relative to reactor, but exact reactor phosphate requires the full1995MS10base source. Retain scope without inferring quantities or normalizing parent values.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 379,
+      "status": "STRUCTURED",
+      "reason": "Source-supported named changes retained with their stage and literal quantity basis.",
+      "assertion_count": 2
+    }
+  ]
+}

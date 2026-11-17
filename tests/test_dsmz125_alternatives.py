@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 HERE = ROOT / "reports/ingredient_concentration_curation/20261007-dsmz125-alternatives"
 sys.path.insert(0, str(ROOT / "scripts"))
 import repair_dsmz125_alternatives as repair  # noqa: E402
+from audit_variant_ingredient_successor import restore_before  # noqa: E402
 
 
 def frozen():
@@ -192,7 +193,7 @@ def test_rehashed_source_semantics_still_need_review(monkeypatch, damage):
 def test_applied_records_match_plan_and_keep_prior_evidence():
     plan = frozen()
     for item in plan["records"]:
-        current = (ROOT / item["path"]).read_bytes()
+        current = restore_before((ROOT / item["path"]).read_bytes(), item["path"])
         assert repair.runner.sha(current) == item["after_sha256"]
         assert current.decode() == item["after_text"]
         auditor().check(

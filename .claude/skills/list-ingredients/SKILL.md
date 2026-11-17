@@ -6,7 +6,7 @@ metadata:
   category: reporting
   requires_database: false
   requires_internet: false
-  version: 1.3.0
+  version: 2.0.0
 ---
 
 # List ingredients across the corpus
@@ -59,7 +59,8 @@ index implicitly or call a candidate a released KGM input.
 | File | Content |
 | --- | --- |
 | `ingredients_list.tsv` | **The list.** One row per distinct ingredient, sorted by distinct recipe count. |
-| `ingredient_occurrences.tsv` | Canonical table: one row per ingredient per record, uncapped. |
+| `ingredient_occurrences.tsv` | Canonical table: one row per structured descriptor position, including scoped variant targets, uncapped. |
+| `variant_ingredient_changes.tsv` | Complete variant change ledger, including removals and both replacement sides. |
 | `mapped_ingredients.yaml` / `unmapped_ingredients.yaml` | Summary views that embed every occurrence (large). |
 | `ingredient_aggregation_errors.tsv` | Input failures. A non-empty report means nothing else was replaced. |
 
@@ -97,11 +98,16 @@ are CSV-quoted, so `wc -l`, `grep`, `cut`, and `awk` can misread rows.
   entries, plus the `composition` of stocks written inline in a record's
   `solutions[]` (#604). Ingredients inside referenced stock solutions are not
   expanded; the referenced record counts them once.
-- Separately modeled variant recipe records are included. Ingredient mentions
-  only in `variants[].modifications`, notes, or other prose are not extracted.
-  Say **all structured direct ingredients across the catalog**, not all chemical
-  mentions or every medium's fully expanded formulation. Preserve prose-only
-  additions as a curation gap; do not guess their identities.
+- Separately modeled variant records and reviewed inline `ingredient_changes`
+  are included. ADD, SET_CONCENTRATION and the introduced REPLACE descriptor
+  enter the list; REMOVE and displaced descriptors remain only in the ledger.
+  Preserve variant, stage, source binding, quantity and evidence. These operations
+  are not automatically applied to the parent. The ledger's `counts_as_presence`
+  means inventory inclusion, not proof of nonzero presence in every condition.
+- Mentions remaining only in `variants[].modifications`, notes or other prose
+  are not extracted. Say **all structured direct ingredients and variant change
+  targets across the catalog**, not all chemical mentions or fully expanded
+  formulations. Report unresolved identities and uncurated prose separately.
 - The list is never filtered by `--min-occurrences`. Its row count equals
   `total_mapped_count + total_unmapped_count` from the YAML views at the default
   `min_occurrences=1`.
@@ -109,9 +115,10 @@ are CSV-quoted, so `wc -l`, `grep`, `cut`, and `awk` can misread rows.
 ## Verification
 
 - `just aggregate-mapped-ingredients` and `just aggregate-unmapped-ingredients`
-  also refresh the list together with `ingredient_occurrences.tsv`. Without
+  also refresh the list and variant ledger with `ingredient_occurrences.tsv`. Without
   `--list-output`, every command writes the list beside `--occurrences-output`;
   `aggregate-all-ingredients` is the one command that refreshes every output.
+  The ledger also defaults beside the occurrence TSV; `--changes-output` overrides it.
 - Confirm `ingredient_aggregation_errors.tsv` has only a header row.
 - Report counts from this run, with the commit, rather than from a prior run;
   the corpus changes continuously. See `docs/unmapped_ingredients_guide.md`.
@@ -141,3 +148,15 @@ may describe different experimental stages. Resolve that context through the
 record-curation workflow before adding structured ingredients. This queue
 advances #683 but does not close its scientific curation or change MIM's frozen
 campaign inputs. It does not scan every other notes/protocol field for mentions.
+
+When authorized to close the prose gap, follow
+[structured variant curation](../../../docs/variant_prose_inventory.md#curate-structured-variant-ingredients).
+Review primary evidence and exact source bytes; prepare explicit hash-bound
+decisions, save the claim review, preview through `curate_variant_ingredients.py`,
+and run one actual record through apply/build/verify before a batch. Preserve
+condition-only rows and evidence/model holds in the disposition ledger. Do not
+turn an absolute batch amount into a final concentration to satisfy a unit enum.
+
+Use the version 2 bundle contract for the expanded inventory. Independently pin
+the manifest and tell MIM that the appended occurrence context and complete change
+ledger require explicit consumer adoption. Do not overwrite its active frozen intake.

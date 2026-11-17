@@ -167,6 +167,30 @@ curation_history:
     remains unresolved; no parent amount certification or unqualified parent growth.
     No generated publication.
   source: doi:10.1128/JB.182.11.3088-3096.2000; doi:10.1007/BF00167910
+- timestamp: '2026-11-16T21:33:00.482758+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation":
+    "Materials and Methods, cultivation conditions; separate Figure 1 caption. Supports
+    only the named descriptor/event at the stated stage. Preserve the isotope position;
+    Table 2 nominal 110 mM is not a curator conversion. Enrichment discrepancy elsewhere
+    in the source remains unresolved. Source inspected 2026-11-16; SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1128/JB.182.11.3088-3096.2000", "snippet": "20 g/liter",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "G_PER_L", "value":
+    "20"}, "notes": "Preserve the isotope position; Table 2 nominal 110 mM is not
+    a curator conversion. Enrichment discrepancy elsewhere in the source remains unresolved.",
+    "preferred_term": "D-[5-13C]glucose"}, "replaced_ingredient": {"preferred_term":
+    "D-glucose"}, "source_modification_index": 0, "source_text": "Use [5-13C]glucose
+    at the Methods dose of 20 g/L; Table 2 reports nominal 110 mM glucose. The parent
+    D-glucose descriptor does not specify this isotope label.", "stage": "glucose
+    13C-labeling experiment medium"}], "variant_index": 0, "variant_name": "Wendisch
+    2000 CgC with [5-13C]glucose"}]}'
 media_term:
   preferred_term: MediaDB Medium 285
   term:
@@ -314,6 +338,32 @@ variants:
       Materials/Methods specify 99% atom enrichment, whereas the flux-quantitation
       paragraph uses 99.9% glucose in its inoculum correction; that discrepancy is
       unresolved. '
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: D-[5-13C]glucose
+      concentration:
+        value: '20'
+        unit: G_PER_L
+      notes: Preserve the isotope position; Table 2 nominal 110 mM is not a curator
+        conversion. Enrichment discrepancy elsewhere in the source remains unresolved.
+    stage: glucose 13C-labeling experiment medium
+    source_modification_index: 0
+    source_text: Use [5-13C]glucose at the Methods dose of 20 g/L; Table 2 reports
+      nominal 110 mM glucose. The parent D-glucose descriptor does not specify this
+      isotope label.
+    evidence:
+    - reference: doi:10.1128/JB.182.11.3088-3096.2000
+      supports: SUPPORT
+      snippet: 20 g/liter
+      explanation: Materials and Methods, cultivation conditions; separate Figure
+        1 caption. Supports only the named descriptor/event at the stated stage. Preserve
+        the isotope position; Table 2 nominal 110 mM is not a curator conversion.
+        Enrichment discrepancy elsewhere in the source remains unresolved. Source
+        inspected 2026-11-16; SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
+    replaced_ingredient:
+      preferred_term: D-glucose
 target_organisms:
 - preferred_term: Corynebacterium glutamicum
   strain: ATCC 13032

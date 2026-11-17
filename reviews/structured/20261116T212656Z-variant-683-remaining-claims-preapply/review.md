@@ -1,0 +1,5768 @@
+# Bacterial and specialized residual variant ingredient claims: bounded pre-application review
+
+- Review: 20261116T212656Z-variant-683-remaining-claims-preapply
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-11-16T21:13:00Z
+- Finished UTC: 2026-11-16T21:26:56Z
+- Reviewer: codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+All 126 assigned rows across 41 recipes were triaged. Primary-source inspection supports 46 proposed events on 42 rows in 26 recipes; 56 rows are condition/context only, 20 are held for evidence and eight for representation. Several structured rows are explicitly partial. All 26 proposed records validate; nine presentation blockers prevent unreviewed application. No recipes changed and no whole-record, growth, MIM mapping or release certification.
+
+## Scope And Provenance
+
+Exact bacterial_remaining (122) and specialized_remaining (4) queue rows; scientific assessment is limited to the proposed descriptor events and explicitly inspected primary passages.
+
+Selection: The planning inventory's two named groups, with each assigned queue row represented exactly once in dispositions and assessments.
+Coverage: partial; 41 reviewed / 396 in the declared population.
+Source: working_tree at Git base 93d23e4415213bb92890db6f8330e18247ad2553.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000415 | data/normalized_yaml/bacterial/2asw.yaml # Variant modification queue rows 118, 119, 120, 121 | maintained | bacterial/2asw.yaml |
+| CultureMech:003534 | data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml # Variant modification queue rows 122, 123 | maintained | bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml |
+| CultureMech:003730 | data/normalized_yaml/bacterial/KOMODO_1078_FRIIS_medium.yaml # Variant modification queue rows 124, 125 | maintained | bacterial/KOMODO_1078_FRIIS_medium.yaml |
+| CultureMech:003940 | data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml # Variant modification queue rows 126, 127, 128, 129 | maintained | bacterial/KOMODO_11_MRS_medium.yaml |
+| CultureMech:004018 | data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml # Variant modification queue rows 130, 131, 132, 133 | maintained | bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml |
+| CultureMech:005268 | data/normalized_yaml/bacterial/KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml # Variant modification queue rows 134, 135 | maintained | bacterial/KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml |
+| CultureMech:006403 | data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml # Variant modification queue rows 136, 137, 138 | maintained | bacterial/KOMODO_751_SC_medium.yaml |
+| CultureMech:006416 | data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml # Variant modification queue rows 139, 140, 141 | maintained | bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml |
+| CultureMech:006900 | data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml # Variant modification queue rows 142, 143, 144, 145 | maintained | bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml |
+| CultureMech:007449 | data/normalized_yaml/bacterial/NBRC_1003.yaml # Variant modification queue rows 188, 189, 190, 191 | maintained | bacterial/NBRC_1003.yaml |
+| CultureMech:007843 | data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml # Variant modification queue rows 192, 193, 194, 195 | maintained | bacterial/TOGO_M1308_Methylotroph_Medium.yaml |
+| CultureMech:009933 | data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml # Variant modification queue rows 196, 197, 198 | maintained | bacterial/TOGO_M540_Brucella_Broth.yaml |
+| CultureMech:001368 | data/normalized_yaml/bacterial/acidiphilium_medium.yaml # Variant modification queue rows 199, 200, 201 | maintained | bacterial/acidiphilium_medium.yaml |
+| CultureMech:000338 | data/normalized_yaml/bacterial/ajs.yaml # Variant modification queue rows 202, 203 | maintained | bacterial/ajs.yaml |
+| CultureMech:008906 | data/normalized_yaml/bacterial/bacto_marine_broth_difco_2216_for_dsm_11879.yaml # Variant modification queue rows 218, 219 | maintained | bacterial/bacto_marine_broth_difco_2216_for_dsm_11879.yaml |
+| CultureMech:001213 | data/normalized_yaml/bacterial/beijerinckia_medium_lmg_18.yaml # Variant modification queue rows 227, 228, 229 | maintained | bacterial/beijerinckia_medium_lmg_18.yaml |
+| CultureMech:000324 | data/normalized_yaml/bacterial/bg11.yaml # Variant modification queue rows 230, 231, 232, 233, 234, 235, 236 | maintained | bacterial/bg11.yaml |
+| CultureMech:009111 | data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml # Variant modification queue rows 257, 258, 259, 260, 261, 262, 263, 264 | maintained | bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml |
+| CultureMech:001722 | data/normalized_yaml/bacterial/caulobacter_medium.yaml # Variant modification queue rows 265, 266 | maintained | bacterial/caulobacter_medium.yaml |
+| CultureMech:007092 | data/normalized_yaml/bacterial/cdm_teusink_et_al.yaml # Variant modification queue rows 267, 268 | maintained | bacterial/cdm_teusink_et_al.yaml |
+| CultureMech:007184 | data/normalized_yaml/bacterial/cgc_w_acetate.yaml # Variant modification queue rows 269 | maintained | bacterial/cgc_w_acetate.yaml |
+| CultureMech:007185 | data/normalized_yaml/bacterial/cgc_w_acetate_glucose.yaml # Variant modification queue rows 270, 271 | maintained | bacterial/cgc_w_acetate_glucose.yaml |
+| CultureMech:007186 | data/normalized_yaml/bacterial/cgc_w_glucose.yaml # Variant modification queue rows 272 | maintained | bacterial/cgc_w_glucose.yaml |
+| CultureMech:009185 | data/normalized_yaml/bacterial/chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml # Variant modification queue rows 273, 274, 275, 276, 277 | maintained | bacterial/chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml |
+| CultureMech:001981 | data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml # Variant modification queue rows 278 | maintained | bacterial/desulfurobacterium_crinifex_medium.yaml |
+| CultureMech:001978 | data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml # Variant modification queue rows 279 | maintained | bacterial/desulfurobacterium_medium.yaml |
+| CultureMech:000343 | data/normalized_yaml/bacterial/f_2.yaml # Variant modification queue rows 280, 281, 282, 283, 284, 285, 286, 287, 288, 289 | maintained | bacterial/f_2.yaml |
+| CultureMech:001975 | data/normalized_yaml/bacterial/geobacter_sulfurreducens_medium.yaml # Variant modification queue rows 304, 305, 306 | maintained | bacterial/geobacter_sulfurreducens_medium.yaml |
+| CultureMech:007206 | data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml # Variant modification queue rows 307, 308 | maintained | bacterial/kaminskyj_minimal_medium.yaml |
+| CultureMech:003006 | data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml # Variant modification queue rows 309, 310 | maintained | bacterial/magnetospirillum_gryphiswaldense_medium.yaml |
+| CultureMech:003533 | data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml # Variant modification queue rows 311, 312 | maintained | bacterial/medium_1021_modified_for_dsm_16929.yaml |
+| CultureMech:002134 | data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml # Variant modification queue rows 313, 314, 315, 316 | maintained | bacterial/medium_for_dsm_14457_and_14458.yaml |
+| CultureMech:000718 | data/normalized_yaml/bacterial/methylobacterium_medium.yaml # Variant modification queue rows 317, 318, 319, 320 | maintained | bacterial/methylobacterium_medium.yaml |
+| CultureMech:007202 | data/normalized_yaml/bacterial/minimal_medium_teusink_et_al.yaml # Variant modification queue rows 339, 340, 341 | maintained | bacterial/minimal_medium_teusink_et_al.yaml |
+| CultureMech:015471 | data/normalized_yaml/bacterial/nutrient_broth.yaml # Variant modification queue rows 380, 381 | maintained | bacterial/nutrient_broth.yaml |
+| CultureMech:002928 | data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml # Variant modification queue rows 382, 383, 384 | maintained | bacterial/rhodobacter_sphaeroides_medium.yaml |
+| CultureMech:001884 | data/normalized_yaml/bacterial/sc_medium.yaml # Variant modification queue rows 385, 386, 387 | maintained | bacterial/sc_medium.yaml |
+| CultureMech:000443 | data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml # Variant modification queue rows 388, 389, 390 | maintained | bacterial/sodalis_glossinidius_medium.yaml |
+| CultureMech:008226 | data/normalized_yaml/bacterial/tryptic_soy_broth.yaml # Variant modification queue rows 391, 392 | maintained | bacterial/tryptic_soy_broth.yaml |
+| CultureMech:015493 | data/normalized_yaml/specialized/bhis.yaml # Variant modification queue rows 393, 394 | maintained | specialized/bhis.yaml |
+| CultureMech:015542 | data/normalized_yaml/specialized/m9.yaml # Variant modification queue rows 395, 396 | maintained | specialized/m9.yaml |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Native input-byte inspection | passed | True | CultureMech:000415, CultureMech:003534, CultureMech:003730, CultureMech:003940, CultureMech:004018, CultureMech:005268, CultureMech:006403, CultureMech:006416, CultureMech:006900, CultureMech:007449, CultureMech:007843, CultureMech:009933, CultureMech:001368, CultureMech:000338, CultureMech:008906, CultureMech:001213, CultureMech:000324, CultureMech:009111, CultureMech:001722, CultureMech:007092, CultureMech:007184, CultureMech:007185, CultureMech:007186, CultureMech:009185, CultureMech:001981, CultureMech:001978, CultureMech:000343, CultureMech:001975, CultureMech:007206, CultureMech:003006, CultureMech:003533, CultureMech:002134, CultureMech:000718, CultureMech:007202, CultureMech:015471, CultureMech:002928, CultureMech:001884, CultureMech:000443, CultureMech:008226, CultureMech:015493, CultureMech:015542 | Native inspector bound 41 target preimages, explicit proposals, dispositions, validation observations, schema and inspected source snapshots. |
+| Native proposed-record schema and semantic validation | passed | True | CultureMech:000415, CultureMech:003940, CultureMech:004018, CultureMech:000718, CultureMech:006403, CultureMech:001884, CultureMech:006416, CultureMech:006900, CultureMech:002134, CultureMech:007449, CultureMech:009933, CultureMech:001368, CultureMech:000338, CultureMech:009111, CultureMech:007092, CultureMech:007202, CultureMech:007184, CultureMech:007185, CultureMech:007186, CultureMech:001978, CultureMech:000343, CultureMech:007206, CultureMech:003006, CultureMech:002928, CultureMech:000443, CultureMech:008226 | 26 modified in-memory records passed validate_recipe with zero errors; no recipe YAML was written. |
+| Authoritative application and export acceptance | not_applicable | False | CultureMech:000415, CultureMech:003534, CultureMech:003730, CultureMech:003940, CultureMech:004018, CultureMech:005268, CultureMech:006403, CultureMech:006416, CultureMech:006900, CultureMech:007449, CultureMech:007843, CultureMech:009933, CultureMech:001368, CultureMech:000338, CultureMech:008906, CultureMech:001213, CultureMech:000324, CultureMech:009111, CultureMech:001722, CultureMech:007092, CultureMech:007184, CultureMech:007185, CultureMech:007186, CultureMech:009185, CultureMech:001981, CultureMech:001978, CultureMech:000343, CultureMech:001975, CultureMech:007206, CultureMech:003006, CultureMech:003533, CultureMech:002134, CultureMech:000718, CultureMech:007202, CultureMech:015471, CultureMech:002928, CultureMech:001884, CultureMech:000443, CultureMech:008226, CultureMech:015493, CultureMech:015542 | No application performed. Earlier all-record preview refused on existing KOMODO_125 presentation drift before any authoritative write; nine such records were enumerated separately. |
+
+## Scientific And Domain Assessments
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:000415.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+The study reports 1.5 M NaCl in its 2ASW culture medium. This is a reported medium concentration, not a stock concentration or inferred amount to add.
+
+### variants[0].modifications[1] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:000415.
+
+The row explicitly leaves basal formulation/brand/stock details unresolved. No additional ingredient identities or quantities can be inferred from it; the distinct supported source claim is proposed separately.
+
+Other ingredients, stock additions, seawater contribution and final-volume preparation remain unspecified in the inspected paragraph. No salt-increase/decrease direction relative to this imported parent is asserted.
+
+### variants[1].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:000415.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Use the study-reported 33.6 g/L sea salts in place of NaCl; this is an undefined sea-salt mixture, not 33.6 g/L pure sodium chloride.
+
+### variants[1].modifications[1] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:000415.
+
+The row explicitly leaves basal formulation/brand/stock details unresolved. No additional ingredient identities or quantities can be inferred from it; the distinct supported source claim is proposed separately.
+
+The sea-salt brand, full constituent composition and other base-recipe details are not established by the inspected methods. Do not assume equivalence to this parent's seawater alternative or inherit details from the mismatched Gomord base citation.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:003534.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Filter sterilize the liquid preparation instead of autoclaving. No membrane pore size is specified.
+
+### variants[0].modifications[1] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:003534.
+
+DSMZ 1021 specifies liquid-medium filtration but does not explicitly quantify or name an agar-change operation. No zero-agar amount or omission is invented.
+
+The source does not explicitly quantify the agar change for this alternative; no numeric agar amount is invented.
+
+### variants[0].modifications[0] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:003730.
+
+Only a named modified medium is specified; no explicit ingredient identity or dose occurs in this row. Primary formulation details require additional source inspection before decomposition.
+
+Use modified Friis medium as described by Friis 1975.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:003730.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Incubate slowly shaken Mycoplasma hyopneumoniae cultures; source reports isolate-dependent behavior across five Friis medium batches.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:003940.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Compare MRS medium with M17 medium for bile salt hydrolase production.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:003940.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Evaluate oxygen concentration effects in MRS medium, including anaerobic and microaerophilic conditions.
+
+### variants[1].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:003940.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Compare static culture with 100 rpm and 200 rpm shaking in MRS broth.
+
+### variants[1].modifications[1] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:003940.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Compare original MRS broth at pH 5.7 with MRS broth at pH 6.5 enriched with 5 g/L yeast extract.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:004018.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 5 mL batch amount remains literal notes because no absolute-volume field exists.
+
+Add 5 ml methanol to the source's common basal batch; do not combine this option with the methane-air alternative.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:004018.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+This is a batch addition, not 5 ml/L or 0.5% final-medium methanol; final volume and methanol purity are not specified.
+
+### variants[1].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:004018.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Incubate under methane-air (4:1) as the alternative to adding methanol.
+
+### variants[1].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:004018.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+The gas ratio is not a liquid ingredient dose or a dissolved methane concentration; no gas pressure or total volume is specified.
+
+### variants[0].modifications[0] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:005268.
+
+Blood-species replacement and 50 g/L claim require independent reconciliation of DSMZ 693, the cited BacDive strain and the horse-blood parent; those primary recipe details were not reverified in this pass.
+
+BacDive DSMZ Medium 693 specifies Columbia agar base with 50 g/L defibrinated sheep blood; the local parent record contains a Columbia blood agar base with horse blood at 40 g/L.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:005268.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Incubate anaerobically or under reduced oxygen at 37 C for this anaerobic organism.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:006403.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Omit corn meal agar.
+
+### variants[0].modifications[1] — HELD_MODEL
+
+quantity: unknown. Targets: CultureMech:006403.
+
+DSMZ 751 directly supports a changed phosphate mass per batch, not a demonstrated final concentration. SET_CONCENTRATION requires a valid concentration unit; absolute batch mass is not represented. Preserve original grams and hold under issue 760.
+
+Use KH2PO4 1.5 g per batch instead of 1 g.
+
+### variants[0].modifications[2] — HELD_MODEL
+
+quantity: unknown. Targets: CultureMech:006403.
+
+DSMZ 751 directly supports a changed phosphate mass per batch, not a demonstrated final concentration. SET_CONCENTRATION requires a valid concentration unit; absolute batch mass is not represented. Preserve original grams and hold under issue 760.
+
+Use K2HPO4 0.5 g per batch instead of 1 g.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:006416.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Maintain strict anaerobic cultivation conditions.
+
+### variants[0].modifications[1] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:006416.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Use high-salt growth conditions centered on 100 g/L NaCl, matching the parent medium's approximately 101 g/L NaCl formulation.
+
+### variants[0].modifications[2] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:006416.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Incubate at 60 C for optimal growth of strain H168.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:006900.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 0.5% remains literal notes; percentage basis unspecified.
+
+After sterilisation add sterile methanol to a final concentration of 0.5% (percentage basis unspecified).
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:006900.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use this alternative instead of methylamine; do not add both.
+
+### variants[1].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:006900.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 0.3% remains literal notes; percentage basis unspecified.
+
+After sterilisation add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).
+
+### variants[1].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:006900.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use this alternative instead of methanol; do not add both.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007449.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Add 10 mg/L FeSO4·7H2O to the medium.
+
+### variants[0].modifications[1] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007449.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+After autoclaving, add yeast extract from a sterile stock solution to 0.25 g/L final concentration.
+
+### variants[1].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007449.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Add 13.9 g/L FeSO4·7H2O to the medium.
+
+### variants[1].modifications[1] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007449.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Adjust medium pH to 1.7 with H2SO4 prior to autoclaving.
+
+### variants[0].modifications[0] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:007843.
+
+The cited JCM/DSMZ recipe or ME19128 primary methods have not been independently inspected in this pass. Do not promote existing prose alone to a new evidence-backed descriptor.
+
+Add agar at 15.0 g/L before autoclaving.
+
+### variants[1].modifications[0] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:007843.
+
+The cited JCM/DSMZ recipe or ME19128 primary methods have not been independently inspected in this pass. Do not promote existing prose alone to a new evidence-backed descriptor.
+
+Omit CaCl2 from the trace element solution.
+
+### variants[1].modifications[1] — HELD_MODEL
+
+quantity: unknown. Targets: CultureMech:007843.
+
+Methane versus methanol and calcium versus rare-earth chloride alternatives require arm-specific component identities and stage/dose evidence. A single combined ADD would falsely imply co-presence; preserve prose pending explicit alternatives.
+
+Supplement cultures with methane or methanol and defined CaCl2 or rare-earth element chlorides after autoclaving.
+
+### variants[1].modifications[2] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:007843.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use methanol cultures to quantify lanthanide-dependent growth of strain Ce-a6.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:009933.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 10% serum remains literal notes; percentage basis unspecified.
+
+Supplement Brucella broth with 10% fetal bovine serum.
+
+### variants[0].modifications[1] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:009933.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Add hydrogen peroxide at sublethal concentrations, with maximum growth stimulation reported at 3.5 mM H2O2.
+
+### variants[0].modifications[2] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:009933.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Incubate microaerobically at 37 C with shaking; source measured OD620 and viable CFU after 24 h.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:001368.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Maintain pH 3.0.
+
+### variants[0].modifications[1] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:001368.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Add aluminum sulfate at the stress concentration reported by the source study.
+
+### variants[0].modifications[2] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:001368.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use Acidiphilium cryptum as the target organism.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:000338.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Use hydrochloric acid for the reported adjustment to pH 1.5, rather than inheriting the canonical sulfuric-acid instruction. HCl strength and dose are not quantified; no dose or substitution arithmetic is inferred.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000338.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+The study does not restate the JM/SE2 proportions, stock compositions or complete formulation. Do not certify other local ingredients or physical state from this citation.
+
+### variants[0].modifications[0] — HELD_MODEL
+
+quantity: unknown. Targets: CultureMech:008906.
+
+Half-strength whole-medium dilution is not an ingredient-specific change. No automatic expansion or multiplication of the parent recipe is authorized; retain the water/dilution formulation statement.
+
+Marine broth/agar 2216 (DSMZ medium 514) diluted to 0.5x strength with water.
+
+### variants[0].modifications[1] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:008906.
+
+Assay-specific peptone and yeast-extract omissions require the cited primary methods; routine MB1/2 and carbon-assay formulations must stay separate. Source not reverified here.
+
+For single-carbon-source assays, peptone and yeast extract omitted from MB1/2 plates (assay variant, not routine MB1/2).
+
+### variants[0].modifications[0] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:001213.
+
+The Becking source's omission and full mass-basis recipe context were not independently reverified. Do not convert the parent/prose into new supported changes.
+
+CaCO3 omitted relative to standard Becking medium.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:001213.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+pH adjusted to 5 (vs near-neutral parent).
+
+### variants[0].modifications[2] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:001213.
+
+The Becking source's omission and full mass-basis recipe context were not independently reverified. Do not convert the parent/prose into new supported changes.
+
+Base recipe context: glucose 20 g/L, KH2PO4 1.0 g/L, MgSO4.7H2O 0.5 g/L (CaCO3 2.0 g/L before omission); soil cultures 21 d at 30C.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000324.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use Synechocystis sp. PCC 6803 as the target organism.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000324.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Apply optimized growth conditions reported by the source study.
+
+### variants[1].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000324.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use Synechococcus elongatus PCC 11801 as the target strain.
+
+### variants[1].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000324.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Culture under ambient CO2 conditions.
+
+### variants[2].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000324.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use Synechococcus elongatus PCC 11802 as the target strain.
+
+### variants[2].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000324.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Culture at 1% CO2.
+
+### variants[2].modifications[2] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000324.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Culture at 1000 umole photons m-2 s-1.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:009111.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Trypticase, cysteine-HCl, and resazurin omitted relative to standard DSMZ 640.
+
+### variants[0].modifications[1] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:009111.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: Only sodium sulfide nonahydrate addition is represented, with stock/final percentage preserved in notes. Unspecified carbon-source increase and substrate alternatives remain unexpanded.
+
+Carbon source increased to 5 g/L; Na2S.9H2O added to 0.5% final.
+
+### variants[0].modifications[2] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:009111.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Anaerobic batch cultivation under N2; 70C with orbital shaking; 50 ml in 125 ml serum bottle; 24 h.
+
+### variants[1].modifications[0] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:009111.
+
+Shang 2013 primary formulation and separate substrate arms have not been independently inspected. Retain all listed forms, stock additions and preparation context without certifying them from local prose alone.
+
+Iron source substituted: FeCl3.6H2O 2.5 mg/L (vs ferrous iron in parent).
+
+### variants[1].modifications[1] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:009111.
+
+Shang 2013 primary formulation and separate substrate arms have not been independently inspected. Retain all listed forms, stock additions and preparation context without certifying them from local prose alone.
+
+Added trace element solution SL-10 (1 ml/L, DSMZ medium 320) and vitamin solution (5 ml/L, DSMZ medium 141, filter-sterilized).
+
+### variants[1].modifications[2] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:009111.
+
+Shang 2013 primary formulation and separate substrate arms have not been independently inspected. Retain all listed forms, stock additions and preparation context without certifying them from local prose alone.
+
+Added resazurin 0.5 mg/L.
+
+### variants[1].modifications[3] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:009111.
+
+Shang 2013 primary formulation and separate substrate arms have not been independently inspected. Retain all listed forms, stock additions and preparation context without certifying them from local prose alone.
+
+Fixed glucose replaced by variable substrate at 10.0 g/L (e.g. oat spelt xylan, xylose, glucose).
+
+### variants[1].modifications[4] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:009111.
+
+Shang 2013 primary formulation and separate substrate arms have not been independently inspected. Retain all listed forms, stock additions and preparation context without certifying them from local prose alone.
+
+Per liter: 0.9 g NH4Cl, 0.9 g NaCl, 0.4 g MgCl2.6H2O, 0.75 g KH2PO4, 1.5 g K2HPO4, 0.75 g cysteine-HCl.H2O, 2 g tryptone, 1 g yeast extract; pH 7.0; prepared under 100% N2; dispensed 5 ml into 15 ml Hungate tubes; autoclaved.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:001722.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Incubate at 4 C.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:001722.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use Caulobacter sp. K31 as the target strain.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007092.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Use the Table 1 Ca-(D)-(+)-pantothenate dose of 0.001 g/liter, rather than certifying the parent's 0.00456 mM calcium pantothenate.
+
+### variants[0].modifications[1] — HELD_MODEL
+
+quantity: unknown. Targets: CultureMech:007092.
+
+This row refers to a complete Table 1 formulation/subset and footnote components rather than enumerated changes. The bounded source review verifies specific vitamin doses separately; whole-table expansion and reconciliation of every imported chemical form remain out of scope.
+
+Retain the source's full Table 1 composition and footnote b components; do not infer exact chemical-form equivalence from the imported molar ingredient list. Pyridox-x is a joint-omission experiment, not an ingredient.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007184.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Use sodium [1-13C]acetate at the Methods dose of 10 g/L; Table 2 reports nominal 120 mM acetate. The parent acetate descriptor has no isotope specification and reports 120 mM.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007185.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Use sodium [1-13C]acetate and unlabeled glucose at 10 g/L each; Table 2 reports nominal 120 mM acetate plus 55 mM glucose. Preserve the isotope/counterion substitution rather than treating the local acetate descriptor as identical.
+
+### variants[1].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007185.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Use the Figure 1 caption's 35 mM glucose rather than the parent's 55 mM; retain the stated 120 mM acetate.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007186.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Use [5-13C]glucose at the Methods dose of 20 g/L; Table 2 reports nominal 110 mM glucose. The parent D-glucose descriptor does not specify this isotope label.
+
+### variants[0].modifications[0] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:009185.
+
+The cited primary ATCC-1490 study was not independently inspected for explicit formate/fumarate omission; a named basal medium alone is insufficient to infer component absence.
+
+Formate and fumarate omitted relative to the parent (ATCC 1490 + formate + fumarate).
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:009185.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Base ATCC 1490 Modified Chopped Meat medium; anaerobic, 37C, 24-48 h.
+
+### variants[1].modifications[0] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:009185.
+
+The carbonate/CO2 buffering claim lacks a verified explicit carbonate species and dose; cited primary methods not reverified. Do not guess bicarbonate or add a gas as a liquid ingredient.
+
+Carbonate/CO2 buffering added to ATCC 1490 base (exact carbonate species/concentration and gas composition not printed).
+
+### variants[1].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:009185.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+For MIC assays, medium clarified through a 0.8 um filter (assay-use processing).
+
+### variants[1].modifications[2] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:009185.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Anaerobic glove bag; serum bottle technique; 38C.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:001981.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Adjust pH to 5.5.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:001978.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: Only the named stock removal is structured; 2-bar gas-mixture pressure remains prose context.
+
+Omit growth-stimulating factors and pressurize vials after inoculation to 2 bar with sterile 80% H2 and 20% CO2 gas mixture.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:000343.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+The study reports f/2 supplemented with 1.06e-4 M silicate. Preserve this stated supplementation concentration without assigning an unreported silicate salt, hydrate, stock recipe or additional mass conversion.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000343.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Other nutrients, total silicate including the base, final-volume preparation and equivalence to local f/2 + Si records remain unresolved.
+
+### variants[1].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:000343.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+The study reports f/2 supplemented with 29.4 mM NaNO3 and adjusted to pH 8. Retain the stated supplement concentration; do not infer whether it includes the base-medium nitrate or calculate a total nitrate concentration.
+
+### variants[1].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000343.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Remaining formulation details, chemical stock forms and equivalence to a specific canonical amount set are unresolved.
+
+### variants[2].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:000343.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Reported penicillin G treatment concentration: 200 micrograms per mL in the treated f/2 culture; no unreported salt form, stock strength or conversion is assigned.
+
+### variants[2].modifications[1] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:000343.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Reported dihydrostreptomycin sulphate treatment concentration: 50 micrograms per mL in the same treated culture; not streptomycin, not a stock concentration, and no hydrate assumption.
+
+### variants[2].modifications[2] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000343.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+The untreated comparator remains separate. Unspecified base formulation details and the later marine-agar bacterial assay must not be combined into this study variant.
+
+### variants[3].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:000343.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: Only named mixture replacement is structured; composition and dose remain unresolved.
+
+The vitamin solution described as coming from 2ASW replaces the original f/2 vitamin solution; the paper states it contains additional vitamin components.
+
+### variants[3].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000343.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Vitamin identities, stock composition, addition dose and resulting final concentrations are not quantified in the inspected methods. The cited Gomord 2010 reference is a plant glycosylation paper and cannot supply these missing details.
+
+### variants[3].modifications[2] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000343.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Other formulation details, physical-state equivalence, and exact correspondence to this imported stock encoding remain unresolved. This is not the silicate, nitrate, antibiotic or Quad formulation.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:001975.
+
+Primary abstract confirms acetate donor / fumarate acceptor roles, but this row states no addition, removal, replacement or changed quantity relative to the maintained formulation. Retain role context without inventing an ADD event.
+
+Use acetate as the electron donor.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:001975.
+
+Primary abstract confirms acetate donor / fumarate acceptor roles, but this row states no addition, removal, replacement or changed quantity relative to the maintained formulation. Retain role context without inventing an ADD event.
+
+Use fumarate as the electron acceptor.
+
+### variants[0].modifications[2] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:001975.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use Geobacter sulfurreducens as the target organism.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007206.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+In the 20X nitrate stock, replace 10.4 g magnesium sulfate heptahydrate per 1 L stock with 5.2 g anhydrous magnesium sulfate per 1 L stock. Keep the stock addition at 50 mL/L final medium.
+
+### variants[1].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007206.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 18-g preparation amount remains literal notes; no assumed post-addition final concentration.
+
+Add 18 g agar to the one-litre MM preparation for solid medium; retain the source's autoclaving step.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:003006.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use magnetosome-deficient strain B17316 derived from M. gryphiswaldense MSR-1.
+
+### variants[0].modifications[1] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:003006.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Add Cr(VI) at 10 mg/L.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:003533.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Filter sterilize the liquid preparation instead of autoclaving. No membrane pore size is specified.
+
+### variants[0].modifications[1] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:003533.
+
+DSMZ 1021 specifies liquid-medium filtration but does not explicitly quantify or name an agar-change operation. No zero-agar amount or omission is invented.
+
+The source does not explicitly quantify the agar change for this alternative; no numeric agar amount is invented.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:002134.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 0.5% remains literal notes; percentage basis unspecified.
+
+After sterilisation add sterile methanol to a final concentration of 0.5% (percentage basis unspecified).
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:002134.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use this alternative instead of methylamine; do not add both.
+
+### variants[1].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:002134.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 0.3% remains literal notes; percentage basis unspecified.
+
+After sterilisation add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).
+
+### variants[1].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:002134.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use this alternative instead of methanol; do not add both.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:000718.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 5 mL batch amount remains literal notes because no absolute-volume field exists.
+
+Add 5 ml methanol to the source's common basal batch; do not combine this option with the methane-air alternative.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000718.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+This is a batch addition, not 5 ml/L or 0.5% final-medium methanol; final volume and methanol purity are not specified.
+
+### variants[1].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000718.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Incubate under methane-air (4:1) as the alternative to adding methanol.
+
+### variants[1].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000718.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+The gas ratio is not a liquid ingredient dose or a dissolved methane concentration; no gas pressure or total volume is specified.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007202.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Use the Table 1 Ca-(D)-(+)-pantothenate dose of 0.001 g/liter, rather than certifying the parent's 0.00456 mM calcium pantothenate.
+
+### variants[0].modifications[1] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:007202.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Use the Table 1 D-biotin dose of 0.0025 g/liter in the boldface minimal subset; the parent's 0.01203 mM value is not equivalent for its encoded biotin formula.
+
+### variants[0].modifications[2] — HELD_MODEL
+
+quantity: unknown. Targets: CultureMech:007202.
+
+This row refers to a complete Table 1 formulation/subset and footnote components rather than enumerated changes. The bounded source review verifies specific vitamin doses separately; whole-table expansion and reconciliation of every imported chemical form remain out of scope.
+
+Retain the source's boldface minimal subset and six additional components in Table 1 footnote b; do not infer exact chemical-form equivalence from the imported molar ingredient list. Pyridox-x is a joint-omission experiment, not an ingredient.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:015471.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use Mycolicibacterium cosmeticum strain DM-11 as the target strain.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:015471.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Incubate at 25 C.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:002928.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Use Rhodobacter sphaeroides strain OU5.
+
+### variants[0].modifications[1] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:002928.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: Only L-phenylalanine identity/role is represented; any displaced nitrogen ingredients and dose are unresolved.
+
+Use L-phenylalanine as the sole nitrogen source.
+
+### variants[0].modifications[2] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:002928.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Culture phototrophically.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:001884.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Omit corn meal agar.
+
+### variants[0].modifications[1] — HELD_MODEL
+
+quantity: unknown. Targets: CultureMech:001884.
+
+DSMZ 751 directly supports a changed phosphate mass per batch, not a demonstrated final concentration. SET_CONCENTRATION requires a valid concentration unit; absolute batch mass is not represented. Preserve original grams and hold under issue 760.
+
+Use KH2PO4 1.5 g per batch instead of 1 g.
+
+### variants[0].modifications[2] — HELD_MODEL
+
+quantity: unknown. Targets: CultureMech:001884.
+
+DSMZ 751 directly supports a changed phosphate mass per batch, not a demonstrated final concentration. SET_CONCENTRATION requires a valid concentration unit; absolute batch mass is not represented. Preserve original grams and hold under issue 760.
+
+Use K2HPO4 0.5 g per batch instead of 1 g.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:000443.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Filter sterilize the liquid preparation instead of autoclaving. No membrane pore size is specified.
+
+### variants[0].modifications[1] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:000443.
+
+DSMZ 1021 specifies liquid-medium filtration but does not explicitly quantify or name an agar-change operation. No zero-agar amount or omission is invented.
+
+The source does not explicitly quantify the agar change for this alternative; no numeric agar amount is invented.
+
+### variants[1].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:000443.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 8.10-g batch amounts remain literal notes, with no final-volume conversion.
+
+Replace the 8.10 g lactalbumin hydrolysate batch input in Solution A with 8.10 g casein hydrolysate, not both together. Other preparation instructions are unchanged.
+
+### variants[0].modifications[0] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:008226.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Omit dextrose/glucose from the parent Tryptic Soy Broth formulation.
+
+### variants[0].modifications[1] — STRUCTURED
+
+quantity: supported. Targets: CultureMech:008226.
+
+Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.
+
+Add 0.5% or 1.0% (w/v) soluble starch or maltose.
+
+### variants[0].modifications[0] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:015493.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Incubate BHIS broth anaerobically for Brachyspira growth.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:015493.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Source reports growth at 37 to 42 degrees C.
+
+### variants[0].modifications[0] — HELD_EVIDENCE
+
+quantity: unknown. Targets: CultureMech:015542.
+
+Only a named modified medium is specified; no explicit ingredient identity or dose occurs in this row. Primary formulation details require additional source inspection before decomposition.
+
+Use modified M9 medium and optimized growth conditions.
+
+### variants[0].modifications[1] — CONDITION_ONLY
+
+scope: not_applicable. Targets: CultureMech:015542.
+
+This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.
+
+Grow Escherichia coli to high culture density.
+
+## Findings
+
+### quantity-basis-gap: Literal batch quantities and unspecified percentage bases lack a faithful structured representation
+
+major / open / confirmed; issue key: variant-absolute-quantity-unspecified-percent-760.
+
+DSMZ 751 batch phosphate changes cannot truthfully satisfy SET_CONCENTRATION using g/L; DSMZ 125 methanol batch volume and DSMZ 956 unspecified-basis percentages remain literal notes. No false concentration basis was introduced. See issue 760 for the reusable model gap.
+
+## Recommended Actions And Acceptance Checks
+
+### review-then-apply
+
+Independently review proposed claims, resolve presentation boundaries, then centrally apply only approved records and verify exported event/ledger counts.
+
+- Exact primary-source/coordinate review
+- No unsupported quantity basis or inferred base composition
+- Native guarded application receipts and export verification
+- All 126 dispositions preserved including partial and held rows
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| queue | .temp/variant-683/remaining-proposal-v3/dispositions.json; All 126 assigned queue rows; exact target selectors in targets.yaml | context_only | Every assigned row was read and classified. Condition-only classification is not external verification of those conditions; held claims remain unresolved. |
+| proposal | .temp/variant-683/remaining-proposal-v3/proposals.json; All 46 proposed events in 26 records | supports | Explicit curator decisions retain source coordinates, stage, evidence, original prose, and uncertainty; no recipe applied. |
+| validation | .temp/variant-683/remaining-proposal-v3/validation.json; 26 proposed records, zero schema/semantic errors; nine presentation blockers | supports | Native validate_recipe accepted every proposed record. Separate byte comparison found nine files that the native writer would reformat, so a schema pass is not application permission. |
+| source-spectrum | doi:10.1128/spectrum.00069-23; Materials and Methods, Algal strains and cultivation conditions | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-emami | doi:10.1038/srep10036; Methods, culture conditions and bacterial interference experiment | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-hiibel | doi:10.3389/fenrg.2015.00020; Materials and Methods, Strains and media | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-751 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf; Page 1, liquid-medium instruction | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-125 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf; Page 1, preparation alternatives | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-956 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf; Page 1, final paragraph | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-1021 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf; Page 1, Solution A hydrolysate alternatives | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-829 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf; Page 1, DSM 16661 and DSM 21157 prescription | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-nbrc | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002; Heterotrophic and autotrophic preparation alternatives | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-blumer | doi:10.1128/AEM.01400-10; Materials and Methods, Bacterial strains and growth on sugar substrates | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-teusink | doi:10.1128/AEM.71.11.7253-7262.2005; Table 1, concentration column and footnotes a-b | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-wendisch | doi:10.1128/JB.182.11.3088-3096.2000; Materials and Methods, cultivation conditions; separate Figure 1 caption | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-kaminskyj | doi:10.4148/1941-4765.1175; Page 26, Minimal Medium and 20 X Nitrate salts | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-10609610 | PMID:10609610; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-38194015 | PMID:38194015; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-12420179 | PMID:12420179; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-19826864 | PMID:19826864; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-15931519 | PMID:15931519; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-37088211 | PMID:37088211; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-35960254 | PMID:35960254; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+| source-7520742 | PMID:7520742; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Inspected the source passage used in the proposal; scope and quantity limits are retained separately for each event. Indexed abstracts are identified explicitly and do not establish unprinted methods. |
+
+## Limits And Additional Notes
+
+- This is partial scientific coverage of a 126-row assigned cohort, not completion of all catalog chemistry or curation.
+- Condition-only rows are classified from their exact prose; conditions, taxa and growth are not newly certified.
+- Primary indexed abstracts support only their explicit claims; full methods were not inspected for those sources.
+- Nine source files fail the native writer's no-reformat guard; a schema-valid proposal is not an applied record.
+- No new ontology IDs, solvent density, hydrate conversion, missing percentage basis, total basal concentrations, or automatic variant materialization is asserted.
+- Source receipts and native review inputs are working-tree byte attestations, not external authentication or an integrated MIM/KGM release.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261116T212656Z-variant-683-remaining-claims-preapply
+kind: batch
+repository: CultureBotAI/CultureMech
+title: 'Bacterial and specialized residual variant ingredient claims: bounded pre-application
+  review'
+started_at: '2026-11-16T21:13:00Z'
+finished_at: '2026-11-16T21:26:56Z'
+reviewer:
+  identity: codex
+  kind: agent
+  independence: self_review
+  independence_basis: The curator authored these explicit proposals and reviewed their
+    primary-source basis; independent owner review and native application are still
+    required.
+skill: curate-yaml-record; review-ingredient-concentrations
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: All 126 assigned rows across 41 recipes were triaged. Primary-source inspection
+  supports 46 proposed events on 42 rows in 26 recipes; 56 rows are condition/context
+  only, 20 are held for evidence and eight for representation. Several structured
+  rows are explicitly partial. All 26 proposed records validate; nine presentation
+  blockers prevent unreviewed application. No recipes changed and no whole-record,
+  growth, MIM mapping or release certification.
+source:
+  git_revision: 93d23e4415213bb92890db6f8330e18247ad2553
+  state: working_tree
+  inputs:
+  - path: .temp/variant-683/remaining-proposal-v3/dispositions.json
+    sha256: e40842c3a77c3c10cf7468282f7ba06c84346305e8a5a127c47e90572dad5d0b
+    role: context
+  - path: .temp/variant-683/remaining-proposal-v3/proposals.json
+    sha256: f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f
+    role: context
+  - path: .temp/variant-683/remaining-proposal-v3/validation.json
+    sha256: 947416375c3ed2f8612892ecb079fa08af0f9d7d378945f3f3b32b41c049db48
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-10609610/source.json
+    sha256: 35e84b91a28f53b591554a9a986edefa68d08c52396f8d52311133a2037812d8
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-12420179/source.json
+    sha256: b1e8c1d7ee39651d2ad5a4c17b8fcd2d0758aee5f717378e442381e92fa5963b
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-15931519/source.json
+    sha256: 0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-19826864/source.json
+    sha256: 6429c3b3fce615d13eb83f68eae574c48fa8e8dd60729b4744fd5615f88d0e8b
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-35960254/source.json
+    sha256: 46d3ffd560e195e57c26c259af2ea6d849bfcc46e38ae96ad653339c771e4021
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-37088211/source.json
+    sha256: aec3da0e724798ee8a372f1cba3cba6c4efc1212e246095d92b50f11ff1ba277
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-38194015/source.json
+    sha256: 6374babdb789d4cf4ece64f8539d8bbd78dd9710139d6196c752fd9cf3ffff91
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-7520742/source.json
+    sha256: af16343d832a80e5445262ea29f8763dba74effdea479ef8bdc173e715cba1a5
+    role: context
+  - path: .temp/variant-683/remaining-sources/blumer-2010/source.html
+    sha256: ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8
+    role: context
+  - path: .temp/variant-683/remaining-sources/dsmz-1021/source.pdf
+    sha256: 6af992ef5048ce852d2c1c88463f1eeedf3441b682522231c93341b3ce1debac
+    role: context
+  - path: .temp/variant-683/remaining-sources/dsmz-125/source.pdf
+    sha256: e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f
+    role: context
+  - path: .temp/variant-683/remaining-sources/dsmz-751/source.pdf
+    sha256: 721e0310d250ea6eab5d453f063b9452b48b8368ad53fa9384cb54434d2e59fb
+    role: context
+  - path: .temp/variant-683/remaining-sources/dsmz-829/source.pdf
+    sha256: 73b87bbb602b5d40fa5a442a74b8a227fc26774281d333b7718a15317fd1cb27
+    role: context
+  - path: .temp/variant-683/remaining-sources/dsmz-956/source.pdf
+    sha256: 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39
+    role: context
+  - path: .temp/variant-683/remaining-sources/hiibel-2015/source.html
+    sha256: 8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a
+    role: context
+  - path: .temp/variant-683/remaining-sources/kaminskyj-2001/source.pdf
+    sha256: 22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6
+    role: context
+  - path: .temp/variant-683/remaining-sources/nbrc-1002/source.html
+    sha256: 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e
+    role: context
+  - path: .temp/variant-683/remaining-sources/teusink-2005/source.html
+    sha256: 3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91
+    role: context
+  - path: .temp/variant-683/remaining-sources/wendisch-2000/source.html
+    sha256: 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e
+    role: context
+  - path: .temp/variant-683/sources/2asw-spectrum-2023/source.xml
+    sha256: 35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d
+    role: context
+  - path: .temp/variant-683/sources/emami-2015/source.xml
+    sha256: 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319
+    role: context
+  - path: data/normalized_yaml/bacterial/2asw.yaml
+    sha256: 53791685ae44730a58fbbe48317248326a162377283a40c727eec72b7509bdb9
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml
+    sha256: e26a9ef01a8fe3130730db9ca330b9c97494cfbada9bbec5866c17a1dd6ebc28
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1078_FRIIS_medium.yaml
+    sha256: 2c2073df6de9bee9f2990d0eac08e29de7aa25f4496b8649dd127b5921277bca
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml
+    sha256: 218b2a1c73a5049f71814b8a6b11da70e106c5b503eb8ea7021c319f7811b69f
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml
+    sha256: 9cb298367084d6cb6b8347acb301575cbbf14771acb8cea52df8979f522f578a
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml
+    sha256: 83725a42c8a74ff8eff0b5710926f709ff1d68e9b859224ba81db186704d08cc
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml
+    sha256: a1d63c31c3045012ec21bf7216b5f20713d1897c89c3a536f5ebd3b36d28fc72
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml
+    sha256: 1fb7964a54b9dfc5e3c152c94137aa3fd9ebe91e6e257beb299857e8d837c531
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml
+    sha256: fdcd031f21238e9ce826143de772bc4bf32c97e71ffd4941eb04c69b268e0163
+    role: target
+  - path: data/normalized_yaml/bacterial/NBRC_1003.yaml
+    sha256: 6138f25b510c742489ad6b63f48b5171a440111c56b046954dfbd3fc52df44aa
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    sha256: 967394ea5131b424e8bdb02c7d5318d6d60b97cb8539abd8b49f995a3dcc8107
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    sha256: f292dee86d67451cf7e1cc227e807733d9c3835a9b6b39ad191ef041b809dc10
+    role: target
+  - path: data/normalized_yaml/bacterial/acidiphilium_medium.yaml
+    sha256: 74e02fba4aee65fd7adce6d753f27d1578c92c8bc01ab804979ce283acf39b43
+    role: target
+  - path: data/normalized_yaml/bacterial/ajs.yaml
+    sha256: 3c5158c29f2130e01452d8f7a0428863db898c6a32b10b20d14a0f8c9881c4c6
+    role: target
+  - path: data/normalized_yaml/bacterial/bacto_marine_broth_difco_2216_for_dsm_11879.yaml
+    sha256: c3e997aa7c21b7d944f3846b9a5f3be32a0c875c6e2b8f5e502a06c438e5fbe2
+    role: target
+  - path: data/normalized_yaml/bacterial/beijerinckia_medium_lmg_18.yaml
+    sha256: 70c9a60e78318dadf34e18aa0c80cbc6740241207f20999985cdb140e0826f14
+    role: target
+  - path: data/normalized_yaml/bacterial/bg11.yaml
+    sha256: 8bdcb2736d5e786086ddce316a057ab341dd4ffe17598fc0f6f733343b972453
+    role: target
+  - path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml
+    sha256: 458e1db8cfe57eacc6e36d97582e04f31df194d022d11769b4ad5b2892ab0cd2
+    role: target
+  - path: data/normalized_yaml/bacterial/caulobacter_medium.yaml
+    sha256: 60aed6eeb007c37424d5da4d5286c372ab137dfc8ffec161d45cfd36f308325a
+    role: target
+  - path: data/normalized_yaml/bacterial/cdm_teusink_et_al.yaml
+    sha256: 26fe1500ed5d2bc6e73533b47fce887a22586b39037ca8799072460c8294480f
+    role: target
+  - path: data/normalized_yaml/bacterial/cgc_w_acetate.yaml
+    sha256: 03e61bf2717255009095abe870544fa50dcb260d86590b8496b615bb49d55675
+    role: target
+  - path: data/normalized_yaml/bacterial/cgc_w_acetate_glucose.yaml
+    sha256: 800dab9329a224f8661d30d9f80402db4702a9cf69d5102b69bd1a6f540cb537
+    role: target
+  - path: data/normalized_yaml/bacterial/cgc_w_glucose.yaml
+    sha256: 406ca920b05bb55070d44c5912bad0772f8c64fb5ba790cd4cf65c960f3214b2
+    role: target
+  - path: data/normalized_yaml/bacterial/chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml
+    sha256: 17b9f16c92a9a90737db8271f81e9c25bbb77d01cdcd1e13c1cacd33865980cd
+    role: target
+  - path: data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml
+    sha256: b4e7e20894774691800cafc49c9aea48d43eee4370c4edb7cbcfc36928895f37
+    role: target
+  - path: data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml
+    sha256: 51bac1f50ee144a227f5d53cc1e88d5b65dae78f557c6c4e305ae0d20cb6d431
+    role: target
+  - path: data/normalized_yaml/bacterial/f_2.yaml
+    sha256: b79f6f9593f30ef8a597c5918fa13e35a996994283b67ee896241e68b070ce84
+    role: target
+  - path: data/normalized_yaml/bacterial/geobacter_sulfurreducens_medium.yaml
+    sha256: 4f448c0460a63b735323fc05febac67e65705bc56be441f7e199234b1f51cc52
+    role: target
+  - path: data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml
+    sha256: cf3c3a4655e7351962dcecef3e099c5e8afb034d4e5f72d4e67dd52c352a46c7
+    role: target
+  - path: data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml
+    sha256: 4a4e9475918654c9c8483e680055124ef16b3991042de96cba4ed256256b85f8
+    role: target
+  - path: data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml
+    sha256: 502a85a5c5678cdd36283dceba01b3eca4699373969f7dbd2d332d9aa77da7c0
+    role: target
+  - path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
+    sha256: f322e18503801cfdd53950330c2476d7e5bbce6e3a0798ac159699935bc5bae9
+    role: target
+  - path: data/normalized_yaml/bacterial/methylobacterium_medium.yaml
+    sha256: 5182ee774e098c981851a759200b18f4c8382d0332ccf10d9800b99e6094b969
+    role: target
+  - path: data/normalized_yaml/bacterial/minimal_medium_teusink_et_al.yaml
+    sha256: b950165afb3047613f5917976f9c7a5b702d31319a9837e9c435c563d2ec87ed
+    role: target
+  - path: data/normalized_yaml/bacterial/nutrient_broth.yaml
+    sha256: e69bebbc618ab2120c5c109561cdf1add10dddc11e32c7206ee16a3dc681dfa3
+    role: target
+  - path: data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml
+    sha256: acd7277999ded45bf80ab5ebdf52c9513e1c97df1b53f1e4406b6e199f39f624
+    role: target
+  - path: data/normalized_yaml/bacterial/sc_medium.yaml
+    sha256: 458e98d500f7ea402604afad6ec1503da85104507901e96479b51a429a81372a
+    role: target
+  - path: data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml
+    sha256: a22d765a5e483f6ee7e0e7485c89c34608dcdf950b5175c97dd5cf05c25a090d
+    role: target
+  - path: data/normalized_yaml/bacterial/tryptic_soy_broth.yaml
+    sha256: 569018dc43baf552de065e7fbb7a547f5c10dcc0a308a0d9cb49f0a0a5a34040
+    role: target
+  - path: data/normalized_yaml/specialized/bhis.yaml
+    sha256: 99440736e3f52ced80b9d46e474b71c74111e8a6f6a272b75b13a8842788ed6f
+    role: target
+  - path: data/normalized_yaml/specialized/m9.yaml
+    sha256: 9272ed091a947ac087ccf4c652e3896a1beb1532bfa60243646eaa356860c154
+    role: target
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: f98d02f35fa5f45e508d8d33a764a4a94eef25244a6c84fb663b9aeb78059ed6
+    role: context
+scope:
+  description: Exact bacterial_remaining (122) and specialized_remaining (4) queue
+    rows; scientific assessment is limited to the proposed descriptor events and explicitly
+    inspected primary passages.
+  selection: The planning inventory's two named groups, with each assigned queue row
+    represented exactly once in dispositions and assessments.
+  coverage: partial
+  population_size: 396
+  reviewed_target_ids:
+  - CultureMech:000415
+  - CultureMech:003534
+  - CultureMech:003730
+  - CultureMech:003940
+  - CultureMech:004018
+  - CultureMech:005268
+  - CultureMech:006403
+  - CultureMech:006416
+  - CultureMech:006900
+  - CultureMech:007449
+  - CultureMech:007843
+  - CultureMech:009933
+  - CultureMech:001368
+  - CultureMech:000338
+  - CultureMech:008906
+  - CultureMech:001213
+  - CultureMech:000324
+  - CultureMech:009111
+  - CultureMech:001722
+  - CultureMech:007092
+  - CultureMech:007184
+  - CultureMech:007185
+  - CultureMech:007186
+  - CultureMech:009185
+  - CultureMech:001981
+  - CultureMech:001978
+  - CultureMech:000343
+  - CultureMech:001975
+  - CultureMech:007206
+  - CultureMech:003006
+  - CultureMech:003533
+  - CultureMech:002134
+  - CultureMech:000718
+  - CultureMech:007202
+  - CultureMech:015471
+  - CultureMech:002928
+  - CultureMech:001884
+  - CultureMech:000443
+  - CultureMech:008226
+  - CultureMech:015493
+  - CultureMech:015542
+  exclusions:
+  - target: Other 270 variant queue rows
+    reason: Assigned to other source-family curators.
+  - target: Whole canonical recipes, growth/taxonomy assertions, inferred base application,
+      expanded referenced stocks, and literature completeness
+    reason: Not scientifically recertified by a bounded variant-claim pass.
+  - target: Unverified primary methods for held rows and condition correctness
+    reason: Retain explicit held/context dispositions; classification does not certify
+      existing source prose.
+targets:
+- target_id: CultureMech:000415
+  path: data/normalized_yaml/bacterial/2asw.yaml
+  label: bacterial/2asw.yaml
+  kind: maintained
+  selector: Variant modification queue rows 118, 119, 120, 121
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:003534
+  path: data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml
+  label: bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 122, 123
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:003730
+  path: data/normalized_yaml/bacterial/KOMODO_1078_FRIIS_medium.yaml
+  label: bacterial/KOMODO_1078_FRIIS_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 124, 125
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1078_FRIIS_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:003940
+  path: data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml
+  label: bacterial/KOMODO_11_MRS_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 126, 127, 128, 129
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:004018
+  path: data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml
+  label: bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml
+  kind: maintained
+  selector: Variant modification queue rows 130, 131, 132, 133
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:005268
+  path: data/normalized_yaml/bacterial/KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml
+  label: bacterial/KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml
+  kind: maintained
+  selector: Variant modification queue rows 134, 135
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006403
+  path: data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml
+  label: bacterial/KOMODO_751_SC_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 136, 137, 138
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006416
+  path: data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml
+  label: bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml
+  kind: maintained
+  selector: Variant modification queue rows 139, 140, 141
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006900
+  path: data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml
+  label: bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml
+  kind: maintained
+  selector: Variant modification queue rows 142, 143, 144, 145
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007449
+  path: data/normalized_yaml/bacterial/NBRC_1003.yaml
+  label: bacterial/NBRC_1003.yaml
+  kind: maintained
+  selector: Variant modification queue rows 188, 189, 190, 191
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1003.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007843
+  path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+  label: bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 192, 193, 194, 195
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:009933
+  path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+  label: bacterial/TOGO_M540_Brucella_Broth.yaml
+  kind: maintained
+  selector: Variant modification queue rows 196, 197, 198
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001368
+  path: data/normalized_yaml/bacterial/acidiphilium_medium.yaml
+  label: bacterial/acidiphilium_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 199, 200, 201
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidiphilium_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000338
+  path: data/normalized_yaml/bacterial/ajs.yaml
+  label: bacterial/ajs.yaml
+  kind: maintained
+  selector: Variant modification queue rows 202, 203
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ajs.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:008906
+  path: data/normalized_yaml/bacterial/bacto_marine_broth_difco_2216_for_dsm_11879.yaml
+  label: bacterial/bacto_marine_broth_difco_2216_for_dsm_11879.yaml
+  kind: maintained
+  selector: Variant modification queue rows 218, 219
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacto_marine_broth_difco_2216_for_dsm_11879.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001213
+  path: data/normalized_yaml/bacterial/beijerinckia_medium_lmg_18.yaml
+  label: bacterial/beijerinckia_medium_lmg_18.yaml
+  kind: maintained
+  selector: Variant modification queue rows 227, 228, 229
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beijerinckia_medium_lmg_18.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000324
+  path: data/normalized_yaml/bacterial/bg11.yaml
+  label: bacterial/bg11.yaml
+  kind: maintained
+  selector: Variant modification queue rows 230, 231, 232, 233, 234, 235, 236
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bg11.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:009111
+  path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml
+  label: bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml
+  kind: maintained
+  selector: Variant modification queue rows 257, 258, 259, 260, 261, 262, 263, 264
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001722
+  path: data/normalized_yaml/bacterial/caulobacter_medium.yaml
+  label: bacterial/caulobacter_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 265, 266
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caulobacter_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007092
+  path: data/normalized_yaml/bacterial/cdm_teusink_et_al.yaml
+  label: bacterial/cdm_teusink_et_al.yaml
+  kind: maintained
+  selector: Variant modification queue rows 267, 268
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cdm_teusink_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007184
+  path: data/normalized_yaml/bacterial/cgc_w_acetate.yaml
+  label: bacterial/cgc_w_acetate.yaml
+  kind: maintained
+  selector: Variant modification queue rows 269
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cgc_w_acetate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007185
+  path: data/normalized_yaml/bacterial/cgc_w_acetate_glucose.yaml
+  label: bacterial/cgc_w_acetate_glucose.yaml
+  kind: maintained
+  selector: Variant modification queue rows 270, 271
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cgc_w_acetate_glucose.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007186
+  path: data/normalized_yaml/bacterial/cgc_w_glucose.yaml
+  label: bacterial/cgc_w_glucose.yaml
+  kind: maintained
+  selector: Variant modification queue rows 272
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cgc_w_glucose.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:009185
+  path: data/normalized_yaml/bacterial/chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml
+  label: bacterial/chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml
+  kind: maintained
+  selector: Variant modification queue rows 273, 274, 275, 276, 277
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001981
+  path: data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml
+  label: bacterial/desulfurobacterium_crinifex_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 278
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001978
+  path: data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml
+  label: bacterial/desulfurobacterium_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 279
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000343
+  path: data/normalized_yaml/bacterial/f_2.yaml
+  label: bacterial/f_2.yaml
+  kind: maintained
+  selector: Variant modification queue rows 280, 281, 282, 283, 284, 285, 286, 287,
+    288, 289
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/f_2.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001975
+  path: data/normalized_yaml/bacterial/geobacter_sulfurreducens_medium.yaml
+  label: bacterial/geobacter_sulfurreducens_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 304, 305, 306
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/geobacter_sulfurreducens_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007206
+  path: data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml
+  label: bacterial/kaminskyj_minimal_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 307, 308
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:003006
+  path: data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml
+  label: bacterial/magnetospirillum_gryphiswaldense_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 309, 310
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:003533
+  path: data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml
+  label: bacterial/medium_1021_modified_for_dsm_16929.yaml
+  kind: maintained
+  selector: Variant modification queue rows 311, 312
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:002134
+  path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
+  label: bacterial/medium_for_dsm_14457_and_14458.yaml
+  kind: maintained
+  selector: Variant modification queue rows 313, 314, 315, 316
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000718
+  path: data/normalized_yaml/bacterial/methylobacterium_medium.yaml
+  label: bacterial/methylobacterium_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 317, 318, 319, 320
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/methylobacterium_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007202
+  path: data/normalized_yaml/bacterial/minimal_medium_teusink_et_al.yaml
+  label: bacterial/minimal_medium_teusink_et_al.yaml
+  kind: maintained
+  selector: Variant modification queue rows 339, 340, 341
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_teusink_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:015471
+  path: data/normalized_yaml/bacterial/nutrient_broth.yaml
+  label: bacterial/nutrient_broth.yaml
+  kind: maintained
+  selector: Variant modification queue rows 380, 381
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_broth.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:002928
+  path: data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml
+  label: bacterial/rhodobacter_sphaeroides_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 382, 383, 384
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001884
+  path: data/normalized_yaml/bacterial/sc_medium.yaml
+  label: bacterial/sc_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 385, 386, 387
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/sc_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000443
+  path: data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml
+  label: bacterial/sodalis_glossinidius_medium.yaml
+  kind: maintained
+  selector: Variant modification queue rows 388, 389, 390
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:008226
+  path: data/normalized_yaml/bacterial/tryptic_soy_broth.yaml
+  label: bacterial/tryptic_soy_broth.yaml
+  kind: maintained
+  selector: Variant modification queue rows 391, 392
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/tryptic_soy_broth.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:015493
+  path: data/normalized_yaml/specialized/bhis.yaml
+  label: specialized/bhis.yaml
+  kind: maintained
+  selector: Variant modification queue rows 393, 394
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/bhis.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:015542
+  path: data/normalized_yaml/specialized/m9.yaml
+  label: specialized/m9.yaml
+  kind: maintained
+  selector: Variant modification queue rows 395, 396
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/m9.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: native-inspect
+  name: Native input-byte inspection
+  status: passed
+  required: true
+  summary: Native inspector bound 41 target preimages, explicit proposals, dispositions,
+    validation observations, schema and inspected source snapshots.
+  target_ids:
+  - CultureMech:000415
+  - CultureMech:003534
+  - CultureMech:003730
+  - CultureMech:003940
+  - CultureMech:004018
+  - CultureMech:005268
+  - CultureMech:006403
+  - CultureMech:006416
+  - CultureMech:006900
+  - CultureMech:007449
+  - CultureMech:007843
+  - CultureMech:009933
+  - CultureMech:001368
+  - CultureMech:000338
+  - CultureMech:008906
+  - CultureMech:001213
+  - CultureMech:000324
+  - CultureMech:009111
+  - CultureMech:001722
+  - CultureMech:007092
+  - CultureMech:007184
+  - CultureMech:007185
+  - CultureMech:007186
+  - CultureMech:009185
+  - CultureMech:001981
+  - CultureMech:001978
+  - CultureMech:000343
+  - CultureMech:001975
+  - CultureMech:007206
+  - CultureMech:003006
+  - CultureMech:003533
+  - CultureMech:002134
+  - CultureMech:000718
+  - CultureMech:007202
+  - CultureMech:015471
+  - CultureMech:002928
+  - CultureMech:001884
+  - CultureMech:000443
+  - CultureMech:008226
+  - CultureMech:015493
+  - CultureMech:015542
+  command: .venv/bin/python scripts/adhoc/curate_variant_remaining_683.py --draft-review
+    .temp/variant-683/remaining-proposal-v3
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - queue
+  - proposal
+- check_id: native-proposals
+  name: Native proposed-record schema and semantic validation
+  status: passed
+  required: true
+  summary: 26 modified in-memory records passed validate_recipe with zero errors;
+    no recipe YAML was written.
+  target_ids:
+  - CultureMech:000415
+  - CultureMech:003940
+  - CultureMech:004018
+  - CultureMech:000718
+  - CultureMech:006403
+  - CultureMech:001884
+  - CultureMech:006416
+  - CultureMech:006900
+  - CultureMech:002134
+  - CultureMech:007449
+  - CultureMech:009933
+  - CultureMech:001368
+  - CultureMech:000338
+  - CultureMech:009111
+  - CultureMech:007092
+  - CultureMech:007202
+  - CultureMech:007184
+  - CultureMech:007185
+  - CultureMech:007186
+  - CultureMech:001978
+  - CultureMech:000343
+  - CultureMech:007206
+  - CultureMech:003006
+  - CultureMech:002928
+  - CultureMech:000443
+  - CultureMech:008226
+  command: env PYTHONPATH=src .venv/bin/python scripts/adhoc/curate_variant_remaining_683.py
+    --validate-proposals .temp/variant-683/remaining-proposal-v3
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: application
+  name: Authoritative application and export acceptance
+  status: not_applicable
+  required: false
+  summary: No application performed. Earlier all-record preview refused on existing
+    KOMODO_125 presentation drift before any authoritative write; nine such records
+    were enumerated separately.
+  target_ids:
+  - CultureMech:000415
+  - CultureMech:003534
+  - CultureMech:003730
+  - CultureMech:003940
+  - CultureMech:004018
+  - CultureMech:005268
+  - CultureMech:006403
+  - CultureMech:006416
+  - CultureMech:006900
+  - CultureMech:007449
+  - CultureMech:007843
+  - CultureMech:009933
+  - CultureMech:001368
+  - CultureMech:000338
+  - CultureMech:008906
+  - CultureMech:001213
+  - CultureMech:000324
+  - CultureMech:009111
+  - CultureMech:001722
+  - CultureMech:007092
+  - CultureMech:007184
+  - CultureMech:007185
+  - CultureMech:007186
+  - CultureMech:009185
+  - CultureMech:001981
+  - CultureMech:001978
+  - CultureMech:000343
+  - CultureMech:001975
+  - CultureMech:007206
+  - CultureMech:003006
+  - CultureMech:003533
+  - CultureMech:002134
+  - CultureMech:000718
+  - CultureMech:007202
+  - CultureMech:015471
+  - CultureMech:002928
+  - CultureMech:001884
+  - CultureMech:000443
+  - CultureMech:008226
+  - CultureMech:015493
+  - CultureMech:015542
+  evidence_ids:
+  - validation
+evidence:
+- evidence_id: queue
+  kind: record_content
+  reference: .temp/variant-683/remaining-proposal-v3/dispositions.json
+  locator: All 126 assigned queue rows; exact target selectors in targets.yaml
+  accessed_at: '2026-11-16T21:26:56Z'
+  support: context_only
+  summary: Every assigned row was read and classified. Condition-only classification
+    is not external verification of those conditions; held claims remain unresolved.
+  snapshot_sha256: e40842c3a77c3c10cf7468282f7ba06c84346305e8a5a127c47e90572dad5d0b
+- evidence_id: proposal
+  kind: record_content
+  reference: .temp/variant-683/remaining-proposal-v3/proposals.json
+  locator: All 46 proposed events in 26 records
+  accessed_at: '2026-11-16T21:26:56Z'
+  support: supports
+  summary: Explicit curator decisions retain source coordinates, stage, evidence,
+    original prose, and uncertainty; no recipe applied.
+  snapshot_sha256: f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f
+- evidence_id: validation
+  kind: validation
+  reference: .temp/variant-683/remaining-proposal-v3/validation.json
+  locator: 26 proposed records, zero schema/semantic errors; nine presentation blockers
+  accessed_at: '2026-11-16T21:26:56Z'
+  support: supports
+  summary: Native validate_recipe accepted every proposed record. Separate byte comparison
+    found nine files that the native writer would reformat, so a schema pass is not
+    application permission.
+  snapshot_sha256: 947416375c3ed2f8612892ecb079fa08af0f9d7d378945f3f3b32b41c049db48
+- evidence_id: source-spectrum
+  kind: primary_source
+  reference: doi:10.1128/spectrum.00069-23
+  locator: Materials and Methods, Algal strains and cultivation conditions
+  accessed_at: '2026-11-16T21:12:59.706051Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d
+- evidence_id: source-emami
+  kind: primary_source
+  reference: doi:10.1038/srep10036
+  locator: Methods, culture conditions and bacterial interference experiment
+  accessed_at: '2026-11-16T21:13:18.973062Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319
+- evidence_id: source-hiibel
+  kind: primary_source
+  reference: doi:10.3389/fenrg.2015.00020
+  locator: Materials and Methods, Strains and media
+  accessed_at: '2026-11-16T21:15:15.295827Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a
+- evidence_id: source-751
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+  locator: Page 1, liquid-medium instruction
+  accessed_at: '2026-11-16T21:14:01.013792Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 721e0310d250ea6eab5d453f063b9452b48b8368ad53fa9384cb54434d2e59fb
+- evidence_id: source-125
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf
+  locator: Page 1, preparation alternatives
+  accessed_at: '2026-11-16T21:14:25.175561Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f
+- evidence_id: source-956
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+  locator: Page 1, final paragraph
+  accessed_at: '2026-11-16T21:14:24.354168Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39
+- evidence_id: source-1021
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+  locator: Page 1, Solution A hydrolysate alternatives
+  accessed_at: '2026-11-16T21:14:23.594126Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 6af992ef5048ce852d2c1c88463f1eeedf3441b682522231c93341b3ce1debac
+- evidence_id: source-829
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf
+  locator: Page 1, DSM 16661 and DSM 21157 prescription
+  accessed_at: '2026-11-16T21:14:24.554224Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 73b87bbb602b5d40fa5a442a74b8a227fc26774281d333b7718a15317fd1cb27
+- evidence_id: source-nbrc
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002
+  locator: Heterotrophic and autotrophic preparation alternatives
+  accessed_at: '2026-11-16T21:15:30.977636Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e
+- evidence_id: source-blumer
+  kind: primary_source
+  reference: doi:10.1128/AEM.01400-10
+  locator: Materials and Methods, Bacterial strains and growth on sugar substrates
+  accessed_at: '2026-11-16T21:15:16.123000Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8
+- evidence_id: source-teusink
+  kind: primary_source
+  reference: doi:10.1128/AEM.71.11.7253-7262.2005
+  locator: Table 1, concentration column and footnotes a-b
+  accessed_at: '2026-11-16T21:15:16.247027Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91
+- evidence_id: source-wendisch
+  kind: primary_source
+  reference: doi:10.1128/JB.182.11.3088-3096.2000
+  locator: Materials and Methods, cultivation conditions; separate Figure 1 caption
+  accessed_at: '2026-11-16T21:15:27.416523Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e
+- evidence_id: source-kaminskyj
+  kind: primary_source
+  reference: doi:10.4148/1941-4765.1175
+  locator: Page 26, Minimal Medium and 20 X Nitrate salts
+  accessed_at: '2026-11-16T21:16:14.691893Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6
+- evidence_id: source-10609610
+  kind: primary_source
+  reference: PMID:10609610
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:17:19.117018Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 35e84b91a28f53b591554a9a986edefa68d08c52396f8d52311133a2037812d8
+- evidence_id: source-38194015
+  kind: primary_source
+  reference: PMID:38194015
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:17:35.117764Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 6374babdb789d4cf4ece64f8539d8bbd78dd9710139d6196c752fd9cf3ffff91
+- evidence_id: source-12420179
+  kind: primary_source
+  reference: PMID:12420179
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:17:35.060816Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: b1e8c1d7ee39651d2ad5a4c17b8fcd2d0758aee5f717378e442381e92fa5963b
+- evidence_id: source-19826864
+  kind: primary_source
+  reference: PMID:19826864
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:17:36.234012Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 6429c3b3fce615d13eb83f68eae574c48fa8e8dd60729b4744fd5615f88d0e8b
+- evidence_id: source-15931519
+  kind: primary_source
+  reference: PMID:15931519
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:17:36.482080Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462
+- evidence_id: source-37088211
+  kind: primary_source
+  reference: PMID:37088211
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:17:35.148211Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: aec3da0e724798ee8a372f1cba3cba6c4efc1212e246095d92b50f11ff1ba277
+- evidence_id: source-35960254
+  kind: primary_source
+  reference: PMID:35960254
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:17:36.082234Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: 46d3ffd560e195e57c26c259af2ea6d849bfcc46e38ae96ad653339c771e4021
+- evidence_id: source-7520742
+  kind: primary_source
+  reference: PMID:7520742
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:17:33.559492Z'
+  support: supports
+  summary: Inspected the source passage used in the proposal; scope and quantity limits
+    are retained separately for each event. Indexed abstracts are identified explicitly
+    and do not establish unprinted methods.
+  snapshot_sha256: af16343d832a80e5445262ea29f8763dba74effdea479ef8bdc173e715cba1a5
+assessments:
+- assessment_id: queue-row-118
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - queue
+  - proposal
+  - source-spectrum
+  details: The study reports 1.5 M NaCl in its 2ASW culture medium. This is a reported
+    medium concentration, not a stock concentration or inferred amount to add.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-spectrum
+- assessment_id: queue-row-119
+  area: quantity
+  topic: variants[0].modifications[1] — HELD_EVIDENCE
+  outcome: unknown
+  summary: The row explicitly leaves basal formulation/brand/stock details unresolved.
+    No additional ingredient identities or quantities can be inferred from it; the
+    distinct supported source claim is proposed separately.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - queue
+  details: Other ingredients, stock additions, seawater contribution and final-volume
+    preparation remain unspecified in the inspected paragraph. No salt-increase/decrease
+    direction relative to this imported parent is asserted.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-120
+  area: quantity
+  topic: variants[1].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - queue
+  - proposal
+  - source-hiibel
+  details: Use the study-reported 33.6 g/L sea salts in place of NaCl; this is an
+    undefined sea-salt mixture, not 33.6 g/L pure sodium chloride.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-hiibel
+- assessment_id: queue-row-121
+  area: quantity
+  topic: variants[1].modifications[1] — HELD_EVIDENCE
+  outcome: unknown
+  summary: The row explicitly leaves basal formulation/brand/stock details unresolved.
+    No additional ingredient identities or quantities can be inferred from it; the
+    distinct supported source claim is proposed separately.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - queue
+  details: The sea-salt brand, full constituent composition and other base-recipe
+    details are not established by the inspected methods. Do not assume equivalence
+    to this parent's seawater alternative or inherit details from the mismatched Gomord
+    base citation.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-122
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:003534
+  evidence_ids:
+  - queue
+  details: Filter sterilize the liquid preparation instead of autoclaving. No membrane
+    pore size is specified.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-123
+  area: quantity
+  topic: variants[0].modifications[1] — HELD_EVIDENCE
+  outcome: unknown
+  summary: DSMZ 1021 specifies liquid-medium filtration but does not explicitly quantify
+    or name an agar-change operation. No zero-agar amount or omission is invented.
+  target_ids:
+  - CultureMech:003534
+  evidence_ids:
+  - queue
+  details: The source does not explicitly quantify the agar change for this alternative;
+    no numeric agar amount is invented.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-124
+  area: quantity
+  topic: variants[0].modifications[0] — HELD_EVIDENCE
+  outcome: unknown
+  summary: Only a named modified medium is specified; no explicit ingredient identity
+    or dose occurs in this row. Primary formulation details require additional source
+    inspection before decomposition.
+  target_ids:
+  - CultureMech:003730
+  evidence_ids:
+  - queue
+  details: Use modified Friis medium as described by Friis 1975.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-125
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:003730
+  evidence_ids:
+  - queue
+  details: Incubate slowly shaken Mycoplasma hyopneumoniae cultures; source reports
+    isolate-dependent behavior across five Friis medium batches.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-126
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:003940
+  evidence_ids:
+  - queue
+  details: Compare MRS medium with M17 medium for bile salt hydrolase production.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-127
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:003940
+  evidence_ids:
+  - queue
+  details: Evaluate oxygen concentration effects in MRS medium, including anaerobic
+    and microaerophilic conditions.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-128
+  area: scope
+  topic: variants[1].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:003940
+  evidence_ids:
+  - queue
+  details: Compare static culture with 100 rpm and 200 rpm shaking in MRS broth.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-129
+  area: quantity
+  topic: variants[1].modifications[1] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:003940
+  evidence_ids:
+  - queue
+  - proposal
+  - source-38194015
+  details: Compare original MRS broth at pH 5.7 with MRS broth at pH 6.5 enriched
+    with 5 g/L yeast extract.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-38194015
+- assessment_id: queue-row-130
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: 5 mL batch amount remains literal notes because no absolute-volume
+    field exists.'
+  target_ids:
+  - CultureMech:004018
+  evidence_ids:
+  - queue
+  - proposal
+  - source-125
+  details: Add 5 ml methanol to the source's common basal batch; do not combine this
+    option with the methane-air alternative.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-125
+- assessment_id: queue-row-131
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:004018
+  evidence_ids:
+  - queue
+  details: This is a batch addition, not 5 ml/L or 0.5% final-medium methanol; final
+    volume and methanol purity are not specified.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-132
+  area: scope
+  topic: variants[1].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:004018
+  evidence_ids:
+  - queue
+  details: Incubate under methane-air (4:1) as the alternative to adding methanol.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-133
+  area: scope
+  topic: variants[1].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:004018
+  evidence_ids:
+  - queue
+  details: The gas ratio is not a liquid ingredient dose or a dissolved methane concentration;
+    no gas pressure or total volume is specified.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-134
+  area: quantity
+  topic: variants[0].modifications[0] — HELD_EVIDENCE
+  outcome: unknown
+  summary: Blood-species replacement and 50 g/L claim require independent reconciliation
+    of DSMZ 693, the cited BacDive strain and the horse-blood parent; those primary
+    recipe details were not reverified in this pass.
+  target_ids:
+  - CultureMech:005268
+  evidence_ids:
+  - queue
+  details: BacDive DSMZ Medium 693 specifies Columbia agar base with 50 g/L defibrinated
+    sheep blood; the local parent record contains a Columbia blood agar base with
+    horse blood at 40 g/L.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-135
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:005268
+  evidence_ids:
+  - queue
+  details: Incubate anaerobically or under reduced oxygen at 37 C for this anaerobic
+    organism.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-136
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:006403
+  evidence_ids:
+  - queue
+  - proposal
+  - source-751
+  details: Omit corn meal agar.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-751
+- assessment_id: queue-row-137
+  area: quantity
+  topic: variants[0].modifications[1] — HELD_MODEL
+  outcome: unknown
+  summary: DSMZ 751 directly supports a changed phosphate mass per batch, not a demonstrated
+    final concentration. SET_CONCENTRATION requires a valid concentration unit; absolute
+    batch mass is not represented. Preserve original grams and hold under issue 760.
+  target_ids:
+  - CultureMech:006403
+  evidence_ids:
+  - queue
+  details: Use KH2PO4 1.5 g per batch instead of 1 g.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_MODEL
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-138
+  area: quantity
+  topic: variants[0].modifications[2] — HELD_MODEL
+  outcome: unknown
+  summary: DSMZ 751 directly supports a changed phosphate mass per batch, not a demonstrated
+    final concentration. SET_CONCENTRATION requires a valid concentration unit; absolute
+    batch mass is not represented. Preserve original grams and hold under issue 760.
+  target_ids:
+  - CultureMech:006403
+  evidence_ids:
+  - queue
+  details: Use K2HPO4 0.5 g per batch instead of 1 g.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_MODEL
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-139
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:006416
+  evidence_ids:
+  - queue
+  details: Maintain strict anaerobic cultivation conditions.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-140
+  area: quantity
+  topic: variants[0].modifications[1] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:006416
+  evidence_ids:
+  - queue
+  - proposal
+  - source-7520742
+  details: Use high-salt growth conditions centered on 100 g/L NaCl, matching the
+    parent medium's approximately 101 g/L NaCl formulation.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-7520742
+- assessment_id: queue-row-141
+  area: scope
+  topic: variants[0].modifications[2] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:006416
+  evidence_ids:
+  - queue
+  details: Incubate at 60 C for optimal growth of strain H168.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-142
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: 0.5% remains literal notes; percentage basis unspecified.'
+  target_ids:
+  - CultureMech:006900
+  evidence_ids:
+  - queue
+  - proposal
+  - source-956
+  details: After sterilisation add sterile methanol to a final concentration of 0.5%
+    (percentage basis unspecified).
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-956
+- assessment_id: queue-row-143
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:006900
+  evidence_ids:
+  - queue
+  details: Use this alternative instead of methylamine; do not add both.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-144
+  area: quantity
+  topic: variants[1].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: 0.3% remains literal notes; percentage basis unspecified.'
+  target_ids:
+  - CultureMech:006900
+  evidence_ids:
+  - queue
+  - proposal
+  - source-956
+  details: After sterilisation add sterile methylamine to a final concentration of
+    0.3% (percentage basis unspecified).
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-956
+- assessment_id: queue-row-145
+  area: scope
+  topic: variants[1].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:006900
+  evidence_ids:
+  - queue
+  details: Use this alternative instead of methanol; do not add both.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-188
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:007449
+  evidence_ids:
+  - queue
+  - proposal
+  - source-nbrc
+  details: Add 10 mg/L FeSO4·7H2O to the medium.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-nbrc
+- assessment_id: queue-row-189
+  area: quantity
+  topic: variants[0].modifications[1] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:007449
+  evidence_ids:
+  - queue
+  - proposal
+  - source-nbrc
+  details: After autoclaving, add yeast extract from a sterile stock solution to 0.25
+    g/L final concentration.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-nbrc
+- assessment_id: queue-row-190
+  area: quantity
+  topic: variants[1].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:007449
+  evidence_ids:
+  - queue
+  - proposal
+  - source-nbrc
+  details: Add 13.9 g/L FeSO4·7H2O to the medium.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-nbrc
+- assessment_id: queue-row-191
+  area: quantity
+  topic: variants[1].modifications[1] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:007449
+  evidence_ids:
+  - queue
+  - proposal
+  - source-nbrc
+  details: Adjust medium pH to 1.7 with H2SO4 prior to autoclaving.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-nbrc
+- assessment_id: queue-row-192
+  area: quantity
+  topic: variants[0].modifications[0] — HELD_EVIDENCE
+  outcome: unknown
+  summary: The cited JCM/DSMZ recipe or ME19128 primary methods have not been independently
+    inspected in this pass. Do not promote existing prose alone to a new evidence-backed
+    descriptor.
+  target_ids:
+  - CultureMech:007843
+  evidence_ids:
+  - queue
+  details: Add agar at 15.0 g/L before autoclaving.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-193
+  area: quantity
+  topic: variants[1].modifications[0] — HELD_EVIDENCE
+  outcome: unknown
+  summary: The cited JCM/DSMZ recipe or ME19128 primary methods have not been independently
+    inspected in this pass. Do not promote existing prose alone to a new evidence-backed
+    descriptor.
+  target_ids:
+  - CultureMech:007843
+  evidence_ids:
+  - queue
+  details: Omit CaCl2 from the trace element solution.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-194
+  area: quantity
+  topic: variants[1].modifications[1] — HELD_MODEL
+  outcome: unknown
+  summary: Methane versus methanol and calcium versus rare-earth chloride alternatives
+    require arm-specific component identities and stage/dose evidence. A single combined
+    ADD would falsely imply co-presence; preserve prose pending explicit alternatives.
+  target_ids:
+  - CultureMech:007843
+  evidence_ids:
+  - queue
+  details: Supplement cultures with methane or methanol and defined CaCl2 or rare-earth
+    element chlorides after autoclaving.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_MODEL
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-195
+  area: scope
+  topic: variants[1].modifications[2] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:007843
+  evidence_ids:
+  - queue
+  details: Use methanol cultures to quantify lanthanide-dependent growth of strain
+    Ce-a6.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-196
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: 10% serum remains literal notes; percentage basis unspecified.'
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - queue
+  - proposal
+  - source-10609610
+  details: Supplement Brucella broth with 10% fetal bovine serum.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-10609610
+- assessment_id: queue-row-197
+  area: quantity
+  topic: variants[0].modifications[1] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - queue
+  - proposal
+  - source-10609610
+  details: Add hydrogen peroxide at sublethal concentrations, with maximum growth
+    stimulation reported at 3.5 mM H2O2.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-10609610
+- assessment_id: queue-row-198
+  area: scope
+  topic: variants[0].modifications[2] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - queue
+  details: Incubate microaerobically at 37 C with shaking; source measured OD620 and
+    viable CFU after 24 h.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-199
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:001368
+  evidence_ids:
+  - queue
+  details: Maintain pH 3.0.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-200
+  area: quantity
+  topic: variants[0].modifications[1] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:001368
+  evidence_ids:
+  - queue
+  - proposal
+  - source-12420179
+  details: Add aluminum sulfate at the stress concentration reported by the source
+    study.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-12420179
+- assessment_id: queue-row-201
+  area: scope
+  topic: variants[0].modifications[2] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:001368
+  evidence_ids:
+  - queue
+  details: Use Acidiphilium cryptum as the target organism.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-202
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:000338
+  evidence_ids:
+  - queue
+  - proposal
+  - source-emami
+  details: Use hydrochloric acid for the reported adjustment to pH 1.5, rather than
+    inheriting the canonical sulfuric-acid instruction. HCl strength and dose are
+    not quantified; no dose or substitution arithmetic is inferred.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-emami
+- assessment_id: queue-row-203
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000338
+  evidence_ids:
+  - queue
+  details: The study does not restate the JM/SE2 proportions, stock compositions or
+    complete formulation. Do not certify other local ingredients or physical state
+    from this citation.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-218
+  area: quantity
+  topic: variants[0].modifications[0] — HELD_MODEL
+  outcome: unknown
+  summary: Half-strength whole-medium dilution is not an ingredient-specific change.
+    No automatic expansion or multiplication of the parent recipe is authorized; retain
+    the water/dilution formulation statement.
+  target_ids:
+  - CultureMech:008906
+  evidence_ids:
+  - queue
+  details: Marine broth/agar 2216 (DSMZ medium 514) diluted to 0.5x strength with
+    water.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_MODEL
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-219
+  area: quantity
+  topic: variants[0].modifications[1] — HELD_EVIDENCE
+  outcome: unknown
+  summary: Assay-specific peptone and yeast-extract omissions require the cited primary
+    methods; routine MB1/2 and carbon-assay formulations must stay separate. Source
+    not reverified here.
+  target_ids:
+  - CultureMech:008906
+  evidence_ids:
+  - queue
+  details: For single-carbon-source assays, peptone and yeast extract omitted from
+    MB1/2 plates (assay variant, not routine MB1/2).
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-227
+  area: quantity
+  topic: variants[0].modifications[0] — HELD_EVIDENCE
+  outcome: unknown
+  summary: The Becking source's omission and full mass-basis recipe context were not
+    independently reverified. Do not convert the parent/prose into new supported changes.
+  target_ids:
+  - CultureMech:001213
+  evidence_ids:
+  - queue
+  details: CaCO3 omitted relative to standard Becking medium.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-228
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:001213
+  evidence_ids:
+  - queue
+  details: pH adjusted to 5 (vs near-neutral parent).
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-229
+  area: quantity
+  topic: variants[0].modifications[2] — HELD_EVIDENCE
+  outcome: unknown
+  summary: The Becking source's omission and full mass-basis recipe context were not
+    independently reverified. Do not convert the parent/prose into new supported changes.
+  target_ids:
+  - CultureMech:001213
+  evidence_ids:
+  - queue
+  details: 'Base recipe context: glucose 20 g/L, KH2PO4 1.0 g/L, MgSO4.7H2O 0.5 g/L
+    (CaCO3 2.0 g/L before omission); soil cultures 21 d at 30C.'
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-230
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000324
+  evidence_ids:
+  - queue
+  details: Use Synechocystis sp. PCC 6803 as the target organism.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-231
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000324
+  evidence_ids:
+  - queue
+  details: Apply optimized growth conditions reported by the source study.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-232
+  area: scope
+  topic: variants[1].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000324
+  evidence_ids:
+  - queue
+  details: Use Synechococcus elongatus PCC 11801 as the target strain.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-233
+  area: scope
+  topic: variants[1].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000324
+  evidence_ids:
+  - queue
+  details: Culture under ambient CO2 conditions.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-234
+  area: scope
+  topic: variants[2].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000324
+  evidence_ids:
+  - queue
+  details: Use Synechococcus elongatus PCC 11802 as the target strain.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-235
+  area: scope
+  topic: variants[2].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000324
+  evidence_ids:
+  - queue
+  details: Culture at 1% CO2.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-236
+  area: scope
+  topic: variants[2].modifications[2] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000324
+  evidence_ids:
+  - queue
+  details: Culture at 1000 umole photons m-2 s-1.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-257
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:009111
+  evidence_ids:
+  - queue
+  - proposal
+  - source-blumer
+  details: Trypticase, cysteine-HCl, and resazurin omitted relative to standard DSMZ
+    640.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '3'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-blumer
+- assessment_id: queue-row-258
+  area: quantity
+  topic: variants[0].modifications[1] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: Only sodium sulfide nonahydrate addition is represented,
+    with stock/final percentage preserved in notes. Unspecified carbon-source increase
+    and substrate alternatives remain unexpanded.'
+  target_ids:
+  - CultureMech:009111
+  evidence_ids:
+  - queue
+  - proposal
+  - source-blumer
+  details: Carbon source increased to 5 g/L; Na2S.9H2O added to 0.5% final.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-blumer
+- assessment_id: queue-row-259
+  area: scope
+  topic: variants[0].modifications[2] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:009111
+  evidence_ids:
+  - queue
+  details: Anaerobic batch cultivation under N2; 70C with orbital shaking; 50 ml in
+    125 ml serum bottle; 24 h.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-260
+  area: quantity
+  topic: variants[1].modifications[0] — HELD_EVIDENCE
+  outcome: unknown
+  summary: Shang 2013 primary formulation and separate substrate arms have not been
+    independently inspected. Retain all listed forms, stock additions and preparation
+    context without certifying them from local prose alone.
+  target_ids:
+  - CultureMech:009111
+  evidence_ids:
+  - queue
+  details: 'Iron source substituted: FeCl3.6H2O 2.5 mg/L (vs ferrous iron in parent).'
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-261
+  area: quantity
+  topic: variants[1].modifications[1] — HELD_EVIDENCE
+  outcome: unknown
+  summary: Shang 2013 primary formulation and separate substrate arms have not been
+    independently inspected. Retain all listed forms, stock additions and preparation
+    context without certifying them from local prose alone.
+  target_ids:
+  - CultureMech:009111
+  evidence_ids:
+  - queue
+  details: Added trace element solution SL-10 (1 ml/L, DSMZ medium 320) and vitamin
+    solution (5 ml/L, DSMZ medium 141, filter-sterilized).
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-262
+  area: quantity
+  topic: variants[1].modifications[2] — HELD_EVIDENCE
+  outcome: unknown
+  summary: Shang 2013 primary formulation and separate substrate arms have not been
+    independently inspected. Retain all listed forms, stock additions and preparation
+    context without certifying them from local prose alone.
+  target_ids:
+  - CultureMech:009111
+  evidence_ids:
+  - queue
+  details: Added resazurin 0.5 mg/L.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-263
+  area: quantity
+  topic: variants[1].modifications[3] — HELD_EVIDENCE
+  outcome: unknown
+  summary: Shang 2013 primary formulation and separate substrate arms have not been
+    independently inspected. Retain all listed forms, stock additions and preparation
+    context without certifying them from local prose alone.
+  target_ids:
+  - CultureMech:009111
+  evidence_ids:
+  - queue
+  details: Fixed glucose replaced by variable substrate at 10.0 g/L (e.g. oat spelt
+    xylan, xylose, glucose).
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-264
+  area: quantity
+  topic: variants[1].modifications[4] — HELD_EVIDENCE
+  outcome: unknown
+  summary: Shang 2013 primary formulation and separate substrate arms have not been
+    independently inspected. Retain all listed forms, stock additions and preparation
+    context without certifying them from local prose alone.
+  target_ids:
+  - CultureMech:009111
+  evidence_ids:
+  - queue
+  details: 'Per liter: 0.9 g NH4Cl, 0.9 g NaCl, 0.4 g MgCl2.6H2O, 0.75 g KH2PO4, 1.5
+    g K2HPO4, 0.75 g cysteine-HCl.H2O, 2 g tryptone, 1 g yeast extract; pH 7.0; prepared
+    under 100% N2; dispensed 5 ml into 15 ml Hungate tubes; autoclaved.'
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-265
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:001722
+  evidence_ids:
+  - queue
+  details: Incubate at 4 C.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-266
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:001722
+  evidence_ids:
+  - queue
+  details: Use Caulobacter sp. K31 as the target strain.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-267
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:007092
+  evidence_ids:
+  - queue
+  - proposal
+  - source-teusink
+  details: Use the Table 1 Ca-(D)-(+)-pantothenate dose of 0.001 g/liter, rather than
+    certifying the parent's 0.00456 mM calcium pantothenate.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-teusink
+- assessment_id: queue-row-268
+  area: quantity
+  topic: variants[0].modifications[1] — HELD_MODEL
+  outcome: unknown
+  summary: This row refers to a complete Table 1 formulation/subset and footnote components
+    rather than enumerated changes. The bounded source review verifies specific vitamin
+    doses separately; whole-table expansion and reconciliation of every imported chemical
+    form remain out of scope.
+  target_ids:
+  - CultureMech:007092
+  evidence_ids:
+  - queue
+  details: Retain the source's full Table 1 composition and footnote b components;
+    do not infer exact chemical-form equivalence from the imported molar ingredient
+    list. Pyridox-x is a joint-omission experiment, not an ingredient.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_MODEL
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-269
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:007184
+  evidence_ids:
+  - queue
+  - proposal
+  - source-wendisch
+  details: Use sodium [1-13C]acetate at the Methods dose of 10 g/L; Table 2 reports
+    nominal 120 mM acetate. The parent acetate descriptor has no isotope specification
+    and reports 120 mM.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-wendisch
+- assessment_id: queue-row-270
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:007185
+  evidence_ids:
+  - queue
+  - proposal
+  - source-wendisch
+  details: Use sodium [1-13C]acetate and unlabeled glucose at 10 g/L each; Table 2
+    reports nominal 120 mM acetate plus 55 mM glucose. Preserve the isotope/counterion
+    substitution rather than treating the local acetate descriptor as identical.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '2'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-wendisch
+- assessment_id: queue-row-271
+  area: quantity
+  topic: variants[1].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:007185
+  evidence_ids:
+  - queue
+  - proposal
+  - source-wendisch
+  details: Use the Figure 1 caption's 35 mM glucose rather than the parent's 55 mM;
+    retain the stated 120 mM acetate.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-wendisch
+- assessment_id: queue-row-272
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:007186
+  evidence_ids:
+  - queue
+  - proposal
+  - source-wendisch
+  details: Use [5-13C]glucose at the Methods dose of 20 g/L; Table 2 reports nominal
+    110 mM glucose. The parent D-glucose descriptor does not specify this isotope
+    label.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-wendisch
+- assessment_id: queue-row-273
+  area: quantity
+  topic: variants[0].modifications[0] — HELD_EVIDENCE
+  outcome: unknown
+  summary: The cited primary ATCC-1490 study was not independently inspected for explicit
+    formate/fumarate omission; a named basal medium alone is insufficient to infer
+    component absence.
+  target_ids:
+  - CultureMech:009185
+  evidence_ids:
+  - queue
+  details: Formate and fumarate omitted relative to the parent (ATCC 1490 + formate
+    + fumarate).
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-274
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:009185
+  evidence_ids:
+  - queue
+  details: Base ATCC 1490 Modified Chopped Meat medium; anaerobic, 37C, 24-48 h.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-275
+  area: quantity
+  topic: variants[1].modifications[0] — HELD_EVIDENCE
+  outcome: unknown
+  summary: The carbonate/CO2 buffering claim lacks a verified explicit carbonate species
+    and dose; cited primary methods not reverified. Do not guess bicarbonate or add
+    a gas as a liquid ingredient.
+  target_ids:
+  - CultureMech:009185
+  evidence_ids:
+  - queue
+  details: Carbonate/CO2 buffering added to ATCC 1490 base (exact carbonate species/concentration
+    and gas composition not printed).
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-276
+  area: scope
+  topic: variants[1].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:009185
+  evidence_ids:
+  - queue
+  details: For MIC assays, medium clarified through a 0.8 um filter (assay-use processing).
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-277
+  area: scope
+  topic: variants[1].modifications[2] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:009185
+  evidence_ids:
+  - queue
+  details: Anaerobic glove bag; serum bottle technique; 38C.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-278
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:001981
+  evidence_ids:
+  - queue
+  details: Adjust pH to 5.5.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-279
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: Only the named stock removal is structured; 2-bar gas-mixture
+    pressure remains prose context.'
+  target_ids:
+  - CultureMech:001978
+  evidence_ids:
+  - queue
+  - proposal
+  - source-829
+  details: Omit growth-stimulating factors and pressurize vials after inoculation
+    to 2 bar with sterile 80% H2 and 20% CO2 gas mixture.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-829
+- assessment_id: queue-row-280
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - queue
+  - proposal
+  - source-emami
+  details: The study reports f/2 supplemented with 1.06e-4 M silicate. Preserve this
+    stated supplementation concentration without assigning an unreported silicate
+    salt, hydrate, stock recipe or additional mass conversion.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-emami
+- assessment_id: queue-row-281
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - queue
+  details: Other nutrients, total silicate including the base, final-volume preparation
+    and equivalence to local f/2 + Si records remain unresolved.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-282
+  area: quantity
+  topic: variants[1].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - queue
+  - proposal
+  - source-emami
+  details: The study reports f/2 supplemented with 29.4 mM NaNO3 and adjusted to pH
+    8. Retain the stated supplement concentration; do not infer whether it includes
+    the base-medium nitrate or calculate a total nitrate concentration.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-emami
+- assessment_id: queue-row-283
+  area: scope
+  topic: variants[1].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - queue
+  details: Remaining formulation details, chemical stock forms and equivalence to
+    a specific canonical amount set are unresolved.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-284
+  area: quantity
+  topic: variants[2].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - queue
+  - proposal
+  - source-emami
+  details: 'Reported penicillin G treatment concentration: 200 micrograms per mL in
+    the treated f/2 culture; no unreported salt form, stock strength or conversion
+    is assigned.'
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-emami
+- assessment_id: queue-row-285
+  area: quantity
+  topic: variants[2].modifications[1] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - queue
+  - proposal
+  - source-emami
+  details: 'Reported dihydrostreptomycin sulphate treatment concentration: 50 micrograms
+    per mL in the same treated culture; not streptomycin, not a stock concentration,
+    and no hydrate assumption.'
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-emami
+- assessment_id: queue-row-286
+  area: scope
+  topic: variants[2].modifications[2] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - queue
+  details: The untreated comparator remains separate. Unspecified base formulation
+    details and the later marine-agar bacterial assay must not be combined into this
+    study variant.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-287
+  area: quantity
+  topic: variants[3].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: Only named mixture replacement is structured; composition
+    and dose remain unresolved.'
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - queue
+  - proposal
+  - source-hiibel
+  details: The vitamin solution described as coming from 2ASW replaces the original
+    f/2 vitamin solution; the paper states it contains additional vitamin components.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-hiibel
+- assessment_id: queue-row-288
+  area: scope
+  topic: variants[3].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - queue
+  details: Vitamin identities, stock composition, addition dose and resulting final
+    concentrations are not quantified in the inspected methods. The cited Gomord 2010
+    reference is a plant glycosylation paper and cannot supply these missing details.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-289
+  area: scope
+  topic: variants[3].modifications[2] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - queue
+  details: Other formulation details, physical-state equivalence, and exact correspondence
+    to this imported stock encoding remain unresolved. This is not the silicate, nitrate,
+    antibiotic or Quad formulation.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-304
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: Primary abstract confirms acetate donor / fumarate acceptor roles, but
+    this row states no addition, removal, replacement or changed quantity relative
+    to the maintained formulation. Retain role context without inventing an ADD event.
+  target_ids:
+  - CultureMech:001975
+  evidence_ids:
+  - queue
+  details: Use acetate as the electron donor.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-305
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: Primary abstract confirms acetate donor / fumarate acceptor roles, but
+    this row states no addition, removal, replacement or changed quantity relative
+    to the maintained formulation. Retain role context without inventing an ADD event.
+  target_ids:
+  - CultureMech:001975
+  evidence_ids:
+  - queue
+  details: Use fumarate as the electron acceptor.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-306
+  area: scope
+  topic: variants[0].modifications[2] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:001975
+  evidence_ids:
+  - queue
+  details: Use Geobacter sulfurreducens as the target organism.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-307
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:007206
+  evidence_ids:
+  - queue
+  - proposal
+  - source-kaminskyj
+  details: In the 20X nitrate stock, replace 10.4 g magnesium sulfate heptahydrate
+    per 1 L stock with 5.2 g anhydrous magnesium sulfate per 1 L stock. Keep the stock
+    addition at 50 mL/L final medium.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-kaminskyj
+- assessment_id: queue-row-308
+  area: quantity
+  topic: variants[1].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: 18-g preparation amount remains literal notes; no assumed
+    post-addition final concentration.'
+  target_ids:
+  - CultureMech:007206
+  evidence_ids:
+  - queue
+  - proposal
+  - source-kaminskyj
+  details: Add 18 g agar to the one-litre MM preparation for solid medium; retain
+    the source's autoclaving step.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-kaminskyj
+- assessment_id: queue-row-309
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:003006
+  evidence_ids:
+  - queue
+  details: Use magnetosome-deficient strain B17316 derived from M. gryphiswaldense
+    MSR-1.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-310
+  area: quantity
+  topic: variants[0].modifications[1] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:003006
+  evidence_ids:
+  - queue
+  - proposal
+  - source-37088211
+  details: Add Cr(VI) at 10 mg/L.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-37088211
+- assessment_id: queue-row-311
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:003533
+  evidence_ids:
+  - queue
+  details: Filter sterilize the liquid preparation instead of autoclaving. No membrane
+    pore size is specified.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-312
+  area: quantity
+  topic: variants[0].modifications[1] — HELD_EVIDENCE
+  outcome: unknown
+  summary: DSMZ 1021 specifies liquid-medium filtration but does not explicitly quantify
+    or name an agar-change operation. No zero-agar amount or omission is invented.
+  target_ids:
+  - CultureMech:003533
+  evidence_ids:
+  - queue
+  details: The source does not explicitly quantify the agar change for this alternative;
+    no numeric agar amount is invented.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-313
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: 0.5% remains literal notes; percentage basis unspecified.'
+  target_ids:
+  - CultureMech:002134
+  evidence_ids:
+  - queue
+  - proposal
+  - source-956
+  details: After sterilisation add sterile methanol to a final concentration of 0.5%
+    (percentage basis unspecified).
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-956
+- assessment_id: queue-row-314
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:002134
+  evidence_ids:
+  - queue
+  details: Use this alternative instead of methylamine; do not add both.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-315
+  area: quantity
+  topic: variants[1].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: 0.3% remains literal notes; percentage basis unspecified.'
+  target_ids:
+  - CultureMech:002134
+  evidence_ids:
+  - queue
+  - proposal
+  - source-956
+  details: After sterilisation add sterile methylamine to a final concentration of
+    0.3% (percentage basis unspecified).
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-956
+- assessment_id: queue-row-316
+  area: scope
+  topic: variants[1].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:002134
+  evidence_ids:
+  - queue
+  details: Use this alternative instead of methanol; do not add both.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-317
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: 5 mL batch amount remains literal notes because no absolute-volume
+    field exists.'
+  target_ids:
+  - CultureMech:000718
+  evidence_ids:
+  - queue
+  - proposal
+  - source-125
+  details: Add 5 ml methanol to the source's common basal batch; do not combine this
+    option with the methane-air alternative.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-125
+- assessment_id: queue-row-318
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000718
+  evidence_ids:
+  - queue
+  details: This is a batch addition, not 5 ml/L or 0.5% final-medium methanol; final
+    volume and methanol purity are not specified.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-319
+  area: scope
+  topic: variants[1].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000718
+  evidence_ids:
+  - queue
+  details: Incubate under methane-air (4:1) as the alternative to adding methanol.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-320
+  area: scope
+  topic: variants[1].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000718
+  evidence_ids:
+  - queue
+  details: The gas ratio is not a liquid ingredient dose or a dissolved methane concentration;
+    no gas pressure or total volume is specified.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-339
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:007202
+  evidence_ids:
+  - queue
+  - proposal
+  - source-teusink
+  details: Use the Table 1 Ca-(D)-(+)-pantothenate dose of 0.001 g/liter, rather than
+    certifying the parent's 0.00456 mM calcium pantothenate.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-teusink
+- assessment_id: queue-row-340
+  area: quantity
+  topic: variants[0].modifications[1] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:007202
+  evidence_ids:
+  - queue
+  - proposal
+  - source-teusink
+  details: Use the Table 1 D-biotin dose of 0.0025 g/liter in the boldface minimal
+    subset; the parent's 0.01203 mM value is not equivalent for its encoded biotin
+    formula.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-teusink
+- assessment_id: queue-row-341
+  area: quantity
+  topic: variants[0].modifications[2] — HELD_MODEL
+  outcome: unknown
+  summary: This row refers to a complete Table 1 formulation/subset and footnote components
+    rather than enumerated changes. The bounded source review verifies specific vitamin
+    doses separately; whole-table expansion and reconciliation of every imported chemical
+    form remain out of scope.
+  target_ids:
+  - CultureMech:007202
+  evidence_ids:
+  - queue
+  details: Retain the source's boldface minimal subset and six additional components
+    in Table 1 footnote b; do not infer exact chemical-form equivalence from the imported
+    molar ingredient list. Pyridox-x is a joint-omission experiment, not an ingredient.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_MODEL
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-380
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:015471
+  evidence_ids:
+  - queue
+  details: Use Mycolicibacterium cosmeticum strain DM-11 as the target strain.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-381
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:015471
+  evidence_ids:
+  - queue
+  details: Incubate at 25 C.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-382
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:002928
+  evidence_ids:
+  - queue
+  details: Use Rhodobacter sphaeroides strain OU5.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-383
+  area: quantity
+  topic: variants[0].modifications[1] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: Only L-phenylalanine identity/role is represented; any
+    displaced nitrogen ingredients and dose are unresolved.'
+  target_ids:
+  - CultureMech:002928
+  evidence_ids:
+  - queue
+  - proposal
+  - source-19826864
+  details: Use L-phenylalanine as the sole nitrogen source.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-19826864
+- assessment_id: queue-row-384
+  area: scope
+  topic: variants[0].modifications[2] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:002928
+  evidence_ids:
+  - queue
+  details: Culture phototrophically.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-385
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:001884
+  evidence_ids:
+  - queue
+  - proposal
+  - source-751
+  details: Omit corn meal agar.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-751
+- assessment_id: queue-row-386
+  area: quantity
+  topic: variants[0].modifications[1] — HELD_MODEL
+  outcome: unknown
+  summary: DSMZ 751 directly supports a changed phosphate mass per batch, not a demonstrated
+    final concentration. SET_CONCENTRATION requires a valid concentration unit; absolute
+    batch mass is not represented. Preserve original grams and hold under issue 760.
+  target_ids:
+  - CultureMech:001884
+  evidence_ids:
+  - queue
+  details: Use KH2PO4 1.5 g per batch instead of 1 g.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_MODEL
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-387
+  area: quantity
+  topic: variants[0].modifications[2] — HELD_MODEL
+  outcome: unknown
+  summary: DSMZ 751 directly supports a changed phosphate mass per batch, not a demonstrated
+    final concentration. SET_CONCENTRATION requires a valid concentration unit; absolute
+    batch mass is not represented. Preserve original grams and hold under issue 760.
+  target_ids:
+  - CultureMech:001884
+  evidence_ids:
+  - queue
+  details: Use K2HPO4 0.5 g per batch instead of 1 g.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_MODEL
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-388
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:000443
+  evidence_ids:
+  - queue
+  details: Filter sterilize the liquid preparation instead of autoclaving. No membrane
+    pore size is specified.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-389
+  area: quantity
+  topic: variants[0].modifications[1] — HELD_EVIDENCE
+  outcome: unknown
+  summary: DSMZ 1021 specifies liquid-medium filtration but does not explicitly quantify
+    or name an agar-change operation. No zero-agar amount or omission is invented.
+  target_ids:
+  - CultureMech:000443
+  evidence_ids:
+  - queue
+  details: The source does not explicitly quantify the agar change for this alternative;
+    no numeric agar amount is invented.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-390
+  area: quantity
+  topic: variants[1].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: 'Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified. PARTIAL: 8.10-g batch amounts remain literal notes, with no final-volume
+    conversion.'
+  target_ids:
+  - CultureMech:000443
+  evidence_ids:
+  - queue
+  - proposal
+  - source-1021
+  details: Replace the 8.10 g lactalbumin hydrolysate batch input in Solution A with
+    8.10 g casein hydrolysate, not both together. Other preparation instructions are
+    unchanged.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-1021
+- assessment_id: queue-row-391
+  area: quantity
+  topic: variants[0].modifications[0] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:008226
+  evidence_ids:
+  - queue
+  - proposal
+  - source-15931519
+  details: Omit dextrose/glucose from the parent Tryptic Soy Broth formulation.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '1'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-15931519
+- assessment_id: queue-row-392
+  area: quantity
+  topic: variants[0].modifications[1] — STRUCTURED
+  outcome: supported
+  summary: Explicit source-supported descriptor event(s) proposed; stage, exact existing
+    source text and source evidence retained. Base recipe and unrelated claims are
+    not certified.
+  target_ids:
+  - CultureMech:008226
+  evidence_ids:
+  - queue
+  - proposal
+  - source-15931519
+  details: Add 0.5% or 1.0% (w/v) soluble starch or maltose.
+  dimensions:
+  - name: queue_disposition
+    value: STRUCTURED
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '2'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+    - proposal
+    - source-15931519
+- assessment_id: queue-row-393
+  area: scope
+  topic: variants[0].modifications[0] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:015493
+  evidence_ids:
+  - queue
+  details: Incubate BHIS broth anaerobically for Brachyspira growth.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-394
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:015493
+  evidence_ids:
+  - queue
+  details: Source reports growth at 37 to 42 degrees C.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-395
+  area: quantity
+  topic: variants[0].modifications[0] — HELD_EVIDENCE
+  outcome: unknown
+  summary: Only a named modified medium is specified; no explicit ingredient identity
+    or dose occurs in this row. Primary formulation details require additional source
+    inspection before decomposition.
+  target_ids:
+  - CultureMech:015542
+  evidence_ids:
+  - queue
+  details: Use modified M9 medium and optimized growth conditions.
+  dimensions:
+  - name: queue_disposition
+    value: HELD_EVIDENCE
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+- assessment_id: queue-row-396
+  area: scope
+  topic: variants[0].modifications[1] — CONDITION_ONLY
+  outcome: not_applicable
+  summary: This row supplies organism, incubation, preparation, comparator, role or
+    explicit uncertainty context rather than a new quantified ingredient change. Preserve
+    the original prose; no gas-to-liquid concentration, base expansion, or new growth
+    claim. Condition correctness is not independently certified by this disposition.
+  target_ids:
+  - CultureMech:015542
+  evidence_ids:
+  - queue
+  details: Grow Escherichia coli to high culture density.
+  dimensions:
+  - name: queue_disposition
+    value: CONDITION_ONLY
+    definition: Classification of the exact supplied modification row; STRUCTURED
+      describes a proposal, not applied or released data.
+    evidence_ids:
+    - queue
+  - name: proposed_assertion_count
+    value: '0'
+    definition: Number of explicit descriptor-change events proposed for this row,
+      before application or downstream identity resolution.
+    evidence_ids:
+    - queue
+findings:
+- finding_id: quantity-basis-gap
+  issue_key: variant-absolute-quantity-unspecified-percent-760
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Literal batch quantities and unspecified percentage bases lack a faithful
+    structured representation
+  description: DSMZ 751 batch phosphate changes cannot truthfully satisfy SET_CONCENTRATION
+    using g/L; DSMZ 125 methanol batch volume and DSMZ 956 unspecified-basis percentages
+    remain literal notes. No false concentration basis was introduced. See issue 760
+    for the reusable model gap.
+  target_ids:
+  - CultureMech:000718
+  - CultureMech:001884
+  - CultureMech:002134
+  - CultureMech:004018
+  - CultureMech:006403
+  - CultureMech:006900
+  field_paths:
+  - variants[].ingredient_changes[].ingredient.concentration
+  evidence_ids:
+  - source-751
+  - source-125
+  - source-956
+  - proposal
+  - queue
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/schema/culturemech.yaml
+    role: quantity model owner
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/760
+actions:
+- action_id: review-then-apply
+  description: Independently review proposed claims, resolve presentation boundaries,
+    then centrally apply only approved records and verify exported event/ledger counts.
+  finding_ids:
+  - quantity-basis-gap
+  target_ids:
+  - CultureMech:000415
+  - CultureMech:003534
+  - CultureMech:003730
+  - CultureMech:003940
+  - CultureMech:004018
+  - CultureMech:005268
+  - CultureMech:006403
+  - CultureMech:006416
+  - CultureMech:006900
+  - CultureMech:007449
+  - CultureMech:007843
+  - CultureMech:009933
+  - CultureMech:001368
+  - CultureMech:000338
+  - CultureMech:008906
+  - CultureMech:001213
+  - CultureMech:000324
+  - CultureMech:009111
+  - CultureMech:001722
+  - CultureMech:007092
+  - CultureMech:007184
+  - CultureMech:007185
+  - CultureMech:007186
+  - CultureMech:009185
+  - CultureMech:001981
+  - CultureMech:001978
+  - CultureMech:000343
+  - CultureMech:001975
+  - CultureMech:007206
+  - CultureMech:003006
+  - CultureMech:003533
+  - CultureMech:002134
+  - CultureMech:000718
+  - CultureMech:007202
+  - CultureMech:015471
+  - CultureMech:002928
+  - CultureMech:001884
+  - CultureMech:000443
+  - CultureMech:008226
+  - CultureMech:015493
+  - CultureMech:015542
+  ownership_note: 'Normalized recipe owners and the #683 application owner; this curator
+    has not applied data.'
+  acceptance_checks:
+  - Exact primary-source/coordinate review
+  - No unsupported quantity basis or inferred base composition
+  - Native guarded application receipts and export verification
+  - All 126 dispositions preserved including partial and held rows
+limitations:
+- This is partial scientific coverage of a 126-row assigned cohort, not completion
+  of all catalog chemistry or curation.
+- Condition-only rows are classified from their exact prose; conditions, taxa and
+  growth are not newly certified.
+- Primary indexed abstracts support only their explicit claims; full methods were
+  not inspected for those sources.
+- Nine source files fail the native writer's no-reformat guard; a schema-valid proposal
+  is not an applied record.
+- No new ontology IDs, solvent density, hydrate conversion, missing percentage basis,
+  total basal concentrations, or automatic variant materialization is asserted.
+- Source receipts and native review inputs are working-tree byte attestations, not
+  external authentication or an integrated MIM/KGM release.
+links:
+- https://github.com/CultureBotAI/CultureMech/issues/683
+- https://github.com/CultureBotAI/CultureMech/issues/760
+```

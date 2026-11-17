@@ -242,6 +242,29 @@ variants:
       rate of 0.062 h-1 at the same dosage.
     explanation: Literature evidence supports a Cr(VI)-stress variant for magnetosome-deficient
       Magnetospirillum gryphiswaldense strain B17316.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: Cr(VI)
+      concentration:
+        value: '10'
+        unit: MG_PER_L
+      notes: Source-reported Cr(VI) mass concentration; administered chromate salt/counterion/hydration
+        unspecified. Do not convert to mass of an assumed salt. Abstract evidence
+        only.
+    stage: reported B17316 Cr(VI) exposure
+    source_modification_index: 1
+    source_text: Add Cr(VI) at 10 mg/L.
+    evidence:
+    - reference: PMID:37088211
+      supports: SUPPORT
+      snippet: 10 mg L-1
+      explanation: Primary article abstract indexed by Europe PMC; full methods not
+        reviewed. Supports only the named descriptor/event at the stated stage. Source-reported
+        Cr(VI) mass concentration; administered chromate salt/counterion/hydration
+        unspecified. Do not convert to mass of an assumed salt. Abstract evidence
+        only. Source inspected 2026-11-16; SHA256 aec3da0e724798ee8a372f1cba3cba6c4efc1212e246095d92b50f11ff1ba277.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 curation_history:
 - timestamp: '2026-01-26T17:53:17.212107Z'
   curator: mediadive-import
@@ -303,6 +326,28 @@ curation_history:
     {"unit": "G_PER_L", "value": "0.5"} -> {"unit": "G_PER_L", "value": "0.5"} (evidence_only);
     ingredients[6].concentration: {"unit": "G_PER_L", "value": "0.006"} -> {"unit":
     "G_PER_L", "value": "0.006"} (evidence_only)'
+- timestamp: '2026-11-16T21:33:01.679393+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports
+    only the named descriptor/event at the stated stage. Source-reported Cr(VI) mass
+    concentration; administered chromate salt/counterion/hydration unspecified. Do
+    not convert to mass of an assumed salt. Abstract evidence only. Source inspected
+    2026-11-16; SHA256 aec3da0e724798ee8a372f1cba3cba6c4efc1212e246095d92b50f11ff1ba277.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "PMID:37088211", "snippet": "10 mg L-1", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "MG_PER_L", "value": "10"}, "notes":
+    "Source-reported Cr(VI) mass concentration; administered chromate salt/counterion/hydration
+    unspecified. Do not convert to mass of an assumed salt. Abstract evidence only.",
+    "preferred_term": "Cr(VI)"}, "source_modification_index": 1, "source_text": "Add
+    Cr(VI) at 10 mg/L.", "stage": "reported B17316 Cr(VI) exposure"}], "variant_index":
+    0, "variant_name": "crvi_stress_magnetosome_deficient_b17316"}]}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: MAGNETOSPIRILLUM GRYPHISWALDENSE

@@ -78,6 +78,30 @@ curation_history:
     stocks, concentrations, physical state, evidence and links. No new native growth
     assertion, record merge or publication.
   source: doi:10.1038/srep10036; PMID:25963242
+- timestamp: '2026-11-16T21:36:31.427143+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation":
+    "Methods, culture conditions and bacterial-community antibiotic experiment; primary
+    source inspected 2026-11-16. Emami Methods names HCl; separately inspected CCAP
+    AJS page1 names concentrated H2SO4. No HCl strength/volume or replacement arithmetic.
+    Other recipe details remain unresolved.", "reference": "doi:10.1038/srep10036",
+    "snippet": "acidified to pH 1.5 using hydrochloric acid", "supports": "SUPPORT"}],
+    "ingredient": {"notes": "Emami Methods names HCl; separately inspected CCAP AJS
+    page1 names concentrated H2SO4. No HCl strength/volume or replacement arithmetic.
+    Other recipe details remain unresolved.", "preferred_term": "hydrochloric acid"},
+    "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "replaced_ingredient": {"preferred_term":
+    "sulfuric acid"}, "source_modification_index": 0, "source_text": "Use hydrochloric
+    acid for the reported adjustment to pH 1.5, rather than inheriting the canonical
+    sulfuric-acid instruction. HCl strength and dose are not quantified; no dose or
+    substitution arithmetic is inferred.", "stage": "AJS study cultivation pH adjustment
+    to1.5"}], "variant_index": 0, "variant_name": "ajs_hydrochloric_acid_ph_1_5"}]}'
 references:
 - reference: CCAP:AJS
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_AJS.pdf
@@ -193,3 +217,27 @@ variants:
       but not its concentration or volume: concentration_decision=not_quantified.
       The inspected CCAP AJS PDF page 1 instead specifies concentrated H2SO4. This
       is a study difference, not a correction of the parent. No conversion.'
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: hydrochloric acid
+      notes: Emami Methods names HCl; separately inspected CCAP AJS page1 names concentrated
+        H2SO4. No HCl strength/volume or replacement arithmetic. Other recipe details
+        remain unresolved.
+    stage: AJS study cultivation pH adjustment to1.5
+    evidence:
+    - reference: doi:10.1038/srep10036
+      supports: SUPPORT
+      snippet: acidified to pH 1.5 using hydrochloric acid
+      explanation: Methods, culture conditions and bacterial-community antibiotic
+        experiment; primary source inspected 2026-11-16. Emami Methods names HCl;
+        separately inspected CCAP AJS page1 names concentrated H2SO4. No HCl strength/volume
+        or replacement arithmetic. Other recipe details remain unresolved.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    replaced_ingredient:
+      preferred_term: sulfuric acid
+    source_modification_index: 0
+    source_text: Use hydrochloric acid for the reported adjustment to pH 1.5, rather
+      than inheriting the canonical sulfuric-acid instruction. HCl strength and dose
+      are not quantified; no dose or substitution arithmetic is inferred.

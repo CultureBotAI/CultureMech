@@ -2811,6 +2811,11 @@ aggregate-all-ingredients mapped_output="output/mapped_ingredients.yaml" unmappe
 plan-ingredient-release:
     uv run --frozen python scripts/ingredient_release_bundle.py build --plan
 
+# Validate explicit source-bound curation decisions without editing recipes.
+[group('Ingredients')]
+preview-variant-ingredients decisions:
+    uv run --frozen python scripts/curate_variant_ingredients.py "{{decisions}}"
+
 # Build a new immutable candidate directory; does not replace ordinary outputs.
 [group('Ingredients')]
 build-ingredient-release output_dir:

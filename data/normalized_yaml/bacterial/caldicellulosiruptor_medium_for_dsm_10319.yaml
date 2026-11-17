@@ -295,6 +295,63 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 9 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-11-16T21:33:00.085247+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "REMOVE", "evidence": [{"explanation":
+    "Materials and Methods, Bacterial strains and growth on sugar substrates. Supports
+    only the named descriptor/event at the stated stage. Source explicitly omits this
+    component. Cysteine-HCl hydration is unspecified; no mapped identity asserted.
+    Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1128/AEM.01400-10", "snippet": "Trypticase", "supports":
+    "SUPPORT"}], "ingredient": {"notes": "Source explicitly omits this component.
+    Cysteine-HCl hydration is unspecified; no mapped identity asserted.", "preferred_term":
+    "Trypticase"}, "source_modification_index": 0, "source_text": "Trypticase, cysteine-HCl,
+    and resazurin omitted relative to standard DSMZ 640.", "stage": "modified DSMZ
+    640 preparation"}, {"action": "REMOVE", "evidence": [{"explanation": "Materials
+    and Methods, Bacterial strains and growth on sugar substrates. Supports only the
+    named descriptor/event at the stated stage. Source explicitly omits this component.
+    Cysteine-HCl hydration is unspecified; no mapped identity asserted. Source inspected
+    2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1128/AEM.01400-10", "snippet": "cysteine-HCl", "supports":
+    "SUPPORT"}], "ingredient": {"notes": "Source explicitly omits this component.
+    Cysteine-HCl hydration is unspecified; no mapped identity asserted.", "preferred_term":
+    "cysteine hydrochloride"}, "source_modification_index": 0, "source_text": "Trypticase,
+    cysteine-HCl, and resazurin omitted relative to standard DSMZ 640.", "stage":
+    "modified DSMZ 640 preparation"}, {"action": "REMOVE", "evidence": [{"explanation":
+    "Materials and Methods, Bacterial strains and growth on sugar substrates. Supports
+    only the named descriptor/event at the stated stage. Source explicitly omits this
+    component. Cysteine-HCl hydration is unspecified; no mapped identity asserted.
+    Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1128/AEM.01400-10", "snippet": "resazurin were not added",
+    "supports": "SUPPORT"}], "ingredient": {"notes": "Source explicitly omits this
+    component. Cysteine-HCl hydration is unspecified; no mapped identity asserted.",
+    "preferred_term": "resazurin"}, "source_modification_index": 0, "source_text":
+    "Trypticase, cysteine-HCl, and resazurin omitted relative to standard DSMZ 640.",
+    "stage": "modified DSMZ 640 preparation"}, {"action": "ADD", "evidence": [{"explanation":
+    "Materials and Methods, Bacterial strains and growth on sugar substrates. Supports
+    only the named descriptor/event at the stated stage. Source describes 10% [wt/vol]
+    Na2S·9H2O stock added to a final concentration of 0.5%. Final percentage basis
+    is not independently specified; do not substitute stock strength or infer a conversion.
+    Carbon-source alternatives remain unexpanded. Source inspected 2026-11-16; SHA256
+    ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8. No parent formulation,
+    growth, ontology identity, or missing dose is inferred.", "reference": "doi:10.1128/AEM.01400-10",
+    "snippet": "10% [wt/vol] Na2S·9H2O was added to a final concentration of 0.5%",
+    "supports": "SUPPORT"}], "ingredient": {"notes": "Source describes 10% [wt/vol]
+    Na2S·9H2O stock added to a final concentration of 0.5%. Final percentage basis
+    is not independently specified; do not substitute stock strength or infer a conversion.
+    Carbon-source alternatives remain unexpanded.", "preferred_term": "sodium sulfide
+    nonahydrate"}, "source_modification_index": 1, "source_text": "Carbon source increased
+    to 5 g/L; Na2S.9H2O added to 0.5% final.", "stage": "modified DSMZ 640 reducing-agent
+    addition"}], "variant_index": 0, "variant_name": "modified_dsmz_640_blumer_schuette_2010"}]}'
 high_metal: true
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)
@@ -445,6 +502,81 @@ variants:
       formulation and cultivation.
     snippet: subcultured ... into modified DSMZ medium 640 ... grown at 70C with orbital
       shaking under N2 headspace.
+  ingredient_changes:
+  - action: REMOVE
+    ingredient:
+      preferred_term: Trypticase
+      notes: Source explicitly omits this component. Cysteine-HCl hydration is unspecified;
+        no mapped identity asserted.
+    stage: modified DSMZ 640 preparation
+    source_modification_index: 0
+    source_text: Trypticase, cysteine-HCl, and resazurin omitted relative to standard
+      DSMZ 640.
+    evidence:
+    - reference: doi:10.1128/AEM.01400-10
+      supports: SUPPORT
+      snippet: Trypticase
+      explanation: Materials and Methods, Bacterial strains and growth on sugar substrates.
+        Supports only the named descriptor/event at the stated stage. Source explicitly
+        omits this component. Cysteine-HCl hydration is unspecified; no mapped identity
+        asserted. Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
+  - action: REMOVE
+    ingredient:
+      preferred_term: cysteine hydrochloride
+      notes: Source explicitly omits this component. Cysteine-HCl hydration is unspecified;
+        no mapped identity asserted.
+    stage: modified DSMZ 640 preparation
+    source_modification_index: 0
+    source_text: Trypticase, cysteine-HCl, and resazurin omitted relative to standard
+      DSMZ 640.
+    evidence:
+    - reference: doi:10.1128/AEM.01400-10
+      supports: SUPPORT
+      snippet: cysteine-HCl
+      explanation: Materials and Methods, Bacterial strains and growth on sugar substrates.
+        Supports only the named descriptor/event at the stated stage. Source explicitly
+        omits this component. Cysteine-HCl hydration is unspecified; no mapped identity
+        asserted. Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
+  - action: REMOVE
+    ingredient:
+      preferred_term: resazurin
+      notes: Source explicitly omits this component. Cysteine-HCl hydration is unspecified;
+        no mapped identity asserted.
+    stage: modified DSMZ 640 preparation
+    source_modification_index: 0
+    source_text: Trypticase, cysteine-HCl, and resazurin omitted relative to standard
+      DSMZ 640.
+    evidence:
+    - reference: doi:10.1128/AEM.01400-10
+      supports: SUPPORT
+      snippet: resazurin were not added
+      explanation: Materials and Methods, Bacterial strains and growth on sugar substrates.
+        Supports only the named descriptor/event at the stated stage. Source explicitly
+        omits this component. Cysteine-HCl hydration is unspecified; no mapped identity
+        asserted. Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: sodium sulfide nonahydrate
+      notes: Source describes 10% [wt/vol] Na2S·9H2O stock added to a final concentration
+        of 0.5%. Final percentage basis is not independently specified; do not substitute
+        stock strength or infer a conversion. Carbon-source alternatives remain unexpanded.
+    stage: modified DSMZ 640 reducing-agent addition
+    source_modification_index: 1
+    source_text: Carbon source increased to 5 g/L; Na2S.9H2O added to 0.5% final.
+    evidence:
+    - reference: doi:10.1128/AEM.01400-10
+      supports: SUPPORT
+      snippet: 10% [wt/vol] Na2S·9H2O was added to a final concentration of 0.5%
+      explanation: Materials and Methods, Bacterial strains and growth on sugar substrates.
+        Supports only the named descriptor/event at the stated stage. Source describes
+        10% [wt/vol] Na2S·9H2O stock added to a final concentration of 0.5%. Final
+        percentage basis is not independently specified; do not substitute stock strength
+        or infer a conversion. Carbon-source alternatives remain unexpanded. Source
+        inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 - name: modified_dsmz_640_shang_2013
   relationship: DERIVED_FROM
   description: Modified DSMZ medium 640 for Thermoanaerobacterium calidifontis Rx1

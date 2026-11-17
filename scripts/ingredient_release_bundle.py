@@ -2,9 +2,11 @@
 """Build/verify a provenance-bound direct-ingredient candidate (2026-11-13).
 
 Inputs: normalized YAML, native aggregator/schema and packaged MIM label index.
-Outputs: existing five aggregation products plus a manifest in a new directory.
+Outputs: six aggregation products plus a manifest in a new directory.
 Serves issue #682 and review fixes #685 (manifest pin) / #686 (relocation).
 Also covers #688 (large CSV fields) and #689 (publication cleanup boundary).
+Version 2 adds structured variant occurrences and a separate complete change
+ledger (#683); version 1 consumers must explicitly adopt the new contract.
 Never publishes a MIM release.
 """
 
@@ -34,17 +36,22 @@ PRODUCTS = (
     "mapped_ingredients.yaml",
     "unmapped_ingredients.yaml",
     "ingredient_aggregation_errors.tsv",
+    "variant_ingredient_changes.tsv",
 )
-CONTRACT = "culturemech-direct-ingredients-v1"
+CONTRACT = "culturemech-direct-ingredients-v2"
 SCOPE = {
     "included": [
         "root ingredients or composition selected by native record shape",
         "recursively inline solutions[].composition",
+        "variant-scoped ADD, SET_CONCENTRATION and new REPLACE ingredient descriptors",
+        "all structured variant change descriptors in a separate context ledger",
     ],
     "excluded": [
         "expansion of references to other scanned solution records",
         "variant modification text and ingredients mentioned only in prose",
         "copies inside referenced stocks beyond the referenced record",
+        "REMOVE and old REPLACE descriptors from positive ingredient counts",
+        "application of variant changes to a base or expanded formulation",
     ],
 }
 
@@ -135,6 +142,7 @@ def artifact_accounting(directory: Path, corpus: dict[str, Any]) -> dict[str, An
     paths: set[str] = set()
     keys: set[tuple[str, str, str]] = set()
     categories: Counter[str] = Counter()
+    variant_occurrences: dict[tuple[str, str, str], dict[str, str]] = {}
     for row in _rows(directory / "ingredient_occurrences.tsv"):
         key = (row["recipe_id"], row["component_field"], row["component_index"])
         if key in keys:
@@ -147,6 +155,77 @@ def artifact_accounting(directory: Path, corpus: dict[str, Any]) -> dict[str, An
         categories[row["recipe_category"] or "UNKNOWN"] += 1
         occurrences += 1
         mapped += bool(row["resolved_identifier"])
+        if row.get("change_action"):
+            if row["change_action"] not in {"ADD", "SET_CONCENTRATION", "REPLACE"} or (
+                row["descriptor_role"] != "ingredient"
+            ):
+                raise BundleError("Context-only variant descriptor in positive occurrences")
+            variant_occurrences[key] = row
+        elif row["component_field"].startswith("variants/"):
+            raise BundleError("Variant occurrence is missing its change context")
+
+    changes: dict[tuple[str, str, str], dict[str, dict[str, str]]] = {}
+    positive_changes: dict[tuple[str, str, str], dict[str, str]] = {}
+    change_mentions = mapped_change_mentions = 0
+    for row in _rows(directory / "variant_ingredient_changes.tsv"):
+        key = (row["recipe_id"], row["component_field"], row["component_index"])
+        role, action = row["descriptor_role"], row["change_action"]
+        if action not in {"ADD", "REMOVE", "REPLACE", "SET_CONCENTRATION"} or (
+            role not in {"ingredient", "replaced_ingredient"}
+        ):
+            raise BundleError("Unknown variant change action or descriptor role")
+        variant_index, change_index = row["variant_index"], row["change_index"]
+        if (
+            not variant_index.isdecimal()
+            or not change_index.isdecimal()
+            or (
+                row["component_field"] != f"variants/{variant_index}/ingredient_changes"
+                or row["component_index"] != change_index
+                or row["descriptor_path"] != f"/{row['component_field']}/{change_index}/{role}"
+            )
+        ):
+            raise BundleError("Variant change coordinate disagrees with its descriptor path")
+        if row["source_path"] not in corpus:
+            raise BundleError("Variant change outside input inventory")
+        roles = changes.setdefault(key, {})
+        if role in roles:
+            raise BundleError("Duplicate variant change descriptor coordinate")
+        roles[role] = row
+        change = json.loads(row["change_json"])
+        if (
+            change["action"] != action
+            or change["stage"] != row["change_stage"]
+            or str(change["source_modification_index"]) != row["source_modification_index"]
+            or change["source_text"] != row["source_text"]
+            or change["evidence"] != json.loads(row["evidence_json"])
+            or change.get(role) != json.loads(row["ingredient_json"])
+        ):
+            raise BundleError("Variant change columns differ from the lossless source change")
+        positive = role == "ingredient" and action != "REMOVE"
+        if row["counts_as_presence"] != ("true" if positive else "false"):
+            raise BundleError("Variant change presence flag disagrees with its action/role")
+        if positive:
+            positive_changes[key] = {
+                field: value for field, value in row.items() if field != "counts_as_presence"
+            }
+        change_mentions += 1
+        mapped_change_mentions += bool(row["resolved_identifier"])
+    for roles in changes.values():
+        first = next(iter(roles.values()))
+        expected = (
+            {"ingredient", "replaced_ingredient"}
+            if first["change_action"] == "REPLACE"
+            else {"ingredient"}
+        )
+        if set(roles) != expected or any(
+            row["change_json"] != first["change_json"]
+            or row["variant_name"] != first["variant_name"]
+            or row["source_path"] != first["source_path"]
+            for row in roles.values()
+        ):
+            raise BundleError("Variant change descriptor membership/context is incomplete")
+    if positive_changes != variant_occurrences:
+        raise BundleError("Positive variant occurrences differ from the complete change ledger")
 
     groups: Counter[str] = Counter()
     grouped_occurrences: Counter[str] = Counter()
@@ -179,6 +258,18 @@ def artifact_accounting(directory: Path, corpus: dict[str, Any]) -> dict[str, An
         "occurrences": occurrences,
         "mapped_occurrences": mapped,
         "unresolved_occurrences": occurrences - mapped,
+        "base_direct_occurrences": occurrences - len(variant_occurrences),
+        "variant_positive_occurrences": len(variant_occurrences),
+        "variant_change_events": len(changes),
+        "variant_change_mentions": change_mentions,
+        "variant_context_only_mentions": change_mentions - len(positive_changes),
+        "mapped_variant_change_mentions": mapped_change_mentions,
+        "unresolved_variant_change_mentions": change_mentions - mapped_change_mentions,
+        "variant_changes_by_action": dict(
+            sorted(
+                Counter(roles["ingredient"]["change_action"] for roles in changes.values()).items()
+            )
+        ),
         "ingredient_groups": sum(groups.values()),
         "groups_by_status": dict(sorted(groups.items())),
         "errors": errors,
@@ -191,6 +282,7 @@ def product_inventory(directory: Path, counts: dict[str, Any]) -> dict[str, Any]
         ("ingredient_occurrences.tsv", counts["occurrences"]),
         ("ingredients_list.tsv", counts["ingredient_groups"]),
         ("ingredient_aggregation_errors.tsv", counts["errors"]),
+        ("variant_ingredient_changes.tsv", counts["variant_change_mentions"]),
     ):
         products[name]["data_rows"] = count
     return products

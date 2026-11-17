@@ -514,6 +514,27 @@ curation_history:
     chemical groundings and growth claims are not recertified.", "status": "remove_unsupported",
     "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
     "snippet": "20% bovine serum albumin, fraction V                                         10.0        ml"}]'
+- timestamp: '2026-11-16T21:32:59.594315+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "REMOVE", "evidence": [{"explanation":
+    "Page 1, liquid-medium instruction. Supports only the named descriptor/event at
+    the stated stage. Removal of the named corn-meal-agar mixture; not positive ingredient
+    presence. Phosphate batch changes remain separately held under issue 760. Source
+    inspected 2026-11-16; SHA256 721e0310d250ea6eab5d453f063b9452b48b8368ad53fa9384cb54434d2e59fb.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+    "snippet": "omit corn meal agar", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Removal of the named corn-meal-agar mixture; not positive ingredient presence.
+    Phosphate batch changes remain separately held under issue 760.", "preferred_term":
+    "corn meal agar"}, "source_modification_index": 0, "source_text": "Omit corn meal
+    agar.", "stage": "liquid SC preparation"}], "variant_index": 0, "variant_name":
+    "Liquid SC medium"}]}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -838,6 +859,24 @@ variants:
       and page image inspected. No final-medium volume, percentage basis, density
       or chemical grounding is inferred. Locator=original recipe text; accessed=2026-10-08T21:53:37.797126+00:00;
       capture SHA256=4e923b20851eebb337f189949dd4ff7bc75ca8eb0309ae2ca9e4f7651b6673d3.'
+  ingredient_changes:
+  - action: REMOVE
+    ingredient:
+      preferred_term: corn meal agar
+      notes: Removal of the named corn-meal-agar mixture; not positive ingredient
+        presence. Phosphate batch changes remain separately held under issue 760.
+    stage: liquid SC preparation
+    source_modification_index: 0
+    source_text: Omit corn meal agar.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+      supports: SUPPORT
+      snippet: omit corn meal agar
+      explanation: Page 1, liquid-medium instruction. Supports only the named descriptor/event
+        at the stated stage. Removal of the named corn-meal-agar mixture; not positive
+        ingredient presence. Phosphate batch changes remain separately held under
+        issue 760. Source inspected 2026-11-16; SHA256 721e0310d250ea6eab5d453f063b9452b48b8368ad53fa9384cb54434d2e59fb.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 references:
 - reference: https://mediadive.dsmz.de/rest/medium/751
   title: SC MEDIUM
