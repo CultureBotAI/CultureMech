@@ -1,0 +1,1385 @@
+schema_version: 1.0.0
+review_id: 20261028T084615Z-batch061-record02-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'CHAETOMIUM: preserve supported rates and distinguish cellulose source conflict'
+started_at: '2026-10-28T08:33:29.192689Z'
+finished_at: '2026-10-28T08:46:15.876521Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Eight main-stage rates are explicitly supported by the current API and already
+  have authenticated evidence in both owners. Cellulose MN300 is an API batch-only
+  extension absent from the current DSM188 PDF, not an authenticated 15 g/L primary
+  formulation. Restore water and filter-paper context, correct the preparation action,
+  preserve owner evidence, and reconcile the bounded legacy identifier and historical
+  metadata.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml
+    sha256: b6fddcef148537bf78c88529438d26f27c0a71888b92bbf72265936f80e24a21
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml
+    sha256: 8566cc424b04300b026e93b0be7c1f1ca2c2e2c2bbb2d970449e66a848ffc560
+    role: context
+  - path: data/normalized_yaml/bacterial/chaetomium_medium.yaml
+    sha256: bbbb7d3e39547000f2f0a8f2f272e9ae3a39c87838d71a8bfffbb4c20d774ed8
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+    sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml.md
+    sha256: 7540cb76a867bbe9c45e54ad3c599b9c90a722f18083f3b149a9b93473c11aca
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/chaetomium_medium.yaml.md
+    sha256: cc579ea4e49fac32225bb9dbaadb859defbdbf08be357e57181a6e4382d30b6c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CHAETOMIUM_MEDIUM.md
+    sha256: ae4d2082251bd26f7f6de6f84129995622907a7f988f8e82dd7d150464b071d9
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.md
+    sha256: 82f4d673fb20f226d87617887a8a9c7324afac8b0ad5df3310f364f73dd6ae98
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/chaetomium_medium.md
+    sha256: 7a28e951017d3e5a09bd99a643df9af3972d3cd8245e1fc2ecee5b31e22566f5
+    role: context
+  - path: reports/yaml_record_review/20260922T065555Z-CHAETOMIUM_MEDIUM.md
+    sha256: be6d36cad97b70003c70b43110cfb87b42486867dda8596e9a6e11bacb3d7709
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; explicitly
+    scoped dependency and external-source limits retained.
+  selection: Actual batch061 native selection index 02.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:004212
+targets:
+- target_id: CultureMech:004212
+  path: data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml
+  label: chaetomium_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chaetomium_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:004212
+  command: just validate-schema data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:004212
+  command: just validate-strict data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml --out
+    REVIEW_WORK/batch061/record02/strict.tsv
+    --workers 1
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:004212
+  command: just validate-terms data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:004212
+  command: just validate-references data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: b6fddcef148537bf78c88529438d26f27c0a71888b92bbf72265936f80e24a21
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 8566cc424b04300b026e93b0be7c1f1ca2c2e2c2bbb2d970449e66a848ffc560
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/chaetomium_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: bbbb7d3e39547000f2f0a8f2f272e9ae3a39c87838d71a8bfffbb4c20d774ed8
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch061/record02/identity-search.json
+  accessed_at: '2026-10-28T08:45:31.290070Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems and stable identity resolve the owner;
+    excluded namesakes are retained in the census. Similar names and source accessions
+    are not promoted to owners.
+  snapshot_sha256: 4622055d0191a610186b1b80f014ff8cdcb443db9178a6d56cc78edd59b6f931
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _parse_api_solutions, _parse_preparation_steps
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Current composition parser restricts ingredients to the primary solution,
+    excludes solvent and recognized stock additions, and retains explicit g_l. The
+    solution parser preserves referenced or percent-defined stocks and source attributes.
+    Preparation parsing still concatenates all solution steps into root preparation_steps;
+    source-stage annotation remains important. These present functions do not prove
+    the historical execution that produced this record.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Current merge_group copies a sole contributor with merge metadata. For
+    multiple contributors it passes records to merge_formulation_evidence, which checks
+    compatibility; it does not authorize merging different preparation assertions.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content, merge_formulation_evidence
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Current compatibility preserves scientific fields and list order and rejects
+    unequal formulations; only specified provenance/evidence lists are unioned. It
+    performs no concentration conversion or stock expansion and does not authenticate
+    historical merges.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients, merge_ingredient_group
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Current cleanup groups identical normalized names, keeps the first entry
+    as a base, flags differing concentrations and combines a warning note; it does
+    not sum concentrations. It can still discard distinctions when names repeat, so
+    source stage must be retained. Current behavior does not establish the historical
+    cause of an existing discrepancy.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Current independently captured API response has exactly the cited historical
+    raw SHA256; all 11 literal JSON snippets and locators match. This authenticates
+    those response bytes, not the historical access time or recommendations.
+  snapshot_sha256: 7540cb76a867bbe9c45e54ad3c599b9c90a722f18083f3b149a9b93473c11aca
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/chaetomium_medium.yaml.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Current independently captured API response has exactly the cited historical
+    raw SHA256; all 11 literal JSON snippets and locators match. This authenticates
+    those response bytes, not the historical access time or recommendations.
+  snapshot_sha256: cc579ea4e49fac32225bb9dbaadb859defbdbf08be357e57181a6e4382d30b6c
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CHAETOMIUM_MEDIUM.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: ae4d2082251bd26f7f6de6f84129995622907a7f988f8e82dd7d150464b071d9
+- evidence_id: historical-4
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: 82f4d673fb20f226d87617887a8a9c7324afac8b0ad5df3310f364f73dd6ae98
+- evidence_id: historical-5
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/chaetomium_medium.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: 7a28e951017d3e5a09bd99a643df9af3972d3cd8245e1fc2ecee5b31e22566f5
+- evidence_id: historical-6
+  kind: record_content
+  reference: reports/yaml_record_review/20260922T065555Z-CHAETOMIUM_MEDIUM.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: be6d36cad97b70003c70b43110cfb87b42486867dda8596e9a6e11bacb3d7709
+- evidence_id: historical-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch061/record02/historical-reader.json
+  accessed_at: '2026-10-28T08:45:31.294690Z'
+  support: context_only
+  summary: All exact target/owner historical report texts and current raw/literal/locator
+    joins; historical recommendations remain subject to current stage and volume evidence.
+  snapshot_sha256: afbe6aa0d6fa0cd8e2a2a12351099e0a122edc7bf6217dc76c85257254076ebe
+- evidence_id: historical-pair
+  kind: record_content
+  reference: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+  locator: Header/decision, exact CHAETOMIUM row247, selection criteria and validation
+    footer
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Scoped May pair row records SOURCE_DUPLICATE and exact local signature
+    selection. It does not prove full current scientific equality; preparation assertions
+    now differ. No unrelated pair conclusions transfer.
+  snapshot_sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+- evidence_id: writer-resolver
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: merge_composition and resolve_recipe
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Current merge_composition copies ingredient and solution data plus selected
+    classification/pH fields but does not copy preparation_steps. It operates on empty
+    target ingredients; existing nonempty records are not automatically repaired.
+    This is present code behavior, not proof of historical causality.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-legacy
+  kind: record_content
+  reference: scripts/migrate_legacy_mim_to_chebi.py
+  locator: _resolve_chebi and _rewrite_entry
+  accessed_at: '2026-10-28T08:45:31.235938Z'
+  support: context_only
+  summary: Current legacy migration preserves an existing own CHEBI when present in
+    the current loader and uses exact/synonym matches for ungrounded ingredients,
+    with stereo and non-CHEBI safeguards. It does not justify historical validity
+    conclusions from a current missing legacy row.
+  snapshot_sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+- evidence_id: dsm188
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium188.pdf
+  locator: Complete page1 table and preparation
+  accessed_at: '2026-10-28T08:34:40.029025Z'
+  support: supports
+  summary: 'One-page current primary PDF fully read and visually checked: eight chemical
+    rows, water and the pH/filter-paper instruction. Cellulose MN300 is absent from
+    this PDF table.'
+  snapshot_sha256: 9bf524b522e6ba0ea3a737dde2c268fb1bfe70bffc2d0e584ee7051ca5c314ab
+- evidence_id: api188
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/188
+  locator: $.data.medium; $.data.solutions[0] allrecipe/steps
+  accessed_at: '2026-10-28T08:34:39.720159Z'
+  support: supports
+  summary: Complete current API includes eight explicit g_l rates, distilled water1000
+    ml and an additional Cellulose MN30015 g row without g_l. Raw bytes match the
+    historical response; the cellulose source conflict remains unresolved.
+  snapshot_sha256: 3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42
+- evidence_id: komodo188
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=188
+  locator: HTTP response and exact requested route; no recipe content
+  accessed_at: '2026-10-28T08:34:39.175940Z'
+  support: context_only
+  summary: Exact historical KOMODO route returned403. Preserved challenge response
+    supplies no current formulation or mapping authentication.
+  snapshot_sha256: 02320eb6bea934e25e719b75547bb3e2f9bb0520eddb93c1d8fe67891885ef11
+- evidence_id: komodoList
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: HTTP response and exact requested route; no recipe content
+  accessed_at: '2026-10-28T08:34:39.194619Z'
+  support: context_only
+  summary: Exact historical KOMODO route returned403. Preserved challenge response
+    supplies no current formulation or mapping authentication.
+  snapshot_sha256: 6a9aa17727f6ee5fc73b19cf07aee7c299a5f1e909be1b0f2d809a264ff5dd63
+- evidence_id: attached-joins
+  kind: record_content
+  reference: REVIEW_WORK/batch061/record02/attached-evidence-joins.json
+  accessed_at: '2026-10-28T08:45:31.298593Z'
+  support: supports
+  summary: All16 currently attached owner ingredient claims independently joined to
+    literal current raw bytes, exact JSON objects and cited raw digest. This authenticates
+    bytes, not historical retrieval timestamps.
+  snapshot_sha256: 6cbf82e34febf911aaebad1d11b3f1de501195ea17e6bfc3d0fc9ded172eb4be
+- evidence_id: chebi63005
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63005
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T08:34:45.493789Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 989f7dba2ab0bc556056f2d79a2f53fae9ce391393fc7ba373cbfe5afc25ae03
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31795
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T08:34:43.618342Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 1635f67d01e00cabdef4ed0d9ef6d5383787c56bd0447051deb90ad353b499a2
+- evidence_id: chebi32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32588
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T08:34:44.217978Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 8fc333e98ee953346b5c291b9e5765e77d03cc46740a1282af3e5f4ad355de1a
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63036
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T08:34:45.519997Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 913baf38abc38dd61f05c5d636fd6532b70a668673a1f5762f290d2b67270164
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_131527
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T08:34:41.378250Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 97e9c2b05f3937c5beeebb4e6338aa6730f9e422ee0e7570a6c622dda8d97a86
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_2509
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T08:34:42.607217Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 348b20478bba221cc21e285237104281145111be6ea3aa30d381d6eae19c0a90
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch061/record02/quantity-inventory.json
+  accessed_at: '2026-10-28T08:45:31.308121Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: cedb8ae0d0e64ef3b6e9185b362a9c822f68986bed9f16bd28433a1ee8666863
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch061/record02/grounding-inventory.json
+  accessed_at: '2026-10-28T08:45:31.308170Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: 44a01379d4987a90335249537f8e6cc1ca8e8025c1e7229154b3bd271fb465be
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch061/record02/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T08:45:31.308222Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: 2e6167be934c84063fbdc8282dd41b24cb1b64c776f852396433dcf9e200e4ae
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch061/record02/scalar-census.json
+  accessed_at: '2026-10-28T08:45:31.308257Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: e8b4d243ad24ffb867e31a7b270b594990c312fc4cdf5394d30be9fe967d034c
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch061/record02/validate-schema.json
+  accessed_at: '2026-10-28T08:33:30.191186Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: f5df8b659963f2547e8f7ee81c350537eff8c492857519a87fd60fe502e1d6a9
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch061/record02/validate-strict.json
+  accessed_at: '2026-10-28T08:33:31.098864Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch061/record02/strict.tsv\n"
+  snapshot_sha256: d1ea5e006725785b245a5b76d3e72de382452231779828de7a75d9a93fba33d9
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch061/record02/validate-terms.json
+  accessed_at: '2026-10-28T08:33:32.099404Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 978c8a3ff7b8a88a410800020e2250b5138f2abd1b69a512ad426a095ac0befd
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch061/record02/validate-references.json
+  accessed_at: '2026-10-28T08:33:32.752895Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: 2e4c1f08cba35df4741567e4fe4d59f029781c4bfd6c5ed5cb9274a91de9a928
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact source identity with bounded duplicate claim
+  outcome: concern
+  summary: 'Both owners explicitly identify DSM188 and current primary/provider titles
+    agree. The historical KOMODO mapping is preserved but fresh exact routes are403.
+    Equal ingredient lists alone do not establish full current formulation equality:
+    preparation is present only in the DSM owner. Complex/undefined and solid agar
+    state are supported; bacterial filing is not evidence of bacterial growth.'
+  target_ids:
+  - CultureMech:004212
+  evidence_ids:
+  - local-target
+  - owner-1
+  - owner-2
+  - dsm188
+  - api188
+  - historical-pair
+  - writer-formulation
+- assessment_id: a2
+  area: completeness
+  topic: Supported owner evidence versus generated loss
+  outcome: concern
+  summary: Both owners already have exact evidence for eight main rates. Preserve
+    that evidence, sourcewater and correct preparation context during regeneration.
+    Do not repeat September claims that the primary PDF contains cellulose or that
+    equal ingredient signatures justify a lossless merge.
+  target_ids:
+  - CultureMech:004212
+  evidence_ids:
+  - attached-joins
+  - dsm188
+  - api188
+  - writer-resolver
+  - writer-merge
+  - historical-reader
+- assessment_id: a3
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:004212
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "NaNO3", "source": [{"evidence_id": "api188",
+    "reference": "https://mediadive.dsmz.de/rest/medium/188", "raw_path": "REVIEW_WORK/batch061/source01-03/api188.bin",
+    "raw_sha256": "3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T08:34:39.720159Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"NaNO3\",\n                        \"compound_id\": 187,\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"mmol_l\": 23.5308,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "NaNO3", "compound_id": 187, "amount": 2, "unit": "g", "g_l": 2, "mmol_l": 23.5308,
+    "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded
+    object independently equals exact JSON locator."}], "decision": "mixed", "rationale":
+    "The API explicitly declares 2 g/L for the main stage and 2 g batch amount; the
+    primaryPDF agrees with the batch amount. Its1000 ml water row does not independently
+    establish a final volume. The two owner evidence snippets, locators and response
+    hashes are already authenticated; the generated target has lost those links.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "2", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The API explicitly declares
+    2 g/L for the main stage and 2 g batch amount; the primaryPDF agrees with the
+    batch amount. Its1000 ml water row does not independently establish a final volume.
+    The two owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links."}, {"path": "data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "2", "unit":
+    "G_PER_L"}, "decision": "verified", "rationale": "The API explicitly declares
+    2 g/L for the main stage and 2 g batch amount; the primaryPDF agrees with the
+    batch amount. Its1000 ml water row does not independently establish a final volume.
+    The two owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links."}, {"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "2", "unit":
+    "G_PER_L"}, "decision": "verified", "rationale": "The API explicitly declares
+    2 g/L for the main stage and 2 g batch amount; the primaryPDF agrees with the
+    batch amount. Its1000 ml water row does not independently establish a final volume.
+    The two owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links."}]}, {"quantity_id": "q2", "topic":
+    "MgSO4 x 7 H2O", "source": [{"evidence_id": "api188", "reference": "https://mediadive.dsmz.de/rest/medium/188",
+    "raw_path": "REVIEW_WORK/batch061/source01-03/api188.bin",
+    "raw_sha256": "3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T08:34:39.720159Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 2.02859,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "MgSO4 x 7 H2O", "compound_id": 8, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l":
+    2.02859, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}], "decision": "mixed",
+    "rationale": "The API explicitly declares 0.5 g/L for the main stage and 0.5 g
+    batch amount; the primaryPDF agrees with the batch amount. Its1000 ml water row
+    does not independently establish a final volume. The two owner evidence snippets,
+    locators and response hashes are already authenticated; the generated target has
+    lost those links.", "layer_assessments": [{"path": "data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The API explicitly
+    declares 0.5 g/L for the main stage and 0.5 g batch amount; the primaryPDF agrees
+    with the batch amount. Its1000 ml water row does not independently establish a
+    final volume. The two owner evidence snippets, locators and response hashes are
+    already authenticated; the generated target has lost those links."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml", "field_path":
+    "ingredients[1].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"},
+    "decision": "verified", "rationale": "The API explicitly declares 0.5 g/L for
+    the main stage and 0.5 g batch amount; the primaryPDF agrees with the batch amount.
+    Its1000 ml water row does not independently establish a final volume. The two
+    owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links."}, {"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "The API explicitly declares
+    0.5 g/L for the main stage and 0.5 g batch amount; the primaryPDF agrees with
+    the batch amount. Its1000 ml water row does not independently establish a final
+    volume. The two owner evidence snippets, locators and response hashes are already
+    authenticated; the generated target has lost those links."}]}, {"quantity_id":
+    "q3", "topic": "KCl", "source": [{"evidence_id": "api188", "reference": "https://mediadive.dsmz.de/rest/medium/188",
+    "raw_path": "REVIEW_WORK/batch061/source01-03/api188.bin",
+    "raw_sha256": "3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T08:34:39.720159Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 6.70691,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "KCl", "compound_id": 61, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 6.70691,
+    "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded
+    object independently equals exact JSON locator."}], "decision": "mixed", "rationale":
+    "The API explicitly declares 0.5 g/L for the main stage and 0.5 g batch amount;
+    the primaryPDF agrees with the batch amount. Its1000 ml water row does not independently
+    establish a final volume. The two owner evidence snippets, locators and response
+    hashes are already authenticated; the generated target has lost those links.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The API explicitly
+    declares 0.5 g/L for the main stage and 0.5 g batch amount; the primaryPDF agrees
+    with the batch amount. Its1000 ml water row does not independently establish a
+    final volume. The two owner evidence snippets, locators and response hashes are
+    already authenticated; the generated target has lost those links."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml", "field_path":
+    "ingredients[2].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"},
+    "decision": "verified", "rationale": "The API explicitly declares 0.5 g/L for
+    the main stage and 0.5 g batch amount; the primaryPDF agrees with the batch amount.
+    Its1000 ml water row does not independently establish a final volume. The two
+    owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links."}, {"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "The API explicitly declares
+    0.5 g/L for the main stage and 0.5 g batch amount; the primaryPDF agrees with
+    the batch amount. Its1000 ml water row does not independently establish a final
+    volume. The two owner evidence snippets, locators and response hashes are already
+    authenticated; the generated target has lost those links."}]}, {"quantity_id":
+    "q4", "topic": "Fe2(SO4)3 x H2O", "source": [{"evidence_id": "api188", "reference":
+    "https://mediadive.dsmz.de/rest/medium/188", "raw_path": "REVIEW_WORK/batch061/source01-03/api188.bin",
+    "raw_sha256": "3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T08:34:39.720159Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Fe2(SO4)3 x H2O\",\n                        \"compound_id\": 291,\n                        \"amount\":
+    0.01,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.01,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 4, "compound": "Fe2(SO4)3 x H2O", "compound_id": 291, "amount":
+    0.01, "unit": "g", "g_l": 0.01, "optional": 0}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."}],
+    "decision": "mixed", "rationale": "The API explicitly declares 0.01 g/L for the
+    main stage and 0.01 g batch amount; the primaryPDF agrees with the batch amount.
+    Its1000 ml water row does not independently establish a final volume. The two
+    owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links.", "layer_assessments": [{"path": "data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.01",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The API explicitly
+    declares 0.01 g/L for the main stage and 0.01 g batch amount; the primaryPDF agrees
+    with the batch amount. Its1000 ml water row does not independently establish a
+    final volume. The two owner evidence snippets, locators and response hashes are
+    already authenticated; the generated target has lost those links."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml", "field_path":
+    "ingredients[3].concentration", "stored_value": {"value": "0.01", "unit": "G_PER_L"},
+    "decision": "verified", "rationale": "The API explicitly declares 0.01 g/L for
+    the main stage and 0.01 g batch amount; the primaryPDF agrees with the batch amount.
+    Its1000 ml water row does not independently establish a final volume. The two
+    owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links."}, {"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.01",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "The API explicitly declares
+    0.01 g/L for the main stage and 0.01 g batch amount; the primaryPDF agrees with
+    the batch amount. Its1000 ml water row does not independently establish a final
+    volume. The two owner evidence snippets, locators and response hashes are already
+    authenticated; the generated target has lost those links."}]}, {"quantity_id":
+    "q5", "topic": "KH2PO4", "source": [{"evidence_id": "api188", "reference": "https://mediadive.dsmz.de/rest/medium/188",
+    "raw_path": "REVIEW_WORK/batch061/source01-03/api188.bin",
+    "raw_sha256": "3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T08:34:39.720159Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\":
+    0.14,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.14,\n                        \"mmol_l\": 1.02877,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "KH2PO4", "compound_id": 11, "amount": 0.14, "unit": "g", "g_l": 0.14, "mmol_l":
+    1.02877, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}], "decision": "mixed",
+    "rationale": "The API explicitly declares 0.14 g/L for the main stage and 0.14
+    g batch amount; the primaryPDF agrees with the batch amount. Its1000 ml water
+    row does not independently establish a final volume. The two owner evidence snippets,
+    locators and response hashes are already authenticated; the generated target has
+    lost those links.", "layer_assessments": [{"path": "data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.14",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The API explicitly
+    declares 0.14 g/L for the main stage and 0.14 g batch amount; the primaryPDF agrees
+    with the batch amount. Its1000 ml water row does not independently establish a
+    final volume. The two owner evidence snippets, locators and response hashes are
+    already authenticated; the generated target has lost those links."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml", "field_path":
+    "ingredients[4].concentration", "stored_value": {"value": "0.14", "unit": "G_PER_L"},
+    "decision": "verified", "rationale": "The API explicitly declares 0.14 g/L for
+    the main stage and 0.14 g batch amount; the primaryPDF agrees with the batch amount.
+    Its1000 ml water row does not independently establish a final volume. The two
+    owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links."}, {"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.14",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "The API explicitly declares
+    0.14 g/L for the main stage and 0.14 g batch amount; the primaryPDF agrees with
+    the batch amount. Its1000 ml water row does not independently establish a final
+    volume. The two owner evidence snippets, locators and response hashes are already
+    authenticated; the generated target has lost those links."}]}, {"quantity_id":
+    "q6", "topic": "K2HPO4", "source": [{"evidence_id": "api188", "reference": "https://mediadive.dsmz.de/rest/medium/188",
+    "raw_path": "REVIEW_WORK/batch061/source01-03/api188.bin",
+    "raw_sha256": "3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42",
+    "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T08:34:39.720159Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\":
+    1.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.2,\n                        \"mmol_l\": 6.88958,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "K2HPO4", "compound_id": 10, "amount": 1.2, "unit": "g", "g_l": 1.2, "mmol_l":
+    6.88958, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}], "decision": "mixed",
+    "rationale": "The API explicitly declares 1.2 g/L for the main stage and 1.2 g
+    batch amount; the primaryPDF agrees with the batch amount. Its1000 ml water row
+    does not independently establish a final volume. The two owner evidence snippets,
+    locators and response hashes are already authenticated; the generated target has
+    lost those links.", "layer_assessments": [{"path": "data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "1.2",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The API explicitly
+    declares 1.2 g/L for the main stage and 1.2 g batch amount; the primaryPDF agrees
+    with the batch amount. Its1000 ml water row does not independently establish a
+    final volume. The two owner evidence snippets, locators and response hashes are
+    already authenticated; the generated target has lost those links."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml", "field_path":
+    "ingredients[5].concentration", "stored_value": {"value": "1.2", "unit": "G_PER_L"},
+    "decision": "verified", "rationale": "The API explicitly declares 1.2 g/L for
+    the main stage and 1.2 g batch amount; the primaryPDF agrees with the batch amount.
+    Its1000 ml water row does not independently establish a final volume. The two
+    owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links."}, {"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "1.2",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "The API explicitly declares
+    1.2 g/L for the main stage and 1.2 g batch amount; the primaryPDF agrees with
+    the batch amount. Its1000 ml water row does not independently establish a final
+    volume. The two owner evidence snippets, locators and response hashes are already
+    authenticated; the generated target has lost those links."}]}, {"quantity_id":
+    "q7", "topic": "Agar", "source": [{"evidence_id": "api188", "reference": "https://mediadive.dsmz.de/rest/medium/188",
+    "raw_path": "REVIEW_WORK/batch061/source01-03/api188.bin",
+    "raw_sha256": "3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42",
+    "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T08:34:39.720159Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\":
+    15,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound":
+    "Agar", "compound_id": 3, "amount": 15, "unit": "g", "g_l": 15, "mmol_l": 44.5991,
+    "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded
+    object independently equals exact JSON locator."}], "decision": "mixed", "rationale":
+    "The API explicitly declares 15 g/L for the main stage and 15 g batch amount;
+    the primaryPDF agrees with the batch amount. Its1000 ml water row does not independently
+    establish a final volume. The two owner evidence snippets, locators and response
+    hashes are already authenticated; the generated target has lost those links.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "15",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The API explicitly
+    declares 15 g/L for the main stage and 15 g batch amount; the primaryPDF agrees
+    with the batch amount. Its1000 ml water row does not independently establish a
+    final volume. The two owner evidence snippets, locators and response hashes are
+    already authenticated; the generated target has lost those links."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml", "field_path":
+    "ingredients[6].concentration", "stored_value": {"value": "15", "unit": "G_PER_L"},
+    "decision": "verified", "rationale": "The API explicitly declares 15 g/L for the
+    main stage and 15 g batch amount; the primaryPDF agrees with the batch amount.
+    Its1000 ml water row does not independently establish a final volume. The two
+    owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links."}, {"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "15",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "The API explicitly declares
+    15 g/L for the main stage and 15 g batch amount; the primaryPDF agrees with the
+    batch amount. Its1000 ml water row does not independently establish a final volume.
+    The two owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links."}]}, {"quantity_id": "q8", "topic":
+    "Yeast extract", "source": [{"evidence_id": "api188", "reference": "https://mediadive.dsmz.de/rest/medium/188",
+    "raw_path": "REVIEW_WORK/batch061/source01-03/api188.bin",
+    "raw_sha256": "3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42",
+    "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T08:34:39.720159Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\":
+    0.02,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.02,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 8, "compound": "Yeast extract", "compound_id": 16, "amount":
+    0.02, "unit": "g", "g_l": 0.02, "optional": 0}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."}],
+    "decision": "mixed", "rationale": "The API explicitly declares 0.02 g/L for the
+    main stage and 0.02 g batch amount; the primaryPDF agrees with the batch amount.
+    Its1000 ml water row does not independently establish a final volume. The two
+    owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links.", "layer_assessments": [{"path": "data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The API explicitly
+    declares 0.02 g/L for the main stage and 0.02 g batch amount; the primaryPDF agrees
+    with the batch amount. Its1000 ml water row does not independently establish a
+    final volume. The two owner evidence snippets, locators and response hashes are
+    already authenticated; the generated target has lost those links."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml", "field_path":
+    "ingredients[7].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"},
+    "decision": "verified", "rationale": "The API explicitly declares 0.02 g/L for
+    the main stage and 0.02 g batch amount; the primaryPDF agrees with the batch amount.
+    Its1000 ml water row does not independently establish a final volume. The two
+    owner evidence snippets, locators and response hashes are already authenticated;
+    the generated target has lost those links."}, {"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "The API explicitly declares
+    0.02 g/L for the main stage and 0.02 g batch amount; the primaryPDF agrees with
+    the batch amount. Its1000 ml water row does not independently establish a final
+    volume. The two owner evidence snippets, locators and response hashes are already
+    authenticated; the generated target has lost those links."}]}, {"quantity_id":
+    "q9", "topic": "Cellulose MN300 source conflict", "source": [{"evidence_id": "api188",
+    "reference": "https://mediadive.dsmz.de/rest/medium/188", "raw_path": "REVIEW_WORK/batch061/source01-03/api188.bin",
+    "raw_sha256": "3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42",
+    "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T08:34:39.720159Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Cellulose MN 300\",\n                        \"compound_id\": 2417,\n                        \"amount\":
+    15,\n                        \"unit\": \"g\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound":
+    "Cellulose MN 300", "compound_id": 2417, "amount": 15, "unit": "g", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, {"evidence_id": "dsm188", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium188.pdf",
+    "raw_path": "REVIEW_WORK/batch061/source01-03/dsm188.bin",
+    "raw_sha256": "9bf524b522e6ba0ea3a737dde2c268fb1bfe70bffc2d0e584ee7051ca5c314ab",
+    "locator": "Page1 complete primary table and preparation", "accessed_at": "2026-10-28T08:34:40.029025Z",
+    "quote": "Adjust pH to 7.2. Place a strip of sterile filter paper on cooled agar
+    and inoculate on filter\nstrip."}], "decision": "unsupported", "rationale": "The
+    current API supplies Cellulose MN30015 g as a batch amount without g_l. The current
+    primary PDF has no cellulose row and instead specifies a sterile filter-paper
+    strip after cooling. Neither source establishes the stored15 G_PER_L cellulose
+    assertion or that cellulose powder is interchangeable with the paper. Preserve
+    the API extension and primary omission separately pending source-specific resolution.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "15",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The current API supplies
+    Cellulose MN30015 g as a batch amount without g_l. The current primary PDF has
+    no cellulose row and instead specifies a sterile filter-paper strip after cooling.
+    Neither source establishes the stored15 G_PER_L cellulose assertion or that cellulose
+    powder is interchangeable with the paper. Preserve the API extension and primary
+    omission separately pending source-specific resolution."}, {"path": "data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "15",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The current API supplies
+    Cellulose MN30015 g as a batch amount without g_l. The current primary PDF has
+    no cellulose row and instead specifies a sterile filter-paper strip after cooling.
+    Neither source establishes the stored15 G_PER_L cellulose assertion or that cellulose
+    powder is interchangeable with the paper. Preserve the API extension and primary
+    omission separately pending source-specific resolution."}, {"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "15",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The current API supplies
+    Cellulose MN30015 g as a batch amount without g_l. The current primary PDF has
+    no cellulose row and instead specifies a sterile filter-paper strip after cooling.
+    Neither source establishes the stored15 G_PER_L cellulose assertion or that cellulose
+    powder is interchangeable with the paper. Preserve the API extension and primary
+    omission separately pending source-specific resolution."}]}, {"quantity_id": "q10",
+    "topic": "Missing source water", "source": [{"evidence_id": "api188", "reference":
+    "https://mediadive.dsmz.de/rest/medium/188", "raw_path": "REVIEW_WORK/batch061/source01-03/api188.bin",
+    "raw_sha256": "3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42",
+    "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T08:34:39.720159Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound":
+    "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "add", "rationale": "The primary and
+    API specify1000 ml distilled water as a source recipe quantity. Restore that solvent/preparation
+    context without calling it an explicit final-volume makeup or deriving unsupported
+    cellulose g/L.", "layer_assessments": [{"path": "data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml",
+    "field_path": "notes", "stored_value": "Source: KOMODO ModelSEED | ID: 188 | DSMZ
+    Medium: 188 (mediadive.medium:188) | Aerobic: No", "decision": "add", "rationale":
+    "The primary and API specify1000 ml distilled water as a source recipe quantity.
+    Restore that solvent/preparation context without calling it an explicit final-volume
+    makeup or deriving unsupported cellulose g/L."}, {"path": "data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml",
+    "field_path": "notes", "stored_value": "Source: KOMODO ModelSEED | ID: 188 | DSMZ
+    Medium: 188 (mediadive.medium:188) | Aerobic: No", "decision": "add", "rationale":
+    "The primary and API specify1000 ml distilled water as a source recipe quantity.
+    Restore that solvent/preparation context without calling it an explicit final-volume
+    makeup or deriving unsupported cellulose g/L."}, {"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "notes", "stored_value": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium188.pdf",
+    "decision": "add", "rationale": "The primary and API specify1000 ml distilled
+    water as a source recipe quantity. Restore that solvent/preparation context without
+    calling it an explicit final-volume makeup or deriving unsupported cellulose g/L."}]},
+    {"quantity_id": "q11", "topic": "Retained pH", "source": [{"evidence_id": "dsm188",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium188.pdf",
+    "raw_path": "REVIEW_WORK/batch061/source01-03/dsm188.bin",
+    "raw_sha256": "9bf524b522e6ba0ea3a737dde2c268fb1bfe70bffc2d0e584ee7051ca5c314ab",
+    "locator": "Page1 preparation", "accessed_at": "2026-10-28T08:34:40.029025Z",
+    "quote": "Adjust pH to 7.2."}], "decision": "evidence_only", "rationale": "The
+    source explicitly supports pH7.2, retained in all three records. No organism-specific
+    optimum is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml",
+    "field_path": "ph_value", "stored_value": 7.2, "decision": "evidence_only", "rationale":
+    "The source explicitly supports pH7.2, retained in all three records. No organism-specific
+    optimum is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml",
+    "field_path": "ph_value", "stored_value": 7.2, "decision": "evidence_only", "rationale":
+    "The source explicitly supports pH7.2, retained in all three records. No organism-specific
+    optimum is inferred."}, {"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "ph_value", "stored_value": 7.2, "decision": "evidence_only", "rationale":
+    "The source explicitly supports pH7.2, retained in all three records. No organism-specific
+    optimum is inferred."}]}, {"quantity_id": "q12", "topic": "Filter-paper preparation
+    and action scope", "source": [{"evidence_id": "api188", "reference": "https://mediadive.dsmz.de/rest/medium/188",
+    "raw_path": "REVIEW_WORK/batch061/source01-03/api188.bin",
+    "raw_sha256": "3cacfe0b65ea361c10ad96742301d80bd20380c9e8f6e38a0d3dd6d000cedd42",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T08:34:39.720159Z",
+    "quote": "{\n                        \"step\": \"Adjust pH to 7.2. Place a strip
+    of sterile filter paper on cooled agar and inoculate on filter strip.\"\n                    }",
+    "exact_decoded_object": {"step": "Adjust pH to 7.2. Place a strip of sterile filter
+    paper on cooled agar and inoculate on filter strip."}, "quote_basis": "Literal
+    UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}],
+    "decision": "mixed", "rationale": "The DSM owner already retains the correct pH
+    and sterile-filter-paper placement text. Its FILTER_STERILIZE action is incorrect:
+    the source says place a sterile paper strip on cooled agar, not filter-sterilize
+    the medium. The generated target and KOMODO owner lack the entire instruction.
+    No cooling temperature, paper mass, sterilization procedure or incubation condition
+    is supplied.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "preparation_steps[0].description", "stored_value": "Adjust pH to
+    7.2. Place a strip of sterile filter paper on cooled agar and inoculate on filter
+    strip.", "decision": "evidence_only", "rationale": "The DSM owner already retains
+    the correct pH and sterile-filter-paper placement text. Its FILTER_STERILIZE action
+    is incorrect: the source says place a sterile paper strip on cooled agar, not
+    filter-sterilize the medium. The generated target and KOMODO owner lack the entire
+    instruction. No cooling temperature, paper mass, sterilization procedure or incubation
+    condition is supplied."}, {"path": "data/normalized_yaml/bacterial/chaetomium_medium.yaml",
+    "field_path": "preparation_steps[0].action", "stored_value": "FILTER_STERILIZE",
+    "decision": "correct", "rationale": "The DSM owner already retains the correct
+    pH and sterile-filter-paper placement text. Its FILTER_STERILIZE action is incorrect:
+    the source says place a sterile paper strip on cooled agar, not filter-sterilize
+    the medium. The generated target and KOMODO owner lack the entire instruction.
+    No cooling temperature, paper mass, sterilization procedure or incubation condition
+    is supplied."}, {"path": "data/merge_yaml/merged/CHAETOMIUM_MEDIUM.yaml", "field_path":
+    "preparation_steps", "stored_value": null, "decision": "add", "rationale": "The
+    DSM owner already retains the correct pH and sterile-filter-paper placement text.
+    Its FILTER_STERILIZE action is incorrect: the source says place a sterile paper
+    strip on cooled agar, not filter-sterilize the medium. The generated target and
+    KOMODO owner lack the entire instruction. No cooling temperature, paper mass,
+    sterilization procedure or incubation condition is supplied.", "missing": true},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml", "field_path":
+    "preparation_steps", "stored_value": null, "decision": "add", "rationale": "The
+    DSM owner already retains the correct pH and sterile-filter-paper placement text.
+    Its FILTER_STERILIZE action is incorrect: the source says place a sterile paper
+    strip on cooled agar, not filter-sterilize the medium. The generated target and
+    KOMODO owner lack the entire instruction. No cooling temperature, paper mass,
+    sterilization procedure or incubation condition is supplied.", "missing": true}]}]'
+- assessment_id: a4
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: concern
+  summary: All current chemical slots are recursively inventoried. Six distinct current
+    CHEBI IDs/labels agree with fresh OLS objects, including sulfate heptahydrate.
+    The nitrate legacy secondary identifier is absent only from the current packaged
+    catalog. No guessed Fe2(SO4)3 hydrate or polymer-specific identifier is supplied.
+  target_ids:
+  - CultureMech:004212
+  evidence_ids:
+  - grounding
+- assessment_id: a5
+  area: provenance
+  topic: History and evidence scope
+  outcome: concern
+  summary: All six exact target/owner reports and the scoped May duplicate-pair row
+    were read. Twenty-two historical API objects and16 attached owner claims match
+    current raw bytes; the old KOMODO mapping remains derivative and currently403.
+    Confirmed timestamp defects are append-only follow-up, not silently normalized.
+  target_ids:
+  - CultureMech:004212
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a6
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:004212
+  evidence_ids:
+  - local-target
+- assessment_id: a7
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:004212
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-004212-resolve-cellulose-extension-without-inventing-a-final-denominator
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Resolve cellulose extension without inventing a final denominator
+  description: All three records state Cellulose MN30015 G_PER_L. The current API
+    contains only15 g without g_l, and the current primaryPDF lacks that row. The
+    primary paper-strip instruction does not establish cellulose-powder equivalence.
+    Preserve both source observations and the supported eight API main rates; do not
+    silently delete or endorse the extension.
+  target_ids:
+  - CultureMech:004212
+  field_paths:
+  - ingredients[8].concentration
+  - ingredients[8].preferred_term
+  evidence_ids:
+  - dsm188
+  - api188
+  - quantities
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: 'Major: P2.3 concentration interpretation is generalized to
+    a source-version and denominator conflict; the concern is unsupported conversion
+    of batch grams to g/L, not the use of g/L with agar.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chaetomium_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-004212-restore-solvent-and-scoped-preparation-while-crediting-existing-owner-text
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore solvent and scoped preparation while crediting existing owner text
+  description: The target and KOMODO owner lack source water context and the sterile-filter-paper
+    instruction. The DSM owner retains the text but labels it FILTER_STERILIZE. Current
+    classifier chooses filter before pH; current resolver omits preparation and current
+    compatible-formulation merger rejects unequal preparation assertions. Preserve
+    the owner text and evidence, correct its action semantics and reconcile maintained
+    records before regeneration.
+  target_ids:
+  - CultureMech:004212
+  field_paths:
+  - notes
+  - preparation_steps
+  - data/normalized_yaml/bacterial/chaetomium_medium.yaml::preparation_steps[0].action
+  evidence_ids:
+  - dsm188
+  - api188
+  - writer-mediadive
+  - writer-resolver
+  - writer-formulation
+  - quantities
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: 'Major despite native P3.4: the entire source-specific post-cooling
+    paper step is absent from the generated target and one owner, while the retained
+    owner action incorrectly asserts a different sterilization operation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chaetomium_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-004212-reconcile-residual-nitrate-legacy-identifier-without-changing-correct-chemistry
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Reconcile residual nitrate legacy identifier without changing correct chemistry
+  description: The primary CHEBI:63005 sodium-nitrate identity is correct in all three
+    records. The secondary MediaIngredientMech:000171 has no exact current packaged
+    CSV identifier or ontology-id row. Reconcile that residual link using the current
+    own-term path; do not call it historically invalid or replace sodium nitrate with
+    a neighboring nitrate. Fe2(SO4)3 x H2O, yeast extract and cellulose remain explicitly
+    named without invented specific identifiers.
+  target_ids:
+  - CultureMech:004212
+  field_paths:
+  - ingredients[0].mediaingredientmech_term
+  evidence_ids:
+  - grounding
+  - writer-legacy
+  - dsm188
+  - api188
+  rule_id: P2.1
+  native_severity: P2
+  normalization_reason: 'Minor: the primary chemical identity and amount are already
+    correct; the residual secondary identifier lacks a current catalog match, without
+    proving historical invalidity.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chaetomium_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f4
+  issue_key: culturemech-004212-preserve-owner-evidence-and-append-historical-corrections
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Preserve owner evidence and append historical corrections
+  description: The generated target drops16 supported owner ingredient evidence claims.
+    Target and KOMODO owner retain malformed .fZ and timezone-free historical timestamps.
+    Exact API response equality authenticates the source bytes, not those historical
+    events or the inaccessible old mapping response.
+  target_ids:
+  - CultureMech:004212
+  field_paths:
+  - ingredients
+  - evidence
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml::curation_history[0].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml::curation_history[1].timestamp
+  evidence_ids:
+  - attached-joins
+  - historical-reader
+  - history
+  - komodo188
+  - komodoList
+  rule_id: P4.3 and review-yaml-record/provenance-history
+  native_severity: P4
+  normalization_reason: 'Minor: missing generated claim linkage and malformed historical
+    metadata are bounded provenance defects; existing authenticated owner evidence
+    is credited and originals must remain append-only.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chaetomium_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Resolve the exact cellulose-containing source variant with authoritative
+    evidence. Until then mark its current per-litre assertion unsupported and retain
+    the API15 g batch claim separately; never transfer the sterile-paper instruction
+    into a guessed cellulose amount.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:004212
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chaetomium_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: Restore1000 ml source water context and exact pH/filter-paper handling
+    in the maintained source scopes. Retain the DSM description, replace its misleading
+    action with schema-valid stage-specific actions, attach root evidence and regenerate
+    only compatible records. Do not invent missing temperatures, paper quantities
+    or final-volume makeup.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:004212
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chaetomium_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: Retain the verified sodium-nitrate primary accession/label and supported
+    amount. Resolve the stale secondary link against the exact current catalog while
+    documenting the legacy observation; do not infer that the old identifier was invalid
+    at its original access time.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:004212
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chaetomium_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action4
+  description: Carry the already authenticated owner ingredient evidence into the
+    regenerated target and add precisely scoped root evidence for water/preparation.
+    Preserve original histories byte-for-byte; append verified correction/context
+    only if authoritative event provenance becomes available, never overwrite old
+    timestamps.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:004212
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chaetomium_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- Exact historical KOMODO MediaInfo188 and MediaList routes returned403; no fresh
+  mapping or original KOMODO formulation was recovered.
+- The current DSM PDF and API differ on cellulose. The API supplies batch15 g without
+  g_l; water1000 ml is not explicit final makeup. No convenient version was selected
+  as universal authority.
+- No taxonomic accession, strain growth or cultivation atmosphere is asserted from
+  the Chaetomium name or bacterial filing. The historical Aerobic:No metadata is not
+  independently authenticated by the fresh primary PDF.
+- The primary specifies sterile filter paper but not its amount, cooling temperature,
+  filter-paper sterilization procedure or incubation conditions. Unresolved identifiers
+  are retained without guessing.
+- The broad May report is used only for the exact pair and stated selection/validation
+  context; unrelated pairs and old execution assertions are not authenticated.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this
+  author.
