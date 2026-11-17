@@ -1,0 +1,784 @@
+# Non-operational review: CDM/LP
+
+- Review: 20261028T075328Z-culturemech-007240-nonoperational-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T07:45:16.427005Z
+- Finished UTC: 2026-10-28T07:53:28.379016Z
+- Reviewer: Codex tsb_source_check (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: false
+
+## Summary
+
+Partial non-operational bibliography, identity, provenance and structural review. The generated CDM/LP record omits the owner's explicit bibliographic-only update; no operational owner repairs are endorsed.
+
+## Scope And Provenance
+
+Non-operational identity/bibliography/provenance/structure only; existing operational data remain unassessed.
+
+Selection: Authoritative batch060 selection index 09
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007240 | data/merge_yaml/merged/CDM_LP.yaml | generated | cdm_lp |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:007240 | Actual exit0; no formal review validation/save run by this author. |
+| Canonical strict | passed | True | CultureMech:007240 | Actual exit0; no formal review validation/save run by this author. |
+| Canonical terms | passed | True | CultureMech:007240 | Actual exit0; no formal review validation/save run by this author. |
+| Canonical references | passed | True | CultureMech:007240 | Actual exit0; no formal review validation/save run by this author. |
+
+## Scientific And Domain Assessments
+
+### Exact record and bibliographic identity
+
+identity: supported. Targets: CultureMech:007240.
+
+The selected stable ID and maintained contributor agree; fresh bibliographic metadata verifies the named publication only. No organism-specific growth or exact formulation equivalence is inferred.
+
+### Current and historical citation boundaries
+
+provenance: concern. Targets: CultureMech:007240.
+
+The owner's2026-10-14 bibliographic-only addition is credited and fresh title/DOI/author/year metadata agree. Earlier owner-only representation repairs and named repair writers are recorded as provenance without chemical reassessment or recommendation. Three historical report headers and source-attribution statements were read; older category/species and recipe conclusions are not adopted. No MediaDB33 recipe/export or full paper was requested.
+
+### Non-operational review boundary
+
+scope: not_applicable. Targets: CultureMech:007240.
+
+This partial review covers bibliography, identity, provenance and record-level structure only. Existing formulation, quantity, stock, supplied form, preparation, culture conditions, infectivity and toxin/growth claims are neither assessed nor corrected.
+
+### Unchanged private quantity census
+
+quantity: not_applicable. Targets: CultureMech:007240.
+
+128 existing concentration fields across target and owner are privately inventoried unchanged and marked not_assessed. No values, calculations, source-derived doses or operational corrections appear in this review.
+
+Private structural census only; excluded operational data are not reproduced or certified.
+
+### Structural identifier and MIM census
+
+grounding: unknown. Targets: CultureMech:007240.
+
+Every existing ID slot is preserved with exact packaged current MIM row membership or bounded absence. No fresh ingredient ontology/form evaluation was performed for this restricted record; native term success and current MIM membership do not certify chemical identity or an operational recipe.
+
+### Canonical structure diagnostics
+
+schema: supported. Targets: CultureMech:007240.
+
+All four canonical diagnostics passed once with complete original streams. Strict had zero errors and references performed zero checks; these results are independent of excluded scientific claims.
+
+### Bibliographic taxonomy and filing
+
+scope: unknown. Targets: CultureMech:007240.
+
+NCBITaxon5658 resolves to Leishmania at genus rank in Eukaryota. That verifies the owner's title-level genus note only; no species, strain, target_organisms, growth relationship or new recipe category is assigned. The bacterial filing is not certified by the name-based importer default.
+
+## Findings
+
+### f1: Generated target omits the owner's scoped bibliographic update
+
+major / open / confirmed; issue key: culturemech-007240-generated-bibliography-staleness.
+
+The maintained MEDIADB33 owner has a2026-10-14 PMID9988320 citation with verified Merlen1999 metadata and explicit bibliographic-only Leishmania genus scope; the generated target omits that reference and its corresponding history. The older Mazumdar2014 import note is a database-provenance assertion, not evidence that it is the experimental source. Preserve it as history and record the later bibliographic distinction. Owner ingredient/name differences are not assessed or authorized for automatic propagation.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Preserve the existing owner's bibliographic-only citation and append-only history; reconcile generated bibliographic metadata through an explicitly restricted path. Do not run blanket regeneration that also transfers ingredient-name, grounding, concentration or preparation changes. Do not rewrite the original import event.
+
+- Exact DOI/PMID/title and declared non-operational scope are retained.
+- Preserve all existing operational fields unchanged; no ingredient, amount, stock, preparation, cultivation or experimental assertion is repaired or promoted.
+- Keep history append-only; metadata-only output must not automatically import other owner changes. Recheck structure for any separately authorized metadata change.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| target | data/merge_yaml/merged/CDM_LP.yaml; Complete exact file | context_only | Full generated target read for identity and structural scope; operational assertions unassessed. |
+| owner | data/normalized_yaml/bacterial/cdm_lp.yaml; Complete exact file | context_only | Full exact maintained contributor read; scientific changes are not automatically transferred. |
+| quantities | REVIEW_WORK/batch060/record09/quantity-inventory.json; Complete exact file | context_only | Private exact structural/provenance census; operational values are unchanged and unassessed. |
+| scalars | REVIEW_WORK/batch060/record09/field-census.json; Complete exact file | context_only | Private exact structural/provenance census; operational values are unchanged and unassessed. |
+| groundings | REVIEW_WORK/batch060/record09/grounding-inventory.json; Complete exact file | context_only | Private exact structural/provenance census; operational values are unchanged and unassessed. |
+| history | REVIEW_WORK/batch060/record09/history-inventory.json; Complete exact file | context_only | Private exact structural/provenance census; operational values are unchanged and unassessed. |
+| old-reports | REVIEW_WORK/batch060/record09/historical-report-scope.json; Complete exact file | context_only | Private exact structural/provenance census; operational values are unchanged and unassessed. |
+| numeric | REVIEW_WORK/batch060/record09/numeric-field-census.json; Complete exact file | context_only | Private exact structural/provenance census; operational values are unchanged and unassessed. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact matching rows in private grounding inventory | context_only | Packaged current exact ID rows only; no chemical correctness certification. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete metadata | context_only | Snapshot version,9077 rows and checksum verified. |
+| writer-merger | src/culturemech/merge/merger.py; merge_group | context_only | Current singleton merge copies its maintained owner. A blanket regeneration could also transfer operational changes; this review authorizes no such transfer. |
+| writer-formulation | src/culturemech/merge/formulation.py; Complete file | context_only | Current conservative merge requires scientific-field equality for multi-record consolidation; no ingredient-only equivalence inference. |
+| writer-mediadb | src/culturemech/import/mediadb_importer.py; _infer_category, _create_notes, _create_curation_history | context_only | Current category fallback is bacterial and import history names the MediaDB publication generically. These current code observations do not establish the original execution or make the database paper the experiment source. |
+| writer-leading | scripts/fix_mediadb_leading_compounds.py; media_term_id, apply_correction | context_only | Current guarded leading-name correction checks exact source ID and existing fields, then appends history. Its operational correction is recorded as an existing owner difference and not assessed or reapplied. |
+| writer-names | scripts/repair_mediadb_names.py; medium_id, resolve, main | context_only | Current source-specific name repair uses exact medium membership and ambiguity guards. No source dump was acquired and no ingredient repair is proposed here. |
+| pmid9988320 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&amp;id=9988320&amp;retmode=json; Exact bibliographic title/authors/year/DOI fields | supports | Bibliographic title/authors/year/DOI only. No operational recipe or experiment assessment for restricted08/09. |
+| crossref09 | https://api.crossref.org/works/10.4269/ajtmh.1999.60.41; Exact bibliographic title/authors/year/DOI fields | supports | DOI bibliographic registration only; any abstract text is unassessed and no full paper/Methods request is made. |
+| tax5658 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=5658&amp;retmode=xml; Taxon5658 ScientificName/Rank/Lineage; genus only | supports | Genus-level Leishmania taxonomy identity only; not a strain or growth assertion. |
+| bibliography | REVIEW_WORK/batch060/record09/bibliographic-identity.json; Complete exact file | context_only | Exact primary bibliographic metadata correspondence, no operational claims. |
+| check-schema | REVIEW_WORK/batch060/record09/schema-result.json | supports | Actual once-only canonical diagnostic, full argv/time/stdout/stderr. Reference count zero does not authenticate bibliography or ingredients. |
+| check-strict | REVIEW_WORK/batch060/record09/strict-result.json | supports | Actual once-only canonical diagnostic, full argv/time/stdout/stderr. Reference count zero does not authenticate bibliography or ingredients. |
+| check-terms | REVIEW_WORK/batch060/record09/terms-result.json | supports | Actual once-only canonical diagnostic, full argv/time/stdout/stderr. Reference count zero does not authenticate bibliography or ingredients. |
+| check-references | REVIEW_WORK/batch060/record09/references-result.json | supports | Actual once-only canonical diagnostic, full argv/time/stdout/stderr. Reference count zero does not authenticate bibliography or ingredients. |
+
+## Limits And Additional Notes
+
+- This is an explicitly partial non-operational review (scientific_review:false). All source recipe, quantity, chemical form, stock, preparation, incubation and experiment assertions remain unchanged and unassessed.
+- Full selected target/owner bytes and histories were read; prior operational report tables and recommendations were deliberately excluded from assessment. Historical reports and old command claims are derivative provenance, not fresh execution or recovered source events.
+- Fresh PubMed ESummary and Crossref were used only for bibliographic metadata. No full article/Methods, operational provider recipe or ingredient-repair source was requested. Metadata identity alone cannot authenticate an imported formulation.
+- The exact packaged MIM snapshot is 6643131b0f12ab40b66f98135245fca04027e0e9. The structural census does not certify supplied forms or legacy identifier validity; no coverage score is presented as scientific accuracy.
+- Native reference checks examined zero references. Source/input hashes and complete diagnostic streams are retained; no formal validate/save, recipe edits, Git mutation or publication was performed.
+- Ignored-inclusive filename search of the entire current batch060 checkout found neither the owner-named PMID9988320 XML/Markdown and taxonomy archives nor media_database.07Oct2015.sql. This is a local archive limit, not a claim of external absence; the old source-to-owner join was not independently recovered. Current bibliographic metadata does not authenticate historical chemical repairs.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T075328Z-culturemech-007240-nonoperational-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Non-operational review: CDM/LP'
+started_at: '2026-10-28T07:45:16.427005Z'
+finished_at: '2026-10-28T07:53:28.379016Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Independent read-only assessment of exact target/owner provenance,
+    current bibliographic authorities and original diagnostics; operational scientific
+    assertions excluded.
+skill: review-yaml-record
+completion: partial
+verdict: needs_curation
+scientific_review: false
+summary: Partial non-operational bibliography, identity, provenance and structural
+  review. The generated CDM/LP record omits the owner's explicit bibliographic-only
+  update; no operational owner repairs are endorsed.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CDM_LP.yaml
+    sha256: 3a5389176bbaabaed1735bc43d09c2a67833e022e14fe482e8e5eb4bd0293173
+    role: target
+  - path: data/normalized_yaml/bacterial/cdm_lp.yaml
+    sha256: 880d388577afcbf670bc39af93fce2fdaa898dff0fa89c0c1d386aa04c822c31
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CDM_LP.md
+    sha256: cc0590a902598eaa2d1a629bde26b3e99f3b0c58d95e18ffdda72217455169a5
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cdm_lp.md
+    sha256: f98b3cf5de1a42d159952376e4c2f8a663ee207a6a11eda50cb7e7c6e201b449
+    role: context
+  - path: reports/yaml_record_review/20260922T063108Z-CDM_LP.md
+    sha256: 15053b04e2a60659dae9990bf93ba98adad6a679a4f62f19180ed94d66f0d623
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_kg_microbe_matches.py
+    sha256: 61351f99ef2cb0cef03e74ad92d21dcf3b38df77a06602bdac814974e7728eeb
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/fix_mediadb_leading_compounds.py
+    sha256: 2b3b6adfdb298b51b6d87a30151b4f530ac5cd1726fb3763ce7c9fe07cfec729
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/promote_komodo_volume_candidates.py
+    sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/remove_invalid_chebi_ids.py
+    sha256: a6c2f7577812081230fd5fe008182c09eace4ef7818857f8026ec8d5e0b760e0
+    role: context
+  - path: scripts/repair_mediadb_names.py
+    sha256: 56ad322b70927ac6dff2de12c63d7bfc640d72a6c2521b55293a788ac3cca4c5
+    role: context
+  - path: scripts/repair_mediadive_jcm_structure.py
+    sha256: 5bff4c2d1900051bdea1b8e0f655049147c85cc9c61da4c348a6d60a8d0fd509
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Non-operational identity/bibliography/provenance/structure only; existing
+    operational data remain unassessed.
+  selection: Authoritative batch060 selection index 09
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007240
+targets:
+- target_id: CultureMech:007240
+  path: data/merge_yaml/merged/CDM_LP.yaml
+  label: cdm_lp
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cdm_lp.yaml
+    role: maintained source
+  ownership_note: Exact declared maintained contributors resolved against stable identity;
+    stocks and other source variants remain scoped comparisons.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit0; no formal review validation/save run by this author.
+  target_ids:
+  - CultureMech:007240
+  command: just validate-schema data/merge_yaml/merged/CDM_LP.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit0; no formal review validation/save run by this author.
+  target_ids:
+  - CultureMech:007240
+  command: just validate-strict data/merge_yaml/merged/CDM_LP.yaml --out REVIEW_WORK/batch060/record09/strict.tsv
+    --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit0; no formal review validation/save run by this author.
+  target_ids:
+  - CultureMech:007240
+  command: just validate-terms data/merge_yaml/merged/CDM_LP.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit0; no formal review validation/save run by this author.
+  target_ids:
+  - CultureMech:007240
+  command: just validate-references data/merge_yaml/merged/CDM_LP.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/CDM_LP.yaml
+  locator: Complete exact file
+  accessed_at: '2026-10-28T07:53:28.377518Z'
+  support: context_only
+  summary: Full generated target read for identity and structural scope; operational
+    assertions unassessed.
+  snapshot_sha256: 3a5389176bbaabaed1735bc43d09c2a67833e022e14fe482e8e5eb4bd0293173
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/cdm_lp.yaml
+  locator: Complete exact file
+  accessed_at: '2026-10-28T07:53:28.377555Z'
+  support: context_only
+  summary: Full exact maintained contributor read; scientific changes are not automatically
+    transferred.
+  snapshot_sha256: 880d388577afcbf670bc39af93fce2fdaa898dff0fa89c0c1d386aa04c822c31
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch060/record09/quantity-inventory.json
+  locator: Complete exact file
+  accessed_at: '2026-10-28T07:53:28.377586Z'
+  support: context_only
+  summary: Private exact structural/provenance census; operational values are unchanged
+    and unassessed.
+  snapshot_sha256: 4c3074cac56a3dfd0fab6028c3b2ed35c401ff4cc3aea71a286cb23410157e03
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch060/record09/field-census.json
+  locator: Complete exact file
+  accessed_at: '2026-10-28T07:53:28.377632Z'
+  support: context_only
+  summary: Private exact structural/provenance census; operational values are unchanged
+    and unassessed.
+  snapshot_sha256: 74aa9d3c10153bf8f5ea1c86d952125fc00d228731c93dfe7a1d5b183454b4af
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch060/record09/grounding-inventory.json
+  locator: Complete exact file
+  accessed_at: '2026-10-28T07:53:28.377699Z'
+  support: context_only
+  summary: Private exact structural/provenance census; operational values are unchanged
+    and unassessed.
+  snapshot_sha256: 1360bc6e7b0ca3fa2f67f7269f2047624606117ceb418fa4a8eb6f7307aac65f
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch060/record09/history-inventory.json
+  locator: Complete exact file
+  accessed_at: '2026-10-28T07:53:28.377823Z'
+  support: context_only
+  summary: Private exact structural/provenance census; operational values are unchanged
+    and unassessed.
+  snapshot_sha256: 19c28c9802f1f0704989cdcd056b5acbd0e46f2b84f5a6bdccc99c5615f4c1fc
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch060/record09/historical-report-scope.json
+  locator: Complete exact file
+  accessed_at: '2026-10-28T07:53:28.377843Z'
+  support: context_only
+  summary: Private exact structural/provenance census; operational values are unchanged
+    and unassessed.
+  snapshot_sha256: 82c41326fd35357020e60910ffe97d502ca442bbaab64f57de5097496230faba
+- evidence_id: numeric
+  kind: record_content
+  reference: REVIEW_WORK/batch060/record09/numeric-field-census.json
+  locator: Complete exact file
+  accessed_at: '2026-10-28T07:53:28.377860Z'
+  support: context_only
+  summary: Private exact structural/provenance census; operational values are unchanged
+    and unassessed.
+  snapshot_sha256: 9fc48d8fadbfb364bb7a59f71381b7661edcbbf98097af569f01e5c8fea54468
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact matching rows in private grounding inventory
+  accessed_at: '2026-10-28T07:53:28.377908Z'
+  support: context_only
+  summary: Packaged current exact ID rows only; no chemical correctness certification.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete metadata
+  accessed_at: '2026-10-28T07:53:28.378205Z'
+  support: context_only
+  summary: Snapshot version,9077 rows and checksum verified.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T07:53:28.378225Z'
+  support: context_only
+  summary: Current singleton merge copies its maintained owner. A blanket regeneration
+    could also transfer operational changes; this review authorizes no such transfer.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Complete file
+  accessed_at: '2026-10-28T07:53:28.378252Z'
+  support: context_only
+  summary: Current conservative merge requires scientific-field equality for multi-record
+    consolidation; no ingredient-only equivalence inference.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-mediadb
+  kind: record_content
+  reference: src/culturemech/import/mediadb_importer.py
+  locator: _infer_category, _create_notes, _create_curation_history
+  accessed_at: '2026-10-28T07:53:28.378271Z'
+  support: context_only
+  summary: Current category fallback is bacterial and import history names the MediaDB
+    publication generically. These current code observations do not establish the
+    original execution or make the database paper the experiment source.
+  snapshot_sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+- evidence_id: writer-leading
+  kind: record_content
+  reference: scripts/fix_mediadb_leading_compounds.py
+  locator: media_term_id, apply_correction
+  accessed_at: '2026-10-28T07:53:28.378296Z'
+  support: context_only
+  summary: Current guarded leading-name correction checks exact source ID and existing
+    fields, then appends history. Its operational correction is recorded as an existing
+    owner difference and not assessed or reapplied.
+  snapshot_sha256: 2b3b6adfdb298b51b6d87a30151b4f530ac5cd1726fb3763ce7c9fe07cfec729
+- evidence_id: writer-names
+  kind: record_content
+  reference: scripts/repair_mediadb_names.py
+  locator: medium_id, resolve, main
+  accessed_at: '2026-10-28T07:53:28.378314Z'
+  support: context_only
+  summary: Current source-specific name repair uses exact medium membership and ambiguity
+    guards. No source dump was acquired and no ingredient repair is proposed here.
+  snapshot_sha256: 56ad322b70927ac6dff2de12c63d7bfc640d72a6c2521b55293a788ac3cca4c5
+- evidence_id: pmid9988320
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=9988320&retmode=json
+  locator: Exact bibliographic title/authors/year/DOI fields
+  accessed_at: '2026-10-28T07:45:40.852932Z'
+  support: supports
+  summary: Bibliographic title/authors/year/DOI only. No operational recipe or experiment
+    assessment for restricted08/09.
+  snapshot_sha256: dd2d4c114ed93a4328e3c58c6f6740f2844fae37aa36fa413a1eb321047eac9c
+- evidence_id: crossref09
+  kind: authority
+  reference: https://api.crossref.org/works/10.4269/ajtmh.1999.60.41
+  locator: Exact bibliographic title/authors/year/DOI fields
+  accessed_at: '2026-10-28T07:45:41.016023Z'
+  support: supports
+  summary: DOI bibliographic registration only; any abstract text is unassessed and
+    no full paper/Methods request is made.
+  snapshot_sha256: 98d7c9dccc103b7b0c76a6f75fd36e1a9646c0875cdc62d8da0bd69c2bd5a02a
+- evidence_id: tax5658
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5658&retmode=xml
+  locator: Taxon5658 ScientificName/Rank/Lineage; genus only
+  accessed_at: '2026-10-28T07:45:41.169249Z'
+  support: supports
+  summary: Genus-level Leishmania taxonomy identity only; not a strain or growth assertion.
+  snapshot_sha256: 00f303cbdcf9ce5a2f673b7c50d71841cc5a625bbd60690cf5038e0c125ba201
+- evidence_id: bibliography
+  kind: record_content
+  reference: REVIEW_WORK/batch060/record09/bibliographic-identity.json
+  locator: Complete exact file
+  accessed_at: '2026-10-28T07:53:28.378680Z'
+  support: context_only
+  summary: Exact primary bibliographic metadata correspondence, no operational claims.
+  snapshot_sha256: c621b2cc44c6687864e3b691989412de9bda947da765e8026cfc2162da813b9a
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch060/record09/schema-result.json
+  accessed_at: '2026-10-28T07:45:17.473320Z'
+  support: supports
+  summary: Actual once-only canonical diagnostic, full argv/time/stdout/stderr. Reference
+    count zero does not authenticate bibliography or ingredients.
+  snapshot_sha256: a7b77165d17df81251473141ae4edace2fe189e31dd81d25900be6b35d2eafb6
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch060/record09/strict-result.json
+  accessed_at: '2026-10-28T07:45:18.412591Z'
+  support: supports
+  summary: Actual once-only canonical diagnostic, full argv/time/stdout/stderr. Reference
+    count zero does not authenticate bibliography or ingredients.
+  snapshot_sha256: d1a317240debbbcb4d90150557e97c91ee58ebc6159fc0fcdbc12bf3b3d88018
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch060/record09/terms-result.json
+  accessed_at: '2026-10-28T07:45:19.431999Z'
+  support: supports
+  summary: Actual once-only canonical diagnostic, full argv/time/stdout/stderr. Reference
+    count zero does not authenticate bibliography or ingredients.
+  snapshot_sha256: 172b79005e9740d183994984007e516cfbd8ee00b1c74305ef27348c95d5923d
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch060/record09/references-result.json
+  accessed_at: '2026-10-28T07:45:20.238667Z'
+  support: supports
+  summary: Actual once-only canonical diagnostic, full argv/time/stdout/stderr. Reference
+    count zero does not authenticate bibliography or ingredients.
+  snapshot_sha256: b06354f8f9e7b485858b62f0c2ba2fc661d0643819ba57dda3af783fb129f666
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact record and bibliographic identity
+  outcome: supported
+  summary: The selected stable ID and maintained contributor agree; fresh bibliographic
+    metadata verifies the named publication only. No organism-specific growth or exact
+    formulation equivalence is inferred.
+  target_ids:
+  - CultureMech:007240
+  evidence_ids:
+  - target
+  - owner
+  - bibliography
+- assessment_id: provenance
+  area: provenance
+  topic: Current and historical citation boundaries
+  outcome: concern
+  summary: The owner's2026-10-14 bibliographic-only addition is credited and fresh
+    title/DOI/author/year metadata agree. Earlier owner-only representation repairs
+    and named repair writers are recorded as provenance without chemical reassessment
+    or recommendation. Three historical report headers and source-attribution statements
+    were read; older category/species and recipe conclusions are not adopted. No MediaDB33
+    recipe/export or full paper was requested.
+  target_ids:
+  - CultureMech:007240
+  evidence_ids:
+  - history
+  - old-reports
+  - bibliography
+  - target
+  - owner
+- assessment_id: scope
+  area: scope
+  topic: Non-operational review boundary
+  outcome: not_applicable
+  summary: This partial review covers bibliography, identity, provenance and record-level
+    structure only. Existing formulation, quantity, stock, supplied form, preparation,
+    culture conditions, infectivity and toxin/growth claims are neither assessed nor
+    corrected.
+  target_ids:
+  - CultureMech:007240
+  evidence_ids:
+  - bibliography
+  - target
+- assessment_id: quantity
+  area: quantity
+  topic: Unchanged private quantity census
+  outcome: not_applicable
+  summary: 128 existing concentration fields across target and owner are privately
+    inventoried unchanged and marked not_assessed. No values, calculations, source-derived
+    doses or operational corrections appear in this review.
+  target_ids:
+  - CultureMech:007240
+  evidence_ids:
+  - quantities
+  details: Private structural census only; excluded operational data are not reproduced
+    or certified.
+- assessment_id: grounding
+  area: grounding
+  topic: Structural identifier and MIM census
+  outcome: unknown
+  summary: Every existing ID slot is preserved with exact packaged current MIM row
+    membership or bounded absence. No fresh ingredient ontology/form evaluation was
+    performed for this restricted record; native term success and current MIM membership
+    do not certify chemical identity or an operational recipe.
+  target_ids:
+  - CultureMech:007240
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+  - check-terms
+- assessment_id: schema
+  area: schema
+  topic: Canonical structure diagnostics
+  outcome: supported
+  summary: All four canonical diagnostics passed once with complete original streams.
+    Strict had zero errors and references performed zero checks; these results are
+    independent of excluded scientific claims.
+  target_ids:
+  - CultureMech:007240
+  evidence_ids:
+  - check-schema
+  - check-strict
+  - check-terms
+  - check-references
+- assessment_id: taxonomy
+  area: scope
+  topic: Bibliographic taxonomy and filing
+  outcome: unknown
+  summary: NCBITaxon5658 resolves to Leishmania at genus rank in Eukaryota. That verifies
+    the owner's title-level genus note only; no species, strain, target_organisms,
+    growth relationship or new recipe category is assigned. The bacterial filing is
+    not certified by the name-based importer default.
+  target_ids:
+  - CultureMech:007240
+  evidence_ids:
+  - tax5658
+  - owner
+  - writer-mediadb
+findings:
+- finding_id: f1
+  issue_key: culturemech-007240-generated-bibliography-staleness
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated target omits the owner's scoped bibliographic update
+  description: The maintained MEDIADB33 owner has a2026-10-14 PMID9988320 citation
+    with verified Merlen1999 metadata and explicit bibliographic-only Leishmania genus
+    scope; the generated target omits that reference and its corresponding history.
+    The older Mazumdar2014 import note is a database-provenance assertion, not evidence
+    that it is the experimental source. Preserve it as history and record the later
+    bibliographic distinction. Owner ingredient/name differences are not assessed
+    or authorized for automatic propagation.
+  field_paths:
+  - references
+  - curation_history
+  target_ids:
+  - CultureMech:007240
+  evidence_ids:
+  - target
+  - owner
+  - bibliography
+  - pmid9988320
+  - crossref09
+  - writer-mediadb
+  - writer-merger
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cdm_lp.yaml
+    role: maintained source
+  rule_id: review-yaml-record/provenance
+  native_severity: P2
+  normalization_reason: Material source-provenance omission with generated staleness;
+    no operational scientific defect is adjudicated.
+actions:
+- action_id: action1
+  description: Preserve the existing owner's bibliographic-only citation and append-only
+    history; reconcile generated bibliographic metadata through an explicitly restricted
+    path. Do not run blanket regeneration that also transfers ingredient-name, grounding,
+    concentration or preparation changes. Do not rewrite the original import event.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007240
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cdm_lp.yaml
+    role: maintained source
+  acceptance_checks:
+  - Exact DOI/PMID/title and declared non-operational scope are retained.
+  - Preserve all existing operational fields unchanged; no ingredient, amount, stock,
+    preparation, cultivation or experimental assertion is repaired or promoted.
+  - Keep history append-only; metadata-only output must not automatically import other
+    owner changes. Recheck structure for any separately authorized metadata change.
+  generator: Explicitly scoped metadata-only curation; no automatic whole-recipe regeneration
+limitations:
+- This is an explicitly partial non-operational review (scientific_review:false).
+  All source recipe, quantity, chemical form, stock, preparation, incubation and experiment
+  assertions remain unchanged and unassessed.
+- Full selected target/owner bytes and histories were read; prior operational report
+  tables and recommendations were deliberately excluded from assessment. Historical
+  reports and old command claims are derivative provenance, not fresh execution or
+  recovered source events.
+- Fresh PubMed ESummary and Crossref were used only for bibliographic metadata. No
+  full article/Methods, operational provider recipe or ingredient-repair source was
+  requested. Metadata identity alone cannot authenticate an imported formulation.
+- The exact packaged MIM snapshot is 6643131b0f12ab40b66f98135245fca04027e0e9. The
+  structural census does not certify supplied forms or legacy identifier validity;
+  no coverage score is presented as scientific accuracy.
+- Native reference checks examined zero references. Source/input hashes and complete
+  diagnostic streams are retained; no formal validate/save, recipe edits, Git mutation
+  or publication was performed.
+- Ignored-inclusive filename search of the entire current batch060 checkout found
+  neither the owner-named PMID9988320 XML/Markdown and taxonomy archives nor media_database.07Oct2015.sql.
+  This is a local archive limit, not a claim of external absence; the old source-to-owner
+  join was not independently recovered. Current bibliographic metadata does not authenticate
+  historical chemical repairs.
+```

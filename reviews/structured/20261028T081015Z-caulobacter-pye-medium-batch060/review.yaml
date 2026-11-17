@@ -1,0 +1,912 @@
+schema_version: 1.0.0
+review_id: 20261028T081015Z-caulobacter-pye-medium-batch060
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of caulobacter_pye_medium
+started_at: '2026-10-28T07:42:17.963302Z'
+finished_at: '2026-10-28T08:10:15.200759Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The valid DSM 1462 identity, peptone/yeast/agar rates, pH and existing preparation
+  are supported. The solid recipe nevertheless retains liquid-only supplemental calcium,
+  and its KG cross-match refers to the different DSM 49 C/10 formulation. Water input,
+  supplier detail and claim-level evidence remain incomplete.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml
+    sha256: a19e51cfd0ba9affe52c68c13acf3bb66c9d14a614fb3a2b1bcd6d0551350e05
+    role: target
+  - path: data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml
+    sha256: ab4fa492c8a94e59e8216fd44054052ad611c073f17744b8f3ff264a2e03cae6
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/caulobacter_pye_medium.yaml.md
+    sha256: 2c6d253e71fe995da96dee67888b1fa85a19b10949713e40ba491267315cfa9f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.md
+    sha256: 4004760b5381f709bc25246af7a6a9997da2fe0dc0c3fb42495d5bca125a402e
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caulobacter_pye_medium.md
+    sha256: 3bd265f047408a1702817302ce84bde730bd669341d40fc427aaac816819fc59
+    role: context
+  - path: reports/yaml_record_review/20260922T062459Z-CAULOBACTER_PYE_MEDIUM.md
+    sha256: 9e25ce502a71018838ecbf5dea90ea312138651641b6c8e2801541ad98eb181a
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/enrich_with_kg_microbe_matches.py
+    sha256: 61351f99ef2cb0cef03e74ad92d21dcf3b38df77a06602bdac814974e7728eeb
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch060 selection index 6 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000928
+targets:
+- target_id: CultureMech:000928
+  path: data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml
+  label: caulobacter_pye_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:000928
+  command: just validate-schema data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:000928
+  command: just validate-strict data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml
+    --workers 1 --out REVIEW_WORK/batch060/record06/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:000928
+  command: just validate-terms data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:000928
+  command: just validate-references data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T07:58:24.042023Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: a19e51cfd0ba9affe52c68c13acf3bb66c9d14a614fb3a2b1bcd6d0551350e05
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T07:58:24.042180Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: ab4fa492c8a94e59e8216fd44054052ad611c073f17744b8f3ff264a2e03cae6
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch060/record06/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T07:42:19.003041Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 7c7dc47c26804f222ecab9c1e756c1d307ecabdcdcfc2ea70b537873ec13b42a
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch060/record06/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T07:42:19.958871Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: cd24c1ac942341dac89afd7a698f08b66206d759ed21cdd8c795c212f9af173d
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch060/record06/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T07:42:21.005834Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 836771fca1844825bdd581bf37e8245b6e64efe4dcee69bf39d8f8cd7f23af4f
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch060/record06/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T07:42:21.676872Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: 389080153426cbcf1f269ac2c798b7c2bee20c4e004a12a816f38bbbca167375
+- evidence_id: dsmz1462
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1462.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T07:43:06.559951Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: 80e3039e10927cd0d93a550e94ab638801319668f81325e7959828d342bbc535
+- evidence_id: api1462
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1462
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T07:43:06.567592Z'
+  support: supports
+  summary: Complete current MediaDive API identity, primary recipe, separate stock
+    recipes and preparation read. Explicit g_l values are provider normalization;
+    solution volume metadata and listed water do not establish a measured final medium
+    volume. Supplied mass/form takes priority over unverified mmol_l conversions.
+  snapshot_sha256: e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af
+- evidence_id: dsmz49
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium49.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T07:43:06.676460Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: c23ec6413149cc4fdb7b850788b246d604ba99d6a98ecfad029de4688a4493c7
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T07:43:06.699463Z'
+  support: supports
+  summary: OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of
+    polysaccharides extracted from species of red algae. Its two main components are
+    agarose and agaropectin. Agarose is the component responsible for the high-strength
+    gelling properties of agar, while agaropectin provides the viscous properties.'];
+    formula None; mass None; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T07:43:06.951034Z'
+  support: supports
+  summary: OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O'];
+    mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch060/record06/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T07:58:24.043277Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: adeeb6dda2b29fde929962eb3cb6c94dbc13208ef801464748e0f67e4d9f8a53
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T062459Z-CAULOBACTER_PYE_MEDIUM.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T07:58:24.043744Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: 9e25ce502a71018838ecbf5dea90ea312138651641b6c8e2801541ad98eb181a
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/caulobacter_pye_medium.yaml.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T07:58:24.043766Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. Current api1462 raw bytes exactly match the cited historical SHA, and 7
+    quoted objects match both decoded locators and literal current raw substrings.
+    This authenticates the cited API payload and excerpts, not the reported historical
+    access time, execution or separate KOMODO catalogue/page.
+  snapshot_sha256: 2c6d253e71fe995da96dee67888b1fa85a19b10949713e40ba491267315cfa9f
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caulobacter_pye_medium.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T07:58:24.043785Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: 3bd265f047408a1702817302ce84bde730bd669341d40fc427aaac816819fc59
+- evidence_id: history3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T07:58:24.043801Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: 4004760b5381f709bc25246af7a6a9997da2fe0dc0c3fb42495d5bca125a402e
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch060/record06/historical-authentication.json
+  locator: reports
+  accessed_at: '2026-10-28T07:58:24.043820Z'
+  support: supports
+  summary: Exact report headers, source digest and every quoted API object reconciled;
+    all reports fully read with duplicate cells pooled. Current primary sources independently
+    govern scientific decisions.
+  snapshot_sha256: a1060d2fa413931b95e6fa5940c5600aa549908254e386863a1c22316f65ffc3
+- evidence_id: writer17
+  kind: record_content
+  reference: scripts/apply_mim_groundings.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T07:58:24.043839Z'
+  support: context_only
+  summary: target_slot preserves existing CHEBI assertions, groundable excludes conflicting
+    corpus opinions and apply_to_record fills only ungrounded names. This current
+    CHEBI-only writer does not automatically replace deprecated secondary MIM links
+    or authenticate quantities.
+  snapshot_sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+- evidence_id: writer18
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T07:58:24.043866Z'
+  support: context_only
+  summary: Current _parse_api_composition uses only the primary recipe and prefers
+    provider g_l; it excludes a fixed list of solvent names, which does not include
+    Tap water. The ml fallback maps to ML_PER_L, requiring an independent denominator
+    check. _parse_preparation_steps retains source prose but cannot enforce conditional
+    ingredient presence; historical execution is not inferred from present code.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer19
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T07:58:24.043882Z'
+  support: context_only
+  summary: Current formulation_content retains scientific fields, quantities, notes
+    and preparation; merge_formulation_evidence rejects incompatible scientific projections
+    and unions scoped evidence. Ingredient-set similarity does not prove scientific
+    equivalence.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer20
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T07:58:24.043900Z'
+  support: context_only
+  summary: Current group_formulations uses full formulation fingerprints for compatible
+    automatic merging; broader group_recipes discovers ingredient-set candidates only.
+    Neither grouping path substitutes for source verification.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer21
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T07:58:24.043918Z'
+  support: context_only
+  summary: Current merge_group returns a single owner with routing metadata, and calls
+    conservative merge_formulation_evidence for multiple owners. Current code supports
+    regenerating stale content after owner repair but does not authenticate old generated
+    outputs.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer22
+  kind: record_content
+  reference: scripts/enrich_with_kg_microbe_matches.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T07:58:24.043934Z'
+  support: context_only
+  summary: Current enrich_recipe_with_kg_match writes the first exact ID-set result
+    returned by KGMediaMatcher; it does not compare recipe concentrations, preparation,
+    ungrounded mixtures or source accessions. The current writer can overstate a partial
+    identity-set comparison, but this read does not prove the past match execution.
+  snapshot_sha256: 61351f99ef2cb0cef03e74ad92d21dcf3b38df77a06602bdac814974e7728eeb
+- evidence_id: writer23
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T07:58:24.043954Z'
+  support: context_only
+  summary: Current extract_recipe_ingredients collects asserted CHEBI/FOODON ingredient
+    identifiers. find_matches compares identifier sets using Jaccard similarity, and
+    find_exact_match returns the first exact identifier-set match. These operations
+    ignore concentrations, preparation and ingredients lacking the selected ontology
+    identifiers; an exact match therefore does not establish formulation or source
+    equivalence.
+  snapshot_sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+- evidence_id: inspection-addendum-inspect
+  kind: validation
+  reference: REVIEW_WORK/batch060/record06/inspection-addendum-kg-writer/inspect.json
+  locator: entire JSON
+  accessed_at: '2026-10-28T07:58:24.043976Z'
+  support: context_only
+  summary: Append-only native inspection adds the actual KG match writer and matcher;
+    original25 inputs and four canonical commands retained unchanged.
+  snapshot_sha256: 27449b18823a20518f4c85bde4dfed3f899c476f8c9fee59269a52b20797b120
+- evidence_id: inspection-addendum-lineage
+  kind: validation
+  reference: REVIEW_WORK/batch060/record06/inspection-addendum-kg-writer/lineage.json
+  locator: entire JSON
+  accessed_at: '2026-10-28T07:58:24.043999Z'
+  support: context_only
+  summary: Append-only native inspection adds the actual KG match writer and matcher;
+    original25 inputs and four canonical commands retained unchanged.
+  snapshot_sha256: 9eb815c41f3d7d1b1d848311313ec1b4767409480e20f16462706563b6315ea1
+- evidence_id: inspection-addendum-result
+  kind: validation
+  reference: REVIEW_WORK/batch060/record06/inspection-addendum-kg-writer/result.json
+  locator: entire JSON
+  accessed_at: '2026-10-28T07:58:24.044025Z'
+  support: context_only
+  summary: Append-only native inspection adds the actual KG match writer and matcher;
+    original25 inputs and four canonical commands retained unchanged.
+  snapshot_sha256: 2d5ff78b890d772fc7fc6aef1e7ffd2ed14c8c20732625e511922e5a232b2c5f
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch060/record06/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T07:58:24.047637Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: 7a70eb6c6252edbc5205eb136b32cd1c937d11596ba41fe93a448d4481bb69d4
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Primary source versus secondary cross-match
+  outcome: concern
+  summary: DSM 1462 is the exact valid primary identity. DSM 49 C/10 is a different
+    formula and cannot authenticate the current external match as whole-medium equivalence.
+    The record name is not organism-specific growth evidence.
+  target_ids:
+  - CultureMech:000928
+  evidence_ids:
+  - dsmz1462
+  - api1462
+  - dsmz49
+- assessment_id: a2
+  area: provenance
+  topic: Current import/match code and historical claims
+  outcome: concern
+  summary: 'All four complete reports and seven current-equal historical API objects
+    were read. The October blanket conflicts across all four ingredients were overbroad:
+    only supplemental calcium conflicts with the selected solid branch; peptone, yeast
+    and agar remain supported. Current MediaDive code retains the conditional source
+    prose and optional agar note but does not branch the ingredient list. Its distilled-water
+    omission and attribute loss explain current representation limits, not proof of
+    an old run. The current exact-formulation merger preserves the single owner; the
+    defect already exists there.'
+  target_ids:
+  - CultureMech:000928
+  evidence_ids:
+  - history-auth
+  - writer17
+  - writer18
+  - writer19
+  - writer20
+  - writer21
+  - writer22
+  - writer23
+- assessment_id: a3
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 8 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:000928
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:000928",
+    "selected_concentration_field_count": 8, "selected_concentration_fields_covered":
+    8, "decisions": [{"decision_id": "q1", "subject": "Peptone", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml", "field_path": "ingredients[0].concentration",
+    "original": {"value": "2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe in liquid and
+    solid branches", "interpretation": "The primary lists 2 g and the current API
+    explicitly gives 2 g/L. Both selected rates agree; the calcium exception does
+    not invalidate peptone or yeast. Retain the provider basis separately from listed
+    water. No pure-compound or molar identity is assigned to peptone.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api1462", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1462", "source_raw_sha256": "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af",
+    "source_text_sha256": "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af",
+    "accessed_at": "2026-10-28T07:43:06.567592Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Peptone\",\n                        \"compound_id\":
+    1,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 3-3", "source_key": "dsmz1462", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1462.pdf",
+    "source_raw_sha256": "80e3039e10927cd0d93a550e94ab638801319668f81325e7959828d342bbc535",
+    "source_text_sha256": "23154643f918cbc92f5c1a9b2172f735305860b776d264ab13e30d9aac452c34",
+    "accessed_at": "2026-10-28T07:43:06.559951Z", "exact_source_quote": "Peptone                                                 2.00        g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q2", "subject":
+    "Yeast extract", "local_fields": [{"record_path": "data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe in liquid and
+    solid branches", "interpretation": "The primary lists 1 g and the current API
+    explicitly gives 1 g/L. Both selected rates agree; the calcium exception does
+    not invalidate peptone or yeast. Retain the provider basis separately from listed
+    water. The source Difco qualifier should be preserved; it does not change the
+    supported amount.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key":
+    "api1462", "reference": "https://mediadive.dsmz.de/rest/medium/1462", "source_raw_sha256":
+    "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af", "source_text_sha256":
+    "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af", "accessed_at":
+    "2026-10-28T07:43:06.567592Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"attribute\": \"Difco\",\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "dsmz1462",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1462.pdf",
+    "source_raw_sha256": "80e3039e10927cd0d93a550e94ab638801319668f81325e7959828d342bbc535",
+    "source_text_sha256": "23154643f918cbc92f5c1a9b2172f735305860b776d264ab13e30d9aac452c34",
+    "accessed_at": "2026-10-28T07:43:06.559951Z", "exact_source_quote": "Yeast extract
+    (Difco)                                   1.00        g", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q3", "subject": "Calcium chloride
+    dihydrate", "local_fields": [{"record_path": "data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.07", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.07", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "liquid formulation only; excluded
+    from agar branch", "interpretation": "The source table and API support0.07 g batch
+    mass and declared0.07 g/L for the calcium-containing liquid formulation. Both
+    selected records are SOLID_AGAR with 12 g/L agar, while the same primary explicitly
+    says not to add supplemental calcium for agar media. Preserve the valid liquid
+    amount as a distinct branch; its unconditional presence in this solid recipe is
+    contradicted. The dihydrate CHEBI:86158 remains correct.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[2]", "source_key": "api1462", "reference": "https://mediadive.dsmz.de/rest/medium/1462",
+    "source_raw_sha256": "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af",
+    "source_text_sha256": "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af",
+    "accessed_at": "2026-10-28T07:43:06.567592Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.07,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\":
+    0.476142,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsmz1462",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1462.pdf",
+    "source_raw_sha256": "80e3039e10927cd0d93a550e94ab638801319668f81325e7959828d342bbc535",
+    "source_text_sha256": "23154643f918cbc92f5c1a9b2172f735305860b776d264ab13e30d9aac452c34",
+    "accessed_at": "2026-10-28T07:43:06.559951Z", "exact_source_quote": "CaCl2 x 2
+    H2O                                           0.07        g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].steps[0]", "source_key":
+    "api1462", "reference": "https://mediadive.dsmz.de/rest/medium/1462", "source_raw_sha256":
+    "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af", "source_text_sha256":
+    "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af", "accessed_at":
+    "2026-10-28T07:43:06.567592Z", "exact_source_quote": "{\n                        \"step\":
+    \"Add all the components together, except calcium chloride which is added from
+    a sterilized stock solution when the autoclaved medium has cooled. Agar is added
+    at a concentration of 12 g/l for solid media. For agar media, do not add supplemental
+    calcium.\"\n                    }", "quote_representation": "raw JSON object"}]},
+    {"decision_id": "q4", "subject": "Agar", "local_fields": [{"record_path": "data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "12", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "12", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "optional source branch; asserted
+    solid medium here", "interpretation": "The primary explicitly gives12 g/l for
+    solid media and the API marks agar optional. Existing12 G_PER_L matches the selected
+    solid state; the branch must exclude supplemental calcium. Do not infer a polymer
+    molarity or interpret optionality as permitting simultaneous incompatible branches.",
+    "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "api1462",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1462", "source_raw_sha256":
+    "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af", "source_text_sha256":
+    "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af", "accessed_at":
+    "2026-10-28T07:43:06.567592Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Agar\",\n                        \"compound_id\":
+    3,\n                        \"condition\": \"for solid medium\",\n                        \"amount\":
+    12,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    12,\n                        \"optional\": 1\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].steps[0]", "source_key":
+    "api1462", "reference": "https://mediadive.dsmz.de/rest/medium/1462", "source_raw_sha256":
+    "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af", "source_text_sha256":
+    "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af", "accessed_at":
+    "2026-10-28T07:43:06.567592Z", "exact_source_quote": "{\n                        \"step\":
+    \"Add all the components together, except calcium chloride which is added from
+    a sterilized stock solution when the autoclaved medium has cooled. Agar is added
+    at a concentration of 12 g/l for solid media. For agar media, do not add supplemental
+    calcium.\"\n                    }", "quote_representation": "raw JSON object"}]},
+    {"decision_id": "q5", "subject": "Final pH", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml", "field_path": "ph_value",
+    "original": 7.0}, {"record_path": "data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml",
+    "field_path": "ph_value", "original": 7.0}, {"record_path": "data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml",
+    "field_path": "preparation_steps[1].description", "original": "Adjust final pH
+    to 7.0."}, {"record_path": "data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml",
+    "field_path": "preparation_steps[1].description", "original": "Adjust final pH
+    to 7.0."}], "decision": "verified", "stage": "pH adjustment after formulation",
+    "interpretation": "Both selected pH 7.0 and the adjustment step match source step2
+    and API pH metadata. pH 7.0 does not establish a final-volume measurement.", "sources":
+    [{"locator": "$.data.solutions[0].steps[1]", "source_key": "api1462", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1462", "source_raw_sha256": "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af",
+    "source_text_sha256": "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af",
+    "accessed_at": "2026-10-28T07:43:06.567592Z", "exact_source_quote": "{\n                        \"step\":
+    \"Adjust final pH to 7.0.\"\n                    }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 12-12", "source_key": "dsmz1462",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1462.pdf",
+    "source_raw_sha256": "80e3039e10927cd0d93a550e94ab638801319668f81325e7959828d342bbc535",
+    "source_text_sha256": "23154643f918cbc92f5c1a9b2172f735305860b776d264ab13e30d9aac452c34",
+    "accessed_at": "2026-10-28T07:43:06.559951Z", "exact_source_quote": "2. Adjust
+    final pH to 7.0.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q6", "subject": "Existing sterilization, cooling and conditional preparation",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Add all the components
+    together, except calcium chloride which is added from a sterilized stock solution
+    when the autoclaved medium has cooled. Agar is added at a concentration of 12
+    g/l for solid media. For agar media, do not add supplemental calcium."}, {"record_path":
+    "data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml", "field_path": "preparation_steps[0].description",
+    "original": "Add all the components together, except calcium chloride which is
+    added from a sterilized stock solution when the autoclaved medium has cooled.
+    Agar is added at a concentration of 12 g/l for solid media. For agar media, do
+    not add supplemental calcium."}], "decision": "verified", "stage": "ordered main-medium
+    and later-stock stages", "interpretation": "The selected prose faithfully retains
+    main-medium autoclaving, later calcium addition from a sterilized stock after
+    cooling, and the explicit no-calcium agar exception. Credit that text. The ingredient
+    list must be made consistent with it; split the compound instruction into explicit
+    stages if curating, without inventing sterilization time, temperature or filter
+    method.", "sources": [{"locator": "$.data.solutions[0].steps[0]", "source_key":
+    "api1462", "reference": "https://mediadive.dsmz.de/rest/medium/1462", "source_raw_sha256":
+    "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af", "source_text_sha256":
+    "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af", "accessed_at":
+    "2026-10-28T07:43:06.567592Z", "exact_source_quote": "{\n                        \"step\":
+    \"Add all the components together, except calcium chloride which is added from
+    a sterilized stock solution when the autoclaved medium has cooled. Agar is added
+    at a concentration of 12 g/l for solid media. For agar media, do not add supplemental
+    calcium.\"\n                    }", "quote_representation": "raw JSON object"}]},
+    {"decision_id": "q7", "subject": "Calcium stock concentration and dose", "local_fields":
+    [], "decision": "unsupported", "stage": "separate liquid-branch stock addition",
+    "interpretation": "The source supplies a target calcium mass but no stock concentration,
+    preparation volume, delivered dose or sterilization method beyond sterilized.
+    Retain this unresolved stock boundary. Do not create a typical stock, infer its
+    dose, or apply it to the agar branch.", "sources": [{"locator": "$.data.solutions[0].steps[0]",
+    "source_key": "api1462", "reference": "https://mediadive.dsmz.de/rest/medium/1462",
+    "source_raw_sha256": "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af",
+    "source_text_sha256": "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af",
+    "accessed_at": "2026-10-28T07:43:06.567592Z", "exact_source_quote": "{\n                        \"step\":
+    \"Add all the components together, except calcium chloride which is added from
+    a sterilized stock solution when the autoclaved medium has cooled. Agar is added
+    at a concentration of 12 g/l for solid media. For agar media, do not add supplemental
+    calcium.\"\n                    }", "quote_representation": "raw JSON object"}]},
+    {"decision_id": "q8", "subject": "Distilled water", "local_fields": [], "decision":
+    "evidence_only", "stage": "absolute preparation solvent input", "interpretation":
+    "The source table gives1000 ml distilled water, absent from both selected records.
+    Preserve the absolute input in preparation context. The subsequent calcium-stock
+    solvent is unspecified; neither table water nor API volume1000 establishes independently
+    measured final volume.", "sources": [{"locator": "$.data.solutions[0].recipe[4]",
+    "source_key": "api1462", "reference": "https://mediadive.dsmz.de/rest/medium/1462",
+    "source_raw_sha256": "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af",
+    "source_text_sha256": "e4e7e264cc90e9e60652ca39960fa3f8ba6d93c8d8a8539ff29f7cb359a262af",
+    "accessed_at": "2026-10-28T07:43:06.567592Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsmz1462",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1462.pdf",
+    "source_raw_sha256": "80e3039e10927cd0d93a550e94ab638801319668f81325e7959828d342bbc535",
+    "source_text_sha256": "23154643f918cbc92f5c1a9b2172f735305860b776d264ab13e30d9aac452c34",
+    "accessed_at": "2026-10-28T07:43:06.559951Z", "exact_source_quote": "Distilled
+    water                                      1000.00       ml", "quote_representation":
+    "captured extracted text"}]}], "local_field_census_reference": "REVIEW_WORK/batch060/record06/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a4
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: supported
+  summary: 'data/merge_yaml/merged/CAULOBACTER_PYE_MEDIUM.yaml: primary 2/4, secondary
+    2/4; data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml: primary 2/4,
+    secondary 2/4. These are ingredient-instance linkage fractions, not accuracy scores.
+    Solution terms are audited separately. Every actually asserted CHEBI term is joined
+    to its exact current OLS object and packaged MIM CSV rows. 0 numeric legacy MediaIngredientMech
+    mentions occur across the complete selected documents, with exact locators in
+    the inventory; NNNNNN is a historical placeholder, not an ID. Complex commercial/product
+    components are not forced to pure-compound IDs.'
+  target_ids:
+  - CultureMech:000928
+  evidence_ids:
+  - grounding
+- assessment_id: a5
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and exact maintained owners reviewed. Dependencies
+    transfer only their explicitly named stock subsection; unrelated parent media
+    and source prescriptions are not growth evidence.
+  target_ids:
+  - CultureMech:000928
+  evidence_ids:
+  - local0
+- assessment_id: a6
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:000928
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-000928-calcium-and-agar-branch-conflation
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The solid formulation retains the liquid-only calcium addition
+  description: 'The correct source instruction is already preserved in both records:
+    agar media should not receive supplemental calcium. Nevertheless physical_state=SOLID_AGAR
+    and 12 G_PER_L agar coexist with unconditional0.07 G_PER_L calcium chloride dihydrate.
+    This is a branch conflict, not a wrong calcium salt or a blanket error in all
+    source rates.'
+  target_ids:
+  - CultureMech:000928
+  field_paths:
+  - physical_state
+  - ingredients[2]
+  - ingredients[3]
+  - preparation_steps[0].description
+  evidence_ids:
+  - dsmz1462
+  - api1462
+  - local0
+  - local1
+  rule_id: source-conditional-formulation-fidelity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-000928-kg-match-incompatible-source-recipe
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The KG match points to a different source formulation
+  description: The authoritative media term is DSM 1462 CAULOBACTER PYE. The asserted
+    kg_microbe_match points to DSM 49 C/10, whose current primary has Casitone3 g,
+    calcium chloride dihydrate1.36 g, agar15 g and pH 7.2. A shared mapped-ID subset
+    is not complete recipe identity. The current matcher ignores ungrounded ingredients
+    and quantities; this explains a risk but does not prove the historical match execution.
+  target_ids:
+  - CultureMech:000928
+  field_paths:
+  - kg_microbe_match
+  evidence_ids:
+  - dsmz1462
+  - dsmz49
+  - api1462
+  rule_id: external-medium-match-scope
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-000928-source-water-supplier-and-evidence-gaps
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Water input, supplier detail and claim-level evidence are missing
+  description: The main source water input and yeast-extract Difco qualifier are absent,
+    and neither selected layer attaches claim-level evidence. Existing preparation
+    and pH are retained and correct; they should be credited while making the conditional
+    ingredients consistent. No additional source pH, incubation, strain or sterilization
+    settings are available to fill by convention.
+  target_ids:
+  - CultureMech:000928
+  field_paths:
+  - preparation_steps
+  - ingredients[1].notes
+  - ingredients[*].evidence
+  - evidence
+  - references
+  evidence_ids:
+  - dsmz1462
+  - api1462
+  rule_id: source-detail-and-evidence-completeness
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Model the liquid and agar branches explicitly in the maintained owner,
+    retaining calcium only in its supported liquid branch and agar in the calcium-free
+    solid branch. Preserve correct peptone, yeast, pH and supplied hydrate. Do not
+    invent the unspecified calcium stock strength or dose.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000928
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Remove or explicitly reassess the unsupported cross-formulation association
+    in the maintained input using full source identity and formulation scope. Do not
+    substitute a guessed KG identifier; audit current matching criteria so a sparse
+    ontology-ID set cannot masquerade as full equivalence.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000928
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Add the absolute solvent input, source supplier detail and narrowly
+    scoped ingredient/preparation evidence to the maintained owner. Preserve the current
+    valid prose and append a verified curation event only when changes are made; do
+    not convert listed water into a mass or claimed measured final volume.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000928
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caulobacter_pye_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- The calcium stock concentration, dose and specific sterilization conditions are
+  not stated; no typical values are proposed.
+- The source water is an absolute preparation input, not a measured final-volume basis.
+  Provider rates are retained with their declared scope.
+- Current external KG graph contents and the historical matcher run were not reconstructed.
+  The two current official source recipes establish the cross-formulation mismatch;
+  no alternative KG ID is invented.
+- No organism, growth rate, incubation temperature or atmosphere is established by
+  the source recipe title.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
