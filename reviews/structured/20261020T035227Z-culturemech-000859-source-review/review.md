@@ -1,0 +1,1182 @@
+# Source and formulation review: 1_10_pygv_medium_modified (CultureMech:000859)
+
+- Review: 20261020T035227Z-culturemech-000859-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-19T23:41:10Z
+- Finished UTC: 2026-10-20T03:52:27Z
+- Reviewer: OpenAI Codex with delegated source and validator checks (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ1398 identity and local duplicate linkage resolve. Two mineral stocks remain flattened at stock strength; cobalamin remains a direct ingredient instead of belonging to the vitamin stock. Source water/resazurin context is incomplete, and a source heading is misrepresented as a preparation action. Completion is partial because three historical MIM links remain unverified.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Record 29 in Python lexicographic repository-relative path order of the initially uncovered merged corpus; Batch 003 selects ordinals 21-30 after the first two reserved batches; saved bundles are published locally in path order. On fresh origin/main at this batch base, scripts/record_review.py list validated 34 existing bundles and none listed this target path or ID. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 7c568537897ee4bba1b8e97f8172133c1572aec0.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000859 | data/merge_yaml/merged/1_10_pygv_medium_modified.yaml | generated | 1_10_pygv_medium_modified |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:000859 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:000859 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch003/029/strict.tsv |
+| validate-terms | passed | True | CultureMech:000859 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:000859 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:000859 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Historical MIM identifier resolution | unavailable | True | CultureMech:000859 | Three asserted historical MIM keys have no verified authoritative mapping in inspected sources. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:000859.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### DSMZ accession and local source duplicate
+
+identity: supported. Targets: CultureMech:000859.
+
+CultureMech:000859 identifies DSMZ1398. The declared duplicate exists with exact local composition and reciprocal parent. No name-only organism identity or independent growth evidence is inferred.
+
+### All direct and inline quantities and additions
+
+quantity: concern. Targets: CultureMech:000859.
+
+Correct small main masses and six correctly scoped vitamin amounts coexist with six flattened mineral amounts and misplaced cobalamin. Source dose/volume context is essential.
+
+ingredients[0] Trypticase1G_PER_L: verified source1g/main final1L.
+ingredients[1] yeast extract0.0005G_PER_L: verified source0.50mg; 0.50mg*0.001g/mg/1L=0.0005g/L. Do not replace with a typical larger dose.
+ingredients[2] glucose1G_PER_L: verified source1g/main final1L.
+ingredients[3] L-cysteine HCl0.0003G_PER_L: verified source0.30mg; unit conversion is correct.
+ingredients[4] resazurin0.0005G_PER_L: API-derived value; PDF instead specifies0.50mL of0.1% solution. Mass inference requires a percentage basis; preserve source stock attribute and addition volume rather than assert numerical error without that basis.
+ingredients[5] cobalamin0.1G_PER_L: stock-only value incorrectly placed as direct medium ingredient. Source places0.1g in vitamin stock; stock addition10mL is separate.
+ingredients[6] K2HPO4 6G_PER_L: source stock strength in S I or S II, not receiving-medium concentration. Each source mineral stock is added separately; preserve that boundary and provider stock-volume caveat.
+ingredients[7] KH2PO4 6G_PER_L: source stock strength in S I or S II, not receiving-medium concentration. Each source mineral stock is added separately; preserve that boundary and provider stock-volume caveat.
+ingredients[8] (NH4)2SO4 12G_PER_L: source stock strength in S I or S II, not receiving-medium concentration. Each source mineral stock is added separately; preserve that boundary and provider stock-volume caveat.
+ingredients[9] NaCl 12G_PER_L: source stock strength in S I or S II, not receiving-medium concentration. Each source mineral stock is added separately; preserve that boundary and provider stock-volume caveat.
+ingredients[10] MgSO4 x 7 H2O 1.2G_PER_L: source stock strength in S I or S II, not receiving-medium concentration. Each source mineral stock is added separately; preserve that boundary and provider stock-volume caveat.
+ingredients[11] CaCl2 x 2 H2O 1.2G_PER_L: source stock strength in S I or S II, not receiving-medium concentration. Each source mineral stock is added separately; preserve that boundary and provider stock-volume caveat.
+solutions[0].composition[0] Biotin 0.1G_PER_L: verified within source vitamin-stock scope using its provider1000mL basis; not direct medium concentration.
+solutions[0].composition[1] Thiamine-HCl x 2 H2O 0.5G_PER_L: verified within source vitamin-stock scope using its provider1000mL basis; not direct medium concentration.
+solutions[0].composition[2] p-Aminobenzoic acid 0.3G_PER_L: verified within source vitamin-stock scope using its provider1000mL basis; not direct medium concentration.
+solutions[0].composition[3] Pyridoxine 1.5G_PER_L: verified within source vitamin-stock scope using its provider1000mL basis; not direct medium concentration.
+solutions[0].composition[4] Riboflavin 0.5G_PER_L: verified within source vitamin-stock scope using its provider1000mL basis; not direct medium concentration.
+solutions[0].composition[5] Folic acid 0.5G_PER_L: verified within source vitamin-stock scope using its provider1000mL basis; not direct medium concentration.
+solutions[0].concentration10ML_PER_L: verified source10mL addition to final1000mL medium. Inline stock is incomplete by one component, not wholly unsupported.
+Source S I and S II additions are75mL each and absent as structured solution doses. Source main water is make-up to1000mL, not an extra1000mL added after stocks.
+Six inline vitamin amounts plus12 direct amounts and the one stock addition cover all19 stored quantity assertions.
+
+### Every asserted primary identity and historical link scope
+
+grounding: concern. Targets: CultureMech:000859.
+
+All17 primary identifiers across18 ingredient instances resolve; yeast extract is ungrounded. Supplied hydrates, L-cysteine hydrochloride and pyridoxine identity agree with source wording. Cobalamin remains unspecified rather than forced to cyanocobalamin. Primary linkage17/18(94.4%); secondary fields17/18, of which three are unresolved historical IDs. These are linkage counts, not accuracy. Generic resazurin wording does not independently specify a salt or percentage basis.
+
+### Source preparation and heading artifact
+
+representation: concern. Targets: CultureMech:000859.
+
+pH7.0 and main nitrogen/vessel/vitamin-addition paragraph are retained. Step3 SII is a source section heading, not a mixing instruction. Source does not give an autoclave cycle, so none is proposed. Source final water make-up and resazurin stock descriptor are not adequately represented.
+
+### Complex liquid medium and biological evidence
+
+scope: supported. Targets: CultureMech:000859.
+
+COMPLEX/UNDEFINED/LIQUID agrees with Trypticase and yeast extract formulation. Generic cultivation is not strain-growth evidence. No organism, yield or experimental growth outcome is asserted.
+
+### Maintained owners and partial nesting history
+
+ownership: supported. Targets: CultureMech:000859.
+
+Both owners share the12 direct ingredients and incomplete six-component vitamin stock. History reports moving six components, which matches current structure but does not establish scientifically complete nesting. Future fixes belong in normalized sources; no generator re-run or record-history promotion is authorized by this review.
+
+## Findings
+
+### f1: Two mineral stocks remain flattened at stock strength
+
+blocker / open / confirmed; issue key: culturemech-000859-mineral-stocks-flattened.
+
+Six direct mineral ingredients retain S I/S II stock concentrations, while the source specifies separate stock doses. This materially changes the encoded medium formulation.
+
+### f2: Cobalamin remains outside its vitamin stock
+
+major / open / confirmed; issue key: culturemech-000859-cobalamin-outside-vitamin-stock.
+
+Source vitamin stock has seven components. Inline stock contains six, while cobalamin remains a direct ingredient at the source stock strength. Existing stock dose cannot correct that separate direct quantity.
+
+### f3: Final-volume and resazurin stock context are lost
+
+major / open / confirmed; issue key: culturemech-000859-source-volume-context-missing.
+
+Source explicitly specifies water make-up to final volume and a resazurin solution strength plus addition volume. Target gives neither water make-up instruction nor resazurin stock descriptor, although it retains an API mass normalization with an implicit percentage assumption.
+
+### f4: Source section heading is represented as a mixing step
+
+minor / open / confirmed; issue key: culturemech-000859-heading-as-mix-step.
+
+The SII stock heading was imported as preparation step3 with action MIX. It states no operation.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore source mineral-stock boundaries and dose context in maintained owners during authorized curation. Verify referenced stock records independently; do not substitute stock concentration for receiving-medium concentration.
+
+- Compare maintained and regenerated formulations against exact source stock scope, dose and final-volume wording.
+- Run all four target validators and inspect evidence coverage.
+- After authorized regeneration run merge freshness and verification gates.
+
+### a2
+
+During authorized curation preserve cobalamin in its source vitamin-stock scope and remove the unsupported separate direct-medium assertion; keep the six already-supported stock components and verified stock dose.
+
+- Compare maintained and regenerated formulations against exact source stock scope, dose and final-volume wording.
+- Run all four target validators and inspect evidence coverage.
+- After authorized regeneration run merge freshness and verification gates.
+
+### a3
+
+Preserve exact source final-volume wording and resazurin stock descriptor/addition in maintained owners. Distinguish provider mass inference from literal source; do not guess percentage basis or change supported small nutrient masses.
+
+- Compare maintained and regenerated formulations against exact source stock scope, dose and final-volume wording.
+- Run all four target validators and inspect evidence coverage.
+- After authorized regeneration run merge freshness and verification gates.
+
+### a4
+
+Remove the spurious action during authorized curation and retain SII as the stock identity in appropriate context.
+
+- Compare maintained and regenerated formulations against exact source stock scope, dose and final-volume wording.
+- Run all four target validators and inspect evidence coverage.
+- After authorized regeneration run merge freshness and verification gates.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/1_10_pygv_medium_modified.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/1_10_pygv_medium_modified.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/1_10_pygv_medium_modified.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch003/029/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch003/029/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/1_10_pygv_medium_modified.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/1_10_pygv_medium_modified.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| dsmz | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1398.pdf; Page1 complete main formulation, preparation and stock sections | supports | DSMZ1398 separates S I, S II and a seven-component vitamin stock. Main recipe states stock additions and water make-up volume; small yeast and cysteine masses are explicit. Main preparation retains nitrogen atmosphere and separate filter-sterile vitamin addition. |
+| api | https://mediadive.dsmz.de/rest/medium/1398; $.data.medium and $.data.solutions | supports | Medium1398 resolves with main2834, vitamin2835, S I5698 and S II5699. Explicit stock boundaries and doses separate stock g_l from receiving-medium values. Main resazurin row retains0.1% and volume attribute, alongside provider-derived g_l. |
+| chebi-131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131527; OLS exact obo_id, label and description | supports | Resolved CHEBI:131527 to dipotassium hydrogen phosphate. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-132751 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:132751; OLS exact obo_id, label and description | supports | Resolved CHEBI:132751 to thiamine hydrochloride dihydrate. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956; OLS exact obo_id, label and description | supports | Resolved CHEBI:15956 to biotin. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-16709 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16709; OLS exact obo_id, label and description | supports | Resolved CHEBI:16709 to pyridoxine. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015; OLS exact obo_id, label and description | supports | Resolved CHEBI:17015 to riboflavin. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17234; OLS exact obo_id, label and description | supports | Resolved CHEBI:17234 to glucose. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710; OLS exact obo_id, label and description | supports | Resolved CHEBI:26710 to sodium chloride. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470; OLS exact obo_id, label and description | supports | Resolved CHEBI:27470 to folic acid. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-30411 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30411; OLS exact obo_id, label and description | supports | Resolved CHEBI:30411 to cobalamin. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753; OLS exact obo_id, label and description | supports | Resolved CHEBI:30753 to 4-aminobenzoic acid. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31795; OLS exact obo_id, label and description | supports | Resolved CHEBI:31795 to magnesium sulfate heptahydrate. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:62946; OLS exact obo_id, label and description | supports | Resolved CHEBI:62946 to ammonium sulfate. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036; OLS exact obo_id, label and description | supports | Resolved CHEBI:63036 to potassium dihydrogen phosphate. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158; OLS exact obo_id, label and description | supports | Resolved CHEBI:86158 to calcium chloride dihydrate. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806; OLS exact obo_id, label and description | supports | Resolved CHEBI:8806 to Resazurin. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| chebi-91247 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91247; OLS exact obo_id, label and description | supports | Resolved CHEBI:91247 to L-cysteine hydrochloride. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| micro-0000175 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?obo_id=MICRO:0000175; OLS exact obo_id, label and description | supports | Resolved MICRO:0000175 to Trypticase peptone. Supplied chemical forms were compared with source labels; identifier resolution alone does not establish correct quantity or legacy linkage. |
+| legacy | MediaIngredientMech legacy links; Whole-checkout occurrence search and packaged label-index lookup | unknown | Exact tokens000263,000223,000754 occur in151,218,3 files respectively, but have no authoritative mapping row in the packaged index. Repeated assertions do not resolve their historical identities. |
+| duplicate | data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml; Complete owner; identical ingredient and solution content, id and reciprocal parent | supports | CultureMech:004115 resolves to the stated path and links reciprocally to000859. All12 ingredients and the inline solution match target; history states DSMZ copying. Source-duplicate relation is supported as local provenance, not independent experimental evidence. |
+
+## Limits And Additional Notes
+
+- Historical MediaIngredientMech:000263,000223,000754 mappings were not resolved against an authoritative historical registry. Current ontology identity does not prove equivalence to those legacy keys.
+- Source main medium explicitly uses water make-up to1000mL. Stock recipes specify water additions; provider stock volumes are normalization conventions, not independent measured stock volumes.
+- Local duplicate equality does not verify every KOMODO historical annotation. Its owner-only aerobic flag and malformed historical timestamp are not promoted to target claims.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261020T035227Z-culturemech-000859-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1_10_pygv_medium_modified (CultureMech:000859)'
+started_at: '2026-10-19T23:41:10Z'
+finished_at: '2026-10-20T03:52:27Z'
+reviewer:
+  identity: OpenAI Codex with delegated source and validator checks
+  kind: agent
+  independence: independent
+  independence_basis: Review team did not author or edit the assessed recipe bytes;
+    findings were assessed against the frozen checkout and inspected source documents.
+    This is an agent review, not experimental verification.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ1398 identity and local duplicate linkage resolve. Two mineral stocks
+  remain flattened at stock strength; cobalamin remains a direct ingredient instead
+  of belonging to the vitamin stock. Source water/resazurin context is incomplete,
+  and a source heading is misrepresented as a preparation action. Completion is partial
+  because three historical MIM links remain unverified.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1_10_pygv_medium_modified.yaml
+    sha256: a86d1e2999f8b57a4a770ab6407e1c7bea6d8ccc608a57cc5a29257ead9d5119
+    role: target
+  - path: data/normalized_yaml/bacterial/100x_vitamin_solution_medium_1398.yaml
+    sha256: 2df0a0ea5d03ad703e9ea32baf671ecccb8eaf2158de647919de008811a719ca
+    role: context
+  - path: data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml
+    sha256: 2f62a57d805803f775446dea1427d8867e1881045f4fb1e55cf022c2bcaa586b
+    role: context
+  - path: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+    sha256: 879b0567f9014e98bf85848b6e19600d28858a58bc5e3e63f319d6a4fe093162
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_2834_Main_sol_1398.yaml
+    sha256: 50ce8c0f11ac8051ff4ded028360eb796076b9444eb25e8aa350c5b97c2893a2
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_2835_100x_Vitamin_solution.yaml
+    sha256: 5f82b97b189cc74bf8b69294ffd1a933a6140f0854c032e75976ae244b69113e
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5698_S_I.yaml
+    sha256: 7c7e176c22f10b313df7320adea91035b4abe6b9c6afa4f153f8e8838893eb17
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5699_S_II.yaml
+    sha256: 0aaf8ef4305995db2ad013f91d0a1d8c0291d897970e9ab8364248722763a4f6
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/fetch_mediadive_solution_volumes.py
+    sha256: 408cdfa3f5c446e8f9c32ac98d7ea8a3a36553b23c032f3b7551f6a1661fd39a
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/repair_rejected_peptone_groundings.py
+    sha256: 0369834a0e47fc95bace9faf2570600468e61c5087fe9ca20de708b855fc9fe0
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 29 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; Batch 003 selects ordinals 21-30 after the
+    first two reserved batches; saved bundles are published locally in path order.
+    On fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000859
+targets:
+- target_id: CultureMech:000859
+  path: data/merge_yaml/merged/1_10_pygv_medium_modified.yaml
+  label: 1_10_pygv_medium_modified
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1_10_pygv_medium_modified.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000859
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1_10_pygv_medium_modified.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch003/029/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch003/029/strict.tsv"
+  target_ids:
+  - CultureMech:000859
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1_10_pygv_medium_modified.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000859
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1_10_pygv_medium_modified.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000859
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000859
+- check_id: legacy-mim-registry
+  name: Historical MIM identifier resolution
+  required: true
+  status: unavailable
+  summary: Three asserted historical MIM keys have no verified authoritative mapping
+    in inspected sources.
+  target_ids:
+  - CultureMech:000859
+  evidence_ids:
+  - legacy
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1_10_pygv_medium_modified.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-20T03:52:27Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T03:52:27Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T03:52:27Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1_10_pygv_medium_modified.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:42:28.864143Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1_10_pygv_medium_modified.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch003/029/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:42:31.506275Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch003/029/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1_10_pygv_medium_modified.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:42:33.636912Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1_10_pygv_medium_modified.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:42:35.555610Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: dsmz
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1398.pdf
+  locator: Page1 complete main formulation, preparation and stock sections
+  accessed_at: '2026-10-19T23:37:54.541144Z'
+  support: supports
+  summary: DSMZ1398 separates S I, S II and a seven-component vitamin stock. Main
+    recipe states stock additions and water make-up volume; small yeast and cysteine
+    masses are explicit. Main preparation retains nitrogen atmosphere and separate
+    filter-sterile vitamin addition.
+  snapshot_sha256: 6198dc9ea5b9ad7b1cb99b395df812ce0a6bce487a797aabba684efb8180bfba
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1398
+  locator: $.data.medium and $.data.solutions
+  accessed_at: '2026-10-19T23:37:54.841831Z'
+  support: supports
+  summary: Medium1398 resolves with main2834, vitamin2835, S I5698 and S II5699. Explicit
+    stock boundaries and doses separate stock g_l from receiving-medium values. Main
+    resazurin row retains0.1% and volume attribute, alongside provider-derived g_l.
+  snapshot_sha256: cc5657d8f0c78d14e5d3da6eab0b24b650a243cb714abf9dcb48ce33375c3f53
+- evidence_id: chebi-131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131527
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:09.304344Z'
+  support: supports
+  summary: Resolved CHEBI:131527 to dipotassium hydrogen phosphate. Supplied chemical
+    forms were compared with source labels; identifier resolution alone does not establish
+    correct quantity or legacy linkage.
+- evidence_id: chebi-132751
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:132751
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:09.294072Z'
+  support: supports
+  summary: Resolved CHEBI:132751 to thiamine hydrochloride dihydrate. Supplied chemical
+    forms were compared with source labels; identifier resolution alone does not establish
+    correct quantity or legacy linkage.
+- evidence_id: chebi-15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:09.409478Z'
+  support: supports
+  summary: Resolved CHEBI:15956 to biotin. Supplied chemical forms were compared with
+    source labels; identifier resolution alone does not establish correct quantity
+    or legacy linkage.
+- evidence_id: chebi-16709
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16709
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:09.384683Z'
+  support: supports
+  summary: Resolved CHEBI:16709 to pyridoxine. Supplied chemical forms were compared
+    with source labels; identifier resolution alone does not establish correct quantity
+    or legacy linkage.
+- evidence_id: chebi-17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:10.061635Z'
+  support: supports
+  summary: Resolved CHEBI:17015 to riboflavin. Supplied chemical forms were compared
+    with source labels; identifier resolution alone does not establish correct quantity
+    or legacy linkage.
+- evidence_id: chebi-17234
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17234
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:09.952034Z'
+  support: supports
+  summary: Resolved CHEBI:17234 to glucose. Supplied chemical forms were compared
+    with source labels; identifier resolution alone does not establish correct quantity
+    or legacy linkage.
+- evidence_id: chebi-26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:10.029415Z'
+  support: supports
+  summary: Resolved CHEBI:26710 to sodium chloride. Supplied chemical forms were compared
+    with source labels; identifier resolution alone does not establish correct quantity
+    or legacy linkage.
+- evidence_id: chebi-27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:10.111862Z'
+  support: supports
+  summary: Resolved CHEBI:27470 to folic acid. Supplied chemical forms were compared
+    with source labels; identifier resolution alone does not establish correct quantity
+    or legacy linkage.
+- evidence_id: chebi-30411
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30411
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:10.567038Z'
+  support: supports
+  summary: Resolved CHEBI:30411 to cobalamin. Supplied chemical forms were compared
+    with source labels; identifier resolution alone does not establish correct quantity
+    or legacy linkage.
+- evidence_id: chebi-30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:10.702136Z'
+  support: supports
+  summary: Resolved CHEBI:30753 to 4-aminobenzoic acid. Supplied chemical forms were
+    compared with source labels; identifier resolution alone does not establish correct
+    quantity or legacy linkage.
+- evidence_id: chebi-31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31795
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:10.683862Z'
+  support: supports
+  summary: Resolved CHEBI:31795 to magnesium sulfate heptahydrate. Supplied chemical
+    forms were compared with source labels; identifier resolution alone does not establish
+    correct quantity or legacy linkage.
+- evidence_id: chebi-62946
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:62946
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:10.735545Z'
+  support: supports
+  summary: Resolved CHEBI:62946 to ammonium sulfate. Supplied chemical forms were
+    compared with source labels; identifier resolution alone does not establish correct
+    quantity or legacy linkage.
+- evidence_id: chebi-63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:11.194233Z'
+  support: supports
+  summary: Resolved CHEBI:63036 to potassium dihydrogen phosphate. Supplied chemical
+    forms were compared with source labels; identifier resolution alone does not establish
+    correct quantity or legacy linkage.
+- evidence_id: chebi-86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:11.309472Z'
+  support: supports
+  summary: Resolved CHEBI:86158 to calcium chloride dihydrate. Supplied chemical forms
+    were compared with source labels; identifier resolution alone does not establish
+    correct quantity or legacy linkage.
+- evidence_id: chebi-8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:11.318552Z'
+  support: supports
+  summary: Resolved CHEBI:8806 to Resazurin. Supplied chemical forms were compared
+    with source labels; identifier resolution alone does not establish correct quantity
+    or legacy linkage.
+- evidence_id: chebi-91247
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91247
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:11.363245Z'
+  support: supports
+  summary: Resolved CHEBI:91247 to L-cysteine hydrochloride. Supplied chemical forms
+    were compared with source labels; identifier resolution alone does not establish
+    correct quantity or legacy linkage.
+- evidence_id: micro-0000175
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?obo_id=MICRO:0000175
+  locator: OLS exact obo_id, label and description
+  accessed_at: '2026-10-20T03:51:11.839967Z'
+  support: supports
+  summary: Resolved MICRO:0000175 to Trypticase peptone. Supplied chemical forms were
+    compared with source labels; identifier resolution alone does not establish correct
+    quantity or legacy linkage.
+- evidence_id: legacy
+  kind: search
+  reference: MediaIngredientMech legacy links
+  locator: Whole-checkout occurrence search and packaged label-index lookup
+  accessed_at: '2026-10-20T03:51:22.456820Z'
+  support: unknown
+  summary: Exact tokens000263,000223,000754 occur in151,218,3 files respectively,
+    but have no authoritative mapping row in the packaged index. Repeated assertions
+    do not resolve their historical identities.
+  search_scope: rg --no-ignore --hidden -l -F for each complete legacy CURIE across
+    the isolated checkout, including ignored and hidden files, plus current packaged
+    label-index parsed lookup; not an exhaustive remote archive search.
+- evidence_id: duplicate
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+  locator: Complete owner; identical ingredient and solution content, id and reciprocal
+    parent
+  accessed_at: '2026-10-20T03:52:27Z'
+  support: supports
+  summary: CultureMech:004115 resolves to the stated path and links reciprocally to000859.
+    All12 ingredients and the inline solution match target; history states DSMZ copying.
+    Source-duplicate relation is supported as local provenance, not independent experimental
+    evidence.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000859
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: DSMZ accession and local source duplicate
+  outcome: supported
+  summary: CultureMech:000859 identifies DSMZ1398. The declared duplicate exists with
+    exact local composition and reciprocal parent. No name-only organism identity
+    or independent growth evidence is inferred.
+  target_ids:
+  - CultureMech:000859
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz
+  - api
+  - duplicate
+- assessment_id: quantities
+  area: quantity
+  topic: All direct and inline quantities and additions
+  outcome: concern
+  summary: Correct small main masses and six correctly scoped vitamin amounts coexist
+    with six flattened mineral amounts and misplaced cobalamin. Source dose/volume
+    context is essential.
+  target_ids:
+  - CultureMech:000859
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+  details: 'ingredients[0] Trypticase1G_PER_L: verified source1g/main final1L.
+
+    ingredients[1] yeast extract0.0005G_PER_L: verified source0.50mg; 0.50mg*0.001g/mg/1L=0.0005g/L.
+    Do not replace with a typical larger dose.
+
+    ingredients[2] glucose1G_PER_L: verified source1g/main final1L.
+
+    ingredients[3] L-cysteine HCl0.0003G_PER_L: verified source0.30mg; unit conversion
+    is correct.
+
+    ingredients[4] resazurin0.0005G_PER_L: API-derived value; PDF instead specifies0.50mL
+    of0.1% solution. Mass inference requires a percentage basis; preserve source stock
+    attribute and addition volume rather than assert numerical error without that
+    basis.
+
+    ingredients[5] cobalamin0.1G_PER_L: stock-only value incorrectly placed as direct
+    medium ingredient. Source places0.1g in vitamin stock; stock addition10mL is separate.
+
+    ingredients[6] K2HPO4 6G_PER_L: source stock strength in S I or S II, not receiving-medium
+    concentration. Each source mineral stock is added separately; preserve that boundary
+    and provider stock-volume caveat.
+
+    ingredients[7] KH2PO4 6G_PER_L: source stock strength in S I or S II, not receiving-medium
+    concentration. Each source mineral stock is added separately; preserve that boundary
+    and provider stock-volume caveat.
+
+    ingredients[8] (NH4)2SO4 12G_PER_L: source stock strength in S I or S II, not
+    receiving-medium concentration. Each source mineral stock is added separately;
+    preserve that boundary and provider stock-volume caveat.
+
+    ingredients[9] NaCl 12G_PER_L: source stock strength in S I or S II, not receiving-medium
+    concentration. Each source mineral stock is added separately; preserve that boundary
+    and provider stock-volume caveat.
+
+    ingredients[10] MgSO4 x 7 H2O 1.2G_PER_L: source stock strength in S I or S II,
+    not receiving-medium concentration. Each source mineral stock is added separately;
+    preserve that boundary and provider stock-volume caveat.
+
+    ingredients[11] CaCl2 x 2 H2O 1.2G_PER_L: source stock strength in S I or S II,
+    not receiving-medium concentration. Each source mineral stock is added separately;
+    preserve that boundary and provider stock-volume caveat.
+
+    solutions[0].composition[0] Biotin 0.1G_PER_L: verified within source vitamin-stock
+    scope using its provider1000mL basis; not direct medium concentration.
+
+    solutions[0].composition[1] Thiamine-HCl x 2 H2O 0.5G_PER_L: verified within source
+    vitamin-stock scope using its provider1000mL basis; not direct medium concentration.
+
+    solutions[0].composition[2] p-Aminobenzoic acid 0.3G_PER_L: verified within source
+    vitamin-stock scope using its provider1000mL basis; not direct medium concentration.
+
+    solutions[0].composition[3] Pyridoxine 1.5G_PER_L: verified within source vitamin-stock
+    scope using its provider1000mL basis; not direct medium concentration.
+
+    solutions[0].composition[4] Riboflavin 0.5G_PER_L: verified within source vitamin-stock
+    scope using its provider1000mL basis; not direct medium concentration.
+
+    solutions[0].composition[5] Folic acid 0.5G_PER_L: verified within source vitamin-stock
+    scope using its provider1000mL basis; not direct medium concentration.
+
+    solutions[0].concentration10ML_PER_L: verified source10mL addition to final1000mL
+    medium. Inline stock is incomplete by one component, not wholly unsupported.
+
+    Source S I and S II additions are75mL each and absent as structured solution doses.
+    Source main water is make-up to1000mL, not an extra1000mL added after stocks.
+
+    Six inline vitamin amounts plus12 direct amounts and the one stock addition cover
+    all19 stored quantity assertions.'
+- assessment_id: grounding
+  area: grounding
+  topic: Every asserted primary identity and historical link scope
+  outcome: concern
+  summary: All17 primary identifiers across18 ingredient instances resolve; yeast
+    extract is ungrounded. Supplied hydrates, L-cysteine hydrochloride and pyridoxine
+    identity agree with source wording. Cobalamin remains unspecified rather than
+    forced to cyanocobalamin. Primary linkage17/18(94.4%); secondary fields17/18,
+    of which three are unresolved historical IDs. These are linkage counts, not accuracy.
+    Generic resazurin wording does not independently specify a salt or percentage
+    basis.
+  target_ids:
+  - CultureMech:000859
+  evidence_ids:
+  - record
+  - dsmz
+  - legacy
+  - chebi-131527
+  - chebi-132751
+  - chebi-15956
+  - chebi-16709
+  - chebi-17015
+  - chebi-17234
+  - chebi-26710
+  - chebi-27470
+  - chebi-30411
+  - chebi-30753
+  - chebi-31795
+  - chebi-62946
+  - chebi-63036
+  - chebi-86158
+  - chebi-8806
+  - chebi-91247
+  - micro-0000175
+- assessment_id: preparation
+  area: representation
+  topic: Source preparation and heading artifact
+  outcome: concern
+  summary: pH7.0 and main nitrogen/vessel/vitamin-addition paragraph are retained.
+    Step3 SII is a source section heading, not a mixing instruction. Source does not
+    give an autoclave cycle, so none is proposed. Source final water make-up and resazurin
+    stock descriptor are not adequately represented.
+  target_ids:
+  - CultureMech:000859
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid medium and biological evidence
+  outcome: supported
+  summary: COMPLEX/UNDEFINED/LIQUID agrees with Trypticase and yeast extract formulation.
+    Generic cultivation is not strain-growth evidence. No organism, yield or experimental
+    growth outcome is asserted.
+  target_ids:
+  - CultureMech:000859
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained owners and partial nesting history
+  outcome: supported
+  summary: Both owners share the12 direct ingredients and incomplete six-component
+    vitamin stock. History reports moving six components, which matches current structure
+    but does not establish scientifically complete nesting. Future fixes belong in
+    normalized sources; no generator re-run or record-history promotion is authorized
+    by this review.
+  target_ids:
+  - CultureMech:000859
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - duplicate
+findings:
+- finding_id: f1
+  issue_key: culturemech-000859-mineral-stocks-flattened
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Two mineral stocks remain flattened at stock strength
+  description: Six direct mineral ingredients retain S I/S II stock concentrations,
+    while the source specifies separate stock doses. This materially changes the encoded
+    medium formulation.
+  target_ids:
+  - CultureMech:000859
+  field_paths:
+  - ingredients[6]
+  - ingredients[7]
+  - ingredients[8]
+  - ingredients[9]
+  - ingredients[10]
+  - ingredients[11]
+  - solutions
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: culturemech-000859-cobalamin-outside-vitamin-stock
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Cobalamin remains outside its vitamin stock
+  description: Source vitamin stock has seven components. Inline stock contains six,
+    while cobalamin remains a direct ingredient at the source stock strength. Existing
+    stock dose cannot correct that separate direct quantity.
+  target_ids:
+  - CultureMech:000859
+  field_paths:
+  - ingredients[5]
+  - solutions[0].composition
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: culturemech-000859-source-volume-context-missing
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Final-volume and resazurin stock context are lost
+  description: Source explicitly specifies water make-up to final volume and a resazurin
+    solution strength plus addition volume. Target gives neither water make-up instruction
+    nor resazurin stock descriptor, although it retains an API mass normalization
+    with an implicit percentage assumption.
+  target_ids:
+  - CultureMech:000859
+  field_paths:
+  - preparation_steps
+  - ingredients[4]
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: culturemech-000859-heading-as-mix-step
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source section heading is represented as a mixing step
+  description: The SII stock heading was imported as preparation step3 with action
+    MIX. It states no operation.
+  target_ids:
+  - CultureMech:000859
+  field_paths:
+  - preparation_steps[2]
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Restore source mineral-stock boundaries and dose context in maintained
+    owners during authorized curation. Verify referenced stock records independently;
+    do not substitute stock concentration for receiving-medium concentration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000859
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Compare maintained and regenerated formulations against exact source stock scope,
+    dose and final-volume wording.
+  - Run all four target validators and inspect evidence coverage.
+  - After authorized regeneration run merge freshness and verification gates.
+- action_id: a2
+  description: During authorized curation preserve cobalamin in its source vitamin-stock
+    scope and remove the unsupported separate direct-medium assertion; keep the six
+    already-supported stock components and verified stock dose.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000859
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Compare maintained and regenerated formulations against exact source stock scope,
+    dose and final-volume wording.
+  - Run all four target validators and inspect evidence coverage.
+  - After authorized regeneration run merge freshness and verification gates.
+- action_id: a3
+  description: Preserve exact source final-volume wording and resazurin stock descriptor/addition
+    in maintained owners. Distinguish provider mass inference from literal source;
+    do not guess percentage basis or change supported small nutrient masses.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000859
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Compare maintained and regenerated formulations against exact source stock scope,
+    dose and final-volume wording.
+  - Run all four target validators and inspect evidence coverage.
+  - After authorized regeneration run merge freshness and verification gates.
+- action_id: a4
+  description: Remove the spurious action during authorized curation and retain SII
+    as the stock identity in appropriate context.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000859
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Compare maintained and regenerated formulations against exact source stock scope,
+    dose and final-volume wording.
+  - Run all four target validators and inspect evidence coverage.
+  - After authorized regeneration run merge freshness and verification gates.
+limitations:
+- Historical MediaIngredientMech:000263,000223,000754 mappings were not resolved against
+  an authoritative historical registry. Current ontology identity does not prove equivalence
+  to those legacy keys.
+- Source main medium explicitly uses water make-up to1000mL. Stock recipes specify
+  water additions; provider stock volumes are normalization conventions, not independent
+  measured stock volumes.
+- Local duplicate equality does not verify every KOMODO historical annotation. Its
+  owner-only aerobic flag and malformed historical timestamp are not promoted to target
+  claims.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-003
+- generated-medium
+```

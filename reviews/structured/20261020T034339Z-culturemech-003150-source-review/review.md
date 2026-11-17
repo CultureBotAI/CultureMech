@@ -1,0 +1,714 @@
+# Source and formulation review: 1_10_r2a_broth (CultureMech:003150)
+
+- Review: 20261020T034339Z-culturemech-003150-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-19T23:41:03Z
+- Finished UTC: 2026-10-20T03:43:39Z
+- Reviewer: OpenAI Codex with delegated source and validator checks (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The sole stored concentration is source-supported and JCM 805 identity resolves. The generated record has one major completeness finding: source-specific premix identity, water and preparation context restored in the maintained owner are absent. Owner-only graph assertions were inspected as context and are not automatically certified for regeneration.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Record 26 in Python lexicographic repository-relative path order of the initially uncovered merged corpus; Batch 003 selects ordinals 21-30 after the first two reserved batches; saved bundles are published locally in path order. On fresh origin/main at this batch base, scripts/record_review.py list validated 34 existing bundles and none listed this target path or ID. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 7c568537897ee4bba1b8e97f8172133c1572aec0.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003150 | data/merge_yaml/merged/1_10_R2A_BROTH.yaml | generated | 1_10_r2a_broth |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003150 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:003150 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch003/026/strict.tsv |
+| validate-terms | passed | True | CultureMech:003150 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:003150 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:003150 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:003150.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Exact JCM accession and premix selection
+
+identity: supported. Targets: CultureMech:003150.
+
+CultureMech:003150 has exact MediaDive J805 and JCM805 source provenance. The source names DAIGO from Nihon Pharm. Co.; generic target R2A Broth loses that narrower material selection without changing the resolvable medium accession. No unrelated R2A formula is substituted.
+
+### Sole direct amount and source-only water
+
+quantity: supported. Targets: CultureMech:003150.
+
+ingredients[0].concentration=0.32 G_PER_L is verified: BacMedia page1 states0.32g and final volume1000mL; 0.32g/(1000/1000L)=0.32g/L. API independently declares g_l=0.32. Source water1000mL is1L batch preparation water and is absent from target but correctly represented in owner. No stock addition or constituent concentration is asserted by the target.
+
+### Identifier and linkage scope
+
+grounding: supported. Targets: CultureMech:003150.
+
+Target has no chemical or MIM ingredient identifiers to verify; source accession J805 resolves. Primary/MIM ingredient linkage each0/1 (0%) for the single opaque premix, a linkage metric not an accuracy score. No pure-compound ontology mapping is appropriate merely from this mixture name. Owner-only water and culturemech_term additions do not become target assertions by being present in context.
+
+### Missing source-specific preparation context
+
+completeness: concern. Targets: CultureMech:003150.
+
+Target omits named premix qualifier, explicit preparation water and JCM default sterilization context. These are represented in the maintained owner. The source supplies no pH for805, so absence of pH is not a defect and parent pH7.2 must not be imported automatically.
+
+### Complex liquid medium and growth
+
+scope: supported. Targets: CultureMech:003150.
+
+LIQUID and COMPLEX/UNDEFINED are consistent with the named broth mixture and source representation, including API complex_medium=yes. No agar, taxon, growth outcome, incubation temperature or phenotype is asserted. Microbial cultivation is generic. No transcriptomic adapter is applicable.
+
+### Owner-only parent and duplicate relationships
+
+graph: unknown. Targets: CultureMech:003150.
+
+Owner-only parent CultureMech:003183 and child CultureMech:010255 resolve to inspected files. M840 duplicate-source correspondence is supported. The exact1:10 quantitative parent claim is not proved by summed J839 masses:0.5*5+0.3*2+0.05=3.15g versus0.32*10=3.2g. Treat this as nominal source naming until exact product formulation is verified; it is not a wrong-amount finding against the target. Do not blindly copy owner culturemech_term as a chemically exact premix identity.
+
+### Generated snapshot and maintained corrections
+
+provenance: concern. Targets: CultureMech:003150.
+
+Target August merge predates September owner repair and October concentration evidence. Both owner literal snippets match the inspected J805 PDF; its amount and water arithmetic are supported. The target omits these additions and preparation fields. Quality flags and historical assertions do not certify every owner graph claim. This comparison establishes stale content without proving a current generator defect.
+
+## Findings
+
+### f1: Generated target omits maintained source-specific formulation context
+
+major / open / confirmed; issue key: culturemech-003150-generated-source-context-omission.
+
+The target retains only generic R2A Broth and its correct concentration. JCM805 specifies a particular DAIGO/Nihon Pharm. product, preparation water and default sterilization. These details and scoped evidence exist in the later maintained owner but are missing from the generated record. Generic commercial names can admit different formulations; the source-specific selection and preparation must remain recoverable.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+In separately authorized curation/regeneration, retain the verified source product qualifier, water, preparation and claim-level evidence. Reassess owner-only parent/premix graph semantics before copying them; preserve supported0.32g/L and do not expand the commercial premix or borrow parent pH. Investigate generator code only if current regeneration demonstrates loss.
+
+- Compare regenerated output with exact J805 source and supported owner amount/water evidence.
+- Confirm premix identity is source-specific and owner graph limitations remain explicit.
+- Run all four documented target recipes and inspect actual excerpt checks.
+- After authorized regeneration run merge freshness and verification gates.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/1_10_R2A_BROTH.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/1_10_r2a_broth.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/1_10_R2A_BROTH.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/1_10_R2A_BROTH.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch003/026/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch003/026/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/1_10_R2A_BROTH.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/1_10_R2A_BROTH.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| jcm | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=805; Complete GRMD805 page and default instruction | supports | JCM805 names R2A broth DAIGO from Nihon Pharm. Co., a 0.32 g dose, 1 L distilled water and page-level default sterilization. No recipe-specific exception, pH or incubation conditions are stated. |
+| pdf | https://www.bacmedia.dsmz.de/pdf/J805; Page1 complete recipe and final-volume heading | supports | JCM-attributed BacMedia PDF identifies J805, names the same commercial product, gives 0.32 g and 1000 mL water, and explicitly declares final volume 1000 mL. |
+| api | https://mediadive.dsmz.de/rest/medium/J805; $.data.medium and $.data.solutions[0] | supports | MediaDive J805 resolves to JCM805. Main solution4754 gives g_l=0.32 and volume1000mL; product attribution is stored in attribute. |
+| parent-source | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=839; GRMD839 recipe and premix comment | supports | JCM839 lists eight ingredients and identifies DAIGO as an available premix. The masses total3.15g; the page does not itself specify a3.2g commercial powder dose. |
+| togo | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M840; $.meta and $.components[0].items | supports | TOGO M840 explicitly maps to JCM_M805 and matches the water and named commercial-powder amounts. |
+| parent | data/normalized_yaml/bacterial/r2a_broth.yaml; Complete context record; id and J839 source, ingredients and variant_children | context_only | CultureMech:003183 resolves to J839 R2A broth and reciprocally names the maintained J805 record as a concentration variant. This is a local graph fact, not proof that a mass of prepared medium is interchangeable with a dry commercial premix. |
+| child | data/normalized_yaml/bacterial/TOGO_M840_1_10_R2A_Broth.yaml; Complete context record; id, ingredients and parent_media | supports | CultureMech:010255 resolves, has the same two maintained ingredients and source805 provenance, and reciprocally links to CultureMech:003150. External M840 metadata supports original-source correspondence. |
+
+## Limits And Additional Notes
+
+- The exact quantitative 1:10 parent equivalence asserted only in the maintained owner was not established: the listed JCM839 masses sum to 3.15 g, while ten times the J805 premix dose is 3.2 g. Source naming supports a nominal dilution relationship, not an exact constituent expansion.
+- No manufacturer catalog/version or constituent decomposition of the J805 premix was verified. The source-disclosed DAIGO/Nihon Pharm. identity is retained without substituting another R2A product.
+- Context records are not additional reviewed targets. Their other ingredient groundings and downstream variant links are not certified by this bundle.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261020T034339Z-culturemech-003150-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1_10_r2a_broth (CultureMech:003150)'
+started_at: '2026-10-19T23:41:03Z'
+finished_at: '2026-10-20T03:43:39Z'
+reviewer:
+  identity: OpenAI Codex with delegated source and validator checks
+  kind: agent
+  independence: independent
+  independence_basis: Review team did not author or edit the assessed recipe bytes;
+    findings were assessed against the frozen checkout and inspected source documents.
+    This is an agent review, not experimental verification.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: 'The sole stored concentration is source-supported and JCM 805 identity resolves.
+  The generated record has one major completeness finding: source-specific premix
+  identity, water and preparation context restored in the maintained owner are absent.
+  Owner-only graph assertions were inspected as context and are not automatically
+  certified for regeneration.'
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1_10_R2A_BROTH.yaml
+    sha256: 5ee4356a624c8fe9d804b2b2bcaf7251a5ec93718a389f851169ff3250eff044
+    role: target
+  - path: data/normalized_yaml/bacterial/1_10_r2a_broth.yaml
+    sha256: 199ec4c42f3e624cad33b581c95fd5ffef8deda69f66b19443684b543a6c2c1b
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M840_1_10_R2A_Broth.yaml
+    sha256: 63cc467886a9d69742df552b1cb986a3791259fa41a131a94c9a468303697453
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_4754_Main_sol_J805.yaml
+    sha256: 683388ceb96249761c3a916880b0808ef2087db68d2356497ddd188f814ff2af
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_4803_Main_sol_J839.yaml
+    sha256: ee706828e768ede3d43750ebc69c337ef81cf01574f1d7752cc682436aa4f33a
+    role: context
+  - path: data/normalized_yaml/bacterial/r2a_broth.yaml
+    sha256: fbc213871f26e5a3a66dbd96376daf12451e31dac6be99d2d001258aba651aac
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/fetch_mediadive_solution_volumes.py
+    sha256: 408cdfa3f5c446e8f9c32ac98d7ea8a3a36553b23c032f3b7551f6a1661fd39a
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 26 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; Batch 003 selects ordinals 21-30 after the
+    first two reserved batches; saved bundles are published locally in path order.
+    On fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003150
+targets:
+- target_id: CultureMech:003150
+  path: data/merge_yaml/merged/1_10_R2A_BROTH.yaml
+  label: 1_10_r2a_broth
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_r2a_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1_10_R2A_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:003150
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1_10_R2A_BROTH.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch003/026/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch003/026/strict.tsv"
+  target_ids:
+  - CultureMech:003150
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1_10_R2A_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:003150
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1_10_R2A_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:003150
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:003150
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1_10_R2A_BROTH.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-20T03:43:39Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/1_10_r2a_broth.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T03:43:39Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1_10_R2A_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:42:06.684474Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1_10_R2A_BROTH.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch003/026/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:42:09.237206Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch003/026/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1_10_R2A_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:42:11.537756Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1_10_R2A_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:42:12.832267Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: jcm
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=805
+  locator: Complete GRMD805 page and default instruction
+  accessed_at: '2026-10-19T23:37:51.303327Z'
+  support: supports
+  summary: JCM805 names R2A broth DAIGO from Nihon Pharm. Co., a 0.32 g dose, 1 L
+    distilled water and page-level default sterilization. No recipe-specific exception,
+    pH or incubation conditions are stated.
+  snapshot_sha256: 07e46ecb47ae02b5389216b4e58bb45c86aaa4f0404f242a5cc608b1db879c78
+- evidence_id: pdf
+  kind: primary_source
+  reference: https://www.bacmedia.dsmz.de/pdf/J805
+  locator: Page1 complete recipe and final-volume heading
+  accessed_at: '2026-10-19T23:37:52.082619Z'
+  support: supports
+  summary: JCM-attributed BacMedia PDF identifies J805, names the same commercial
+    product, gives 0.32 g and 1000 mL water, and explicitly declares final volume
+    1000 mL.
+  snapshot_sha256: d2ed0e24210fd6098a96168a5551c3f46492f9d4fda5140f8a29e0de8df98d54
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J805
+  locator: $.data.medium and $.data.solutions[0]
+  accessed_at: '2026-10-19T23:37:51.360159Z'
+  support: supports
+  summary: MediaDive J805 resolves to JCM805. Main solution4754 gives g_l=0.32 and
+    volume1000mL; product attribution is stored in attribute.
+  snapshot_sha256: abf22ecf20c08b0bac5bc7adf608fa4f737c068ac9c317b795acfd7aea181ff7
+- evidence_id: parent-source
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=839
+  locator: GRMD839 recipe and premix comment
+  accessed_at: '2026-10-19T23:37:52.053703Z'
+  support: supports
+  summary: JCM839 lists eight ingredients and identifies DAIGO as an available premix.
+    The masses total3.15g; the page does not itself specify a3.2g commercial powder
+    dose.
+  snapshot_sha256: f5a394752fe5f901f82116bedd28e137e3bb097668a38b7102f233e90834b09a
+- evidence_id: togo
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M840
+  locator: $.meta and $.components[0].items
+  accessed_at: '2026-10-19T23:37:55.497440Z'
+  support: supports
+  summary: TOGO M840 explicitly maps to JCM_M805 and matches the water and named commercial-powder
+    amounts.
+  snapshot_sha256: 1396b41438ffec14102cf65382cfc773c9f0bf935ad435454a2925841510c2d8
+- evidence_id: parent
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/r2a_broth.yaml
+  locator: Complete context record; id and J839 source, ingredients and variant_children
+  accessed_at: '2026-10-20T03:43:39Z'
+  support: context_only
+  summary: CultureMech:003183 resolves to J839 R2A broth and reciprocally names the
+    maintained J805 record as a concentration variant. This is a local graph fact,
+    not proof that a mass of prepared medium is interchangeable with a dry commercial
+    premix.
+- evidence_id: child
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M840_1_10_R2A_Broth.yaml
+  locator: Complete context record; id, ingredients and parent_media
+  accessed_at: '2026-10-20T03:43:39Z'
+  support: supports
+  summary: CultureMech:010255 resolves, has the same two maintained ingredients and
+    source805 provenance, and reciprocally links to CultureMech:003150. External M840
+    metadata supports original-source correspondence.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:003150
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact JCM accession and premix selection
+  outcome: supported
+  summary: CultureMech:003150 has exact MediaDive J805 and JCM805 source provenance.
+    The source names DAIGO from Nihon Pharm. Co.; generic target R2A Broth loses that
+    narrower material selection without changing the resolvable medium accession.
+    No unrelated R2A formula is substituted.
+  target_ids:
+  - CultureMech:003150
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - pdf
+  - api
+- assessment_id: quantity
+  area: quantity
+  topic: Sole direct amount and source-only water
+  outcome: supported
+  summary: 'ingredients[0].concentration=0.32 G_PER_L is verified: BacMedia page1
+    states0.32g and final volume1000mL; 0.32g/(1000/1000L)=0.32g/L. API independently
+    declares g_l=0.32. Source water1000mL is1L batch preparation water and is absent
+    from target but correctly represented in owner. No stock addition or constituent
+    concentration is asserted by the target.'
+  target_ids:
+  - CultureMech:003150
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - pdf
+  - api
+- assessment_id: grounding
+  area: grounding
+  topic: Identifier and linkage scope
+  outcome: supported
+  summary: Target has no chemical or MIM ingredient identifiers to verify; source
+    accession J805 resolves. Primary/MIM ingredient linkage each0/1 (0%) for the single
+    opaque premix, a linkage metric not an accuracy score. No pure-compound ontology
+    mapping is appropriate merely from this mixture name. Owner-only water and culturemech_term
+    additions do not become target assertions by being present in context.
+  target_ids:
+  - CultureMech:003150
+  evidence_ids:
+  - record
+  - jcm
+  - api
+- assessment_id: preparation
+  area: completeness
+  topic: Missing source-specific preparation context
+  outcome: concern
+  summary: Target omits named premix qualifier, explicit preparation water and JCM
+    default sterilization context. These are represented in the maintained owner.
+    The source supplies no pH for805, so absence of pH is not a defect and parent
+    pH7.2 must not be imported automatically.
+  target_ids:
+  - CultureMech:003150
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - pdf
+  - api
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid medium and growth
+  outcome: supported
+  summary: LIQUID and COMPLEX/UNDEFINED are consistent with the named broth mixture
+    and source representation, including API complex_medium=yes. No agar, taxon, growth
+    outcome, incubation temperature or phenotype is asserted. Microbial cultivation
+    is generic. No transcriptomic adapter is applicable.
+  target_ids:
+  - CultureMech:003150
+  evidence_ids:
+  - record
+  - jcm
+  - api
+- assessment_id: graph
+  area: graph
+  topic: Owner-only parent and duplicate relationships
+  outcome: unknown
+  summary: Owner-only parent CultureMech:003183 and child CultureMech:010255 resolve
+    to inspected files. M840 duplicate-source correspondence is supported. The exact1:10
+    quantitative parent claim is not proved by summed J839 masses:0.5*5+0.3*2+0.05=3.15g
+    versus0.32*10=3.2g. Treat this as nominal source naming until exact product formulation
+    is verified; it is not a wrong-amount finding against the target. Do not blindly
+    copy owner culturemech_term as a chemically exact premix identity.
+  target_ids:
+  - CultureMech:003150
+  evidence_ids:
+  - owner-0
+  - parent
+  - child
+  - parent-source
+  - togo
+  - jcm
+- assessment_id: ownership
+  area: provenance
+  topic: Generated snapshot and maintained corrections
+  outcome: concern
+  summary: Target August merge predates September owner repair and October concentration
+    evidence. Both owner literal snippets match the inspected J805 PDF; its amount
+    and water arithmetic are supported. The target omits these additions and preparation
+    fields. Quality flags and historical assertions do not certify every owner graph
+    claim. This comparison establishes stale content without proving a current generator
+    defect.
+  target_ids:
+  - CultureMech:003150
+  evidence_ids:
+  - record
+  - owner-0
+  - pdf
+  - parent
+  - child
+findings:
+- finding_id: f1
+  issue_key: culturemech-003150-generated-source-context-omission
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated target omits maintained source-specific formulation context
+  description: The target retains only generic R2A Broth and its correct concentration.
+    JCM805 specifies a particular DAIGO/Nihon Pharm. product, preparation water and
+    default sterilization. These details and scoped evidence exist in the later maintained
+    owner but are missing from the generated record. Generic commercial names can
+    admit different formulations; the source-specific selection and preparation must
+    remain recoverable.
+  target_ids:
+  - CultureMech:003150
+  field_paths:
+  - ingredients[0].preferred_term
+  - ingredients
+  - preparation_steps
+  - sterilization
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - pdf
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_r2a_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: In separately authorized curation/regeneration, retain the verified
+    source product qualifier, water, preparation and claim-level evidence. Reassess
+    owner-only parent/premix graph semantics before copying them; preserve supported0.32g/L
+    and do not expand the commercial premix or borrow parent pH. Investigate generator
+    code only if current regeneration demonstrates loss.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003150
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_r2a_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Compare regenerated output with exact J805 source and supported owner amount/water
+    evidence.
+  - Confirm premix identity is source-specific and owner graph limitations remain
+    explicit.
+  - Run all four documented target recipes and inspect actual excerpt checks.
+  - After authorized regeneration run merge freshness and verification gates.
+limitations:
+- 'The exact quantitative 1:10 parent equivalence asserted only in the maintained
+  owner was not established: the listed JCM839 masses sum to 3.15 g, while ten times
+  the J805 premix dose is 3.2 g. Source naming supports a nominal dilution relationship,
+  not an exact constituent expansion.'
+- No manufacturer catalog/version or constituent decomposition of the J805 premix
+  was verified. The source-disclosed DAIGO/Nihon Pharm. identity is retained without
+  substituting another R2A product.
+- Context records are not additional reviewed targets. Their other ingredient groundings
+  and downstream variant links are not certified by this bundle.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-003
+- generated-medium
+```
