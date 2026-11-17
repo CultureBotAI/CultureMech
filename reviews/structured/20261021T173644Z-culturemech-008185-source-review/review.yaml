@@ -1,0 +1,1643 @@
+schema_version: 1.0.0
+review_id: 20261021T173644Z-culturemech-008185-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: artificial_deep_lake_vitamin_medium (CultureMech:008185)'
+started_at: '2026-10-21T17:21:22Z'
+finished_at: '2026-10-21T17:36:44Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Exact TOGO M162 and JCM 170 resolve the current recipe and its separate vitamin
+  stock. Both local layers flatten the three undiluted stock constituents into the
+  main medium, encode the 10 ml stock addition as mass, and combine the 990 ml base-volume
+  instruction with 1 L stock water into 991 g/L. The 990 ml base makeup, 10 ml vitamin
+  addition, pH, differential sterilization and optional solid branch are explicitly
+  available. Chemical identifiers and current secondary membership resolve, with sodium
+  succinate supplied-form specificity kept qualified. The optional unavailable MediaDive
+  endpoint does not prevent assessment from the complete primary and TOGO records.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml
+    sha256: f279b52da0d6fea336270c0c26da8407b20cec54c0189002ef8c76e020b75077
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml
+    sha256: f33a38f8713f9a5cd6a854bc21b033a7c0e1027a9e58b10c8df3304ee1315678
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/add_metal_ree_labels.py
+    sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+    role: context
+  - path: scripts/analyze_metal_concentrations.py
+    sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 310; batch 031 item 10 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty task batches contain
+    300 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 303 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008185
+targets:
+- target_id: CultureMech:008185
+  path: data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml
+  label: artificial_deep_lake_vitamin_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch031/310/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch031/310/strict.tsv"
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:008185
+- check_id: mediadiveJ170api-source-access
+  name: 'Exact source content access: mediadiveJ170api'
+  required: false
+  status: unavailable
+  summary: The exact MediaDive J170 endpoint returned HTTP 503. The complete primary
+    JCM 170 and exact TOGO M162 content independently support the current formulation;
+    no local historical API quotation requires this unavailable response. No historical
+    byte equality is inferred.
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - mediadiveJ170api-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:22:13.148483Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch031/310/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:22:14.387888Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch031/310/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:22:15.712086Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:22:16.667298Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml:1:id:
+    CultureMech:008185
+
+    ./data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml:1:id:
+    CultureMech:008185
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch031/source-preflight-bound/310/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: supports
+  summary: 15 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: b7eb3e1d516623f299f85c00c5a55eee1b63fa316ab746f33fea585b38d6bc51
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170
+  locator: Full JCM 170 page; main table, preparation, vitamin stock and page-specific
+    sterilization default
+  accessed_at: '2026-10-21T17:05:55.911192Z'
+  support: supports
+  summary: The primary distinguishes the base made up to 990 ml from the 10 ml vitamin
+    addition and the stock recipe. The optional 20 g/L agar belongs only to the solid
+    branch.
+  quote: Add components, except vitamin solution, to distilled water and bring volume
+    to 990 ml.
+  snapshot_sha256: 13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219
+- evidence_id: provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162
+  locator: $.meta; both components arrays and $.comments[0]
+  accessed_at: '2026-10-21T17:05:54.342987Z'
+  support: supports
+  summary: Exact metadata links TOGO M162 to JCM_M170. Component units and the full
+    preparation comment preserve source stages; the provider water row is a simplification
+    of the primary makeup instruction.
+  quote: '"original_media_id": "JCM_M170"'
+  snapshot_sha256: 4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0
+- evidence_id: preparation
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170
+  locator: Main preparation paragraph and page header
+  accessed_at: '2026-10-21T17:05:55.911192Z'
+  support: supports
+  summary: Base autoclaving follows this page’s stated default, whereas the vitamin
+    solution is filter-sterilized and added after cooling to 50C. The mixing temperature
+    is not a growth temperature.
+  quote: Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.
+  snapshot_sha256: 13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: 'CHEBI:15377 resolves to water. Stored labels: [''water'']. Exact label
+    correspondence is separate from source chemical-form support.'
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: 'CHEBI:15956 resolves to biotin. Stored labels: [''biotin'']. Exact label
+    correspondence is separate from source chemical-form support.'
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: 'CHEBI:176843 resolves to vitamin B12. Stored labels: [''vitamin B12''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: 'CHEBI:26710 resolves to sodium chloride. Stored labels: [''sodium chloride''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: 'CHEBI:31795 resolves to magnesium sulfate heptahydrate. Stored labels:
+    [''magnesium sulfate heptahydrate'']. Exact label correspondence is separate from
+    source chemical-form support.'
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: 'CHEBI:32588 resolves to potassium chloride. Stored labels: [''potassium
+    chloride'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: 'CHEBI:49105 resolves to thiamine hydrochloride. Stored labels: [''thiamine
+    hydrochloride'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi63675
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63675
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T09:27:41.075057Z'
+  support: supports
+  summary: 'CHEBI:63675 resolves to sodium succinate (anhydrous). Stored labels: [''sodium
+    succinate (anhydrous)'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: 4c54df9f2d63f54dea26d64e4ec9fedeb486c2c2abe44b70c5c621512f1fdd3c
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: 'CHEBI:86158 resolves to calcium chloride dihydrate. Stored labels: [''calcium
+    chloride dihydrate'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: 'CHEBI:86345 resolves to magnesium dichloride hexahydrate. Stored labels:
+    [''magnesium dichloride hexahydrate'']. Exact label correspondence is separate
+    from source chemical-form support.'
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned index exact identifier lookup; adjacent snapshot metadata
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "rows":
+    {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956":
+    [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956",
+    "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type":
+    "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12",
+    "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}],
+    "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63675":
+    [{"label": "Sodium succinate", "match_type": "preferred_term", "identifier": "CHEBI:63675",
+    "preferred_term": "Sodium succinate", "ontology_id": "CHEBI:63675", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, "missing_current_keys": []}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 12, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml",
+    "events": 11, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: context_only
+  summary: Read current bound import, stock migration, duplicate cleanup, formulation
+    merge and metal-label functions. Current implementation is context only; it does
+    not establish which historical execution produced the stored data. The recorded
+    water-merge note itself documents the two summed numbers.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: context_only
+  summary: Read current bound import, stock migration, duplicate cleanup, formulation
+    merge and metal-label functions. Current implementation is context only; it does
+    not establish which historical execution produced the stored data. The recorded
+    water-merge note itself documents the two summed numbers.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: context_only
+  summary: Read current bound import, stock migration, duplicate cleanup, formulation
+    merge and metal-label functions. Current implementation is context only; it does
+    not establish which historical execution produced the stored data. The recorded
+    water-merge note itself documents the two summed numbers.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: context_only
+  summary: Read current bound import, stock migration, duplicate cleanup, formulation
+    merge and metal-label functions. Current implementation is context only; it does
+    not establish which historical execution produced the stored data. The recorded
+    water-merge note itself documents the two summed numbers.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-4
+  kind: record_content
+  reference: scripts/analyze_metal_concentrations.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: context_only
+  summary: Read current bound import, stock migration, duplicate cleanup, formulation
+    merge and metal-label functions. Current implementation is context only; it does
+    not establish which historical execution produced the stored data. The recorded
+    water-merge note itself documents the two summed numbers.
+  snapshot_sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+- evidence_id: writer-5
+  kind: record_content
+  reference: scripts/add_metal_ree_labels.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: context_only
+  summary: Read current bound import, stock migration, duplicate cleanup, formulation
+    merge and metal-label functions. Current implementation is context only; it does
+    not establish which historical execution produced the stored data. The recorded
+    water-merge note itself documents the two summed numbers.
+  snapshot_sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+- evidence_id: metal-contract
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  locator: MediaRecipe.high_metal description and comments
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: context_only
+  summary: The field is an automated total-metal percentile label, including Na, K,
+    Mg and Ca, with a documented threshold of 1049.84 mM. The current writer uses
+    approximate mass-unit conversions and corpus-relative thresholds, so it is not
+    an independently calibrated elemental concentration measurement.
+  snapshot_sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch031/310/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T17:36:43Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 30883f4188f630ae88dc37368c8c483c4a494a08db97f7d9edd19f0b68349a51
+- evidence_id: mediadiveJ170api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J170
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:05:53.263142Z'
+  support: context_only
+  summary: The exact MediaDive J170 endpoint returned HTTP 503. The complete primary
+    JCM 170 and exact TOGO M162 content independently support the current formulation;
+    no local historical API quotation requires this unavailable response. No historical
+    byte equality is inferred.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary chemical identifiers
+  outcome: concern
+  summary: '10 distinct primary/current-secondary IDs resolve to nonobsolete terms;
+    exact stored/canonical labels are recorded separately in each term evidence item.
+    Target direct-ingredient linkage is 10/11 primary (90.91%) and 6/11 current CHEBI-based
+    secondary (54.55%), on a 0–100 linkage scale, not an accuracy score. Current secondary
+    keys without pinned index rows: []. Legacy slot count 0 is separate and does not
+    enter that current-key claim. Supplied-form correspondence is assessed separately.'
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi15377
+  - chebi15956
+  - chebi176843
+  - chebi26710
+  - chebi31795
+  - chebi32588
+  - chebi49105
+  - chebi63675
+  - chebi86158
+  - chebi86345
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 23 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact maintained owner, provider and collection identity
+  outcome: supported
+  summary: The single normalized owner and merged target share CultureMech:008185.
+    TOGO M162 explicitly identifies JCM_M170 and links the exact primary; the primary
+    title and formulation agree at that source scope. The vitamin section is internal
+    to this recipe, not an unrelated parent medium. No strain-specific growth or ecology
+    is inferred from the medium name or broad cultivation application.
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - record
+  - owner-0
+  - provider
+  - primary
+- assessment_id: forms
+  area: grounding
+  topic: Hydrate, salt and vitamin form boundaries
+  outcome: supported
+  summary: Explicit MgSO4·7H2O, MgCl2·6H2O and CaCl2·2H2O match their captured hydrated
+    structures. Thiamine hydrochloride matches the stated salt. CHEBI:15956 has explicit
+    biotin stereochemistry and is not treated as a generic-stereochemistry error.
+    Vitamin B12 remains the source’s broad vitamer class; no cyanocobalamin form is
+    inferred. Sodium succinate is not hydrate-qualified by either primary or provider,
+    whereas CHEBI:63675 specifies anhydrous disodium succinate. That is an unresolved
+    supplied-form specificity limit, not proof of a particular wrong hydrate; do not
+    use the ontology molecular weight to convert the source amount without establishing
+    the supplied form.
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - primary
+  - provider
+  - chebi31795
+  - chebi86345
+  - chebi86158
+  - chebi49105
+  - chebi15956
+  - chebi176843
+  - chebi63675
+- assessment_id: classification
+  area: scope
+  topic: Liquid, mixed composition and automated metal flag
+  outcome: concern
+  summary: 'COMPLEX and LIQUID fit the liquid base with yeast extract. Explicit salts
+    and vitamins plus yeast extract support the more specific SEMI_DEFINED composition
+    class. The optional agar branch must remain separately scoped. High salt loading
+    supports a qualitative high-metal interpretation, but the existing high_metal
+    flag is automated metadata: no historical percentile calculation was replayed
+    and the current writer’s approximate unit conversions are not source evidence.
+    The flag does not imply trace-metal toxicity, growth phenotype or a KG graph match.'
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - metal-contract
+  - writer-4
+  - writer-5
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 18 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"label\": \"MgSO4・7H2O main\
+    \ amount\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"Main\
+    \ base; nominal assembly basis\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.4\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.4\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Exact source HTML table row[2], zero-based document\
+    \ row\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> MgSO<sub>4</sub>&#183;7H<sub>2</sub>O\
+    \                                  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;7.4&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4・7H2O\\\",\\n          \\\"volume\\\": 7.4,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Main preparation, base-volume makeup sentence\",\n        \"exact_source_quote\"\
+    : \"Add components, except vitamin solution, to distilled water and bring volume\
+    \ to 990 ml.\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[7], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Vitamin solution (see below)                          \
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      }\n    ],\n    \"interpretation\": \"The literal primary batch amount\
+    \ is supported in both layers, but neither has attached concentration evidence.\
+    \ Making the base up to 990 ml and adding 10 ml vitamin stock defines a nominal\
+    \ 1 L assembly basis; the original gram amount and this derivation must be stated\
+    \ explicitly rather than pretending the primary prints g/L or an independently\
+    \ measured final volume. Sodium succinate hydration remains unspecified by the\
+    \ source.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n    \"label\": \"NaCl main\
+    \ amount\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"Main\
+    \ base; nominal assembly basis\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"180\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"180\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Exact source HTML table row[0], zero-based document\
+    \ row\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> NaCl          \
+    \                                        </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;180.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 180,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Main preparation, base-volume makeup sentence\",\n        \"exact_source_quote\"\
+    : \"Add components, except vitamin solution, to distilled water and bring volume\
+    \ to 990 ml.\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[7], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Vitamin solution (see below)                          \
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      }\n    ],\n    \"interpretation\": \"The literal primary batch amount\
+    \ is supported in both layers, but neither has attached concentration evidence.\
+    \ Making the base up to 990 ml and adding 10 ml vitamin stock defines a nominal\
+    \ 1 L assembly basis; the original gram amount and this derivation must be stated\
+    \ explicitly rather than pretending the primary prints g/L or an independently\
+    \ measured final volume. Sodium succinate hydration remains unspecified by the\
+    \ source.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"label\": \"CaCl2・2H2O\
+    \ main amount\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\":\
+    \ \"Main base; nominal assembly basis\",\n    \"local_fields\": [\n      {\n \
+    \       \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Exact source HTML table row[4], zero-based document\
+    \ row\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> CaCl<sub>2</sub>&#183;2H<sub>2</sub>O\
+    \                                  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2・2H2O\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Main preparation, base-volume makeup sentence\",\n        \"exact_source_quote\"\
+    : \"Add components, except vitamin solution, to distilled water and bring volume\
+    \ to 990 ml.\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[7], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Vitamin solution (see below)                          \
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      }\n    ],\n    \"interpretation\": \"The literal primary batch amount\
+    \ is supported in both layers, but neither has attached concentration evidence.\
+    \ Making the base up to 990 ml and adding 10 ml vitamin stock defines a nominal\
+    \ 1 L assembly basis; the original gram amount and this derivation must be stated\
+    \ explicitly rather than pretending the primary prints g/L or an independently\
+    \ measured final volume. Sodium succinate hydration remains unspecified by the\
+    \ source.\"\n  },\n  {\n    \"decision_id\": \"q4\",\n    \"label\": \"MgCl2・6H2O\
+    \ main amount\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\":\
+    \ \"Main base; nominal assembly basis\",\n    \"local_fields\": [\n      {\n \
+    \       \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"75\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"75\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Exact source HTML table row[1], zero-based document\
+    \ row\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> MgCl<sub>2</sub>&#183;6H<sub>2</sub>O\
+    \                                 </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;75.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgCl2・6H2O\\\",\\n          \\\"volume\\\": 75,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Main preparation, base-volume makeup sentence\",\n        \"exact_source_quote\"\
+    : \"Add components, except vitamin solution, to distilled water and bring volume\
+    \ to 990 ml.\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[7], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Vitamin solution (see below)                          \
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      }\n    ],\n    \"interpretation\": \"The literal primary batch amount\
+    \ is supported in both layers, but neither has attached concentration evidence.\
+    \ Making the base up to 990 ml and adding 10 ml vitamin stock defines a nominal\
+    \ 1 L assembly basis; the original gram amount and this derivation must be stated\
+    \ explicitly rather than pretending the primary prints g/L or an independently\
+    \ measured final volume. Sodium succinate hydration remains unspecified by the\
+    \ source.\"\n  },\n  {\n    \"decision_id\": \"q5\",\n    \"label\": \"KCl main\
+    \ amount\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"Main\
+    \ base; nominal assembly basis\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.4\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.4\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Exact source HTML table row[3], zero-based document\
+    \ row\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> KCl           \
+    \                                          </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;7.4&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KCl\\\",\\n          \\\"volume\\\": 7.4,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Main preparation, base-volume makeup sentence\",\n        \"exact_source_quote\"\
+    : \"Add components, except vitamin solution, to distilled water and bring volume\
+    \ to 990 ml.\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[7], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Vitamin solution (see below)                          \
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      }\n    ],\n    \"interpretation\": \"The literal primary batch amount\
+    \ is supported in both layers, but neither has attached concentration evidence.\
+    \ Making the base up to 990 ml and adding 10 ml vitamin stock defines a nominal\
+    \ 1 L assembly basis; the original gram amount and this derivation must be stated\
+    \ explicitly rather than pretending the primary prints g/L or an independently\
+    \ measured final volume. Sodium succinate hydration remains unspecified by the\
+    \ source.\"\n  },\n  {\n    \"decision_id\": \"q6\",\n    \"label\": \"Sodium\
+    \ succinate main amount\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Main base; nominal assembly basis\",\n    \"local_fields\": [\n      {\n \
+    \       \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Exact source HTML table row[5], zero-based document\
+    \ row\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Sodium succinate\
+    \                                       </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Sodium succinate\\\",\\n          \\\"volume\\\
+    \": 10,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\n      },\n\
+    \      {\n        \"source_key\": \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Main preparation, base-volume makeup sentence\"\
+    ,\n        \"exact_source_quote\": \"Add components, except vitamin solution,\
+    \ to distilled water and bring volume to 990 ml.\",\n        \"snapshot_sha256\"\
+    : \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\",\n    \
+    \    \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[7], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Vitamin solution (see below)                          \
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      }\n    ],\n    \"interpretation\": \"The literal primary batch amount\
+    \ is supported in both layers, but neither has attached concentration evidence.\
+    \ Making the base up to 990 ml and adding 10 ml vitamin stock defines a nominal\
+    \ 1 L assembly basis; the original gram amount and this derivation must be stated\
+    \ explicitly rather than pretending the primary prints g/L or an independently\
+    \ measured final volume. Sodium succinate hydration remains unspecified by the\
+    \ source.\"\n  },\n  {\n    \"decision_id\": \"q7\",\n    \"label\": \"Yeast extract\
+    \ (BD-Difco) main amount\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Main base; nominal assembly basis\",\n    \"local_fields\": [\n      {\n \
+    \       \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Exact source HTML table row[6], zero-based document\
+    \ row\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Yeast extract (BD-Difco)\
+    \                                </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract (BD-Difco)\\\",\\n          \\\"\
+    volume\\\": 1,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Main preparation, base-volume makeup sentence\",\n        \"exact_source_quote\"\
+    : \"Add components, except vitamin solution, to distilled water and bring volume\
+    \ to 990 ml.\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[7], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Vitamin solution (see below)                          \
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      }\n    ],\n    \"interpretation\": \"The literal primary batch amount\
+    \ is supported in both layers, but neither has attached concentration evidence.\
+    \ Making the base up to 990 ml and adding 10 ml vitamin stock defines a nominal\
+    \ 1 L assembly basis; the original gram amount and this derivation must be stated\
+    \ explicitly rather than pretending the primary prints g/L or an independently\
+    \ measured final volume. Sodium succinate hydration remains unspecified by the\
+    \ source.\"\n  },\n  {\n    \"decision_id\": \"q8\",\n    \"label\": \"Incorrect\
+    \ combined water mass\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Main makeup versus stock water\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"991.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].notes\",\n        \"stored\": \"Role:\
+    \ Solvating media; Properties: Defined component, Simple component, Inorganic\
+    \ compound [Merged 2 duplicates: 990.0, 1.0]\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"991.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].notes\",\n        \"stored\": \"Role:\
+    \ Solvating media; Properties: Defined component, Simple component, Inorganic\
+    \ compound [Merged 2 duplicates: 990.0, 1.0]\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Main preparation, base-volume makeup sentence\",\n        \"exact_source_quote\"\
+    : \"Add components, except vitamin solution, to distilled water and bring volume\
+    \ to 990 ml.\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[11], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Distilled water                                       \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> L        </TD></TR>\",\n        \"snapshot_sha256\":\
+    \ \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\n     \
+    \ },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"distilled water\\\",\\n          \\\"volume\\\"\
+    : 990,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\n      },\n\
+    \      {\n        \"source_key\": \"togoM162\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The 991 g/L value combines the bare\
+    \ numbers 990 and 1 from different units and stages. Primary 990 ml is the base\
+    \ makeup volume, not a measured water addition; 1 L water belongs to preparation\
+    \ of the vitamin stock. Preserve both instructions separately and do not add whole\
+    \ stock water to the main recipe or convert volume to water mass.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q9\",\n    \"label\": \"Vitamin-stock dose\",\n    \"\
+    decision\": \"correct\",\n    \"source_stage\": \"Vitamin addition after base\
+    \ preparation\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Exact source HTML table row[7], zero-based document\
+    \ row\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Vitamin solution\
+    \ (see below)                           </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[0].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Vitamin solution (see below)\\\",\\n         \
+    \ \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Main preparation, base-volume makeup sentence\",\n        \"exact_source_quote\"\
+    : \"Add components, except vitamin solution, to distilled water and bring volume\
+    \ to 990 ml.\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source specifies a 10 ml aliquot\
+    \ of the separately prepared vitamin solution. Replace the mass-unit representation\
+    \ with that liquid dose on the explicitly stated nominal assembly basis; do not\
+    \ treat 10 as grams of stock.\"\n  },\n  {\n    \"decision_id\": \"q10\",\n  \
+    \  \"label\": \"Biotin wrongly flattened stock constituent\",\n    \"decision\"\
+    : \"correct\",\n    \"source_stage\": \"Vitamin stock composition and dose\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Exact source HTML table row[8], zero-based document\
+    \ row\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Biotin        \
+    \                                          </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;0.1&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[11], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Distilled water                                       \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> L        </TD></TR>\",\n        \"snapshot_sha256\":\
+    \ \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[7], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Vitamin solution (see below)                          \
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Biotin\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The 0.1 g belongs to the stock prepared\
+    \ with 1 L water, not a direct 0.1 g/L main-medium addition. Restore the ingredient\
+    \ within the vitamin stock, preserving the source water instruction and 10 ml\
+    \ aliquot. On the nominal 1 L stock recipe and nominal 1 L main assembly basis,\
+    \ 0.1 g × 10/1000 = 0.001 g per main batch; this is derived dilution arithmetic,\
+    \ not a literal printed final concentration or a measured stock volume. Do not\
+    \ retain both undiluted direct ingredient and stock contribution.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q11\",\n    \"label\": \"Thiamine・HCl wrongly flattened\
+    \ stock constituent\",\n    \"decision\": \"correct\",\n    \"source_stage\":\
+    \ \"Vitamin stock composition and dose\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Exact source HTML table row[10], zero-based document\
+    \ row\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Thiamine&#183;HCl\
+    \                                      </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.1&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[11], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Distilled water                                       \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> L        </TD></TR>\",\n        \"snapshot_sha256\":\
+    \ \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[7], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Vitamin solution (see below)                          \
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Thiamine・HCl\\\",\\n          \\\"volume\\\":\
+    \ 0.1,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\n      }\n\
+    \    ],\n    \"interpretation\": \"The 0.1 g belongs to the stock prepared with\
+    \ 1 L water, not a direct 0.1 g/L main-medium addition. Restore the ingredient\
+    \ within the vitamin stock, preserving the source water instruction and 10 ml\
+    \ aliquot. On the nominal 1 L stock recipe and nominal 1 L main assembly basis,\
+    \ 0.1 g × 10/1000 = 0.001 g per main batch; this is derived dilution arithmetic,\
+    \ not a literal printed final concentration or a measured stock volume. Do not\
+    \ retain both undiluted direct ingredient and stock contribution.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q12\",\n    \"label\": \"Vitamin B12 wrongly flattened\
+    \ stock constituent\",\n    \"decision\": \"correct\",\n    \"source_stage\":\
+    \ \"Vitamin stock composition and dose\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Exact source HTML table row[9], zero-based document\
+    \ row\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Vitamin B<sub>1</sub><sub>2</sub>\
+    \                                       </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.1&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[11], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Distilled water                                       \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> L        </TD></TR>\",\n        \"snapshot_sha256\":\
+    \ \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Exact source HTML table row[7], zero-based document row\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Vitamin solution (see below)                          \
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Vitamin B12\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The 0.1 g belongs to the stock prepared\
+    \ with 1 L water, not a direct 0.1 g/L main-medium addition. Restore the ingredient\
+    \ within the vitamin stock, preserving the source water instruction and 10 ml\
+    \ aliquot. On the nominal 1 L stock recipe and nominal 1 L main assembly basis,\
+    \ 0.1 g × 10/1000 = 0.001 g per main batch; this is derived dilution arithmetic,\
+    \ not a literal printed final concentration or a measured stock volume. Do not\
+    \ retain both undiluted direct ingredient and stock contribution.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q13\",\n    \"label\": \"Missing internal stock water\"\
+    ,\n    \"decision\": \"add\",\n    \"source_stage\": \"Vitamin stock recipe\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Exact source HTML table row[11], zero-based document\
+    \ row\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Distilled water\
+    \                                         </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> L        </TD></TR>\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    \n      },\n      {\n        \"source_key\": \"togoM162\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M162\",\n \
+    \       \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"4cb578a3c7a5fb50cffdb162920ce547d86b10886650a23f41c8c4e635f4a5a0\"\
+    \n      }\n    ],\n    \"interpretation\": \"Represent the separate vitamin stock’s\
+    \ 1 L distilled-water recipe. Its entire preparation volume is not an addition\
+    \ to the main batch; only the stated 10 ml aliquot is transferred.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q14\",\n    \"label\": \"Source pH target\",\n   \
+    \ \"decision\": \"add\",\n    \"source_stage\": \"Main target pH\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    presence\": \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Main preparation pH sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.4.\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      }\n    ],\n    \"interpretation\": \"Add the source target pH 7.4 at the\
+    \ base preparation stage. Do not describe it as a measured final pH after vitamins.\"\
+    \n  },\n  {\n    \"decision_id\": \"q15\",\n    \"label\": \"Optional solid branch\
+    \ agar\",\n    \"decision\": \"add\",\n    \"source_stage\": \"Optional solid\
+    \ branch\",\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Conditional solid-medium sentence\",\n      \
+    \  \"exact_source_quote\": \"For preparation of solid medium, add 20.0 g/L Noble\
+    \ Agar (BD-Difco).\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve exact 20.0 g/L Noble Agar\
+    \ and the explicit solid-medium condition. It is not a universal ingredient of\
+    \ the currently liquid base; do not substitute an unverified commercial product\
+    \ or silently change physical state.\"\n  },\n  {\n    \"decision_id\": \"q16\"\
+    ,\n    \"label\": \"Base sterilization cycle\",\n    \"decision\": \"add\",\n\
+    \    \"source_stage\": \"Base preparation\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Page-specific default sterilization header\"\
+    ,\n        \"exact_source_quote\": \"Unless otherwise stated, sterilize media\
+    \ by autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Main preparation after optional agar sentence\",\n        \"exact_source_quote\"\
+    : \"Autoclave.\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      }\n    ],\n    \"interpretation\": \"The exact page supplies 121°C for\
+    \ 15 min for its stated base autoclaving. Retain the explicit exception for filter-sterilized\
+    \ vitamins; do not autoclave the combined vitamin stock by default.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q17\",\n    \"label\": \"Vitamin mixing temperature\"\
+    ,\n    \"decision\": \"add\",\n    \"source_stage\": \"Post-autoclave mixing\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm170\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\"\
+    ,\n        \"source_locator\": \"Final main preparation sentence\",\n        \"\
+    exact_source_quote\": \"After cooling to 50C, aseptically add the following vitamin\
+    \ solution (filter-sterilized):\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve cooling to 50C, aseptic\
+    \ addition and separate filter sterilization. This is an addition-stage temperature,\
+    \ not a growth temperature; filter pore size and stock sterilization duration\
+    \ are not specified.\"\n  },\n  {\n    \"decision_id\": \"q18\",\n    \"label\"\
+    : \"Unquantified adjustment and operational limits\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"source_stage\": \"Source limits\",\n    \"local_fields\": [],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm170\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n  \
+    \      \"source_locator\": \"Main pH sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.4.\",\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      },\n      {\n        \"source_key\": \"jcm170\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170\",\n        \"source_locator\"\
+    : \"Final main preparation sentence\",\n        \"exact_source_quote\": \"After\
+    \ cooling to 50C, aseptically add the following vitamin solution (filter-sterilized):\"\
+    ,\n        \"snapshot_sha256\": \"13f2669ad10d22a205104142193f3443c55addeae34810e30e36bb48bbd4e219\"\
+    ,\n        \"parsed_text_sha256\": \"e1df6c30e5b87a6472e2e5220556b186c611a3b77d4cd6bc6cdba46136af460f\"\
+    \n      }\n    ],\n    \"interpretation\": \"No acid/base identity or dose, growth\
+    \ temperature, incubation time, gas fraction, pressure or filter pore size is\
+    \ supplied. Do not infer them from the title, salt concentration, mixing temperature\
+    \ or another medium.\"\n  }\n]"
+- assessment_id: ownership
+  area: ownership
+  topic: Single exact maintained input and generated target
+  outcome: supported
+  summary: The complete normalized owner and target, all histories, source notes,
+    current identifiers and empty stock fields were read. The target adds only its
+    recorded merge metadata to the maintained formulation. Current writer behavior
+    is contextual and no corpus or saved bundle was changed.
+  target_ids:
+  - CultureMech:008185
+  evidence_ids:
+  - record
+  - owner-0
+  - history-metadata
+  - writer-0
+  - writer-1
+  - writer-2
+  - writer-3
+findings:
+- finding_id: f1
+  issue_key: cm008185-stock-scope
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Vitamin stock and water have been flattened into incorrect main-medium amounts
+  description: Both layers retain three 0.1 g/L vitamins directly in the main ingredient
+    list while their actual source amounts belong to a separate stock. The 10 ml dose
+    is stored as 10 g/L, the stock is empty, and the 990 ml base makeup plus 1 L stock
+    water have been combined into 991 g/L. These are material stage and unit errors
+    even though native schema and term diagnostics pass.
+  target_ids:
+  - CultureMech:008185
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[8].concentration
+  - ingredients[9].concentration
+  - ingredients[10].concentration
+  - solutions[0]
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm008185-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Required preparation and the conditional solid branch are absent
+  description: Both layers omit pH 7.4, the 990 ml makeup instruction, base autoclaving,
+    cooling to 50C, and filter-sterilized vitamin addition. The primary also states
+    an optional 20 g/L Noble Agar solid branch, which must not be merged into the
+    liquid base.
+  target_ids:
+  - CultureMech:008185
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - physical_state
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - preparation
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm008185-evidence
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source identity notes do not support individual amount and stock claims
+  description: The source links resolve, but neither layer attaches amount, preparation
+    or identity evidence. Correct nominal main amounts remain evidence_only, and incorrect
+    stock-scope claims require correction. Source-specific sodium succinate hydration
+    remains unspecified and must not be filled from an index synonym or ontology mass.
+  target_ids:
+  - CultureMech:008185
+  field_paths:
+  - ingredients[*].evidence
+  - solutions[0].evidence
+  - references
+  - notes
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+  - quantity-inventory
+  - chebi63675
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm008185-composition
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Composition classification is less specific than the known recipe
+  description: The record combines named salts and vitamins with yeast extract, but
+    declares UNDEFINED. This supports SEMI_DEFINED while COMPLEX remains appropriate;
+    the conditional agar formulation is separate. The automated high_metal label must
+    retain its computational scope.
+  target_ids:
+  - CultureMech:008185
+  field_paths:
+  - composition_type
+  - medium_type
+  - high_metal
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - metal-contract
+  - writer-4
+  - writer-5
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore source-scoped vitamin composition, separate stock water and
+    liquid dose in the maintained owner. Preserve the primary base makeup instruction
+    and nominal assembly basis, avoid double counting, and regenerate the target only
+    after evidence-backed review.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008185
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Attach and represent the exact preparation sequence and source-scoped
+    optional solid variant, preserving the vitamin sterilization exception and distinction
+    between mixing and growth temperature.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008185
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Add exact source snippets and current capture provenance at each claim’s
+    correct stage and layer. Preserve original units, nominal-basis derivations and
+    unresolved supplied-form qualifiers; append history without inventing old capture
+    bytes.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008185
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Use the source-supported mixed-composition classification and retain
+    transparent automated-label provenance. Do not turn the metal flag into a phenotype
+    or source-certified molarity.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008185
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M162_Artificial_Deep_Lake_Vitamin_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact MediaDive J170 endpoint returned HTTP 503. The complete primary JCM 170
+  and exact TOGO M162 content independently support the current formulation; no local
+  historical API quotation requires this unavailable response. No historical byte
+  equality is inferred.
+- Completed current-primary review. Sodium succinate supplied hydration and source-unspecified
+  procedural quantities remain explicit; no measured final volume, product lot, biological
+  growth assertion or historical metal-analysis execution is invented. All concentrations
+  and numerical source-only preparation contexts in both local layers are inventoried.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-031
+- generated-medium

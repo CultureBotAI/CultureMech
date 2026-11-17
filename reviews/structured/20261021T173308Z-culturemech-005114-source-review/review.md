@@ -1,0 +1,4136 @@
+# Source and formulation review: arthrobacter_medium (CultureMech:005114)
+
+- Review: 20261021T173308Z-culturemech-005114-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T17:21:21Z
+- Finished UTC: 2026-10-21T17:33:08Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact DSMZ 378 primary and accession-specific KOMODO catalogue row resolve the current base identity and fourteen listed amounts. Both maintained owners carry October amount evidence, but the cited original API response could not be recovered: local parsed objects and decoded quotations are corroborating derivatives, not hash-authenticated source bytes. The merged target lost those later evidence additions and the DSMZ owner’s pH/gas preparation. Water context is absent throughout. This is a partial review for the required historical amount-evidence authentication, with current primary findings preserved.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 309; batch 031 item 9 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty task batches contain 300 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 303 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:005114 | data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml | generated | arthrobacter_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:005114 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:005114 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch031/309/strict.tsv |
+| validate-terms | passed | True | CultureMech:005114 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:005114 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:005114 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive378api | unavailable | True | CultureMech:005114 | Current HTTP 503 and an ignored-inclusive historical search leave the original Oct7 API response 761abf2c… unavailable. The 28 existing historical amount claims require authentication beyond parsed objects; this makes the review partial. |
+| Exact source content access: komodo378detail | unavailable | False | CultureMech:005114 | Exact historical KOMODO detail access returned HTTP 403. Current base identity is resolved by the exact catalogue row and linked DSMZ primary; historical detail-byte equivalence and a distinct variant are not inferred. |
+| Exact source content access: komodo378actual | unavailable | False | CultureMech:005114 | Exact historical KOMODO detail access returned HTTP 403. Current base identity is resolved by the exact catalogue row and linked DSMZ primary; historical detail-byte equivalence and a distinct variant are not inferred. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:005114.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary chemical identifiers
+
+grounding: concern. Targets: CultureMech:005114.
+
+13 distinct primary/current-secondary IDs resolve to nonobsolete terms; exact stored/canonical labels are recorded separately in each term evidence item. Target direct-ingredient linkage is 13/14 primary (92.86%) and 13/14 current CHEBI-based secondary (92.86%), on a 0–100 linkage scale, not an accuracy score. Current secondary keys without pinned index rows: []. Legacy slot count 0 is separate and does not enter that current-key claim. Supplied-form correspondence is assessed separately.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:005114.
+
+24 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact accession mapping and local relation boundaries
+
+identity: supported. Targets: CultureMech:005114.
+
+The exact KOMODO 378 row links DSMZ 378, and the linked primary supplies the current base recipe. Both reciprocal local relationship paths and stable IDs resolve. Same concentration signatures support a source-duplicate relationship at that scope, but do not establish whole-record equivalence: only the DSMZ owner retains preparation, and the target lacks later evidence. Historical detail access failure is optional for this resolved current base identity.
+
+### Explicit hydrates and unresolved supplied-form specificity
+
+grounding: supported. Targets: CultureMech:005114.
+
+Explicit sulfate and chloride hydrate counts match their captured structures. The primary gives CaCl2 without a hydrate qualifier; this is insufficient to establish a particular supplied hydrate or a molecular-weight conversion, but is not evidence of a specific wrong hydrate. Mannitol is not stereochemically qualified by the primary; CHEBI:29864 is appropriately not used as proof of a particular stereoisomer. MIM label matches are not independent source-form evidence.
+
+### Semi-defined liquid and oxygen metadata
+
+scope: supported. Targets: CultureMech:005114.
+
+Defined salts and mannitol plus yeast extract support SEMI_DEFINED and liquid state. Catalogue Is Aerobic=false is literal metadata, while primary incubation under 5% O2 plus 95% N2 is a distinct operational statement. No zero-oxygen physiology, strain-specific growth or taxonomy is inferred from the name.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:005114.
+
+33 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "label": "Target K2HPO4",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1.77",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 1",
+        "exact_source_quote": "K2HPO4 1.770 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q2",
+    "label": "Owners K2HPO4 historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1.77",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[0].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 1.77,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.77,\n                        \"mmol_l\": 10.1621,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[0].concentration (K2HPO4) in MediaDive medium 378; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=1.77; check: 1.77 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.77 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1.77",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[0].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 1.77,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.77,\n                        \"mmol_l\": 10.1621,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[0].concentration (K2HPO4) in MediaDive medium 378; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=1.77; check: 1.77 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.77 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 1",
+        "exact_source_quote": "K2HPO4 1.770 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q3",
+    "label": "Target KH2PO4",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.68",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 2",
+        "exact_source_quote": "KH2PO4 0.680 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q4",
+    "label": "Owners KH2PO4 historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.68",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[1].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.68,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.68,\n                        \"mmol_l\": 4.99688,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[1].concentration (KH2PO4) in MediaDive medium 378; locator=$.data.solutions[0].recipe[1]. Provider explicitly reports g_l=0.68; check: 0.68 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.68 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.68",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[1].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.68,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.68,\n                        \"mmol_l\": 4.99688,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[1].concentration (KH2PO4) in MediaDive medium 378; locator=$.data.solutions[0].recipe[1]. Provider explicitly reports g_l=0.68; check: 0.68 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.68 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 2",
+        "exact_source_quote": "KH2PO4 0.680 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q5",
+    "label": "Target NaCl",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.14",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 3",
+        "exact_source_quote": "NaCl 0.140 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q6",
+    "label": "Owners NaCl historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.14",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[2].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.14,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.14,\n                        \"mmol_l\": 2.39562,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[2].concentration (NaCl) in MediaDive medium 378; locator=$.data.solutions[0].recipe[2]. Provider explicitly reports g_l=0.14; check: 0.14 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.14 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.14",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[2].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.14,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.14,\n                        \"mmol_l\": 2.39562,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[2].concentration (NaCl) in MediaDive medium 378; locator=$.data.solutions[0].recipe[2]. Provider explicitly reports g_l=0.14; check: 0.14 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.14 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 3",
+        "exact_source_quote": "NaCl 0.140 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q7",
+    "label": "Target CaCl2",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.132",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 4",
+        "exact_source_quote": "CaCl2 0.132 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q8",
+    "label": "Owners CaCl2 historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.132",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[3].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2\",\n                        \"compound_id\": 81,\n                        \"amount\": 0.132,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.132,\n                        \"mmol_l\": 1.1894,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[3].concentration (CaCl2) in MediaDive medium 378; locator=$.data.solutions[0].recipe[3]. Provider explicitly reports g_l=0.132; check: 0.132 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.132 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.132",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[3].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2\",\n                        \"compound_id\": 81,\n                        \"amount\": 0.132,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.132,\n                        \"mmol_l\": 1.1894,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[3].concentration (CaCl2) in MediaDive medium 378; locator=$.data.solutions[0].recipe[3]. Provider explicitly reports g_l=0.132; check: 0.132 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.132 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 4",
+        "exact_source_quote": "CaCl2 0.132 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q9",
+    "label": "Target MgSO4 x 7 H2O",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 5",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.200 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q10",
+    "label": "Owners MgSO4 x 7 H2O historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[4].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.811438,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[4].concentration (MgSO4 x 7 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[4]. Provider explicitly reports g_l=0.2; check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.2 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[4].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.811438,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[4].concentration (MgSO4 x 7 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[4]. Provider explicitly reports g_l=0.2; check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.2 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 5",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.200 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q11",
+    "label": "Target Mannitol",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 6",
+        "exact_source_quote": "Mannitol 10.000 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q12",
+    "label": "Owners Mannitol historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[5].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Mannitol\",\n                        \"compound_id\": 6,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"mmol_l\": 54.8938,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[5].concentration (Mannitol) in MediaDive medium 378; locator=$.data.solutions[0].recipe[5]. Provider explicitly reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[5].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Mannitol\",\n                        \"compound_id\": 6,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"mmol_l\": 54.8938,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[5].concentration (Mannitol) in MediaDive medium 378; locator=$.data.solutions[0].recipe[5]. Provider explicitly reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 6",
+        "exact_source_quote": "Mannitol 10.000 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q13",
+    "label": "Target Yeast extract",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.08",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 7",
+        "exact_source_quote": "Yeast extract 0.080 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q14",
+    "label": "Owners Yeast extract historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.08",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[6].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.08,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.08,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[6].concentration (Yeast extract) in MediaDive medium 378; locator=$.data.solutions[0].recipe[6]. Provider explicitly reports g_l=0.08; check: 0.08 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.08 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.08",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[6].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.08,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.08,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[6].concentration (Yeast extract) in MediaDive medium 378; locator=$.data.solutions[0].recipe[6]. Provider explicitly reports g_l=0.08; check: 0.08 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.08 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 7",
+        "exact_source_quote": "Yeast extract 0.080 g",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q15",
+    "label": "Target FeSO4 x 7 H2O",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.0025",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 8",
+        "exact_source_quote": "FeSO4 x 7 H2O 2.500 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q16",
+    "label": "Owners FeSO4 x 7 H2O historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.0025",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[7].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 2.5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0025,\n                        \"mmol_l\": 0.00899232,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[7].concentration (FeSO4 x 7 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[7]. Provider explicitly reports g_l=0.0025; check: 2.5 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0025 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.0025",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[7].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 2.5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0025,\n                        \"mmol_l\": 0.00899232,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[7].concentration (FeSO4 x 7 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[7]. Provider explicitly reports g_l=0.0025; check: 2.5 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0025 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 8",
+        "exact_source_quote": "FeSO4 x 7 H2O 2.500 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q17",
+    "label": "Target H3BO3",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.0029",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 9",
+        "exact_source_quote": "H3BO3 2.900 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q18",
+    "label": "Owners H3BO3 historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.0029",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[8].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 2.9,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0029,\n                        \"mmol_l\": 0.0468952,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[8].concentration (H3BO3) in MediaDive medium 378; locator=$.data.solutions[0].recipe[8]. Provider explicitly reports g_l=0.0029; check: 2.9 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0029 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.0029",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[8].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 2.9,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0029,\n                        \"mmol_l\": 0.0468952,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[8].concentration (H3BO3) in MediaDive medium 378; locator=$.data.solutions[0].recipe[8]. Provider explicitly reports g_l=0.0029; check: 2.9 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0029 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 9",
+        "exact_source_quote": "H3BO3 2.900 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q19",
+    "label": "Target CoSO4 x 7 H2O",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.0012",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 10",
+        "exact_source_quote": "CoSO4 x 7 H2O 1.200 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q20",
+    "label": "Owners CoSO4 x 7 H2O historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.0012",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[9].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\": 198,\n                        \"amount\": 1.2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0012,\n                        \"mmol_l\": 0.00774214,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[9].concentration (CoSO4 x 7 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[9]. Provider explicitly reports g_l=0.0012; check: 1.2 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0012 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.0012",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[9].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\": 198,\n                        \"amount\": 1.2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0012,\n                        \"mmol_l\": 0.00774214,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[9].concentration (CoSO4 x 7 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[9]. Provider explicitly reports g_l=0.0012; check: 1.2 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0012 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 10",
+        "exact_source_quote": "CoSO4 x 7 H2O 1.200 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q21",
+    "label": "Target CuSO4 x 5 H2O",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 11",
+        "exact_source_quote": "CuSO4 x 5 H2O 0.100 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q22",
+    "label": "Owners CuSO4 x 5 H2O historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[10].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\": 0.1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0001,\n                        \"mmol_l\": 0.000400503,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[10].concentration (CuSO4 x 5 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[10]. Provider explicitly reports g_l=0.0001; check: 0.1 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0001 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[10].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\": 0.1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0001,\n                        \"mmol_l\": 0.000400503,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[10].concentration (CuSO4 x 5 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[10]. Provider explicitly reports g_l=0.0001; check: 0.1 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0001 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 11",
+        "exact_source_quote": "CuSO4 x 5 H2O 0.100 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q23",
+    "label": "Target MnCl2 x 4 H2O",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "9e-05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 12",
+        "exact_source_quote": "MnCl2 x 4 H2O 0.090 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q24",
+    "label": "Owners MnCl2 x 4 H2O historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "9e-05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[11].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 0.09,\n                        \"unit\": \"mg\",\n                        \"g_l\": 9.0e-5,\n                        \"mmol_l\": 0.000454764,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[11].concentration (MnCl2 x 4 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[11]. Provider explicitly reports g_l=9e-05; check: 0.09 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00009 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "9e-05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[11].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 0.09,\n                        \"unit\": \"mg\",\n                        \"g_l\": 9.0e-5,\n                        \"mmol_l\": 0.000454764,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[11].concentration (MnCl2 x 4 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[11]. Provider explicitly reports g_l=9e-05; check: 0.09 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.00009 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 12",
+        "exact_source_quote": "MnCl2 x 4 H2O 0.090 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q25",
+    "label": "Target Na2MoO4 x 2 H2O",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.0025",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 13",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 2.500 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q26",
+    "label": "Owners Na2MoO4 x 2 H2O historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.0025",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[12].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 2.5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0025,\n                        \"mmol_l\": 0.0103327,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[12].concentration (Na2MoO4 x 2 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[12]. Provider explicitly reports g_l=0.0025; check: 2.5 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0025 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.0025",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[12].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 2.5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0025,\n                        \"mmol_l\": 0.0103327,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[12].concentration (Na2MoO4 x 2 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[12]. Provider explicitly reports g_l=0.0025; check: 2.5 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0025 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 13",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 2.500 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q27",
+    "label": "Target ZnSO4 x 7 H2O",
+    "decision": "evidence_only",
+    "source_stage": "Current primary nominal batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.0012",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 14",
+        "exact_source_quote": "ZnSO4 x 7 H2O 1.200 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Current primary supports the original amount and nominal 1000 ml-water recipe basis, but target has no attached claim evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount for the seven minor salts. A nominal recipe basis is not an independently measured final volume or authentication of the historical API g_l claim."
+  },
+  {
+    "decision_id": "q28",
+    "label": "Owners ZnSO4 x 7 H2O historical amount claim",
+    "decision": "unsupported",
+    "source_stage": "Historical evidence versus current primary",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.0012",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ingredients[13].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 1.2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0012,\n                        \"mmol_l\": 0.00417303,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[13].concentration (ZnSO4 x 7 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[13]. Provider explicitly reports g_l=0.0012; check: 1.2 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0012 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67. KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.0012",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ingredients[13].evidence",
+        "stored": [
+          {
+            "reference": "https://mediadive.dsmz.de/rest/medium/378",
+            "supports": "SUPPORT",
+            "snippet": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 1.2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0012,\n                        \"mmol_l\": 0.00417303,\n                        \"optional\": 0\n                    }",
+            "explanation": "Concentration evidence for ingredients[13].concentration (ZnSO4 x 7 H2O) in MediaDive medium 378; locator=$.data.solutions[0].recipe[13]. Provider explicitly reports g_l=0.0012; check: 1.2 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) = 0.0012 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67."
+          }
+        ]
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 table row 14",
+        "exact_source_quote": "ZnSO4 x 7 H2O 1.200 mg",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      },
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Both attached historical API quotations match decoded local report text, but their original response hash is unavailable. Do not label the existing value/unit/basis/evidence verified. Current primary independently corroborates the literal batch amount; preserve the history and recover or replace the required exact evidence transparently before asserting authenticated provider g_l. No numerical correction is proposed merely because access failed."
+  },
+  {
+    "decision_id": "q29",
+    "label": "Source water",
+    "decision": "add",
+    "source_stage": "Primary water input",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Restore 1000 ml water as source batch/preparation context in each layer. It is missing from the ingredient/preparation representation; do not convert it to 1000 g or assert a measured final volume."
+  },
+  {
+    "decision_id": "q30",
+    "label": "Target pH",
+    "decision": "evidence_only",
+    "source_stage": "Main target pH",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 final sentence",
+        "exact_source_quote": "Adjust pH to 7.0.",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Existing target pH 7.0 is supported in all three layers. Add exact claim evidence without describing it as a measured final result."
+  },
+  {
+    "decision_id": "q31",
+    "label": "KOMODO/target missing gas fractions",
+    "decision": "add",
+    "source_stage": "Missing primary atmosphere",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 final sentence",
+        "exact_source_quote": "Incubate under 5% O2 + 95% N2.",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "Add the exact 5% oxygen and 95% nitrogen incubation atmosphere; do not use catalogue Aerobic: No as a substitute or infer a percent basis not stated."
+  },
+  {
+    "decision_id": "q32",
+    "label": "DSMZ owner retained pH and atmosphere",
+    "decision": "evidence_only",
+    "source_stage": "Retained DSMZ preparation",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust pH to 7.0. Incubate under 5% O2 + 95% N2."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Page 1 final sentence",
+        "exact_source_quote": "Adjust pH to 7.0. Incubate under 5% O2 + 95% N2.",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "The DSMZ owner already retains all these values correctly; attach preparation evidence. These source-supported details were lost from the merged target."
+  },
+  {
+    "decision_id": "q33",
+    "label": "Unquantified adjustment and incubation limits",
+    "decision": "not_quantified",
+    "source_stage": "Source limits",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz378",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf",
+        "source_locator": "Entire source preparation",
+        "exact_source_quote": "Adjust pH to 7.0. Incubate under 5% O2 + 95% N2.",
+        "snapshot_sha256": "f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13",
+        "parsed_text_sha256": "bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef"
+      }
+    ],
+    "interpretation": "No adjustment reagent amount, sterilization cycle, growth temperature, gas pressure or measured final volume is specified. Do not infer these from other collection recipes."
+  }
+]
+
+### Exact two maintained inputs and later evidence chronology
+
+ownership: supported. Targets: CultureMech:005114.
+
+The KOMODO and DSMZ owners both resolve by stable ID and exact provenance. Full fields, all 28 amount explanations, the identity row and histories were read; no record or permanent review was changed.
+
+## Findings
+
+### f1: Merged and KOMODO layers omit source preparation and water context
+
+major / open / confirmed; issue key: cm005114-preparation-loss.
+
+DSMZ 378 explicitly specifies water 1000 ml, pH 7.0 and 5% O2 plus 95% N2. The DSMZ owner retains the pH/gas sentence; target and KOMODO owner retain pH only and catalogue Aerobic: No. Water is absent throughout. This is a concrete completeness difference despite source-duplicate signatures.
+
+### f2: Later owner evidence is absent from target and original API authentication remains unresolved
+
+major / open / confirmed; issue key: cm005114-evidence-loss.
+
+Both owners have fourteen October source quotations; the August target has none. All 28 quotations are corroborated by decoded local reports, but the original cited response SHA cannot be authenticated and current API access fails. The primary supports current literal amounts without proving historical raw-byte equality.
+
+### f3: Import timestamp syntax and resolver timezone are unresolved
+
+minor / open / confirmed; issue key: cm005114-time.
+
+KOMODO history contains 2026-01-27T01:15:02.fZ and a timezone-naive February resolver timestamp. Native target schema passing does not authenticate a missing fractional second or UTC offset.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Preserve exact water and preparation context in maintained inputs and regenerate without losing it. Qualify duplicate assertions to their verified scope and keep oxygen metadata distinct from the quantitative primary statement.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Preserve all historical evidence and its limitations, obtain exact versioned source support or transparently attach the current primary with original units/basis, and ensure controlled regeneration carries verified claims. Never fabricate the old response by serializing parsed data.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Preserve the original events; add an evidence-backed clarification if original logs resolve the malformed fraction or timezone. Do not guess a time or rewrite history silently.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/arthrobacter_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch031/309/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch031/309/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml:1:id: CultureMech:005114<br>./data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml:1:id: CultureMech:005114<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch031/source-preflight-bound/309/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 20 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf; Page 1 full table and final preparation sentence; PDF image inspected | supports | Exact source batch amounts, water, target pH and gas fractions are available. The PDF provides no sterilization cycle, growth temperature or pressure. |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact MediaInfo=378 row | supports | The exact catalogue row links accession 378 to DSMZ 378; identity metadata does not supply amounts or historical recipe equality. |
+| catalog-header | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Header of the same media table, including Is Aerobic | supports | The false value is specifically Is Aerobic catalogue metadata. It is not a quantitative oxygen requirement and does not replace the primary 5% oxygen statement. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Stored labels: ['dipotassium hydrogen phosphate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:26710 resolves to sodium chloride. Stored labels: ['sodium chloride']. Exact label correspondence is separate from source chemical-form support. |
+| chebi29864 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29864; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:29864 resolves to mannitol. Stored labels: ['mannitol']. Exact label correspondence is separate from source chemical-form support. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Stored labels: ['copper(II) sulfate pentahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Stored labels: ['magnesium sulfate heptahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Stored labels: ['zinc sulfate heptahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:33118 resolves to boric acid. Stored labels: ['boric acid']. Exact label correspondence is separate from source chemical-form support. |
+| chebi3312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:3312 resolves to calcium dichloride. Stored labels: ['calcium dichloride']. Exact label correspondence is separate from source chemical-form support. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Stored labels: ['potassium dihydrogen phosphate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Stored labels: ['sodium molybdate dihydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Stored labels: ['iron(2+) sulfate heptahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Stored labels: ['manganese(II) chloride tetrahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Stored labels: ['cobalt(2+) sulfate heptahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Entire pinned index exact identifier lookup; adjacent snapshot metadata | context_only | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29864": [{"label": "Mannitol", "match_type": "preferred_term", "identifier": "CHEBI:29864", "preferred_term": "Mannitol", "ontology_id": "CHEBI:29864", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3312": [{"label": "CaCl2", "match_type": "preferred_term", "identifier": "CHEBI:3312", "preferred_term": "CaCl2", "ontology_id": "CHEBI:3312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing_current_keys": []} |
+| history-metadata | data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml; data/normalized_yaml/bacterial/arthrobacter_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:19.843330"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:19.843330"}]}, {"input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml", "events": 7, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer, cleanup and full-formulation merge code were read as context only. The October owner evidence additions and August target history are actual records; no historical pipeline execution is inferred. |
+| writer-1 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer, cleanup and full-formulation merge code were read as context only. The October owner evidence additions and August target history are actual records; no historical pipeline execution is inferred. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer, cleanup and full-formulation merge code were read as context only. The October owner evidence additions and August target history are actual records; no historical pipeline execution is inferred. |
+| historical-context | reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/inspected-candidate-context.json; Entry $[47], parsed source and claim objects; exact current input hash | context_only | All 28 existing owner amount snippets match decoded local report claims. This is derivative corroboration. Original API SHA256 761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67 and access time 2026-10-07T10:46:12.878306+00:00 are historical assertions, not a recovered byte capture. |
+| historical-search | Frozen preflight historical-capture-search.json; All repository hash occurrences and recursive decoded JSON strings | context_only | Ignored-inclusive search found eight local files referring to the hash, but no entire file or decoded string with the asserted original response hash. Parsed source objects must not be reserialized and relabelled as the original payload. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch031/309/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| mediadive378api-attempt | https://mediadive.dsmz.de/rest/medium/378; Preserved exact public retrieval result | context_only | Current HTTP 503 and an ignored-inclusive historical search leave the original Oct7 API response 761abf2c… unavailable. The 28 existing historical amount claims require authentication beyond parsed objects; this makes the review partial. |
+| komodo378detail-attempt | https://komodo.modelseed.org/servlet/Komodo?MediaInfo=378; Preserved exact public retrieval result | context_only | Exact historical KOMODO detail access returned HTTP 403. Current base identity is resolved by the exact catalogue row and linked DSMZ primary; historical detail-byte equivalence and a distinct variant are not inferred. |
+| komodo378actual-attempt | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=378; Preserved exact public retrieval result | context_only | Exact historical KOMODO detail access returned HTTP 403. Current base identity is resolved by the exact catalogue row and linked DSMZ primary; historical detail-byte equivalence and a distinct variant are not inferred. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Current HTTP 503 and an ignored-inclusive historical search leave the original Oct7 API response 761abf2c… unavailable. The 28 existing historical amount claims require authentication beyond parsed objects; this makes the review partial.
+- Exact historical KOMODO detail access returned HTTP 403. Current base identity is resolved by the exact catalogue row and linked DSMZ primary; historical detail-byte equivalence and a distinct variant are not inferred.
+- Exact historical KOMODO detail access returned HTTP 403. Current base identity is resolved by the exact catalogue row and linked DSMZ primary; historical detail-byte equivalence and a distinct variant are not inferred.
+- Partial for required historical API evidence authentication, not for absence of the current primary recipe. All fourteen original amounts, source water, pH/gas statement, both full owner histories and reciprocal relationship paths were assessed. Source CaCl2 hydration, mannitol stereochemistry and unprovided procedure conditions remain qualified. No old raw response or access timestamp was invented.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T173308Z-culturemech-005114-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: arthrobacter_medium (CultureMech:005114)'
+started_at: '2026-10-21T17:21:21Z'
+finished_at: '2026-10-21T17:33:08Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 'The exact DSMZ 378 primary and accession-specific KOMODO catalogue row resolve
+  the current base identity and fourteen listed amounts. Both maintained owners carry
+  October amount evidence, but the cited original API response could not be recovered:
+  local parsed objects and decoded quotations are corroborating derivatives, not hash-authenticated
+  source bytes. The merged target lost those later evidence additions and the DSMZ
+  owner’s pH/gas preparation. Water context is absent throughout. This is a partial
+  review for the required historical amount-evidence authentication, with current
+  primary findings preserved.'
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml
+    sha256: 1d428b43136da1b17486e0fc2390943d52f03d0983666a2658abb97196490ca3
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml
+    sha256: ada3c377f68d22f9769cb09b0d3358073219e6b4e471f4513e0a7f518eaca2a0
+    role: context
+  - path: data/normalized_yaml/bacterial/arthrobacter_medium.yaml
+    sha256: 35babc46183b6724d35dff1e48c10ea4b41b2048db5a3c73c147cd4d46b72d2d
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/inspected-candidate-context.json
+    sha256: bea184ce1f011e5714cef082c0341aaf001d16024ef7935d004cbc8899f74fd5
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/plan.json
+    sha256: 5a48b07490ce656e22f5742a30b6c1bdae479f575388bea6551bad9ccdd051c0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml.md
+    sha256: c46d43ab6c4b2f105dece0ddc2bd5fcbfac9f4b4b4e7c85119401792637caee2
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/source-captures.json
+    sha256: f161d90384a728553a0075712cd981a911eee411a5a08e18f9a46a4dbcfd4a6c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json
+    sha256: 1ada7bec3dbf8c0a4bb2e448ab02750c2cfd126352f8488695ed34cf2a821f5c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/arthrobacter_medium.yaml.md
+    sha256: 0c8b31933350d7caec0bb1c2eb4c91705a26060b27e8f8dbd70a037f8da94cb3
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 309; batch 031 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty task batches contain
+    300 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 303 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:005114
+targets:
+- target_id: CultureMech:005114
+  path: data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml
+  label: arthrobacter_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arthrobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch031/309/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch031/309/strict.tsv"
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:005114
+- check_id: mediadive378api-source-access
+  name: 'Exact source content access: mediadive378api'
+  required: true
+  status: unavailable
+  summary: Current HTTP 503 and an ignored-inclusive historical search leave the original
+    Oct7 API response 761abf2c… unavailable. The 28 existing historical amount claims
+    require authentication beyond parsed objects; this makes the review partial.
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - mediadive378api-attempt
+- check_id: komodo378detail-source-access
+  name: 'Exact source content access: komodo378detail'
+  required: false
+  status: unavailable
+  summary: Exact historical KOMODO detail access returned HTTP 403. Current base identity
+    is resolved by the exact catalogue row and linked DSMZ primary; historical detail-byte
+    equivalence and a distinct variant are not inferred.
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - komodo378detail-attempt
+- check_id: komodo378actual-source-access
+  name: 'Exact source content access: komodo378actual'
+  required: false
+  status: unavailable
+  summary: Exact historical KOMODO detail access returned HTTP 403. Current base identity
+    is resolved by the exact catalogue row and linked DSMZ primary; historical detail-byte
+    equivalence and a distinct variant are not inferred.
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - komodo378actual-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/arthrobacter_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:22:07.994896Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch031/309/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:22:09.402173Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch031/309/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:22:11.130841Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:22:12.088168Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: supports
+  summary: './data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml:1:id:
+    CultureMech:005114
+
+    ./data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml:1:id: CultureMech:005114
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch031/source-preflight-bound/309/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: supports
+  summary: 20 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: c11a93e2fba32f2c4443350fbf69d38993c4795e7ba0b09784f2dbc30b7bccf6
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf
+  locator: Page 1 full table and final preparation sentence; PDF image inspected
+  accessed_at: '2026-10-21T17:05:54.486961Z'
+  support: supports
+  summary: Exact source batch amounts, water, target pH and gas fractions are available.
+    The PDF provides no sterilization cycle, growth temperature or pressure.
+  quote: Adjust pH to 7.0. Incubate under 5% O2 + 95% N2.
+  snapshot_sha256: f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact MediaInfo=378 row
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: The exact catalogue row links accession 378 to DSMZ 378; identity metadata
+    does not supply amounts or historical recipe equality.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=378'\
+    \ >378</a></TD>\n\t\t\t\t\t<TD>ARTHROBACTER medium</TD>\n\t\t\t\t\t<TD> 7.0</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: catalog-header
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Header of the same media table, including Is Aerobic
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: The false value is specifically Is Aerobic catalogue metadata. It is not
+    a quantitative oxygen requirement and does not replace the primary 5% oxygen statement.
+  quote: "<TR>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\" width=\"50\">ID</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Name</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">PH Info</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"\
+    >Is Complex</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\">Is Aerobic</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Is SubMedium</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">Instructions</TD>\n\t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: 'CHEBI:131527 resolves to dipotassium hydrogen phosphate. Stored labels:
+    [''dipotassium hydrogen phosphate'']. Exact label correspondence is separate from
+    source chemical-form support.'
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: 'CHEBI:26710 resolves to sodium chloride. Stored labels: [''sodium chloride''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29864
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29864
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T17:05:54.508350Z'
+  support: supports
+  summary: 'CHEBI:29864 resolves to mannitol. Stored labels: [''mannitol'']. Exact
+    label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: b4a4ee12a98c8d4b77ed7735296503e802d79c420826547ff2fe174a96896d8c
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: 'CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Stored labels:
+    [''copper(II) sulfate pentahydrate'']. Exact label correspondence is separate
+    from source chemical-form support.'
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: 'CHEBI:31795 resolves to magnesium sulfate heptahydrate. Stored labels:
+    [''magnesium sulfate heptahydrate'']. Exact label correspondence is separate from
+    source chemical-form support.'
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: 'CHEBI:32312 resolves to zinc sulfate heptahydrate. Stored labels: [''zinc
+    sulfate heptahydrate'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: 'CHEBI:33118 resolves to boric acid. Stored labels: [''boric acid'']. Exact
+    label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi3312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T07:16:24.822837Z'
+  support: supports
+  summary: 'CHEBI:3312 resolves to calcium dichloride. Stored labels: [''calcium dichloride''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 34ed49d95375c80dcb07576c67d04fa77337bfecf406accb283e8c32253b754b
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: 'CHEBI:63036 resolves to potassium dihydrogen phosphate. Stored labels:
+    [''potassium dihydrogen phosphate'']. Exact label correspondence is separate from
+    source chemical-form support.'
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: 'CHEBI:75213 resolves to sodium molybdate dihydrate. Stored labels: [''sodium
+    molybdate dihydrate'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: 'CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Stored labels:
+    [''iron(2+) sulfate heptahydrate'']. Exact label correspondence is separate from
+    source chemical-form support.'
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: 'CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Stored labels:
+    [''manganese(II) chloride tetrahydrate'']. Exact label correspondence is separate
+    from source chemical-form support.'
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: 'CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Stored labels:
+    [''cobalt(2+) sulfate heptahydrate'']. Exact label correspondence is separate
+    from source chemical-form support.'
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned index exact identifier lookup; adjacent snapshot metadata
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "rows":
+    {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id":
+    "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29864":
+    [{"label": "Mannitol", "match_type": "preferred_term", "identifier": "CHEBI:29864",
+    "preferred_term": "Mannitol", "ontology_id": "CHEBI:29864", "mapping_status":
+    "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:31440": [{"label": "CuSO4 x
+    5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term":
+    "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118":
+    [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118",
+    "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:3312": [{"label": "CaCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:3312", "preferred_term": "CaCl2", "ontology_id": "CHEBI:3312",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label":
+    "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836":
+    [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term":
+    "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id":
+    "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing_current_keys":
+    []}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml;
+    data/normalized_yaml/bacterial/arthrobacter_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:19.843330"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:19.843330"}]}, {"input": "data/normalized_yaml/bacterial/arthrobacter_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: context_only
+  summary: Current importer, cleanup and full-formulation merge code were read as
+    context only. The October owner evidence additions and August target history are
+    actual records; no historical pipeline execution is inferred.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: context_only
+  summary: Current importer, cleanup and full-formulation merge code were read as
+    context only. The October owner evidence additions and August target history are
+    actual records; no historical pipeline execution is inferred.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: context_only
+  summary: Current importer, cleanup and full-formulation merge code were read as
+    context only. The October owner evidence additions and August target history are
+    actual records; no historical pipeline execution is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: historical-context
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/inspected-candidate-context.json
+  locator: Entry $[47], parsed source and claim objects; exact current input hash
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: context_only
+  summary: All 28 existing owner amount snippets match decoded local report claims.
+    This is derivative corroboration. Original API SHA256 761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67
+    and access time 2026-10-07T10:46:12.878306+00:00 are historical assertions, not
+    a recovered byte capture.
+  snapshot_sha256: bea184ce1f011e5714cef082c0341aaf001d16024ef7935d004cbc8899f74fd5
+- evidence_id: historical-search
+  kind: search
+  reference: Frozen preflight historical-capture-search.json
+  locator: All repository hash occurrences and recursive decoded JSON strings
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: context_only
+  summary: Ignored-inclusive search found eight local files referring to the hash,
+    but no entire file or decoded string with the asserted original response hash.
+    Parsed source objects must not be reserialized and relabelled as the original
+    payload.
+  search_scope: rg --no-ignore --hidden over the owned preflight checkout; all matching
+    JSON documents recursively checked for exact decoded-string SHA256. Scope and
+    timestamps preserved in bound context.
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch031/309/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T17:33:06Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 06be32fefd1a0ce27c21cb7fa5a411b0db9ec0bb34f672e5db98d4a2c2d629a9
+- evidence_id: mediadive378api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/378
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:05:52.629929Z'
+  support: context_only
+  summary: Current HTTP 503 and an ignored-inclusive historical search leave the original
+    Oct7 API response 761abf2c… unavailable. The 28 existing historical amount claims
+    require authentication beyond parsed objects; this makes the review partial.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo378detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/Komodo?MediaInfo=378
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:05:52.628931Z'
+  support: context_only
+  summary: Exact historical KOMODO detail access returned HTTP 403. Current base identity
+    is resolved by the exact catalogue row and linked DSMZ primary; historical detail-byte
+    equivalence and a distinct variant are not inferred.
+  snapshot_sha256: 239a5be88b891784cf4f280223ca54e595664bb95ff7171bbfa8da2197d31e1f
+- evidence_id: komodo378actual-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=378
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:05:52.629530Z'
+  support: context_only
+  summary: Exact historical KOMODO detail access returned HTTP 403. Current base identity
+    is resolved by the exact catalogue row and linked DSMZ primary; historical detail-byte
+    equivalence and a distinct variant are not inferred.
+  snapshot_sha256: 9a89907df809002b4bd66862a4246801e90452906afa031849ae2b1da8f9c90c
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary chemical identifiers
+  outcome: concern
+  summary: '13 distinct primary/current-secondary IDs resolve to nonobsolete terms;
+    exact stored/canonical labels are recorded separately in each term evidence item.
+    Target direct-ingredient linkage is 13/14 primary (92.86%) and 13/14 current CHEBI-based
+    secondary (92.86%), on a 0–100 linkage scale, not an accuracy score. Current secondary
+    keys without pinned index rows: []. Legacy slot count 0 is separate and does not
+    enter that current-key claim. Supplied-form correspondence is assessed separately.'
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi131527
+  - chebi26710
+  - chebi29864
+  - chebi31440
+  - chebi31795
+  - chebi32312
+  - chebi33118
+  - chebi3312
+  - chebi63036
+  - chebi75213
+  - chebi75836
+  - chebi86368
+  - chebi91244
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 24 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: identity
+  area: identity
+  topic: Exact accession mapping and local relation boundaries
+  outcome: supported
+  summary: 'The exact KOMODO 378 row links DSMZ 378, and the linked primary supplies
+    the current base recipe. Both reciprocal local relationship paths and stable IDs
+    resolve. Same concentration signatures support a source-duplicate relationship
+    at that scope, but do not establish whole-record equivalence: only the DSMZ owner
+    retains preparation, and the target lacks later evidence. Historical detail access
+    failure is optional for this resolved current base identity.'
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - catalog
+  - catalog-header
+  - primary
+- assessment_id: forms
+  area: grounding
+  topic: Explicit hydrates and unresolved supplied-form specificity
+  outcome: supported
+  summary: Explicit sulfate and chloride hydrate counts match their captured structures.
+    The primary gives CaCl2 without a hydrate qualifier; this is insufficient to establish
+    a particular supplied hydrate or a molecular-weight conversion, but is not evidence
+    of a specific wrong hydrate. Mannitol is not stereochemically qualified by the
+    primary; CHEBI:29864 is appropriately not used as proof of a particular stereoisomer.
+    MIM label matches are not independent source-form evidence.
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - primary
+  - chebi3312
+  - chebi29864
+  - chebi31795
+  - chebi75836
+  - chebi91244
+  - chebi31440
+  - chebi86368
+  - chebi75213
+  - chebi32312
+- assessment_id: classification
+  area: scope
+  topic: Semi-defined liquid and oxygen metadata
+  outcome: supported
+  summary: Defined salts and mannitol plus yeast extract support SEMI_DEFINED and
+    liquid state. Catalogue Is Aerobic=false is literal metadata, while primary incubation
+    under 5% O2 plus 95% N2 is a distinct operational statement. No zero-oxygen physiology,
+    strain-specific growth or taxonomy is inferred from the name.
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - record
+  - catalog
+  - catalog-header
+  - primary
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 33 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"label\": \"Target K2HPO4\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"Current primary\
+    \ nominal batch\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.77\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 1\",\n        \"exact_source_quote\"\
+    : \"K2HPO4 1.770 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q2\",\n    \"label\": \"Owners K2HPO4 historical amount\
+    \ claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"Historical\
+    \ evidence versus current primary\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.77\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\": 10,\\\
+    n                        \\\"amount\\\": 1.77,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.77,\\n         \
+    \               \\\"mmol_l\\\": 10.1621,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[0].concentration (K2HPO4) in MediaDive medium 378;\
+    \ locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=1.77;\
+    \ check: 1.77 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.77 g/L. This supports\
+    \ the provider-declared main-recipe concentration, not an independently measured\
+    \ final volume, a stock composition, or a downstream assay dilution. Water alone\
+    \ does not establish final volume. Exact source ingredient labels/forms are matched;\
+    \ secondary ontology mappings are not validated by this evidence. Additional exact\
+    \ value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00;\
+    \ response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.77\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\": 10,\\\
+    n                        \\\"amount\\\": 1.77,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.77,\\n         \
+    \               \\\"mmol_l\\\": 10.1621,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[0].concentration (K2HPO4) in MediaDive medium 378;\
+    \ locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=1.77;\
+    \ check: 1.77 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.77 g/L. This supports\
+    \ the provider-declared main-recipe concentration, not an independently measured\
+    \ final volume, a stock composition, or a downstream assay dilution. Water alone\
+    \ does not establish final volume. Exact source ingredient labels/forms are matched;\
+    \ secondary ontology mappings are not validated by this evidence. Additional exact\
+    \ value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00;\
+    \ response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 1\",\n        \"exact_source_quote\"\
+    : \"K2HPO4 1.770 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"label\": \"\
+    Target KH2PO4\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\":\
+    \ \"Current primary nominal batch\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.68\",\n          \"unit\": \"G_PER_L\"\n        }\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz378\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 2\",\n        \"exact_source_quote\"\
+    : \"KH2PO4 0.680 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q4\",\n    \"label\": \"Owners KH2PO4 historical amount\
+    \ claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"Historical\
+    \ evidence versus current primary\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.68\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.68,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.68,\\n         \
+    \               \\\"mmol_l\\\": 4.99688,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[1].concentration (KH2PO4) in MediaDive medium 378;\
+    \ locator=$.data.solutions[0].recipe[1]. Provider explicitly reports g_l=0.68;\
+    \ check: 0.68 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.68 g/L. This supports\
+    \ the provider-declared main-recipe concentration, not an independently measured\
+    \ final volume, a stock composition, or a downstream assay dilution. Water alone\
+    \ does not establish final volume. Exact source ingredient labels/forms are matched;\
+    \ secondary ontology mappings are not validated by this evidence. Additional exact\
+    \ value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00;\
+    \ response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.68\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.68,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.68,\\n         \
+    \               \\\"mmol_l\\\": 4.99688,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[1].concentration (KH2PO4) in MediaDive medium 378;\
+    \ locator=$.data.solutions[0].recipe[1]. Provider explicitly reports g_l=0.68;\
+    \ check: 0.68 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.68 g/L. This supports\
+    \ the provider-declared main-recipe concentration, not an independently measured\
+    \ final volume, a stock composition, or a downstream assay dilution. Water alone\
+    \ does not establish final volume. Exact source ingredient labels/forms are matched;\
+    \ secondary ontology mappings are not validated by this evidence. Additional exact\
+    \ value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00;\
+    \ response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 2\",\n        \"exact_source_quote\"\
+    : \"KH2PO4 0.680 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q5\",\n    \"label\": \"\
+    Target NaCl\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"\
+    Current primary nominal batch\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.14\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz378\",\n    \
+    \    \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 3\",\n        \"exact_source_quote\"\
+    : \"NaCl 0.140 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q6\",\n    \"label\": \"Owners NaCl historical amount\
+    \ claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"Historical\
+    \ evidence versus current primary\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.14\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\": 43,\\\
+    n                        \\\"amount\\\": 0.14,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.14,\\n         \
+    \               \\\"mmol_l\\\": 2.39562,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[2].concentration (NaCl) in MediaDive medium 378; locator=$.data.solutions[0].recipe[2].\
+    \ Provider explicitly reports g_l=0.14; check: 0.14 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 0.14 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.14\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\": 43,\\\
+    n                        \\\"amount\\\": 0.14,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.14,\\n         \
+    \               \\\"mmol_l\\\": 2.39562,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[2].concentration (NaCl) in MediaDive medium 378; locator=$.data.solutions[0].recipe[2].\
+    \ Provider explicitly reports g_l=0.14; check: 0.14 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 0.14 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 3\",\n        \"exact_source_quote\"\
+    : \"NaCl 0.140 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q7\",\n    \"label\": \"\
+    Target CaCl2\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"\
+    Current primary nominal batch\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.132\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz378\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 4\",\n        \"exact_source_quote\"\
+    : \"CaCl2 0.132 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q8\",\n    \"label\": \"Owners CaCl2 historical amount\
+    \ claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"Historical\
+    \ evidence versus current primary\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.132\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"CaCl2\\\",\\n                        \\\"compound_id\\\": 81,\\\
+    n                        \\\"amount\\\": 0.132,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.132,\\n        \
+    \                \\\"mmol_l\\\": 1.1894,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[3].concentration (CaCl2) in MediaDive medium 378; locator=$.data.solutions[0].recipe[3].\
+    \ Provider explicitly reports g_l=0.132; check: 0.132 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 0.132 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.132\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"CaCl2\\\",\\n                        \\\"compound_id\\\": 81,\\\
+    n                        \\\"amount\\\": 0.132,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.132,\\n        \
+    \                \\\"mmol_l\\\": 1.1894,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[3].concentration (CaCl2) in MediaDive medium 378; locator=$.data.solutions[0].recipe[3].\
+    \ Provider explicitly reports g_l=0.132; check: 0.132 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 0.132 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 4\",\n        \"exact_source_quote\"\
+    : \"CaCl2 0.132 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q9\",\n    \"label\": \"\
+    Target MgSO4 x 7 H2O\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Current primary nominal batch\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz378\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 5\",\n        \"exact_source_quote\"\
+    : \"MgSO4 x 7 H2O 0.200 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q10\",\n    \"label\": \"Owners MgSO4 x 7 H2O historical\
+    \ amount claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"\
+    Historical evidence versus current primary\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 0.2,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n  \
+    \                      \\\"mmol_l\\\": 0.811438,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[4].concentration (MgSO4 x 7 H2O) in MediaDive medium\
+    \ 378; locator=$.data.solutions[0].recipe[4]. Provider explicitly reports g_l=0.2;\
+    \ check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.2 g/L. This supports the\
+    \ provider-declared main-recipe concentration, not an independently measured final\
+    \ volume, a stock composition, or a downstream assay dilution. Water alone does\
+    \ not establish final volume. Exact source ingredient labels/forms are matched;\
+    \ secondary ontology mappings are not validated by this evidence. Additional exact\
+    \ value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00;\
+    \ response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 0.2,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n  \
+    \                      \\\"mmol_l\\\": 0.811438,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[4].concentration (MgSO4 x 7 H2O) in MediaDive medium\
+    \ 378; locator=$.data.solutions[0].recipe[4]. Provider explicitly reports g_l=0.2;\
+    \ check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.2 g/L. This supports the\
+    \ provider-declared main-recipe concentration, not an independently measured final\
+    \ volume, a stock composition, or a downstream assay dilution. Water alone does\
+    \ not establish final volume. Exact source ingredient labels/forms are matched;\
+    \ secondary ontology mappings are not validated by this evidence. Additional exact\
+    \ value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00;\
+    \ response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 5\",\n        \"exact_source_quote\"\
+    : \"MgSO4 x 7 H2O 0.200 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n    \"label\": \"\
+    Target Mannitol\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Current primary nominal batch\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz378\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 6\",\n        \"exact_source_quote\"\
+    : \"Mannitol 10.000 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q12\",\n    \"label\": \"Owners Mannitol historical amount\
+    \ claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"Historical\
+    \ evidence versus current primary\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Mannitol\\\",\\n                        \\\"compound_id\\\"\
+    : 6,\\n                        \\\"amount\\\": 10,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 10,\\n         \
+    \               \\\"mmol_l\\\": 54.8938,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[5].concentration (Mannitol) in MediaDive medium 378;\
+    \ locator=$.data.solutions[0].recipe[5]. Provider explicitly reports g_l=10; check:\
+    \ 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This supports the provider-declared\
+    \ main-recipe concentration, not an independently measured final volume, a stock\
+    \ composition, or a downstream assay dilution. Water alone does not establish\
+    \ final volume. Exact source ingredient labels/forms are matched; secondary ontology\
+    \ mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume\
+    \ (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Mannitol\\\",\\n                        \\\"compound_id\\\"\
+    : 6,\\n                        \\\"amount\\\": 10,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 10,\\n         \
+    \               \\\"mmol_l\\\": 54.8938,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[5].concentration (Mannitol) in MediaDive medium 378;\
+    \ locator=$.data.solutions[0].recipe[5]. Provider explicitly reports g_l=10; check:\
+    \ 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This supports the provider-declared\
+    \ main-recipe concentration, not an independently measured final volume, a stock\
+    \ composition, or a downstream assay dilution. Water alone does not establish\
+    \ final volume. Exact source ingredient labels/forms are matched; secondary ontology\
+    \ mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume\
+    \ (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 6\",\n        \"exact_source_quote\"\
+    : \"Mannitol 10.000 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q13\",\n    \"label\": \"\
+    Target Yeast extract\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Current primary nominal batch\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.08\",\n          \"unit\": \"G_PER_L\"\n        }\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz378\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 7\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 0.080 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q14\",\n    \"label\": \"Owners Yeast extract historical\
+    \ amount claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"\
+    Historical evidence versus current primary\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.08\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.08,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.08,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \        \"explanation\": \"Concentration evidence for ingredients[6].concentration\
+    \ (Yeast extract) in MediaDive medium 378; locator=$.data.solutions[0].recipe[6].\
+    \ Provider explicitly reports g_l=0.08; check: 0.08 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 0.08 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.08\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.08,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.08,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \        \"explanation\": \"Concentration evidence for ingredients[6].concentration\
+    \ (Yeast extract) in MediaDive medium 378; locator=$.data.solutions[0].recipe[6].\
+    \ Provider explicitly reports g_l=0.08; check: 0.08 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 0.08 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 7\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 0.080 g\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q15\",\n    \"label\": \"\
+    Target FeSO4 x 7 H2O\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Current primary nominal batch\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.0025\",\n          \"unit\": \"G_PER_L\"\n        }\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 8\",\n        \"exact_source_quote\"\
+    : \"FeSO4 x 7 H2O 2.500 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q16\",\n    \"label\": \"Owners FeSO4 x 7 H2O historical\
+    \ amount claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"\
+    Historical evidence versus current primary\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0025\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 2.5,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0025,\\\
+    n                        \\\"mmol_l\\\": 0.00899232,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n            \"explanation\"\
+    : \"Concentration evidence for ingredients[7].concentration (FeSO4 x 7 H2O) in\
+    \ MediaDive medium 378; locator=$.data.solutions[0].recipe[7]. Provider explicitly\
+    \ reports g_l=0.0025; check: 2.5 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) =\
+    \ 0.0025 g/L. This supports the provider-declared main-recipe concentration, not\
+    \ an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0025\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 2.5,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0025,\\\
+    n                        \\\"mmol_l\\\": 0.00899232,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n            \"explanation\"\
+    : \"Concentration evidence for ingredients[7].concentration (FeSO4 x 7 H2O) in\
+    \ MediaDive medium 378; locator=$.data.solutions[0].recipe[7]. Provider explicitly\
+    \ reports g_l=0.0025; check: 2.5 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) =\
+    \ 0.0025 g/L. This supports the provider-declared main-recipe concentration, not\
+    \ an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 8\",\n        \"exact_source_quote\"\
+    : \"FeSO4 x 7 H2O 2.500 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q17\",\n    \"label\": \"\
+    Target H3BO3\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"\
+    Current primary nominal batch\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[8].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.0029\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz378\",\n  \
+    \      \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 9\",\n        \"exact_source_quote\"\
+    : \"H3BO3 2.900 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q18\",\n    \"label\": \"Owners H3BO3 historical amount\
+    \ claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"Historical\
+    \ evidence versus current primary\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0029\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"H3BO3\\\",\\n                        \\\"compound_id\\\": 37,\\\
+    n                        \\\"amount\\\": 2.9,\\n                        \\\"unit\\\
+    \": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0029,\\n            \
+    \            \\\"mmol_l\\\": 0.0468952,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[8].concentration (H3BO3) in MediaDive medium 378; locator=$.data.solutions[0].recipe[8].\
+    \ Provider explicitly reports g_l=0.0029; check: 2.9 mg * 0.001 g/mg / (1000 ml\
+    \ / 1000 ml per L) = 0.0029 g/L. This supports the provider-declared main-recipe\
+    \ concentration, not an independently measured final volume, a stock composition,\
+    \ or a downstream assay dilution. Water alone does not establish final volume.\
+    \ Exact source ingredient labels/forms are matched; secondary ontology mappings\
+    \ are not validated by this evidence. Additional exact value at $.data.solutions[0].volume\
+    \ (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0029\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"H3BO3\\\",\\n                        \\\"compound_id\\\": 37,\\\
+    n                        \\\"amount\\\": 2.9,\\n                        \\\"unit\\\
+    \": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0029,\\n            \
+    \            \\\"mmol_l\\\": 0.0468952,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n            \"explanation\": \"Concentration\
+    \ evidence for ingredients[8].concentration (H3BO3) in MediaDive medium 378; locator=$.data.solutions[0].recipe[8].\
+    \ Provider explicitly reports g_l=0.0029; check: 2.9 mg * 0.001 g/mg / (1000 ml\
+    \ / 1000 ml per L) = 0.0029 g/L. This supports the provider-declared main-recipe\
+    \ concentration, not an independently measured final volume, a stock composition,\
+    \ or a downstream assay dilution. Water alone does not establish final volume.\
+    \ Exact source ingredient labels/forms are matched; secondary ontology mappings\
+    \ are not validated by this evidence. Additional exact value at $.data.solutions[0].volume\
+    \ (ml): 1000. Retrieved 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 9\",\n        \"exact_source_quote\"\
+    : \"H3BO3 2.900 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q19\",\n    \"label\": \"\
+    Target CoSO4 x 7 H2O\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Current primary nominal batch\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[9].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.0012\",\n          \"unit\": \"G_PER_L\"\n        }\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 10\",\n        \"exact_source_quote\"\
+    : \"CoSO4 x 7 H2O 1.200 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q20\",\n    \"label\": \"Owners CoSO4 x 7 H2O historical\
+    \ amount claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"\
+    Historical evidence versus current primary\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0012\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 10,\\n                        \\\"\
+    compound\\\": \\\"CoSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 198,\\n                        \\\"amount\\\": 1.2,\\n                   \
+    \     \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0012,\\\
+    n                        \\\"mmol_l\\\": 0.00774214,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n            \"explanation\"\
+    : \"Concentration evidence for ingredients[9].concentration (CoSO4 x 7 H2O) in\
+    \ MediaDive medium 378; locator=$.data.solutions[0].recipe[9]. Provider explicitly\
+    \ reports g_l=0.0012; check: 1.2 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) =\
+    \ 0.0012 g/L. This supports the provider-declared main-recipe concentration, not\
+    \ an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0012\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].evidence\",\n        \"stored\": [\n\
+    \          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 10,\\n                        \\\"\
+    compound\\\": \\\"CoSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 198,\\n                        \\\"amount\\\": 1.2,\\n                   \
+    \     \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0012,\\\
+    n                        \\\"mmol_l\\\": 0.00774214,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n            \"explanation\"\
+    : \"Concentration evidence for ingredients[9].concentration (CoSO4 x 7 H2O) in\
+    \ MediaDive medium 378; locator=$.data.solutions[0].recipe[9]. Provider explicitly\
+    \ reports g_l=0.0012; check: 1.2 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) =\
+    \ 0.0012 g/L. This supports the provider-declared main-recipe concentration, not\
+    \ an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 10\",\n        \"exact_source_quote\"\
+    : \"CoSO4 x 7 H2O 1.200 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q21\",\n    \"label\": \"\
+    Target CuSO4 x 5 H2O\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Current primary nominal batch\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[10].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n        }\n  \
+    \    }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 11\",\n        \"exact_source_quote\"\
+    : \"CuSO4 x 5 H2O 0.100 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q22\",\n    \"label\": \"Owners CuSO4 x 5 H2O historical\
+    \ amount claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"\
+    Historical evidence versus current primary\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].evidence\",\n        \"stored\":\
+    \ [\n          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 11,\\n                        \\\"\
+    compound\\\": \\\"CuSO4 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 121,\\n                        \\\"amount\\\": 0.1,\\n                   \
+    \     \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0001,\\\
+    n                        \\\"mmol_l\\\": 0.000400503,\\n                     \
+    \   \\\"optional\\\": 0\\n                    }\",\n            \"explanation\"\
+    : \"Concentration evidence for ingredients[10].concentration (CuSO4 x 5 H2O) in\
+    \ MediaDive medium 378; locator=$.data.solutions[0].recipe[10]. Provider explicitly\
+    \ reports g_l=0.0001; check: 0.1 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) =\
+    \ 0.0001 g/L. This supports the provider-declared main-recipe concentration, not\
+    \ an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].evidence\",\n        \"stored\":\
+    \ [\n          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 11,\\n                        \\\"\
+    compound\\\": \\\"CuSO4 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 121,\\n                        \\\"amount\\\": 0.1,\\n                   \
+    \     \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0001,\\\
+    n                        \\\"mmol_l\\\": 0.000400503,\\n                     \
+    \   \\\"optional\\\": 0\\n                    }\",\n            \"explanation\"\
+    : \"Concentration evidence for ingredients[10].concentration (CuSO4 x 5 H2O) in\
+    \ MediaDive medium 378; locator=$.data.solutions[0].recipe[10]. Provider explicitly\
+    \ reports g_l=0.0001; check: 0.1 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) =\
+    \ 0.0001 g/L. This supports the provider-declared main-recipe concentration, not\
+    \ an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 11\",\n        \"exact_source_quote\"\
+    : \"CuSO4 x 5 H2O 0.100 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q23\",\n    \"label\": \"\
+    Target MnCl2 x 4 H2O\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Current primary nominal batch\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[11].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"9e-05\",\n          \"unit\": \"G_PER_L\"\n        }\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 12\",\n        \"exact_source_quote\"\
+    : \"MnCl2 x 4 H2O 0.090 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q24\",\n    \"label\": \"Owners MnCl2 x 4 H2O historical\
+    \ amount claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"\
+    Historical evidence versus current primary\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9e-05\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].evidence\",\n        \"stored\":\
+    \ [\n          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 12,\\n                        \\\"\
+    compound\\\": \\\"MnCl2 x 4 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 36,\\n                        \\\"amount\\\": 0.09,\\n                   \
+    \     \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 9.0e-5,\\\
+    n                        \\\"mmol_l\\\": 0.000454764,\\n                     \
+    \   \\\"optional\\\": 0\\n                    }\",\n            \"explanation\"\
+    : \"Concentration evidence for ingredients[11].concentration (MnCl2 x 4 H2O) in\
+    \ MediaDive medium 378; locator=$.data.solutions[0].recipe[11]. Provider explicitly\
+    \ reports g_l=9e-05; check: 0.09 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) =\
+    \ 0.00009 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9e-05\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].evidence\",\n        \"stored\":\
+    \ [\n          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 12,\\n                        \\\"\
+    compound\\\": \\\"MnCl2 x 4 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 36,\\n                        \\\"amount\\\": 0.09,\\n                   \
+    \     \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 9.0e-5,\\\
+    n                        \\\"mmol_l\\\": 0.000454764,\\n                     \
+    \   \\\"optional\\\": 0\\n                    }\",\n            \"explanation\"\
+    : \"Concentration evidence for ingredients[11].concentration (MnCl2 x 4 H2O) in\
+    \ MediaDive medium 378; locator=$.data.solutions[0].recipe[11]. Provider explicitly\
+    \ reports g_l=9e-05; check: 0.09 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) =\
+    \ 0.00009 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 12\",\n        \"exact_source_quote\"\
+    : \"MnCl2 x 4 H2O 0.090 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q25\",\n    \"label\": \"\
+    Target Na2MoO4 x 2 H2O\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Current primary nominal batch\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[12].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.0025\",\n          \"unit\": \"G_PER_L\"\n        }\n  \
+    \    }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 13\",\n        \"exact_source_quote\"\
+    : \"Na2MoO4 x 2 H2O 2.500 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q26\",\n    \"label\": \"Owners Na2MoO4 x 2 H2O historical\
+    \ amount claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"\
+    Historical evidence versus current primary\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0025\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].evidence\",\n        \"stored\":\
+    \ [\n          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 13,\\n                        \\\"\
+    compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 9,\\n                        \\\"amount\\\": 2.5,\\n                     \
+    \   \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0025,\\\
+    n                        \\\"mmol_l\\\": 0.0103327,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n            \"explanation\"\
+    : \"Concentration evidence for ingredients[12].concentration (Na2MoO4 x 2 H2O)\
+    \ in MediaDive medium 378; locator=$.data.solutions[0].recipe[12]. Provider explicitly\
+    \ reports g_l=0.0025; check: 2.5 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) =\
+    \ 0.0025 g/L. This supports the provider-declared main-recipe concentration, not\
+    \ an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0025\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].evidence\",\n        \"stored\":\
+    \ [\n          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 13,\\n                        \\\"\
+    compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 9,\\n                        \\\"amount\\\": 2.5,\\n                     \
+    \   \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0025,\\\
+    n                        \\\"mmol_l\\\": 0.0103327,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n            \"explanation\"\
+    : \"Concentration evidence for ingredients[12].concentration (Na2MoO4 x 2 H2O)\
+    \ in MediaDive medium 378; locator=$.data.solutions[0].recipe[12]. Provider explicitly\
+    \ reports g_l=0.0025; check: 2.5 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) =\
+    \ 0.0025 g/L. This supports the provider-declared main-recipe concentration, not\
+    \ an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 13\",\n        \"exact_source_quote\"\
+    : \"Na2MoO4 x 2 H2O 2.500 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q27\",\n    \"label\": \"\
+    Target ZnSO4 x 7 H2O\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Current primary nominal batch\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[13].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.0012\",\n          \"unit\": \"G_PER_L\"\n        }\n  \
+    \    }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 14\",\n        \"exact_source_quote\"\
+    : \"ZnSO4 x 7 H2O 1.200 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Current primary supports the original\
+    \ amount and nominal 1000 ml-water recipe basis, but target has no attached claim\
+    \ evidence. Preserve the original unit; mg × 0.001 gives the corresponding g amount\
+    \ for the seven minor salts. A nominal recipe basis is not an independently measured\
+    \ final volume or authentication of the historical API g_l claim.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q28\",\n    \"label\": \"Owners ZnSO4 x 7 H2O historical\
+    \ amount claim\",\n    \"decision\": \"unsupported\",\n    \"source_stage\": \"\
+    Historical evidence versus current primary\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0012\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].evidence\",\n        \"stored\":\
+    \ [\n          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 14,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 1.2,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0012,\\\
+    n                        \\\"mmol_l\\\": 0.00417303,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n            \"explanation\"\
+    : \"Concentration evidence for ingredients[13].concentration (ZnSO4 x 7 H2O) in\
+    \ MediaDive medium 378; locator=$.data.solutions[0].recipe[13]. Provider explicitly\
+    \ reports g_l=0.0012; check: 1.2 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) =\
+    \ 0.0012 g/L. This supports the provider-declared main-recipe concentration, not\
+    \ an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\
+    \ KOMODO accession 378 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    \n          }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0012\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].evidence\",\n        \"stored\":\
+    \ [\n          {\n            \"reference\": \"https://mediadive.dsmz.de/rest/medium/378\"\
+    ,\n            \"supports\": \"SUPPORT\",\n            \"snippet\": \"{\\n   \
+    \                     \\\"recipe_order\\\": 14,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 1.2,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0012,\\\
+    n                        \\\"mmol_l\\\": 0.00417303,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n            \"explanation\"\
+    : \"Concentration evidence for ingredients[13].concentration (ZnSO4 x 7 H2O) in\
+    \ MediaDive medium 378; locator=$.data.solutions[0].recipe[13]. Provider explicitly\
+    \ reports g_l=0.0012; check: 1.2 mg * 0.001 g/mg / (1000 ml / 1000 ml per L) =\
+    \ 0.0012 g/L. This supports the provider-declared main-recipe concentration, not\
+    \ an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T10:46:12.878306+00:00; response SHA256=761abf2c2768958d47451cf34acbef1f01ce8089bda13833b04d56c13ec6de67.\"\
+    \n          }\n        ]\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 table row 14\",\n        \"exact_source_quote\"\
+    : \"ZnSO4 x 7 H2O 1.200 mg\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both attached historical API quotations\
+    \ match decoded local report text, but their original response hash is unavailable.\
+    \ Do not label the existing value/unit/basis/evidence verified. Current primary\
+    \ independently corroborates the literal batch amount; preserve the history and\
+    \ recover or replace the required exact evidence transparently before asserting\
+    \ authenticated provider g_l. No numerical correction is proposed merely because\
+    \ access failed.\"\n  },\n  {\n    \"decision_id\": \"q29\",\n    \"label\": \"\
+    Source water\",\n    \"decision\": \"add\",\n    \"source_stage\": \"Primary water\
+    \ input\",\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore 1000 ml water as source batch/preparation\
+    \ context in each layer. It is missing from the ingredient/preparation representation;\
+    \ do not convert it to 1000 g or assert a measured final volume.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q30\",\n    \"label\": \"Target pH\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"source_stage\": \"Main target pH\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTHROBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz378\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.0.\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Existing target pH 7.0 is supported\
+    \ in all three layers. Add exact claim evidence without describing it as a measured\
+    \ final result.\"\n  },\n  {\n    \"decision_id\": \"q31\",\n    \"label\": \"\
+    KOMODO/target missing gas fractions\",\n    \"decision\": \"add\",\n    \"source_stage\"\
+    : \"Missing primary atmosphere\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz378\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\",\n        \"\
+    source_locator\": \"Page 1 final sentence\",\n        \"exact_source_quote\":\
+    \ \"Incubate under 5% O2 + 95% N2.\",\n        \"snapshot_sha256\": \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\"\
+    ,\n        \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"Add the exact 5% oxygen and 95% nitrogen\
+    \ incubation atmosphere; do not use catalogue Aerobic: No as a substitute or infer\
+    \ a percent basis not stated.\"\n  },\n  {\n    \"decision_id\": \"q32\",\n  \
+    \  \"label\": \"DSMZ owner retained pH and atmosphere\",\n    \"decision\": \"\
+    evidence_only\",\n    \"source_stage\": \"Retained DSMZ preparation\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arthrobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 7.0. Incubate under 5% O2 + 95% N2.\"\n      }\n    ],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz378\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.0. Incubate under 5% O2 + 95% N2.\",\n        \"snapshot_sha256\"\
+    : \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\",\n    \
+    \    \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"The DSMZ owner already retains all\
+    \ these values correctly; attach preparation evidence. These source-supported\
+    \ details were lost from the merged target.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q33\",\n    \"label\": \"Unquantified adjustment and incubation limits\",\n\
+    \    \"decision\": \"not_quantified\",\n    \"source_stage\": \"Source limits\"\
+    ,\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz378\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium378.pdf\"\
+    ,\n        \"source_locator\": \"Entire source preparation\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.0. Incubate under 5% O2 + 95% N2.\",\n        \"snapshot_sha256\"\
+    : \"f3b0a79da4e0d5989a631937df8f7d4afe608ed17cd5309a38e47c4588413d13\",\n    \
+    \    \"parsed_text_sha256\": \"bea4505ba35097fd87f70071cf21548862f8fb1f99ce604f0b240d7b981ddbef\"\
+    \n      }\n    ],\n    \"interpretation\": \"No adjustment reagent amount, sterilization\
+    \ cycle, growth temperature, gas pressure or measured final volume is specified.\
+    \ Do not infer these from other collection recipes.\"\n  }\n]"
+- assessment_id: ownership
+  area: ownership
+  topic: Exact two maintained inputs and later evidence chronology
+  outcome: supported
+  summary: The KOMODO and DSMZ owners both resolve by stable ID and exact provenance.
+    Full fields, all 28 amount explanations, the identity row and histories were read;
+    no record or permanent review was changed.
+  target_ids:
+  - CultureMech:005114
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - historical-context
+  - writer-0
+  - writer-1
+  - writer-2
+findings:
+- finding_id: f1
+  issue_key: cm005114-preparation-loss
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Merged and KOMODO layers omit source preparation and water context
+  description: 'DSMZ 378 explicitly specifies water 1000 ml, pH 7.0 and 5% O2 plus
+    95% N2. The DSMZ owner retains the pH/gas sentence; target and KOMODO owner retain
+    pH only and catalogue Aerobic: No. Water is absent throughout. This is a concrete
+    completeness difference despite source-duplicate signatures.'
+  target_ids:
+  - CultureMech:005114
+  field_paths:
+  - preparation_steps
+  - ingredients
+  - parent_media
+  - variant_modifications
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arthrobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm005114-evidence-loss
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Later owner evidence is absent from target and original API authentication
+    remains unresolved
+  description: Both owners have fourteen October source quotations; the August target
+    has none. All 28 quotations are corroborated by decoded local reports, but the
+    original cited response SHA cannot be authenticated and current API access fails.
+    The primary supports current literal amounts without proving historical raw-byte
+    equality.
+  target_ids:
+  - CultureMech:005114
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - historical-context
+  - historical-search
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arthrobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm005114-time
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Import timestamp syntax and resolver timezone are unresolved
+  description: KOMODO history contains 2026-01-27T01:15:02.fZ and a timezone-naive
+    February resolver timestamp. Native target schema passing does not authenticate
+    a missing fractional second or UTC offset.
+  target_ids:
+  - CultureMech:005114
+  field_paths:
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  evidence_ids:
+  - record
+  - owner-0
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arthrobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Preserve exact water and preparation context in maintained inputs and
+    regenerate without losing it. Qualify duplicate assertions to their verified scope
+    and keep oxygen metadata distinct from the quantitative primary statement.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:005114
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arthrobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve all historical evidence and its limitations, obtain exact
+    versioned source support or transparently attach the current primary with original
+    units/basis, and ensure controlled regeneration carries verified claims. Never
+    fabricate the old response by serializing parsed data.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:005114
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arthrobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve the original events; add an evidence-backed clarification
+    if original logs resolve the malformed fraction or timezone. Do not guess a time
+    or rewrite history silently.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:005114
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_378_ARTHROBACTER_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arthrobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Current HTTP 503 and an ignored-inclusive historical search leave the original Oct7
+  API response 761abf2c… unavailable. The 28 existing historical amount claims require
+  authentication beyond parsed objects; this makes the review partial.
+- Exact historical KOMODO detail access returned HTTP 403. Current base identity is
+  resolved by the exact catalogue row and linked DSMZ primary; historical detail-byte
+  equivalence and a distinct variant are not inferred.
+- Exact historical KOMODO detail access returned HTTP 403. Current base identity is
+  resolved by the exact catalogue row and linked DSMZ primary; historical detail-byte
+  equivalence and a distinct variant are not inferred.
+- Partial for required historical API evidence authentication, not for absence of
+  the current primary recipe. All fourteen original amounts, source water, pH/gas
+  statement, both full owner histories and reciprocal relationship paths were assessed.
+  Source CaCl2 hydration, mannitol stereochemistry and unprovided procedure conditions
+  remain qualified. No old raw response or access timestamp was invented.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-031
+- generated-medium
+```
