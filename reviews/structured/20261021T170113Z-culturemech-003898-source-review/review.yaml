@@ -1,0 +1,1336 @@
+schema_version: 1.0.0
+review_id: 20261021T170113Z-culturemech-003898-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: aquincola_medium (CultureMech:003898)'
+started_at: '2026-10-21T16:49:37Z'
+finished_at: '2026-10-21T17:01:13Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Exact DSMZ 1178 and the recoverable original October 7 MediaDive response
+  support the four stored ingredient concentrations in their provider-declared main-recipe
+  scope. Both maintained owners attach matching evidence; the generated target omits
+  it. All layers omit the source water input. Conditional agar and pH are supported,
+  while source sterilization parameters remain unspecified. Current access failures
+  do not erase the recovered historical evidence.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml
+    sha256: 81ce893ef4cde0a86d1e30ab046d0edb849f1c65bbde9204132b0d1d655e9e56
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml
+    sha256: c869c3d9ba3e8fa84ab00bad8eb029cfd6faced5e251f210426b8c33ce79e8ed
+    role: context
+  - path: data/normalized_yaml/bacterial/aquincola_medium.yaml
+    sha256: 8c030f1444d8957cc7da100048ac21599323947260090e6c0bd993b24a701565
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/aquincola_medium.yaml.md
+    sha256: 17d8d70dc783f2507798244e438a6033fd8af673e863f75923905560f6160fb2
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/inspected-candidate-context.json
+    sha256: bef58d348ed78c4694bd9876429eea22eed599556ff8a9f9b79f4858745bd02e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml.md
+    sha256: 5727ee774ac13bf9860eb48f9d5af17dd9b9bc6c906b978ddb6489fd086f0e4c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 295; batch 030 item 5 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-nine task batches
+    contain 290 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 293 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003898
+targets:
+- target_id: CultureMech:003898
+  path: data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml
+  label: aquincola_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquincola_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch030/295/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-030/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch030/295/strict.tsv"
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:003898
+- check_id: mediadive1178api-source-access
+  name: 'Exact source content access: mediadive1178api'
+  required: false
+  status: unavailable
+  summary: Current exact endpoint returned HTTP 503. The original historical raw response,
+    exact catalog and current primary remain available; this optional access failure
+    does not make their required comparison unavailable.
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - mediadive1178api-attempt
+- check_id: mediadive1178api_retry-source-access
+  name: 'Exact source content access: mediadive1178api_retry'
+  required: false
+  status: unavailable
+  summary: Current exact endpoint returned HTTP 503. The original historical raw response,
+    exact catalog and current primary remain available; this optional access failure
+    does not make their required comparison unavailable.
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - mediadive1178api_retry-attempt
+- check_id: komodo1178detail-source-access
+  name: 'Exact source content access: komodo1178detail'
+  required: false
+  status: unavailable
+  summary: Current exact endpoint returned HTTP 403. The original historical raw response,
+    exact catalog and current primary remain available; this optional access failure
+    does not make their required comparison unavailable.
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - komodo1178detail-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/aquincola_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:50:15.972142Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch030/295/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:50:17.785196Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-030/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch030/295/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:50:23.013051Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:50:24.520239Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: supports
+  summary: './data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml:1:id: CultureMech:003898
+
+    ./data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml:1:id: CultureMech:003898
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch030/source-preflight-bound/295/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: supports
+  summary: 8 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: b9a731d73a7a793d63e2a6163dc3fd59d4af0f9878fb46c393b45f3413f4679f
+- evidence_id: bound-owner-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch030/source-preflight-bound/295/evidence-context-original.json
+  locator: Whole target, all maintained owners and scoped dependencies
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: context_only
+  summary: All frozen local-record objects match fresh inspected YAML. Source interpretations
+    are separately checked against actual bound raw/text bytes.
+  snapshot_sha256: 3f0bb22aae9a9011018b473e17f34b7c7c5432c40f869afd3a4fcfe88fc6ec53
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1178.pdf
+  locator: Page 1, entire medium 1178
+  accessed_at: '2026-10-21T16:33:43.144908Z'
+  support: supports
+  summary: Primary supplies yeast extract, peptone, fructose, input water, pH and
+    optional agar. It does not state an autoclave cycle or a measured finished volume.
+  snapshot_sha256: 71165213a6f33f098a28c36dd8ab5548e981e6049d893cb1b274c34bf7ab1d20
+- evidence_id: historical-provider
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1178
+  locator: $.data.medium; $.data.solutions[0], ID 2351
+  accessed_at: '2026-10-07T13:18:24.191895Z'
+  support: supports
+  summary: Exact historical raw response supplies main volume 1000 mL and explicit
+    g_l values. Its original access time is October 7, not the extraction/binding
+    time. Source-declared rates are not experimental measurements.
+  snapshot_sha256: 01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f
+- evidence_id: historical-embedding
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/inspected-candidate-context.json
+  locator: $[25].source_raw; $[25].source_metadata
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: supports
+  summary: Original UTF-8 response bytes exactly reproduce the bound raw SHA and preserve
+    original URL/time metadata. The parsed source derivative is a different object
+    and is not claimed byte-equivalent.
+  snapshot_sha256: bef58d348ed78c4694bd9876429eea22eed599556ff8a9f9b79f4858745bd02e
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact 1178 row and table header
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Exact catalog maps KOMODO 1178 to DSMZ 1178. Identity evidence does not
+    establish ingredient amounts, oxygen requirements or biological growth.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch030/295/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 64e41af2ffd2e73f4153d0a481fc2974e27ef62cf9b81c56969fc0a65444b853
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi28757
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28757
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:49:55.504136Z'
+  support: supports
+  summary: CHEBI:28757 resolves to fructose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 76d05e03e00004437e5231331dcf49803064128e054d8be9f70019d2efe44105
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:28757": [{"label": "Fructose", "match_type": "preferred_term",
+    "identifier": "CHEBI:28757", "preferred_term": "Fructose", "ontology_id": "CHEBI:28757",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml;
+    data/normalized_yaml/bacterial/aquincola_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:00.842862"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:00.842862"}]}, {"input": "data/normalized_yaml/bacterial/aquincola_medium.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: existing-owner-evidence
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch030/source-preflight-bound/295/evidence-context-original.json
+  locator: All eight ingredient evidence objects and one KOMODO identity object
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: supports
+  summary: '[{"path": "data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml",
+    "field_path": "$.ingredients[0].evidence[0]", "source_reference": "https://mediadive.dsmz.de/rest/medium/1178",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[0].concentration (Yeast extract) in MediaDive
+    medium 1178; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports
+    g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This supports the
+    provider-declared main-recipe concentration, not an independently measured final
+    volume, a stock composition, or a downstream assay dilution. Water alone does
+    not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:24.191895+00:00;
+    response SHA256=01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f.
+    KOMODO accession 1178 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+    The mapping supports identity only, not ingredient quantities or variants."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml", "field_path":
+    "$.ingredients[1].evidence[0]", "source_reference": "https://mediadive.dsmz.de/rest/medium/1178",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Peptone\",\n                        \"compound_id\": 1,\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[1].concentration (Peptone) in MediaDive
+    medium 1178; locator=$.data.solutions[0].recipe[1]. Provider explicitly reports
+    g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This supports the
+    provider-declared main-recipe concentration, not an independently measured final
+    volume, a stock composition, or a downstream assay dilution. Water alone does
+    not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:24.191895+00:00;
+    response SHA256=01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f.
+    KOMODO accession 1178 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+    The mapping supports identity only, not ingredient quantities or variants."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml", "field_path":
+    "$.ingredients[2].evidence[0]", "source_reference": "https://mediadive.dsmz.de/rest/medium/1178",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Fructose\",\n                        \"compound_id\": 98,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 2.77531,\n                        \"optional\":
+    0\n                    }", "explanation": "Concentration evidence for ingredients[2].concentration
+    (Fructose) in MediaDive medium 1178; locator=$.data.solutions[0].recipe[2]. Provider
+    explicitly reports g_l=0.5; check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L) =
+    0.5 g/L. This supports the provider-declared main-recipe concentration, not an
+    independently measured final volume, a stock composition, or a downstream assay
+    dilution. Water alone does not establish final volume. Exact source ingredient
+    labels/forms are matched; secondary ontology mappings are not validated by this
+    evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+    2026-10-07T13:18:24.191895+00:00; response SHA256=01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f.
+    KOMODO accession 1178 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+    The mapping supports identity only, not ingredient quantities or variants."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml", "field_path":
+    "$.ingredients[3].evidence[0]", "source_reference": "https://mediadive.dsmz.de/rest/medium/1178",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\":
+    \"for solid medium\",\n                        \"amount\": 15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\":
+    44.5991,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[3].concentration (Agar) in MediaDive medium
+    1178; locator=$.data.solutions[0].recipe[4]. Provider explicitly reports g_l=15;
+    check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This supports the provider-declared
+    main-recipe concentration, not an independently measured final volume, a stock
+    composition, or a downstream assay dilution. Water alone does not establish final
+    volume. Exact source ingredient labels/forms are matched; secondary ontology mappings
+    are not validated by this evidence. Source condition ''for solid medium'' matches
+    local physical_state=SOLID_AGAR. Additional exact value at $.data.solutions[0].volume
+    (ml): 1000. Retrieved 2026-10-07T13:18:24.191895+00:00; response SHA256=01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f.
+    KOMODO accession 1178 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+    The mapping supports identity only, not ingredient quantities or variants."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml", "field_path":
+    "$.evidence[0]", "source_reference": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+    "snippet": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1178''
+    >1178</a></TD>\n\t\t\t\t\t<TD>AQUINCOLA medium</TD>\n\t\t\t\t\t<TD> 7.0</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1178.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1178.pdf</a></TD>\n\t\t\t\t</TR>",
+    "explanation": "Source identity only: KOMODO accession 1178 maps to https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1178.pdf;
+    locator=MediaList table row with ID=1178. This row supplies no ingredient amounts
+    and does not establish equivalence of variants. Concentrations are supported separately
+    by exact ingredient excerpts from the linked DSMZ dataset recipe. Retrieved 2026-10-07T13:01:23.350274+00:00;
+    response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a."},
+    {"path": "data/normalized_yaml/bacterial/aquincola_medium.yaml", "field_path":
+    "$.ingredients[0].evidence[0]", "source_reference": "https://mediadive.dsmz.de/rest/medium/1178",
+    "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[0].concentration (Yeast extract) in MediaDive
+    medium 1178; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports
+    g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This supports the
+    provider-declared main-recipe concentration, not an independently measured final
+    volume, a stock composition, or a downstream assay dilution. Water alone does
+    not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:24.191895+00:00;
+    response SHA256=01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f."},
+    {"path": "data/normalized_yaml/bacterial/aquincola_medium.yaml", "field_path":
+    "$.ingredients[1].evidence[0]", "source_reference": "https://mediadive.dsmz.de/rest/medium/1178",
+    "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Peptone\",\n                        \"compound_id\": 1,\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[1].concentration (Peptone) in MediaDive
+    medium 1178; locator=$.data.solutions[0].recipe[1]. Provider explicitly reports
+    g_l=1; check: 1 g * 1 g/g / (1000 ml / 1000 ml per L) = 1 g/L. This supports the
+    provider-declared main-recipe concentration, not an independently measured final
+    volume, a stock composition, or a downstream assay dilution. Water alone does
+    not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:18:24.191895+00:00;
+    response SHA256=01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f."},
+    {"path": "data/normalized_yaml/bacterial/aquincola_medium.yaml", "field_path":
+    "$.ingredients[2].evidence[0]", "source_reference": "https://mediadive.dsmz.de/rest/medium/1178",
+    "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Fructose\",\n                        \"compound_id\": 98,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 2.77531,\n                        \"optional\":
+    0\n                    }", "explanation": "Concentration evidence for ingredients[2].concentration
+    (Fructose) in MediaDive medium 1178; locator=$.data.solutions[0].recipe[2]. Provider
+    explicitly reports g_l=0.5; check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L) =
+    0.5 g/L. This supports the provider-declared main-recipe concentration, not an
+    independently measured final volume, a stock composition, or a downstream assay
+    dilution. Water alone does not establish final volume. Exact source ingredient
+    labels/forms are matched; secondary ontology mappings are not validated by this
+    evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved
+    2026-10-07T13:18:24.191895+00:00; response SHA256=01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f."},
+    {"path": "data/normalized_yaml/bacterial/aquincola_medium.yaml", "field_path":
+    "$.ingredients[3].evidence[0]", "source_reference": "https://mediadive.dsmz.de/rest/medium/1178",
+    "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\":
+    \"for solid medium\",\n                        \"amount\": 15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\":
+    44.5991,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[3].concentration (Agar) in MediaDive medium
+    1178; locator=$.data.solutions[0].recipe[4]. Provider explicitly reports g_l=15;
+    check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This supports the provider-declared
+    main-recipe concentration, not an independently measured final volume, a stock
+    composition, or a downstream assay dilution. Water alone does not establish final
+    volume. Exact source ingredient labels/forms are matched; secondary ontology mappings
+    are not validated by this evidence. Source condition ''for solid medium'' matches
+    local physical_state=SOLID_AGAR. Additional exact value at $.data.solutions[0].volume
+    (ml): 1000. Retrieved 2026-10-07T13:18:24.191895+00:00; response SHA256=01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f."}]'
+  snapshot_sha256: 3f0bb22aae9a9011018b473e17f34b7c7c5432c40f869afd3a4fcfe88fc6ec53
+- evidence_id: current-code-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current scoped code; no historical-version inference
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: context_only
+  summary: The maintained owners contain later evidence-only curation that postdates
+    the generated merge. Preserve the four supported values and exact attached evidence,
+    add missing source context only through maintained inputs, then regenerate. Current
+    importer/cleanup functions are not proof of historical execution and no curation
+    script was run.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: current-code-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current scoped code; no historical-version inference
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: context_only
+  summary: The maintained owners contain later evidence-only curation that postdates
+    the generated merge. Preserve the four supported values and exact attached evidence,
+    add missing source context only through maintained inputs, then regenerate. Current
+    importer/cleanup functions are not proof of historical execution and no curation
+    script was run.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: current-code-2
+  kind: record_content
+  reference: src/culturemech/merge/merge_recipes.py
+  locator: Current scoped code; no historical-version inference
+  accessed_at: '2026-10-21T17:01:11Z'
+  support: context_only
+  summary: The maintained owners contain later evidence-only curation that postdates
+    the generated merge. Preserve the four supported values and exact attached evidence,
+    add missing source context only through maintained inputs, then regenerate. Current
+    importer/cleanup functions are not proof of historical execution and no curation
+    script was run.
+  snapshot_sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+- evidence_id: mediadive1178api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1178
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T16:33:41.545244Z'
+  support: context_only
+  summary: Current exact endpoint returned HTTP 503. The original historical raw response,
+    exact catalog and current primary remain available; this optional access failure
+    does not make their required comparison unavailable.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1178api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1178
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T16:34:39.382585Z'
+  support: context_only
+  summary: Current exact endpoint returned HTTP 503. The original historical raw response,
+    exact catalog and current primary remain available; this optional access failure
+    does not make their required comparison unavailable.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo1178detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1178
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T16:33:41.544370Z'
+  support: context_only
+  summary: Current exact endpoint returned HTTP 403. The original historical raw response,
+    exact catalog and current primary remain available; this optional access failure
+    does not make their required comparison unavailable.
+  snapshot_sha256: 685ccc786a6c5dac86669c8286e31f90e49af8f09d171d80462a64787d7fd450
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 8 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Yeast extract\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquincola_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"provider_declared_g_per_l\": 1.0,\n      \"provider_main_volume_ml\"\
+    : 1000,\n      \"source_scope\": \"Historical main solution 2351\",\n      \"\
+    conditional_solid_branch\": false\n    },\n    \"rationale\": \"Both maintained\
+    \ owners have exact matching attached ingredient evidence, original hash/time\
+    \ and provider-declared denominator, so those local claims are verified within\
+    \ provider scope. The target has the same values but lacks attached evidence.\
+    \ No independent measured volume or additional molecular specificity is inferred.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1178api_historical\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1178\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"Yeast extract\\\",\\n                        \\\"\
+    compound_id\\\": 16,\\n                        \\\"amount\\\": 1,\\n         \
+    \               \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\"\
+    : 1,\\n                        \\\"optional\\\": 0\\n                    }\",\n\
+    \        \"snapshot_sha256\": \"01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f\"\
+    ,\n        \"accessed_at\": \"2026-10-07T13:18:24.191895+00:00\"\n      },\n \
+    \     {\n        \"source_key\": \"dsmz1178\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1178.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 1.0 g\",\n        \"snapshot_sha256\": \"71165213a6f33f098a28c36dd8ab5548e981e6049d893cb1b274c34bf7ab1d20\"\
+    ,\n        \"parsed_text_sha256\": \"07f196d92273d16e1482939c4ca59cdaf35d1e6afcc4cadfdee69d0d6da77610\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:33:43.144908Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\": \"Peptone\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n       \
+    \ \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/aquincola_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    verified\"\n      }\n    ],\n    \"proposed_source_representation\": {\n     \
+    \ \"provider_declared_g_per_l\": 1.0,\n      \"provider_main_volume_ml\": 1000,\n\
+    \      \"source_scope\": \"Historical main solution 2351\",\n      \"conditional_solid_branch\"\
+    : false\n    },\n    \"rationale\": \"Both maintained owners have exact matching\
+    \ attached ingredient evidence, original hash/time and provider-declared denominator,\
+    \ so those local claims are verified within provider scope. The target has the\
+    \ same values but lacks attached evidence. No independent measured volume or additional\
+    \ molecular specificity is inferred.\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1178api_historical\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1178\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Peptone\\\",\\n                        \\\"compound_id\\\":\
+    \ 1,\\n                        \\\"amount\\\": 1,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n          \
+    \              \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f\",\n    \
+    \    \"accessed_at\": \"2026-10-07T13:18:24.191895+00:00\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1178\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1178.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\"\
+    : \"Peptone 1.0 g\",\n        \"snapshot_sha256\": \"71165213a6f33f098a28c36dd8ab5548e981e6049d893cb1b274c34bf7ab1d20\"\
+    ,\n        \"parsed_text_sha256\": \"07f196d92273d16e1482939c4ca59cdaf35d1e6afcc4cadfdee69d0d6da77610\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:33:43.144908Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\": \"Fructose\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquincola_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"provider_declared_g_per_l\": 0.5,\n      \"provider_main_volume_ml\"\
+    : 1000,\n      \"source_scope\": \"Historical main solution 2351\",\n      \"\
+    conditional_solid_branch\": false\n    },\n    \"rationale\": \"Both maintained\
+    \ owners have exact matching attached ingredient evidence, original hash/time\
+    \ and provider-declared denominator, so those local claims are verified within\
+    \ provider scope. The target has the same values but lacks attached evidence.\
+    \ No independent measured volume or additional molecular specificity is inferred.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1178api_historical\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1178\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"Fructose\\\",\\n                        \\\"compound_id\\\
+    \": 98,\\n                        \\\"amount\\\": 0.5,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n \
+    \                       \\\"mmol_l\\\": 2.77531,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f\"\
+    ,\n        \"accessed_at\": \"2026-10-07T13:18:24.191895+00:00\"\n      },\n \
+    \     {\n        \"source_key\": \"dsmz1178\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1178.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\"\
+    : \"Fructose 0.5 g\",\n        \"snapshot_sha256\": \"71165213a6f33f098a28c36dd8ab5548e981e6049d893cb1b274c34bf7ab1d20\"\
+    ,\n        \"parsed_text_sha256\": \"07f196d92273d16e1482939c4ca59cdaf35d1e6afcc4cadfdee69d0d6da77610\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:33:43.144908Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\": \"Agar\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n      \
+    \  \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/aquincola_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\":\
+    \ \"verified\"\n      }\n    ],\n    \"proposed_source_representation\": {\n \
+    \     \"provider_declared_g_per_l\": 15.0,\n      \"provider_main_volume_ml\"\
+    : 1000,\n      \"source_scope\": \"Historical main solution 2351\",\n      \"\
+    conditional_solid_branch\": true\n    },\n    \"rationale\": \"Both maintained\
+    \ owners have exact matching attached ingredient evidence, original hash/time\
+    \ and provider-declared denominator, so those local claims are verified within\
+    \ provider scope. The target has the same values but lacks attached evidence.\
+    \ No independent measured volume or additional molecular specificity is inferred.\
+    \ Preserve the explicit optional-solid condition; provider optional=0 does not\
+    \ cancel its condition field and primary wording.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1178api_historical\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1178\",\n        \"\
+    source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 5,\\n                  \
+    \      \\\"compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\
+    \": 3,\\n                        \\\"condition\\\": \\\"for solid medium\\\",\\\
+    n                        \\\"amount\\\": 15,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 15,\\n                 \
+    \       \\\"mmol_l\\\": 44.5991,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f\"\
+    ,\n        \"accessed_at\": \"2026-10-07T13:18:24.191895+00:00\"\n      },\n \
+    \     {\n        \"source_key\": \"dsmz1178\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1178.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 conditional agar paragraph\",\n      \
+    \  \"exact_source_quote\": \"Agar may be added (15 g/l) to solidify the medium.\"\
+    ,\n        \"snapshot_sha256\": \"71165213a6f33f098a28c36dd8ab5548e981e6049d893cb1b274c34bf7ab1d20\"\
+    ,\n        \"parsed_text_sha256\": \"07f196d92273d16e1482939c4ca59cdaf35d1e6afcc4cadfdee69d0d6da77610\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:33:43.144908Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\": \"Missing\
+    \ main water input\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquincola_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_water_input_ml\": 1000,\n      \"finished_volume_measurement\"\
+    : null\n    },\n    \"rationale\": \"All layers omit the water row. Add it as\
+    \ the explicit input volume, not 1000 g/L or independent proof of final volume.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1178api_historical\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1178\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"Distilled water\\\",\\n                        \\\
+    \"compound_id\\\": 4,\\n                        \\\"amount\\\": 1000,\\n     \
+    \                   \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f\"\
+    ,\n        \"accessed_at\": \"2026-10-07T13:18:24.191895+00:00\"\n      },\n \
+    \     {\n        \"source_key\": \"dsmz1178\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1178.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"71165213a6f33f098a28c36dd8ab5548e981e6049d893cb1b274c34bf7ab1d20\"\
+    ,\n        \"parsed_text_sha256\": \"07f196d92273d16e1482939c4ca59cdaf35d1e6afcc4cadfdee69d0d6da77610\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:33:43.144908Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\": \"Historical\
+    \ provider-declared main volume\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"notes\",\n        \"stored\": \"Source: KOMODO ModelSEED\
+    \ | ID: 1178 | DSMZ Medium: 1178 (mediadive.medium:1178) | Aerobic: No\",\n  \
+    \      \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml\"\
+    ,\n        \"field_path\": \"notes\",\n        \"stored\": \"Source: KOMODO ModelSEED\
+    \ | ID: 1178 | DSMZ Medium: 1178 (mediadive.medium:1178) | Aerobic: No\",\n  \
+    \      \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquincola_medium.yaml\"\
+    ,\n        \"field_path\": \"notes\",\n        \"stored\": \"Source: DSMZ | Link:\
+    \ https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1178.pdf\",\n     \
+    \   \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"provider_declared_volume_ml\": 1000,\n      \"source_accessed_at\"\
+    : \"2026-10-07T13:18:24.191895+00:00\",\n      \"measured_volume\": false\n  \
+    \  },\n    \"rationale\": \"Keep the explicit historical provider basis with source\
+    \ provenance. It supports the four reported g_l values; the primary water row\
+    \ alone would not establish this denominator.\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"mediadive1178api_historical\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1178\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].volume\",\n        \"exact_source_quote\": \"\\\"volume\\\
+    \": 1000\",\n        \"snapshot_sha256\": \"01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\"\
+    : \"Main pH\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquincola_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"pH\": 7\n    },\n    \"rationale\": \"Both local values and the DSMZ\
+    \ owner preparation step agree. Attach direct pH evidence; the ingredient concentration\
+    \ evidence does not automatically support this separate claim.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1178\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1178.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main pH\",\n        \"exact_source_quote\": \"\
+    pH 7.0\",\n        \"snapshot_sha256\": \"71165213a6f33f098a28c36dd8ab5548e981e6049d893cb1b274c34bf7ab1d20\"\
+    ,\n        \"parsed_text_sha256\": \"07f196d92273d16e1482939c4ca59cdaf35d1e6afcc4cadfdee69d0d6da77610\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:33:43.144908Z\"\n      },\n      {\n\
+    \        \"source_key\": \"mediadive1178api_historical\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1178\",\n        \"source_locator\"\
+    : \"$.data.medium.min_pH/max_pH\",\n        \"exact_source_quote\": \"\\\"min_pH\\\
+    \": 7,\\n            \\\"max_pH\\\": 7\",\n        \"snapshot_sha256\": \"01ba6e7455dd14010d9d591041bba9888e0a9c6a3e5b669fa98c7f3bec2a064f\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\"\
+    : \"Optional agar preparation scope\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AQUINCOLA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquincola_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Agar may be added (15 g/l) to solidify the medium.\",\n        \"decision\"\
+    : \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"optional_agar_g_per_l\": 15,\n      \"base_medium_is_liquid\": true\n\
+    \    },\n    \"rationale\": \"The ingredient note already limits agar to the solid\
+    \ branch. Preserve the later DSMZ owner preparation text and ensure generated/source-owner\
+    \ presentation retains the option; do not add agar unconditionally to the liquid\
+    \ base.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1178\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1178.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 preparation\",\n        \"exact_source_quote\"\
+    : \"Agar may be added (15 g/l) to solidify the medium.\",\n        \"snapshot_sha256\"\
+    : \"71165213a6f33f098a28c36dd8ab5548e981e6049d893cb1b274c34bf7ab1d20\",\n    \
+    \    \"parsed_text_sha256\": \"07f196d92273d16e1482939c4ca59cdaf35d1e6afcc4cadfdee69d0d6da77610\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:33:43.144908Z\"\n      }\n    ]\n\
+    \  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '2 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 2/4 primary
+    and 2/4 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi2509
+  - chebi28757
+  details: 'Instance coverage on a 0–100 percent scale, denominator 4: primary 50.00%;
+    secondary 50.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 21 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: identity
+  area: identity
+  topic: Exact source and stable-ID graph
+  outcome: supported
+  summary: KOMODO 1178 maps to DSMZ 1178. The target/KOMODO owner stable ID CultureMech:003898
+    and DSMZ parent CultureMech:000620 resolve through exact reciprocal paths. Source-duplicate
+    identity is supported independently of the local signature; no separate variant
+    or growth assertion is inferred.
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - catalog
+  - primary
+- assessment_id: historical-authenticity
+  area: evidence
+  topic: Original historical source bytes and later owner claims
+  outcome: supported
+  summary: All eight owner ingredient snippets match the recovered original response
+    and its stated hash/time; the separate catalog identity snippet also matches its
+    original response. Exact historical extraction is distinguished from failed current
+    fetches and from a parsed derivative. The generated target lacks these later evidence
+    objects.
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - historical-provider
+  - historical-embedding
+  - existing-owner-evidence
+  - catalog
+- assessment_id: preparation
+  area: completeness
+  topic: Water, pH and conditional solid branch
+  outcome: concern
+  summary: The source water is missing in all local layers. pH and conditional agar
+    are supported; the DSMZ owner preserves both preparation statements while the
+    target and KOMODO owner retain the agar condition only at the ingredient. The
+    source supplies no sterilization method/time/temperature, so none is invented.
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - primary
+  - historical-provider
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Supported mixture and retained solid variant
+  outcome: supported
+  summary: Yeast extract and peptone support COMPLEX/UNDEFINED, while the explicitly
+    conditional agar supports SOLID_AGAR for the represented solid branch. Retain
+    the liquid-base option and ingredient condition. Generic fructose and agar identifiers
+    are compatible without choosing a specific fructose stereoisomer or polymer composition;
+    unmapped extracts remain mixtures. No oxygen requirement follows from the KOMODO
+    flag.
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - primary
+  - historical-provider
+  - record
+  - chebi28757
+  - chebi2509
+- assessment_id: current-writers
+  area: provenance
+  topic: Current writers and follow-up ownership
+  outcome: concern
+  summary: The maintained owners contain later evidence-only curation that postdates
+    the generated merge. Preserve the four supported values and exact attached evidence,
+    add missing source context only through maintained inputs, then regenerate. Current
+    importer/cleanup functions are not proof of historical execution and no curation
+    script was run.
+  target_ids:
+  - CultureMech:003898
+  evidence_ids:
+  - record
+  - current-code-0
+  - current-code-1
+  - current-code-2
+findings:
+- finding_id: f1
+  issue_key: culturemech.003898.water-omission
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The explicit source water input is absent
+  description: All local layers omit the 1000 mL distilled-water input present in
+    the primary and historical provider row. Its omission leaves the represented batch
+    incomplete even though four other concentrations are supported.
+  target_ids:
+  - CultureMech:003898
+  field_paths:
+  - ingredients
+  evidence_ids:
+  - primary
+  - historical-provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquincola_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.003898.generated-evidence-drift
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated ingredient claims omit authentic later owner evidence
+  description: The target has the four supported values but none of the eight attached
+    owner amount evidence objects or later source references. Exact recovered raw
+    bytes substantiate those owner claims; no numeric correction is warranted for
+    them.
+  target_ids:
+  - CultureMech:003898
+  field_paths:
+  - ingredients
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - existing-owner-evidence
+  - historical-embedding
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquincola_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.003898.history-timestamps
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Inherited history includes malformed and timezone-naive timestamps
+  description: Target and KOMODO owner each retain one malformed import timestamp
+    and one timezone-naive resolver timestamp. The later source capture has an exact
+    timezone-aware timestamp and should remain separate from those events.
+  target_ids:
+  - CultureMech:003898
+  field_paths:
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  evidence_ids:
+  - history-metadata
+  - historical-provider
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquincola_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Add the literal water input with exact claim evidence to both maintained
+    source owners, preserving input-volume versus provider-declared-denominator distinctions,
+    then regenerate.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003898
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquincola_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve the exact owner evidence, original source timestamps and conditional
+    agar scope during authorized regeneration. Do not manufacture new retrieval dates
+    or rewrite the historical events.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003898
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquincola_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Append a bounded provenance clarification if curated later; preserve
+    the old event strings and do not infer missing timezones or replace the original
+    API access time.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003898
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1178_AQUINCOLA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquincola_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Current exact endpoint returned HTTP 503. The original historical raw response,
+  exact catalog and current primary remain available; this optional access failure
+  does not make their required comparison unavailable.
+- Current exact endpoint returned HTTP 503. The original historical raw response,
+  exact catalog and current primary remain available; this optional access failure
+  does not make their required comparison unavailable.
+- Current exact endpoint returned HTTP 403. The original historical raw response,
+  exact catalog and current primary remain available; this optional access failure
+  does not make their required comparison unavailable.
+- The current API could not be fetched successfully. Historical October 7 g_l and
+  volume declarations are assessed as historical provider evidence, not falsely dated
+  as current. Sterilization parameters and independent final-volume measurements are
+  absent from available recipe content, not supplied by inference.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-030
+- generated-medium

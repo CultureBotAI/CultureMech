@@ -1,0 +1,4819 @@
+# Source and formulation review: archaeoglobus_neptunius_medium (CultureMech:001509)
+
+- Review: 20261021T165744Z-culturemech-001509-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T16:49:42Z
+- Finished UTC: 2026-10-21T16:57:44Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 399a defines a main medium plus SL-10, selenite-tungstate and tenfold Wolin vitamin stocks. Both local layers flatten all stock ingredients into main concentrations, omit stock doses and water, and assert an unsupported HCl mass conversion. Existing main concentration normalization is not authenticated by a primary final-volume declaration or current API. Main preparation and conditional pH are retained, but the SL-10 make-up step lacks stock placement. Nickel hydrate and sodium-resazurin grounding need correction; source calcium D-pantothenate specificity is supported and is not a finding.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 299; batch 030 item 9 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-nine task batches contain 290 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 293 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001509 | data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml | generated | archaeoglobus_neptunius_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001509 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001509 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-030/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch030/299/strict.tsv |
+| validate-terms | passed | True | CultureMech:001509 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001509 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001509 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive399aapi | unavailable | False | CultureMech:001509 | Current mediadive399aapi returned503. Exact primary main and all named stock subsections are available. Historical API byte equivalence and its numerical denominator are not authenticated or inferred. |
+| Exact source content access: mediadive399aretry | unavailable | False | CultureMech:001509 | Current mediadive399aretry returned503. Exact primary main and all named stock subsections are available. Historical API byte equivalence and its numerical denominator are not authenticated or inferred. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001509.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary chemical identifiers
+
+grounding: concern. Targets: CultureMech:001509.
+
+34 distinct primary/current-secondary IDs have matching nonobsolete labels. Target direct-ingredient linkage is 34/35 primary (97.14%) and 32/35 current CHEBI-based secondary (91.43%), on a 0–100 linkage scale, not an accuracy score. Current secondary keys without pinned index rows: []. Legacy slot count 0 is separate and does not enter that current-key claim. Supplied-form correspondence is assessed separately.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:001509.
+
+15 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact source version and named stock dependencies
+
+identity: supported. Targets: CultureMech:001509.
+
+The exact 399a primary identifies ARCHAEOGLOBUS NEPTUNIUS MEDIUM and specifies SL-10 from320, selenite-tungstate from385 and tenfold vitamins from120. Only those subsections are transferred. The current main API is unavailable; exact primary content supports this current formulation review without claiming historical payload equality.
+
+### Mixture and biological scope
+
+scope: supported. Targets: CultureMech:001509.
+
+Liquid/complex/SEMI_DEFINED agrees with a defined basal salt recipe plus yeast extract and no agar. The title and archaea filing identify source context; no organism growth, strain, optimum or paper-specific assertion is made.
+
+### Exact hydrates, salts and source stereochemistry
+
+grounding: concern. Targets: CultureMech:001509.
+
+NiCl2 hexahydrate is assigned anhydrous CHEBI:34887 and sodium resazurin is assigned neutral CHEBI:8806. Source calcium D-(+)-pantothenate explicitly supports the D-specific structure of CHEBI:31345; no unsupported-stereochemistry finding applies there. Other supplied hydrates and B12 class were checked separately from index membership; no unknown HCl percentage basis or density is inferred.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:001509.
+
+52 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "label": "KCl",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.338983",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.338983",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "KCl 0.34 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q2",
+    "label": "MgCl2 x 6 H2O",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3.98804",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3.98804",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "MgCl2 x 6 H2O 4.00 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q3",
+    "label": "MgSO4 x 7 H2O",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.139581",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.139581",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.14 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q4",
+    "label": "NH4Cl",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.249252",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.249252",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "NH4Cl 0.25 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q5",
+    "label": "CaCl2 x 2 H2O",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.139581",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.139581",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.14 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q6",
+    "label": "K2HPO4",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.139581",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.139581",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "K2HPO4 0.14 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q7",
+    "label": "NaCl",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "17.9462",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "17.9462",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "NaCl 18.00 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q8",
+    "label": "Yeast extract",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.498504",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.498504",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "Yeast extract (OXOID) 0.50 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q9",
+    "label": "Sodium resazurin",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.000498504",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.000498504",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "Sodium resazurin (0.1% w/v) 0.50 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q10",
+    "label": "Na2CO3",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.498504",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.498504",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "Na2CO3 0.50 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q11",
+    "label": "Na-pyruvate",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.997009",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.997009",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "Na-pyruvate 1.00 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q12",
+    "label": "Na2SO3",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.598205",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.598205",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "Na2SO3 0.60 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q13",
+    "label": "DL-Dithiothreitol",
+    "decision": "correct",
+    "source_stage": "Main batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.498504",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.498504",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Page1 exact main-table row",
+        "exact_source_quote": "DL-Dithiothreitol 0.50 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Retain original main amount and unit with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume declaration; the local 1003 ml-like normalization is not independently authenticated. For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose context."
+  },
+  {
+    "decision_id": "q14",
+    "label": "HCl",
+    "decision": "correct",
+    "source_stage": "SL-10 stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 exact row",
+        "exact_source_quote": "HCl (25%) 10.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 final make-up sentence",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "The source gives 10 ml HCl(25%) with an unqualified percent basis. Local 2.5 G_PER_L is unsupported; neither density nor w/v may be assumed. Retain original volume/percentage within SL-10 made up to 1000 ml, not a main mass concentration."
+  },
+  {
+    "decision_id": "q15",
+    "label": "FeCl2 x 4 H2O",
+    "decision": "correct",
+    "source_stage": "SL-10 stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 exact row",
+        "exact_source_quote": "FeCl2 x 4 H2O 1.50 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 final make-up sentence",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "This amount belongs to SL-10 stock explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of flat main ingredients and preserve source units and stock basis."
+  },
+  {
+    "decision_id": "q16",
+    "label": "ZnCl2",
+    "decision": "correct",
+    "source_stage": "SL-10 stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 exact row",
+        "exact_source_quote": "ZnCl2 70.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 final make-up sentence",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "This amount belongs to SL-10 stock explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of flat main ingredients and preserve source units and stock basis."
+  },
+  {
+    "decision_id": "q17",
+    "label": "MnCl2 x 4 H2O",
+    "decision": "correct",
+    "source_stage": "SL-10 stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 exact row",
+        "exact_source_quote": "MnCl2 x 4 H2O 100.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 final make-up sentence",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "This amount belongs to SL-10 stock explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of flat main ingredients and preserve source units and stock basis."
+  },
+  {
+    "decision_id": "q18",
+    "label": "H3BO3",
+    "decision": "correct",
+    "source_stage": "SL-10 stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 exact row",
+        "exact_source_quote": "H3BO3 6.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 final make-up sentence",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "This amount belongs to SL-10 stock explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of flat main ingredients and preserve source units and stock basis."
+  },
+  {
+    "decision_id": "q19",
+    "label": "CoCl2 x 6 H2O",
+    "decision": "correct",
+    "source_stage": "SL-10 stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 exact row",
+        "exact_source_quote": "CoCl2 x 6 H2O 190.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 final make-up sentence",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "This amount belongs to SL-10 stock explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of flat main ingredients and preserve source units and stock basis."
+  },
+  {
+    "decision_id": "q20",
+    "label": "CuCl2 x 2 H2O",
+    "decision": "correct",
+    "source_stage": "SL-10 stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 exact row",
+        "exact_source_quote": "CuCl2 x 2 H2O 2.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 final make-up sentence",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "This amount belongs to SL-10 stock explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of flat main ingredients and preserve source units and stock basis."
+  },
+  {
+    "decision_id": "q21",
+    "label": "NiCl2 x 6 H2O",
+    "decision": "correct",
+    "source_stage": "SL-10 stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 exact row",
+        "exact_source_quote": "NiCl2 x 6 H2O 24.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 final make-up sentence",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "This amount belongs to SL-10 stock explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of flat main ingredients and preserve source units and stock basis."
+  },
+  {
+    "decision_id": "q22",
+    "label": "Na2MoO4 x 2 H2O",
+    "decision": "correct",
+    "source_stage": "SL-10 stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 exact row",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 36.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 final make-up sentence",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "This amount belongs to SL-10 stock explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of flat main ingredients and preserve source units and stock basis."
+  },
+  {
+    "decision_id": "q23",
+    "label": "NaOH",
+    "decision": "correct",
+    "source_stage": "Selenite-tungstate stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Selenite-tungstate exact row",
+        "exact_source_quote": "NaOH 0.50 g",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Selenite-tungstate stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "This is the stock preparation amount, not a direct main concentration. Preserve original grams/milligrams and stock water; main receives 1 ml. Unlike SL-10, this subsection does not explicitly say make up to final volume."
+  },
+  {
+    "decision_id": "q24",
+    "label": "Na2SeO3 x 5 H2O",
+    "decision": "correct",
+    "source_stage": "Selenite-tungstate stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.003",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.003",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Selenite-tungstate exact row",
+        "exact_source_quote": "Na2SeO3 x 5 H2O 3.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Selenite-tungstate stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "This is the stock preparation amount, not a direct main concentration. Preserve original grams/milligrams and stock water; main receives 1 ml. Unlike SL-10, this subsection does not explicitly say make up to final volume."
+  },
+  {
+    "decision_id": "q25",
+    "label": "Na2WO4 x 2 H2O",
+    "decision": "correct",
+    "source_stage": "Selenite-tungstate stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.004",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Selenite-tungstate exact row",
+        "exact_source_quote": "Na2WO4 x 2 H2O 4.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Selenite-tungstate stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "This is the stock preparation amount, not a direct main concentration. Preserve original grams/milligrams and stock water; main receives 1 ml. Unlike SL-10, this subsection does not explicitly say make up to final volume."
+  },
+  {
+    "decision_id": "q26",
+    "label": "Biotin",
+    "decision": "correct",
+    "source_stage": "Tenfold vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Tenfold Wolin vitamins exact row",
+        "exact_source_quote": "Biotin 20.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Stock heading",
+        "exact_source_quote": "Wolin's vitamin solution (10x) (from medium 120)",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Vitamin stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Preserve this milligram amount in the tenfold vitamin stock and its own water context. It is not a direct main concentration; the explicit receiving-medium dose is 1 ml, independently of the 10x label."
+  },
+  {
+    "decision_id": "q27",
+    "label": "Folic acid",
+    "decision": "correct",
+    "source_stage": "Tenfold vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Tenfold Wolin vitamins exact row",
+        "exact_source_quote": "Folic acid 20.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Stock heading",
+        "exact_source_quote": "Wolin's vitamin solution (10x) (from medium 120)",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Vitamin stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Preserve this milligram amount in the tenfold vitamin stock and its own water context. It is not a direct main concentration; the explicit receiving-medium dose is 1 ml, independently of the 10x label."
+  },
+  {
+    "decision_id": "q28",
+    "label": "Pyridoxine hydrochloride",
+    "decision": "correct",
+    "source_stage": "Tenfold vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Tenfold Wolin vitamins exact row",
+        "exact_source_quote": "Pyridoxine hydrochloride 100.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Stock heading",
+        "exact_source_quote": "Wolin's vitamin solution (10x) (from medium 120)",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Vitamin stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Preserve this milligram amount in the tenfold vitamin stock and its own water context. It is not a direct main concentration; the explicit receiving-medium dose is 1 ml, independently of the 10x label."
+  },
+  {
+    "decision_id": "q29",
+    "label": "Thiamine HCl",
+    "decision": "correct",
+    "source_stage": "Tenfold vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Tenfold Wolin vitamins exact row",
+        "exact_source_quote": "Thiamine HCl 50.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Stock heading",
+        "exact_source_quote": "Wolin's vitamin solution (10x) (from medium 120)",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Vitamin stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Preserve this milligram amount in the tenfold vitamin stock and its own water context. It is not a direct main concentration; the explicit receiving-medium dose is 1 ml, independently of the 10x label."
+  },
+  {
+    "decision_id": "q30",
+    "label": "Riboflavin",
+    "decision": "correct",
+    "source_stage": "Tenfold vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Tenfold Wolin vitamins exact row",
+        "exact_source_quote": "Riboflavin 50.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Stock heading",
+        "exact_source_quote": "Wolin's vitamin solution (10x) (from medium 120)",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Vitamin stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Preserve this milligram amount in the tenfold vitamin stock and its own water context. It is not a direct main concentration; the explicit receiving-medium dose is 1 ml, independently of the 10x label."
+  },
+  {
+    "decision_id": "q31",
+    "label": "Nicotinic acid",
+    "decision": "correct",
+    "source_stage": "Tenfold vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Tenfold Wolin vitamins exact row",
+        "exact_source_quote": "Nicotinic acid 50.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Stock heading",
+        "exact_source_quote": "Wolin's vitamin solution (10x) (from medium 120)",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Vitamin stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Preserve this milligram amount in the tenfold vitamin stock and its own water context. It is not a direct main concentration; the explicit receiving-medium dose is 1 ml, independently of the 10x label."
+  },
+  {
+    "decision_id": "q32",
+    "label": "Calcium D-(+)-pantothenate",
+    "decision": "correct",
+    "source_stage": "Tenfold vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Tenfold Wolin vitamins exact row",
+        "exact_source_quote": "Calcium D-(+)-pantothenate 50.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Stock heading",
+        "exact_source_quote": "Wolin's vitamin solution (10x) (from medium 120)",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Vitamin stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Preserve this milligram amount in the tenfold vitamin stock and its own water context. It is not a direct main concentration; the explicit receiving-medium dose is 1 ml, independently of the 10x label."
+  },
+  {
+    "decision_id": "q33",
+    "label": "Vitamin B12",
+    "decision": "correct",
+    "source_stage": "Tenfold vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Tenfold Wolin vitamins exact row",
+        "exact_source_quote": "Vitamin B12 1.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Stock heading",
+        "exact_source_quote": "Wolin's vitamin solution (10x) (from medium 120)",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Vitamin stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Preserve this milligram amount in the tenfold vitamin stock and its own water context. It is not a direct main concentration; the explicit receiving-medium dose is 1 ml, independently of the 10x label."
+  },
+  {
+    "decision_id": "q34",
+    "label": "p-Aminobenzoic acid",
+    "decision": "correct",
+    "source_stage": "Tenfold vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Tenfold Wolin vitamins exact row",
+        "exact_source_quote": "p-Aminobenzoic acid 50.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Stock heading",
+        "exact_source_quote": "Wolin's vitamin solution (10x) (from medium 120)",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Vitamin stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Preserve this milligram amount in the tenfold vitamin stock and its own water context. It is not a direct main concentration; the explicit receiving-medium dose is 1 ml, independently of the 10x label."
+  },
+  {
+    "decision_id": "q35",
+    "label": "(DL)-alpha-Lipoic acid",
+    "decision": "correct",
+    "source_stage": "Tenfold vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Tenfold Wolin vitamins exact row",
+        "exact_source_quote": "(DL)-alpha-Lipoic acid 50.00 mg",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Stock heading",
+        "exact_source_quote": "Wolin's vitamin solution (10x) (from medium 120)",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Vitamin stock water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Preserve this milligram amount in the tenfold vitamin stock and its own water context. It is not a direct main concentration; the explicit receiving-medium dose is 1 ml, independently of the 10x label."
+  },
+  {
+    "decision_id": "q36",
+    "label": "SL-10 dose",
+    "decision": "add",
+    "source_stage": "Main stock addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "presence": "absent"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "presence": "absent"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table stock dose",
+        "exact_source_quote": "Trace element solution SL-10 1.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Represent the exact stock and its 1 ml source batch dose; all stock descriptors are absent. Do not infer a generic 1:10 dilution from the 10x name."
+  },
+  {
+    "decision_id": "q37",
+    "label": "Selenite-tungstate dose",
+    "decision": "add",
+    "source_stage": "Main stock addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "presence": "absent"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "presence": "absent"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table stock dose",
+        "exact_source_quote": "Selenite-tungstate solution 1.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Represent the exact stock and its 1 ml source batch dose; all stock descriptors are absent. Do not infer a generic 1:10 dilution from the 10x name."
+  },
+  {
+    "decision_id": "q38",
+    "label": "Tenfold vitamins dose",
+    "decision": "add",
+    "source_stage": "Main stock addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "presence": "absent"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "presence": "absent"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table stock dose",
+        "exact_source_quote": "Wolin's vitamin solution (10x) 1.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Represent the exact stock and its 1 ml source batch dose; all stock descriptors are absent. Do not infer a generic 1:10 dilution from the 10x name."
+  },
+  {
+    "decision_id": "q39",
+    "label": "Main table water",
+    "decision": "add",
+    "source_stage": "Named preparation water",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table exact water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Restore this source-specific water amount within its own preparation stage; do not sum all stock waters into main volume."
+  },
+  {
+    "decision_id": "q40",
+    "label": "SL-10 table water",
+    "decision": "add",
+    "source_stage": "Named preparation water",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 table exact water row",
+        "exact_source_quote": "Distilled water 990.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Restore this source-specific water amount within its own preparation stage; do not sum all stock waters into main volume."
+  },
+  {
+    "decision_id": "q41",
+    "label": "Selenite-tungstate table water",
+    "decision": "add",
+    "source_stage": "Named preparation water",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Selenite-tungstate table exact water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Restore this source-specific water amount within its own preparation stage; do not sum all stock waters into main volume."
+  },
+  {
+    "decision_id": "q42",
+    "label": "Tenfold vitamin table water",
+    "decision": "add",
+    "source_stage": "Named preparation water",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Tenfold vitamin table exact water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Restore this source-specific water amount within its own preparation stage; do not sum all stock waters into main volume."
+  },
+  {
+    "decision_id": "q43",
+    "label": "SL-10 make-up volume",
+    "decision": "correct",
+    "source_stage": "SL-10 final make-up",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "SL-10 final sentence",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Existing text correctly states 1000 ml but needs explicit SL-10 placement rather than an unlabelled root preparation step. This stock final volume does not establish main final volume."
+  },
+  {
+    "decision_id": "q44",
+    "label": "Main final volume",
+    "decision": "not_quantified",
+    "source_stage": "Main volume limit",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "Sodium resazurin (0.1% w/v) 0.50 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "Trace element solution SL-10 1.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "Selenite-tungstate solution 1.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "Wolin's vitamin solution (10x) 1.00 ml",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Known listed liquid inputs total 1003.5 ml before other late-stock volumes; this is not a measured final volume. Do not silently select 1003 ml or 1000 ml as an authenticated denominator."
+  },
+  {
+    "decision_id": "q45",
+    "label": "Main conditional pH",
+    "decision": "evidence_only",
+    "source_stage": "Main pH",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 6.5
+      },
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 6.5
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main preparation final sentence",
+        "exact_source_quote": "medium to 6.5, if necessary.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "The stored target pH and existing conditional wording agree. Add narrow evidence; do not reinterpret this as a measured final pH or require removing the correctly scoped value."
+  },
+  {
+    "decision_id": "q46",
+    "label": "Main gas",
+    "decision": "evidence_only",
+    "source_stage": "Named source preparation stage",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main preparation paragraph",
+        "exact_source_quote": "80% N2 and 20% CO2 gas mixture",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Main sparging and dispensing use this mixture. The existing description retains it, but attached evidence is absent."
+  },
+  {
+    "decision_id": "q47",
+    "label": "Sparging time",
+    "decision": "evidence_only",
+    "source_stage": "Named source preparation stage",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main preparation paragraph",
+        "exact_source_quote": "30 - 45 min",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Keep the interval as preparation time. The existing description retains it, but attached evidence is absent."
+  },
+  {
+    "decision_id": "q48",
+    "label": "Vessel example",
+    "decision": "evidence_only",
+    "source_stage": "Named source preparation stage",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main preparation paragraph",
+        "exact_source_quote": "20 ml per 100 ml bottle",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "An example aliquot/vessel pairing, not a final-volume rule. The existing description retains it, but attached evidence is absent."
+  },
+  {
+    "decision_id": "q49",
+    "label": "Carbonate stock gas",
+    "decision": "evidence_only",
+    "source_stage": "Named source preparation stage",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main preparation paragraph",
+        "exact_source_quote": "80% N2 and 20% CO2 gas atmosphere.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "This gas scope belongs to the separate carbonate stock. The existing description retains it, but attached evidence is absent."
+  },
+  {
+    "decision_id": "q50",
+    "label": "Other late-stock gas",
+    "decision": "evidence_only",
+    "source_stage": "Named source preparation stage",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main preparation paragraph",
+        "exact_source_quote": "100% N2 gas",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Pyruvate, sulfite, vitamins and DTT use this separate stock atmosphere. The existing description retains it, but attached evidence is absent."
+  },
+  {
+    "decision_id": "q51",
+    "label": "Late-stock strengths and doses",
+    "decision": "not_quantified",
+    "source_stage": "Late stocks",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "The main carbonate/pyruvate/sulfite/DTT masses do not specify separate stock strengths or ml doses. Tenfold-vitamin recipe and its 1 ml dose are explicitly available and separately assessed."
+  },
+  {
+    "decision_id": "q52",
+    "label": "Sterilization and unknown cycle",
+    "decision": "evidence_only",
+    "source_stage": "Source sterilization",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      },
+      {
+        "input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "seal, and autoclave.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      },
+      {
+        "source_key": "dsmz399a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf",
+        "source_locator": "Late-stock preparation",
+        "exact_source_quote": "prepared under 100% N2 gas and sterilized by filtration.",
+        "snapshot_sha256": "32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9",
+        "parsed_text_sha256": "e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1"
+      }
+    ],
+    "interpretation": "Preserve main autoclaving and stated late-stock filtration. No numeric cycle temperature/time is given; do not borrow defaults."
+  }
+]
+
+### Sole maintained input
+
+ownership: supported. Targets: CultureMech:001509.
+
+The exact normalized archaeoglobus_neptunius_medium owner owns correction. Full target and owner fields/history were compared and current source/merge code inspected. No record or generated output was edited.
+
+## Findings
+
+### f1: Three stock recipes are flattened into the main medium
+
+blocker / open / confirmed; issue key: cm001509-stock-stages.
+
+All SL-10, selenite-tungstate and tenfold vitamin constituents are direct main ingredients. Three 1 ml doses and four distinct water contexts are absent. HCl25%10ml becomes unsupported 2.5G_PER_L; stock strengths are not receiving-medium concentrations, and main normalization lacks a supported final denominator.
+
+### f2: Nickel hydrate and resazurin sodium form are inconsistent
+
+major / open / confirmed; issue key: cm001509-form-mismatch.
+
+Nickel chloride hexahydrate is linked to anhydrous CHEBI:34887; sodium resazurin is linked to neutral CHEBI:8806. D-calcium pantothenate is explicitly supported by the source and is not part of this finding.
+
+### f3: SL-10 final make-up is detached from its stock
+
+major / open / confirmed; issue key: cm001509-preparation-placement.
+
+The root preparation step correctly describes making SL-10 up to1000ml but does not name that stock and no stock descriptor exists. Main pH6.5 conditional wording, gas ratios and filtration exceptions are already retained and should be preserved.
+
+### f4: Source-supported fields lack narrow evidence
+
+minor / open / confirmed; issue key: cm001509-claim-evidence.
+
+Amounts, stock preparations, main conditional pH and gas handling have no attached claim-level evidence. Historical enrichment and generic source note do not prove current chemistry or volume conversion.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore all three complete source stocks, exact doses and water stages, preserve unqualified HCl percentage and source batch units, and establish a defensible volume basis before concentration conversion.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Reconcile exact supplied hydrate and salt with inspected structural evidence, retaining supported stereochemistry and avoiding guessed IDs or mass conversions.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Associate the existing stock preparation with explicit SL-10 representation while preserving the correct main procedure and conditional pH. Do not apply the stock1000ml make-up to the main medium.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Attach exact primary snippets and source/version/stock locators after correction; preserve append-only history and keep inaccessible current API separate from primary evidence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch030/299/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-030/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch030/299/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml:1:id: CultureMech:001509<br>./data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml:1:id: CultureMech:001509<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch030/source-preflight-bound/299/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 42 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf; Complete two-page primary: main table, preparation and all three named stocks | supports | Exact source recipe and all stock sections are available, with source-specific units and stages. No main measured final volume is declared. |
+| dsmz320 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium320.pdf; SL-10 subsection only | supports | Only SL-10 composition and its explicit final make-up transfer; no parent basal or culture conditions. |
+| dsmz385 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf; Selenite-tungstate subsection only | supports | Only this named stock transfers; all parent basal and variant recipes excluded. |
+| dsmz120 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium120.pdf; Wolin vitamin solution (10x) subsection only | supports | Only tenfold vitamin stock transfers. D stereochemistry is explicitly printed and supports that part of the asserted calcium-pantothenate structure. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:131361 resolves to disodium selenite pentahydrate. Exact label validity is separate from source chemical-form support. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Exact label validity is separate from source chemical-form support. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:15940 resolves to nicotinic acid. Exact label validity is separate from source chemical-form support. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:15956 resolves to biotin. Exact label validity is separate from source chemical-form support. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:16494 resolves to lipoic acid. Exact label validity is separate from source chemical-form support. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:17015 resolves to riboflavin. Exact label validity is separate from source chemical-form support. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:176843 resolves to vitamin B12. Exact label validity is separate from source chemical-form support. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:17883 resolves to hydrogen chloride. Exact label validity is separate from source chemical-form support. |
+| chebi18320 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18320; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:18320 resolves to 1,4-dithiothreitol. Exact label validity is separate from source chemical-form support. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:26710 resolves to sodium chloride. Exact label validity is separate from source chemical-form support. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:27470 resolves to folic acid. Exact label validity is separate from source chemical-form support. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:29377 resolves to sodium carbonate. Exact label validity is separate from source chemical-form support. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:30753 resolves to 4-aminobenzoic acid. Exact label validity is separate from source chemical-form support. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:30961 resolves to pyridoxine hydrochloride. Exact label validity is separate from source chemical-form support. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:31206 resolves to ammonium chloride. Exact label validity is separate from source chemical-form support. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:31345 resolves to Calcium pantothenate. Exact label validity is separate from source chemical-form support. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Exact label validity is separate from source chemical-form support. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:32145 resolves to sodium hydroxide. Exact label validity is separate from source chemical-form support. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:32588 resolves to potassium chloride. Exact label validity is separate from source chemical-form support. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:33118 resolves to boric acid. Exact label validity is separate from source chemical-form support. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:34887 resolves to nickel dichloride. Exact label validity is separate from source chemical-form support. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:49105 resolves to thiamine hydrochloride. Exact label validity is separate from source chemical-form support. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:49976 resolves to zinc dichloride. Exact label validity is separate from source chemical-form support. |
+| chebi50144 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50144; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:50144 resolves to sodium pyruvate. Exact label validity is separate from source chemical-form support. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:53503 resolves to cobalt chloride hexahydrate. Exact label validity is separate from source chemical-form support. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:63939 resolves to sodium tungstate dihydrate. Exact label validity is separate from source chemical-form support. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Exact label validity is separate from source chemical-form support. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Exact label validity is separate from source chemical-form support. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:86249 resolves to iron dichloride tetrahydrate. Exact label validity is separate from source chemical-form support. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:86318 resolves to copper(II) chloride dihydrate. Exact label validity is separate from source chemical-form support. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Exact label validity is separate from source chemical-form support. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Exact label validity is separate from source chemical-form support. |
+| chebi86477 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86477; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:86477 resolves to sodium sulfite. Exact label validity is separate from source chemical-form support. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:8806 resolves to Resazurin. Exact label validity is separate from source chemical-form support. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Entire pinned index exact identifier lookup; adjacent snapshot metadata | context_only | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "rows": {"CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:17883": [{"label": "HCl", "match_type": "preferred_term", "identifier": "CHEBI:17883", "preferred_term": "HCl", "ontology_id": "CHEBI:17883", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:18320": [{"label": "DL-Dithiothreitol", "match_type": "preferred_term", "identifier": "CHEBI:18320", "preferred_term": "DL-Dithiothreitol", "ontology_id": "CHEBI:18320", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type": "preferred_term", "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id": "CHEBI:32145", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:50144": [{"label": "Na-pyruvate", "match_type": "preferred_term", "identifier": "CHEBI:50144", "preferred_term": "Na-pyruvate", "ontology_id": "CHEBI:50144", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86249": [{"label": "FeCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86249", "preferred_term": "FeCl2 x 4 H2O", "ontology_id": "CHEBI:86249", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318": [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318", "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86477": [{"label": "Na2SO3", "match_type": "preferred_term", "identifier": "CHEBI:86477", "preferred_term": "Na2SO3", "ontology_id": "CHEBI:86477", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2SO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86477", "preferred_term": "Na2SO3 x 5 H2O", "ontology_id": "CHEBI:86477", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing_current_keys": []} |
+| history-metadata | data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml; data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml", "events": 7, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import composition/stock parsing and merge behavior were read as pinned current context, without historical causal replay or execution. |
+| writer-1 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import composition/stock parsing and merge behavior were read as pinned current context, without historical causal replay or execution. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch030/299/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| mediadive399aapi-attempt | https://mediadive.dsmz.de/rest/medium/399a; Preserved exact public retrieval result | context_only | Current mediadive399aapi returned503. Exact primary main and all named stock subsections are available. Historical API byte equivalence and its numerical denominator are not authenticated or inferred. |
+| mediadive399aretry-attempt | https://mediadive.dsmz.de/rest/medium/399a; Preserved exact public retrieval result | context_only | Current mediadive399aretry returned503. Exact primary main and all named stock subsections are available. Historical API byte equivalence and its numerical denominator are not authenticated or inferred. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Current mediadive399aapi returned503. Exact primary main and all named stock subsections are available. Historical API byte equivalence and its numerical denominator are not authenticated or inferred.
+- Current mediadive399aretry returned503. Exact primary main and all named stock subsections are available. Historical API byte equivalence and its numerical denominator are not authenticated or inferred.
+- Completed current-source review; optional API failures remain preserved. DSM320 contributes SL-10 only, DSM385 selenite-tungstate only and DSM120 tenfold vitamins only. No parent basal medium or culture condition is transferred. Unknown main final volume, HCl percent basis/density and late-stock strengths remain explicit.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T165744Z-culturemech-001509-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: archaeoglobus_neptunius_medium (CultureMech:001509)'
+started_at: '2026-10-21T16:49:42Z'
+finished_at: '2026-10-21T16:57:44Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 399a defines a main medium plus SL-10, selenite-tungstate and tenfold
+  Wolin vitamin stocks. Both local layers flatten all stock ingredients into main
+  concentrations, omit stock doses and water, and assert an unsupported HCl mass conversion.
+  Existing main concentration normalization is not authenticated by a primary final-volume
+  declaration or current API. Main preparation and conditional pH are retained, but
+  the SL-10 make-up step lacks stock placement. Nickel hydrate and sodium-resazurin
+  grounding need correction; source calcium D-pantothenate specificity is supported
+  and is not a finding.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml
+    sha256: 4ee46645e08efcee569eda20995395894f0531b053311e8f642311749ce4b1a0
+    role: target
+  - path: data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml
+    sha256: 8f7a65280fec3050f00f337927e4dba0d33fde4a2c666d01778155736948bfdc
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/archaea/archaeoglobus_neptunius_medium.yaml.md
+    sha256: e1e4e3e9a37f021090de93f799bfccacc9fde09665079c7c67c8998dd88c99c9
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 299; batch 030 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-nine task batches
+    contain 290 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 293 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001509
+targets:
+- target_id: CultureMech:001509
+  path: data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml
+  label: archaeoglobus_neptunius_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch030/299/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-030/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch030/299/strict.tsv"
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001509
+- check_id: mediadive399aapi-source-access
+  name: 'Exact source content access: mediadive399aapi'
+  required: false
+  status: unavailable
+  summary: Current mediadive399aapi returned503. Exact primary main and all named
+    stock subsections are available. Historical API byte equivalence and its numerical
+    denominator are not authenticated or inferred.
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - mediadive399aapi-attempt
+- check_id: mediadive399aretry-source-access
+  name: 'Exact source content access: mediadive399aretry'
+  required: false
+  status: unavailable
+  summary: Current mediadive399aretry returned503. Exact primary main and all named
+    stock subsections are available. Historical API byte equivalence and its numerical
+    denominator are not authenticated or inferred.
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - mediadive399aretry-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T16:57:43Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T16:57:43Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:50:12.062989Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch030/299/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:50:13.177109Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-030/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch030/299/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:50:14.414435Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:50:15.250165Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T16:57:43Z'
+  support: supports
+  summary: './data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml:1:id:
+    CultureMech:001509
+
+    ./data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml:1:id: CultureMech:001509
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch030/source-preflight-bound/299/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T16:57:43Z'
+  support: supports
+  summary: 42 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: ab77cd0e02a85b304d08e0f1cc6984bb1e200b83fe319b8e363d213511f0d5e6
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf
+  locator: 'Complete two-page primary: main table, preparation and all three named
+    stocks'
+  accessed_at: '2026-10-21T16:34:00.530668Z'
+  support: supports
+  summary: Exact source recipe and all stock sections are available, with source-specific
+    units and stages. No main measured final volume is declared.
+  quote: '399a: ARCHAEOGLOBUS NEPTUNIUS MEDIUM'
+  snapshot_sha256: 32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9
+- evidence_id: dsmz320
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium320.pdf
+  locator: SL-10 subsection only
+  accessed_at: '2026-10-21T13:20:08.151265Z'
+  support: supports
+  summary: Only SL-10 composition and its explicit final make-up transfer; no parent
+    basal or culture conditions.
+  quote: HCl (25%) 10.00 ml
+  snapshot_sha256: d1fd0f4c9f8460271297a9295b2d1fabae5d4bce3a2fe3ed5f3036e4fa6796f9
+- evidence_id: dsmz385
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf
+  locator: Selenite-tungstate subsection only
+  accessed_at: '2026-10-21T13:20:08.153235Z'
+  support: supports
+  summary: Only this named stock transfers; all parent basal and variant recipes excluded.
+  quote: Na2SeO3 x 5 H2O 3.00 mg
+  snapshot_sha256: d660a2e55a1d419557c01f865afb7182891ad859743bc686f53b95d3643eec22
+- evidence_id: dsmz120
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium120.pdf
+  locator: Wolin vitamin solution (10x) subsection only
+  accessed_at: '2026-10-21T13:16:27.298931Z'
+  support: supports
+  summary: Only tenfold vitamin stock transfers. D stereochemistry is explicitly printed
+    and supports that part of the asserted calcium-pantothenate structure.
+  quote: Calcium D-(+)-pantothenate 50.00 mg
+  snapshot_sha256: e1f85e4a546abc825218226bbb18d78bd9c054b7e11399aa7161ad259a3b663f
+- evidence_id: chebi131361
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T07:33:27.980786Z'
+  support: supports
+  summary: CHEBI:131361 resolves to disodium selenite pentahydrate. Exact label validity
+    is separate from source chemical-form support.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Exact label validity
+    is separate from source chemical-form support.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Exact label validity is separate from source
+    chemical-form support.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: CHEBI:16494 resolves to lipoic acid. Exact label validity is separate from
+    source chemical-form support.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: CHEBI:17015 resolves to riboflavin. Exact label validity is separate from
+    source chemical-form support.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi17883
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T07:37:25.439020Z'
+  support: supports
+  summary: CHEBI:17883 resolves to hydrogen chloride. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi18320
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18320
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T07:37:24.678779Z'
+  support: supports
+  summary: CHEBI:18320 resolves to 1,4-dithiothreitol. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: 475ff3beab5570f7c37e9627477a11b45f76f0be7b4d04d07c310416b58c5e54
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: CHEBI:27470 resolves to folic acid. Exact label validity is separate from
+    source chemical-form support.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride. Exact label validity
+    is separate from source chemical-form support.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Exact label validity
+    is separate from source chemical-form support.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32145
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T07:33:28.263004Z'
+  support: supports
+  summary: CHEBI:32145 resolves to sodium hydroxide. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Exact label validity is separate from
+    source chemical-form support.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. Exact label validity is
+    separate from source chemical-form support.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi50144
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50144
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T07:22:07.440767Z'
+  support: supports
+  summary: CHEBI:50144 resolves to sodium pyruvate. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: 457ed29adfdea68c420ea0c094d7d75593958fc70f908f6809348e4e12e7e15d
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate. Exact label validity
+    is separate from source chemical-form support.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate. Exact label validity
+    is separate from source chemical-form support.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Exact label validity
+    is separate from source chemical-form support.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Exact label validity
+    is separate from source chemical-form support.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86249
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T09:49:55.693358Z'
+  support: supports
+  summary: CHEBI:86249 resolves to iron dichloride tetrahydrate. Exact label validity
+    is separate from source chemical-form support.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Exact label validity
+    is separate from source chemical-form support.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Exact label validity
+    is separate from source chemical-form support.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Exact label
+    validity is separate from source chemical-form support.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi86477
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86477
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T16:34:01.002738Z'
+  support: supports
+  summary: CHEBI:86477 resolves to sodium sulfite. Exact label validity is separate
+    from source chemical-form support.
+  snapshot_sha256: 30bc14ca6bced2833a5eb78d182f7d1197dc81480ba320d09e80c9185319fb36
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Exact label validity is separate from
+    source chemical-form support.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned index exact identifier lookup; adjacent snapshot metadata
+  accessed_at: '2026-10-21T16:57:43Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "rows":
+    {"CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id":
+    "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid",
+    "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier":
+    "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic
+    acid", "match_type": "preferred_term", "identifier": "CHEBI:16494", "preferred_term":
+    "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type":
+    "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin",
+    "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier":
+    "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843",
+    "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:17883": [{"label":
+    "HCl", "match_type": "preferred_term", "identifier": "CHEBI:17883", "preferred_term":
+    "HCl", "ontology_id": "CHEBI:17883", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:18320": [{"label": "DL-Dithiothreitol", "match_type": "preferred_term",
+    "identifier": "CHEBI:18320", "preferred_term": "DL-Dithiothreitol", "ontology_id":
+    "CHEBI:18320", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid",
+    "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier":
+    "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type":
+    "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate
+    solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term",
+    "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id":
+    "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961":
+    [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier":
+    "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label":
+    "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term":
+    "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type": "preferred_term",
+    "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id": "CHEBI:32145",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label":
+    "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term":
+    "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label":
+    "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term":
+    "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id":
+    "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976":
+    [{"label": "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976",
+    "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:50144": [{"label": "Na-pyruvate", "match_type":
+    "preferred_term", "identifier": "CHEBI:50144", "preferred_term": "Na-pyruvate",
+    "ontology_id": "CHEBI:50144", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate", "match_type": "preferred_term",
+    "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate",
+    "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label":
+    "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86249": [{"label": "FeCl2 x 4 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86249", "preferred_term": "FeCl2 x 4 H2O", "ontology_id":
+    "CHEBI:86249", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318":
+    [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318",
+    "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride",
+    "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id":
+    "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368":
+    [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368",
+    "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86477": [{"label": "Na2SO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:86477", "preferred_term": "Na2SO3", "ontology_id":
+    "CHEBI:86477", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2SO3
+    x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86477", "preferred_term":
+    "Na2SO3 x 5 H2O", "ontology_id": "CHEBI:86477", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, "missing_current_keys": []}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml; data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T16:57:43Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T16:57:43Z'
+  support: context_only
+  summary: Current import composition/stock parsing and merge behavior were read as
+    pinned current context, without historical causal replay or execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T16:57:43Z'
+  support: context_only
+  summary: Current import composition/stock parsing and merge behavior were read as
+    pinned current context, without historical causal replay or execution.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch030/299/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T16:57:43Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: da78c80af6ec9df46038d789c5ff97d116851f774cb31fdf5cee7aa3a2ad8a99
+- evidence_id: mediadive399aapi-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/399a
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T16:33:59.577786Z'
+  support: context_only
+  summary: Current mediadive399aapi returned503. Exact primary main and all named
+    stock subsections are available. Historical API byte equivalence and its numerical
+    denominator are not authenticated or inferred.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive399aretry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/399a
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T16:38:11.087298Z'
+  support: context_only
+  summary: Current mediadive399aretry returned503. Exact primary main and all named
+    stock subsections are available. Historical API byte equivalence and its numerical
+    denominator are not authenticated or inferred.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary chemical identifiers
+  outcome: concern
+  summary: '34 distinct primary/current-secondary IDs have matching nonobsolete labels.
+    Target direct-ingredient linkage is 34/35 primary (97.14%) and 32/35 current CHEBI-based
+    secondary (91.43%), on a 0–100 linkage scale, not an accuracy score. Current secondary
+    keys without pinned index rows: []. Legacy slot count 0 is separate and does not
+    enter that current-key claim. Supplied-form correspondence is assessed separately.'
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131361
+  - chebi131527
+  - chebi15940
+  - chebi15956
+  - chebi16494
+  - chebi17015
+  - chebi176843
+  - chebi17883
+  - chebi18320
+  - chebi26710
+  - chebi27470
+  - chebi29377
+  - chebi30753
+  - chebi30961
+  - chebi31206
+  - chebi31345
+  - chebi31795
+  - chebi32145
+  - chebi32588
+  - chebi33118
+  - chebi34887
+  - chebi49105
+  - chebi49976
+  - chebi50144
+  - chebi53503
+  - chebi63939
+  - chebi75213
+  - chebi86158
+  - chebi86249
+  - chebi86318
+  - chebi86345
+  - chebi86368
+  - chebi86477
+  - chebi8806
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 15 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact source version and named stock dependencies
+  outcome: supported
+  summary: The exact 399a primary identifies ARCHAEOGLOBUS NEPTUNIUS MEDIUM and specifies
+    SL-10 from320, selenite-tungstate from385 and tenfold vitamins from120. Only those
+    subsections are transferred. The current main API is unavailable; exact primary
+    content supports this current formulation review without claiming historical payload
+    equality.
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - dsmz320
+  - dsmz385
+  - dsmz120
+- assessment_id: classification
+  area: scope
+  topic: Mixture and biological scope
+  outcome: supported
+  summary: Liquid/complex/SEMI_DEFINED agrees with a defined basal salt recipe plus
+    yeast extract and no agar. The title and archaea filing identify source context;
+    no organism growth, strain, optimum or paper-specific assertion is made.
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+- assessment_id: forms
+  area: grounding
+  topic: Exact hydrates, salts and source stereochemistry
+  outcome: concern
+  summary: NiCl2 hexahydrate is assigned anhydrous CHEBI:34887 and sodium resazurin
+    is assigned neutral CHEBI:8806. Source calcium D-(+)-pantothenate explicitly supports
+    the D-specific structure of CHEBI:31345; no unsupported-stereochemistry finding
+    applies there. Other supplied hydrates and B12 class were checked separately from
+    index membership; no unknown HCl percentage basis or density is inferred.
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - primary
+  - dsmz120
+  - chebi34887
+  - chebi8806
+  - chebi31345
+  - chebi176843
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 52 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"label\": \"KCl\",\n    \"\
+    decision\": \"correct\",\n    \"source_stage\": \"Main batch\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.338983\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.338983\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"KCl 0.34 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n    \"label\": \"MgCl2\
+    \ x 6 H2O\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main batch\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.98804\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.98804\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O 4.00 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"label\": \"MgSO4\
+    \ x 7 H2O\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main batch\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.139581\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.139581\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"MgSO4 x 7 H2O 0.14 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q4\",\n    \"label\": \"NH4Cl\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main batch\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.249252\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.249252\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"NH4Cl 0.25 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q5\",\n    \"label\": \"CaCl2\
+    \ x 2 H2O\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main batch\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.139581\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.139581\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 0.14 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q6\",\n    \"label\": \"K2HPO4\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main batch\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.139581\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.139581\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"K2HPO4 0.14 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q7\",\n    \"label\": \"NaCl\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main batch\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"17.9462\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"17.9462\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"NaCl 18.00 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q8\",\n    \"label\": \"Yeast\
+    \ extract\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main batch\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.498504\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.498504\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"Yeast extract (OXOID) 0.50 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q9\",\n    \"label\": \"Sodium\
+    \ resazurin\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main batch\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000498504\",\n          \"unit\": \"G_PER_L\"\n\
+    \        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000498504\",\n          \"unit\": \"G_PER_L\"\n\
+    \        }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"Sodium resazurin (0.1% w/v) 0.50 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q10\",\n    \"label\": \"Na2CO3\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main batch\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.498504\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.498504\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"Na2CO3 0.50 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n    \"label\": \"Na-pyruvate\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main batch\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.997009\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.997009\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"Na-pyruvate 1.00 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q12\",\n    \"label\": \"Na2SO3\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main batch\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.598205\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.598205\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"Na2SO3 0.60 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q13\",\n    \"label\": \"DL-Dithiothreitol\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main batch\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.498504\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.498504\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Page1 exact main-table row\",\n        \"exact_source_quote\"\
+    : \"DL-Dithiothreitol 0.50 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain original main amount and unit\
+    \ with its source batch basis. Listed 1000 ml water plus stocks is not a final-volume\
+    \ declaration; the local 1003 ml-like normalization is not independently authenticated.\
+    \ For resazurin retain explicit 0.1% w/v and 0.50 ml rather than losing strength/dose\
+    \ context.\"\n  },\n  {\n    \"decision_id\": \"q14\",\n    \"label\": \"HCl\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_stage\": \"SL-10 stock\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"SL-10 exact row\",\n        \"exact_source_quote\"\
+    : \"HCl (25%) 10.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"SL-10 final make-up sentence\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source gives 10 ml HCl(25%) with\
+    \ an unqualified percent basis. Local 2.5 G_PER_L is unsupported; neither density\
+    \ nor w/v may be assumed. Retain original volume/percentage within SL-10 made\
+    \ up to 1000 ml, not a main mass concentration.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q15\",\n    \"label\": \"FeCl2 x 4 H2O\",\n    \"decision\": \"correct\",\n\
+    \    \"source_stage\": \"SL-10 stock\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"SL-10 exact row\",\n        \"exact_source_quote\"\
+    : \"FeCl2 x 4 H2O 1.50 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"SL-10 final make-up sentence\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"This amount belongs to SL-10 stock\
+    \ explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of\
+    \ flat main ingredients and preserve source units and stock basis.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q16\",\n    \"label\": \"ZnCl2\",\n    \"decision\"\
+    : \"correct\",\n    \"source_stage\": \"SL-10 stock\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"SL-10 exact row\",\n        \"exact_source_quote\"\
+    : \"ZnCl2 70.00 mg\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"SL-10 final make-up sentence\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"This amount belongs to SL-10 stock\
+    \ explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of\
+    \ flat main ingredients and preserve source units and stock basis.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q17\",\n    \"label\": \"MnCl2 x 4 H2O\",\n    \"\
+    decision\": \"correct\",\n    \"source_stage\": \"SL-10 stock\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"SL-10 exact row\",\n        \"exact_source_quote\"\
+    : \"MnCl2 x 4 H2O 100.00 mg\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"SL-10 final make-up sentence\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"This amount belongs to SL-10 stock\
+    \ explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of\
+    \ flat main ingredients and preserve source units and stock basis.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q18\",\n    \"label\": \"H3BO3\",\n    \"decision\"\
+    : \"correct\",\n    \"source_stage\": \"SL-10 stock\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"SL-10 exact row\",\n        \"exact_source_quote\"\
+    : \"H3BO3 6.00 mg\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"SL-10 final make-up sentence\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"This amount belongs to SL-10 stock\
+    \ explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of\
+    \ flat main ingredients and preserve source units and stock basis.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q19\",\n    \"label\": \"CoCl2 x 6 H2O\",\n    \"\
+    decision\": \"correct\",\n    \"source_stage\": \"SL-10 stock\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"SL-10 exact row\",\n        \"exact_source_quote\"\
+    : \"CoCl2 x 6 H2O 190.00 mg\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"SL-10 final make-up sentence\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"This amount belongs to SL-10 stock\
+    \ explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of\
+    \ flat main ingredients and preserve source units and stock basis.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q20\",\n    \"label\": \"CuCl2 x 2 H2O\",\n    \"\
+    decision\": \"correct\",\n    \"source_stage\": \"SL-10 stock\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"SL-10 exact row\",\n        \"exact_source_quote\"\
+    : \"CuCl2 x 2 H2O 2.00 mg\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"SL-10 final make-up sentence\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"This amount belongs to SL-10 stock\
+    \ explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of\
+    \ flat main ingredients and preserve source units and stock basis.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q21\",\n    \"label\": \"NiCl2 x 6 H2O\",\n    \"\
+    decision\": \"correct\",\n    \"source_stage\": \"SL-10 stock\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"SL-10 exact row\",\n        \"exact_source_quote\"\
+    : \"NiCl2 x 6 H2O 24.00 mg\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"SL-10 final make-up sentence\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"This amount belongs to SL-10 stock\
+    \ explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of\
+    \ flat main ingredients and preserve source units and stock basis.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q22\",\n    \"label\": \"Na2MoO4 x 2 H2O\",\n    \"\
+    decision\": \"correct\",\n    \"source_stage\": \"SL-10 stock\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"SL-10 exact row\",\n        \"exact_source_quote\"\
+    : \"Na2MoO4 x 2 H2O 36.00 mg\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"SL-10 final make-up sentence\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"This amount belongs to SL-10 stock\
+    \ explicitly made up to 1000 ml, with a separate 1 ml main dose. Move it out of\
+    \ flat main ingredients and preserve source units and stock basis.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q23\",\n    \"label\": \"NaOH\",\n    \"decision\"\
+    : \"correct\",\n    \"source_stage\": \"Selenite-tungstate stock\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Selenite-tungstate exact row\",\n        \"exact_source_quote\"\
+    : \"NaOH 0.50 g\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Selenite-tungstate stock water row\",\n        \"\
+    exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is the stock preparation amount,\
+    \ not a direct main concentration. Preserve original grams/milligrams and stock\
+    \ water; main receives 1 ml. Unlike SL-10, this subsection does not explicitly\
+    \ say make up to final volume.\"\n  },\n  {\n    \"decision_id\": \"q24\",\n \
+    \   \"label\": \"Na2SeO3 x 5 H2O\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Selenite-tungstate stock\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\",\n   \
+    \     \"field_path\": \"ingredients[23].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"0.003\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.003\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Selenite-tungstate exact row\",\n        \"exact_source_quote\"\
+    : \"Na2SeO3 x 5 H2O 3.00 mg\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Selenite-tungstate stock water row\",\n        \"\
+    exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is the stock preparation amount,\
+    \ not a direct main concentration. Preserve original grams/milligrams and stock\
+    \ water; main receives 1 ml. Unlike SL-10, this subsection does not explicitly\
+    \ say make up to final volume.\"\n  },\n  {\n    \"decision_id\": \"q25\",\n \
+    \   \"label\": \"Na2WO4 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Selenite-tungstate stock\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\",\n   \
+    \     \"field_path\": \"ingredients[24].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"0.004\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.004\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Selenite-tungstate exact row\",\n        \"exact_source_quote\"\
+    : \"Na2WO4 x 2 H2O 4.00 mg\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Selenite-tungstate stock water row\",\n        \"\
+    exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is the stock preparation amount,\
+    \ not a direct main concentration. Preserve original grams/milligrams and stock\
+    \ water; main receives 1 ml. Unlike SL-10, this subsection does not explicitly\
+    \ say make up to final volume.\"\n  },\n  {\n    \"decision_id\": \"q26\",\n \
+    \   \"label\": \"Biotin\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Tenfold vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[25].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n        }\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Tenfold Wolin vitamins exact row\",\n       \
+    \ \"exact_source_quote\": \"Biotin 20.00 mg\",\n        \"snapshot_sha256\": \"\
+    32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n        \"\
+    parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Stock heading\",\n        \"exact_source_quote\":\
+    \ \"Wolin's vitamin solution (10x) (from medium 120)\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Vitamin stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve this milligram amount in\
+    \ the tenfold vitamin stock and its own water context. It is not a direct main\
+    \ concentration; the explicit receiving-medium dose is 1 ml, independently of\
+    \ the 10x label.\"\n  },\n  {\n    \"decision_id\": \"q27\",\n    \"label\": \"\
+    Folic acid\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"Tenfold\
+    \ vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Tenfold Wolin vitamins exact row\",\n       \
+    \ \"exact_source_quote\": \"Folic acid 20.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Stock heading\",\n        \"exact_source_quote\":\
+    \ \"Wolin's vitamin solution (10x) (from medium 120)\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Vitamin stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve this milligram amount in\
+    \ the tenfold vitamin stock and its own water context. It is not a direct main\
+    \ concentration; the explicit receiving-medium dose is 1 ml, independently of\
+    \ the 10x label.\"\n  },\n  {\n    \"decision_id\": \"q28\",\n    \"label\": \"\
+    Pyridoxine hydrochloride\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Tenfold vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[27].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Tenfold Wolin vitamins exact row\",\n       \
+    \ \"exact_source_quote\": \"Pyridoxine hydrochloride 100.00 mg\",\n        \"\
+    snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Stock heading\",\n        \"exact_source_quote\":\
+    \ \"Wolin's vitamin solution (10x) (from medium 120)\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Vitamin stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve this milligram amount in\
+    \ the tenfold vitamin stock and its own water context. It is not a direct main\
+    \ concentration; the explicit receiving-medium dose is 1 ml, independently of\
+    \ the 10x label.\"\n  },\n  {\n    \"decision_id\": \"q29\",\n    \"label\": \"\
+    Thiamine HCl\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"Tenfold\
+    \ vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Tenfold Wolin vitamins exact row\",\n       \
+    \ \"exact_source_quote\": \"Thiamine HCl 50.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Stock heading\",\n        \"exact_source_quote\":\
+    \ \"Wolin's vitamin solution (10x) (from medium 120)\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Vitamin stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve this milligram amount in\
+    \ the tenfold vitamin stock and its own water context. It is not a direct main\
+    \ concentration; the explicit receiving-medium dose is 1 ml, independently of\
+    \ the 10x label.\"\n  },\n  {\n    \"decision_id\": \"q30\",\n    \"label\": \"\
+    Riboflavin\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"Tenfold\
+    \ vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Tenfold Wolin vitamins exact row\",\n       \
+    \ \"exact_source_quote\": \"Riboflavin 50.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Stock heading\",\n        \"exact_source_quote\":\
+    \ \"Wolin's vitamin solution (10x) (from medium 120)\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Vitamin stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve this milligram amount in\
+    \ the tenfold vitamin stock and its own water context. It is not a direct main\
+    \ concentration; the explicit receiving-medium dose is 1 ml, independently of\
+    \ the 10x label.\"\n  },\n  {\n    \"decision_id\": \"q31\",\n    \"label\": \"\
+    Nicotinic acid\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"Tenfold\
+    \ vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Tenfold Wolin vitamins exact row\",\n       \
+    \ \"exact_source_quote\": \"Nicotinic acid 50.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Stock heading\",\n        \"exact_source_quote\":\
+    \ \"Wolin's vitamin solution (10x) (from medium 120)\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Vitamin stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve this milligram amount in\
+    \ the tenfold vitamin stock and its own water context. It is not a direct main\
+    \ concentration; the explicit receiving-medium dose is 1 ml, independently of\
+    \ the 10x label.\"\n  },\n  {\n    \"decision_id\": \"q32\",\n    \"label\": \"\
+    Calcium D-(+)-pantothenate\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Tenfold vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[31].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        }\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Tenfold Wolin vitamins exact row\",\n       \
+    \ \"exact_source_quote\": \"Calcium D-(+)-pantothenate 50.00 mg\",\n        \"\
+    snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Stock heading\",\n        \"exact_source_quote\":\
+    \ \"Wolin's vitamin solution (10x) (from medium 120)\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Vitamin stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve this milligram amount in\
+    \ the tenfold vitamin stock and its own water context. It is not a direct main\
+    \ concentration; the explicit receiving-medium dose is 1 ml, independently of\
+    \ the 10x label.\"\n  },\n  {\n    \"decision_id\": \"q33\",\n    \"label\": \"\
+    Vitamin B12\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"Tenfold\
+    \ vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Tenfold Wolin vitamins exact row\",\n       \
+    \ \"exact_source_quote\": \"Vitamin B12 1.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Stock heading\",\n        \"exact_source_quote\":\
+    \ \"Wolin's vitamin solution (10x) (from medium 120)\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Vitamin stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve this milligram amount in\
+    \ the tenfold vitamin stock and its own water context. It is not a direct main\
+    \ concentration; the explicit receiving-medium dose is 1 ml, independently of\
+    \ the 10x label.\"\n  },\n  {\n    \"decision_id\": \"q34\",\n    \"label\": \"\
+    p-Aminobenzoic acid\",\n    \"decision\": \"correct\",\n    \"source_stage\":\
+    \ \"Tenfold vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[33].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        }\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Tenfold Wolin vitamins exact row\",\n       \
+    \ \"exact_source_quote\": \"p-Aminobenzoic acid 50.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Stock heading\",\n        \"exact_source_quote\":\
+    \ \"Wolin's vitamin solution (10x) (from medium 120)\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Vitamin stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve this milligram amount in\
+    \ the tenfold vitamin stock and its own water context. It is not a direct main\
+    \ concentration; the explicit receiving-medium dose is 1 ml, independently of\
+    \ the 10x label.\"\n  },\n  {\n    \"decision_id\": \"q35\",\n    \"label\": \"\
+    (DL)-alpha-Lipoic acid\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Tenfold vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[34].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        }\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Tenfold Wolin vitamins exact row\",\n       \
+    \ \"exact_source_quote\": \"(DL)-alpha-Lipoic acid 50.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Stock heading\",\n        \"exact_source_quote\":\
+    \ \"Wolin's vitamin solution (10x) (from medium 120)\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Vitamin stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve this milligram amount in\
+    \ the tenfold vitamin stock and its own water context. It is not a direct main\
+    \ concentration; the explicit receiving-medium dose is 1 ml, independently of\
+    \ the 10x label.\"\n  },\n  {\n    \"decision_id\": \"q36\",\n    \"label\": \"\
+    SL-10 dose\",\n    \"decision\": \"add\",\n    \"source_stage\": \"Main stock\
+    \ addition\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"presence\": \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Main table stock dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution SL-10 1.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Represent the exact stock and its\
+    \ 1 ml source batch dose; all stock descriptors are absent. Do not infer a generic\
+    \ 1:10 dilution from the 10x name.\"\n  },\n  {\n    \"decision_id\": \"q37\"\
+    ,\n    \"label\": \"Selenite-tungstate dose\",\n    \"decision\": \"add\",\n \
+    \   \"source_stage\": \"Main stock addition\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"presence\": \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Main table stock dose\",\n        \"exact_source_quote\"\
+    : \"Selenite-tungstate solution 1.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Represent the exact stock and its\
+    \ 1 ml source batch dose; all stock descriptors are absent. Do not infer a generic\
+    \ 1:10 dilution from the 10x name.\"\n  },\n  {\n    \"decision_id\": \"q38\"\
+    ,\n    \"label\": \"Tenfold vitamins dose\",\n    \"decision\": \"add\",\n   \
+    \ \"source_stage\": \"Main stock addition\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"presence\": \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Main table stock dose\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution (10x) 1.00 ml\",\n        \"snapshot_sha256\": \"\
+    32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n        \"\
+    parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Represent the exact stock and its\
+    \ 1 ml source batch dose; all stock descriptors are absent. Do not infer a generic\
+    \ 1:10 dilution from the 10x name.\"\n  },\n  {\n    \"decision_id\": \"q39\"\
+    ,\n    \"label\": \"Main table water\",\n    \"decision\": \"add\",\n    \"source_stage\"\
+    : \"Named preparation water\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n       \
+    \ \"source_locator\": \"Main table exact water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore this source-specific water\
+    \ amount within its own preparation stage; do not sum all stock waters into main\
+    \ volume.\"\n  },\n  {\n    \"decision_id\": \"q40\",\n    \"label\": \"SL-10\
+    \ table water\",\n    \"decision\": \"add\",\n    \"source_stage\": \"Named preparation\
+    \ water\",\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"SL-10 table exact water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 990.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore this source-specific water\
+    \ amount within its own preparation stage; do not sum all stock waters into main\
+    \ volume.\"\n  },\n  {\n    \"decision_id\": \"q41\",\n    \"label\": \"Selenite-tungstate\
+    \ table water\",\n    \"decision\": \"add\",\n    \"source_stage\": \"Named preparation\
+    \ water\",\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Selenite-tungstate table exact water row\",\n\
+    \        \"exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore this source-specific water\
+    \ amount within its own preparation stage; do not sum all stock waters into main\
+    \ volume.\"\n  },\n  {\n    \"decision_id\": \"q42\",\n    \"label\": \"Tenfold\
+    \ vitamin table water\",\n    \"decision\": \"add\",\n    \"source_stage\": \"\
+    Named preparation water\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n       \
+    \ \"source_locator\": \"Tenfold vitamin table exact water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore this source-specific water\
+    \ amount within its own preparation stage; do not sum all stock waters into main\
+    \ volume.\"\n  },\n  {\n    \"decision_id\": \"q43\",\n    \"label\": \"SL-10\
+    \ make-up volume\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"\
+    SL-10 final make-up\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[1].description\",\n        \"stored\": \"First dissolve\
+    \ FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\
+    \ make up to 1000.00 ml.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the\
+    \ other salts. Finally make up to 1000.00 ml.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n       \
+    \ \"source_locator\": \"SL-10 final sentence\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Existing text correctly states 1000\
+    \ ml but needs explicit SL-10 placement rather than an unlabelled root preparation\
+    \ step. This stock final volume does not establish main final volume.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q44\",\n    \"label\": \"Main final volume\",\n \
+    \   \"decision\": \"not_quantified\",\n    \"source_stage\": \"Main volume limit\"\
+    ,\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table\",\n        \"exact_source_quote\": \"\
+    Sodium resazurin (0.1% w/v) 0.50 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table\",\n        \"exact_source_quote\": \"\
+    Trace element solution SL-10 1.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table\",\n        \"exact_source_quote\": \"\
+    Selenite-tungstate solution 1.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Main table\",\n        \"exact_source_quote\": \"\
+    Wolin's vitamin solution (10x) 1.00 ml\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Known listed liquid inputs total\
+    \ 1003.5 ml before other late-stock volumes; this is not a measured final volume.\
+    \ Do not silently select 1003 ml or 1000 ml as an authenticated denominator.\"\
+    \n  },\n  {\n    \"decision_id\": \"q45\",\n    \"label\": \"Main conditional\
+    \ pH\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"Main pH\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.5\n      },\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.5\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation final sentence\",\n        \"\
+    exact_source_quote\": \"medium to 6.5, if necessary.\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"The stored target pH and existing\
+    \ conditional wording agree. Add narrow evidence; do not reinterpret this as a\
+    \ measured final pH or require removing the correctly scoped value.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q46\",\n    \"label\": \"Main gas\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"source_stage\": \"Named source preparation stage\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation paragraph\",\n        \"exact_source_quote\"\
+    : \"80% N2 and 20% CO2 gas mixture\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Main sparging and dispensing use\
+    \ this mixture. The existing description retains it, but attached evidence is\
+    \ absent.\"\n  },\n  {\n    \"decision_id\": \"q47\",\n    \"label\": \"Sparging\
+    \ time\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"Named\
+    \ source preparation stage\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\",\n        \"\
+    field_path\": \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve\
+    \ ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and\
+    \ dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use\
+    \ add carbonate from a sterile anoxic stock solution prepared under 80% N2 and\
+    \ 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are\
+    \ added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized\
+    \ by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation paragraph\",\n        \"exact_source_quote\"\
+    : \"30 - 45 min\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Keep the interval as preparation\
+    \ time. The existing description retains it, but attached evidence is absent.\"\
+    \n  },\n  {\n    \"decision_id\": \"q48\",\n    \"label\": \"Vessel example\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"Named source\
+    \ preparation stage\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve ingredients\
+    \ except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and dithiothreitol,\
+    \ then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make\
+    \ it anoxic. Dispense medium under the same gas atmosphere into serum vials (e.g.,\
+    \ 20 ml per 100 ml bottle), seal, and autoclave. Before use add carbonate from\
+    \ a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.\
+    \ Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic\
+    \ stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust\
+    \ the pH of the complete medium to 6.5, if necessary.\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation paragraph\",\n        \"exact_source_quote\"\
+    : \"20 ml per 100 ml bottle\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"An example aliquot/vessel pairing,\
+    \ not a final-volume rule. The existing description retains it, but attached evidence\
+    \ is absent.\"\n  },\n  {\n    \"decision_id\": \"q49\",\n    \"label\": \"Carbonate\
+    \ stock gas\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"\
+    Named source preparation stage\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\",\n   \
+    \     \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation paragraph\",\n        \"exact_source_quote\"\
+    : \"80% N2 and 20% CO2 gas atmosphere.\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"This gas scope belongs to the separate\
+    \ carbonate stock. The existing description retains it, but attached evidence\
+    \ is absent.\"\n  },\n  {\n    \"decision_id\": \"q50\",\n    \"label\": \"Other\
+    \ late-stock gas\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Named source preparation stage\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation paragraph\",\n        \"exact_source_quote\"\
+    : \"100% N2 gas\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Pyruvate, sulfite, vitamins and DTT\
+    \ use this separate stock atmosphere. The existing description retains it, but\
+    \ attached evidence is absent.\"\n  },\n  {\n    \"decision_id\": \"q51\",\n \
+    \   \"label\": \"Late-stock strengths and doses\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"source_stage\": \"Late stocks\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation\",\n        \"exact_source_quote\"\
+    : \"Pyruvate, sulfite, vitamins, and dithiothreitol are added from sterile anoxic\
+    \ stock solutions\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"The main carbonate/pyruvate/sulfite/DTT\
+    \ masses do not specify separate stock strengths or ml doses. Tenfold-vitamin\
+    \ recipe and its 1 ml dose are explicitly available and separately assessed.\"\
+    \n  },\n  {\n    \"decision_id\": \"q52\",\n    \"label\": \"Sterilization and\
+    \ unknown cycle\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Source sterilization\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml\",\n        \"\
+    field_path\": \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve\
+    \ ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins, and\
+    \ dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before use\
+    \ add carbonate from a sterile anoxic stock solution prepared under 80% N2 and\
+    \ 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol are\
+    \ added from sterile anoxic stock solutions prepared under 100% N2 gas and sterilized\
+    \ by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except for carbonate, pyruvate, sulfite (Na2SO3), vitamins,\
+    \ and dithiothreitol, then sparge medium with 80% N2 and 20% CO2 gas mixture for\
+    \ 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere\
+    \ into serum vials (e.g., 20 ml per 100 ml bottle), seal, and autoclave. Before\
+    \ use add carbonate from a sterile anoxic stock solution prepared under 80% N2\
+    \ and 20% CO2 gas atmosphere. Pyruvate, sulfite, vitamins, and dithiothreitol\
+    \ are added from sterile anoxic stock solutions prepared under 100% N2 gas and\
+    \ sterilized by filtration. Adjust the pH of the complete medium to 6.5, if necessary.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz399a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation\",\n        \"exact_source_quote\"\
+    : \"seal, and autoclave.\",\n        \"snapshot_sha256\": \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\"\
+    ,\n        \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz399a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium399a.pdf\",\n   \
+    \     \"source_locator\": \"Late-stock preparation\",\n        \"exact_source_quote\"\
+    : \"prepared under 100% N2 gas and sterilized by filtration.\",\n        \"snapshot_sha256\"\
+    : \"32e5aeaeddbed844c5f65f77628c71759073879ccf5cd47f030017e5b849c4f9\",\n    \
+    \    \"parsed_text_sha256\": \"e16a3457295836c020c85422fdcb2499d20e2863112c46c41e4fb0463ed53ae1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve main autoclaving and stated\
+    \ late-stock filtration. No numeric cycle temperature/time is given; do not borrow\
+    \ defaults.\"\n  }\n]"
+- assessment_id: ownership
+  area: ownership
+  topic: Sole maintained input
+  outcome: supported
+  summary: The exact normalized archaeoglobus_neptunius_medium owner owns correction.
+    Full target and owner fields/history were compared and current source/merge code
+    inspected. No record or generated output was edited.
+  target_ids:
+  - CultureMech:001509
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-0
+  - writer-1
+findings:
+- finding_id: f1
+  issue_key: cm001509-stock-stages
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Three stock recipes are flattened into the main medium
+  description: All SL-10, selenite-tungstate and tenfold vitamin constituents are
+    direct main ingredients. Three 1 ml doses and four distinct water contexts are
+    absent. HCl25%10ml becomes unsupported 2.5G_PER_L; stock strengths are not receiving-medium
+    concentrations, and main normalization lacks a supported final denominator.
+  target_ids:
+  - CultureMech:001509
+  field_paths:
+  - ingredients[*].concentration
+  - solutions
+  - ingredients[13].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - dsmz320
+  - dsmz385
+  - dsmz120
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm001509-form-mismatch
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hydrate and resazurin sodium form are inconsistent
+  description: Nickel chloride hexahydrate is linked to anhydrous CHEBI:34887; sodium
+    resazurin is linked to neutral CHEBI:8806. D-calcium pantothenate is explicitly
+    supported by the source and is not part of this finding.
+  target_ids:
+  - CultureMech:001509
+  field_paths:
+  - ingredients[20].term
+  - ingredients[20].mediaingredientmech_chebi_term
+  - ingredients[8].term
+  evidence_ids:
+  - primary
+  - chebi34887
+  - chebi8806
+  - dsmz120
+  - chebi31345
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm001509-preparation-placement
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: SL-10 final make-up is detached from its stock
+  description: The root preparation step correctly describes making SL-10 up to1000ml
+    but does not name that stock and no stock descriptor exists. Main pH6.5 conditional
+    wording, gas ratios and filtration exceptions are already retained and should
+    be preserved.
+  target_ids:
+  - CultureMech:001509
+  field_paths:
+  - preparation_steps[1]
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - dsmz320
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm001509-claim-evidence
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source-supported fields lack narrow evidence
+  description: Amounts, stock preparations, main conditional pH and gas handling have
+    no attached claim-level evidence. Historical enrichment and generic source note
+    do not prove current chemistry or volume conversion.
+  target_ids:
+  - CultureMech:001509
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  - preparation_steps
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - history-metadata
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore all three complete source stocks, exact doses and water stages,
+    preserve unqualified HCl percentage and source batch units, and establish a defensible
+    volume basis before concentration conversion.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001509
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Reconcile exact supplied hydrate and salt with inspected structural
+    evidence, retaining supported stereochemistry and avoiding guessed IDs or mass
+    conversions.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001509
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Associate the existing stock preparation with explicit SL-10 representation
+    while preserving the correct main procedure and conditional pH. Do not apply the
+    stock1000ml make-up to the main medium.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001509
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Attach exact primary snippets and source/version/stock locators after
+    correction; preserve append-only history and keep inaccessible current API separate
+    from primary evidence.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001509
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_neptunius_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Current mediadive399aapi returned503. Exact primary main and all named stock subsections
+  are available. Historical API byte equivalence and its numerical denominator are
+  not authenticated or inferred.
+- Current mediadive399aretry returned503. Exact primary main and all named stock subsections
+  are available. Historical API byte equivalence and its numerical denominator are
+  not authenticated or inferred.
+- Completed current-source review; optional API failures remain preserved. DSM320
+  contributes SL-10 only, DSM385 selenite-tungstate only and DSM120 tenfold vitamins
+  only. No parent basal medium or culture condition is transferred. Unknown main final
+  volume, HCl percent basis/density and late-stock strengths remain explicit.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-030
+- generated-medium
+```
