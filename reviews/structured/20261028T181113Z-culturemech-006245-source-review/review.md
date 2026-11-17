@@ -1,0 +1,2303 @@
+# Scientific review: DESULFITOBACTERIUM medium
+
+- Review: 20261028T181113Z-culturemech-006245-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T18:06:43.087062Z
+- Finished UTC: 2026-10-28T18:11:13.630318Z
+- Reviewer: Codex batch006_validation (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSM663 and nine unchanged main provider rates are supported on their declared basis. Twenty-one stock-only rows and a calcium sum mix stock and main stages; anoxic preparation is absent, and sodium-resazurin/nickel identities need curation. Correct pH, titration placeholder and supported forms are credited. All four original checks passed; direct KOMODO verification remains partial.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch074 index 01
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:006245 | data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml | generated | desulfitobacterium_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:006245 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:006245 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:006245 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:006245 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### Exact DSM663 and bounded KOMODO identity
+
+identity: unknown. Targets: CultureMech:006245.
+
+DSM663 title, PDF and provider agree with the local base accession. Historical mapping is retained, but direct current KOMODO routes are blocked; no strain-growth assertion is inferred.
+
+### Complex liquid scope
+
+scope: supported. Targets: CultureMech:006245.
+
+Yeast extract supports COMPLEX/UNDEFINED and the primary lacks a gelling agent. This does not endorse the contradictory aerobic note.
+
+### Source stages and missing claim linkage
+
+evidence: concern. Targets: CultureMech:006245.
+
+Declared basal provider rates and the NaOH placeholder are credited. Stock placement, summed calcium and absent anoxic preparation remain material; supported amounts still lack attached source claims.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:006245.
+
+64 current concentration fields are covered by 39 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema":"fresh-b074-quantity-inventory-v1","target":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","quantity_field_count":64,"decisions":[{"quantity_id":"q1","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"5.40218","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"5.40218","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 3-3","quote":"KH2PO4                                                   5.44         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 5.44,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.40218,\n                        \"mmol_l\": 39.6971,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."}]},{"quantity_id":"q2","label":"MgCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.178749","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.178749","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 4-4","quote":"MgCl2 x 2 H2O                                            0.18         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgCl2 x 2 H2O\",\n                        \"compound_id\": 651,\n                        \"amount\": 0.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.178749,\n                        \"mmol_l\": 1.36199,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."}]},{"quantity_id":"q3","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.1297915","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.1297915","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The stored 0.1297915 is the sum of main 0.0297915 g_l and trace-stock 0.1 g_l. These concentrations refer to different solution-stage bases, so the sum is invalid as a final-medium total. Separate both source occurrences and the 5 ml receiving addition; no final-medium total is invented.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 5-5","quote":"CaCl2 x 2 H2O                                            0.03         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0297915,\n                        \"mmol_l\": 0.202642,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 32-32","quote":"CaCl2 x 2 H2O                                            0.10         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 7-7","quote":"Trace element solution                                   5.00        ml","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"solution\": \"Trace element solution\",\n                        \"solution_id\": 250,\n                        \"amount\": 5,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[2].concentration","decision":"conflict","rationale":"The stored 0.1297915 is the sum of main 0.0297915 g_l and trace-stock 0.1 g_l. These concentrations refer to different solution-stage bases, so the sum is invalid as a final-medium total. Separate both source occurrences and the 5 ml receiving addition; no final-medium total is invented."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[2].concentration","decision":"conflict","rationale":"The stored 0.1297915 is the sum of main 0.0297915 g_l and trace-stock 0.1 g_l. These concentrations refer to different solution-stage bases, so the sum is invalid as a final-medium total. Separate both source occurrences and the 5 ml receiving addition; no final-medium total is invented."}]},{"quantity_id":"q4","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.496524","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.496524","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 6-6","quote":"NH4Cl                                                    0.50         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.496524,\n                        \"mmol_l\": 9.28256,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."}]},{"quantity_id":"q5","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.993049","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.993049","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 8-8","quote":"Yeast extract                                            1.00         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.993049,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."}]},{"quantity_id":"q6","label":"Sodium resazurin","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.000496524","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.000496524","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass. The primary explicitly specifies 0.1% w/v and 0.50 ml sodium-resazurin stock; its chemical identity is assessed separately.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 9-9","quote":"Sodium resazurin (0.1% w/v)                              0.50        ml","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000496524,\n                        \"mmol_l\": 0.00197685,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass. The primary explicitly specifies 0.1% w/v and 0.50 ml sodium-resazurin stock; its chemical identity is assessed separately."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass. The primary explicitly specifies 0.1% w/v and 0.50 ml sodium-resazurin stock; its chemical identity is assessed separately."}]},{"quantity_id":"q7","label":"Na-pyruvate","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"2.48262","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"2.48262","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 10-10","quote":"Na-pyruvate                                              2.50         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Na-pyruvate\",\n                        \"compound_id\": 113,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.48262,\n                        \"mmol_l\": 22.5603,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."}]},{"quantity_id":"q8","label":"Na2S2O3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1.9861","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1.9861","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 11-11","quote":"Na2S2O3 x 5 H2O                                          2.00         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2S2O3 x 5 H2O\",\n                        \"compound_id\": 65,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.9861,\n                        \"mmol_l\": 8.00245,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."}]},{"quantity_id":"q9","label":"L-Cysteine HCl x H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.397219","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.397219","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 13-13","quote":"L-Cysteine HCl x H2O                                     0.40         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.397219,\n                        \"mmol_l\": 2.26161,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[8].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[8].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."}]},{"quantity_id":"q10","label":"Na2S x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.397219","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.397219","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 14-14","quote":"Na2S x 9 H2O                                             0.40         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.397219,\n                        \"mmol_l\": 1.65383,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[9].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[9].concentration","decision":"evidence_only","rationale":"The unchanged value matches the exact provider-declared main g_l. The primary supplies batch mass or stock volume with 1000 ml water input, not explicit measured final volume; provider volume 1007 ml is a computational basis, not independently measured. Preserve source digits/basis and add missing evidence without replacing the rate by the nominal batch mass."}]},{"quantity_id":"q11","label":"Nitrilotriacetic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"12.8","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"12.8","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 28-28","quote":"Nitrilotriacetic acid (NTA)                             12.80         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\": 189,\n                        \"attribute\": \"NTA\",\n                        \"amount\": 12.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 12.8,\n                        \"mmol_l\": 66.9666,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[10].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[10].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."}]},{"quantity_id":"q12","label":"FeCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 29-29","quote":"FeCl2 x 4 H2O                                            0.20         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.00598,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[11].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[11].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."}]},{"quantity_id":"q13","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 30-30","quote":"MnCl2 x 4 H2O                                            0.10         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[12].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[12].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."}]},{"quantity_id":"q14","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.17","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.17","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 31-31","quote":"CoCl2 x 6 H2O                                            0.17         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 0.17,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.17,\n                        \"mmol_l\": 1.30931,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[13].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[13].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."}]},{"quantity_id":"q15","label":"ZnCl2","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 33-33","quote":"ZnCl2                                                    0.10         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.733676,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[14].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[14].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."}]},{"quantity_id":"q16","label":"CuCl2","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 34-34","quote":"CuCl2                                                    0.02         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2\",\n                        \"compound_id\": 261,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.148754,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[15].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[15].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."}]},{"quantity_id":"q17","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.01","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 35-35","quote":"H3BO3                                                    0.01         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.161708,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[16].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[16].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."}]},{"quantity_id":"q18","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.01","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 36-36","quote":"Na2MoO4 x 2 H2O                                          0.01         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0413309,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[17].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[17].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."}]},{"quantity_id":"q19","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.03","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.03","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 37-37","quote":"NiCl2 x 6 H2O                                            0.03         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.231483,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[18].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[18].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."}]},{"quantity_id":"q20","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 38-38","quote":"NaCl                                                     1.00         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[10]","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 17.1116,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[19].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[19].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."}]},{"quantity_id":"q21","label":"Na2SeO3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.03","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.03","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 39-39","quote":"Na2SeO3 x 5 H2O                                          0.03         g","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[11]","quote":"{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.114062,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[20].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[20].concentration","decision":"conflict","rationale":"This is a trace-stock concentration, supported by explicit final makeup to 1000 ml, but it is flattened into the main ingredient list. Preserve its stock amount and receiving 5 ml batch addition as separate claims, not an undiluted final-medium rate."}]},{"quantity_id":"q22","label":"Biotin","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 56-56","quote":"Biotin                                     20.00   mg","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[21].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[21].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."}]},{"quantity_id":"q23","label":"Folic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 57-57","quote":"Folic acid                                 20.00   mg","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[22].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[22].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."}]},{"quantity_id":"q24","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 58-58","quote":"Pyridoxine hydrochloride                  100.00   mg","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[23].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[23].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."}]},{"quantity_id":"q25","label":"Thiamine HCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 59-59","quote":"Thiamine HCl                               50.00   mg","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[24].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[24].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."}]},{"quantity_id":"q26","label":"Riboflavin","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 60-60","quote":"Riboflavin                                 50.00   mg","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[25].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[25].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."}]},{"quantity_id":"q27","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 61-61","quote":"Nicotinic acid                             50.00   mg","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[26].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[26].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."}]},{"quantity_id":"q28","label":"Calcium D-(+)-pantothenate","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 62-62","quote":"Calcium D-(+)-pantothenate                 50.00   mg","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[27].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[27].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."}]},{"quantity_id":"q29","label":"Vitamin B12","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.001","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.001","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 63-63","quote":"Vitamin B12                                 1.00   mg","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[28].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[28].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."}]},{"quantity_id":"q30","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 64-64","quote":"p-Aminobenzoic acid                        50.00   mg","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[29].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[29].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."}]},{"quantity_id":"q31","label":"(DL)-alpha-Lipoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 65-65","quote":"(DL)-alpha-Lipoic acid                     50.00   mg","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[30].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[30].concentration","decision":"conflict","rationale":"This is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration. The primary lists stock masses with 1000 ml water input and a separate 2 ml batch addition; it does not explicitly make up the vitamin stock to final volume. Preserve exact stock amounts and provider basis without transferring the undiluted rate to the main medium."}]},{"quantity_id":"q32","label":"Main NaOH titration","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[31].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[31].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"The VARIABLE placeholder truthfully retains an unquantified titration amount. The source supplies 1 N strength and pH 7.5, not a fixed addition volume; preserve those controls separately and attach evidence.","source_stage":"main titration","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 22-22","quote":"filtration. Adjust medium pH to 7.5 by adding sterile anoxic 1 N NaOH.","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\": \"Dissolve ingredients (except pyruvate, thiosulfate, vitamins, cysteine and sulfide), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Stock solutions of pyruvate and vitamins are sterilized by filtration. Adjust medium pH to 7.5 by adding sterile anoxic 1 N NaOH.\"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[31].concentration","decision":"evidence_only","rationale":"The VARIABLE placeholder truthfully retains an unquantified titration amount. The source supplies 1 N strength and pH 7.5, not a fixed addition volume; preserve those controls separately and attach evidence."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[31].concentration","decision":"evidence_only","rationale":"The VARIABLE placeholder truthfully retains an unquantified titration amount. The source supplies 1 N strength and pH 7.5, not a fixed addition volume; preserve those controls separately and attach evidence."}]},{"quantity_id":"q33","label":"Trace-stock receiving volume","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact source batch volume and its stage. A water input or stock addition is not itself proof of final main volume; no unstated density or additional dilution is introduced.","source_stage":"source-only main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 7-7","quote":"Trace element solution                                   5.00        ml","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"solution\": \"Trace element solution\",\n                        \"solution_id\": 250,\n                        \"amount\": 5,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q34","label":"Vitamin-stock receiving volume","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact source batch volume and its stage. A water input or stock addition is not itself proof of final main volume; no unstated density or additional dilution is introduced.","source_stage":"source-only main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 12-12","quote":"Wolin's vitamin solution (10x)                           2.00        ml","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 2,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q35","label":"Main solvent input","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact source batch volume and its stage. A water input or stock addition is not itself proof of final main volume; no unstated density or additional dilution is introduced.","source_stage":"source-only main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 15-15","quote":"Distilled water                                       1000.00        ml","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[12]","quote":"{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q36","label":"Trace solvent input","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact source batch volume and its stage. A water input or stock addition is not itself proof of final main volume; no unstated density or additional dilution is introduced.","source_stage":"source-only trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 40-40","quote":"Distilled water                                       1000.00        ml","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[12]","quote":"{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q37","label":"Vitamin solvent input","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact source batch volume and its stage. A water input or stock addition is not itself proof of final main volume; no unstated density or additional dilution is introduced.","source_stage":"source-only vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 66-66","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[10]","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q38","label":"Main preparation and pH","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ph_value","stored":7.5},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ph_value","stored":7.5}],"decision":"evidence_only","rationale":"pH 7.5 is correctly retained. Attach the explicit main controls: 100% N2, 30–45 min sparging, anoxic dispensing/autoclaving, separately added stocks, pyruvate/vitamin filtration, and 1 N NaOH titration. The primary gives no autoclave temperature/time, and unspecified late-stock strengths/addition volumes remain unresolved.","source_stage":"main preparation","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 17-22","quote":"Dissolve ingredients (except pyruvate, thiosulfate, vitamins, cysteine and sulfide), then\nsparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium\nunder same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\nAdd pyruvate, thiosulfate, vitamins, cysteine and sulfide from sterile anoxic stock solutions\nprepared under 100% N2 gas. Stock solutions of pyruvate and vitamins are sterilized by\nfiltration. Adjust medium pH to 7.5 by adding sterile anoxic 1 N NaOH.","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\": \"Dissolve ingredients (except pyruvate, thiosulfate, vitamins, cysteine and sulfide), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Stock solutions of pyruvate and vitamins are sterilized by filtration. Adjust medium pH to 7.5 by adding sterile anoxic 1 N NaOH.\"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ph_value","decision":"evidence_only","rationale":"pH 7.5 is correctly retained. Attach the explicit main controls: 100% N2, 30–45 min sparging, anoxic dispensing/autoclaving, separately added stocks, pyruvate/vitamin filtration, and 1 N NaOH titration. The primary gives no autoclave temperature/time, and unspecified late-stock strengths/addition volumes remain unresolved."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ph_value","decision":"evidence_only","rationale":"pH 7.5 is correctly retained. Attach the explicit main controls: 100% N2, 30–45 min sparging, anoxic dispensing/autoclaving, separately added stocks, pyruvate/vitamin filtration, and 1 N NaOH titration. The primary gives no autoclave temperature/time, and unspecified late-stock strengths/addition volumes remain unresolved."}]},{"quantity_id":"q39","label":"Trace preparation and final makeup","local_fields":[],"decision":"evidence_only","rationale":"Retain the source-specific 200 ml initial water, NTA-first sequence, pH 6.5 KOH adjustment and explicit final makeup to 1000 ml. The KOH addition is unquantified; these are stock controls, not main-medium instructions.","source_stage":"trace preparation","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt lines 42-43","quote":"First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve\nmineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].steps[0]","quote":"{\n                        \"step\": \"First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.\"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]}],"document_scopes":{"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml":null},"scope":"Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: concern. Targets: CultureMech:006245.
+
+All current asserted primary/secondary slots are resolved to fresh OLS and exact packaged MIM rows. Sodium resazurin is not neutral resazurin; nickel hexahydrate is not anhydrous nickel dichloride. The unusual magnesium dichloride dihydrate is explicitly printed and matches CHEBI:131394. Cysteine hydrochloride hydrate is explicitly monohydrate. D-calcium pantothenate and generic lipoic acid are compatible with the printed D and DL forms. Generic vitamin B12 is not narrowed to cyanocobalamin. Canonical-label equality and snapshot membership are separate from supplied-form support.
+
+### Existing repair credit and writer limits
+
+provenance: concern. Targets: CultureMech:006245.
+
+The full target and singleton contributor, four historical reports and exact selected parent row were read. The neighboring DSM merged report was read as comparison context only, not another selected owner. Earlier blanket source-conflict labels do not erase the independently supported main provider rates. Current parser, resolver, cleanup and singleton merger behavior is distinct from historical execution. No attached claims exist; historical snippets/raw hashes are separately joined.
+
+## Findings
+
+### f1: Separate stock rates and the mixed-stage calcium sum
+
+major / open / confirmed; issue key: culturemech-006245-flattened-stock-calcium-sum.
+
+Nine unchanged basal rates match the declared provider normalization. Twenty-one stock-only rows remain flattened; calcium additionally combines 0.0297915 main and 0.1 trace-stock g_l. Restore trace and vitamin topology and their distinct receiving volumes while preserving primary batch amounts, explicit trace final makeup, and unresolved main/vitamin final volumes. Do not add different solution-stage concentrations.
+
+### f2: Restore source-specific preparation and reconcile the aerobic note
+
+major / open / confirmed; issue key: culturemech-006245-missing-anoxic-preparation.
+
+The source requires anoxic preparation with separately added and selectively filtered stocks, whereas both local layers lack preparation_steps and retain Aerobic: Yes in notes. Keep supported pH 7.5 and the truthful VARIABLE NaOH amount; attach the source controls and distinguish main and trace-stock preparation. Do not invent missing autoclave temperature/time or late-stock doses.
+
+### f3: Correct sodium-resazurin and nickel-hydrate identity
+
+major / open / confirmed; issue key: culturemech-006245-supplied-form-grounding.
+
+The sodium-resazurin row uses neutral CHEBI:8806; reconcile the supplied sodium salt without altering its supported source amount. NiCl2·6H2O uses anhydrous CHEBI:34887 in both slots; fresh OLS CHEBI:53542 is the hexahydrate. The current MIM preferred NiCl2 x 6 H2O row is REJECTED, while preferred Nickel (II) chloride hexahydrate is MAPPED; preserve those exact spelling-specific statuses. D-calcium pantothenate and nonstereospecific lipoic acid are compatible with the printed D and DL source forms.
+
+### f4: Resolve the missing yeast-extract linkage
+
+minor / open / confirmed; issue key: culturemech-006245-missing-yeast-link.
+
+Yeast extract has no ontology or secondary linkage. The exact packaged preferred row and fresh FOODON:03315426 identify the mixture; add a validated whole-mixture link without treating it as a pure compound or guessing manufacturer/grade.
+
+### f5: Attach exact claims and preserve original event strings
+
+minor / open / confirmed; issue key: culturemech-006245-claim-and-event-provenance.
+
+No local quantity claims are attached. Historical report source objects and current raw equality are recorded separately from original retrieval provenance; direct KOMODO accession/catalogue routes returned 403. Preserve the malformed and timezone-naive original events unchanged, and append verified context if recovered. Future writer timestamps need valid UTC formatting without rewriting history.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Nine unchanged basal rates match the declared provider normalization. Twenty-one stock-only rows remain flattened; calcium additionally combines 0.0297915 main and 0.1 trace-stock g_l. Restore trace and vitamin topology and their distinct receiving volumes while preserving primary batch amounts, explicit trace final makeup, and unresolved main/vitamin final volumes. Do not add different solution-stage concentrations.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+The source requires anoxic preparation with separately added and selectively filtered stocks, whereas both local layers lack preparation_steps and retain Aerobic: Yes in notes. Keep supported pH 7.5 and the truthful VARIABLE NaOH amount; attach the source controls and distinguish main and trace-stock preparation. Do not invent missing autoclave temperature/time or late-stock doses.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+The sodium-resazurin row uses neutral CHEBI:8806; reconcile the supplied sodium salt without altering its supported source amount. NiCl2·6H2O uses anhydrous CHEBI:34887 in both slots; fresh OLS CHEBI:53542 is the hexahydrate. The current MIM preferred NiCl2 x 6 H2O row is REJECTED, while preferred Nickel (II) chloride hexahydrate is MAPPED; preserve those exact spelling-specific statuses. D-calcium pantothenate and nonstereospecific lipoic acid are compatible with the printed D and DL source forms.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+Yeast extract has no ontology or secondary linkage. The exact packaged preferred row and fresh FOODON:03315426 identify the mixture; add a validated whole-mixture link without treating it as a pure compound or guessing manufacturer/grade.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a5
+
+Attach source-scoped ingredient evidence and root evidence for stage/preparation claims. Keep original event bytes; append verified context with actual timestamp. If changing future timestamp formatting, update the inspected importer/resolver writers and test the emitted UTC event, without rewriting originals.
+
+- Original events and prior reports remain byte-preserved; any correction/context is appended with verified provenance.
+- Future importer/resolver timestamps parse as UTC instants and retain their actual event time.
+- Every supported amount has an exact scoped snippet; source-only stock/preparation evidence is attached at schema-supported root evidence.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| dsmz663 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf; REVIEW_WORK/batch074/source01-03-supplement/dsmz663.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| api663 | https://mediadive.dsmz.de/rest/medium/663; REVIEW_WORK/batch074/source01-03-supplement/api663.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| komodo663 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=663; REVIEW_WORK/batch074/source01-03-supplement/komodo663.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| komodoList | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; REVIEW_WORK/batch074/source01-03-supplement/komodoList.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| identityDesulfitobacterium | https://lpsn.dsmz.de/genus/desulfitobacterium; REVIEW_WORK/batch074/source01-03-supplement/identityDesulfitobacterium.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53542; REVIEW_WORK/batch074/source01-03-supplement/chebi53542.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| foodon03315426 | https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?obo_id=FOODON:03315426; REVIEW_WORK/batch074/source01-03-supplement/foodon03315426.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| target | data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| report-16 | reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/plan.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-17 | reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-18 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-19 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/desulfitobacterium_medium__9eabf335.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-20 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| historical-reading | REVIEW_WORK/batch074/record01/historical-reading.json; Complete artifact; exact original input paths and hashes retained | context_only | Lossless exact report cells and independently joined current decoded source objects. |
+| historical-selected-parent-rows | REVIEW_WORK/batch074/record01/historical-selected-parent-rows.json; Complete artifact; exact original input paths and hashes retained | context_only | Exact selected historical parent objects; parent provenance only, not automatic original source authentication. |
+| complete-document-reader | REVIEW_WORK/batch074/record01/complete-document-reader.json; Complete artifact; exact original input paths and hashes retained | context_only | Complete exact target and owner parsed documents with lossless long-string pooling. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _parse_api_solutions; _is_api_stock_addition; _parse_preparation_steps | context_only | Current _parse_api_composition selects primary compounds, skips water and stock additions, and prefers declared provider g_l. _parse_api_solutions retains referenced stocks. _parse_preparation_steps collects steps from all solutions without retaining their solution-stage location. This describes current code, not authenticated historical execution. |
+| writer-matcher | src/culturemech/merge/matcher.py; group_formulations | context_only | Current group_formulations uses conservative FormulationFingerprinter; ingredient similarity is only candidate discovery. |
+| writer-cleanup | scripts/cleanup_media_quality.py; MediaQualityFixer._merge_ingredient_group | context_only | Current _merge_ingredient_group retains identical duplicates and flags differing values; it no longer adds them. This does not repair the historical main/stock calcium sum. |
+| writer-resolver | src/culturemech/enrich/dsmz_resolver.py; DSMZCompositionResolver.extract_dsmz_id; merge_composition | context_only | Current DSMZCompositionResolver.merge_composition copies ingredients and solutions, but not preparation_steps; it copies scalar pH only if absent. The history records a DSM663 copy without independently proving the current implementation ran then. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036; REVIEW_WORK/batch074/source01-03-supplement/chebi63036.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi131394 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131394; REVIEW_WORK/batch074/source01-03-supplement/chebi131394.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158; REVIEW_WORK/batch074/source01-03-supplement/chebi86158.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206; REVIEW_WORK/batch074/source01-03-supplement/chebi31206.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806; REVIEW_WORK/batch074/source01-03-supplement/chebi8806.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi50144 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:50144; REVIEW_WORK/batch074/source01-03-supplement/chebi50144.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi32150 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32150; REVIEW_WORK/batch074/source01-03-supplement/chebi32150.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91248; REVIEW_WORK/batch074/source01-03-supplement/chebi91248.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209; REVIEW_WORK/batch074/source01-03-supplement/chebi76209.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:44557; REVIEW_WORK/batch074/source01-03-supplement/chebi44557.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249; REVIEW_WORK/batch074/source01-03-supplement/chebi86249.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368; REVIEW_WORK/batch074/source01-03-supplement/chebi86368.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503; REVIEW_WORK/batch074/source01-03-supplement/chebi53503.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976; REVIEW_WORK/batch074/source01-03-supplement/chebi49976.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi49553 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49553; REVIEW_WORK/batch074/source01-03-supplement/chebi49553.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118; REVIEW_WORK/batch074/source01-03-supplement/chebi33118.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213; REVIEW_WORK/batch074/source01-03-supplement/chebi75213.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887; REVIEW_WORK/batch074/source01-03-supplement/chebi34887.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710; REVIEW_WORK/batch074/source01-03-supplement/chebi26710.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131361; REVIEW_WORK/batch074/source01-03-supplement/chebi131361.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956; REVIEW_WORK/batch074/source01-03-supplement/chebi15956.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470; REVIEW_WORK/batch074/source01-03-supplement/chebi27470.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961; REVIEW_WORK/batch074/source01-03-supplement/chebi30961.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105; REVIEW_WORK/batch074/source01-03-supplement/chebi49105.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015; REVIEW_WORK/batch074/source01-03-supplement/chebi17015.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940; REVIEW_WORK/batch074/source01-03-supplement/chebi15940.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345; REVIEW_WORK/batch074/source01-03-supplement/chebi31345.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843; REVIEW_WORK/batch074/source01-03-supplement/chebi176843.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753; REVIEW_WORK/batch074/source01-03-supplement/chebi30753.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494; REVIEW_WORK/batch074/source01-03-supplement/chebi16494.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32145; REVIEW_WORK/batch074/source01-03-supplement/chebi32145.json; exact original raw/text/hash/time metadata | context_only | Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| quantities | REVIEW_WORK/batch074/record01/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch074/record01/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch074/record01/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch074/record01/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch074/record01/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch074/record01/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch074/record01/existing-claim-authentication.json; Complete sidecar | context_only | No attached claims to authenticate; historical source objects are separately assessed in historical-source-joins.json. |
+| historical-source-joins | REVIEW_WORK/batch074/record01/historical-source-joins.json; Every literal/decoded historical source-object row and exact current-source match | context_only | Historical quoted source content and raw-digest equality where actually matched; independent of attached local claims and original access-event recovery. |
+| check-schema | REVIEW_WORK/batch074/record01/validate-schema.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch074/record01/validate-strict.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch074/record01/validate-terms.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch074/record01/validate-references.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- Direct KOMODO catalogue/accession sources returned 403; this is a partial identity review.
+- Primary main and vitamin water inputs do not establish measured final volume; API 1007 ml and its g_l are a declared computational normalization.
+- Unused provider mmol_l values, including hydration-sensitive conversions, are not validated as source mass evidence.
+- Current public LPSN genus identity is not a strain cultivation result.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T181113Z-culturemech-006245-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: DESULFITOBACTERIUM medium'
+started_at: '2026-10-28T18:06:43.087062Z'
+finished_at: '2026-10-28T18:11:13.630318Z'
+reviewer:
+  identity: Codex batch006_validation
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, exact
+    captured sources, fresh scoped primary sources and original diagnostics.
+skill: review-yaml-record
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSM663 and nine unchanged main provider rates are supported on their declared
+  basis. Twenty-one stock-only rows and a calcium sum mix stock and main stages; anoxic
+  preparation is absent, and sodium-resazurin/nickel identities need curation. Correct
+  pH, titration placeholder and supported forms are credited. All four original checks
+  passed; direct KOMODO verification remains partial.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml
+    sha256: 440bc2a329080909c7904b6e9e2ae4f3fd878c83f2a31a30e838dc625d536f19
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+    sha256: c726046229f2eed23cdc5128d0841381708eeaddf0cc19b9a987d891ee1e7b07
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/plan.json
+    sha256: f5827bda6e5f7caf5fdb9faddc5f36e3955ee048fa0a066cc40e04ff3e1c4823
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml.md
+    sha256: be145f0722f565e4a9e949e77ce2f01a2d1e084117657a4bff41560b708499dd
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.md
+    sha256: a18c419f70d54943df78e702efaae56e21d3d3bb0a33356d913e7768ceccb70b
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/desulfitobacterium_medium__9eabf335.md
+    sha256: 0954ee370f4989a5143611d6e4b7376c33e707a864b40744fc83a51075627abb
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.md
+    sha256: fdc55ebae1a1019d109287a6353e8495ee99765c002d5db32230df1669c2f650
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/propose_cocktail_nesting.py
+    sha256: e886c446a8398f08f1cc735b1c3a9812c5fc6371a36b69ef5325f1c53f14e6c0
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch074 index 01
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006245
+targets:
+- target_id: CultureMech:006245
+  path: data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml
+  label: desulfitobacterium_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:006245
+  command: just validate-schema data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:006245
+  command: just validate-strict data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml
+    --out REVIEW_WORK/batch074/record01/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:006245
+  command: just validate-terms data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:006245
+  command: just validate-references data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: dsmz663
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf
+  accessed_at: '2026-10-28T18:07:25.487213Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/dsmz663.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96
+- evidence_id: api663
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/663
+  accessed_at: '2026-10-28T18:07:25.318258Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/api663.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4
+- evidence_id: komodo663
+  kind: search
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=663
+  accessed_at: '2026-10-28T18:07:24.783916Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/komodo663.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 9e991bc96590239664c68b7864fb55cc7212fc651c23e455c7954f0d12f9c896
+  search_scope: One exact public GET of https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=663;
+    retained status 403. No exhaustive repository or literature absence claim.
+- evidence_id: komodoList
+  kind: search
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  accessed_at: '2026-10-28T18:07:26.106810Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/komodoList.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 0445f93586a78cd1cbed9a2b46e93fe1539450c9ec795de05b93742b4a94f1ba
+  search_scope: One exact public GET of https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    retained status 403. No exhaustive repository or literature absence claim.
+- evidence_id: identityDesulfitobacterium
+  kind: primary_source
+  reference: https://lpsn.dsmz.de/genus/desulfitobacterium
+  accessed_at: '2026-10-28T18:07:26.995967Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/identityDesulfitobacterium.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 1431df5e201b274bebfc8a9587b18c712db637534e0e2c74cc56afcba53136de
+- evidence_id: chebi53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53542
+  accessed_at: '2026-10-28T18:07:33.759890Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi53542.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 1e44a068cfe6b98d7bb3b0240ffdc0611e1be59f2d3dab9f04e4162ed94e4444
+- evidence_id: foodon03315426
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?obo_id=FOODON:03315426
+  accessed_at: '2026-10-28T18:07:36.392497Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/foodon03315426.json; exact
+    original raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 7812dff5a532367bf78b3a0fa93571cc657e52ec5f4b86f296a4e245aa75ba9b
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T18:11:13.506985Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: 440bc2a329080909c7904b6e9e2ae4f3fd878c83f2a31a30e838dc625d536f19
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T18:11:13.507141Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: c726046229f2eed23cdc5128d0841381708eeaddf0cc19b9a987d891ee1e7b07
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T18:11:13.507166Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T18:11:13.507460Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T18:11:13.507482Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T18:11:13.507501Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-16
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T18:11:13.507526Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: f5827bda6e5f7caf5fdb9faddc5f36e3955ee048fa0a066cc40e04ff3e1c4823
+- evidence_id: report-17
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T18:11:13.513174Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: be145f0722f565e4a9e949e77ce2f01a2d1e084117657a4bff41560b708499dd
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T18:11:13.513236Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: a18c419f70d54943df78e702efaae56e21d3d3bb0a33356d913e7768ceccb70b
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/desulfitobacterium_medium__9eabf335.md
+  locator: Complete report
+  accessed_at: '2026-10-28T18:11:13.513264Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 0954ee370f4989a5143611d6e4b7376c33e707a864b40744fc83a51075627abb
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T18:11:13.513287Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: fdc55ebae1a1019d109287a6353e8495ee99765c002d5db32230df1669c2f650
+- evidence_id: historical-reading
+  kind: record_content
+  reference: REVIEW_WORK/batch074/record01/historical-reading.json
+  accessed_at: '2026-10-28T18:11:13.513318Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Lossless exact report cells and independently joined current decoded source
+    objects.
+  snapshot_sha256: f85f170960a22b58300c27081c442125a476326fc4061ce6a6a93f72515de386
+- evidence_id: historical-selected-parent-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch074/record01/historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T18:11:13.513374Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Exact selected historical parent objects; parent provenance only, not automatic
+    original source authentication.
+  snapshot_sha256: 07edd36f566cb52596e2b74a8ab995fe67b4b59d55d5fcb51c73227492fa26d4
+- evidence_id: complete-document-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch074/record01/complete-document-reader.json
+  accessed_at: '2026-10-28T18:11:13.513420Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Complete exact target and owner parsed documents with lossless long-string
+    pooling.
+  snapshot_sha256: 20a1b006221e6e0c0f71f7e009a3b7b67b1b1f5d36d35c3712e0f7b520374bbd
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _parse_api_solutions; _is_api_stock_addition; _parse_preparation_steps
+  accessed_at: '2026-10-28T18:11:13.513455Z'
+  support: context_only
+  summary: Current _parse_api_composition selects primary compounds, skips water and
+    stock additions, and prefers declared provider g_l. _parse_api_solutions retains
+    referenced stocks. _parse_preparation_steps collects steps from all solutions
+    without retaining their solution-stage location. This describes current code,
+    not authenticated historical execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-matcher
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations
+  accessed_at: '2026-10-28T18:11:13.513487Z'
+  support: context_only
+  summary: Current group_formulations uses conservative FormulationFingerprinter;
+    ingredient similarity is only candidate discovery.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: MediaQualityFixer._merge_ingredient_group
+  accessed_at: '2026-10-28T18:11:13.513515Z'
+  support: context_only
+  summary: Current _merge_ingredient_group retains identical duplicates and flags
+    differing values; it no longer adds them. This does not repair the historical
+    main/stock calcium sum.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-resolver
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: DSMZCompositionResolver.extract_dsmz_id; merge_composition
+  accessed_at: '2026-10-28T18:11:13.513537Z'
+  support: context_only
+  summary: Current DSMZCompositionResolver.merge_composition copies ingredients and
+    solutions, but not preparation_steps; it copies scalar pH only if absent. The
+    history records a DSM663 copy without independently proving the current implementation
+    ran then.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T18:07:34.074001Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi63036.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi131394
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131394
+  accessed_at: '2026-10-28T18:07:27.369972Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi131394.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 1873667a81a0f4e32783ca14fbb2da202d7ee1ea2e843d762319662ee1e0cb9c
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  accessed_at: '2026-10-28T18:07:34.672414Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi86158.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206
+  accessed_at: '2026-10-28T18:07:30.964074Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi31206.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 645112dbfa7f1c565489070586f5d4018429259ff0400500ca10dfe6e43a5449
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806
+  accessed_at: '2026-10-28T18:07:35.822503Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi8806.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f2530ec9c15f59a3d132a466c9c3a899497bab0f85b996d3e27bef8612f89982
+- evidence_id: chebi50144
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:50144
+  accessed_at: '2026-10-28T18:07:33.401489Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi50144.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 55d173a8545b2fc57dea3f3a4b07b9052f0bbd86f9a3e9d5b0b7b5a08b9c0162
+- evidence_id: chebi32150
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32150
+  accessed_at: '2026-10-28T18:07:31.866832Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi32150.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: de317b7c2a67b08783f4123e1f5b67de75d34e2090c25525f45fe2c45f3dcbb2
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91248
+  accessed_at: '2026-10-28T18:07:35.881884Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi91248.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: d0959ac455ece32a6e94c13fd8e592403109201b6c61144dccfe0d58f1916380
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209
+  accessed_at: '2026-10-28T18:07:34.615528Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi76209.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 4896ec517123ebeb1afcbac7bc30a7103976f03891af0c86c992196b5f0db969
+- evidence_id: chebi44557
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:44557
+  accessed_at: '2026-10-28T18:07:32.792087Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi44557.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 25e8fb689e4dfc294e2823ca36290cdce6d21ad174238e0e958ebe09d4c1262b
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249
+  accessed_at: '2026-10-28T18:07:34.967462Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi86249.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 4d7f48f88badcba85a62e59842c6ec921f5478eb76695098b17847ed62c8530a
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368
+  accessed_at: '2026-10-28T18:07:35.559003Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi86368.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 2d5685a4a03c5d730876514b4a7664fb477f63682a60cc7e13d7776a250f68e3
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503
+  accessed_at: '2026-10-28T18:07:33.783846Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi53503.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: a626d2aa210aafd9572221d4893cd206310d5df507e474e1528997048f522250
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976
+  accessed_at: '2026-10-28T18:07:33.417701Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi49976.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: d3bdc4c6f01d01422fafe433df4e4011e01cf7e55e0329ab341a60ece780946f
+- evidence_id: chebi49553
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49553
+  accessed_at: '2026-10-28T18:07:33.151075Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi49553.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 2d4660eb3bc066caef0e626b9b3bdf46ebaecdcf1779b4a75bfcd982f49bbc5b
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118
+  accessed_at: '2026-10-28T18:07:32.513363Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi33118.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: eef160dcdcd93f231064bc7b59da1e05a2efe1f96089b9cd2fdbdf68a9a4e5fc
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213
+  accessed_at: '2026-10-28T18:07:34.368132Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi75213.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f99a2d8b28ac44913a666745dd70098c5d5f21c9513fee921a35f0fd18f2c445
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887
+  accessed_at: '2026-10-28T18:07:32.540196Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi34887.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 3a37ef35991d24faf578286a7d7557ee1b0646c286dd3f8a555d833e6bf82a57
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710
+  accessed_at: '2026-10-28T18:07:30.080063Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi26710.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 70cf14c35e06f40427c1a2aa30e99794518eda976b5e5b3c86610efc28b7f25a
+- evidence_id: chebi131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131361
+  accessed_at: '2026-10-28T18:07:27.284877Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi131361.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: d88b30f797a300c3935e550a4770cb598bbed342a9c2a343f77bdce496e99db9
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956
+  accessed_at: '2026-10-28T18:07:28.246392Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi15956.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 5135a39e8b52c878896db22443f00507125db80e5ce4bb1dcc97914b9bdd7316
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470
+  accessed_at: '2026-10-28T18:07:30.344939Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi27470.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: e1820a7a704794fa20995eea5037e03c2b22b847817c28bb2f45f80762c275d1
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961
+  accessed_at: '2026-10-28T18:07:30.946558Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi30961.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 855ea2cf0e89d25ab4a560ab1c2dab6ac861d215bc5473cb4d3a0a2d4cdff438
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105
+  accessed_at: '2026-10-28T18:07:33.162190Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi49105.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f9dbae8cd2dcbd38d914abb99730e341ff280d3a44f20f95b2663e47664780cf
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015
+  accessed_at: '2026-10-28T18:07:29.075537Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi17015.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 17f7ac7c03d75b85a96f951321902906266f3ce8fa44faea4814fac46560e3e6
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940
+  accessed_at: '2026-10-28T18:07:28.337050Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi15940.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: c291a1c1bb0d6af05ac4005af0957534f430db47e7df9cec874f8a94d961dba1
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345
+  accessed_at: '2026-10-28T18:07:31.237965Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi31345.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: c3341e7cf8a7ea0768d505265376c1514f161c9048b6e878314e204341d702eb
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843
+  accessed_at: '2026-10-28T18:07:29.468505Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi176843.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 9c73ea31864abce6b9ed6328e9ed491bc1cad2ba27f40adb5c00f0f192838e63
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753
+  accessed_at: '2026-10-28T18:07:30.581167Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi30753.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 1340e054634ce960494b9388f6e3fd231d9e7d66969c3c11932ee2058171fd2c
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494
+  accessed_at: '2026-10-28T18:07:28.559986Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi16494.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 192c51f672f633c6071a3397d5785fb2bca6eaf8f9b787f7aaaa6c2aeb3b1a2f
+- evidence_id: chebi32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32145
+  accessed_at: '2026-10-28T18:07:31.538933Z'
+  locator: REVIEW_WORK/batch074/source01-03-supplement/chebi32145.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch074 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 089212e8c86e2d4a4b145366c8bc67e0056565ef6970dcdc3df63ad20dac234d
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch074/record01/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T18:11:13.628684Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: 473bba287ed11d921cf16df206bf1da169ff7af1564483bc012bf5705d77da71
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch074/record01/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T18:11:13.628765Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: f3b5b38c392f7e21fb69ed9624a9a92ff9153a48e6830f8461f55188efb078ff
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch074/record01/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T18:11:13.628894Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: 537b1bf53aa77b2004818a7b4ba8d773da5d135095cf309888fd40cf6b33ad6b
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch074/record01/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T18:11:13.628947Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: e9abed9b9bccf9df6a33f92a079e720c5f0eed944a2dc0590a85880cf65bd845
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch074/record01/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T18:11:13.628995Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: f322b9b13e81b894fefcd8f6750f2ca2a63c55b3b0fa7a8285aa52665e799541
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch074/record01/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T18:11:13.629016Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 63c6bb24a3b8b93032dd4bcda23ca88ab37324faab58d1c31d0cdffa274a8cb0
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch074/record01/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T18:11:13.629035Z'
+  support: context_only
+  summary: No attached claims to authenticate; historical source objects are separately
+    assessed in historical-source-joins.json.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: historical-source-joins
+  kind: record_content
+  reference: REVIEW_WORK/batch074/record01/historical-source-joins.json
+  locator: Every literal/decoded historical source-object row and exact current-source
+    match
+  accessed_at: '2026-10-28T18:11:13.629052Z'
+  support: context_only
+  summary: Historical quoted source content and raw-digest equality where actually
+    matched; independent of attached local claims and original access-event recovery.
+  snapshot_sha256: 26defd62009f2ef3b60e1c409dfdc3ce989abdbb016babbe004cf3b602ce85b1
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch074/record01/validate-schema.json
+  accessed_at: '2026-10-28T18:06:44.240769Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: bd2269b6d55ba084bdbaef7e01a192a4178b408624f1fa46f87c4ecfa7bb30f4
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch074/record01/validate-strict.json
+  accessed_at: '2026-10-28T18:06:45.171205Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: e2b7d002540f705024714aeac2e431e52b87cddb880066326ffa71c13730c901
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch074/record01/validate-terms.json
+  accessed_at: '2026-10-28T18:06:46.657368Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: b2143e2be23619658fe16f21f02f793487a0b80bbc6d8c1af20ba9f89f59385c
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch074/record01/validate-references.json
+  accessed_at: '2026-10-28T18:06:47.503617Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 79acf9d68e97702fd6c3c2ff8b637816256ab7d714fea3a4099e10cd3dd18568
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact DSM663 and bounded KOMODO identity
+  outcome: unknown
+  summary: DSM663 title, PDF and provider agree with the local base accession. Historical
+    mapping is retained, but direct current KOMODO routes are blocked; no strain-growth
+    assertion is inferred.
+  target_ids:
+  - CultureMech:006245
+  evidence_ids:
+  - dsmz663
+  - api663
+  - komodo663
+  - identityDesulfitobacterium
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid scope
+  outcome: supported
+  summary: Yeast extract supports COMPLEX/UNDEFINED and the primary lacks a gelling
+    agent. This does not endorse the contradictory aerobic note.
+  target_ids:
+  - CultureMech:006245
+  evidence_ids:
+  - dsmz663
+  - target
+- assessment_id: evidence
+  area: evidence
+  topic: Source stages and missing claim linkage
+  outcome: concern
+  summary: Declared basal provider rates and the NaOH placeholder are credited. Stock
+    placement, summed calcium and absent anoxic preparation remain material; supported
+    amounts still lack attached source claims.
+  target_ids:
+  - CultureMech:006245
+  evidence_ids:
+  - quantities
+  - dsmz663
+  - api663
+  - old-claims
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 64 current concentration fields are covered by 39 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:006245
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b074-quantity-inventory-v1","target":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","quantity_field_count":64,"decisions":[{"quantity_id":"q1","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"5.40218","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"5.40218","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 3-3","quote":"KH2PO4                                                   5.44         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 5.44,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5.40218,\n                        \"mmol_l\":
+    39.6971,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."}]},{"quantity_id":"q2","label":"MgCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.178749","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.178749","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 4-4","quote":"MgCl2 x 2 H2O                                            0.18         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgCl2 x 2 H2O\",\n                        \"compound_id\":
+    651,\n                        \"amount\": 0.18,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.178749,\n                        \"mmol_l\":
+    1.36199,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."}]},{"quantity_id":"q3","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.1297915","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.1297915","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    stored 0.1297915 is the sum of main 0.0297915 g_l and trace-stock 0.1 g_l. These
+    concentrations refer to different solution-stage bases, so the sum is invalid
+    as a final-medium total. Separate both source occurrences and the 5 ml receiving
+    addition; no final-medium total is invented.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 5-5","quote":"CaCl2 x 2 H2O                                            0.03         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0297915,\n                        \"mmol_l\":
+    0.202642,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 32-32","quote":"CaCl2 x 2 H2O                                            0.10         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.680203,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 7-7","quote":"Trace element solution                                   5.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"solution\": \"Trace element solution\",\n                        \"solution_id\":
+    250,\n                        \"amount\": 5,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[2].concentration","decision":"conflict","rationale":"The
+    stored 0.1297915 is the sum of main 0.0297915 g_l and trace-stock 0.1 g_l. These
+    concentrations refer to different solution-stage bases, so the sum is invalid
+    as a final-medium total. Separate both source occurrences and the 5 ml receiving
+    addition; no final-medium total is invented."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[2].concentration","decision":"conflict","rationale":"The
+    stored 0.1297915 is the sum of main 0.0297915 g_l and trace-stock 0.1 g_l. These
+    concentrations refer to different solution-stage bases, so the sum is invalid
+    as a final-medium total. Separate both source occurrences and the 5 ml receiving
+    addition; no final-medium total is invented."}]},{"quantity_id":"q4","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.496524","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.496524","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 6-6","quote":"NH4Cl                                                    0.50         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.496524,\n                        \"mmol_l\":
+    9.28256,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."}]},{"quantity_id":"q5","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.993049","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.993049","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 8-8","quote":"Yeast extract                                            1.00         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.993049,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."}]},{"quantity_id":"q6","label":"Sodium resazurin","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.000496524","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.000496524","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass. The primary explicitly specifies 0.1% w/v and 0.50
+    ml sodium-resazurin stock; its chemical identity is assessed separately.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 9-9","quote":"Sodium resazurin (0.1% w/v)                              0.50        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000496524,\n                        \"mmol_l\": 0.00197685,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass. The primary explicitly specifies 0.1% w/v and 0.50
+    ml sodium-resazurin stock; its chemical identity is assessed separately."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass. The primary explicitly specifies 0.1% w/v and 0.50
+    ml sodium-resazurin stock; its chemical identity is assessed separately."}]},{"quantity_id":"q7","label":"Na-pyruvate","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"2.48262","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"2.48262","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 10-10","quote":"Na-pyruvate                                              2.50         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Na-pyruvate\",\n                        \"compound_id\":
+    113,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.48262,\n                        \"mmol_l\":
+    22.5603,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."}]},{"quantity_id":"q8","label":"Na2S2O3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1.9861","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1.9861","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 11-11","quote":"Na2S2O3 x 5 H2O                                          2.00         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2S2O3 x 5 H2O\",\n                        \"compound_id\":
+    65,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.9861,\n                        \"mmol_l\":
+    8.00245,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."}]},{"quantity_id":"q9","label":"L-Cysteine HCl x H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.397219","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.397219","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 13-13","quote":"L-Cysteine HCl x H2O                                     0.40         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 0.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.397219,\n                        \"mmol_l\":
+    2.26161,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[8].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[8].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."}]},{"quantity_id":"q10","label":"Na2S x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.397219","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.397219","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass.","source_stage":"main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 14-14","quote":"Na2S x 9 H2O                                             0.40         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.397219,\n                        \"mmol_l\":
+    1.65383,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[9].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[9].concentration","decision":"evidence_only","rationale":"The
+    unchanged value matches the exact provider-declared main g_l. The primary supplies
+    batch mass or stock volume with 1000 ml water input, not explicit measured final
+    volume; provider volume 1007 ml is a computational basis, not independently measured.
+    Preserve source digits/basis and add missing evidence without replacing the rate
+    by the nominal batch mass."}]},{"quantity_id":"q11","label":"Nitrilotriacetic
+    acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"12.8","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"12.8","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 28-28","quote":"Nitrilotriacetic acid (NTA)                             12.80         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\":
+    189,\n                        \"attribute\": \"NTA\",\n                        \"amount\":
+    12.8,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    12.8,\n                        \"mmol_l\": 66.9666,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[10].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[10].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."}]},{"quantity_id":"q12","label":"FeCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 29-29","quote":"FeCl2 x 4 H2O                                            0.20         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.00598,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[11].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[11].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."}]},{"quantity_id":"q13","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 30-30","quote":"MnCl2 x 4 H2O                                            0.10         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.505293,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[12].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[12].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."}]},{"quantity_id":"q14","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.17","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.17","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 31-31","quote":"CoCl2 x 6 H2O                                            0.17         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 0.17,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.17,\n                        \"mmol_l\":
+    1.30931,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[13].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[13].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."}]},{"quantity_id":"q15","label":"ZnCl2","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 33-33","quote":"ZnCl2                                                    0.10         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\":
+    64,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.733676,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[14].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[14].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."}]},{"quantity_id":"q16","label":"CuCl2","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 34-34","quote":"CuCl2                                                    0.02         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CuCl2\",\n                        \"compound_id\":
+    261,\n                        \"amount\": 0.02,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.148754,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[15].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[15].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."}]},{"quantity_id":"q17","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.01","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 35-35","quote":"H3BO3                                                    0.01         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.161708,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[16].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[16].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."}]},{"quantity_id":"q18","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.01","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 36-36","quote":"Na2MoO4 x 2 H2O                                          0.01         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.0413309,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[17].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[17].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."}]},{"quantity_id":"q19","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.03","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.03","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 37-37","quote":"NiCl2 x 6 H2O                                            0.03         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.231483,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[18].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[18].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."}]},{"quantity_id":"q20","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 38-38","quote":"NaCl                                                     1.00         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    17.1116,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[19].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[19].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."}]},{"quantity_id":"q21","label":"Na2SeO3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.03","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.03","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate.","source_stage":"trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 39-39","quote":"Na2SeO3 x 5 H2O                                          0.03         g","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[11]","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\":
+    107,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.114062,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 43-43","quote":"mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[20].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[20].concentration","decision":"conflict","rationale":"This
+    is a trace-stock concentration, supported by explicit final makeup to 1000 ml,
+    but it is flattened into the main ingredient list. Preserve its stock amount and
+    receiving 5 ml batch addition as separate claims, not an undiluted final-medium
+    rate."}]},{"quantity_id":"q22","label":"Biotin","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 56-56","quote":"Biotin                                     20.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\":
+    46,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[21].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[21].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."}]},{"quantity_id":"q23","label":"Folic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 57-57","quote":"Folic acid                                 20.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\":
+    138,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0453104,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[22].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[22].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."}]},{"quantity_id":"q24","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 58-58","quote":"Pyridoxine hydrochloride                  100.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.486287,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[23].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[23].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."}]},{"quantity_id":"q25","label":"Thiamine HCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 59-59","quote":"Thiamine HCl                               50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\":
+    1207,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.148236,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[24].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[24].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."}]},{"quantity_id":"q26","label":"Riboflavin","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 60-60","quote":"Riboflavin                                 50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\":
+    136,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.132837,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[25].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[25].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."}]},{"quantity_id":"q27","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 61-61","quote":"Nicotinic acid                             50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.406141,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[26].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[26].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."}]},{"quantity_id":"q28","label":"Calcium D-(+)-pantothenate","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 62-62","quote":"Calcium D-(+)-pantothenate                 50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\":
+    1512,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.209846,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[27].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[27].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."}]},{"quantity_id":"q29","label":"Vitamin B12","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.001","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.001","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 63-63","quote":"Vitamin B12                                 1.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[28].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[28].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."}]},{"quantity_id":"q30","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 64-64","quote":"p-Aminobenzoic acid                        50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.364591,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[29].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[29].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."}]},{"quantity_id":"q31","label":"(DL)-alpha-Lipoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium.","source_stage":"vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 65-65","quote":"(DL)-alpha-Lipoic acid                     50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\":
+    252,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.24233,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[30].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[30].concentration","decision":"conflict","rationale":"This
+    is a declared Wolin 10x vitamin-stock rate, not a final-medium concentration.
+    The primary lists stock masses with 1000 ml water input and a separate 2 ml batch
+    addition; it does not explicitly make up the vitamin stock to final volume. Preserve
+    exact stock amounts and provider basis without transferring the undiluted rate
+    to the main medium."}]},{"quantity_id":"q32","label":"Main NaOH titration","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[31].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[31].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"The
+    VARIABLE placeholder truthfully retains an unquantified titration amount. The
+    source supplies 1 N strength and pH 7.5, not a fixed addition volume; preserve
+    those controls separately and attach evidence.","source_stage":"main titration","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 22-22","quote":"filtration. Adjust medium pH to 7.5 by adding sterile anoxic
+    1 N NaOH.","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients (except pyruvate, thiosulfate, vitamins, cysteine and sulfide),
+    then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Add pyruvate, thiosulfate, vitamins, cysteine and sulfide from
+    sterile anoxic stock solutions prepared under 100% N2 gas. Stock solutions of
+    pyruvate and vitamins are sterilized by filtration. Adjust medium pH to 7.5 by
+    adding sterile anoxic 1 N NaOH.\"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ingredients[31].concentration","decision":"evidence_only","rationale":"The
+    VARIABLE placeholder truthfully retains an unquantified titration amount. The
+    source supplies 1 N strength and pH 7.5, not a fixed addition volume; preserve
+    those controls separately and attach evidence."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ingredients[31].concentration","decision":"evidence_only","rationale":"The
+    VARIABLE placeholder truthfully retains an unquantified titration amount. The
+    source supplies 1 N strength and pH 7.5, not a fixed addition volume; preserve
+    those controls separately and attach evidence."}]},{"quantity_id":"q33","label":"Trace-stock
+    receiving volume","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact source batch volume and its stage. A water input or stock addition is
+    not itself proof of final main volume; no unstated density or additional dilution
+    is introduced.","source_stage":"source-only main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 7-7","quote":"Trace element solution                                   5.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"solution\": \"Trace element solution\",\n                        \"solution_id\":
+    250,\n                        \"amount\": 5,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q34","label":"Vitamin-stock receiving
+    volume","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact
+    source batch volume and its stage. A water input or stock addition is not itself
+    proof of final main volume; no unstated density or additional dilution is introduced.","source_stage":"source-only
+    main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 12-12","quote":"Wolin''s vitamin solution (10x)                           2.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 2,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q35","label":"Main solvent input","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact source batch volume and its stage. A water input or stock addition is
+    not itself proof of final main volume; no unstated density or additional dilution
+    is introduced.","source_stage":"source-only main","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 15-15","quote":"Distilled water                                       1000.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].recipe[12]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q36","label":"Trace solvent input","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact source batch volume and its stage. A water input or stock addition is
+    not itself proof of final main volume; no unstated density or additional dilution
+    is introduced.","source_stage":"source-only trace stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 40-40","quote":"Distilled water                                       1000.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].recipe[12]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q37","label":"Vitamin solvent
+    input","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact
+    source batch volume and its stage. A water input or stock addition is not itself
+    proof of final main volume; no unstated density or additional dilution is introduced.","source_stage":"source-only
+    vitamin stock","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 66-66","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[2].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q38","label":"Main preparation
+    and pH","local_fields":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ph_value","stored":7.5},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ph_value","stored":7.5}],"decision":"evidence_only","rationale":"pH
+    7.5 is correctly retained. Attach the explicit main controls: 100% N2, 30–45 min
+    sparging, anoxic dispensing/autoclaving, separately added stocks, pyruvate/vitamin
+    filtration, and 1 N NaOH titration. The primary gives no autoclave temperature/time,
+    and unspecified late-stock strengths/addition volumes remain unresolved.","source_stage":"main
+    preparation","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 17-22","quote":"Dissolve ingredients (except pyruvate, thiosulfate, vitamins,
+    cysteine and sulfide), then\nsparge medium with 100% N2 gas for 30 - 45 min to
+    make it anoxic. Dispense medium\nunder same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave.\nAdd pyruvate, thiosulfate, vitamins, cysteine
+    and sulfide from sterile anoxic stock solutions\nprepared under 100% N2 gas. Stock
+    solutions of pyruvate and vitamins are sterilized by\nfiltration. Adjust medium
+    pH to 7.5 by adding sterile anoxic 1 N NaOH.","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients (except pyruvate, thiosulfate, vitamins, cysteine and sulfide),
+    then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Add pyruvate, thiosulfate, vitamins, cysteine and sulfide from
+    sterile anoxic stock solutions prepared under 100% N2 gas. Stock solutions of
+    pyruvate and vitamins are sterilized by filtration. Adjust medium pH to 7.5 by
+    adding sterile anoxic 1 N NaOH.\"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml","field_path":"ph_value","decision":"evidence_only","rationale":"pH
+    7.5 is correctly retained. Attach the explicit main controls: 100% N2, 30–45 min
+    sparging, anoxic dispensing/autoclaving, separately added stocks, pyruvate/vitamin
+    filtration, and 1 N NaOH titration. The primary gives no autoclave temperature/time,
+    and unspecified late-stock strengths/addition volumes remain unresolved."},{"path":"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml","field_path":"ph_value","decision":"evidence_only","rationale":"pH
+    7.5 is correctly retained. Attach the explicit main controls: 100% N2, 30–45 min
+    sparging, anoxic dispensing/autoclaving, separately added stocks, pyruvate/vitamin
+    filtration, and 1 N NaOH titration. The primary gives no autoclave temperature/time,
+    and unspecified late-stock strengths/addition volumes remain unresolved."}]},{"quantity_id":"q39","label":"Trace
+    preparation and final makeup","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the source-specific 200 ml initial water, NTA-first sequence, pH 6.5 KOH adjustment
+    and explicit final makeup to 1000 ml. The KOH addition is unquantified; these
+    are stock controls, not main-medium instructions.","source_stage":"trace preparation","sources":[{"evidence_id":"dsmz663","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium663.pdf","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/dsmz663.bin","raw_sha256":"5023fda343f504873bac14830a0d4349c0a2c0c105b764334238cdba72f6bf96","text_sha256":"d59f96aab74c61d2e202fb35fd8ca6f913dd2847295a8256b9f6c6e304fe4e8a","accessed_at":"2026-10-28T18:07:25.487213Z","locator":"dsmz663.txt
+    lines 42-43","quote":"First dissolve NTA in 200 ml of distilled water and adjust
+    pH to 6.5 with KOH, then dissolve\nmineral salts. Finally adjust pH to 6.5 with
+    KOH and make up to 1000.00 ml.","quote_basis":"derivative text"},{"evidence_id":"api663","reference":"https://mediadive.dsmz.de/rest/medium/663","raw_path":"REVIEW_WORK/batch074/source01-03-supplement/api663.bin","raw_sha256":"b490183d7508713f3fbab1eb3759fefec19fda5ffde21860f61d54dcffce42d4","text_sha256":"b86aac5d2163f76150aef047ffe0d4cd267c40b4b3964b880c90960bd7e49336","accessed_at":"2026-10-28T18:07:25.318258Z","locator":"data.solutions[1].steps[0]","quote":"{\n                        \"step\":
+    \"First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH,
+    then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make up to
+    1000.00 ml.\"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]}],"document_scopes":{"data/merge_yaml/merged/DESULFITOBACTERIUM_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: All current asserted primary/secondary slots are resolved to fresh OLS
+    and exact packaged MIM rows. Sodium resazurin is not neutral resazurin; nickel
+    hexahydrate is not anhydrous nickel dichloride. The unusual magnesium dichloride
+    dihydrate is explicitly printed and matches CHEBI:131394. Cysteine hydrochloride
+    hydrate is explicitly monohydrate. D-calcium pantothenate and generic lipoic acid
+    are compatible with the printed D and DL forms. Generic vitamin B12 is not narrowed
+    to cyanocobalamin. Canonical-label equality and snapshot membership are separate
+    from supplied-form support.
+  target_ids:
+  - CultureMech:006245
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: concern
+  summary: The full target and singleton contributor, four historical reports and
+    exact selected parent row were read. The neighboring DSM merged report was read
+    as comparison context only, not another selected owner. Earlier blanket source-conflict
+    labels do not erase the independently supported main provider rates. Current parser,
+    resolver, cleanup and singleton merger behavior is distinct from historical execution.
+    No attached claims exist; historical snippets/raw hashes are separately joined.
+  target_ids:
+  - CultureMech:006245
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-006245-flattened-stock-calcium-sum
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate stock rates and the mixed-stage calcium sum
+  description: Nine unchanged basal rates match the declared provider normalization.
+    Twenty-one stock-only rows remain flattened; calcium additionally combines 0.0297915
+    main and 0.1 trace-stock g_l. Restore trace and vitamin topology and their distinct
+    receiving volumes while preserving primary batch amounts, explicit trace final
+    makeup, and unresolved main/vitamin final volumes. Do not add different solution-stage
+    concentrations.
+  target_ids:
+  - CultureMech:006245
+  field_paths:
+  - ingredients
+  - solutions
+  - ingredients[2].concentration
+  evidence_ids:
+  - quantities
+  - dsmz663
+  - api663
+  - writer-mediadive
+  - writer-cleanup
+  rule_id: review-yaml-record/custom-flattened-stock-calcium-sum
+  native_severity: P2
+  normalization_reason: 'Custom quantity rule: material source-stage, preparation
+    or chemical-form defect.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-006245-missing-anoxic-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore source-specific preparation and reconcile the aerobic note
+  description: 'The source requires anoxic preparation with separately added and selectively
+    filtered stocks, whereas both local layers lack preparation_steps and retain Aerobic:
+    Yes in notes. Keep supported pH 7.5 and the truthful VARIABLE NaOH amount; attach
+    the source controls and distinguish main and trace-stock preparation. Do not invent
+    missing autoclave temperature/time or late-stock doses.'
+  target_ids:
+  - CultureMech:006245
+  field_paths:
+  - preparation_steps
+  - notes
+  - ph_value
+  - evidence
+  evidence_ids:
+  - dsmz663
+  - api663
+  - quantities
+  - writer-resolver
+  rule_id: review-yaml-record/custom-missing-anoxic-preparation
+  native_severity: P2
+  normalization_reason: 'Custom completeness rule: material source-stage, preparation
+    or chemical-form defect.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-006245-supplied-form-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Correct sodium-resazurin and nickel-hydrate identity
+  description: The sodium-resazurin row uses neutral CHEBI:8806; reconcile the supplied
+    sodium salt without altering its supported source amount. NiCl2·6H2O uses anhydrous
+    CHEBI:34887 in both slots; fresh OLS CHEBI:53542 is the hexahydrate. The current
+    MIM preferred NiCl2 x 6 H2O row is REJECTED, while preferred Nickel (II) chloride
+    hexahydrate is MAPPED; preserve those exact spelling-specific statuses. D-calcium
+    pantothenate and nonstereospecific lipoic acid are compatible with the printed
+    D and DL source forms.
+  target_ids:
+  - CultureMech:006245
+  field_paths:
+  - ingredients[5].term
+  - ingredients[18].term
+  - ingredients[18].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsmz663
+  - groundings
+  - chebi53542
+  - mim
+  rule_id: review-yaml-record/custom-supplied-form-grounding
+  native_severity: P2
+  normalization_reason: 'Custom grounding rule: material source-stage, preparation
+    or chemical-form defect.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-006245-missing-yeast-link
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Resolve the missing yeast-extract linkage
+  description: Yeast extract has no ontology or secondary linkage. The exact packaged
+    preferred row and fresh FOODON:03315426 identify the mixture; add a validated
+    whole-mixture link without treating it as a pure compound or guessing manufacturer/grade.
+  target_ids:
+  - CultureMech:006245
+  field_paths:
+  - ingredients[4]
+  evidence_ids:
+  - foodon03315426
+  - mim
+  - dsmz663
+  rule_id: review-yaml-record/custom-missing-yeast-link
+  native_severity: P3
+  normalization_reason: 'Custom grounding rule: bounded linkage/provenance follow-up;
+    native schema passes and no critical blocker is asserted.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f5
+  issue_key: culturemech-006245-claim-and-event-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Attach exact claims and preserve original event strings
+  description: No local quantity claims are attached. Historical report source objects
+    and current raw equality are recorded separately from original retrieval provenance;
+    direct KOMODO accession/catalogue routes returned 403. Preserve the malformed
+    and timezone-naive original events unchanged, and append verified context if recovered.
+    Future writer timestamps need valid UTC formatting without rewriting history.
+  target_ids:
+  - CultureMech:006245
+  field_paths:
+  - evidence
+  - curation_history
+  evidence_ids:
+  - old-claims
+  - historical-source-joins
+  - history
+  - komodo663
+  - komodoList
+  rule_id: review-yaml-record/custom-claim-and-event-provenance
+  native_severity: P3
+  normalization_reason: 'Custom provenance rule: bounded linkage/provenance follow-up;
+    native schema passes and no critical blocker is asserted.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: a1
+  description: Nine unchanged basal rates match the declared provider normalization.
+    Twenty-one stock-only rows remain flattened; calcium additionally combines 0.0297915
+    main and 0.1 trace-stock g_l. Restore trace and vitamin topology and their distinct
+    receiving volumes while preserving primary batch amounts, explicit trace final
+    makeup, and unresolved main/vitamin final volumes. Do not add different solution-stage
+    concentrations.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: 'The source requires anoxic preparation with separately added and selectively
+    filtered stocks, whereas both local layers lack preparation_steps and retain Aerobic:
+    Yes in notes. Keep supported pH 7.5 and the truthful VARIABLE NaOH amount; attach
+    the source controls and distinguish main and trace-stock preparation. Do not invent
+    missing autoclave temperature/time or late-stock doses.'
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: The sodium-resazurin row uses neutral CHEBI:8806; reconcile the supplied
+    sodium salt without altering its supported source amount. NiCl2·6H2O uses anhydrous
+    CHEBI:34887 in both slots; fresh OLS CHEBI:53542 is the hexahydrate. The current
+    MIM preferred NiCl2 x 6 H2O row is REJECTED, while preferred Nickel (II) chloride
+    hexahydrate is MAPPED; preserve those exact spelling-specific statuses. D-calcium
+    pantothenate and nonstereospecific lipoic acid are compatible with the printed
+    D and DL source forms.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:006245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: Yeast extract has no ontology or secondary linkage. The exact packaged
+    preferred row and fresh FOODON:03315426 identify the mixture; add a validated
+    whole-mixture link without treating it as a pure compound or guessing manufacturer/grade.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:006245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a5
+  description: Attach source-scoped ingredient evidence and root evidence for stage/preparation
+    claims. Keep original event bytes; append verified context with actual timestamp.
+    If changing future timestamp formatting, update the inspected importer/resolver
+    writers and test the emitted UTC event, without rewriting originals.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:006245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_663_DESULFITOBACTERIUM_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/komodo_web_importer.py
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/enrich/dsmz_resolver.py
+    role: scoped dependency
+  acceptance_checks:
+  - Original events and prior reports remain byte-preserved; any correction/context
+    is appended with verified provenance.
+  - Future importer/resolver timestamps parse as UTC instants and retain their actual
+    event time.
+  - Every supported amount has an exact scoped snippet; source-only stock/preparation
+    evidence is attached at schema-supported root evidence.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- Direct KOMODO catalogue/accession sources returned 403; this is a partial identity
+  review.
+- Primary main and vitamin water inputs do not establish measured final volume; API
+  1007 ml and its g_l are a declared computational normalization.
+- Unused provider mmol_l values, including hydration-sensitive conversions, are not
+  validated as source mass evidence.
+- Current public LPSN genus identity is not a strain cultivation result.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```
