@@ -1,0 +1,915 @@
+schema_version: 1.0.0
+review_id: 20261021T083053Z-culturemech-009038-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 4_malt_agar (CultureMech:009038)'
+started_at: '2026-10-21T08:29:11Z'
+finished_at: '2026-10-21T08:30:53Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 'The generated 4% Malt Agar record contains the 2% parent formulation: malt
+  extract is 20 g/L instead of the 40 g source amount retained by its maintained owner.
+  Both source-specific owners also encode 1 L water as 1 g/L and omit distinct source
+  pH instructions (7.0 versus 6.5), making the claim that only malt concentration
+  differs incomplete. Exact TOGO and MediaDive versions support this comparison, but
+  live JCM253 returns no formulation, so primary reconciliation remains partial.'
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/4_malt_agar.yaml
+    sha256: 2eaf456d128ddef10050c6ec462bc3244ca3cdbe8102ee2588e63c90c2547a63
+    role: target
+  - path: data/normalized_yaml/bacterial/2_malt_agar.yaml
+    sha256: f052a96c6a676cec99694d985d22062a8e5f10b3b41a4a928729daa59fd2b9a5
+    role: context
+  - path: data/normalized_yaml/bacterial/4_malt_agar.yaml
+    sha256: f1175a2f8dd9701e4eb9855888985ba33e33b78fd50c958c84bae8ab6eebe875
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 102; batch 011 item 2 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding ten task batches contain
+    100 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 102 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009038
+targets:
+- target_id: CultureMech:009038
+  path: data/merge_yaml/merged/4_malt_agar.yaml
+  label: 4_malt_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/4_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/4_malt_agar.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/4_malt_agar.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch011/102/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch011/102/strict.tsv"
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/4_malt_agar.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/4_malt_agar.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:009038
+- check_id: primary-source-access
+  name: Exact current JCM253 formulation
+  required: true
+  status: unavailable
+  summary: JCM253 returned Nothing found; exact secondary versions support a bounded
+    comparison, while current primary reconciliation is unavailable.
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - primary4-unavailable
+  - togo4
+  - provider4
+- check_id: scoped-history-timestamps
+  name: Target and both owner timestamps
+  required: false
+  status: passed
+  summary: 20 timestamp values parse with explicit timezones; this checks syntax only.
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - history
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/4_malt_agar.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T08:30:51Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/4_malt_agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:30:51Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/2_malt_agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:30:51Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/4_malt_agar.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:30:27.285324Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/4_malt_agar.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch011/102/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:30:32.329430Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch011/102/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/4_malt_agar.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:30:41.153648Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/4_malt_agar.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:30:44.317956Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T08:30:51Z'
+  support: supports
+  summary: './data/merge_yaml/merged/4_malt_agar.yaml:1:id: CultureMech:009038
+
+    ./data/normalized_yaml/bacterial/4_malt_agar.yaml:1:id: CultureMech:009038
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: togo4
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M245
+  locator: $.meta; $.components[0].items[0:3]; $.comments[0]
+  accessed_at: '2026-10-21T08:17:25.477578Z'
+  support: supports
+  summary: Exact M245 metadata identifies 4% Malt Agar, JCM_M253, pH 7.0. The three
+    source rows specify distilled water 1 L, BD-Difco malt extract 40 g and agar 20
+    g; the comment directs pH adjustment to 7.0.
+  snapshot_sha256: bf68e4ea3ddf908402ad9c5f93457bb80b7a4c7eb6a792de7ce82deae5f82cfe
+- evidence_id: togo2
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M30
+  locator: $.meta; $.components[0].items[0:3]; $.comments[0]
+  accessed_at: '2026-10-21T08:17:25.731558Z'
+  support: supports
+  summary: Exact M30 metadata identifies 2% Malt Agar, JCM_M38, pH 6.5. Its rows specify
+    distilled water 1 L, BD-Difco malt extract 20 g and agar 20 g; the comment directs
+    pH adjustment to 6.5.
+  snapshot_sha256: 006ccfe52768f1560058a1012a3a523f1936c5be6cb3fdc6c941f00dfe246325
+- evidence_id: provider4
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J253
+  locator: $.data.medium; $.data.solutions[0]
+  accessed_at: '2026-10-21T08:17:23.770495Z'
+  support: supports
+  summary: Provider J253 independently retains the 40 g malt/20 g agar/1000 mL water
+    recipe and pH 7.0 under nominal main-solution volume 1000 mL. This dataset representation
+    is secondary evidence.
+  snapshot_sha256: 0df5facc90592e1f23acdc61fb0f2f7819aeb07c2289e293047b7927416d917d
+- evidence_id: provider2
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J38
+  locator: $.data.medium; $.data.solutions[0]
+  accessed_at: '2026-10-21T08:17:23.771326Z'
+  support: supports
+  summary: Provider J38 retains 20 g malt/20 g agar/1000 mL water and pH 6.5; its
+    declared 1000 mL volume is provider metadata, not a measurement.
+  snapshot_sha256: 5019e8d0ab909c7fdc7aa936a4bcd9ed670f9a9c78a46c864864b78f3450e025
+- evidence_id: primary2
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=38
+  locator: 38 2% MALT AGAR; shared sterilization header
+  accessed_at: '2026-10-21T08:17:31.340400Z'
+  support: supports
+  summary: Read the complete official JCM38 page. It confirms the 2% malt recipe,
+    BD-Difco grade, 20 g agar, 1 L water and pH 6.5. Its shared header gives 121 C
+    for 15 min unless otherwise stated; that capture is scoped to accession38.
+  snapshot_sha256: 6b4168bd39541e197c59c29b03747ed992271fd13effaaac568023ac265e6909
+- evidence_id: primary4-unavailable
+  kind: search
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=253
+  locator: Whole response body
+  accessed_at: '2026-10-21T08:17:31.011372Z'
+  support: unknown
+  summary: The exact live JCM253 query returned no formulation despite HTTP 200. No
+    recipe or preparation text was recovered.
+  quote: Nothing found.
+  snapshot_sha256: 2816d756fa6605443476a6635ff05c91d29c37733e461bfaca6b211f6449a2fd
+  search_scope: Exact public HTTP request to https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=253
+    at the retained timestamp; response body checked, no neighboring-source substitution
+    or exhaustive absence claim. This external endpoint check does not search local
+    files.
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T08:30:51Z'
+  support: supports
+  summary: '{"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}'
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _ingredient_from_item; _parse_unit; _extract_ph; _extract_preparation_steps
+  accessed_at: '2026-10-21T08:30:51Z'
+  support: supports
+  summary: Current code maps source L to L, has top-level pH extraction, and classifies
+    explicit pH comments as ADJUST_PH. These current capabilities do not prove historical
+    output correctness; no import was executed.
+- evidence_id: merge-guard
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; FormulationFingerprinter; merge_formulation_evidence
+  accessed_at: '2026-10-21T08:30:51Z'
+  support: supports
+  summary: Current consolidation requires equality of scientific assertions including
+    concentrations and parent/variant fields. The two maintained formulations differ
+    and should not be treated as lossless equivalents. The August merge history records
+    older output; no rerun or causal claim about current code is made.
+- evidence_id: history
+  kind: record_content
+  reference: data/merge_yaml/merged/4_malt_agar.yaml
+  locator: Every target and both maintained contributor history timestamp
+  accessed_at: '2026-10-21T08:30:51Z'
+  support: supports
+  summary: All 20 scoped timestamps parse with explicit timezone offsets. No historical
+    entry was altered and no scientific approval is inferred.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '2 primary CHEBI identities resolve with matching labels; 2 of 2 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - record
+  - mim
+  - chebi15377
+  - chebi2509
+  details: 3 direct ingredient instances; CHEBI-primary instance linkage 2/3 (66.67%),
+    verified secondary coverage 2/3 (66.67%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Exact child, parent and source accessions
+  outcome: concern
+  summary: The stable child ID and source M245/JCM253 survive, but its generated formula
+    equals the M30/JCM38 parent. The merge lists both source names and calls the parent
+    a synonym despite explicitly retaining a concentration-variant relationship. Both
+    exact bacterial contributors are captured by ID and full path; the unrelated fungal
+    basename is not substituted.
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - togo4
+  - togo2
+  - provider4
+  - provider2
+- assessment_id: amounts
+  area: quantity
+  topic: Every target and contributor ingredient amount
+  outcome: concern
+  summary: All three rows in each layer were compared against the exact source recipes.
+    Water is a source batch volume mislabeled as mass concentration in both owners
+    and target; generated malt equals the 2% parent rather than its 4% owner. Agar
+    retains the common 20 g nominal amount. No stock solutions, serial dilutions,
+    optional ingredients or gas doses are present.
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - togo4
+  - togo2
+  - provider4
+  - provider2
+  details: '[{"field": "ingredients[0].concentration", "material": "Distilled water",
+    "generated": {"value": "1", "unit": "G_PER_L"}, "4_percent_owner": {"value": "1",
+    "unit": "G_PER_L"}, "2_percent_parent": {"value": "1", "unit": "G_PER_L"}, "source_4_percent":
+    {"amount": 1, "unit": "L"}, "source_2_percent": {"amount": 1, "unit": "L"}, "source_locator":
+    "$.components[0].items[0]", "decision": "correct dimensional error; retain 1 L
+    water input, final-volume basis unresolved"}, {"field": "ingredients[1].concentration",
+    "material": "Malt extract (BD-Difco)", "generated": {"value": "20", "unit": "G_PER_L"},
+    "4_percent_owner": {"value": "40", "unit": "G_PER_L"}, "2_percent_parent": {"value":
+    "20", "unit": "G_PER_L"}, "source_4_percent": {"amount": 40, "unit": "g"}, "source_2_percent":
+    {"amount": 20, "unit": "g"}, "source_locator": "$.components[0].items[1]", "decision":
+    "restore 4% child amount and keep 2% formulation distinct"}, {"field": "ingredients[2].concentration",
+    "material": "Agar", "generated": {"value": "20", "unit": "G_PER_L"}, "4_percent_owner":
+    {"value": "20", "unit": "G_PER_L"}, "2_percent_parent": {"value": "20", "unit":
+    "G_PER_L"}, "source_4_percent": {"amount": 20, "unit": "g"}, "source_2_percent":
+    {"amount": 20, "unit": "g"}, "source_locator": "$.components[0].items[2]", "decision":
+    "source amount agrees on nominal water-input basis"}]'
+- assessment_id: conditions
+  area: completeness
+  topic: Source-specific pH and preparation
+  outcome: concern
+  summary: All local layers omit pH and preparation. TOGO M245 and J253 say adjust
+    to 7.0, whereas M30, J38 and official JCM38 say 6.5. Thus the relation note that
+    only malt concentration differs is incomplete at the source level. Available parent
+    sterilization text cannot substitute for the unavailable exact child protocol.
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - togo4
+  - togo2
+  - provider4
+  - provider2
+  - primary2
+  - primary4-unavailable
+- assessment_id: classification
+  area: scope
+  topic: Mixtures, physical state and biological scope
+  outcome: supported
+  summary: Malt extract supports COMPLEX/UNDEFINED composition and agar supports SOLID_AGAR.
+    Bacterial filing and generic microbial-cultivation application do not establish
+    a named organism or strain. No organism, taxon or genome identifier, claimed growth
+    temperature or literature growth claim requires verification in this record.
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - togo4
+  - togo2
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained child versus generated conflation
+  outcome: concern
+  summary: The child owner already has 40 g/L malt; a repair must preserve that distinction
+    while correcting shared water/pH/evidence gaps. Rewriting the generated target
+    directly would leave its normalized causes and variant metadata unresolved. Current
+    formulation matching is stricter than the historical merge.
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - merge-guard
+  - importer
+- assessment_id: evidence
+  area: evidence
+  topic: Source support, provenance and history
+  outcome: concern
+  summary: Source URLs and import/merge events exist, but the target and owners lack
+    structured references and amount evidence. The deterministic reference check examines
+    zero references. Exact source versions, original units, distinct pH instructions
+    and primary-access limits need explicit support in later curation; history remains
+    provenance.
+  target_ids:
+  - CultureMech:009038
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - validate-references
+  - togo4
+  - togo2
+  - history
+findings:
+- finding_id: f1
+  issue_key: cm009038-conflated-2-and-4-percent-malt
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: The 4% source identity carries the 2% parent formula
+  description: The generated child retains M245/JCM253 and a modification claiming
+    40 g/L malt, yet its ingredients equal the 2% parent at 20 g/L. Its 4% owner already
+    retains 40 g/L, and both exact secondary sources confirm that distinct recipe.
+    Treating the parent as a synonym contradicts the preserved concentration-variant
+    relation and blocks faithful use/export under the asserted child identity.
+  target_ids:
+  - CultureMech:009038
+  field_paths:
+  - ingredients[1].concentration
+  - synonyms
+  - merged_from
+  - parent_media
+  - variant_modifications
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - togo4
+  - togo2
+  - provider4
+  - provider2
+  - merge-guard
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/4_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm009038-water-volume-as-mass
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: A 1 L water input is encoded as 1 g/L
+  description: All three local layers encode distilled water as 1 g/L, whereas each
+    exact source specifies a 1 L recipe water input. This is a dimensional error;
+    neither density nor a measured final-volume denominator supports the recorded
+    mass concentration.
+  target_ids:
+  - CultureMech:009038
+  field_paths:
+  - ingredients[0].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - togo4
+  - togo2
+  - primary2
+  - importer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/4_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm009038-missing-distinct-ph
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The sources specify different pH values that local records omit
+  description: M245/J253 specify pH 7.0 and M30/J38 specify pH 6.5. Both owners and
+    the generated record omit those instructions, while relationship prose says only
+    malt concentration differs; the parent owner also repeats that unchanged-base
+    claim in variant_children[0].notes. This obscures a second source-specific culture
+    condition.
+  target_ids:
+  - CultureMech:009038
+  field_paths:
+  - ph_value
+  - preparation_steps
+  - parent_media.notes
+  - variant_modifications
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - togo4
+  - togo2
+  - provider4
+  - provider2
+  - primary2
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/4_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm009038-source-evidence-placement
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Formulation and variant claims lack structured evidence
+  description: URLs remain in notes, but structured references and claim-level support
+    for quantities, source pH and the variant relationship are absent. Passing reference
+    validation therefore does not independently establish these scientific claims.
+  target_ids:
+  - CultureMech:009038
+  field_paths:
+  - references
+  - evidence
+  - ingredients
+  - parent_media
+  - variant_modifications
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - togo4
+  - togo2
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/4_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Preserve separate child and parent identities/formulations, verify
+    maintained inputs, and regenerate under the current formulation-aware merge rules.
+    Confirm the 4% child retains 40 g malt and no longer presents the 2% parent as
+    a formulation-equivalent synonym.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009038
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/4_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Correct both maintained water representations to retain the source
+    batch volume and its evidence; do not invent a final water mass concentration.
+    Regenerate only after the source-specific formulations are preserved.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009038
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/4_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Restore evidence-scoped pH 7.0 for the child and 6.5 for the parent.
+    Correct both the child parent_media/variant_modifications prose and the parent
+    owner variant_children[0].notes to account for the pH distinction, and retain
+    the child primary-source access limitation. Do not transfer an unverified sterilization
+    protocol from the parent.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009038
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/4_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Add exact source references and bounded amount/condition/variant evidence
+    while preserving original URLs and documenting unavailable JCM253 access.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:009038
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/4_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_malt_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- Exact JCM253 returned HTTP 200 with Nothing found. TOGO M245 and MediaDive J253
+  preserve the 4% formulation, but neither is a newly recovered live JCM253 primary
+  recipe. The available JCM38 page describes the distinct 2% parent and does not establish
+  accession253-specific sterilization.
+- Source amounts are 40 g malt extract, 20 g agar and 1 L water for M245, versus 20
+  g malt extract, 20 g agar and 1 L water for M30. These are nominal recipe quantities;
+  no measured final volume or density was verified. Do not convert a water batch amount
+  into a final mass concentration.
+- The bacterial folder and generic cultivation application are not strain-specific
+  growth evidence. No taxon, strain, genome or literature-growth assertion is added.
+  Malt extract and agar remain mixtures with source grade retained where stated.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-011
+- generated-medium
