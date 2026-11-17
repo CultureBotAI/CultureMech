@@ -1,0 +1,1317 @@
+schema_version: 1.0.0
+review_id: 20261022T002949Z-culturemech-002562-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bifidobacterium_medium (CultureMech:002562)'
+started_at: '2026-10-22T00:25:09Z'
+finished_at: '2026-10-22T00:29:49Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The maintained JCM J19 owner and generated target retain the same six ingredients
+  and preparation. Current JCM content is unavailable despite HTTP 200, and three
+  MediaDive GETs returned 503. A separately pinned cached browser projection and an
+  October derivative report suggest a 1001 ml base and a 1 ml Tween 80 addition, but
+  cannot authenticate a current primary formula or the final supplemented medium.
+  Review remains partial.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml
+    sha256: f385aca13719a6e1505672847145b9da73292d884660b7a2ed8354d527522af7
+    role: target
+  - path: data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml
+    sha256: 968e2da75020a30125c5d19cb52e1db06c8be7c9d6c06089293afa6605d1f3fa
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml.md
+    sha256: 4cf0121a76226099cc471e0da10dc5abdc4fb681ba38425d4d358d20a24af203
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.md
+    sha256: 2237c6b4c770366f6107f0c25e9ac7824265ec89acc99b37e7713739f763c94f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.md
+    sha256: c9580b2eba9c9bf18378e2338b1780887e8221b908c77be6db36ddb7e14fe290
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 428; batch 043 item 8 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-two task batches
+    contain 420 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 423 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002562
+targets:
+- target_id: CultureMech:002562
+  path: data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml
+  label: bifidobacterium_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch043/428/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-043/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch043/428/strict.tsv"
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002562
+- check_id: jcm19-source-access
+  name: 'Exact source content access: jcm19'
+  required: true
+  status: unavailable
+  summary: JCM19 returned HTTP 200 with Nothing found, so its primary formulation
+    is unavailable.
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - jcm19-attempt
+- check_id: apiJ19-source-access
+  name: 'Exact source content access: apiJ19'
+  required: false
+  status: unavailable
+  summary: apiJ19 returned HTTP 503 once; the response is an access failure and no
+    successful fresh formula is asserted.
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - apiJ19-attempt
+- check_id: mediadiveJ19Html-source-access
+  name: 'Exact source content access: mediadiveJ19Html'
+  required: false
+  status: unavailable
+  summary: mediadiveJ19Html returned HTTP 503 once; the response is an access failure
+    and no successful fresh formula is asserted.
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - mediadiveJ19Html-attempt
+- check_id: mediadiveJ19Download-source-access
+  name: 'Exact source content access: mediadiveJ19Download'
+  required: false
+  status: unavailable
+  summary: mediadiveJ19Download returned HTTP 503 once; the response is an access
+    failure and no successful fresh formula is asserted.
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - mediadiveJ19Download-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T00:25:58.974402Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch043/428/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-22T00:25:59.948025Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-043/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch043/428/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T00:26:01.035631Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T00:26:01.737410Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml:1:id: CultureMech:002562
+
+    ./data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml:1:id: CultureMech:002562
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch043/source-preflight-bound/428/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: supports
+  summary: 9 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: b132c094e52b61d28b1e48bfdae96f7fbd6dd486dcfd71c4195d062d2968dfcc
+- evidence_id: jcm19-attempt
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=19
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:07:26.269204Z'
+  support: context_only
+  summary: JCM19 returned HTTP 200 with Nothing found, so its primary formulation
+    is unavailable.
+  snapshot_sha256: 0477b87ff9b128dcba288a31aef9bee31136dff5ec9d261db1f8e944ea21fff8
+- evidence_id: apiJ19-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J19
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:07:26.273807Z'
+  support: context_only
+  summary: apiJ19 returned HTTP 503 once; the response is an access failure and no
+    successful fresh formula is asserted.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadiveJ19Html-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/medium/J19
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:16:26.732259Z'
+  support: context_only
+  summary: mediadiveJ19Html returned HTTP 503 once; the response is an access failure
+    and no successful fresh formula is asserted.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadiveJ19Download-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/download/medium/J19/json
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:16:27.256442Z'
+  support: context_only
+  summary: mediadiveJ19Download returned HTTP 503 once; the response is an access
+    failure and no successful fresh formula is asserted.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: browser-projection
+  kind: record_content
+  reference: /private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json
+  locator: 'Serialized browser tool result for https://mediadive.dsmz.de/download/medium/J19/json;
+    cached projection labelled Crawled: 3 months ago'
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: This local artifact preserves the actual browser projection, not an HTTP
+    raw capture. Network acquisition time and status are unknown/null. Evidence accessed_at
+    is this review’s local inspection time only. It gives five solid masses, Tween
+    80 1 ml, water 1000 ml and provider volume1001; no final supplemented-volume proof.
+  snapshot_sha256: d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7
+- evidence_id: report-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml.md
+  locator: Exact target/owner identity and full derivative report
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Historical report inspected. Its cited 2026-10-07 raw digest 191443b84f87f9081fe1309ab0df28fe3dc12d6bae7e74fd02e6f4e800899a76
+    was not recovered in the bound captures; quoted report rows remain derivative
+    evidence.
+  snapshot_sha256: 4cf0121a76226099cc471e0da10dc5abdc4fb681ba38425d4d358d20a24af203
+- evidence_id: report-1
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.md
+  locator: Exact target/owner identity and full derivative report
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: October5 exact-identity inventory report with0/6 source-checked concentration
+    rows. It cites no October7 raw digest and supplies no independent source confirmation;
+    its unchanged unsupported triage is derivative context.
+  snapshot_sha256: 2237c6b4c770366f6107f0c25e9ac7824265ec89acc99b37e7713739f763c94f
+- evidence_id: report-2
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.md
+  locator: Exact target/owner identity and full derivative report
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: October5 exact-identity inventory report with0/6 source-checked concentration
+    rows. It cites no October7 raw digest and supplies no independent source confirmation;
+    its unchanged unsupported triage is derivative context.
+  snapshot_sha256: c9580b2eba9c9bf18378e2338b1780887e8221b908c77be6db36ddb7e14fe290
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi53426
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53426
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:00:48.722812Z'
+  support: supports
+  summary: CHEBI:53426 resolves to polysorbate 80. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d213680c843282430d36cc13a81ee5bfda8029054f6b1482a375c35fd94191a6
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term",
+    "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53426": [{"label":
+    "Tween 80", "match_type": "preferred_term", "identifier": "CHEBI:53426", "preferred_term":
+    "Tween 80", "ontology_id": "CHEBI:53426", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml; data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/record_review.py
+  locator: Current review/validation infrastructure; exact inspected input hash
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Review serialization, reference checks or strict validation infrastructure
+    only. This code is not an importer, recipe merger or repair transform and does
+    not establish historical formulation causation.
+  snapshot_sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/validate_recipe_references.py
+  locator: Current review/validation infrastructure; exact inspected input hash
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Review serialization, reference checks or strict validation infrastructure
+    only. This code is not an importer, recipe merger or repair transform and does
+    not establish historical formulation causation.
+  snapshot_sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/validate_strict.py
+  locator: Current review/validation infrastructure; exact inspected input hash
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Review serialization, reference checks or strict validation infrastructure
+    only. This code is not an importer, recipe merger or repair transform and does
+    not establish historical formulation causation.
+  snapshot_sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/fingerprint.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Current importer, units, preparation/history and merge functions provide
+    mechanism context only. The owner and target agree scientifically; no current
+    merger is blamed for losing their retained preparation or for proven historical
+    normalization execution.
+  snapshot_sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+- evidence_id: writer-4
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Current importer, units, preparation/history and merge functions provide
+    mechanism context only. The owner and target agree scientifically; no current
+    merger is blamed for losing their retained preparation or for proven historical
+    normalization execution.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-5
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Current importer, units, preparation/history and merge functions provide
+    mechanism context only. The owner and target agree scientifically; no current
+    merger is blamed for losing their retained preparation or for proven historical
+    normalization execution.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer-6
+  kind: record_content
+  reference: src/culturemech/merge/merge_recipes.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Current importer, units, preparation/history and merge functions provide
+    mechanism context only. The owner and target agree scientifically; no current
+    merger is blamed for losing their retained preparation or for proven historical
+    normalization execution.
+  snapshot_sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+- evidence_id: writer-7
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Current importer, units, preparation/history and merge functions provide
+    mechanism context only. The owner and target agree scientifically; no current
+    merger is blamed for losing their retained preparation or for proven historical
+    normalization execution.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-8
+  kind: record_content
+  reference: scripts/apply_cocktail_nesting.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Current importer, units, preparation/history and merge functions provide
+    mechanism context only. The owner and target agree scientifically; no current
+    merger is blamed for losing their retained preparation or for proven historical
+    normalization execution.
+  snapshot_sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+- evidence_id: writer-9
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Current importer, units, preparation/history and merge functions provide
+    mechanism context only. The owner and target agree scientifically; no current
+    merger is blamed for losing their retained preparation or for proven historical
+    normalization execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch043/428/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-22T00:28:00Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 81d872f48a44e0ba6eb71d21c2b100f2dd7d6ca1e68d58b680927aff70704f90
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Single maintained JCM J19 contributor
+  outcome: supported
+  summary: Exact target and maintained owner share CultureMech:002562 and all six
+    scientific ingredient/preparation fields. The single merge event establishes ownership,
+    not new formulation authority.
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+- assessment_id: source-access
+  area: evidence
+  topic: Primary and provider source boundaries
+  outcome: unknown
+  summary: JCM Nothing found and three failed MediaDive routes are preserved separately
+    from the cached browser projection. The latter corroborates the earlier report’s
+    base-table quantities but is not a successful fresh download or authenticated
+    historical raw.
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - jcm19-attempt
+  - apiJ19-attempt
+  - mediadiveJ19Html-attempt
+  - mediadiveJ19Download-attempt
+  - browser-projection
+  - report-0
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '3 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 3/6 primary
+    and 3/6 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi17234
+  - chebi53426
+  details: 'Instance coverage on a 0–100 percent scale, denominator 6: primary 50.00%;
+    secondary 50.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: forms
+  area: grounding
+  topic: Exact source names versus asserted forms
+  outcome: unknown
+  summary: 'The three asserted identities resolve: generic glucose matches the unqualified
+    name without a D-specific claim; K2HPO4 matches dipotassium hydrogen phosphate’s
+    formula/definition despite a broad trihydrate synonym; Tween80 is an OLS synonym
+    of polysorbate80. The product’s polymer composition gives no usable density for
+    converting ml to g. Hydration, grade and source material authentication remain
+    incomplete. Casein peptone, beef extract and yeast extract remain complex materials
+    without invented pure-chemical IDs.'
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - browser-projection
+  - chebi131527
+  - chebi17234
+  - chebi53426
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 13 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: scope
+  area: scope
+  topic: Preparation, classification and growth
+  outcome: unknown
+  summary: Both layers already retain pH adjustment, aseptic reducing additions and
+    conditional10 min steaming. Complex/undefined broth is consistent with the local
+    material list; no strain-specific growth, oxygen requirement, temperature, density,
+    exact stock recipe or final-volume claim is established by the name. No target_organisms,
+    references, solutions or growth metrics are asserted.
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - record
+  - owner-0
+  - browser-projection
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 20 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:002562
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"name\": \"Casein peptone\"\
+    ,\n    \"stage\": \"Base table; data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"9.99001\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].recipe[0]\",\n       \
+    \ \"derivative_projection_quote\": \"\\\"compound\\\":\\\"Casein peptone\\\",\\\
+    \"compound_id\\\":21,\\\"condition\\\":\\\" tryptic digest\\\",\\\"amount\\\"\
+    :10,\\\"unit\\\":\\\"g\\\",\\\"g_l\\\":9.99001,\\\"optional\\\":\\\"no\\\"}\"\
+    ,\n        \"projection_artifact\": \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The stored rate agrees to displayed precision with 10 g divided by projected\
+    \ 1.001 L. This explains the provider normalization but does not authenticate\
+    \ original/current source bytes or establish the final supplemented medium. No\
+    \ attached quantity evidence exists; do not mark verified or propose a new final\
+    \ concentration.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n    \"name\": \"\
+    Beef extract\",\n    \"stage\": \"Base table; data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"4.99501\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].recipe[1]\",\n       \
+    \ \"derivative_projection_quote\": \"\\\"compound\\\":\\\"Beef extract\\\",\\\"\
+    compound_id\\\":85,\\\"attribute\\\":\\\"BD-Difco\\\",\\\"amount\\\":5,\\\"unit\\\
+    \":\\\"g\\\",\\\"g_l\\\":4.99501,\\\"optional\\\":\\\"no\\\"}\",\n        \"projection_artifact\"\
+    : \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The stored rate agrees to displayed precision with 5 g divided by projected\
+    \ 1.001 L. This explains the provider normalization but does not authenticate\
+    \ original/current source bytes or establish the final supplemented medium. No\
+    \ attached quantity evidence exists; do not mark verified or propose a new final\
+    \ concentration.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"name\": \"\
+    Yeast extract\",\n    \"stage\": \"Base table; data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"4.99501\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].recipe[2]\",\n       \
+    \ \"derivative_projection_quote\": \"\\\"compound\\\":\\\"Yeast extract\\\",\\\
+    \"compound_id\\\":16,\\\"attribute\\\":\\\"BD-Difco\\\",\\\"amount\\\":5,\\\"\
+    unit\\\":\\\"g\\\",\\\"g_l\\\":4.99501,\\\"optional\\\":\\\"no\\\"}\",\n     \
+    \   \"projection_artifact\": \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The stored rate agrees to displayed precision with 5 g divided by projected\
+    \ 1.001 L. This explains the provider normalization but does not authenticate\
+    \ original/current source bytes or establish the final supplemented medium. No\
+    \ attached quantity evidence exists; do not mark verified or propose a new final\
+    \ concentration.\"\n  },\n  {\n    \"decision_id\": \"q4\",\n    \"name\": \"\
+    Glucose\",\n    \"stage\": \"Base table; data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"9.99001\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].recipe[3]\",\n       \
+    \ \"derivative_projection_quote\": \"\\\"compound\\\":\\\"Glucose\\\",\\\"compound_id\\\
+    \":5,\\\"amount\\\":10,\\\"unit\\\":\\\"g\\\",\\\"g_l\\\":9.99001,\\\"mmol_l\\\
+    \":55.4508,\\\"optional\\\":\\\"no\\\"}\",\n        \"projection_artifact\": \"\
+    /private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The stored rate agrees to displayed precision with 10 g divided by projected\
+    \ 1.001 L. This explains the provider normalization but does not authenticate\
+    \ original/current source bytes or establish the final supplemented medium. No\
+    \ attached quantity evidence exists; do not mark verified or propose a new final\
+    \ concentration.\"\n  },\n  {\n    \"decision_id\": \"q5\",\n    \"name\": \"\
+    K2HPO4\",\n    \"stage\": \"Base table; data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"2.997\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].recipe[4]\",\n       \
+    \ \"derivative_projection_quote\": \"\\\"compound\\\":\\\"K2HPO4\\\",\\\"compound_id\\\
+    \":10,\\\"amount\\\":3,\\\"unit\\\":\\\"g\\\",\\\"g_l\\\":2.997,\\\"mmol_l\\\"\
+    :17.2068,\\\"optional\\\":\\\"no\\\"}\",\n        \"projection_artifact\": \"\
+    /private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The stored rate agrees to displayed precision with 3 g divided by projected\
+    \ 1.001 L. This explains the provider normalization but does not authenticate\
+    \ original/current source bytes or establish the final supplemented medium. No\
+    \ attached quantity evidence exists; do not mark verified or propose a new final\
+    \ concentration.\"\n  },\n  {\n    \"decision_id\": \"q6\",\n    \"name\": \"\
+    Tween 80\",\n    \"stage\": \"Base table; data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n   \
+    \   }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n \
+    \       \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].recipe[5]\",\n       \
+    \ \"derivative_projection_quote\": \"\\\"compound\\\":\\\"Tween 80\\\",\\\"compound_id\\\
+    \":22,\\\"amount\\\":1,\\\"unit\\\":\\\"ml\\\",\\\"optional\\\":\\\"no\\\"}\"\
+    ,\n        \"projection_artifact\": \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The derivative projection states 1 ml, whereas the stored field is 1 g/L.\
+    \ Density and final supplemented volume are unknown; no mass conversion or replacement\
+    \ rate is justified from this partial evidence.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q7\",\n    \"name\": \"pH\",\n    \"stage\": \"Base preparation\",\n    \"\
+    decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ph_value\",\n        \"stored\": 6.8\n      },\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": \"Adjust pH to 6.8.\"\
+    \n      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].steps[0]\",\n        \"\
+    derivative_projection_quote\": \"Adjust pH to 6.8.\",\n        \"projection_artifact\"\
+    : \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The retained pH6.8 matches the derivative projection. It remains preserved\
+    \ but not independently primary-verified; no pH for the later supplemented medium\
+    \ is inferred.\"\n  },\n  {\n    \"decision_id\": \"q8\",\n    \"name\": \"Sodium\
+    \ ascorbate and L-cysteine hydrochloride\",\n    \"stage\": \"After sterilization\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BIFIDOBACTERIUM_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"After sterilization, aseptically add solutions of sodium ascorbate and L-cysteine\
+    \ x HCl to final concentration of 1.0% and 0.05%, respectively. Heat medium not\
+    \ freshly prepared in a steamer for 10 min before addition of the reducing substances.\"\
+    \n      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].steps[1]\",\n        \"\
+    derivative_projection_quote\": \"to final concentration of 1.0% and 0.05%, respectively.\"\
+    ,\n        \"projection_artifact\": \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Both layers already retain this instruction in preparation text; do not claim\
+    \ preparation loss. Neither additive has a structured ingredient or stock row.\
+    \ Percent bases, stock strengths, delivered volumes and resulting total volume\
+    \ are unspecified; do not assume w/v or construct a dilution.\"\n  },\n  {\n \
+    \   \"decision_id\": \"q9\",\n    \"name\": \"Steamer duration\",\n    \"stage\"\
+    : \"Only medium not freshly prepared, before reducing substances\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [],\n    \"desired\": null,\n    \"\
+    source_snippets\": [\n      {\n        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].steps[2]\",\n        \"\
+    derivative_projection_quote\": \"Heat medium not freshly prepared in a steamer\
+    \ for 10 min before addition of the reducing substances.\",\n        \"projection_artifact\"\
+    : \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Retained within preparation_steps[1].description in this layer. The 10 min\
+    \ conditional reheat is not an autoclave cycle or culture incubation time; temperature\
+    \ and original sterilization cycle remain unspecified.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q10\",\n    \"name\": \"Casein peptone\",\n    \"stage\": \"Base table; data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.99001\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n\
+    \      {\n        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].recipe[0]\",\n       \
+    \ \"derivative_projection_quote\": \"\\\"compound\\\":\\\"Casein peptone\\\",\\\
+    \"compound_id\\\":21,\\\"condition\\\":\\\" tryptic digest\\\",\\\"amount\\\"\
+    :10,\\\"unit\\\":\\\"g\\\",\\\"g_l\\\":9.99001,\\\"optional\\\":\\\"no\\\"}\"\
+    ,\n        \"projection_artifact\": \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The stored rate agrees to displayed precision with 10 g divided by projected\
+    \ 1.001 L. This explains the provider normalization but does not authenticate\
+    \ original/current source bytes or establish the final supplemented medium. No\
+    \ attached quantity evidence exists; do not mark verified or propose a new final\
+    \ concentration.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n    \"name\": \"\
+    Beef extract\",\n    \"stage\": \"Base table; data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.99501\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n\
+    \      {\n        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].recipe[1]\",\n       \
+    \ \"derivative_projection_quote\": \"\\\"compound\\\":\\\"Beef extract\\\",\\\"\
+    compound_id\\\":85,\\\"attribute\\\":\\\"BD-Difco\\\",\\\"amount\\\":5,\\\"unit\\\
+    \":\\\"g\\\",\\\"g_l\\\":4.99501,\\\"optional\\\":\\\"no\\\"}\",\n        \"projection_artifact\"\
+    : \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The stored rate agrees to displayed precision with 5 g divided by projected\
+    \ 1.001 L. This explains the provider normalization but does not authenticate\
+    \ original/current source bytes or establish the final supplemented medium. No\
+    \ attached quantity evidence exists; do not mark verified or propose a new final\
+    \ concentration.\"\n  },\n  {\n    \"decision_id\": \"q12\",\n    \"name\": \"\
+    Yeast extract\",\n    \"stage\": \"Base table; data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.99501\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n\
+    \      {\n        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].recipe[2]\",\n       \
+    \ \"derivative_projection_quote\": \"\\\"compound\\\":\\\"Yeast extract\\\",\\\
+    \"compound_id\\\":16,\\\"attribute\\\":\\\"BD-Difco\\\",\\\"amount\\\":5,\\\"\
+    unit\\\":\\\"g\\\",\\\"g_l\\\":4.99501,\\\"optional\\\":\\\"no\\\"}\",\n     \
+    \   \"projection_artifact\": \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The stored rate agrees to displayed precision with 5 g divided by projected\
+    \ 1.001 L. This explains the provider normalization but does not authenticate\
+    \ original/current source bytes or establish the final supplemented medium. No\
+    \ attached quantity evidence exists; do not mark verified or propose a new final\
+    \ concentration.\"\n  },\n  {\n    \"decision_id\": \"q13\",\n    \"name\": \"\
+    Glucose\",\n    \"stage\": \"Base table; data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.99001\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n\
+    \      {\n        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].recipe[3]\",\n       \
+    \ \"derivative_projection_quote\": \"\\\"compound\\\":\\\"Glucose\\\",\\\"compound_id\\\
+    \":5,\\\"amount\\\":10,\\\"unit\\\":\\\"g\\\",\\\"g_l\\\":9.99001,\\\"mmol_l\\\
+    \":55.4508,\\\"optional\\\":\\\"no\\\"}\",\n        \"projection_artifact\": \"\
+    /private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The stored rate agrees to displayed precision with 10 g divided by projected\
+    \ 1.001 L. This explains the provider normalization but does not authenticate\
+    \ original/current source bytes or establish the final supplemented medium. No\
+    \ attached quantity evidence exists; do not mark verified or propose a new final\
+    \ concentration.\"\n  },\n  {\n    \"decision_id\": \"q14\",\n    \"name\": \"\
+    K2HPO4\",\n    \"stage\": \"Base table; data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.997\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].recipe[4]\",\n       \
+    \ \"derivative_projection_quote\": \"\\\"compound\\\":\\\"K2HPO4\\\",\\\"compound_id\\\
+    \":10,\\\"amount\\\":3,\\\"unit\\\":\\\"g\\\",\\\"g_l\\\":2.997,\\\"mmol_l\\\"\
+    :17.2068,\\\"optional\\\":\\\"no\\\"}\",\n        \"projection_artifact\": \"\
+    /private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The stored rate agrees to displayed precision with 3 g divided by projected\
+    \ 1.001 L. This explains the provider normalization but does not authenticate\
+    \ original/current source bytes or establish the final supplemented medium. No\
+    \ attached quantity evidence exists; do not mark verified or propose a new final\
+    \ concentration.\"\n  },\n  {\n    \"decision_id\": \"q15\",\n    \"name\": \"\
+    Tween 80\",\n    \"stage\": \"Base table; data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].recipe[5]\",\n       \
+    \ \"derivative_projection_quote\": \"\\\"compound\\\":\\\"Tween 80\\\",\\\"compound_id\\\
+    \":22,\\\"amount\\\":1,\\\"unit\\\":\\\"ml\\\",\\\"optional\\\":\\\"no\\\"}\"\
+    ,\n        \"projection_artifact\": \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The derivative projection states 1 ml, whereas the stored field is 1 g/L.\
+    \ Density and final supplemented volume are unknown; no mass conversion or replacement\
+    \ rate is justified from this partial evidence.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q16\",\n    \"name\": \"pH\",\n    \"stage\": \"Base preparation\",\n    \"\
+    decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\",\n  \
+    \      \"field_path\": \"ph_value\",\n        \"stored\": 6.8\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 6.8.\"\n      }\n    ],\n    \"desired\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].steps[0]\",\n        \"\
+    derivative_projection_quote\": \"Adjust pH to 6.8.\",\n        \"projection_artifact\"\
+    : \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The retained pH6.8 matches the derivative projection. It remains preserved\
+    \ but not independently primary-verified; no pH for the later supplemented medium\
+    \ is inferred.\"\n  },\n  {\n    \"decision_id\": \"q17\",\n    \"name\": \"Sodium\
+    \ ascorbate and L-cysteine hydrochloride\",\n    \"stage\": \"After sterilization\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"After sterilization, aseptically add solutions of sodium ascorbate and L-cysteine\
+    \ x HCl to final concentration of 1.0% and 0.05%, respectively. Heat medium not\
+    \ freshly prepared in a steamer for 10 min before addition of the reducing substances.\"\
+    \n      }\n    ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].steps[1]\",\n        \"\
+    derivative_projection_quote\": \"to final concentration of 1.0% and 0.05%, respectively.\"\
+    ,\n        \"projection_artifact\": \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Both layers already retain this instruction in preparation text; do not claim\
+    \ preparation loss. Neither additive has a structured ingredient or stock row.\
+    \ Percent bases, stock strengths, delivered volumes and resulting total volume\
+    \ are unspecified; do not assume w/v or construct a dilution.\"\n  },\n  {\n \
+    \   \"decision_id\": \"q18\",\n    \"name\": \"Steamer duration\",\n    \"stage\"\
+    : \"Only medium not freshly prepared, before reducing substances\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [],\n    \"desired\": null,\n    \"\
+    source_snippets\": [\n      {\n        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].steps[2]\",\n        \"\
+    derivative_projection_quote\": \"Heat medium not freshly prepared in a steamer\
+    \ for 10 min before addition of the reducing substances.\",\n        \"projection_artifact\"\
+    : \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Retained within preparation_steps[1].description in this layer. The 10 min\
+    \ conditional reheat is not an autoclave cycle or culture incubation time; temperature\
+    \ and original sterilization cycle remain unspecified.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q19\",\n    \"name\": \"Water\",\n    \"stage\": \"Base table omitted from\
+    \ both ingredient lists\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\",\n      \
+    \  \"source_locator\": \"Projected solutions[0].recipe[6]\",\n        \"derivative_projection_quote\"\
+    : \"\\\"compound\\\":\\\"Distilled water\\\",\\\"compound_id\\\":4,\\\"amount\\\
+    \":1000,\\\"unit\\\":\\\"ml\\\"\",\n        \"projection_artifact\": \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The projection and derivative report show water1000 ml. No structured water\
+    \ is present, but primary authentication is required before curation; do not convert\
+    \ it to1000 g/L.\"\n  },\n  {\n    \"decision_id\": \"q20\",\n    \"name\": \"\
+    Declared base volume and final supplemented volume\",\n    \"stage\": \"Provider\
+    \ base versus post-sterilization additions\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [],\n    \"desired\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_url\": \"https://mediadive.dsmz.de/download/medium/J19/json\"\
+    ,\n        \"source_locator\": \"Projected solutions[0].volume\",\n        \"\
+    derivative_projection_quote\": \"\\\"volume\\\":1001\",\n        \"projection_artifact\"\
+    : \"/private/tmp/culturemech-review-source-preflight-batch043-tail/provenance/root043-web-j19-download-projection.json\"\
+    ,\n        \"snapshot_sha256\": \"d0c17fd936a0f7d7b56c61cae5ebde1147841c065541087cc13beb19695b93a7\"\
+    ,\n        \"network_accessed_at\": null,\n        \"http_status\": null,\n  \
+    \      \"limit\": \"Cached browser projection only; original current HTTP raw\
+    \ and historical cited raw unavailable.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Projected1001 ml is the table denominator, not measured final volume after\
+    \ unquantified reducing-stock additions. The five provider rates are arithmetic\
+    \ clues, not evidence of an experimentally measured batch volume.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.002562.base-volume-and-tween
+  category: quantity
+  severity: major
+  status: open
+  certainty: provisional
+  title: Tween volume and supplemented-medium basis remain unresolved
+  description: Both layers encode Tween80 as1 g/L. The derivative source projection
+    and earlier report instead show1 ml in a1001 ml base; they also retain later reducing-stock
+    additions without delivered volumes. The five normalized solid rates therefore
+    cannot be promoted to verified supplemented-medium concentrations.
+  target_ids:
+  - CultureMech:002562
+  field_paths:
+  - ingredients[5].concentration
+  - ingredients
+  - preparation_steps[1].description
+  evidence_ids:
+  - record
+  - owner-0
+  - browser-projection
+  - report-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.002562.missing-structured-reducing-components
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preparation-only reducing agents and omitted solvent need source-scoped representation
+  description: Sodium ascorbate1.0% and L-cysteine hydrochloride0.05% already appear
+    in both preparation arrays but have no structured ingredient/stock representation;
+    water is absent from both ingredient lists. Source primary recovery and unknown
+    percentage bases prevent a supported numeric replacement.
+  target_ids:
+  - CultureMech:002562
+  field_paths:
+  - ingredients
+  - preparation_steps[1].description
+  evidence_ids:
+  - record
+  - owner-0
+  - browser-projection
+  - report-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: P3.4 is escalated to major for the missing structured components
+    needed to reproduce the stated supplemented medium; the finding does not allege
+    that the already-retained preparation text is absent.
+- finding_id: f3
+  issue_key: culturemech.002562.source-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Formula and preparation lack attached retrievable claim evidence
+  description: No quantity evidence is attached to the six ingredient concentrations,
+    and the exact primary currently returns Nothing found. Earlier reports and a cached
+    browser projection remain explicitly limited substitutes for source recovery.
+  target_ids:
+  - CultureMech:002562
+  field_paths:
+  - ingredients
+  - sources
+  - references
+  evidence_ids:
+  - browser-projection
+  - report-0
+  - jcm19-attempt
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: 'P4.3 is a minor traceability exception distinct from the
+    substantive quantity/completeness concerns: this action adds reproducible claim
+    linkage without itself choosing new numerical values.'
+actions:
+- action_id: a1
+  description: Recover the exact JCM/provider raw source; resolve the base versus
+    final formulation, Tween liquid unit/density and additive stock doses. Preserve
+    existing values pending evidence, and curate the owner before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002562
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: After recovering exact formulation evidence, add the missing solvent
+    and reducing-agent representation at their proper stages. Preserve the existing
+    preparation and unqualified percent text until basis and doses are resolved.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002562
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach short exact source quotations, version/hash and stage locators
+    only after the original content is recovered; keep the failed attempts and historical
+    report limits.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:002562
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- JCM19 returned HTTP 200 with Nothing found, so its primary formulation is unavailable.
+- apiJ19 returned HTTP 503 once; the response is an access failure and no successful
+  fresh formula is asserted.
+- mediadiveJ19Html returned HTTP 503 once; the response is an access failure and no
+  successful fresh formula is asserted.
+- mediadiveJ19Download returned HTTP 503 once; the response is an access failure and
+  no successful fresh formula is asserted.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-043
+- generated-medium
