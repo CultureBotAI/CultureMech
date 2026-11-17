@@ -1,0 +1,1288 @@
+# Scientific review of beijerinckia_medium_for_isolation
+
+- Review: 20261028T045044Z-beijerinckia-medium-for-isolation-batch055
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T04:31:33.700932Z
+- Finished UTC: 2026-10-28T04:50:44.715748Z
+- Reviewer: Codex independent record reviewer (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The seven ingredient amounts, explicit per-litre basis, pH and preparation text are supported by current MediaDive 1847 and linked HiMedia M708. The cooling step is incorrectly coded HEAT and needs the schema’s COOL action; its 45–50 °C range remains correct. Minor work also remains for sucrose grounding, embedded HTML and attached source evidence. No ingredient or concentration correction is warranted.
+
+## Scope And Provenance
+
+Full selected target and maintained owners, every quantity and unchanged claim; separately scoped source dependencies and current writers.
+
+Selection: Authoritative batch055 selection index 4 at base 9ea7ff33d354e37b791df96a880005153e446ce3. Fresh review, not reconstruction of lost historical bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001269 | data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml | generated | beijerinckia_medium_for_isolation |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001269 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-strict | passed | True | CultureMech:001269 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-terms | passed | True | CultureMech:001269 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-references | passed | True | CultureMech:001269 | Exit 0; original full stdout/stderr read. Zero reference checks. |
+
+## Scientific And Domain Assessments
+
+### Exact 1847 and linked commercial source
+
+identity: supported. Targets: CultureMech:001269.
+
+The target and sole exact maintained owner represent MediaDive 1847, whose current source identifies HiMedia M708. The manufacturer’s full two-page PDF and current API agree on all seven formula values and pH. The API page labels 1847 an external/informal medium; preserve that source qualification rather than presenting the unavailable DSMZ PDF as inspected. No DSM 111 sibling recipe is transferred.
+
+### Positive quantity support and historical scope
+
+evidence: supported. Targets: CultureMech:001269.
+
+All 14 selected concentration fields agree with current explicit per-litre sources. Preparation text includes final makeup, dissolution, sterilization and cooling, but the cooling action enum is wrongly HEAT in both selected layers. The current API hash authenticates the old report payload, while direct manufacturer evidence resolves formulation support independently of old automated conflict labels. Attached claims remain absent.
+
+### Classification and unasserted growth
+
+scope: supported. Targets: CultureMech:001269.
+
+The defined soluble formulation classification agrees with the current provider. Agar is explicitly the gelling polymer mixture; it is not assigned an invented molecular weight. The manufacturer’s QC observations and limitations are kept product-specific. The local record has no strain-growth claim; absence of optional organism links is not a defect.
+
+### Every concentration and source-only amount/stage
+
+quantity: concern. Targets: CultureMech:001269.
+
+All 14 selected target/owner concentration fields have explicit decisions; source-only stock, liquid, control and denominator gaps are retained separately.
+
+{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:001269", "selected_concentration_field_count": 14, "selected_concentration_fields_covered": 14, "decisions": [{"decision_id": "q1", "subject": "KH2PO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "0.8", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "0.8", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit. The current API explicitly supplies g_l and a make-up-to-1000-ml instruction, and linked manufacturer M708 explicitly labels the same value Gms / Litre. This is positive denominator evidence, not an inference from listed water. No attached claim evidence is currently present.", "sources": [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.8,\n                        \"mmol_l\": 5.87868,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Potassium dihydrogen phosphate                                              0.800", "quote_representation": "captured extracted text"}]}, {"decision_id": "q2", "subject": "D-Sucrose", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "20", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "20", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit. The current API explicitly supplies g_l and a make-up-to-1000-ml instruction, and linked manufacturer M708 explicitly labels the same value Gms / Litre. This is positive denominator evidence, not an inference from listed water. No attached claim evidence is currently present.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"D-Sucrose\",\n                        \"compound_id\": 1358,\n                        \"amount\": 20,\n                        \"unit\": \"g\",\n                        \"g_l\": 20,\n                        \"mmol_l\": 58.4283,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Sucrose                                                                    20.000", "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject": "K2HPO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit. The current API explicitly supplies g_l and a make-up-to-1000-ml instruction, and linked manufacturer M708 explicitly labels the same value Gms / Litre. This is positive denominator evidence, not an inference from listed water. No attached claim evidence is currently present.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.14826,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 8-8", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Dipotassium hydrogen phosphate                                              0.200", "quote_representation": "captured extracted text"}]}, {"decision_id": "q4", "subject": "MgSO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit. The current API explicitly supplies g_l and a make-up-to-1000-ml instruction, and linked manufacturer M708 explicitly labels the same value Gms / Litre. This is positive denominator evidence, not an inference from listed water. No attached claim evidence is currently present. Both named sources omit hydrate qualifiers; the existing anhydrous formula is consistent with the supplied name. Do not substitute a common hydrated salt or a molecular mass for an unspecified hydrate.", "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgSO4\",\n                        \"compound_id\": 325,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 4.15386,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 9-9", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Magnesium sulphate                                                          0.500", "quote_representation": "captured extracted text"}]}, {"decision_id": "q5", "subject": "FeCl3", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit. The current API explicitly supplies g_l and a make-up-to-1000-ml instruction, and linked manufacturer M708 explicitly labels the same value Gms / Litre. This is positive denominator evidence, not an inference from listed water. No attached claim evidence is currently present. Both named sources omit hydrate qualifiers; the existing anhydrous formula is consistent with the supplied name. Do not substitute a common hydrated salt or a molecular mass for an unspecified hydrate.", "sources": [{"locator": "$.data.solutions[0].recipe[4]", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"FeCl3\",\n                        \"compound_id\": 403,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.616523,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 10-10", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Ferric chloride                                                             0.100", "quote_representation": "captured extracted text"}]}, {"decision_id": "q6", "subject": "Na2MoO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "0.005", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "0.005", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit. The current API explicitly supplies g_l and a make-up-to-1000-ml instruction, and linked manufacturer M708 explicitly labels the same value Gms / Litre. This is positive denominator evidence, not an inference from listed water. No attached claim evidence is currently present. Both named sources omit hydrate qualifiers; the existing anhydrous formula is consistent with the supplied name. Do not substitute a common hydrated salt or a molecular mass for an unspecified hydrate.", "sources": [{"locator": "$.data.solutions[0].recipe[5]", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na2MoO4\",\n                        \"compound_id\": 811,\n                        \"amount\": 0.005,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0242801,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 11-11", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Sodium molybdate                                                            0.005", "quote_representation": "captured extracted text"}]}, {"decision_id": "q7", "subject": "Agar", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "15", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "15", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit. The current API explicitly supplies g_l and a make-up-to-1000-ml instruction, and linked manufacturer M708 explicitly labels the same value Gms / Litre. This is positive denominator evidence, not an inference from listed water. No attached claim evidence is currently present. Agar is a polymer mixture; no molecular formula or molar concentration is asserted.", "sources": [{"locator": "$.data.solutions[0].recipe[6]", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 12-12", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Agar                                                                       15.000", "quote_representation": "captured extracted text"}]}, {"decision_id": "q8", "subject": "Final pH range", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "ph_range", "original": {"min": 6.3, "max": 6.7}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "ph_range", "original": {"min": 6.3, "max": 6.7}}], "decision": "evidence_only", "stage": "final-medium pH", "interpretation": "Retain 6.3–6.7. API min/max values and manufacturer 6.5±0.2 agree; manufacturer specifies measurement at 25°C, which is a source qualification rather than an incubation claim.", "sources": [{"locator": "$.data.medium", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n            \"id\": 1847,\n            \"name\": \"Beijerinckia medium for isolation\",\n            \"complex_medium\": \"no\",\n            \"min_pH\": 6.3,\n            \"max_pH\": 6.7,\n            \"source\": \"DSMZ\",\n            \"description\": \"Available as M708 HIMEDIA\"\n        }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 13-13", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Final pH ( at 25°C)                                                       6.5±0.2", "quote_representation": "captured extracted text"}]}, {"decision_id": "q9", "subject": "Makeup volume and HTML presentation", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "preparation_steps[0].description", "original": "Make up to &lt;span class='amount' data-volume='1000'&gt;1000&lt;/span&gt; ml with distilled water."}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "preparation_steps[0].description", "original": "Make up to &lt;span class='amount' data-volume='1000'&gt;1000&lt;/span&gt; ml with distilled water."}], "decision": "evidence_only", "stage": "main-medium preparation", "interpretation": "The API explicitly says make up to 1000 ml, supporting its listed G_PER_L basis. Water is already represented in preparation and need not be falsely added as a solute. Strip only HTML markup, retaining the exact make-up instruction. Manufacturer powder directions instead say suspend in 1000 ml water; preserve that commercial-product wording separately.", "sources": [{"locator": "$.data.solutions[0].steps[0]", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"step\": \"Make up to &lt;span class='amount' data-volume='1000'&gt;1000&lt;/span&gt; ml with distilled water.\"\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q10", "subject": "Boiling dissolution", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "preparation_steps[1].description", "original": "Heat to boiling to dissolve the medium completely"}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "preparation_steps[1].description", "original": "Heat to boiling to dissolve the medium completely"}], "decision": "evidence_only", "stage": "main-medium preparation", "interpretation": "The API and manufacturer both require heating to boiling until fully dissolved; no numeric boiling duration is supplied. Retain the existing step.", "sources": [{"locator": "$.data.solutions[0].steps[1]", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"step\": \"Heat to boiling to dissolve the medium completely\"\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q11", "subject": "Sterilization", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "preparation_steps[2].description", "original": "Autoclave at 121 °C for 15 min."}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "preparation_steps[2].description", "original": "Autoclave at 121 °C for 15 min."}], "decision": "evidence_only", "stage": "main-medium preparation", "interpretation": "Retain 121°C for 15 minutes, explicitly supplied by both sources. The manufacturer additionally states 15 lbs pressure; do not convert this bare pressure expression to a different unit without further specification.", "sources": [{"locator": "$.data.solutions[0].steps[2]", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"step\": \"Autoclave at 121 \\u00b0C for 15 min.\"\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q12", "subject": "Cooling", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "preparation_steps[3].description", "original": "Cool down to 45-50°C."}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "preparation_steps[3].description", "original": "Cool down to 45-50°C."}, {"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path": "preparation_steps[3].action", "original": "HEAT"}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path": "preparation_steps[3].action", "original": "HEAT"}], "decision": "correct", "stage": "main-medium preparation", "interpretation": "Retain the supported cooling description and 45–50 °C range. Correct the separate action code from HEAT to COOL in the maintained owner and regenerated target: both currently contradict their own cooling description. This is a semantic action-code correction, not a temperature change or an incubation condition.", "sources": [{"locator": "$.data.solutions[0].steps[3]", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"step\": \"Cool down to 45-50\\u00b0C.\"\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q13", "subject": "Commercial powder dose and plate pouring", "local_fields": [], "decision": "evidence_only", "stage": "HiMedia M708 commercial product only", "interpretation": "The manufacturer directs 36.6 g powder per 1000 ml water; the printed ingredient values sum 36.605 g and the label permits formula adjustment. Do not replace individual recipe rows with rounded powder dose or infer a different finished volume. Mixing and pouring into sterile plates is a source-supported commercial completion instruction.", "sources": [{"locator": "extracted-text lines 16-17", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Suspend 36.6 grams in 1000 ml distilled water. Heat to boiling to dissolve the medium completely. Sterilize by autoclaving\nat 15 lbs pressure (121°C) for 15 minutes. Cool to 45-50°C. Mix well and pour into sterile Petri plates.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q14", "subject": "Manufacturer pressure", "local_fields": [], "decision": "evidence_only", "stage": "HiMedia M708 sterilization", "interpretation": "The manufacturer states 15 lbs pressure with 121 °C / 15 min. The pressure wording is retained literally without interpreting an omitted pressure-area unit. Current local temperature/time steps remain supported.", "sources": [{"locator": "extracted-text lines 16-17", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Suspend 36.6 grams in 1000 ml distilled water. Heat to boiling to dissolve the medium completely. Sterilize by autoclaving\nat 15 lbs pressure (121°C) for 15 minutes. Cool to 45-50°C. Mix well and pour into sterile Petri plates.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q15", "subject": "Manufacturer quality-control solution and temperature", "local_fields": [], "decision": "evidence_only", "stage": "commercial QC only", "interpretation": "3.66% w/v and 25 °C describe the manufacturer reaction/QC measurement, not a new ingredient dose or a culture-temperature requirement.", "sources": [{"locator": "extracted-text lines 57-57", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Reaction of 3.66% w/v aqueous solution at 25°C. pH : 6.5±0.2", "quote_representation": "captured extracted text"}]}, {"decision_id": "q16", "subject": "Manufacturer gel comparison", "local_fields": [], "decision": "evidence_only", "stage": "commercial QC only", "interpretation": "The 1.5% agar-gel comparison is a QC description; the independent formulation table already specifies 15 g/L agar. No additional agar is added.", "sources": [{"locator": "extracted-text lines 48-48", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Firm,comparable with 1.5% Agar gel", "quote_representation": "captured extracted text"}]}, {"decision_id": "q17", "subject": "Manufacturer cultural-response conditions", "local_fields": [], "decision": "evidence_only", "stage": "product-specific QC observation", "interpretation": "20–30°C and 18–48 hours belong only to the manufacturer’s stated QC organisms. The selected record asserts no organism-specific growth; these conditions are not generalized to all Beijerinckia or promoted to a growth claim.", "sources": [{"locator": "extracted-text lines 61-61", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Cultural characteristics observed after an incubation at 20-30°C for 18-48 hours.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q18", "subject": "Manufacturer storage ranges", "local_fields": [], "decision": "evidence_only", "stage": "commercial storage only", "interpretation": "10–30°C applies to the sealed powder and 20–30 °C to prepared medium per the label. These source-only product handling ranges do not establish incubation conditions or a numeric shelf life.", "sources": [{"locator": "extracted-text lines 68-68", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Store between 10-30°C in a tightly closed container and the prepared medium at 20-30°C. Use before expiry date on the", "quote_representation": "captured extracted text"}]}], "local_field_census_reference": "REVIEW_WORK/batch055/record04/grounding-inventory.json", "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization, stock composition, working dose and preparation controls are separate. No source edits or automatic curation performed."}
+
+### Primary, secondary and legacy linkage census
+
+grounding: concern. Targets: CultureMech:001269.
+
+data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml: primary 6/7, secondary 6/7; data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml: primary 6/7, secondary 6/7. These are ingredient-instance linkage fractions, not accuracy scores. Solution terms are audited separately. Every actually asserted CHEBI/UBERON term is joined to its exact current OLS object and packaged MIM CSV rows. Zero numeric legacy MediaIngredientMech identifiers occur in the full selected documents; NNNNNN is a historical placeholder, not an ID. No percentage is calculated for the empty identifier set of record06. Complex commercial/product components are not forced to pure-compound IDs.
+
+### Native structural checks
+
+schema: supported. Targets: CultureMech:001269.
+
+All four canonical commands passed once; strict schema TSV contains only its header and reference validation checked zero references on the generated target. This does not certify quantities or chemical forms.
+
+## Findings
+
+### f1: Sucrose remains ungrounded despite a supported canonical candidate
+
+minor / open / confirmed; issue key: culturemech-001269-sucrose-linkage.
+
+Both selected layers omit primary and secondary terms for D-Sucrose. Current OLS CHEBI:17992 is sucrose. The packaged MIM index has a REJECTED D-Sucrose preferred row 3484 but a MAPPED D-Sucrose synonym row 3485 and MAPPED Sucrose row 8210 for the same identifier. Preserve that distinction instead of treating rejection of one alias as chemical invalidity.
+
+### f2: The makeup instruction contains source HTML
+
+minor / open / confirmed; issue key: culturemech-001269-html-preparation.
+
+Both selected layers retain the literal span markup around 1000 ml. The underlying instruction is correct and supports the final-volume basis; presentation cleanup must preserve its make-up-to meaning. Current MediaDive preparation parsing retains source step text verbatim.
+
+### f3: Source references and claim evidence are absent
+
+minor / open / confirmed; issue key: culturemech-001269-claim-traceability.
+
+Both selected documents lack structured references and attached formulation evidence. The API/source version, external-medium qualification and linked manufacturer basis should be retained alongside otherwise supported amounts; source availability is not the same as an attached evidence trail.
+
+### f4: Cooling is incorrectly represented by the HEAT action
+
+minor / open / confirmed; issue key: culturemech-001269-cooling-action-coded-as-heat.
+
+Both selected layers describe cooling to 45–50 °C but assign HEAT to preparation_steps[3].action. The API and manufacturer support the existing cooling text and temperature; the schema provides COOL. The inspected importer tests °c in its HEAT branch before checking cooling words, a current classification defect distinct from historical execution.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Add a source-specific canonical sucrose linkage through the maintained resolver, preserving the source D-Sucrose name and reviewing the exact accepted CSV row. Do not resurrect a rejected preferred alias.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action2
+
+Remove source markup from the maintained preparation description, retaining the exact 1000 ml makeup instruction; assess the current importer’s text-cleaning boundary and regenerate the target.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action3
+
+Attach exact version-scoped API/manufacturer references and short amount/basis evidence; preserve current values and source distinctions. Do not claim the failed DSMZ PDF was inspected.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action4
+
+Correct the maintained cooling action to COOL while retaining the exact supported description and 45–50 °C range, then regenerate the target.
+
+- Both selected layers use COOL at preparation_steps[3].action; their description and temperature remain unchanged.
+- Verify cooling classification and preserve distinct heating/autoclave behavior in the maintained importer; rerun canonical checks on changed maintained inputs and review regenerated output.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local0 | data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local1 | data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| validate-schema | REVIEW_WORK/batch055/record04/validate-schema-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-strict | REVIEW_WORK/batch055/record04/validate-strict-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Strict TSV is header-only. |
+| validate-terms | REVIEW_WORK/batch055/record04/validate-terms-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-references | REVIEW_WORK/batch055/record04/validate-references-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Zero references checked, not scientific source verification. |
+| dsm1847 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1847.pdf; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Actual retrieval HTTP 404, error &lt;HTTPError 404: 'Not Found'&gt;. This response does not authenticate a recipe. |
+| api1847 | https://mediadive.dsmz.de/rest/medium/1847; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current source read, including exact identity, all formulation rows, units and preparation. It establishes a formulation, not strain-specific growth. |
+| chebi17992 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17992; $._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation, is_obsolete | supports | OLS current exact CHEBI:17992 = sucrose; definition ['A glycosyl glycoside formed by glucose and fructose units joined by an acetal oxygen bridge from hemiacetal of glucose to the hemiketal of the fructose.']; formula ['C12H22O11']; mass ['342.297']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; $._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation, is_obsolete | supports | OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; $._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation, is_obsolete | supports | OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties.']; formula None; mass None; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi30808 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30808; $._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation, is_obsolete | supports | OLS current exact CHEBI:30808 = iron trichloride; definition []; formula ['Cl3Fe']; mass ['162.204']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi32599 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599; $._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation, is_obsolete | supports | OLS current exact CHEBI:32599 = magnesium sulfate; definition ['A magnesium salt having sulfate as the counterion.']; formula ['Mg.O4S']; mass ['120.368']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; $._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation, is_obsolete | supports | OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi75215 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75215; $._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation, is_obsolete | supports | OLS current exact CHEBI:75215 = sodium molybdate (anhydrous); definition ['An inorganic sodium salt having molybdate as the counterion.']; formula ['MoO4.2Na']; mass ['205.916']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| mediadive1847page | https://mediadive.dsmz.de/medium/1847; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current source read, including exact identity, all formulation rows, units and preparation. It establishes a formulation, not strain-specific growth. |
+| himediaM708 | https://www.himedialabs.com/media/TD/M708.pdf; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current source read, including exact identity, all formulation rows, units and preparation. It establishes a formulation, not strain-specific growth. |
+| grounding | REVIEW_WORK/batch055/record04/grounding-inventory.json; documents; ols_scientific_projection; mim_index | supports | Complete selected-layer term slots and current packaged MIM CSV exact-identifier joins with row locators and metadata commit; includes separately scoped dependency context. No fuzzy mapping or historical-validity inference. |
+| history0 | reports/yaml_record_review/20260921T194357Z-Beijerinckia_medium_for_isolation.md; entire report | supports | Entire historical report read, including unresolved and unchanged rows. October reports are derivative assertions with original cited hash/time; their raw payload is not authenticated by the report alone. September narratives are historical leads reassessed against current captures, not fresh review proof. |
+| history1 | reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/beijerinckia_medium_for_isolation.yaml.md; entire report | supports | Entire October report read, including seven unresolved direct rows and eleven source-only objects. Current API 1847 raw bytes exactly match its cited SHA256 ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a. This authenticates cited payload content, not the historical retrieval timestamp or old automated decisions. Current manufacturer/API identity now resolves the earlier source-link uncertainty. |
+| history2 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.md; entire report | supports | Entire historical report read, including unresolved and unchanged rows. October reports are derivative assertions with original cited hash/time; their raw payload is not authenticated by the report alone. September narratives are historical leads reassessed against current captures, not fresh review proof. |
+| history3 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Beijerinckia_medium_for_isolation.md; entire report | supports | Entire historical report read, including unresolved and unchanged rows. October reports are derivative assertions with original cited hash/time; their raw payload is not authenticated by the report alone. September narratives are historical leads reassessed against current captures, not fresh review proof. |
+| writer22 | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _parse_api_solutions; _classify_preparation_action, lines 725–764 | context_only | Current _parse_api_composition restricts direct ingredients to primary recipe, skips stock additions and water, and prefers provider g_l; _parse_api_solutions preserves referenced/percent stocks. This limits the old flattening attribution; water needs preparation-volume representation and historical run provenance remains separate. Current _classify_preparation_action checks temperature token °c in the HEAT branch before the COOL branch, so the inspected cooling text matches HEAT. This is a current classifier defect; it does not establish when the existing record was generated. |
+| writer23 | src/culturemech/merge/formulation.py; relevant functions named in summary | context_only | Current formulation_content retains scientific fields, quantities, notes and preparation; merge_formulation_evidence rejects incompatible scientific projections and unions scoped evidence. Ingredient-set similarity does not prove scientific equivalence. |
+| writer24 | src/culturemech/merge/matcher.py; relevant functions named in summary | context_only | Current group_formulations uses full formulation fingerprints for compatible automatic merging; broader group_recipes discovers ingredient-set candidates only. Neither grouping path substitutes for source verification. |
+| writer25 | src/culturemech/merge/merger.py; relevant functions named in summary | context_only | Current merge_group returns a single owner with routing metadata, and calls conservative merge_formulation_evidence for multiple owners. Current code supports regenerating stale content after owner repair but does not authenticate old generated outputs. |
+| quantity-inventory | REVIEW_WORK/batch055/record04/quantity-inventory.json; decisions | supports | Complete explicit decisions with exact current local values, per-layer locators, source quotes/hash/time, stage and arithmetic limits. |
+| preparation-action-schema | src/culturemech/schema/culturemech.yaml; enums.PreparationActionEnum.permissible_values.HEAT and COOL | supports | HEAT means Apply heat; COOL means Cool to specified temperature. The cooling action has an explicit existing enum. |
+
+## Limits And Additional Notes
+
+- The DSMZ 1847 PDF URL returned 404; the preserved error body is not recipe evidence. Current API plus linked manufacturer PDF supply the stated formulation support.
+- The manufacturer PDF is revision 02/2020 accessed now; current API bytes match the October report digest but do not authenticate that historical retrieval event. Manufacturer QC organisms/conditions are not generalized to the selected record.
+- MIM support refers only to packaged commit 6643131b0f12ab40b66f98135245fca04027e0e9. Accepted and rejected alias rows are distinct; current mapping does not establish historical validity.
+- Read-only scientific review. No source edits, native save, Git mutation or publication. All raw captures, failed access bodies, commands, times and original stdout/stderr remain in the adjacent private evidence directory.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T045044Z-beijerinckia-medium-for-isolation-batch055
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of beijerinckia_medium_for_isolation
+started_at: '2026-10-28T04:31:33.700932Z'
+finished_at: '2026-10-28T04:50:44.715748Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The seven ingredient amounts, explicit per-litre basis, pH and preparation
+  text are supported by current MediaDive 1847 and linked HiMedia M708. The cooling
+  step is incorrectly coded HEAT and needs the schema’s COOL action; its 45–50 °C
+  range remains correct. Minor work also remains for sucrose grounding, embedded HTML
+  and attached source evidence. No ingredient or concentration correction is warranted.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml
+    sha256: 3eae8e375f216e963e917a9120a62e6b3b8ea7d7bddecbb9c602a6960fd30662
+    role: target
+  - path: data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml
+    sha256: 813285beaebba828e94f8bbf4d41e788d7f88ff015485da63b07cdcdc6bc3a69
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/beijerinckia_medium_for_isolation.yaml.md
+    sha256: 81e3ce52cba661b733b014b5663c9dd0b9cdc6c31908e211ebf03161d1e8bab8
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Beijerinckia_medium_for_isolation.md
+    sha256: 1ffadc9ee24bfca792f351309c607033a2b44aa9f77aed31a6c298ded07a6641
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.md
+    sha256: 51ab51a87cc4c418ecaee707dad723decbf423fa6e462ca4ba1689e1be79bd10
+    role: context
+  - path: reports/yaml_record_review/20260921T194357Z-Beijerinckia_medium_for_isolation.md
+    sha256: e62cd62bde8c889ad67eaccbe136c559b6011d716aeaa15b106cbdec4020c3c5
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch055 selection index 4 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001269
+targets:
+- target_id: CultureMech:001269
+  path: data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml
+  label: beijerinckia_medium_for_isolation
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:001269
+  command: just validate-schema data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:001269
+  command: just validate-strict data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml
+    --workers 1 --out REVIEW_WORK/batch055/record04/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:001269
+  command: just validate-terms data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:001269
+  command: just validate-references data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T04:41:01.834996Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 3eae8e375f216e963e917a9120a62e6b3b8ea7d7bddecbb9c602a6960fd30662
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T04:41:01.835191Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 813285beaebba828e94f8bbf4d41e788d7f88ff015485da63b07cdcdc6bc3a69
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch055/record04/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:31:35.316641Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 5b04ef390ca3be02cb3cfaeb101afd1eac32eb3f069cf03e9df612445a2a4db5
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch055/record04/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:31:36.584285Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: 49098002c095323ed69e1cfe70460103f8ad9d4f4eccc60603759bf557c308fa
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch055/record04/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:31:38.396958Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: df2288821de9573a32099b037e66b7cc6036aa4724feaf5fd5b62013eede9d11
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch055/record04/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:31:39.443785Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: 8e0381a3044d6710a2e9efc2028ffe1178a20b8037581005882ae43f633f2349
+- evidence_id: dsm1847
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1847.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:32:08.953876Z'
+  support: unknown
+  summary: 'Actual retrieval HTTP 404, error <HTTPError 404: ''Not Found''>. This
+    response does not authenticate a recipe.'
+  snapshot_sha256: add95ee1c0e086163a30ec276ca54f98fb442c2c5ec9627bc8f8661e1f6186e4
+- evidence_id: api1847
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1847
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:32:08.954339Z'
+  support: supports
+  summary: Complete current source read, including exact identity, all formulation
+    rows, units and preparation. It establishes a formulation, not strain-specific
+    growth.
+  snapshot_sha256: ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a
+- evidence_id: chebi17992
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17992
+  locator: '$._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation,
+    is_obsolete'
+  accessed_at: '2026-10-28T04:32:08.954470Z'
+  support: supports
+  summary: OLS current exact CHEBI:17992 = sucrose; definition ['A glycosyl glycoside
+    formed by glucose and fructose units joined by an acetal oxygen bridge from hemiacetal
+    of glucose to the hemiketal of the fructose.']; formula ['C12H22O11']; mass ['342.297'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 2ae9545ca2aa881a60170edd0ee4843850f3864396aef39ee387b7f71e6c833d
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: '$._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation,
+    is_obsolete'
+  accessed_at: '2026-10-28T04:32:08.954539Z'
+  support: supports
+  summary: OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition
+    ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula
+    ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: '$._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation,
+    is_obsolete'
+  accessed_at: '2026-10-28T04:32:08.954615Z'
+  support: supports
+  summary: OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of
+    polysaccharides extracted from species of red algae. Its two main components are
+    agarose and agaropectin. Agarose is the component responsible for the high-strength
+    gelling properties of agar, while agaropectin provides the viscous properties.'];
+    formula None; mass None; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi30808
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30808
+  locator: '$._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation,
+    is_obsolete'
+  accessed_at: '2026-10-28T04:32:08.954743Z'
+  support: supports
+  summary: OLS current exact CHEBI:30808 = iron trichloride; definition []; formula
+    ['Cl3Fe']; mass ['162.204']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 3053606ef0cc9275ce2a4d374db1f6d2f61ceb59c93b3c69c5e0c437c121060c
+- evidence_id: chebi32599
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599
+  locator: '$._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation,
+    is_obsolete'
+  accessed_at: '2026-10-28T04:32:09.750975Z'
+  support: supports
+  summary: OLS current exact CHEBI:32599 = magnesium sulfate; definition ['A magnesium
+    salt having sulfate as the counterion.']; formula ['Mg.O4S']; mass ['120.368'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 5da4e37c63d52d06c19a75da5c03a8ba42e81db8b537a053285d895de8f2b9ff
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: '$._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation,
+    is_obsolete'
+  accessed_at: '2026-10-28T04:32:09.925616Z'
+  support: supports
+  summary: OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition
+    ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula
+    ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75215
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75215
+  locator: '$._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation,
+    is_obsolete'
+  accessed_at: '2026-10-28T04:32:09.943650Z'
+  support: supports
+  summary: OLS current exact CHEBI:75215 = sodium molybdate (anhydrous); definition
+    ['An inorganic sodium salt having molybdate as the counterion.']; formula ['MoO4.2Na'];
+    mass ['205.916']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: fc350638c78c930db3b38cb59bd48dc73b408d309f79ada3ee087a8fb207fb0e
+- evidence_id: mediadive1847page
+  kind: database
+  reference: https://mediadive.dsmz.de/medium/1847
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:33:04.227982Z'
+  support: supports
+  summary: Complete current source read, including exact identity, all formulation
+    rows, units and preparation. It establishes a formulation, not strain-specific
+    growth.
+  snapshot_sha256: 525ea1f5b59f80b6cdfe7af4a726948133c5a23316b8eeadca9f0476aba35fae
+- evidence_id: himediaM708
+  kind: primary_source
+  reference: https://www.himedialabs.com/media/TD/M708.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:33:05.194430Z'
+  support: supports
+  summary: Complete current source read, including exact identity, all formulation
+    rows, units and preparation. It establishes a formulation, not strain-specific
+    growth.
+  snapshot_sha256: 5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch055/record04/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T04:41:01.840442Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: 83bb2c8fbbd91fc2ab705c9b1f9f0fd46a1821a14209d98bde7c1ed86a495249
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/yaml_record_review/20260921T194357Z-Beijerinckia_medium_for_isolation.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:41:01.840485Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: e62cd62bde8c889ad67eaccbe136c559b6011d716aeaa15b106cbdec4020c3c5
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/beijerinckia_medium_for_isolation.yaml.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:41:01.840525Z'
+  support: supports
+  summary: Entire October report read, including seven unresolved direct rows and
+    eleven source-only objects. Current API 1847 raw bytes exactly match its cited
+    SHA256 ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a. This
+    authenticates cited payload content, not the historical retrieval timestamp or
+    old automated decisions. Current manufacturer/API identity now resolves the earlier
+    source-link uncertainty.
+  snapshot_sha256: 81e3ce52cba661b733b014b5663c9dd0b9cdc6c31908e211ebf03161d1e8bab8
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:41:01.840553Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: 51ab51a87cc4c418ecaee707dad723decbf423fa6e462ca4ba1689e1be79bd10
+- evidence_id: history3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Beijerinckia_medium_for_isolation.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:41:01.840576Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: 1ffadc9ee24bfca792f351309c607033a2b44aa9f77aed31a6c298ded07a6641
+- evidence_id: writer22
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _parse_api_solutions; _classify_preparation_action,
+    lines 725–764
+  accessed_at: '2026-10-28T04:50:44.715403Z'
+  support: context_only
+  summary: Current _parse_api_composition restricts direct ingredients to primary
+    recipe, skips stock additions and water, and prefers provider g_l; _parse_api_solutions
+    preserves referenced/percent stocks. This limits the old flattening attribution;
+    water needs preparation-volume representation and historical run provenance remains
+    separate. Current _classify_preparation_action checks temperature token °c in
+    the HEAT branch before the COOL branch, so the inspected cooling text matches
+    HEAT. This is a current classifier defect; it does not establish when the existing
+    record was generated.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer23
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:41:01.840638Z'
+  support: context_only
+  summary: Current formulation_content retains scientific fields, quantities, notes
+    and preparation; merge_formulation_evidence rejects incompatible scientific projections
+    and unions scoped evidence. Ingredient-set similarity does not prove scientific
+    equivalence.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer24
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:41:01.840661Z'
+  support: context_only
+  summary: Current group_formulations uses full formulation fingerprints for compatible
+    automatic merging; broader group_recipes discovers ingredient-set candidates only.
+    Neither grouping path substitutes for source verification.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer25
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:41:01.840685Z'
+  support: context_only
+  summary: Current merge_group returns a single owner with routing metadata, and calls
+    conservative merge_formulation_evidence for multiple owners. Current code supports
+    regenerating stale content after owner repair but does not authenticate old generated
+    outputs.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch055/record04/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T04:50:44.715745Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: afde4353fe83fe92cf6c99ea23ad9f7185bf6437e320849dffc55de0e791f0ef
+- evidence_id: preparation-action-schema
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  locator: enums.PreparationActionEnum.permissible_values.HEAT and COOL
+  accessed_at: '2026-10-28T04:50:44.715411Z'
+  support: supports
+  summary: HEAT means Apply heat; COOL means Cool to specified temperature. The cooling
+    action has an explicit existing enum.
+  snapshot_sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact 1847 and linked commercial source
+  outcome: supported
+  summary: The target and sole exact maintained owner represent MediaDive 1847, whose
+    current source identifies HiMedia M708. The manufacturer’s full two-page PDF and
+    current API agree on all seven formula values and pH. The API page labels 1847
+    an external/informal medium; preserve that source qualification rather than presenting
+    the unavailable DSMZ PDF as inspected. No DSM 111 sibling recipe is transferred.
+  target_ids:
+  - CultureMech:001269
+  evidence_ids:
+  - local0
+  - local1
+  - api1847
+  - mediadive1847page
+  - himediaM708
+  - dsm1847
+- assessment_id: a2
+  area: evidence
+  topic: Positive quantity support and historical scope
+  outcome: supported
+  summary: All 14 selected concentration fields agree with current explicit per-litre
+    sources. Preparation text includes final makeup, dissolution, sterilization and
+    cooling, but the cooling action enum is wrongly HEAT in both selected layers.
+    The current API hash authenticates the old report payload, while direct manufacturer
+    evidence resolves formulation support independently of old automated conflict
+    labels. Attached claims remain absent.
+  target_ids:
+  - CultureMech:001269
+  evidence_ids:
+  - api1847
+  - himediaM708
+  - history1
+- assessment_id: a3
+  area: scope
+  topic: Classification and unasserted growth
+  outcome: supported
+  summary: The defined soluble formulation classification agrees with the current
+    provider. Agar is explicitly the gelling polymer mixture; it is not assigned an
+    invented molecular weight. The manufacturer’s QC observations and limitations
+    are kept product-specific. The local record has no strain-growth claim; absence
+    of optional organism links is not a defect.
+  target_ids:
+  - CultureMech:001269
+  evidence_ids:
+  - api1847
+  - himediaM708
+  - chebi2509
+  - local0
+- assessment_id: a4
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 14 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:001269
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:001269",
+    "selected_concentration_field_count": 14, "selected_concentration_fields_covered":
+    14, "decisions": [{"decision_id": "q1", "subject": "KH2PO4", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path":
+    "ingredients[0].concentration", "original": {"value": "0.8", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "0.8", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit
+    per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit.
+    The current API explicitly supplies g_l and a make-up-to-1000-ml instruction,
+    and linked manufacturer M708 explicitly labels the same value Gms / Litre. This
+    is positive denominator evidence, not an inference from listed water. No attached
+    claim evidence is currently present.", "sources": [{"locator": "$.data.solutions[0].recipe[0]",
+    "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847",
+    "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.8,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.8,\n                        \"mmol_l\":
+    5.87868,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "himediaM708",
+    "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256":
+    "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256":
+    "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at":
+    "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Potassium dihydrogen phosphate                                              0.800",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q2", "subject":
+    "D-Sucrose", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "20", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "20", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit
+    per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit.
+    The current API explicitly supplies g_l and a make-up-to-1000-ml instruction,
+    and linked manufacturer M708 explicitly labels the same value Gms / Litre. This
+    is positive denominator evidence, not an inference from listed water. No attached
+    claim evidence is currently present.", "sources": [{"locator": "$.data.solutions[0].recipe[1]",
+    "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847",
+    "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"D-Sucrose\",\n                        \"compound_id\":
+    1358,\n                        \"amount\": 20,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 20,\n                        \"mmol_l\":
+    58.4283,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "himediaM708",
+    "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256":
+    "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256":
+    "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at":
+    "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Sucrose                                                                    20.000",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject":
+    "K2HPO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.2", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit
+    per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit.
+    The current API explicitly supplies g_l and a make-up-to-1000-ml instruction,
+    and linked manufacturer M708 explicitly labels the same value Gms / Litre. This
+    is positive denominator evidence, not an inference from listed water. No attached
+    claim evidence is currently present.", "sources": [{"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847",
+    "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.14826,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 8-8", "source_key": "himediaM708",
+    "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256":
+    "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256":
+    "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at":
+    "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Dipotassium hydrogen phosphate                                              0.200",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q4", "subject":
+    "MgSO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit
+    per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit.
+    The current API explicitly supplies g_l and a make-up-to-1000-ml instruction,
+    and linked manufacturer M708 explicitly labels the same value Gms / Litre. This
+    is positive denominator evidence, not an inference from listed water. No attached
+    claim evidence is currently present. Both named sources omit hydrate qualifiers;
+    the existing anhydrous formula is consistent with the supplied name. Do not substitute
+    a common hydrated salt or a molecular mass for an unspecified hydrate.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "api1847", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"MgSO4\",\n                        \"compound_id\":
+    325,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    4.15386,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 9-9", "source_key": "himediaM708",
+    "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256":
+    "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256":
+    "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at":
+    "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Magnesium sulphate                                                          0.500",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q5", "subject":
+    "FeCl3", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit
+    per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit.
+    The current API explicitly supplies g_l and a make-up-to-1000-ml instruction,
+    and linked manufacturer M708 explicitly labels the same value Gms / Litre. This
+    is positive denominator evidence, not an inference from listed water. No attached
+    claim evidence is currently present. Both named sources omit hydrate qualifiers;
+    the existing anhydrous formula is consistent with the supplied name. Do not substitute
+    a common hydrated salt or a molecular mass for an unspecified hydrate.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[4]", "source_key": "api1847", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"FeCl3\",\n                        \"compound_id\":
+    403,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.616523,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 10-10", "source_key": "himediaM708",
+    "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256":
+    "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256":
+    "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at":
+    "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Ferric chloride                                                             0.100",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q6", "subject":
+    "Na2MoO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.005", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.005", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit
+    per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit.
+    The current API explicitly supplies g_l and a make-up-to-1000-ml instruction,
+    and linked manufacturer M708 explicitly labels the same value Gms / Litre. This
+    is positive denominator evidence, not an inference from listed water. No attached
+    claim evidence is currently present. Both named sources omit hydrate qualifiers;
+    the existing anhydrous formula is consistent with the supplied name. Do not substitute
+    a common hydrated salt or a molecular mass for an unspecified hydrate.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[5]", "source_key": "api1847", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Na2MoO4\",\n                        \"compound_id\":
+    811,\n                        \"amount\": 0.005,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\":
+    0.0242801,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 11-11", "source_key": "himediaM708",
+    "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256":
+    "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256":
+    "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at":
+    "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Sodium molybdate                                                            0.005",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q7", "subject":
+    "Agar", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "15", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "15", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main formulation, explicit
+    per-litre basis", "interpretation": "Retain the current amount and G_PER_L unit.
+    The current API explicitly supplies g_l and a make-up-to-1000-ml instruction,
+    and linked manufacturer M708 explicitly labels the same value Gms / Litre. This
+    is positive denominator evidence, not an inference from listed water. No attached
+    claim evidence is currently present. Agar is a polymer mixture; no molecular formula
+    or molar concentration is asserted.", "sources": [{"locator": "$.data.solutions[0].recipe[6]",
+    "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847",
+    "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Agar\",\n                        \"compound_id\":
+    3,\n                        \"amount\": 15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 15,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 12-12", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf",
+    "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5",
+    "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64",
+    "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Agar                                                                       15.000",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q8", "subject":
+    "Final pH range", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml",
+    "field_path": "ph_range", "original": {"min": 6.3, "max": 6.7}}, {"record_path":
+    "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path":
+    "ph_range", "original": {"min": 6.3, "max": 6.7}}], "decision": "evidence_only",
+    "stage": "final-medium pH", "interpretation": "Retain 6.3–6.7. API min/max values
+    and manufacturer 6.5±0.2 agree; manufacturer specifies measurement at 25°C, which
+    is a source qualification rather than an incubation claim.", "sources": [{"locator":
+    "$.data.medium", "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847",
+    "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n            \"id\":
+    1847,\n            \"name\": \"Beijerinckia medium for isolation\",\n            \"complex_medium\":
+    \"no\",\n            \"min_pH\": 6.3,\n            \"max_pH\": 6.7,\n            \"source\":
+    \"DSMZ\",\n            \"description\": \"Available as M708 HIMEDIA\"\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines
+    13-13", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf",
+    "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5",
+    "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64",
+    "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Final pH
+    ( at 25°C)                                                       6.5±0.2", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q9", "subject": "Makeup volume
+    and HTML presentation", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Make up to <span
+    class=''amount'' data-volume=''1000''>1000</span> ml with distilled water."},
+    {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Make up to <span
+    class=''amount'' data-volume=''1000''>1000</span> ml with distilled water."}],
+    "decision": "evidence_only", "stage": "main-medium preparation", "interpretation":
+    "The API explicitly says make up to 1000 ml, supporting its listed G_PER_L basis.
+    Water is already represented in preparation and need not be falsely added as a
+    solute. Strip only HTML markup, retaining the exact make-up instruction. Manufacturer
+    powder directions instead say suspend in 1000 ml water; preserve that commercial-product
+    wording separately.", "sources": [{"locator": "$.data.solutions[0].steps[0]",
+    "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847",
+    "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"step\":
+    \"Make up to <span class=''amount'' data-volume=''1000''>1000</span> ml with distilled
+    water.\"\n                    }", "quote_representation": "raw JSON object"}]},
+    {"decision_id": "q10", "subject": "Boiling dissolution", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml", "field_path":
+    "preparation_steps[1].description", "original": "Heat to boiling to dissolve the
+    medium completely"}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml",
+    "field_path": "preparation_steps[1].description", "original": "Heat to boiling
+    to dissolve the medium completely"}], "decision": "evidence_only", "stage": "main-medium
+    preparation", "interpretation": "The API and manufacturer both require heating
+    to boiling until fully dissolved; no numeric boiling duration is supplied. Retain
+    the existing step.", "sources": [{"locator": "$.data.solutions[0].steps[1]", "source_key":
+    "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256":
+    "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "source_text_sha256":
+    "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a", "accessed_at":
+    "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"step\":
+    \"Heat to boiling to dissolve the medium completely\"\n                    }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q11", "subject":
+    "Sterilization", "local_fields": [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml",
+    "field_path": "preparation_steps[2].description", "original": "Autoclave at 121
+    °C for 15 min."}, {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml",
+    "field_path": "preparation_steps[2].description", "original": "Autoclave at 121
+    °C for 15 min."}], "decision": "evidence_only", "stage": "main-medium preparation",
+    "interpretation": "Retain 121°C for 15 minutes, explicitly supplied by both sources.
+    The manufacturer additionally states 15 lbs pressure; do not convert this bare
+    pressure expression to a different unit without further specification.", "sources":
+    [{"locator": "$.data.solutions[0].steps[2]", "source_key": "api1847", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1847", "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"step\":
+    \"Autoclave at 121 \\u00b0C for 15 min.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q12", "subject": "Cooling", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml",
+    "field_path": "preparation_steps[3].description", "original": "Cool down to 45-50°C."},
+    {"record_path": "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml",
+    "field_path": "preparation_steps[3].description", "original": "Cool down to 45-50°C."},
+    {"record_path": "data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml",
+    "field_path": "preparation_steps[3].action", "original": "HEAT"}, {"record_path":
+    "data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml", "field_path":
+    "preparation_steps[3].action", "original": "HEAT"}], "decision": "correct", "stage":
+    "main-medium preparation", "interpretation": "Retain the supported cooling description
+    and 45–50 °C range. Correct the separate action code from HEAT to COOL in the
+    maintained owner and regenerated target: both currently contradict their own cooling
+    description. This is a semantic action-code correction, not a temperature change
+    or an incubation condition.", "sources": [{"locator": "$.data.solutions[0].steps[3]",
+    "source_key": "api1847", "reference": "https://mediadive.dsmz.de/rest/medium/1847",
+    "source_raw_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "source_text_sha256": "ec420713c6dd905b5849ff1d89974ba0faa0561e3814dc49f669bb7bd33c286a",
+    "accessed_at": "2026-10-28T04:32:08.954339Z", "exact_source_quote": "{\n                        \"step\":
+    \"Cool down to 45-50\\u00b0C.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q13", "subject": "Commercial powder dose
+    and plate pouring", "local_fields": [], "decision": "evidence_only", "stage":
+    "HiMedia M708 commercial product only", "interpretation": "The manufacturer directs
+    36.6 g powder per 1000 ml water; the printed ingredient values sum 36.605 g and
+    the label permits formula adjustment. Do not replace individual recipe rows with
+    rounded powder dose or infer a different finished volume. Mixing and pouring into
+    sterile plates is a source-supported commercial completion instruction.", "sources":
+    [{"locator": "extracted-text lines 16-17", "source_key": "himediaM708", "reference":
+    "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5",
+    "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64",
+    "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Suspend 36.6
+    grams in 1000 ml distilled water. Heat to boiling to dissolve the medium completely.
+    Sterilize by autoclaving\nat 15 lbs pressure (121°C) for 15 minutes. Cool to 45-50°C.
+    Mix well and pour into sterile Petri plates.", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q14", "subject": "Manufacturer pressure",
+    "local_fields": [], "decision": "evidence_only", "stage": "HiMedia M708 sterilization",
+    "interpretation": "The manufacturer states 15 lbs pressure with 121 °C / 15 min.
+    The pressure wording is retained literally without interpreting an omitted pressure-area
+    unit. Current local temperature/time steps remain supported.", "sources": [{"locator":
+    "extracted-text lines 16-17", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf",
+    "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5",
+    "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64",
+    "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Suspend 36.6
+    grams in 1000 ml distilled water. Heat to boiling to dissolve the medium completely.
+    Sterilize by autoclaving\nat 15 lbs pressure (121°C) for 15 minutes. Cool to 45-50°C.
+    Mix well and pour into sterile Petri plates.", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q15", "subject": "Manufacturer quality-control
+    solution and temperature", "local_fields": [], "decision": "evidence_only", "stage":
+    "commercial QC only", "interpretation": "3.66% w/v and 25 °C describe the manufacturer
+    reaction/QC measurement, not a new ingredient dose or a culture-temperature requirement.",
+    "sources": [{"locator": "extracted-text lines 57-57", "source_key": "himediaM708",
+    "reference": "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256":
+    "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5", "source_text_sha256":
+    "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64", "accessed_at":
+    "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Reaction of 3.66% w/v aqueous
+    solution at 25°C. pH : 6.5±0.2", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q16", "subject": "Manufacturer gel comparison", "local_fields":
+    [], "decision": "evidence_only", "stage": "commercial QC only", "interpretation":
+    "The 1.5% agar-gel comparison is a QC description; the independent formulation
+    table already specifies 15 g/L agar. No additional agar is added.", "sources":
+    [{"locator": "extracted-text lines 48-48", "source_key": "himediaM708", "reference":
+    "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5",
+    "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64",
+    "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Firm,comparable
+    with 1.5% Agar gel", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q17", "subject": "Manufacturer cultural-response conditions", "local_fields":
+    [], "decision": "evidence_only", "stage": "product-specific QC observation", "interpretation":
+    "20–30°C and 18–48 hours belong only to the manufacturer’s stated QC organisms.
+    The selected record asserts no organism-specific growth; these conditions are
+    not generalized to all Beijerinckia or promoted to a growth claim.", "sources":
+    [{"locator": "extracted-text lines 61-61", "source_key": "himediaM708", "reference":
+    "https://www.himedialabs.com/media/TD/M708.pdf", "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5",
+    "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64",
+    "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Cultural
+    characteristics observed after an incubation at 20-30°C for 18-48 hours.", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q18", "subject": "Manufacturer
+    storage ranges", "local_fields": [], "decision": "evidence_only", "stage": "commercial
+    storage only", "interpretation": "10–30°C applies to the sealed powder and 20–30
+    °C to prepared medium per the label. These source-only product handling ranges
+    do not establish incubation conditions or a numeric shelf life.", "sources": [{"locator":
+    "extracted-text lines 68-68", "source_key": "himediaM708", "reference": "https://www.himedialabs.com/media/TD/M708.pdf",
+    "source_raw_sha256": "5238abab55d42d555ea4358bc8163be8f874cc744801a5961cda0d3ee76a2ba5",
+    "source_text_sha256": "99a2dc54644a2fe179ad17054ecb5621efee129d7a99b9ac1b8b7cbd82504f64",
+    "accessed_at": "2026-10-28T04:33:05.194430Z", "exact_source_quote": "Store between
+    10-30°C in a tightly closed container and the prepared medium at 20-30°C. Use
+    before expiry date on the", "quote_representation": "captured extracted text"}]}],
+    "local_field_census_reference": "REVIEW_WORK/batch055/record04/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a5
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: concern
+  summary: 'data/merge_yaml/merged/Beijerinckia_medium_for_isolation.yaml: primary
+    6/7, secondary 6/7; data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml:
+    primary 6/7, secondary 6/7. These are ingredient-instance linkage fractions, not
+    accuracy scores. Solution terms are audited separately. Every actually asserted
+    CHEBI/UBERON term is joined to its exact current OLS object and packaged MIM CSV
+    rows. Zero numeric legacy MediaIngredientMech identifiers occur in the full selected
+    documents; NNNNNN is a historical placeholder, not an ID. No percentage is calculated
+    for the empty identifier set of record06. Complex commercial/product components
+    are not forced to pure-compound IDs.'
+  target_ids:
+  - CultureMech:001269
+  evidence_ids:
+  - grounding
+- assessment_id: a6
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:001269
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-001269-sucrose-linkage
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Sucrose remains ungrounded despite a supported canonical candidate
+  description: Both selected layers omit primary and secondary terms for D-Sucrose.
+    Current OLS CHEBI:17992 is sucrose. The packaged MIM index has a REJECTED D-Sucrose
+    preferred row 3484 but a MAPPED D-Sucrose synonym row 3485 and MAPPED Sucrose
+    row 8210 for the same identifier. Preserve that distinction instead of treating
+    rejection of one alias as chemical invalidity.
+  target_ids:
+  - CultureMech:001269
+  field_paths:
+  - ingredients[1].term
+  - ingredients[1].mediaingredientmech_chebi_term
+  evidence_ids:
+  - chebi17992
+  - grounding
+  - api1847
+  - himediaM708
+  rule_id: missing-source-supported-sucrose-linkage
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-001269-html-preparation
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The makeup instruction contains source HTML
+  description: Both selected layers retain the literal span markup around 1000 ml.
+    The underlying instruction is correct and supports the final-volume basis; presentation
+    cleanup must preserve its make-up-to meaning. Current MediaDive preparation parsing
+    retains source step text verbatim.
+  target_ids:
+  - CultureMech:001269
+  field_paths:
+  - preparation_steps[0].description
+  evidence_ids:
+  - api1847
+  - local0
+  - local1
+  rule_id: source-text-presentation
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-001269-claim-traceability
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source references and claim evidence are absent
+  description: Both selected documents lack structured references and attached formulation
+    evidence. The API/source version, external-medium qualification and linked manufacturer
+    basis should be retained alongside otherwise supported amounts; source availability
+    is not the same as an attached evidence trail.
+  target_ids:
+  - CultureMech:001269
+  field_paths:
+  - references
+  - ingredients[*].evidence
+  - notes
+  evidence_ids:
+  - api1847
+  - mediadive1847page
+  - himediaM708
+  - grounding
+  rule_id: source-specific-formulation-fidelity
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-001269-cooling-action-coded-as-heat
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Cooling is incorrectly represented by the HEAT action
+  description: Both selected layers describe cooling to 45–50 °C but assign HEAT to
+    preparation_steps[3].action. The API and manufacturer support the existing cooling
+    text and temperature; the schema provides COOL. The inspected importer tests °c
+    in its HEAT branch before checking cooling words, a current classification defect
+    distinct from historical execution.
+  target_ids:
+  - CultureMech:001269
+  field_paths:
+  - preparation_steps[3].action
+  - data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml::preparation_steps[3].action
+  evidence_ids:
+  - local0
+  - local1
+  - api1847
+  - himediaM708
+  - writer22
+  - preparation-action-schema
+  rule_id: preparation-action-source-consistency
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because a bounded action enum contradicts
+    correct preparation text; the ingredient amounts and cooling temperature remain
+    supported.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Add a source-specific canonical sucrose linkage through the maintained
+    resolver, preserving the source D-Sucrose name and reviewing the exact accepted
+    CSV row. Do not resurrect a rejected preferred alias.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001269
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Remove source markup from the maintained preparation description, retaining
+    the exact 1000 ml makeup instruction; assess the current importer’s text-cleaning
+    boundary and regenerate the target.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001269
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Attach exact version-scoped API/manufacturer references and short amount/basis
+    evidence; preserve current values and source distinctions. Do not claim the failed
+    DSMZ PDF was inspected.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001269
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action4
+  description: Correct the maintained cooling action to COOL while retaining the exact
+    supported description and 45–50 °C range, then regenerate the target.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001269
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beijerinckia_medium_for_isolation.yaml
+    role: maintained normalized contributor
+  generator: Review the inspected _classify_preparation_action ordering so a temperature
+    token does not override an explicit cooling instruction; repair the maintained
+    owner and regenerate through the conservative merger.
+  acceptance_checks:
+  - Both selected layers use COOL at preparation_steps[3].action; their description
+    and temperature remain unchanged.
+  - Verify cooling classification and preserve distinct heating/autoclave behavior
+    in the maintained importer; rerun canonical checks on changed maintained inputs
+    and review regenerated output.
+limitations:
+- The DSMZ 1847 PDF URL returned 404; the preserved error body is not recipe evidence.
+  Current API plus linked manufacturer PDF supply the stated formulation support.
+- The manufacturer PDF is revision 02/2020 accessed now; current API bytes match the
+  October report digest but do not authenticate that historical retrieval event. Manufacturer
+  QC organisms/conditions are not generalized to the selected record.
+- MIM support refers only to packaged commit 6643131b0f12ab40b66f98135245fca04027e0e9.
+  Accepted and rejected alias rows are distinct; current mapping does not establish
+  historical validity.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
+```

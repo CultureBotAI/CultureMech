@@ -1,0 +1,1073 @@
+schema_version: 1.0.0
+review_id: 20261028T043854Z-batch055-record01-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Basal synthetic medium: source-limited formulation and unsupported preparation'
+started_at: '2026-10-28T04:31:37.306270Z'
+finished_at: '2026-10-28T04:38:54.708709Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Current MediaDB endpoints are unavailable and the publisher full text is
+  inaccessible. All seven local amounts remain unverified against primary formulation
+  evidence. The maintained owner already has qualified paper and species metadata;
+  the generated record is stale, and both retain generic source-unverified preparation.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Basal_synthetic_medium.yaml
+    sha256: bd7bc8e939b053ba5ba4df8efbb651fd4f8ce0be52a64484eee91b94b4ef99e5
+    role: target
+  - path: data/normalized_yaml/bacterial/basal_synthetic_medium.yaml
+    sha256: 1fb9a12e0cbc093b93e0ab746c3d8d6271fa3a2ff84d42cee14692b47a12e161
+    role: context
+  - path: data/normalized_yaml/bacterial/basal_synthetic_medium_vitamins.yaml
+    sha256: 5d87e33a501cd9c1d252956988dd06a7c83701334e3054fa31ced6b5749c6bb5
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-mediadb-exceptions/remaining-live-comparison.json
+    sha256: 378f054ab156db20b86074131b3a0254061726461814c8de23d035a3934907aa
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-mediadb-exceptions/remaining-source-dispositions.json
+    sha256: 329c67710bbd12e6ac94d404dff1e01b1c3e653e757f4ba006359e2bf81417b1
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Basal_synthetic_medium.md
+    sha256: 4b7d81c8bfa56d4f33be50ea9ff81983fe6933ceb937ef0c6faccaa23007b485
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/basal_synthetic_medium.md
+    sha256: cdf56ea3a0ba5e7f468087ce535f9235f3a95726381688a3b5752e14c98f1a96
+    role: context
+  - path: reports/yaml_record_review/20260921T185226Z-Basal_synthetic_medium.md
+    sha256: 5d17b9d84d179d5a4bc7410d0474925a3fe0c2b6f43d127789c54e2ccde4e83e
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; external source
+    limits explicitly retained.
+  selection: Actual batch055 native selection index 01.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007204
+targets:
+- target_id: CultureMech:007204
+  path: data/merge_yaml/merged/Basal_synthetic_medium.yaml
+  label: basal_synthetic_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_synthetic_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:007204
+  command: just validate-schema data/merge_yaml/merged/Basal_synthetic_medium.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:007204
+  command: just validate-strict data/merge_yaml/merged/Basal_synthetic_medium.yaml
+    --out REVIEW_WORK/batch055/record01/strict.tsv
+    --workers 1
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:007204
+  command: just validate-terms data/merge_yaml/merged/Basal_synthetic_medium.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:007204
+  command: just validate-references data/merge_yaml/merged/Basal_synthetic_medium.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/Basal_synthetic_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T04:38:54.683503Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: bd7bc8e939b053ba5ba4df8efbb651fd4f8ce0be52a64484eee91b94b4ef99e5
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/basal_synthetic_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T04:38:54.683503Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 1fb9a12e0cbc093b93e0ab746c3d8d6271fa3a2ff84d42cee14692b47a12e161
+- evidence_id: mediadb301
+  kind: database
+  reference: https://mediadb.systemsbiology.net/defined_media/media/301/
+  locator: Exact response status or source identity object; no inaccessible recipe
+    inferred
+  accessed_at: '2026-10-28T04:32:45.119863Z'
+  support: unknown
+  summary: Exact Medium 301 endpoint returned HTTP 502; no formulation authenticated.
+  snapshot_sha256: 76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273
+- evidence_id: mediadb301text
+  kind: database
+  reference: https://mediadb.systemsbiology.net/defined_media/media_text/301/
+  locator: Exact response status or source identity object; no inaccessible recipe
+    inferred
+  accessed_at: '2026-10-28T04:32:45.155897Z'
+  support: unknown
+  summary: Exact Medium 301 text export returned HTTP 502; no amount, form or denominator
+    authenticated.
+  snapshot_sha256: 76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273
+- evidence_id: mediadb111
+  kind: database
+  reference: https://mediadb.systemsbiology.net/defined_media/sources/111/
+  locator: Exact response status or source identity object; no inaccessible recipe
+    inferred
+  accessed_at: '2026-10-28T04:32:45.115364Z'
+  support: unknown
+  summary: Exact source 111 endpoint returned HTTP 502; its historical association
+    remains a derivative lead.
+  snapshot_sha256: 76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273
+- evidence_id: publisher1996
+  kind: database
+  reference: https://academic.oup.com/jimb/article/17/2/96/5939956
+  locator: Exact response status or source identity object; no inaccessible recipe
+    inferred
+  accessed_at: '2026-10-28T04:32:44.929522Z'
+  support: unknown
+  summary: Exact publisher article endpoint returned HTTP 403. Bibliography is separately
+    checked against Crossref, but no complete primary formula or strain outcome was
+    read.
+  snapshot_sha256: ad0c181fe3ef3eb699547d26453a226012ddf107f2b942b49d6e9c38591a040e
+- evidence_id: crossref1996
+  kind: database
+  reference: https://api.crossref.org/works/10.1007/BF01570050
+  locator: Exact response status or source identity object; no inaccessible recipe
+    inferred
+  accessed_at: '2026-10-28T04:32:45.322435Z'
+  support: supports
+  summary: Current DOI object verifies title, authors, journal, year and pages for
+    Hewitt and Solomons 1996. Bibliographic metadata does not authenticate MediaDB
+    301 amounts.
+  snapshot_sha256: 57805b11af64da782296bef9da9783cc25c7e81a5c7930db36dbca1631c184d0
+- evidence_id: tax1390
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1390&retmode=xml
+  locator: Exact response status or source identity object; no inaccessible recipe
+    inferred
+  accessed_at: '2026-10-28T04:32:45.476182Z'
+  support: supports
+  summary: Current NCBI Taxon 1390 is Bacillus amyloliquefaciens at species rank;
+    no B20 strain node or growth outcome is thereby verified.
+  snapshot_sha256: d8f883ef504ad2fe25dc4818ba6f1c24df1d827bf973c70349934069096a0ae7
+- evidence_id: historical-parent
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261009-mediadb-exceptions/remaining-live-comparison.json
+  locator: $.records[72]
+  accessed_at: '2026-10-28T04:38:54.683503Z'
+  support: context_only
+  summary: Exact records[72] preserves seven MediaDB amount strings, old access time
+    and reported external raw digest. This is a decoded historical table, not that
+    original response.
+  snapshot_sha256: 378f054ab156db20b86074131b3a0254061726461814c8de23d035a3934907aa
+- evidence_id: historical-disposition
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261009-mediadb-exceptions/remaining-source-dispositions.json
+  locator: $.records[72]
+  accessed_at: '2026-10-28T04:38:54.683503Z'
+  support: context_only
+  summary: Exact records[72] explicitly classifies database evidence as a candidate
+    and says the primary article was not independently verified.
+  snapshot_sha256: 329c67710bbd12e6ac94d404dff1e01b1c3e653e757f4ba006359e2bf81417b1
+- evidence_id: comparison-302
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/basal_synthetic_medium_vitamins.yaml
+  locator: Whole comparison record; selected scope remains Medium 301
+  accessed_at: '2026-10-28T04:38:54.683503Z'
+  support: context_only
+  summary: 'Complete comparison record read: Medium 302 is a different accession with
+    six additional amino-acid entries and the same seven basal entries. Its + vitamins
+    name does not authorize transferring those entries or resolving the title discrepancy.'
+  snapshot_sha256: 5d87e33a501cd9c1d252956988dd06a7c83701334e3054fa31ced6b5749c6bb5
+- evidence_id: writer-mediadb
+  kind: record_content
+  reference: src/culturemech/import/mediadb_importer.py
+  locator: _create_preparation_steps
+  accessed_at: '2026-10-28T04:38:54.683503Z'
+  support: context_only
+  summary: _create_preparation_steps unconditionally returns generic dissolution,
+    conditional pH adjustment and 0.22 μm filtration. This current implementation
+    explains a supported writer concern, but does not prove which historical version
+    executed.
+  snapshot_sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T04:38:54.683503Z'
+  support: context_only
+  summary: merge_group copies a sole input and adds merge metadata; multiple inputs
+    are passed to merge_formulation_evidence. It does not independently verify source
+    chemistry or growth.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: merge_formulation_evidence
+  accessed_at: '2026-10-28T04:38:54.683503Z'
+  support: context_only
+  summary: merge_formulation_evidence rejects unequal formulation content before unioning
+    evidence. Ingredient-set similarity alone cannot merge MediaDB 301 and 302.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Basal_synthetic_medium.md
+  locator: Entire report; exact Record header and all claim rows
+  accessed_at: '2026-10-28T04:38:54.683503Z'
+  support: context_only
+  summary: Full exact selected-path historical report read. Its past source-access
+    statements and snippets are derivative evidence; the cited raw response is not
+    automatically authenticated.
+  snapshot_sha256: 4b7d81c8bfa56d4f33be50ea9ff81983fe6933ceb937ef0c6faccaa23007b485
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/basal_synthetic_medium.md
+  locator: Entire report; exact Record header and all claim rows
+  accessed_at: '2026-10-28T04:38:54.683503Z'
+  support: context_only
+  summary: Full exact selected-path historical report read. Its past source-access
+    statements and snippets are derivative evidence; the cited raw response is not
+    automatically authenticated.
+  snapshot_sha256: cdf56ea3a0ba5e7f468087ce535f9235f3a95726381688a3b5752e14c98f1a96
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/yaml_record_review/20260921T185226Z-Basal_synthetic_medium.md
+  locator: Entire report; exact Record header and all claim rows
+  accessed_at: '2026-10-28T04:38:54.683503Z'
+  support: context_only
+  summary: Full exact selected-path historical report read. Its past source-access
+    statements and snippets are derivative evidence; the cited raw response is not
+    automatically authenticated.
+  snapshot_sha256: 5d17b9d84d179d5a4bc7410d0474925a3fe0c2b6f43d127789c54e2ccde4e83e
+- evidence_id: historical-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch055/record01/historical-reader.json
+  accessed_at: '2026-10-28T04:38:54.701083Z'
+  support: context_only
+  summary: Complete selected target/owner historical reports and exact report hashes,
+    preserving derivative-only limits.
+  snapshot_sha256: 80a4353abb7e5c7865003ea3e31d61b838154e720245f0e96a0bece2e6c5fa29
+- evidence_id: chebi17716
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17716
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T04:32:48.384829Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 21afa6cbe329e45dbf0cdd821633220f599d7c350474427320f01f62e1112c21
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63036
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T04:32:51.446529Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 913baf38abc38dd61f05c5d636fd6532b70a668673a1f5762f290d2b67270164
+- evidence_id: chebi32599
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32599
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T04:32:49.959889Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 1a3fd204bffef0735a8d1a12385aec1c330013f84a182acc909368cd164cf821
+- evidence_id: chebi75832
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75832
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T04:32:52.401632Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: fd686a9e6d5104d672f21eeb02270fd8f8a784429067af010f7bc770c0fb003f
+- evidence_id: chebi75215
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75215
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T04:32:52.199717Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2a2ccf769ab7340ca24e1b7c62a25cb0cec628fac694515cad689eed7c6dd6dd
+- evidence_id: chebi23414
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_23414
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T04:32:48.775539Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 0ed87acd6d032fb3c4c4fc39c6b55a6b7f3b24cbd76413d308f371a8211502b7
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch055/record01/quantity-inventory.json
+  accessed_at: '2026-10-28T04:38:54.708036Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: 9562801177c1ccf06e5637fb33768939c03b733af45725c01bc21acd38ee0761
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch055/record01/grounding-inventory.json
+  accessed_at: '2026-10-28T04:38:54.708137Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: 112d36859ce0a046133fee2d0cc8e0519c3abfc6cd2a2b4cee09a6d3aeb8eb93
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch055/record01/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T04:38:54.708231Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: 78eb19ee717fb87fd7186778253e03067a8604dbc97ddd43f77427a396566464
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch055/record01/scalar-census.json
+  accessed_at: '2026-10-28T04:38:54.708272Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 2cdd023595d0f51811a853d281c0c621f1c068e0f4cb72aca4f3130576592d65
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch055/record01/validate-schema.json
+  accessed_at: '2026-10-28T04:31:38.781522Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: 4af48924b5bd5e6a680d93fea26b9dd536c4e4690d10f8cb9a390405ddbfac8e
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch055/record01/validate-strict.json
+  accessed_at: '2026-10-28T04:31:40.603903Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch055/record01/strict.tsv\n"
+  snapshot_sha256: e0eedfb27fbb9d48a1b2ffcd1825f3470daa806bd12d205030e582fdcde628bf
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch055/record01/validate-terms.json
+  accessed_at: '2026-10-28T04:31:43.302586Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 0d9b5dce5ea8100a3284a951c113030a366c7b95351244961bc63ba5905f85b8
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch055/record01/validate-references.json
+  accessed_at: '2026-10-28T04:31:44.346522Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: 11aeba3f67e40671bbf95bcea5dd2da5b0aa8d3adaa31261b5d22b382e42fa29
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact source and comparison boundary
+  outcome: supported
+  summary: The selected generated record has one maintained Medium 301 contributor.
+    Medium 302 is comparison context only; its six extra amino-acid entries are not
+    imported. Generic applications do not establish growth in any strain.
+  target_ids:
+  - CultureMech:007204
+  evidence_ids:
+  - local-target
+  - owner-1
+  - comparison-302
+- assessment_id: a2
+  area: grounding
+  topic: Current chemical correspondence and source-form limit
+  outcome: unknown
+  summary: Asserted CHEBI IDs and labels match current OLS objects. However, generic
+    magnesium sulfate versus hydrated source claims and ungrounded ammonium phosphate
+    cannot be resolved from inaccessible current MediaDB exports. Anhydrous iron sulfate
+    and molybdate IDs describe those ontology objects, not independently verified
+    supplied forms. KEGG:lcts is a symbolic cross-reference, not a verified KEGG compound
+    accession. MIM ontology-linked hydrate rows are not evidence for a recipe hydrate.
+  target_ids:
+  - CultureMech:007204
+  evidence_ids:
+  - grounding
+  - mediadb301text
+  - historical-3
+- assessment_id: a3
+  area: evidence
+  topic: Existing owner citation and species qualification
+  outcome: supported
+  summary: Credit the maintained owner’s October citation and its explicit formulation/strain
+    limits. Current Crossref verifies the bibliographic identity and NCBI verifies
+    species rank. Neither proves all seven amounts, the exact B20 designation, historical
+    abstract transcription or a growth measurement.
+  target_ids:
+  - CultureMech:007204
+  evidence_ids:
+  - owner-1
+  - crossref1996
+  - tax1390
+- assessment_id: a4
+  area: quantity
+  topic: Complete quantity and numeric preparation audit
+  outcome: concern
+  summary: Every local concentration field has an explicit disposition; source-only
+    doses, batch volumes and conditional preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:007204
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "Lactose", "source": {"evidence_id": "mediadb301text",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media_text/301/",
+    "raw_path": "REVIEW_WORK/batch055/source01-03/mediadb301text.bin",
+    "raw_sha256": "76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273",
+    "locator": "HTTP 502; failed current formulation lookup", "accessed_at": "2026-10-28T04:32:45.155897+00:00",
+    "historical_derivative": {"reference": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/remaining-live-comparison.json",
+    "snapshot_sha256": "378f054ab156db20b86074131b3a0254061726461814c8de23d035a3934907aa",
+    "locator": "$.records[72].rows.238", "quote": "Lactose 233.7", "reported_external_raw_sha256":
+    "0c880223cd9b97cfeb330931c0723f2850982aad4acb36762c793ae848206806", "reported_accessed_at":
+    "2026-10-09T18:53:04.331293+00:00", "raw_authenticated": false}}, "decision":
+    "unsupported", "rationale": "Retain the existing amount without endorsing or changing
+    it. The decoded historical MediaDB row agrees numerically, but the current endpoint/export
+    failed and the original external raw response has not been recovered in the two
+    inspected report parents. No primary formula, supplied form or conversion is newly
+    authenticated.", "layer_assessments": [{"path": "data/merge_yaml/merged/Basal_synthetic_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "233.7",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}, {"path": "data/normalized_yaml/bacterial/basal_synthetic_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "233.7",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}]}, {"quantity_id":
+    "q2", "topic": "Ammonium phosphate", "source": {"evidence_id": "mediadb301text",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media_text/301/",
+    "raw_path": "REVIEW_WORK/batch055/source01-03/mediadb301text.bin",
+    "raw_sha256": "76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273",
+    "locator": "HTTP 502; failed current formulation lookup", "accessed_at": "2026-10-28T04:32:45.155897+00:00",
+    "historical_derivative": {"reference": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/remaining-live-comparison.json",
+    "snapshot_sha256": "378f054ab156db20b86074131b3a0254061726461814c8de23d035a3934907aa",
+    "locator": "$.records[72].rows.16430", "quote": "Ammonium phosphate 121.2", "reported_external_raw_sha256":
+    "0c880223cd9b97cfeb330931c0723f2850982aad4acb36762c793ae848206806", "reported_accessed_at":
+    "2026-10-09T18:53:04.331293+00:00", "raw_authenticated": false}}, "decision":
+    "unsupported", "rationale": "Retain the existing amount without endorsing or changing
+    it. The decoded historical MediaDB row agrees numerically, but the current endpoint/export
+    failed and the original external raw response has not been recovered in the two
+    inspected report parents. No primary formula, supplied form or conversion is newly
+    authenticated.", "layer_assessments": [{"path": "data/merge_yaml/merged/Basal_synthetic_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "121.2",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}, {"path": "data/normalized_yaml/bacterial/basal_synthetic_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "121.2",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}]}, {"quantity_id":
+    "q3", "topic": "Potassium dihydrogen phosphate", "source": {"evidence_id": "mediadb301text",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media_text/301/",
+    "raw_path": "REVIEW_WORK/batch055/source01-03/mediadb301text.bin",
+    "raw_sha256": "76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273",
+    "locator": "HTTP 502; failed current formulation lookup", "accessed_at": "2026-10-28T04:32:45.155897+00:00",
+    "historical_derivative": {"reference": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/remaining-live-comparison.json",
+    "snapshot_sha256": "378f054ab156db20b86074131b3a0254061726461814c8de23d035a3934907aa",
+    "locator": "$.records[72].rows.16391", "quote": "Potassium dihydrogen phosphate
+    11.0", "reported_external_raw_sha256": "0c880223cd9b97cfeb330931c0723f2850982aad4acb36762c793ae848206806",
+    "reported_accessed_at": "2026-10-09T18:53:04.331293+00:00", "raw_authenticated":
+    false}}, "decision": "unsupported", "rationale": "Retain the existing amount without
+    endorsing or changing it. The decoded historical MediaDB row agrees numerically,
+    but the current endpoint/export failed and the original external raw response
+    has not been recovered in the two inspected report parents. No primary formula,
+    supplied form or conversion is newly authenticated.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/Basal_synthetic_medium.yaml", "field_path": "ingredients[2].concentration",
+    "stored_value": {"value": "11.0", "unit": "MILLIMOLAR"}, "decision": "unsupported",
+    "rationale": "Retain the existing amount without endorsing or changing it. The
+    decoded historical MediaDB row agrees numerically, but the current endpoint/export
+    failed and the original external raw response has not been recovered in the two
+    inspected report parents. No primary formula, supplied form or conversion is newly
+    authenticated."}, {"path": "data/normalized_yaml/bacterial/basal_synthetic_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "11.0",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}]}, {"quantity_id":
+    "q4", "topic": "Magnesium sulfate", "source": {"evidence_id": "mediadb301text",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media_text/301/",
+    "raw_path": "REVIEW_WORK/batch055/source01-03/mediadb301text.bin",
+    "raw_sha256": "76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273",
+    "locator": "HTTP 502; failed current formulation lookup", "accessed_at": "2026-10-28T04:32:45.155897+00:00",
+    "historical_derivative": {"reference": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/remaining-live-comparison.json",
+    "snapshot_sha256": "378f054ab156db20b86074131b3a0254061726461814c8de23d035a3934907aa",
+    "locator": "$.records[72].rows.16394", "quote": "Magnesium sulfate 0.0812", "reported_external_raw_sha256":
+    "0c880223cd9b97cfeb330931c0723f2850982aad4acb36762c793ae848206806", "reported_accessed_at":
+    "2026-10-09T18:53:04.331293+00:00", "raw_authenticated": false}}, "decision":
+    "unsupported", "rationale": "Retain the existing amount without endorsing or changing
+    it. The decoded historical MediaDB row agrees numerically, but the current endpoint/export
+    failed and the original external raw response has not been recovered in the two
+    inspected report parents. No primary formula, supplied form or conversion is newly
+    authenticated.", "layer_assessments": [{"path": "data/merge_yaml/merged/Basal_synthetic_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0812",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}, {"path": "data/normalized_yaml/bacterial/basal_synthetic_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0812",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}]}, {"quantity_id":
+    "q5", "topic": "Ferrous sulfate", "source": {"evidence_id": "mediadb301text",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media_text/301/",
+    "raw_path": "REVIEW_WORK/batch055/source01-03/mediadb301text.bin",
+    "raw_sha256": "76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273",
+    "locator": "HTTP 502; failed current formulation lookup", "accessed_at": "2026-10-28T04:32:45.155897+00:00",
+    "historical_derivative": {"reference": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/remaining-live-comparison.json",
+    "snapshot_sha256": "378f054ab156db20b86074131b3a0254061726461814c8de23d035a3934907aa",
+    "locator": "$.records[72].rows.16397", "quote": "Ferrous sulfate 0.072", "reported_external_raw_sha256":
+    "0c880223cd9b97cfeb330931c0723f2850982aad4acb36762c793ae848206806", "reported_accessed_at":
+    "2026-10-09T18:53:04.331293+00:00", "raw_authenticated": false}}, "decision":
+    "unsupported", "rationale": "Retain the existing amount without endorsing or changing
+    it. The decoded historical MediaDB row agrees numerically, but the current endpoint/export
+    failed and the original external raw response has not been recovered in the two
+    inspected report parents. No primary formula, supplied form or conversion is newly
+    authenticated.", "layer_assessments": [{"path": "data/merge_yaml/merged/Basal_synthetic_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.072",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}, {"path": "data/normalized_yaml/bacterial/basal_synthetic_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.072",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}]}, {"quantity_id":
+    "q6", "topic": "Sodium molybdate", "source": {"evidence_id": "mediadb301text",
+    "reference": "https://mediadb.systemsbiology.net/defined_media/media_text/301/",
+    "raw_path": "REVIEW_WORK/batch055/source01-03/mediadb301text.bin",
+    "raw_sha256": "76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273",
+    "locator": "HTTP 502; failed current formulation lookup", "accessed_at": "2026-10-28T04:32:45.155897+00:00",
+    "historical_derivative": {"reference": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/remaining-live-comparison.json",
+    "snapshot_sha256": "378f054ab156db20b86074131b3a0254061726461814c8de23d035a3934907aa",
+    "locator": "$.records[72].rows.13862", "quote": "Sodium molybdate 0.00827", "reported_external_raw_sha256":
+    "0c880223cd9b97cfeb330931c0723f2850982aad4acb36762c793ae848206806", "reported_accessed_at":
+    "2026-10-09T18:53:04.331293+00:00", "raw_authenticated": false}}, "decision":
+    "unsupported", "rationale": "Retain the existing amount without endorsing or changing
+    it. The decoded historical MediaDB row agrees numerically, but the current endpoint/export
+    failed and the original external raw response has not been recovered in the two
+    inspected report parents. No primary formula, supplied form or conversion is newly
+    authenticated.", "layer_assessments": [{"path": "data/merge_yaml/merged/Basal_synthetic_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.00827",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}, {"path": "data/normalized_yaml/bacterial/basal_synthetic_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.00827",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}]}, {"quantity_id":
+    "q7", "topic": "Cupric sulfate", "source": {"evidence_id": "mediadb301text", "reference":
+    "https://mediadb.systemsbiology.net/defined_media/media_text/301/", "raw_path":
+    "REVIEW_WORK/batch055/source01-03/mediadb301text.bin",
+    "raw_sha256": "76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273",
+    "locator": "HTTP 502; failed current formulation lookup", "accessed_at": "2026-10-28T04:32:45.155897+00:00",
+    "historical_derivative": {"reference": "reports/ingredient_concentration_curation/20261009-mediadb-exceptions/remaining-live-comparison.json",
+    "snapshot_sha256": "378f054ab156db20b86074131b3a0254061726461814c8de23d035a3934907aa",
+    "locator": "$.records[72].rows.16405", "quote": "Cupric sulfate 0.0401", "reported_external_raw_sha256":
+    "0c880223cd9b97cfeb330931c0723f2850982aad4acb36762c793ae848206806", "reported_accessed_at":
+    "2026-10-09T18:53:04.331293+00:00", "raw_authenticated": false}}, "decision":
+    "unsupported", "rationale": "Retain the existing amount without endorsing or changing
+    it. The decoded historical MediaDB row agrees numerically, but the current endpoint/export
+    failed and the original external raw response has not been recovered in the two
+    inspected report parents. No primary formula, supplied form or conversion is newly
+    authenticated.", "layer_assessments": [{"path": "data/merge_yaml/merged/Basal_synthetic_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0401",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}, {"path": "data/normalized_yaml/bacterial/basal_synthetic_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0401",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Retain the existing
+    amount without endorsing or changing it. The decoded historical MediaDB row agrees
+    numerically, but the current endpoint/export failed and the original external
+    raw response has not been recovered in the two inspected report parents. No primary
+    formula, supplied form or conversion is newly authenticated."}]}, {"quantity_id":
+    "q8", "topic": "Generic preparation step 1", "source": {"evidence_id": "writer-mediadb",
+    "reference": "src/culturemech/import/mediadb_importer.py", "snapshot_sha256":
+    "5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0", "locator":
+    "_create_preparation_steps", "quote": "Dissolve all ingredients in distilled water
+    to specified concentrations"}, "decision": "unsupported", "rationale": "This instruction
+    exactly matches the current importer template; neither current failed source response
+    nor bibliography establishes it as the original protocol. Preserve as unresolved
+    history and remove or replace the asserted protocol only through source-grounded
+    owner curation.", "layer_assessments": [{"path": "data/merge_yaml/merged/Basal_synthetic_medium.yaml",
+    "field_path": "preparation_steps[0].description", "stored_value": "Dissolve all
+    ingredients in distilled water to specified concentrations", "decision": "unsupported",
+    "rationale": "This instruction exactly matches the current importer template;
+    neither current failed source response nor bibliography establishes it as the
+    original protocol. Preserve as unresolved history and remove or replace the asserted
+    protocol only through source-grounded owner curation."}, {"path": "data/normalized_yaml/bacterial/basal_synthetic_medium.yaml",
+    "field_path": "preparation_steps[0].description", "stored_value": "Dissolve all
+    ingredients in distilled water to specified concentrations", "decision": "unsupported",
+    "rationale": "This instruction exactly matches the current importer template;
+    neither current failed source response nor bibliography establishes it as the
+    original protocol. Preserve as unresolved history and remove or replace the asserted
+    protocol only through source-grounded owner curation."}]}, {"quantity_id": "q9",
+    "topic": "Generic preparation step 2", "source": {"evidence_id": "writer-mediadb",
+    "reference": "src/culturemech/import/mediadb_importer.py", "snapshot_sha256":
+    "5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0", "locator":
+    "_create_preparation_steps", "quote": "Adjust pH if specified in original formulation"},
+    "decision": "unsupported", "rationale": "This instruction exactly matches the
+    current importer template; neither current failed source response nor bibliography
+    establishes it as the original protocol. Preserve as unresolved history and remove
+    or replace the asserted protocol only through source-grounded owner curation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/Basal_synthetic_medium.yaml",
+    "field_path": "preparation_steps[1].description", "stored_value": "Adjust pH if
+    specified in original formulation", "decision": "unsupported", "rationale": "This
+    instruction exactly matches the current importer template; neither current failed
+    source response nor bibliography establishes it as the original protocol. Preserve
+    as unresolved history and remove or replace the asserted protocol only through
+    source-grounded owner curation."}, {"path": "data/normalized_yaml/bacterial/basal_synthetic_medium.yaml",
+    "field_path": "preparation_steps[1].description", "stored_value": "Adjust pH if
+    specified in original formulation", "decision": "unsupported", "rationale": "This
+    instruction exactly matches the current importer template; neither current failed
+    source response nor bibliography establishes it as the original protocol. Preserve
+    as unresolved history and remove or replace the asserted protocol only through
+    source-grounded owner curation."}]}, {"quantity_id": "q10", "topic": "Generic
+    preparation step 3", "source": {"evidence_id": "writer-mediadb", "reference":
+    "src/culturemech/import/mediadb_importer.py", "snapshot_sha256": "5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0",
+    "locator": "_create_preparation_steps", "quote": "Sterilize by filtration (0.22
+    μm) to preserve heat-sensitive components"}, "decision": "unsupported", "rationale":
+    "This instruction exactly matches the current importer template; neither current
+    failed source response nor bibliography establishes it as the original protocol.
+    Preserve as unresolved history and remove or replace the asserted protocol only
+    through source-grounded owner curation.", "layer_assessments": [{"path": "data/merge_yaml/merged/Basal_synthetic_medium.yaml",
+    "field_path": "preparation_steps[2].description", "stored_value": "Sterilize by
+    filtration (0.22 μm) to preserve heat-sensitive components", "decision": "unsupported",
+    "rationale": "This instruction exactly matches the current importer template;
+    neither current failed source response nor bibliography establishes it as the
+    original protocol. Preserve as unresolved history and remove or replace the asserted
+    protocol only through source-grounded owner curation."}, {"path": "data/normalized_yaml/bacterial/basal_synthetic_medium.yaml",
+    "field_path": "preparation_steps[2].description", "stored_value": "Sterilize by
+    filtration (0.22 μm) to preserve heat-sensitive components", "decision": "unsupported",
+    "rationale": "This instruction exactly matches the current importer template;
+    neither current failed source response nor bibliography establishes it as the
+    original protocol. Preserve as unresolved history and remove or replace the asserted
+    protocol only through source-grounded owner curation."}]}, {"quantity_id": "q11",
+    "topic": "Unspecified pH, stocks and growth conditions", "source": {"evidence_id":
+    "mediadb301", "reference": "https://mediadb.systemsbiology.net/defined_media/media/301/",
+    "raw_path": "REVIEW_WORK/batch055/source01-03/mediadb301.bin",
+    "raw_sha256": "76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273",
+    "locator": "HTTP 502; no current primary formulation", "accessed_at": "2026-10-28T04:32:45.119863+00:00"},
+    "decision": "unsupported", "rationale": "No numerical pH, stock concentration,
+    stock addition, temperature or strain-specific growth measurement is proposed.
+    Historical report growth-rate and temperature claims are derivative-only and must
+    not be promoted from an unavailable response.", "layer_assessments": []}]'
+- assessment_id: a5
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: supported
+  summary: The grounding inventory enumerates every asserted identifier and exact
+    preferred label. Exact identifier rows and ontology-linked rows are recorded separately,
+    including mapping_status. Present catalog membership does not validate supplied
+    hydrate form or historical identity; specific limits are assessed separately.
+  target_ids:
+  - CultureMech:007204
+  evidence_ids:
+  - grounding
+- assessment_id: a6
+  area: provenance
+  topic: History and evidence scope
+  outcome: supported
+  summary: Complete owner and target histories were read. Current source bytes and
+    inspected code are independent evidence; historical timestamps remain historical
+    claims unless an exact cited raw digest is recovered.
+  target_ids:
+  - CultureMech:007204
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a7
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:007204
+  evidence_ids:
+  - local-target
+- assessment_id: a8
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:007204
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-007204-generic-preparation-lacks-source-authentication
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generic preparation lacks source authentication
+  description: Both target and owner assert three generic instructions, including
+    0.22 μm filtration. The current MediaDB importer inserts these unconditionally;
+    the available bibliography does not establish a recipe-specific protocol, and
+    current formulation endpoints failed. Do not present this template as verified
+    source preparation.
+  target_ids:
+  - CultureMech:007204
+  field_paths:
+  - preparation_steps[0].description
+  - preparation_steps[1].description
+  - preparation_steps[2].description
+  evidence_ids:
+  - local-target
+  - owner-1
+  - writer-mediadb
+  - mediadb301
+  - publisher1996
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_synthetic_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-007204-generated-bibliography-and-source-context-are-stale
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generated bibliography and source context are stale
+  description: The maintained owner already carries a qualified Hewitt and Solomons
+    1996 citation and species-level taxonomy note. The selected generated record lacks
+    references and the corresponding October history. Preserve this existing curation;
+    the database umbrella citation in older history is not a primary recipe citation.
+  target_ids:
+  - CultureMech:007204
+  field_paths:
+  - references
+  - curation_history
+  evidence_ids:
+  - local-target
+  - owner-1
+  - crossref1996
+  - tax1390
+  - writer-merge
+  rule_id: source-stage-or-identity
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_synthetic_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-007204-recipe-quantities-and-supplied-forms-lack-reproducible-claim-support
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Recipe quantities and supplied forms lack reproducible claim support
+  description: All seven concentration fields lack attached exact source evidence.
+    Current MediaDB lookup/export failed; historical decoded rows match the numbers
+    but their original raw bytes are not present in the inspected parent documents.
+    Resolve ammonium phosphate and magnesium hydrate leads only with authenticated
+    exact source evidence; no guessed replacement amount or ontology ID is justified.
+  target_ids:
+  - CultureMech:007204
+  field_paths:
+  - ingredients
+  evidence_ids:
+  - local-target
+  - owner-1
+  - mediadb301text
+  - historical-parent
+  - historical-disposition
+  - grounding
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_synthetic_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Review the maintained owner preparation against an accessible exact
+    primary protocol. Qualify or remove unsupported generic statements and guard the
+    current importer against adding source-free preparation; then regenerate.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007204
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_synthetic_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: Regenerate from the maintained owner while preserving its qualified
+    citation and explicit formulation/strain uncertainty. Do not add unverified B20
+    growth claims from historical summaries.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007204
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_synthetic_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: Recover an accessible exact Medium 301 source or its authentic raw
+    capture, preserve its chemical forms and amount basis, and attach claim-level
+    evidence. Retain all existing numbers as unverified pending that work.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007204
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_synthetic_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- Exact current MediaDB medium, export and source endpoints returned HTTP 502; the
+  publisher article endpoint returned HTTP 403. The complete primary formula was not
+  verified, so this scientific review is partial.
+- The four exact historical cache paths cited in the owner were checked directly in
+  the checkout and are absent; ignored files are not excluded by these exact path
+  checks. The two inspected historical parent JSONs contain decoded rows and reported
+  hashes, not authenticated external response bytes.
+- Historical September growth-data, chemical-ID and temperature statements remain
+  derivative leads. No B20 strain identity, quantitative growth, correction/retraction
+  completeness or exact historical abstract transcription is certified.
+- The adjacent Medium 302 is context only. Current ontology/MIM correspondence does
+  not establish historical validity, supplied hydrate identity or a recipe amount.
+  No KEGG accession is guessed.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this
+  author.
