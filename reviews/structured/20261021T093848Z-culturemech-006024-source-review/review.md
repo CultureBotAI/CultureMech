@@ -1,0 +1,2210 @@
+# Source and formulation review: aam_medium (CultureMech:006024)
+
+- Review: 20261021T093848Z-culturemech-006024-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T09:35:27Z
+- Finished UTC: 2026-10-21T09:38:48Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact KOMODO 57 to DSMZ 57 mapping and both maintained contributors support one AAM formulation. The generated target retains a liquid-dose unit error, small provider precision conflicts and missing maintained evidence; source batch, chemical-form and history limits remain explicit.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 134; batch 014 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirteen task batches contain 130 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 132 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:006024 | data/merge_yaml/merged/AAM_MEDIUM.yaml | generated | aam_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:006024 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:006024 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-014/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch014/134/strict.tsv |
+| validate-terms | passed | True | CultureMech:006024 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:006024 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:006024 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Scoped history timestamp syntax and timezone check | failed | False | CultureMech:006024 | 28 timestamp instances inspected; 4 malformed or timezone-naive instances. Existing provenance is preserved; no timestamps were rewritten. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:006024.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Two maintained contributors and exact catalogue correspondence
+
+identity: supported. Targets: CultureMech:006024.
+
+The generated CultureMech:006024 record merges KOMODO_57_AAM_medium and aam_medium. The second contributor has distinct ID CultureMech:001706 and is explicitly linked as SOURCE_DUPLICATE in both directions. The exact KOMODO row links DSMZ 57; all eight current ingredient names, concentrations and asserted identities agree across the three layers. These checks establish source correspondence, not experimental growth or the correctness of every stored unit.
+
+### Every amount in the target and both contributors
+
+quantity: concern. Targets: CultureMech:006024.
+
+Twenty-four direct ingredient decisions cover the eight amounts in each of three layers, with one shared solvent decision and three pH decisions. Tween 80 needs dimensional repair; tryptone and meat-extract rates have small precision conflicts; the remaining five provider rates in both owners have verified historical snippets that are absent from the target. Primary amounts, provider volume and arithmetic remain separate.
+
+{"inventory": [{"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "ingredient": "Tryptone", "current": {"value": "4.99501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Tryptone 5.0 g", "source_locator": "PDF page 1 composition row 1", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.99501,\n                        \"mmol_l\": 70.273,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[0]", "arithmetic": {"source_amount": 5, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l": "4.99501", "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance": "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995 g/L; provider-declared basis only."}, "explanation": "The reported rate narrowly exceeds the current writer rounding guard; preserve the original rate and mass/volume conflict."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field_path": "ingredients[0].concentration", "ingredient": "Tryptone", "current": {"value": "4.99501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Tryptone 5.0 g", "source_locator": "PDF page 1 composition row 1", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.99501,\n                        \"mmol_l\": 70.273,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[0]", "arithmetic": {"source_amount": 5, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l": "4.99501", "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance": "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995 g/L; provider-declared basis only."}, "explanation": "The reported rate narrowly exceeds the current writer rounding guard; preserve the original rate and mass/volume conflict."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field_path": "ingredients[0].concentration", "ingredient": "Tryptone", "current": {"value": "4.99501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Tryptone 5.0 g", "source_locator": "PDF page 1 composition row 1", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.99501,\n                        \"mmol_l\": 70.273,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[0]", "arithmetic": {"source_amount": 5, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l": "4.99501", "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance": "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995 g/L; provider-declared basis only."}, "explanation": "The reported rate narrowly exceeds the current writer rounding guard; preserve the original rate and mass/volume conflict."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "ingredient": "Meat extract", "current": {"value": "4.99501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Meat extract 5.0 g", "source_locator": "PDF page 1 composition row 2", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Meat extract\",\n                        \"compound_id\": 2,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.99501,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[1]", "arithmetic": {"source_amount": 5, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l": "4.99501", "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance": "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995 g/L; provider-declared basis only."}, "explanation": "The reported rate narrowly exceeds the current writer rounding guard; preserve the original rate and mass/volume conflict."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field_path": "ingredients[1].concentration", "ingredient": "Meat extract", "current": {"value": "4.99501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Meat extract 5.0 g", "source_locator": "PDF page 1 composition row 2", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Meat extract\",\n                        \"compound_id\": 2,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.99501,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[1]", "arithmetic": {"source_amount": 5, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l": "4.99501", "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance": "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995 g/L; provider-declared basis only."}, "explanation": "The reported rate narrowly exceeds the current writer rounding guard; preserve the original rate and mass/volume conflict."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field_path": "ingredients[1].concentration", "ingredient": "Meat extract", "current": {"value": "4.99501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Meat extract 5.0 g", "source_locator": "PDF page 1 composition row 2", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Meat extract\",\n                        \"compound_id\": 2,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.99501,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[1]", "arithmetic": {"source_amount": 5, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l": "4.99501", "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance": "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995 g/L; provider-declared basis only."}, "explanation": "The reported rate narrowly exceeds the current writer rounding guard; preserve the original rate and mass/volume conflict."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "ingredient": "Yeast extract", "current": {"value": "6.99301", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Yeast extract 7.0 g", "source_locator": "PDF page 1 composition row 3", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 7,\n                        \"unit\": \"g\",\n                        \"g_l\": 6.99301,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[2]", "arithmetic": {"source_amount": 7, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "6.993006993006993006993006993", "reported_g_per_l": "6.99301", "difference_g_per_l": "0.000003006993006993006993007", "last_digit_tolerance": "0.000005", "passes_guard": true, "calculation": "7 g * 1 g/g / 1.001 L = 6.993006993006993006993006993 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; claim-level evidence is absent from this layer."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field_path": "ingredients[2].concentration", "ingredient": "Yeast extract", "current": {"value": "6.99301", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Yeast extract 7.0 g", "source_locator": "PDF page 1 composition row 3", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 7,\n                        \"unit\": \"g\",\n                        \"g_l\": 6.99301,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[2]", "arithmetic": {"source_amount": 7, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "6.993006993006993006993006993", "reported_g_per_l": "6.99301", "difference_g_per_l": "0.000003006993006993006993007", "last_digit_tolerance": "0.000005", "passes_guard": true, "calculation": "7 g * 1 g/g / 1.001 L = 6.993006993006993006993006993 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; existing owner evidence is verified against identical response bytes."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field_path": "ingredients[2].concentration", "ingredient": "Yeast extract", "current": {"value": "6.99301", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Yeast extract 7.0 g", "source_locator": "PDF page 1 composition row 3", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 7,\n                        \"unit\": \"g\",\n                        \"g_l\": 6.99301,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[2]", "arithmetic": {"source_amount": 7, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "6.993006993006993006993006993", "reported_g_per_l": "6.99301", "difference_g_per_l": "0.000003006993006993006993007", "last_digit_tolerance": "0.000005", "passes_guard": true, "calculation": "7 g * 1 g/g / 1.001 L = 6.993006993006993006993006993 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; existing owner evidence is verified against identical response bytes."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "ingredient": "Tween 80", "current": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Tween 80 1.0 ml", "source_locator": "PDF page 1 composition row 4", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Tween 80\",\n                        \"compound_id\": 22,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[3]", "arithmetic": null, "explanation": "The source supplies 1 mL Tween 80 per listed batch, not 1 g/L. No density or uniform molecular weight is assumed."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field_path": "ingredients[3].concentration", "ingredient": "Tween 80", "current": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Tween 80 1.0 ml", "source_locator": "PDF page 1 composition row 4", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Tween 80\",\n                        \"compound_id\": 22,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[3]", "arithmetic": null, "explanation": "The source supplies 1 mL Tween 80 per listed batch, not 1 g/L. No density or uniform molecular weight is assumed."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field_path": "ingredients[3].concentration", "ingredient": "Tween 80", "current": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Tween 80 1.0 ml", "source_locator": "PDF page 1 composition row 4", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Tween 80\",\n                        \"compound_id\": 22,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[3]", "arithmetic": null, "explanation": "The source supplies 1 mL Tween 80 per listed batch, not 1 g/L. No density or uniform molecular weight is assumed."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "ingredient": "Na-acetate", "current": {"value": "2.4975", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Na-acetate 2.5 g", "source_locator": "PDF page 1 composition row 5", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Na-acetate\",\n                        \"compound_id\": 23,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.4975,\n                        \"mmol_l\": 30.4448,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[4]", "arithmetic": {"source_amount": 2.5, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "2.497502497502497502497502498", "reported_g_per_l": "2.4975", "difference_g_per_l": "0.000002497502497502497502498", "last_digit_tolerance": "0.00001248751248751248751248751249", "passes_guard": true, "calculation": "2.5 g * 1 g/g / 1.001 L = 2.497502497502497502497502498 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; claim-level evidence is absent from this layer."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field_path": "ingredients[4].concentration", "ingredient": "Na-acetate", "current": {"value": "2.4975", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Na-acetate 2.5 g", "source_locator": "PDF page 1 composition row 5", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Na-acetate\",\n                        \"compound_id\": 23,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.4975,\n                        \"mmol_l\": 30.4448,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[4]", "arithmetic": {"source_amount": 2.5, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "2.497502497502497502497502498", "reported_g_per_l": "2.4975", "difference_g_per_l": "0.000002497502497502497502498", "last_digit_tolerance": "0.00001248751248751248751248751249", "passes_guard": true, "calculation": "2.5 g * 1 g/g / 1.001 L = 2.497502497502497502497502498 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; existing owner evidence is verified against identical response bytes."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field_path": "ingredients[4].concentration", "ingredient": "Na-acetate", "current": {"value": "2.4975", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Na-acetate 2.5 g", "source_locator": "PDF page 1 composition row 5", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Na-acetate\",\n                        \"compound_id\": 23,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.4975,\n                        \"mmol_l\": 30.4448,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[4]", "arithmetic": {"source_amount": 2.5, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "2.497502497502497502497502498", "reported_g_per_l": "2.4975", "difference_g_per_l": "0.000002497502497502497502498", "last_digit_tolerance": "0.00001248751248751248751248751249", "passes_guard": true, "calculation": "2.5 g * 1 g/g / 1.001 L = 2.497502497502497502497502498 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; existing owner evidence is verified against identical response bytes."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "ingredient": "MgSO4 x 7 H2O", "current": {"value": "0.1998", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "MgSO4 x 7 H2O 200.0 mg", "source_locator": "PDF page 1 composition row 6", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1998,\n                        \"mmol_l\": 0.810627,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[5]", "arithmetic": {"source_amount": 200, "source_unit": "mg", "provider_volume_ml": 1001, "computed_g_per_l": "0.1998001998001998001998001998", "reported_g_per_l": "0.1998", "difference_g_per_l": "1.998001998001998001998E-7", "last_digit_tolerance": "9.990009990009990009990009990E-7", "passes_guard": true, "calculation": "200 mg * 0.001 g/mg / 1.001 L = 0.1998001998001998001998001998 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; claim-level evidence is absent from this layer."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field_path": "ingredients[5].concentration", "ingredient": "MgSO4 x 7 H2O", "current": {"value": "0.1998", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "MgSO4 x 7 H2O 200.0 mg", "source_locator": "PDF page 1 composition row 6", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1998,\n                        \"mmol_l\": 0.810627,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[5]", "arithmetic": {"source_amount": 200, "source_unit": "mg", "provider_volume_ml": 1001, "computed_g_per_l": "0.1998001998001998001998001998", "reported_g_per_l": "0.1998", "difference_g_per_l": "1.998001998001998001998E-7", "last_digit_tolerance": "9.990009990009990009990009990E-7", "passes_guard": true, "calculation": "200 mg * 0.001 g/mg / 1.001 L = 0.1998001998001998001998001998 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; existing owner evidence is verified against identical response bytes."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field_path": "ingredients[5].concentration", "ingredient": "MgSO4 x 7 H2O", "current": {"value": "0.1998", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "MgSO4 x 7 H2O 200.0 mg", "source_locator": "PDF page 1 composition row 6", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1998,\n                        \"mmol_l\": 0.810627,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[5]", "arithmetic": {"source_amount": 200, "source_unit": "mg", "provider_volume_ml": 1001, "computed_g_per_l": "0.1998001998001998001998001998", "reported_g_per_l": "0.1998", "difference_g_per_l": "1.998001998001998001998E-7", "last_digit_tolerance": "9.990009990009990009990009990E-7", "passes_guard": true, "calculation": "200 mg * 0.001 g/mg / 1.001 L = 0.1998001998001998001998001998 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; existing owner evidence is verified against identical response bytes."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "ingredient": "MnSO4 x H2O", "current": {"value": "0.04995", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "MnSO4 x H2O 50.0 mg", "source_locator": "PDF page 1 composition row 7", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\": 14,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.04995,\n                        \"mmol_l\": 0.295534,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[6]", "arithmetic": {"source_amount": 50, "source_unit": "mg", "provider_volume_ml": 1001, "computed_g_per_l": "0.04995004995004995004995004995", "reported_g_per_l": "0.04995", "difference_g_per_l": "4.995004995004995004995E-8", "last_digit_tolerance": "2.497502497502497502497502498E-7", "passes_guard": true, "calculation": "50 mg * 0.001 g/mg / 1.001 L = 0.04995004995004995004995004995 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; claim-level evidence is absent from this layer."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field_path": "ingredients[6].concentration", "ingredient": "MnSO4 x H2O", "current": {"value": "0.04995", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "MnSO4 x H2O 50.0 mg", "source_locator": "PDF page 1 composition row 7", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\": 14,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.04995,\n                        \"mmol_l\": 0.295534,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[6]", "arithmetic": {"source_amount": 50, "source_unit": "mg", "provider_volume_ml": 1001, "computed_g_per_l": "0.04995004995004995004995004995", "reported_g_per_l": "0.04995", "difference_g_per_l": "4.995004995004995004995E-8", "last_digit_tolerance": "2.497502497502497502497502498E-7", "passes_guard": true, "calculation": "50 mg * 0.001 g/mg / 1.001 L = 0.04995004995004995004995004995 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; existing owner evidence is verified against identical response bytes."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field_path": "ingredients[6].concentration", "ingredient": "MnSO4 x H2O", "current": {"value": "0.04995", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "MnSO4 x H2O 50.0 mg", "source_locator": "PDF page 1 composition row 7", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\": 14,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.04995,\n                        \"mmol_l\": 0.295534,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[6]", "arithmetic": {"source_amount": 50, "source_unit": "mg", "provider_volume_ml": 1001, "computed_g_per_l": "0.04995004995004995004995004995", "reported_g_per_l": "0.04995", "difference_g_per_l": "4.995004995004995004995E-8", "last_digit_tolerance": "2.497502497502497502497502498E-7", "passes_guard": true, "calculation": "50 mg * 0.001 g/mg / 1.001 L = 0.04995004995004995004995004995 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; existing owner evidence is verified against identical response bytes."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "ingredient": "Casamino acids", "current": {"value": "6.99301", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Casamino acids 7.0 g", "source_locator": "PDF page 1 composition row 8", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Casamino acids\",\n                        \"compound_id\": 101,\n                        \"amount\": 7,\n                        \"unit\": \"g\",\n                        \"g_l\": 6.99301,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[7]", "arithmetic": {"source_amount": 7, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "6.993006993006993006993006993", "reported_g_per_l": "6.99301", "difference_g_per_l": "0.000003006993006993006993007", "last_digit_tolerance": "0.000005", "passes_guard": true, "calculation": "7 g * 1 g/g / 1.001 L = 6.993006993006993006993006993 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; claim-level evidence is absent from this layer."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field_path": "ingredients[7].concentration", "ingredient": "Casamino acids", "current": {"value": "6.99301", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Casamino acids 7.0 g", "source_locator": "PDF page 1 composition row 8", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Casamino acids\",\n                        \"compound_id\": 101,\n                        \"amount\": 7,\n                        \"unit\": \"g\",\n                        \"g_l\": 6.99301,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[7]", "arithmetic": {"source_amount": 7, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "6.993006993006993006993006993", "reported_g_per_l": "6.99301", "difference_g_per_l": "0.000003006993006993006993007", "last_digit_tolerance": "0.000005", "passes_guard": true, "calculation": "7 g * 1 g/g / 1.001 L = 6.993006993006993006993006993 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; existing owner evidence is verified against identical response bytes."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field_path": "ingredients[7].concentration", "ingredient": "Casamino acids", "current": {"value": "6.99301", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Casamino acids 7.0 g", "source_locator": "PDF page 1 composition row 8", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Casamino acids\",\n                        \"compound_id\": 101,\n                        \"amount\": 7,\n                        \"unit\": \"g\",\n                        \"g_l\": 6.99301,\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[7]", "arithmetic": {"source_amount": 7, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "6.993006993006993006993006993", "reported_g_per_l": "6.99301", "difference_g_per_l": "0.000003006993006993006993007", "last_digit_tolerance": "0.000005", "passes_guard": true, "calculation": "7 g * 1 g/g / 1.001 L = 6.993006993006993006993006993 g/L; provider-declared basis only."}, "explanation": "The provider-reported rate is supported on its own declared volume basis; existing owner evidence is verified against identical response bytes."}, {"layers": ["target", "KOMODO owner", "DSMZ owner"], "field_path": "preparation_steps", "decision": "add", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Distilled water 1000.0 ml", "source_locator": "PDF page 1 composition row 9", "provider_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "provider_locator": "$.data.solutions[0].recipe[8]", "explanation": "Retain 1000 mL water as source-batch solvent context in all layers. Do not infer measured final volume or add a water mass."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field_path": "ph_value; preparation_steps", "decision": "evidence_only", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Adjust pH to 5.4.", "source_locator": "PDF page 1 sentence after composition", "explanation": "Target pH 5.4 is correct. The DSMZ owner also retains the adjustment step; generated and KOMODO layers omit that step. Preserve the supported value and instruction and add narrow source evidence."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field_path": "ph_value; preparation_steps", "decision": "evidence_only", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Adjust pH to 5.4.", "source_locator": "PDF page 1 sentence after composition", "explanation": "Target pH 5.4 is correct. The DSMZ owner also retains the adjustment step; generated and KOMODO layers omit that step. Preserve the supported value and instruction and add narrow source evidence."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field_path": "ph_value; preparation_steps", "decision": "evidence_only", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote": "Adjust pH to 5.4.", "source_locator": "PDF page 1 sentence after composition", "explanation": "Target pH 5.4 is correct. The DSMZ owner also retains the adjustment step; generated and KOMODO layers omit that step. Preserve the supported value and instruction and add narrow source evidence."}], "precision_conflicts": [{"index": 0, "name": "Tryptone", "source_amount": 5, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l": "4.99501", "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance": "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995 g/L; provider-declared basis only."}, {"index": 1, "name": "Meat extract", "source_amount": 5, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l": "4.99501", "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance": "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995 g/L; provider-declared basis only."}], "historical_verified": [{"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[2].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[2].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[4].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[4].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[5].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[5].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[6].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[6].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[7].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[7].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}]}
+
+### Primary and secondary linkage in all three layers
+
+grounding: supported. Targets: CultureMech:006024.
+
+Each layer has 4/8 ingredient instances with primary CHEBI terms and 4/8 with verified current secondary keys (50% for each linkage measure). All four primary ID/label pairs resolve canonically. These percentages describe linkage coverage, not scientific accuracy. Tryptone, meat extract, yeast extract and casamino acids are ungrounded mixtures; no false monomolecular identity is invented.
+
+[{"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "ingredients[3]", "id": "CHEBI:53426", "canonical_label": "polysorbate 80", "matched_mim_rows": [{"label": "Tween 80", "match_type": "preferred_term", "identifier": "CHEBI:53426", "preferred_term": "Tween 80", "ontology_id": "CHEBI:53426", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "ingredients[4]", "id": "CHEBI:32954", "canonical_label": "sodium acetate", "matched_mim_rows": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "ingredients[5]", "id": "CHEBI:31795", "canonical_label": "magnesium sulfate heptahydrate", "matched_mim_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "ingredients[6]", "id": "CHEBI:86364", "canonical_label": "manganese(II) sulfate monohydrate", "matched_mim_rows": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[3]", "id": "CHEBI:53426", "canonical_label": "polysorbate 80", "matched_mim_rows": [{"label": "Tween 80", "match_type": "preferred_term", "identifier": "CHEBI:53426", "preferred_term": "Tween 80", "ontology_id": "CHEBI:53426", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[4]", "id": "CHEBI:32954", "canonical_label": "sodium acetate", "matched_mim_rows": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[5]", "id": "CHEBI:31795", "canonical_label": "magnesium sulfate heptahydrate", "matched_mim_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[6]", "id": "CHEBI:86364", "canonical_label": "manganese(II) sulfate monohydrate", "matched_mim_rows": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[3]", "id": "CHEBI:53426", "canonical_label": "polysorbate 80", "matched_mim_rows": [{"label": "Tween 80", "match_type": "preferred_term", "identifier": "CHEBI:53426", "preferred_term": "Tween 80", "ontology_id": "CHEBI:53426", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[4]", "id": "CHEBI:32954", "canonical_label": "sodium acetate", "matched_mim_rows": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[5]", "id": "CHEBI:31795", "canonical_label": "magnesium sulfate heptahydrate", "matched_mim_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[6]", "id": "CHEBI:86364", "canonical_label": "manganese(II) sulfate monohydrate", "matched_mim_rows": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}]}]
+
+### Hydrates, sodium acetate and commercial mixtures
+
+grounding: concern. Targets: CultureMech:006024.
+
+The magnesium heptahydrate and manganese monohydrate match the exact source formulas. Tween 80 maps to polysorbate 80; its commercial liquid dose is not a mass or molar quantity. CHEBI:32954 has an anhydrous structural formula and synonyms, whereas both recipe sources say only Na-acetate. Preserve that unresolved source hydration scope; generic name correspondence alone does not verify hydration. The four complex nutrients remain mixtures, and provider tryptone mmol/L is not endorsed.
+
+### Source water, supported pH and unavailable cycle details
+
+completeness: concern. Targets: CultureMech:006024.
+
+All layers retain target pH 5.4; the DSMZ owner retains its adjustment sentence, while the target and KOMODO owner lack preparation_steps. Source water 1000 mL is omitted from preparation context in all three. No source-specific sterilization cycle, storage, vessel or incubation regime occurs in the primary PDF. An autoclave equipment label in the provider is not a temperature/time instruction.
+
+### Complex liquid formulation and biological limits
+
+scope: supported. Targets: CultureMech:006024.
+
+Tryptone, meat extract, yeast extract and casamino acids support COMPLEX/UNDEFINED. No agar is present in this exact source, consistent with LIQUID. The bacterial filing is not contradicted by an asserted organism in the reviewed records. Generic Microbial cultivation and KOMODO Aerobic: No are catalogue annotations, not tested growth or incubation evidence. No strain, taxonomy ID, native variant experiment or KG match is asserted. SOURCE_DUPLICATE denotes catalogue provenance, not a culture variant.
+
+### Maintained claims and generated evidence loss
+
+ownership: concern. Targets: CultureMech:006024.
+
+Both owners now retain five amount snippets with the same original response hash and retrieval time; all ten instances are literally present in the current identical provider response. KOMODO additionally retains the exact identity-only mapping row. These citations are absent from the generated target. The primary pH adjustment survives only in the DSMZ owner. The current generator and resolver were inspected, not rerun; source correction and evidence preservation must precede any authorized regeneration.
+
+[{"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[2].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[2].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[4].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[4].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[5].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[5].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[6].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[6].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[7].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[7].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response": true}]
+
+### Provider claims, primary recipe and zero-excerpt target check
+
+evidence: concern. Targets: CultureMech:006024.
+
+The generated target has no native references or claim-level excerpts; its reference check examines zero excerpts. Both owners have narrow provider concentration citations, and the KOMODO owner has a separate identity mapping citation. Current source bytes verify those historical snippets without changing their original access times. Primary PDF evidence and retained source-batch limits should accompany later curation. No literature or growth claims are imported from source names.
+
+### Append-only event history and timestamp interpretation
+
+provenance: concern. Targets: CultureMech:006024.
+
+All 28 scoped timestamps were checked for ISO syntax and timezone. 4 instances are malformed or lack timezone, as itemized. Curation events are process provenance rather than independent confirmation of recipe correctness.
+
+[{"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[0].timestamp", "value": "2026-01-27T01:15:03.fZ", "valid_ISO_datetime": false, "timezone_aware": false, "problem": "Does not parse as ISO datetime"}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[1].timestamp", "value": "2026-02-03T11:19:17.790344", "valid_ISO_datetime": true, "timezone_aware": false, "problem": "Timezone absent; local time cannot be asserted as UTC"}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "curation_history[0].timestamp", "value": "2026-01-27T01:15:03.fZ", "valid_ISO_datetime": false, "timezone_aware": false, "problem": "Does not parse as ISO datetime"}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "curation_history[1].timestamp", "value": "2026-02-03T11:19:17.790344", "valid_ISO_datetime": true, "timezone_aware": false, "problem": "Timezone absent; local time cannot be asserted as UTC"}]
+
+## Findings
+
+### f1: Tween 80 liquid dose is encoded as mass concentration
+
+major / open / confirmed; issue key: cm006024-tween-liquid-dose.
+
+All three layers store Tween 80 as 1 G_PER_L. Both exact sources specify 1 mL per listed recipe, and the provider reports no g_l for that row. Neither density nor a final-volume mass concentration is supplied.
+
+### f2: Two reported rates narrowly exceed the source arithmetic interval
+
+minor / open / confirmed; issue key: cm006024-provider-precision.
+
+Tryptone and meat extract retain provider 4.99501 g/L. Literal 5 g divided by provider 1.001 L yields 4.995004995... g/L, marginally beyond half the reported last decimal quantum. Preserve this small precision conflict distinctly from the Tween unit error; it does not imply another measured final volume.
+
+### f3: Source preparation context and maintained excerpts are incompletely propagated
+
+minor / open / confirmed; issue key: cm006024-preparation-and-evidence.
+
+Source water is absent from preparation context in all three layers. The target and KOMODO owner omit the pH adjustment instruction although their target pH values are correct and the DSMZ owner retains the step. Ten verified maintained amount excerpts plus the identity mapping and references are absent from the target.
+
+### f4: Source hydration does not establish the sodium-acetate structural form
+
+minor / open / confirmed; issue key: cm006024-sodium-acetate-form-scope.
+
+All three layers assign CHEBI:32954, whose structural annotations are anhydrous, to source Na-acetate. The exact primary and provider do not specify hydration. The source therefore supports the generic salt name and its literal mass but does not independently establish this hydration specificity. This is an unresolved scope issue, not proof that a replacement ID is correct.
+
+### f5: Inherited history includes malformed and timezone-naive timestamps
+
+minor / open / confirmed; issue key: cm006024-history-timestamp-scope.
+
+The generated target and KOMODO owner each retain the literal fractional token fZ in the import timestamp and a timezone-naive resolver timestamp. Four instances cannot establish unambiguous historical instants. The DSMZ owner has timezone-aware history. These inherited strings do not invalidate the independently captured current review chronology.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the source liquid amount and batch basis in both maintained contributors with narrow evidence. Do not infer a mass using density or infer a measured final volume; reconcile the duplicate relationship after the same correction is applied.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Keep the original source amounts and reported rates with an explicit precision note, or verify the provider rounding rule before asserting derived arithmetic support. Do not silently alter rates.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Preserve source solvent context and the supported pH instruction in maintained inputs, retaining all original excerpt provenance and current stage limits. Regenerate only after verification and confirm that existing evidence survives; do not supply an unsupported sterilization cycle.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve the literal source material and document hydration uncertainty. Obtain source-specific form evidence before endorsing an anhydrous molar conversion or changing the primary/secondary identity; do not guess a hydrate.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Preserve old events and their raw source values. If independent provenance establishes an interpretation, append a documented clarification; do not invent a fractional second, assume a timezone or rewrite history merely to make it parse.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/AAM_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/aam_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/AAM_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/AAM_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch014/134/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-014/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch014/134/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/AAM_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/AAM_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| source-catalog | /private/tmp/culturemech-review-work-batch014/source-preflight-bound/134/source-catalog.json; All bound per-record source metadata, successful captures and retained failed attempts | context_only | [{"key": "komodoMediaList", "url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList", "status": 200, "accessed_at": "2026-10-19T23:42:38.189631Z", "sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "metadata_sha256": "2206284de42d4fc7570266195b631494ee21d2b344add6eb03faee4bfb944d56", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch011-tail/109/komodoTable.json", "content_limit": null, "error": null}, {"key": "dsmz57", "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "status": 200, "accessed_at": "2026-10-21T09:27:38.874763Z", "sha256": "4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999", "metadata_sha256": "3e17beb8595ffecc94485725b34205ede651dbefad7a5d6ed7a128fb05e9c1cd", "reused_capture_from": null, "content_limit": null, "error": null}, {"key": "mediadive57api", "url": "https://mediadive.dsmz.de/rest/medium/57", "status": 200, "accessed_at": "2026-10-21T09:27:37.341252Z", "sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "metadata_sha256": "f0baee3e0964052d21df30f87f0773505aaac29a54dcf688304b4b08e39f448c", "reused_capture_from": null, "content_limit": null, "error": null}, {"key": "chebi31795", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795", "status": 200, "accessed_at": "2026-10-21T08:42:45.232212Z", "sha256": "45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb", "metadata_sha256": "d60bd2e36485bfbc70b67f5b4edc49968404afeb93956b932cc4b4bb3386b981", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi31795.json", "content_limit": null, "error": null}, {"key": "chebi32954", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954", "status": 200, "accessed_at": "2026-10-21T08:00:48.206583Z", "sha256": "573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b", "metadata_sha256": "ae1942601b7fe586ba54b3a23f3726ed2a54c05e7f9bd7c1229226111a0b4f00", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/129/chebi32954.json", "content_limit": null, "error": null}, {"key": "chebi53426", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53426", "status": 200, "accessed_at": "2026-10-21T08:00:48.722812Z", "sha256": "d213680c843282430d36cc13a81ee5bfda8029054f6b1482a375c35fd94191a6", "metadata_sha256": "79286881d3bd33ef6d9fb395b9c168a996ca6e3b74e1f61449c3d317302b4b28", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/116/chebi53426.json", "content_limit": null, "error": null}, {"key": "chebi86364", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364", "status": 200, "accessed_at": "2026-10-21T07:33:35.036768Z", "sha256": "f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069", "metadata_sha256": "367c5d12fd21e1a2ad554be58800e640976f416e46c7e377e8f24c29ac7bad61", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch009-tail/090/chebi86364.json", "content_limit": null, "error": null}] |
+| dsmz57 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf; PDF page 1, medium 57 header, full composition and pH sentence | supports | The complete one-page primary PDF and its rendered page were read: nine formulation rows and pH adjustment. No source-specific sterilization cycle appears. |
+| mediadive57api | https://mediadive.dsmz.de/rest/medium/57; $.data.medium and $.data.solutions[0] | supports | Exact DSMZ provider accession 57, all nine literal rows, declared 1001 mL basis, pH sentence and equipment-only autoclave entry were read. |
+| komodoMediaList | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; MediaList table header and row whose MediaInfo accession is 57 | context_only | Exact table row 57 maps AAM medium to the DSMZ 57 PDF. The header and row support identity and provider annotations only, not ingredient quantities or growth. |
+| exact-mapping-row | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; MediaList row 57; original row bytes | supports | Exact accession correspondence; not concentration or growth evidence. |
+| primary-row-1 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf; PDF page 1 composition row 1 | supports | Original source amount and unit; the listed water amount alone does not establish a measured final volume. |
+| provider-row-1 | https://mediadive.dsmz.de/rest/medium/57; $.data.solutions[0].recipe[0] | supports | Literal provider row; reported rates are assessed separately from the source-batch amount and declared normalization volume. |
+| primary-row-2 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf; PDF page 1 composition row 2 | supports | Original source amount and unit; the listed water amount alone does not establish a measured final volume. |
+| provider-row-2 | https://mediadive.dsmz.de/rest/medium/57; $.data.solutions[0].recipe[1] | supports | Literal provider row; reported rates are assessed separately from the source-batch amount and declared normalization volume. |
+| primary-row-3 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf; PDF page 1 composition row 3 | supports | Original source amount and unit; the listed water amount alone does not establish a measured final volume. |
+| provider-row-3 | https://mediadive.dsmz.de/rest/medium/57; $.data.solutions[0].recipe[2] | supports | Literal provider row; reported rates are assessed separately from the source-batch amount and declared normalization volume. |
+| primary-row-4 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf; PDF page 1 composition row 4 | supports | Original source amount and unit; the listed water amount alone does not establish a measured final volume. |
+| provider-row-4 | https://mediadive.dsmz.de/rest/medium/57; $.data.solutions[0].recipe[3] | supports | Literal provider row; reported rates are assessed separately from the source-batch amount and declared normalization volume. |
+| primary-row-5 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf; PDF page 1 composition row 5 | supports | Original source amount and unit; the listed water amount alone does not establish a measured final volume. |
+| provider-row-5 | https://mediadive.dsmz.de/rest/medium/57; $.data.solutions[0].recipe[4] | supports | Literal provider row; reported rates are assessed separately from the source-batch amount and declared normalization volume. |
+| primary-row-6 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf; PDF page 1 composition row 6 | supports | Original source amount and unit; the listed water amount alone does not establish a measured final volume. |
+| provider-row-6 | https://mediadive.dsmz.de/rest/medium/57; $.data.solutions[0].recipe[5] | supports | Literal provider row; reported rates are assessed separately from the source-batch amount and declared normalization volume. |
+| primary-row-7 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf; PDF page 1 composition row 7 | supports | Original source amount and unit; the listed water amount alone does not establish a measured final volume. |
+| provider-row-7 | https://mediadive.dsmz.de/rest/medium/57; $.data.solutions[0].recipe[6] | supports | Literal provider row; reported rates are assessed separately from the source-batch amount and declared normalization volume. |
+| primary-row-8 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf; PDF page 1 composition row 8 | supports | Original source amount and unit; the listed water amount alone does not establish a measured final volume. |
+| provider-row-8 | https://mediadive.dsmz.de/rest/medium/57; $.data.solutions[0].recipe[7] | supports | Literal provider row; reported rates are assessed separately from the source-batch amount and declared normalization volume. |
+| primary-row-9 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf; PDF page 1 composition row 9 | supports | Original source amount and unit; the listed water amount alone does not establish a measured final volume. |
+| provider-row-9 | https://mediadive.dsmz.de/rest/medium/57; $.data.solutions[0].recipe[8] | supports | Literal provider row; reported rates are assessed separately from the source-batch amount and declared normalization volume. |
+| primary-ph | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf; PDF page 1 sentence after composition | supports | The source gives a target pH adjustment; no measured growth optimum or final measurement is inferred. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; $._embedded.terms[0] | supports | Canonical identity CHEBI:31795: magnesium sulfate heptahydrate; complete definition, synonym and structural annotations were inspected separately from recipe support. |
+| chebi32954 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954; $._embedded.terms[0] | supports | Canonical identity CHEBI:32954: sodium acetate; complete definition, synonym and structural annotations were inspected separately from recipe support. |
+| chebi53426 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53426; $._embedded.terms[0] | supports | Canonical identity CHEBI:53426: polysorbate 80; complete definition, synonym and structural annotations were inspected separately from recipe support. |
+| chebi86364 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364; $._embedded.terms[0] | supports | Canonical identity CHEBI:86364: manganese(II) sulfate monohydrate; complete definition, synonym and structural annotations were inspected separately from recipe support. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact MAPPED/preferred_term row for each asserted key and original ingredient label; pinned adjacent metadata | supports | {"metadata": {"byte_count": 824387, "consumer_contract_version": 1, "data_row_count": 9077, "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id", "mapping_status", "ambiguity"], "repository": "https://github.com/CultureBotAI/MediaIngredientMech", "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "source_path": "docs/data/label_index.csv"}, "instances": [{"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "ingredients[3]", "id": "CHEBI:53426", "canonical_label": "polysorbate 80", "matched_mim_rows": [{"label": "Tween 80", "match_type": "preferred_term", "identifier": "CHEBI:53426", "preferred_term": "Tween 80", "ontology_id": "CHEBI:53426", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "ingredients[4]", "id": "CHEBI:32954", "canonical_label": "sodium acetate", "matched_mim_rows": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "ingredients[5]", "id": "CHEBI:31795", "canonical_label": "magnesium sulfate heptahydrate", "matched_mim_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "ingredients[6]", "id": "CHEBI:86364", "canonical_label": "manganese(II) sulfate monohydrate", "matched_mim_rows": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[3]", "id": "CHEBI:53426", "canonical_label": "polysorbate 80", "matched_mim_rows": [{"label": "Tween 80", "match_type": "preferred_term", "identifier": "CHEBI:53426", "preferred_term": "Tween 80", "ontology_id": "CHEBI:53426", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[4]", "id": "CHEBI:32954", "canonical_label": "sodium acetate", "matched_mim_rows": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[5]", "id": "CHEBI:31795", "canonical_label": "magnesium sulfate heptahydrate", "matched_mim_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[6]", "id": "CHEBI:86364", "canonical_label": "manganese(II) sulfate monohydrate", "matched_mim_rows": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[3]", "id": "CHEBI:53426", "canonical_label": "polysorbate 80", "matched_mim_rows": [{"label": "Tween 80", "match_type": "preferred_term", "identifier": "CHEBI:53426", "preferred_term": "Tween 80", "ontology_id": "CHEBI:53426", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[4]", "id": "CHEBI:32954", "canonical_label": "sodium acetate", "matched_mim_rows": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[5]", "id": "CHEBI:31795", "canonical_label": "magnesium sulfate heptahydrate", "matched_mim_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[6]", "id": "CHEBI:86364", "canonical_label": "manganese(II) sulfate monohydrate", "matched_mim_rows": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}]}]} |
+| resolver | src/culturemech/enrich/dsmz_resolver.py; merge_composition | context_only | Current code copies ingredients, solutions and selected pH/type fields; it does not copy preparation_steps in this function. This explains a possible current propagation gap, not a replay of historical execution. |
+| merger | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group invokes merge_formulation_evidence after selecting a canonical recipe; ingredient fingerprint alone is insufficient to establish compatible preparation. No merge was executed. |
+| amount-writer | scripts/review_medium_concentration_evidence.py; source amount/unit/volume checks and runner.rounded_equal call | context_only | Current writer distinguishes mass-rate support from liquid doses and tests provider mass/volume arithmetic before attaching evidence. No writer was executed. |
+| rounding-guard | scripts/review_solution_concentration_evidence.py; rounded_equal | context_only | Guard permits the smaller of five parts per million and half the reported decimal quantum; the two itemized tryptone/meat rates narrowly fail the latter. |
+| history | data/merge_yaml/merged/AAM_MEDIUM.yaml; Every timestamp in target, owner and explicitly listed contextual dependencies | refutes | [{"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[0].timestamp", "value": "2026-01-27T01:15:03.fZ", "valid_ISO_datetime": false, "timezone_aware": false, "problem": "Does not parse as ISO datetime"}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[1].timestamp", "value": "2026-02-03T11:19:17.790344", "valid_ISO_datetime": true, "timezone_aware": false, "problem": "Timezone absent; local time cannot be asserted as UTC"}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[2].timestamp", "value": "2026-03-13T06:19:37.706277Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[3].timestamp", "value": "2026-03-17T06:30:51.000000Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[4].timestamp", "value": "2026-03-17T19:45:54.523258+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[5].timestamp", "value": "2026-06-05T07:40:24.679320+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[6].timestamp", "value": "2026-06-08T23:19:28.355685+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[7].timestamp", "value": "2026-06-10T07:46:45.306936+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[8].timestamp", "value": "2026-08-06T03:04:55.626662+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[9].timestamp", "value": "2026-08-06T03:04:55.626712+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "curation_history[0].timestamp", "value": "2026-01-27T01:15:03.fZ", "valid_ISO_datetime": false, "timezone_aware": false, "problem": "Does not parse as ISO datetime"}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "curation_history[1].timestamp", "value": "2026-02-03T11:19:17.790344", "valid_ISO_datetime": true, "timezone_aware": false, "problem": "Timezone absent; local time cannot be asserted as UTC"}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "curation_history[2].timestamp", "value": "2026-03-13T06:19:37.706277Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "curation_history[3].timestamp", "value": "2026-03-17T06:30:51.000000Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "curation_history[4].timestamp", "value": "2026-03-17T19:45:54.523258+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "curation_history[5].timestamp", "value": "2026-06-05T07:40:24.679320+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "curation_history[6].timestamp", "value": "2026-06-08T23:19:28.355685+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "curation_history[7].timestamp", "value": "2026-06-10T07:46:45.306936+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "curation_history[8].timestamp", "value": "2026-10-07T20:30:39.950647+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "curation_history[0].timestamp", "value": "2026-01-26T17:53:10.061185Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "curation_history[1].timestamp", "value": "2026-01-28T19:48:17.812009Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "curation_history[2].timestamp", "value": "2026-03-13T06:19:06.588658Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "curation_history[3].timestamp", "value": "2026-03-17T06:30:03.000000Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "curation_history[4].timestamp", "value": "2026-03-17T19:45:18.798143+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "curation_history[5].timestamp", "value": "2026-06-05T07:40:46.523232+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "curation_history[6].timestamp", "value": "2026-06-08T23:19:35.399383+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "curation_history[7].timestamp", "value": "2026-06-10T07:46:52.317856+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "curation_history[8].timestamp", "value": "2026-10-07T10:55:41.454416+00:00", "valid_ISO_datetime": true, "timezone_aware": true}] |
+
+## Limits And Additional Notes
+
+- Provider normalization uses its declared 1001 mL main-solution volume, not an independently measured final volume. The primary lists 1000 mL water plus 1 mL Tween 80; no density conversion is supported.
+- No source-specific sterilization cycle, storage or growth outcome is supplied by the primary PDF. Provider equipment names an autoclave without cycle parameters; no generic defaults are inserted.
+- The source does not specify sodium-acetate hydration. Its current CHEBI identity is structurally anhydrous, so hydration and molar conversion are not independently established. No replacement is guessed.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T093848Z-culturemech-006024-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: aam_medium (CultureMech:006024)'
+started_at: '2026-10-21T09:35:27Z'
+finished_at: '2026-10-21T09:38:48Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact KOMODO 57 to DSMZ 57 mapping and both maintained contributors support
+  one AAM formulation. The generated target retains a liquid-dose unit error, small
+  provider precision conflicts and missing maintained evidence; source batch, chemical-form
+  and history limits remain explicit.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/AAM_MEDIUM.yaml
+    sha256: ed46be8350e6f1c9707fc0b6fa53f21665715a0a89193c8f477a8bbad7a4ab2a
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+    sha256: 5f6a99b46d2917f160e39fd9aea639b6a0747845ee6f70a7d6e7403f50ed492f
+    role: context
+  - path: data/normalized_yaml/bacterial/aam_medium.yaml
+    sha256: c876c662f76386dd2edaafbfe78592663c6172a783fa33bb941a54752483f51b
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 134; batch 014 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirteen task batches
+    contain 130 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 132 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006024
+targets:
+- target_id: CultureMech:006024
+  path: data/merge_yaml/merged/AAM_MEDIUM.yaml
+  label: aam_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aam_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/AAM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/AAM_MEDIUM.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch014/134/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-014/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch014/134/strict.tsv"
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/AAM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/AAM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:006024
+- check_id: scoped-history-timestamps
+  name: Scoped history timestamp syntax and timezone check
+  required: false
+  status: failed
+  summary: 28 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Existing provenance is preserved; no timestamps were rewritten.
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - history
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/AAM_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T09:38:48Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T09:38:48Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/aam_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T09:38:48Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/AAM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:36:38.952394Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/AAM_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch014/134/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:36:41.067191Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-014/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch014/134/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/AAM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:36:43.344577Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/AAM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:36:44.762713Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: source-catalog
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch014/source-preflight-bound/134/source-catalog.json
+  locator: All bound per-record source metadata, successful captures and retained
+    failed attempts
+  accessed_at: '2026-10-21T09:38:48Z'
+  support: context_only
+  summary: '[{"key": "komodoMediaList", "url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+    "status": 200, "accessed_at": "2026-10-19T23:42:38.189631Z", "sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "metadata_sha256": "2206284de42d4fc7570266195b631494ee21d2b344add6eb03faee4bfb944d56",
+    "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch011-tail/109/komodoTable.json",
+    "content_limit": null, "error": null}, {"key": "dsmz57", "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf",
+    "status": 200, "accessed_at": "2026-10-21T09:27:38.874763Z", "sha256": "4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999",
+    "metadata_sha256": "3e17beb8595ffecc94485725b34205ede651dbefad7a5d6ed7a128fb05e9c1cd",
+    "reused_capture_from": null, "content_limit": null, "error": null}, {"key": "mediadive57api",
+    "url": "https://mediadive.dsmz.de/rest/medium/57", "status": 200, "accessed_at":
+    "2026-10-21T09:27:37.341252Z", "sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "metadata_sha256": "f0baee3e0964052d21df30f87f0773505aaac29a54dcf688304b4b08e39f448c",
+    "reused_capture_from": null, "content_limit": null, "error": null}, {"key": "chebi31795",
+    "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795",
+    "status": 200, "accessed_at": "2026-10-21T08:42:45.232212Z", "sha256": "45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb",
+    "metadata_sha256": "d60bd2e36485bfbc70b67f5b4edc49968404afeb93956b932cc4b4bb3386b981",
+    "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi31795.json",
+    "content_limit": null, "error": null}, {"key": "chebi32954", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954",
+    "status": 200, "accessed_at": "2026-10-21T08:00:48.206583Z", "sha256": "573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b",
+    "metadata_sha256": "ae1942601b7fe586ba54b3a23f3726ed2a54c05e7f9bd7c1229226111a0b4f00",
+    "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/129/chebi32954.json",
+    "content_limit": null, "error": null}, {"key": "chebi53426", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53426",
+    "status": 200, "accessed_at": "2026-10-21T08:00:48.722812Z", "sha256": "d213680c843282430d36cc13a81ee5bfda8029054f6b1482a375c35fd94191a6",
+    "metadata_sha256": "79286881d3bd33ef6d9fb395b9c168a996ca6e3b74e1f61449c3d317302b4b28",
+    "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/116/chebi53426.json",
+    "content_limit": null, "error": null}, {"key": "chebi86364", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364",
+    "status": 200, "accessed_at": "2026-10-21T07:33:35.036768Z", "sha256": "f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069",
+    "metadata_sha256": "367c5d12fd21e1a2ad554be58800e640976f416e46c7e377e8f24c29ac7bad61",
+    "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch009-tail/090/chebi86364.json",
+    "content_limit": null, "error": null}]'
+  snapshot_sha256: 5f5658d2038af0b93f47e6caae4d5bbf4dddf9560311b1130c16249103af4abb
+- evidence_id: dsmz57
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf
+  locator: PDF page 1, medium 57 header, full composition and pH sentence
+  accessed_at: '2026-10-21T09:27:38.874763Z'
+  support: supports
+  summary: 'The complete one-page primary PDF and its rendered page were read: nine
+    formulation rows and pH adjustment. No source-specific sterilization cycle appears.'
+  snapshot_sha256: 4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999
+- evidence_id: mediadive57api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/57
+  locator: $.data.medium and $.data.solutions[0]
+  accessed_at: '2026-10-21T09:27:37.341252Z'
+  support: supports
+  summary: Exact DSMZ provider accession 57, all nine literal rows, declared 1001
+    mL basis, pH sentence and equipment-only autoclave entry were read.
+  snapshot_sha256: 6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5
+- evidence_id: komodoMediaList
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: MediaList table header and row whose MediaInfo accession is 57
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: context_only
+  summary: Exact table row 57 maps AAM medium to the DSMZ 57 PDF. The header and row
+    support identity and provider annotations only, not ingredient quantities or growth.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: exact-mapping-row
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: MediaList row 57; original row bytes
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Exact accession correspondence; not concentration or growth evidence.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=57'\
+    \ >57</a></TD>\n\t\t\t\t\t<TD>AAM medium</TD>\n\t\t\t\t\t<TD> 5.4</TD>\n\t\t\t\
+    \t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a\
+    \ href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf</a></TD>\n\
+    \t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: primary-row-1
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf
+  locator: PDF page 1 composition row 1
+  accessed_at: '2026-10-21T09:27:38.874763Z'
+  support: supports
+  summary: Original source amount and unit; the listed water amount alone does not
+    establish a measured final volume.
+  quote: Tryptone 5.0 g
+  snapshot_sha256: 4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999
+- evidence_id: provider-row-1
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/57
+  locator: $.data.solutions[0].recipe[0]
+  accessed_at: '2026-10-21T09:27:37.341252Z'
+  support: supports
+  summary: Literal provider row; reported rates are assessed separately from the source-batch
+    amount and declared normalization volume.
+  quote: "{\n                        \"recipe_order\": 1,\n                      \
+    \  \"compound\": \"Tryptone\",\n                        \"compound_id\": 71,\n\
+    \                        \"amount\": 5,\n                        \"unit\": \"\
+    g\",\n                        \"g_l\": 4.99501,\n                        \"mmol_l\"\
+    : 70.273,\n                        \"optional\": 0\n                    }"
+  snapshot_sha256: 6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5
+- evidence_id: primary-row-2
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf
+  locator: PDF page 1 composition row 2
+  accessed_at: '2026-10-21T09:27:38.874763Z'
+  support: supports
+  summary: Original source amount and unit; the listed water amount alone does not
+    establish a measured final volume.
+  quote: Meat extract 5.0 g
+  snapshot_sha256: 4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999
+- evidence_id: provider-row-2
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/57
+  locator: $.data.solutions[0].recipe[1]
+  accessed_at: '2026-10-21T09:27:37.341252Z'
+  support: supports
+  summary: Literal provider row; reported rates are assessed separately from the source-batch
+    amount and declared normalization volume.
+  quote: "{\n                        \"recipe_order\": 2,\n                      \
+    \  \"compound\": \"Meat extract\",\n                        \"compound_id\": 2,\n\
+    \                        \"amount\": 5,\n                        \"unit\": \"\
+    g\",\n                        \"g_l\": 4.99501,\n                        \"optional\"\
+    : 0\n                    }"
+  snapshot_sha256: 6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5
+- evidence_id: primary-row-3
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf
+  locator: PDF page 1 composition row 3
+  accessed_at: '2026-10-21T09:27:38.874763Z'
+  support: supports
+  summary: Original source amount and unit; the listed water amount alone does not
+    establish a measured final volume.
+  quote: Yeast extract 7.0 g
+  snapshot_sha256: 4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999
+- evidence_id: provider-row-3
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/57
+  locator: $.data.solutions[0].recipe[2]
+  accessed_at: '2026-10-21T09:27:37.341252Z'
+  support: supports
+  summary: Literal provider row; reported rates are assessed separately from the source-batch
+    amount and declared normalization volume.
+  quote: "{\n                        \"recipe_order\": 3,\n                      \
+    \  \"compound\": \"Yeast extract\",\n                        \"compound_id\":\
+    \ 16,\n                        \"amount\": 7,\n                        \"unit\"\
+    : \"g\",\n                        \"g_l\": 6.99301,\n                        \"\
+    optional\": 0\n                    }"
+  snapshot_sha256: 6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5
+- evidence_id: primary-row-4
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf
+  locator: PDF page 1 composition row 4
+  accessed_at: '2026-10-21T09:27:38.874763Z'
+  support: supports
+  summary: Original source amount and unit; the listed water amount alone does not
+    establish a measured final volume.
+  quote: Tween 80 1.0 ml
+  snapshot_sha256: 4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999
+- evidence_id: provider-row-4
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/57
+  locator: $.data.solutions[0].recipe[3]
+  accessed_at: '2026-10-21T09:27:37.341252Z'
+  support: supports
+  summary: Literal provider row; reported rates are assessed separately from the source-batch
+    amount and declared normalization volume.
+  quote: "{\n                        \"recipe_order\": 4,\n                      \
+    \  \"compound\": \"Tween 80\",\n                        \"compound_id\": 22,\n\
+    \                        \"amount\": 1,\n                        \"unit\": \"\
+    ml\",\n                        \"optional\": 0\n                    }"
+  snapshot_sha256: 6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5
+- evidence_id: primary-row-5
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf
+  locator: PDF page 1 composition row 5
+  accessed_at: '2026-10-21T09:27:38.874763Z'
+  support: supports
+  summary: Original source amount and unit; the listed water amount alone does not
+    establish a measured final volume.
+  quote: Na-acetate 2.5 g
+  snapshot_sha256: 4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999
+- evidence_id: provider-row-5
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/57
+  locator: $.data.solutions[0].recipe[4]
+  accessed_at: '2026-10-21T09:27:37.341252Z'
+  support: supports
+  summary: Literal provider row; reported rates are assessed separately from the source-batch
+    amount and declared normalization volume.
+  quote: "{\n                        \"recipe_order\": 5,\n                      \
+    \  \"compound\": \"Na-acetate\",\n                        \"compound_id\": 23,\n\
+    \                        \"amount\": 2.5,\n                        \"unit\": \"\
+    g\",\n                        \"g_l\": 2.4975,\n                        \"mmol_l\"\
+    : 30.4448,\n                        \"optional\": 0\n                    }"
+  snapshot_sha256: 6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5
+- evidence_id: primary-row-6
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf
+  locator: PDF page 1 composition row 6
+  accessed_at: '2026-10-21T09:27:38.874763Z'
+  support: supports
+  summary: Original source amount and unit; the listed water amount alone does not
+    establish a measured final volume.
+  quote: MgSO4 x 7 H2O 200.0 mg
+  snapshot_sha256: 4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999
+- evidence_id: provider-row-6
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/57
+  locator: $.data.solutions[0].recipe[5]
+  accessed_at: '2026-10-21T09:27:37.341252Z'
+  support: supports
+  summary: Literal provider row; reported rates are assessed separately from the source-batch
+    amount and declared normalization volume.
+  quote: "{\n                        \"recipe_order\": 6,\n                      \
+    \  \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":\
+    \ 8,\n                        \"amount\": 200,\n                        \"unit\"\
+    : \"mg\",\n                        \"g_l\": 0.1998,\n                        \"\
+    mmol_l\": 0.810627,\n                        \"optional\": 0\n               \
+    \     }"
+  snapshot_sha256: 6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5
+- evidence_id: primary-row-7
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf
+  locator: PDF page 1 composition row 7
+  accessed_at: '2026-10-21T09:27:38.874763Z'
+  support: supports
+  summary: Original source amount and unit; the listed water amount alone does not
+    establish a measured final volume.
+  quote: MnSO4 x H2O 50.0 mg
+  snapshot_sha256: 4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999
+- evidence_id: provider-row-7
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/57
+  locator: $.data.solutions[0].recipe[6]
+  accessed_at: '2026-10-21T09:27:37.341252Z'
+  support: supports
+  summary: Literal provider row; reported rates are assessed separately from the source-batch
+    amount and declared normalization volume.
+  quote: "{\n                        \"recipe_order\": 7,\n                      \
+    \  \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\": 14,\n\
+    \                        \"amount\": 50,\n                        \"unit\": \"\
+    mg\",\n                        \"g_l\": 0.04995,\n                        \"mmol_l\"\
+    : 0.295534,\n                        \"optional\": 0\n                    }"
+  snapshot_sha256: 6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5
+- evidence_id: primary-row-8
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf
+  locator: PDF page 1 composition row 8
+  accessed_at: '2026-10-21T09:27:38.874763Z'
+  support: supports
+  summary: Original source amount and unit; the listed water amount alone does not
+    establish a measured final volume.
+  quote: Casamino acids 7.0 g
+  snapshot_sha256: 4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999
+- evidence_id: provider-row-8
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/57
+  locator: $.data.solutions[0].recipe[7]
+  accessed_at: '2026-10-21T09:27:37.341252Z'
+  support: supports
+  summary: Literal provider row; reported rates are assessed separately from the source-batch
+    amount and declared normalization volume.
+  quote: "{\n                        \"recipe_order\": 8,\n                      \
+    \  \"compound\": \"Casamino acids\",\n                        \"compound_id\"\
+    : 101,\n                        \"amount\": 7,\n                        \"unit\"\
+    : \"g\",\n                        \"g_l\": 6.99301,\n                        \"\
+    optional\": 0\n                    }"
+  snapshot_sha256: 6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5
+- evidence_id: primary-row-9
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf
+  locator: PDF page 1 composition row 9
+  accessed_at: '2026-10-21T09:27:38.874763Z'
+  support: supports
+  summary: Original source amount and unit; the listed water amount alone does not
+    establish a measured final volume.
+  quote: Distilled water 1000.0 ml
+  snapshot_sha256: 4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999
+- evidence_id: provider-row-9
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/57
+  locator: $.data.solutions[0].recipe[8]
+  accessed_at: '2026-10-21T09:27:37.341252Z'
+  support: supports
+  summary: Literal provider row; reported rates are assessed separately from the source-batch
+    amount and declared normalization volume.
+  quote: "{\n                        \"recipe_order\": 9,\n                      \
+    \  \"compound\": \"Distilled water\",\n                        \"compound_id\"\
+    : 4,\n                        \"amount\": 1000,\n                        \"unit\"\
+    : \"ml\",\n                        \"optional\": 0\n                    }"
+  snapshot_sha256: 6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5
+- evidence_id: primary-ph
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf
+  locator: PDF page 1 sentence after composition
+  accessed_at: '2026-10-21T09:27:38.874763Z'
+  support: supports
+  summary: The source gives a target pH adjustment; no measured growth optimum or
+    final measurement is inferred.
+  quote: Adjust pH to 5.4.
+  snapshot_sha256: 4ece78b8156d6af46d97ac63cc389e4a5d3ba8abcc8b716ed1e38bdef3b11999
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: 'Canonical identity CHEBI:31795: magnesium sulfate heptahydrate; complete
+    definition, synonym and structural annotations were inspected separately from
+    recipe support.'
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32954
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:00:48.206583Z'
+  support: supports
+  summary: 'Canonical identity CHEBI:32954: sodium acetate; complete definition, synonym
+    and structural annotations were inspected separately from recipe support.'
+  snapshot_sha256: 573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b
+- evidence_id: chebi53426
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53426
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:00:48.722812Z'
+  support: supports
+  summary: 'Canonical identity CHEBI:53426: polysorbate 80; complete definition, synonym
+    and structural annotations were inspected separately from recipe support.'
+  snapshot_sha256: d213680c843282430d36cc13a81ee5bfda8029054f6b1482a375c35fd94191a6
+- evidence_id: chebi86364
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T07:33:35.036768Z'
+  support: supports
+  summary: 'Canonical identity CHEBI:86364: manganese(II) sulfate monohydrate; complete
+    definition, synonym and structural annotations were inspected separately from
+    recipe support.'
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact MAPPED/preferred_term row for each asserted key and original ingredient
+    label; pinned adjacent metadata
+  accessed_at: '2026-10-21T09:38:48Z'
+  support: supports
+  summary: '{"metadata": {"byte_count": 824387, "consumer_contract_version": 1, "data_row_count":
+    9077, "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id",
+    "mapping_status", "ambiguity"], "repository": "https://github.com/CultureBotAI/MediaIngredientMech",
+    "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5",
+    "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "source_path": "docs/data/label_index.csv"},
+    "instances": [{"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "ingredients[3]", "id": "CHEBI:53426", "canonical_label": "polysorbate
+    80", "matched_mim_rows": [{"label": "Tween 80", "match_type": "preferred_term",
+    "identifier": "CHEBI:53426", "preferred_term": "Tween 80", "ontology_id": "CHEBI:53426",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path":
+    "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "ingredients[4]", "id": "CHEBI:32954",
+    "canonical_label": "sodium acetate", "matched_mim_rows": [{"label": "Na-acetate",
+    "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term":
+    "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "ingredients[5]", "id": "CHEBI:31795", "canonical_label": "magnesium
+    sulfate heptahydrate", "matched_mim_rows": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]},
+    {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field":
+    "ingredients[6]", "id": "CHEBI:86364", "canonical_label": "manganese(II) sulfate
+    monohydrate", "matched_mim_rows": [{"label": "MnSO4 x H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner",
+    "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[3]",
+    "id": "CHEBI:53426", "canonical_label": "polysorbate 80", "matched_mim_rows":
+    [{"label": "Tween 80", "match_type": "preferred_term", "identifier": "CHEBI:53426",
+    "preferred_term": "Tween 80", "ontology_id": "CHEBI:53426", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "ingredients[4]", "id": "CHEBI:32954", "canonical_label": "sodium acetate",
+    "matched_mim_rows": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier":
+    "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "ingredients[5]", "id": "CHEBI:31795", "canonical_label": "magnesium
+    sulfate heptahydrate", "matched_mim_rows": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]},
+    {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "ingredients[6]", "id": "CHEBI:86364", "canonical_label": "manganese(II)
+    sulfate monohydrate", "matched_mim_rows": [{"label": "MnSO4 x H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O",
+    "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}]},
+    {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[3]", "id": "CHEBI:53426", "canonical_label": "polysorbate
+    80", "matched_mim_rows": [{"label": "Tween 80", "match_type": "preferred_term",
+    "identifier": "CHEBI:53426", "preferred_term": "Tween 80", "ontology_id": "CHEBI:53426",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "DSMZ owner",
+    "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[4]",
+    "id": "CHEBI:32954", "canonical_label": "sodium acetate", "matched_mim_rows":
+    [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954",
+    "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[5]", "id": "CHEBI:31795", "canonical_label": "magnesium
+    sulfate heptahydrate", "matched_mim_rows": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]},
+    {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[6]", "id": "CHEBI:86364", "canonical_label": "manganese(II)
+    sulfate monohydrate", "matched_mim_rows": [{"label": "MnSO4 x H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O",
+    "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}]}]}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: resolver
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: merge_composition
+  accessed_at: '2026-10-21T09:38:48Z'
+  support: context_only
+  summary: Current code copies ingredients, solutions and selected pH/type fields;
+    it does not copy preparation_steps in this function. This explains a possible
+    current propagation gap, not a replay of historical execution.
+- evidence_id: merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-21T09:38:48Z'
+  support: context_only
+  summary: Current merge_group invokes merge_formulation_evidence after selecting
+    a canonical recipe; ingredient fingerprint alone is insufficient to establish
+    compatible preparation. No merge was executed.
+- evidence_id: amount-writer
+  kind: record_content
+  reference: scripts/review_medium_concentration_evidence.py
+  locator: source amount/unit/volume checks and runner.rounded_equal call
+  accessed_at: '2026-10-21T09:38:48Z'
+  support: context_only
+  summary: Current writer distinguishes mass-rate support from liquid doses and tests
+    provider mass/volume arithmetic before attaching evidence. No writer was executed.
+- evidence_id: rounding-guard
+  kind: record_content
+  reference: scripts/review_solution_concentration_evidence.py
+  locator: rounded_equal
+  accessed_at: '2026-10-21T09:38:48Z'
+  support: context_only
+  summary: Guard permits the smaller of five parts per million and half the reported
+    decimal quantum; the two itemized tryptone/meat rates narrowly fail the latter.
+- evidence_id: history
+  kind: record_content
+  reference: data/merge_yaml/merged/AAM_MEDIUM.yaml
+  locator: Every timestamp in target, owner and explicitly listed contextual dependencies
+  accessed_at: '2026-10-21T09:38:48Z'
+  support: refutes
+  summary: '[{"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[0].timestamp",
+    "value": "2026-01-27T01:15:03.fZ", "valid_ISO_datetime": false, "timezone_aware":
+    false, "problem": "Does not parse as ISO datetime"}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "curation_history[1].timestamp", "value": "2026-02-03T11:19:17.790344",
+    "valid_ISO_datetime": true, "timezone_aware": false, "problem": "Timezone absent;
+    local time cannot be asserted as UTC"}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "curation_history[2].timestamp", "value": "2026-03-13T06:19:37.706277Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "curation_history[3].timestamp", "value": "2026-03-17T06:30:51.000000Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "curation_history[4].timestamp", "value": "2026-03-17T19:45:54.523258+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "curation_history[5].timestamp", "value": "2026-06-05T07:40:24.679320+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "curation_history[6].timestamp", "value": "2026-06-08T23:19:28.355685+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "curation_history[7].timestamp", "value": "2026-06-10T07:46:45.306936+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "curation_history[8].timestamp", "value": "2026-08-06T03:04:55.626662+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "curation_history[9].timestamp", "value": "2026-08-06T03:04:55.626712+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "curation_history[0].timestamp", "value": "2026-01-27T01:15:03.fZ", "valid_ISO_datetime":
+    false, "timezone_aware": false, "problem": "Does not parse as ISO datetime"},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field":
+    "curation_history[1].timestamp", "value": "2026-02-03T11:19:17.790344", "valid_ISO_datetime":
+    true, "timezone_aware": false, "problem": "Timezone absent; local time cannot
+    be asserted as UTC"}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "curation_history[2].timestamp", "value": "2026-03-13T06:19:37.706277Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "curation_history[3].timestamp", "value": "2026-03-17T06:30:51.000000Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "curation_history[4].timestamp", "value": "2026-03-17T19:45:54.523258+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "curation_history[5].timestamp", "value": "2026-06-05T07:40:24.679320+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "curation_history[6].timestamp", "value": "2026-06-08T23:19:28.355685+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "curation_history[7].timestamp", "value": "2026-06-10T07:46:45.306936+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "curation_history[8].timestamp", "value": "2026-10-07T20:30:39.950647+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "curation_history[0].timestamp", "value": "2026-01-26T17:53:10.061185Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "curation_history[1].timestamp", "value": "2026-01-28T19:48:17.812009Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "curation_history[2].timestamp", "value": "2026-03-13T06:19:06.588658Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "curation_history[3].timestamp", "value": "2026-03-17T06:30:03.000000Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "curation_history[4].timestamp", "value": "2026-03-17T19:45:18.798143+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "curation_history[5].timestamp", "value": "2026-06-05T07:40:46.523232+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "curation_history[6].timestamp", "value": "2026-06-08T23:19:35.399383+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "curation_history[7].timestamp", "value": "2026-06-10T07:46:52.317856+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "curation_history[8].timestamp", "value": "2026-10-07T10:55:41.454416+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Two maintained contributors and exact catalogue correspondence
+  outcome: supported
+  summary: The generated CultureMech:006024 record merges KOMODO_57_AAM_medium and
+    aam_medium. The second contributor has distinct ID CultureMech:001706 and is explicitly
+    linked as SOURCE_DUPLICATE in both directions. The exact KOMODO row links DSMZ
+    57; all eight current ingredient names, concentrations and asserted identities
+    agree across the three layers. These checks establish source correspondence, not
+    experimental growth or the correctness of every stored unit.
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - exact-mapping-row
+  - dsmz57
+  - mediadive57api
+- assessment_id: amounts
+  area: quantity
+  topic: Every amount in the target and both contributors
+  outcome: concern
+  summary: Twenty-four direct ingredient decisions cover the eight amounts in each
+    of three layers, with one shared solvent decision and three pH decisions. Tween
+    80 needs dimensional repair; tryptone and meat-extract rates have small precision
+    conflicts; the remaining five provider rates in both owners have verified historical
+    snippets that are absent from the target. Primary amounts, provider volume and
+    arithmetic remain separate.
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz57
+  - mediadive57api
+  - primary-ph
+  - primary-row-1
+  - primary-row-2
+  - primary-row-3
+  - primary-row-4
+  - primary-row-5
+  - primary-row-6
+  - primary-row-7
+  - primary-row-8
+  - primary-row-9
+  - provider-row-1
+  - provider-row-2
+  - provider-row-3
+  - provider-row-4
+  - provider-row-5
+  - provider-row-6
+  - provider-row-7
+  - provider-row-8
+  - provider-row-9
+  details: '{"inventory": [{"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "ingredient": "Tryptone", "current":
+    {"value": "4.99501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Tryptone 5.0 g", "source_locator": "PDF page 1 composition row 1", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Tryptone\",\n                        \"compound_id\":
+    71,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4.99501,\n                        \"mmol_l\":
+    70.273,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[0]", "arithmetic": {"source_amount": 5, "source_unit":
+    "g", "provider_volume_ml": 1001, "computed_g_per_l": "4.995004995004995004995004995",
+    "reported_g_per_l": "4.99501", "difference_g_per_l": "0.000005004995004995004995005",
+    "last_digit_tolerance": "0.000005", "passes_guard": false, "calculation": "5 g
+    * 1 g/g / 1.001 L = 4.995004995004995004995004995 g/L; provider-declared basis
+    only."}, "explanation": "The reported rate narrowly exceeds the current writer
+    rounding guard; preserve the original rate and mass/volume conflict."}, {"layer":
+    "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field_path": "ingredients[0].concentration", "ingredient": "Tryptone", "current":
+    {"value": "4.99501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Tryptone 5.0 g", "source_locator": "PDF page 1 composition row 1", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Tryptone\",\n                        \"compound_id\":
+    71,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4.99501,\n                        \"mmol_l\":
+    70.273,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[0]", "arithmetic": {"source_amount": 5, "source_unit":
+    "g", "provider_volume_ml": 1001, "computed_g_per_l": "4.995004995004995004995004995",
+    "reported_g_per_l": "4.99501", "difference_g_per_l": "0.000005004995004995004995005",
+    "last_digit_tolerance": "0.000005", "passes_guard": false, "calculation": "5 g
+    * 1 g/g / 1.001 L = 4.995004995004995004995004995 g/L; provider-declared basis
+    only."}, "explanation": "The reported rate narrowly exceeds the current writer
+    rounding guard; preserve the original rate and mass/volume conflict."}, {"layer":
+    "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field_path":
+    "ingredients[0].concentration", "ingredient": "Tryptone", "current": {"value":
+    "4.99501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf",
+    "source_quote": "Tryptone 5.0 g", "source_locator": "PDF page 1 composition row
+    1", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote":
+    "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"amount\":
+    5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    4.99501,\n                        \"mmol_l\": 70.273,\n                        \"optional\":
+    0\n                    }", "provider_locator": "$.data.solutions[0].recipe[0]",
+    "arithmetic": {"source_amount": 5, "source_unit": "g", "provider_volume_ml": 1001,
+    "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l": "4.99501",
+    "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance":
+    "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995
+    g/L; provider-declared basis only."}, "explanation": "The reported rate narrowly
+    exceeds the current writer rounding guard; preserve the original rate and mass/volume
+    conflict."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "ingredient": "Meat extract", "current":
+    {"value": "4.99501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Meat extract 5.0 g", "source_locator": "PDF page 1 composition row 2", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Meat extract\",\n                        \"compound_id\":
+    2,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4.99501,\n                        \"optional\":
+    0\n                    }", "provider_locator": "$.data.solutions[0].recipe[1]",
+    "arithmetic": {"source_amount": 5, "source_unit": "g", "provider_volume_ml": 1001,
+    "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l": "4.99501",
+    "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance":
+    "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995
+    g/L; provider-declared basis only."}, "explanation": "The reported rate narrowly
+    exceeds the current writer rounding guard; preserve the original rate and mass/volume
+    conflict."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field_path": "ingredients[1].concentration", "ingredient": "Meat extract", "current":
+    {"value": "4.99501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Meat extract 5.0 g", "source_locator": "PDF page 1 composition row 2", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Meat extract\",\n                        \"compound_id\":
+    2,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4.99501,\n                        \"optional\":
+    0\n                    }", "provider_locator": "$.data.solutions[0].recipe[1]",
+    "arithmetic": {"source_amount": 5, "source_unit": "g", "provider_volume_ml": 1001,
+    "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l": "4.99501",
+    "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance":
+    "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995
+    g/L; provider-declared basis only."}, "explanation": "The reported rate narrowly
+    exceeds the current writer rounding guard; preserve the original rate and mass/volume
+    conflict."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field_path": "ingredients[1].concentration", "ingredient": "Meat extract", "current":
+    {"value": "4.99501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Meat extract 5.0 g", "source_locator": "PDF page 1 composition row 2", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Meat extract\",\n                        \"compound_id\":
+    2,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4.99501,\n                        \"optional\":
+    0\n                    }", "provider_locator": "$.data.solutions[0].recipe[1]",
+    "arithmetic": {"source_amount": 5, "source_unit": "g", "provider_volume_ml": 1001,
+    "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l": "4.99501",
+    "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance":
+    "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995
+    g/L; provider-declared basis only."}, "explanation": "The reported rate narrowly
+    exceeds the current writer rounding guard; preserve the original rate and mass/volume
+    conflict."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "ingredient": "Yeast extract", "current":
+    {"value": "6.99301", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Yeast extract 7.0 g", "source_locator": "PDF page 1 composition row 3", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 7,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 6.99301,\n                        \"optional\":
+    0\n                    }", "provider_locator": "$.data.solutions[0].recipe[2]",
+    "arithmetic": {"source_amount": 7, "source_unit": "g", "provider_volume_ml": 1001,
+    "computed_g_per_l": "6.993006993006993006993006993", "reported_g_per_l": "6.99301",
+    "difference_g_per_l": "0.000003006993006993006993007", "last_digit_tolerance":
+    "0.000005", "passes_guard": true, "calculation": "7 g * 1 g/g / 1.001 L = 6.993006993006993006993006993
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; claim-level evidence is absent
+    from this layer."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field_path": "ingredients[2].concentration", "ingredient": "Yeast extract", "current":
+    {"value": "6.99301", "unit": "G_PER_L"}, "decision": "verified", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Yeast extract 7.0 g", "source_locator": "PDF page 1 composition row 3", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 7,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 6.99301,\n                        \"optional\":
+    0\n                    }", "provider_locator": "$.data.solutions[0].recipe[2]",
+    "arithmetic": {"source_amount": 7, "source_unit": "g", "provider_volume_ml": 1001,
+    "computed_g_per_l": "6.993006993006993006993006993", "reported_g_per_l": "6.99301",
+    "difference_g_per_l": "0.000003006993006993006993007", "last_digit_tolerance":
+    "0.000005", "passes_guard": true, "calculation": "7 g * 1 g/g / 1.001 L = 6.993006993006993006993006993
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; existing owner evidence is verified
+    against identical response bytes."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field_path": "ingredients[2].concentration", "ingredient": "Yeast extract", "current":
+    {"value": "6.99301", "unit": "G_PER_L"}, "decision": "verified", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Yeast extract 7.0 g", "source_locator": "PDF page 1 composition row 3", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 7,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 6.99301,\n                        \"optional\":
+    0\n                    }", "provider_locator": "$.data.solutions[0].recipe[2]",
+    "arithmetic": {"source_amount": 7, "source_unit": "g", "provider_volume_ml": 1001,
+    "computed_g_per_l": "6.993006993006993006993006993", "reported_g_per_l": "6.99301",
+    "difference_g_per_l": "0.000003006993006993006993007", "last_digit_tolerance":
+    "0.000005", "passes_guard": true, "calculation": "7 g * 1 g/g / 1.001 L = 6.993006993006993006993006993
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; existing owner evidence is verified
+    against identical response bytes."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "ingredient": "Tween 80", "current":
+    {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Tween 80 1.0 ml", "source_locator": "PDF page 1 composition row 4", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Tween 80\",\n                        \"compound_id\":
+    22,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[3]", "arithmetic": null, "explanation": "The source
+    supplies 1 mL Tween 80 per listed batch, not 1 g/L. No density or uniform molecular
+    weight is assumed."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field_path": "ingredients[3].concentration", "ingredient": "Tween 80", "current":
+    {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Tween 80 1.0 ml", "source_locator": "PDF page 1 composition row 4", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Tween 80\",\n                        \"compound_id\":
+    22,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[3]", "arithmetic": null, "explanation": "The source
+    supplies 1 mL Tween 80 per listed batch, not 1 g/L. No density or uniform molecular
+    weight is assumed."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field_path": "ingredients[3].concentration", "ingredient": "Tween 80", "current":
+    {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Tween 80 1.0 ml", "source_locator": "PDF page 1 composition row 4", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Tween 80\",\n                        \"compound_id\":
+    22,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[3]", "arithmetic": null, "explanation": "The source
+    supplies 1 mL Tween 80 per listed batch, not 1 g/L. No density or uniform molecular
+    weight is assumed."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "ingredient": "Na-acetate", "current":
+    {"value": "2.4975", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Na-acetate 2.5 g", "source_locator": "PDF page 1 composition row 5", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Na-acetate\",\n                        \"compound_id\":
+    23,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.4975,\n                        \"mmol_l\":
+    30.4448,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[4]", "arithmetic": {"source_amount": 2.5, "source_unit":
+    "g", "provider_volume_ml": 1001, "computed_g_per_l": "2.497502497502497502497502498",
+    "reported_g_per_l": "2.4975", "difference_g_per_l": "0.000002497502497502497502498",
+    "last_digit_tolerance": "0.00001248751248751248751248751249", "passes_guard":
+    true, "calculation": "2.5 g * 1 g/g / 1.001 L = 2.497502497502497502497502498
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; claim-level evidence is absent
+    from this layer."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field_path": "ingredients[4].concentration", "ingredient": "Na-acetate", "current":
+    {"value": "2.4975", "unit": "G_PER_L"}, "decision": "verified", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Na-acetate 2.5 g", "source_locator": "PDF page 1 composition row 5", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Na-acetate\",\n                        \"compound_id\":
+    23,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.4975,\n                        \"mmol_l\":
+    30.4448,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[4]", "arithmetic": {"source_amount": 2.5, "source_unit":
+    "g", "provider_volume_ml": 1001, "computed_g_per_l": "2.497502497502497502497502498",
+    "reported_g_per_l": "2.4975", "difference_g_per_l": "0.000002497502497502497502498",
+    "last_digit_tolerance": "0.00001248751248751248751248751249", "passes_guard":
+    true, "calculation": "2.5 g * 1 g/g / 1.001 L = 2.497502497502497502497502498
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; existing owner evidence is verified
+    against identical response bytes."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field_path": "ingredients[4].concentration", "ingredient": "Na-acetate", "current":
+    {"value": "2.4975", "unit": "G_PER_L"}, "decision": "verified", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Na-acetate 2.5 g", "source_locator": "PDF page 1 composition row 5", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Na-acetate\",\n                        \"compound_id\":
+    23,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.4975,\n                        \"mmol_l\":
+    30.4448,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[4]", "arithmetic": {"source_amount": 2.5, "source_unit":
+    "g", "provider_volume_ml": 1001, "computed_g_per_l": "2.497502497502497502497502498",
+    "reported_g_per_l": "2.4975", "difference_g_per_l": "0.000002497502497502497502498",
+    "last_digit_tolerance": "0.00001248751248751248751248751249", "passes_guard":
+    true, "calculation": "2.5 g * 1 g/g / 1.001 L = 2.497502497502497502497502498
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; existing owner evidence is verified
+    against identical response bytes."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "ingredient": "MgSO4 x 7 H2O", "current":
+    {"value": "0.1998", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "MgSO4 x 7 H2O 200.0 mg", "source_locator": "PDF page 1 composition row 6", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1998,\n                        \"mmol_l\":
+    0.810627,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[5]", "arithmetic": {"source_amount": 200, "source_unit":
+    "mg", "provider_volume_ml": 1001, "computed_g_per_l": "0.1998001998001998001998001998",
+    "reported_g_per_l": "0.1998", "difference_g_per_l": "1.998001998001998001998E-7",
+    "last_digit_tolerance": "9.990009990009990009990009990E-7", "passes_guard": true,
+    "calculation": "200 mg * 0.001 g/mg / 1.001 L = 0.1998001998001998001998001998
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; claim-level evidence is absent
+    from this layer."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field_path": "ingredients[5].concentration", "ingredient": "MgSO4 x 7 H2O", "current":
+    {"value": "0.1998", "unit": "G_PER_L"}, "decision": "verified", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "MgSO4 x 7 H2O 200.0 mg", "source_locator": "PDF page 1 composition row 6", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1998,\n                        \"mmol_l\":
+    0.810627,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[5]", "arithmetic": {"source_amount": 200, "source_unit":
+    "mg", "provider_volume_ml": 1001, "computed_g_per_l": "0.1998001998001998001998001998",
+    "reported_g_per_l": "0.1998", "difference_g_per_l": "1.998001998001998001998E-7",
+    "last_digit_tolerance": "9.990009990009990009990009990E-7", "passes_guard": true,
+    "calculation": "200 mg * 0.001 g/mg / 1.001 L = 0.1998001998001998001998001998
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; existing owner evidence is verified
+    against identical response bytes."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field_path": "ingredients[5].concentration", "ingredient": "MgSO4 x 7 H2O", "current":
+    {"value": "0.1998", "unit": "G_PER_L"}, "decision": "verified", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "MgSO4 x 7 H2O 200.0 mg", "source_locator": "PDF page 1 composition row 6", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1998,\n                        \"mmol_l\":
+    0.810627,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[5]", "arithmetic": {"source_amount": 200, "source_unit":
+    "mg", "provider_volume_ml": 1001, "computed_g_per_l": "0.1998001998001998001998001998",
+    "reported_g_per_l": "0.1998", "difference_g_per_l": "1.998001998001998001998E-7",
+    "last_digit_tolerance": "9.990009990009990009990009990E-7", "passes_guard": true,
+    "calculation": "200 mg * 0.001 g/mg / 1.001 L = 0.1998001998001998001998001998
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; existing owner evidence is verified
+    against identical response bytes."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "ingredient": "MnSO4 x H2O", "current":
+    {"value": "0.04995", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "MnSO4 x H2O 50.0 mg", "source_locator": "PDF page 1 composition row 7", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\":
+    14,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.04995,\n                        \"mmol_l\":
+    0.295534,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[6]", "arithmetic": {"source_amount": 50, "source_unit":
+    "mg", "provider_volume_ml": 1001, "computed_g_per_l": "0.04995004995004995004995004995",
+    "reported_g_per_l": "0.04995", "difference_g_per_l": "4.995004995004995004995E-8",
+    "last_digit_tolerance": "2.497502497502497502497502498E-7", "passes_guard": true,
+    "calculation": "50 mg * 0.001 g/mg / 1.001 L = 0.04995004995004995004995004995
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; claim-level evidence is absent
+    from this layer."}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field_path": "ingredients[6].concentration", "ingredient": "MnSO4 x H2O", "current":
+    {"value": "0.04995", "unit": "G_PER_L"}, "decision": "verified", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "MnSO4 x H2O 50.0 mg", "source_locator": "PDF page 1 composition row 7", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\":
+    14,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.04995,\n                        \"mmol_l\":
+    0.295534,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[6]", "arithmetic": {"source_amount": 50, "source_unit":
+    "mg", "provider_volume_ml": 1001, "computed_g_per_l": "0.04995004995004995004995004995",
+    "reported_g_per_l": "0.04995", "difference_g_per_l": "4.995004995004995004995E-8",
+    "last_digit_tolerance": "2.497502497502497502497502498E-7", "passes_guard": true,
+    "calculation": "50 mg * 0.001 g/mg / 1.001 L = 0.04995004995004995004995004995
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; existing owner evidence is verified
+    against identical response bytes."}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field_path": "ingredients[6].concentration", "ingredient": "MnSO4 x H2O", "current":
+    {"value": "0.04995", "unit": "G_PER_L"}, "decision": "verified", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "MnSO4 x H2O 50.0 mg", "source_locator": "PDF page 1 composition row 7", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\":
+    14,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.04995,\n                        \"mmol_l\":
+    0.295534,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[6]", "arithmetic": {"source_amount": 50, "source_unit":
+    "mg", "provider_volume_ml": 1001, "computed_g_per_l": "0.04995004995004995004995004995",
+    "reported_g_per_l": "0.04995", "difference_g_per_l": "4.995004995004995004995E-8",
+    "last_digit_tolerance": "2.497502497502497502497502498E-7", "passes_guard": true,
+    "calculation": "50 mg * 0.001 g/mg / 1.001 L = 0.04995004995004995004995004995
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; existing owner evidence is verified
+    against identical response bytes."}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "ingredient": "Casamino acids",
+    "current": {"value": "6.99301", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf",
+    "source_quote": "Casamino acids 7.0 g", "source_locator": "PDF page 1 composition
+    row 8", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote":
+    "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Casamino acids\",\n                        \"compound_id\": 101,\n                        \"amount\":
+    7,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    6.99301,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[7]", "arithmetic": {"source_amount": 7, "source_unit":
+    "g", "provider_volume_ml": 1001, "computed_g_per_l": "6.993006993006993006993006993",
+    "reported_g_per_l": "6.99301", "difference_g_per_l": "0.000003006993006993006993007",
+    "last_digit_tolerance": "0.000005", "passes_guard": true, "calculation": "7 g
+    * 1 g/g / 1.001 L = 6.993006993006993006993006993 g/L; provider-declared basis
+    only."}, "explanation": "The provider-reported rate is supported on its own declared
+    volume basis; claim-level evidence is absent from this layer."}, {"layer": "KOMODO
+    owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field_path":
+    "ingredients[7].concentration", "ingredient": "Casamino acids", "current": {"value":
+    "6.99301", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf",
+    "source_quote": "Casamino acids 7.0 g", "source_locator": "PDF page 1 composition
+    row 8", "provider_reference": "https://mediadive.dsmz.de/rest/medium/57", "provider_quote":
+    "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Casamino acids\",\n                        \"compound_id\": 101,\n                        \"amount\":
+    7,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    6.99301,\n                        \"optional\": 0\n                    }", "provider_locator":
+    "$.data.solutions[0].recipe[7]", "arithmetic": {"source_amount": 7, "source_unit":
+    "g", "provider_volume_ml": 1001, "computed_g_per_l": "6.993006993006993006993006993",
+    "reported_g_per_l": "6.99301", "difference_g_per_l": "0.000003006993006993006993007",
+    "last_digit_tolerance": "0.000005", "passes_guard": true, "calculation": "7 g
+    * 1 g/g / 1.001 L = 6.993006993006993006993006993 g/L; provider-declared basis
+    only."}, "explanation": "The provider-reported rate is supported on its own declared
+    volume basis; existing owner evidence is verified against identical response bytes."},
+    {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field_path": "ingredients[7].concentration", "ingredient": "Casamino acids",
+    "current": {"value": "6.99301", "unit": "G_PER_L"}, "decision": "verified", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Casamino acids 7.0 g", "source_locator": "PDF page 1 composition row 8", "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/57", "provider_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Casamino acids\",\n                        \"compound_id\":
+    101,\n                        \"amount\": 7,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 6.99301,\n                        \"optional\":
+    0\n                    }", "provider_locator": "$.data.solutions[0].recipe[7]",
+    "arithmetic": {"source_amount": 7, "source_unit": "g", "provider_volume_ml": 1001,
+    "computed_g_per_l": "6.993006993006993006993006993", "reported_g_per_l": "6.99301",
+    "difference_g_per_l": "0.000003006993006993006993007", "last_digit_tolerance":
+    "0.000005", "passes_guard": true, "calculation": "7 g * 1 g/g / 1.001 L = 6.993006993006993006993006993
+    g/L; provider-declared basis only."}, "explanation": "The provider-reported rate
+    is supported on its own declared volume basis; existing owner evidence is verified
+    against identical response bytes."}, {"layers": ["target", "KOMODO owner", "DSMZ
+    owner"], "field_path": "preparation_steps", "decision": "add", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Distilled water 1000.0 ml", "source_locator": "PDF page 1 composition row 9",
+    "provider_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "provider_locator": "$.data.solutions[0].recipe[8]",
+    "explanation": "Retain 1000 mL water as source-batch solvent context in all layers.
+    Do not infer measured final volume or add a water mass."}, {"layer": "target",
+    "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field_path": "ph_value; preparation_steps",
+    "decision": "evidence_only", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf",
+    "source_quote": "Adjust pH to 5.4.", "source_locator": "PDF page 1 sentence after
+    composition", "explanation": "Target pH 5.4 is correct. The DSMZ owner also retains
+    the adjustment step; generated and KOMODO layers omit that step. Preserve the
+    supported value and instruction and add narrow source evidence."}, {"layer": "KOMODO
+    owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field_path":
+    "ph_value; preparation_steps", "decision": "evidence_only", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf", "source_quote":
+    "Adjust pH to 5.4.", "source_locator": "PDF page 1 sentence after composition",
+    "explanation": "Target pH 5.4 is correct. The DSMZ owner also retains the adjustment
+    step; generated and KOMODO layers omit that step. Preserve the supported value
+    and instruction and add narrow source evidence."}, {"layer": "DSMZ owner", "path":
+    "data/normalized_yaml/bacterial/aam_medium.yaml", "field_path": "ph_value; preparation_steps",
+    "decision": "evidence_only", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium57.pdf",
+    "source_quote": "Adjust pH to 5.4.", "source_locator": "PDF page 1 sentence after
+    composition", "explanation": "Target pH 5.4 is correct. The DSMZ owner also retains
+    the adjustment step; generated and KOMODO layers omit that step. Preserve the
+    supported value and instruction and add narrow source evidence."}], "precision_conflicts":
+    [{"index": 0, "name": "Tryptone", "source_amount": 5, "source_unit": "g", "provider_volume_ml":
+    1001, "computed_g_per_l": "4.995004995004995004995004995", "reported_g_per_l":
+    "4.99501", "difference_g_per_l": "0.000005004995004995004995005", "last_digit_tolerance":
+    "0.000005", "passes_guard": false, "calculation": "5 g * 1 g/g / 1.001 L = 4.995004995004995004995004995
+    g/L; provider-declared basis only."}, {"index": 1, "name": "Meat extract", "source_amount":
+    5, "source_unit": "g", "provider_volume_ml": 1001, "computed_g_per_l": "4.995004995004995004995004995",
+    "reported_g_per_l": "4.99501", "difference_g_per_l": "0.000005004995004995004995005",
+    "last_digit_tolerance": "0.000005", "passes_guard": false, "calculation": "5 g
+    * 1 g/g / 1.001 L = 4.995004995004995004995004995 g/L; provider-declared basis
+    only."}], "historical_verified": [{"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "ingredients[2].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00",
+    "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "literal_current_identical_response": true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[2].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00",
+    "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path":
+    "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[4].evidence",
+    "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256":
+    "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response":
+    true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[4].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00",
+    "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path":
+    "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[5].evidence",
+    "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256":
+    "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response":
+    true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[5].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00",
+    "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path":
+    "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[6].evidence",
+    "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256":
+    "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response":
+    true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[6].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00",
+    "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path":
+    "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[7].evidence",
+    "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256":
+    "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response":
+    true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[7].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00",
+    "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "literal_current_identical_response": true}]}'
+- assessment_id: grounding
+  area: grounding
+  topic: Primary and secondary linkage in all three layers
+  outcome: supported
+  summary: Each layer has 4/8 ingredient instances with primary CHEBI terms and 4/8
+    with verified current secondary keys (50% for each linkage measure). All four
+    primary ID/label pairs resolve canonically. These percentages describe linkage
+    coverage, not scientific accuracy. Tryptone, meat extract, yeast extract and casamino
+    acids are ungrounded mixtures; no false monomolecular identity is invented.
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - mim
+  - chebi31795
+  - chebi32954
+  - chebi53426
+  - chebi86364
+  details: '[{"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "ingredients[3]", "id": "CHEBI:53426", "canonical_label": "polysorbate
+    80", "matched_mim_rows": [{"label": "Tween 80", "match_type": "preferred_term",
+    "identifier": "CHEBI:53426", "preferred_term": "Tween 80", "ontology_id": "CHEBI:53426",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path":
+    "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "ingredients[4]", "id": "CHEBI:32954",
+    "canonical_label": "sodium acetate", "matched_mim_rows": [{"label": "Na-acetate",
+    "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term":
+    "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "ingredients[5]", "id": "CHEBI:31795", "canonical_label": "magnesium
+    sulfate heptahydrate", "matched_mim_rows": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]},
+    {"layer": "target", "path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field":
+    "ingredients[6]", "id": "CHEBI:86364", "canonical_label": "manganese(II) sulfate
+    monohydrate", "matched_mim_rows": [{"label": "MnSO4 x H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner",
+    "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[3]",
+    "id": "CHEBI:53426", "canonical_label": "polysorbate 80", "matched_mim_rows":
+    [{"label": "Tween 80", "match_type": "preferred_term", "identifier": "CHEBI:53426",
+    "preferred_term": "Tween 80", "ontology_id": "CHEBI:53426", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "ingredients[4]", "id": "CHEBI:32954", "canonical_label": "sodium acetate",
+    "matched_mim_rows": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier":
+    "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "ingredients[5]", "id": "CHEBI:31795", "canonical_label": "magnesium
+    sulfate heptahydrate", "matched_mim_rows": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]},
+    {"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "ingredients[6]", "id": "CHEBI:86364", "canonical_label": "manganese(II)
+    sulfate monohydrate", "matched_mim_rows": [{"label": "MnSO4 x H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O",
+    "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}]},
+    {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[3]", "id": "CHEBI:53426", "canonical_label": "polysorbate
+    80", "matched_mim_rows": [{"label": "Tween 80", "match_type": "preferred_term",
+    "identifier": "CHEBI:53426", "preferred_term": "Tween 80", "ontology_id": "CHEBI:53426",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "DSMZ owner",
+    "path": "data/normalized_yaml/bacterial/aam_medium.yaml", "field": "ingredients[4]",
+    "id": "CHEBI:32954", "canonical_label": "sodium acetate", "matched_mim_rows":
+    [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954",
+    "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[5]", "id": "CHEBI:31795", "canonical_label": "magnesium
+    sulfate heptahydrate", "matched_mim_rows": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]},
+    {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[6]", "id": "CHEBI:86364", "canonical_label": "manganese(II)
+    sulfate monohydrate", "matched_mim_rows": [{"label": "MnSO4 x H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O",
+    "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}]}]'
+- assessment_id: forms
+  area: grounding
+  topic: Hydrates, sodium acetate and commercial mixtures
+  outcome: concern
+  summary: The magnesium heptahydrate and manganese monohydrate match the exact source
+    formulas. Tween 80 maps to polysorbate 80; its commercial liquid dose is not a
+    mass or molar quantity. CHEBI:32954 has an anhydrous structural formula and synonyms,
+    whereas both recipe sources say only Na-acetate. Preserve that unresolved source
+    hydration scope; generic name correspondence alone does not verify hydration.
+    The four complex nutrients remain mixtures, and provider tryptone mmol/L is not
+    endorsed.
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz57
+  - mediadive57api
+  - chebi31795
+  - chebi32954
+  - chebi53426
+  - chebi86364
+- assessment_id: preparation
+  area: completeness
+  topic: Source water, supported pH and unavailable cycle details
+  outcome: concern
+  summary: All layers retain target pH 5.4; the DSMZ owner retains its adjustment
+    sentence, while the target and KOMODO owner lack preparation_steps. Source water
+    1000 mL is omitted from preparation context in all three. No source-specific sterilization
+    cycle, storage, vessel or incubation regime occurs in the primary PDF. An autoclave
+    equipment label in the provider is not a temperature/time instruction.
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz57
+  - mediadive57api
+  - primary-row-9
+  - primary-ph
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid formulation and biological limits
+  outcome: supported
+  summary: 'Tryptone, meat extract, yeast extract and casamino acids support COMPLEX/UNDEFINED.
+    No agar is present in this exact source, consistent with LIQUID. The bacterial
+    filing is not contradicted by an asserted organism in the reviewed records. Generic
+    Microbial cultivation and KOMODO Aerobic: No are catalogue annotations, not tested
+    growth or incubation evidence. No strain, taxonomy ID, native variant experiment
+    or KG match is asserted. SOURCE_DUPLICATE denotes catalogue provenance, not a
+    culture variant.'
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz57
+  - exact-mapping-row
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained claims and generated evidence loss
+  outcome: concern
+  summary: Both owners now retain five amount snippets with the same original response
+    hash and retrieval time; all ten instances are literally present in the current
+    identical provider response. KOMODO additionally retains the exact identity-only
+    mapping row. These citations are absent from the generated target. The primary
+    pH adjustment survives only in the DSMZ owner. The current generator and resolver
+    were inspected, not rerun; source correction and evidence preservation must precede
+    any authorized regeneration.
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - exact-mapping-row
+  - mediadive57api
+  - resolver
+  - merger
+  - amount-writer
+  details: '[{"layer": "KOMODO owner", "path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "ingredients[2].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00",
+    "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "literal_current_identical_response": true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[2].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00",
+    "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path":
+    "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[4].evidence",
+    "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256":
+    "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response":
+    true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[4].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00",
+    "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path":
+    "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[5].evidence",
+    "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256":
+    "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response":
+    true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[5].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00",
+    "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path":
+    "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[6].evidence",
+    "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256":
+    "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response":
+    true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[6].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00",
+    "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "literal_current_identical_response": true}, {"layer": "KOMODO owner", "path":
+    "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field": "ingredients[7].evidence",
+    "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00", "historical_response_sha256":
+    "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5", "literal_current_identical_response":
+    true}, {"layer": "DSMZ owner", "path": "data/normalized_yaml/bacterial/aam_medium.yaml",
+    "field": "ingredients[7].evidence", "historical_accessed_at": "2026-10-07T10:41:27.894374+00:00",
+    "historical_response_sha256": "6d5bd6f9f9b6fb03a6f89f4e481e8ecdde7f752cada35d1264c929092140d5f5",
+    "literal_current_identical_response": true}]'
+- assessment_id: evidence
+  area: evidence
+  topic: Provider claims, primary recipe and zero-excerpt target check
+  outcome: concern
+  summary: The generated target has no native references or claim-level excerpts;
+    its reference check examines zero excerpts. Both owners have narrow provider concentration
+    citations, and the KOMODO owner has a separate identity mapping citation. Current
+    source bytes verify those historical snippets without changing their original
+    access times. Primary PDF evidence and retained source-batch limits should accompany
+    later curation. No literature or growth claims are imported from source names.
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz57
+  - mediadive57api
+  - exact-mapping-row
+  - validate-references
+- assessment_id: history
+  area: provenance
+  topic: Append-only event history and timestamp interpretation
+  outcome: concern
+  summary: All 28 scoped timestamps were checked for ISO syntax and timezone. 4 instances
+    are malformed or lack timezone, as itemized. Curation events are process provenance
+    rather than independent confirmation of recipe correctness.
+  target_ids:
+  - CultureMech:006024
+  evidence_ids:
+  - record
+  - owner-0
+  - history
+  details: '[{"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml", "field": "curation_history[0].timestamp",
+    "value": "2026-01-27T01:15:03.fZ", "valid_ISO_datetime": false, "timezone_aware":
+    false, "problem": "Does not parse as ISO datetime"}, {"path": "data/merge_yaml/merged/AAM_MEDIUM.yaml",
+    "field": "curation_history[1].timestamp", "value": "2026-02-03T11:19:17.790344",
+    "valid_ISO_datetime": true, "timezone_aware": false, "problem": "Timezone absent;
+    local time cannot be asserted as UTC"}, {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml",
+    "field": "curation_history[0].timestamp", "value": "2026-01-27T01:15:03.fZ", "valid_ISO_datetime":
+    false, "timezone_aware": false, "problem": "Does not parse as ISO datetime"},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml", "field":
+    "curation_history[1].timestamp", "value": "2026-02-03T11:19:17.790344", "valid_ISO_datetime":
+    true, "timezone_aware": false, "problem": "Timezone absent; local time cannot
+    be asserted as UTC"}]'
+findings:
+- finding_id: f1
+  issue_key: cm006024-tween-liquid-dose
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Tween 80 liquid dose is encoded as mass concentration
+  description: All three layers store Tween 80 as 1 G_PER_L. Both exact sources specify
+    1 mL per listed recipe, and the provider reports no g_l for that row. Neither
+    density nor a final-volume mass concentration is supplied.
+  target_ids:
+  - CultureMech:006024
+  field_paths:
+  - ingredients[3].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary-row-4
+  - provider-row-4
+  - amount-writer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aam_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm006024-provider-precision
+  category: quantity
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Two reported rates narrowly exceed the source arithmetic interval
+  description: Tryptone and meat extract retain provider 4.99501 g/L. Literal 5 g
+    divided by provider 1.001 L yields 4.995004995... g/L, marginally beyond half
+    the reported last decimal quantum. Preserve this small precision conflict distinctly
+    from the Tween unit error; it does not imply another measured final volume.
+  target_ids:
+  - CultureMech:006024
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[1].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - provider-row-1
+  - provider-row-2
+  - rounding-guard
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aam_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm006024-preparation-and-evidence
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source preparation context and maintained excerpts are incompletely propagated
+  description: Source water is absent from preparation context in all three layers.
+    The target and KOMODO owner omit the pH adjustment instruction although their
+    target pH values are correct and the DSMZ owner retains the step. Ten verified
+    maintained amount excerpts plus the identity mapping and references are absent
+    from the target.
+  target_ids:
+  - CultureMech:006024
+  field_paths:
+  - preparation_steps
+  - references
+  - evidence
+  - ingredients[].evidence
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary-row-9
+  - primary-ph
+  - mediadive57api
+  - exact-mapping-row
+  - resolver
+  - merger
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aam_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm006024-sodium-acetate-form-scope
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source hydration does not establish the sodium-acetate structural form
+  description: All three layers assign CHEBI:32954, whose structural annotations are
+    anhydrous, to source Na-acetate. The exact primary and provider do not specify
+    hydration. The source therefore supports the generic salt name and its literal
+    mass but does not independently establish this hydration specificity. This is
+    an unresolved scope issue, not proof that a replacement ID is correct.
+  target_ids:
+  - CultureMech:006024
+  field_paths:
+  - ingredients[4].term
+  - ingredients[4].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary-row-5
+  - provider-row-5
+  - chebi32954
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aam_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: cm006024-history-timestamp-scope
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Inherited history includes malformed and timezone-naive timestamps
+  description: The generated target and KOMODO owner each retain the literal fractional
+    token fZ in the import timestamp and a timezone-naive resolver timestamp. Four
+    instances cannot establish unambiguous historical instants. The DSMZ owner has
+    timezone-aware history. These inherited strings do not invalidate the independently
+    captured current review chronology.
+  target_ids:
+  - CultureMech:006024
+  field_paths:
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - history
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aam_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the source liquid amount and batch basis in both maintained
+    contributors with narrow evidence. Do not infer a mass using density or infer
+    a measured final volume; reconcile the duplicate relationship after the same correction
+    is applied.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006024
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aam_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Keep the original source amounts and reported rates with an explicit
+    precision note, or verify the provider rounding rule before asserting derived
+    arithmetic support. Do not silently alter rates.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006024
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aam_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve source solvent context and the supported pH instruction in
+    maintained inputs, retaining all original excerpt provenance and current stage
+    limits. Regenerate only after verification and confirm that existing evidence
+    survives; do not supply an unsupported sterilization cycle.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:006024
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aam_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve the literal source material and document hydration uncertainty.
+    Obtain source-specific form evidence before endorsing an anhydrous molar conversion
+    or changing the primary/secondary identity; do not guess a hydrate.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:006024
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aam_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve old events and their raw source values. If independent provenance
+    establishes an interpretation, append a documented clarification; do not invent
+    a fractional second, assume a timezone or rewrite history merely to make it parse.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:006024
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_57_AAM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aam_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- Provider normalization uses its declared 1001 mL main-solution volume, not an independently
+  measured final volume. The primary lists 1000 mL water plus 1 mL Tween 80; no density
+  conversion is supported.
+- No source-specific sterilization cycle, storage or growth outcome is supplied by
+  the primary PDF. Provider equipment names an autoclave without cycle parameters;
+  no generic defaults are inserted.
+- The source does not specify sodium-acetate hydration. Its current CHEBI identity
+  is structurally anhydrous, so hydration and molar conversion are not independently
+  established. No replacement is guessed.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-014
+- generated-medium
+```
