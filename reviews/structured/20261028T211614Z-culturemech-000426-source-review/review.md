@@ -1,0 +1,4134 @@
+# Scientific review: DESULFOPILA CORRODENS MEDIUM
+
+- Review: 20261028T211614Z-culturemech-000426-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T20:56:49.019639Z
+- Finished UTC: 2026-10-28T21:16:14.038668Z
+- Reviewer: Codex batch006_validation (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Partial scientific review identifies an unresolved strain/source merge, remaining flattened stock quantities and stale generated sums, unsupported DSM stock-dose denominators, and two supplied-form identifier mismatches. Existing main provider rates, partial stock repairs, pH and preparation wording receive scoped credit. Exact KOMODO access remains unavailable; no formulation is transferred across that boundary.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch078 index 03
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000426 | data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml | generated | desulfopila_corrodens_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:000426 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:000426 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:000426 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:000426 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### Generic source and strain branch
+
+identity: concern. Targets: CultureMech:000426.
+
+Fresh DSM1010 and its current provider agree on generic ingredient topology. DSM15769 has an explicit primary substitution and a collection identity, not a new growth assertion. The two inaccessible KOMODO branches retain historical namespace/mapping context only.
+
+### Defined liquid representation
+
+representation: supported. Targets: CultureMech:000426.
+
+The generic recipe is chemically specified and liquid; this representation is supported within the DSM scope and does not resolve KOMODO identity or the source-specific strain branch.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:000426.
+
+163 current concentration fields are covered by 65 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema":"fresh-b078-quantity-inventory-v1","target":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","quantity_field_count":163,"decisions":[{"quantity_id":"q1","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"26.2948","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"26.2948","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"26.2948","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[0].concentration","stored":{"value":"26.2948","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 26.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 26.2948,\n                        \"mmol_l\": 449.946,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 3-3","quote":"NaCl                                                 26.40        g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[0].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[0].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q2","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5.67729","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5.67729","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5.67729","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5.67729","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 5.7,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.67729,\n                        \"mmol_l\": 27.9253,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 4-4","quote":"MgCl2 x 6 H2O                                         5.70        g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[1].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[1].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q3","label":"MgSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"6.77291","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"6.77291","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"6.77291","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[2].concentration","stored":{"value":"6.77291","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 6.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 6.77291,\n                        \"mmol_l\": 27.479,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 5-5","quote":"MgSO4 x 7 H2O                                         6.80        g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[2].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[2].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[2].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[2].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q4","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.657371","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.657371","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.657371","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.657371","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.66,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.657371,\n                        \"mmol_l\": 8.81785,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 6-6","quote":"KCl                                                   0.66        g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[3].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[3].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q5","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1.46414","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1.46414","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1.46414","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1.46414","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 1.47,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.46414,\n                        \"mmol_l\": 9.95914,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 7-7","quote":"CaCl2 x 2 H2O                                         1.47        g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[4].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[4].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q6","label":"KBr","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.0896414","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.0896414","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.0896414","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.0896414","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"KBr\",\n                        \"compound_id\": 174,\n                        \"amount\": 0.09,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0896414,\n                        \"mmol_l\": 0.753289,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 8-8","quote":"KBr                                                   0.09        g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[5].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[5].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q7","label":"Sodium resazurin","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.000498008","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.000498008","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.000498008","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.000498008","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The explicit 0.1% w/v indicator and 0.50 ml dose permit source-basis interpretation, but its sodium form is separately misgrounded. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000498008,\n                        \"mmol_l\": 0.00198275,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 11-11","quote":"Sodium resazurin (0.1% w/v)                           0.50       ml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The explicit 0.1% w/v indicator and 0.50 ml dose permit source-basis interpretation, but its sodium form is separately misgrounded. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[6].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The explicit 0.1% w/v indicator and 0.50 ml dose permit source-basis interpretation, but its sodium form is separately misgrounded. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The explicit 0.1% w/v indicator and 0.50 ml dose permit source-basis interpretation, but its sodium form is separately misgrounded. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[6].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The explicit 0.1% w/v indicator and 0.50 ml dose permit source-basis interpretation, but its sodium form is separately misgrounded. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q8","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.199203","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.199203","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.199203","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.199203","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.199203,\n                        \"mmol_l\": 1.46381,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 12-12","quote":"KH2PO4                                                0.20        g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[7].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[7].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q9","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.249004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.249004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.249004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.249004","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.249004,\n                        \"mmol_l\": 4.65515,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 13-13","quote":"NH4Cl                                                 0.25        g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[8].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[8].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[8].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[8].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q10","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.996016","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.996016","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.996016","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.996016","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.996016,\n                        \"mmol_l\": 9.39744,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 14-14","quote":"Na2CO3                                                1.00        g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[9].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[9].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[9].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[9].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q11","label":"Na-DL-lactate","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.29084","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.29084","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.29084","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.29084","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[12]","quote":"{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Na-DL-lactate\",\n                        \"compound_id\": 111,\n                        \"amount\": 2.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.29084,\n                        \"mmol_l\": 20.4429,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 15-15","quote":"Na-DL-lactate                                         2.30        g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[10].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[10].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[10].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[10].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q12","label":"Na2S x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.298805","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.298805","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.298805","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.298805","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[15]","quote":"{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.298805,\n                        \"mmol_l\": 1.24408,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 18-18","quote":"Na2S x 9 H2O                                          0.30        g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[11].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[11].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[11].concentration","decision":"evidence_only","rationale":"The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[11].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed owner and target retain the exact current provider g_l on its declared 1004 ml computational basis. The primary prints batch mass and 1000 ml water, not a measured final volume; no replacement denominator is inferred. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q13","label":"HCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"The primary gives 10 ml HCl labelled 25%, without a percent basis, in SL-10 made up to 1000 ml. The stored 2.5 g/L is an unsupported acid-percent conversion and is wrongly at medium root. Preserve volume/strength without density or percent-basis assumptions. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 38-38","quote":"HCl (25%)                                            10.00      ml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[12].concentration","decision":"correct","rationale":"The primary gives 10 ml HCl labelled 25%, without a percent basis, in SL-10 made up to 1000 ml. The stored 2.5 g/L is an unsupported acid-percent conversion and is wrongly at medium root. Preserve volume/strength without density or percent-basis assumptions. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[12].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The primary gives 10 ml HCl labelled 25%, without a percent basis, in SL-10 made up to 1000 ml. The stored 2.5 g/L is an unsupported acid-percent conversion and is wrongly at medium root. Preserve volume/strength without density or percent-basis assumptions. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[12].concentration","decision":"correct","rationale":"The primary gives 10 ml HCl labelled 25%, without a percent basis, in SL-10 made up to 1000 ml. The stored 2.5 g/L is an unsupported acid-percent conversion and is wrongly at medium root. Preserve volume/strength without density or percent-basis assumptions. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[12].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The primary gives 10 ml HCl labelled 25%, without a percent basis, in SL-10 made up to 1000 ml. The stored 2.5 g/L is an unsupported acid-percent conversion and is wrongly at medium root. Preserve volume/strength without density or percent-basis assumptions. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q14","label":"FeCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 39-39","quote":"FeCl2 x 4 H2O                                         1.50       g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[13].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q15","label":"ZnCl2","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.07","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 40-40","quote":"ZnCl2                                                70.00      mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[14].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[13].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[13].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[13].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q16","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 41-41","quote":"MnCl2 x 4 H2O                                       100.00      mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[15].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[14].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[14].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[14].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q17","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 42-42","quote":"H3BO3                                                 6.00      mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[16].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[15].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[15].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[15].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q18","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.19","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 43-43","quote":"CoCl2 x 6 H2O                                       190.00      mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[17].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[16].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[16].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[16].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q19","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.002","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 44-44","quote":"CuCl2 x 2 H2O                                         2.00      mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[18].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[17].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[17].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[17].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q20","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.024","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 45-45","quote":"NiCl2 x 6 H2O                                        24.00      mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[19].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[18].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[18].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[18].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q21","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.036","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 46-46","quote":"Na2MoO4 x 2 H2O                                      36.00      mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[20].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[19].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[19].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[19].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q22","label":"NaOH","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 61-61","quote":"NaOH                                                       0.50        g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[21].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[20].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[20].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[20].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q23","label":"Na2SeO3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.003","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 62-62","quote":"Na2SeO3 x 5 H2O                                            3.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[22].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[21].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[21].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[21].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q24","label":"Na2WO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.004","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 63-63","quote":"Na2WO4 x 2 H2O                                             4.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[23].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[22].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[22].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[22].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q25","label":"Biotin","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 68-68","quote":"Biotin                                                    20.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[24].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[23].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[23].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[23].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q26","label":"Folic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 69-69","quote":"Folic acid                                                20.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[25].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[24].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[24].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[24].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q27","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.4","unit":"G_PER_L"}}],"decision":"correct","rationale":"The generated root value sums two different vitamin-stock strengths. The maintained owners already split these exact contributions into separate stocks; credit that repair, keep the source stock amounts separate and regenerate only after branch reconciliation. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 70-70","quote":"Pyridoxine hydrochloride                                 100.00       mg","quote_basis":"derivative text"},{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 300,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 1.45886,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 87-87","quote":"Pyridoxine hydrochloride                                 300.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[26].concentration","decision":"correct","rationale":"The generated root value sums two different vitamin-stock strengths. The maintained owners already split these exact contributions into separate stocks; credit that repair, keep the source stock amounts separate and regenerate only after branch reconciliation. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q28","label":"Thiamine HCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 71-71","quote":"Thiamine HCl                                              50.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[27].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[25].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[25].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[25].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q29","label":"Riboflavin","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 72-72","quote":"Riboflavin                                                50.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[28].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[26].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[26].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[26].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q30","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.25","unit":"G_PER_L"}}],"decision":"correct","rationale":"The generated root value sums two different vitamin-stock strengths. The maintained owners already split these exact contributions into separate stocks; credit that repair, keep the source stock amounts separate and regenerate only after branch reconciliation. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 73-73","quote":"Nicotinic acid                                            50.00       mg","quote_basis":"derivative text"},{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.62456,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 85-85","quote":"Nicotinic acid                                           200.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[29].concentration","decision":"correct","rationale":"The generated root value sums two different vitamin-stock strengths. The maintained owners already split these exact contributions into separate stocks; credit that repair, keep the source stock amounts separate and regenerate only after branch reconciliation. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q31","label":"Calcium D-(+)-pantothenate","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 74-74","quote":"Calcium D-(+)-pantothenate                                50.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[30].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[27].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[27].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[27].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q32","label":"Vitamin B12","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[31].concentration","stored":{"value":"0.101","unit":"G_PER_L"}}],"decision":"correct","rationale":"The generated root value sums two different vitamin-stock strengths. The maintained owners already split these exact contributions into separate stocks; credit that repair, keep the source stock amounts separate and regenerate only after branch reconciliation. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 75-75","quote":"Vitamin B12                                                1.00       mg","quote_basis":"derivative text"},{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 82-82","quote":"Vitamin B12                                              100.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[31].concentration","decision":"correct","rationale":"The generated root value sums two different vitamin-stock strengths. The maintained owners already split these exact contributions into separate stocks; credit that repair, keep the source stock amounts separate and regenerate only after branch reconciliation. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q33","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[32].concentration","stored":{"value":"0.13","unit":"G_PER_L"}}],"decision":"correct","rationale":"The generated root value sums two different vitamin-stock strengths. The maintained owners already split these exact contributions into separate stocks; credit that repair, keep the source stock amounts separate and regenerate only after branch reconciliation. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 76-76","quote":"p-Aminobenzoic acid                                       50.00       mg","quote_basis":"derivative text"},{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 80,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\": 0.583345,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 83-83","quote":"p-Aminobenzoic acid                                       80.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[32].concentration","decision":"correct","rationale":"The generated root value sums two different vitamin-stock strengths. The maintained owners already split these exact contributions into separate stocks; credit that repair, keep the source stock amounts separate and regenerate only after branch reconciliation. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q34","label":"(DL)-alpha-Lipoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[33].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 77-77","quote":"(DL)-alpha-Lipoic acid                                    50.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[33].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[28].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[28].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[28].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q35","label":"D-(+)-biotin","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[34].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"D-(+)-biotin\",\n                        \"compound_id\": 1359,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 84-84","quote":"D-(+)-biotin                                              20.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[34].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[29].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[29].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[29].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q36","label":"Calcium pantothenate","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[35].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\": 518,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.209849,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 86-86","quote":"Calcium pantothenate                                     100.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[35].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[30].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[30].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[30].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q37","label":"Thiamine-HCl x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[36].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\": 77,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.535761,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 88-88","quote":"Thiamine-HCl x 2 H2O                                     200.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[36].concentration","decision":"correct","rationale":"The exact source batch mass and current API stock g_l belong to the named stock, not the medium root. Supported numeric stock strength does not validate the current placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared provider basis, not independently measured final volume. The two KOMODO branches have unresolved exact current source identity; DSM1010 is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q38","label":"FeCl2 x 4 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 39-39","quote":"FeCl2 x 4 H2O                                         1.50       g","quote_basis":"derivative text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 55-56","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[0].composition[0].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[0].composition[0].concentration","decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[0].composition[0].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."}]},{"quantity_id":"q39","label":"Thiamine-HCl x 2 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\": 77,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.535761,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 88-88","quote":"Thiamine-HCl x 2 H2O                                     200.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[0].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[0].concentration","decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[0].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."}]},{"quantity_id":"q40","label":"Nicotinic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.62456,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 85-85","quote":"Nicotinic acid                                           200.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[1].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[1].concentration","decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[1].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."}]},{"quantity_id":"q41","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[2].concentration","stored":{"value":"0.08","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[2].concentration","stored":{"value":"0.08","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[2].concentration","stored":{"value":"0.08","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 80,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\": 0.583345,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 83-83","quote":"p-Aminobenzoic acid                                       80.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[2].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[2].concentration","decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[2].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."}]},{"quantity_id":"q42","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[3].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[3].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[3].concentration","stored":{"value":"0.3","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 300,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 1.45886,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 87-87","quote":"Pyridoxine hydrochloride                                 300.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[3].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[3].concentration","decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[3].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."}]},{"quantity_id":"q43","label":"Vitamin B12","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 82-82","quote":"Vitamin B12                                              100.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[4].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[4].concentration","decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[4].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."}]},{"quantity_id":"q44","label":"Nicotinic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[0].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[0].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[0].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 73-73","quote":"Nicotinic acid                                            50.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[0].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[0].concentration","decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[0].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."}]},{"quantity_id":"q45","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[1].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[1].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[1].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 76-76","quote":"p-Aminobenzoic acid                                       50.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[1].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[1].concentration","decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[1].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."}]},{"quantity_id":"q46","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[2].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[2].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[2].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 70-70","quote":"Pyridoxine hydrochloride                                 100.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[2].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[2].concentration","decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[2].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."}]},{"quantity_id":"q47","label":"Vitamin B12","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[3].concentration","stored":{"value":"0.001","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[3].concentration","stored":{"value":"0.001","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[3].concentration","stored":{"value":"0.001","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 75-75","quote":"Vitamin B12                                                1.00       mg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[3].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[3].concentration","decision":"evidence_only","rationale":"This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[3].concentration","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. This existing DSM-owner nested value matches the exact current source stock rate and is retained as evidence_only because no attached field claim exists. Partial nesting is real repair credit, while remaining root components and source branch boundaries still need resolution. KOMODO copied values remain unsupported for their own unresolved branches."}]},{"quantity_id":"q48","label":"Trace element solution SL-10 receiving dose and note","local_fields":[{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"1","unit":"ML_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[0].preparation_notes","stored":"Stock prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive (#150)."}],"decision":"correct","rationale":"The primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input water from measured final volume. Correct the receiving denominator and overbroad stock-preparation note without discarding the existing stock identity.","source_stage":"DSM stock receiving batch","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 9-9","quote":"Trace element solution SL-10                          1.00       ml","quote_basis":"derivative text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 47-47","quote":"Distilled water                                     990.00      ml","quote_basis":"derivative text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 55-56","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[0].concentration","decision":"correct","rationale":"The primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input water from measured final volume. Correct the receiving denominator and overbroad stock-preparation note without discarding the existing stock identity."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[0].preparation_notes","decision":"correct","rationale":"The primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input water from measured final volume. Correct the receiving denominator and overbroad stock-preparation note without discarding the existing stock identity."}]},{"quantity_id":"q49","label":"Trace element solution SL-10 unasserted candidate/note","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[0].concentration_candidates","stored":[{"value":"1","unit":"ML_PER_L","basis":"CROSS_MEDIUM_INFERENCE","support":"KOMODO 1010 resolves to DSMZ/MediaDive medium 1010 both structurally and via the KOMODO-&gt;DSMZ export; volume read from that medium's recipe.","counterevidence":"Not confirmed as medium 1010: 89% of the 37 shared compounds carry the same value (12 shared with that medium's main solution). A record that IS the medium scores 100%, with at least 5 main-solution compounds. A stock's addition volume varies by citing medium: MediaDive medium 142 adds 'Trace element solution (Vishniac &amp; Santer)' at 0.2 ml and medium 69 adds the same stock at 5 ml.","proposed_by":"apply_cocktail_nesting.py"}]},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[0].preparation_notes","stored":"Stock prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}],"decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume.","source_stage":"unasserted cross-medium candidate","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 9-9","quote":"Trace element solution SL-10                          1.00       ml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[0].concentration_candidates","decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[0].preparation_notes","decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume."}]},{"quantity_id":"q50","label":"Trace element solution SL-10 unasserted candidate/note","local_fields":[{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[0].concentration_candidates","stored":[{"value":"1","unit":"ML_PER_L","basis":"CROSS_MEDIUM_INFERENCE","support":"This record is a variant of medium 1010 (KOMODO key '1010.1'); volume read from base medium 1010 ('DESULFOPILA CORRODENS MEDIUM').","counterevidence":"The variant's own recipe was never read — only base medium 1010's — so the modification may change this volume. A stock's addition volume varies by citing medium: MediaDive medium 142 adds 'Trace element solution (Vishniac &amp; Santer)' at 0.2 ml and medium 69 adds the same stock at 5 ml.","proposed_by":"apply_cocktail_nesting.py"}]},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[0].preparation_notes","stored":"Stock prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}],"decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume.","source_stage":"unasserted cross-medium candidate","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 9-9","quote":"Trace element solution SL-10                          1.00       ml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[0].concentration_candidates","decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[0].preparation_notes","decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume."}]},{"quantity_id":"q51","label":"Seven vitamins solution receiving dose and note","local_fields":[{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"1","unit":"ML_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].preparation_notes","stored":"Stock prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive (#150)."}],"decision":"correct","rationale":"The primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input water from measured final volume. Correct the receiving denominator and overbroad stock-preparation note without discarding the existing stock identity.","source_stage":"DSM stock receiving batch","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[14]","quote":"{\n                        \"recipe_order\": 15,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 17-17","quote":"Seven vitamins solution                               1.00       ml","quote_basis":"derivative text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 89-89","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].concentration","decision":"correct","rationale":"The primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input water from measured final volume. Correct the receiving denominator and overbroad stock-preparation note without discarding the existing stock identity."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].preparation_notes","decision":"correct","rationale":"The primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input water from measured final volume. Correct the receiving denominator and overbroad stock-preparation note without discarding the existing stock identity."}]},{"quantity_id":"q52","label":"Seven vitamins solution unasserted candidate/note","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].concentration_candidates","stored":[{"value":"1","unit":"ML_PER_L","basis":"CROSS_MEDIUM_INFERENCE","support":"KOMODO 1010 resolves to DSMZ/MediaDive medium 1010 both structurally and via the KOMODO-&gt;DSMZ export; volume read from that medium's recipe.","counterevidence":"Not confirmed as medium 1010: 89% of the 37 shared compounds carry the same value (12 shared with that medium's main solution). A record that IS the medium scores 100%, with at least 5 main-solution compounds. A stock's addition volume varies by citing medium: MediaDive medium 142 adds 'Trace element solution (Vishniac &amp; Santer)' at 0.2 ml and medium 69 adds the same stock at 5 ml.","proposed_by":"apply_cocktail_nesting.py"}]},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].preparation_notes","stored":"Stock prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}],"decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume.","source_stage":"unasserted cross-medium candidate","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[14]","quote":"{\n                        \"recipe_order\": 15,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 17-17","quote":"Seven vitamins solution                               1.00       ml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].concentration_candidates","decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].preparation_notes","decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume."}]},{"quantity_id":"q53","label":"Seven vitamins solution unasserted candidate/note","local_fields":[{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].concentration_candidates","stored":[{"value":"1","unit":"ML_PER_L","basis":"CROSS_MEDIUM_INFERENCE","support":"This record is a variant of medium 1010 (KOMODO key '1010.1'); volume read from base medium 1010 ('DESULFOPILA CORRODENS MEDIUM').","counterevidence":"The variant's own recipe was never read — only base medium 1010's — so the modification may change this volume. A stock's addition volume varies by citing medium: MediaDive medium 142 adds 'Trace element solution (Vishniac &amp; Santer)' at 0.2 ml and medium 69 adds the same stock at 5 ml.","proposed_by":"apply_cocktail_nesting.py"}]},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].preparation_notes","stored":"Stock prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}],"decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume.","source_stage":"unasserted cross-medium candidate","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[14]","quote":"{\n                        \"recipe_order\": 15,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 17-17","quote":"Seven vitamins solution                               1.00       ml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].concentration_candidates","decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].preparation_notes","decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume."}]},{"quantity_id":"q54","label":"Wolin's vitamin solution (10x) receiving dose and note","local_fields":[{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].concentration","stored":{"value":"1","unit":"ML_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].preparation_notes","stored":"Stock prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive (#150)."}],"decision":"correct","rationale":"The primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input water from measured final volume. Correct the receiving denominator and overbroad stock-preparation note without discarding the existing stock identity.","source_stage":"DSM stock receiving batch","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 16-16","quote":"Wolin's vitamin solution (10x)                        1.00       ml","quote_basis":"derivative text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 78-78","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].concentration","decision":"correct","rationale":"The primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input water from measured final volume. Correct the receiving denominator and overbroad stock-preparation note without discarding the existing stock identity."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].preparation_notes","decision":"correct","rationale":"The primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input water from measured final volume. Correct the receiving denominator and overbroad stock-preparation note without discarding the existing stock identity."}]},{"quantity_id":"q55","label":"Wolin's vitamin solution (10x) unasserted candidate/note","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].concentration_candidates","stored":[{"value":"1","unit":"ML_PER_L","basis":"CROSS_MEDIUM_INFERENCE","support":"KOMODO 1010 resolves to DSMZ/MediaDive medium 1010 both structurally and via the KOMODO-&gt;DSMZ export; volume read from that medium's recipe.","counterevidence":"Not confirmed as medium 1010: 89% of the 37 shared compounds carry the same value (12 shared with that medium's main solution). A record that IS the medium scores 100%, with at least 5 main-solution compounds. A stock's addition volume varies by citing medium: MediaDive medium 142 adds 'Trace element solution (Vishniac &amp; Santer)' at 0.2 ml and medium 69 adds the same stock at 5 ml.","proposed_by":"apply_cocktail_nesting.py"}]},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].preparation_notes","stored":"Stock prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}],"decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume.","source_stage":"unasserted cross-medium candidate","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 16-16","quote":"Wolin's vitamin solution (10x)                        1.00       ml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].concentration_candidates","decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].preparation_notes","decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume."}]},{"quantity_id":"q56","label":"Wolin's vitamin solution (10x) unasserted candidate/note","local_fields":[{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].concentration_candidates","stored":[{"value":"1","unit":"ML_PER_L","basis":"CROSS_MEDIUM_INFERENCE","support":"This record is a variant of medium 1010 (KOMODO key '1010.1'); volume read from base medium 1010 ('DESULFOPILA CORRODENS MEDIUM').","counterevidence":"The variant's own recipe was never read — only base medium 1010's — so the modification may change this volume. A stock's addition volume varies by citing medium: MediaDive medium 142 adds 'Trace element solution (Vishniac &amp; Santer)' at 0.2 ml and medium 69 adds the same stock at 5 ml.","proposed_by":"apply_cocktail_nesting.py"}]},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].preparation_notes","stored":"Stock prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}],"decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume.","source_stage":"unasserted cross-medium candidate","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 16-16","quote":"Wolin's vitamin solution (10x)                        1.00       ml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].concentration_candidates","decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].preparation_notes","decision":"evidence_only","rationale":"The existing candidate explicitly withholds assertion and retains counterevidence; keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve this KOMODO branch or justify promotion to a fixed per-litre dose. The note must remain a provenance qualification, not certification of stock composition or final volume."}]},{"quantity_id":"q57","label":"Main input water","local_fields":[],"decision":"correct","rationale":"Restore this missing source water in its exact DSM stage. SL-10 alone explicitly requires final makeup to 1000 ml; the other listed waters are inputs, not final-volume proof. Do not transfer to unresolved KOMODO variants.","source_stage":"source-only water/stage","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[16]","quote":"{\n                        \"recipe_order\": 17,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 19-19","quote":"Distilled water                                    1000.00       ml","quote_basis":"derivative text"}],"layer_assessments":[]},{"quantity_id":"q58","label":"SL-10 input water and makeup","local_fields":[],"decision":"correct","rationale":"Restore this missing source water in its exact DSM stage. SL-10 alone explicitly requires final makeup to 1000 ml; the other listed waters are inputs, not final-volume proof. Do not transfer to unresolved KOMODO variants.","source_stage":"source-only water/stage","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 47-47","quote":"Distilled water                                     990.00      ml","quote_basis":"derivative text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 55-56","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_assessments":[]},{"quantity_id":"q59","label":"Selenite-tungstate input water","local_fields":[],"decision":"correct","rationale":"Restore this missing source water in its exact DSM stage. SL-10 alone explicitly requires final makeup to 1000 ml; the other listed waters are inputs, not final-volume proof. Do not transfer to unresolved KOMODO variants.","source_stage":"source-only water/stage","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 64-64","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative text"}],"layer_assessments":[]},{"quantity_id":"q60","label":"Wolin vitamin input water","local_fields":[],"decision":"correct","rationale":"Restore this missing source water in its exact DSM stage. SL-10 alone explicitly requires final makeup to 1000 ml; the other listed waters are inputs, not final-volume proof. Do not transfer to unresolved KOMODO variants.","source_stage":"source-only water/stage","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[10]","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 78-78","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative text"}],"layer_assessments":[]},{"quantity_id":"q61","label":"Seven vitamins input water","local_fields":[],"decision":"correct","rationale":"Restore this missing source water in its exact DSM stage. SL-10 alone explicitly requires final makeup to 1000 ml; the other listed waters are inputs, not final-volume proof. Do not transfer to unresolved KOMODO variants.","source_stage":"source-only water/stage","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 89-89","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative text"}],"layer_assessments":[]},{"quantity_id":"q62","label":"Missing selenite-tungstate stock descriptor","local_fields":[],"decision":"correct","rationale":"The source explicitly adds 1 ml of the separately defined Se-W stock per batch. The local NaOH/selenite/tungstate root values must be scoped to that stock; no fixed dose is transferred to unresolved KOMODO branches.","source_stage":"source-only stock receiving batch","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 10-10","quote":"Selenite-tungstate solution                           1.00       ml","quote_basis":"derivative text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 60-64","quote":"Selenite-tungstate solution (from medium 385)\n   NaOH                                                       0.50        g\n   Na2SeO3 x 5 H2O                                            3.00       mg\n   Na2WO4 x 2 H2O                                             4.00       mg\n   Distilled water                                         1000.00       ml","quote_basis":"derivative text"}],"layer_assessments":[]},{"quantity_id":"q63","label":"Retained main preparation and pH","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve ingredients (except dihydrogenphosphate, ammonium chloride, carbonate, lactate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add dihydrogenphosphate, ammonium chloride, lactate, vitamins and sulfide form sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. The vitamin solutions should be sterilized by filtration. Adjust pH of the complete medium to 7.2 - 7.5, if necessary."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve ingredients (except dihydrogenphosphate, ammonium chloride, carbonate, lactate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add dihydrogenphosphate, ammonium chloride, lactate, vitamins and sulfide form sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. The vitamin solutions should be sterilized by filtration. Adjust pH of the complete medium to 7.2 - 7.5, if necessary."},{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.5}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.5}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.5}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.5}}],"decision":"evidence_only","rationale":"Credit the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45 min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps; their copied pH and aerobic notes remain comparison-only pending exact identity. Do not transfer the DSM anoxic procedure automatically.","source_stage":"retained primary preparation/condition","sources":[{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 21-28","quote":"Dissolve ingredients (except dihydrogenphosphate, ammonium chloride, carbonate,\nlactate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture\nfor 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into\nanoxic Hungate-type tubes or serum vials and autoclave. Add dihydrogenphosphate,\nammonium chloride, lactate, vitamins and sulfide form sterile anoxic stock solutions\nprepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared\nunder 80% N2 and 20% CO2 gas atmosphere. The vitamin solutions should be sterilized by\nfiltration. Adjust pH of the complete medium to 7.2 - 7.5, if necessary.","quote_basis":"derivative text"},{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\": \"Dissolve ingredients (except dihydrogenphosphate, ammonium chloride, carbonate, lactate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add dihydrogenphosphate, ammonium chloride, lactate, vitamins and sulfide form sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. The vitamin solutions should be sterilized by filtration. Adjust pH of the complete medium to 7.2 - 7.5, if necessary.\"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"preparation_steps[0].description","decision":"evidence_only","rationale":"Credit the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45 min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps; their copied pH and aerobic notes remain comparison-only pending exact identity. Do not transfer the DSM anoxic procedure automatically."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"preparation_steps[0].description","decision":"evidence_only","rationale":"Credit the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45 min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps; their copied pH and aerobic notes remain comparison-only pending exact identity. Do not transfer the DSM anoxic procedure automatically."},{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ph_range","decision":"evidence_only","rationale":"Credit the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45 min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps; their copied pH and aerobic notes remain comparison-only pending exact identity. Do not transfer the DSM anoxic procedure automatically."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ph_range","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. Credit the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45 min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps; their copied pH and aerobic notes remain comparison-only pending exact identity. Do not transfer the DSM anoxic procedure automatically."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ph_range","decision":"evidence_only","rationale":"Credit the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45 min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps; their copied pH and aerobic notes remain comparison-only pending exact identity. Do not transfer the DSM anoxic procedure automatically."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ph_range","decision":"unsupported","rationale":"The exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing partial nesting are documented; current DSM1010 is comparison-only here. Credit the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45 min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps; their copied pH and aerobic notes remain comparison-only pending exact identity. Do not transfer the DSM anoxic procedure automatically."}]},{"quantity_id":"q64","label":"SL-10 makeup step currently unqualified at medium root","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"preparation_steps[1].description","stored":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}],"decision":"correct","rationale":"The wording and explicit 1000 ml makeup are supported for SL-10, but the step is currently an unqualified main-medium step. Preserve the text and DISSOLVE action while moving it into the exact stock scope; its wording is not a final-medium volume instruction.","source_stage":"SL-10 stock preparation","sources":[{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 55-56","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"},{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].steps[0]","quote":"{\n                        \"step\": \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"preparation_steps[1].description","decision":"correct","rationale":"The wording and explicit 1000 ml makeup are supported for SL-10, but the step is currently an unqualified main-medium step. Preserve the text and DISSOLVE action while moving it into the exact stock scope; its wording is not a final-medium volume instruction."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"preparation_steps[1].description","decision":"correct","rationale":"The wording and explicit 1000 ml makeup are supported for SL-10, but the step is currently an unqualified main-medium step. Preserve the text and DISSOLVE action while moving it into the exact stock scope; its wording is not a final-medium volume instruction."}]},{"quantity_id":"q65","label":"DSM15769 source-specific substitution","local_fields":[],"decision":"correct","rationale":"The current primary explicitly replaces lactate with 0.45 g/L benzenepropanoic acid for DSM15769 and gives its post-autoclave filtered addition scope. Resolve the exact strain branch before curation; do not apply this substitution to the generic DSM1010 medium or assert growth from the collection identity alone.","source_stage":"source-only named-strain variant","sources":[{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt lines 31-33","quote":"For DSM 15769: Replace lactate with 0.45 g/l benzenepropanoic acid (3-phenylpropionic\nacid), which is added to the medium after autoclaving from an anoxic stock solution\nprepared under 100% N2 gas and sterilized by filtration.","quote_basis":"derivative text"}],"layer_assessments":[]}],"document_scopes":{"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml":null,"data/normalized_yaml/bacterial/for_dsm_15769.yaml":null},"scope":"Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: concern. Targets: CultureMech:000426.
+
+All 35 asserted CHEBI scientific objects and exact catalogue row families were assessed. Sodium resazurin versus neutral8806 and nickel hexahydrate versus34887 are confirmed supplied-name conflicts. Cobalt hexahydrate53503, explicit D-calcium31345 in Wolin, sodium lactate’s non-stereo identity, thiamine hydrochloride dihydrate132751 and generic lipoic acid16494 are credited within their stated scope. Seven-vitamin generic calcium does not resolve D specificity. MAPPED and REJECTED spellings for nickel coexist; broad catalogue synonyms do not override chemical forms.
+
+### Existing repair credit and writer limits
+
+provenance: supported. Targets: CultureMech:000426.
+
+All seven exact report bodies and all current histories were read, with three full source-check parent objects (298 claims) and two bounded LOW-confidence topology proposals. Current API raw bytes equal the historical digest; literal/decoded object joins are distinct from absent attached claims and from original access-event authentication. Existing partial nesting and strain-link repairs are credited. Historical blanket concentration conflicts, input-volume finality, generic topology proposals and automatic sibling merging are not adopted. Current conservative merge cannot explain stale generated content by itself.
+
+## Findings
+
+### f1: Generated merge still absorbs a distinct strain branch
+
+major / open / confirmed; issue key: culturemech-000426-identity-branch.
+
+Reconcile the three maintained source identities before regeneration. Current DSM1010 explicitly specifies a DSM15769 substitution, while the strain owner preserves the base lactate formula and the generated target still merges it. Keep the current STRAIN_SPECIFIC_VARIANT relationship credit, but replace the unsupported preserves-components narrative with exact source-backed differences after confirming its own KOMODO branch. Exact KOMODO routes remain HTTP403; historical mapping and current byte-equal DSM copies do not resolve them.
+
+### f2: Partial nesting leaves root stock values and stale generated sums
+
+major / open / confirmed; issue key: culturemech-000426-stock-stage.
+
+Complete the DSM stock boundaries, preserving ten existing nested values and the source-backed separate vitamin contributions. Move remaining stock components out of the medium root, restore Se-W and stage-specific water, and preserve the explicit indicator w/v basis. Correct SL-10 acid volume/unspecified percent conversion. The generated four vitamin sums are stale. KOMODO values require branch resolution rather than automatic DSM transfer.
+
+### f3: DSM stock doses and notes assert an unsupported per-litre basis
+
+major / open / confirmed; issue key: culturemech-000426-dose-basis.
+
+Replace the DSM owner’s three asserted 1 ML_PER_L doses with exact source batch semantics; distinguish SL-10 final makeup from vitamin input water. Preserve the two KOMODO owners’ explicitly unasserted candidates, and scope the existing SL-10 step to its stock. Do not treat the API1004 ml computational basis as measured medium volume.
+
+### f4: Sodium resazurin and nickel hydrate have incompatible identifiers
+
+major / open / confirmed; issue key: culturemech-000426-supplied-forms.
+
+Correct source-specified sodium resazurin currently asserted as neutral CHEBI:8806, and nickel hexahydrate currently asserted as anhydrous CHEBI:34887. CHEBI:34887 is anhydrous nickel dichloride, whereas the source specifies NiCl2 x 6 H2O. Current CHEBI:53542 explicitly describes the hexahydrate. MIM preferred row6668 (Nickel (II) chloride hexahydrate) is MAPPED; row6703 (NiCl2 x 6 H2O) is REJECTED and synonym row6704 is MAPPED. These spelling-specific statuses do not reject the whole identifier.
+
+### f5: Generic seven-vitamin calcium source does not resolve D specificity
+
+minor / open / confirmed; issue key: culturemech-000426-calcium-grade.
+
+CHEBI:31345 has D-specific stereochemistry. The explicitly D-calcium Wolin component is supported; the generic seven-vitamin calcium wording does not establish that grade. Resolve that narrower assertion without changing the supported stock amount. Generic lipoic acid does not contradict the printed DL label.
+
+### f6: Source support and new-event provenance need explicit linkage
+
+minor / open / confirmed; issue key: culturemech-000426-evidence-history.
+
+Attach exact ingredient claims and root evidence scoped to doses, preparation and branch identity, preserving all prior event strings. Distinguish retained literal .fZ timestamps from the current importer %f format and naive resolver times; use actual timezone-aware timestamps for future events. The variant repair’s fixed timestamp/upsert replacement must not overwrite a new research event.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconcile the three maintained source identities before regeneration. Current DSM1010 explicitly specifies a DSM15769 substitution, while the strain owner preserves the base lactate formula and the generated target still merges it. Keep the current STRAIN_SPECIFIC_VARIANT relationship credit, but replace the unsupported preserves-components narrative with exact source-backed differences after confirming its own KOMODO branch. Exact KOMODO routes remain HTTP403; historical mapping and current byte-equal DSM copies do not resolve them.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+Complete the DSM stock boundaries, preserving ten existing nested values and the source-backed separate vitamin contributions. Move remaining stock components out of the medium root, restore Se-W and stage-specific water, and preserve the explicit indicator w/v basis. Correct SL-10 acid volume/unspecified percent conversion. The generated four vitamin sums are stale. KOMODO values require branch resolution rather than automatic DSM transfer.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+Replace the DSM owner’s three asserted 1 ML_PER_L doses with exact source batch semantics; distinguish SL-10 final makeup from vitamin input water. Preserve the two KOMODO owners’ explicitly unasserted candidates, and scope the existing SL-10 step to its stock. Do not treat the API1004 ml computational basis as measured medium volume.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+Correct source-specified sodium resazurin currently asserted as neutral CHEBI:8806, and nickel hexahydrate currently asserted as anhydrous CHEBI:34887. CHEBI:34887 is anhydrous nickel dichloride, whereas the source specifies NiCl2 x 6 H2O. Current CHEBI:53542 explicitly describes the hexahydrate. MIM preferred row6668 (Nickel (II) chloride hexahydrate) is MAPPED; row6703 (NiCl2 x 6 H2O) is REJECTED and synonym row6704 is MAPPED. These spelling-specific statuses do not reject the whole identifier.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a5
+
+CHEBI:31345 has D-specific stereochemistry. The explicitly D-calcium Wolin component is supported; the generic seven-vitamin calcium wording does not establish that grade. Resolve that narrower assertion without changing the supported stock amount. Generic lipoic acid does not contradict the printed DL label.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a6
+
+Attach exact ingredient claims and root evidence scoped to doses, preparation and branch identity, preserving all prior event strings. Distinguish retained literal .fZ timestamps from the current importer %f format and naive resolver times; use actual timezone-aware timestamps for future events. The variant repair’s fixed timestamp/upsert replacement must not overwrite a new research event.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+- Verify new events have real timezone-aware timestamps and append without replacing the preserved earlier curator/action event; do not rewrite old malformed values as newly observed history.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| dsmz1010 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf; REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| api1010 | https://mediadive.dsmz.de/rest/medium/1010; REVIEW_WORK/batch078/source01-03-supplement/api1010.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| dsm15769 | https://www.dsmz.de/collection/catalogue/details/culture/DSM-15769; REVIEW_WORK/batch078/source01-03-supplement/dsm15769.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| komodo1010 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1010; REVIEW_WORK/batch078/source01-03-supplement/komodo1010.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| komodo1010.1 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1010.1; REVIEW_WORK/batch078/source01-03-supplement/komodo1010.1.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| komodolist | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; REVIEW_WORK/batch078/source01-03-supplement/komodolist.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53542; REVIEW_WORK/batch078/source01-03-additions/chebi53542.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| target | data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| owner-2 | data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml; Complete file | context_only | Complete exact additional maintained owner. |
+| owner-3 | data/normalized_yaml/bacterial/for_dsm_15769.yaml; Complete file | context_only | Complete exact additional maintained owner. |
+| report-18 | reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/plan.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-19 | reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-20 | reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_15769.yaml.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-21 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-22 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfopila_corrodens_medium.yaml.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-23 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-24 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-25 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfopila_corrodens_medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-26 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/for_dsm_15769.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-27 | reports/media_variant_link_proposals.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-28 | reports/media_variant_parent_group_proposals.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| historical-reading | REVIEW_WORK/batch078/record03/historical-reading.json; Complete artifact; exact original input paths and hashes retained | context_only | Lossless exact report cells and independently joined current decoded source objects. |
+| historical-selected-parent-rows | REVIEW_WORK/batch078/record03/historical-selected-parent-rows.json; Complete artifact; exact original input paths and hashes retained | context_only | Exact selected historical parent objects; parent provenance only, not automatic original source authentication. |
+| complete-document-reader | REVIEW_WORK/batch078/record03/complete-document-reader.json; Complete artifact; exact original input paths and hashes retained | context_only | Complete exact target and owner parsed documents with lossless long-string pooling. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_composition_ingredients; _parse_api_composition; _is_api_stock_addition; _api_stock_name; _parse_api_solutions; _normalize_unit; _parse_preparation_steps; _classify_preparation_action | context_only | Current composition parsing reads the first API solution only, skips water and explicit stock or percent-bearing ml references, and prioritizes supplied g_l. Solution parsing preserves the first-section stock references but normalizes bare ml to ML_PER_L. Preparation parsing concatenates every solution step without stage labels. For all-stock primary tables, API composition returns None and PDF fallback or a placeholder remains possible; no regeneration outcome is presumed. |
+| writer-matcher | src/culturemech/merge/matcher.py; group_formulations | context_only | Current group_formulations uses conservative FormulationFingerprinter; ingredient similarity is only candidate discovery. |
+| full-history-pool | REVIEW_WORK/batch078/validation-authors/full-history-pool.json; Complete artifact | context_only | All nineteen reports across the three author records are losslessly routed through 653 exact cells. Each review uses only its declared target/owner and historical context; neighboring formulations are not transferred. |
+| full-catalog | REVIEW_WORK/batch078/validation-authors/mim-full-scope.json; Complete artifact | context_only | All exact asserted identifier/ontology_id and supplied-name catalogue joins, plus candidate nickel hexahydrate; preferred-label statuses are interpreted separately from chemical identity. |
+| writer-nesting | scripts/apply_cocktail_nesting.py; match_components; match_stock_signature; find_summed; plan_record; apply_plan | context_only | Current plan_record skips records with solutions. Name/value matching and exact summed-component decomposition can restore separate stocks, but apply_plan assigns ML_PER_L to a read ml dose and labels stock_prepared_in_ml as prepared volume. Cross-medium candidates remain explicitly unasserted. Existing partial nesting therefore needs source-specific completion rather than blindly rerunning this writer. |
+| writer-variant | scripts/repair_komodo_1010_artificial_seawater_score10.py; Child.modification; _require_artificial_seawater_record; repair_parent; repair_child; _upsert_event | context_only | Current repair checks exact IDs, source accession, pH and ingredient signature; it changes relationships and writes a preserves-components strain narrative without independently reading the current DSM15769 substitution. Its fixed TIMESTAMP and _upsert_event replacement are not an append-only audit of new research. |
+| writer-links | scripts/apply_media_variant_links.py; include_proposal; plan_links | context_only | Current selected-proposal application adds references, refuses a conflicting existing parent, and can set a relationship/add modification text. A LOW-confidence proposal is not direct source verification. |
+| writer-cleanup | scripts/cleanup_media_quality.py; MediaQualityFixer._merge_ingredient_group | context_only | Current duplicate handling retains identical values and flags unequal values; it does not establish historical mixed-stock sums as valid quantities. |
+| writer-duplicate | scripts/repair_merged_duplicates.py; repair_ingredient; repair_record | context_only | Current repair collapses IDENTICAL_PARTS only; unequal historical sums require source-stage reconciliation. |
+| writer-resolver | src/culturemech/enrich/dsmz_resolver.py; DSMZCompositionResolver.merge_composition; extract_dsmz_id; resolve_recipe | context_only | Current DSMZCompositionResolver strips accession suffixes when resolving base accessions and copies composition in merge_composition. The local history separately records a DSMZ1010 copy; current code is not authenticated historical execution. |
+| writer-komodo | src/culturemech/import/komodo_web_importer.py; _convert_to_culturemech | context_only | Current import provenance uses a strftime format containing %f, while retained owner bytes contain literal .fZ. Preserve historical strings; future new events need actual timezone-aware timestamps. |
+| writer-mim | scripts/migrate_legacy_mim_to_chebi.py; _resolve_chebi; _rewrite_entry | context_only | Current identifier-safe migration does not itself validate source-specific salts, hydration or stereochemistry. |
+| selected-parent-authentication | REVIEW_WORK/batch078/record03/selected-parent-authentication.json; Complete artifact | context_only | Exact selected parent objects, unchanged current local fields and all literal/decoded current API claims checked separately from attached evidence. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710; REVIEW_WORK/batch078/source01-03-additions/chebi26710.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345; REVIEW_WORK/batch078/source01-03-additions/chebi86345.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31795; REVIEW_WORK/batch078/source01-03-additions/chebi31795.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32588; REVIEW_WORK/batch078/source01-03-additions/chebi32588.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158; REVIEW_WORK/batch078/source01-03-additions/chebi86158.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi32030 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32030; REVIEW_WORK/batch078/source01-03-additions/chebi32030.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806; REVIEW_WORK/batch078/source01-03-additions/chebi8806.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036; REVIEW_WORK/batch078/source01-03-additions/chebi63036.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206; REVIEW_WORK/batch078/source01-03-additions/chebi31206.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:29377; REVIEW_WORK/batch078/source01-03-additions/chebi29377.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi75228 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75228; REVIEW_WORK/batch078/source01-03-additions/chebi75228.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209; REVIEW_WORK/batch078/source01-03-additions/chebi76209.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17883; REVIEW_WORK/batch078/source01-03-additions/chebi17883.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249; REVIEW_WORK/batch078/source01-03-additions/chebi86249.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976; REVIEW_WORK/batch078/source01-03-additions/chebi49976.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368; REVIEW_WORK/batch078/source01-03-additions/chebi86368.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118; REVIEW_WORK/batch078/source01-03-additions/chebi33118.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503; REVIEW_WORK/batch078/source01-03-additions/chebi53503.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318; REVIEW_WORK/batch078/source01-03-additions/chebi86318.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887; REVIEW_WORK/batch078/source01-03-additions/chebi34887.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213; REVIEW_WORK/batch078/source01-03-additions/chebi75213.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32145; REVIEW_WORK/batch078/source01-03-additions/chebi32145.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131361; REVIEW_WORK/batch078/source01-03-additions/chebi131361.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63939; REVIEW_WORK/batch078/source01-03-additions/chebi63939.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956; REVIEW_WORK/batch078/source01-03-additions/chebi15956.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470; REVIEW_WORK/batch078/source01-03-additions/chebi27470.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961; REVIEW_WORK/batch078/source01-03-additions/chebi30961.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105; REVIEW_WORK/batch078/source01-03-additions/chebi49105.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015; REVIEW_WORK/batch078/source01-03-additions/chebi17015.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940; REVIEW_WORK/batch078/source01-03-additions/chebi15940.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345; REVIEW_WORK/batch078/source01-03-additions/chebi31345.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843; REVIEW_WORK/batch078/source01-03-additions/chebi176843.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753; REVIEW_WORK/batch078/source01-03-additions/chebi30753.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494; REVIEW_WORK/batch078/source01-03-additions/chebi16494.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi132751 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:132751; REVIEW_WORK/batch078/source01-03-additions/chebi132751.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| quantities | REVIEW_WORK/batch078/record03/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch078/record03/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch078/record03/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch078/record03/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch078/record03/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch078/record03/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch078/record03/existing-claim-authentication.json; Complete sidecar | context_only | No attached claims to authenticate; historical source objects are separately assessed in historical-source-joins.json. |
+| historical-source-joins | REVIEW_WORK/batch078/record03/historical-source-joins.json; Every literal/decoded historical source-object row and exact current-source match | context_only | Historical quoted source content and raw-digest equality where actually matched; independent of attached local claims and original access-event recovery. |
+| check-schema | REVIEW_WORK/batch078/record03/validate-schema.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch078/record03/validate-strict.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch078/record03/validate-terms.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch078/record03/validate-references.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- Exact KOMODO1010, KOMODO1010.1 and catalogue captures returned403; full branch identity review remains partial. DSM comparisons do not authorize recipe transfer.
+- The primary PDF’s second page was visually read and line locators use Python splitlines, including its form-feed boundary.
+- API1004 ml is a declared computational basis, not measured final volume. SL-10 explicitly makes up to1000 ml; other stocks list input water only. No percent basis or density is inferred for HCl25%.
+- No attached local source claims were present. All historical literal/current-byte matches are recorded separately and do not authenticate the original retrieval event.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T211614Z-culturemech-000426-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: DESULFOPILA CORRODENS MEDIUM'
+started_at: '2026-10-28T20:56:49.019639Z'
+finished_at: '2026-10-28T21:16:14.038668Z'
+reviewer:
+  identity: Codex batch006_validation
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, exact
+    captured sources, fresh scoped primary sources and original diagnostics.
+skill: review-yaml-record
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Partial scientific review identifies an unresolved strain/source merge, remaining
+  flattened stock quantities and stale generated sums, unsupported DSM stock-dose
+  denominators, and two supplied-form identifier mismatches. Existing main provider
+  rates, partial stock repairs, pH and preparation wording receive scoped credit.
+  Exact KOMODO access remains unavailable; no formulation is transferred across that
+  boundary.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml
+    sha256: 553584f31f4999043aaf67ef38eced337f8e5b40c4791f1b5abb65f870516229
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    sha256: 0ee6e0ae3a23ff5f8244105edd05eb54ec1325c6e8f08e8d9f339454f47f9f7e
+    role: context
+  - path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    sha256: 122a1367d3d5a14f7ef45292e9dbfba04d2cf98abc1f7bc8c1ec02cd21039364
+    role: context
+  - path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    sha256: 45fd392419a8a2051ce10b83632b2aaef8bb78dffe1839579693f8998b0b2194
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/plan.json
+    sha256: 1eec521fb8743316925ed3d629323b5c1312db0b35497db1e8bbe560a13e3508
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml.md
+    sha256: 230828862d7b47e2b915b459b0ae2eb699fa5a7158cb1dcb8a737197fb8ec80a
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_15769.yaml.md
+    sha256: 2686e35b5e3dca617a30917afeb6b67b100eb9cbd3559d4f190e182cb6181a45
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+    sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfopila_corrodens_medium.yaml.md
+    sha256: 7149c6e597e0d935a0b3b46d1824a62429748ec7c128ad7699b46419be2879f2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.md
+    sha256: d04be4c3aade060e64eace0d61dc2ce154fffcbf411e72bf72c2de9dfec26bb1
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.md
+    sha256: d3c97603ddff47f3e8b8d2efd4b27d29a1be40805d813478d6f5dbca579bac2d
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfopila_corrodens_medium.md
+    sha256: d5c33d7297ec31af22f44edab98ca3e1a2cf063435b272dc58e6890073c326a8
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/for_dsm_15769.md
+    sha256: bb016885b67e8d8efe89527b7a0631cd32e0dbecfac4293358dc7ce414dc6726
+    role: context
+  - path: reports/media_variant_link_proposals.json
+    sha256: e677817f1c836813f771acdc7208cc820c4bca30e1022e62d4d89d8bf21a69c2
+    role: context
+  - path: reports/media_variant_parent_group_proposals.json
+    sha256: 1baefa1e8b0e9b9eee23f5daac577f978c528680b940f14ecd6361fc7425b67a
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/propose_cocktail_nesting.py
+    sha256: e886c446a8398f08f1cc735b1c3a9812c5fc6371a36b69ef5325f1c53f14e6c0
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/repair_komodo_1010_artificial_seawater_score10.py
+    sha256: fc8356919f4a76b6d6786de8189940143e18cd5f0bef168177068e38b9a745c7
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch078 index 03
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000426
+targets:
+- target_id: CultureMech:000426
+  path: data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml
+  label: desulfopila_corrodens_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:000426
+  command: just validate-schema data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:000426
+  command: just validate-strict data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml
+    --out REVIEW_WORK/batch078/record03/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:000426
+  command: just validate-terms data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:000426
+  command: just validate-references data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: dsmz1010
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf
+  accessed_at: '2026-10-28T20:57:03.379945Z'
+  locator: REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474
+- evidence_id: api1010
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1010
+  accessed_at: '2026-10-28T20:57:02.312485Z'
+  locator: REVIEW_WORK/batch078/source01-03-supplement/api1010.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8
+- evidence_id: dsm15769
+  kind: primary_source
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-15769
+  accessed_at: '2026-10-28T20:57:10.986750Z'
+  locator: REVIEW_WORK/batch078/source01-03-supplement/dsm15769.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 227b2d67b11635ee221456547024cf57d97b4e219ee0a16c198e5f0172578834
+- evidence_id: komodo1010
+  kind: search
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1010
+  accessed_at: '2026-10-28T20:57:03.016342Z'
+  locator: REVIEW_WORK/batch078/source01-03-supplement/komodo1010.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 0b412ecfbd7751dd5f70fadf967c698f45f926a412118194024ba4d9fb199df2
+  search_scope: One exact public GET of https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1010;
+    retained status 403. No exhaustive repository or literature absence claim.
+- evidence_id: komodo1010.1
+  kind: search
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1010.1
+  accessed_at: '2026-10-28T20:57:03.038008Z'
+  locator: REVIEW_WORK/batch078/source01-03-supplement/komodo1010.1.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: ad4f92ac043f2ae1b5a8b05b1323c4aa53ef7237ed4c252b31b669f81454560e
+  search_scope: One exact public GET of https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1010.1;
+    retained status 403. No exhaustive repository or literature absence claim.
+- evidence_id: komodolist
+  kind: search
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  accessed_at: '2026-10-28T20:57:03.062263Z'
+  locator: REVIEW_WORK/batch078/source01-03-supplement/komodolist.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 49c4e68d3f1eba25845401f31fe076e458ddd24e84e501bbfa35b3c722a714cd
+  search_scope: One exact public GET of https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    retained status 403. No exhaustive repository or literature absence claim.
+- evidence_id: chebi53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53542
+  accessed_at: '2026-10-28T20:58:17.745652Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi53542.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 1e44a068cfe6b98d7bb3b0240ffdc0611e1be59f2d3dab9f04e4162ed94e4444
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T21:16:13.601698Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: 553584f31f4999043aaf67ef38eced337f8e5b40c4791f1b5abb65f870516229
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T21:16:13.601858Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: 0ee6e0ae3a23ff5f8244105edd05eb54ec1325c6e8f08e8d9f339454f47f9f7e
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T21:16:13.601893Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T21:16:13.602209Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T21:16:13.602236Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T21:16:13.602258Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T21:16:13.602286Z'
+  support: context_only
+  summary: Complete exact additional maintained owner.
+  snapshot_sha256: 122a1367d3d5a14f7ef45292e9dbfba04d2cf98abc1f7bc8c1ec02cd21039364
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T21:16:13.602311Z'
+  support: context_only
+  summary: Complete exact additional maintained owner.
+  snapshot_sha256: 45fd392419a8a2051ce10b83632b2aaef8bb78dffe1839579693f8998b0b2194
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T21:16:13.602338Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 1eec521fb8743316925ed3d629323b5c1312db0b35497db1e8bbe560a13e3508
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T21:16:13.610087Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 230828862d7b47e2b915b459b0ae2eb699fa5a7158cb1dcb8a737197fb8ec80a
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_15769.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T21:16:13.610161Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 2686e35b5e3dca617a30917afeb6b67b100eb9cbd3559d4f190e182cb6181a45
+- evidence_id: report-21
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T21:16:13.610207Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+- evidence_id: report-22
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfopila_corrodens_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T21:16:13.616057Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 7149c6e597e0d935a0b3b46d1824a62429748ec7c128ad7699b46419be2879f2
+- evidence_id: report-23
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T21:16:13.616142Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: d04be4c3aade060e64eace0d61dc2ce154fffcbf411e72bf72c2de9dfec26bb1
+- evidence_id: report-24
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T21:16:13.616178Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: d3c97603ddff47f3e8b8d2efd4b27d29a1be40805d813478d6f5dbca579bac2d
+- evidence_id: report-25
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfopila_corrodens_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T21:16:13.616206Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: d5c33d7297ec31af22f44edab98ca3e1a2cf063435b272dc58e6890073c326a8
+- evidence_id: report-26
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/for_dsm_15769.md
+  locator: Complete report
+  accessed_at: '2026-10-28T21:16:13.616232Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: bb016885b67e8d8efe89527b7a0631cd32e0dbecfac4293358dc7ce414dc6726
+- evidence_id: report-27
+  kind: prior_review
+  reference: reports/media_variant_link_proposals.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T21:16:13.616257Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: e677817f1c836813f771acdc7208cc820c4bca30e1022e62d4d89d8bf21a69c2
+- evidence_id: report-28
+  kind: prior_review
+  reference: reports/media_variant_parent_group_proposals.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T21:16:13.616813Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 1baefa1e8b0e9b9eee23f5daac577f978c528680b940f14ecd6361fc7425b67a
+- evidence_id: historical-reading
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record03/historical-reading.json
+  accessed_at: '2026-10-28T21:16:13.616952Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Lossless exact report cells and independently joined current decoded source
+    objects.
+  snapshot_sha256: 88b39d86a606df5ca3711f6e098e6840cac7a4a08a2a096b6a2f5c7a02258cab
+- evidence_id: historical-selected-parent-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record03/historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T21:16:13.617298Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Exact selected historical parent objects; parent provenance only, not automatic
+    original source authentication.
+  snapshot_sha256: b8878ddd068deaced079244f6b4b38d7bfabce45e89cf6e54dd7b6d01b47b8da
+- evidence_id: complete-document-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record03/complete-document-reader.json
+  accessed_at: '2026-10-28T21:16:13.617583Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Complete exact target and owner parsed documents with lossless long-string
+    pooling.
+  snapshot_sha256: 4ef465edc647aa3ec6536d631c623a90a800da95abacfe5fe79c4991dc2335fd
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_composition_ingredients; _parse_api_composition; _is_api_stock_addition;
+    _api_stock_name; _parse_api_solutions; _normalize_unit; _parse_preparation_steps;
+    _classify_preparation_action
+  accessed_at: '2026-10-28T21:16:13.617801Z'
+  support: context_only
+  summary: Current composition parsing reads the first API solution only, skips water
+    and explicit stock or percent-bearing ml references, and prioritizes supplied
+    g_l. Solution parsing preserves the first-section stock references but normalizes
+    bare ml to ML_PER_L. Preparation parsing concatenates every solution step without
+    stage labels. For all-stock primary tables, API composition returns None and PDF
+    fallback or a placeholder remains possible; no regeneration outcome is presumed.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-matcher
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations
+  accessed_at: '2026-10-28T21:16:13.617858Z'
+  support: context_only
+  summary: Current group_formulations uses conservative FormulationFingerprinter;
+    ingredient similarity is only candidate discovery.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: full-history-pool
+  kind: record_content
+  reference: REVIEW_WORK/batch078/validation-authors/full-history-pool.json
+  locator: Complete artifact
+  accessed_at: '2026-10-28T21:16:13.617895Z'
+  support: context_only
+  summary: All nineteen reports across the three author records are losslessly routed
+    through 653 exact cells. Each review uses only its declared target/owner and historical
+    context; neighboring formulations are not transferred.
+  snapshot_sha256: 134ddfdd10f4cefd89ab665afe534e768a8ceb10e7c8c2d69d441700651bd7c3
+- evidence_id: full-catalog
+  kind: record_content
+  reference: REVIEW_WORK/batch078/validation-authors/mim-full-scope.json
+  locator: Complete artifact
+  accessed_at: '2026-10-28T21:16:13.618155Z'
+  support: context_only
+  summary: All exact asserted identifier/ontology_id and supplied-name catalogue joins,
+    plus candidate nickel hexahydrate; preferred-label statuses are interpreted separately
+    from chemical identity.
+  snapshot_sha256: 8d0349c179dea8405ffa2e50d1031600f30910e94d46624744fc709182b46732
+- evidence_id: writer-nesting
+  kind: record_content
+  reference: scripts/apply_cocktail_nesting.py
+  locator: match_components; match_stock_signature; find_summed; plan_record; apply_plan
+  accessed_at: '2026-10-28T21:16:13.618426Z'
+  support: context_only
+  summary: Current plan_record skips records with solutions. Name/value matching and
+    exact summed-component decomposition can restore separate stocks, but apply_plan
+    assigns ML_PER_L to a read ml dose and labels stock_prepared_in_ml as prepared
+    volume. Cross-medium candidates remain explicitly unasserted. Existing partial
+    nesting therefore needs source-specific completion rather than blindly rerunning
+    this writer.
+  snapshot_sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+- evidence_id: writer-variant
+  kind: record_content
+  reference: scripts/repair_komodo_1010_artificial_seawater_score10.py
+  locator: Child.modification; _require_artificial_seawater_record; repair_parent;
+    repair_child; _upsert_event
+  accessed_at: '2026-10-28T21:16:13.618468Z'
+  support: context_only
+  summary: Current repair checks exact IDs, source accession, pH and ingredient signature;
+    it changes relationships and writes a preserves-components strain narrative without
+    independently reading the current DSM15769 substitution. Its fixed TIMESTAMP and
+    _upsert_event replacement are not an append-only audit of new research.
+  snapshot_sha256: fc8356919f4a76b6d6786de8189940143e18cd5f0bef168177068e38b9a745c7
+- evidence_id: writer-links
+  kind: record_content
+  reference: scripts/apply_media_variant_links.py
+  locator: include_proposal; plan_links
+  accessed_at: '2026-10-28T21:16:13.618493Z'
+  support: context_only
+  summary: Current selected-proposal application adds references, refuses a conflicting
+    existing parent, and can set a relationship/add modification text. A LOW-confidence
+    proposal is not direct source verification.
+  snapshot_sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: MediaQualityFixer._merge_ingredient_group
+  accessed_at: '2026-10-28T21:16:13.618517Z'
+  support: context_only
+  summary: Current duplicate handling retains identical values and flags unequal values;
+    it does not establish historical mixed-stock sums as valid quantities.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-duplicate
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: repair_ingredient; repair_record
+  accessed_at: '2026-10-28T21:16:13.618540Z'
+  support: context_only
+  summary: Current repair collapses IDENTICAL_PARTS only; unequal historical sums
+    require source-stage reconciliation.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: writer-resolver
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: DSMZCompositionResolver.merge_composition; extract_dsmz_id; resolve_recipe
+  accessed_at: '2026-10-28T21:16:13.618561Z'
+  support: context_only
+  summary: Current DSMZCompositionResolver strips accession suffixes when resolving
+    base accessions and copies composition in merge_composition. The local history
+    separately records a DSMZ1010 copy; current code is not authenticated historical
+    execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-komodo
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T21:16:13.618585Z'
+  support: context_only
+  summary: Current import provenance uses a strftime format containing %f, while retained
+    owner bytes contain literal .fZ. Preserve historical strings; future new events
+    need actual timezone-aware timestamps.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer-mim
+  kind: record_content
+  reference: scripts/migrate_legacy_mim_to_chebi.py
+  locator: _resolve_chebi; _rewrite_entry
+  accessed_at: '2026-10-28T21:16:13.618608Z'
+  support: context_only
+  summary: Current identifier-safe migration does not itself validate source-specific
+    salts, hydration or stereochemistry.
+  snapshot_sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+- evidence_id: selected-parent-authentication
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record03/selected-parent-authentication.json
+  locator: Complete artifact
+  accessed_at: '2026-10-28T21:16:13.766407Z'
+  support: context_only
+  summary: Exact selected parent objects, unchanged current local fields and all literal/decoded
+    current API claims checked separately from attached evidence.
+  snapshot_sha256: f2c8920cd6226492cb65f38c10f20a29d2a5cbdf91a7c31aa1efac9289835c96
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710
+  accessed_at: '2026-10-28T20:58:14.115558Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi26710.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 70cf14c35e06f40427c1a2aa30e99794518eda976b5e5b3c86610efc28b7f25a
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345
+  accessed_at: '2026-10-28T20:58:19.357518Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi86345.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 94b600ced6e98743e2d1b02c73e1756f8f81b639407a8fdd080c96d8fa563c70
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31795
+  accessed_at: '2026-10-28T20:58:15.382430Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi31795.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: ceb0c93d1964844e99454d74730971855710441d92eec74aff5c873c833e324a
+- evidence_id: chebi32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32588
+  accessed_at: '2026-10-28T20:58:16.337802Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi32588.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 9494b26ad5d3ce43942c3e859cdefe4114e111b1d45328c0cd5faf3b75faec00
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  accessed_at: '2026-10-28T20:58:18.765457Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi86158.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi32030
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32030
+  accessed_at: '2026-10-28T20:58:15.665702Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi32030.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: de9d6dadb197fc99233e227c4ff4c5f352e147cb8c8226217e849c76e2173b21
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806
+  accessed_at: '2026-10-28T20:58:19.686584Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi8806.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f2530ec9c15f59a3d132a466c9c3a899497bab0f85b996d3e27bef8612f89982
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T20:58:18.105032Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi63036.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206
+  accessed_at: '2026-10-28T20:58:15.127533Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi31206.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 645112dbfa7f1c565489070586f5d4018429259ff0400500ca10dfe6e43a5449
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:29377
+  accessed_at: '2026-10-28T20:58:14.464969Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi29377.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: e0c2a85ab7be9313c564f96ee47b87e1bf3e01ad1e9fd627d1dbddced5d068c4
+- evidence_id: chebi75228
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75228
+  accessed_at: '2026-10-28T20:58:18.421129Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi75228.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 02869dcf8cd74aa7f8b975f2590e5bdbd4512df6c748979a72d5337751ae5774
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209
+  accessed_at: '2026-10-28T20:58:18.886624Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi76209.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 4896ec517123ebeb1afcbac7bc30a7103976f03891af0c86c992196b5f0db969
+- evidence_id: chebi17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17883
+  accessed_at: '2026-10-28T20:58:13.882754Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi17883.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: e5ab164ef9ff955da1a504ca34ab4d3b69539d9bf721936c9dd563ccbbd0e3b0
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249
+  accessed_at: '2026-10-28T20:58:18.946222Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi86249.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 4d7f48f88badcba85a62e59842c6ec921f5478eb76695098b17847ed62c8530a
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976
+  accessed_at: '2026-10-28T20:58:17.485366Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi49976.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: d3bdc4c6f01d01422fafe433df4e4011e01cf7e55e0329ab341a60ece780946f
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368
+  accessed_at: '2026-10-28T20:58:19.485158Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi86368.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 2d5685a4a03c5d730876514b4a7664fb477f63682a60cc7e13d7776a250f68e3
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118
+  accessed_at: '2026-10-28T20:58:16.583509Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi33118.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: eef160dcdcd93f231064bc7b59da1e05a2efe1f96089b9cd2fdbdf68a9a4e5fc
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503
+  accessed_at: '2026-10-28T20:58:17.546828Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi53503.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: a626d2aa210aafd9572221d4893cd206310d5df507e474e1528997048f522250
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318
+  accessed_at: '2026-10-28T20:58:19.098724Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi86318.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: bd88e1499f370a9f474b29fa7a9a83aa5c42c69d0b6772ece8c89d646dfda8d8
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887
+  accessed_at: '2026-10-28T20:58:16.873124Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi34887.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 3a37ef35991d24faf578286a7d7557ee1b0646c286dd3f8a555d833e6bf82a57
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213
+  accessed_at: '2026-10-28T20:58:18.342237Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi75213.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f99a2d8b28ac44913a666745dd70098c5d5f21c9513fee921a35f0fd18f2c445
+- evidence_id: chebi32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32145
+  accessed_at: '2026-10-28T20:58:15.985811Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi32145.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 089212e8c86e2d4a4b145366c8bc67e0056565ef6970dcdc3df63ad20dac234d
+- evidence_id: chebi131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131361
+  accessed_at: '2026-10-28T20:58:12.012316Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi131361.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: d88b30f797a300c3935e550a4770cb598bbed342a9c2a343f77bdce496e99db9
+- evidence_id: chebi63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63939
+  accessed_at: '2026-10-28T20:58:18.172096Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi63939.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 01f41117ab89dbd1d514a894850dc06afd5d95c0bee7fd89f7dfdb54c309c514
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956
+  accessed_at: '2026-10-28T20:58:12.878008Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi15956.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 5135a39e8b52c878896db22443f00507125db80e5ce4bb1dcc97914b9bdd7316
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470
+  accessed_at: '2026-10-28T20:58:14.530061Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi27470.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: e1820a7a704794fa20995eea5037e03c2b22b847817c28bb2f45f80762c275d1
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961
+  accessed_at: '2026-10-28T20:58:15.073556Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi30961.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 855ea2cf0e89d25ab4a560ab1c2dab6ac861d215bc5473cb4d3a0a2d4cdff438
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105
+  accessed_at: '2026-10-28T20:58:17.216046Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi49105.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f9dbae8cd2dcbd38d914abb99730e341ff280d3a44f20f95b2663e47664780cf
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015
+  accessed_at: '2026-10-28T20:58:13.479216Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi17015.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 17f7ac7c03d75b85a96f951321902906266f3ce8fa44faea4814fac46560e3e6
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940
+  accessed_at: '2026-10-28T20:58:12.748659Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi15940.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: c291a1c1bb0d6af05ac4005af0957534f430db47e7df9cec874f8a94d961dba1
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345
+  accessed_at: '2026-10-28T20:58:15.308201Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi31345.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: c3341e7cf8a7ea0768d505265376c1514f161c9048b6e878314e204341d702eb
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843
+  accessed_at: '2026-10-28T20:58:13.879301Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi176843.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 9c73ea31864abce6b9ed6328e9ed491bc1cad2ba27f40adb5c00f0f192838e63
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753
+  accessed_at: '2026-10-28T20:58:14.779258Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi30753.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 1340e054634ce960494b9388f6e3fd231d9e7d66969c3c11932ee2058171fd2c
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494
+  accessed_at: '2026-10-28T20:58:13.233455Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi16494.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 192c51f672f633c6071a3397d5785fb2bca6eaf8f9b787f7aaaa6c2aeb3b1a2f
+- evidence_id: chebi132751
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:132751
+  accessed_at: '2026-10-28T20:58:12.575224Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi132751.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 1d5eefc753b4fbbffd69d169aa7ca7be16df737b6c8c0e1833917806ac0607e5
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record03/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:16:14.035773Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: 84246a2c9e93bf6e5e63bfd43d5b94ad63cf86101299011c20a5591178525ef3
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record03/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:16:14.035946Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: 55a5bc28cde296282b3fa5c31017727f7640e0a63b09cf0db4f2fd155f3ac4fe
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record03/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:16:14.036164Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: ecddb33023a3b346cfbb21d7d557e98794222ddc5d8c747d7c87bff16fef6423
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record03/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:16:14.036291Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: 2a1025fdd596876fa90cdcd75080b1ba0caae5c13b3675901772aac84e42e4d7
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record03/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:16:14.036406Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: 236fb5de444ae3ebb5998183fc7c6540c57cd0ed6e8dbc8727691b58a652882e
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record03/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:16:14.036438Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 61835fe842e7a03033312536b823cbf55146b7c98aebf56ff13248b4cf0e1b74
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record03/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:16:14.036460Z'
+  support: context_only
+  summary: No attached claims to authenticate; historical source objects are separately
+    assessed in historical-source-joins.json.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: historical-source-joins
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record03/historical-source-joins.json
+  locator: Every literal/decoded historical source-object row and exact current-source
+    match
+  accessed_at: '2026-10-28T21:16:14.036480Z'
+  support: context_only
+  summary: Historical quoted source content and raw-digest equality where actually
+    matched; independent of attached local claims and original access-event recovery.
+  snapshot_sha256: 3b4466737bc89013f60b4ecf48e42205026b118856800fadae125148845ad8f8
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch078/record03/validate-schema.json
+  accessed_at: '2026-10-28T20:56:50.133335Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: d62f7651d3a85e5a6b7ca38ce233ea60c03099726d182558b79a91a4995a2e67
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch078/record03/validate-strict.json
+  accessed_at: '2026-10-28T20:56:51.118187Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: a129a0a9a25035c11a6ff87db7a350f3e89b643d781445257b776c73e4b61fb6
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch078/record03/validate-terms.json
+  accessed_at: '2026-10-28T20:56:52.206786Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 2eefb7220e574fded4f8b4cce1a2ae168ee9ec3ec9c78025ba0eb5567acf9e88
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch078/record03/validate-references.json
+  accessed_at: '2026-10-28T20:56:53.136129Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 7879e3c673734bf54cd4218356dc294abcf5fbc3a011a5edcd4136d0a6422eb5
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Generic source and strain branch
+  outcome: concern
+  summary: Fresh DSM1010 and its current provider agree on generic ingredient topology.
+    DSM15769 has an explicit primary substitution and a collection identity, not a
+    new growth assertion. The two inaccessible KOMODO branches retain historical namespace/mapping
+    context only.
+  target_ids:
+  - CultureMech:000426
+  evidence_ids:
+  - dsmz1010
+  - api1010
+  - dsm15769
+  - komodo1010
+  - komodo1010.1
+  - historical-selected-parent-rows
+- assessment_id: classification
+  area: representation
+  topic: Defined liquid representation
+  outcome: supported
+  summary: The generic recipe is chemically specified and liquid; this representation
+    is supported within the DSM scope and does not resolve KOMODO identity or the
+    source-specific strain branch.
+  target_ids:
+  - CultureMech:000426
+  evidence_ids:
+  - dsmz1010
+  - api1010
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 163 current concentration fields are covered by 65 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:000426
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b078-quantity-inventory-v1","target":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","quantity_field_count":163,"decisions":[{"quantity_id":"q1","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"26.2948","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"26.2948","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"26.2948","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[0].concentration","stored":{"value":"26.2948","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM
+    main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 26.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 26.2948,\n                        \"mmol_l\":
+    449.946,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 3-3","quote":"NaCl                                                 26.40        g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[0].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[0].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q2","label":"MgCl2
+    x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5.67729","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5.67729","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5.67729","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5.67729","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM
+    main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 5.7,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5.67729,\n                        \"mmol_l\":
+    27.9253,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 4-4","quote":"MgCl2 x 6 H2O                                         5.70        g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[1].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[1].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q3","label":"MgSO4
+    x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"6.77291","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"6.77291","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"6.77291","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[2].concentration","stored":{"value":"6.77291","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM
+    main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 6.8,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 6.77291,\n                        \"mmol_l\":
+    27.479,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 5-5","quote":"MgSO4 x 7 H2O                                         6.80        g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[2].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[2].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[2].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[2].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q4","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.657371","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.657371","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.657371","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.657371","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM
+    main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.66,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.657371,\n                        \"mmol_l\":
+    8.81785,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 6-6","quote":"KCl                                                   0.66        g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[3].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[3].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q5","label":"CaCl2
+    x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1.46414","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1.46414","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1.46414","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1.46414","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM
+    main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 1.47,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.46414,\n                        \"mmol_l\":
+    9.95914,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 7-7","quote":"CaCl2 x 2 H2O                                         1.47        g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[4].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[4].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q6","label":"KBr","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.0896414","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.0896414","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.0896414","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.0896414","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM
+    main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"KBr\",\n                        \"compound_id\":
+    174,\n                        \"amount\": 0.09,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0896414,\n                        \"mmol_l\":
+    0.753289,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 8-8","quote":"KBr                                                   0.09        g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[5].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[5].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q7","label":"Sodium
+    resazurin","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.000498008","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.000498008","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.000498008","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.000498008","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The explicit
+    0.1% w/v indicator and 0.50 ml dose permit source-basis interpretation, but its
+    sodium form is separately misgrounded. The two KOMODO branches have unresolved
+    exact current source identity; DSM1010 is comparison evidence there, not authorization
+    to transfer formulation or dose.","source_stage":"DSM main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000498008,\n                        \"mmol_l\": 0.00198275,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 11-11","quote":"Sodium resazurin (0.1% w/v)                           0.50       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The explicit
+    0.1% w/v indicator and 0.50 ml dose permit source-basis interpretation, but its
+    sodium form is separately misgrounded. The two KOMODO branches have unresolved
+    exact current source identity; DSM1010 is comparison evidence there, not authorization
+    to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[6].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The explicit 0.1% w/v indicator
+    and 0.50 ml dose permit source-basis interpretation, but its sodium form is separately
+    misgrounded. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The explicit
+    0.1% w/v indicator and 0.50 ml dose permit source-basis interpretation, but its
+    sodium form is separately misgrounded. The two KOMODO branches have unresolved
+    exact current source identity; DSM1010 is comparison evidence there, not authorization
+    to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[6].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The explicit 0.1% w/v indicator
+    and 0.50 ml dose permit source-basis interpretation, but its sodium form is separately
+    misgrounded. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose."}]},{"quantity_id":"q8","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.199203","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.199203","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.199203","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.199203","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM
+    main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.199203,\n                        \"mmol_l\":
+    1.46381,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 12-12","quote":"KH2PO4                                                0.20        g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[7].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[7].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q9","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.249004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.249004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.249004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.249004","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM
+    main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 0.25,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.249004,\n                        \"mmol_l\":
+    4.65515,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 13-13","quote":"NH4Cl                                                 0.25        g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[8].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[8].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[8].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[8].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q10","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.996016","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.996016","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.996016","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.996016","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM
+    main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.996016,\n                        \"mmol_l\":
+    9.39744,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 14-14","quote":"Na2CO3                                                1.00        g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[9].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[9].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[9].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[9].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q11","label":"Na-DL-lactate","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.29084","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.29084","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.29084","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.29084","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM
+    main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[12]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Na-DL-lactate\",\n                        \"compound_id\":
+    111,\n                        \"amount\": 2.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.29084,\n                        \"mmol_l\":
+    20.4429,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 15-15","quote":"Na-DL-lactate                                         2.30        g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[10].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[10].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[10].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[10].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q12","label":"Na2S
+    x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.298805","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.298805","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.298805","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.298805","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"DSM
+    main declared normalization","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[15]","quote":"{\n                        \"recipe_order\":
+    16,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.298805,\n                        \"mmol_l\":
+    1.24408,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 18-18","quote":"Na2S x 9 H2O                                          0.30        g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[11].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[11].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[11].concentration","decision":"evidence_only","rationale":"The
+    DSM-backed owner and target retain the exact current provider g_l on its declared
+    1004 ml computational basis. The primary prints batch mass and 1000 ml water,
+    not a measured final volume; no replacement denominator is inferred. The two KOMODO
+    branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[11].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The DSM-backed
+    owner and target retain the exact current provider g_l on its declared 1004 ml
+    computational basis. The primary prints batch mass and 1000 ml water, not a measured
+    final volume; no replacement denominator is inferred. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q13","label":"HCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    primary gives 10 ml HCl labelled 25%, without a percent basis, in SL-10 made up
+    to 1000 ml. The stored 2.5 g/L is an unsupported acid-percent conversion and is
+    wrongly at medium root. Preserve volume/strength without density or percent-basis
+    assumptions. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\":
+    68,\n                        \"attribute\": \"25%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 38-38","quote":"HCl (25%)                                            10.00      ml","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[12].concentration","decision":"correct","rationale":"The
+    primary gives 10 ml HCl labelled 25%, without a percent basis, in SL-10 made up
+    to 1000 ml. The stored 2.5 g/L is an unsupported acid-percent conversion and is
+    wrongly at medium root. Preserve volume/strength without density or percent-basis
+    assumptions. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[12].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The primary
+    gives 10 ml HCl labelled 25%, without a percent basis, in SL-10 made up to 1000
+    ml. The stored 2.5 g/L is an unsupported acid-percent conversion and is wrongly
+    at medium root. Preserve volume/strength without density or percent-basis assumptions.
+    The two KOMODO branches have unresolved exact current source identity; DSM1010
+    is comparison evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[12].concentration","decision":"correct","rationale":"The
+    primary gives 10 ml HCl labelled 25%, without a percent basis, in SL-10 made up
+    to 1000 ml. The stored 2.5 g/L is an unsupported acid-percent conversion and is
+    wrongly at medium root. Preserve volume/strength without density or percent-basis
+    assumptions. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[12].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The primary
+    gives 10 ml HCl labelled 25%, without a percent basis, in SL-10 made up to 1000
+    ml. The stored 2.5 g/L is an unsupported acid-percent conversion and is wrongly
+    at medium root. Preserve volume/strength without density or percent-basis assumptions.
+    The two KOMODO branches have unresolved exact current source identity; DSM1010
+    is comparison evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q14","label":"FeCl2
+    x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.54482,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 39-39","quote":"FeCl2 x 4 H2O                                         1.50       g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[13].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q15","label":"ZnCl2","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.07","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\":
+    64,\n                        \"amount\": 70,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\":
+    0.513573,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 40-40","quote":"ZnCl2                                                70.00      mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[14].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[13].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[13].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[13].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q16","label":"MnCl2
+    x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.505293,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 41-41","quote":"MnCl2 x 4 H2O                                       100.00      mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[15].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[14].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[14].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[14].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q17","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 6,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\":
+    0.0970246,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 42-42","quote":"H3BO3                                                 6.00      mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[16].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[15].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[15].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[15].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q18","label":"CoCl2
+    x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.19","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 190,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\":
+    1.46335,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 43-43","quote":"CoCl2 x 6 H2O                                       190.00      mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[17].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[16].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[16].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[16].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q19","label":"CuCl2
+    x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.002","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 2,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\":
+    0.0117314,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 44-44","quote":"CuCl2 x 2 H2O                                         2.00      mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[18].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[17].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[17].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[17].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q20","label":"NiCl2
+    x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.024","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 24,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\":
+    0.185187,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 45-45","quote":"NiCl2 x 6 H2O                                        24.00      mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[19].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[18].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[18].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[18].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q21","label":"Na2MoO4
+    x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.036","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 36,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\":
+    0.148791,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 46-46","quote":"Na2MoO4 x 2 H2O                                      36.00      mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[20].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[19].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[19].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[19].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q22","label":"NaOH","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\":
+    256,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    12.5009,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 61-61","quote":"NaOH                                                       0.50        g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[21].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[20].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[20].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[20].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q23","label":"Na2SeO3
+    x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.003","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\":
+    107,\n                        \"amount\": 3,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\":
+    0.0114062,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 62-62","quote":"Na2SeO3 x 5 H2O                                            3.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[22].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[21].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[21].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[21].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q24","label":"Na2WO4
+    x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.004","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\":
+    249,\n                        \"amount\": 4,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\":
+    0.0121267,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 63-63","quote":"Na2WO4 x 2 H2O                                             4.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[23].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[22].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[22].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[22].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q25","label":"Biotin","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\":
+    46,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 68-68","quote":"Biotin                                                    20.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[24].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[23].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[23].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[23].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q26","label":"Folic
+    acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\":
+    138,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0453104,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 69-69","quote":"Folic acid                                                20.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[25].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[24].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[24].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[24].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q27","label":"Pyridoxine
+    hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.4","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    generated root value sums two different vitamin-stock strengths. The maintained
+    owners already split these exact contributions into separate stocks; credit that
+    repair, keep the source stock amounts separate and regenerate only after branch
+    reconciliation. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.486287,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 70-70","quote":"Pyridoxine hydrochloride                                 100.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 300,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\":
+    1.45886,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 87-87","quote":"Pyridoxine hydrochloride                                 300.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[26].concentration","decision":"correct","rationale":"The
+    generated root value sums two different vitamin-stock strengths. The maintained
+    owners already split these exact contributions into separate stocks; credit that
+    repair, keep the source stock amounts separate and regenerate only after branch
+    reconciliation. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose."}]},{"quantity_id":"q28","label":"Thiamine HCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\":
+    1207,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.148236,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 71-71","quote":"Thiamine HCl                                              50.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[27].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[25].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[25].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[25].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q29","label":"Riboflavin","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\":
+    136,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.132837,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 72-72","quote":"Riboflavin                                                50.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[28].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[26].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[26].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[26].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q30","label":"Nicotinic
+    acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.25","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    generated root value sums two different vitamin-stock strengths. The maintained
+    owners already split these exact contributions into separate stocks; credit that
+    repair, keep the source stock amounts separate and regenerate only after branch
+    reconciliation. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.406141,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 73-73","quote":"Nicotinic acid                                            50.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.62456,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 85-85","quote":"Nicotinic acid                                           200.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[29].concentration","decision":"correct","rationale":"The
+    generated root value sums two different vitamin-stock strengths. The maintained
+    owners already split these exact contributions into separate stocks; credit that
+    repair, keep the source stock amounts separate and regenerate only after branch
+    reconciliation. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose."}]},{"quantity_id":"q31","label":"Calcium D-(+)-pantothenate","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\":
+    1512,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.209846,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 74-74","quote":"Calcium D-(+)-pantothenate                                50.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[30].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[27].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[27].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[27].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q32","label":"Vitamin
+    B12","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[31].concentration","stored":{"value":"0.101","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    generated root value sums two different vitamin-stock strengths. The maintained
+    owners already split these exact contributions into separate stocks; credit that
+    repair, keep the source stock amounts separate and regenerate only after branch
+    reconciliation. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 75-75","quote":"Vitamin B12                                                1.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 82-82","quote":"Vitamin B12                                              100.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[31].concentration","decision":"correct","rationale":"The
+    generated root value sums two different vitamin-stock strengths. The maintained
+    owners already split these exact contributions into separate stocks; credit that
+    repair, keep the source stock amounts separate and regenerate only after branch
+    reconciliation. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose."}]},{"quantity_id":"q33","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[32].concentration","stored":{"value":"0.13","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    generated root value sums two different vitamin-stock strengths. The maintained
+    owners already split these exact contributions into separate stocks; credit that
+    repair, keep the source stock amounts separate and regenerate only after branch
+    reconciliation. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose.","source_stage":"stock stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.364591,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 76-76","quote":"p-Aminobenzoic acid                                       50.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 80,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\":
+    0.583345,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 83-83","quote":"p-Aminobenzoic acid                                       80.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[32].concentration","decision":"correct","rationale":"The
+    generated root value sums two different vitamin-stock strengths. The maintained
+    owners already split these exact contributions into separate stocks; credit that
+    repair, keep the source stock amounts separate and regenerate only after branch
+    reconciliation. The two KOMODO branches have unresolved exact current source identity;
+    DSM1010 is comparison evidence there, not authorization to transfer formulation
+    or dose."}]},{"quantity_id":"q34","label":"(DL)-alpha-Lipoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[33].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\":
+    252,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.24233,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 77-77","quote":"(DL)-alpha-Lipoic acid                                    50.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[33].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[28].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[28].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[28].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q35","label":"D-(+)-biotin","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[34].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[29].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"D-(+)-biotin\",\n                        \"compound_id\":
+    1359,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 84-84","quote":"D-(+)-biotin                                              20.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[34].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[29].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[29].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[29].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q36","label":"Calcium
+    pantothenate","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[35].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[30].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\":
+    518,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.209849,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 86-86","quote":"Calcium pantothenate                                     100.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[35].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ingredients[30].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ingredients[30].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ingredients[30].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. The exact
+    source batch mass and current API stock g_l belong to the named stock, not the
+    medium root. Supported numeric stock strength does not validate the current placement.
+    SL-10 has explicit 1000 ml makeup; the other stocks list input water and a declared
+    provider basis, not independently measured final volume. The two KOMODO branches
+    have unresolved exact current source identity; DSM1010 is comparison evidence
+    there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q37","label":"Thiamine-HCl
+    x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[36].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose.","source_stage":"stock
+    stage, historically flattened or summed","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\":
+    77,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    0.535761,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 88-88","quote":"Thiamine-HCl x 2 H2O                                     200.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ingredients[36].concentration","decision":"correct","rationale":"The
+    exact source batch mass and current API stock g_l belong to the named stock, not
+    the medium root. Supported numeric stock strength does not validate the current
+    placement. SL-10 has explicit 1000 ml makeup; the other stocks list input water
+    and a declared provider basis, not independently measured final volume. The two
+    KOMODO branches have unresolved exact current source identity; DSM1010 is comparison
+    evidence there, not authorization to transfer formulation or dose."}]},{"quantity_id":"q38","label":"FeCl2
+    x 4 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.54482,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 39-39","quote":"FeCl2 x 4 H2O                                         1.50       g","quote_basis":"derivative
+    text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 55-56","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[0].composition[0].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[0].composition[0].concentration","decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[0].composition[0].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."}]},{"quantity_id":"q39","label":"Thiamine-HCl x 2 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\":
+    77,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    0.535761,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 88-88","quote":"Thiamine-HCl x 2 H2O                                     200.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[0].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[0].concentration","decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[0].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."}]},{"quantity_id":"q40","label":"Nicotinic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.62456,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 85-85","quote":"Nicotinic acid                                           200.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[1].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[1].concentration","decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[1].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."}]},{"quantity_id":"q41","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[2].concentration","stored":{"value":"0.08","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[2].concentration","stored":{"value":"0.08","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[2].concentration","stored":{"value":"0.08","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 80,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\":
+    0.583345,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 83-83","quote":"p-Aminobenzoic acid                                       80.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[2].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[2].concentration","decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[2].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."}]},{"quantity_id":"q42","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[3].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[3].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[3].concentration","stored":{"value":"0.3","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 300,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\":
+    1.45886,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 87-87","quote":"Pyridoxine hydrochloride                                 300.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[3].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[3].concentration","decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[3].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."}]},{"quantity_id":"q43","label":"Vitamin B12","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 82-82","quote":"Vitamin B12                                              100.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].composition[4].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].composition[4].concentration","decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].composition[4].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."}]},{"quantity_id":"q44","label":"Nicotinic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[0].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[0].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[0].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.406141,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 73-73","quote":"Nicotinic acid                                            50.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[0].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[0].concentration","decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[0].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."}]},{"quantity_id":"q45","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[1].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[1].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[1].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.364591,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 76-76","quote":"p-Aminobenzoic acid                                       50.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[1].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[1].concentration","decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[1].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."}]},{"quantity_id":"q46","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[2].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[2].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[2].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.486287,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 70-70","quote":"Pyridoxine hydrochloride                                 100.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[2].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[2].concentration","decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[2].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."}]},{"quantity_id":"q47","label":"Vitamin B12","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[3].concentration","stored":{"value":"0.001","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[3].concentration","stored":{"value":"0.001","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[3].concentration","stored":{"value":"0.001","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches.","source_stage":"existing partial stock composition","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 75-75","quote":"Vitamin B12                                                1.00       mg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].composition[3].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].composition[3].concentration","decision":"evidence_only","rationale":"This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].composition[3].concentration","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. This
+    existing DSM-owner nested value matches the exact current source stock rate and
+    is retained as evidence_only because no attached field claim exists. Partial nesting
+    is real repair credit, while remaining root components and source branch boundaries
+    still need resolution. KOMODO copied values remain unsupported for their own unresolved
+    branches."}]},{"quantity_id":"q48","label":"Trace element solution SL-10 receiving
+    dose and note","local_fields":[{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"1","unit":"ML_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[0].preparation_notes","stored":"Stock
+    prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume
+    from MediaDive (#150)."}],"decision":"correct","rationale":"The primary specifies
+    1 ml per printed medium batch, not 1 ml per litre. Preserve SL-10 explicit 1000
+    ml makeup, but distinguish the vitamin stocks’ 1000 ml input water from measured
+    final volume. Correct the receiving denominator and overbroad stock-preparation
+    note without discarding the existing stock identity.","source_stage":"DSM stock
+    receiving batch","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 9-9","quote":"Trace element solution SL-10                          1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 47-47","quote":"Distilled water                                     990.00      ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 55-56","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[0].concentration","decision":"correct","rationale":"The
+    primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve
+    SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input
+    water from measured final volume. Correct the receiving denominator and overbroad
+    stock-preparation note without discarding the existing stock identity."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[0].preparation_notes","decision":"correct","rationale":"The
+    primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve
+    SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input
+    water from measured final volume. Correct the receiving denominator and overbroad
+    stock-preparation note without discarding the existing stock identity."}]},{"quantity_id":"q49","label":"Trace
+    element solution SL-10 unasserted candidate/note","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[0].concentration_candidates","stored":[{"value":"1","unit":"ML_PER_L","basis":"CROSS_MEDIUM_INFERENCE","support":"KOMODO
+    1010 resolves to DSMZ/MediaDive medium 1010 both structurally and via the KOMODO->DSMZ
+    export; volume read from that medium''s recipe.","counterevidence":"Not confirmed
+    as medium 1010: 89% of the 37 shared compounds carry the same value (12 shared
+    with that medium''s main solution). A record that IS the medium scores 100%, with
+    at least 5 main-solution compounds. A stock''s addition volume varies by citing
+    medium: MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)''
+    at 0.2 ml and medium 69 adds the same stock at 5 ml.","proposed_by":"apply_cocktail_nesting.py"}]},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[0].preparation_notes","stored":"Stock
+    prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as
+    1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}],"decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume.","source_stage":"unasserted cross-medium candidate","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 9-9","quote":"Trace element solution SL-10                          1.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[0].concentration_candidates","decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[0].preparation_notes","decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume."}]},{"quantity_id":"q50","label":"Trace element solution SL-10 unasserted
+    candidate/note","local_fields":[{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[0].concentration_candidates","stored":[{"value":"1","unit":"ML_PER_L","basis":"CROSS_MEDIUM_INFERENCE","support":"This
+    record is a variant of medium 1010 (KOMODO key ''1010.1''); volume read from base
+    medium 1010 (''DESULFOPILA CORRODENS MEDIUM'').","counterevidence":"The variant''s
+    own recipe was never read — only base medium 1010''s — so the modification may
+    change this volume. A stock''s addition volume varies by citing medium: MediaDive
+    medium 142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and medium
+    69 adds the same stock at 5 ml.","proposed_by":"apply_cocktail_nesting.py"}]},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[0].preparation_notes","stored":"Stock
+    prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as
+    1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}],"decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume.","source_stage":"unasserted cross-medium candidate","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 9-9","quote":"Trace element solution SL-10                          1.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[0].concentration_candidates","decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[0].preparation_notes","decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume."}]},{"quantity_id":"q51","label":"Seven vitamins solution receiving dose
+    and note","local_fields":[{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"1","unit":"ML_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].preparation_notes","stored":"Stock
+    prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume
+    from MediaDive (#150)."}],"decision":"correct","rationale":"The primary specifies
+    1 ml per printed medium batch, not 1 ml per litre. Preserve SL-10 explicit 1000
+    ml makeup, but distinguish the vitamin stocks’ 1000 ml input water from measured
+    final volume. Correct the receiving denominator and overbroad stock-preparation
+    note without discarding the existing stock identity.","source_stage":"DSM stock
+    receiving batch","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[14]","quote":"{\n                        \"recipe_order\":
+    15,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\":
+    1038,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 17-17","quote":"Seven vitamins solution                               1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 89-89","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].concentration","decision":"correct","rationale":"The
+    primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve
+    SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input
+    water from measured final volume. Correct the receiving denominator and overbroad
+    stock-preparation note without discarding the existing stock identity."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[1].preparation_notes","decision":"correct","rationale":"The
+    primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve
+    SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input
+    water from measured final volume. Correct the receiving denominator and overbroad
+    stock-preparation note without discarding the existing stock identity."}]},{"quantity_id":"q52","label":"Seven
+    vitamins solution unasserted candidate/note","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].concentration_candidates","stored":[{"value":"1","unit":"ML_PER_L","basis":"CROSS_MEDIUM_INFERENCE","support":"KOMODO
+    1010 resolves to DSMZ/MediaDive medium 1010 both structurally and via the KOMODO->DSMZ
+    export; volume read from that medium''s recipe.","counterevidence":"Not confirmed
+    as medium 1010: 89% of the 37 shared compounds carry the same value (12 shared
+    with that medium''s main solution). A record that IS the medium scores 100%, with
+    at least 5 main-solution compounds. A stock''s addition volume varies by citing
+    medium: MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)''
+    at 0.2 ml and medium 69 adds the same stock at 5 ml.","proposed_by":"apply_cocktail_nesting.py"}]},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].preparation_notes","stored":"Stock
+    prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as
+    1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}],"decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume.","source_stage":"unasserted cross-medium candidate","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[14]","quote":"{\n                        \"recipe_order\":
+    15,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\":
+    1038,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 17-17","quote":"Seven vitamins solution                               1.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].concentration_candidates","decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[1].preparation_notes","decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume."}]},{"quantity_id":"q53","label":"Seven vitamins solution unasserted candidate/note","local_fields":[{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].concentration_candidates","stored":[{"value":"1","unit":"ML_PER_L","basis":"CROSS_MEDIUM_INFERENCE","support":"This
+    record is a variant of medium 1010 (KOMODO key ''1010.1''); volume read from base
+    medium 1010 (''DESULFOPILA CORRODENS MEDIUM'').","counterevidence":"The variant''s
+    own recipe was never read — only base medium 1010''s — so the modification may
+    change this volume. A stock''s addition volume varies by citing medium: MediaDive
+    medium 142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and medium
+    69 adds the same stock at 5 ml.","proposed_by":"apply_cocktail_nesting.py"}]},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].preparation_notes","stored":"Stock
+    prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as
+    1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}],"decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume.","source_stage":"unasserted cross-medium candidate","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[14]","quote":"{\n                        \"recipe_order\":
+    15,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\":
+    1038,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 17-17","quote":"Seven vitamins solution                               1.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].concentration_candidates","decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[1].preparation_notes","decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume."}]},{"quantity_id":"q54","label":"Wolin''s vitamin solution (10x) receiving
+    dose and note","local_fields":[{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].concentration","stored":{"value":"1","unit":"ML_PER_L"}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].preparation_notes","stored":"Stock
+    prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume
+    from MediaDive (#150)."}],"decision":"correct","rationale":"The primary specifies
+    1 ml per printed medium batch, not 1 ml per litre. Preserve SL-10 explicit 1000
+    ml makeup, but distinguish the vitamin stocks’ 1000 ml input water from measured
+    final volume. Correct the receiving denominator and overbroad stock-preparation
+    note without discarding the existing stock identity.","source_stage":"DSM stock
+    receiving batch","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 16-16","quote":"Wolin''s vitamin solution (10x)                        1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 78-78","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].concentration","decision":"correct","rationale":"The
+    primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve
+    SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input
+    water from measured final volume. Correct the receiving denominator and overbroad
+    stock-preparation note without discarding the existing stock identity."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"solutions[2].preparation_notes","decision":"correct","rationale":"The
+    primary specifies 1 ml per printed medium batch, not 1 ml per litre. Preserve
+    SL-10 explicit 1000 ml makeup, but distinguish the vitamin stocks’ 1000 ml input
+    water from measured final volume. Correct the receiving denominator and overbroad
+    stock-preparation note without discarding the existing stock identity."}]},{"quantity_id":"q55","label":"Wolin''s
+    vitamin solution (10x) unasserted candidate/note","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].concentration_candidates","stored":[{"value":"1","unit":"ML_PER_L","basis":"CROSS_MEDIUM_INFERENCE","support":"KOMODO
+    1010 resolves to DSMZ/MediaDive medium 1010 both structurally and via the KOMODO->DSMZ
+    export; volume read from that medium''s recipe.","counterevidence":"Not confirmed
+    as medium 1010: 89% of the 37 shared compounds carry the same value (12 shared
+    with that medium''s main solution). A record that IS the medium scores 100%, with
+    at least 5 main-solution compounds. A stock''s addition volume varies by citing
+    medium: MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)''
+    at 0.2 ml and medium 69 adds the same stock at 5 ml.","proposed_by":"apply_cocktail_nesting.py"}]},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].preparation_notes","stored":"Stock
+    prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as
+    1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}],"decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume.","source_stage":"unasserted cross-medium candidate","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 16-16","quote":"Wolin''s vitamin solution (10x)                        1.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].concentration_candidates","decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"solutions[2].preparation_notes","decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume."}]},{"quantity_id":"q56","label":"Wolin''s vitamin solution (10x) unasserted
+    candidate/note","local_fields":[{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].concentration_candidates","stored":[{"value":"1","unit":"ML_PER_L","basis":"CROSS_MEDIUM_INFERENCE","support":"This
+    record is a variant of medium 1010 (KOMODO key ''1010.1''); volume read from base
+    medium 1010 (''DESULFOPILA CORRODENS MEDIUM'').","counterevidence":"The variant''s
+    own recipe was never read — only base medium 1010''s — so the modification may
+    change this volume. A stock''s addition volume varies by citing medium: MediaDive
+    medium 142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and medium
+    69 adds the same stock at 5 ml.","proposed_by":"apply_cocktail_nesting.py"}]},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].preparation_notes","stored":"Stock
+    prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as
+    1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}],"decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume.","source_stage":"unasserted cross-medium candidate","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 16-16","quote":"Wolin''s vitamin solution (10x)                        1.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].concentration_candidates","decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"solutions[2].preparation_notes","decision":"evidence_only","rationale":"The
+    existing candidate explicitly withholds assertion and retains counterevidence;
+    keep that uncertainty. DSM comparison shows 1 ml per batch, but does not resolve
+    this KOMODO branch or justify promotion to a fixed per-litre dose. The note must
+    remain a provenance qualification, not certification of stock composition or final
+    volume."}]},{"quantity_id":"q57","label":"Main input water","local_fields":[],"decision":"correct","rationale":"Restore
+    this missing source water in its exact DSM stage. SL-10 alone explicitly requires
+    final makeup to 1000 ml; the other listed waters are inputs, not final-volume
+    proof. Do not transfer to unresolved KOMODO variants.","source_stage":"source-only
+    water/stage","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[16]","quote":"{\n                        \"recipe_order\":
+    17,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 19-19","quote":"Distilled water                                    1000.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[]},{"quantity_id":"q58","label":"SL-10 input water
+    and makeup","local_fields":[],"decision":"correct","rationale":"Restore this missing
+    source water in its exact DSM stage. SL-10 alone explicitly requires final makeup
+    to 1000 ml; the other listed waters are inputs, not final-volume proof. Do not
+    transfer to unresolved KOMODO variants.","source_stage":"source-only water/stage","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 990,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 47-47","quote":"Distilled water                                     990.00      ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 55-56","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}],"layer_assessments":[]},{"quantity_id":"q59","label":"Selenite-tungstate
+    input water","local_fields":[],"decision":"correct","rationale":"Restore this
+    missing source water in its exact DSM stage. SL-10 alone explicitly requires final
+    makeup to 1000 ml; the other listed waters are inputs, not final-volume proof.
+    Do not transfer to unresolved KOMODO variants.","source_stage":"source-only water/stage","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 64-64","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[]},{"quantity_id":"q60","label":"Wolin vitamin input
+    water","local_fields":[],"decision":"correct","rationale":"Restore this missing
+    source water in its exact DSM stage. SL-10 alone explicitly requires final makeup
+    to 1000 ml; the other listed waters are inputs, not final-volume proof. Do not
+    transfer to unresolved KOMODO variants.","source_stage":"source-only water/stage","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[3].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 78-78","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[]},{"quantity_id":"q61","label":"Seven vitamins input
+    water","local_fields":[],"decision":"correct","rationale":"Restore this missing
+    source water in its exact DSM stage. SL-10 alone explicitly requires final makeup
+    to 1000 ml; the other listed waters are inputs, not final-volume proof. Do not
+    transfer to unresolved KOMODO variants.","source_stage":"source-only water/stage","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[4].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 89-89","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[]},{"quantity_id":"q62","label":"Missing selenite-tungstate
+    stock descriptor","local_fields":[],"decision":"correct","rationale":"The source
+    explicitly adds 1 ml of the separately defined Se-W stock per batch. The local
+    NaOH/selenite/tungstate root values must be scoped to that stock; no fixed dose
+    is transferred to unresolved KOMODO branches.","source_stage":"source-only stock
+    receiving batch","sources":[{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\":
+    777,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 10-10","quote":"Selenite-tungstate solution                           1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 60-64","quote":"Selenite-tungstate solution (from medium 385)\n   NaOH                                                       0.50        g\n   Na2SeO3
+    x 5 H2O                                            3.00       mg\n   Na2WO4 x
+    2 H2O                                             4.00       mg\n   Distilled
+    water                                         1000.00       ml","quote_basis":"derivative
+    text"}],"layer_assessments":[]},{"quantity_id":"q63","label":"Retained main preparation
+    and pH","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    ingredients (except dihydrogenphosphate, ammonium chloride, carbonate, lactate,
+    vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture
+    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add dihydrogenphosphate,
+    ammonium chloride, lactate, vitamins and sulfide form sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas atmosphere. The vitamin solutions should
+    be sterilized by filtration. Adjust pH of the complete medium to 7.2 - 7.5, if
+    necessary."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    ingredients (except dihydrogenphosphate, ammonium chloride, carbonate, lactate,
+    vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture
+    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add dihydrogenphosphate,
+    ammonium chloride, lactate, vitamins and sulfide form sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas atmosphere. The vitamin solutions should
+    be sterilized by filtration. Adjust pH of the complete medium to 7.2 - 7.5, if
+    necessary."},{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.5}},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.5}},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.5}},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.5}}],"decision":"evidence_only","rationale":"Credit
+    the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45
+    min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave
+    temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps;
+    their copied pH and aerobic notes remain comparison-only pending exact identity.
+    Do not transfer the DSM anoxic procedure automatically.","source_stage":"retained
+    primary preparation/condition","sources":[{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 21-28","quote":"Dissolve ingredients (except dihydrogenphosphate, ammonium
+    chloride, carbonate,\nlactate, vitamins and sulfide), then sparge medium with
+    80% N2 and 20% CO2 gas mixture\nfor 30 - 45 min to make it anoxic. Dispense medium
+    under same gas atmosphere into\nanoxic Hungate-type tubes or serum vials and autoclave.
+    Add dihydrogenphosphate,\nammonium chloride, lactate, vitamins and sulfide form
+    sterile anoxic stock solutions\nprepared under 100% N2 gas and carbonate from
+    a sterile anoxic stock solution prepared\nunder 80% N2 and 20% CO2 gas atmosphere.
+    The vitamin solutions should be sterilized by\nfiltration. Adjust pH of the complete
+    medium to 7.2 - 7.5, if necessary.","quote_basis":"derivative text"},{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients (except dihydrogenphosphate, ammonium chloride, carbonate,
+    lactate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas
+    mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Add dihydrogenphosphate,
+    ammonium chloride, lactate, vitamins and sulfide form sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas atmosphere. The vitamin solutions should
+    be sterilized by filtration. Adjust pH of the complete medium to 7.2 - 7.5, if
+    necessary.\"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"preparation_steps[0].description","decision":"evidence_only","rationale":"Credit
+    the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45
+    min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave
+    temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps;
+    their copied pH and aerobic notes remain comparison-only pending exact identity.
+    Do not transfer the DSM anoxic procedure automatically."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"preparation_steps[0].description","decision":"evidence_only","rationale":"Credit
+    the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45
+    min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave
+    temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps;
+    their copied pH and aerobic notes remain comparison-only pending exact identity.
+    Do not transfer the DSM anoxic procedure automatically."},{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"ph_range","decision":"evidence_only","rationale":"Credit
+    the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45
+    min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave
+    temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps;
+    their copied pH and aerobic notes remain comparison-only pending exact identity.
+    Do not transfer the DSM anoxic procedure automatically."},{"path":"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml","field_path":"ph_range","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. Credit
+    the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45
+    min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave
+    temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps;
+    their copied pH and aerobic notes remain comparison-only pending exact identity.
+    Do not transfer the DSM anoxic procedure automatically."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"ph_range","decision":"evidence_only","rationale":"Credit
+    the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45
+    min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave
+    temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps;
+    their copied pH and aerobic notes remain comparison-only pending exact identity.
+    Do not transfer the DSM anoxic procedure automatically."},{"path":"data/normalized_yaml/bacterial/for_dsm_15769.yaml","field_path":"ph_range","decision":"unsupported","rationale":"The
+    exact KOMODO branch is unresolved after HTTP403. The stored bytes and existing
+    partial nesting are documented; current DSM1010 is comparison-only here. Credit
+    the DSM-backed main paragraph and pH 7.2–7.5, including gas composition, 30–45
+    min sparging, stage exclusions, filtration and conditional pH adjustment. No autoclave
+    temperature/time or filter pore size is printed. The KOMODO owners have no preparation_steps;
+    their copied pH and aerobic notes remain comparison-only pending exact identity.
+    Do not transfer the DSM anoxic procedure automatically."}]},{"quantity_id":"q64","label":"SL-10
+    makeup step currently unqualified at medium root","local_fields":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"First
+    dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"preparation_steps[1].description","stored":"First
+    dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml."}],"decision":"correct","rationale":"The wording
+    and explicit 1000 ml makeup are supported for SL-10, but the step is currently
+    an unqualified main-medium step. Preserve the text and DISSOLVE action while moving
+    it into the exact stock scope; its wording is not a final-medium volume instruction.","source_stage":"SL-10
+    stock preparation","sources":[{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 55-56","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"},{"evidence_id":"api1010","reference":"https://mediadive.dsmz.de/rest/medium/1010","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/api1010.bin","raw_sha256":"3c5932efad5a1655de6ec09f225b03f4089c2353c1f5a6878cebca6cfd73abc8","text_sha256":"aa0169ae128a9ac65882573bca97dadb31570af488ab2726c625e3c0d8950d32","accessed_at":"2026-10-28T20:57:02.312485Z","locator":"data.solutions[1].steps[0]","quote":"{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml","field_path":"preparation_steps[1].description","decision":"correct","rationale":"The
+    wording and explicit 1000 ml makeup are supported for SL-10, but the step is currently
+    an unqualified main-medium step. Preserve the text and DISSOLVE action while moving
+    it into the exact stock scope; its wording is not a final-medium volume instruction."},{"path":"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml","field_path":"preparation_steps[1].description","decision":"correct","rationale":"The
+    wording and explicit 1000 ml makeup are supported for SL-10, but the step is currently
+    an unqualified main-medium step. Preserve the text and DISSOLVE action while moving
+    it into the exact stock scope; its wording is not a final-medium volume instruction."}]},{"quantity_id":"q65","label":"DSM15769
+    source-specific substitution","local_fields":[],"decision":"correct","rationale":"The
+    current primary explicitly replaces lactate with 0.45 g/L benzenepropanoic acid
+    for DSM15769 and gives its post-autoclave filtered addition scope. Resolve the
+    exact strain branch before curation; do not apply this substitution to the generic
+    DSM1010 medium or assert growth from the collection identity alone.","source_stage":"source-only
+    named-strain variant","sources":[{"evidence_id":"dsmz1010","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1010.pdf","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/dsmz1010.bin","raw_sha256":"e2d234266407f0b1a8f12fe9260c85a3d554948185fa935a01459f483f2c8474","text_sha256":"a2787d883395e255542a54f1bda572014e934dd46cb36eeeb79c7f58c299f9cd","accessed_at":"2026-10-28T20:57:03.379945Z","locator":"dsmz1010.txt
+    lines 31-33","quote":"For DSM 15769: Replace lactate with 0.45 g/l benzenepropanoic
+    acid (3-phenylpropionic\nacid), which is added to the medium after autoclaving
+    from an anoxic stock solution\nprepared under 100% N2 gas and sterilized by filtration.","quote_basis":"derivative
+    text"}],"layer_assessments":[]}],"document_scopes":{"data/merge_yaml/merged/DESULFOPILA_CORRODENS_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml":null,"data/normalized_yaml/bacterial/for_dsm_15769.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: All 35 asserted CHEBI scientific objects and exact catalogue row families
+    were assessed. Sodium resazurin versus neutral8806 and nickel hexahydrate versus34887
+    are confirmed supplied-name conflicts. Cobalt hexahydrate53503, explicit D-calcium31345
+    in Wolin, sodium lactate’s non-stereo identity, thiamine hydrochloride dihydrate132751
+    and generic lipoic acid16494 are credited within their stated scope. Seven-vitamin
+    generic calcium does not resolve D specificity. MAPPED and REJECTED spellings
+    for nickel coexist; broad catalogue synonyms do not override chemical forms.
+  target_ids:
+  - CultureMech:000426
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: supported
+  summary: All seven exact report bodies and all current histories were read, with
+    three full source-check parent objects (298 claims) and two bounded LOW-confidence
+    topology proposals. Current API raw bytes equal the historical digest; literal/decoded
+    object joins are distinct from absent attached claims and from original access-event
+    authentication. Existing partial nesting and strain-link repairs are credited.
+    Historical blanket concentration conflicts, input-volume finality, generic topology
+    proposals and automatic sibling merging are not adopted. Current conservative
+    merge cannot explain stale generated content by itself.
+  target_ids:
+  - CultureMech:000426
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+  - historical-source-joins
+  - historical-reading
+  - historical-selected-parent-rows
+  - selected-parent-authentication
+  - writer-nesting
+  - writer-variant
+  - writer-resolver
+  - writer-komodo
+findings:
+- finding_id: f1
+  issue_key: culturemech-000426-identity-branch
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated merge still absorbs a distinct strain branch
+  description: Reconcile the three maintained source identities before regeneration.
+    Current DSM1010 explicitly specifies a DSM15769 substitution, while the strain
+    owner preserves the base lactate formula and the generated target still merges
+    it. Keep the current STRAIN_SPECIFIC_VARIANT relationship credit, but replace
+    the unsupported preserves-components narrative with exact source-backed differences
+    after confirming its own KOMODO branch. Exact KOMODO routes remain HTTP403; historical
+    mapping and current byte-equal DSM copies do not resolve them.
+  target_ids:
+  - CultureMech:000426
+  field_paths:
+  - merged_from
+  - data/normalized_yaml/bacterial/for_dsm_15769.yaml::variant_modifications
+  - data/normalized_yaml/bacterial/for_dsm_15769.yaml::ingredients[10].concentration
+  - data/normalized_yaml/bacterial/for_dsm_15769.yaml::parent_media
+  - data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml::variant_children
+  evidence_ids:
+  - target
+  - owner
+  - owner-2
+  - owner-3
+  - dsmz1010
+  - dsm15769
+  - komodo1010
+  - komodo1010.1
+  - historical-selected-parent-rows
+  - writer-variant
+  - writer-links
+  - writer-formulation
+  - writer-merger
+  rule_id: custom/identity-branch
+  native_severity: P2
+  normalization_reason: Source-specific identity issue normalized major; this custom
+    rule does not redefine a narrower native rubric rule.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: scripts/repair_komodo_1010_artificial_seawater_score10.py
+    role: current variant narrative and provenance writer
+- finding_id: f2
+  issue_key: culturemech-000426-stock-stage
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Partial nesting leaves root stock values and stale generated sums
+  description: Complete the DSM stock boundaries, preserving ten existing nested values
+    and the source-backed separate vitamin contributions. Move remaining stock components
+    out of the medium root, restore Se-W and stage-specific water, and preserve the
+    explicit indicator w/v basis. Correct SL-10 acid volume/unspecified percent conversion.
+    The generated four vitamin sums are stale. KOMODO values require branch resolution
+    rather than automatic DSM transfer.
+  target_ids:
+  - CultureMech:000426
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps[1]
+  evidence_ids:
+  - dsmz1010
+  - api1010
+  - quantities
+  - writer-nesting
+  - writer-cleanup
+  - writer-duplicate
+  - writer-mediadive
+  rule_id: custom/stock-stage
+  native_severity: P2
+  normalization_reason: Source-specific quantity issue normalized major; this custom
+    rule does not redefine a narrower native rubric rule.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-000426-dose-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: DSM stock doses and notes assert an unsupported per-litre basis
+  description: Replace the DSM owner’s three asserted 1 ML_PER_L doses with exact
+    source batch semantics; distinguish SL-10 final makeup from vitamin input water.
+    Preserve the two KOMODO owners’ explicitly unasserted candidates, and scope the
+    existing SL-10 step to its stock. Do not treat the API1004 ml computational basis
+    as measured medium volume.
+  target_ids:
+  - CultureMech:000426
+  field_paths:
+  - data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml::solutions[0].concentration
+  - data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml::solutions[1].concentration
+  - data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml::solutions[2].concentration
+  - data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml::solutions[0].preparation_notes
+  - data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml::solutions[1].preparation_notes
+  - data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml::solutions[2].preparation_notes
+  - preparation_steps[1]
+  evidence_ids:
+  - dsmz1010
+  - api1010
+  - quantities
+  - writer-nesting
+  - writer-mediadive
+  rule_id: custom/dose-basis
+  native_severity: P2
+  normalization_reason: Source-specific quantity issue normalized major; this custom
+    rule does not redefine a narrower native rubric rule.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-000426-supplied-forms
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Sodium resazurin and nickel hydrate have incompatible identifiers
+  description: Correct source-specified sodium resazurin currently asserted as neutral
+    CHEBI:8806, and nickel hexahydrate currently asserted as anhydrous CHEBI:34887.
+    CHEBI:34887 is anhydrous nickel dichloride, whereas the source specifies NiCl2
+    x 6 H2O. Current CHEBI:53542 explicitly describes the hexahydrate. MIM preferred
+    row6668 (Nickel (II) chloride hexahydrate) is MAPPED; row6703 (NiCl2 x 6 H2O)
+    is REJECTED and synonym row6704 is MAPPED. These spelling-specific statuses do
+    not reject the whole identifier.
+  target_ids:
+  - CultureMech:000426
+  field_paths:
+  - ingredients[6].term
+  - ingredients[19].term
+  - ingredients[19].mediaingredientmech_chebi_term
+  - data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml::ingredients[18].term
+  - data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml::ingredients[18].mediaingredientmech_chebi_term
+  - data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml::ingredients[18].term
+  - data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml::ingredients[18].mediaingredientmech_chebi_term
+  - data/normalized_yaml/bacterial/for_dsm_15769.yaml::ingredients[18].term
+  - data/normalized_yaml/bacterial/for_dsm_15769.yaml::ingredients[18].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsmz1010
+  - api1010
+  - chebi8806
+  - chebi34887
+  - chebi53542
+  - full-catalog
+  - writer-mim
+  rule_id: custom/supplied-forms
+  native_severity: P2
+  normalization_reason: Source-specific grounding issue normalized major; this custom
+    rule does not redefine a narrower native rubric rule.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+- finding_id: f5
+  issue_key: culturemech-000426-calcium-grade
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generic seven-vitamin calcium source does not resolve D specificity
+  description: CHEBI:31345 has D-specific stereochemistry. The explicitly D-calcium
+    Wolin component is supported; the generic seven-vitamin calcium wording does not
+    establish that grade. Resolve that narrower assertion without changing the supported
+    stock amount. Generic lipoic acid does not contradict the printed DL label.
+  target_ids:
+  - CultureMech:000426
+  field_paths:
+  - ingredients[35].term
+  - ingredients[35].mediaingredientmech_chebi_term
+  - data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml::ingredients[30].term
+  - data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml::ingredients[30].mediaingredientmech_chebi_term
+  - data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml::ingredients[30].term
+  - data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml::ingredients[30].mediaingredientmech_chebi_term
+  - data/normalized_yaml/bacterial/for_dsm_15769.yaml::ingredients[30].term
+  - data/normalized_yaml/bacterial/for_dsm_15769.yaml::ingredients[30].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsmz1010
+  - api1010
+  - chebi31345
+  - chebi16494
+  - full-catalog
+  rule_id: custom/calcium-grade
+  native_severity: P3
+  normalization_reason: Source-specific grounding issue normalized minor; this custom
+    rule does not redefine a narrower native rubric rule.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+- finding_id: f6
+  issue_key: culturemech-000426-evidence-history
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source support and new-event provenance need explicit linkage
+  description: Attach exact ingredient claims and root evidence scoped to doses, preparation
+    and branch identity, preserving all prior event strings. Distinguish retained
+    literal .fZ timestamps from the current importer %f format and naive resolver
+    times; use actual timezone-aware timestamps for future events. The variant repair’s
+    fixed timestamp/upsert replacement must not overwrite a new research event.
+  target_ids:
+  - CultureMech:000426
+  field_paths:
+  - ingredients[*].evidence
+  - evidence
+  - curation_history
+  evidence_ids:
+  - historical-reading
+  - historical-selected-parent-rows
+  - selected-parent-authentication
+  - historical-source-joins
+  - old-claims
+  - writer-komodo
+  - writer-resolver
+  - writer-variant
+  rule_id: custom/evidence-history
+  native_severity: P3
+  normalization_reason: Source-specific provenance issue normalized minor; this custom
+    rule does not redefine a narrower native rubric rule.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/komodo_web_importer.py
+    role: future provenance event writer
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/enrich/dsmz_resolver.py
+    role: future provenance event writer
+  - repository: CultureBotAI/CultureMech
+    path: scripts/repair_komodo_1010_artificial_seawater_score10.py
+    role: future provenance event writer
+actions:
+- action_id: a1
+  description: Reconcile the three maintained source identities before regeneration.
+    Current DSM1010 explicitly specifies a DSM15769 substitution, while the strain
+    owner preserves the base lactate formula and the generated target still merges
+    it. Keep the current STRAIN_SPECIFIC_VARIANT relationship credit, but replace
+    the unsupported preserves-components narrative with exact source-backed differences
+    after confirming its own KOMODO branch. Exact KOMODO routes remain HTTP403; historical
+    mapping and current byte-equal DSM copies do not resolve them.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000426
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: scripts/repair_komodo_1010_artificial_seawater_score10.py
+    role: current variant narrative and provenance writer
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: Complete the DSM stock boundaries, preserving ten existing nested values
+    and the source-backed separate vitamin contributions. Move remaining stock components
+    out of the medium root, restore Se-W and stage-specific water, and preserve the
+    explicit indicator w/v basis. Correct SL-10 acid volume/unspecified percent conversion.
+    The generated four vitamin sums are stale. KOMODO values require branch resolution
+    rather than automatic DSM transfer.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000426
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: Replace the DSM owner’s three asserted 1 ML_PER_L doses with exact
+    source batch semantics; distinguish SL-10 final makeup from vitamin input water.
+    Preserve the two KOMODO owners’ explicitly unasserted candidates, and scope the
+    existing SL-10 step to its stock. Do not treat the API1004 ml computational basis
+    as measured medium volume.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000426
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: Correct source-specified sodium resazurin currently asserted as neutral
+    CHEBI:8806, and nickel hexahydrate currently asserted as anhydrous CHEBI:34887.
+    CHEBI:34887 is anhydrous nickel dichloride, whereas the source specifies NiCl2
+    x 6 H2O. Current CHEBI:53542 explicitly describes the hexahydrate. MIM preferred
+    row6668 (Nickel (II) chloride hexahydrate) is MAPPED; row6703 (NiCl2 x 6 H2O)
+    is REJECTED and synonym row6704 is MAPPED. These spelling-specific statuses do
+    not reject the whole identifier.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000426
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a5
+  description: CHEBI:31345 has D-specific stereochemistry. The explicitly D-calcium
+    Wolin component is supported; the generic seven-vitamin calcium wording does not
+    establish that grade. Resolve that narrower assertion without changing the supported
+    stock amount. Generic lipoic acid does not contradict the printed DL label.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:000426
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a6
+  description: Attach exact ingredient claims and root evidence scoped to doses, preparation
+    and branch identity, preserving all prior event strings. Distinguish retained
+    literal .fZ timestamps from the current importer %f format and naive resolver
+    times; use actual timezone-aware timestamps for future events. The variant repair’s
+    fixed timestamp/upsert replacement must not overwrite a new research event.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:000426
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1010_Artificial_SEAWATER_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/komodo_web_importer.py
+    role: future provenance event writer
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/enrich/dsmz_resolver.py
+    role: future provenance event writer
+  - repository: CultureBotAI/CultureMech
+    path: scripts/repair_komodo_1010_artificial_seawater_score10.py
+    role: future provenance event writer
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  - Verify new events have real timezone-aware timestamps and append without replacing
+    the preserved earlier curator/action event; do not rewrite old malformed values
+    as newly observed history.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- Exact KOMODO1010, KOMODO1010.1 and catalogue captures returned403; full branch identity
+  review remains partial. DSM comparisons do not authorize recipe transfer.
+- The primary PDF’s second page was visually read and line locators use Python splitlines,
+  including its form-feed boundary.
+- API1004 ml is a declared computational basis, not measured final volume. SL-10 explicitly
+  makes up to1000 ml; other stocks list input water only. No percent basis or density
+  is inferred for HCl25%.
+- No attached local source claims were present. All historical literal/current-byte
+  matches are recorded separately and do not authenticate the original retrieval event.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```

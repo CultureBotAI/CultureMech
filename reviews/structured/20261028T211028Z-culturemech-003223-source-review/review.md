@@ -1,0 +1,2235 @@
+# Scientific review: DESULFONEMA MAGNUM MEDIUM
+
+- Review: 20261028T211028Z-culturemech-003223-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T20:56:39.030925Z
+- Finished UTC: 2026-10-28T21:10:28.657399Z
+- Reviewer: Codex batch006_validation (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact J876 source identity is supported, but its direct primary page is unavailable. Eight basal provider rates and all retained preparation text receive bounded credit. Five liquid doses and twelve stock components need stage/unit repair; three stock references, solvents and the vitamin composition remain unrepresented, and nickel chloride lacks its required hydrate identity. No source or recipe was edited.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch078 index 01
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003223 | data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml | generated | desulfonema_magnum_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:003223 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:003223 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:003223 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:003223 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### Exact J876 identity
+
+identity: supported. Targets: CultureMech:003223.
+
+JCM876 is the exact maintained source identity; TOGO915 names the same original accession and URL. The current JCM876 page returns Nothing found, so direct primary formulation verification is incomplete. This review does not collapse the distinct DSM202/TOGO sibling merge.
+
+### Classification and physical state
+
+representation: supported. Targets: CultureMech:003223.
+
+The selected owner and generated target consistently represent a defined liquid formulation. Historical criticism of the separate TOGO-derived complex label and its absent preparation is not transferred to this current target.
+
+### Retained process and organism scope
+
+evidence: supported. Targets: CultureMech:003223.
+
+All three preparation paragraphs are retained. Their numeric pH, gas ratio, optional addition and inoculum context are inventoried. No organism-specific growth evidence is asserted; iModulon/protein evidence workflows are inapplicable.
+
+### High-metal inference
+
+other: unknown. Targets: CultureMech:003223.
+
+No high-metal classification is inferred from flattened trace-stock entries. Resolve stock stages before interpreting final-medium levels.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:003223.
+
+50 current concentration fields are covered by 47 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema":"fresh-b078-quantity-inventory-v1","target":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","quantity_field_count":50,"decisions":[{"quantity_id":"q1","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"23.5183","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"23.5183","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 25,\n                        \"unit\": \"g\",\n                        \"g_l\": 23.5183,\n                        \"mmol_l\": 402.436,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q2","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5.26811","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5.26811","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 5.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 5.26811,\n                        \"mmol_l\": 25.9126,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q3","label":"MgSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"6.39699","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"6.39699","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 6.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 6.39699,\n                        \"mmol_l\": 25.9538,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[2].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[2].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q4","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"1.31703","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"1.31703","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 1.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.31703,\n                        \"mmol_l\": 8.95846,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q5","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.677328","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.677328","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.72,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.677328,\n                        \"mmol_l\": 9.08556,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q6","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.131703","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.131703","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.14,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.131703,\n                        \"mmol_l\": 0.96779,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q7","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.235183","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.235183","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.235183,\n                        \"mmol_l\": 4.39677,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q8","label":"Resazurin","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.000470367","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.000470367","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 0.5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.000470367,\n                        \"mmol_l\": 0.0020523,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"Retain this exact current provider g_l on its declared 1063 ml computational normalization. The underlying batch mass is also explicit. Neither that volume field nor the 1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q9","label":"Sodium benzoate","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity.","source_stage":"post-cooling receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[12]","quote":"{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Sodium benzoate\",\n                        \"compound_id\": 1631,\n                        \"attribute\": \"6%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[8].concentration","decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[8].concentration","decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity."}]},{"quantity_id":"q10","label":"Trace vitamins (see Medium No. 197)","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity.","source_stage":"post-cooling receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\": 1784,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[9].concentration","decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[9].concentration","decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity."}]},{"quantity_id":"q11","label":"AlK(SO4)2 x 12 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity.","source_stage":"post-cooling receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[14]","quote":"{\n                        \"recipe_order\": 15,\n                        \"compound\": \"AlK(SO4)2 x 12 H2O\",\n                        \"compound_id\": 908,\n                        \"attribute\": \"4.8%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[10].concentration","decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[10].concentration","decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity."}]},{"quantity_id":"q12","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"20","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"20","unit":"G_PER_L"}}],"decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity.","source_stage":"post-cooling receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[15]","quote":"{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"attribute\": \"0.5%\",\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[11].concentration","decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[11].concentration","decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity."}]},{"quantity_id":"q13","label":"Na2S x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity.","source_stage":"post-cooling receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[16]","quote":"{\n                        \"recipe_order\": 17,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"attribute\": \"3%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[12].concentration","decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[12].concentration","decision":"correct","rationale":"The copied number is a liquid stock addition in ml, not grams per litre. The retained main preparation explicitly applies these after-cooling additions per litre. Preserve the printed stock strength where given without inventing a w/v or v/v basis; vitamins retain their exact JCM197 identity."}]},{"quantity_id":"q14","label":"HCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"2.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"The stock recipe specifies 10 ml HCl labelled 25% and 7.7 M, with 990 ml water. Those explicit volume and molarity claims are retained. The provider 2.5 g_l conversion is not supported by that unspecified percent basis, and its placement at main-medium level is also wrong; no replacement mass rate is inferred.","source_stage":"FeCl2 stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"7.7 M, 25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt lines 112-114","quote":"25% HCl (7.7 M)\n10.0\nml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[13].concentration","decision":"correct","rationale":"The stock recipe specifies 10 ml HCl labelled 25% and 7.7 M, with 990 ml water. Those explicit volume and molarity claims are retained. The provider 2.5 g_l conversion is not supported by that unspecified percent basis, and its placement at main-medium level is also wrong; no replacement mass rate is inferred."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[13].concentration","decision":"correct","rationale":"The stock recipe specifies 10 ml HCl labelled 25% and 7.7 M, with 990 ml water. Those explicit volume and molarity claims are retained. The provider 2.5 g_l conversion is not supported by that unspecified percent basis, and its placement at main-medium level is also wrong; no replacement mass rate is inferred."}]},{"quantity_id":"q15","label":"FeCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup.","source_stage":"FeCl2 stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt lines 115-121","quote":"FeCl\n2\n·4H\n2\nO\n1.5\ng","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[14].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[14].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."}]},{"quantity_id":"q16","label":"ZnCl2","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.07","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt lines 126-129","quote":"ZnCl\n2\n70.0\nmg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[15].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[15].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."}]},{"quantity_id":"q17","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt lines 130-136","quote":"MnCl\n2\n·4H\n2\nO\n100.0\nmg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[16].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[16].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."}]},{"quantity_id":"q18","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt lines 137-142","quote":"H\n3\nBO\n3\n6.0\nmg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[17].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[17].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."}]},{"quantity_id":"q19","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.19","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt lines 143-149","quote":"CoCl\n2\n·6H\n2\nO\n190.0\nmg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[18].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[18].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."}]},{"quantity_id":"q20","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.002","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt lines 150-156","quote":"CuCl\n2\n·2H\n2\nO\n2.0\nmg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[19].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[19].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."}]},{"quantity_id":"q21","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.024","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt lines 157-163","quote":"NiCl\n2\n·6H\n2\nO\n24.0\nmg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[20].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[20].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."}]},{"quantity_id":"q22","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.036","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt lines 164-172","quote":"Na\n2\nMoO\n4\n·2H\n2\nO\n36.0\nmg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[21].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[21].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."}]},{"quantity_id":"q23","label":"NaOH","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.4","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.4","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.4,\n                        \"mmol_l\": 10.0007,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm431","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm431.bin","raw_sha256":"cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50","text_sha256":"ec3776552cd428886c0020385d5a22ebcaa47851d680ae031dc2d6e36fd14618","accessed_at":"2026-10-28T20:58:53.831143Z","locator":"jcm431.txt lines 168-170","quote":"NaOH\n0.4\ng","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[22].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[22].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."}]},{"quantity_id":"q24","label":"Na2SeO3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[3].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0228125,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm431","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm431.bin","raw_sha256":"cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50","text_sha256":"ec3776552cd428886c0020385d5a22ebcaa47851d680ae031dc2d6e36fd14618","accessed_at":"2026-10-28T20:58:53.831143Z","locator":"jcm431.txt lines 171-179","quote":"Na\n2\nSeO\n3\n·5H\n2\nO\n6.0\nmg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[23].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[23].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."}]},{"quantity_id":"q25","label":"Na2WO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.008","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.008","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[3].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 8,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.008,\n                        \"mmol_l\": 0.0242534,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm431","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm431.bin","raw_sha256":"cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50","text_sha256":"ec3776552cd428886c0020385d5a22ebcaa47851d680ae031dc2d6e36fd14618","accessed_at":"2026-10-28T20:58:53.831143Z","locator":"jcm431.txt lines 180-188","quote":"Na\n2\nWO\n4\n·2H\n2\nO\n8.0\nmg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[24].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[24].concentration","decision":"correct","rationale":"The source stock ingredient amount and provider stock g_l are supported, but this is not a final-medium ingredient rate. Preserve the source amount in its named stock and separately model the receiving dose; input water is not independently measured makeup."}]},{"quantity_id":"q26","label":"FeCl2 solution receiving volume","local_fields":[],"decision":"correct","rationale":"Restore the distinct source 1 ml addition and exact stock identity. This row is a basal batch addition; the later per-litre paragraph applies to the subsequent listed solutions and is not silently transferred backward.","source_stage":"source-only basal receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"solution\": \"FeCl2 solution\",\n                        \"solution_id\": 3846,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q27","label":"Trace element solution receiving volume","local_fields":[],"decision":"correct","rationale":"Restore the distinct source 1 ml addition and exact stock identity. This row is a basal batch addition; the later per-litre paragraph applies to the subsequent listed solutions and is not silently transferred backward.","source_stage":"source-only basal receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace element solution\",\n                        \"solution_id\": 3847,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q28","label":"Selenite-tungstate solution receiving volume","local_fields":[],"decision":"correct","rationale":"Restore the distinct source 1 ml addition and exact stock identity. This row is a basal batch addition; the later per-litre paragraph applies to the subsequent listed solutions and is not silently transferred backward.","source_stage":"source-only basal receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 4172,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q29","label":"Water for Main sol. J876","local_fields":[],"decision":"correct","rationale":"Retain the explicit water input in its own stage; water volume alone does not establish final made-up volume.","source_stage":"source-only solvent input","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q30","label":"Water for FeCl2 solution","local_fields":[],"decision":"correct","rationale":"Retain the explicit water input in its own stage; water volume alone does not establish final made-up volume.","source_stage":"source-only solvent input","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q31","label":"Water for Trace element solution","local_fields":[],"decision":"correct","rationale":"Retain the explicit water input in its own stage; water volume alone does not establish final made-up volume.","source_stage":"source-only solvent input","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q32","label":"Water for Selenite-tungstate solution","local_fields":[],"decision":"correct","rationale":"Retain the explicit water input in its own stage; water volume alone does not establish final made-up volume.","source_stage":"source-only solvent input","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[3].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q33","label":"Biotin","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid wording does not establish stereochemistry; no parent JCM197 medium, mineral stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt lines 108-110","quote":"Biotin\n2.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\": 1784,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q34","label":"Folic acid","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid wording does not establish stereochemistry; no parent JCM197 medium, mineral stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt lines 111-113","quote":"Folic acid\n2.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\": 1784,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q35","label":"Pyridoxine HCl","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid wording does not establish stereochemistry; no parent JCM197 medium, mineral stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt lines 114-116","quote":"Pyridoxine·HCl\n10.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\": 1784,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q36","label":"Thiamine HCl","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid wording does not establish stereochemistry; no parent JCM197 medium, mineral stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt lines 117-119","quote":"Thiamine·HCl\n5.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\": 1784,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q37","label":"Riboflavin","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid wording does not establish stereochemistry; no parent JCM197 medium, mineral stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt lines 120-122","quote":"Riboflavin\n5.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\": 1784,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q38","label":"Nicotinic acid","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid wording does not establish stereochemistry; no parent JCM197 medium, mineral stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt lines 123-125","quote":"Nicotinic acid\n5.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\": 1784,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q39","label":"Calcium pantothenate","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid wording does not establish stereochemistry; no parent JCM197 medium, mineral stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt lines 126-128","quote":"Calcium pantothenate\n5.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\": 1784,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q40","label":"Vitamin B12","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid wording does not establish stereochemistry; no parent JCM197 medium, mineral stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt lines 129-133","quote":"Vitamin B\n1\n2\n0.1\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\": 1784,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q41","label":"p-Aminobenzoic acid","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid wording does not establish stereochemistry; no parent JCM197 medium, mineral stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt lines 134-137","quote":"p\n-Aminobenzoic acid\n5.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\": 1784,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q42","label":"Lipoic acid","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid wording does not establish stereochemistry; no parent JCM197 medium, mineral stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt lines 138-140","quote":"Lipoic acid\n5.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\": 1784,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q43","label":"Vitamin-stock water","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid wording does not establish stereochemistry; no parent JCM197 medium, mineral stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt lines 141-143","quote":"Distilled water\n1.0\nL","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\": 1784,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q44","label":"Retained preparation paragraph 1","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed:"},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed:"}],"decision":"evidence_only","rationale":"The exact existing paragraph supports initial pH around 6.0, N2/CO2 4:1 atmosphere, autoclaving and the specified after-cooling additions and filtration exceptions. Retain that sequence; initial pH is not a final-pH claim. No organism-growth assertion is inferred.","source_stage":"retained preparation/condition context","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[0].description","decision":"evidence_only","rationale":"The exact existing paragraph supports initial pH around 6.0, N2/CO2 4:1 atmosphere, autoclaving and the specified after-cooling additions and filtration exceptions. Retain that sequence; initial pH is not a final-pH claim. No organism-growth assertion is inferred."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[0].description","decision":"evidence_only","rationale":"The exact existing paragraph supports initial pH around 6.0, N2/CO2 4:1 atmosphere, autoclaving and the specified after-cooling additions and filtration exceptions. Retain that sequence; initial pH is not a final-pH claim. No organism-growth assertion is inferred."}]},{"quantity_id":"q45","label":"Retained preparation paragraph 2","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"By the completion of the medium, white precipitate should be formed. Equilibrate the medium by standing the culture vessels overnight."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"By the completion of the medium, white precipitate should be formed. Equilibrate the medium by standing the culture vessels overnight."}],"decision":"evidence_only","rationale":"The exact existing paragraph supports the white precipitate description and overnight equilibration. Retain this source context without turning it into a new quantified ingredient or growth claim.","source_stage":"retained preparation/condition context","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[1]","quote":"{\n                        \"step\": \"By the completion of the medium, white precipitate should be formed. Equilibrate the medium by standing the culture vessels overnight.\"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[1].description","decision":"evidence_only","rationale":"The exact existing paragraph supports the white precipitate description and overnight equilibration. Retain this source context without turning it into a new quantified ingredient or growth claim."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[1].description","decision":"evidence_only","rationale":"The exact existing paragraph supports the white precipitate description and overnight equilibration. Retain this source context without turning it into a new quantified ingredient or growth claim."}]},{"quantity_id":"q46","label":"Retained preparation paragraph 3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[2].description","stored":"Comment: Addition of 10-20 mg/L sodium dithionate (filter-sterilized under N2) just before inoculation may stimulate growth at the beginning. Incubate with a 5-10% inoculum."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[2].description","stored":"Comment: Addition of 10-20 mg/L sodium dithionate (filter-sterilized under N2) just before inoculation may stimulate growth at the beginning. Incubate with a 5-10% inoculum."}],"decision":"evidence_only","rationale":"The exact existing paragraph retains optional 10–20 mg/L sodium dithionate and 5–10% inoculum context. These are optional preparation instructions, not demonstrated growth evidence; no unsupported spelling or chemical replacement is inferred.","source_stage":"retained preparation/condition context","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[2]","quote":"{\n                        \"step\": \"Comment: Addition of 10-20 mg/L sodium dithionate (filter-sterilized under N2) just before inoculation may stimulate growth at the beginning. Incubate with a 5-10% inoculum.\"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[2].description","decision":"evidence_only","rationale":"The exact existing paragraph retains optional 10–20 mg/L sodium dithionate and 5–10% inoculum context. These are optional preparation instructions, not demonstrated growth evidence; no unsupported spelling or chemical replacement is inferred."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[2].description","decision":"evidence_only","rationale":"The exact existing paragraph retains optional 10–20 mg/L sodium dithionate and 5–10% inoculum context. These are optional preparation instructions, not demonstrated growth evidence; no unsupported spelling or chemical replacement is inferred."}]},{"quantity_id":"q47","label":"Referenced-stock page-wide default","local_fields":[],"decision":"evidence_only","rationale":"The JCM187/431 pages state 121°C for 15 min unless otherwise stated. This is scoped source context for those referenced stocks, not recovered wording from unavailable JCM876. Explicit filter sterilization for the vitamin addition overrides any general autoclave default.","source_stage":"source-only referenced-page default","sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.","quote_basis":"derivative text"},{"evidence_id":"jcm431","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm431.bin","raw_sha256":"cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50","text_sha256":"ec3776552cd428886c0020385d5a22ebcaa47851d680ae031dc2d6e36fd14618","accessed_at":"2026-10-28T20:58:53.831143Z","locator":"jcm431.txt lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\": 13,\n                        \"step\": \"Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]}],"document_scopes":{"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml":null},"scope":"Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: concern. Targets: CultureMech:003223.
+
+All 24 asserted current OLS forms and exact catalogue row families were read. Nickel hexahydrate is the confirmed mismatch; cobalt hexahydrate, neutral resazurin, potassium alum dodecahydrate, sodium benzoate and other stated hydrates are supported. MIM cobalt and nickel rejected spellings coexist with mapped equivalent preferred terms; the whole identifiers are not rejected. Catalogue synonyms for other hydrate/sodium forms do not endorse those forms.
+
+### Existing repair credit and writer limits
+
+provenance: supported. Targets: CultureMech:003223.
+
+All five historical reports and the selected 60-claim plan row were read. The 25 current concentration claims and 35 source recipe/preparation objects are joined independently. Current API raw bytes match the historical source digest; this authenticates content, not the original retrieval event. No attached claims exist. The September report concerns a separate TOGO sibling; its forced merge, missing-preparation and classification findings are not adopted. Current primary-only composition and conservative merge behavior are credited without attributing historical execution.
+
+## Findings
+
+### f1: Liquid additions and stock contents are flattened into main mass rates
+
+major / open / confirmed; issue key: culturemech-003223-stock-stage-units.
+
+Reconstruct five liquid receiving additions and the FeCl2, trace-element and selenite-tungstate stock stages in the maintained owner. Retain the eight supported provider basal rates only on the stated computational basis, and preserve the existing preparation sequence. HCl 2.5 g/L is not certified by the printed 25%/7.7 M reagent description. Do not infer measured final volume or a percent basis.
+
+### f2: Stock references, solvents and vitamin composition are unrepresented
+
+major / open / confirmed; issue key: culturemech-003223-source-only-stock-detail.
+
+Represent the three basal 1 ml stock additions, the stage-specific water inputs, and the exact JCM197 vitamin formulation at stock scope. Preserve the five post-cooling doses and their explicit per-litre wording. Source-only quantities are inventoried; do not substitute JCM187, JCM431 or JCM197 parent-medium recipes.
+
+### f3: Nickel chloride grounding omits the specified hexahydrate
+
+major / open / confirmed; issue key: culturemech-003223-nickel-hydrate.
+
+CHEBI:34887 is anhydrous nickel dichloride, whereas the source specifies NiCl2 x 6 H2O. Current CHEBI:53542 explicitly describes the hexahydrate. MIM preferred row6668 (Nickel (II) chloride hexahydrate) is MAPPED; row6703 (NiCl2 x 6 H2O) is REJECTED and synonym row6704 is MAPPED. These spelling-specific statuses do not reject the whole identifier. Update both primary and secondary asserted slots only after exact ID/label/form verification, retaining the supported stock amount.
+
+### f4: Current quantities and preparation lack attached source claims
+
+minor / open / confirmed; issue key: culturemech-003223-claim-evidence.
+
+Add ingredient evidence for exact amounts and supplied forms, and root evidence for stock-dose, preparation and denominator claims. Historical review-table snippets are not attached ingredient claims. Preserve all original history entries and distinguish current equal source bytes from an independently recovered historical access event.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconstruct five liquid receiving additions and the FeCl2, trace-element and selenite-tungstate stock stages in the maintained owner. Retain the eight supported provider basal rates only on the stated computational basis, and preserve the existing preparation sequence. HCl 2.5 g/L is not certified by the printed 25%/7.7 M reagent description. Do not infer measured final volume or a percent basis.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+Represent the three basal 1 ml stock additions, the stage-specific water inputs, and the exact JCM197 vitamin formulation at stock scope. Preserve the five post-cooling doses and their explicit per-litre wording. Source-only quantities are inventoried; do not substitute JCM187, JCM431 or JCM197 parent-medium recipes.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+CHEBI:34887 is anhydrous nickel dichloride, whereas the source specifies NiCl2 x 6 H2O. Current CHEBI:53542 explicitly describes the hexahydrate. MIM preferred row6668 (Nickel (II) chloride hexahydrate) is MAPPED; row6703 (NiCl2 x 6 H2O) is REJECTED and synonym row6704 is MAPPED. These spelling-specific statuses do not reject the whole identifier. Update both primary and secondary asserted slots only after exact ID/label/form verification, retaining the supported stock amount.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+Add ingredient evidence for exact amounts and supplied forms, and root evidence for stock-dose, preparation and denominator claims. Historical review-table snippets are not attached ingredient claims. Preserve all original history entries and distinguish current equal source bytes from an independently recovered historical access event.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| jcm876 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=876; REVIEW_WORK/batch078/source01-03-supplement/jcm876.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| apiJ876 | https://mediadive.dsmz.de/rest/medium/J876; REVIEW_WORK/batch078/source01-03-supplement/apiJ876.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| togo915 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M915; REVIEW_WORK/batch078/source01-03-additions/togo915.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| jcm187 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187; REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| jcm431 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431; REVIEW_WORK/batch078/source01-03-stock-primary/jcm431.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| jcm197 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197; REVIEW_WORK/batch078/source01-03-supplement/jcm197.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53542; REVIEW_WORK/batch078/source01-03-additions/chebi53542.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| target | data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| report-16 | reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/plan.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-17 | reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-18 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-19 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/desulfonema_magnum_medium__1cb1488d.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-20 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-21 | reports/yaml_record_review/20260922T193527Z-desulfonema_magnum_medium__426b775d.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| historical-reading | REVIEW_WORK/batch078/record01/historical-reading.json; Complete artifact; exact original input paths and hashes retained | context_only | Lossless exact report cells and independently joined current decoded source objects. |
+| historical-selected-parent-rows | REVIEW_WORK/batch078/record01/historical-selected-parent-rows.json; Complete artifact; exact original input paths and hashes retained | context_only | Exact selected historical parent objects; parent provenance only, not automatic original source authentication. |
+| complete-document-reader | REVIEW_WORK/batch078/record01/complete-document-reader.json; Complete artifact; exact original input paths and hashes retained | context_only | Complete exact target and owner parsed documents with lossless long-string pooling. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_composition_ingredients; _parse_api_composition; _is_api_stock_addition; _api_stock_name; _parse_api_solutions; _normalize_unit; _parse_preparation_steps; _classify_preparation_action | context_only | Current composition parsing reads the first API solution only, skips water and explicit stock or percent-bearing ml references, and prioritizes supplied g_l. Solution parsing preserves the first-section stock references but normalizes bare ml to ML_PER_L. Preparation parsing concatenates every solution step without stage labels. For all-stock primary tables, API composition returns None and PDF fallback or a placeholder remains possible; no regeneration outcome is presumed. |
+| writer-matcher | src/culturemech/merge/matcher.py; group_formulations | context_only | Current group_formulations uses conservative FormulationFingerprinter; ingredient similarity is only candidate discovery. |
+| full-history-pool | REVIEW_WORK/batch078/validation-authors/full-history-pool.json; Complete artifact | context_only | All nineteen reports across the three author records are losslessly routed through 653 exact cells. Each review uses only its declared target/owner and historical context; neighboring formulations are not transferred. |
+| full-catalog | REVIEW_WORK/batch078/validation-authors/mim-full-scope.json; Complete artifact | context_only | All exact asserted identifier/ontology_id and supplied-name catalogue joins, plus candidate nickel hexahydrate; preferred-label statuses are interpreted separately from chemical identity. |
+| writer-mim | scripts/migrate_legacy_mim_to_chebi.py; _resolve_chebi; _rewrite_entry | context_only | Current exact and synonym matching retains unresolved links and checks stereo prefixes; current catalogue membership does not validate a historical or supplied-form assertion. |
+| selected-parent-authentication | REVIEW_WORK/batch078/record01/selected-parent-authentication.json; Complete artifact | context_only | Exact selected parent objects, unchanged current local fields and all literal/decoded current API claims checked separately from attached evidence. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710; REVIEW_WORK/batch078/source01-03-additions/chebi26710.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345; REVIEW_WORK/batch078/source01-03-additions/chebi86345.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31795; REVIEW_WORK/batch078/source01-03-additions/chebi31795.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158; REVIEW_WORK/batch078/source01-03-additions/chebi86158.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32588; REVIEW_WORK/batch078/source01-03-additions/chebi32588.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036; REVIEW_WORK/batch078/source01-03-additions/chebi63036.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206; REVIEW_WORK/batch078/source01-03-additions/chebi31206.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806; REVIEW_WORK/batch078/source01-03-additions/chebi8806.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi113455 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:113455; REVIEW_WORK/batch078/source01-03-additions/chebi113455.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86465; REVIEW_WORK/batch078/source01-03-additions/chebi86465.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:29377; REVIEW_WORK/batch078/source01-03-additions/chebi29377.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209; REVIEW_WORK/batch078/source01-03-additions/chebi76209.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17883; REVIEW_WORK/batch078/source01-03-additions/chebi17883.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249; REVIEW_WORK/batch078/source01-03-additions/chebi86249.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976; REVIEW_WORK/batch078/source01-03-additions/chebi49976.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368; REVIEW_WORK/batch078/source01-03-additions/chebi86368.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118; REVIEW_WORK/batch078/source01-03-additions/chebi33118.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503; REVIEW_WORK/batch078/source01-03-additions/chebi53503.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318; REVIEW_WORK/batch078/source01-03-additions/chebi86318.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887; REVIEW_WORK/batch078/source01-03-additions/chebi34887.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213; REVIEW_WORK/batch078/source01-03-additions/chebi75213.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32145; REVIEW_WORK/batch078/source01-03-additions/chebi32145.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131361; REVIEW_WORK/batch078/source01-03-additions/chebi131361.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63939; REVIEW_WORK/batch078/source01-03-additions/chebi63939.json; exact original raw/text/hash/time metadata | context_only | Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| quantities | REVIEW_WORK/batch078/record01/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch078/record01/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch078/record01/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch078/record01/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch078/record01/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch078/record01/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch078/record01/existing-claim-authentication.json; Complete sidecar | context_only | No attached claims to authenticate; historical source objects are separately assessed in historical-source-joins.json. |
+| historical-source-joins | REVIEW_WORK/batch078/record01/historical-source-joins.json; Every literal/decoded historical source-object row and exact current-source match | context_only | Historical quoted source content and raw-digest equality where actually matched; independent of attached local claims and original access-event recovery. |
+| check-schema | REVIEW_WORK/batch078/record01/validate-schema.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch078/record01/validate-strict.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch078/record01/validate-terms.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch078/record01/validate-references.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- The current JCM876 primary page contains Nothing found. Formulation conclusions rely on exact current APIJ876 and TOGO915, with primary JCM187/431/197 restricted to explicitly referenced stock definitions. Completion is partial.
+- APIJ876 volume 1063 is a computational normalization; neither summed input liquid volumes nor later per-litre wording establishes measured final volume. No stock-to-medium mass conversion is silently inferred.
+- The provider cobalt mmol_l annotation is not validated or used for conversion; the explicit primary mass and stock g_l are the assessed claims.
+- The legacy sibling report is context only; no merge with DSM202 or the separate TOGO-derived target is recommended without full scientific-formulation equality.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T211028Z-culturemech-003223-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: DESULFONEMA MAGNUM MEDIUM'
+started_at: '2026-10-28T20:56:39.030925Z'
+finished_at: '2026-10-28T21:10:28.657399Z'
+reviewer:
+  identity: Codex batch006_validation
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, exact
+    captured sources, fresh scoped primary sources and original diagnostics.
+skill: review-yaml-record
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact J876 source identity is supported, but its direct primary page
+  is unavailable. Eight basal provider rates and all retained preparation text receive
+  bounded credit. Five liquid doses and twelve stock components need stage/unit repair;
+  three stock references, solvents and the vitamin composition remain unrepresented,
+  and nickel chloride lacks its required hydrate identity. No source or recipe was
+  edited.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml
+    sha256: 964b1b9de952c04c3ba14224e9d47b05ab89e7f616a5b3b532f5d856ec484ce4
+    role: target
+  - path: data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml
+    sha256: 1bcc4d5e377e40294548d5831726f3340174f24789e8ec1fc715ef9939418c78
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/plan.json
+    sha256: 1db6b2b69fb7a9a131c95c22d837d6a4c5f10dab810921069496169a06d6f5c2
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml.md
+    sha256: c55c0dec2013316ea836e4c89dd00a54bcd87acf878ff3a3c8c7b37470c0b5e2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.md
+    sha256: 4cd342b24a914a03f6b51d7256b994e0a226c48c179b800a459b26e305f0ac4e
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/desulfonema_magnum_medium__1cb1488d.md
+    sha256: 3bb96549aa31ee91ac658894a7c73cde30566396267ad0c9c4a4cecba1159d34
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.md
+    sha256: f19b3c40b1fc9863e897fab9622b1661ac80b773f7cafd50d29e82e5d3b050b1
+    role: context
+  - path: reports/yaml_record_review/20260922T193527Z-desulfonema_magnum_medium__426b775d.md
+    sha256: 1208663735da821de5a9502144c75656749471931510f190f9b4317016bde140
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/propose_cocktail_nesting.py
+    sha256: e886c446a8398f08f1cc735b1c3a9812c5fc6371a36b69ef5325f1c53f14e6c0
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch078 index 01
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003223
+targets:
+- target_id: CultureMech:003223
+  path: data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml
+  label: desulfonema_magnum_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:003223
+  command: just validate-schema data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:003223
+  command: just validate-strict data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml
+    --out REVIEW_WORK/batch078/record01/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:003223
+  command: just validate-terms data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:003223
+  command: just validate-references data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: jcm876
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=876
+  accessed_at: '2026-10-28T20:57:01.254300Z'
+  locator: REVIEW_WORK/batch078/source01-03-supplement/jcm876.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: ae9c4c27262c2901e2afb6bde93bdb79c639f1a6bc865a74daf08e8a1bdcfaac
+- evidence_id: apiJ876
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J876
+  accessed_at: '2026-10-28T20:57:02.136880Z'
+  locator: REVIEW_WORK/batch078/source01-03-supplement/apiJ876.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684
+- evidence_id: togo915
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M915
+  accessed_at: '2026-10-28T20:58:12.231142Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/togo915.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: fe931306b6427a64b1e59b5a976e3e442ac05f7b8d7adcaa1771496d678c7846
+- evidence_id: jcm187
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187
+  accessed_at: '2026-10-28T20:58:53.827650Z'
+  locator: REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804
+- evidence_id: jcm431
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431
+  accessed_at: '2026-10-28T20:58:53.831143Z'
+  locator: REVIEW_WORK/batch078/source01-03-stock-primary/jcm431.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50
+- evidence_id: jcm197
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  accessed_at: '2026-10-28T20:57:01.262405Z'
+  locator: REVIEW_WORK/batch078/source01-03-supplement/jcm197.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532
+- evidence_id: chebi53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53542
+  accessed_at: '2026-10-28T20:58:17.745652Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi53542.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 1e44a068cfe6b98d7bb3b0240ffdc0611e1be59f2d3dab9f04e4162ed94e4444
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T21:03:26.455396Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: 964b1b9de952c04c3ba14224e9d47b05ab89e7f616a5b3b532f5d856ec484ce4
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T21:03:26.455565Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: 1bcc4d5e377e40294548d5831726f3340174f24789e8ec1fc715ef9939418c78
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T21:03:26.455597Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T21:03:26.455900Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T21:03:26.455926Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T21:03:26.455949Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-16
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T21:03:26.455975Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 1db6b2b69fb7a9a131c95c22d837d6a4c5f10dab810921069496169a06d6f5c2
+- evidence_id: report-17
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T21:03:26.460844Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: c55c0dec2013316ea836e4c89dd00a54bcd87acf878ff3a3c8c7b37470c0b5e2
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T21:03:26.460903Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 4cd342b24a914a03f6b51d7256b994e0a226c48c179b800a459b26e305f0ac4e
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/desulfonema_magnum_medium__1cb1488d.md
+  locator: Complete report
+  accessed_at: '2026-10-28T21:03:26.460934Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 3bb96549aa31ee91ac658894a7c73cde30566396267ad0c9c4a4cecba1159d34
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T21:03:26.460963Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: f19b3c40b1fc9863e897fab9622b1661ac80b773f7cafd50d29e82e5d3b050b1
+- evidence_id: report-21
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T193527Z-desulfonema_magnum_medium__426b775d.md
+  locator: Complete report
+  accessed_at: '2026-10-28T21:03:26.460988Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 1208663735da821de5a9502144c75656749471931510f190f9b4317016bde140
+- evidence_id: historical-reading
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record01/historical-reading.json
+  accessed_at: '2026-10-28T21:03:26.461023Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Lossless exact report cells and independently joined current decoded source
+    objects.
+  snapshot_sha256: f499fa1cb4a825fd09abb8804d7c034fe0177f4e3d317246b9bbdfc75ed62618
+- evidence_id: historical-selected-parent-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record01/historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T21:03:26.461083Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Exact selected historical parent objects; parent provenance only, not automatic
+    original source authentication.
+  snapshot_sha256: c288d84554152e5679aa6ac8e3f12801f6508efda7ef1642430d6a7c095830ad
+- evidence_id: complete-document-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record01/complete-document-reader.json
+  accessed_at: '2026-10-28T21:03:26.461127Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Complete exact target and owner parsed documents with lossless long-string
+    pooling.
+  snapshot_sha256: 519ff833e21c23adf619dc21a1884a0e837eb277e8a6e9c191eddd80b6d5b168
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_composition_ingredients; _parse_api_composition; _is_api_stock_addition;
+    _api_stock_name; _parse_api_solutions; _normalize_unit; _parse_preparation_steps;
+    _classify_preparation_action
+  accessed_at: '2026-10-28T21:03:26.461162Z'
+  support: context_only
+  summary: Current composition parsing reads the first API solution only, skips water
+    and explicit stock or percent-bearing ml references, and prioritizes supplied
+    g_l. Solution parsing preserves the first-section stock references but normalizes
+    bare ml to ML_PER_L. Preparation parsing concatenates every solution step without
+    stage labels. For all-stock primary tables, API composition returns None and PDF
+    fallback or a placeholder remains possible; no regeneration outcome is presumed.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-matcher
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations
+  accessed_at: '2026-10-28T21:03:26.461197Z'
+  support: context_only
+  summary: Current group_formulations uses conservative FormulationFingerprinter;
+    ingredient similarity is only candidate discovery.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: full-history-pool
+  kind: record_content
+  reference: REVIEW_WORK/batch078/validation-authors/full-history-pool.json
+  locator: Complete artifact
+  accessed_at: '2026-10-28T21:03:26.461225Z'
+  support: context_only
+  summary: All nineteen reports across the three author records are losslessly routed
+    through 653 exact cells. Each review uses only its declared target/owner and historical
+    context; neighboring formulations are not transferred.
+  snapshot_sha256: 134ddfdd10f4cefd89ab665afe534e768a8ceb10e7c8c2d69d441700651bd7c3
+- evidence_id: full-catalog
+  kind: record_content
+  reference: REVIEW_WORK/batch078/validation-authors/mim-full-scope.json
+  locator: Complete artifact
+  accessed_at: '2026-10-28T21:03:26.461332Z'
+  support: context_only
+  summary: All exact asserted identifier/ontology_id and supplied-name catalogue joins,
+    plus candidate nickel hexahydrate; preferred-label statuses are interpreted separately
+    from chemical identity.
+  snapshot_sha256: 8d0349c179dea8405ffa2e50d1031600f30910e94d46624744fc709182b46732
+- evidence_id: writer-mim
+  kind: record_content
+  reference: scripts/migrate_legacy_mim_to_chebi.py
+  locator: _resolve_chebi; _rewrite_entry
+  accessed_at: '2026-10-28T21:03:26.461454Z'
+  support: context_only
+  summary: Current exact and synonym matching retains unresolved links and checks
+    stereo prefixes; current catalogue membership does not validate a historical or
+    supplied-form assertion.
+  snapshot_sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+- evidence_id: selected-parent-authentication
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record01/selected-parent-authentication.json
+  locator: Complete artifact
+  accessed_at: '2026-10-28T21:03:26.502799Z'
+  support: context_only
+  summary: Exact selected parent objects, unchanged current local fields and all literal/decoded
+    current API claims checked separately from attached evidence.
+  snapshot_sha256: 0e52e212dff48925edbcab7d13d6cbadbeaeee00da1107f5f294ffdbe136e3a3
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710
+  accessed_at: '2026-10-28T20:58:14.115558Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi26710.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 70cf14c35e06f40427c1a2aa30e99794518eda976b5e5b3c86610efc28b7f25a
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345
+  accessed_at: '2026-10-28T20:58:19.357518Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi86345.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 94b600ced6e98743e2d1b02c73e1756f8f81b639407a8fdd080c96d8fa563c70
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31795
+  accessed_at: '2026-10-28T20:58:15.382430Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi31795.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: ceb0c93d1964844e99454d74730971855710441d92eec74aff5c873c833e324a
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  accessed_at: '2026-10-28T20:58:18.765457Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi86158.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32588
+  accessed_at: '2026-10-28T20:58:16.337802Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi32588.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 9494b26ad5d3ce43942c3e859cdefe4114e111b1d45328c0cd5faf3b75faec00
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T20:58:18.105032Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi63036.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206
+  accessed_at: '2026-10-28T20:58:15.127533Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi31206.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 645112dbfa7f1c565489070586f5d4018429259ff0400500ca10dfe6e43a5449
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806
+  accessed_at: '2026-10-28T20:58:19.686584Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi8806.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f2530ec9c15f59a3d132a466c9c3a899497bab0f85b996d3e27bef8612f89982
+- evidence_id: chebi113455
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:113455
+  accessed_at: '2026-10-28T20:58:11.964385Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi113455.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f007a4cc80c91c67846af3a1ee1e7cbe0a464bf5df01519fcbcc7c77e2d7ae3f
+- evidence_id: chebi86465
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86465
+  accessed_at: '2026-10-28T20:58:19.538573Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi86465.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 76cce7fa8230c57138e3569858ecf6a79119be85281bd5d2864ada3223785dc1
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:29377
+  accessed_at: '2026-10-28T20:58:14.464969Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi29377.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: e0c2a85ab7be9313c564f96ee47b87e1bf3e01ad1e9fd627d1dbddced5d068c4
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209
+  accessed_at: '2026-10-28T20:58:18.886624Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi76209.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 4896ec517123ebeb1afcbac7bc30a7103976f03891af0c86c992196b5f0db969
+- evidence_id: chebi17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17883
+  accessed_at: '2026-10-28T20:58:13.882754Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi17883.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: e5ab164ef9ff955da1a504ca34ab4d3b69539d9bf721936c9dd563ccbbd0e3b0
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249
+  accessed_at: '2026-10-28T20:58:18.946222Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi86249.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 4d7f48f88badcba85a62e59842c6ec921f5478eb76695098b17847ed62c8530a
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976
+  accessed_at: '2026-10-28T20:58:17.485366Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi49976.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: d3bdc4c6f01d01422fafe433df4e4011e01cf7e55e0329ab341a60ece780946f
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368
+  accessed_at: '2026-10-28T20:58:19.485158Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi86368.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 2d5685a4a03c5d730876514b4a7664fb477f63682a60cc7e13d7776a250f68e3
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118
+  accessed_at: '2026-10-28T20:58:16.583509Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi33118.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: eef160dcdcd93f231064bc7b59da1e05a2efe1f96089b9cd2fdbdf68a9a4e5fc
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503
+  accessed_at: '2026-10-28T20:58:17.546828Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi53503.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: a626d2aa210aafd9572221d4893cd206310d5df507e474e1528997048f522250
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318
+  accessed_at: '2026-10-28T20:58:19.098724Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi86318.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: bd88e1499f370a9f474b29fa7a9a83aa5c42c69d0b6772ece8c89d646dfda8d8
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887
+  accessed_at: '2026-10-28T20:58:16.873124Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi34887.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 3a37ef35991d24faf578286a7d7557ee1b0646c286dd3f8a555d833e6bf82a57
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213
+  accessed_at: '2026-10-28T20:58:18.342237Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi75213.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f99a2d8b28ac44913a666745dd70098c5d5f21c9513fee921a35f0fd18f2c445
+- evidence_id: chebi32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32145
+  accessed_at: '2026-10-28T20:58:15.985811Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi32145.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 089212e8c86e2d4a4b145366c8bc67e0056565ef6970dcdc3df63ad20dac234d
+- evidence_id: chebi131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131361
+  accessed_at: '2026-10-28T20:58:12.012316Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi131361.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: d88b30f797a300c3935e550a4770cb598bbed342a9c2a343f77bdce496e99db9
+- evidence_id: chebi63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63939
+  accessed_at: '2026-10-28T20:58:18.172096Z'
+  locator: REVIEW_WORK/batch078/source01-03-additions/chebi63939.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch078 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 01f41117ab89dbd1d514a894850dc06afd5d95c0bee7fd89f7dfdb54c309c514
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record01/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:10:28.657391Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: e2d7554394555fe097ff031688e5b15d7ef9349d5648bbcf3695729d19d07b2b
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record01/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:03:26.590904Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: 16d1dd531d4bf244b1744e015a02e8488b69675a764352a84516b3d78b842c91
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record01/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:03:26.591021Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: 1ffaf4969650eccd4e3118f8d72c8fc76e60c08e1e882b89c2af693183a46a5c
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record01/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:03:26.591074Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: 144b1a5ed16553bba17feec8ae20e56d2c3a362837e92ae0b112adc989ef7fb6
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record01/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:03:26.591121Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: 41cc22c4d4cbb75a679e7e6aac5adad21d5d942beab0e61365f524c0262fe57c
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record01/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:03:26.591143Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 5dd690a4dd72ac1496e117ed4a8243a2bd8f62998bcdfcf450aaa5c7fda1f76d
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record01/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T21:03:26.591163Z'
+  support: context_only
+  summary: No attached claims to authenticate; historical source objects are separately
+    assessed in historical-source-joins.json.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: historical-source-joins
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record01/historical-source-joins.json
+  locator: Every literal/decoded historical source-object row and exact current-source
+    match
+  accessed_at: '2026-10-28T21:03:26.591183Z'
+  support: context_only
+  summary: Historical quoted source content and raw-digest equality where actually
+    matched; independent of attached local claims and original access-event recovery.
+  snapshot_sha256: 0d33e7a6fc5103def7eff5c3a3a686df8af3b51a7d9644e938659c71bf1d5203
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch078/record01/validate-schema.json
+  accessed_at: '2026-10-28T20:56:40.364643Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 9317ce5997fa005a47c59e94a407256b9e8c83be5d07bbbb11798c12010a12e4
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch078/record01/validate-strict.json
+  accessed_at: '2026-10-28T20:56:41.367340Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 458e75d92ee0c0d8534cbf913f5bd2b7b2d54ed337482784abfb032caa8b8c18
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch078/record01/validate-terms.json
+  accessed_at: '2026-10-28T20:56:42.920867Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: f90217ff720651e358d402415a374d6c376465dbce86f724b9e50b285849778b
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch078/record01/validate-references.json
+  accessed_at: '2026-10-28T20:56:43.786752Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 1130228eb9abcb5c30c3ece3632ff809d348c26e8520f6a47681c5fbe84cc2a1
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact J876 identity
+  outcome: supported
+  summary: JCM876 is the exact maintained source identity; TOGO915 names the same
+    original accession and URL. The current JCM876 page returns Nothing found, so
+    direct primary formulation verification is incomplete. This review does not collapse
+    the distinct DSM202/TOGO sibling merge.
+  target_ids:
+  - CultureMech:003223
+  evidence_ids:
+  - target
+  - owner
+  - apiJ876
+  - togo915
+  - jcm876
+- assessment_id: classification
+  area: representation
+  topic: Classification and physical state
+  outcome: supported
+  summary: The selected owner and generated target consistently represent a defined
+    liquid formulation. Historical criticism of the separate TOGO-derived complex
+    label and its absent preparation is not transferred to this current target.
+  target_ids:
+  - CultureMech:003223
+  evidence_ids:
+  - target
+  - owner
+  - apiJ876
+- assessment_id: conditions
+  area: evidence
+  topic: Retained process and organism scope
+  outcome: supported
+  summary: All three preparation paragraphs are retained. Their numeric pH, gas ratio,
+    optional addition and inoculum context are inventoried. No organism-specific growth
+    evidence is asserted; iModulon/protein evidence workflows are inapplicable.
+  target_ids:
+  - CultureMech:003223
+  evidence_ids:
+  - apiJ876
+  - quantities
+- assessment_id: high-metal
+  area: other
+  topic: High-metal inference
+  outcome: unknown
+  summary: No high-metal classification is inferred from flattened trace-stock entries.
+    Resolve stock stages before interpreting final-medium levels.
+  target_ids:
+  - CultureMech:003223
+  evidence_ids:
+  - quantities
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 50 current concentration fields are covered by 47 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:003223
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b078-quantity-inventory-v1","target":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","quantity_field_count":50,"decisions":[{"quantity_id":"q1","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"23.5183","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"23.5183","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main
+    provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 25,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 23.5183,\n                        \"mmol_l\":
+    402.436,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q2","label":"MgCl2
+    x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5.26811","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5.26811","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main
+    provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 5.6,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5.26811,\n                        \"mmol_l\":
+    25.9126,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q3","label":"MgSO4
+    x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"6.39699","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"6.39699","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main
+    provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 6.8,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 6.39699,\n                        \"mmol_l\":
+    25.9538,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[2].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[2].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q4","label":"CaCl2
+    x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"1.31703","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"1.31703","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main
+    provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 1.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.31703,\n                        \"mmol_l\":
+    8.95846,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q5","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.677328","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.677328","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main
+    provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.72,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.677328,\n                        \"mmol_l\":
+    9.08556,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q6","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.131703","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.131703","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main
+    provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.14,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.131703,\n                        \"mmol_l\":
+    0.96779,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q7","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.235183","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.235183","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main
+    provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 0.25,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.235183,\n                        \"mmol_l\":
+    4.39677,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q8","label":"Resazurin","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.000470367","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.000470367","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present.","source_stage":"main
+    provider-declared basis","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\":
+    25,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.000470367,\n                        \"mmol_l\":
+    0.0020523,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"Retain
+    this exact current provider g_l on its declared 1063 ml computational normalization.
+    The underlying batch mass is also explicit. Neither that volume field nor the
+    1000 ml input-water row proves measured final volume; no attached claim is present."}]},{"quantity_id":"q9","label":"Sodium
+    benzoate","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity.","source_stage":"post-cooling receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[12]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Sodium benzoate\",\n                        \"compound_id\":
+    1631,\n                        \"attribute\": \"6%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[8].concentration","decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[8].concentration","decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity."}]},{"quantity_id":"q10","label":"Trace vitamins
+    (see Medium No. 197)","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity.","source_stage":"post-cooling receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\":
+    1784,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[9].concentration","decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[9].concentration","decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity."}]},{"quantity_id":"q11","label":"AlK(SO4)2
+    x 12 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity.","source_stage":"post-cooling receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[14]","quote":"{\n                        \"recipe_order\":
+    15,\n                        \"compound\": \"AlK(SO4)2 x 12 H2O\",\n                        \"compound_id\":
+    908,\n                        \"attribute\": \"4.8%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[10].concentration","decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[10].concentration","decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity."}]},{"quantity_id":"q12","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"20","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"20","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity.","source_stage":"post-cooling receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[15]","quote":"{\n                        \"recipe_order\":
+    16,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"attribute\": \"0.5%\",\n                        \"amount\":
+    20,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[11].concentration","decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[11].concentration","decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity."}]},{"quantity_id":"q13","label":"Na2S x 9
+    H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity.","source_stage":"post-cooling receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[16]","quote":"{\n                        \"recipe_order\":
+    17,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"attribute\": \"3%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[12].concentration","decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[12].concentration","decision":"correct","rationale":"The
+    copied number is a liquid stock addition in ml, not grams per litre. The retained
+    main preparation explicitly applies these after-cooling additions per litre. Preserve
+    the printed stock strength where given without inventing a w/v or v/v basis; vitamins
+    retain their exact JCM197 identity."}]},{"quantity_id":"q14","label":"HCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"2.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    stock recipe specifies 10 ml HCl labelled 25% and 7.7 M, with 990 ml water. Those
+    explicit volume and molarity claims are retained. The provider 2.5 g_l conversion
+    is not supported by that unspecified percent basis, and its placement at main-medium
+    level is also wrong; no replacement mass rate is inferred.","source_stage":"FeCl2
+    stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\":
+    68,\n                        \"attribute\": \"7.7 M, 25%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt
+    lines 112-114","quote":"25% HCl (7.7 M)\n10.0\nml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[13].concentration","decision":"correct","rationale":"The
+    stock recipe specifies 10 ml HCl labelled 25% and 7.7 M, with 990 ml water. Those
+    explicit volume and molarity claims are retained. The provider 2.5 g_l conversion
+    is not supported by that unspecified percent basis, and its placement at main-medium
+    level is also wrong; no replacement mass rate is inferred."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[13].concentration","decision":"correct","rationale":"The
+    stock recipe specifies 10 ml HCl labelled 25% and 7.7 M, with 990 ml water. Those
+    explicit volume and molarity claims are retained. The provider 2.5 g_l conversion
+    is not supported by that unspecified percent basis, and its placement at main-medium
+    level is also wrong; no replacement mass rate is inferred."}]},{"quantity_id":"q15","label":"FeCl2
+    x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup.","source_stage":"FeCl2 stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.54482,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt
+    lines 115-121","quote":"FeCl\n2\n·4H\n2\nO\n1.5\ng","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[14].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[14].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."}]},{"quantity_id":"q16","label":"ZnCl2","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.07","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\":
+    64,\n                        \"amount\": 70,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\":
+    0.513573,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt
+    lines 126-129","quote":"ZnCl\n2\n70.0\nmg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[15].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[15].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."}]},{"quantity_id":"q17","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.505293,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt
+    lines 130-136","quote":"MnCl\n2\n·4H\n2\nO\n100.0\nmg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[16].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[16].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."}]},{"quantity_id":"q18","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 6,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\":
+    0.0970246,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt
+    lines 137-142","quote":"H\n3\nBO\n3\n6.0\nmg","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[17].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[17].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."}]},{"quantity_id":"q19","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.19","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 190,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\":
+    1.46335,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt
+    lines 143-149","quote":"CoCl\n2\n·6H\n2\nO\n190.0\nmg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[18].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[18].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."}]},{"quantity_id":"q20","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.002","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 2,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\":
+    0.0117314,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt
+    lines 150-156","quote":"CuCl\n2\n·2H\n2\nO\n2.0\nmg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[19].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[19].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."}]},{"quantity_id":"q21","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.024","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 24,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\":
+    0.185187,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt
+    lines 157-163","quote":"NiCl\n2\n·6H\n2\nO\n24.0\nmg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[20].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[20].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."}]},{"quantity_id":"q22","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.036","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup.","source_stage":"trace-element stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 36,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\":
+    0.148791,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt
+    lines 164-172","quote":"Na\n2\nMoO\n4\n·2H\n2\nO\n36.0\nmg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[21].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[21].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."}]},{"quantity_id":"q23","label":"NaOH","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.4","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.4","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\":
+    256,\n                        \"amount\": 0.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.4,\n                        \"mmol_l\":
+    10.0007,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm431","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm431.bin","raw_sha256":"cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50","text_sha256":"ec3776552cd428886c0020385d5a22ebcaa47851d680ae031dc2d6e36fd14618","accessed_at":"2026-10-28T20:58:53.831143Z","locator":"jcm431.txt
+    lines 168-170","quote":"NaOH\n0.4\ng","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[22].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[22].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."}]},{"quantity_id":"q24","label":"Na2SeO3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[3].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\":
+    107,\n                        \"amount\": 6,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\":
+    0.0228125,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm431","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm431.bin","raw_sha256":"cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50","text_sha256":"ec3776552cd428886c0020385d5a22ebcaa47851d680ae031dc2d6e36fd14618","accessed_at":"2026-10-28T20:58:53.831143Z","locator":"jcm431.txt
+    lines 171-179","quote":"Na\n2\nSeO\n3\n·5H\n2\nO\n6.0\nmg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[23].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[23].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."}]},{"quantity_id":"q25","label":"Na2WO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.008","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.008","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[3].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\":
+    249,\n                        \"amount\": 8,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.008,\n                        \"mmol_l\":
+    0.0242534,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm431","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm431.bin","raw_sha256":"cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50","text_sha256":"ec3776552cd428886c0020385d5a22ebcaa47851d680ae031dc2d6e36fd14618","accessed_at":"2026-10-28T20:58:53.831143Z","locator":"jcm431.txt
+    lines 180-188","quote":"Na\n2\nWO\n4\n·2H\n2\nO\n8.0\nmg","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[24].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"ingredients[24].concentration","decision":"correct","rationale":"The
+    source stock ingredient amount and provider stock g_l are supported, but this
+    is not a final-medium ingredient rate. Preserve the source amount in its named
+    stock and separately model the receiving dose; input water is not independently
+    measured makeup."}]},{"quantity_id":"q26","label":"FeCl2 solution receiving volume","local_fields":[],"decision":"correct","rationale":"Restore
+    the distinct source 1 ml addition and exact stock identity. This row is a basal
+    batch addition; the later per-litre paragraph applies to the subsequent listed
+    solutions and is not silently transferred backward.","source_stage":"source-only
+    basal receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"FeCl2 solution\",\n                        \"solution_id\":
+    3846,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q27","label":"Trace element solution
+    receiving volume","local_fields":[],"decision":"correct","rationale":"Restore
+    the distinct source 1 ml addition and exact stock identity. This row is a basal
+    batch addition; the later per-litre paragraph applies to the subsequent listed
+    solutions and is not silently transferred backward.","source_stage":"source-only
+    basal receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"solution\": \"Trace element solution\",\n                        \"solution_id\":
+    3847,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q28","label":"Selenite-tungstate
+    solution receiving volume","local_fields":[],"decision":"correct","rationale":"Restore
+    the distinct source 1 ml addition and exact stock identity. This row is a basal
+    batch addition; the later per-litre paragraph applies to the subsequent listed
+    solutions and is not silently transferred backward.","source_stage":"source-only
+    basal receiving dose","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\":
+    4172,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q29","label":"Water for Main
+    sol. J876","local_fields":[],"decision":"correct","rationale":"Retain the explicit
+    water input in its own stage; water volume alone does not establish final made-up
+    volume.","source_stage":"source-only solvent input","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q30","label":"Water for FeCl2
+    solution","local_fields":[],"decision":"correct","rationale":"Retain the explicit
+    water input in its own stage; water volume alone does not establish final made-up
+    volume.","source_stage":"source-only solvent input","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 990,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q31","label":"Water for Trace
+    element solution","local_fields":[],"decision":"correct","rationale":"Retain the
+    explicit water input in its own stage; water volume alone does not establish final
+    made-up volume.","source_stage":"source-only solvent input","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[2].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q32","label":"Water for Selenite-tungstate
+    solution","local_fields":[],"decision":"correct","rationale":"Retain the explicit
+    water input in its own stage; water volume alone does not establish final made-up
+    volume.","source_stage":"source-only solvent input","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[3].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q33","label":"Biotin","local_fields":[],"decision":"correct","rationale":"Resolve
+    only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass
+    or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic
+    acid wording does not establish stereochemistry; no parent JCM197 medium, mineral
+    stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin
+    stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt
+    lines 108-110","quote":"Biotin\n2.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\":
+    1784,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q34","label":"Folic
+    acid","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197
+    vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input
+    and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid
+    wording does not establish stereochemistry; no parent JCM197 medium, mineral stock
+    or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin
+    stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt
+    lines 111-113","quote":"Folic acid\n2.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\":
+    1784,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q35","label":"Pyridoxine
+    HCl","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197
+    vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input
+    and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid
+    wording does not establish stereochemistry; no parent JCM197 medium, mineral stock
+    or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin
+    stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt
+    lines 114-116","quote":"Pyridoxine·HCl\n10.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\":
+    1784,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q36","label":"Thiamine
+    HCl","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197
+    vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input
+    and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid
+    wording does not establish stereochemistry; no parent JCM197 medium, mineral stock
+    or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin
+    stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt
+    lines 117-119","quote":"Thiamine·HCl\n5.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\":
+    1784,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q37","label":"Riboflavin","local_fields":[],"decision":"correct","rationale":"Resolve
+    only the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass
+    or water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic
+    acid wording does not establish stereochemistry; no parent JCM197 medium, mineral
+    stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin
+    stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt
+    lines 120-122","quote":"Riboflavin\n5.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\":
+    1784,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q38","label":"Nicotinic
+    acid","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197
+    vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input
+    and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid
+    wording does not establish stereochemistry; no parent JCM197 medium, mineral stock
+    or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin
+    stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt
+    lines 123-125","quote":"Nicotinic acid\n5.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\":
+    1784,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q39","label":"Calcium
+    pantothenate","local_fields":[],"decision":"correct","rationale":"Resolve only
+    the JCM197 vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or
+    water input and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic
+    acid wording does not establish stereochemistry; no parent JCM197 medium, mineral
+    stock or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin
+    stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt
+    lines 126-128","quote":"Calcium pantothenate\n5.0\nmg","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\":
+    1784,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q40","label":"Vitamin
+    B12","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197
+    vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input
+    and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid
+    wording does not establish stereochemistry; no parent JCM197 medium, mineral stock
+    or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin
+    stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt
+    lines 129-133","quote":"Vitamin B\n1\n2\n0.1\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\":
+    1784,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q41","label":"p-Aminobenzoic
+    acid","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197
+    vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input
+    and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid
+    wording does not establish stereochemistry; no parent JCM197 medium, mineral stock
+    or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin
+    stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt
+    lines 134-137","quote":"p\n-Aminobenzoic acid\n5.0\nmg","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\":
+    1784,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q42","label":"Lipoic
+    acid","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197
+    vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input
+    and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid
+    wording does not establish stereochemistry; no parent JCM197 medium, mineral stock
+    or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin
+    stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt
+    lines 138-140","quote":"Lipoic acid\n5.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\":
+    1784,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q43","label":"Vitamin-stock
+    water","local_fields":[],"decision":"correct","rationale":"Resolve only the JCM197
+    vitamin-stock row cited by J876/TOGO915. Preserve this stock mass or water input
+    and its separate 10 ml/L receiving dose. Generic calcium pantothenate/lipoic acid
+    wording does not establish stereochemistry; no parent JCM197 medium, mineral stock
+    or receiving dose is transferred.","source_stage":"source-only JCM197 vitamin
+    stock","sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T20:57:01.262405Z","locator":"jcm197.txt
+    lines 141-143","quote":"Distilled water\n1.0\nL","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Trace vitamins (see Medium No. 197)\",\n                        \"compound_id\":
+    1784,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q44","label":"Retained
+    preparation paragraph 1","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Mix
+    components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v)
+    gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into
+    culture vessels under the same gas mixture, seal with butyl rubber stoppers and
+    autoclave. After cooling, add per liter the following solutions (autoclaved or
+    *filter-sterilized and stored under N2) in the order listed:"},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Mix
+    components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v)
+    gas mixture. After cooling, check pH to be around 6.0. Distribute the medium into
+    culture vessels under the same gas mixture, seal with butyl rubber stoppers and
+    autoclave. After cooling, add per liter the following solutions (autoclaved or
+    *filter-sterilized and stored under N2) in the order listed:"}],"decision":"evidence_only","rationale":"The
+    exact existing paragraph supports initial pH around 6.0, N2/CO2 4:1 atmosphere,
+    autoclaving and the specified after-cooling additions and filtration exceptions.
+    Retain that sequence; initial pH is not a final-pH claim. No organism-growth assertion
+    is inferred.","source_stage":"retained preparation/condition context","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[0].description","decision":"evidence_only","rationale":"The
+    exact existing paragraph supports initial pH around 6.0, N2/CO2 4:1 atmosphere,
+    autoclaving and the specified after-cooling additions and filtration exceptions.
+    Retain that sequence; initial pH is not a final-pH claim. No organism-growth assertion
+    is inferred."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[0].description","decision":"evidence_only","rationale":"The
+    exact existing paragraph supports initial pH around 6.0, N2/CO2 4:1 atmosphere,
+    autoclaving and the specified after-cooling additions and filtration exceptions.
+    Retain that sequence; initial pH is not a final-pH claim. No organism-growth assertion
+    is inferred."}]},{"quantity_id":"q45","label":"Retained preparation paragraph
+    2","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"By
+    the completion of the medium, white precipitate should be formed. Equilibrate
+    the medium by standing the culture vessels overnight."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"By
+    the completion of the medium, white precipitate should be formed. Equilibrate
+    the medium by standing the culture vessels overnight."}],"decision":"evidence_only","rationale":"The
+    exact existing paragraph supports the white precipitate description and overnight
+    equilibration. Retain this source context without turning it into a new quantified
+    ingredient or growth claim.","source_stage":"retained preparation/condition context","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[1]","quote":"{\n                        \"step\":
+    \"By the completion of the medium, white precipitate should be formed. Equilibrate
+    the medium by standing the culture vessels overnight.\"\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[1].description","decision":"evidence_only","rationale":"The
+    exact existing paragraph supports the white precipitate description and overnight
+    equilibration. Retain this source context without turning it into a new quantified
+    ingredient or growth claim."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[1].description","decision":"evidence_only","rationale":"The
+    exact existing paragraph supports the white precipitate description and overnight
+    equilibration. Retain this source context without turning it into a new quantified
+    ingredient or growth claim."}]},{"quantity_id":"q46","label":"Retained preparation
+    paragraph 3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[2].description","stored":"Comment:
+    Addition of 10-20 mg/L sodium dithionate (filter-sterilized under N2) just before
+    inoculation may stimulate growth at the beginning. Incubate with a 5-10% inoculum."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[2].description","stored":"Comment:
+    Addition of 10-20 mg/L sodium dithionate (filter-sterilized under N2) just before
+    inoculation may stimulate growth at the beginning. Incubate with a 5-10% inoculum."}],"decision":"evidence_only","rationale":"The
+    exact existing paragraph retains optional 10–20 mg/L sodium dithionate and 5–10%
+    inoculum context. These are optional preparation instructions, not demonstrated
+    growth evidence; no unsupported spelling or chemical replacement is inferred.","source_stage":"retained
+    preparation/condition context","sources":[{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[2]","quote":"{\n                        \"step\":
+    \"Comment: Addition of 10-20 mg/L sodium dithionate (filter-sterilized under N2)
+    just before inoculation may stimulate growth at the beginning. Incubate with a
+    5-10% inoculum.\"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[2].description","decision":"evidence_only","rationale":"The
+    exact existing paragraph retains optional 10–20 mg/L sodium dithionate and 5–10%
+    inoculum context. These are optional preparation instructions, not demonstrated
+    growth evidence; no unsupported spelling or chemical replacement is inferred."},{"path":"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml","field_path":"preparation_steps[2].description","decision":"evidence_only","rationale":"The
+    exact existing paragraph retains optional 10–20 mg/L sodium dithionate and 5–10%
+    inoculum context. These are optional preparation instructions, not demonstrated
+    growth evidence; no unsupported spelling or chemical replacement is inferred."}]},{"quantity_id":"q47","label":"Referenced-stock
+    page-wide default","local_fields":[],"decision":"evidence_only","rationale":"The
+    JCM187/431 pages state 121°C for 15 min unless otherwise stated. This is scoped
+    source context for those referenced stocks, not recovered wording from unavailable
+    JCM876. Explicit filter sterilization for the vitamin addition overrides any general
+    autoclave default.","source_stage":"source-only referenced-page default","sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T20:58:53.827650Z","locator":"jcm187.txt
+    lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at
+    121°C for 15 min.","quote_basis":"derivative text"},{"evidence_id":"jcm431","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431","raw_path":"REVIEW_WORK/batch078/source01-03-stock-primary/jcm431.bin","raw_sha256":"cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50","text_sha256":"ec3776552cd428886c0020385d5a22ebcaa47851d680ae031dc2d6e36fd14618","accessed_at":"2026-10-28T20:58:53.831143Z","locator":"jcm431.txt
+    lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at
+    121°C for 15 min.","quote_basis":"derivative text"},{"evidence_id":"apiJ876","reference":"https://mediadive.dsmz.de/rest/medium/J876","raw_path":"REVIEW_WORK/batch078/source01-03-supplement/apiJ876.bin","raw_sha256":"f1f9edaf647042f0c72383df5b08eeed2e9dcdfaed63adbb54eed3223af16684","text_sha256":"7cdc0750a0a5dc12aa61374ae632fb096f3a9b1943283ee89bb8c704baac60ca","accessed_at":"2026-10-28T20:57:02.136880Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"step\": \"Mix components thoroughly, bring to the
+    boil and cool down under a N2-CO2 (4:1, v/v) gas mixture. After cooling, check
+    pH to be around 6.0. Distribute the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under N2) in the order listed: \"\n                    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]}],"document_scopes":{"data/merge_yaml/merged/DESULFONEMA_MAGNUM_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: All 24 asserted current OLS forms and exact catalogue row families were
+    read. Nickel hexahydrate is the confirmed mismatch; cobalt hexahydrate, neutral
+    resazurin, potassium alum dodecahydrate, sodium benzoate and other stated hydrates
+    are supported. MIM cobalt and nickel rejected spellings coexist with mapped equivalent
+    preferred terms; the whole identifiers are not rejected. Catalogue synonyms for
+    other hydrate/sodium forms do not endorse those forms.
+  target_ids:
+  - CultureMech:003223
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: supported
+  summary: All five historical reports and the selected 60-claim plan row were read.
+    The 25 current concentration claims and 35 source recipe/preparation objects are
+    joined independently. Current API raw bytes match the historical source digest;
+    this authenticates content, not the original retrieval event. No attached claims
+    exist. The September report concerns a separate TOGO sibling; its forced merge,
+    missing-preparation and classification findings are not adopted. Current primary-only
+    composition and conservative merge behavior are credited without attributing historical
+    execution.
+  target_ids:
+  - CultureMech:003223
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+  - historical-source-joins
+  - historical-reading
+  - historical-selected-parent-rows
+  - selected-parent-authentication
+  - writer-mediadive
+findings:
+- finding_id: f1
+  issue_key: culturemech-003223-stock-stage-units
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Liquid additions and stock contents are flattened into main mass rates
+  description: Reconstruct five liquid receiving additions and the FeCl2, trace-element
+    and selenite-tungstate stock stages in the maintained owner. Retain the eight
+    supported provider basal rates only on the stated computational basis, and preserve
+    the existing preparation sequence. HCl 2.5 g/L is not certified by the printed
+    25%/7.7 M reagent description. Do not infer measured final volume or a percent
+    basis.
+  target_ids:
+  - CultureMech:003223
+  field_paths:
+  - ingredients[8].concentration
+  - ingredients[9].concentration
+  - ingredients[10].concentration
+  - ingredients[11].concentration
+  - ingredients[12].concentration
+  - ingredients[13].concentration
+  - ingredients[14].concentration
+  - ingredients[15].concentration
+  - ingredients[16].concentration
+  - ingredients[17].concentration
+  - ingredients[18].concentration
+  - ingredients[19].concentration
+  - ingredients[20].concentration
+  - ingredients[21].concentration
+  - ingredients[22].concentration
+  - ingredients[23].concentration
+  - ingredients[24].concentration
+  evidence_ids:
+  - apiJ876
+  - togo915
+  - jcm187
+  - jcm431
+  - quantities
+  - writer-mediadive
+  rule_id: custom/stock-stage-units
+  native_severity: P2
+  normalization_reason: Exact source-specific quantity issue, normalized major. This
+    custom rule does not redefine a narrower native rubric rule.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: scoped dependency
+- finding_id: f2
+  issue_key: culturemech-003223-source-only-stock-detail
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock references, solvents and vitamin composition are unrepresented
+  description: Represent the three basal 1 ml stock additions, the stage-specific
+    water inputs, and the exact JCM197 vitamin formulation at stock scope. Preserve
+    the five post-cooling doses and their explicit per-litre wording. Source-only
+    quantities are inventoried; do not substitute JCM187, JCM431 or JCM197 parent-medium
+    recipes.
+  target_ids:
+  - CultureMech:003223
+  field_paths:
+  - solutions
+  - ingredients
+  - evidence
+  evidence_ids:
+  - apiJ876
+  - togo915
+  - jcm187
+  - jcm431
+  - jcm197
+  - quantities
+  rule_id: custom/source-only-stock-detail
+  native_severity: P2
+  normalization_reason: Exact source-specific completeness issue, normalized major.
+    This custom rule does not redefine a narrower native rubric rule.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-003223-nickel-hydrate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel chloride grounding omits the specified hexahydrate
+  description: CHEBI:34887 is anhydrous nickel dichloride, whereas the source specifies
+    NiCl2 x 6 H2O. Current CHEBI:53542 explicitly describes the hexahydrate. MIM preferred
+    row6668 (Nickel (II) chloride hexahydrate) is MAPPED; row6703 (NiCl2 x 6 H2O)
+    is REJECTED and synonym row6704 is MAPPED. These spelling-specific statuses do
+    not reject the whole identifier. Update both primary and secondary asserted slots
+    only after exact ID/label/form verification, retaining the supported stock amount.
+  target_ids:
+  - CultureMech:003223
+  field_paths:
+  - ingredients[20].term
+  - ingredients[20].mediaingredientmech_chebi_term
+  evidence_ids:
+  - apiJ876
+  - jcm187
+  - chebi34887
+  - chebi53542
+  - full-catalog
+  - writer-mim
+  rule_id: custom/nickel-hydrate
+  native_severity: P2
+  normalization_reason: Exact source-specific grounding issue, normalized major. This
+    custom rule does not redefine a narrower native rubric rule.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-003223-claim-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Current quantities and preparation lack attached source claims
+  description: Add ingredient evidence for exact amounts and supplied forms, and root
+    evidence for stock-dose, preparation and denominator claims. Historical review-table
+    snippets are not attached ingredient claims. Preserve all original history entries
+    and distinguish current equal source bytes from an independently recovered historical
+    access event.
+  target_ids:
+  - CultureMech:003223
+  field_paths:
+  - ingredients[*].evidence
+  - evidence
+  evidence_ids:
+  - old-claims
+  - historical-source-joins
+  - apiJ876
+  - togo915
+  - quantities
+  rule_id: custom/claim-evidence
+  native_severity: P3
+  normalization_reason: Exact source-specific evidence issue, normalized minor. This
+    custom rule does not redefine a narrower native rubric rule.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: a1
+  description: Reconstruct five liquid receiving additions and the FeCl2, trace-element
+    and selenite-tungstate stock stages in the maintained owner. Retain the eight
+    supported provider basal rates only on the stated computational basis, and preserve
+    the existing preparation sequence. HCl 2.5 g/L is not certified by the printed
+    25%/7.7 M reagent description. Do not infer measured final volume or a percent
+    basis.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003223
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: scoped dependency
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: Represent the three basal 1 ml stock additions, the stage-specific
+    water inputs, and the exact JCM197 vitamin formulation at stock scope. Preserve
+    the five post-cooling doses and their explicit per-litre wording. Source-only
+    quantities are inventoried; do not substitute JCM187, JCM431 or JCM197 parent-medium
+    recipes.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003223
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: CHEBI:34887 is anhydrous nickel dichloride, whereas the source specifies
+    NiCl2 x 6 H2O. Current CHEBI:53542 explicitly describes the hexahydrate. MIM preferred
+    row6668 (Nickel (II) chloride hexahydrate) is MAPPED; row6703 (NiCl2 x 6 H2O)
+    is REJECTED and synonym row6704 is MAPPED. These spelling-specific statuses do
+    not reject the whole identifier. Update both primary and secondary asserted slots
+    only after exact ID/label/form verification, retaining the supported stock amount.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003223
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: Add ingredient evidence for exact amounts and supplied forms, and root
+    evidence for stock-dose, preparation and denominator claims. Historical review-table
+    snippets are not attached ingredient claims. Preserve all original history entries
+    and distinguish current equal source bytes from an independently recovered historical
+    access event.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003223
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- The current JCM876 primary page contains Nothing found. Formulation conclusions
+  rely on exact current APIJ876 and TOGO915, with primary JCM187/431/197 restricted
+  to explicitly referenced stock definitions. Completion is partial.
+- APIJ876 volume 1063 is a computational normalization; neither summed input liquid
+  volumes nor later per-litre wording establishes measured final volume. No stock-to-medium
+  mass conversion is silently inferred.
+- The provider cobalt mmol_l annotation is not validated or used for conversion; the
+  explicit primary mass and stock g_l are the assessed claims.
+- The legacy sibling report is context only; no merge with DSM202 or the separate
+  TOGO-derived target is recommended without full scientific-formulation equality.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```
