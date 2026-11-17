@@ -1,0 +1,4529 @@
+# Source and formulation review: athalassotoga_medium (CultureMech:001085)
+
+- Review: 20261021T182255Z-culturemech-001085-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T18:20:10Z
+- Finished UTC: 2026-10-21T18:22:55Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 1604 explicitly declares a 1011 mL final volume and supports the eight rounded main-solute rates. Both local layers flatten seventeen Allen and Wolin stock constituents into the main ingredient list and place the Allen-stock pH 2 instruction after the main pH 6 preparation. Ferric citrate is correctly named; supplier-specific form remains unverified, and the borax ontology has a bounded formula/structure tension despite its matching label. No local amount evidence is attached.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 321; batch 033 item 1 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-two task batches contain 320 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 323 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001085 | data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml | generated | athalassotoga_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001085 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001085 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-033/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch033/321/strict.tsv |
+| validate-terms | passed | True | CultureMech:001085 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001085 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001085 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive1604api_retry | unavailable | False | CultureMech:001085 | Both bounded current MediaDive 1604 attempts returned HTTP 503. The complete primary supports the current recipe comparison; these failures do not authenticate historical provider values or establish formula absence. |
+| Exact source content access: sigmaF6129 | unavailable | False | CultureMech:001085 | The official F6129 supplier request timed out. Ferric citrate is explicitly named by DSMZ and matches the local preferred identity; exact product hydration/composition remains unverified, without proving the current CHEBI identifier wrong. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001085.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:001085.
+
+43 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Ferric citrate (Aldrich F6129) main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "2.37389",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "2.37389",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main table",
+        "exact_source_quote": "Ferric citrate (Aldrich F6129) 2.40 g",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 heading",
+        "exact_source_quote": "Final volume: 1011 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_g": "2.40",
+      "source_declared_final_mL": 1011,
+      "calculated_g_per_L": 2.3738872403560833
+    },
+    "rationale": "The local rounded rate agrees with source mass divided by the explicitly declared 1.011 L. No matching amount evidence is attached locally. Preserve the collection declaration as such, without claiming an independently measured final volume or inferring unreported stock-solvent volumes. Ferric citrate identity is retained; no ammonium substitution is supported."
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "(NH4)2SO4 main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.197824",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.197824",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main table",
+        "exact_source_quote": "(NH4)2SO4 0.20 g",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 heading",
+        "exact_source_quote": "Final volume: 1011 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_g": "0.20",
+      "source_declared_final_mL": 1011,
+      "calculated_g_per_L": 0.1978239366963403
+    },
+    "rationale": "The local rounded rate agrees with source mass divided by the explicitly declared 1.011 L. No matching amount evidence is attached locally. Preserve the collection declaration as such, without claiming an independently measured final volume or inferring unreported stock-solvent volumes. Ferric citrate identity is retained; no ammonium substitution is supported."
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "KH2PO4 main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "2.96736",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "2.96736",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main table",
+        "exact_source_quote": "KH2PO4 3.00 g",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 heading",
+        "exact_source_quote": "Final volume: 1011 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_g": "3.00",
+      "source_declared_final_mL": 1011,
+      "calculated_g_per_L": 2.967359050445104
+    },
+    "rationale": "The local rounded rate agrees with source mass divided by the explicitly declared 1.011 L. No matching amount evidence is attached locally. Preserve the collection declaration as such, without claiming an independently measured final volume or inferring unreported stock-solvent volumes. Ferric citrate identity is retained; no ammonium substitution is supported."
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "MgSO4 x 7 H2O main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.49456",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.49456",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main table",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.50 g",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 heading",
+        "exact_source_quote": "Final volume: 1011 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_g": "0.50",
+      "source_declared_final_mL": 1011,
+      "calculated_g_per_L": 0.4945598417408507
+    },
+    "rationale": "The local rounded rate agrees with source mass divided by the explicitly declared 1.011 L. No matching amount evidence is attached locally. Preserve the collection declaration as such, without claiming an independently measured final volume or inferring unreported stock-solvent volumes. Ferric citrate identity is retained; no ammonium substitution is supported."
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "CaCl2 x 2 H2O main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.24728",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.24728",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main table",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.25 g",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 heading",
+        "exact_source_quote": "Final volume: 1011 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_g": "0.25",
+      "source_declared_final_mL": 1011,
+      "calculated_g_per_L": 0.24727992087042536
+    },
+    "rationale": "The local rounded rate agrees with source mass divided by the explicitly declared 1.011 L. No matching amount evidence is attached locally. Preserve the collection declaration as such, without claiming an independently measured final volume or inferring unreported stock-solvent volumes. Ferric citrate identity is retained; no ammonium substitution is supported."
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Yeast extract (OXOID) main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.49456",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.49456",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main table",
+        "exact_source_quote": "Yeast extract (OXOID) 0.50 g",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 heading",
+        "exact_source_quote": "Final volume: 1011 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_g": "0.50",
+      "source_declared_final_mL": 1011,
+      "calculated_g_per_L": 0.4945598417408507
+    },
+    "rationale": "The local rounded rate agrees with source mass divided by the explicitly declared 1.011 L. No matching amount evidence is attached locally. Preserve the collection declaration as such, without claiming an independently measured final volume or inferring unreported stock-solvent volumes. Ferric citrate identity is retained; no ammonium substitution is supported."
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "FeCl2 x 4 H2O main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.257171",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.257171",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main table",
+        "exact_source_quote": "FeCl2 x 4 H2O 0.26 g",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 heading",
+        "exact_source_quote": "Final volume: 1011 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_g": "0.26",
+      "source_declared_final_mL": 1011,
+      "calculated_g_per_L": 0.25717111770524237
+    },
+    "rationale": "The local rounded rate agrees with source mass divided by the explicitly declared 1.011 L. No matching amount evidence is attached locally. Preserve the collection declaration as such, without claiming an independently measured final volume or inferring unreported stock-solvent volumes. Ferric citrate identity is retained; no ammonium substitution is supported."
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "L-Cysteine HCl x H2O main amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.0395648",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.0395648",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main table",
+        "exact_source_quote": "L-Cysteine HCl x H2O 0.04 g",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 heading",
+        "exact_source_quote": "Final volume: 1011 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_batch_g": "0.04",
+      "source_declared_final_mL": 1011,
+      "calculated_g_per_L": 0.039564787339268055
+    },
+    "rationale": "The local rounded rate agrees with source mass divided by the explicitly declared 1.011 L. No matching amount evidence is attached locally. Preserve the collection declaration as such, without claiming an independently measured final volume or inferring unreported stock-solvent volumes. Ferric citrate identity is retained; no ammonium substitution is supported."
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Allen stock: MnCl2 x 4 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, exact solute row",
+        "exact_source_quote": "MnCl2 x 4 H2O 180.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "180.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 10,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Allen stock: Na2B4O7 x 10 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.45",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.45",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, exact solute row",
+        "exact_source_quote": "Na2B4O7 x 10 H2O 450.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "450.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 10,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Allen stock: ZnSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.022",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.022",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, exact solute row",
+        "exact_source_quote": "ZnSO4 x 7 H2O 22.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "22.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 10,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Allen stock: CuCl2 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, exact solute row",
+        "exact_source_quote": "CuCl2 x 2 H2O 5.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "5.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 10,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Allen stock: Na2MoO4 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, exact solute row",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 3.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "3.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 10,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "Allen stock: VOSO4 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, exact solute row",
+        "exact_source_quote": "VOSO4 x 2 H2O 3.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "3.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 10,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "Allen stock: CoSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, exact solute row",
+        "exact_source_quote": "CoSO4 x 7 H2O 1.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "1.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 10,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "Wolin 10x stock: Biotin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, exact solute row",
+        "exact_source_quote": "Biotin 20.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "20.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 1,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "Wolin 10x stock: Folic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, exact solute row",
+        "exact_source_quote": "Folic acid 20.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "20.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 1,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "Wolin 10x stock: Pyridoxine hydrochloride",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, exact solute row",
+        "exact_source_quote": "Pyridoxine hydrochloride 100.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "100.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 1,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "Wolin 10x stock: Thiamine HCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, exact solute row",
+        "exact_source_quote": "Thiamine HCl 50.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "50.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 1,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q20",
+    "component_or_context": "Wolin 10x stock: Riboflavin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, exact solute row",
+        "exact_source_quote": "Riboflavin 50.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "50.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 1,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q21",
+    "component_or_context": "Wolin 10x stock: Nicotinic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, exact solute row",
+        "exact_source_quote": "Nicotinic acid 50.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "50.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 1,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q22",
+    "component_or_context": "Wolin 10x stock: Calcium D-(+)-pantothenate",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, exact solute row",
+        "exact_source_quote": "Calcium D-(+)-pantothenate 50.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "50.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 1,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q23",
+    "component_or_context": "Wolin 10x stock: Vitamin B12",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, exact solute row",
+        "exact_source_quote": "Vitamin B12 1.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "1.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 1,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q24",
+    "component_or_context": "Wolin 10x stock: p-Aminobenzoic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, exact solute row",
+        "exact_source_quote": "p-Aminobenzoic acid 50.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "50.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 1,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q25",
+    "component_or_context": "Wolin 10x stock: (DL)-alpha-Lipoic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, exact solute row",
+        "exact_source_quote": "(DL)-alpha-Lipoic acid 50.00 mg",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock table, water row; same literal also occurs in main and other stock",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_batch_amount_mg": "50.00",
+      "stock_water_input_mL": 1000,
+      "receiving_dose_mL": 1,
+      "measured_stock_final_volume_mL": null,
+      "final_medium_g_per_L": null
+    },
+    "rationale": "The stored G_PER_L number is the milligram amount converted to grams on a nominal litre of stock water and is wrongly placed in the main ingredient list. Restore the source stock batch and separate receiving dose. Listed stock water does not independently establish final stock volume, so this audit does not derive exact final-medium contributions. Preserve the exact hydrate/stereochemical label; the borax annotation tension is assessed separately."
+  },
+  {
+    "quantity_id": "q26",
+    "component_or_context": "Main source-declared final volume",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 heading",
+        "exact_source_quote": "Final volume: 1011 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_declared_final_mL": 1011
+    },
+    "rationale": "Add this explicit source basis to the maintained main preparation/evidence. The absent solutions container is a current locator, not an invented stored volume slot."
+  },
+  {
+    "quantity_id": "q27",
+    "component_or_context": "Main water input",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main table immediately before the preparation paragraph",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "main_water_input_mL": 1000
+    },
+    "rationale": "Preserve the batch water independently of the source-declared final volume; do not turn it into 1000 g/L."
+  },
+  {
+    "quantity_id": "q28",
+    "component_or_context": "Allen receiving addition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main table, named stock addition",
+        "exact_source_quote": "Allen's trace element solution 10.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_addition_mL_per_source_batch": 10,
+      "main_declared_final_mL": 1011
+    },
+    "rationale": "No structured stock addition is present. Preserve the source batch dose, without treating it as neat-solute mass or a dose per an assumed final litre."
+  },
+  {
+    "quantity_id": "q29",
+    "component_or_context": "Allen stock water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock composition table",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "water_input_mL": 1000,
+      "stock_final_volume_mL": null
+    },
+    "rationale": "Record the solvent input at stock scope; no final make-up instruction establishes a measured stock denominator."
+  },
+  {
+    "quantity_id": "q30",
+    "component_or_context": "Wolin 10x receiving addition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main table, named stock addition",
+        "exact_source_quote": "Wolin's vitamin solution (10x) 1.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_addition_mL_per_source_batch": 1,
+      "main_declared_final_mL": 1011
+    },
+    "rationale": "No structured stock addition is present. Preserve the source batch dose, without treating it as neat-solute mass or a dose per an assumed final litre."
+  },
+  {
+    "quantity_id": "q31",
+    "component_or_context": "Wolin 10x stock water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Wolin 10x stock composition table",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "water_input_mL": 1000,
+      "stock_final_volume_mL": null
+    },
+    "rationale": "Record the solvent input at stock scope; no final make-up instruction establishes a measured stock denominator."
+  },
+  {
+    "quantity_id": "q32",
+    "component_or_context": "Main pH before and after sterilization",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 6.0,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 6.0,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 heading",
+        "exact_source_quote": "Final pH: 6.0",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      },
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Main preparation, final check",
+        "exact_source_quote": "pH and adjust to 6.0, if necessary.",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "main_pH": 6.0
+    },
+    "rationale": "Both local fields retain the main value; attach scoped source evidence. This is a recipe condition, not an independently demonstrated optimum."
+  },
+  {
+    "quantity_id": "q33",
+    "component_or_context": "Initial nitrogen fraction",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main preparation paragraph",
+        "exact_source_quote": "80% N2",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "gas": "N2",
+      "source_percent": 80
+    },
+    "rationale": "The numerical context already occurs in both local preparation descriptions; attach claim-level evidence while preserving its stage. Normality is not silently converted to molarity."
+  },
+  {
+    "quantity_id": "q34",
+    "component_or_context": "Initial carbon dioxide fraction",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main preparation paragraph",
+        "exact_source_quote": "20% CO2",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "gas": "CO2",
+      "source_percent": 20
+    },
+    "rationale": "The numerical context already occurs in both local preparation descriptions; attach claim-level evidence while preserving its stage. Normality is not silently converted to molarity."
+  },
+  {
+    "quantity_id": "q35",
+    "component_or_context": "Initial sparging duration",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main preparation paragraph",
+        "exact_source_quote": "30 - 45 min",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "duration_min_range": [
+        30,
+        45
+      ]
+    },
+    "rationale": "The numerical context already occurs in both local preparation descriptions; attach claim-level evidence while preserving its stage. Normality is not silently converted to molarity."
+  },
+  {
+    "quantity_id": "q36",
+    "component_or_context": "Ferrous-chloride acid stock strength",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main preparation paragraph",
+        "exact_source_quote": "0.1 N HCl",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "normality_N": 0.1
+    },
+    "rationale": "The numerical context already occurs in both local preparation descriptions; attach claim-level evidence while preserving its stage. Normality is not silently converted to molarity."
+  },
+  {
+    "quantity_id": "q37",
+    "component_or_context": "Separate stock nitrogen atmosphere",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Page 1 main preparation paragraph",
+        "exact_source_quote": "100% N2",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "gas": "N2",
+      "source_percent": 100
+    },
+    "rationale": "The numerical context already occurs in both local preparation descriptions; attach claim-level evidence while preserving its stage. Normality is not silently converted to molarity."
+  },
+  {
+    "quantity_id": "q38",
+    "component_or_context": "Ferrous-chloride acid solvent dose",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "not_quantified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Main preparation, separate ferrous stock",
+        "exact_source_quote": "ferrous chloride (dissolved in 0.1 N HCl)",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "acid_volume_mL": null
+    },
+    "rationale": "The acid strength is explicit but its solvent volume is not. Do not invent this contribution or revise the collection-declared main final volume from it."
+  },
+  {
+    "quantity_id": "q39",
+    "component_or_context": "Allen stock pH",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Adjust pH of final solution to 2 with 1 N HCl.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Adjust pH of final solution to 2 with 1 N HCl.",
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen trace element subsection, last instruction",
+        "exact_source_quote": "Adjust pH of final solution to 2 with 1 N HCl.",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock": "Allen trace element solution",
+      "pH": 2,
+      "main_pH": 6.0
+    },
+    "rationale": "The literal instruction is present but at the wrong root scope. Move it to Allen stock preparation; do not alter the main recipe to pH 2."
+  },
+  {
+    "quantity_id": "q40",
+    "component_or_context": "Allen adjustment acid strength",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Adjust pH of final solution to 2 with 1 N HCl.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Adjust pH of final solution to 2 with 1 N HCl.",
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock preparation",
+        "exact_source_quote": "Adjust pH of final solution to 2 with 1 N HCl.",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock": "Allen",
+      "acid_normality_N": 1,
+      "acid_dose_mL": null
+    },
+    "rationale": "Restore stock scope for the already preserved 1 N reagent. Its dose is not specified and is not converted to molarity."
+  },
+  {
+    "quantity_id": "q41",
+    "component_or_context": "Allen adjustment acid dose",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Adjust pH of final solution to 2 with 1 N HCl.",
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Adjust pH of final solution to 2 with 1 N HCl.",
+        "decision": "not_quantified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Allen stock preparation",
+        "exact_source_quote": "Adjust pH of final solution to 2 with 1 N HCl.",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "acid_dose_mL": null
+    },
+    "rationale": "Titration to the stock pH has no fixed source dose."
+  },
+  {
+    "quantity_id": "q42",
+    "component_or_context": "Wolin 10x designation",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Main stock name and repeated stock heading",
+        "exact_source_quote": "Wolin's vitamin solution (10x)",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "designation": "10x",
+      "receiving_dose_mL": 1
+    },
+    "rationale": "Preserve the source name together with its printed composition; do not infer a tenfold receiving dose from the name."
+  },
+  {
+    "quantity_id": "q43",
+    "component_or_context": "Autoclave numerical cycle",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.",
+        "decision": "not_quantified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1604",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "or serum vials and autoclave.",
+        "snapshot_sha256": "32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c",
+        "parsed_text_sha256": "7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71",
+        "accessed_at": "2026-10-21T18:05:05.309599Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "temperature_C": null,
+      "duration_min": null
+    },
+    "rationale": "The source and local prose specify autoclaving without a numerical cycle; do not import a cycle from the parent medium or common practice."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:001085.
+
+24 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 24/25 primary and 22/25 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 25: primary 96.00%; secondary 88.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:001085.
+
+15 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact accession and generated-input ownership
+
+identity: supported. Targets: CultureMech:001085.
+
+CultureMech:001085 is the generated DSMZ 1604 record with one maintained athalassotoga_medium.yaml owner. Main and named stock identities are established by exact primary sections; the source ferric citrate is not ferric ammonium citrate. No strain-specific growth assertion or internal variant relationship is present.
+
+### Main ingredients versus stock compositions
+
+representation: concern. Targets: CultureMech:001085.
+
+All seventeen Allen/Wolin constituents are flattened as direct main G_PER_L values in both layers; the two receiving doses and the three separate water contexts are unstructured. The first eight solute rates agree with the explicit source-declared denominator.
+
+### Preparation stage and retained numerical context
+
+completeness: concern. Targets: CultureMech:001085.
+
+The first root step retains main pH, gas fractions, sparging interval, 0.1 N acid and separately treated additions. The second root step is the Allen-stock pH 2 instruction and is mis-scoped. Neither source supplies a numerical autoclave cycle or fixed acid-titration dose.
+
+### Exact forms versus ontology annotation limits
+
+grounding: concern. Targets: CultureMech:001085.
+
+Most explicit hydrates match their resolved terms. Calcium D-(+)-pantothenate is explicitly D-specific, consistent with CHEBI:31345; generic B12 remains a class. Borax CHEBI:131366 has a matching label/CAS but captured formula 10H2O.H4B4O9.2Na and mass 417.401 differ from literal source Na2B4O7 x 10 H2O. Treat this as unresolved annotation/form correspondence, not a proven wrong ID or license to invent a replacement. F6129 supplier form remains unavailable.
+
+### Composition, physical state and growth scope
+
+scope: supported. Targets: CultureMech:001085.
+
+Yeast extract supports a complex, semi-defined liquid formulation. The bacterial category and generic cultivation application do not establish a new taxon-level growth claim. No source cultivation temperature or high-metal flag is asserted locally; no phenotype is inferred from title or recipe.
+
+### Maintained repair and current writer limits
+
+ownership: supported. Targets: CultureMech:001085.
+
+The normalized owner contains the same flattened ingredients and stock-pH root step, so editing only the generated record would be transient. Preserve permanent ID and historical events; attach evidence and repair source stages in the owner before regeneration. A prior amount-review report is a lead only; no attached ingredient evidence exists in either local layer.
+
+## Findings
+
+### f1: Seventeen stock constituents are represented as direct medium concentrations
+
+blocker / open / confirmed; issue key: culturemech.001085.flattened-stock-formula.
+
+Both layers place seven Allen and ten Wolin composition rows into the main list at nominal stock-strength values. The primary instead adds 10 mL Allen stock and 1 mL Wolin 10x stock to the declared 1011 mL recipe. This changes the represented formulation; the eight actual main-solute rates are separately supported.
+
+### f2: Allen-stock pH is presented as a main preparation step
+
+major / open / confirmed; issue key: culturemech.001085.stock-ph-at-root.
+
+preparation_steps[1] in target and owner says final solution pH 2 using 1 N HCl after main preparation. The exact source locates this instruction in Allen trace stock; main pH remains 6.0.
+
+### f3: Borax label match does not resolve the captured formula tension
+
+minor / open / confirmed; issue key: culturemech.001085.borax-annotation-tension.
+
+The borax primary term resolves to its matching label and CAS, but its captured formula/mass/structure do not directly match the literal source hydrate formula. Supplier-specific ferric citrate form is also unverified; neither uncertainty alone proves a wrong current identifier.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore two explicitly scoped stocks and their printed batch inputs, water and receiving doses in the maintained owner; remove the flattened direct stock contributions or derive final rates only when their full denominators are established. Preserve all main rates and exact supplied forms with narrow source evidence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Move the pH 2 and 1 N HCl instruction to the Allen stock; preserve the main pH 6.0 preparation and existing separate-stock handling. Do not invent acid doses or a sterilization cycle.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Retain literal source forms and document the ontology annotation discrepancy; seek exact authoritative form correspondence before choosing any replacement. Do not substitute ferric ammonium citrate or relabel the explicitly D-pantothenate as DL.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/athalassotoga_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch033/321/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-033/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch033/321/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml:1:id: CultureMech:001085<br>./data/normalized_yaml/bacterial/athalassotoga_medium.yaml:1:id: CultureMech:001085<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch033/source-preflight-bound/321/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 32 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch033/source-preflight-bound/321/evidence-context-original.json; Complete frozen source context and full local objects | context_only | Frozen target/owner objects match freshly inspected records. Source interpretations are assessed against actual bound capture bytes; historical limitations remain separate. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf; Both pages: exact main table, declared final volume, preparation, Allen and Wolin subsections | supports | The primary supports the main 1011 mL declaration, separate stock doses and full stock compositions. Main pH is 6.0; pH 2 belongs only to Allen stock. Source names ferric citrate, not ferric ammonium citrate. |
+| allen-parent | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium88.pdf; Allen's trace element solution subsection only | supports | The named parent corroborates only this printed stock section. Parent basal recipes, other stocks, organism-specific branches and culture conditions are excluded. |
+| vitamin-parent | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium120.pdf; Wolin's vitamin solution (10x) subsection only | supports | The named parent corroborates only this printed stock section. Parent basal recipes, other stocks, organism-specific branches and culture conditions are excluded. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch033/321/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi131366 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131366; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131366 resolves to disodium tetraborate decahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi144421 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_144421; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:144421 resolves to iron(III) citrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15940 resolves to nicotinic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15956 resolves to biotin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:16494 resolves to lipoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17015 resolves to riboflavin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:27470 resolves to folic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86249 resolves to iron dichloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi87009 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_87009; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:87009 resolves to vanadyl sulfate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:144421": [{"label": "Fe(III) citrate", "match_type": "preferred_term", "identifier": "CHEBI:144421", "preferred_term": "Fe(III) citrate", "ontology_id": "CHEBI:144421", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86249": [{"label": "FeCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86249", "preferred_term": "FeCl2 x 4 H2O", "ontology_id": "CHEBI:86249", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318": [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318", "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:87009": [{"label": "VOSO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:87009", "preferred_term": "VOSO4 x 2 H2O", "ontology_id": "CHEBI:87009", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91248": [{"label": "L-Cysteine HCl x H2O", "match_type": "preferred_term", "identifier": "CHEBI:91248", "preferred_term": "L-Cysteine HCl x H2O", "ontology_id": "CHEBI:91248", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml; data/normalized_yaml/bacterial/athalassotoga_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml", "events": 7, "timestamp_issues": []}] |
+| mediadive1604api_retry-attempt | https://mediadive.dsmz.de/rest/medium/1604; Preserved exact public retrieval result | context_only | Both bounded current MediaDive 1604 attempts returned HTTP 503. The complete primary supports the current recipe comparison; these failures do not authenticate historical provider values or establish formula absence. |
+| sigmaF6129-attempt | https://www.sigmaaldrich.com/US/en/product/sigma/f6129; Preserved exact public retrieval result | context_only | The official F6129 supplier request timed out. Ferric citrate is explicitly named by DSMZ and matches the local preferred identity; exact product hydration/composition remains unverified, without proving the current CHEBI identifier wrong. |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive composition parsing restricts ingredients to the primary solution and separately recognizes stock additions, whereas preparation parsing still collects steps from all solutions. Unit fallback can map bare amounts to rate units. These current paths describe representation risks, not proof of which historical code produced these bytes. Future fixes belong in the normalized owner and any verified responsible transform, followed by separately authorized regeneration. |
+| writer-1 | src/culturemech/merge/merge_recipes.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive composition parsing restricts ingredients to the primary solution and separately recognizes stock additions, whereas preparation parsing still collects steps from all solutions. Unit fallback can map bare amounts to rate units. These current paths describe representation risks, not proof of which historical code produced these bytes. Future fixes belong in the normalized owner and any verified responsible transform, followed by separately authorized regeneration. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Both bounded current MediaDive 1604 attempts returned HTTP 503. The complete primary supports the current recipe comparison; these failures do not authenticate historical provider values or establish formula absence.
+- The official F6129 supplier request timed out. Ferric citrate is explicitly named by DSMZ and matches the local preferred identity; exact product hydration/composition remains unverified, without proving the current CHEBI identifier wrong.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T182255Z-culturemech-001085-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: athalassotoga_medium (CultureMech:001085)'
+started_at: '2026-10-21T18:20:10Z'
+finished_at: '2026-10-21T18:22:55Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 1604 explicitly declares a 1011 mL final volume and supports the eight
+  rounded main-solute rates. Both local layers flatten seventeen Allen and Wolin stock
+  constituents into the main ingredient list and place the Allen-stock pH 2 instruction
+  after the main pH 6 preparation. Ferric citrate is correctly named; supplier-specific
+  form remains unverified, and the borax ontology has a bounded formula/structure
+  tension despite its matching label. No local amount evidence is attached.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml
+    sha256: d817f965efa45fe619ae0c68ecfab9a68a6d3fa730b294c45c910835e12bdf78
+    role: target
+  - path: data/normalized_yaml/bacterial/athalassotoga_medium.yaml
+    sha256: dda0614534f61487b2e5be4e3910dbd41784eac0f11b57137ab631e918adc699
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/athalassotoga_medium.yaml.md
+    sha256: 823cfff4374b310b16331a49b61120f81a619222e81cb4b91ff2cab104c0e086
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 321; batch 033 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-two task batches
+    contain 320 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 323 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001085
+targets:
+- target_id: CultureMech:001085
+  path: data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml
+  label: athalassotoga_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/athalassotoga_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch033/321/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-033/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch033/321/strict.tsv"
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001085
+- check_id: mediadive1604api_retry-source-access
+  name: 'Exact source content access: mediadive1604api_retry'
+  required: false
+  status: unavailable
+  summary: Both bounded current MediaDive 1604 attempts returned HTTP 503. The complete
+    primary supports the current recipe comparison; these failures do not authenticate
+    historical provider values or establish formula absence.
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - mediadive1604api_retry-attempt
+- check_id: sigmaF6129-source-access
+  name: 'Exact source content access: sigmaF6129'
+  required: false
+  status: unavailable
+  summary: The official F6129 supplier request timed out. Ferric citrate is explicitly
+    named by DSMZ and matches the local preferred identity; exact product hydration/composition
+    remains unverified, without proving the current CHEBI identifier wrong.
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - sigmaF6129-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T18:22:54Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/athalassotoga_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:22:54Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:20:31.223447Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch033/321/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:20:33.210881Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-033/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch033/321/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:20:35.805877Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:20:37.265468Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T18:22:54Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml:1:id: CultureMech:001085
+
+    ./data/normalized_yaml/bacterial/athalassotoga_medium.yaml:1:id: CultureMech:001085
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch033/source-preflight-bound/321/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T18:22:54Z'
+  support: supports
+  summary: 32 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 6ceb8e09ab5944376d7ddea2333e755c7d822f3aeb8b94ed95cbad72e2d18a85
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch033/source-preflight-bound/321/evidence-context-original.json
+  locator: Complete frozen source context and full local objects
+  accessed_at: '2026-10-21T18:22:54Z'
+  support: context_only
+  summary: Frozen target/owner objects match freshly inspected records. Source interpretations
+    are assessed against actual bound capture bytes; historical limitations remain
+    separate.
+  snapshot_sha256: 49c14c6c96f1b38d98bafd9961b48e59ec2e35b2ddd0fc622884a1dba5a977d4
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf
+  locator: 'Both pages: exact main table, declared final volume, preparation, Allen
+    and Wolin subsections'
+  accessed_at: '2026-10-21T18:05:05.309599Z'
+  support: supports
+  summary: The primary supports the main 1011 mL declaration, separate stock doses
+    and full stock compositions. Main pH is 6.0; pH 2 belongs only to Allen stock.
+    Source names ferric citrate, not ferric ammonium citrate.
+  snapshot_sha256: 32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c
+- evidence_id: allen-parent
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium88.pdf
+  locator: Allen's trace element solution subsection only
+  accessed_at: '2026-10-21T18:06:00.249507Z'
+  support: supports
+  summary: The named parent corroborates only this printed stock section. Parent basal
+    recipes, other stocks, organism-specific branches and culture conditions are excluded.
+  snapshot_sha256: 25a7f9223c62438713a52e22653b1cb9eb3a3aaf37ce3407389f1a2d5db2e6b6
+- evidence_id: vitamin-parent
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium120.pdf
+  locator: Wolin's vitamin solution (10x) subsection only
+  accessed_at: '2026-10-21T13:16:27.298931Z'
+  support: supports
+  summary: The named parent corroborates only this printed stock section. Parent basal
+    recipes, other stocks, organism-specific branches and culture conditions are excluded.
+  snapshot_sha256: e1f85e4a546abc825218226bbb18d78bd9c054b7e11399aa7161ad259a3b663f
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch033/321/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T18:22:54Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: f663fb94bfd631ef0a3337c1c6266403a5d2ac263a02782a7868cf37c531b302
+- evidence_id: chebi131366
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131366
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:30:39.793244Z'
+  support: supports
+  summary: CHEBI:131366 resolves to disodium tetraborate decahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 1ea4119e009b41d70522d7bdea7b79b0d2a0c8d774d32606f281ade14be31d5d
+- evidence_id: chebi144421
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_144421
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T13:16:22.419325Z'
+  support: supports
+  summary: CHEBI:144421 resolves to iron(III) citrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 283ce05a4ff7d7b60c46f1b8447bc5f217ea1d84543f59ad566eb9f893b768a1
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: CHEBI:16494 resolves to lipoic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: CHEBI:17015 resolves to riboflavin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: CHEBI:27470 resolves to folic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86249
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:49:55.693358Z'
+  support: supports
+  summary: CHEBI:86249 resolves to iron dichloride tetrahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi87009
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_87009
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T18:05:05.530403Z'
+  support: supports
+  summary: CHEBI:87009 resolves to vanadyl sulfate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 79c072033d57fc10fe6ddacd54f81b74a93ad388571283de5a435f56f9b00057
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: chebi91248
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:32.136441Z'
+  support: supports
+  summary: CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T18:22:54Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:144421":
+    [{"label": "Fe(III) citrate", "match_type": "preferred_term", "identifier": "CHEBI:144421",
+    "preferred_term": "Fe(III) citrate", "ontology_id": "CHEBI:144421", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid",
+    "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term":
+    "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term",
+    "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label":
+    "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494",
+    "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type":
+    "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin",
+    "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier":
+    "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843",
+    "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:27470": [{"label":
+    "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term":
+    "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term",
+    "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id":
+    "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961":
+    [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier":
+    "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label":
+    "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label":
+    "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl",
+    "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213":
+    [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86249": [{"label": "FeCl2 x 4 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86249", "preferred_term": "FeCl2 x 4 H2O", "ontology_id":
+    "CHEBI:86249", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318":
+    [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318",
+    "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term":
+    "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:87009": [{"label": "VOSO4 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:87009", "preferred_term": "VOSO4 x 2 H2O", "ontology_id":
+    "CHEBI:87009", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91244":
+    [{"label": "CoSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91244",
+    "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:91248": [{"label": "L-Cysteine HCl x
+    H2O", "match_type": "preferred_term", "identifier": "CHEBI:91248", "preferred_term":
+    "L-Cysteine HCl x H2O", "ontology_id": "CHEBI:91248", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml; data/normalized_yaml/bacterial/athalassotoga_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T18:22:54Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/athalassotoga_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: mediadive1604api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1604
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T18:05:59.637249Z'
+  support: context_only
+  summary: Both bounded current MediaDive 1604 attempts returned HTTP 503. The complete
+    primary supports the current recipe comparison; these failures do not authenticate
+    historical provider values or establish formula absence.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: sigmaF6129-attempt
+  kind: database
+  reference: https://www.sigmaaldrich.com/US/en/product/sigma/f6129
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T18:06:00.255905Z'
+  support: context_only
+  summary: The official F6129 supplier request timed out. Ferric citrate is explicitly
+    named by DSMZ and matches the local preferred identity; exact product hydration/composition
+    remains unverified, without proving the current CHEBI identifier wrong.
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:22:54Z'
+  support: context_only
+  summary: Current MediaDive composition parsing restricts ingredients to the primary
+    solution and separately recognizes stock additions, whereas preparation parsing
+    still collects steps from all solutions. Unit fallback can map bare amounts to
+    rate units. These current paths describe representation risks, not proof of which
+    historical code produced these bytes. Future fixes belong in the normalized owner
+    and any verified responsible transform, followed by separately authorized regeneration.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merge_recipes.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:22:54Z'
+  support: context_only
+  summary: Current MediaDive composition parsing restricts ingredients to the primary
+    solution and separately recognizes stock additions, whereas preparation parsing
+    still collects steps from all solutions. Unit fallback can map bare amounts to
+    rate units. These current paths describe representation risks, not proof of which
+    historical code produced these bytes. Future fixes belong in the normalized owner
+    and any verified responsible transform, followed by separately authorized regeneration.
+  snapshot_sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 43 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Ferric citrate (Aldrich F6129) main amount\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.37389\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"2.37389\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\":\
+    \ \"Ferric citrate (Aldrich F6129) 2.40 g\",\n        \"snapshot_sha256\": \"\
+    32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n        \"\
+    parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 heading\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1011 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"source_batch_g\": \"2.40\"\
+    ,\n      \"source_declared_final_mL\": 1011,\n      \"calculated_g_per_L\": 2.3738872403560833\n\
+    \    },\n    \"rationale\": \"The local rounded rate agrees with source mass divided\
+    \ by the explicitly declared 1.011 L. No matching amount evidence is attached\
+    \ locally. Preserve the collection declaration as such, without claiming an independently\
+    \ measured final volume or inferring unreported stock-solvent volumes. Ferric\
+    \ citrate identity is retained; no ammonium substitution is supported.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\": \"(NH4)2SO4\
+    \ main amount\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.197824\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.197824\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\":\
+    \ \"(NH4)2SO4 0.20 g\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 heading\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1011 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"source_batch_g\": \"0.20\"\
+    ,\n      \"source_declared_final_mL\": 1011,\n      \"calculated_g_per_L\": 0.1978239366963403\n\
+    \    },\n    \"rationale\": \"The local rounded rate agrees with source mass divided\
+    \ by the explicitly declared 1.011 L. No matching amount evidence is attached\
+    \ locally. Preserve the collection declaration as such, without claiming an independently\
+    \ measured final volume or inferring unreported stock-solvent volumes. Ferric\
+    \ citrate identity is retained; no ammonium substitution is supported.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\": \"KH2PO4 main\
+    \ amount\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.96736\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"2.96736\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\":\
+    \ \"KH2PO4 3.00 g\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 heading\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1011 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"source_batch_g\": \"3.00\"\
+    ,\n      \"source_declared_final_mL\": 1011,\n      \"calculated_g_per_L\": 2.967359050445104\n\
+    \    },\n    \"rationale\": \"The local rounded rate agrees with source mass divided\
+    \ by the explicitly declared 1.011 L. No matching amount evidence is attached\
+    \ locally. Preserve the collection declaration as such, without claiming an independently\
+    \ measured final volume or inferring unreported stock-solvent volumes. Ferric\
+    \ citrate identity is retained; no ammonium substitution is supported.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\": \"MgSO4 x 7\
+    \ H2O main amount\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.49456\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.49456\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\":\
+    \ \"MgSO4 x 7 H2O 0.50 g\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 heading\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1011 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"source_batch_g\": \"0.50\"\
+    ,\n      \"source_declared_final_mL\": 1011,\n      \"calculated_g_per_L\": 0.4945598417408507\n\
+    \    },\n    \"rationale\": \"The local rounded rate agrees with source mass divided\
+    \ by the explicitly declared 1.011 L. No matching amount evidence is attached\
+    \ locally. Preserve the collection declaration as such, without claiming an independently\
+    \ measured final volume or inferring unreported stock-solvent volumes. Ferric\
+    \ citrate identity is retained; no ammonium substitution is supported.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\": \"CaCl2 x 2\
+    \ H2O main amount\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.24728\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.24728\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\":\
+    \ \"CaCl2 x 2 H2O 0.25 g\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 heading\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1011 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"source_batch_g\": \"0.25\"\
+    ,\n      \"source_declared_final_mL\": 1011,\n      \"calculated_g_per_L\": 0.24727992087042536\n\
+    \    },\n    \"rationale\": \"The local rounded rate agrees with source mass divided\
+    \ by the explicitly declared 1.011 L. No matching amount evidence is attached\
+    \ locally. Preserve the collection declaration as such, without claiming an independently\
+    \ measured final volume or inferring unreported stock-solvent volumes. Ferric\
+    \ citrate identity is retained; no ammonium substitution is supported.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\": \"Yeast extract\
+    \ (OXOID) main amount\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.49456\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.49456\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\":\
+    \ \"Yeast extract (OXOID) 0.50 g\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 heading\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1011 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"source_batch_g\": \"0.50\"\
+    ,\n      \"source_declared_final_mL\": 1011,\n      \"calculated_g_per_L\": 0.4945598417408507\n\
+    \    },\n    \"rationale\": \"The local rounded rate agrees with source mass divided\
+    \ by the explicitly declared 1.011 L. No matching amount evidence is attached\
+    \ locally. Preserve the collection declaration as such, without claiming an independently\
+    \ measured final volume or inferring unreported stock-solvent volumes. Ferric\
+    \ citrate identity is retained; no ammonium substitution is supported.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\": \"FeCl2 x 4\
+    \ H2O main amount\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.257171\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.257171\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\":\
+    \ \"FeCl2 x 4 H2O 0.26 g\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 heading\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1011 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"source_batch_g\": \"0.26\"\
+    ,\n      \"source_declared_final_mL\": 1011,\n      \"calculated_g_per_L\": 0.25717111770524237\n\
+    \    },\n    \"rationale\": \"The local rounded rate agrees with source mass divided\
+    \ by the explicitly declared 1.011 L. No matching amount evidence is attached\
+    \ locally. Preserve the collection declaration as such, without claiming an independently\
+    \ measured final volume or inferring unreported stock-solvent volumes. Ferric\
+    \ citrate identity is retained; no ammonium substitution is supported.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\": \"L-Cysteine\
+    \ HCl x H2O main amount\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0395648\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0395648\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\":\
+    \ \"L-Cysteine HCl x H2O 0.04 g\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 heading\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1011 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"source_batch_g\": \"0.04\"\
+    ,\n      \"source_declared_final_mL\": 1011,\n      \"calculated_g_per_L\": 0.039564787339268055\n\
+    \    },\n    \"rationale\": \"The local rounded rate agrees with source mass divided\
+    \ by the explicitly declared 1.011 L. No matching amount evidence is attached\
+    \ locally. Preserve the collection declaration as such, without claiming an independently\
+    \ measured final volume or inferring unreported stock-solvent volumes. Ferric\
+    \ citrate identity is retained; no ammonium substitution is supported.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\": \"Allen stock:\
+    \ MnCl2 x 4 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[8].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.18\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, exact solute row\",\n    \
+    \    \"exact_source_quote\": \"MnCl2 x 4 H2O 180.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, water row; same literal also\
+    \ occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    180.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\"\
+    : 10,\n      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\"\
+    : \"Allen stock: Na2B4O7 x 10 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.45\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[9].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.45\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, exact solute row\",\n    \
+    \    \"exact_source_quote\": \"Na2B4O7 x 10 H2O 450.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, water row; same literal also\
+    \ occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    450.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\"\
+    : 10,\n      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\"\
+    : \"Allen stock: ZnSO4 x 7 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.022\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[10].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.022\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, exact solute row\",\n    \
+    \    \"exact_source_quote\": \"ZnSO4 x 7 H2O 22.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, water row; same literal also\
+    \ occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    22.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\":\
+    \ 10,\n      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\"\
+    : \"Allen stock: CuCl2 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[11].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, exact solute row\",\n    \
+    \    \"exact_source_quote\": \"CuCl2 x 2 H2O 5.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, water row; same literal also\
+    \ occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    5.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\": 10,\n\
+    \      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\"\
+    : \"Allen stock: Na2MoO4 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.003\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[12].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.003\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, exact solute row\",\n    \
+    \    \"exact_source_quote\": \"Na2MoO4 x 2 H2O 3.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, water row; same literal also\
+    \ occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    3.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\": 10,\n\
+    \      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\"\
+    : \"Allen stock: VOSO4 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.003\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[13].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.003\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, exact solute row\",\n    \
+    \    \"exact_source_quote\": \"VOSO4 x 2 H2O 3.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, water row; same literal also\
+    \ occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    3.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\": 10,\n\
+    \      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"component_or_context\"\
+    : \"Allen stock: CoSO4 x 7 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[14].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.001\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, exact solute row\",\n    \
+    \    \"exact_source_quote\": \"CoSO4 x 7 H2O 1.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock table, water row; same literal also\
+    \ occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    1.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\": 10,\n\
+    \      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"component_or_context\"\
+    : \"Wolin 10x stock: Biotin\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[15].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, exact solute row\",\n\
+    \        \"exact_source_quote\": \"Biotin 20.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, water row; same literal\
+    \ also occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    20.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\":\
+    \ 1,\n      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"component_or_context\"\
+    : \"Wolin 10x stock: Folic acid\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[16].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, exact solute row\",\n\
+    \        \"exact_source_quote\": \"Folic acid 20.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, water row; same literal\
+    \ also occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    20.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\":\
+    \ 1,\n      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"component_or_context\"\
+    : \"Wolin 10x stock: Pyridoxine hydrochloride\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\",\n       \
+    \ \"source_locator\": \"Wolin 10x stock table, exact solute row\",\n        \"\
+    exact_source_quote\": \"Pyridoxine hydrochloride 100.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, water row; same literal\
+    \ also occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    100.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\"\
+    : 1,\n      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"component_or_context\"\
+    : \"Wolin 10x stock: Thiamine HCl\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[18].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, exact solute row\",\n\
+    \        \"exact_source_quote\": \"Thiamine HCl 50.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, water row; same literal\
+    \ also occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    50.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\":\
+    \ 1,\n      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"component_or_context\"\
+    : \"Wolin 10x stock: Riboflavin\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[19].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, exact solute row\",\n\
+    \        \"exact_source_quote\": \"Riboflavin 50.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, water row; same literal\
+    \ also occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    50.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\":\
+    \ 1,\n      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"component_or_context\"\
+    : \"Wolin 10x stock: Nicotinic acid\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[20].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, exact solute row\",\n\
+    \        \"exact_source_quote\": \"Nicotinic acid 50.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, water row; same literal\
+    \ also occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    50.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\":\
+    \ 1,\n      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"component_or_context\"\
+    : \"Wolin 10x stock: Calcium D-(+)-pantothenate\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[21].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, exact solute row\",\n\
+    \        \"exact_source_quote\": \"Calcium D-(+)-pantothenate 50.00 mg\",\n  \
+    \      \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, water row; same literal\
+    \ also occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    50.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\":\
+    \ 1,\n      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"component_or_context\"\
+    : \"Wolin 10x stock: Vitamin B12\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[22].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.001\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, exact solute row\",\n\
+    \        \"exact_source_quote\": \"Vitamin B12 1.00 mg\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, water row; same literal\
+    \ also occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    1.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\": 1,\n\
+    \      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"component_or_context\"\
+    : \"Wolin 10x stock: p-Aminobenzoic acid\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[23].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, exact solute row\",\n\
+    \        \"exact_source_quote\": \"p-Aminobenzoic acid 50.00 mg\",\n        \"\
+    snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, water row; same literal\
+    \ also occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    50.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\":\
+    \ 1,\n      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"component_or_context\"\
+    : \"Wolin 10x stock: (DL)-alpha-Lipoic acid\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[24].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, exact solute row\",\n\
+    \        \"exact_source_quote\": \"(DL)-alpha-Lipoic acid 50.00 mg\",\n      \
+    \  \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock table, water row; same literal\
+    \ also occurs in main and other stock\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_batch_amount_mg\": \"\
+    50.00\",\n      \"stock_water_input_mL\": 1000,\n      \"receiving_dose_mL\":\
+    \ 1,\n      \"measured_stock_final_volume_mL\": null,\n      \"final_medium_g_per_L\"\
+    : null\n    },\n    \"rationale\": \"The stored G_PER_L number is the milligram\
+    \ amount converted to grams on a nominal litre of stock water and is wrongly placed\
+    \ in the main ingredient list. Restore the source stock batch and separate receiving\
+    \ dose. Listed stock water does not independently establish final stock volume,\
+    \ so this audit does not derive exact final-medium contributions. Preserve the\
+    \ exact hydrate/stereochemical label; the borax annotation tension is assessed\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"component_or_context\"\
+    : \"Main source-declared final volume\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 heading\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1011 ml\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"source_declared_final_mL\"\
+    : 1011\n    },\n    \"rationale\": \"Add this explicit source basis to the maintained\
+    \ main preparation/evidence. The absent solutions container is a current locator,\
+    \ not an invented stored volume slot.\"\n  },\n  {\n    \"quantity_id\": \"q27\"\
+    ,\n    \"component_or_context\": \"Main water input\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main table immediately before the preparation\
+    \ paragraph\",\n        \"exact_source_quote\": \"Distilled water 1000.00 ml\"\
+    ,\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"main_water_input_mL\": 1000\n\
+    \    },\n    \"rationale\": \"Preserve the batch water independently of the source-declared\
+    \ final volume; do not turn it into 1000 g/L.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q28\",\n    \"component_or_context\": \"Allen receiving addition\",\n    \"\
+    decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\",\n        \"field_path\": \"\
+    solutions\",\n        \"stored\": null,\n        \"decision\": \"add\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main table, named stock addition\",\n\
+    \        \"exact_source_quote\": \"Allen's trace element solution 10.00 ml\",\n\
+    \        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_addition_mL_per_source_batch\"\
+    : 10,\n      \"main_declared_final_mL\": 1011\n    },\n    \"rationale\": \"No\
+    \ structured stock addition is present. Preserve the source batch dose, without\
+    \ treating it as neat-solute mass or a dose per an assumed final litre.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q29\",\n    \"component_or_context\": \"Allen stock\
+    \ water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n   \
+    \     \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\",\n     \
+    \   \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock composition table\",\n        \"\
+    exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"water_input_mL\": 1000,\n\
+    \      \"stock_final_volume_mL\": null\n    },\n    \"rationale\": \"Record the\
+    \ solvent input at stock scope; no final make-up instruction establishes a measured\
+    \ stock denominator.\"\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"component_or_context\"\
+    : \"Wolin 10x receiving addition\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main table, named stock addition\",\n\
+    \        \"exact_source_quote\": \"Wolin's vitamin solution (10x) 1.00 ml\",\n\
+    \        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock_addition_mL_per_source_batch\"\
+    : 1,\n      \"main_declared_final_mL\": 1011\n    },\n    \"rationale\": \"No\
+    \ structured stock addition is present. Preserve the source batch dose, without\
+    \ treating it as neat-solute mass or a dose per an assumed final litre.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q31\",\n    \"component_or_context\": \"Wolin 10x\
+    \ stock water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\",\n  \
+    \      \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Wolin 10x stock composition table\",\n      \
+    \  \"exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"water_input_mL\": 1000,\n\
+    \      \"stock_final_volume_mL\": null\n    },\n    \"rationale\": \"Record the\
+    \ solvent input at stock scope; no final make-up instruction establishes a measured\
+    \ stock denominator.\"\n  },\n  {\n    \"quantity_id\": \"q32\",\n    \"component_or_context\"\
+    : \"Main pH before and after sterilization\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.0,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.0,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1604\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 heading\",\n        \"exact_source_quote\"\
+    : \"Final pH: 6.0\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation, final check\",\n        \"\
+    exact_source_quote\": \"pH and adjust to 6.0, if necessary.\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"main_pH\": 6.0\n    },\n \
+    \   \"rationale\": \"Both local fields retain the main value; attach scoped source\
+    \ evidence. This is a recipe condition, not an independently demonstrated optimum.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q33\",\n    \"component_or_context\": \"Initial\
+    \ nitrogen fraction\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1604\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main preparation paragraph\",\n      \
+    \  \"exact_source_quote\": \"80% N2\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"gas\": \"N2\",\n      \"source_percent\"\
+    : 80\n    },\n    \"rationale\": \"The numerical context already occurs in both\
+    \ local preparation descriptions; attach claim-level evidence while preserving\
+    \ its stage. Normality is not silently converted to molarity.\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q34\",\n    \"component_or_context\": \"Initial carbon\
+    \ dioxide fraction\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1604\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main preparation paragraph\",\n      \
+    \  \"exact_source_quote\": \"20% CO2\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"gas\": \"CO2\",\n      \"\
+    source_percent\": 20\n    },\n    \"rationale\": \"The numerical context already\
+    \ occurs in both local preparation descriptions; attach claim-level evidence while\
+    \ preserving its stage. Normality is not silently converted to molarity.\"\n \
+    \ },\n  {\n    \"quantity_id\": \"q35\",\n    \"component_or_context\": \"Initial\
+    \ sparging duration\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1604\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main preparation paragraph\",\n      \
+    \  \"exact_source_quote\": \"30 - 45 min\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"duration_min_range\": [\n\
+    \        30,\n        45\n      ]\n    },\n    \"rationale\": \"The numerical\
+    \ context already occurs in both local preparation descriptions; attach claim-level\
+    \ evidence while preserving its stage. Normality is not silently converted to\
+    \ molarity.\"\n  },\n  {\n    \"quantity_id\": \"q36\",\n    \"component_or_context\"\
+    : \"Ferrous-chloride acid stock strength\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1604\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main preparation paragraph\",\n      \
+    \  \"exact_source_quote\": \"0.1 N HCl\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"normality_N\": 0.1\n    },\n\
+    \    \"rationale\": \"The numerical context already occurs in both local preparation\
+    \ descriptions; attach claim-level evidence while preserving its stage. Normality\
+    \ is not silently converted to molarity.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q37\",\n    \"component_or_context\": \"Separate stock nitrogen atmosphere\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\",\n      \
+    \  \"field_path\": \"preparation_steps[0].description\",\n        \"stored\":\
+    \ \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1604\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main preparation paragraph\",\n      \
+    \  \"exact_source_quote\": \"100% N2\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"gas\": \"N2\",\n      \"source_percent\"\
+    : 100\n    },\n    \"rationale\": \"The numerical context already occurs in both\
+    \ local preparation descriptions; attach claim-level evidence while preserving\
+    \ its stage. Normality is not silently converted to molarity.\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q38\",\n    \"component_or_context\": \"Ferrous-chloride\
+    \ acid solvent dose\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"not_quantified\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"not_quantified\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1604\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation, separate ferrous stock\",\n\
+    \        \"exact_source_quote\": \"ferrous chloride (dissolved in 0.1 N HCl)\"\
+    ,\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"acid_volume_mL\": null\n \
+    \   },\n    \"rationale\": \"The acid strength is explicit but its solvent volume\
+    \ is not. Do not invent this contribution or revise the collection-declared main\
+    \ final volume from it.\"\n  },\n  {\n    \"quantity_id\": \"q39\",\n    \"component_or_context\"\
+    : \"Allen stock pH\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Adjust pH of final solution to 2 with 1 N HCl.\",\n        \"decision\": \"\
+    correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Adjust pH of final solution to 2 with 1 N HCl.\",\n        \"decision\": \"\
+    correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen trace element subsection, last instruction\"\
+    ,\n        \"exact_source_quote\": \"Adjust pH of final solution to 2 with 1 N\
+    \ HCl.\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock\": \"Allen trace element\
+    \ solution\",\n      \"pH\": 2,\n      \"main_pH\": 6.0\n    },\n    \"rationale\"\
+    : \"The literal instruction is present but at the wrong root scope. Move it to\
+    \ Allen stock preparation; do not alter the main recipe to pH 2.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q40\",\n    \"component_or_context\": \"Allen adjustment\
+    \ acid strength\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Adjust pH of final solution to 2 with 1 N HCl.\",\n        \"decision\": \"\
+    correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Adjust pH of final solution to 2 with 1 N HCl.\",\n        \"decision\": \"\
+    correct\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock preparation\",\n        \"exact_source_quote\"\
+    : \"Adjust pH of final solution to 2 with 1 N HCl.\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"stock\": \"Allen\",\n    \
+    \  \"acid_normality_N\": 1,\n      \"acid_dose_mL\": null\n    },\n    \"rationale\"\
+    : \"Restore stock scope for the already preserved 1 N reagent. Its dose is not\
+    \ specified and is not converted to molarity.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q41\",\n    \"component_or_context\": \"Allen adjustment acid dose\",\n  \
+    \  \"decision\": \"not_quantified\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\",\n       \
+    \ \"field_path\": \"preparation_steps[1].description\",\n        \"stored\": \"\
+    Adjust pH of final solution to 2 with 1 N HCl.\",\n        \"decision\": \"not_quantified\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Adjust pH of final solution to 2 with 1 N HCl.\",\n        \"decision\": \"\
+    not_quantified\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Allen stock preparation\",\n        \"exact_source_quote\"\
+    : \"Adjust pH of final solution to 2 with 1 N HCl.\",\n        \"snapshot_sha256\"\
+    : \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\",\n    \
+    \    \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"acid_dose_mL\": null\n   \
+    \ },\n    \"rationale\": \"Titration to the stock pH has no fixed source dose.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q42\",\n    \"component_or_context\": \"Wolin\
+    \ 10x designation\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz1604\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Main stock name and repeated stock heading\"\
+    ,\n        \"exact_source_quote\": \"Wolin's vitamin solution (10x)\",\n     \
+    \   \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"designation\": \"10x\",\n\
+    \      \"receiving_dose_mL\": 1\n    },\n    \"rationale\": \"Preserve the source\
+    \ name together with its printed composition; do not infer a tenfold receiving\
+    \ dose from the name.\"\n  },\n  {\n    \"quantity_id\": \"q43\",\n    \"component_or_context\"\
+    : \"Autoclave numerical cycle\",\n    \"decision\": \"not_quantified\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ATHALASSOTOGA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"not_quantified\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/athalassotoga_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"First dissolve ferric citrate in water by heating and adjust to pH 6.0, then\
+    \ add other medium ingredients except ferrous chloride, vitamins and cysteine.\
+    \ Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N\
+    \ HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\
+    \ solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust\
+    \ to 6.0, if necessary.\",\n        \"decision\": \"not_quantified\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1604\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1604.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation\",\n        \"exact_source_quote\"\
+    : \"or serum vials and autoclave.\",\n        \"snapshot_sha256\": \"32a7b6cd942adf57d44035cf77c224df0bc678e60d5fc96353f5ec4cae093e2c\"\
+    ,\n        \"parsed_text_sha256\": \"7f02cf279684ff7a973575b2ba5b4ac89be5edfa90dbadb75b74a5f815d2dc71\"\
+    ,\n        \"accessed_at\": \"2026-10-21T18:05:05.309599Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"temperature_C\": null,\n \
+    \     \"duration_min\": null\n    },\n    \"rationale\": \"The source and local\
+    \ prose specify autoclaving without a numerical cycle; do not import a cycle from\
+    \ the parent medium or common practice.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '24 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 24/25
+    primary and 22/25 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131366
+  - chebi144421
+  - chebi15940
+  - chebi15956
+  - chebi16494
+  - chebi17015
+  - chebi176843
+  - chebi27470
+  - chebi30753
+  - chebi30961
+  - chebi31345
+  - chebi31795
+  - chebi32312
+  - chebi49105
+  - chebi62946
+  - chebi63036
+  - chebi75213
+  - chebi86158
+  - chebi86249
+  - chebi86318
+  - chebi86368
+  - chebi87009
+  - chebi91244
+  - chebi91248
+  details: 'Instance coverage on a 0–100 percent scale, denominator 25: primary 96.00%;
+    secondary 88.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 15 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact accession and generated-input ownership
+  outcome: supported
+  summary: CultureMech:001085 is the generated DSMZ 1604 record with one maintained
+    athalassotoga_medium.yaml owner. Main and named stock identities are established
+    by exact primary sections; the source ferric citrate is not ferric ammonium citrate.
+    No strain-specific growth assertion or internal variant relationship is present.
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - primary
+- assessment_id: stock-scope
+  area: representation
+  topic: Main ingredients versus stock compositions
+  outcome: concern
+  summary: All seventeen Allen/Wolin constituents are flattened as direct main G_PER_L
+    values in both layers; the two receiving doses and the three separate water contexts
+    are unstructured. The first eight solute rates agree with the explicit source-declared
+    denominator.
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - allen-parent
+  - vitamin-parent
+  - quantity-inventory
+- assessment_id: preparation
+  area: completeness
+  topic: Preparation stage and retained numerical context
+  outcome: concern
+  summary: The first root step retains main pH, gas fractions, sparging interval,
+    0.1 N acid and separately treated additions. The second root step is the Allen-stock
+    pH 2 instruction and is mis-scoped. Neither source supplies a numerical autoclave
+    cycle or fixed acid-titration dose.
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - quantity-inventory
+- assessment_id: forms
+  area: grounding
+  topic: Exact forms versus ontology annotation limits
+  outcome: concern
+  summary: Most explicit hydrates match their resolved terms. Calcium D-(+)-pantothenate
+    is explicitly D-specific, consistent with CHEBI:31345; generic B12 remains a class.
+    Borax CHEBI:131366 has a matching label/CAS but captured formula 10H2O.H4B4O9.2Na
+    and mass 417.401 differ from literal source Na2B4O7 x 10 H2O. Treat this as unresolved
+    annotation/form correspondence, not a proven wrong ID or license to invent a replacement.
+    F6129 supplier form remains unavailable.
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - primary
+  - chebi131366
+  - chebi31345
+  - chebi176843
+  - chebi144421
+  - sigmaF6129-attempt
+- assessment_id: classification
+  area: scope
+  topic: Composition, physical state and growth scope
+  outcome: supported
+  summary: Yeast extract supports a complex, semi-defined liquid formulation. The
+    bacterial category and generic cultivation application do not establish a new
+    taxon-level growth claim. No source cultivation temperature or high-metal flag
+    is asserted locally; no phenotype is inferred from title or recipe.
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained repair and current writer limits
+  outcome: supported
+  summary: The normalized owner contains the same flattened ingredients and stock-pH
+    root step, so editing only the generated record would be transient. Preserve permanent
+    ID and historical events; attach evidence and repair source stages in the owner
+    before regeneration. A prior amount-review report is a lead only; no attached
+    ingredient evidence exists in either local layer.
+  target_ids:
+  - CultureMech:001085
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-0
+  - writer-1
+  - bound-context
+findings:
+- finding_id: f1
+  issue_key: culturemech.001085.flattened-stock-formula
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Seventeen stock constituents are represented as direct medium concentrations
+  description: Both layers place seven Allen and ten Wolin composition rows into the
+    main list at nominal stock-strength values. The primary instead adds 10 mL Allen
+    stock and 1 mL Wolin 10x stock to the declared 1011 mL recipe. This changes the
+    represented formulation; the eight actual main-solute rates are separately supported.
+  target_ids:
+  - CultureMech:001085
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/athalassotoga_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.001085.stock-ph-at-root
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Allen-stock pH is presented as a main preparation step
+  description: preparation_steps[1] in target and owner says final solution pH 2 using
+    1 N HCl after main preparation. The exact source locates this instruction in Allen
+    trace stock; main pH remains 6.0.
+  target_ids:
+  - CultureMech:001085
+  field_paths:
+  - preparation_steps[1]
+  - ph_value
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - allen-parent
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/athalassotoga_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.001085.borax-annotation-tension
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Borax label match does not resolve the captured formula tension
+  description: The borax primary term resolves to its matching label and CAS, but
+    its captured formula/mass/structure do not directly match the literal source hydrate
+    formula. Supplier-specific ferric citrate form is also unverified; neither uncertainty
+    alone proves a wrong current identifier.
+  target_ids:
+  - CultureMech:001085
+  field_paths:
+  - ingredients[9].term
+  - ingredients[0].term
+  evidence_ids:
+  - primary
+  - chebi131366
+  - chebi144421
+  - sigmaF6129-attempt
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/athalassotoga_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore two explicitly scoped stocks and their printed batch inputs,
+    water and receiving doses in the maintained owner; remove the flattened direct
+    stock contributions or derive final rates only when their full denominators are
+    established. Preserve all main rates and exact supplied forms with narrow source
+    evidence.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001085
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/athalassotoga_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Move the pH 2 and 1 N HCl instruction to the Allen stock; preserve
+    the main pH 6.0 preparation and existing separate-stock handling. Do not invent
+    acid doses or a sterilization cycle.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001085
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/athalassotoga_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Retain literal source forms and document the ontology annotation discrepancy;
+    seek exact authoritative form correspondence before choosing any replacement.
+    Do not substitute ferric ammonium citrate or relabel the explicitly D-pantothenate
+    as DL.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001085
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/athalassotoga_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Both bounded current MediaDive 1604 attempts returned HTTP 503. The complete primary
+  supports the current recipe comparison; these failures do not authenticate historical
+  provider values or establish formula absence.
+- The official F6129 supplier request timed out. Ferric citrate is explicitly named
+  by DSMZ and matches the local preferred identity; exact product hydration/composition
+  remains unverified, without proving the current CHEBI identifier wrong.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-033
+- generated-medium
+```

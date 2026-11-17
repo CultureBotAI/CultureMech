@@ -1,0 +1,2915 @@
+# Source and formulation review: aureobacterium_terregens_medium (CultureMech:004580)
+
+- Review: 20261021T182652Z-culturemech-004580-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T18:20:18Z
+- Finished UTC: 2026-10-21T18:26:52Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 226 supports seven basal batch masses and a separate post-sterilization acetylacetone-in-ethanol addition. The target and KOMODO owner omit that preparation, whereas the DSMZ owner retains it and seven historical amount claims. Those claims match local derivative plans but their original API response remains unrecovered. Generic ammonium citrate does not establish triammonium specificity.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 326; batch 033 item 6 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-two task batches contain 320 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 323 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:004580 | data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml | generated | aureobacterium_terregens_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:004580 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:004580 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-033/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch033/326/strict.tsv |
+| validate-terms | passed | True | CultureMech:004580 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:004580 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:004580 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Current owner and historical derivative correspondence | passed | True | CultureMech:004580 | Seven current DSM owner evidence objects match decoded historical plan rows and stated source metadata. Seven KOMODO withholding decisions are separately preserved; no attached KOMODO amount evidence is claimed. |
+| Original source authentication for seven historical amount claims | unavailable | True | CultureMech:004580 | Original API response ec46b38683e27e2491aeb50bd5eb25b021daf90f10316d00883461751a11a9d0 was not recovered in the bounded source search; current API attempts returned 503. Derivative equality cannot authenticate that raw response. |
+| Exact source content access: mediadive226api | unavailable | False | CultureMech:004580 | Optional current mediadive226api retrieval did not return usable formulation content. Exact primary/catalog evidence is available; original historical-response authentication is a separate required unavailable check. |
+| Exact source content access: mediadive226api_retry | unavailable | False | CultureMech:004580 | Optional current mediadive226api_retry retrieval did not return usable formulation content. Exact primary/catalog evidence is available; original historical-response authentication is a separate required unavailable check. |
+| Exact source content access: komodo226detail | unavailable | False | CultureMech:004580 | Optional current komodo226detail retrieval did not return usable formulation content. Exact primary/catalog evidence is available; original historical-response authentication is a separate required unavailable check. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:004580.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:004580.
+
+15 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "ingredient_or_context": "Casamino acids",
+    "field_path": "ingredients[0].concentration",
+    "local": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 2,
+    "source_unit": "g",
+    "source_stage": "Basal batch before acetylacetone addition",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Basal table",
+        "exact_source_quote": "Casamino acids 2.0 g",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      }
+    ],
+    "arithmetic_and_scope": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre.",
+    "historical_context": {
+      "evidence_id": "historical-claims",
+      "owner_evidence_path": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[0].evidence[0]",
+      "decoded_provider_fields": {
+        "recipe_order": 1,
+        "compound": "Casamino acids",
+        "compound_id": 101,
+        "amount": 2,
+        "unit": "g",
+        "g_l": 2,
+        "optional": 0
+      },
+      "reported_provider_volume_ml": 1000,
+      "original_raw_response_authenticated": false,
+      "limit": "Ancillary mmol_l values in the historical excerpt are retained as unverified derivative metadata, not independently supported source concentrations or replacements."
+    }
+  },
+  {
+    "quantity_id": "q2",
+    "ingredient_or_context": "Yeast extract",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "g",
+    "source_stage": "Basal batch before acetylacetone addition",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Basal table",
+        "exact_source_quote": "Yeast extract 1.0 g",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      }
+    ],
+    "arithmetic_and_scope": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre.",
+    "historical_context": {
+      "evidence_id": "historical-claims",
+      "owner_evidence_path": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[1].evidence[0]",
+      "decoded_provider_fields": {
+        "recipe_order": 2,
+        "compound": "Yeast extract",
+        "compound_id": 16,
+        "amount": 1,
+        "unit": "g",
+        "g_l": 1,
+        "optional": 0
+      },
+      "reported_provider_volume_ml": 1000,
+      "original_raw_response_authenticated": false,
+      "limit": "Ancillary mmol_l values in the historical excerpt are retained as unverified derivative metadata, not independently supported source concentrations or replacements."
+    }
+  },
+  {
+    "quantity_id": "q3",
+    "ingredient_or_context": "Glucose",
+    "field_path": "ingredients[2].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "g",
+    "source_stage": "Basal batch before acetylacetone addition",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Basal table",
+        "exact_source_quote": "Glucose 1.0 g",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      }
+    ],
+    "arithmetic_and_scope": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre.",
+    "historical_context": {
+      "evidence_id": "historical-claims",
+      "owner_evidence_path": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[2].evidence[0]",
+      "decoded_provider_fields": {
+        "recipe_order": 3,
+        "compound": "Glucose",
+        "compound_id": 5,
+        "amount": 1,
+        "unit": "g",
+        "g_l": 1,
+        "mmol_l": 5.55062,
+        "optional": 0
+      },
+      "reported_provider_volume_ml": 1000,
+      "original_raw_response_authenticated": false,
+      "limit": "Ancillary mmol_l values in the historical excerpt are retained as unverified derivative metadata, not independently supported source concentrations or replacements."
+    }
+  },
+  {
+    "quantity_id": "q4",
+    "ingredient_or_context": "Generic ammonium citrate",
+    "field_path": "ingredients[3].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "g",
+    "source_stage": "Basal batch before acetylacetone addition",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Basal table",
+        "exact_source_quote": "(NH4) citrate 1.0 g",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      }
+    ],
+    "arithmetic_and_scope": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre.",
+    "historical_context": {
+      "evidence_id": "historical-claims",
+      "owner_evidence_path": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[3].evidence[0]",
+      "decoded_provider_fields": {
+        "recipe_order": 4,
+        "compound": "(NH4) citrate",
+        "compound_id": 104,
+        "amount": 1,
+        "unit": "g",
+        "g_l": 1,
+        "optional": 0
+      },
+      "reported_provider_volume_ml": 1000,
+      "original_raw_response_authenticated": false,
+      "limit": "Ancillary mmol_l values in the historical excerpt are retained as unverified derivative metadata, not independently supported source concentrations or replacements."
+    }
+  },
+  {
+    "quantity_id": "q5",
+    "ingredient_or_context": "Dipotassium hydrogen phosphate",
+    "field_path": "ingredients[4].concentration",
+    "local": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 2,
+    "source_unit": "g",
+    "source_stage": "Basal batch before acetylacetone addition",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Basal table",
+        "exact_source_quote": "K2HPO4 2.0 g",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      }
+    ],
+    "arithmetic_and_scope": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre.",
+    "historical_context": {
+      "evidence_id": "historical-claims",
+      "owner_evidence_path": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[4].evidence[0]",
+      "decoded_provider_fields": {
+        "recipe_order": 5,
+        "compound": "K2HPO4",
+        "compound_id": 10,
+        "amount": 2,
+        "unit": "g",
+        "g_l": 2,
+        "mmol_l": 11.4826,
+        "optional": 0
+      },
+      "reported_provider_volume_ml": 1000,
+      "original_raw_response_authenticated": false,
+      "limit": "Ancillary mmol_l values in the historical excerpt are retained as unverified derivative metadata, not independently supported source concentrations or replacements."
+    }
+  },
+  {
+    "quantity_id": "q6",
+    "ingredient_or_context": "Magnesium sulfate heptahydrate",
+    "field_path": "ingredients[5].concentration",
+    "local": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.5,
+    "source_unit": "g",
+    "source_stage": "Basal batch before acetylacetone addition",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Basal table",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.5 g",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      }
+    ],
+    "arithmetic_and_scope": "The numeric gram amount agrees with the primary batch mass. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre.",
+    "historical_context": {
+      "evidence_id": "historical-claims",
+      "owner_evidence_path": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[5].evidence[0]",
+      "decoded_provider_fields": {
+        "recipe_order": 6,
+        "compound": "MgSO4 x 7 H2O",
+        "compound_id": 8,
+        "amount": 0.5,
+        "unit": "g",
+        "g_l": 0.5,
+        "mmol_l": 2.02859,
+        "optional": 0
+      },
+      "reported_provider_volume_ml": 1000,
+      "original_raw_response_authenticated": false,
+      "limit": "Ancillary mmol_l values in the historical excerpt are retained as unverified derivative metadata, not independently supported source concentrations or replacements."
+    }
+  },
+  {
+    "quantity_id": "q7",
+    "ingredient_or_context": "Iron trichloride hexahydrate",
+    "field_path": "ingredients[6].concentration",
+    "local": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 10,
+    "source_unit": "mg",
+    "source_stage": "Basal batch before acetylacetone addition",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Basal table",
+        "exact_source_quote": "FeCl3 x 6 H2O 10.0 mg",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "10 mg = 0.010 g per basal batch; the numeric milligram-to-gram conversion agrees. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "10 mg = 0.010 g per basal batch; the numeric milligram-to-gram conversion agrees. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "10 mg = 0.010 g per basal batch; the numeric milligram-to-gram conversion agrees. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre."
+      }
+    ],
+    "arithmetic_and_scope": "10 mg = 0.010 g per basal batch; the numeric milligram-to-gram conversion agrees. The source lists 1000 mL water, not measured final volume. The DSM owner has an attached historical provider G_PER_L claim whose decoded local derivative matches but whose original response is unrecovered; the other two layers have no amount attachments. Do not label any layer verified or silently replace the provider-declared basis with a primary-derived final litre.",
+    "historical_context": {
+      "evidence_id": "historical-claims",
+      "owner_evidence_path": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[6].evidence[0]",
+      "decoded_provider_fields": {
+        "recipe_order": 7,
+        "compound": "FeCl3 x 6 H2O",
+        "compound_id": 82,
+        "amount": 10,
+        "unit": "mg",
+        "g_l": 0.01,
+        "mmol_l": 0.0369965,
+        "optional": 0
+      },
+      "reported_provider_volume_ml": 1000,
+      "original_raw_response_authenticated": false,
+      "limit": "Ancillary mmol_l values in the historical excerpt are retained as unverified derivative metadata, not independently supported source concentrations or replacements."
+    }
+  },
+  {
+    "quantity_id": "q8",
+    "ingredient_or_context": "Basal water input",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": 1000,
+    "source_unit": "ml",
+    "source_stage": "Basal batch",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Basal table",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add the literal 1000 mL input water to the proper basal preparation stage. The DSM preparation container is present and must be retained; target and KOMODO preparation are absent. Water input alone does not establish final volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add the literal 1000 mL input water to the proper basal preparation stage. The DSM preparation container is present and must be retained; target and KOMODO preparation are absent. Water input alone does not establish final volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "ADJUST_PH",
+            "description": "Adjust pH to 7.0."
+          },
+          {
+            "step_number": 2,
+            "action": "MIX",
+            "description": "After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone in ethanol."
+          }
+        ],
+        "decision": "add",
+        "rationale": "Add the literal 1000 mL input water to the proper basal preparation stage. The DSM preparation container is present and must be retained; target and KOMODO preparation are absent. Water input alone does not establish final volume."
+      }
+    ],
+    "arithmetic_and_scope": "Add the literal 1000 mL input water to the proper basal preparation stage. The DSM preparation container is present and must be retained; target and KOMODO preparation are absent. Water input alone does not establish final volume."
+  },
+  {
+    "quantity_id": "q9",
+    "ingredient_or_context": "Main pH field",
+    "field_path": "ph_value",
+    "local": 7.0,
+    "source_amount": 7,
+    "source_unit": "pH",
+    "source_stage": "Basal preparation",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "pH instruction",
+        "exact_source_quote": "Adjust pH to 7.0.",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": 7.0,
+        "decision": "evidence_only",
+        "rationale": "All three ph_value fields agree with the primary pH 7.0 but do not carry matching attached claim evidence. This is a preparation setpoint, not an organism optimum."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0,
+        "decision": "evidence_only",
+        "rationale": "All three ph_value fields agree with the primary pH 7.0 but do not carry matching attached claim evidence. This is a preparation setpoint, not an organism optimum."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0,
+        "decision": "evidence_only",
+        "rationale": "All three ph_value fields agree with the primary pH 7.0 but do not carry matching attached claim evidence. This is a preparation setpoint, not an organism optimum."
+      }
+    ],
+    "arithmetic_and_scope": "All three ph_value fields agree with the primary pH 7.0 but do not carry matching attached claim evidence. This is a preparation setpoint, not an organism optimum."
+  },
+  {
+    "quantity_id": "q10",
+    "ingredient_or_context": "pH in preparation",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": 7,
+    "source_unit": "pH",
+    "source_stage": "Basal preparation",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "pH instruction",
+        "exact_source_quote": "Adjust pH to 7.0.",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain the existing DSMZ pH instruction and attach evidence; restore it in the two layers that omit preparation."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain the existing DSMZ pH instruction and attach evidence; restore it in the two layers that omit preparation."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust pH to 7.0.",
+        "decision": "evidence_only",
+        "rationale": "Retain the existing DSMZ pH instruction and attach evidence; restore it in the two layers that omit preparation."
+      }
+    ],
+    "arithmetic_and_scope": "The distinct local scalar and preparation occurrences are each covered."
+  },
+  {
+    "quantity_id": "q11",
+    "ingredient_or_context": "Acetylacetone stock receiving dose",
+    "field_path": "solutions",
+    "local": null,
+    "source_amount": 1,
+    "source_unit": "ml/l",
+    "source_stage": "Aseptic addition after basal sterilization",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Final paragraph",
+        "exact_source_quote": "After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone in ethanol.",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add a distinct acetylacetone-in-ethanol stock representation with its explicit receiving dose and nominal strength. All local solutions fields are absent. The DSM owner already preserves this instruction in prose; it must not be treated as missing there. No w/v, w/w or v/v basis, density or neat-solute amount is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add a distinct acetylacetone-in-ethanol stock representation with its explicit receiving dose and nominal strength. All local solutions fields are absent. The DSM owner already preserves this instruction in prose; it must not be treated as missing there. No w/v, w/w or v/v basis, density or neat-solute amount is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add a distinct acetylacetone-in-ethanol stock representation with its explicit receiving dose and nominal strength. All local solutions fields are absent. The DSM owner already preserves this instruction in prose; it must not be treated as missing there. No w/v, w/w or v/v basis, density or neat-solute amount is inferred."
+      }
+    ],
+    "arithmetic_and_scope": "Add a distinct acetylacetone-in-ethanol stock representation with its explicit receiving dose and nominal strength. All local solutions fields are absent. The DSM owner already preserves this instruction in prose; it must not be treated as missing there. No w/v, w/w or v/v basis, density or neat-solute amount is inferred."
+  },
+  {
+    "quantity_id": "q12",
+    "ingredient_or_context": "Acetylacetone stock nominal strength",
+    "field_path": "solutions",
+    "local": null,
+    "source_amount": 10,
+    "source_unit": "% (basis unspecified)",
+    "source_stage": "Aseptic addition after basal sterilization",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Final paragraph",
+        "exact_source_quote": "After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone in ethanol.",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add a distinct acetylacetone-in-ethanol stock representation with its explicit receiving dose and nominal strength. All local solutions fields are absent. The DSM owner already preserves this instruction in prose; it must not be treated as missing there. No w/v, w/w or v/v basis, density or neat-solute amount is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add a distinct acetylacetone-in-ethanol stock representation with its explicit receiving dose and nominal strength. All local solutions fields are absent. The DSM owner already preserves this instruction in prose; it must not be treated as missing there. No w/v, w/w or v/v basis, density or neat-solute amount is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add a distinct acetylacetone-in-ethanol stock representation with its explicit receiving dose and nominal strength. All local solutions fields are absent. The DSM owner already preserves this instruction in prose; it must not be treated as missing there. No w/v, w/w or v/v basis, density or neat-solute amount is inferred."
+      }
+    ],
+    "arithmetic_and_scope": "Add a distinct acetylacetone-in-ethanol stock representation with its explicit receiving dose and nominal strength. All local solutions fields are absent. The DSM owner already preserves this instruction in prose; it must not be treated as missing there. No w/v, w/w or v/v basis, density or neat-solute amount is inferred."
+  },
+  {
+    "quantity_id": "q13",
+    "ingredient_or_context": "Acetylacetone receiving dose in retained preparation",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": 1,
+    "source_unit": "ml/l",
+    "source_stage": "Aseptic addition after basal sterilization",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Final paragraph",
+        "exact_source_quote": "After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone in ethanol.",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The DSMZ owner retains the exact post-sterilization instruction, with no attached preparation evidence. Target and KOMODO owner omit it. This statement does not specify how the basal medium or stock is sterilized."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The DSMZ owner retains the exact post-sterilization instruction, with no attached preparation evidence. Target and KOMODO owner omit it. This statement does not specify how the basal medium or stock is sterilized."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone in ethanol.",
+        "decision": "evidence_only",
+        "rationale": "The DSMZ owner retains the exact post-sterilization instruction, with no attached preparation evidence. Target and KOMODO owner omit it. This statement does not specify how the basal medium or stock is sterilized."
+      }
+    ],
+    "arithmetic_and_scope": "The DSMZ owner retains the exact post-sterilization instruction, with no attached preparation evidence. Target and KOMODO owner omit it. This statement does not specify how the basal medium or stock is sterilized."
+  },
+  {
+    "quantity_id": "q14",
+    "ingredient_or_context": "Acetylacetone strength in retained preparation",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": 10,
+    "source_unit": "% (basis unspecified)",
+    "source_stage": "Aseptic addition after basal sterilization",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Final paragraph",
+        "exact_source_quote": "After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone in ethanol.",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The DSMZ owner retains the exact post-sterilization instruction, with no attached preparation evidence. Target and KOMODO owner omit it. This statement does not specify how the basal medium or stock is sterilized."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The DSMZ owner retains the exact post-sterilization instruction, with no attached preparation evidence. Target and KOMODO owner omit it. This statement does not specify how the basal medium or stock is sterilized."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone in ethanol.",
+        "decision": "evidence_only",
+        "rationale": "The DSMZ owner retains the exact post-sterilization instruction, with no attached preparation evidence. Target and KOMODO owner omit it. This statement does not specify how the basal medium or stock is sterilized."
+      }
+    ],
+    "arithmetic_and_scope": "The DSMZ owner retains the exact post-sterilization instruction, with no attached preparation evidence. Target and KOMODO owner omit it. This statement does not specify how the basal medium or stock is sterilized."
+  },
+  {
+    "quantity_id": "q15",
+    "ingredient_or_context": "Unresolved final volume",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": null,
+    "source_unit": "measured final volume not supplied",
+    "source_stage": "Basal and supplemented medium",
+    "primary_source_evidence_id": "dsmz226",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "dsmz226",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf",
+        "source_locator": "Basal table",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074",
+        "parsed_text_sha256": "39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "unsupported",
+        "rationale": "The source specifies 1000 mL basal water and a later 1 mL/L stock addition, not a measured final batch volume. Do not assert 1001 mL as a measured denominator or derive acetylacetone/ethanol mass from the unqualified 10% label."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "unsupported",
+        "rationale": "The source specifies 1000 mL basal water and a later 1 mL/L stock addition, not a measured final batch volume. Do not assert 1001 mL as a measured denominator or derive acetylacetone/ethanol mass from the unqualified 10% label."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "ADJUST_PH",
+            "description": "Adjust pH to 7.0."
+          },
+          {
+            "step_number": 2,
+            "action": "MIX",
+            "description": "After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone in ethanol."
+          }
+        ],
+        "decision": "unsupported",
+        "rationale": "The source specifies 1000 mL basal water and a later 1 mL/L stock addition, not a measured final batch volume. Do not assert 1001 mL as a measured denominator or derive acetylacetone/ethanol mass from the unqualified 10% label."
+      }
+    ],
+    "arithmetic_and_scope": "The source specifies 1000 mL basal water and a later 1 mL/L stock addition, not a measured final batch volume. Do not assert 1001 mL as a measured denominator or derive acetylacetone/ethanol mass from the unqualified 10% label."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:004580.
+
+5 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 5/7 primary and 5/7 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 7: primary 71.43%; secondary 71.43%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:004580.
+
+27 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact DSMZ/KOMODO 226 and maintained ownership
+
+identity: supported. Targets: CultureMech:004580.
+
+CultureMech:004580 merges KOMODO 226 and DSMZ 226, whose catalog accession and primary title agree. Both maintained owner paths and reciprocal SOURCE_DUPLICATE links resolve. Identity does not prove every local quantity or omitted supplement correct; formula fingerprints alone are insufficient.
+
+### Basal amounts and source-only supplementation
+
+consistency: concern. Targets: CultureMech:004580.
+
+All 21 current local concentration occurrences are covered. The seven numerical masses match primary batch amounts, including 10 mg iron salt = 0.01 g, but a measured final-litre basis is not established. The late 1 mL/L acetylacetone stock dose and unqualified 10% strength remain separate. Historical provider concentration and ancillary mmol_l fields are retained only as unverified derivative metadata.
+
+### Preserved DSM procedure versus omitted target/KOMODO procedure
+
+completeness: concern. Targets: CultureMech:004580.
+
+The DSMZ owner already retains pH 7 and the aseptic acetylacetone-in-ethanol addition after sterilization. The target and KOMODO owner omit both preparation steps and all layers omit a structured stock representation. The primary does not specify autoclaving, temperature, duration, filtration, stock sterilization method or an explicit percent basis; none is supplied from convention.
+
+### Salt specificity and chemical forms
+
+grounding: concern. Targets: CultureMech:004580.
+
+Source (NH4) citrate is generic, whereas CHEBI:63037 has three deprotonated citrate carboxyl groups and three ammonium counterions. That triammonium specificity is not established by the source; this is unsupported narrowing, not proof of a different ammonium salt. Generic glucose, magnesium sulfate heptahydrate, iron trichloride hexahydrate and dipotassium hydrogen phosphate agree at the named form level. Casamino acids and yeast extract remain complex materials.
+
+### Seven existing DSM claims versus distinct KOMODO withholding
+
+evidence: concern. Targets: CultureMech:004580.
+
+The DSM owner has seven attached Oct 7 amount claims; target and KOMODO owner have none. Their explanations bound support to provider-declared concentrations and explicitly reject measured final-volume and secondary-grounding inferences. Decoded historical plan/report correspondence is preserved, but unavailable original API bytes make authentication partial. The separate KOMODO plan withheld support because acetylacetone was omitted; it did not add that supplement or attach the DSM claims.
+
+### Complex liquid formulation and growth limits
+
+scope: supported. Targets: CultureMech:004580.
+
+LIQUID and COMPLEX/UNDEFINED agree with the primary and complex nutrients; no optional agar branch is printed. The catalog Aerobic=false flag is attributed metadata, not demonstrated physiology. There is no asserted organism/strain, DOI/PMID, experimental growth claim, high_metal flag or KG match; none is inferred from the medium name.
+
+### Reconciliation before regeneration
+
+provenance: concern. Targets: CultureMech:004580.
+
+The generated merge event predates the DSM owner Oct 7 concentration-evidence event. Retain that existing owner evidence and procedure while resolving their bounded source limits; reconcile the incomplete KOMODO representation before regeneration. Current resolver skips populated records, so rerunning it is not a demonstrated repair. Invalid or timezone-naive historical timestamps need append-only clarification rather than replacement.
+
+## Findings
+
+### f1: Required late supplementation is absent from target and KOMODO preparation
+
+major / open / confirmed; issue key: cm004580-acetylacetone-preparation-omission.
+
+The current primary requires an aseptic 1 mL/L addition of 10% acetylacetone in ethanol after sterilization. The DSM owner already retains this instruction, but target and KOMODO owner omit it and no layer structures the stock. The historical KOMODO plan explicitly withheld concentration support for this omission; it is not evidence that the missing supplement was added.
+
+### f2: Generic ammonium citrate does not establish triammonium identity
+
+major / open / confirmed; issue key: cm004580-ammonium-citrate-specificity.
+
+The primary names (NH4) citrate at 1 g; CHEBI:63037 specifically encodes fully deprotonated citrate with three ammonium counterions. Both current primary and secondary fields assert that specificity in all local layers. Source evidence is insufficient to confirm it, but does not establish a replacement salt.
+
+### f3: Historical provider concentrations remain unauthenticated and incomplete in the merge
+
+major / open / confirmed; issue key: cm004580-amount-basis-evidence.
+
+Seven DSM amount attachments refer to an unrecovered original API payload. Local derivative matches retain their provenance but cannot verify the response hash, provider-declared final basis or source-version completeness. The target and KOMODO owner lack those attachments, and the primary alone supplies batch masses with water input rather than a measured final litre. No numeric basal mass discrepancy is asserted.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Retain and source-link the DSM owner instruction, reconcile the missing KOMODO procedure, and represent the separate receiving stock without inventing a percentage basis or sterilization cycle. Regenerate the merged record after maintained-input reconciliation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Resolve the exact supplied ammonium-citrate form with source-specific evidence, preserving the 1 g batch mass. Retain uncertainty rather than guessing a replacement term or salt stoichiometry.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Recover and authenticate the exact historical response if possible, or attach newly inspected primary support explicitly scoped to batch amounts while preserving prior claims and their limits. Reconcile the owner evidence and missing supplement before regeneration; do not silently promote derivative values to verified concentrations.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch033/326/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-033/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch033/326/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml:1:id: CultureMech:004580<br>./data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml:1:id: CultureMech:004580<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch033/source-preflight-bound/326/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 12 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| dsmz226 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf; Page 1 complete basal table, pH and post-sterilization paragraph; image read | supports | The primary specifies seven masses plus 1000 mL water, then 1 mL/L of 10% acetylacetone in ethanol. It does not specify the percentage basis, numeric sterilization cycle or measured final volume. |
+| komodo-identity | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact raw accession 226 row; header read separately | supports | The row links KOMODO 226 to DSMZ 226 and reports pH 7, complex=true and aerobic=false. These catalog flags are distinct from direct growth or physiological evidence. |
+| komodo-header | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact raw catalog header | supports | The catalog explicitly distinguishes complexity, aerobic status and submedium status. |
+| historical-claims | /private/tmp/culturemech-review-work-batch033/326/historical-claim-recheck.json; Seven exact current DSM owner evidence objects and local plan records/locators; distinct KOMODO withholding decisions | context_only | All seven DSM evidence snippets decode to the corresponding pinned historical plan objects, with matching explanations, reported access time and original-response hash. The actual original API bytes remain unavailable. The KOMODO plan withheld seven claims for omitted acetylacetone; neither the target nor KOMODO owner has those amount attachments. |
+| historical-plan-0 | reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/plan.json; $.records[4]; exact record only, not other plan entries | context_only | Historical derivative source context preserves amounts, source-only water/preparation and the stated provider denominator. It does not authenticate the cited raw API response or establish a measured final volume. |
+| historical-plan-1 | reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json; $.records[239]; exact record only, not other plan entries | context_only | Historical derivative source context preserves amounts, source-only water/preparation and the stated provider denominator. It does not authenticate the cited raw API response or establish a measured final volume. |
+| historical-search | /private/tmp/culturemech-review-source-preflight-batch033-tail/historical-raw-search.json; Preserved ignored-inclusive owned-cache search, candidate hashes and embedded source strings | context_only | The bounded recorded search checked 40 candidate files, 24 unique byte contents and 430 decoded raw strings without recovering the cited 226 response. This is not a universal absence claim. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch033/326/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17234 resolves to glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63037 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63037; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63037 resolves to triammonium citrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86254 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86254 resolves to iron trichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63037": [{"label": "(NH4)3 citrate", "match_type": "preferred_term", "identifier": "CHEBI:63037", "preferred_term": "(NH4)3 citrate", "ontology_id": "CHEBI:63037", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86254": [{"label": "FeCl3 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86254", "preferred_term": "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml; data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:54.623062"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:54.623062"}]}, {"input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml", "events": 9, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current functions read without execution. Resolver copies ingredients and solutions but not preparation, and skips already populated KOMODO records. Current importer separates stock rows, while normalization does not establish measured final volume. Evidence-aware merging/export cannot authenticate inaccessible original responses; current functions are not a historical replay. |
+| writer-1 | src/culturemech/enrich/dsmz_resolver.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current functions read without execution. Resolver copies ingredients and solutions but not preparation, and skips already populated KOMODO records. Current importer separates stock rows, while normalization does not establish measured final volume. Evidence-aware merging/export cannot authenticate inaccessible original responses; current functions are not a historical replay. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current functions read without execution. Resolver copies ingredients and solutions but not preparation, and skips already populated KOMODO records. Current importer separates stock rows, while normalization does not establish measured final volume. Evidence-aware merging/export cannot authenticate inaccessible original responses; current functions are not a historical replay. |
+| writer-3 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current functions read without execution. Resolver copies ingredients and solutions but not preparation, and skips already populated KOMODO records. Current importer separates stock rows, while normalization does not establish measured final volume. Evidence-aware merging/export cannot authenticate inaccessible original responses; current functions are not a historical replay. |
+| writer-4 | src/culturemech/export/kgx_export.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current functions read without execution. Resolver copies ingredients and solutions but not preparation, and skips already populated KOMODO records. Current importer separates stock rows, while normalization does not establish measured final volume. Evidence-aware merging/export cannot authenticate inaccessible original responses; current functions are not a historical replay. |
+| relationship-context | /private/tmp/culturemech-review-work-batch033/source-preflight-bound/326/evidence-context-original.json; Exact reciprocal SOURCE_DUPLICATE paths/IDs and ignored-inclusive owner resolution | supports | The two normalized records and reciprocal links resolve by exact path and stable ID. Source provenance is shared, but their complete preparation and evidence content is not interchangeable. |
+| mediadive226api-attempt | https://mediadive.dsmz.de/rest/medium/226; Preserved exact public retrieval result | context_only | Optional current mediadive226api retrieval did not return usable formulation content. Exact primary/catalog evidence is available; original historical-response authentication is a separate required unavailable check. |
+| mediadive226api_retry-attempt | https://mediadive.dsmz.de/rest/medium/226; Preserved exact public retrieval result | context_only | Optional current mediadive226api_retry retrieval did not return usable formulation content. Exact primary/catalog evidence is available; original historical-response authentication is a separate required unavailable check. |
+| komodo226detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=226; Preserved exact public retrieval result | context_only | Optional current komodo226detail retrieval did not return usable formulation content. Exact primary/catalog evidence is available; original historical-response authentication is a separate required unavailable check. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Optional current mediadive226api retrieval did not return usable formulation content. Exact primary/catalog evidence is available; original historical-response authentication is a separate required unavailable check.
+- Optional current mediadive226api_retry retrieval did not return usable formulation content. Exact primary/catalog evidence is available; original historical-response authentication is a separate required unavailable check.
+- Optional current komodo226detail retrieval did not return usable formulation content. Exact primary/catalog evidence is available; original historical-response authentication is a separate required unavailable check.
+- Partial completion is due to the required original-response check for seven existing historical DSM amount claims. The completed derivative comparison and current primary reading do not close that gap.
+- The bounded ignored-inclusive source search is not a claim that no historical response exists anywhere. The original reported access time is preserved separately from current unsuccessful attempts.
+- The source gives no measured final volume or percent basis, and no numeric sterilization cycle. No 1001 mL final volume, acetylacetone mass, solvent fraction, organism physiology or alternative ammonium salt is inferred.
+- This scientific assessment preceded formal review validation and saving; their results are recorded separately.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T182652Z-culturemech-004580-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: aureobacterium_terregens_medium (CultureMech:004580)'
+started_at: '2026-10-21T18:20:18Z'
+finished_at: '2026-10-21T18:26:52Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 226 supports seven basal batch masses and a separate post-sterilization
+  acetylacetone-in-ethanol addition. The target and KOMODO owner omit that preparation,
+  whereas the DSMZ owner retains it and seven historical amount claims. Those claims
+  match local derivative plans but their original API response remains unrecovered.
+  Generic ammonium citrate does not establish triammonium specificity.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml
+    sha256: 2dcb64ca1922edb37a216b6bb56a3c69e929e1946ce5ac9e5976bcdf0ce45628
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml
+    sha256: c66e94a91554c1feccfbaba62806bf8bbed6dccfdf16013e5b73890c1cf75592
+    role: context
+  - path: data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml
+    sha256: 2e5bd776207cd0b3dcab307fa4fa1e82b68176f6a4f818a33a2fdc26fb8d1fea
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+    sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/plan.json
+    sha256: 5a48b07490ce656e22f5742a30b6c1bdae479f575388bea6551bad9ccdd051c0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml.md
+    sha256: 3532541b12a08ee9b23d7b617afce04a285a5b7e0a22fee5c8255220f58b6224
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json
+    sha256: 1ada7bec3dbf8c0a4bb2e448ab02750c2cfd126352f8488695ed34cf2a821f5c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/aureobacterium_terregens_medium.yaml.md
+    sha256: 7429e3daa8aa55c72d9a4780c7ad9a82517e0ebff693f187358223c8b6216e00
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 326; batch 033 item 6 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-two task batches
+    contain 320 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 323 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:004580
+targets:
+- target_id: CultureMech:004580
+  path: data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml
+  label: aureobacterium_terregens_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch033/326/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-033/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch033/326/strict.tsv"
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:004580
+- check_id: historical-derivative-correspondence
+  name: Current owner and historical derivative correspondence
+  required: true
+  status: passed
+  summary: Seven current DSM owner evidence objects match decoded historical plan
+    rows and stated source metadata. Seven KOMODO withholding decisions are separately
+    preserved; no attached KOMODO amount evidence is claimed.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - historical-claims
+  - historical-plan-0
+  - historical-plan-1
+- check_id: historical-original-response
+  name: Original source authentication for seven historical amount claims
+  required: true
+  status: unavailable
+  summary: Original API response ec46b38683e27e2491aeb50bd5eb25b021daf90f10316d00883461751a11a9d0
+    was not recovered in the bounded source search; current API attempts returned
+    503. Derivative equality cannot authenticate that raw response.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - historical-claims
+  - historical-search
+- check_id: mediadive226api-source-access
+  name: 'Exact source content access: mediadive226api'
+  required: false
+  status: unavailable
+  summary: Optional current mediadive226api retrieval did not return usable formulation
+    content. Exact primary/catalog evidence is available; original historical-response
+    authentication is a separate required unavailable check.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - mediadive226api-attempt
+- check_id: mediadive226api_retry-source-access
+  name: 'Exact source content access: mediadive226api_retry'
+  required: false
+  status: unavailable
+  summary: Optional current mediadive226api_retry retrieval did not return usable
+    formulation content. Exact primary/catalog evidence is available; original historical-response
+    authentication is a separate required unavailable check.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - mediadive226api_retry-attempt
+- check_id: komodo226detail-source-access
+  name: 'Exact source content access: komodo226detail'
+  required: false
+  status: unavailable
+  summary: Optional current komodo226detail retrieval did not return usable formulation
+    content. Exact primary/catalog evidence is available; original historical-response
+    authentication is a separate required unavailable check.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - komodo226detail-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:20:54.619585Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch033/326/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:20:55.721991Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-033/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch033/326/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:20:56.959142Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:20:57.713357Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: supports
+  summary: './data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml:1:id: CultureMech:004580
+
+    ./data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml:1:id:
+    CultureMech:004580
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch033/source-preflight-bound/326/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: supports
+  summary: 12 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 4b8dc8e63e641aea574482c3db559c4373c9ebface4c8b7c9f0187d7e5cd3ea3
+- evidence_id: dsmz226
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf
+  locator: Page 1 complete basal table, pH and post-sterilization paragraph; image
+    read
+  accessed_at: '2026-10-21T18:05:45.686818Z'
+  support: supports
+  summary: The primary specifies seven masses plus 1000 mL water, then 1 mL/L of 10%
+    acetylacetone in ethanol. It does not specify the percentage basis, numeric sterilization
+    cycle or measured final volume.
+  quote: After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone
+    in ethanol.
+  snapshot_sha256: cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074
+- evidence_id: komodo-identity
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact raw accession 226 row; header read separately
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: The row links KOMODO 226 to DSMZ 226 and reports pH 7, complex=true and
+    aerobic=false. These catalog flags are distinct from direct growth or physiological
+    evidence.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=226'\
+    \ >226</a></TD>\n\t\t\t\t\t<TD>AUREOBACTERIUM TERREGENS medium</TD>\n\t\t\t\t\t\
+    <TD> 7.0</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: komodo-header
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact raw catalog header
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: The catalog explicitly distinguishes complexity, aerobic status and submedium
+    status.
+  quote: "<TR>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\" width=\"50\">ID</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Name</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">PH Info</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"\
+    >Is Complex</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\">Is Aerobic</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Is SubMedium</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">Instructions</TD>\n\t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: historical-claims
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch033/326/historical-claim-recheck.json
+  locator: Seven exact current DSM owner evidence objects and local plan records/locators;
+    distinct KOMODO withholding decisions
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: All seven DSM evidence snippets decode to the corresponding pinned historical
+    plan objects, with matching explanations, reported access time and original-response
+    hash. The actual original API bytes remain unavailable. The KOMODO plan withheld
+    seven claims for omitted acetylacetone; neither the target nor KOMODO owner has
+    those amount attachments.
+  snapshot_sha256: b68b86be622c433dbffb6f4de45d879cf2b1d94b66bfe6285f103af7c8d77671
+- evidence_id: historical-plan-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/plan.json
+  locator: $.records[4]; exact record only, not other plan entries
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: Historical derivative source context preserves amounts, source-only water/preparation
+    and the stated provider denominator. It does not authenticate the cited raw API
+    response or establish a measured final volume.
+  snapshot_sha256: 5a48b07490ce656e22f5742a30b6c1bdae479f575388bea6551bad9ccdd051c0
+- evidence_id: historical-plan-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json
+  locator: $.records[239]; exact record only, not other plan entries
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: Historical derivative source context preserves amounts, source-only water/preparation
+    and the stated provider denominator. It does not authenticate the cited raw API
+    response or establish a measured final volume.
+  snapshot_sha256: 1ada7bec3dbf8c0a4bb2e448ab02750c2cfd126352f8488695ed34cf2a821f5c
+- evidence_id: historical-search
+  kind: search
+  reference: /private/tmp/culturemech-review-source-preflight-batch033-tail/historical-raw-search.json
+  locator: Preserved ignored-inclusive owned-cache search, candidate hashes and embedded
+    source strings
+  accessed_at: '2026-10-21T18:06:02.496534Z'
+  support: context_only
+  summary: The bounded recorded search checked 40 candidate files, 24 unique byte
+    contents and 430 decoded raw strings without recovering the cited 226 response.
+    This is not a universal absence claim.
+  snapshot_sha256: 8578e6eab186f1f357a038673c504d0ec4219bf77d068686ad410c768cdbbe13
+  search_scope: Ignored-inclusive bounded source-cache and current owned reports search,
+    plus accession-named raw files. Other sibling user checkouts and arbitrary unrelated
+    filenames were not exhaustively byte-hashed. No universal absence claim.
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch033/326/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: cafec0200fb14898bd7fa055fba9a1305782ba53dd1c2a987ca4f6e6d2058bb1
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi63037
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63037
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T18:05:46.552337Z'
+  support: supports
+  summary: CHEBI:63037 resolves to triammonium citrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d850a5ea210fd12177477013776d0020378a0038810e3396eac3c1b89121c3f7
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.289392Z'
+  support: supports
+  summary: CHEBI:86254 resolves to iron trichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term",
+    "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label":
+    "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63037": [{"label":
+    "(NH4)3 citrate", "match_type": "preferred_term", "identifier": "CHEBI:63037",
+    "preferred_term": "(NH4)3 citrate", "ontology_id": "CHEBI:63037", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86254": [{"label": "FeCl3 x 6 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86254", "preferred_term":
+    "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/AUREOBACTERIUM_TERREGENS_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml;
+    data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 10, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:18:54.623062"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:54.623062"}]}, {"input": "data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml",
+    "events": 9, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: Current functions read without execution. Resolver copies ingredients and
+    solutions but not preparation, and skips already populated KOMODO records. Current
+    importer separates stock rows, while normalization does not establish measured
+    final volume. Evidence-aware merging/export cannot authenticate inaccessible original
+    responses; current functions are not a historical replay.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: Current functions read without execution. Resolver copies ingredients and
+    solutions but not preparation, and skips already populated KOMODO records. Current
+    importer separates stock rows, while normalization does not establish measured
+    final volume. Evidence-aware merging/export cannot authenticate inaccessible original
+    responses; current functions are not a historical replay.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: Current functions read without execution. Resolver copies ingredients and
+    solutions but not preparation, and skips already populated KOMODO records. Current
+    importer separates stock rows, while normalization does not establish measured
+    final volume. Evidence-aware merging/export cannot authenticate inaccessible original
+    responses; current functions are not a historical replay.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: Current functions read without execution. Resolver copies ingredients and
+    solutions but not preparation, and skips already populated KOMODO records. Current
+    importer separates stock rows, while normalization does not establish measured
+    final volume. Evidence-aware merging/export cannot authenticate inaccessible original
+    responses; current functions are not a historical replay.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-4
+  kind: record_content
+  reference: src/culturemech/export/kgx_export.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: context_only
+  summary: Current functions read without execution. Resolver copies ingredients and
+    solutions but not preparation, and skips already populated KOMODO records. Current
+    importer separates stock rows, while normalization does not establish measured
+    final volume. Evidence-aware merging/export cannot authenticate inaccessible original
+    responses; current functions are not a historical replay.
+  snapshot_sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+- evidence_id: relationship-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch033/source-preflight-bound/326/evidence-context-original.json
+  locator: Exact reciprocal SOURCE_DUPLICATE paths/IDs and ignored-inclusive owner
+    resolution
+  accessed_at: '2026-10-21T18:26:50Z'
+  support: supports
+  summary: The two normalized records and reciprocal links resolve by exact path and
+    stable ID. Source provenance is shared, but their complete preparation and evidence
+    content is not interchangeable.
+  snapshot_sha256: 281947d9ac1b5bdaa2fee15cb670caf1adc3c98e1f3f7a861f123955833cfe78
+- evidence_id: mediadive226api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/226
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T18:05:45.071498Z'
+  support: context_only
+  summary: Optional current mediadive226api retrieval did not return usable formulation
+    content. Exact primary/catalog evidence is available; original historical-response
+    authentication is a separate required unavailable check.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive226api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/226
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T18:06:31.227576Z'
+  support: context_only
+  summary: Optional current mediadive226api_retry retrieval did not return usable
+    formulation content. Exact primary/catalog evidence is available; original historical-response
+    authentication is a separate required unavailable check.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo226detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=226
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T18:05:44.941602Z'
+  support: context_only
+  summary: Optional current komodo226detail retrieval did not return usable formulation
+    content. Exact primary/catalog evidence is available; original historical-response
+    authentication is a separate required unavailable check.
+  snapshot_sha256: 6dc7eb69cfb6f547076ccdc3cced3ec7c23074a770f38c275bb8ad4333013168
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 15 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"ingredient_or_context\": \"\
+    Casamino acids\",\n    \"field_path\": \"ingredients[0].concentration\",\n   \
+    \ \"local\": {\n      \"value\": \"2\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 2,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Basal batch before acetylacetone addition\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz226\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz226\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Basal table\",\n        \"exact_source_quote\"\
+    : \"Casamino acids 2.0 g\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[0].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The numeric gram amount agrees with the primary batch mass. The source lists 1000\
+    \ mL water, not measured final volume. The DSM owner has an attached historical\
+    \ provider G_PER_L claim whose decoded local derivative matches but whose original\
+    \ response is unrecovered; the other two layers have no amount attachments. Do\
+    \ not label any layer verified or silently replace the provider-declared basis\
+    \ with a primary-derived final litre.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\",\n    \"historical_context\": {\n      \"evidence_id\": \"historical-claims\"\
+    ,\n      \"owner_evidence_path\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[0].evidence[0]\"\
+    ,\n      \"decoded_provider_fields\": {\n        \"recipe_order\": 1,\n      \
+    \  \"compound\": \"Casamino acids\",\n        \"compound_id\": 101,\n        \"\
+    amount\": 2,\n        \"unit\": \"g\",\n        \"g_l\": 2,\n        \"optional\"\
+    : 0\n      },\n      \"reported_provider_volume_ml\": 1000,\n      \"original_raw_response_authenticated\"\
+    : false,\n      \"limit\": \"Ancillary mmol_l values in the historical excerpt\
+    \ are retained as unverified derivative metadata, not independently supported\
+    \ source concentrations or replacements.\"\n    }\n  },\n  {\n    \"quantity_id\"\
+    : \"q2\",\n    \"ingredient_or_context\": \"Yeast extract\",\n    \"field_path\"\
+    : \"ingredients[1].concentration\",\n    \"local\": {\n      \"value\": \"1\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 1,\n    \"source_unit\"\
+    : \"g\",\n    \"source_stage\": \"Basal batch before acetylacetone addition\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz226\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz226\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Basal table\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 1.0 g\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The numeric gram amount agrees with the primary batch mass. The source lists 1000\
+    \ mL water, not measured final volume. The DSM owner has an attached historical\
+    \ provider G_PER_L claim whose decoded local derivative matches but whose original\
+    \ response is unrecovered; the other two layers have no amount attachments. Do\
+    \ not label any layer verified or silently replace the provider-declared basis\
+    \ with a primary-derived final litre.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\",\n    \"historical_context\": {\n      \"evidence_id\": \"historical-claims\"\
+    ,\n      \"owner_evidence_path\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[1].evidence[0]\"\
+    ,\n      \"decoded_provider_fields\": {\n        \"recipe_order\": 2,\n      \
+    \  \"compound\": \"Yeast extract\",\n        \"compound_id\": 16,\n        \"\
+    amount\": 1,\n        \"unit\": \"g\",\n        \"g_l\": 1,\n        \"optional\"\
+    : 0\n      },\n      \"reported_provider_volume_ml\": 1000,\n      \"original_raw_response_authenticated\"\
+    : false,\n      \"limit\": \"Ancillary mmol_l values in the historical excerpt\
+    \ are retained as unverified derivative metadata, not independently supported\
+    \ source concentrations or replacements.\"\n    }\n  },\n  {\n    \"quantity_id\"\
+    : \"q3\",\n    \"ingredient_or_context\": \"Glucose\",\n    \"field_path\": \"\
+    ingredients[2].concentration\",\n    \"local\": {\n      \"value\": \"1\",\n \
+    \     \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 1,\n    \"source_unit\"\
+    : \"g\",\n    \"source_stage\": \"Basal batch before acetylacetone addition\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz226\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz226\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Basal table\",\n        \"exact_source_quote\"\
+    : \"Glucose 1.0 g\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[2].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The numeric gram amount agrees with the primary batch mass. The source lists 1000\
+    \ mL water, not measured final volume. The DSM owner has an attached historical\
+    \ provider G_PER_L claim whose decoded local derivative matches but whose original\
+    \ response is unrecovered; the other two layers have no amount attachments. Do\
+    \ not label any layer verified or silently replace the provider-declared basis\
+    \ with a primary-derived final litre.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\",\n    \"historical_context\": {\n      \"evidence_id\": \"historical-claims\"\
+    ,\n      \"owner_evidence_path\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[2].evidence[0]\"\
+    ,\n      \"decoded_provider_fields\": {\n        \"recipe_order\": 3,\n      \
+    \  \"compound\": \"Glucose\",\n        \"compound_id\": 5,\n        \"amount\"\
+    : 1,\n        \"unit\": \"g\",\n        \"g_l\": 1,\n        \"mmol_l\": 5.55062,\n\
+    \        \"optional\": 0\n      },\n      \"reported_provider_volume_ml\": 1000,\n\
+    \      \"original_raw_response_authenticated\": false,\n      \"limit\": \"Ancillary\
+    \ mmol_l values in the historical excerpt are retained as unverified derivative\
+    \ metadata, not independently supported source concentrations or replacements.\"\
+    \n    }\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"ingredient_or_context\"\
+    : \"Generic ammonium citrate\",\n    \"field_path\": \"ingredients[3].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 1,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Basal batch before acetylacetone addition\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz226\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz226\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Basal table\",\n        \"exact_source_quote\"\
+    : \"(NH4) citrate 1.0 g\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[3].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The numeric gram amount agrees with the primary batch mass. The source lists 1000\
+    \ mL water, not measured final volume. The DSM owner has an attached historical\
+    \ provider G_PER_L claim whose decoded local derivative matches but whose original\
+    \ response is unrecovered; the other two layers have no amount attachments. Do\
+    \ not label any layer verified or silently replace the provider-declared basis\
+    \ with a primary-derived final litre.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\",\n    \"historical_context\": {\n      \"evidence_id\": \"historical-claims\"\
+    ,\n      \"owner_evidence_path\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[3].evidence[0]\"\
+    ,\n      \"decoded_provider_fields\": {\n        \"recipe_order\": 4,\n      \
+    \  \"compound\": \"(NH4) citrate\",\n        \"compound_id\": 104,\n        \"\
+    amount\": 1,\n        \"unit\": \"g\",\n        \"g_l\": 1,\n        \"optional\"\
+    : 0\n      },\n      \"reported_provider_volume_ml\": 1000,\n      \"original_raw_response_authenticated\"\
+    : false,\n      \"limit\": \"Ancillary mmol_l values in the historical excerpt\
+    \ are retained as unverified derivative metadata, not independently supported\
+    \ source concentrations or replacements.\"\n    }\n  },\n  {\n    \"quantity_id\"\
+    : \"q5\",\n    \"ingredient_or_context\": \"Dipotassium hydrogen phosphate\",\n\
+    \    \"field_path\": \"ingredients[4].concentration\",\n    \"local\": {\n   \
+    \   \"value\": \"2\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 2,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Basal batch before\
+    \ acetylacetone addition\",\n    \"primary_source_evidence_id\": \"dsmz226\",\n\
+    \    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"dsmz226\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Basal table\",\n        \"exact_source_quote\"\
+    : \"K2HPO4 2.0 g\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[4].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The numeric gram amount agrees with the primary batch mass. The source lists 1000\
+    \ mL water, not measured final volume. The DSM owner has an attached historical\
+    \ provider G_PER_L claim whose decoded local derivative matches but whose original\
+    \ response is unrecovered; the other two layers have no amount attachments. Do\
+    \ not label any layer verified or silently replace the provider-declared basis\
+    \ with a primary-derived final litre.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\",\n    \"historical_context\": {\n      \"evidence_id\": \"historical-claims\"\
+    ,\n      \"owner_evidence_path\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[4].evidence[0]\"\
+    ,\n      \"decoded_provider_fields\": {\n        \"recipe_order\": 5,\n      \
+    \  \"compound\": \"K2HPO4\",\n        \"compound_id\": 10,\n        \"amount\"\
+    : 2,\n        \"unit\": \"g\",\n        \"g_l\": 2,\n        \"mmol_l\": 11.4826,\n\
+    \        \"optional\": 0\n      },\n      \"reported_provider_volume_ml\": 1000,\n\
+    \      \"original_raw_response_authenticated\": false,\n      \"limit\": \"Ancillary\
+    \ mmol_l values in the historical excerpt are retained as unverified derivative\
+    \ metadata, not independently supported source concentrations or replacements.\"\
+    \n    }\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"ingredient_or_context\"\
+    : \"Magnesium sulfate heptahydrate\",\n    \"field_path\": \"ingredients[5].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": 0.5,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Basal batch before acetylacetone addition\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz226\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz226\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Basal table\",\n        \"exact_source_quote\"\
+    : \"MgSO4 x 7 H2O 0.5 g\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[5].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The numeric gram amount agrees with the primary batch mass. The source lists 1000\
+    \ mL water, not measured final volume. The DSM owner has an attached historical\
+    \ provider G_PER_L claim whose decoded local derivative matches but whose original\
+    \ response is unrecovered; the other two layers have no amount attachments. Do\
+    \ not label any layer verified or silently replace the provider-declared basis\
+    \ with a primary-derived final litre.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The numeric\
+    \ gram amount agrees with the primary batch mass. The source lists 1000 mL water,\
+    \ not measured final volume. The DSM owner has an attached historical provider\
+    \ G_PER_L claim whose decoded local derivative matches but whose original response\
+    \ is unrecovered; the other two layers have no amount attachments. Do not label\
+    \ any layer verified or silently replace the provider-declared basis with a primary-derived\
+    \ final litre.\",\n    \"historical_context\": {\n      \"evidence_id\": \"historical-claims\"\
+    ,\n      \"owner_evidence_path\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[5].evidence[0]\"\
+    ,\n      \"decoded_provider_fields\": {\n        \"recipe_order\": 6,\n      \
+    \  \"compound\": \"MgSO4 x 7 H2O\",\n        \"compound_id\": 8,\n        \"amount\"\
+    : 0.5,\n        \"unit\": \"g\",\n        \"g_l\": 0.5,\n        \"mmol_l\": 2.02859,\n\
+    \        \"optional\": 0\n      },\n      \"reported_provider_volume_ml\": 1000,\n\
+    \      \"original_raw_response_authenticated\": false,\n      \"limit\": \"Ancillary\
+    \ mmol_l values in the historical excerpt are retained as unverified derivative\
+    \ metadata, not independently supported source concentrations or replacements.\"\
+    \n    }\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"ingredient_or_context\"\
+    : \"Iron trichloride hexahydrate\",\n    \"field_path\": \"ingredients[6].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": 10,\n    \"source_unit\": \"mg\",\n    \"source_stage\"\
+    : \"Basal batch before acetylacetone addition\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz226\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz226\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Basal table\",\n        \"exact_source_quote\"\
+    : \"FeCl3 x 6 H2O 10.0 mg\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[6].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    10 mg = 0.010 g per basal batch; the numeric milligram-to-gram conversion agrees.\
+    \ The source lists 1000 mL water, not measured final volume. The DSM owner has\
+    \ an attached historical provider G_PER_L claim whose decoded local derivative\
+    \ matches but whose original response is unrecovered; the other two layers have\
+    \ no amount attachments. Do not label any layer verified or silently replace the\
+    \ provider-declared basis with a primary-derived final litre.\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"10 mg =\
+    \ 0.010 g per basal batch; the numeric milligram-to-gram conversion agrees. The\
+    \ source lists 1000 mL water, not measured final volume. The DSM owner has an\
+    \ attached historical provider G_PER_L claim whose decoded local derivative matches\
+    \ but whose original response is unrecovered; the other two layers have no amount\
+    \ attachments. Do not label any layer verified or silently replace the provider-declared\
+    \ basis with a primary-derived final litre.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"10 mg =\
+    \ 0.010 g per basal batch; the numeric milligram-to-gram conversion agrees. The\
+    \ source lists 1000 mL water, not measured final volume. The DSM owner has an\
+    \ attached historical provider G_PER_L claim whose decoded local derivative matches\
+    \ but whose original response is unrecovered; the other two layers have no amount\
+    \ attachments. Do not label any layer verified or silently replace the provider-declared\
+    \ basis with a primary-derived final litre.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"10 mg = 0.010 g per basal batch; the numeric milligram-to-gram conversion\
+    \ agrees. The source lists 1000 mL water, not measured final volume. The DSM owner\
+    \ has an attached historical provider G_PER_L claim whose decoded local derivative\
+    \ matches but whose original response is unrecovered; the other two layers have\
+    \ no amount attachments. Do not label any layer verified or silently replace the\
+    \ provider-declared basis with a primary-derived final litre.\",\n    \"historical_context\"\
+    : {\n      \"evidence_id\": \"historical-claims\",\n      \"owner_evidence_path\"\
+    : \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml:ingredients[6].evidence[0]\"\
+    ,\n      \"decoded_provider_fields\": {\n        \"recipe_order\": 7,\n      \
+    \  \"compound\": \"FeCl3 x 6 H2O\",\n        \"compound_id\": 82,\n        \"\
+    amount\": 10,\n        \"unit\": \"mg\",\n        \"g_l\": 0.01,\n        \"mmol_l\"\
+    : 0.0369965,\n        \"optional\": 0\n      },\n      \"reported_provider_volume_ml\"\
+    : 1000,\n      \"original_raw_response_authenticated\": false,\n      \"limit\"\
+    : \"Ancillary mmol_l values in the historical excerpt are retained as unverified\
+    \ derivative metadata, not independently supported source concentrations or replacements.\"\
+    \n    }\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"ingredient_or_context\"\
+    : \"Basal water input\",\n    \"field_path\": \"preparation_steps\",\n    \"local\"\
+    : null,\n    \"source_amount\": 1000,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"Basal batch\",\n    \"primary_source_evidence_id\": \"dsmz226\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz226\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Basal table\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Add the literal\
+    \ 1000 mL input water to the proper basal preparation stage. The DSM preparation\
+    \ container is present and must be retained; target and KOMODO preparation are\
+    \ absent. Water input alone does not establish final volume.\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Add the literal 1000\
+    \ mL input water to the proper basal preparation stage. The DSM preparation container\
+    \ is present and must be retained; target and KOMODO preparation are absent. Water\
+    \ input alone does not establish final volume.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"ADJUST_PH\"\
+    ,\n            \"description\": \"Adjust pH to 7.0.\"\n          },\n        \
+    \  {\n            \"step_number\": 2,\n            \"action\": \"MIX\",\n    \
+    \        \"description\": \"After sterilization, aseptically add 1 ml/l of a 10%\
+    \ solution of acetylacetone in ethanol.\"\n          }\n        ],\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Add the literal 1000 mL input water\
+    \ to the proper basal preparation stage. The DSM preparation container is present\
+    \ and must be retained; target and KOMODO preparation are absent. Water input\
+    \ alone does not establish final volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Add the literal 1000 mL input water to the proper basal preparation stage.\
+    \ The DSM preparation container is present and must be retained; target and KOMODO\
+    \ preparation are absent. Water input alone does not establish final volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"ingredient_or_context\": \"Main\
+    \ pH field\",\n    \"field_path\": \"ph_value\",\n    \"local\": 7.0,\n    \"\
+    source_amount\": 7,\n    \"source_unit\": \"pH\",\n    \"source_stage\": \"Basal\
+    \ preparation\",\n    \"primary_source_evidence_id\": \"dsmz226\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz226\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"pH instruction\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.0.\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n \
+    \       \"decision\": \"evidence_only\",\n        \"rationale\": \"All three ph_value\
+    \ fields agree with the primary pH 7.0 but do not carry matching attached claim\
+    \ evidence. This is a preparation setpoint, not an organism optimum.\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"All three ph_value fields\
+    \ agree with the primary pH 7.0 but do not carry matching attached claim evidence.\
+    \ This is a preparation setpoint, not an organism optimum.\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"All three ph_value fields\
+    \ agree with the primary pH 7.0 but do not carry matching attached claim evidence.\
+    \ This is a preparation setpoint, not an organism optimum.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"All three ph_value fields agree with the primary\
+    \ pH 7.0 but do not carry matching attached claim evidence. This is a preparation\
+    \ setpoint, not an organism optimum.\"\n  },\n  {\n    \"quantity_id\": \"q10\"\
+    ,\n    \"ingredient_or_context\": \"pH in preparation\",\n    \"field_path\":\
+    \ \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\": 7,\n  \
+    \  \"source_unit\": \"pH\",\n    \"source_stage\": \"Basal preparation\",\n  \
+    \  \"primary_source_evidence_id\": \"dsmz226\",\n    \"decision\": \"add\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz226\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"pH instruction\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.0.\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Retain the existing\
+    \ DSMZ pH instruction and attach evidence; restore it in the two layers that omit\
+    \ preparation.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Retain the existing\
+    \ DSMZ pH instruction and attach evidence; restore it in the two layers that omit\
+    \ preparation.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 7.0.\",\n        \"decision\": \"evidence_only\",\n        \"\
+    rationale\": \"Retain the existing DSMZ pH instruction and attach evidence; restore\
+    \ it in the two layers that omit preparation.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"The distinct local scalar and preparation occurrences are each covered.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q11\",\n    \"ingredient_or_context\": \"Acetylacetone\
+    \ stock receiving dose\",\n    \"field_path\": \"solutions\",\n    \"local\":\
+    \ null,\n    \"source_amount\": 1,\n    \"source_unit\": \"ml/l\",\n    \"source_stage\"\
+    : \"Aseptic addition after basal sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz226\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz226\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Final paragraph\",\n        \"exact_source_quote\"\
+    : \"After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone\
+    \ in ethanol.\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Add a distinct acetylacetone-in-ethanol\
+    \ stock representation with its explicit receiving dose and nominal strength.\
+    \ All local solutions fields are absent. The DSM owner already preserves this\
+    \ instruction in prose; it must not be treated as missing there. No w/v, w/w or\
+    \ v/v basis, density or neat-solute amount is inferred.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Add a distinct acetylacetone-in-ethanol\
+    \ stock representation with its explicit receiving dose and nominal strength.\
+    \ All local solutions fields are absent. The DSM owner already preserves this\
+    \ instruction in prose; it must not be treated as missing there. No w/v, w/w or\
+    \ v/v basis, density or neat-solute amount is inferred.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Add a distinct acetylacetone-in-ethanol\
+    \ stock representation with its explicit receiving dose and nominal strength.\
+    \ All local solutions fields are absent. The DSM owner already preserves this\
+    \ instruction in prose; it must not be treated as missing there. No w/v, w/w or\
+    \ v/v basis, density or neat-solute amount is inferred.\"\n      }\n    ],\n \
+    \   \"arithmetic_and_scope\": \"Add a distinct acetylacetone-in-ethanol stock\
+    \ representation with its explicit receiving dose and nominal strength. All local\
+    \ solutions fields are absent. The DSM owner already preserves this instruction\
+    \ in prose; it must not be treated as missing there. No w/v, w/w or v/v basis,\
+    \ density or neat-solute amount is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q12\",\n    \"ingredient_or_context\": \"Acetylacetone stock nominal strength\"\
+    ,\n    \"field_path\": \"solutions\",\n    \"local\": null,\n    \"source_amount\"\
+    : 10,\n    \"source_unit\": \"% (basis unspecified)\",\n    \"source_stage\":\
+    \ \"Aseptic addition after basal sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz226\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz226\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Final paragraph\",\n        \"exact_source_quote\"\
+    : \"After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone\
+    \ in ethanol.\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Add a distinct acetylacetone-in-ethanol\
+    \ stock representation with its explicit receiving dose and nominal strength.\
+    \ All local solutions fields are absent. The DSM owner already preserves this\
+    \ instruction in prose; it must not be treated as missing there. No w/v, w/w or\
+    \ v/v basis, density or neat-solute amount is inferred.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Add a distinct acetylacetone-in-ethanol\
+    \ stock representation with its explicit receiving dose and nominal strength.\
+    \ All local solutions fields are absent. The DSM owner already preserves this\
+    \ instruction in prose; it must not be treated as missing there. No w/v, w/w or\
+    \ v/v basis, density or neat-solute amount is inferred.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Add a distinct acetylacetone-in-ethanol\
+    \ stock representation with its explicit receiving dose and nominal strength.\
+    \ All local solutions fields are absent. The DSM owner already preserves this\
+    \ instruction in prose; it must not be treated as missing there. No w/v, w/w or\
+    \ v/v basis, density or neat-solute amount is inferred.\"\n      }\n    ],\n \
+    \   \"arithmetic_and_scope\": \"Add a distinct acetylacetone-in-ethanol stock\
+    \ representation with its explicit receiving dose and nominal strength. All local\
+    \ solutions fields are absent. The DSM owner already preserves this instruction\
+    \ in prose; it must not be treated as missing there. No w/v, w/w or v/v basis,\
+    \ density or neat-solute amount is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q13\",\n    \"ingredient_or_context\": \"Acetylacetone receiving dose in retained\
+    \ preparation\",\n    \"field_path\": \"preparation_steps\",\n    \"local\": null,\n\
+    \    \"source_amount\": 1,\n    \"source_unit\": \"ml/l\",\n    \"source_stage\"\
+    : \"Aseptic addition after basal sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz226\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz226\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Final paragraph\",\n        \"exact_source_quote\"\
+    : \"After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone\
+    \ in ethanol.\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"The DSMZ owner\
+    \ retains the exact post-sterilization instruction, with no attached preparation\
+    \ evidence. Target and KOMODO owner omit it. This statement does not specify how\
+    \ the basal medium or stock is sterilized.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"The DSMZ owner retains\
+    \ the exact post-sterilization instruction, with no attached preparation evidence.\
+    \ Target and KOMODO owner omit it. This statement does not specify how the basal\
+    \ medium or stock is sterilized.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone\
+    \ in ethanol.\",\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"The DSMZ owner retains the exact post-sterilization instruction, with no attached\
+    \ preparation evidence. Target and KOMODO owner omit it. This statement does not\
+    \ specify how the basal medium or stock is sterilized.\"\n      }\n    ],\n  \
+    \  \"arithmetic_and_scope\": \"The DSMZ owner retains the exact post-sterilization\
+    \ instruction, with no attached preparation evidence. Target and KOMODO owner\
+    \ omit it. This statement does not specify how the basal medium or stock is sterilized.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"ingredient_or_context\": \"\
+    Acetylacetone strength in retained preparation\",\n    \"field_path\": \"preparation_steps\"\
+    ,\n    \"local\": null,\n    \"source_amount\": 10,\n    \"source_unit\": \"%\
+    \ (basis unspecified)\",\n    \"source_stage\": \"Aseptic addition after basal\
+    \ sterilization\",\n    \"primary_source_evidence_id\": \"dsmz226\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz226\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Final paragraph\",\n        \"exact_source_quote\"\
+    : \"After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone\
+    \ in ethanol.\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"The DSMZ owner\
+    \ retains the exact post-sterilization instruction, with no attached preparation\
+    \ evidence. Target and KOMODO owner omit it. This statement does not specify how\
+    \ the basal medium or stock is sterilized.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"The DSMZ owner retains\
+    \ the exact post-sterilization instruction, with no attached preparation evidence.\
+    \ Target and KOMODO owner omit it. This statement does not specify how the basal\
+    \ medium or stock is sterilized.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone\
+    \ in ethanol.\",\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"The DSMZ owner retains the exact post-sterilization instruction, with no attached\
+    \ preparation evidence. Target and KOMODO owner omit it. This statement does not\
+    \ specify how the basal medium or stock is sterilized.\"\n      }\n    ],\n  \
+    \  \"arithmetic_and_scope\": \"The DSMZ owner retains the exact post-sterilization\
+    \ instruction, with no attached preparation evidence. Target and KOMODO owner\
+    \ omit it. This statement does not specify how the basal medium or stock is sterilized.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"ingredient_or_context\": \"\
+    Unresolved final volume\",\n    \"field_path\": \"preparation_steps\",\n    \"\
+    local\": null,\n    \"source_amount\": null,\n    \"source_unit\": \"measured\
+    \ final volume not supplied\",\n    \"source_stage\": \"Basal and supplemented\
+    \ medium\",\n    \"primary_source_evidence_id\": \"dsmz226\",\n    \"decision\"\
+    : \"unsupported\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz226\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium226.pdf\"\
+    ,\n        \"source_locator\": \"Basal table\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"cb16c9796ea7bbe9a07ac81de1d73d529649db44dc561452ef26b97ca63f8074\"\
+    ,\n        \"parsed_text_sha256\": \"39b604c11fb94bbd3417193e7781268003b2baad56795f27dd6ee43b61e53ac0\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ source specifies 1000 mL basal water and a later 1 mL/L stock addition, not\
+    \ a measured final batch volume. Do not assert 1001 mL as a measured denominator\
+    \ or derive acetylacetone/ethanol mass from the unqualified 10% label.\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The source specifies\
+    \ 1000 mL basal water and a later 1 mL/L stock addition, not a measured final\
+    \ batch volume. Do not assert 1001 mL as a measured denominator or derive acetylacetone/ethanol\
+    \ mass from the unqualified 10% label.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml\",\n \
+    \       \"field_path\": \"preparation_steps\",\n        \"stored\": [\n      \
+    \    {\n            \"step_number\": 1,\n            \"action\": \"ADJUST_PH\"\
+    ,\n            \"description\": \"Adjust pH to 7.0.\"\n          },\n        \
+    \  {\n            \"step_number\": 2,\n            \"action\": \"MIX\",\n    \
+    \        \"description\": \"After sterilization, aseptically add 1 ml/l of a 10%\
+    \ solution of acetylacetone in ethanol.\"\n          }\n        ],\n        \"\
+    decision\": \"unsupported\",\n        \"rationale\": \"The source specifies 1000\
+    \ mL basal water and a later 1 mL/L stock addition, not a measured final batch\
+    \ volume. Do not assert 1001 mL as a measured denominator or derive acetylacetone/ethanol\
+    \ mass from the unqualified 10% label.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"The source specifies 1000 mL basal water and a later 1 mL/L stock addition,\
+    \ not a measured final batch volume. Do not assert 1001 mL as a measured denominator\
+    \ or derive acetylacetone/ethanol mass from the unqualified 10% label.\"\n  }\n\
+    ]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '5 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 5/7 primary
+    and 5/7 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi131527
+  - chebi17234
+  - chebi31795
+  - chebi63037
+  - chebi86254
+  details: 'Instance coverage on a 0–100 percent scale, denominator 7: primary 71.43%;
+    secondary 71.43%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 27 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: identity
+  area: identity
+  topic: Exact DSMZ/KOMODO 226 and maintained ownership
+  outcome: supported
+  summary: CultureMech:004580 merges KOMODO 226 and DSMZ 226, whose catalog accession
+    and primary title agree. Both maintained owner paths and reciprocal SOURCE_DUPLICATE
+    links resolve. Identity does not prove every local quantity or omitted supplement
+    correct; formula fingerprints alone are insufficient.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - record
+  - dsmz226
+  - komodo-identity
+  - relationship-context
+  - owner-0
+  - owner-1
+- assessment_id: source-quantities
+  area: consistency
+  topic: Basal amounts and source-only supplementation
+  outcome: concern
+  summary: All 21 current local concentration occurrences are covered. The seven numerical
+    masses match primary batch amounts, including 10 mg iron salt = 0.01 g, but a
+    measured final-litre basis is not established. The late 1 mL/L acetylacetone stock
+    dose and unqualified 10% strength remain separate. Historical provider concentration
+    and ancillary mmol_l fields are retained only as unverified derivative metadata.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - record
+  - dsmz226
+  - historical-claims
+  - quantity-inventory
+  - owner-0
+  - owner-1
+- assessment_id: preparation
+  area: completeness
+  topic: Preserved DSM procedure versus omitted target/KOMODO procedure
+  outcome: concern
+  summary: The DSMZ owner already retains pH 7 and the aseptic acetylacetone-in-ethanol
+    addition after sterilization. The target and KOMODO owner omit both preparation
+    steps and all layers omit a structured stock representation. The primary does
+    not specify autoclaving, temperature, duration, filtration, stock sterilization
+    method or an explicit percent basis; none is supplied from convention.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - record
+  - dsmz226
+  - quantity-inventory
+  - owner-0
+  - owner-1
+- assessment_id: forms
+  area: grounding
+  topic: Salt specificity and chemical forms
+  outcome: concern
+  summary: Source (NH4) citrate is generic, whereas CHEBI:63037 has three deprotonated
+    citrate carboxyl groups and three ammonium counterions. That triammonium specificity
+    is not established by the source; this is unsupported narrowing, not proof of
+    a different ammonium salt. Generic glucose, magnesium sulfate heptahydrate, iron
+    trichloride hexahydrate and dipotassium hydrogen phosphate agree at the named
+    form level. Casamino acids and yeast extract remain complex materials.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - dsmz226
+  - chebi63037
+  - chebi17234
+  - chebi31795
+  - chebi86254
+  - chebi131527
+- assessment_id: evidence-history
+  area: evidence
+  topic: Seven existing DSM claims versus distinct KOMODO withholding
+  outcome: concern
+  summary: The DSM owner has seven attached Oct 7 amount claims; target and KOMODO
+    owner have none. Their explanations bound support to provider-declared concentrations
+    and explicitly reject measured final-volume and secondary-grounding inferences.
+    Decoded historical plan/report correspondence is preserved, but unavailable original
+    API bytes make authentication partial. The separate KOMODO plan withheld support
+    because acetylacetone was omitted; it did not add that supplement or attach the
+    DSM claims.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - historical-claims
+  - historical-plan-0
+  - historical-plan-1
+  - historical-search
+  - record
+  - owner-0
+  - owner-1
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid formulation and growth limits
+  outcome: supported
+  summary: LIQUID and COMPLEX/UNDEFINED agree with the primary and complex nutrients;
+    no optional agar branch is printed. The catalog Aerobic=false flag is attributed
+    metadata, not demonstrated physiology. There is no asserted organism/strain, DOI/PMID,
+    experimental growth claim, high_metal flag or KG match; none is inferred from
+    the medium name.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - dsmz226
+  - komodo-identity
+  - komodo-header
+  - record
+- assessment_id: owners-and-history
+  area: provenance
+  topic: Reconciliation before regeneration
+  outcome: concern
+  summary: The generated merge event predates the DSM owner Oct 7 concentration-evidence
+    event. Retain that existing owner evidence and procedure while resolving their
+    bounded source limits; reconcile the incomplete KOMODO representation before regeneration.
+    Current resolver skips populated records, so rerunning it is not a demonstrated
+    repair. Invalid or timezone-naive historical timestamps need append-only clarification
+    rather than replacement.
+  target_ids:
+  - CultureMech:004580
+  evidence_ids:
+  - history-metadata
+  - historical-claims
+  - writer-0
+  - writer-1
+  - writer-2
+  - writer-3
+  - writer-4
+  - relationship-context
+findings:
+- finding_id: f1
+  issue_key: cm004580-acetylacetone-preparation-omission
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Required late supplementation is absent from target and KOMODO preparation
+  description: The current primary requires an aseptic 1 mL/L addition of 10% acetylacetone
+    in ethanol after sterilization. The DSM owner already retains this instruction,
+    but target and KOMODO owner omit it and no layer structures the stock. The historical
+    KOMODO plan explicitly withheld concentration support for this omission; it is
+    not evidence that the missing supplement was added.
+  target_ids:
+  - CultureMech:004580
+  field_paths:
+  - preparation_steps
+  - solutions
+  evidence_ids:
+  - record
+  - dsmz226
+  - historical-claims
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm004580-ammonium-citrate-specificity
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generic ammonium citrate does not establish triammonium identity
+  description: The primary names (NH4) citrate at 1 g; CHEBI:63037 specifically encodes
+    fully deprotonated citrate with three ammonium counterions. Both current primary
+    and secondary fields assert that specificity in all local layers. Source evidence
+    is insufficient to confirm it, but does not establish a replacement salt.
+  target_ids:
+  - CultureMech:004580
+  field_paths:
+  - ingredients[3].term
+  - ingredients[3].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsmz226
+  - chebi63037
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm004580-amount-basis-evidence
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Historical provider concentrations remain unauthenticated and incomplete
+    in the merge
+  description: Seven DSM amount attachments refer to an unrecovered original API payload.
+    Local derivative matches retain their provenance but cannot verify the response
+    hash, provider-declared final basis or source-version completeness. The target
+    and KOMODO owner lack those attachments, and the primary alone supplies batch
+    masses with water input rather than a measured final litre. No numeric basal mass
+    discrepancy is asserted.
+  target_ids:
+  - CultureMech:004580
+  field_paths:
+  - ingredients
+  - references
+  - curation_history
+  evidence_ids:
+  - dsmz226
+  - historical-claims
+  - historical-search
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Retain and source-link the DSM owner instruction, reconcile the missing
+    KOMODO procedure, and represent the separate receiving stock without inventing
+    a percentage basis or sterilization cycle. Regenerate the merged record after
+    maintained-input reconciliation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:004580
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Resolve the exact supplied ammonium-citrate form with source-specific
+    evidence, preserving the 1 g batch mass. Retain uncertainty rather than guessing
+    a replacement term or salt stoichiometry.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:004580
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Recover and authenticate the exact historical response if possible,
+    or attach newly inspected primary support explicitly scoped to batch amounts while
+    preserving prior claims and their limits. Reconcile the owner evidence and missing
+    supplement before regeneration; do not silently promote derivative values to verified
+    concentrations.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:004580
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Optional current mediadive226api retrieval did not return usable formulation content.
+  Exact primary/catalog evidence is available; original historical-response authentication
+  is a separate required unavailable check.
+- Optional current mediadive226api_retry retrieval did not return usable formulation
+  content. Exact primary/catalog evidence is available; original historical-response
+  authentication is a separate required unavailable check.
+- Optional current komodo226detail retrieval did not return usable formulation content.
+  Exact primary/catalog evidence is available; original historical-response authentication
+  is a separate required unavailable check.
+- Partial completion is due to the required original-response check for seven existing
+  historical DSM amount claims. The completed derivative comparison and current primary
+  reading do not close that gap.
+- The bounded ignored-inclusive source search is not a claim that no historical response
+  exists anywhere. The original reported access time is preserved separately from
+  current unsuccessful attempts.
+- The source gives no measured final volume or percent basis, and no numeric sterilization
+  cycle. No 1001 mL final volume, acetylacetone mass, solvent fraction, organism physiology
+  or alternative ammonium salt is inferred.
+- This scientific assessment preceded formal review validation and saving; their results
+  are recorded separately.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-033
+- generated-medium
+```
