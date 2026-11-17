@@ -1,0 +1,2063 @@
+# Source and formulation review: aspergillus_nidulans_minimal_medium (CultureMech:004322)
+
+- Review: 20261021T175709Z-culturemech-004322-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T17:54:27Z
+- Finished UTC: 2026-10-21T17:57:09Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact KOMODO catalogue links this record to DSMZ 204, whose three separately prepared solutions are flattened into main-medium concentrations. Main reconstruction loses the three water amounts, the 2 N NaOH stock and separate sterilization/mixing instructions. Primary chemical forms resolve, but the asserted legacy sodium-nitrate MIM identifier has no recovered historical correspondence, making this review partial. No final litre, exact trace doses or autoclave temperature is inferred.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 316; batch 032 item 6 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-one task batches contain 310 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 313 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:004322 | data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml | generated | aspergillus_nidulans_minimal_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:004322 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:004322 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch032/316/strict.tsv |
+| validate-terms | passed | True | CultureMech:004322 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:004322 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:004322 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Historical identity of asserted MediaIngredientMech:000171 | unavailable | True | CultureMech:004322 | Current bounded lookup completed with no exact row. Original historical identity/correspondence was not recovered; primary chemical identity is a separate claim. |
+| Exact source content access: mediadive204api | unavailable | False | CultureMech:004322 | Optional exact mediadive204api content was unavailable (HTTP 503). Current base formulation is assessed from the exact catalogue link and DSMZ primary. Historical byte equivalence and a distinct KOMODO variant are not inferred. |
+| Exact source content access: komodo204detail | unavailable | False | CultureMech:004322 | Optional exact komodo204detail content was unavailable (HTTP 403). Current base formulation is assessed from the exact catalogue link and DSMZ primary. Historical byte equivalence and a distinct KOMODO variant are not inferred. |
+| Exact source content access: komodo204actual | unavailable | False | CultureMech:004322 | Optional exact komodo204actual content was unavailable (HTTP 403). Current base formulation is assessed from the exact catalogue link and DSMZ primary. Historical byte equivalence and a distinct KOMODO variant are not inferred. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:004322.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary chemical identifiers
+
+grounding: concern. Targets: CultureMech:004322.
+
+9 distinct primary/current-secondary IDs resolve to nonobsolete terms; exact stored/canonical labels are recorded separately in each term evidence item. Target direct-ingredient linkage is 9/9 primary (100.00%) and 8/9 current CHEBI-based secondary (88.89%), on a 0–100 linkage scale, not an accuracy score. Current secondary keys without pinned index rows: []. Legacy slot count 1 is separate and does not enter that current-key claim. Supplied-form correspondence is assessed separately.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:004322.
+
+23 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact accession and source boundary
+
+identity: supported. Targets: CultureMech:004322.
+
+The sole maintained KOMODO 204 owner and merged target share CultureMech:004322. Exact catalogue title and original-recipe link identify DSMZ 204. The source is not a related minimal medium or strain-specific variant; failed detail/API access does not prove historical byte equality.
+
+### Source chemical forms versus asserted terms
+
+grounding: supported. Targets: CultureMech:004322.
+
+All nine primary identifiers match the printed chemical identities, including the magnesium, iron and zinc heptahydrates. Generic glucose is not promoted to a specific stereoisomer. The valid sodium-nitrate primary identity is separate from unresolved legacy MIM 000171. Agar is a polymeric gelling material; minimal/defined nutrient classification does not quantify every molecular component of agar.
+
+### Minimal agar medium and organism-title scope
+
+scope: concern. Targets: CultureMech:004322.
+
+The source explicitly prepares plates, consistent with SOLID_AGAR, and describes an Aspergillus nidulans minimal medium. The bacterial category is not supported by that fungal-medium identity. A title and generic cultivation application do not establish a strain accession, measured growth or an optimum. The catalogue Is Aerobic=false annotation must not be promoted to anaerobic physiology.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:004322.
+
+16 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "label": "NaNO3",
+    "decision": "correct",
+    "source_stage": "Solution A, 500 ml water",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "12",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "12",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution A, 500 ml water exact ingredient row",
+        "exact_source_quote": "NaNO3 6.00 g",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "Preserve the literal amount and original unit within the named solution. The stored value is a solution-strength normalization, not a supported final-medium concentration. Do not divide by an invented final litre or silently replace the three-source preparation with one stock. "
+  },
+  {
+    "decision_id": "q2",
+    "label": "KH2PO4",
+    "decision": "correct",
+    "source_stage": "Solution A, 500 ml water",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3.04",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3.04",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution A, 500 ml water exact ingredient row",
+        "exact_source_quote": "KH2PO4 1.52 g",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "Preserve the literal amount and original unit within the named solution. The stored value is a solution-strength normalization, not a supported final-medium concentration. Do not divide by an invented final litre or silently replace the three-source preparation with one stock. "
+  },
+  {
+    "decision_id": "q3",
+    "label": "KCl",
+    "decision": "correct",
+    "source_stage": "Solution A, 500 ml water",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "3.04",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "3.04",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution A, 500 ml water exact ingredient row",
+        "exact_source_quote": "KCl 1.52 g",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "Preserve the literal amount and original unit within the named solution. The stored value is a solution-strength normalization, not a supported final-medium concentration. Do not divide by an invented final litre or silently replace the three-source preparation with one stock. "
+  },
+  {
+    "decision_id": "q4",
+    "label": "MgSO4 x 7 H2O",
+    "decision": "correct",
+    "source_stage": "Solution B, 250 ml water",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2.08",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2.08",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution B, 250 ml water exact ingredient row",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.52 g",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "Preserve the literal amount and original unit within the named solution. The stored value is a solution-strength normalization, not a supported final-medium concentration. Do not divide by an invented final litre or silently replace the three-source preparation with one stock. "
+  },
+  {
+    "decision_id": "q5",
+    "label": "Agar",
+    "decision": "correct",
+    "source_stage": "Solution B, 250 ml water",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "60",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "60",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution B, 250 ml water exact ingredient row",
+        "exact_source_quote": "Agar 15.00 g",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "Preserve the literal amount and original unit within the named solution. The stored value is a solution-strength normalization, not a supported final-medium concentration. Do not divide by an invented final litre or silently replace the three-source preparation with one stock. "
+  },
+  {
+    "decision_id": "q6",
+    "label": "Glucose",
+    "decision": "correct",
+    "source_stage": "Solution C, 200 ml water",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "50",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "50",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution C, 200 ml water exact ingredient row",
+        "exact_source_quote": "Glucose 10.00 g",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "Preserve the literal amount and original unit within the named solution. The stored value is a solution-strength normalization, not a supported final-medium concentration. Do not divide by an invented final litre or silently replace the three-source preparation with one stock. "
+  },
+  {
+    "decision_id": "q7",
+    "label": "FeSO4 x 7 H2O",
+    "decision": "not_quantified",
+    "source_stage": "Solution B",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution B trace component row",
+        "exact_source_quote": "FeSO4 x 7 H2O trace -",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "The primary supplies trace without a numeric dose. Keep the unquantified trace explicitly inside solution B; VARIABLE does not establish a final concentration."
+  },
+  {
+    "decision_id": "q8",
+    "label": "ZnSO4 x 7 H2O",
+    "decision": "not_quantified",
+    "source_stage": "Solution B",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution B trace component row",
+        "exact_source_quote": "ZnSO4 x 7 H2O trace -",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "The primary supplies trace without a numeric dose. Keep the unquantified trace explicitly inside solution B; VARIABLE does not establish a final concentration."
+  },
+  {
+    "decision_id": "q9",
+    "label": "NaOH titration and stock strength",
+    "decision": "not_quantified",
+    "source_stage": "Solution A titration",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      },
+      {
+        "input": "data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[8].notes",
+        "stored": "pH adjustment (extracted from notes)"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ingredients[8].notes",
+        "stored": "pH adjustment (extracted from notes)"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution A pH sentence",
+        "exact_source_quote": "Adjust pH to 6.5 with 2 N NaOH.",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "The titrant amount remains unquantified. Retain the explicit 2 N stock strength separately from its variable addition; no dose or final molarity is inferred."
+  },
+  {
+    "decision_id": "q10",
+    "label": "NaOH stock strength",
+    "decision": "add",
+    "source_stage": "Solution A titrant stock",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution A titrant",
+        "exact_source_quote": "2 N NaOH",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "Add the explicitly stated 2 N titrant strength in preparation/stock context; the existing variable dose is not a stock strength."
+  },
+  {
+    "decision_id": "q11",
+    "label": "Target pH",
+    "decision": "evidence_only",
+    "source_stage": "Solution A",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 6.5
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 6.5
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution A pH sentence",
+        "exact_source_quote": "Adjust pH to 6.5 with 2 N NaOH.",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "The value 6.5 is source-supported as the adjustment of solution A. Attach that exact stage and avoid describing it as measured pH of the final combined medium."
+  },
+  {
+    "decision_id": "q12",
+    "label": "Solution A water",
+    "decision": "add",
+    "source_stage": "Solution A",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution A water row",
+        "exact_source_quote": "Distilled water 500.00 ml",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "Restore the printed water amount within its own solution. These three listed amounts total 950 ml; their sum is not an explicit measured final volume. "
+  },
+  {
+    "decision_id": "q13",
+    "label": "Solution B water",
+    "decision": "add",
+    "source_stage": "Solution B",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution B water row",
+        "exact_source_quote": "Distilled water 250.00 ml",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "Restore the printed water amount within its own solution. These three listed amounts total 950 ml; their sum is not an explicit measured final volume. "
+  },
+  {
+    "decision_id": "q14",
+    "label": "Solution C water",
+    "decision": "add",
+    "source_stage": "Solution C",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution C water row",
+        "exact_source_quote": "Distilled water 200.00 ml",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "Restore the printed water amount within its own solution. These three listed amounts total 950 ml; their sum is not an explicit measured final volume. "
+  },
+  {
+    "decision_id": "q15",
+    "label": "Separate autoclaving duration and mixing",
+    "decision": "add",
+    "source_stage": "A/B/C preparation",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "presence": "absent"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "presence": "absent"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Closing preparation sentence",
+        "exact_source_quote": "Autoclave separately for 15 min. Mix A, B and C before pouring plates.",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "Restore separate A/B/C sterilization for 15 minutes and mixing before plates. The exact page supplies no temperature, so do not invent 121°C or transfer a default from another source."
+  },
+  {
+    "decision_id": "q16",
+    "label": "Final volume and missing cycle temperature",
+    "decision": "not_quantified",
+    "source_stage": "Combined medium and cycle limits",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Solution C final water row",
+        "exact_source_quote": "Distilled water 200.00 ml",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      },
+      {
+        "source_key": "dsmz204",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf",
+        "source_locator": "Closing instruction",
+        "exact_source_quote": "Autoclave separately for 15 min.",
+        "snapshot_sha256": "e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427",
+        "parsed_text_sha256": "59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33"
+      }
+    ],
+    "interpretation": "The source specifies neither a final make-up volume nor an autoclave temperature. Keep these source limits explicit; 500+250+200 ml is only the sum of the listed water inputs."
+  }
+]
+
+### Maintained source and generated target
+
+ownership: supported. Targets: CultureMech:004322.
+
+The single exact normalized KOMODO 204 owner owns any correction; current import/merge functions are context, not historical causal proof. Generated merged YAML remains unchanged.
+
+## Findings
+
+### f1: Three solution strengths are flattened into the final ingredient list
+
+blocker / open / confirmed; issue key: cm004322-stock-stages.
+
+The record lists 12, 3.04, 3.04, 2.08, 60 and 50 G_PER_L without A/B/C boundaries. These reflect individual solution quantities and water bases, not a source-supported final formulation. All three waters and the receiving-medium assembly are absent.
+
+### f2: Separate sterilization and titrant strength are missing
+
+major / open / confirmed; issue key: cm004322-preparation.
+
+Neither layer has preparation_steps. The source explicitly adjusts solution A with 2 N NaOH and autoclaves A/B/C separately for 15 minutes before mixing. A variable NaOH ingredient alone does not retain that information.
+
+### f3: Bacterial category conflicts with the named fungal-medium scope
+
+major / open / confirmed; issue key: cm004322-category.
+
+The exact linked primary is ASPERGILLUS NIDULANS MINIMAL MEDIUM, whereas the maintained owner and target classify it as bacterial. This affects category-based discovery; it does not establish any particular strain growth assertion.
+
+### f4: Legacy sodium-nitrate correspondence and claim evidence remain unresolved
+
+minor / open / confirmed; issue key: cm004322-legacy-evidence.
+
+The current complete index/catalogue/tree lookup has no exact legacy 000171 entry, but does not reveal its historical meaning. Other current CHEBI-based secondary rows resolve. No local amount or preparation claims have attached source excerpts.
+
+### f5: Historical import timestamps are malformed or lack a timezone
+
+minor / open / confirmed; issue key: cm004322-history.
+
+Both layers retain a malformed KOMODO import timestamp and a timezone-naive resolver timestamp. These events do not substantiate recipe amounts and must not be silently rewritten.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the exact three solution formulations and their mixing relationship in the maintained owner; preserve batch quantities, original units and unresolved final-volume basis.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Add stage-specific preparation and exact titrant strength, with no invented sterilization temperature.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Reconcile the category with the verified source organism scope while keeping unsupported strain and growth claims absent.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Recover historical legacy evidence or explicitly qualify the unresolved link; preserve valid primary chemistry. Add narrow source/version/stage evidence after authorized curation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Preserve the old events and append any separately authorized provenance clarification with a valid UTC timestamp.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch032/316/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch032/316/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml:1:id: CultureMech:004322<br>./data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml:1:id: CultureMech:004322<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch032/source-preflight-bound/316/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 16 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf; Complete page 1, solutions A/B/C and final preparation paragraph | supports | Exact primary viewed as PDF and text; source amounts are stage-specific. |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact table row containing MediaInfo=204 | supports | The exact catalogue row links KOMODO 204 to DSMZ 204 and retains pH/oxygen annotations only. |
+| catalog-header | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact MediaList column header | supports | The false oxygen value is under Is Aerobic; this is catalogue metadata, not physiological growth evidence. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:17234 resolves to glucose. Stored labels: ['glucose']. Exact label correspondence is separate from source chemical-form support. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:2509 resolves to agar. Stored labels: ['agar']. Exact label correspondence is separate from source chemical-form support. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Stored labels: ['magnesium sulfate heptahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:32145 resolves to sodium hydroxide. Stored labels: ['sodium hydroxide']. Exact label correspondence is separate from source chemical-form support. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Stored labels: ['zinc sulfate heptahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:32588 resolves to potassium chloride. Stored labels: ['potassium chloride']. Exact label correspondence is separate from source chemical-form support. |
+| chebi63005 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:63005 resolves to sodium nitrate. Stored labels: ['sodium nitrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Stored labels: ['potassium dihydrogen phosphate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Stored labels: ['iron(2+) sulfate heptahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Entire pinned index exact identifier lookup; adjacent snapshot metadata | context_only | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "rows": {"CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type": "preferred_term", "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id": "CHEBI:32145", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing_current_keys": []} |
+| history-metadata | data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 12, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:54.553901"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml", "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:54.553901"}]}] |
+| writer-0 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Exact captured current functions read and source-input hashes checked; current behavior is context only, not proof of which historical version produced the stored record. |
+| writer-1 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Exact captured current functions read and source-input hashes checked; current behavior is context only, not proof of which historical version produced the stored record. |
+| writer-2 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Exact captured current functions read and source-input hashes checked; current behavior is context only, not proof of which historical version produced the stored record. |
+| mimPinnedCatalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Complete pinned current catalogue/tree searched for exact legacy identifier | supports | MediaIngredientMech:000171 has no exact current row/path. This is a completed bounded current lookup, not evidence about historical identity. |
+| mimPinnedTree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Complete pinned current catalogue/tree searched for exact legacy identifier | supports | MediaIngredientMech:000171 has no exact current row/path. This is a completed bounded current lookup, not evidence about historical identity. |
+| legacy-lookup | /private/tmp/culturemech-review-work-batch032/source-preflight-bound/316/evidence-context-original.json; Exact legacy lookup, full current catalogue and untruncated tree; current index all rows | context_only | {"identifier": "MediaIngredientMech:000171", "lookup_status": "completed_current_snapshot_lookup", "index_rows": [], "catalog_rows": 2953, "catalog_matches": [], "tree_entries": 7384, "tree_path_matches": [], "tree_truncated": false, "catalog_sha256": "474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7", "tree_sha256": "71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec", "limit": "Completed current lookup is distinct from unavailable historical correspondence; no validity or replacement inferred."} |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch032/316/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| mediadive204api-attempt | https://mediadive.dsmz.de/rest/medium/204; Preserved exact public retrieval result | context_only | Optional exact mediadive204api content was unavailable (HTTP 503). Current base formulation is assessed from the exact catalogue link and DSMZ primary. Historical byte equivalence and a distinct KOMODO variant are not inferred. |
+| komodo204detail-attempt | https://komodo.modelseed.org/servlet/Komodo?MediaInfo=204; Preserved exact public retrieval result | context_only | Optional exact komodo204detail content was unavailable (HTTP 403). Current base formulation is assessed from the exact catalogue link and DSMZ primary. Historical byte equivalence and a distinct KOMODO variant are not inferred. |
+| komodo204actual-attempt | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=204; Preserved exact public retrieval result | context_only | Optional exact komodo204actual content was unavailable (HTTP 403). Current base formulation is assessed from the exact catalogue link and DSMZ primary. Historical byte equivalence and a distinct KOMODO variant are not inferred. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Historical correspondence of asserted MediaIngredientMech:000171 remains unavailable. A current-index miss does not prove original validity, invalidity or a replacement mapping.
+- Optional exact mediadive204api content was unavailable (HTTP 503). Current base formulation is assessed from the exact catalogue link and DSMZ primary. Historical byte equivalence and a distinct KOMODO variant are not inferred.
+- Optional exact komodo204detail content was unavailable (HTTP 403). Current base formulation is assessed from the exact catalogue link and DSMZ primary. Historical byte equivalence and a distinct KOMODO variant are not inferred.
+- Optional exact komodo204actual content was unavailable (HTTP 403). Current base formulation is assessed from the exact catalogue link and DSMZ primary. Historical byte equivalence and a distinct KOMODO variant are not inferred.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T175709Z-culturemech-004322-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: aspergillus_nidulans_minimal_medium (CultureMech:004322)'
+started_at: '2026-10-21T17:54:27Z'
+finished_at: '2026-10-21T17:57:09Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact KOMODO catalogue links this record to DSMZ 204, whose three separately
+  prepared solutions are flattened into main-medium concentrations. Main reconstruction
+  loses the three water amounts, the 2 N NaOH stock and separate sterilization/mixing
+  instructions. Primary chemical forms resolve, but the asserted legacy sodium-nitrate
+  MIM identifier has no recovered historical correspondence, making this review partial.
+  No final litre, exact trace doses or autoclave temperature is inferred.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    sha256: 10f271f0783be2a0851dd0be2bc51ce719f1605d7a5c140beb2d1af07bee97d0
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    sha256: e8bf0519c9e329ef917e8b1059ef88bf1044c11e8f8cc8f58f788286011b2a03
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml.md
+    sha256: 91445fd35a9925f20c9a66fb85613756859ef90fff30bac432040ea102a3ca07
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 316; batch 032 item 6 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-one task batches
+    contain 310 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 313 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:004322
+targets:
+- target_id: CultureMech:004322
+  path: data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+  label: aspergillus_nidulans_minimal_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch032/316/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch032/316/strict.tsv"
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:004322
+- check_id: legacy-historical-correspondence
+  name: Historical identity of asserted MediaIngredientMech:000171
+  required: true
+  status: unavailable
+  summary: Current bounded lookup completed with no exact row. Original historical
+    identity/correspondence was not recovered; primary chemical identity is a separate
+    claim.
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - legacy-lookup
+  - mimPinnedCatalog
+  - mimPinnedTree
+- check_id: mediadive204api-source-access
+  name: 'Exact source content access: mediadive204api'
+  required: false
+  status: unavailable
+  summary: Optional exact mediadive204api content was unavailable (HTTP 503). Current
+    base formulation is assessed from the exact catalogue link and DSMZ primary. Historical
+    byte equivalence and a distinct KOMODO variant are not inferred.
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - mediadive204api-attempt
+- check_id: komodo204detail-source-access
+  name: 'Exact source content access: komodo204detail'
+  required: false
+  status: unavailable
+  summary: Optional exact komodo204detail content was unavailable (HTTP 403). Current
+    base formulation is assessed from the exact catalogue link and DSMZ primary. Historical
+    byte equivalence and a distinct KOMODO variant are not inferred.
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - komodo204detail-attempt
+- check_id: komodo204actual-source-access
+  name: 'Exact source content access: komodo204actual'
+  required: false
+  status: unavailable
+  summary: Optional exact komodo204actual content was unavailable (HTTP 403). Current
+    base formulation is assessed from the exact catalogue link and DSMZ primary. Historical
+    byte equivalence and a distinct KOMODO variant are not inferred.
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - komodo204actual-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T17:57:08Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T17:57:08Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:15.612463Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch032/316/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:17.592138Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch032/316/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:20.434163Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:21.357962Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T17:57:08Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml:1:id:
+    CultureMech:004322
+
+    ./data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml:1:id:
+    CultureMech:004322
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/source-preflight-bound/316/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T17:57:08Z'
+  support: supports
+  summary: 16 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 7c434616addb5291b36181f1d4ff17b3f0d28f4b573cd84135d72f70cf8c9a51
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf
+  locator: Complete page 1, solutions A/B/C and final preparation paragraph
+  accessed_at: '2026-10-21T17:38:20.761144Z'
+  support: supports
+  summary: Exact primary viewed as PDF and text; source amounts are stage-specific.
+  quote: Autoclave separately for 15 min. Mix A, B and C before pouring plates.
+  snapshot_sha256: e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact table row containing MediaInfo=204
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: The exact catalogue row links KOMODO 204 to DSMZ 204 and retains pH/oxygen
+    annotations only.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=204'\
+    \ >204</a></TD>\n\t\t\t\t\t<TD>ASPERGILLUS NIDULANS MINIMAL MEDIUM</TD>\n\t\t\t\
+    \t\t<TD> 6.5, NaOH</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\
+    \t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: catalog-header
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact MediaList column header
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: The false oxygen value is under Is Aerobic; this is catalogue metadata,
+    not physiological growth evidence.
+  quote: "<TR>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\" width=\"50\">ID</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Name</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">PH Info</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"\
+    >Is Complex</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\">Is Aerobic</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Is SubMedium</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">Instructions</TD>\n\t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: 'CHEBI:17234 resolves to glucose. Stored labels: [''glucose'']. Exact label
+    correspondence is separate from source chemical-form support.'
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: 'CHEBI:2509 resolves to agar. Stored labels: [''agar'']. Exact label correspondence
+    is separate from source chemical-form support.'
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: 'CHEBI:31795 resolves to magnesium sulfate heptahydrate. Stored labels:
+    [''magnesium sulfate heptahydrate'']. Exact label correspondence is separate from
+    source chemical-form support.'
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32145
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T07:33:28.263004Z'
+  support: supports
+  summary: 'CHEBI:32145 resolves to sodium hydroxide. Stored labels: [''sodium hydroxide''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: 'CHEBI:32312 resolves to zinc sulfate heptahydrate. Stored labels: [''zinc
+    sulfate heptahydrate'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: 'CHEBI:32588 resolves to potassium chloride. Stored labels: [''potassium
+    chloride'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi63005
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T04:02:36.443517Z'
+  support: supports
+  summary: 'CHEBI:63005 resolves to sodium nitrate. Stored labels: [''sodium nitrate''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 1ec6a815a0e22ba0d12f84ad998bef39b9e6b80cf90c25cd1ab51903bbb54da3
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: 'CHEBI:63036 resolves to potassium dihydrogen phosphate. Stored labels:
+    [''potassium dihydrogen phosphate'']. Exact label correspondence is separate from
+    source chemical-form support.'
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: 'CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Stored labels:
+    [''iron(2+) sulfate heptahydrate'']. Exact label correspondence is separate from
+    source chemical-form support.'
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned index exact identifier lookup; adjacent snapshot metadata
+  accessed_at: '2026-10-21T17:57:08Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "rows":
+    {"CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier":
+    "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type":
+    "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id":
+    "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795":
+    [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32145":
+    [{"label": "NaOH", "match_type": "preferred_term", "identifier": "CHEBI:32145",
+    "preferred_term": "NaOH", "ontology_id": "CHEBI:32145", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O",
+    "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836":
+    [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, "missing_current_keys": []}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T17:57:08Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 12, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:18:54.553901"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml",
+    "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:54.553901"}]}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:57:08Z'
+  support: context_only
+  summary: Exact captured current functions read and source-input hashes checked;
+    current behavior is context only, not proof of which historical version produced
+    the stored record.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:57:08Z'
+  support: context_only
+  summary: Exact captured current functions read and source-input hashes checked;
+    current behavior is context only, not proof of which historical version produced
+    the stored record.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:57:08Z'
+  support: context_only
+  summary: Exact captured current functions read and source-input hashes checked;
+    current behavior is context only, not proof of which historical version produced
+    the stored record.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: mimPinnedCatalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Complete pinned current catalogue/tree searched for exact legacy identifier
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: supports
+  summary: MediaIngredientMech:000171 has no exact current row/path. This is a completed
+    bounded current lookup, not evidence about historical identity.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mimPinnedTree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Complete pinned current catalogue/tree searched for exact legacy identifier
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: supports
+  summary: MediaIngredientMech:000171 has no exact current row/path. This is a completed
+    bounded current lookup, not evidence about historical identity.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: legacy-lookup
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/source-preflight-bound/316/evidence-context-original.json
+  locator: Exact legacy lookup, full current catalogue and untruncated tree; current
+    index all rows
+  accessed_at: '2026-10-21T17:57:08Z'
+  support: context_only
+  summary: '{"identifier": "MediaIngredientMech:000171", "lookup_status": "completed_current_snapshot_lookup",
+    "index_rows": [], "catalog_rows": 2953, "catalog_matches": [], "tree_entries":
+    7384, "tree_path_matches": [], "tree_truncated": false, "catalog_sha256": "474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7",
+    "tree_sha256": "71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec",
+    "limit": "Completed current lookup is distinct from unavailable historical correspondence;
+    no validity or replacement inferred."}'
+  snapshot_sha256: 0e5eaa2e26d783abc0b75ffe7d28196dbab6868239bc9ea74d565ce5afd37297
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/316/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T17:57:08Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: e1a07f0594bb644592ef30ae4a6cd243a3f42c936bd860465d374d3deb89f28f
+- evidence_id: mediadive204api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/204
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:38:19.315411Z'
+  support: context_only
+  summary: Optional exact mediadive204api content was unavailable (HTTP 503). Current
+    base formulation is assessed from the exact catalogue link and DSMZ primary. Historical
+    byte equivalence and a distinct KOMODO variant are not inferred.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo204detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/Komodo?MediaInfo=204
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:38:19.315070Z'
+  support: context_only
+  summary: Optional exact komodo204detail content was unavailable (HTTP 403). Current
+    base formulation is assessed from the exact catalogue link and DSMZ primary. Historical
+    byte equivalence and a distinct KOMODO variant are not inferred.
+  snapshot_sha256: 93ef26e564fdc288dac6a79f523dd57f2e2bf5743023a9334f5e70043fe3f949
+- evidence_id: komodo204actual-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=204
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:38:19.315225Z'
+  support: context_only
+  summary: Optional exact komodo204actual content was unavailable (HTTP 403). Current
+    base formulation is assessed from the exact catalogue link and DSMZ primary. Historical
+    byte equivalence and a distinct KOMODO variant are not inferred.
+  snapshot_sha256: fb09a2dd02ffa5b1726eb13658cb7b427ed93143da1481934a5e4f1a832b4bc8
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary chemical identifiers
+  outcome: concern
+  summary: '9 distinct primary/current-secondary IDs resolve to nonobsolete terms;
+    exact stored/canonical labels are recorded separately in each term evidence item.
+    Target direct-ingredient linkage is 9/9 primary (100.00%) and 8/9 current CHEBI-based
+    secondary (88.89%), on a 0–100 linkage scale, not an accuracy score. Current secondary
+    keys without pinned index rows: []. Legacy slot count 1 is separate and does not
+    enter that current-key claim. Supplied-form correspondence is assessed separately.'
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi17234
+  - chebi2509
+  - chebi31795
+  - chebi32145
+  - chebi32312
+  - chebi32588
+  - chebi63005
+  - chebi63036
+  - chebi75836
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 23 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact accession and source boundary
+  outcome: supported
+  summary: The sole maintained KOMODO 204 owner and merged target share CultureMech:004322.
+    Exact catalogue title and original-recipe link identify DSMZ 204. The source is
+    not a related minimal medium or strain-specific variant; failed detail/API access
+    does not prove historical byte equality.
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - catalog
+  - catalog-header
+- assessment_id: forms
+  area: grounding
+  topic: Source chemical forms versus asserted terms
+  outcome: supported
+  summary: All nine primary identifiers match the printed chemical identities, including
+    the magnesium, iron and zinc heptahydrates. Generic glucose is not promoted to
+    a specific stereoisomer. The valid sodium-nitrate primary identity is separate
+    from unresolved legacy MIM 000171. Agar is a polymeric gelling material; minimal/defined
+    nutrient classification does not quantify every molecular component of agar.
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - primary
+  - chebi31795
+  - chebi75836
+  - chebi32312
+  - chebi17234
+  - chebi2509
+  - chebi63005
+  - legacy-lookup
+- assessment_id: classification
+  area: scope
+  topic: Minimal agar medium and organism-title scope
+  outcome: concern
+  summary: The source explicitly prepares plates, consistent with SOLID_AGAR, and
+    describes an Aspergillus nidulans minimal medium. The bacterial category is not
+    supported by that fungal-medium identity. A title and generic cultivation application
+    do not establish a strain accession, measured growth or an optimum. The catalogue
+    Is Aerobic=false annotation must not be promoted to anaerobic physiology.
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - record
+  - primary
+  - catalog-header
+  - catalog
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 16 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"label\": \"NaNO3\",\n    \"\
+    decision\": \"correct\",\n    \"source_stage\": \"Solution A, 500 ml water\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"12\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"12\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz204\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\"\
+    ,\n        \"source_locator\": \"Solution A, 500 ml water exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"NaNO3 6.00 g\",\n        \"snapshot_sha256\"\
+    : \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\",\n    \
+    \    \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal amount and original\
+    \ unit within the named solution. The stored value is a solution-strength normalization,\
+    \ not a supported final-medium concentration. Do not divide by an invented final\
+    \ litre or silently replace the three-source preparation with one stock. \"\n\
+    \  },\n  {\n    \"decision_id\": \"q2\",\n    \"label\": \"KH2PO4\",\n    \"decision\"\
+    : \"correct\",\n    \"source_stage\": \"Solution A, 500 ml water\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.04\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.04\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz204\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\"\
+    ,\n        \"source_locator\": \"Solution A, 500 ml water exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"KH2PO4 1.52 g\",\n        \"snapshot_sha256\"\
+    : \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\",\n    \
+    \    \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal amount and original\
+    \ unit within the named solution. The stored value is a solution-strength normalization,\
+    \ not a supported final-medium concentration. Do not divide by an invented final\
+    \ litre or silently replace the three-source preparation with one stock. \"\n\
+    \  },\n  {\n    \"decision_id\": \"q3\",\n    \"label\": \"KCl\",\n    \"decision\"\
+    : \"correct\",\n    \"source_stage\": \"Solution A, 500 ml water\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.04\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.04\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz204\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\"\
+    ,\n        \"source_locator\": \"Solution A, 500 ml water exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"KCl 1.52 g\",\n        \"snapshot_sha256\"\
+    : \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\",\n    \
+    \    \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal amount and original\
+    \ unit within the named solution. The stored value is a solution-strength normalization,\
+    \ not a supported final-medium concentration. Do not divide by an invented final\
+    \ litre or silently replace the three-source preparation with one stock. \"\n\
+    \  },\n  {\n    \"decision_id\": \"q4\",\n    \"label\": \"MgSO4 x 7 H2O\",\n\
+    \    \"decision\": \"correct\",\n    \"source_stage\": \"Solution B, 250 ml water\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.08\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.08\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz204\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\"\
+    ,\n        \"source_locator\": \"Solution B, 250 ml water exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"MgSO4 x 7 H2O 0.52 g\",\n        \"snapshot_sha256\"\
+    : \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\",\n    \
+    \    \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal amount and original\
+    \ unit within the named solution. The stored value is a solution-strength normalization,\
+    \ not a supported final-medium concentration. Do not divide by an invented final\
+    \ litre or silently replace the three-source preparation with one stock. \"\n\
+    \  },\n  {\n    \"decision_id\": \"q5\",\n    \"label\": \"Agar\",\n    \"decision\"\
+    : \"correct\",\n    \"source_stage\": \"Solution B, 250 ml water\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"60\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"60\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz204\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\"\
+    ,\n        \"source_locator\": \"Solution B, 250 ml water exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Agar 15.00 g\",\n        \"snapshot_sha256\"\
+    : \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\",\n    \
+    \    \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal amount and original\
+    \ unit within the named solution. The stored value is a solution-strength normalization,\
+    \ not a supported final-medium concentration. Do not divide by an invented final\
+    \ litre or silently replace the three-source preparation with one stock. \"\n\
+    \  },\n  {\n    \"decision_id\": \"q6\",\n    \"label\": \"Glucose\",\n    \"\
+    decision\": \"correct\",\n    \"source_stage\": \"Solution C, 200 ml water\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"50\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"50\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz204\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\"\
+    ,\n        \"source_locator\": \"Solution C, 200 ml water exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Glucose 10.00 g\",\n        \"snapshot_sha256\"\
+    : \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\",\n    \
+    \    \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal amount and original\
+    \ unit within the named solution. The stored value is a solution-strength normalization,\
+    \ not a supported final-medium concentration. Do not divide by an invented final\
+    \ litre or silently replace the three-source preparation with one stock. \"\n\
+    \  },\n  {\n    \"decision_id\": \"q7\",\n    \"label\": \"FeSO4 x 7 H2O\",\n\
+    \    \"decision\": \"not_quantified\",\n    \"source_stage\": \"Solution B\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz204\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\"\
+    ,\n        \"source_locator\": \"Solution B trace component row\",\n        \"\
+    exact_source_quote\": \"FeSO4 x 7 H2O trace -\",\n        \"snapshot_sha256\"\
+    : \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\",\n    \
+    \    \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary supplies trace without\
+    \ a numeric dose. Keep the unquantified trace explicitly inside solution B; VARIABLE\
+    \ does not establish a final concentration.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q8\",\n    \"label\": \"ZnSO4 x 7 H2O\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"source_stage\": \"Solution B\",\n    \"local_fields\": [\n      {\n \
+    \       \"input\": \"data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz204\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\"\
+    ,\n        \"source_locator\": \"Solution B trace component row\",\n        \"\
+    exact_source_quote\": \"ZnSO4 x 7 H2O trace -\",\n        \"snapshot_sha256\"\
+    : \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\",\n    \
+    \    \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary supplies trace without\
+    \ a numeric dose. Keep the unquantified trace explicitly inside solution B; VARIABLE\
+    \ does not establish a final concentration.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q9\",\n    \"label\": \"NaOH titration and stock strength\",\n    \"decision\"\
+    : \"not_quantified\",\n    \"source_stage\": \"Solution A titration\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].notes\",\n        \"stored\": \"pH\
+    \ adjustment (extracted from notes)\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].notes\",\n        \"stored\": \"pH\
+    \ adjustment (extracted from notes)\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz204\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\",\n        \"\
+    source_locator\": \"Solution A pH sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 6.5 with 2 N NaOH.\",\n        \"snapshot_sha256\": \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\"\
+    ,\n        \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"The titrant amount remains unquantified.\
+    \ Retain the explicit 2 N stock strength separately from its variable addition;\
+    \ no dose or final molarity is inferred.\"\n  },\n  {\n    \"decision_id\": \"\
+    q10\",\n    \"label\": \"NaOH stock strength\",\n    \"decision\": \"add\",\n\
+    \    \"source_stage\": \"Solution A titrant stock\",\n    \"local_fields\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz204\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\"\
+    ,\n        \"source_locator\": \"Solution A titrant\",\n        \"exact_source_quote\"\
+    : \"2 N NaOH\",\n        \"snapshot_sha256\": \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\"\
+    ,\n        \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"Add the explicitly stated 2 N titrant\
+    \ strength in preparation/stock context; the existing variable dose is not a stock\
+    \ strength.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n    \"label\": \"Target\
+    \ pH\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"Solution\
+    \ A\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.5\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.5\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz204\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\"\
+    ,\n        \"source_locator\": \"Solution A pH sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 6.5 with 2 N NaOH.\",\n        \"snapshot_sha256\": \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\"\
+    ,\n        \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"The value 6.5 is source-supported\
+    \ as the adjustment of solution A. Attach that exact stage and avoid describing\
+    \ it as measured pH of the final combined medium.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q12\",\n    \"label\": \"Solution A water\",\n    \"decision\": \"add\",\n\
+    \    \"source_stage\": \"Solution A\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz204\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\",\n        \"\
+    source_locator\": \"Solution A water row\",\n        \"exact_source_quote\": \"\
+    Distilled water 500.00 ml\",\n        \"snapshot_sha256\": \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\"\
+    ,\n        \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore the printed water amount\
+    \ within its own solution. These three listed amounts total 950 ml; their sum\
+    \ is not an explicit measured final volume. \"\n  },\n  {\n    \"decision_id\"\
+    : \"q13\",\n    \"label\": \"Solution B water\",\n    \"decision\": \"add\",\n\
+    \    \"source_stage\": \"Solution B\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz204\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\",\n        \"\
+    source_locator\": \"Solution B water row\",\n        \"exact_source_quote\": \"\
+    Distilled water 250.00 ml\",\n        \"snapshot_sha256\": \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\"\
+    ,\n        \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore the printed water amount\
+    \ within its own solution. These three listed amounts total 950 ml; their sum\
+    \ is not an explicit measured final volume. \"\n  },\n  {\n    \"decision_id\"\
+    : \"q14\",\n    \"label\": \"Solution C water\",\n    \"decision\": \"add\",\n\
+    \    \"source_stage\": \"Solution C\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz204\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\",\n        \"\
+    source_locator\": \"Solution C water row\",\n        \"exact_source_quote\": \"\
+    Distilled water 200.00 ml\",\n        \"snapshot_sha256\": \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\"\
+    ,\n        \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore the printed water amount\
+    \ within its own solution. These three listed amounts total 950 ml; their sum\
+    \ is not an explicit measured final volume. \"\n  },\n  {\n    \"decision_id\"\
+    : \"q15\",\n    \"label\": \"Separate autoclaving duration and mixing\",\n   \
+    \ \"decision\": \"add\",\n    \"source_stage\": \"A/B/C preparation\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz204\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\"\
+    ,\n        \"source_locator\": \"Closing preparation sentence\",\n        \"exact_source_quote\"\
+    : \"Autoclave separately for 15 min. Mix A, B and C before pouring plates.\",\n\
+    \        \"snapshot_sha256\": \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\"\
+    ,\n        \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore separate A/B/C sterilization\
+    \ for 15 minutes and mixing before plates. The exact page supplies no temperature,\
+    \ so do not invent 121°C or transfer a default from another source.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q16\",\n    \"label\": \"Final volume and missing\
+    \ cycle temperature\",\n    \"decision\": \"not_quantified\",\n    \"source_stage\"\
+    : \"Combined medium and cycle limits\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz204\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\",\n        \"\
+    source_locator\": \"Solution C final water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 200.00 ml\",\n        \"snapshot_sha256\": \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\"\
+    ,\n        \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz204\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf\",\n    \
+    \    \"source_locator\": \"Closing instruction\",\n        \"exact_source_quote\"\
+    : \"Autoclave separately for 15 min.\",\n        \"snapshot_sha256\": \"e9c83709f64d98b4033e8c6d54fc51dd2e76740903706326682f3b4bc07e7427\"\
+    ,\n        \"parsed_text_sha256\": \"59af9846e06f8f78abbbe43b1d93c89a0021c08e4034af9aaaba20e2894d6b33\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source specifies neither a final\
+    \ make-up volume nor an autoclave temperature. Keep these source limits explicit;\
+    \ 500+250+200 ml is only the sum of the listed water inputs.\"\n  }\n]"
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained source and generated target
+  outcome: supported
+  summary: The single exact normalized KOMODO 204 owner owns any correction; current
+    import/merge functions are context, not historical causal proof. Generated merged
+    YAML remains unchanged.
+  target_ids:
+  - CultureMech:004322
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-0
+findings:
+- finding_id: f1
+  issue_key: cm004322-stock-stages
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Three solution strengths are flattened into the final ingredient list
+  description: The record lists 12, 3.04, 3.04, 2.08, 60 and 50 G_PER_L without A/B/C
+    boundaries. These reflect individual solution quantities and water bases, not
+    a source-supported final formulation. All three waters and the receiving-medium
+    assembly are absent.
+  target_ids:
+  - CultureMech:004322
+  field_paths:
+  - ingredients[*].concentration
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm004322-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate sterilization and titrant strength are missing
+  description: Neither layer has preparation_steps. The source explicitly adjusts
+    solution A with 2 N NaOH and autoclaves A/B/C separately for 15 minutes before
+    mixing. A variable NaOH ingredient alone does not retain that information.
+  target_ids:
+  - CultureMech:004322
+  field_paths:
+  - preparation_steps
+  - ingredients[8]
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm004322-category
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Bacterial category conflicts with the named fungal-medium scope
+  description: The exact linked primary is ASPERGILLUS NIDULANS MINIMAL MEDIUM, whereas
+    the maintained owner and target classify it as bacterial. This affects category-based
+    discovery; it does not establish any particular strain growth assertion.
+  target_ids:
+  - CultureMech:004322
+  field_paths:
+  - category
+  evidence_ids:
+  - primary
+  - record
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.4
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm004322-legacy-evidence
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Legacy sodium-nitrate correspondence and claim evidence remain unresolved
+  description: The current complete index/catalogue/tree lookup has no exact legacy
+    000171 entry, but does not reveal its historical meaning. Other current CHEBI-based
+    secondary rows resolve. No local amount or preparation claims have attached source
+    excerpts.
+  target_ids:
+  - CultureMech:004322
+  field_paths:
+  - ingredients[0].mediaingredientmech_term
+  - ingredients[*].evidence
+  - references
+  evidence_ids:
+  - mim
+  - legacy-lookup
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: cm004322-history
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical import timestamps are malformed or lack a timezone
+  description: Both layers retain a malformed KOMODO import timestamp and a timezone-naive
+    resolver timestamp. These events do not substantiate recipe amounts and must not
+    be silently rewritten.
+  target_ids:
+  - CultureMech:004322
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the exact three solution formulations and their mixing relationship
+    in the maintained owner; preserve batch quantities, original units and unresolved
+    final-volume basis.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:004322
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Add stage-specific preparation and exact titrant strength, with no
+    invented sterilization temperature.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:004322
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Reconcile the category with the verified source organism scope while
+    keeping unsupported strain and growth claims absent.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:004322
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Recover historical legacy evidence or explicitly qualify the unresolved
+    link; preserve valid primary chemistry. Add narrow source/version/stage evidence
+    after authorized curation.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:004322
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve the old events and append any separately authorized provenance
+    clarification with a valid UTC timestamp.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:004322
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Historical correspondence of asserted MediaIngredientMech:000171 remains unavailable.
+  A current-index miss does not prove original validity, invalidity or a replacement
+  mapping.
+- Optional exact mediadive204api content was unavailable (HTTP 503). Current base
+  formulation is assessed from the exact catalogue link and DSMZ primary. Historical
+  byte equivalence and a distinct KOMODO variant are not inferred.
+- Optional exact komodo204detail content was unavailable (HTTP 403). Current base
+  formulation is assessed from the exact catalogue link and DSMZ primary. Historical
+  byte equivalence and a distinct KOMODO variant are not inferred.
+- Optional exact komodo204actual content was unavailable (HTTP 403). Current base
+  formulation is assessed from the exact catalogue link and DSMZ primary. Historical
+  byte equivalence and a distinct KOMODO variant are not inferred.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-032
+- generated-medium
+```
