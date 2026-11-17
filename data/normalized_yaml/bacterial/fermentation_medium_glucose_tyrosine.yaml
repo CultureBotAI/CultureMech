@@ -149,6 +149,13 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T06:57:12.059329+00:00'
+  curator: codex
+  action: ADDED_VERIFIED_PAPER_CITATION
+  notes: Added verified source-paper bibliography, DOI alias, archived abstract and
+    taxonomy/mention notes. Exact formulation remains unresolved; no variant, growth
+    assertion or ingredient correction. All prior fields and history preserved.
+  source: PMID:23172360
 media_term:
   preferred_term: MediaDB Medium 367
   term:
@@ -160,3 +167,28 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:23172360
+  title: Reconstruction and analysis of the genome-scale metabolic network of Candida
+    glabrata.
+  authors: Xu N; Liu L; Zou W; Liu J; Hua Q; Chen J
+  year: 2013
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    MediaDB sourceID=124; medID=367; growth_data row IDs=730; doi:10.1039/c2mb25311a;
+    accessed_on=2026-10-13. MediaDB SQL source title/year/PMID and exact media ID/name
+    agree with the verified PubMed identity; no notice is present in the archived
+    PubMed XML. Archived source=references_cache/papers/PMID_23172360.xml; abstract
+    Markdown=references_cache/papers/PMID_23172360.md. formulation_status=unresolved.
+    Abstract-only access does not establish this local carbon/nitrogen formulation,
+    concentrations, stock basis, preparation, cultivation conditions or exact experimental
+    strain. The abstract describes a metabolic model and comparisons to experimental
+    data; neither model predictions nor a MediaDB growth row establishes growth on
+    this exact recipe. Potential study-specific modifications remain unresolved in
+    these citation notes; no resolved variant, target organism, growth metric or concentration
+    change is added. Organism inventory: abstract excerpt=''Candida glabrata''; reported_scientific_name=Candida
+    glabrata; canonical_scientific_name=Nakaseomyces glabratus; NCBITaxon:5478; rank=species;
+    taxonomy_match=verified_synonym. The abstract identifies no strain, and no strain
+    is inferred from a genome or model. This yeast mapping conflicts with the pre-existing
+    bacterial category, which is retained for separate owner/path review. No whole-paper
+    organism inventory is claimed. Taxonomy lookup_on=2026-10-13; source=https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1423,535025,562,1402,1351,5478&retmode=xml;
+    raw XML=references_cache/papers/taxonomy/nakano-xu-20261013.xml. '

@@ -333,6 +333,20 @@
             *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
                 transition-duration:.01ms!important;scroll-behavior:auto!important;}
         }
+
+        .page-layout { max-width: 1700px; margin: 0 auto; display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 20px; align-items: start; }
+        .facet-sidebar { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; }
+        .facets { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem; box-shadow: 0 10px 40px rgba(0,0,0,0.12); }
+        .facets h3 { margin: 0 0 .75rem; font-size: .95rem; text-transform: uppercase; letter-spacing: .04em; color: var(--accent); display: flex; justify-content: space-between; align-items: center; }
+        .facets h3 button { font-size: .78rem; padding: .2rem .55rem; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 4px; cursor: pointer; text-transform: none; letter-spacing: 0; font-weight: 500; }
+        .facet-groups { display: flex; flex-direction: column; gap: 1rem; }
+        .facet-group { min-width: 160px; }
+        .facet-title { font-size: .78rem; font-weight: 600; color: var(--ink); margin-bottom: .35rem; }
+        .facet-opt { display: flex; align-items: center; gap: .4rem; font-size: .82rem; padding: .15rem 0; cursor: pointer; color: var(--ink); }
+        .facet-opt .cnt { margin-left: auto; font-size: .74rem; color: #888; font-variant-numeric: tabular-nums; }
+        .facet-showing { margin-top: .75rem; font-size: .82rem; color: #666; }
+        .main-column { min-width: 0; }
+        @media (max-width: 1100px) { .page-layout { grid-template-columns: minmax(0, 1fr); } .facet-sidebar { position: static; max-height: none; } }
     </style>
 </head>
 <body>
@@ -346,8 +360,19 @@
         </p>
         <a href="index.html" class="nav-link">Home</a>
         <a href="browser.html" class="nav-link">&larr; Back to Media Browser</a>
+        <a href="text_map.html" class="nav-link">Text Map</a>
+        <a href="umap.html" class="nav-link">Media PaCMAP</a>
+        <a href="umap_graph.html" class="nav-link">Media Graph</a>
+        <a href="ingredient_umap.html" class="nav-link">Ingredient PaCMAP</a>
+        <a href="schema.html" class="nav-link">Schema</a>
+        <a href="https://culturebotai.github.io/mechs/" class="nav-link">All Mech projects</a>
     </header>
 
+    <div class="page-layout">
+    <aside class="facet-sidebar" aria-label="Facet filters">
+        <div class="facets" id="facet-panel"></div>
+    </aside>
+    <div class="main-column">
     <div class="container">
         <div class="plot-panel">
             <h2>Ingredient Embedding Space</h2>
@@ -411,6 +436,8 @@
                 </div>
             </details>
         </div>
+    </div>
+    </div>
     </div>
 
     <div class="tooltip" id="tooltip"></div>
@@ -516,9 +543,65 @@
             );
         });
 
-        // ---- Filtering / search ----
+        // ---- Filtering / search / facets ----
+        const escapeHtml = value => String(value == null ? "" : value)
+            .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+            .replace(/\"/g, "&quot;").replace(/'/g, "&#39;");
         let activeTier = "all";
         let searchTerm = "";
+        const FACET_DEFS = [
+            { key: "tier", label: "Occurrence Tier", get: d => d.tier || "(none)" },
+            { key: "frequency_bucket", label: "Media Count", get: d => d.count >= 100 ? "100+ media" : d.count >= 20 ? "20-99 media" : d.count >= 5 ? "5-19 media" : d.count >= 2 ? "2-4 media" : "1 medium" },
+            { key: "has_cas_rn", label: "CAS-RN", get: d => d.cas_rn ? "Has CAS-RN" : "No CAS-RN" },
+            { key: "has_kg_node", label: "KG Node", get: d => d.kg_node_id ? "Direct KG match" : "Mapped via CHEBI" }
+        ];
+        const activeFacets = Object.fromEntries(FACET_DEFS.map(f => [f.key, new Set()]));
+        function facetPass(d) {
+            for (const f of FACET_DEFS) {
+                const sel = activeFacets[f.key];
+                if (sel.size > 0 && !sel.has(f.get(d))) return false;
+            }
+            return true;
+        }
+        (function buildFacets() {
+            const panel = document.getElementById("facet-panel");
+            if (!panel) return;
+            FACET_DEFS.forEach(f => {
+                const counts = {};
+                ingredientData.forEach(d => { const v = f.get(d); counts[v] = (counts[v] || 0) + 1; });
+                const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+                const group = document.createElement("div");
+                group.className = "facet-group";
+                const title = document.createElement("span");
+                title.className = "facet-title";
+                title.textContent = f.label + ":";
+                group.appendChild(title);
+                entries.forEach(([val, n]) => {
+                    const chip = document.createElement("button");
+                    chip.type = "button";
+                    chip.className = "facet-chip";
+                    chip.innerHTML = `${escapeHtml(val)}<span class="count">(${n})</span>`;
+                    chip.addEventListener("click", () => {
+                        const sel = activeFacets[f.key];
+                        if (sel.has(val)) { sel.delete(val); chip.classList.remove("active"); }
+                        else { sel.add(val); chip.classList.add("active"); }
+                        applyFilters();
+                    });
+                    group.appendChild(chip);
+                });
+                panel.appendChild(group);
+            });
+            const clear = document.createElement("button");
+            clear.type = "button";
+            clear.className = "facet-clear";
+            clear.textContent = "Clear facets";
+            clear.addEventListener("click", () => {
+                FACET_DEFS.forEach(f => activeFacets[f.key].clear());
+                panel.querySelectorAll(".facet-chip.active").forEach(c => c.classList.remove("active"));
+                applyFilters();
+            });
+            panel.appendChild(clear);
+        })();
 
         function applyFilters() {
             let visible = 0;
@@ -526,8 +609,9 @@
                 const tierMatch = activeTier === "all" || d.tier === activeTier;
                 const searchMatch = !searchTerm
                     || d.name.toLowerCase().includes(searchTerm)
-                    || d.chebi_id.toLowerCase().includes(searchTerm);
-                const show = tierMatch && searchMatch;
+                    || d.chebi_id.toLowerCase().includes(searchTerm)
+                    || (d.cas_rn && d.cas_rn.toLowerCase().includes(searchTerm));
+                const show = tierMatch && searchMatch && facetPass(d);
                 d3.select(this)
                     .style("opacity", show ? (tierOpacity[d.tier] || 0.5) : 0.05)
                     .style("pointer-events", show ? "all" : "none");
@@ -550,7 +634,19 @@
         document.getElementById("search-input").addEventListener("input", function() {
             searchTerm = this.value.toLowerCase().trim();
             applyFilters();
+            const url = new URL(window.location.href);
+            if (this.value.trim()) url.searchParams.set("q", this.value.trim());
+            else url.searchParams.delete("q");
+            window.history.replaceState({}, "", url.toString());
         });
+
+        const initQ = new URLSearchParams(window.location.search).get("q");
+        if (initQ) {
+            const input = document.getElementById("search-input");
+            input.value = initQ;
+            searchTerm = initQ.toLowerCase().trim();
+            applyFilters();
+        }
 
         // ---- Data-table fallback: same data the plot renders (dataviz #10) ----
         (function buildDataTable() {

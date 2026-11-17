@@ -1,0 +1,520 @@
+id: https://w3id.org/culturebotai/claw/mech-workflow
+name: mech_workflow
+title: Shared cyclic Mech goal and closure contract
+version: 1.0.0
+description: Parent workflow, pinned local adaptations, and immutable per-goal evidence. Semantic validation
+  enforces ordering, closure, versioned artifact paths, stable finding references, bounded infrastructure
+  scope and parent invariants.
+prefixes:
+  workflow: https://w3id.org/culturebotai/claw/mech-workflow/
+  xsd: http://www.w3.org/2001/XMLSchema#
+default_prefix: workflow
+default_range: string
+types:
+  string:
+    base: str
+    uri: xsd:string
+  integer:
+    base: int
+    uri: xsd:integer
+  boolean:
+    base: Bool
+    uri: xsd:boolean
+  Token:
+    typeof: string
+    pattern: ^[A-Za-z0-9][A-Za-z0-9._-]{0,159}(?![\s\S])
+  NonBlank:
+    typeof: string
+    pattern: \S
+  SHA256:
+    typeof: string
+    pattern: ^[0-9a-f]{64}(?![\s\S])
+  GitRevision:
+    typeof: string
+    pattern: ^[0-9a-f]{40}(?![\s\S])
+  Version:
+    typeof: string
+    pattern: ^\d+\.\d+\.\d+(?![\s\S])
+  IssueURL:
+    typeof: string
+    pattern: ^https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/issues/[1-9][0-9]*(?![\s\S])
+  Repository:
+    typeof: string
+    pattern: ^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+(?![\s\S])
+enums:
+  Applicability:
+    permissible_values:
+      enabled: {}
+      blocked: {}
+      not_applicable: {}
+  Outcome:
+    permissible_values:
+      completed: {}
+      no_findings: {}
+      not_applicable: {}
+  FindingStatus:
+    permissible_values:
+      open: {}
+      deferred: {}
+      resolved: {}
+  ArtifactKind:
+    permissible_values:
+      review_report: {}
+      review_findings: {}
+      issue_map: {}
+      infra_snapshot: {}
+      implementation_plan: {}
+      validation: {}
+      supporting: {}
+  StageKey:
+    permissible_values:
+      add_records: {}
+      causal_graphs: {}
+      protein_examples: {}
+      record_review: {}
+      resolve_review_findings: {}
+      infrastructure: {}
+  InfrastructureNoteStatus:
+    permissible_values:
+      note: {}
+      open: {}
+      deferred: {}
+      resolved: {}
+classes:
+  WorkflowTemplate:
+    tree_root: true
+    attributes:
+      schema_version:
+        range: Version
+        required: true
+      id:
+        range: Token
+        required: true
+      version:
+        range: Version
+        required: true
+      title:
+        range: NonBlank
+        required: true
+      stages:
+        range: ParentStage
+        required: true
+        multivalued: true
+        inlined_as_list: true
+      closure_policy:
+        range: ClosurePolicy
+        required: true
+        inlined: true
+      review_policy:
+        range: ReviewPolicy
+        required: true
+        inlined: true
+      infrastructure_policy:
+        range: InfrastructurePolicy
+        required: true
+        inlined: true
+      cycle_policy:
+        range: CyclePolicy
+        required: true
+        inlined: true
+  ParentStage:
+    attributes:
+      stage:
+        range: integer
+        required: true
+        minimum_value: 1
+        maximum_value: 6
+      key:
+        range: StageKey
+        required: true
+      goal_text:
+        range: NonBlank
+        required: true
+      required_outputs:
+        range: string
+        required: true
+        multivalued: true
+  ClosurePolicy:
+    attributes:
+      steps:
+        range: string
+        required: true
+        multivalued: true
+      every_goal:
+        range: boolean
+        required: true
+      independent_review:
+        range: boolean
+        required: true
+      real_github_issues:
+        range: boolean
+        required: true
+      rereview_after_fixes:
+        range: boolean
+        required: true
+      verify_remote_merge:
+        range: boolean
+        required: true
+      delete_only_reviewed_branch:
+        range: boolean
+        required: true
+      checks_required:
+        range: boolean
+        required: true
+      allow_no_change_receipt:
+        range: boolean
+        required: true
+  ReviewPolicy:
+    attributes:
+      artifact_root:
+        range: string
+        required: true
+      latest_index_path:
+        range: string
+        required: true
+      carry_forward_statuses:
+        range: string
+        required: true
+        multivalued: true
+      immutable_versions:
+        range: boolean
+        required: true
+      stable_finding_ids:
+        range: boolean
+        required: true
+      explicit_no_findings:
+        range: boolean
+        required: true
+      latest_index_after_verified_closure:
+        range: boolean
+        required: true
+      require_tracked_committed:
+        range: boolean
+        required: true
+      issue_group_traceability:
+        range: boolean
+        required: true
+  InfrastructurePolicy:
+    attributes:
+      notebook_path:
+        range: string
+        required: true
+      continuous_capture:
+        range: boolean
+        required: true
+      issue_urls_required:
+        range: boolean
+        required: true
+      freeze_scope_at_stage_start:
+        range: boolean
+        required: true
+      new_tasks_next_cycle:
+        range: boolean
+        required: true
+      explicit_empty_plan:
+        range: boolean
+        required: true
+  CyclePolicy:
+    attributes:
+      restart_stage:
+        range: integer
+        required: true
+      restart_after_final_closure:
+        range: boolean
+        required: true
+      preserve_active_goal_on_migration:
+        range: boolean
+        required: true
+      bind_run_cycle_stage_and_goal:
+        range: boolean
+        required: true
+      reload_profile_between_cycles_only:
+        range: boolean
+        required: true
+  WorkflowProfile:
+    attributes:
+      schema_version:
+        range: Version
+        required: true
+      profile_id:
+        range: Token
+        required: true
+      profile_version:
+        range: Version
+        required: true
+      repository_key:
+        range: Token
+        required: true
+      github_repository:
+        range: Repository
+        required: true
+      parent:
+        range: ParentReference
+        required: true
+        inlined: true
+      adaptation_skill:
+        range: string
+        required: true
+      stages:
+        range: LocalStage
+        required: true
+        multivalued: true
+        inlined_as_list: true
+      extension:
+        range: LocalExtension
+        inlined: true
+  ParentReference:
+    attributes:
+      id:
+        range: Token
+        required: true
+      version:
+        range: Version
+        required: true
+      sha256:
+        range: SHA256
+        required: true
+      schema_sha256:
+        range: SHA256
+        required: true
+      repository:
+        range: Repository
+        required: true
+      revision:
+        range: GitRevision
+        required: true
+  LocalStage:
+    attributes:
+      stage:
+        range: integer
+        required: true
+        minimum_value: 1
+        maximum_value: 6
+      key:
+        range: StageKey
+        required: true
+      goal_text:
+        range: NonBlank
+        required: true
+      skill_paths:
+        range: string
+        required: true
+        multivalued: true
+      applicability:
+        range: Applicability
+        required: true
+      applicability_reason:
+        range: NonBlank
+  LocalExtension:
+    attributes:
+      schema_path:
+        range: string
+        required: true
+      schema_sha256:
+        range: SHA256
+        required: true
+      class_name:
+        range: Token
+        required: true
+      data_path:
+        range: string
+        required: true
+      data_sha256:
+        range: SHA256
+        required: true
+  Artifact:
+    attributes:
+      path:
+        range: string
+        required: true
+      sha256:
+        range: SHA256
+        required: true
+      kind:
+        range: ArtifactKind
+        required: true
+  EvidenceReference:
+    attributes:
+      path:
+        range: string
+        required: true
+      sha256:
+        range: SHA256
+        required: true
+  Finding:
+    attributes:
+      finding_id:
+        range: Token
+        required: true
+      status:
+        range: FindingStatus
+        required: true
+      summary:
+        range: NonBlank
+        required: true
+      group_id:
+        range: Token
+      issue_url:
+        range: IssueURL
+      disposition:
+        range: NonBlank
+      carried_from:
+        range: Token
+  FindingGroup:
+    attributes:
+      group_id:
+        range: Token
+        required: true
+      finding_ids:
+        range: string
+        required: true
+        multivalued: true
+      issue_url:
+        range: IssueURL
+        required: true
+      status:
+        range: FindingStatus
+        required: true
+      summary:
+        range: NonBlank
+        required: true
+      resolution_evidence:
+        range: string
+        multivalued: true
+      disposition:
+        range: NonBlank
+  InfrastructureTask:
+    attributes:
+      task_id:
+        range: Token
+        required: true
+      issue_url:
+        range: IssueURL
+        required: true
+      status:
+        range: FindingStatus
+        required: true
+      summary:
+        range: NonBlank
+        required: true
+      resolution_evidence:
+        range: string
+        multivalued: true
+      disposition:
+        range: NonBlank
+  GoalEvidence:
+    attributes:
+      schema_version:
+        range: Version
+        required: true
+      repository_key:
+        range: Token
+        required: true
+      github_repository:
+        range: Repository
+        required: true
+      run_id:
+        range: Token
+        required: true
+      cycle:
+        range: integer
+        required: true
+        minimum_value: 1
+      stage:
+        range: integer
+        required: true
+        minimum_value: 1
+        maximum_value: 6
+      revision:
+        range: integer
+        required: true
+        minimum_value: 1
+      outcome:
+        range: Outcome
+        required: true
+      summary:
+        range: NonBlank
+        required: true
+      source_revision:
+        range: GitRevision
+        required: true
+      artifacts:
+        range: Artifact
+        required: true
+        multivalued: true
+        inlined_as_list: true
+      findings:
+        range: Finding
+        required: true
+        multivalued: true
+        inlined_as_list: true
+      groups:
+        range: FindingGroup
+        required: true
+        multivalued: true
+        inlined_as_list: true
+      carry_forward_ids:
+        range: string
+        required: true
+        multivalued: true
+      infra_tasks:
+        range: InfrastructureTask
+        required: true
+        multivalued: true
+        inlined_as_list: true
+      previous_evidence:
+        range: EvidenceReference
+        inlined: true
+      scope_frozen_at:
+        range: string
+      supersedes_evidence:
+        range: EvidenceReference
+        inlined: true
+        description: Exact immutable immediate previous revision of this same run/cycle/stage; required
+          for revision > 1.
+  ReviewReport:
+    is_a: GoalEvidence
+    slot_usage:
+      stage:
+        minimum_value: 4
+        maximum_value: 4
+    description: Validated workflow evidence for goal stage 4; inherits immutable scope and artifact provenance.
+  FindingGroupResolution:
+    is_a: GoalEvidence
+    slot_usage:
+      stage:
+        minimum_value: 5
+        maximum_value: 5
+    description: Validated workflow evidence for goal stage 5; inherits immutable scope and artifact provenance.
+  InfrastructurePlan:
+    is_a: GoalEvidence
+    slot_usage:
+      stage:
+        minimum_value: 6
+        maximum_value: 6
+    description: Validated workflow evidence for goal stage 6; inherits immutable scope and artifact provenance.
+  InfrastructureNotebook:
+    attributes:
+      schema_version:
+        range: Version
+        required: true
+      tasks:
+        range: InfrastructureNote
+        required: true
+        multivalued: true
+        inlined_as_list: true
+  InfrastructureNote:
+    attributes:
+      task_id:
+        range: Token
+        required: true
+      summary:
+        range: NonBlank
+        required: true
+      status:
+        range: InfrastructureNoteStatus
+        required: true
+      issue_url:
+        range: IssueURL
+      disposition:
+        range: NonBlank

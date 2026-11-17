@@ -11,6 +11,7 @@ data/curation/atcc_crossref_candidates.json	UNKNOWN	no writer found
 data/curation/multi_db_crossref_candidates.json	UNKNOWN	writer purity unestablished (multi_database_crossref.py)		src/culturemech/enrich/multi_database_crossref.py	
 data/curation/organism_candidates.json	UNKNOWN	writer purity unestablished (curation_validator.py)		src/culturemech/curate/curation_validator.py; src/culturemech/curate/organism_extractor.py; src/culturemech/enrich/backfill_pipeline.py	
 data/curation/organism_review.csv	UNKNOWN	writer purity unestablished (curation_validator.py)		src/culturemech/curate/curation_validator.py	
+data/embeddings/corpus_map.json	UNKNOWN	writer purity unestablished (embed_map.py)		scripts/embed_map.py	
 data/import_tracking/communitymech_imports.json	UNKNOWN	writer purity unestablished (import_from_communitymech.py)	scripts/import_from_communitymech.py	scripts/import_from_communitymech.py; scripts/update_communitymech_links.py	
 data/import_tracking/derived_artifacts.tsv	UNKNOWN	no writer found			
 data/import_tracking/mediadive_composition_ids.json	CURRENT_VIEW	triage_missing_compositions.py	scripts/triage_missing_compositions.py	scripts/triage_missing_compositions.py	
@@ -1530,6 +1531,19 @@ reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/
 reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview/plan.json	SNAPSHOT	dated concentration curation			
 reports/ingredient_concentration_curation/20261010-yeast-mineral-source-preview/mutation-preview/validation.json	SNAPSHOT	dated concentration curation			
 reports/ingredient_concentration_curation/20261011-publication-review/publication-manifest.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261015-paper-citation-successors/plan.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261021-stage5-review-remediation-successors/plan.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261116-variant-ingredient-completeness/evidence-capsule/decisions.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261116-variant-ingredient-completeness/evidence-capsule/manifest.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261116-variant-ingredient-completeness/plan.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261116-variant-ingredient-occurrences/evidence-capsule-775/manifest.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261116-variant-ingredient-occurrences/evidence-capsule-775/proposals/algae-archaea-683.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261116-variant-ingredient-occurrences/evidence-capsule-775/proposals/bacterial-specialized-683.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261116-variant-ingredient-occurrences/evidence-capsule-775/proposals/bbm-canary-683.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261116-variant-ingredient-occurrences/evidence-capsule-775/proposals/carini-jensen-pinchuk-tang-683.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261116-variant-ingredient-occurrences/evidence-capsule-775/proposals/remaining-families-683.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261116-variant-ingredient-occurrences/evidence-capsule-775/proposals/utex-optional-683.json	SNAPSHOT	dated concentration curation			
+reports/ingredient_concentration_curation/20261116-variant-ingredient-occurrences/plan.json	SNAPSHOT	dated concentration curation			
 reports/ingredient_concentration_review/20261005T175229Z/coverage_verification.json	SNAPSHOT	timestamped concentration review			
 reports/ingredient_concentration_review/20261005T175229Z/manifest.tsv	SNAPSHOT	timestamped concentration review			
 reports/ingredient_concentration_review/20261005T175229Z/run.json	SNAPSHOT	timestamped concentration review			

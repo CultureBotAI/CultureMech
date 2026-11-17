@@ -411,6 +411,8 @@ def test_applied_komodo_batch_hashes_reports_and_scoped_evidence(batch, changed,
 
 
 def test_second_batch_preserves_source_pinned_preparation_withholdings():
+    from audit_variant_ingredient_successor import restore_before
+
     root = Path(__file__).resolve().parents[1]
     folder = root / "reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000"
     plan = json.loads((folder / "plan.json").read_text())
@@ -434,7 +436,8 @@ def test_second_batch_preserves_source_pinned_preparation_withholdings():
         assert decision["source_sha256"] == context["source_metadata"]["sha256"]
         assert item["before_sha256"] == item["after_sha256"]
         expected, depth = runner.followup_result_hash(item, successors)
-        assert runner.sha((root / item["path"]).read_bytes()) == expected
+        raw = restore_before((root / item["path"]).read_bytes(), item["path"])
+        assert runner.sha(raw) == expected
         assert depth == int(item["medium_id"] in {"111", "125"})
         assert all(c["status"] == "conflict" for c in item["claims"] if c["pointer"] is not None)
 

@@ -43,6 +43,14 @@ prefixes:
   # Pathways
   KEGG: https://www.genome.jp/entry/
   EC: https://enzyme.expasy.org/EC/
+  # Proteins
+  UniProtKB: https://www.uniprot.org/uniprotkb/
+  # Biological processes, relations, and phenotypes (for CausalEdge / CausalTerm)
+  GO: http://purl.obolibrary.org/obo/GO_
+  RO: http://purl.obolibrary.org/obo/RO_
+  METPO: http://purl.obolibrary.org/obo/METPO_
+  PATO: http://purl.obolibrary.org/obo/PATO_
+  CausalEdge: https://w3id.org/culturemech/CausalEdge/
   # Data repositories
   geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
   sra: https://www.ncbi.nlm.nih.gov/sra/
@@ -517,6 +525,26 @@ classes:
           - Records imported from CommunityMech include community IDs and evidence
           - Preserves bidirectional linking between repositories
 
+      protein_examples:
+        description: >-
+          Typed, organism-specific UniProtKB protein examples supported by
+          claim-scoped evidence for this medium formulation.
+        range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
+
+      causal_graphs:
+        description: >-
+          Directed, evidence-backed causal mechanism edges describing how
+          media ingredients, cofactors, perturbations, or strain modifications
+          causally support, limit, or alter organism growth, nutrient uptake,
+          or physiology in this medium formulation. Distinct from static
+          composition/role facet assignments and from intracellular pathway
+          graphs owned by PathwayMech or EnzymeMech.
+        range: CausalEdge
+        multivalued: true
+        inlined_as_list: true
+
   SolutionRecipe:
     class_uri: culturemech:SolutionRecipe
     description: >-
@@ -659,6 +687,34 @@ classes:
         multivalued: true
         recommended: false
         inlined_as_list: true
+
+      categories:
+        description: All categories this solution recipe appears in (for cross-category merges)
+        range: CategoryEnum
+        multivalued: true
+
+      synonyms:
+        description: Alternate names from merged duplicate solution recipes
+        range: RecipeSynonym
+        multivalued: true
+        inlined_as_list: true
+
+      merged_from:
+        description: Original recipe IDs that were merged into this solution record
+        range: string
+        multivalued: true
+
+      merge_fingerprint:
+        description: SHA256 hash of ingredient set for deduplication tracking
+        range: string
+
+      chemical_fingerprint:
+        description: SHA256 hash using parent ingredients (hierarchy-aware)
+        range: string
+
+      variant_fingerprint:
+        description: SHA256 hash including concentration and preparation variant details
+        range: string
 
   RecipeSynonym:
     description: An alternate name for a recipe from a specific source
@@ -1169,6 +1225,24 @@ classes:
         multivalued: true
         inlined_as_list: true
 
+      protein_examples:
+        description: >-
+          Typed UniProtKB protein examples (enzymes, transporters, or
+          regulatory proteins) specific to this target organism on the medium.
+        range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
+
+      causal_graphs:
+        description: >-
+          Directed, evidence-backed causal mechanism edges specific to this
+          target organism on the medium (for example, cofactor-dependent
+          growth, substrate transport, selective inhibition, or auxotrophy
+          rescue).
+        range: CausalEdge
+        multivalued: true
+        inlined_as_list: true
+
   SourceEnvironmentDescriptor:
     is_a: Descriptor
     description: >-
@@ -1252,6 +1326,14 @@ classes:
         description: Example enzymes requiring this cofactor
         range: string
         multivalued: true
+
+      protein_examples:
+        description: >-
+          Typed, organism-specific UniProtKB protein examples requiring or
+          biosynthesizing this cofactor, with claim-scoped evidence.
+        range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
 
       biosynthesis_genes:
         description: Genes involved in cofactor biosynthesis
@@ -1759,6 +1841,25 @@ classes:
         range: string
         multivalued: true
 
+      ingredient_changes:
+        description: >-
+          Evidence-backed ingredient changes scoped to this variant and its
+          preparation or experimental stage. These are not additions to the
+          parent formulation. Retain modifications as the source text; removals
+          and replaced ingredients are context, never positive occurrences.
+        range: VariantIngredientChange
+        multivalued: true
+        inlined_as_list: true
+
+      ingredient_mentions:
+        description: >-
+          Explicit ingredient names whose source assertion remains withheld.
+          These source-bound mentions are exported separately from supported
+          changes and never assert presence, identity grounding, or approval.
+        range: UnresolvedVariantIngredientMention
+        multivalued: true
+        inlined_as_list: true
+
       purpose:
         description: Why this variant exists
         range: string
@@ -1770,6 +1871,234 @@ classes:
 
       evidence:
         description: Evidence supporting the variant
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+  VariantIngredientChange:
+    description: >-
+      A curated ingredient change bound to one exact variant modification.
+      Ingredient identity may remain unresolved. ADD, SET_CONCENTRATION and the
+      new ingredient of REPLACE are scoped change events, not a fully expanded
+      variant recipe. REMOVE and replaced_ingredient do not assert presence.
+      Semantic validation additionally binds source_text to modifications at
+      source_modification_index and checks relationship and evidence context.
+    attributes:
+      action:
+        description: Operation on the ingredient in the stated variant stage
+        range: VariantIngredientChangeActionEnum
+        required: true
+
+      ingredient:
+        description: >-
+          Ingredient added, removed, or assigned a concentration; for REPLACE,
+          this is the new ingredient. REMOVE identifies only the omitted target.
+        range: IngredientDescriptor
+        required: true
+        inlined: true
+        range_expression:
+          slot_conditions:
+            preferred_term:
+              pattern: '\S'
+
+      replaced_ingredient:
+        description: >-
+          Old ingredient replaced by ingredient. Required only for REPLACE and
+          forbidden for other actions; this descriptor does not assert presence.
+        range: IngredientDescriptor
+        inlined: true
+        range_expression:
+          slot_conditions:
+            preferred_term:
+              pattern: '\S'
+
+      stage:
+        description: >-
+          Explicit preparation or experimental context, such as pre-experiment
+          stock culture or one assay treatment. Do not infer parent-medium
+          equivalence or combine separate stages or alternative doses.
+        range: string
+        required: true
+        pattern: '\S'
+
+      source_modification_index:
+        description: >-
+          Zero-based index into this MediaVariant's modifications list within
+          the source snapshot. Must identify the exact source_text string.
+        range: integer
+        required: true
+        minimum_value: 0
+
+      source_text:
+        description: >-
+          Exact, unaltered modifications[source_modification_index] string.
+          This binding is checked by semantic validation; it is not a substitute
+          for external scientific evidence or a stable cross-revision ID.
+        range: string
+        required: true
+        pattern: '\S'
+
+      evidence:
+        description: >-
+          Claim-scoped source evidence for this operation, ingredient and stage.
+          At least one item must SUPPORT the claim. Each item needs its source
+          reference, verbatim snippet and explanatory context; structural
+          validation cannot establish the scientific truth of the evidence.
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+        has_member:
+          range_expression:
+            slot_conditions:
+              supports:
+                equals_string: SUPPORT
+                required: true
+
+      notes:
+        description: Qualifications, unresolved identity or source-basis limitations
+        range: string
+
+      amount:
+        description: >-
+          Literal batch amount or percentage with unspecified basis. This is
+          not a concentration and must not be divided by an assumed volume.
+          Allowed for ADD, REPLACE and SET_AMOUNT; never alongside an asserted
+          ingredient concentration.
+        range: VariantIngredientAmount
+        inlined: true
+    rules:
+      - preconditions:
+          slot_conditions:
+            action:
+              equals_string: REPLACE
+        postconditions:
+          slot_conditions:
+            replaced_ingredient:
+              required: true
+        elseconditions:
+          slot_conditions:
+            replaced_ingredient:
+              value_presence: ABSENT
+      - preconditions:
+          slot_conditions:
+            action:
+              equals_string: SET_CONCENTRATION
+        postconditions:
+          slot_conditions:
+            ingredient:
+              range_expression:
+                slot_conditions:
+                  concentration:
+                    required: true
+      - preconditions:
+          slot_conditions:
+            action:
+              equals_string: SET_AMOUNT
+        postconditions:
+          slot_conditions:
+            amount:
+              required: true
+      - preconditions:
+          slot_conditions:
+            amount:
+              value_presence: PRESENT
+        postconditions:
+          slot_conditions:
+            action:
+              any_of:
+                - equals_string: ADD
+                - equals_string: REPLACE
+                - equals_string: SET_AMOUNT
+            ingredient:
+              range_expression:
+                slot_conditions:
+                  concentration:
+                    value_presence: ABSENT
+
+  VariantIngredientAmount:
+    description: A source-reported quantity without an invented concentration basis
+    attributes:
+      value:
+        description: Literal source value or range, without conversion
+        range: string
+        required: true
+        pattern: '\S'
+      unit:
+        range: VariantIngredientAmountUnitEnum
+        required: true
+      basis:
+        range: VariantIngredientAmountBasisEnum
+        required: true
+      basis_statement:
+        description: >-
+          Exact batch or percentage context and limitations established from
+          the change evidence. Unknown final volume or percentage convention
+          remains explicitly unknown.
+        range: string
+        required: true
+        pattern: '\S'
+    rules:
+      - preconditions:
+          slot_conditions:
+            unit:
+              equals_string: PERCENT
+        postconditions:
+          slot_conditions:
+            basis:
+              equals_string: UNSPECIFIED_PERCENT
+        elseconditions:
+          slot_conditions:
+            basis:
+              equals_string: PER_BATCH
+
+  UnresolvedVariantIngredientMention:
+    description: >-
+      A literal named ingredient retained for review, not an approved chemical
+      identity or formulation claim. source_label must occur verbatim in the
+      exact bound modification. No grounding or positive-presence fields exist.
+    attributes:
+      source_label:
+        range: string
+        required: true
+        pattern: '\S'
+      reported_action:
+        range: ReportedVariantIngredientActionEnum
+        required: true
+      stage:
+        description: Explicit source context, or 'unspecified in source'
+        range: string
+        required: true
+        pattern: '\S'
+      source_modification_index:
+        range: integer
+        required: true
+        minimum_value: 0
+      source_text:
+        range: string
+        required: true
+        pattern: '\S'
+      reason:
+        description: Why the source assertion is withheld and what remains unresolved
+        range: string
+        required: true
+        pattern: '\S'
+      held_fields:
+        description: >-
+          Exact dimensions still withheld. A quantity-only hold does not revoke
+          independently supported ingredient identity or presence events.
+        range: VariantIngredientHoldFieldEnum
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+      reported_quantity:
+        description: Uninterpreted quantity wording, never an asserted concentration
+        range: string
+      evidence:
+        description: >-
+          Optional evidence or counterevidence. Even supporting evidence for a
+          name does not promote this mention to an approved change event.
         range: EvidenceItem
         multivalued: true
         inlined_as_list: true
@@ -1998,6 +2327,14 @@ classes:
         range: string
         multivalued: true
 
+      protein_examples:
+        description: >-
+          Typed UniProtKB protein examples for cofactor biosynthesis or
+          utilization in the target organism.
+        range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
+
   TransporterAnnotation:
     description: Annotation of a transporter or transport system
     attributes:
@@ -2034,12 +2371,183 @@ classes:
         range: string
         multivalued: true
 
+      protein_examples:
+        description: >-
+          Typed UniProtKB protein examples for this transport system in the
+          target organism.
+        range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
+
       ec_number:
         description: EC number if enzymatic
         range: string
 
       notes:
         description: Additional functional notes
+        range: string
+
+  ProteinExample:
+    description: >-
+      A typed, organism-specific UniProtKB protein example linked to a growth
+      medium, target organism, cofactor requirement, or transporter with
+      claim-scoped evidence.
+    attributes:
+      uniprot_term:
+        description: >-
+          Canonical UniProtKB accession and protein label for this protein
+          example (e.g., id: UniProtKB:P02931, label: Outer membrane porin F).
+        range: UniProtTerm
+        required: true
+        inlined: true
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+
+      organism_term:
+        description: >-
+          Explicit NCBITaxon organism term to which this UniProtKB entry
+          belongs (e.g., id: NCBITaxon:83333, label: Escherichia coli K-12).
+        range: OrganismTerm
+        required: true
+        inlined: true
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+
+      gene_symbol:
+        description: Canonical gene symbol (e.g., ompF, narG, btuB)
+        range: string
+
+      locus_tag:
+        description: Ordered locus or strain-specific gene identifier (e.g., b0929)
+        range: string
+
+      ec_number:
+        description: Enzyme Commission number in EC CURIE format when enzymatic (e.g., EC:1.7.5.1)
+        range: string
+        pattern: "^EC:[0-9]+(\\.([0-9]+|-)){0,3}$"
+
+      sequence_scope:
+        description: >-
+          Sequence or isoform scope when relevant (e.g., canonical,
+          UniProtKB:P02931-1, mature peptide range).
+        range: string
+
+      functional_role:
+        description: >-
+          Concise functional role of the protein in nutrient uptake, cofactor
+          utilization, or growth in the medium.
+        range: string
+
+      cofactor_term:
+        description: Optional CHEBI term for the cofactor bound or utilized by this protein
+        range: ChemicalEntityTerm
+        inlined: true
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+
+      substrate_term:
+        description: Optional CHEBI/chemical term for the substrate or transported nutrient
+        range: ChemicalEntityTerm
+        inlined: true
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+
+      evidence:
+        description: >-
+          Claim-scoped literature or database evidence supporting this
+          organism-specific UniProtKB protein example.
+        range: EvidenceItem
+        required: true
+        minimum_cardinality: 1
+        multivalued: true
+        inlined_as_list: true
+
+      notes:
+        description: Additional curation notes or caveats
+        range: string
+
+  CausalEdge:
+    description: >-
+      A directed, evidence-backed causal mechanism edge describing how a
+      growth-medium ingredient, cofactor, environmental condition, or genetic
+      perturbation causally enables, regulates, or inhibits organism growth,
+      transport, or physiology in the context of a medium formulation.
+    attributes:
+      id:
+        description: >-
+          Stable record-local or CURIE identifier for this causal edge (for
+          example, edge_cobalamin_enables_growth or CausalEdge:0001), used by
+          Discussion.attaches_to anchors (causal_graphs#edge_x).
+        range: string
+        identifier: true
+        required: true
+        pattern: "^(edge_[A-Za-z0-9_.-]+|CausalEdge:[A-Za-z0-9_.-]+)$"
+
+      subject_term:
+        description: >-
+          Ontology-grounded causal subject (for example, a CHEBI ingredient or
+          cofactor, UniProtKB transporter/enzyme, GO biological process, or
+          ENVO condition).
+        range: CausalTerm
+        required: true
+        inlined: true
+
+      predicate:
+        description: >-
+          Constrained causal relationship predicate connecting subject_term to
+          object_term in the medium context.
+        range: CausalPredicateEnum
+        required: true
+
+      object_term:
+        description: >-
+          Ontology-grounded causal target (for example, an NCBITaxon organism,
+          GO biological process, CHEBI metabolite/cofactor, UniProtKB protein,
+          or PATO/METPO phenotype).
+        range: CausalTerm
+        required: true
+        inlined: true
+
+      organism_term:
+        description: >-
+          Explicit NCBITaxon organism context for this causal mechanism when
+          scoped to a specific organism or strain.
+        range: OrganismTerm
+        inlined: true
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+
+      protein_terms:
+        description: >-
+          Optional typed UniProtKB protein actors mediating this causal edge,
+          linking Stage 2 causal mechanisms to Stage 3 protein examples.
+        range: UniProtTerm
+        multivalued: true
+        inlined_as_list: true
+
+      condition_context:
+        description: >-
+          Medium condition, concentration threshold, or perturbation context
+          under which this causal relationship holds.
+        range: string
+
+      evidence:
+        description: >-
+          Claim-scoped literature evidence supporting this directed causal
+          relationship in the growth medium context.
+        range: EvidenceItem
+        required: true
+        minimum_cardinality: 1
+        multivalued: true
+        inlined_as_list: true
+
+      notes:
+        description: Additional curation notes or caveats
         range: string
 
 # ================================================================
@@ -2167,6 +2675,55 @@ classes:
       - ENVO prefix already defined in schema prefixes
       - Pattern allows both 7 and 8 digit ENVO IDs
       - "Examples: ENVO:00000044 (peatland), ENVO:00002149 (sea water)"
+
+  UniProtTerm:
+    is_a: Term
+    description: >-
+      A UniProtKB protein entry term. Must use the UniProtKB CURIE prefix with
+      a canonical 6-character or 10-character primary accession (for example,
+      UniProtKB:P02931 or UniProtKB:A0A0H2ZRI7) and a non-empty protein label.
+    slot_usage:
+      id:
+        required: true
+        pattern: "^UniProtKB:([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})$"
+      label:
+        required: true
+        pattern: "\\S"
+    id_prefixes:
+      - UniProtKB
+
+  CausalTerm:
+    is_a: Term
+    description: >-
+      An ontology-grounded entity participating as subject_term or object_term
+      in a growth-medium CausalEdge. Accepts chemical/ingredient terms (CHEBI,
+      FOODON, MICRO), organism taxa (NCBITaxon), biological processes and
+      molecular functions (GO), proteins and enzymes (UniProtKB, EC),
+      pathways (KEGG), and phenotype/environment descriptors (METPO, ENVO,
+      PATO, NCIT, UBERON, CultureMech, MediaIngredientMech).
+    slot_usage:
+      id:
+        required: true
+        pattern: "^(CHEBI|NCBITaxon|GO|UniProtKB|EC|KEGG|METPO|ENVO|PATO|NCIT|FOODON|UBERON|MICRO|CultureMech|MediaIngredientMech):[A-Za-z0-9_.-]+$"
+      label:
+        required: true
+        pattern: "\\S"
+    id_prefixes:
+      - CHEBI
+      - NCBITaxon
+      - GO
+      - UniProtKB
+      - EC
+      - KEGG
+      - METPO
+      - ENVO
+      - PATO
+      - NCIT
+      - FOODON
+      - UBERON
+      - MICRO
+      - CultureMech
+      - MediaIngredientMech
 
   ImportMetadata:
     description: >-
@@ -2425,6 +2982,10 @@ enums:
         description: milligrams per liter
       MICROG_PER_L:
         description: micrograms per liter
+      MICROG_PER_ML:
+        description: micrograms per milliliter
+      NG_PER_L:
+        description: nanograms per liter; retain source treatment and preparation basis
       MOLAR:
         description: moles per liter
         meaning: UO:0000062
@@ -2432,6 +2993,15 @@ enums:
         description: millimoles per liter
       MICROMOLAR:
         description: micromoles per liter
+      NANOMOLAR:
+        description: nanomoles per liter
+      PICOMOLAR:
+        description: picomoles per liter
+      PPM:
+        description: >-
+          Parts per million as stated by the source. Mass/mass, mass/volume or
+          volume/volume basis must not be inferred. Preserve the explicit basis
+          or its uncertainty in ingredient notes and do not convert silently.
       PERCENT_W_V:
         description: percent weight per volume
       PERCENT_W_W:
@@ -2638,6 +3208,72 @@ enums:
         description: Dehalogenase enzyme for halogenated compounds
       FLUORIDE_EXPORTER:
         description: Fluoride-specific exporter
+
+  VariantIngredientChangeActionEnum:
+    description: Operation on an ingredient within a named variant stage
+    permissible_values:
+      ADD:
+        description: Add the stated ingredient in this variant stage
+      REMOVE:
+        description: Omit the stated ingredient; does not assert positive presence
+      REPLACE:
+        description: Replace replaced_ingredient with ingredient in this variant stage
+      SET_CONCENTRATION:
+        description: >-
+          Assign the stated concentration in this variant stage, including an
+          explicitly reported zero dose; does not expand the parent formulation
+      SET_AMOUNT:
+        description: Set an explicitly reported batch amount or unspecified-basis percentage
+
+  VariantIngredientAmountUnitEnum:
+    permissible_values:
+      G:
+        description: Gram
+      MG:
+        description: Milligram
+      MICROG:
+        description: Microgram
+      ML:
+        description: Milliliter
+      L:
+        description: Liter
+      PERCENT:
+        description: Percentage whose mass/volume convention was not specified
+
+  VariantIngredientAmountBasisEnum:
+    permissible_values:
+      PER_BATCH:
+        description: Absolute input amount for the stated recipe batch, not final concentration
+      UNSPECIFIED_PERCENT:
+        description: The source does not specify a mass or volume percentage convention
+
+  ReportedVariantIngredientActionEnum:
+    permissible_values:
+      ADD:
+        description: Source reports addition; the assertion remains withheld
+      REMOVE:
+        description: Source reports omission; the assertion remains withheld
+      REPLACE:
+        description: Source reports replacement; the assertion remains withheld
+      SET_CONCENTRATION:
+        description: Source reports a concentration change; the assertion remains withheld
+      SET_AMOUNT:
+        description: Source reports an amount change; the assertion remains withheld
+      UNSPECIFIED:
+        description: No unambiguous ingredient operation is established
+
+  VariantIngredientHoldFieldEnum:
+    permissible_values:
+      SOURCE_CLAIM:
+        description: The underlying source assertion has not been established
+      IDENTITY_FORM:
+        description: Chemical form or identity specificity remains unresolved
+      QUANTITY:
+        description: Amount, concentration or quantity basis remains unresolved
+      OPERATION:
+        description: The ingredient operation is not established
+      STAGE:
+        description: Preparation or experimental stage is not established
 
   VariantTypeEnum:
     description: Type of chemical variant relationship to parent
@@ -2908,3 +3544,49 @@ enums:
         description: Narrower concept.
       ABBREVIATION:
         description: Abbreviation or shorthand (e.g. "TSB" for "Tryptic Soy Broth").
+
+  CausalPredicateEnum:
+    description: >-
+      Constrained causal predicate vocabulary for growth-medium CausalEdge
+      assertions, mapped to Relation Ontology (RO) and Biolink predicates.
+    permissible_values:
+      CAUSES:
+        description: >-
+          Subject causally produces or brings about the object state, process,
+          or phenotype in the medium.
+        meaning: RO:0002410
+      POSITIVELY_REGULATES:
+        description: >-
+          Subject increases the rate, frequency, or extent of the object
+          process or activity in the medium.
+        meaning: RO:0002213
+      NEGATIVELY_REGULATES:
+        description: >-
+          Subject decreases or represses the rate, frequency, or extent of the
+          object process or activity in the medium.
+        meaning: RO:0002212
+      ENABLES_GROWTH:
+        description: >-
+          Subject nutrient, cofactor, or condition causally enables or rescues
+          growth of the target organism in the medium.
+        meaning: RO:0002327
+      INHIBITS_GROWTH:
+        description: >-
+          Subject selective agent, inhibitor, or condition causally suppresses
+          or prevents growth of the target organism in the medium.
+        meaning: RO:0002449
+      PROVIDES_COFACTOR_FOR:
+        description: >-
+          Subject medium ingredient or precursor supplies the essential
+          cofactor required for the object enzyme, pathway, or organism growth.
+        meaning: RO:0002411
+      TRANSPORTS_SUBSTRATE:
+        description: >-
+          Subject transporter or uptake system mediates transport of the object
+          medium nutrient across the cell envelope.
+        meaning: RO:0002313
+      AFFECTS:
+        description: >-
+          Subject causally alters or modulates the object state, growth metric,
+          or physiological response in the medium.
+        meaning: biolink:affects

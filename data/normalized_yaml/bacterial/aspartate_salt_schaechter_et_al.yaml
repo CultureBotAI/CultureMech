@@ -97,6 +97,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-10-14T00:09:58.559887+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added or enriched bibliographic metadata, archived source/Markdown links,
+    title/group excerpts and qualified NCBI taxonomy notes. Non-operational identity
+    review only; no experimental, formulation, variant, growth or concentration curation.
+    Preserved all original recipe fields, history and reference identifiers.
+  source: PMID:13611202
 media_term:
   preferred_term: MediaDB Medium 232
   term:
@@ -109,3 +117,40 @@ applications:
 - Metabolic modeling
 - Systems biology research
 kg_microbe_match: mediadive.medium:J526
+references:
+- reference: PMID:13611202
+  title: Dependency on medium and temperature of cell size and chemical composition
+    during balanced grown of Salmonella typhimurium.
+  authors: SCHAECHTER M; MAALOE O; KJELDGAARD NO
+  year: 1958
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-14; source_access=PubMed_metadata_and_archived_publisher_abstract;
+    review_scope=Bibliographic title and taxonomic identity only; archived abstract
+    is not approval of any experiment or formulation.; owner=MEDIADB:232; discovery_sourceID=84;
+    source_url=https://doi.org/10.1099/00221287-19-3-592; alternate_identifier=doi:10.1099/00221287-19-3-592;
+    Historical MediaDB metadata retained for comparison: title="Dependency on medium
+    and temperature of cell size and chemical composition during balanced growth of
+    salmonella typhimurium"; first_author="Schaechter"; year=1958. Publication identity
+    is separate from historical spelling and dating differences. raw=references_cache/papers/PMID_13611202.xml;
+    markdown=references_cache/papers/PMID_13611202.md; publisher_raw=references_cache/papers/primary_html/growth-next-source-84-20261013.html;
+    publisher_markdown=references_cache/papers/primary_html/growth-next-source-84-20261013.abstract.md;
+    Bibliographic title; exact excerpt="Salmonella typhimurium". Reported organism/group=Salmonella
+    typhimurium; canonical scientific name=Salmonella enterica subsp. enterica serovar
+    Typhimurium; NCBITaxon:90371; actual rank=no rank; taxonomy_match=historical_synonym_actual_rank_no_rank;
+    role=bibliographic-title mention only; no strain, formulation, growth or experimental-outcome
+    assertion. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=90371&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/growth-next-nonoperational-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/growth-next-nonoperational-20261013.md.
+    PubMed title says ''balanced grown'', while the publisher title says ''Balanced
+    Growth''; both are preserved with their authority. The publisher abstract is archived,
+    but no experimental condition is extracted. Review is limited to publication identity,
+    title-level organism mentions and taxonomy. Abstract content is archived but not
+    used here to assert experimental findings. This is not an exhaustive abstract
+    or whole-paper organism inventory. The pinned MediaDB source-to-owner join establishes
+    a historical bibliographic lead only, not exact recipe equivalence. Formulation
+    identity, study-specific differences and variant destination remain unassessed
+    in this non-operational citation task. No cultivation conditions, optimization,
+    virulence, growth associations or ingredient amounts are extracted or curated.
+    Correction/retraction coverage is limited to archived metadata. Original ingredients,
+    amounts, preparation, history, evidence and links are preserved, not newly certified.
+    No new native growth assertion, resolved variant or concentration evidence.'

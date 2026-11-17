@@ -29,7 +29,14 @@ def test_2asw_identity_is_source_grounded_and_stock_scoped(tmp_path):
     assert ingredient["term"] == {"id": "CHEBI:63005", "label": "sodium nitrate"}
     assert ingredient["concentration"] == {"value": "15.00", "unit": "G_PER_L"}
     assert "stock concentration, not the final medium" in ingredient["notes"]
-    assert "historical version equivalence is not asserted" in data["curation_history"][-1]["notes"]
+    corrections = [
+        event
+        for event in data["curation_history"]
+        if event["action"] == "CORRECTED_INGREDIENT_IDENTITY"
+        and event["timestamp"] == "2026-10-05T19:29:05+00:00"
+    ]
+    assert len(corrections) == 1
+    assert "historical version equivalence is not asserted" in corrections[0]["notes"]
     text = record_html(source, tmp_path)
     assert "CHEBI:63005" in text and "457.962" not in text
     assert "Dunaliella salina" in text and "CCAP 19/18" in text

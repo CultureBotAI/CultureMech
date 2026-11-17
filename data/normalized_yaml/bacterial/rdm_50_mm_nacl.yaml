@@ -466,6 +466,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:299's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T13:47:14.449687+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper citation with archived primary abstract and Markdown,
+    exact excerpts, qualified organism taxonomy and unresolved formulation details.
+    Preserved all amounts, existing links, preparation and history; no new growth,
+    concentration evidence or resolved variant.
+  source: doi:10.1007/s00253-006-0399-1
 media_term:
   preferred_term: MediaDB Medium 299
   term:
@@ -485,3 +493,41 @@ parent_media:
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
 - Name suggests salt/salinity change; verify concentration delta against source.
+references:
+- reference: doi:10.1007/s00253-006-0399-1
+  title: Development of a defined medium supporting rapid growth for Deinococcus radiodurans
+    and analysis of metabolic capacities.
+  authors: Holland AD; Rothfuss HM; Lidstrom ME
+  year: 2006
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; owner=MEDIADB:299; discovery_sourceID=109; source_access=PubMed_and_publisher_abstract_only.
+    Publication identity verified against the historical source title/year/first author
+    and primary metadata. This RDM 50 mM NaCl owner is an existing SALINITY_VARIANT
+    child of CultureMech:007198; cite the child separately without widening its growth
+    scope to the parent. The imported NaCl perturbations are not enumerated in the
+    abstract; their amounts and outcomes remain unverified. PubMed abstract; exact
+    excerpt='Deinococcus radiodurans R1'. Reported organism=Deinococcus radiodurans
+    R1; canonical scientific name=Deinococcus radiodurans R1 = ATCC 13939 = DSM 20539;
+    NCBITaxon:243230; actual rank=strain; taxonomy_match=exact strain; role=reported
+    wild-type study organism; not the deletion mutant. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=243230&retmode=xml.
+    PubMed abstract; exact excerpt='rich defined medium (RDM)'. PubMed abstract; exact
+    excerpt='glutamine-serine simple defined medium (SDM)'. MOPS-buffered RDM and
+    glutamine-serine SDM are distinct formulations; reported doubling times and vitamin
+    requirements are study-specific and are not assigned to this exact imported owner.
+    PubMed abstract; exact excerpt='methionine synthase deletion mutant'. Reported
+    organism=Deinococcus radiodurans unnamed methionine synthase deletion mutant;
+    canonical scientific name=Deinococcus radiodurans; NCBITaxon:1299; actual rank=species;
+    taxonomy_match=parent_rank_only; role=species parent only; abstract does not establish
+    a unique mutant taxon or exact strain node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1299&retmode=xml.
+    Vitamin B12 alleviation and sulfur-source experiments remain condition- and genotype-specific.
+    The ammonium-only nitrogen experiment reports poor reproducibility without amino
+    acid supplementation, not universal inability to grow. No notice appears in the
+    archived PubMed record; that is not an exhaustive correction/retraction audit.
+    PMID:16575566; raw_abstract=references_cache/papers/PMID_16575566.xml; source_markdown=references_cache/papers/PMID_16575566.md;
+    publisher_preview=references_cache/papers/primary_html/holland-2006-publisher-abstract.html
+    and .md. All original ingredients, amounts, preparation and parent/child links
+    preserved, not newly certified by this abstract. No new positive native growth
+    association, quantitative metric or resolved variant. Organism inventory is limited
+    to the inspected abstract's medium-relevant passages. Taxonomy alone does not
+    prove cultivation. Taxonomy archives=references_cache/papers/taxonomy/holland-fang-cocaign-20261013.*
+    and fang-w23-20261013.*.

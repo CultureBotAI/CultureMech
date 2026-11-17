@@ -1,0 +1,3274 @@
+schema_version: 1.0.0
+review_id: 20261013T092029Z-acinetobacter-paper-citations
+kind: batch
+repository: culturebotai/CultureMech
+title: Acinetobacter paper citations with unresolved formulation boundaries
+started_at: '2026-10-13T08:34:47Z'
+finished_at: '2026-10-13T09:20:29Z'
+reviewer:
+  identity: codex
+  kind: agent
+  independence: self_review
+  independence_basis: The curator performed this source assessment; no independent
+    scientific review is claimed.
+skill: culturemech-add-paper-citation
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 22 citations across 14 records and three papers, with raw sources/abstracts
+  and Markdown. All 178 ingredient entries and prior content preserved. No resolved
+  variants or positive growth associations added. Per-record checks pass; formulation
+  and full-text access findings remain open, separately from global merge diagnostics.
+source:
+  git_revision: 41d4d390123c0d8320cd53e994470c88a1b86d8c
+  state: working_tree
+  inputs:
+  - path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+    sha256: 44fbc1267f5e9d949f6e0cf9542490b1ac98dd73da8e2eba5a71601bd8acb5ee
+    role: target
+  - path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+    sha256: a66677d9b863b0136209ed52254833e22ea2dd07ea1103b0d2f068422dd3ca35
+    role: target
+  - path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+    sha256: fdfbb3ff4bf249d6efc5e76c8cc4f2de0d7ea7b25c131e1bee66bc75150875e0
+    role: target
+  - path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+    sha256: fbdf918bc5aee7c71b180f36c9d4d9dd0e5c933c41c3d51e2950d86f9e5ed0e4
+    role: target
+  - path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+    sha256: 3b69ab7a70b7d3b32d209787ae5054ab7892c8015fbe3d525dd78f0786bc72bf
+    role: target
+  - path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+    sha256: 1d179cc1ba1c1c6cc752e71e7a46d79e12469b21ee44ad04e3e86b17bfc78378
+    role: target
+  - path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+    sha256: 03fab1fe737a32c526d41bd83c3b37bd4b452fb9bd4e501f59feea97f458942b
+    role: target
+  - path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+    sha256: d551776eb82a0c54827704e0d976330b55d00b38d076b5563c8884d50e80bd3b
+    role: target
+  - path: data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+    sha256: 7580da278b970ab57672bbd403ebb8b1795551d4abb121f0acec24dd53519477
+    role: target
+  - path: data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+    sha256: 3c48a9d3ccd6417597391ec5ee751b2f98847bc7868ff75c6c662320bd3c02b2
+    role: target
+  - path: data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+    sha256: 4fd276a2504121951e7aaadedd42560292bb4aaa012b10f9389d2ba872000aef
+    role: target
+  - path: data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+    sha256: 107bfac392d80f2717a980bb256eebeab288618030220e2a64d67f7717d457c9
+    role: target
+  - path: data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+    sha256: d46fb007afec1866ac9f7c987962feb09e87c312ed80468c105d5bfbebbc70bc
+    role: target
+  - path: data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+    sha256: 94d3731e7e493aea98d5efbc963f6ec3c334ce3a2b9bcbb77035f34ae2ec599c
+    role: target
+  - path: src/culturemech/export/kgx_export.py
+    sha256: eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: All fourteen exact MediaDB source 6/7 owners, medium IDs 18-31; citation
+    identity, source correspondence, formulation limits and ADP1 taxonomy.
+  selection: Verified MediaDB source-owner joins, not a corpus sample or full recipe
+    certification.
+  coverage: full
+  population_size: 14
+  reviewed_target_ids:
+  - CultureMech:007080
+  - CultureMech:007091
+  - CultureMech:007103
+  - CultureMech:007114
+  - CultureMech:007125
+  - CultureMech:007136
+  - CultureMech:007147
+  - CultureMech:007158
+  - CultureMech:007169
+  - CultureMech:007180
+  - CultureMech:007190
+  - CultureMech:007201
+  - CultureMech:007208
+  - CultureMech:007219
+  exclusions:
+  - target: Complete parent concentration certification, inferred growth, other-paper
+      organism inventories and generated publication
+    reason: Not established by the inspected evidence; goal remains active.
+targets:
+- target_id: CultureMech:007080
+  path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+  label: Liquid MA minimal media + acetate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007091
+  path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+  label: Liquid ma minimal media + l-asparagine
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007103
+  path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+  label: Liquid ma minimal media + d-2,3-butanediol
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007114
+  path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+  label: Liquid ma minimal media + d-glucarate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007125
+  path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+  label: Liquid MA minimal media + beta-D-glucose
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007136
+  path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+  label: Liquid ma minimal media + l-lactate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007147
+  path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+  label: Liquid ma minimal media + quinate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007158
+  path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+  label: Liquid MA minimal media + Succinate + Urea - Ammonia
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007169
+  path: data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+  label: Nutrient medium + glucose
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007180
+  path: data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+  label: Nutrient medium + pyruvate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007190
+  path: data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+  label: Nutrient medium + succinate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007201
+  path: data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+  label: Nutrient medium + quinate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007208
+  path: data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+  label: Nutrient medium + p-hydroxybenzoate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007219
+  path: data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+  label: Nutrient medium + protocatechuate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: baseline-00
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007080
+  evidence_ids:
+  - baseline-00
+- check_id: baseline-01
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007080
+  evidence_ids:
+  - baseline-01
+- check_id: baseline-02
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007091
+  evidence_ids:
+  - baseline-02
+- check_id: baseline-03
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007091
+  evidence_ids:
+  - baseline-03
+- check_id: baseline-04
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007103
+  evidence_ids:
+  - baseline-04
+- check_id: baseline-05
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007103
+  evidence_ids:
+  - baseline-05
+- check_id: baseline-06
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007114
+  evidence_ids:
+  - baseline-06
+- check_id: baseline-07
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007114
+  evidence_ids:
+  - baseline-07
+- check_id: baseline-08
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007125
+  evidence_ids:
+  - baseline-08
+- check_id: baseline-09
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007125
+  evidence_ids:
+  - baseline-09
+- check_id: baseline-10
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007136
+  evidence_ids:
+  - baseline-10
+- check_id: baseline-11
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007136
+  evidence_ids:
+  - baseline-11
+- check_id: baseline-12
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007147
+  evidence_ids:
+  - baseline-12
+- check_id: baseline-13
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007147
+  evidence_ids:
+  - baseline-13
+- check_id: baseline-14
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007158
+  evidence_ids:
+  - baseline-14
+- check_id: baseline-15
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007158
+  evidence_ids:
+  - baseline-15
+- check_id: baseline-16
+  name: just validate data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+  command: just validate data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007169
+  evidence_ids:
+  - baseline-16
+- check_id: baseline-17
+  name: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007169
+  evidence_ids:
+  - baseline-17
+- check_id: baseline-18
+  name: just validate data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+  command: just validate data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007180
+  evidence_ids:
+  - baseline-18
+- check_id: baseline-19
+  name: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007180
+  evidence_ids:
+  - baseline-19
+- check_id: baseline-20
+  name: just validate data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+  command: just validate data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007190
+  evidence_ids:
+  - baseline-20
+- check_id: baseline-21
+  name: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007190
+  evidence_ids:
+  - baseline-21
+- check_id: baseline-22
+  name: just validate data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+  command: just validate data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007201
+  evidence_ids:
+  - baseline-22
+- check_id: baseline-23
+  name: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007201
+  evidence_ids:
+  - baseline-23
+- check_id: baseline-24
+  name: just validate data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+  command: just validate data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007208
+  evidence_ids:
+  - baseline-24
+- check_id: baseline-25
+  name: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007208
+  evidence_ids:
+  - baseline-25
+- check_id: baseline-26
+  name: just validate data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+  command: just validate data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007219
+  evidence_ids:
+  - baseline-26
+- check_id: baseline-27
+  name: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Pre-edit gate retained from the prior turn; exact input hashes reverified
+    before this apply.
+  target_ids:
+  - CultureMech:007219
+  evidence_ids:
+  - baseline-27
+- check_id: post-00
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007080
+  evidence_ids:
+  - post-00
+- check_id: post-01
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007080
+  evidence_ids:
+  - post-01
+- check_id: post-02
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007091
+  evidence_ids:
+  - post-02
+- check_id: post-03
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007091
+  evidence_ids:
+  - post-03
+- check_id: post-04
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007103
+  evidence_ids:
+  - post-04
+- check_id: post-05
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007103
+  evidence_ids:
+  - post-05
+- check_id: post-06
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007114
+  evidence_ids:
+  - post-06
+- check_id: post-07
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007114
+  evidence_ids:
+  - post-07
+- check_id: post-08
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007125
+  evidence_ids:
+  - post-08
+- check_id: post-09
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007125
+  evidence_ids:
+  - post-09
+- check_id: post-10
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007136
+  evidence_ids:
+  - post-10
+- check_id: post-11
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007136
+  evidence_ids:
+  - post-11
+- check_id: post-12
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007147
+  evidence_ids:
+  - post-12
+- check_id: post-13
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007147
+  evidence_ids:
+  - post-13
+- check_id: post-14
+  name: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+  command: just validate data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007158
+  evidence_ids:
+  - post-14
+- check_id: post-15
+  name: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007158
+  evidence_ids:
+  - post-15
+- check_id: post-16
+  name: just validate data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+  command: just validate data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007169
+  evidence_ids:
+  - post-16
+- check_id: post-17
+  name: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007169
+  evidence_ids:
+  - post-17
+- check_id: post-18
+  name: just validate data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+  command: just validate data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007180
+  evidence_ids:
+  - post-18
+- check_id: post-19
+  name: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007180
+  evidence_ids:
+  - post-19
+- check_id: post-20
+  name: just validate data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+  command: just validate data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007190
+  evidence_ids:
+  - post-20
+- check_id: post-21
+  name: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007190
+  evidence_ids:
+  - post-21
+- check_id: post-22
+  name: just validate data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+  command: just validate data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007201
+  evidence_ids:
+  - post-22
+- check_id: post-23
+  name: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007201
+  evidence_ids:
+  - post-23
+- check_id: post-24
+  name: just validate data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+  command: just validate data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007208
+  evidence_ids:
+  - post-24
+- check_id: post-25
+  name: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007208
+  evidence_ids:
+  - post-25
+- check_id: post-26
+  name: just validate data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+  command: just validate data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007219
+  evidence_ids:
+  - post-26
+- check_id: post-27
+  name: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007219
+  evidence_ids:
+  - post-27
+- check_id: merge-00
+  name: just verify-merges
+  command: just verify-merges
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Global merge diagnostic; no checked-in generated output replaced.
+  target_ids:
+  - CultureMech:007080
+  - CultureMech:007091
+  - CultureMech:007103
+  - CultureMech:007114
+  - CultureMech:007125
+  - CultureMech:007136
+  - CultureMech:007147
+  - CultureMech:007158
+  - CultureMech:007169
+  - CultureMech:007180
+  - CultureMech:007190
+  - CultureMech:007201
+  - CultureMech:007208
+  - CultureMech:007219
+  evidence_ids:
+  - merge-00
+- check_id: merge-01
+  name: just audit-merge-freshness --json
+  command: just audit-merge-freshness --json
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Global merge diagnostic; no checked-in generated output replaced.
+  target_ids:
+  - CultureMech:007080
+  - CultureMech:007091
+  - CultureMech:007103
+  - CultureMech:007114
+  - CultureMech:007125
+  - CultureMech:007136
+  - CultureMech:007147
+  - CultureMech:007158
+  - CultureMech:007169
+  - CultureMech:007180
+  - CultureMech:007190
+  - CultureMech:007201
+  - CultureMech:007208
+  - CultureMech:007219
+  evidence_ids:
+  - merge-01
+- check_id: extra-00
+  name: /tmp/culturemech-parallel-env-20261012/bin/python -m pytest --no-cov -q tests/test_claude_skills.py
+    tests/test_skill_frontmatter.py tests/test_fetch_pubmed_abstracts.py tests/test_record_io.py
+    tests/test_media_variant_links.py tests/test_record_review_contract.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python -m pytest --no-cov -q
+    tests/test_claude_skills.py tests/test_skill_frontmatter.py tests/test_fetch_pubmed_abstracts.py
+    tests/test_record_io.py tests/test_media_variant_links.py tests/test_record_review_contract.py
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007080
+  - CultureMech:007091
+  - CultureMech:007103
+  - CultureMech:007114
+  - CultureMech:007125
+  - CultureMech:007136
+  - CultureMech:007147
+  - CultureMech:007158
+  - CultureMech:007169
+  - CultureMech:007180
+  - CultureMech:007190
+  - CultureMech:007201
+  - CultureMech:007208
+  - CultureMech:007219
+  evidence_ids:
+  - extra-00
+- check_id: extra-01
+  name: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007080
+  - CultureMech:007091
+  - CultureMech:007103
+  - CultureMech:007114
+  - CultureMech:007125
+  - CultureMech:007136
+  - CultureMech:007147
+  - CultureMech:007158
+  - CultureMech:007169
+  - CultureMech:007180
+  - CultureMech:007190
+  - CultureMech:007201
+  - CultureMech:007208
+  - CultureMech:007219
+  evidence_ids:
+  - extra-01
+- check_id: extra-02
+  name: git diff --check
+  command: git diff --check
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result; citation-note excerpts were also manually
+    compared against primary sources.
+  target_ids:
+  - CultureMech:007080
+  - CultureMech:007091
+  - CultureMech:007103
+  - CultureMech:007114
+  - CultureMech:007125
+  - CultureMech:007136
+  - CultureMech:007147
+  - CultureMech:007158
+  - CultureMech:007169
+  - CultureMech:007180
+  - CultureMech:007190
+  - CultureMech:007201
+  - CultureMech:007208
+  - CultureMech:007219
+  evidence_ids:
+  - extra-02
+evidence:
+- evidence_id: durot
+  kind: primary_source
+  reference: doi:10.1186/1752-0509-2-85
+  locator: references_cache/papers/primary_xml/durot-2008-pmc.xml; Table 4 and footnotes;
+    Results mutant-phenotyping context; Methods/Growth phenotyping of the mutant strains
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Eight carbon/nitrogen treatments explicitly match the source cohort. KH2PO4
+    differs from the imported dibasic salt; literal Na2NoO4 is unresolved. Mutant
+    assays are distinct from wild-type Biolog and model predictions.
+  support: supports
+  snapshot_sha256: d2049c17a03a69d1986ce9c2f782802c709ff25f2201800e978339cb443b1c6f
+- evidence_id: base
+  kind: primary_source
+  reference: doi:10.1038/msb.2008.10
+  locator: references_cache/papers/primary_xml/berardinis-2008-pmc.xml; Materials
+    and methods/Bacteria, media, chemicals and reagents; Growth tests; explicitly
+    cited as Durot reference 8
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: The original protocol corroborates KH2PO4 but prints Na2MoO2, not Durot's
+    Na2NoO4 or a verified sodium molybdate formula. Liquid/solid and selection/growth
+    contexts remain distinct; no supplement is silently inherited.
+  support: supports
+  snapshot_sha256: 31b2bf4183b9923813ceca9b6e00b752f78f58a1edc05fc1553f6b8d15ac81d6
+- evidence_id: trautwein
+  kind: primary_source
+  reference: doi:10.1128/JB.183.3.873-881.2001
+  locator: references_cache/papers/primary_xml/trautwein-2001-pmc.xml; Article metadata
+    and abstract only; body absent
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: The abstract identifies Acinetobacter sp. strain ADP1 and PcaU transcriptional
+    regulation. It does not enumerate these six recipes or prove their strain-specific
+    growth outcomes. The inducer threshold is not a bulk medium concentration.
+  support: supports
+  snapshot_sha256: 61e426ebcabe7565121132bd7860c78d9bc2a357846b538e549421d953d9b1fa
+- evidence_id: pubmed-18840283
+  kind: authority
+  reference: PMID:18840283
+  locator: references_cache/papers/PMID_18840283.xml; Article title, authors, year,
+    ArticleIdList and notices
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Publication identity and DOI/PMID equivalence verified. No correction/retraction
+    notice appears in this archived entry; bounded notice inspection is not an exhaustive
+    audit.
+  support: supports
+  snapshot_sha256: c11430883eb3edf6f0fe9fbf4e6001b3857ade04aa1a8615801cac543904cd11
+- evidence_id: pubmed-18319726
+  kind: authority
+  reference: PMID:18319726
+  locator: references_cache/papers/PMID_18319726.xml; Article title, authors, year,
+    ArticleIdList and notices
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Publication identity and DOI/PMID equivalence verified. No correction/retraction
+    notice appears in this archived entry; bounded notice inspection is not an exhaustive
+    audit.
+  support: supports
+  snapshot_sha256: bc62c604bc48a7c8791f7218111afe136d31c6495f66bb343ce449580aadfc3a
+- evidence_id: pubmed-11208784
+  kind: authority
+  reference: PMID:11208784
+  locator: references_cache/papers/PMID_11208784.xml; Article title, authors, year,
+    ArticleIdList and notices
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Publication identity and DOI/PMID equivalence verified. No correction/retraction
+    notice appears in this archived entry; bounded notice inspection is not an exhaustive
+    audit.
+  support: supports
+  snapshot_sha256: bb3b3387eaae1209cedd597d3a8480fedcf929183f767a6f5c0b770fbbd99f61
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml
+  locator: references_cache/papers/taxonomy/acinetobacter-adp1-20261013.xml; TaxId,
+    ScientificName, Rank and OtherNames
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: NCBITaxon:62977 is Acinetobacter baylyi ADP1, rank strain; Acinetobacter
+    sp. ADP1 is an equivalent name. This identifies the background, not individual
+    deletion derivatives or growth.
+  support: supports
+  snapshot_sha256: fe380b2b82b33937ffa34eda8155f70206fe9ed4c2c1446a6aa2dd0c7e93f042
+- evidence_id: joins
+  kind: database
+  reference: MediaDB SQL 07Oct2015
+  locator: references_cache/papers/mediadb/media_database.07Oct2015.sql; sources 6
+    and 7; media_names 18-31; growth_data and organisms; frozen joins in preflight.json
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Exact medium IDs, names, titles, years and PMIDs establish citation discovery
+    provenance. The database's growth rows and legacy generic Mazumdar history are
+    not primary growth evidence.
+  support: supports
+  snapshot_sha256: e2c60258e2389d4ad383695eb3e01429a67eac90807fe14d02a6728777d35b5c
+- evidence_id: claims
+  kind: record_content
+  reference: Primary-source claim register
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/claim-plan.json;
+    Nine exact excerpts, Methods paragraphs, Table 4 rows/headers/footnotes and taxonomy
+    assessment
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Excerpts are verified contiguous source text normalized for whitespace
+    only. Chemical formulas were not silently repaired. Separate excerpts retain their
+    locators.
+  support: context_only
+  snapshot_sha256: e9a0d71df1b5fc6bf16dad4e0db325753bf9770c6066cf5212e1aa2af5046b97
+- evidence_id: readback
+  kind: record_content
+  reference: Guarded whole-corpus readback
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/final-readback.json;
+    Fourteen owner readbacks and all normalized-record hashes
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: 22 bibliography additions and 14 appended events; 178 ingredient instances
+    and all prior content/history preserved. Removing additions recovers original
+    bytes. No variants, amounts or growth associations were added.
+  support: context_only
+  snapshot_sha256: c6dad9b177401d74a94cc6d08fa688496955c1ef1b5600b6c73569314914788a
+- evidence_id: archives
+  kind: record_content
+  reference: Source archive manifest
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/source-preparation.json;
+    21 raw/Markdown/provenance hashes; explicit source-access limits
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: All three cited publications have attributable raw sources/abstracts and
+    Markdown. Durot and de Berardinis have full PMC bodies; Trautwein remains abstract-only.
+  support: context_only
+  snapshot_sha256: c17c48e9c539895c95421978fefc7cb99d8b6b7892ebab0bdbeeeda224cf25e1
+- evidence_id: baseline-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-00-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-00-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-01-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-01-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-02-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-02-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-03-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-03-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-04-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-04-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-05-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-05-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-06-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-06-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-07-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-07-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-08-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-08-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-09-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-09-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-10-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-10-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-11-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-11-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-12
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-12-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-12-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-13
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-13-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-13-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-14
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-14-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-14-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-15
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-15-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-15-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-16
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-16-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-16-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-17
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-17-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-17-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-18
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-18-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-18-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-19
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-19-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-19-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-20
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-20-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-20-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-21
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-21-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-21-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-22
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-22-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-22-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-23
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-23-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-23-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-24
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-24-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-24-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-25
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-25-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-25-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-26
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-26-validate.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-26-validate.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-27
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-27-validate-strict.log
+  locator: reports/paper_citation_curation/20261013-carini-phosphorus/next-baseline-27-validate-strict.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-00.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-00.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: d795cd0f45d74ecbb50c5710adb49b2df66105da344aa71db38645c49a310c0d
+- evidence_id: post-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-01.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-01.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-02.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-02.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: d795cd0f45d74ecbb50c5710adb49b2df66105da344aa71db38645c49a310c0d
+- evidence_id: post-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-03.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-03.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-04.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-04.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: d795cd0f45d74ecbb50c5710adb49b2df66105da344aa71db38645c49a310c0d
+- evidence_id: post-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-05.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-05.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-06.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-06.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: d795cd0f45d74ecbb50c5710adb49b2df66105da344aa71db38645c49a310c0d
+- evidence_id: post-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-07.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-07.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-08.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-08.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: d795cd0f45d74ecbb50c5710adb49b2df66105da344aa71db38645c49a310c0d
+- evidence_id: post-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-09.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-09.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-10.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-10.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: d795cd0f45d74ecbb50c5710adb49b2df66105da344aa71db38645c49a310c0d
+- evidence_id: post-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-11.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-11.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-12
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-12.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-12.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: d795cd0f45d74ecbb50c5710adb49b2df66105da344aa71db38645c49a310c0d
+- evidence_id: post-13
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-13.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-13.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-14
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-14.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-14.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: d795cd0f45d74ecbb50c5710adb49b2df66105da344aa71db38645c49a310c0d
+- evidence_id: post-15
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-15.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-15.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-16
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-16.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-16.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-17
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-17.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-17.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-18
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-18.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-18.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-19
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-19.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-19.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-20
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-20.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-20.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-21
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-21.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-21.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-22
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-22.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-22.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-23
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-23.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-23.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-24
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-24.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-24.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-25
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-25.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-25.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-26
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-26.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-26.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-27
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/post-27.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/post-27.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: merge-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/merge-00.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/merge-00.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 1; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c
+- evidence_id: merge-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/merge-01.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/merge-01.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 1; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: fb05c0b286ce8879ab56398ebbfdce986d5a60288d4b6f239bad46f7f1cb8cf7
+- evidence_id: extra-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/extra-00.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/extra-00.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 0436665e90a5766cad82e85e27afcfc474f10fd6e455237dfad4e431e2fef62a
+- evidence_id: extra-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/extra-01.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/extra-01.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: 441bdd6ab36f5b87c9edccf771321e1c5f6c11f43bec7799e6e98cd4d756c24c
+- evidence_id: extra-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/extra-02.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/extra-02.log;
+    Retained complete command output
+  accessed_at: '2026-10-13T09:20:29Z'
+  summary: Actual exit code 0; automated validation is not scientific certification.
+  support: context_only
+  snapshot_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+assessments:
+- assessment_id: citation-007080
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007080
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - joins
+  - archives
+  - readback
+  summary: Added 2 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007080
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007080
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - claims
+  - taxonomy
+  - readback
+  summary: MA formulation has a phosphate discrepancy and unresolved conflicting trace-formula
+    typography; all differences remain in citation notes and no resolved variant is
+    assigned.
+  details: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=6; medID=18. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1186/1752-0509-2-85; PMC2606687. Full source/Markdown=references_cache/papers/primary_xml/durot-2008-pmc.xml
+    and durot-2008-pmc.v2.md; PubMed XML/abstract=references_cache/papers/PMID_18840283.{xml,md}.
+    Inspected Table 4 including footnotes, its Results context, and Methods/Growth
+    phenotyping of the mutant strains; the separately described wild-type Biolog assays
+    and in-silico predictions are not transferred to this formulation. Table 4 carbon
+    source=''acetate''; nitrogen source=''ammonia''; conditionally essential genes=5,
+    dispensable genes=431. These are mutant phenotyping counts, not medium growth
+    rates or evidence that every ADP1 derivative grows. Separate exact Methods excerpt=''supplemented
+    with 25 mM of carbon sources''. Combined with the Table 4 row, this identifies
+    the study''s carbon-source dose; it does not certify the whole parent recipe.
+    Formulation_match=unresolved; variant_disposition=deferred_in_citation_notes.
+    Exact Methods excerpt=''25 mM KH2PO4'' specifies potassium dihydrogen phosphate,
+    unlike the parent''s dipotassium hydrogen phosphate. Literal trace-ingredient
+    token=''Na2NoO4''; cited protocol PMID:18319726 instead prints ''Na2MoO2''. Neither
+    token is silently corrected to the parent''s sodium molybdate formula. This unresolved
+    chemical identity prevents claiming an exact study variant. Hydrate forms, pH
+    and the parent''s generic filter-all preparation are not certified by these passages.
+    Exact Methods measurement excerpt=''Absorbance at 600 nm of 24 h cultures was
+    measured to monitor growth.''. This describes an assay endpoint, not an optimum
+    or a quantitative growth rate. No ingredient correction, resolved variant or positive
+    target-organism entry is added. Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977;
+    canonical label=Acinetobacter baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. Organism inventory is scoped to Table 4 and the
+    inspected mutant-phenotyping passages: Acinetobacter baylyi ADP1-derived mutants,
+    with gene-specific positive and negative outcomes; not an exhaustive whole-paper
+    organism review. | source_type=journal_article; discovery_mode=Durot_2008_cited_methods_reference_8;
+    accessed_on=2026-10-13; doi:10.1038/msb.2008.10; PMC2290942. Full source/Markdown=references_cache/papers/primary_xml/berardinis-2008-pmc.{xml,md};
+    PubMed XML/abstract=references_cache/papers/PMID_18319726.{xml,md}. Inspected
+    Materials and methods/Bacteria, media, chemicals and reagents and Growth tests,
+    as the explicit protocol reference for Durot''s mutant phenotyping. Exact formulation
+    excerpt=''25 mM KH2PO4''; literal trace-ingredient token=''Na2MoO2''. This corroborates
+    the phosphate discrepancy but does not resolve the conflicting trace formulas
+    or certify the imported sodium molybdate identity. Separate exact assay excerpt=''Liquid
+    growth studies were carried out in duplicate and solid growth in triplicate, starting
+    with independent precultures.''. Liquid and solid assays, routine cultivation
+    and selection media are distinct contexts; antibiotic/amino-acid supplements mentioned
+    in other protocol contexts are not automatically added to Durot''s assay or this
+    parent. The later paper''s explicit carbon/nitrogen treatments remain assay-specific.
+    No positive parent-growth assertion follows from this supporting protocol citation.
+    Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter
+    baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The inspected medium and liquid-growth paragraphs
+    concern ADP1-derived mutants; other-species background comparisons are outside
+    this bounded organism inventory. No correction/retraction notice appears in the
+    archived PubMed entry. Linked supplementary files and original PDF typography
+    were not inspected.'
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - durot
+    - base
+    - pubmed-18840283
+    - pubmed-18319726
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 17
+    unit: instances
+    denominator: 17
+    minimum: 0
+    maximum: 17
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007091
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007091
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - joins
+  - archives
+  - readback
+  summary: Added 2 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007091
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007091
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - claims
+  - taxonomy
+  - readback
+  summary: MA formulation has a phosphate discrepancy and unresolved conflicting trace-formula
+    typography; all differences remain in citation notes and no resolved variant is
+    assigned.
+  details: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=6; medID=19. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1186/1752-0509-2-85; PMC2606687. Full source/Markdown=references_cache/papers/primary_xml/durot-2008-pmc.xml
+    and durot-2008-pmc.v2.md; PubMed XML/abstract=references_cache/papers/PMID_18840283.{xml,md}.
+    Inspected Table 4 including footnotes, its Results context, and Methods/Growth
+    phenotyping of the mutant strains; the separately described wild-type Biolog assays
+    and in-silico predictions are not transferred to this formulation. Table 4 carbon
+    source=''L-asparagine''; nitrogen source=''ammonia''; conditionally essential
+    genes=3, dispensable genes=445. These are mutant phenotyping counts, not medium
+    growth rates or evidence that every ADP1 derivative grows. Separate exact Methods
+    excerpt=''supplemented with 25 mM of carbon sources''. Combined with the Table
+    4 row, this identifies the study''s carbon-source dose; it does not certify the
+    whole parent recipe. Formulation_match=unresolved; variant_disposition=deferred_in_citation_notes.
+    Exact Methods excerpt=''25 mM KH2PO4'' specifies potassium dihydrogen phosphate,
+    unlike the parent''s dipotassium hydrogen phosphate. Literal trace-ingredient
+    token=''Na2NoO4''; cited protocol PMID:18319726 instead prints ''Na2MoO2''. Neither
+    token is silently corrected to the parent''s sodium molybdate formula. This unresolved
+    chemical identity prevents claiming an exact study variant. Hydrate forms, pH
+    and the parent''s generic filter-all preparation are not certified by these passages.
+    Exact Methods measurement excerpt=''Absorbance at 600 nm of 24 h cultures was
+    measured to monitor growth.''. This describes an assay endpoint, not an optimum
+    or a quantitative growth rate. No ingredient correction, resolved variant or positive
+    target-organism entry is added. Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977;
+    canonical label=Acinetobacter baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. Organism inventory is scoped to Table 4 and the
+    inspected mutant-phenotyping passages: Acinetobacter baylyi ADP1-derived mutants,
+    with gene-specific positive and negative outcomes; not an exhaustive whole-paper
+    organism review. | source_type=journal_article; discovery_mode=Durot_2008_cited_methods_reference_8;
+    accessed_on=2026-10-13; doi:10.1038/msb.2008.10; PMC2290942. Full source/Markdown=references_cache/papers/primary_xml/berardinis-2008-pmc.{xml,md};
+    PubMed XML/abstract=references_cache/papers/PMID_18319726.{xml,md}. Inspected
+    Materials and methods/Bacteria, media, chemicals and reagents and Growth tests,
+    as the explicit protocol reference for Durot''s mutant phenotyping. Exact formulation
+    excerpt=''25 mM KH2PO4''; literal trace-ingredient token=''Na2MoO2''. This corroborates
+    the phosphate discrepancy but does not resolve the conflicting trace formulas
+    or certify the imported sodium molybdate identity. Separate exact assay excerpt=''Liquid
+    growth studies were carried out in duplicate and solid growth in triplicate, starting
+    with independent precultures.''. Liquid and solid assays, routine cultivation
+    and selection media are distinct contexts; antibiotic/amino-acid supplements mentioned
+    in other protocol contexts are not automatically added to Durot''s assay or this
+    parent. The later paper''s explicit carbon/nitrogen treatments remain assay-specific.
+    No positive parent-growth assertion follows from this supporting protocol citation.
+    Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter
+    baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The inspected medium and liquid-growth paragraphs
+    concern ADP1-derived mutants; other-species background comparisons are outside
+    this bounded organism inventory. No correction/retraction notice appears in the
+    archived PubMed entry. Linked supplementary files and original PDF typography
+    were not inspected.'
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - durot
+    - base
+    - pubmed-18840283
+    - pubmed-18319726
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 17
+    unit: instances
+    denominator: 17
+    minimum: 0
+    maximum: 17
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007103
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007103
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - joins
+  - archives
+  - readback
+  summary: Added 2 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007103
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007103
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - claims
+  - taxonomy
+  - readback
+  summary: MA formulation has a phosphate discrepancy and unresolved conflicting trace-formula
+    typography; all differences remain in citation notes and no resolved variant is
+    assigned.
+  details: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=6; medID=20. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1186/1752-0509-2-85; PMC2606687. Full source/Markdown=references_cache/papers/primary_xml/durot-2008-pmc.xml
+    and durot-2008-pmc.v2.md; PubMed XML/abstract=references_cache/papers/PMID_18840283.{xml,md}.
+    Inspected Table 4 including footnotes, its Results context, and Methods/Growth
+    phenotyping of the mutant strains; the separately described wild-type Biolog assays
+    and in-silico predictions are not transferred to this formulation. Table 4 carbon
+    source=''D-2,3-butanediol''; nitrogen source=''ammonia''; conditionally essential
+    genes=10, dispensable genes=433. These are mutant phenotyping counts, not medium
+    growth rates or evidence that every ADP1 derivative grows. Separate exact Methods
+    excerpt=''supplemented with 25 mM of carbon sources''. Combined with the Table
+    4 row, this identifies the study''s carbon-source dose; it does not certify the
+    whole parent recipe. Table 4 specifies D-2,3-butanediol, whereas the local ingredient
+    is (R,R)-Butane-2,3-diol; the stereochemical equivalence was not independently
+    established here. Formulation_match=unresolved; variant_disposition=deferred_in_citation_notes.
+    Exact Methods excerpt=''25 mM KH2PO4'' specifies potassium dihydrogen phosphate,
+    unlike the parent''s dipotassium hydrogen phosphate. Literal trace-ingredient
+    token=''Na2NoO4''; cited protocol PMID:18319726 instead prints ''Na2MoO2''. Neither
+    token is silently corrected to the parent''s sodium molybdate formula. This unresolved
+    chemical identity prevents claiming an exact study variant. Hydrate forms, pH
+    and the parent''s generic filter-all preparation are not certified by these passages.
+    Exact Methods measurement excerpt=''Absorbance at 600 nm of 24 h cultures was
+    measured to monitor growth.''. This describes an assay endpoint, not an optimum
+    or a quantitative growth rate. No ingredient correction, resolved variant or positive
+    target-organism entry is added. Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977;
+    canonical label=Acinetobacter baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. Organism inventory is scoped to Table 4 and the
+    inspected mutant-phenotyping passages: Acinetobacter baylyi ADP1-derived mutants,
+    with gene-specific positive and negative outcomes; not an exhaustive whole-paper
+    organism review. | source_type=journal_article; discovery_mode=Durot_2008_cited_methods_reference_8;
+    accessed_on=2026-10-13; doi:10.1038/msb.2008.10; PMC2290942. Full source/Markdown=references_cache/papers/primary_xml/berardinis-2008-pmc.{xml,md};
+    PubMed XML/abstract=references_cache/papers/PMID_18319726.{xml,md}. Inspected
+    Materials and methods/Bacteria, media, chemicals and reagents and Growth tests,
+    as the explicit protocol reference for Durot''s mutant phenotyping. Exact formulation
+    excerpt=''25 mM KH2PO4''; literal trace-ingredient token=''Na2MoO2''. This corroborates
+    the phosphate discrepancy but does not resolve the conflicting trace formulas
+    or certify the imported sodium molybdate identity. Separate exact assay excerpt=''Liquid
+    growth studies were carried out in duplicate and solid growth in triplicate, starting
+    with independent precultures.''. Liquid and solid assays, routine cultivation
+    and selection media are distinct contexts; antibiotic/amino-acid supplements mentioned
+    in other protocol contexts are not automatically added to Durot''s assay or this
+    parent. The later paper''s explicit carbon/nitrogen treatments remain assay-specific.
+    No positive parent-growth assertion follows from this supporting protocol citation.
+    Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter
+    baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The inspected medium and liquid-growth paragraphs
+    concern ADP1-derived mutants; other-species background comparisons are outside
+    this bounded organism inventory. No correction/retraction notice appears in the
+    archived PubMed entry. Linked supplementary files and original PDF typography
+    were not inspected.'
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - durot
+    - base
+    - pubmed-18840283
+    - pubmed-18319726
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 17
+    unit: instances
+    denominator: 17
+    minimum: 0
+    maximum: 17
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007114
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007114
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - joins
+  - archives
+  - readback
+  summary: Added 2 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007114
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007114
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - claims
+  - taxonomy
+  - readback
+  summary: MA formulation has a phosphate discrepancy and unresolved conflicting trace-formula
+    typography; all differences remain in citation notes and no resolved variant is
+    assigned.
+  details: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=6; medID=21. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1186/1752-0509-2-85; PMC2606687. Full source/Markdown=references_cache/papers/primary_xml/durot-2008-pmc.xml
+    and durot-2008-pmc.v2.md; PubMed XML/abstract=references_cache/papers/PMID_18840283.{xml,md}.
+    Inspected Table 4 including footnotes, its Results context, and Methods/Growth
+    phenotyping of the mutant strains; the separately described wild-type Biolog assays
+    and in-silico predictions are not transferred to this formulation. Table 4 carbon
+    source=''D-glucarate''; nitrogen source=''ammonia''; conditionally essential genes=5,
+    dispensable genes=413. These are mutant phenotyping counts, not medium growth
+    rates or evidence that every ADP1 derivative grows. Separate exact Methods excerpt=''supplemented
+    with 25 mM of carbon sources''. Combined with the Table 4 row, this identifies
+    the study''s carbon-source dose; it does not certify the whole parent recipe.
+    Formulation_match=unresolved; variant_disposition=deferred_in_citation_notes.
+    Exact Methods excerpt=''25 mM KH2PO4'' specifies potassium dihydrogen phosphate,
+    unlike the parent''s dipotassium hydrogen phosphate. Literal trace-ingredient
+    token=''Na2NoO4''; cited protocol PMID:18319726 instead prints ''Na2MoO2''. Neither
+    token is silently corrected to the parent''s sodium molybdate formula. This unresolved
+    chemical identity prevents claiming an exact study variant. Hydrate forms, pH
+    and the parent''s generic filter-all preparation are not certified by these passages.
+    Exact Methods measurement excerpt=''Absorbance at 600 nm of 24 h cultures was
+    measured to monitor growth.''. This describes an assay endpoint, not an optimum
+    or a quantitative growth rate. No ingredient correction, resolved variant or positive
+    target-organism entry is added. Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977;
+    canonical label=Acinetobacter baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. Organism inventory is scoped to Table 4 and the
+    inspected mutant-phenotyping passages: Acinetobacter baylyi ADP1-derived mutants,
+    with gene-specific positive and negative outcomes; not an exhaustive whole-paper
+    organism review. | source_type=journal_article; discovery_mode=Durot_2008_cited_methods_reference_8;
+    accessed_on=2026-10-13; doi:10.1038/msb.2008.10; PMC2290942. Full source/Markdown=references_cache/papers/primary_xml/berardinis-2008-pmc.{xml,md};
+    PubMed XML/abstract=references_cache/papers/PMID_18319726.{xml,md}. Inspected
+    Materials and methods/Bacteria, media, chemicals and reagents and Growth tests,
+    as the explicit protocol reference for Durot''s mutant phenotyping. Exact formulation
+    excerpt=''25 mM KH2PO4''; literal trace-ingredient token=''Na2MoO2''. This corroborates
+    the phosphate discrepancy but does not resolve the conflicting trace formulas
+    or certify the imported sodium molybdate identity. Separate exact assay excerpt=''Liquid
+    growth studies were carried out in duplicate and solid growth in triplicate, starting
+    with independent precultures.''. Liquid and solid assays, routine cultivation
+    and selection media are distinct contexts; antibiotic/amino-acid supplements mentioned
+    in other protocol contexts are not automatically added to Durot''s assay or this
+    parent. The later paper''s explicit carbon/nitrogen treatments remain assay-specific.
+    No positive parent-growth assertion follows from this supporting protocol citation.
+    Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter
+    baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The inspected medium and liquid-growth paragraphs
+    concern ADP1-derived mutants; other-species background comparisons are outside
+    this bounded organism inventory. No correction/retraction notice appears in the
+    archived PubMed entry. Linked supplementary files and original PDF typography
+    were not inspected.'
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - durot
+    - base
+    - pubmed-18840283
+    - pubmed-18319726
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 17
+    unit: instances
+    denominator: 17
+    minimum: 0
+    maximum: 17
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007125
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007125
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - joins
+  - archives
+  - readback
+  summary: Added 2 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007125
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007125
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - claims
+  - taxonomy
+  - readback
+  summary: MA formulation has a phosphate discrepancy and unresolved conflicting trace-formula
+    typography; all differences remain in citation notes and no resolved variant is
+    assigned.
+  details: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=6; medID=22. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1186/1752-0509-2-85; PMC2606687. Full source/Markdown=references_cache/papers/primary_xml/durot-2008-pmc.xml
+    and durot-2008-pmc.v2.md; PubMed XML/abstract=references_cache/papers/PMID_18840283.{xml,md}.
+    Inspected Table 4 including footnotes, its Results context, and Methods/Growth
+    phenotyping of the mutant strains; the separately described wild-type Biolog assays
+    and in-silico predictions are not transferred to this formulation. Table 4 carbon
+    source=''β-D-glucose''; nitrogen source=''ammonia''; conditionally essential genes=7,
+    dispensable genes=432. These are mutant phenotyping counts, not medium growth
+    rates or evidence that every ADP1 derivative grows. Separate exact Methods excerpt=''supplemented
+    with 25 mM of carbon sources''. Combined with the Table 4 row, this identifies
+    the study''s carbon-source dose; it does not certify the whole parent recipe.
+    Table 4 specifies beta-D-glucose, whereas the local ingredient term is D-glucose
+    without anomer specificity; do not treat the broader term as proof of a pure beta
+    anomer. Formulation_match=unresolved; variant_disposition=deferred_in_citation_notes.
+    Exact Methods excerpt=''25 mM KH2PO4'' specifies potassium dihydrogen phosphate,
+    unlike the parent''s dipotassium hydrogen phosphate. Literal trace-ingredient
+    token=''Na2NoO4''; cited protocol PMID:18319726 instead prints ''Na2MoO2''. Neither
+    token is silently corrected to the parent''s sodium molybdate formula. This unresolved
+    chemical identity prevents claiming an exact study variant. Hydrate forms, pH
+    and the parent''s generic filter-all preparation are not certified by these passages.
+    Exact Methods measurement excerpt=''Absorbance at 600 nm of 24 h cultures was
+    measured to monitor growth.''. This describes an assay endpoint, not an optimum
+    or a quantitative growth rate. No ingredient correction, resolved variant or positive
+    target-organism entry is added. Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977;
+    canonical label=Acinetobacter baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. Organism inventory is scoped to Table 4 and the
+    inspected mutant-phenotyping passages: Acinetobacter baylyi ADP1-derived mutants,
+    with gene-specific positive and negative outcomes; not an exhaustive whole-paper
+    organism review. | source_type=journal_article; discovery_mode=Durot_2008_cited_methods_reference_8;
+    accessed_on=2026-10-13; doi:10.1038/msb.2008.10; PMC2290942. Full source/Markdown=references_cache/papers/primary_xml/berardinis-2008-pmc.{xml,md};
+    PubMed XML/abstract=references_cache/papers/PMID_18319726.{xml,md}. Inspected
+    Materials and methods/Bacteria, media, chemicals and reagents and Growth tests,
+    as the explicit protocol reference for Durot''s mutant phenotyping. Exact formulation
+    excerpt=''25 mM KH2PO4''; literal trace-ingredient token=''Na2MoO2''. This corroborates
+    the phosphate discrepancy but does not resolve the conflicting trace formulas
+    or certify the imported sodium molybdate identity. Separate exact assay excerpt=''Liquid
+    growth studies were carried out in duplicate and solid growth in triplicate, starting
+    with independent precultures.''. Liquid and solid assays, routine cultivation
+    and selection media are distinct contexts; antibiotic/amino-acid supplements mentioned
+    in other protocol contexts are not automatically added to Durot''s assay or this
+    parent. The later paper''s explicit carbon/nitrogen treatments remain assay-specific.
+    No positive parent-growth assertion follows from this supporting protocol citation.
+    Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter
+    baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The inspected medium and liquid-growth paragraphs
+    concern ADP1-derived mutants; other-species background comparisons are outside
+    this bounded organism inventory. No correction/retraction notice appears in the
+    archived PubMed entry. Linked supplementary files and original PDF typography
+    were not inspected.'
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - durot
+    - base
+    - pubmed-18840283
+    - pubmed-18319726
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 17
+    unit: instances
+    denominator: 17
+    minimum: 0
+    maximum: 17
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007136
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007136
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - joins
+  - archives
+  - readback
+  summary: Added 2 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007136
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007136
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - claims
+  - taxonomy
+  - readback
+  summary: MA formulation has a phosphate discrepancy and unresolved conflicting trace-formula
+    typography; all differences remain in citation notes and no resolved variant is
+    assigned.
+  details: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=6; medID=23. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1186/1752-0509-2-85; PMC2606687. Full source/Markdown=references_cache/papers/primary_xml/durot-2008-pmc.xml
+    and durot-2008-pmc.v2.md; PubMed XML/abstract=references_cache/papers/PMID_18840283.{xml,md}.
+    Inspected Table 4 including footnotes, its Results context, and Methods/Growth
+    phenotyping of the mutant strains; the separately described wild-type Biolog assays
+    and in-silico predictions are not transferred to this formulation. Table 4 carbon
+    source=''L-lactate''; nitrogen source=''ammonia''; conditionally essential genes=2,
+    dispensable genes=445. These are mutant phenotyping counts, not medium growth
+    rates or evidence that every ADP1 derivative grows. Separate exact Methods excerpt=''supplemented
+    with 25 mM of carbon sources''. Combined with the Table 4 row, this identifies
+    the study''s carbon-source dose; it does not certify the whole parent recipe.
+    Formulation_match=unresolved; variant_disposition=deferred_in_citation_notes.
+    Exact Methods excerpt=''25 mM KH2PO4'' specifies potassium dihydrogen phosphate,
+    unlike the parent''s dipotassium hydrogen phosphate. Literal trace-ingredient
+    token=''Na2NoO4''; cited protocol PMID:18319726 instead prints ''Na2MoO2''. Neither
+    token is silently corrected to the parent''s sodium molybdate formula. This unresolved
+    chemical identity prevents claiming an exact study variant. Hydrate forms, pH
+    and the parent''s generic filter-all preparation are not certified by these passages.
+    Exact Methods measurement excerpt=''Absorbance at 600 nm of 24 h cultures was
+    measured to monitor growth.''. This describes an assay endpoint, not an optimum
+    or a quantitative growth rate. No ingredient correction, resolved variant or positive
+    target-organism entry is added. Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977;
+    canonical label=Acinetobacter baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. Organism inventory is scoped to Table 4 and the
+    inspected mutant-phenotyping passages: Acinetobacter baylyi ADP1-derived mutants,
+    with gene-specific positive and negative outcomes; not an exhaustive whole-paper
+    organism review. | source_type=journal_article; discovery_mode=Durot_2008_cited_methods_reference_8;
+    accessed_on=2026-10-13; doi:10.1038/msb.2008.10; PMC2290942. Full source/Markdown=references_cache/papers/primary_xml/berardinis-2008-pmc.{xml,md};
+    PubMed XML/abstract=references_cache/papers/PMID_18319726.{xml,md}. Inspected
+    Materials and methods/Bacteria, media, chemicals and reagents and Growth tests,
+    as the explicit protocol reference for Durot''s mutant phenotyping. Exact formulation
+    excerpt=''25 mM KH2PO4''; literal trace-ingredient token=''Na2MoO2''. This corroborates
+    the phosphate discrepancy but does not resolve the conflicting trace formulas
+    or certify the imported sodium molybdate identity. Separate exact assay excerpt=''Liquid
+    growth studies were carried out in duplicate and solid growth in triplicate, starting
+    with independent precultures.''. Liquid and solid assays, routine cultivation
+    and selection media are distinct contexts; antibiotic/amino-acid supplements mentioned
+    in other protocol contexts are not automatically added to Durot''s assay or this
+    parent. The later paper''s explicit carbon/nitrogen treatments remain assay-specific.
+    No positive parent-growth assertion follows from this supporting protocol citation.
+    Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter
+    baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The inspected medium and liquid-growth paragraphs
+    concern ADP1-derived mutants; other-species background comparisons are outside
+    this bounded organism inventory. No correction/retraction notice appears in the
+    archived PubMed entry. Linked supplementary files and original PDF typography
+    were not inspected.'
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - durot
+    - base
+    - pubmed-18840283
+    - pubmed-18319726
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 17
+    unit: instances
+    denominator: 17
+    minimum: 0
+    maximum: 17
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007147
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007147
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - joins
+  - archives
+  - readback
+  summary: Added 2 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007147
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007147
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - claims
+  - taxonomy
+  - readback
+  summary: MA formulation has a phosphate discrepancy and unresolved conflicting trace-formula
+    typography; all differences remain in citation notes and no resolved variant is
+    assigned.
+  details: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=6; medID=24. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1186/1752-0509-2-85; PMC2606687. Full source/Markdown=references_cache/papers/primary_xml/durot-2008-pmc.xml
+    and durot-2008-pmc.v2.md; PubMed XML/abstract=references_cache/papers/PMID_18840283.{xml,md}.
+    Inspected Table 4 including footnotes, its Results context, and Methods/Growth
+    phenotyping of the mutant strains; the separately described wild-type Biolog assays
+    and in-silico predictions are not transferred to this formulation. Table 4 carbon
+    source=''quinate''; nitrogen source=''ammonia''; conditionally essential genes=8,
+    dispensable genes=436. These are mutant phenotyping counts, not medium growth
+    rates or evidence that every ADP1 derivative grows. Separate exact Methods excerpt=''supplemented
+    with 25 mM of carbon sources''. Combined with the Table 4 row, this identifies
+    the study''s carbon-source dose; it does not certify the whole parent recipe.
+    Formulation_match=unresolved; variant_disposition=deferred_in_citation_notes.
+    Exact Methods excerpt=''25 mM KH2PO4'' specifies potassium dihydrogen phosphate,
+    unlike the parent''s dipotassium hydrogen phosphate. Literal trace-ingredient
+    token=''Na2NoO4''; cited protocol PMID:18319726 instead prints ''Na2MoO2''. Neither
+    token is silently corrected to the parent''s sodium molybdate formula. This unresolved
+    chemical identity prevents claiming an exact study variant. Hydrate forms, pH
+    and the parent''s generic filter-all preparation are not certified by these passages.
+    Exact Methods measurement excerpt=''Absorbance at 600 nm of 24 h cultures was
+    measured to monitor growth.''. This describes an assay endpoint, not an optimum
+    or a quantitative growth rate. No ingredient correction, resolved variant or positive
+    target-organism entry is added. Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977;
+    canonical label=Acinetobacter baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. Organism inventory is scoped to Table 4 and the
+    inspected mutant-phenotyping passages: Acinetobacter baylyi ADP1-derived mutants,
+    with gene-specific positive and negative outcomes; not an exhaustive whole-paper
+    organism review. | source_type=journal_article; discovery_mode=Durot_2008_cited_methods_reference_8;
+    accessed_on=2026-10-13; doi:10.1038/msb.2008.10; PMC2290942. Full source/Markdown=references_cache/papers/primary_xml/berardinis-2008-pmc.{xml,md};
+    PubMed XML/abstract=references_cache/papers/PMID_18319726.{xml,md}. Inspected
+    Materials and methods/Bacteria, media, chemicals and reagents and Growth tests,
+    as the explicit protocol reference for Durot''s mutant phenotyping. Exact formulation
+    excerpt=''25 mM KH2PO4''; literal trace-ingredient token=''Na2MoO2''. This corroborates
+    the phosphate discrepancy but does not resolve the conflicting trace formulas
+    or certify the imported sodium molybdate identity. Separate exact assay excerpt=''Liquid
+    growth studies were carried out in duplicate and solid growth in triplicate, starting
+    with independent precultures.''. Liquid and solid assays, routine cultivation
+    and selection media are distinct contexts; antibiotic/amino-acid supplements mentioned
+    in other protocol contexts are not automatically added to Durot''s assay or this
+    parent. The later paper''s explicit carbon/nitrogen treatments remain assay-specific.
+    No positive parent-growth assertion follows from this supporting protocol citation.
+    Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter
+    baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The inspected medium and liquid-growth paragraphs
+    concern ADP1-derived mutants; other-species background comparisons are outside
+    this bounded organism inventory. No correction/retraction notice appears in the
+    archived PubMed entry. Linked supplementary files and original PDF typography
+    were not inspected.'
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - durot
+    - base
+    - pubmed-18840283
+    - pubmed-18319726
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 17
+    unit: instances
+    denominator: 17
+    minimum: 0
+    maximum: 17
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007158
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007158
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - joins
+  - archives
+  - readback
+  summary: Added 2 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007158
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007158
+  evidence_ids:
+  - durot
+  - base
+  - pubmed-18840283
+  - pubmed-18319726
+  - claims
+  - taxonomy
+  - readback
+  summary: MA formulation has a phosphate discrepancy and unresolved conflicting trace-formula
+    typography; all differences remain in citation notes and no resolved variant is
+    assigned.
+  details: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=6; medID=25. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1186/1752-0509-2-85; PMC2606687. Full source/Markdown=references_cache/papers/primary_xml/durot-2008-pmc.xml
+    and durot-2008-pmc.v2.md; PubMed XML/abstract=references_cache/papers/PMID_18840283.{xml,md}.
+    Inspected Table 4 including footnotes, its Results context, and Methods/Growth
+    phenotyping of the mutant strains; the separately described wild-type Biolog assays
+    and in-silico predictions are not transferred to this formulation. Table 4 carbon
+    source=''succinate''; nitrogen source=''urea''; conditionally essential genes=3,
+    dispensable genes=442. These are mutant phenotyping counts, not medium growth
+    rates or evidence that every ADP1 derivative grows. Separate exact Methods excerpt=''Succinate/urea
+    medium was composed of MA minimal medium without NH4Cl supplemented with 25 mM
+    of succinate and 20 mM of urea.''. The parent contains succinate and urea and
+    no ammonium chloride; its name''s ''- Ammonia'' denotes omission, not an additional
+    ammonia supplement. Formulation_match=unresolved; variant_disposition=deferred_in_citation_notes.
+    Exact Methods excerpt=''25 mM KH2PO4'' specifies potassium dihydrogen phosphate,
+    unlike the parent''s dipotassium hydrogen phosphate. Literal trace-ingredient
+    token=''Na2NoO4''; cited protocol PMID:18319726 instead prints ''Na2MoO2''. Neither
+    token is silently corrected to the parent''s sodium molybdate formula. This unresolved
+    chemical identity prevents claiming an exact study variant. Hydrate forms, pH
+    and the parent''s generic filter-all preparation are not certified by these passages.
+    Exact Methods measurement excerpt=''Absorbance at 600 nm of 24 h cultures was
+    measured to monitor growth.''. This describes an assay endpoint, not an optimum
+    or a quantitative growth rate. No ingredient correction, resolved variant or positive
+    target-organism entry is added. Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977;
+    canonical label=Acinetobacter baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. Organism inventory is scoped to Table 4 and the
+    inspected mutant-phenotyping passages: Acinetobacter baylyi ADP1-derived mutants,
+    with gene-specific positive and negative outcomes; not an exhaustive whole-paper
+    organism review. | source_type=journal_article; discovery_mode=Durot_2008_cited_methods_reference_8;
+    accessed_on=2026-10-13; doi:10.1038/msb.2008.10; PMC2290942. Full source/Markdown=references_cache/papers/primary_xml/berardinis-2008-pmc.{xml,md};
+    PubMed XML/abstract=references_cache/papers/PMID_18319726.{xml,md}. Inspected
+    Materials and methods/Bacteria, media, chemicals and reagents and Growth tests,
+    as the explicit protocol reference for Durot''s mutant phenotyping. Exact formulation
+    excerpt=''25 mM KH2PO4''; literal trace-ingredient token=''Na2MoO2''. This corroborates
+    the phosphate discrepancy but does not resolve the conflicting trace formulas
+    or certify the imported sodium molybdate identity. Separate exact assay excerpt=''Liquid
+    growth studies were carried out in duplicate and solid growth in triplicate, starting
+    with independent precultures.''. Liquid and solid assays, routine cultivation
+    and selection media are distinct contexts; antibiotic/amino-acid supplements mentioned
+    in other protocol contexts are not automatically added to Durot''s assay or this
+    parent. The later paper''s explicit carbon/nitrogen treatments remain assay-specific.
+    No positive parent-growth assertion follows from this supporting protocol citation.
+    Scientific name=Acinetobacter baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter
+    baylyi ADP1; rank=strain; taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The inspected medium and liquid-growth paragraphs
+    concern ADP1-derived mutants; other-species background comparisons are outside
+    this bounded organism inventory. No correction/retraction notice appears in the
+    archived PubMed entry. Linked supplementary files and original PDF typography
+    were not inspected.'
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - durot
+    - base
+    - pubmed-18840283
+    - pubmed-18319726
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 17
+    unit: instances
+    denominator: 17
+    minimum: 0
+    maximum: 17
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007169
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007169
+  evidence_ids:
+  - trautwein
+  - pubmed-11208784
+  - joins
+  - archives
+  - readback
+  summary: Added 1 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007169
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007169
+  evidence_ids:
+  - trautwein
+  - pubmed-11208784
+  - claims
+  - taxonomy
+  - readback
+  summary: The abstract supports paper relevance and organism identity, not this exact
+    formulation or a strain-specific growth edge; full methods remain inaccessible.
+  details: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=7; medID=26. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1128/JB.183.3.873-881.2001; PMC94953. PubMed XML/abstract=references_cache/papers/PMID_11208784.{xml,md};
+    PMC abstract-only XML/Markdown=references_cache/papers/primary_xml/trautwein-2001-pmc.xml
+    and trautwein-2001-pmc.v2.md. Access_scope=abstract_only. Exact Abstract organism
+    excerpt='Protocatechuate degradation is accomplished in a multistep inducible
+    catabolic pathway in Acinetobacter sp. strain ADP1.'. Reported name Acinetobacter
+    sp. strain ADP1 matches the NCBI synonym Acinetobacter sp. ADP1. Scientific name=Acinetobacter
+    baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter baylyi ADP1; rank=strain;
+    taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The abstract concerns PcaU-dependent transcription
+    and induction; it does not enumerate this record's formulation or establish a
+    strain-specific growth result on it. Its inducer-response threshold is not the
+    bulk concentration of protocatechuate in this medium. Formulation_match=unresolved;
+    variant_disposition=deferred_in_citation_notes. Exact ingredient identities, amounts,
+    preparation and source-specific derivative strains await full-text verification.
+    No concentrations, growth metrics, temperature, variants or target organisms are
+    added from database-only observations. Organism inventory is limited to the abstract's
+    ADP1 mention, not the inaccessible full paper.
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - trautwein
+    - pubmed-11208784
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 7
+    unit: instances
+    denominator: 7
+    minimum: 0
+    maximum: 7
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007180
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007180
+  evidence_ids:
+  - trautwein
+  - pubmed-11208784
+  - joins
+  - archives
+  - readback
+  summary: Added 1 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007180
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007180
+  evidence_ids:
+  - trautwein
+  - pubmed-11208784
+  - claims
+  - taxonomy
+  - readback
+  summary: The abstract supports paper relevance and organism identity, not this exact
+    formulation or a strain-specific growth edge; full methods remain inaccessible.
+  details: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=7; medID=27. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1128/JB.183.3.873-881.2001; PMC94953. PubMed XML/abstract=references_cache/papers/PMID_11208784.{xml,md};
+    PMC abstract-only XML/Markdown=references_cache/papers/primary_xml/trautwein-2001-pmc.xml
+    and trautwein-2001-pmc.v2.md. Access_scope=abstract_only. Exact Abstract organism
+    excerpt='Protocatechuate degradation is accomplished in a multistep inducible
+    catabolic pathway in Acinetobacter sp. strain ADP1.'. Reported name Acinetobacter
+    sp. strain ADP1 matches the NCBI synonym Acinetobacter sp. ADP1. Scientific name=Acinetobacter
+    baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter baylyi ADP1; rank=strain;
+    taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The abstract concerns PcaU-dependent transcription
+    and induction; it does not enumerate this record's formulation or establish a
+    strain-specific growth result on it. Its inducer-response threshold is not the
+    bulk concentration of protocatechuate in this medium. Formulation_match=unresolved;
+    variant_disposition=deferred_in_citation_notes. Exact ingredient identities, amounts,
+    preparation and source-specific derivative strains await full-text verification.
+    No concentrations, growth metrics, temperature, variants or target organisms are
+    added from database-only observations. Organism inventory is limited to the abstract's
+    ADP1 mention, not the inaccessible full paper.
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - trautwein
+    - pubmed-11208784
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 7
+    unit: instances
+    denominator: 7
+    minimum: 0
+    maximum: 7
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007190
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007190
+  evidence_ids:
+  - trautwein
+  - pubmed-11208784
+  - joins
+  - archives
+  - readback
+  summary: Added 1 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007190
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007190
+  evidence_ids:
+  - trautwein
+  - pubmed-11208784
+  - claims
+  - taxonomy
+  - readback
+  summary: The abstract supports paper relevance and organism identity, not this exact
+    formulation or a strain-specific growth edge; full methods remain inaccessible.
+  details: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=7; medID=28. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1128/JB.183.3.873-881.2001; PMC94953. PubMed XML/abstract=references_cache/papers/PMID_11208784.{xml,md};
+    PMC abstract-only XML/Markdown=references_cache/papers/primary_xml/trautwein-2001-pmc.xml
+    and trautwein-2001-pmc.v2.md. Access_scope=abstract_only. Exact Abstract organism
+    excerpt='Protocatechuate degradation is accomplished in a multistep inducible
+    catabolic pathway in Acinetobacter sp. strain ADP1.'. Reported name Acinetobacter
+    sp. strain ADP1 matches the NCBI synonym Acinetobacter sp. ADP1. Scientific name=Acinetobacter
+    baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter baylyi ADP1; rank=strain;
+    taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The abstract concerns PcaU-dependent transcription
+    and induction; it does not enumerate this record's formulation or establish a
+    strain-specific growth result on it. Its inducer-response threshold is not the
+    bulk concentration of protocatechuate in this medium. Formulation_match=unresolved;
+    variant_disposition=deferred_in_citation_notes. Exact ingredient identities, amounts,
+    preparation and source-specific derivative strains await full-text verification.
+    No concentrations, growth metrics, temperature, variants or target organisms are
+    added from database-only observations. Organism inventory is limited to the abstract's
+    ADP1 mention, not the inaccessible full paper.
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - trautwein
+    - pubmed-11208784
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 7
+    unit: instances
+    denominator: 7
+    minimum: 0
+    maximum: 7
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007201
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007201
+  evidence_ids:
+  - trautwein
+  - pubmed-11208784
+  - joins
+  - archives
+  - readback
+  summary: Added 1 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007201
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007201
+  evidence_ids:
+  - trautwein
+  - pubmed-11208784
+  - claims
+  - taxonomy
+  - readback
+  summary: The abstract supports paper relevance and organism identity, not this exact
+    formulation or a strain-specific growth edge; full methods remain inaccessible.
+  details: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=7; medID=29. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1128/JB.183.3.873-881.2001; PMC94953. PubMed XML/abstract=references_cache/papers/PMID_11208784.{xml,md};
+    PMC abstract-only XML/Markdown=references_cache/papers/primary_xml/trautwein-2001-pmc.xml
+    and trautwein-2001-pmc.v2.md. Access_scope=abstract_only. Exact Abstract organism
+    excerpt='Protocatechuate degradation is accomplished in a multistep inducible
+    catabolic pathway in Acinetobacter sp. strain ADP1.'. Reported name Acinetobacter
+    sp. strain ADP1 matches the NCBI synonym Acinetobacter sp. ADP1. Scientific name=Acinetobacter
+    baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter baylyi ADP1; rank=strain;
+    taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The abstract concerns PcaU-dependent transcription
+    and induction; it does not enumerate this record's formulation or establish a
+    strain-specific growth result on it. Its inducer-response threshold is not the
+    bulk concentration of protocatechuate in this medium. Formulation_match=unresolved;
+    variant_disposition=deferred_in_citation_notes. Exact ingredient identities, amounts,
+    preparation and source-specific derivative strains await full-text verification.
+    No concentrations, growth metrics, temperature, variants or target organisms are
+    added from database-only observations. Organism inventory is limited to the abstract's
+    ADP1 mention, not the inaccessible full paper.
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - trautwein
+    - pubmed-11208784
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 7
+    unit: instances
+    denominator: 7
+    minimum: 0
+    maximum: 7
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007208
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007208
+  evidence_ids:
+  - trautwein
+  - pubmed-11208784
+  - joins
+  - archives
+  - readback
+  summary: Added 1 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007208
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007208
+  evidence_ids:
+  - trautwein
+  - pubmed-11208784
+  - claims
+  - taxonomy
+  - readback
+  summary: The abstract supports paper relevance and organism identity, not this exact
+    formulation or a strain-specific growth edge; full methods remain inaccessible.
+  details: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=7; medID=30. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1128/JB.183.3.873-881.2001; PMC94953. PubMed XML/abstract=references_cache/papers/PMID_11208784.{xml,md};
+    PMC abstract-only XML/Markdown=references_cache/papers/primary_xml/trautwein-2001-pmc.xml
+    and trautwein-2001-pmc.v2.md. Access_scope=abstract_only. Exact Abstract organism
+    excerpt='Protocatechuate degradation is accomplished in a multistep inducible
+    catabolic pathway in Acinetobacter sp. strain ADP1.'. Reported name Acinetobacter
+    sp. strain ADP1 matches the NCBI synonym Acinetobacter sp. ADP1. Scientific name=Acinetobacter
+    baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter baylyi ADP1; rank=strain;
+    taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The abstract concerns PcaU-dependent transcription
+    and induction; it does not enumerate this record's formulation or establish a
+    strain-specific growth result on it. Its inducer-response threshold is not the
+    bulk concentration of protocatechuate in this medium. Formulation_match=unresolved;
+    variant_disposition=deferred_in_citation_notes. Exact ingredient identities, amounts,
+    preparation and source-specific derivative strains await full-text verification.
+    No concentrations, growth metrics, temperature, variants or target organisms are
+    added from database-only observations. Organism inventory is limited to the abstract's
+    ADP1 mention, not the inaccessible full paper.
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - trautwein
+    - pubmed-11208784
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 7
+    unit: instances
+    denominator: 7
+    minimum: 0
+    maximum: 7
+    definition: Preservation count, not a verified-concentration count.
+- assessment_id: citation-007219
+  area: evidence
+  topic: Publication identity, source archive and bounded attribution
+  outcome: supported
+  target_ids:
+  - CultureMech:007219
+  evidence_ids:
+  - trautwein
+  - pubmed-11208784
+  - joins
+  - archives
+  - readback
+  summary: Added 1 deduplicated PMID citation(s) with DOI aliases, title, authors,
+    year, discovery provenance and local source/Markdown paths. Source limits are
+    explicit; bibliography does not certify the full recipe.
+- assessment_id: scope-007219
+  area: evidence
+  topic: Formulation correspondence and organism scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007219
+  evidence_ids:
+  - trautwein
+  - pubmed-11208784
+  - claims
+  - taxonomy
+  - readback
+  summary: The abstract supports paper relevance and organism identity, not this exact
+    formulation or a strain-specific growth edge; full methods remain inaccessible.
+  details: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; MediaDB sourceID=7; medID=31. Publication identity was
+    verified against archived PubMed metadata and the exact MediaDB source/medium
+    joins. Database growth rows are discovery provenance, not independently verified
+    growth evidence. The generic Mazumdar et al. import citation remains historical
+    database provenance, not the specific experimental source. No correction/retraction
+    notice appears in the inspected PubMed entry; this is not an exhaustive notice
+    audit. doi:10.1128/JB.183.3.873-881.2001; PMC94953. PubMed XML/abstract=references_cache/papers/PMID_11208784.{xml,md};
+    PMC abstract-only XML/Markdown=references_cache/papers/primary_xml/trautwein-2001-pmc.xml
+    and trautwein-2001-pmc.v2.md. Access_scope=abstract_only. Exact Abstract organism
+    excerpt='Protocatechuate degradation is accomplished in a multistep inducible
+    catabolic pathway in Acinetobacter sp. strain ADP1.'. Reported name Acinetobacter
+    sp. strain ADP1 matches the NCBI synonym Acinetobacter sp. ADP1. Scientific name=Acinetobacter
+    baylyi ADP1; NCBITaxon:62977; canonical label=Acinetobacter baylyi ADP1; rank=strain;
+    taxonomy_match=exact_ADP1_node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62977&retmode=xml;
+    archived taxonomy XML/Markdown=references_cache/papers/taxonomy/acinetobacter-adp1-20261013.{xml,md}.
+    This identifies the ADP1 background, not every gene-deletion derivative as an
+    identical experimental strain. The abstract concerns PcaU-dependent transcription
+    and induction; it does not enumerate this record's formulation or establish a
+    strain-specific growth result on it. Its inducer-response threshold is not the
+    bulk concentration of protocatechuate in this medium. Formulation_match=unresolved;
+    variant_disposition=deferred_in_citation_notes. Exact ingredient identities, amounts,
+    preparation and source-specific derivative strains await full-text verification.
+    No concentrations, growth metrics, temperature, variants or target organisms are
+    added from database-only observations. Organism inventory is limited to the abstract's
+    ADP1 mention, not the inaccessible full paper.
+  dimensions:
+  - name: formulation_match
+    value: unresolved
+    definition: No complete parent or exact variant formulation is asserted.
+    evidence_ids:
+    - trautwein
+    - pubmed-11208784
+  - name: taxonomy_match
+    value: ADP1 exact strain node; no positive growth association
+    definition: NCBITaxon:62977 identifies the ADP1 background only.
+    evidence_ids:
+    - taxonomy
+    - readback
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 7
+    unit: instances
+    denominator: 7
+    minimum: 0
+    maximum: 7
+    definition: Preservation count, not a verified-concentration count.
+findings:
+- finding_id: ma-formulation
+  issue_key: mediadb-6-ma-formulation
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: MA recipe correspondence remains unresolved
+  target_ids:
+  - CultureMech:007080
+  - CultureMech:007091
+  - CultureMech:007103
+  - CultureMech:007114
+  - CultureMech:007125
+  - CultureMech:007136
+  - CultureMech:007147
+  - CultureMech:007158
+  field_paths:
+  - ingredients
+  - preparation_steps
+  description: Both inspected papers specify KH2PO4 where parents identify dipotassium
+    hydrogen phosphate. Durot's Na2NoO4 and its cited protocol's Na2MoO2 do not establish
+    the imported sodium molybdate identity. Hydrate, preparation and strain/assay
+    details must be reconciled before exact variants or parent growth claims. Parent
+    ingredients were preserved, not certified.
+  evidence_ids:
+  - durot
+  - base
+  - claims
+  - readback
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+    role: authoritative normalized recipe
+- finding_id: trautwein-access
+  issue_key: mediadb-7-abstract-only
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Trautwein methods and recipe-level evidence remain unavailable
+  target_ids:
+  - CultureMech:007169
+  - CultureMech:007180
+  - CultureMech:007190
+  - CultureMech:007201
+  - CultureMech:007208
+  - CultureMech:007219
+  field_paths:
+  - ingredients
+  - preparation_steps
+  - references
+  description: Six source-linked bibliography entries are justified, but the accessible
+    abstract does not enumerate their formulations or variant-specific growth. Public
+    full-text attempts did not yield usable content; the inducer threshold and database
+    growth rows were not promoted to recipe evidence.
+  evidence_ids:
+  - trautwein
+  - archives
+  - joins
+  - readback
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+    role: authoritative normalized recipe
+actions:
+- action_id: resolve-ma
+  description: Resolve source-form typography and the phosphate discrepancy against
+    original publisher versions/supplements before certifying a formulation.
+  finding_ids:
+  - ma-formulation
+  target_ids:
+  - CultureMech:007080
+  - CultureMech:007091
+  - CultureMech:007103
+  - CultureMech:007114
+  - CultureMech:007125
+  - CultureMech:007136
+  - CultureMech:007147
+  - CultureMech:007158
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_acetate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_asparagine.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_2_3_butanediol.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_d_glucarate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_beta_d_glucose.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_l_lactate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_quinate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/liquid_ma_minimal_media_succinate_urea_ammonia.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Every chemical-form or amount change has direct source evidence and exact DOI/PURL-backed
+    excerpt.
+  - Retain assay and mutant scope; do not transfer wild-type/model outcomes.
+  - Use a supported variant or a justified import correction, preserving IDs and history.
+- action_id: obtain-trautwein
+  description: Obtain a lawful usable full-text version, then compare the six recipes
+    and source-specific strains separately.
+  finding_ids:
+  - trautwein-access
+  target_ids:
+  - CultureMech:007169
+  - CultureMech:007180
+  - CultureMech:007190
+  - CultureMech:007201
+  - CultureMech:007208
+  - CultureMech:007219
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_glucose.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_pyruvate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_succinate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_quinate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_p_hydroxybenzoate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_medium_protocatechuate.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Archive attributable full text and Markdown before recipe claims.
+  - Do not treat an inducer-response threshold as the medium dose.
+  - Add growth only for a verified recipe/variant and exact strain scope.
+limitations:
+- This is a focused citation and formulation-boundary assessment, not full record
+  or corpus approval.
+- Citation-note snippets were manually checked; automated reference resolution does
+  not independently verify every note claim.
+- Durot Table 4 mutant gene-essentiality counts are not quantitative growth rates
+  or evidence of universal ADP1 growth.
+- Source-printed trace formulas remain literal; original PDF typography and linked
+  supplements were not inspected.
+- Trautwein is abstract-only; failed retrieval endpoints and scope are retained in
+  the source manifest.
+- The existing KGX scope limitation remains unresolved; this batch adds no target
+  organisms and performs no graph/page publication.
+- Global merge failures are actual required-check failures, not silently ignored or
+  repaired in this citation batch.
+- The queue still contains 311 MediaDB candidate source-owner links and is not an
+  exhaustive literature search.
+- Two Shewanella full-text sources and eight unchanged owners were prepared separately;
+  that handoff is not a completed scientific review.

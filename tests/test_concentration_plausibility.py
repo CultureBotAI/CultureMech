@@ -235,12 +235,12 @@ def test_stock_solution_records_are_excluded(corpus_findings):
 # the SUM of identical duplicate values (`Methanol 1584.0` from `792.0, 792.0`)
 # brought 24 of them back under a detector threshold. The rows were never real
 # measurements — a merge step had added duplicates together.
-CONCENTRATION_BACKLOG_BASELINE = 9_455
+CONCENTRATION_BACKLOG_BASELINE = 9_252
 # The sharper baseline (#150): a raw row count drifts with corpus size, whereas a
 # new flattened cocktail is a specific defect shape an import has reintroduced.
 # 185 -> 186 for the same reason as the row baseline above: a record whose repaired
 # name now matches the cocktail signature, not a newly flattened cocktail.
-COCKTAIL_BASELINE = 183
+COCKTAIL_BASELINE = 171
 
 
 def test_implausible_row_count_does_not_exceed_the_known_backlog(corpus_findings):

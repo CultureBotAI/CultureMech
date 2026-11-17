@@ -1,0 +1,948 @@
+# Independent scientific review of46 bacterial and specialized variant events
+
+- Review: 20261116T213028Z-bacterial-variant-independent-claims
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-11-16T21:26:00Z
+- Finished UTC: 2026-11-16T21:30:28Z
+- Reviewer: codex-root-independent-claim-reviewer (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Primary values, chemical forms, stock/final bases, isotope positions and negative/alternative events agree with the frozen proposal. Abstract-only evidence supports only explicitly stated identities/doses. Complete recipe equivalence and unrelated claims are not approved.
+
+## Scope And Provenance
+
+46 proposed events in26 source-hash-pinned recipes selected from the126-row cohort.
+
+Selection: Exact frozen proposal SHA256 recorded by the retained helper.
+Coverage: partial; 26 reviewed / 26 in the declared population.
+Source: working_tree at Git base 93d23e4415213bb92890db6f8330e18247ad2553.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000415 | data/normalized_yaml/bacterial/2asw.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | 2asw_1_5_m_nacl |
+| CultureMech:003940 | data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | mrs_broth_bg24_ph_yeast_extract_optimization |
+| CultureMech:004018 | data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Methanol preparation option |
+| CultureMech:000718 | data/normalized_yaml/bacterial/methylobacterium_medium.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Methanol preparation option |
+| CultureMech:006403 | data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Liquid SC medium |
+| CultureMech:001884 | data/normalized_yaml/bacterial/sc_medium.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Liquid SC medium |
+| CultureMech:006416 | data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | strict_anaerobic_halothermothrix_orenii_h168_growth |
+| CultureMech:006900 | data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Methanol alternative |
+| CultureMech:002134 | data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Methanol alternative |
+| CultureMech:007449 | data/normalized_yaml/bacterial/NBRC_1003.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | nbrc_1002_heterotrophic_yeast_extract |
+| CultureMech:009933 | data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | brucella_broth_fbs_h2o2_helicobacter_pylori |
+| CultureMech:001368 | data/normalized_yaml/bacterial/acidiphilium_medium.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | aluminum_sulfate_stress_acidiphilium_cryptum |
+| CultureMech:000338 | data/normalized_yaml/bacterial/ajs.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | ajs_hydrochloric_acid_ph_1_5 |
+| CultureMech:009111 | data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | modified_dsmz_640_blumer_schuette_2010 |
+| CultureMech:007092 | data/normalized_yaml/bacterial/cdm_teusink_et_al.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Teusink 2005 Table 1 complete CDM on reported mass basis |
+| CultureMech:007202 | data/normalized_yaml/bacterial/minimal_medium_teusink_et_al.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Teusink 2005 Table 1 minimal medium on reported mass basis |
+| CultureMech:007184 | data/normalized_yaml/bacterial/cgc_w_acetate.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Wendisch 2000 CgC with sodium [1-13C]acetate |
+| CultureMech:007185 | data/normalized_yaml/bacterial/cgc_w_acetate_glucose.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Wendisch 2000 CgC with sodium [1-13C]acetate and unlabeled glucose |
+| CultureMech:007186 | data/normalized_yaml/bacterial/cgc_w_glucose.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Wendisch 2000 CgC with [5-13C]glucose |
+| CultureMech:001978 | data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | DSM 16661 and DSM 21157 source prescription |
+| CultureMech:000343 | data/normalized_yaml/bacterial/f_2.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | f_2_silicate_supplement_1_06e_4_m |
+| CultureMech:007206 | data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Anhydrous magnesium sulfate option |
+| CultureMech:003006 | data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | crvi_stress_magnetosome_deficient_b17316 |
+| CultureMech:002928 | data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | phototrophic_l_phenylalanine_sole_nitrogen_ou5 |
+| CultureMech:000443 | data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | Casein hydrolysate alternative |
+| CultureMech:008226 | data/normalized_yaml/bacterial/tryptic_soy_broth.yaml # Existing inline variant modification rows and proposed ingredient_changes only | maintained | tsb_without_dextrose_plus_starch_or_maltose |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Exact proposal, recipe, source and text coordinates | passed | True | CultureMech:000415, CultureMech:003940, CultureMech:004018, CultureMech:000718, CultureMech:006403, CultureMech:001884, CultureMech:006416, CultureMech:006900, CultureMech:002134, CultureMech:007449, CultureMech:009933, CultureMech:001368, CultureMech:000338, CultureMech:009111, CultureMech:007092, CultureMech:007202, CultureMech:007184, CultureMech:007185, CultureMech:007186, CultureMech:001978, CultureMech:000343, CultureMech:007206, CultureMech:003006, CultureMech:002928, CultureMech:000443, CultureMech:008226 | 46event/26record count and every expected hash, variant name and source text checked; native input inspection retained. |
+| Independent primary source and quantitative evidence reading | passed | True | CultureMech:000415, CultureMech:003940, CultureMech:004018, CultureMech:000718, CultureMech:006403, CultureMech:001884, CultureMech:006416, CultureMech:006900, CultureMech:002134, CultureMech:007449, CultureMech:009933, CultureMech:001368, CultureMech:000338, CultureMech:009111, CultureMech:007092, CultureMech:007202, CultureMech:007184, CultureMech:007185, CultureMech:007186, CultureMech:001978, CultureMech:000343, CultureMech:007206, CultureMech:003006, CultureMech:002928, CultureMech:000443, CultureMech:008226 | Source-specific judgments below support the frozen scientific payload and repaired quantity/basis excerpts. No automated source matching is presented as scientific review. |
+
+## Scientific And Domain Assessments
+
+### 46 source-bound variant ingredient events
+
+scope: supported. Targets: CultureMech:000415, CultureMech:003940, CultureMech:004018, CultureMech:000718, CultureMech:006403, CultureMech:001884, CultureMech:006416, CultureMech:006900, CultureMech:002134, CultureMech:007449, CultureMech:009933, CultureMech:001368, CultureMech:000338, CultureMech:009111, CultureMech:007092, CultureMech:007202, CultureMech:007184, CultureMech:007185, CultureMech:007186, CultureMech:001978, CultureMech:000343, CultureMech:007206, CultureMech:003006, CultureMech:002928, CultureMech:000443, CultureMech:008226.
+
+Independent source judgments support the proposed identities, doses and stages within the explicitly bounded scope; #763 quantitative excerpts have been repaired.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| spectrum | doi:10.1128/spectrum.00069-23; Materials and Methods, Algal strains and cultivation conditions | supports | Methods supports reported 1.5 M NaCl; does not establish the complete imported basal formula. |
+| emami | doi:10.1038/srep10036; Methods, culture conditions and bacterial interference experiment | supports | Methods supports HCl acidification, 1.06e-4 M silicate, 29.4 mM nitrate and separate 200/50 microgram/mL antibiotic treatments. Chemical forms and untreated controls are not inferred. |
+| hiibel | doi:10.3389/fenrg.2015.00020; Materials and Methods, Strains and media | supports | Strains and media supports 33.6 g/L sea salts and replacement with the named 2ASW vitamin solution. No constituent expansion or complete parent equivalence asserted. |
+| 751 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf; Page 1, liquid-medium instruction | supports | Official liquid-medium instruction omits corn meal agar; changed absolute phosphate batch masses remain held under #760. |
+| 125 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf; Page 1, preparation alternatives | supports | Official preparation provides 5 mL methanol as an alternative to methane-air cultivation. Quantity remains a batch amount; final volume/purity unspecified. |
+| 956 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf; Page 1, final paragraph | supports | Official alternatives state 0.5% methanol or 0.3% methylamine without percent basis. Literal doses remain notes; no simultaneous use or percent-unit inference. |
+| 1021 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf; Page 1, Solution A hydrolysate alternatives | supports | Official Solution A specifies 8.10 g casein hydrolysate as the lactalbumin-hydrolysate alternative. Undefined mixtures, batch amount and serum context preserved. |
+| 829 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf; Page 1, DSM 16661 and DSM 21157 prescription | supports | Official DSM16661/21157 instruction omits growth-stimulating factors. Gas headspace remains a condition. |
+| nbrc | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002; Heterotrophic and autotrophic preparation alternatives | supports | NBRC1002 preparation supports 10 mg/L hydrated FeSO4 plus 0.25 g/L yeast extract in the heterotrophic arm and 13.9 g/L FeSO4 in the autotrophic arm; pH1.7 acid titration has no inferred dose. |
+| blumer | doi:10.1128/AEM.01400-10; Materials and Methods, Bacterial strains and growth on sugar substrates | supports | Methods explicitly omits Trypticase, cysteine-HCl and resazurin. Sulfide stock 10% wt/vol versus final 0.5% without independently stated basis remains literal text, not a converted concentration. |
+| teusink | doi:10.1128/AEM.71.11.7253-7262.2005; Table 1, concentration column and footnotes a-b | supports | Table1 header establishes g/liter; pantothenate0.001 and minimal-subset biotin0.0025 mass concentrations match. Boldface subset membership checked in original HTML; no molar conversion. |
+| wendisch | doi:10.1128/JB.182.11.3088-3096.2000; Materials and Methods, cultivation conditions; separate Figure 1 caption | supports | Methods supports sodium[1-13C]acetate10 g/L, unlabeled glucose10 g/L and D-[5-13C]glucose20 g/L. Figure1 35 mM glucose is a separate arm; isotope positions/counterion and nominal Table2 molarity remain distinct. |
+| kaminskyj | doi:10.4148/1941-4765.1175; Page 26, Minimal Medium and 20 X Nitrate salts | supports | 20X nitrate stock specifies 5.2 g anhydrous MgSO4 per liter as the hydrated-salt alternative; MM uses18 g agar, distinct from CM15 g. Stock and final-medium quantities are not conflated. |
+| 10609610 | PMID:10609610; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Primary abstract supports reported medium100 g NaCl/L only; complete basal formula and every growth level are not certified. |
+| 38194015 | PMID:38194015; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Primary abstract supports 5 g/L yeast-extract enrichment only, with no inferred basal-plus-supplement total. |
+| 12420179 | PMID:12420179; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Primary abstract supports the separate300 mM aluminum-sulfate exposure; hydration and whole-parent equivalence remain unresolved. |
+| 19826864 | PMID:19826864; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Primary abstract supports L-phenylalanine as sole nitrogen source; dose and displaced basal nitrogen identities remain unresolved. |
+| 15931519 | PMID:15931519; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Primary abstract supports dextrose omission and separate soluble-starch/maltose arms at0.5 or1.0% w/v. No union of alternative substrate arms is implied. |
+| 37088211 | PMID:37088211; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Primary abstract supports10 mg/L Cr(VI) exposure only; administered salt/counterion is unspecified and not inferred. |
+| 35960254 | PMID:35960254; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Held claim remains outside the46 accepted events; no inaccessible detailed methods claim is promoted. |
+| 7520742 | PMID:7520742; Primary article abstract indexed by Europe PMC; full methods not reviewed | supports | Primary abstract supports10% serum with unspecified basis and the reported3.5 mM peroxide exposure. Neither is a complete recommended growth formulation. |
+
+## Limits And Additional Notes
+
+- Bounded agent scientific review, not human approval or whole-record certification.
+- Native writer/corpus/export acceptance and release adoption remain separate gates.
+- Held source/model rows and abstract-only limitations remain explicit in the126-row disposition ledger.
+- Unsupported numeric conversion, unknown percent basis, chemical salt or hydrate identity is not inferred.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261116T213028Z-bacterial-variant-independent-claims
+kind: batch
+repository: CultureBotAI/CultureMech
+title: Independent scientific review of46 bacterial and specialized variant events
+started_at: '2026-11-16T21:26:00Z'
+finished_at: '2026-11-16T21:30:28Z'
+reviewer:
+  identity: codex-root-independent-claim-reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author this cohort's46 proposal events or evidence
+    repairs. Separate read-only primary-source comparison; reviewer authored the shared
+    applicator and different cohorts, which are outside this independence claim.
+skill: curate-yaml-record; review-ingredient-concentrations
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+native_verdict: 'The46 bounded proposed events are supported at their stated stages;
+  strengthened exact quantitative excerpts address #763 for this cohort. No held claim
+  is promoted.'
+summary: Primary values, chemical forms, stock/final bases, isotope positions and
+  negative/alternative events agree with the frozen proposal. Abstract-only evidence
+  supports only explicitly stated identities/doses. Complete recipe equivalence and
+  unrelated claims are not approved.
+source:
+  git_revision: 93d23e4415213bb92890db6f8330e18247ad2553
+  state: working_tree
+  inputs:
+  - path: .temp/variant-683/remaining-sources/abstract-10609610/source.json
+    sha256: 35e84b91a28f53b591554a9a986edefa68d08c52396f8d52311133a2037812d8
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-12420179/source.json
+    sha256: b1e8c1d7ee39651d2ad5a4c17b8fcd2d0758aee5f717378e442381e92fa5963b
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-15931519/source.json
+    sha256: 0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-19826864/source.json
+    sha256: 6429c3b3fce615d13eb83f68eae574c48fa8e8dd60729b4744fd5615f88d0e8b
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-35960254/source.json
+    sha256: 46d3ffd560e195e57c26c259af2ea6d849bfcc46e38ae96ad653339c771e4021
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-37088211/source.json
+    sha256: aec3da0e724798ee8a372f1cba3cba6c4efc1212e246095d92b50f11ff1ba277
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-38194015/source.json
+    sha256: 6374babdb789d4cf4ece64f8539d8bbd78dd9710139d6196c752fd9cf3ffff91
+    role: context
+  - path: .temp/variant-683/remaining-sources/abstract-7520742/source.json
+    sha256: af16343d832a80e5445262ea29f8763dba74effdea479ef8bdc173e715cba1a5
+    role: context
+  - path: .temp/variant-683/remaining-sources/blumer-2010/source.html
+    sha256: ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8
+    role: context
+  - path: .temp/variant-683/remaining-sources/dsmz-1021/source.pdf
+    sha256: 6af992ef5048ce852d2c1c88463f1eeedf3441b682522231c93341b3ce1debac
+    role: context
+  - path: .temp/variant-683/remaining-sources/dsmz-125/source.pdf
+    sha256: e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f
+    role: context
+  - path: .temp/variant-683/remaining-sources/dsmz-751/source.pdf
+    sha256: 721e0310d250ea6eab5d453f063b9452b48b8368ad53fa9384cb54434d2e59fb
+    role: context
+  - path: .temp/variant-683/remaining-sources/dsmz-829/source.pdf
+    sha256: 73b87bbb602b5d40fa5a442a74b8a227fc26774281d333b7718a15317fd1cb27
+    role: context
+  - path: .temp/variant-683/remaining-sources/dsmz-956/source.pdf
+    sha256: 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39
+    role: context
+  - path: .temp/variant-683/remaining-sources/hiibel-2015/source.html
+    sha256: 8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a
+    role: context
+  - path: .temp/variant-683/remaining-sources/kaminskyj-2001/source.pdf
+    sha256: 22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6
+    role: context
+  - path: .temp/variant-683/remaining-sources/nbrc-1002/source.html
+    sha256: 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e
+    role: context
+  - path: .temp/variant-683/remaining-sources/teusink-2005/source.html
+    sha256: 3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91
+    role: context
+  - path: .temp/variant-683/remaining-sources/wendisch-2000/source.html
+    sha256: 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e
+    role: context
+  - path: .temp/variant-683/sources/2asw-spectrum-2023/source.xml
+    sha256: 35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d
+    role: context
+  - path: .temp/variant-683/sources/emami-2015/source.xml
+    sha256: 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319
+    role: context
+  - path: conf/variant_ingredient_curation/bacterial-specialized-683.json
+    sha256: f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f
+    role: context
+  - path: data/normalized_yaml/bacterial/2asw.yaml
+    sha256: 53791685ae44730a58fbbe48317248326a162377283a40c727eec72b7509bdb9
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml
+    sha256: 218b2a1c73a5049f71814b8a6b11da70e106c5b503eb8ea7021c319f7811b69f
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml
+    sha256: 9cb298367084d6cb6b8347acb301575cbbf14771acb8cea52df8979f522f578a
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml
+    sha256: a1d63c31c3045012ec21bf7216b5f20713d1897c89c3a536f5ebd3b36d28fc72
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml
+    sha256: 1fb7964a54b9dfc5e3c152c94137aa3fd9ebe91e6e257beb299857e8d837c531
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml
+    sha256: fdcd031f21238e9ce826143de772bc4bf32c97e71ffd4941eb04c69b268e0163
+    role: target
+  - path: data/normalized_yaml/bacterial/NBRC_1003.yaml
+    sha256: 6138f25b510c742489ad6b63f48b5171a440111c56b046954dfbd3fc52df44aa
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    sha256: f292dee86d67451cf7e1cc227e807733d9c3835a9b6b39ad191ef041b809dc10
+    role: target
+  - path: data/normalized_yaml/bacterial/acidiphilium_medium.yaml
+    sha256: 74e02fba4aee65fd7adce6d753f27d1578c92c8bc01ab804979ce283acf39b43
+    role: target
+  - path: data/normalized_yaml/bacterial/ajs.yaml
+    sha256: 3c5158c29f2130e01452d8f7a0428863db898c6a32b10b20d14a0f8c9881c4c6
+    role: target
+  - path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml
+    sha256: 458e1db8cfe57eacc6e36d97582e04f31df194d022d11769b4ad5b2892ab0cd2
+    role: target
+  - path: data/normalized_yaml/bacterial/cdm_teusink_et_al.yaml
+    sha256: 26fe1500ed5d2bc6e73533b47fce887a22586b39037ca8799072460c8294480f
+    role: target
+  - path: data/normalized_yaml/bacterial/cgc_w_acetate.yaml
+    sha256: 03e61bf2717255009095abe870544fa50dcb260d86590b8496b615bb49d55675
+    role: target
+  - path: data/normalized_yaml/bacterial/cgc_w_acetate_glucose.yaml
+    sha256: 800dab9329a224f8661d30d9f80402db4702a9cf69d5102b69bd1a6f540cb537
+    role: target
+  - path: data/normalized_yaml/bacterial/cgc_w_glucose.yaml
+    sha256: 406ca920b05bb55070d44c5912bad0772f8c64fb5ba790cd4cf65c960f3214b2
+    role: target
+  - path: data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml
+    sha256: 51bac1f50ee144a227f5d53cc1e88d5b65dae78f557c6c4e305ae0d20cb6d431
+    role: target
+  - path: data/normalized_yaml/bacterial/f_2.yaml
+    sha256: b79f6f9593f30ef8a597c5918fa13e35a996994283b67ee896241e68b070ce84
+    role: target
+  - path: data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml
+    sha256: cf3c3a4655e7351962dcecef3e099c5e8afb034d4e5f72d4e67dd52c352a46c7
+    role: target
+  - path: data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml
+    sha256: 4a4e9475918654c9c8483e680055124ef16b3991042de96cba4ed256256b85f8
+    role: target
+  - path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
+    sha256: f322e18503801cfdd53950330c2476d7e5bbce6e3a0798ac159699935bc5bae9
+    role: target
+  - path: data/normalized_yaml/bacterial/methylobacterium_medium.yaml
+    sha256: 5182ee774e098c981851a759200b18f4c8382d0332ccf10d9800b99e6094b969
+    role: target
+  - path: data/normalized_yaml/bacterial/minimal_medium_teusink_et_al.yaml
+    sha256: b950165afb3047613f5917976f9c7a5b702d31319a9837e9c435c563d2ec87ed
+    role: target
+  - path: data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml
+    sha256: acd7277999ded45bf80ab5ebdf52c9513e1c97df1b53f1e4406b6e199f39f624
+    role: target
+  - path: data/normalized_yaml/bacterial/sc_medium.yaml
+    sha256: 458e98d500f7ea402604afad6ec1503da85104507901e96479b51a429a81372a
+    role: target
+  - path: data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml
+    sha256: a22d765a5e483f6ee7e0e7485c89c34608dcdf950b5175c97dd5cf05c25a090d
+    role: target
+  - path: data/normalized_yaml/bacterial/tryptic_soy_broth.yaml
+    sha256: 569018dc43baf552de065e7fbb7a547f5c10dcc0a308a0d9cb49f0a0a5a34040
+    role: target
+scope:
+  description: 46 proposed events in26 source-hash-pinned recipes selected from the126-row
+    cohort.
+  selection: Exact frozen proposal SHA256 recorded by the retained helper.
+  coverage: partial
+  population_size: 26
+  reviewed_target_ids:
+  - CultureMech:000415
+  - CultureMech:003940
+  - CultureMech:004018
+  - CultureMech:000718
+  - CultureMech:006403
+  - CultureMech:001884
+  - CultureMech:006416
+  - CultureMech:006900
+  - CultureMech:002134
+  - CultureMech:007449
+  - CultureMech:009933
+  - CultureMech:001368
+  - CultureMech:000338
+  - CultureMech:009111
+  - CultureMech:007092
+  - CultureMech:007202
+  - CultureMech:007184
+  - CultureMech:007185
+  - CultureMech:007186
+  - CultureMech:001978
+  - CultureMech:000343
+  - CultureMech:007206
+  - CultureMech:003006
+  - CultureMech:002928
+  - CultureMech:000443
+  - CultureMech:008226
+  exclusions:
+  - target: Held and condition-only rows; unrelated recipe content
+    reason: No scientific clearance of inaccessible details, ambiguous batch quantities,
+      whole formulations or growth claims.
+targets:
+- target_id: CultureMech:000415
+  path: data/normalized_yaml/bacterial/2asw.yaml
+  label: 2asw_1_5_m_nacl
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:003940
+  path: data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml
+  label: mrs_broth_bg24_ph_yeast_extract_optimization
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:004018
+  path: data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml
+  label: Methanol preparation option
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000718
+  path: data/normalized_yaml/bacterial/methylobacterium_medium.yaml
+  label: Methanol preparation option
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/methylobacterium_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006403
+  path: data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml
+  label: Liquid SC medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001884
+  path: data/normalized_yaml/bacterial/sc_medium.yaml
+  label: Liquid SC medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/sc_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006416
+  path: data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml
+  label: strict_anaerobic_halothermothrix_orenii_h168_growth
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006900
+  path: data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml
+  label: Methanol alternative
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:002134
+  path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
+  label: Methanol alternative
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007449
+  path: data/normalized_yaml/bacterial/NBRC_1003.yaml
+  label: nbrc_1002_heterotrophic_yeast_extract
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1003.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:009933
+  path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+  label: brucella_broth_fbs_h2o2_helicobacter_pylori
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001368
+  path: data/normalized_yaml/bacterial/acidiphilium_medium.yaml
+  label: aluminum_sulfate_stress_acidiphilium_cryptum
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidiphilium_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000338
+  path: data/normalized_yaml/bacterial/ajs.yaml
+  label: ajs_hydrochloric_acid_ph_1_5
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ajs.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:009111
+  path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml
+  label: modified_dsmz_640_blumer_schuette_2010
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007092
+  path: data/normalized_yaml/bacterial/cdm_teusink_et_al.yaml
+  label: Teusink 2005 Table 1 complete CDM on reported mass basis
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cdm_teusink_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007202
+  path: data/normalized_yaml/bacterial/minimal_medium_teusink_et_al.yaml
+  label: Teusink 2005 Table 1 minimal medium on reported mass basis
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_teusink_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007184
+  path: data/normalized_yaml/bacterial/cgc_w_acetate.yaml
+  label: Wendisch 2000 CgC with sodium [1-13C]acetate
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cgc_w_acetate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007185
+  path: data/normalized_yaml/bacterial/cgc_w_acetate_glucose.yaml
+  label: Wendisch 2000 CgC with sodium [1-13C]acetate and unlabeled glucose
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cgc_w_acetate_glucose.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007186
+  path: data/normalized_yaml/bacterial/cgc_w_glucose.yaml
+  label: Wendisch 2000 CgC with [5-13C]glucose
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cgc_w_glucose.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001978
+  path: data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml
+  label: DSM 16661 and DSM 21157 source prescription
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000343
+  path: data/normalized_yaml/bacterial/f_2.yaml
+  label: f_2_silicate_supplement_1_06e_4_m
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/f_2.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007206
+  path: data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml
+  label: Anhydrous magnesium sulfate option
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:003006
+  path: data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml
+  label: crvi_stress_magnetosome_deficient_b17316
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:002928
+  path: data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml
+  label: phototrophic_l_phenylalanine_sole_nitrogen_ou5
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000443
+  path: data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml
+  label: Casein hydrolysate alternative
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:008226
+  path: data/normalized_yaml/bacterial/tryptic_soy_broth.yaml
+  label: tsb_without_dextrose_plus_starch_or_maltose
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Existing inline variant modification rows and proposed ingredient_changes
+    only
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/tryptic_soy_broth.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: frozen-inputs
+  name: Exact proposal, recipe, source and text coordinates
+  status: passed
+  required: true
+  summary: 46event/26record count and every expected hash, variant name and source
+    text checked; native input inspection retained.
+  target_ids:
+  - CultureMech:000415
+  - CultureMech:003940
+  - CultureMech:004018
+  - CultureMech:000718
+  - CultureMech:006403
+  - CultureMech:001884
+  - CultureMech:006416
+  - CultureMech:006900
+  - CultureMech:002134
+  - CultureMech:007449
+  - CultureMech:009933
+  - CultureMech:001368
+  - CultureMech:000338
+  - CultureMech:009111
+  - CultureMech:007092
+  - CultureMech:007202
+  - CultureMech:007184
+  - CultureMech:007185
+  - CultureMech:007186
+  - CultureMech:001978
+  - CultureMech:000343
+  - CultureMech:007206
+  - CultureMech:003006
+  - CultureMech:002928
+  - CultureMech:000443
+  - CultureMech:008226
+- check_id: primary-claims
+  name: Independent primary source and quantitative evidence reading
+  status: passed
+  required: true
+  summary: Source-specific judgments below support the frozen scientific payload and
+    repaired quantity/basis excerpts. No automated source matching is presented as
+    scientific review.
+  target_ids:
+  - CultureMech:000415
+  - CultureMech:003940
+  - CultureMech:004018
+  - CultureMech:000718
+  - CultureMech:006403
+  - CultureMech:001884
+  - CultureMech:006416
+  - CultureMech:006900
+  - CultureMech:002134
+  - CultureMech:007449
+  - CultureMech:009933
+  - CultureMech:001368
+  - CultureMech:000338
+  - CultureMech:009111
+  - CultureMech:007092
+  - CultureMech:007202
+  - CultureMech:007184
+  - CultureMech:007185
+  - CultureMech:007186
+  - CultureMech:001978
+  - CultureMech:000343
+  - CultureMech:007206
+  - CultureMech:003006
+  - CultureMech:002928
+  - CultureMech:000443
+  - CultureMech:008226
+  evidence_ids:
+  - spectrum
+  - emami
+  - hiibel
+  - '751'
+  - '125'
+  - '956'
+  - '1021'
+  - '829'
+  - nbrc
+  - blumer
+  - teusink
+  - wendisch
+  - kaminskyj
+  - '10609610'
+  - '38194015'
+  - '12420179'
+  - '19826864'
+  - '15931519'
+  - '37088211'
+  - '35960254'
+  - '7520742'
+evidence:
+- evidence_id: spectrum
+  kind: primary_source
+  reference: doi:10.1128/spectrum.00069-23
+  locator: Materials and Methods, Algal strains and cultivation conditions
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Methods supports reported 1.5 M NaCl; does not establish the complete imported
+    basal formula.
+- evidence_id: emami
+  kind: primary_source
+  reference: doi:10.1038/srep10036
+  locator: Methods, culture conditions and bacterial interference experiment
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Methods supports HCl acidification, 1.06e-4 M silicate, 29.4 mM nitrate
+    and separate 200/50 microgram/mL antibiotic treatments. Chemical forms and untreated
+    controls are not inferred.
+- evidence_id: hiibel
+  kind: primary_source
+  reference: doi:10.3389/fenrg.2015.00020
+  locator: Materials and Methods, Strains and media
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Strains and media supports 33.6 g/L sea salts and replacement with the
+    named 2ASW vitamin solution. No constituent expansion or complete parent equivalence
+    asserted.
+- evidence_id: '751'
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf
+  locator: Page 1, liquid-medium instruction
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: 'Official liquid-medium instruction omits corn meal agar; changed absolute
+    phosphate batch masses remain held under #760.'
+- evidence_id: '125'
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf
+  locator: Page 1, preparation alternatives
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Official preparation provides 5 mL methanol as an alternative to methane-air
+    cultivation. Quantity remains a batch amount; final volume/purity unspecified.
+- evidence_id: '956'
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+  locator: Page 1, final paragraph
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Official alternatives state 0.5% methanol or 0.3% methylamine without percent
+    basis. Literal doses remain notes; no simultaneous use or percent-unit inference.
+- evidence_id: '1021'
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+  locator: Page 1, Solution A hydrolysate alternatives
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Official Solution A specifies 8.10 g casein hydrolysate as the lactalbumin-hydrolysate
+    alternative. Undefined mixtures, batch amount and serum context preserved.
+- evidence_id: '829'
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf
+  locator: Page 1, DSM 16661 and DSM 21157 prescription
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Official DSM16661/21157 instruction omits growth-stimulating factors. Gas
+    headspace remains a condition.
+- evidence_id: nbrc
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002
+  locator: Heterotrophic and autotrophic preparation alternatives
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: NBRC1002 preparation supports 10 mg/L hydrated FeSO4 plus 0.25 g/L yeast
+    extract in the heterotrophic arm and 13.9 g/L FeSO4 in the autotrophic arm; pH1.7
+    acid titration has no inferred dose.
+- evidence_id: blumer
+  kind: primary_source
+  reference: doi:10.1128/AEM.01400-10
+  locator: Materials and Methods, Bacterial strains and growth on sugar substrates
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Methods explicitly omits Trypticase, cysteine-HCl and resazurin. Sulfide
+    stock 10% wt/vol versus final 0.5% without independently stated basis remains
+    literal text, not a converted concentration.
+- evidence_id: teusink
+  kind: primary_source
+  reference: doi:10.1128/AEM.71.11.7253-7262.2005
+  locator: Table 1, concentration column and footnotes a-b
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Table1 header establishes g/liter; pantothenate0.001 and minimal-subset
+    biotin0.0025 mass concentrations match. Boldface subset membership checked in
+    original HTML; no molar conversion.
+- evidence_id: wendisch
+  kind: primary_source
+  reference: doi:10.1128/JB.182.11.3088-3096.2000
+  locator: Materials and Methods, cultivation conditions; separate Figure 1 caption
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Methods supports sodium[1-13C]acetate10 g/L, unlabeled glucose10 g/L and
+    D-[5-13C]glucose20 g/L. Figure1 35 mM glucose is a separate arm; isotope positions/counterion
+    and nominal Table2 molarity remain distinct.
+- evidence_id: kaminskyj
+  kind: primary_source
+  reference: doi:10.4148/1941-4765.1175
+  locator: Page 26, Minimal Medium and 20 X Nitrate salts
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: 20X nitrate stock specifies 5.2 g anhydrous MgSO4 per liter as the hydrated-salt
+    alternative; MM uses18 g agar, distinct from CM15 g. Stock and final-medium quantities
+    are not conflated.
+- evidence_id: '10609610'
+  kind: primary_source
+  reference: PMID:10609610
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Primary abstract supports reported medium100 g NaCl/L only; complete basal
+    formula and every growth level are not certified.
+- evidence_id: '38194015'
+  kind: primary_source
+  reference: PMID:38194015
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Primary abstract supports 5 g/L yeast-extract enrichment only, with no
+    inferred basal-plus-supplement total.
+- evidence_id: '12420179'
+  kind: primary_source
+  reference: PMID:12420179
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Primary abstract supports the separate300 mM aluminum-sulfate exposure;
+    hydration and whole-parent equivalence remain unresolved.
+- evidence_id: '19826864'
+  kind: primary_source
+  reference: PMID:19826864
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Primary abstract supports L-phenylalanine as sole nitrogen source; dose
+    and displaced basal nitrogen identities remain unresolved.
+- evidence_id: '15931519'
+  kind: primary_source
+  reference: PMID:15931519
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Primary abstract supports dextrose omission and separate soluble-starch/maltose
+    arms at0.5 or1.0% w/v. No union of alternative substrate arms is implied.
+- evidence_id: '37088211'
+  kind: primary_source
+  reference: PMID:37088211
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Primary abstract supports10 mg/L Cr(VI) exposure only; administered salt/counterion
+    is unspecified and not inferred.
+- evidence_id: '35960254'
+  kind: primary_source
+  reference: PMID:35960254
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Held claim remains outside the46 accepted events; no inaccessible detailed
+    methods claim is promoted.
+- evidence_id: '7520742'
+  kind: primary_source
+  reference: PMID:7520742
+  locator: Primary article abstract indexed by Europe PMC; full methods not reviewed
+  accessed_at: '2026-11-16T21:30:28Z'
+  support: supports
+  summary: Primary abstract supports10% serum with unspecified basis and the reported3.5
+    mM peroxide exposure. Neither is a complete recommended growth formulation.
+assessments:
+- assessment_id: bounded-claims
+  area: scope
+  topic: 46 source-bound variant ingredient events
+  outcome: supported
+  summary: 'Independent source judgments support the proposed identities, doses and
+    stages within the explicitly bounded scope; #763 quantitative excerpts have been
+    repaired.'
+  target_ids:
+  - CultureMech:000415
+  - CultureMech:003940
+  - CultureMech:004018
+  - CultureMech:000718
+  - CultureMech:006403
+  - CultureMech:001884
+  - CultureMech:006416
+  - CultureMech:006900
+  - CultureMech:002134
+  - CultureMech:007449
+  - CultureMech:009933
+  - CultureMech:001368
+  - CultureMech:000338
+  - CultureMech:009111
+  - CultureMech:007092
+  - CultureMech:007202
+  - CultureMech:007184
+  - CultureMech:007185
+  - CultureMech:007186
+  - CultureMech:001978
+  - CultureMech:000343
+  - CultureMech:007206
+  - CultureMech:003006
+  - CultureMech:002928
+  - CultureMech:000443
+  - CultureMech:008226
+  evidence_ids:
+  - spectrum
+  - emami
+  - hiibel
+  - '751'
+  - '125'
+  - '956'
+  - '1021'
+  - '829'
+  - nbrc
+  - blumer
+  - teusink
+  - wendisch
+  - kaminskyj
+  - '10609610'
+  - '38194015'
+  - '12420179'
+  - '19826864'
+  - '15931519'
+  - '37088211'
+  - '35960254'
+  - '7520742'
+findings: []
+actions: []
+limitations:
+- Bounded agent scientific review, not human approval or whole-record certification.
+- Native writer/corpus/export acceptance and release adoption remain separate gates.
+- Held source/model rows and abstract-only limitations remain explicit in the126-row
+  disposition ledger.
+- Unsupported numeric conversion, unknown percent basis, chemical salt or hydrate
+  identity is not inferred.
+links:
+- https://github.com/CultureBotAI/CultureMech/issues/683
+- https://github.com/CultureBotAI/CultureMech/issues/763
+```

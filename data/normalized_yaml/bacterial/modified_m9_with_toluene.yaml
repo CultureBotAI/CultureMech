@@ -162,6 +162,23 @@ curation_history:
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
   notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-10-13T16:46:27.131287+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, archived primary-source/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved formulation,
+    assay and metadata limits. Existing recipe fields and history unchanged; no new
+    native growth, concentration evidence or resolved variant.
+  source: PMID:18793442
+- timestamp: '2026-10-14T01:06:41.461765+00:00'
+  curator: codex
+  action: CURATED_PAPER_CITATIONS_AND_PROVENANCE
+  notes: Added or enriched verified paper citations and source archive/Markdown links;
+    recorded bounded formulation and organism assessments, corrected alias/correction
+    dispositions, and consolidated only verified duplicate bibliography entries. Preserved
+    prior recipe fields, evidence, links and history. No new growth, concentration
+    or resolved-variant claim. Whitchurch review is non-operational identity only.
+  source: PMID:2687253; doi:10.1128/jb.172.6.3534b.1990; PMID:18793442
 media_term:
   preferred_term: MediaDB Medium 198
   term:
@@ -174,3 +191,122 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: PMID:18793442
+  title: 'A genome-scale metabolic reconstruction of Pseudomonas putida KT2440: iJN746
+    as a cell factory.'
+  authors: Nogales J; Palsson BØ; Thiele I
+  year: 2008
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=deposited_full_XML_selected_methods_and_body_passages;
+    alternate_identifier=doi:10.1186/1752-0509-2-79; owner=MEDIADB:198; discovery_sourceID=74;
+    source_url=https://pubmed.ncbi.nlm.nih.gov/18793442/; raw_abstract=references_cache/papers/PMID_18793442.xml;
+    source_markdown=references_cache/papers/PMID_18793442.md. alternate_identifier=PMC2569920.
+    full_text_xml=references_cache/papers/primary_xml/pmc2569920-20261013.xml; full_text_markdown=references_cache/papers/primary_xml/pmc2569920-20261013.md.
+    Methods / In vivo determination of oxygen consumption and cell culture condition;
+    exact excerpt="TOL plasmid". Methods / In vivo determination of oxygen consumption
+    and cell culture condition; exact excerpt="glucose (0.3% [wt/vol])". Methods /
+    In vivo determination of oxygen consumption and cell culture condition; exact
+    excerpt="toluene (6 mM)". Methods / in silico medium composition; exact excerpt="in
+    silico M9 minimal medium (iM9)". The two imported M9 owners differ in glucose
+    versus toluene. Deposited physical-culture methods specify the carbon sources
+    but do not enumerate all imported base salts or quantities. Base M9 reference
+    90 is Abril 1989 (PMID:2687253); its archived abstract lacks the complete formulation
+    and PubMed flags an erratum. Correction DOI=10.1128/jb.172.6.3534b.1990; the lower
+    correction on page 3534 has now been visually verified (references_cache/papers/primary_scans/abril-1990-20261014/page-3534.png;
+    Markdown companion page-3534.md). It corrects substrate naming and a reported
+    assay quantity, not the M9 base recipe. The separate correction citation records
+    its scope. The correction page's linked PMID:2160949 identifies a different Paracoccus
+    correction and is rejected as an alias. The correction's scope is resolved, but
+    the base formulation remains unavailable in the archived original abstract; no
+    base-formula details are inherited. Keep physical growth, oxygen-consumption resuspension,
+    saline biomass washes, and in silico iM9/iLB separate. Simulated exchange constraints
+    in mmol/gDW/h are not concentrations or empirical growth. Reported organism=Pseudomonas
+    putida KT2440 harboring the TOL plasmid; canonical scientific name=Pseudomonas
+    putida KT2440; NCBITaxon:160488; actual rank=strain; taxonomy_match=verified strain
+    node; specific plasmid-bearing derivative unresolved; role=physical-culture study
+    organism; TOL-bearing status must not be generalized to all KT2440. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=160488&retmode=xml.
+    Reported organism=Pseudomonas putida KT2442 and Pseudomonas putida mt-2; canonical
+    scientific name=Pseudomonas putida; NCBITaxon:303; actual rank=species; taxonomy_match=parent_rank_only;
+    role=distinct prior-study and ancestral contexts, not physical-growth targets
+    established here. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=303&retmode=xml.
+    Reported organism=Pseudomonas putida F1; canonical scientific name=Pseudomonas
+    putida F1; NCBITaxon:351746; actual rank=strain; taxonomy_match=exact strain;
+    role=prior-study comparison, not the experimental strain on these owners. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=351746&retmode=xml.
+    Reported organism=Escherichia coli; canonical scientific name=Escherichia coli;
+    NCBITaxon:562; actual rank=species; taxonomy_match=exact species; role=biomass
+    and oxygen-model template, not empirical growth on these media. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml.
+    Reported organism=Pseudomonas aeruginosa PAO1 and PA14; canonical scientific name=Pseudomonas
+    aeruginosa; NCBITaxon:287; actual rank=species; taxonomy_match=parent_rank_only;
+    role=distinct genetic/model comparator strains; exact strain nodes not established
+    in this review and no current-media growth asserted. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=287&retmode=xml.
+    Inspected locations=Methods/In vivo determination of oxygen consumption and cell
+    culture condition, Biomass function and in silico medium composition; selected
+    model-comparison body passages. Matching one carbon dose or medium name does not
+    certify the full local thirteen-component recipe. Exact variant destination remains
+    unresolved. Taxonomy archive=references_cache/papers/taxonomy/soil-metabolism-studies-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/soil-metabolism-studies-20261013.md.
+    Additional taxonomy archive=references_cache/papers/taxonomy/soil-metabolism-additional-20261013.xml;
+    additional_taxonomy_markdown=references_cache/papers/taxonomy/soil-metabolism-additional-20261013.md.
+    Bounded lookup misses do not prove taxon absence. Organism inventory covers inspected
+    medium-relevant passages, not an exhaustive full-paper inventory. Images and supplements
+    have not been verified. Correction/retraction coverage is limited to inspected
+    publication metadata. Existing related-media candidates were checked without asserting
+    exact formulation equivalence. All prior ingredients, quantities, preparation
+    and history remain unchanged and uncertified by this citation. No new native growth
+    assertion, concentration evidence or resolved variant.
+- reference: PMID:2687253
+  title: Regulator and enzyme specificities of the TOL plasmid-encoded upper pathway
+    for degradation of aromatic hydrocarbons and expansion of the substrate range
+    of the pathway.
+  authors: Abril MA; Michan C; Timmis KN; Ramos JL
+  year: 1989
+  notes: source_type=journal_article; discovery_mode=cited_base_protocol_or_notice;
+    accessed_on=2026-10-14; source_access=PubMed_abstract_not_full_text; doi=10.1128/jb.171.12.6782-6790.1989;
+    pmid=2687253; pmcid=PMC210577; raw=references_cache/papers/PMID_2687253.xml; markdown=references_cache/papers/PMID_2687253.md;
+    Source-link proof=reports/paper_citation_curation/20261014-citation-frontier-resolution/prepared-sources.json#source_owner_links/2687253.  PubMed
+    abstract, final sentence; exact excerpt="Pseudomonas sp. strain B13". Reported
+    organism/group=Pseudomonas sp. strain B13 and its TOL-plasmid-bearing clone; canonical
+    scientific name=Pseudomonas knackmussii B13; NCBITaxon:1301098; actual rank=strain;
+    taxonomy_match=verified_B13_synonym_with_derivative_parent_only; role=historical
+    base strain; exact engineered clone identity not asserted. Lookup_on=2026-10-14;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1301098&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-20261014.md.
+    NCBI lists Pseudomonas sp. (strain B13) as a synonym of Pseudomonas knackmussii
+    B13; the returned current rank is strain. Citation role=cited_M9_base_protocol
+    via Nogales 2008 reference 90. The abstract lacks the complete M9 recipe and must
+    not be treated as proof of the local salts/amounts or KT2440 growth. Its corrected
+    substrate name is consistent with the separately inspected 1990 correction, doi:10.1128/jb.172.6.3534b.1990.
+    Correction/retraction coverage is limited to inspected publication metadata and
+    identified notices, not an exhaustive audit. No new native growth assertion, concentration
+    evidence or resolved variant. Prior ingredients, preparation, evidence, links
+    and history are preserved, not newly certified.
+- reference: doi:10.1128/jb.172.6.3534b.1990
+  title: Regulator and Enzyme Specificities of the TOL Plasmid-Encoded Upper Pathway
+    for Degradation of Aromatic Hydrocarbons and Expansion of the Substrate Range
+    of the Pathway
+  authors: María-Ángeles Abril; Carmen Michan; Kenneth N. Timmis; Juan L. Ramos
+  year: 1990
+  notes: source_type=journal_erratum; discovery_mode=cited_base_protocol_or_notice;
+    accessed_on=2026-10-14; source_access=visually_verified_lower_correction_on_shared_page_scan;
+    doi=10.1128/jb.172.6.3534b.1990; raw=references_cache/papers/primary_scans/abril-1990-20261014/page-3534.png;
+    markdown=references_cache/papers/primary_scans/abril-1990-20261014/page-3534.md;
+    crossref_raw=references_cache/papers/primary_metadata/frontier-abril-1990-correction-20261014.json;
+    Authors transcribed from the lower correction scan; absent from the Crossref deposit.
+    PMID:2160949 belongs to the distinct upper correction, not this publication. Lower
+    correction, original volume 171 pages 6782/6784/6785; exact excerpt="1,3,4-trimethylbenzene".
+    Lower correction, replacement substrate name; exact excerpt="1,2,4-trimethylbenzene".
+    Correction_of=doi:10.1128/jb.171.12.6782-6790.1989. The visually verified lower
+    notice also changes a reported assay quantity on original page 6788, column 1,
+    line 17, from 0.5 to 10.5 nmol. These are substrate-identification and assay-reporting
+    corrections, not M9 ingredient concentrations. The lower notice does not itself
+    name an organism; the unrelated upper Paracoccus notice and PMID:2160949 are excluded.
+    Source URL=https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bc78/209175/c024ceb92382/jbacter00160-0728.png.
+    Correction/retraction coverage is limited to inspected publication metadata and
+    identified notices, not an exhaustive audit. No new native growth assertion, concentration
+    evidence or resolved variant. Prior ingredients, preparation, evidence, links
+    and history are preserved, not newly certified.

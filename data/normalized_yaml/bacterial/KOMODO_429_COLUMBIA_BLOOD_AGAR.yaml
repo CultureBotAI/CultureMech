@@ -184,9 +184,10 @@ variants:
   description: Columbia blood agar cultivation evidence for the type strain Staphylococcus
     saccharolyticus ATCC 14953 / DSM 20359 / NCTC 11807, formerly Peptococcus saccharolyticus.
   modifications:
-  - BacDive DSMZ Medium 693 specifies Columbia agar base with 50 g/L defibrinated
-    sheep blood; the local parent record contains a Columbia blood agar base with
-    horse blood at 40 g/L.
+  - BacDive strain14567 lists DSMZ693 with50g/L defibrinated sheep blood; DSMZ693
+    recipe PDF instead states5% defibrinated sheep blood without a percentage basis.
+    This source disagreement is unresolved. The local parent contains horse blood
+    at40g/L.
   - Incubate anaerobically or under reduced oxygen at 37 C for this anaerobic organism.
   purpose: Capture strain-specific qualitative growth evidence while preserving the
     blood-source and concentration difference as a variant-level formulation note.
@@ -203,6 +204,59 @@ variants:
     explanation: BacDive identifies Staphylococcus saccharolyticus S1 as the type
       strain with DSM 20359, ATCC 14953, JCM 1768, and NCTC 11807 aliases; its cultivation
       data list Columbia Blood Medium with positive growth at 37 C.
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: defibrinated sheep blood
+    stage: BacDive14567 DSMZ693 source-specific Columbia blood agar formulation
+    source_modification_index: 0
+    source_text: BacDive strain14567 lists DSMZ693 with50g/L defibrinated sheep blood;
+      DSMZ693 recipe PDF instead states5% defibrinated sheep blood without a percentage
+      basis. This source disagreement is unresolved. The local parent contains horse
+      blood at40g/L.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium693.pdf
+      supports: SUPPORT
+      snippet: 5% defibrinated sheep blood
+      explanation: DSMZ693 confirms sheep-blood identity. Percent basis is unstated;
+        no common quantity is inferred from the differing BacDive mass concentration.
+    - reference: https://bacdive.dsmz.de/strain/14567
+      supports: SUPPORT
+      snippet: Defibrinated sheep blood 50.0 g/l
+      explanation: BacDive14567 medium693 confirms this type-strain source and sheep-blood
+        identity. Its quantity differs in basis from the DSMZ PDF; only identity replacement
+        is asserted.
+    replaced_ingredient:
+      preferred_term: horse blood
+    notes: Both source-specific quantity statements remain unresolved; no concentration
+      or amount is approved for this replacement.
+  ingredient_mentions:
+  - source_label: defibrinated sheep blood
+    reported_action: REPLACE
+    stage: DSMZ693/BacDive14567 formulation
+    source_modification_index: 0
+    source_text: BacDive strain14567 lists DSMZ693 with50g/L defibrinated sheep blood;
+      DSMZ693 recipe PDF instead states5% defibrinated sheep blood without a percentage
+      basis. This source disagreement is unresolved. The local parent contains horse
+      blood at40g/L.
+    reason: 'Identity is supported and represented by a separate REPLACE event. Quantity-only
+      conflict777: BacDive50g/L versus DSMZ5% with unspecified basis; no conversion
+      chosen.'
+    held_fields:
+    - QUANTITY
+    reported_quantity: BacDive50g/L; DSMZ5% with unspecified basis
+  - source_label: oxygen
+    reported_action: UNSPECIFIED
+    stage: reported Columbia blood agar anaerobic/reduced-oxygen incubation
+    source_modification_index: 1
+    source_text: Incubate anaerobically or under reduced oxygen at 37 C for this anaerobic
+      organism.
+    reason: Anaerobic or reduced-oxygen incubation is a reported culture condition.
+      It does not identify an oxygen supplementation/removal step or quantified gas
+      mixture; no whole-medium chemical operation inferred.
+    held_fields:
+    - OPERATION
+    - QUANTITY
 curation_history:
 - timestamp: 2026-01-27T01:15:02.fZ
   curator: komodo-web-import
@@ -246,6 +300,53 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-11-17T00:07:03.062598+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "83725a42c8a74ff8eff0b5710926f709ff1d68e9b859224ba81db186704d08cc",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml",
+    "recipe_id": "CultureMech:005268", "variants": [{"append_changes": [{"action":
+    "REPLACE", "evidence": [{"explanation": "DSMZ693 confirms sheep-blood identity.
+    Percent basis is unstated; no common quantity is inferred from the differing BacDive
+    mass concentration.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium693.pdf",
+    "snippet": "5% defibrinated sheep blood", "supports": "SUPPORT"}, {"explanation":
+    "BacDive14567 medium693 confirms this type-strain source and sheep-blood identity.
+    Its quantity differs in basis from the DSMZ PDF; only identity replacement is
+    asserted.", "reference": "https://bacdive.dsmz.de/strain/14567", "snippet": "Defibrinated
+    sheep blood 50.0 g/l", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "defibrinated sheep blood"}, "notes": "Both source-specific quantity statements
+    remain unresolved; no concentration or amount is approved for this replacement.",
+    "replaced_ingredient": {"preferred_term": "horse blood"}, "source_modification_index":
+    0, "source_text": "BacDive strain14567 lists DSMZ693 with50g/L defibrinated sheep
+    blood; DSMZ693 recipe PDF instead states5% defibrinated sheep blood without a
+    percentage basis. This source disagreement is unresolved. The local parent contains
+    horse blood at40g/L.", "stage": "BacDive14567 DSMZ693 source-specific Columbia
+    blood agar formulation"}], "append_mentions": [{"held_fields": ["QUANTITY"], "reason":
+    "Identity is supported and represented by a separate REPLACE event. Quantity-only
+    conflict777: BacDive50g/L versus DSMZ5% with unspecified basis; no conversion
+    chosen.", "reported_action": "REPLACE", "reported_quantity": "BacDive50g/L; DSMZ5%
+    with unspecified basis", "source_label": "defibrinated sheep blood", "source_modification_index":
+    0, "source_text": "BacDive strain14567 lists DSMZ693 with50g/L defibrinated sheep
+    blood; DSMZ693 recipe PDF instead states5% defibrinated sheep blood without a
+    percentage basis. This source disagreement is unresolved. The local parent contains
+    horse blood at40g/L.", "stage": "DSMZ693/BacDive14567 formulation"}, {"held_fields":
+    ["OPERATION", "QUANTITY"], "reason": "Anaerobic or reduced-oxygen incubation is
+    a reported culture condition. It does not identify an oxygen supplementation/removal
+    step or quantified gas mixture; no whole-medium chemical operation inferred.",
+    "reported_action": "UNSPECIFIED", "source_label": "oxygen", "source_modification_index":
+    1, "source_text": "Incubate anaerobically or under reduced oxygen at 37 C for
+    this anaerobic organism.", "stage": "reported Columbia blood agar anaerobic/reduced-oxygen
+    incubation"}], "replace_modifications": [{"expected": "BacDive DSMZ Medium 693
+    specifies Columbia agar base with 50 g/L defibrinated sheep blood; the local parent
+    record contains a Columbia blood agar base with horse blood at 40 g/L.", "modification_index":
+    0, "replacement": "BacDive strain14567 lists DSMZ693 with50g/L defibrinated sheep
+    blood; DSMZ693 recipe PDF instead states5% defibrinated sheep blood without a
+    percentage basis. This source disagreement is unresolved. The local parent contains
+    horse blood at40g/L."}], "variant_index": 0, "variant_name": "columbia_blood_agar_staphylococcus_saccharolyticus_anaerobic"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Staphylococcus saccharolyticus

@@ -405,7 +405,7 @@ audit-selective-agent-mismatch *args="":
 [group('QC')]
 audit-concentration-plausibility *args="":
     uv run --extra dev python scripts/audit_concentration_plausibility.py \
-        --max-allowed 9455 --max-cocktails 183 {{args}}
+        --max-allowed 9252 --max-cocktails 171 {{args}}
 
 # Rows whose concentration is the SUM of the duplicate values a merge consumed
 # (#394). `cleanup_media_quality.py` used to add duplicates together and record
@@ -2806,6 +2806,30 @@ aggregate-all-ingredients mapped_output="output/mapped_ingredients.yaml" unmappe
     echo "  Errors:      {{errors_output}}"
     echo "  List:        {{list_output}}"
 
+# Inspect release inputs without producing artifacts.
+[group('Ingredients')]
+plan-ingredient-release:
+    uv run --frozen python scripts/ingredient_release_bundle.py build --plan
+
+# Validate explicit source-bound curation decisions without editing recipes.
+[group('Ingredients')]
+preview-variant-ingredients decisions:
+    uv run --frozen python scripts/curate_variant_ingredients.py "{{decisions}}"
+
+# Build a new immutable candidate directory; does not replace ordinary outputs.
+[group('Ingredients')]
+build-ingredient-release output_dir:
+    uv run --frozen python scripts/ingredient_release_bundle.py build --output-dir "{{output_dir}}"
+
+[group('Ingredients')]
+verify-ingredient-release bundle_dir:
+    uv run --frozen python scripts/ingredient_release_bundle.py verify --bundle-dir "{{bundle_dir}}"
+
+# Verify against the digest independently recorded by the producer/reviewer.
+[group('Ingredients')]
+verify-ingredient-handoff bundle_dir manifest_sha256:
+    uv run --frozen python scripts/ingredient_release_bundle.py verify --bundle-dir "{{bundle_dir}}" --expected-manifest-sha256 "{{manifest_sha256}}"
+
 # =============================================================================
 # INGREDIENT UMAP VISUALIZATION
 # =============================================================================
@@ -2854,3 +2878,63 @@ gen-ingredient-umap-force-reload embeddings_path=kg_microbe_embeddings:
         --force-reload
     echo ""
     echo "✓ Ingredient UMAP regenerated: app/ingredient_umap.html"
+
+# Encode CultureMech merged media records into data/embeddings/records.npz (BAAI/bge-small-en-v1.5)
+[group('Visualization')]
+embed:
+    python3 scripts/embed_records.py
+
+# Project CultureMech record text embeddings (PaCMAP + PCA) and render app/text_map.html
+[group('Visualization')]
+embed-map:
+    python3 scripts/embed_map.py
+
+# =============================================================================
+# CURATED UNIPROT PROTEIN EXAMPLES (#659)
+# =============================================================================
+
+# Apply or preview curated UniProt protein examples on normalized_yaml records (dry-run by default)
+[group('Enrichment')]
+apply-protein-examples input_file normalized_dir="data/normalized_yaml" mode="--dry-run":
+    uv run python scripts/apply_protein_examples.py \
+        --input "{{input_file}}" \
+        --normalized-dir "{{normalized_dir}}" \
+        {{mode}}
+
+# Validate UniProt protein_examples across normalized_yaml records
+[group('QC')]
+validate-protein-examples path="data/normalized_yaml":
+    uv run python scripts/validate_protein_examples.py "{{path}}"
+
+# =============================================================================
+# CURATED CAUSAL GRAPHS (#658)
+# =============================================================================
+
+# Apply or preview curated growth-media causal_graphs on normalized_yaml records (dry-run by default)
+[group('Enrichment')]
+apply-causal-graphs input_file normalized_dir="data/normalized_yaml" mode="--dry-run":
+    uv run python scripts/apply_causal_graphs.py \
+        --input "{{input_file}}" \
+        --normalized-dir "{{normalized_dir}}" \
+        {{mode}}
+
+# Validate growth-media causal_graphs across normalized_yaml records
+[group('QC')]
+validate-causal-graphs path="data/normalized_yaml":
+    uv run python scripts/validate_causal_graphs.py "{{path}}"
+
+# Inventory free-text variant modifications without generating ingredient identities.
+[group('Reporting')]
+plan-variant-prose:
+    uv run --frozen python scripts/inventory_variant_prose.py --plan
+
+[group('Reporting')]
+build-variant-prose output_dir:
+    uv run --frozen python scripts/inventory_variant_prose.py --output-dir "{{output_dir}}"
+
+[group('Reporting')]
+verify-variant-prose bundle_dir:
+    uv run --frozen python scripts/inventory_variant_prose.py --verify "{{bundle_dir}}"
+
+
+

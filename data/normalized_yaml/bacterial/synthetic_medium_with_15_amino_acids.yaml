@@ -338,6 +338,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-10-13T18:20:46.076791+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified publication bibliography, archived abstract/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved all prior
+    evidence, missing amounts and variant links. Exact formulations and organism/assay
+    assignment remain unresolved; no new native growth or concentration claim.
+  source: PMID:18213408
 media_term:
   preferred_term: MediaDB Medium 314
   term:
@@ -350,3 +358,33 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: PMID:18213408
+  title: Reconstruction, modeling & analysis of Halobacterium salinarum R-1 metabolism.
+  authors: Gonzalez O; Gronau S; Falb M; Pfeiffer F; Mendoza E; Zimmer R; Oesterhelt
+    D
+  year: 2008
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_only; owner=MEDIADB:314;
+    discovery_sourceID=132; source_url=https://doi.org/10.1039/b715203e; alternate_identifier=doi:10.1039/b715203e;
+    raw=references_cache/papers/PMID_18213408.xml; markdown=references_cache/papers/PMID_18213408.md;
+    PubMed Abstract, computational scope; exact excerpt="using dynamic simulations".
+    Formulation_unresolved: The abstract presents a metabolic reconstruction and dynamic
+    simulations using multiple carbon/energy sources. Predictions are not measured
+    growth on this 30-component local recipe. The complete simulation inputs, physical
+    experiments and source formula were not inspected; local salt/amino-acid/vitamin
+    values and chemical forms are not newly certified. Reported organism=Halobacterium
+    salinarum R-1; canonical scientific name=Halobacterium salinarum R1; NCBITaxon:478009;
+    actual rank=no rank; taxonomy_match=designation_match_R1_at_actual_no_rank; role=model
+    organism named by title; R1 node is no rank, not strain rank. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=478009&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/physiology-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/physiology-study-candidates-20261013.md.
+    NCBI places R1 below the strain-rank NRC-34001 node; the actual returned rank
+    is retained. No simulation-derived positive growth edge is added. Inventory covers
+    inspected medium-relevant passages, not the entire paper. Bounded taxonomy misses
+    do not prove absence. Images/supplements and complete inherited formulas are not
+    certified; correction/retraction coverage is limited to inspected publication
+    metadata. All existing ingredients, concentrations (including deliberately missing
+    amounts), evidence, references, links, preparation and history remain unchanged.
+    No new native growth assertion, concentration EvidenceItem or resolved variant.'

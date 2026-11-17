@@ -6,6 +6,7 @@ Extracts searchable fields and facets from YAML recipes.
 """
 
 import argparse
+import csv
 import json
 from pathlib import Path
 from typing import Any
@@ -200,6 +201,48 @@ class BrowserExporter:
 
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(js_content)
+
+        if output_path.name == "data.js":
+            json_path = output_path.parent / "recipes.json"
+            json_path.write_text(json.dumps(browser_data, indent=2), encoding="utf-8")
+
+            tsv_path = output_path.parent / "recipes.tsv"
+            columns = [
+                "id",
+                "name",
+                "category",
+                "medium_type",
+                "physical_state",
+                "media_database",
+                "media_database_id",
+                "num_ingredients",
+                "num_solutions",
+                "num_preparation_steps",
+                "ph_value",
+                "ph_range",
+                "high_metal",
+                "high_ree",
+                "sterilization_method",
+                "target_organism_names",
+                "organism_ids",
+                "ingredient_names",
+                "applications",
+                "html_page",
+            ]
+            with open(tsv_path, "w", encoding="utf-8", newline="") as f:
+                writer = csv.writer(f, delimiter="\t")
+                writer.writerow(columns)
+                for row in browser_data:
+                    writer.writerow(
+                        [
+                            (
+                                "; ".join(str(x) for x in row.get(col, []))
+                                if isinstance(row.get(col), list)
+                                else ("" if row.get(col) is None else str(row.get(col)))
+                            )
+                            for col in columns
+                        ]
+                    )
 
         print(f"✓ Exported {len(browser_data)} recipes to {output_path}")
 

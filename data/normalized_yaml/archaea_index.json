@@ -1,7 +1,7 @@
 {
   "generated": "2026-10-09T14:44:38.288838+00:00",
   "category": "archaea",
-  "count": 746,
+  "count": 747,
   "recipes": {
     "CultureMech:000252": {
       "name": "halophilic_medium",
@@ -92,6 +92,19 @@
       "categories": [
         "archaea"
       ]
+    },
+    "CultureMech:015916": {
+      "name": "methanocorpusculum_aggregans_medium_jcm_1422",
+      "filename": "JCM_J1422_METHANOCORPUSCULUM_AGGREGANS_MEDIUM.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015916",
+      "source_id": "jcm.grmd:1422",
+      "source": "unknown",
+      "solution_count": 1,
+      "categories": [
+        "archaea"
+      ],
+      "has_hierarchy_enrichment": true
     },
     "CultureMech:015860": {
       "name": "methanobrevibacter_curvatus_medium",

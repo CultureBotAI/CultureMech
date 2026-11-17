@@ -74,6 +74,75 @@ curation_history:
   source: CCAP:BB_MErds; https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf
   notes: Copied the CCAP source identity from references and the original ccap-import
     event into the structured sources slot recognized by review scoring.
+- timestamp: '2026-11-16T21:36:31.453760+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected
+    2026-11-16. Selected source ratio gives800mL prepared BB and200mL prepared MErds
+    per1L mixture. These are source recipe inputs, not additional volumes atop an
+    already completed parent medium; other ratio is separate. The source ratio is
+    dimensionless. For the explicitly selected1L mixture,8:2 yields800mL+200mL and1:1
+    yields500mL+500mL; no chemical concentration or constituent expansion is inferred.",
+    "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf", "snippet":
+    "8:2 mixture or 1:1 mixture", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "ML_PER_L", "value": "800"}, "notes": "Selected source ratio gives800mL
+    prepared BB and200mL prepared MErds per1L mixture. These are source recipe inputs,
+    not additional volumes atop an already completed parent medium; other ratio is
+    separate.", "preferred_term": "Bold''s Basal Medium (BB)"}, "notes": "A scoped
+    change event, not a fully expanded variant or a parent-formulation amendment.
+    No chemical identifier is inferred.", "source_modification_index": 0, "source_text":
+    "Mix 800 mL BB with 200 mL MErds per litre.", "stage": "preparation of the selected
+    BB:MErds blend before autoclaving"}, {"action": "ADD", "evidence": [{"explanation":
+    "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected
+    2026-11-16. Prepared modified Foyns Erdschreiber medium, retained as a named mixture
+    without expanding stock constituents. The source ratio is dimensionless. For the
+    explicitly selected1L mixture,8:2 yields800mL+200mL and1:1 yields500mL+500mL;
+    no chemical concentration or constituent expansion is inferred.", "reference":
+    "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf", "snippet": "8:2 mixture
+    or 1:1 mixture", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "ML_PER_L", "value": "200"}, "notes": "Prepared modified Foyns Erdschreiber medium,
+    retained as a named mixture without expanding stock constituents.", "preferred_term":
+    "MErds medium"}, "notes": "A scoped change event, not a fully expanded variant
+    or a parent-formulation amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Mix 800 mL BB with 200 mL MErds per litre.", "stage": "preparation
+    of the selected BB:MErds blend before autoclaving"}], "variant_index": 0, "variant_name":
+    "bb_merds_8_2"}, {"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected
+    2026-11-16. Selected source ratio gives500mL prepared BB and500mL prepared MErds
+    per1L mixture. These are source recipe inputs, not additional volumes atop an
+    already completed parent medium; other ratio is separate. The source ratio is
+    dimensionless. For the explicitly selected1L mixture,8:2 yields800mL+200mL and1:1
+    yields500mL+500mL; no chemical concentration or constituent expansion is inferred.",
+    "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf", "snippet":
+    "8:2 mixture or 1:1 mixture", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "ML_PER_L", "value": "500"}, "notes": "Selected source ratio gives500mL
+    prepared BB and500mL prepared MErds per1L mixture. These are source recipe inputs,
+    not additional volumes atop an already completed parent medium; other ratio is
+    separate.", "preferred_term": "Bold''s Basal Medium (BB)"}, "notes": "A scoped
+    change event, not a fully expanded variant or a parent-formulation amendment.
+    No chemical identifier is inferred.", "source_modification_index": 0, "source_text":
+    "Mix 500 mL BB with 500 mL MErds per litre.", "stage": "preparation of the selected
+    BB:MErds blend before autoclaving"}, {"action": "ADD", "evidence": [{"explanation":
+    "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected
+    2026-11-16. Prepared modified Foyns Erdschreiber medium, retained as a named mixture
+    without expanding stock constituents. The source ratio is dimensionless. For the
+    explicitly selected1L mixture,8:2 yields800mL+200mL and1:1 yields500mL+500mL;
+    no chemical concentration or constituent expansion is inferred.", "reference":
+    "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf", "snippet": "8:2 mixture
+    or 1:1 mixture", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "ML_PER_L", "value": "500"}, "notes": "Prepared modified Foyns Erdschreiber medium,
+    retained as a named mixture without expanding stock constituents.", "preferred_term":
+    "MErds medium"}, "notes": "A scoped change event, not a fully expanded variant
+    or a parent-formulation amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Mix 500 mL BB with 500 mL MErds per litre.", "stage": "preparation
+    of the selected BB:MErds blend before autoclaving"}], "variant_index": 1, "variant_name":
+    "bb_merds_1_1"}]}'
 references:
 - reference: CCAP:BB_MErds
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf
@@ -111,7 +180,105 @@ variants:
   relationship: CONCENTRATION_VARIANT
   modifications:
   - Mix 800 mL BB with 200 mL MErds per litre.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: Bold's Basal Medium (BB)
+      concentration:
+        value: '800'
+        unit: ML_PER_L
+      notes: Selected source ratio gives800mL prepared BB and200mL prepared MErds
+        per1L mixture. These are source recipe inputs, not additional volumes atop
+        an already completed parent medium; other ratio is separate.
+    stage: preparation of the selected BB:MErds blend before autoclaving
+    evidence:
+    - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf
+      supports: SUPPORT
+      snippet: 8:2 mixture or 1:1 mixture
+      explanation: Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary
+        source inspected 2026-11-16. Selected source ratio gives800mL prepared BB
+        and200mL prepared MErds per1L mixture. These are source recipe inputs, not
+        additional volumes atop an already completed parent medium; other ratio is
+        separate. The source ratio is dimensionless. For the explicitly selected1L
+        mixture,8:2 yields800mL+200mL and1:1 yields500mL+500mL; no chemical concentration
+        or constituent expansion is inferred.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Mix 800 mL BB with 200 mL MErds per litre.
+  - action: ADD
+    ingredient:
+      preferred_term: MErds medium
+      concentration:
+        value: '200'
+        unit: ML_PER_L
+      notes: Prepared modified Foyns Erdschreiber medium, retained as a named mixture
+        without expanding stock constituents.
+    stage: preparation of the selected BB:MErds blend before autoclaving
+    evidence:
+    - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf
+      supports: SUPPORT
+      snippet: 8:2 mixture or 1:1 mixture
+      explanation: Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary
+        source inspected 2026-11-16. Prepared modified Foyns Erdschreiber medium,
+        retained as a named mixture without expanding stock constituents. The source
+        ratio is dimensionless. For the explicitly selected1L mixture,8:2 yields800mL+200mL
+        and1:1 yields500mL+500mL; no chemical concentration or constituent expansion
+        is inferred.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Mix 800 mL BB with 200 mL MErds per litre.
 - name: bb_merds_1_1
   relationship: CONCENTRATION_VARIANT
   modifications:
   - Mix 500 mL BB with 500 mL MErds per litre.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: Bold's Basal Medium (BB)
+      concentration:
+        value: '500'
+        unit: ML_PER_L
+      notes: Selected source ratio gives500mL prepared BB and500mL prepared MErds
+        per1L mixture. These are source recipe inputs, not additional volumes atop
+        an already completed parent medium; other ratio is separate.
+    stage: preparation of the selected BB:MErds blend before autoclaving
+    evidence:
+    - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf
+      supports: SUPPORT
+      snippet: 8:2 mixture or 1:1 mixture
+      explanation: Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary
+        source inspected 2026-11-16. Selected source ratio gives500mL prepared BB
+        and500mL prepared MErds per1L mixture. These are source recipe inputs, not
+        additional volumes atop an already completed parent medium; other ratio is
+        separate. The source ratio is dimensionless. For the explicitly selected1L
+        mixture,8:2 yields800mL+200mL and1:1 yields500mL+500mL; no chemical concentration
+        or constituent expansion is inferred.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Mix 500 mL BB with 500 mL MErds per litre.
+  - action: ADD
+    ingredient:
+      preferred_term: MErds medium
+      concentration:
+        value: '500'
+        unit: ML_PER_L
+      notes: Prepared modified Foyns Erdschreiber medium, retained as a named mixture
+        without expanding stock constituents.
+    stage: preparation of the selected BB:MErds blend before autoclaving
+    evidence:
+    - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf
+      supports: SUPPORT
+      snippet: 8:2 mixture or 1:1 mixture
+      explanation: Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary
+        source inspected 2026-11-16. Prepared modified Foyns Erdschreiber medium,
+        retained as a named mixture without expanding stock constituents. The source
+        ratio is dimensionless. For the explicitly selected1L mixture,8:2 yields800mL+200mL
+        and1:1 yields500mL+500mL; no chemical concentration or constituent expansion
+        is inferred.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Mix 500 mL BB with 500 mL MErds per litre.

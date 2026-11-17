@@ -254,6 +254,43 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 6 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-11-17T00:07:06.212153+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "c3e997aa7c21b7d944f3846b9a5f3be32a0c875c6e2b8f5e502a06c438e5fbe2",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/bacto_marine_broth_difco_2216_for_dsm_11879.yaml",
+    "recipe_id": "CultureMech:008906", "variants": [{"append_changes": [{"action":
+    "REMOVE", "evidence": [{"explanation": "Primary-paper author copy inspected at
+    https://www.academia.edu/165327461/, printed page2730. Routine half-strength medium
+    and specific omission-assay plates are distinct. Anonymous local capture returned403;
+    no local source hash is claimed.", "reference": "doi:10.1099/ijs.0.012724-0",
+    "snippet": "plates containing MB1/2 without peptone and yeast extract", "supports":
+    "SUPPORT"}], "ingredient": {"preferred_term": "peptone"}, "source_modification_index":
+    1, "source_text": "For single-carbon-source assays, peptone and yeast extract
+    omitted from MB1/2 plates (assay variant, not routine MB1/2).", "stage": "Marteinsson2010
+    single-carbon-source assay plates; separate from routine MB1/2"}, {"action": "REMOVE",
+    "evidence": [{"explanation": "Primary-paper author copy inspected at https://www.academia.edu/165327461/,
+    printed page2730. Routine half-strength medium and specific omission-assay plates
+    are distinct. Anonymous local capture returned403; no local source hash is claimed.",
+    "reference": "doi:10.1099/ijs.0.012724-0", "snippet": "plates containing MB1/2
+    without peptone and yeast extract", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "yeast extract"}, "source_modification_index": 1, "source_text": "For single-carbon-source
+    assays, peptone and yeast extract omitted from MB1/2 plates (assay variant, not
+    routine MB1/2).", "stage": "Marteinsson2010 single-carbon-source assay plates;
+    separate from routine MB1/2"}, {"action": "ADD", "evidence": [{"explanation":
+    "Primary-paper copy page 2730 inspected in browser 2026-11-16. Diluent input supported;
+    relative half-strength establishes no absolute water amount or component concentration.
+    Local capture unavailable.", "reference": "doi:10.1099/ijs.0.012724-0", "snippet":
+    "diluted to half strength with water", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "water"}, "notes": "Whole-medium dilution only; medium name
+    is not expanded into newly resolved chemicals.", "source_modification_index":
+    0, "source_text": "Marine broth/agar 2216 (DSMZ medium 514) diluted to 0.5x strength
+    with water.", "stage": "Marteinsson2010 MB1/2 whole-medium dilution"}], "variant_index":
+    0, "variant_name": "mb_half_strength_marine_broth_2216"}]}, "decision_sha256":
+    "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Cellulophaga algicola
@@ -349,3 +386,52 @@ variants:
       DSMZ 514 / Bacto Marine Broth 2216.
     snippet: MB1/2 ... diluted to half strength with water; growth on single carbon
       sources tested on plates containing MB1/2 without peptone and yeast extract.
+  ingredient_changes:
+  - action: REMOVE
+    ingredient:
+      preferred_term: peptone
+    stage: Marteinsson2010 single-carbon-source assay plates; separate from routine
+      MB1/2
+    source_modification_index: 1
+    source_text: For single-carbon-source assays, peptone and yeast extract omitted
+      from MB1/2 plates (assay variant, not routine MB1/2).
+    evidence:
+    - reference: doi:10.1099/ijs.0.012724-0
+      supports: SUPPORT
+      snippet: plates containing MB1/2 without peptone and yeast extract
+      explanation: Primary-paper author copy inspected at https://www.academia.edu/165327461/,
+        printed page2730. Routine half-strength medium and specific omission-assay
+        plates are distinct. Anonymous local capture returned403; no local source
+        hash is claimed.
+  - action: REMOVE
+    ingredient:
+      preferred_term: yeast extract
+    stage: Marteinsson2010 single-carbon-source assay plates; separate from routine
+      MB1/2
+    source_modification_index: 1
+    source_text: For single-carbon-source assays, peptone and yeast extract omitted
+      from MB1/2 plates (assay variant, not routine MB1/2).
+    evidence:
+    - reference: doi:10.1099/ijs.0.012724-0
+      supports: SUPPORT
+      snippet: plates containing MB1/2 without peptone and yeast extract
+      explanation: Primary-paper author copy inspected at https://www.academia.edu/165327461/,
+        printed page2730. Routine half-strength medium and specific omission-assay
+        plates are distinct. Anonymous local capture returned403; no local source
+        hash is claimed.
+  - action: ADD
+    ingredient:
+      preferred_term: water
+    stage: Marteinsson2010 MB1/2 whole-medium dilution
+    source_modification_index: 0
+    source_text: Marine broth/agar 2216 (DSMZ medium 514) diluted to 0.5x strength
+      with water.
+    evidence:
+    - reference: doi:10.1099/ijs.0.012724-0
+      supports: SUPPORT
+      snippet: diluted to half strength with water
+      explanation: Primary-paper copy page 2730 inspected in browser 2026-11-16. Diluent
+        input supported; relative half-strength establishes no absolute water amount
+        or component concentration. Local capture unavailable.
+    notes: Whole-medium dilution only; medium name is not expanded into newly resolved
+      chemicals.

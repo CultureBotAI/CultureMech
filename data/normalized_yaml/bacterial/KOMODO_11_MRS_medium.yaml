@@ -219,6 +219,25 @@ variants:
     explanation: The source directly compares growth-associated fermentation performance
       of the two named ATCC strains in MRS versus M17 and then reports oxygen-condition
       doubling times for the same strains.
+  ingredient_mentions:
+  - source_label: oxygen
+    reported_action: UNSPECIFIED
+    stage: MRS oxygen-condition experiments
+    source_modification_index: 1
+    source_text: Evaluate oxygen concentration effects in MRS medium, including anaerobic
+      and microaerophilic conditions.
+    reason: Primary abstract supports anaerobic versus microaerophilic comparisons
+      but gives no supplied gas species mixture, dose or addition/removal procedure.
+      The oxygen condition is not converted into a liquid ingredient event.
+    held_fields:
+    - OPERATION
+    - QUANTITY
+    evidence:
+    - reference: PMID:39353547
+      supports: PARTIAL
+      snippet: varying oxygen concentration levels
+      explanation: Primary abstract verifies oxygen-condition comparison only; full
+        preparation method unavailable.
 - name: mrs_broth_bg24_ph_yeast_extract_optimization
   description: MRS broth growth optimization condition for Lactiplantibacillus plantarum
     BG24, comparing static and shaken cultures and an MRS broth condition adjusted
@@ -239,6 +258,28 @@ variants:
       5 g/L yeast extract.
     explanation: The source directly reports quantitative growth kinetics for Lactiplantibacillus
       plantarum BG24 in original and modified MRS broth.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: yeast extract
+      concentration:
+        value: '5'
+        unit: G_PER_L
+      notes: Source-reported enrichment amount; do not calculate total yeast extract
+        including basal MRS. Abstract evidence only.
+    stage: pH 6.5 MRS enrichment
+    source_modification_index: 1
+    source_text: Compare original MRS broth at pH 5.7 with MRS broth at pH 6.5 enriched
+      with 5 g/L yeast extract.
+    evidence:
+    - reference: PMID:38194015
+      supports: SUPPORT
+      snippet: 5 g/L yeast extract
+      explanation: Primary article abstract indexed by Europe PMC; full methods not
+        reviewed. Supports only the named descriptor/event at the stated stage. Source-reported
+        enrichment amount; do not calculate total yeast extract including basal MRS.
+        Abstract evidence only. Source inspected 2026-11-16; SHA256 6374babdb789d4cf4ece64f8539d8bbd78dd9710139d6196c752fd9cf3ffff91.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 curation_history:
 - timestamp: 2026-01-27T01:15:01.fZ
   curator: komodo-web-import
@@ -289,6 +330,48 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 3 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-11-16T21:32:59.138247+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports
+    only the named descriptor/event at the stated stage. Source-reported enrichment
+    amount; do not calculate total yeast extract including basal MRS. Abstract evidence
+    only. Source inspected 2026-11-16; SHA256 6374babdb789d4cf4ece64f8539d8bbd78dd9710139d6196c752fd9cf3ffff91.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "PMID:38194015", "snippet": "5 g/L yeast extract", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "G_PER_L", "value": "5"}, "notes": "Source-reported
+    enrichment amount; do not calculate total yeast extract including basal MRS. Abstract
+    evidence only.", "preferred_term": "yeast extract"}, "source_modification_index":
+    1, "source_text": "Compare original MRS broth at pH 5.7 with MRS broth at pH 6.5
+    enriched with 5 g/L yeast extract.", "stage": "pH 6.5 MRS enrichment"}], "variant_index":
+    1, "variant_name": "mrs_broth_bg24_ph_yeast_extract_optimization"}]}'
+- timestamp: '2026-11-17T00:07:02.779831+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "cf6d1fdd16f21cbc90083d225999de52b448eaf6fe7144dbec29f420fa9072cb",
+    "path": "data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml", "recipe_id":
+    "CultureMech:003940", "variants": [{"append_mentions": [{"evidence": [{"explanation":
+    "Primary abstract verifies oxygen-condition comparison only; full preparation
+    method unavailable.", "reference": "PMID:39353547", "snippet": "varying oxygen
+    concentration levels", "supports": "PARTIAL"}], "held_fields": ["OPERATION", "QUANTITY"],
+    "reason": "Primary abstract supports anaerobic versus microaerophilic comparisons
+    but gives no supplied gas species mixture, dose or addition/removal procedure.
+    The oxygen condition is not converted into a liquid ingredient event.", "reported_action":
+    "UNSPECIFIED", "source_label": "oxygen", "source_modification_index": 1, "source_text":
+    "Evaluate oxygen concentration effects in MRS medium, including anaerobic and
+    microaerophilic conditions.", "stage": "MRS oxygen-condition experiments"}], "variant_index":
+    0, "variant_name": "mrs_bsh_oxygen_condition_atcc7050_atcc10012"}, {"variant_index":
+    1, "variant_name": "mrs_broth_bg24_ph_yeast_extract_optimization"}]}, "decision_sha256":
+    "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Heyndrickxia coagulans

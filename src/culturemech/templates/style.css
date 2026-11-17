@@ -22,9 +22,24 @@ h1 { margin: 0.2em 0; }
 h2 { margin-top: 2em; padding-bottom: 0.3em; border-bottom: 1px solid var(--line); }
 h3 { margin-top: 1.2em; }
 nav.breadcrumb { font-size: 0.9em; color: var(--muted);
-                 margin-bottom: 0.5em; }
-nav.breadcrumb a { color: var(--accent); text-decoration: none; }
+                 margin-bottom: 0.75em; padding: 0.55em 0.85em;
+                 background: var(--bg-soft); border: 1px solid var(--line);
+                 border-radius: 6px; }
+nav.breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 500; }
 nav.breadcrumb a:hover { text-decoration: underline; }
+.header-top { display: flex; flex-wrap: wrap; justify-content: space-between;
+              align-items: flex-start; gap: 1rem; }
+.record-search { display: flex; gap: 0.4rem; align-items: center;
+                 min-width: 280px; max-width: 420px; flex: 1 1 300px; }
+.record-search input[type="search"] {
+  flex: 1; padding: 0.48rem 0.75rem; border: 1px solid var(--line);
+  border-radius: 6px; font-size: 0.92rem; background: inherit; color: var(--fg);
+}
+.record-search button {
+  padding: 0.48rem 0.9rem; border: none; border-radius: 6px;
+  background: var(--accent); color: #fff; font-weight: 600;
+  font-size: 0.9rem; cursor: pointer;
+}
 .muted { color: var(--muted); }
 .build-warning {
   padding: .75rem 1rem;
@@ -114,7 +129,8 @@ a { color: var(--accent); }
    columns of their own: they are properties of the shared ChEBI term, and a
    seven-column ingredients table stops fitting on a laptop. */
 table.ingredients .structure,
-table.ingredients .supplier { margin-top: 0.15em; line-height: 1.35; }
+table.ingredients .supplier,
+table.ingredients .cross-mech { margin-top: 0.15em; line-height: 1.35; }
 table.ingredients .formula {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   letter-spacing: 0.01em;

@@ -177,6 +177,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T22:34:41.350925+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:14673546; PMID:15781419
 media_term:
   preferred_term: MediaDB Medium 132
   term:
@@ -188,3 +196,105 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:14673546
+  title: The effect of pfl gene knockout on the metabolism for optically pure D-lactate
+    production by Escherichia coli.
+  authors: Zhu J; Shimizu K
+  year: 2004
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_and_publisher_abstract_metadata;
+    owner=MEDIADB:132; discovery_sourceID=39; source_url=https://doi.org/10.1007/s00253-003-1499-9;
+    alternate_identifier=doi:10.1007/s00253-003-1499-9; raw=references_cache/papers/PMID_14673546.xml;
+    markdown=references_cache/papers/PMID_14673546.md; publisher_raw=references_cache/papers/primary_html/expression-next-source-39-20261013.html;
+    publisher_markdown=references_cache/papers/primary_html/expression-next-source-39-20261013.md;
+    PubMed abstract, batch-cultivation sentence; exact excerpt="Batch cultivations
+    of the pfl- mutants and their parent strain". Reported organism=Escherichia coli
+    (E. coli); canonical scientific name=Escherichia coli; NCBITaxon:562; actual rank=species;
+    taxonomy_match=exact_species_not_strain; role=experimental species; local formulation
+    unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli BW25113; canonical scientific name=Escherichia
+    coli BW25113; NCBITaxon:679895; actual rank=no rank; taxonomy_match=canonical_name_match_secondary_strain_lead;
+    role=MediaDB parent-strain lead, not named in abstract. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=679895&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli BW25113_pflB-; canonical scientific name=Escherichia
+    coli BW25113; NCBITaxon:679895; actual rank=no rank; taxonomy_match=parent_rank_only;
+    role=secondary mutant lead; parent node is not exact mutant identity. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=679895&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    The primary abstract distinguishes pflA-, pflB-, pflC- and pflD- mutants, their
+    parent, and alternative carbon-source experiments; these unnamed strain backgrounds
+    map only to the verified species above. Do not assign the same lactate outcome
+    to all mutants or inherit the glucose recipe into gluconate, pyruvate, fructose
+    or glycerol experiments. Historical MediaDB first_author=Zhao conflicts with both
+    PubMed and the publisher''s Zhu J; the verified PMID/title identify the same paper.
+    Publisher online date 12 December 2003 and April 2004 issue explain the year convention
+    used here. Local comparison: Fourteen native entries include 55.506 mM beta-D-glucose
+    and mixed sodium/potassium phosphate salts. The full formula, chemical forms,
+    pH, preparation and assay-specific substitutions are not given in the abstract;
+    no variant is assigned. Inventory covers inspected medium-relevant passages, not
+    the whole paper or bibliography. Correction/retraction coverage is limited to
+    inspected metadata; bounded taxonomy misses do not prove absence. Original ingredients,
+    amounts, preparation, history and links are preserved, not newly certified. No
+    new native growth assertion, resolved variant or concentration evidence.'
+- reference: PMID:15781419
+  title: Effect of a single-gene knockout on the metabolic regulation in Escherichia
+    coli for D-lactate production under microaerobic condition.
+  authors: Zhu J; Shimizu K
+  year: 2005
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:132;
+    discovery_sourceID=40; source_url=https://doi.org/10.1016/j.ymben.2004.10.004;
+    alternate_identifier=doi:10.1016/j.ymben.2004.10.004; raw=references_cache/papers/PMID_15781419.xml;
+    markdown=references_cache/papers/PMID_15781419.md; PubMed abstract, experimental
+    scope sentence; exact excerpt="under microaerobic condition". Reported organism=Escherichia
+    coli (E. coli); canonical scientific name=Escherichia coli; NCBITaxon:562; actual
+    rank=species; taxonomy_match=exact_species_not_strain; role=experimental species;
+    local formulation unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli BW25113; canonical scientific name=Escherichia
+    coli BW25113; NCBITaxon:679895; actual rank=no rank; taxonomy_match=canonical_name_match_secondary_strain_lead;
+    role=MediaDB parent-strain lead, not named in abstract. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=679895&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli BW25113_ppc-; canonical scientific name=Escherichia
+    coli BW25113; NCBITaxon:679895; actual rank=no rank; taxonomy_match=parent_rank_only;
+    role=secondary mutant lead; parent node is not exact mutant identity. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=679895&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli BW25113_pflA-; canonical scientific name=Escherichia
+    coli BW25113; NCBITaxon:679895; actual rank=no rank; taxonomy_match=parent_rank_only;
+    role=secondary mutant lead; parent node is not exact mutant identity. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=679895&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli BW25113_pta-; canonical scientific name=Escherichia
+    coli BW25113; NCBITaxon:679895; actual rank=no rank; taxonomy_match=parent_rank_only;
+    role=secondary mutant lead; parent node is not exact mutant identity. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=679895&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli BW25113_adhE-; canonical scientific name=Escherichia
+    coli BW25113; NCBITaxon:679895; actual rank=no rank; taxonomy_match=parent_rank_only;
+    role=secondary mutant lead; parent node is not exact mutant identity. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=679895&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    Reported organism=Escherichia coli BW25113_pykF-; canonical scientific name=Escherichia
+    coli BW25113; NCBITaxon:679895; actual rank=no rank; taxonomy_match=parent_rank_only;
+    role=secondary mutant lead; parent node is not exact mutant identity. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=679895&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-flux-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-flux-20261013.md.
+    The primary abstract distinguishes pykF, ppc, pflA, pta and adhE mutants under
+    microaerobic conditions; these unnamed strain backgrounds map only to the verified
+    species above. It does not identify the complete salts/trace recipe or permit
+    a common growth/flux outcome for every mutant. Historical MediaDB title spelling
+    condiion and lower-case first_author=zhu differ from verified PubMed metadata;
+    this is not a separate paper. Local comparison: The same fourteen-entry MED132
+    owner also receives the distinct 2004 Zhu citation. Source identity and mutant
+    contexts remain separate; neither abstract proves complete formulation equivalence
+    or warrants combining assay results. Inventory covers inspected medium-relevant
+    passages, not the whole paper or bibliography. Correction/retraction coverage
+    is limited to inspected metadata; bounded taxonomy misses do not prove absence.
+    Original ingredients, amounts, preparation, history and links are preserved, not
+    newly certified. No new native growth assertion, resolved variant or concentration
+    evidence.'

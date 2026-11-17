@@ -40,5 +40,10 @@
     <dt>Notes</dt>
     <dd class="prewrap">{{ medium.notes }}</dd>
   {% endif %}
+  {% set cm_links = cross_mech_medium_links(medium) %}
+  {% if cm_links %}
+    <dt>Cross-Mech</dt>
+    <dd>{{ cm_links }}</dd>
+  {% endif %}
 </dl>
 </section>

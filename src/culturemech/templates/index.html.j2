@@ -10,10 +10,28 @@
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to record content</a>
-<nav aria-label="Site navigation"><a href="{{ browser_href }}">Browse media</a> &middot; <a href="https://culturebotai.github.io/mechs/">All Mech projects</a></nav>
+{% set app_base = (browser_href or '../app/browser.html') | replace('browser.html', '') %}
+<nav class="breadcrumb site-nav" aria-label="Site navigation">
+  <a href="{{ app_base }}index.html">Home</a> &middot;
+  <a href="{{ browser_href }}">Browse media</a> &middot;
+  <a href="{{ app_base }}text_map.html">Text Map</a> &middot;
+  <a href="{{ app_base }}umap.html">Media PaCMAP</a> &middot;
+  <a href="{{ app_base }}umap_graph.html">Media Graph</a> &middot;
+  <a href="{{ app_base }}ingredient_umap.html">Ingredient PaCMAP</a> &middot;
+  <a href="{{ app_base }}schema.html">Schema</a> &middot;
+  <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
+</nav>
 <header>
-<h1>CultureMech — Media index</h1>
-<p class="muted">{{ "{:,}".format(count) }} media records.</p>
+<div class="header-top">
+  <div>
+    <h1>CultureMech — Media index</h1>
+    <p class="muted">{{ "{:,}".format(count) }} media records.</p>
+  </div>
+  <form class="record-search" action="{{ browser_href or '../app/browser.html' }}" method="get" role="search">
+    <input type="search" name="q" placeholder="Search media, ingredients, organisms..." aria-label="Search CultureMech media">
+    <button type="submit">Search</button>
+  </form>
+</div>
 {% if not composition_graphs_available %}
 <p class="build-warning" role="status"><strong>Degraded build:</strong>
 ingredient composition graphs are unavailable because the optional
@@ -34,6 +52,15 @@ ingredient composition graphs are unavailable because the optional
 </section>
 {% endfor %}
 </main>
+<footer>
+  <small class="muted">
+    {{ "{:,}".format(count) }} CultureMech media records &middot;
+    <a href="{{ app_base }}schema.html">LinkML Schema</a> &middot;
+    <a href="{{ app_base }}recipes.json">JSON</a> / <a href="{{ app_base }}recipes.tsv">TSV</a> &middot;
+    <a href="https://github.com/CultureBotAI/CultureMech">GitHub</a> &middot;
+    BSD-3-Clause
+  </small>
+</footer>
 <button class="theme-toggle" id="record-theme" type="button" aria-pressed="false">Dark mode</button>
 </body>
 </html>

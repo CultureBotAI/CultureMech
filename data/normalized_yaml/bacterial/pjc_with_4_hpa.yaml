@@ -136,6 +136,14 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-10-13T23:14:34.949513+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:234937
 media_term:
   preferred_term: MediaDB Medium 82
   term:
@@ -147,3 +155,54 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:234937
+  title: Metabolic function and properties of 4-hydroxyphenylacetic acid 1-hydroxylase
+    from Pseudomonas acidovorans.
+  authors: Hareland WA; Crawford RL; Chapman PJ; Dagley S
+  year: 1975
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_and_visually_inspected_page273_culture_paragraph;
+    owner=MEDIADB:82; discovery_sourceID=18; source_url=https://doi.org/10.1128/jb.121.1.272-285.1975;
+    alternate_identifier=doi:10.1128/jb.121.1.272-285.1975; alternate_identifier=PMC285641;
+    Historical MediaDB metadata retained for comparison: title="Metabolic function
+    and properties of 4-hydroxyphenylacetic a 1-hydroxylase from pseudomonas acidovorans";
+    first_author="Hareland"; year=1975. Verified PMID/DOI identity is distinct from
+    unresolved historical metadata differences. raw=references_cache/papers/PMID_234937.xml;
+    markdown=references_cache/papers/PMID_234937.md; page_scan=references_cache/papers/primary_images/hareland-1975-page273-20261013.png;
+    page_markdown=references_cache/papers/primary_images/hareland-1975-page273-20261013.md;
+    PubMed abstract, first sentence; exact excerpt="was induced in Pseudomonas acidovorans".
+    Original page 273, left column, Materials and Methods, Organism and cell extracts;
+    exact excerpt="4-HPA, brought to pH 7 with NaOH, 1.5 g.". Reported organism=Pseudomonas
+    acidovorans; canonical scientific name=Delftia acidovorans; NCBITaxon:80866; actual
+    rank=species; taxonomy_match=exact_species_synonym; role=primary study organism;
+    canonical name Delftia acidovorans. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=80866&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Pseudomonas A; Pseudomonas acidovorans ATCC 17455 / British
+    NCIB 10013; canonical scientific name=Delftia acidovorans; NCBITaxon:80866; actual
+    rank=species; taxonomy_match=parent_rank_only; role=collection designations stated
+    on page 273; exact strain node unresolved after bounded lookups. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=80866&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Klebsiella pneumoniae; canonical scientific name=Klebsiella
+    pneumoniae; NCBITaxon:573; actual rank=species; taxonomy_match=secondary_import_identity_not_primary_support;
+    role=MediaDB source/medium growth join only; contradicts the inspected study-organism
+    paragraph. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=573&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Citation disposition=imported_recipe_source_with_unresolved_formulation_and_organism_assignment.
+    Page 273''s culture paragraph gives a per-liter mass amount for 4-HPA and hydrated
+    phosphate/sulfate forms. This differs from the native 5 mM carbon entry and several
+    native chemical identities. No mass-to-molar conversion or claim of exact identity
+    is made. These conflicts prevent a resolved variant or growth assignment; the
+    source-defined differences remain in citation notes for reconciliation. Purified-enzyme
+    assay concentrations, inhibitor constants and storage buffers are not culture-medium
+    amounts. The scanned page and abstract establish source relevance, not the importer''s
+    Klebsiella growth assertion. Inventory is limited to the abstract and the inspected
+    medium-relevant methods paragraph. Local comparison: Ten native entries retain
+    5 mM 4-hydroxyphenylacetate and nominal phosphate/sulfate identities. The source-reported
+    mass and hydration differences are not applied as canonical corrections. Inventory
+    covers inspected medium-relevant passages, not the whole paper or bibliography.
+    Correction/retraction coverage is limited to inspected metadata; bounded taxonomy
+    misses do not prove absence. Original ingredients, amounts, preparation, history
+    and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.'

@@ -422,3 +422,70 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 7 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-10-14T01:58:59.601709+00:00'
+  curator: codex
+  action: ADDED_SOURCE_CHAIN_PAPER_CITATIONS
+  notes: Added verified paper/correction citations with archived sources and Markdown;
+    assessed source-specific scientific names, actual NCBI ranks and unresolved recipe
+    boundaries. Updated older source-access notes only where new evidence resolved
+    access. Preserved all existing recipe fields, evidence, links and history. No
+    new growth association, concentration evidence, amount change or resolved variant.
+  source: PMID:22984137
+references:
+- reference: PMID:22984137
+  title: 'Magnetovibrio blakemorei gen. nov., sp. nov., a magnetotactic bacterium
+    (Alphaproteobacteria: Rhodospirillaceae) isolated from a salt marsh.'
+  authors: Bazylinski DA; Williams TJ; Lefèvre CT; Trubitsyn D; Fang J; Beveridge
+    TJ; Moskowitz BM; Ward B; Schübbe S; Dubbels BL; Simpson B
+  year: 2013
+  notes: 'source_type=journal_article; discovery_mode=archived_primary_source_chain;
+    accessed_on=2026-10-14; pmid=22984137; doi=10.1099/ijs.0.044453-0; source_access=PubMed_abstract_not_full_text;
+    raw=references_cache/papers/PMID_22984137.xml; markdown=references_cache/papers/PMID_22984137.md;
+    metadata_raw=references_cache/papers/PMID_22984137.xml; PubMed abstract, type
+    strain; exact excerpt="ATCC BAA-1436(T)". PubMed abstract, type strain; exact
+    excerpt="DSM 18854(T)". Reported organism/group=Magnetovibrio blakemorei MV-1(T);
+    canonical scientific name=Magnetovibrio blakemorei; NCBITaxon:28181; actual rank=species;
+    taxonomy_match=verified_species_and_type_material_not_exact_strain_node; role=described
+    species and type strain; species rank retained. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=28181&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    Reported organism/group=Magnetovibrio; canonical scientific name=Magnetovibrio;
+    NCBITaxon:1313115; actual rank=genus; taxonomy_match=exact_named_group; role=proposed
+    genus, not group-wide growth. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1313115&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    Reported organism/group=Magnetospirillum; canonical scientific name=Magnetospirillum;
+    NCBITaxon:13134; actual rank=genus; taxonomy_match=exact_named_group; role=phylogenetic
+    comparator genus, not group-wide growth. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=13134&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    Reported organism/group=Rhodospirillaceae; canonical scientific name=Rhodospirillaceae;
+    NCBITaxon:41295; actual rank=family; taxonomy_match=exact_named_group; role=historical
+    paper family placement, not group-wide growth. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=41295&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    Reported organism/group=Alphaproteobacteria; canonical scientific name=Alphaproteobacteria;
+    NCBITaxon:28211; actual rank=class; taxonomy_match=exact_named_group; role=class
+    placement, not group-wide growth. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=28211&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    Citation role=type_strain_identity_for_catalogue_medium. DSMZ DSM 18854 explicitly
+    joins MV-1 and ATCC BAA-1436 to medium 1487; the PubMed abstract independently
+    identifies the same type strain. DSMZ''s generic literature-search landing page
+    is not the paper identity authority. The 2013 paper''s Rhodospirillaceae assignment
+    is historical: current NCBI lineage instead includes Magnetovibrionaceae. The
+    abstract distinguishes several metabolic conditions but does not enumerate a single
+    recipe matching this owner. The archived two-page DSMZ medium PDF separates trace-element
+    and vitamin stocks from the main medium; this local import instead flattens stock
+    ingredients and has merged duplicate salt entries. Stock/final bases, quantities,
+    inherited preparation steps and the journal-study-to-DSMZ recipe relationship
+    require resolution before a variant or growth edge. No optimum from the abstract
+    is assigned to the local record. catalogue_raw=references_cache/papers/primary_html/frontier-dsm-18854-20261014.html;
+    catalogue_markdown=references_cache/papers/primary_html/frontier-dsm-18854-20261014.md;
+    recipe_raw=references_cache/papers/primary_pdf/frontier-dsm-medium-1487-20261014.pdf;
+    recipe_markdown=references_cache/papers/primary_pdf/frontier-dsm-medium-1487-20261014.md.
+    Correction/retraction coverage is limited to inspected metadata and identified
+    notices, not exhaustive. No new native growth, concentration evidence, quantitative
+    metric or resolved variant. All previous recipe fields, evidence, links and history
+    preserved. Organism inventory is restricted to the inspected passages, not a full-paper
+    review.'

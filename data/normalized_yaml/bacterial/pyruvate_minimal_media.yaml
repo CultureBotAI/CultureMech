@@ -158,6 +158,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:131's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T21:53:14.388328+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:14661115
 media_term:
   preferred_term: MediaDB Medium 131
   term:
@@ -169,3 +177,47 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:14661115
+  title: Global metabolic response of Escherichia coli to gnd or zwf gene-knockout,
+    based on 13C-labeling experiments and the measurement of enzyme activities.
+  authors: Zhao J; Baba T; Mori H; Shimizu K
+  year: 2004
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_and_publisher_abstract_and_publication_dates;
+    owner=MEDIADB:131; discovery_sourceID=38; source_url=https://doi.org/10.1007/s00253-003-1458-5;
+    alternate_identifier=doi:10.1007/s00253-003-1458-5; raw=references_cache/papers/PMID_14661115.xml;
+    markdown=references_cache/papers/PMID_14661115.md; publisher_raw=references_cache/papers/primary_html/expression-metabolism-source-38-20261013.html;
+    publisher_markdown=references_cache/papers/primary_html/expression-metabolism-source-38-20261013.md;
+    PubMed abstract: carbon sources; exact excerpt="two different carbon sources,
+    such as glucose or pyruvate". The abstract distinguishes glucose and pyruvate
+    cultures and gnd/zwf mutants from their parent. It supplies neither the full formula
+    nor the exact strain designation. The publisher page verifies online publication
+    on 2003-12-06 and issue publication in March 2004. The bibliography uses the 2004
+    journal year; MediaDB''s 2003 date reflects the online date, not a different paper.
+    Reported organism=Escherichia coli parent, gnd mutant and zwf mutant; canonical
+    scientific name=Escherichia coli; NCBITaxon:562; actual rank=species; taxonomy_match=exact_species;
+    role=primary abstract; genotype and carbon-source contexts kept separate. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-20261013.md.
+    Reported organism=Escherichia coli BW25113; canonical scientific name=Escherichia
+    coli BW25113; NCBITaxon:679895; actual rank=no rank; taxonomy_match=exact_taxon;
+    role=MediaDB parental-strain lead only. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=679895&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-20261013.md.
+    Reported organism=Escherichia coli BW25113_gnd- and BW25113_zwf-; canonical scientific
+    name=Escherichia coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only;
+    role=imported mutant designations; exact nodes and primary assay assignment unresolved.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-20261013.md.
+    MED130 glucose and MED131 pyruvate share thirteen other ingredient entries; the
+    carbon sources differ. Their 30 mM ammonium sulfate differs from the 10 mM in
+    source 36''s MED128/MED129 owners. These are encoded local differences, not paper-certified
+    amounts or proof of a biological variant; do not merge by ingredient-set overlap.
+    Inventory covers inspected medium-relevant passages, not the whole paper or bibliography.
+    Correction/retraction coverage is limited to inspected metadata; bounded taxonomy
+    misses do not prove absence. Original ingredients, amounts, preparation, history
+    and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.'

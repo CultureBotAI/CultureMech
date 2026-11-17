@@ -185,6 +185,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T21:53:14.388328+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:9232030
 media_term:
   preferred_term: MediaDB Medium 119
   term:
@@ -196,3 +204,40 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:9232030
+  title: Influence of the medium composition and plasmid combination on the growth
+    of recombinant Escherichia coli JM109 and on the production of the fusion protein
+    EcoRI::SPA.
+  authors: Rhee JI; Bode J; Diaz-Ricci JC; Poock D; Weigel B; Kretzmer G; Schügler
+    K
+  year: 1997
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:119;
+    discovery_sourceID=26; source_url=https://doi.org/10.1016/s0168-1656(97)00058-8;
+    alternate_identifier=doi:10.1016/s0168-1656(97)00058-8; raw=references_cache/papers/PMID_9232030.xml;
+    markdown=references_cache/papers/PMID_9232030.md; metadata_raw=references_cache/papers/primary_json/expression-metabolism-source-26-20261013.json;
+    metadata_markdown=references_cache/papers/primary_json/expression-metabolism-source-26-20261013.md;
+    PubMed abstract: cultivation media; exact excerpt="M9 minimal medium and in media
+    with various protein supplements". The source distinguishes plasmid-free JM109,
+    plasmid-bearing JM109, minimal M9 and protein-containing/HM media. Different growth
+    behavior must not be collapsed into one host-wide or medium-wide assertion. The
+    abstract does not specify the complete local supplemented M9 formulation. Preserve
+    the source plasmid names EcoR4, pRK248cI and pMTC48 and the importer designation
+    pEcoR4 as separately attributed names, not confirmed synonyms. PubMed lists the
+    last author as Schügler K, while the publisher-deposited Crossref metadata lists
+    Karl Schügerl; the bibliography retains PubMed spelling and records this unresolved
+    disagreement. Reported organism=Escherichia coli JM109, plasmid-free and separately
+    plasmid-bearing derivatives; canonical scientific name=Escherichia coli; NCBITaxon:562;
+    actual rank=species; taxonomy_match=parent_rank_only; role=experimental hosts;
+    species parent verified, exact JM109/construct taxonomy unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-20261013.md.
+    The local 15-ingredient supplemented recipe contains proline and trace salts;
+    its exact correspondence to the abstract''s minimal versus protein-supplemented
+    cultures remains unresolved. Inventory covers inspected medium-relevant passages,
+    not the whole paper or bibliography. Correction/retraction coverage is limited
+    to inspected metadata; bounded taxonomy misses do not prove absence. Original
+    ingredients, amounts, preparation, history and links are preserved, not newly
+    certified. No new native growth assertion, resolved variant or concentration evidence.'

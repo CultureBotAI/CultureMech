@@ -158,6 +158,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-10-13T21:09:19.427499+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, source/Markdown archive links, short excerpts
+    and qualified scientific-name/NCBI taxonomy notes. Preserved prior recipe values
+    and history. Formula, chemical-form and strain discrepancies remain explicit;
+    no new native growth or concentration assertion.
+  source: doi:10.1007/bf01570050
 media_term:
   preferred_term: MediaDB Medium 302
   term:
@@ -169,3 +177,37 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1007/bf01570050
+  title: The production of α-amylase (E.C.3.2.1.1.) byBacillus amyloliquefaciens,
+    in a complex and a totally defined synthetic culture medium
+  authors: Hewitt, C J; Solomons, G L
+  year: 1996
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=publisher_abstract; owner=MEDIADB:302; discovery_sourceID=111;
+    source_url=https://doi.org/10.1007/bf01570050; raw=references_cache/papers/primary_html/older-followup-source-111-20261013.html;
+    markdown=references_cache/papers/primary_html/older-followup-source-111-20261013.md;
+    Publisher abstract, organism; exact excerpt="Bacillus amyloliquefaciens". Publisher
+    abstract, synthetic-medium carbon source; exact excerpt="in a synthetic culture
+    medium with lactose as the carbon source". Reported organism=Bacillus amyloliquefaciens;
+    canonical scientific name=Bacillus amyloliquefaciens; NCBITaxon:1390; actual rank=species;
+    taxonomy_match=exact_species; role=organism in the publisher abstract; no strain
+    designation given there. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1390&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    MediaDB's B20 designation is a secondary lead, not verified by the inspected abstract.
+    The abstract distinguishes complex versus synthetic lactose medium but gives neither
+    complete formula nor the supplements of the two local owners. Historical MediaDB
+    title spelling/encoding differs from publisher metadata (s-amylase and amylofiquefaciens);
+    the verified DOI, authors and year identify the paper. Publisher title typography
+    is retained rather than silently repairing the deposited byBacillus spacing. Formulation-unresolved;
+    enzyme-production observations are not native growth metrics or certification
+    of local amounts. Local pair MEDIADB:301/302 shares seven entries; despite the
+    + vitamins name, the latter adds six amino-acid entries (hydroxyproline, proline,
+    glutamine, glutamate, arginine and isoleucine). The abstract does not resolve
+    this naming/composition discrepancy. Inventory covers the inspected medium-relevant
+    passages, not every organism in the full paper or its bibliography. Correction/retraction
+    coverage is limited to inspected publication metadata. Bounded taxonomy misses
+    do not establish absence. All original ingredients, amounts, preparation, history
+    and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.

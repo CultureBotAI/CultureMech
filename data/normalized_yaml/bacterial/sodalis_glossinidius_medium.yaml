@@ -455,6 +455,46 @@ curation_history:
     not treated as an exact duplicate of the lactalbumin stock-based record.", "status":
     "correct", "reference": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021",
     "snippet": "casein hydrolysate casein hydrolysate"}]'
+- timestamp: '2026-11-16T21:33:02.023347+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation":
+    "Page 1, Solution A hydrolysate alternatives. Supports only the named descriptor/event
+    at the stated stage. Literal batch substitution: 8.10 g casein hydrolysate for
+    8.10 g lactalbumin hydrolysate, not both. Undefined hydrolysate mixture; serum
+    addition and final volume not converted. Source inspected 2026-11-16; SHA256 6af992ef5048ce852d2c1c88463f1eeedf3441b682522231c93341b3ce1debac.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+    "snippet": "Casein hydrolysate 8.10 g", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Literal batch substitution: 8.10 g casein hydrolysate for 8.10 g lactalbumin
+    hydrolysate, not both. Undefined hydrolysate mixture; serum addition and final
+    volume not converted.", "preferred_term": "casein hydrolysate"}, "replaced_ingredient":
+    {"preferred_term": "lactalbumin hydrolysate"}, "source_modification_index": 0,
+    "source_text": "Replace the 8.10 g lactalbumin hydrolysate batch input in Solution
+    A with 8.10 g casein hydrolysate, not both together. Other preparation instructions
+    are unchanged.", "stage": "Solution A batch preparation"}], "variant_index": 1,
+    "variant_name": "Casein hydrolysate alternative"}]}'
+- timestamp: '2026-11-17T00:07:12.461421+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "f5734161fa52d739e87ff98fe6da686cb8fae5af5e2694b19049ddb8d0f5203e",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml",
+    "recipe_id": "CultureMech:000443", "variants": [{"append_mentions": [{"held_fields":
+    ["OPERATION", "QUANTITY"], "reason": "Source/prose explicitly leaves an agar-change
+    amount and operation unestablished. Liquid filtration alone does not establish
+    zero agar or an approved REMOVE.", "reported_action": "UNSPECIFIED", "source_label":
+    "agar", "source_modification_index": 1, "source_text": "The source does not explicitly
+    quantify the agar change for this alternative; no numeric agar amount is invented.",
+    "stage": "unspecified in source"}], "variant_index": 0, "variant_name": "Liquid
+    preparation described by DSMZ 1021"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml
   relationship: DERIVED_FROM
@@ -1055,6 +1095,18 @@ variants:
       preparation, not an invented fully quantified broth recipe. No unstated density,
       final volume, percent basis or chemical identifier is inferred. Locator=original
       recipe table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+  ingredient_mentions:
+  - source_label: agar
+    reported_action: UNSPECIFIED
+    stage: unspecified in source
+    source_modification_index: 1
+    source_text: The source does not explicitly quantify the agar change for this
+      alternative; no numeric agar amount is invented.
+    reason: Source/prose explicitly leaves an agar-change amount and operation unestablished.
+      Liquid filtration alone does not establish zero agar or an approved REMOVE.
+    held_fields:
+    - OPERATION
+    - QUANTITY
 - name: Casein hydrolysate alternative
   relationship: SUBSTITUTED_COMPONENT_VARIANT
   description: The original DSMZ recipe allows casein hydrolysate in place of lactalbumin
@@ -1073,6 +1125,30 @@ variants:
       No unstated density, final volume, percent basis or chemical identifier is inferred.
       Locator=original recipe table/text; accessed=2026-10-08T23:33:46.995198+00:00;
       capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: casein hydrolysate
+      notes: 'Literal batch substitution: 8.10 g casein hydrolysate for 8.10 g lactalbumin
+        hydrolysate, not both. Undefined hydrolysate mixture; serum addition and final
+        volume not converted.'
+    stage: Solution A batch preparation
+    source_modification_index: 0
+    source_text: Replace the 8.10 g lactalbumin hydrolysate batch input in Solution
+      A with 8.10 g casein hydrolysate, not both together. Other preparation instructions
+      are unchanged.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
+      supports: SUPPORT
+      snippet: Casein hydrolysate 8.10 g
+      explanation: 'Page 1, Solution A hydrolysate alternatives. Supports only the
+        named descriptor/event at the stated stage. Literal batch substitution: 8.10
+        g casein hydrolysate for 8.10 g lactalbumin hydrolysate, not both. Undefined
+        hydrolysate mixture; serum addition and final volume not converted. Source
+        inspected 2026-11-16; SHA256 6af992ef5048ce852d2c1c88463f1eeedf3441b682522231c93341b3ce1debac.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.'
+    replaced_ingredient:
+      preferred_term: lactalbumin hydrolysate
 evidence:
 - reference: https://mediadive.dsmz.de/rest/medium/1021
   supports: SUPPORT

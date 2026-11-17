@@ -126,6 +126,23 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T16:46:27.131287+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, archived primary-source/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved formulation,
+    assay and metadata limits. Existing recipe fields and history unchanged; no new
+    native growth, concentration evidence or resolved variant.
+  source: PMID:21513516
+- timestamp: '2026-10-14T01:06:41.461765+00:00'
+  curator: codex
+  action: CURATED_PAPER_CITATIONS_AND_PROVENANCE
+  notes: Added or enriched verified paper citations and source archive/Markdown links;
+    recorded bounded formulation and organism assessments, corrected alias/correction
+    dispositions, and consolidated only verified duplicate bibliography entries. Preserved
+    prior recipe fields, evidence, links and history. No new growth, concentration
+    or resolved-variant claim. Whitchurch review is non-operational identity only.
+  source: PMID:11135197
 media_term:
   preferred_term: MediaDB Medium 200
   term:
@@ -137,3 +154,100 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:21513516
+  title: A reduction in growth rate of Pseudomonas putida KT2442 counteracts productivity
+    advances in medium-chain-length polyhydroxyalkanoate production from gluconate.
+  authors: Follonier S; Panke S; Zinn M
+  year: 2011
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=deposited_full_XML_selected_methods_and_body_passages;
+    alternate_identifier=doi:10.1186/1475-2859-10-25; owner=MEDIADB:200; discovery_sourceID=75;
+    source_url=https://pubmed.ncbi.nlm.nih.gov/21513516/; raw_abstract=references_cache/papers/PMID_21513516.xml;
+    source_markdown=references_cache/papers/PMID_21513516.md. alternate_identifier=PMC3107774.
+    full_text_xml=references_cache/papers/primary_xml/pmc3107774-20261013.xml; full_text_markdown=references_cache/papers/primary_xml/pmc3107774-20261013.md.
+    Methods / Strains and media; exact excerpt="modified medium E2". Methods / Strains
+    and media; exact excerpt="sodium octanoate". Methods / Strains and media; exact
+    excerpt="sodium gluconate". Methods / Strains and media; exact excerpt="trisodium
+    citrate dihydrate". Methods / Strains and media; exact excerpt="P. putida KT2440".
+    Methods / Strains and media; exact excerpt="P. putida KT2442". Historical MediaDB
+    source links these three E2 owners to the study, but an exact study-to-local formulation
+    assignment remains unresolved. Deposited methods distinguish three flask carbon
+    sources and reduced nitrogen from a more concentrated gluconate bioreactor recipe.
+    The octanoate owner lists ethyl octanoate, a different chemical from paper sodium
+    octanoate. The gluconate and citrate owners list gluconic acid and citrate anion
+    rather than the paper's specified sodium salts. The imported sodium ammonium phosphate
+    amount and hydrated trace compounds also need reconciliation. These conflicts
+    are not certified study variants and are not corrected by this bibliography addition.
+    Base E2 reference 36 is Durner 2001 (PMID:11135197); its archived abstract does
+    not enumerate the inherited formula. Do not transfer the separate bioreactor salts,
+    trace stock, titrants or antifoam to the flask owners, or equate LB inoculum with
+    the experimental medium. Reported organism=Pseudomonas putida KT2440; canonical
+    scientific name=Pseudomonas putida KT2440; NCBITaxon:160488; actual rank=strain;
+    taxonomy_match=exact strain; role=experimental strain; returned NCBI canonical
+    label and rank retained, with Pseudomonas alloputida KT2440 as an equivalent name.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=160488&retmode=xml.
+    Reported organism=Pseudomonas putida KT2442; canonical scientific name=Pseudomonas
+    putida; NCBITaxon:303; actual rank=species; taxonomy_match=parent_rank_only; role=distinct
+    experimental derivative, not KT2440; no exact node established by bounded lookup.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=303&retmode=xml.
+    Reported organism=Pseudomonas putida mt-2 and Pseudomonas putida PaW85; canonical
+    scientific name=Pseudomonas putida; NCBITaxon:303; actual rank=species; taxonomy_match=parent_rank_only;
+    role=distinct ancestor/prior-study and background-derivative mentions, not current
+    target assertions; exact nodes unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=303&retmode=xml.
+    Reported organism=Escherichia coli; canonical scientific name=Escherichia coli;
+    NCBITaxon:562; actual rank=species; taxonomy_match=exact species; role=RNA-polymerase
+    mechanistic comparison, not cultivation on these owners. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml.
+    Reported organism=Pseudomonas aeruginosa; canonical scientific name=Pseudomonas
+    aeruginosa; NCBITaxon:287; actual rank=species; taxonomy_match=exact species;
+    role=OprD mechanistic comparison, not cultivation on these owners. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=287&retmode=xml.
+    Inspected locations=Methods/Strains and media, Shake flask experiments, Fermentations
+    in bioreactor; selected Background and Discussion passages. PHA yield, intracellular
+    metabolite pools and fluxes are not ingredient concentrations. The paper expressly
+    distinguishes these results from optimized processes. Taxonomy archive=references_cache/papers/taxonomy/soil-metabolism-studies-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/soil-metabolism-studies-20261013.md.
+    Additional taxonomy archive=references_cache/papers/taxonomy/soil-metabolism-additional-20261013.xml;
+    additional_taxonomy_markdown=references_cache/papers/taxonomy/soil-metabolism-additional-20261013.md.
+    Bounded lookup misses do not prove taxon absence. Organism inventory covers inspected
+    medium-relevant passages, not an exhaustive full-paper inventory. Images and supplements
+    have not been verified. Correction/retraction coverage is limited to inspected
+    publication metadata. Existing related-media candidates were checked without asserting
+    exact formulation equivalence. All prior ingredients, quantities, preparation
+    and history remain unchanged and uncertified by this citation. No new native growth
+    assertion, concentration evidence or resolved variant.
+- reference: PMID:11135197
+  title: Accumulation of poly[(R)-3-hydroxyalkanoates] in Pseudomonas oleovorans during
+    growth in batch and chemostat culture with different carbon sources.
+  authors: Durner R; Zinn M; Witholt B; Egli T
+  year: 2001
+  notes: source_type=journal_article; discovery_mode=cited_base_protocol_or_notice;
+    accessed_on=2026-10-14; source_access=PubMed_abstract_not_full_text; doi=10.1002/1097-0290(20010205)72:3<278::aid-bit4>3.0.co;2-g;
+    pmid=11135197; raw=references_cache/papers/PMID_11135197.xml; markdown=references_cache/papers/PMID_11135197.md;
+    crossref_raw=references_cache/papers/primary_metadata/frontier-durner-2001-20261014.json;
+    crossref_markdown=references_cache/papers/primary_metadata/frontier-durner-2001-20261014.md;
+    Source-link proof=reports/paper_citation_curation/20261014-citation-frontier-resolution/prepared-sources.json#source_owner_links/11135197.
+    Crossref title joins 'inPseudomonas'; PubMed title spacing retained. DOI equivalence
+    is also supported by matching authors, year, volume 72, issue 3, pages 278-288
+    and the primary citing article's reference 36. DOI punctuation is meaningful and
+    retained. PubMed abstract, opening; exact excerpt="Pseudomonas oleovorans (ATCC
+    29347)". Reported organism/group=Pseudomonas oleovorans ATCC 29347 (historical
+    name); canonical scientific name=Pseudomonas; NCBITaxon:286; actual rank=genus;
+    taxonomy_match=parent_rank_only; role=base-paper study strain; current species
+    identity unresolved. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=286&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-20261014.md.
+    ATCC currently labels 29347 Pseudomonas sp., strain TF4-1L [CIP 105816], with
+    historical deposit name Pseudomonas oleovorans and a GPo1 sequence cross-reference.
+    Neither that cross-reference nor a bounded NCBI search proves an exact current
+    species/strain node. Identity_source=https://www.atcc.org/products/29347; identity_raw=references_cache/papers/taxonomy/atcc-29347-20261014.html;
+    identity_markdown=references_cache/papers/taxonomy/atcc-29347-20261014.md. Citation
+    role=cited_E2_base_protocol, from Follonier 2011 reference 36. Batch and chemostat
+    contexts remain separate. The abstract does not enumerate E2 salts or stock formulation.
+    This strain is not Follonier's KT2440/KT2442, and the existing sodium-salt/acid/ester
+    and nitrogen discrepancies are not resolved by this citation. Correction/retraction
+    coverage is limited to inspected publication metadata and identified notices,
+    not an exhaustive audit. No new native growth assertion, concentration evidence
+    or resolved variant. Prior ingredients, preparation, evidence, links and history
+    are preserved, not newly certified.

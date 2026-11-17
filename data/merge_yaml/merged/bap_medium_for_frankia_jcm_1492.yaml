@@ -1,0 +1,365 @@
+id: CultureMech:015919
+name: bap_medium_for_frankia_jcm_1492
+original_name: BAP+ MEDIUM FOR FRANKIA
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 6.7
+media_term:
+  preferred_term: JCM Medium J1492
+  term:
+    id: jcm.grmd:1492
+    label: BAP+ MEDIUM FOR FRANKIA
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1492
+  | BAP+ medium for Frankia (related to DSMZ Medium 1536), containing phosphate buffer
+  stock, Fe-EDTA stock, trace element solution, vitamin solution, sodium propionate,
+  and yeast extract.'
+ingredients:
+- preferred_term: MgSO4·7H2O
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4·7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2·2H2O
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.27'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Sodium propionate
+  term:
+    id: CHEBI:132106
+    label: sodium propionate
+  concentration:
+    value: '0.48'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000931
+    label: Sodium propionate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132106
+    label: sodium propionate
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Yeast extract
+- preferred_term: Distilled water
+  term:
+    id: CHEBI:15377
+    label: water
+  concentration:
+    value: '987.0'
+    unit: ML_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+solutions:
+- preferred_term: Phosphate buffer stock solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: KH2PO4
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    concentration:
+      value: '95.0'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000630
+      label: KH2PO4
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+  - preferred_term: K2HPO4
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    concentration:
+      value: '52.0'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000231
+      label: K2HPO4
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: Distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000710
+      label: Distilled water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  notes: Adjusted to pH 6.7 and autoclaved separately; 10.0 ml added per liter after
+    cooling.
+- preferred_term: Fe-EDTA stock solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Sodium citrate·2H2O
+    concentration:
+      value: '20.0'
+      unit: G_PER_L
+  - preferred_term: Iron(III) citrate
+    term:
+      id: CHEBI:144421
+      label: iron(III) citrate
+    concentration:
+      value: '4.0'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000660
+      label: Iron(III) citrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:144421
+      label: iron(III) citrate
+  - preferred_term: Distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '100.0'
+      unit: ML_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000710
+      label: Distilled water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  notes: Dissolved at 80 C with stirring (100 ml stock); 1.0 ml added per liter before
+    autoclaving.
+- preferred_term: Trace element solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: H3BO3
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    concentration:
+      value: '2.86'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000117
+      label: H3BO3
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: MnCl2·4H2O
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    concentration:
+      value: '1.81'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000127
+      label: MnCl2·4H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+  - preferred_term: ZnSO4·7H2O
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    concentration:
+      value: '0.22'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000229
+      label: ZnSO4·7H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: CuSO4·5H2O
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    concentration:
+      value: '0.08'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000285
+      label: CuSO4·5H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: Na2MoO4·2H2O
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000615
+      label: Na2MoO4·2H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: CoSO4·7H2O
+    term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+    concentration:
+      value: '0.001'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000491
+      label: CoSO4·7H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91244
+      label: cobalt(2+) sulfate heptahydrate
+  - preferred_term: Distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000710
+      label: Distilled water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  notes: 1.0 L trace element stock solution; 1.0 ml added per liter before autoclaving.
+- preferred_term: Vitamin solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Thiamine·HCl
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    concentration:
+      value: '10.0'
+      unit: MG_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000696
+      label: Thiamine·HCl
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Nicotinic acid
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    concentration:
+      value: '50.0'
+      unit: MG_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000730
+      label: Nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+  - preferred_term: Pyridoxine·HCl
+    term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+    concentration:
+      value: '50.0'
+      unit: MG_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:001016
+      label: Pyridoxine·HCl
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: pyridoxine hydrochloride
+  - preferred_term: Distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000710
+      label: Distilled water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  notes: Filter-sterilized 1.0 L vitamin stock solution; 1.0 ml added per liter after
+    autoclaving.
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Mix components except phosphate buffer stock solution and vitamin solution
+    in 987 ml distilled water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the basal medium and the phosphate buffer stock solution
+    separately.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: After cooling, aseptically add 10.0 ml autoclaved phosphate buffer
+    stock solution and 1.0 ml filter-sterilized vitamin solution; final pH should
+    be 6.7.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-22T02:55:00Z'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1492. Structured basal medium and all 4 stock
+    solutions (Phosphate buffer, Fe-EDTA, Trace element, Vitamin) with CHEBI/MediaIngredientMech
+    grounding.
+- timestamp: '2026-10-22T02:55:00Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015919'
+categories:
+- bacterial
+merged_from:
+- bap_medium_for_frankia_jcm_1492
+merge_fingerprint: 48d8d2748d2a1c5059cf66038278368aef4f3137681647f1036bc70ea5abeaee

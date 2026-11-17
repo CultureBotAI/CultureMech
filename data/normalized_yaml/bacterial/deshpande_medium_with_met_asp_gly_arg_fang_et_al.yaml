@@ -169,6 +169,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:207's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T13:47:14.449687+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper citation with archived primary abstract and Markdown,
+    exact excerpts, qualified organism taxonomy and unresolved formulation details.
+    Preserved all amounts, existing links, preparation and history; no new growth,
+    concentration evidence or resolved variant.
+  source: doi:10.1007/BF00264002
 media_term:
   preferred_term: MediaDB Medium 207
   term:
@@ -180,3 +188,56 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1007/BF00264002
+  title: A new chemically-defined medium for RAC-certified and other strains of Bacillus
+    subtilis
+  authors: Fang, AiQi; Demain, Arnold L.
+  year: 1989
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; owner=MEDIADB:207; discovery_sourceID=76; source_access=publisher_summary_only.
+    Publication identity verified against the historical source title/year/first author
+    and primary metadata. The imported Deshpande base includes methionine, aspartate,
+    glycine and arginine supplements. These are descriptions of the existing record,
+    not primary-paper certifications. The summary does not enumerate these exact bases,
+    supplement doses or assay assignments. Deshpande and new-medium formulations must
+    not be combined; the cited Deshpande 1980 base protocol was not inspected. No
+    resolved variant or base-protocol inheritance is justified by its bibliography
+    title. Publisher Summary; exact excerpt='BGSC-1S53'. Reported organism=Bacillus
+    subtilis BGSC-1S53; canonical scientific name=Bacillus subtilis subsp. subtilis
+    str. 168; NCBITaxon:224308; actual rank=strain; taxonomy_match=parent_rank_only;
+    role=asporogenous HV-1 derivative of 168; exact derivative node unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=224308&retmode=xml.
+    Publisher Summary; exact excerpt='prototrophic 168 strain'. Reported organism=Bacillus
+    subtilis 168; canonical scientific name=Bacillus subtilis subsp. subtilis str.
+    168; NCBITaxon:224308; actual rank=strain; taxonomy_match=exact strain; role=reported
+    parent/comparator; the taxonomy match does not establish the paper's prototrophic
+    phenotype. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=224308&retmode=xml.
+    Publisher Summary; exact excerpt='a triple auxotroph of 168'. Reported organism=Bacillus
+    subtilis unnamed triple auxotroph of 168; canonical scientific name=Bacillus subtilis
+    subsp. subtilis str. 168; NCBITaxon:224308; actual rank=strain; taxonomy_match=parent_rank_only;
+    role=distinct unnamed derivative, no invented strain designation. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=224308&retmode=xml.
+    Publisher Summary; exact excerpt='BGSC 1S76'. Reported organism=Bacillus subtilis
+    BGSC 1S76; canonical scientific name=Bacillus subtilis subsp. subtilis str. 168;
+    NCBITaxon:224308; actual rank=strain; taxonomy_match=parent_rank_only; role=HV-2
+    168 derivative; growth-factor-dependent context, not the parent. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=224308&retmode=xml.
+    Publisher Summary; exact excerpt='W-23'. Reported organism=Bacillus subtilis W-23;
+    canonical scientific name=Bacillus spizizenii str. W23; NCBITaxon:655816; actual
+    rank=strain; taxonomy_match=exact strain historical synonym; role=unrelated-to-168
+    comparator; current NCBI name Bacillus spizizenii str. W23. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=655816&retmode=xml.
+    Required growth factors and derivative-specific results remain separate. Bounded
+    taxonomy searches did not establish exact derivative nodes; this is not an exhaustive
+    absence claim. Publisher Summary; exact excerpt='no components requiring separate
+    sterilization'. That study preparation statement does not verify the imported
+    generic filtration steps. PMID not resolved by bounded lookup, not established
+    absent. Raw publisher summary=references_cache/papers/primary_html/fang-1989-publisher-abstract.html;
+    source_markdown=references_cache/papers/primary_html/fang-1989-publisher-abstract.md.
+    All original ingredients, amounts, preparation and parent/child links preserved,
+    not newly certified by this abstract. No new positive native growth association,
+    quantitative metric or resolved variant. Organism inventory is limited to the
+    inspected abstract's medium-relevant passages. Taxonomy alone does not prove cultivation.
+    Taxonomy archives=references_cache/papers/taxonomy/holland-fang-cocaign-20261013.*
+    and fang-w23-20261013.*.

@@ -237,3 +237,53 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-10-14T04:22:31.227356+00:00'
+  curator: codex
+  action: ADDED_EGJM_OR_HIIBEL_MAINTENANCE_CITATION
+  notes: Added archived publication metadata, exact excerpts and qualified scientific-name/NCBI
+    rank mappings. No demonstrated ingredient difference, new variant or native growth
+    assertion; complete study formulation remains unresolved. Preserved all previous
+    claims, quantities, physical states, links and evidence; no export or publication.
+  source: doi:10.12688/wellcomeopenres.22468.1
+  changes: 'This owner: +1 citation; +0 inline variants; +0 concentration evidence
+    items; +0 growth observations. No amount values changed.'
+references:
+- reference: doi:10.12688/wellcomeopenres.22468.1
+  title: The genome sequence of the chlorophyte Marvania coccoides CCAP 251/1B (Naumann)
+    Henley, Hironaka, Guillou, M. Buchheim, J. Buchheim, M. Fawley & K. Fawley 2004.
+  authors: 'Allen R; Rad-Menéndez C; Green DH; Campbell CN; De Boever F; Field J;
+    MacKechnie K; Ross M; Saxon R; Thomas N; Culture Collection of Algae and Protozoa
+    collective; University of Oxford and Wytham Woods Genome Acquisition Lab; Earlham
+    Institute Genome Acquisition Lab and Protists Project; Darwin Tree of Life Barcoding
+    collective; Wellcome Sanger Institute Tree of Life Management, Samples and Laboratory
+    team; Wellcome Sanger Institute Scientific Operations: Sequencing Operations;
+    Wellcome Sanger Institute Tree of Life Core Informatics team; Tree of Life Core
+    Informatics collective; Darwin Tree of Life Consortium'
+  year: 2024
+  notes: 'source_type=journal_article; discovery_mode=cross_reference; accessed_on=2026-10-14;
+    source_url=https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11833223/fullTextXML;
+    raw_archive=references_cache/papers/primary_xml/marvania-PMC11833223-algal-followup-20261014.xml;
+    markdown_archive=references_cache/papers/primary_xml/marvania-PMC11833223-algal-followup-20261014.md;
+    access_scope=Full JATS article, version 1; bounded cultivation methods. PMID:39967591;
+    PMCID:PMC11833223. Publication year is 2024; the title-ending 2004 is taxonomic
+    authority context, not publication year. Ten individual and nine collective authors
+    agree between PubMed XML and JATS. Archived PubMed/JATS notice lists checked;
+    no exhaustive notice search claimed. locator=Methods / Sample acquisition and
+    nucleic acid extraction; exact excerpt="M. coccoides CCAP 251/1B was cultivated
+    in EG:JM medium". reported scientific name=Marvania coccoides; strain=CCAP 251/1B;
+    accepted study name=Marvania coccoides; canonical scientific name=Marvania coccoides;
+    NCBITaxon:133487; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=133487;
+    lookup_date=2026-10-14; Species scientific name and rank verified; exact full
+    strain-name query returned no hit and does not prove absence or an exact strain
+    taxon. The study reports cultivation at 20 degrees C and a 12:12 h light:dark
+    period. The printed light intensity has m^-1 s^-1 units; it is not silently corrected
+    to area-based irradiance. No ingredient differences are stated, so no variant
+    is invented. The study cites Jaworski 1981 and Schlosser 1982 but does not restate
+    the complete formula. Current CCAP EG:JM specifies a 1:1 mixture; this is not
+    proof of the historical study formulation or every flattened stock amount. No
+    new target organism or growth metric is attached while full formula and physical-state
+    equivalence remain unresolved. The scientific-name taxonomy paragraph uses the
+    species ID in an abbreviated taxonomic list; the actual NCBI rank is species.
+    Taxonomy source=references_cache/papers/taxonomy/algal-followup-next-20261014.xml.
+    This owner is encoded SOLID_AGAR; the paper does not support that agar formulation. '

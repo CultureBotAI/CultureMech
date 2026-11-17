@@ -211,6 +211,28 @@ curation_history:
     converted from 1 mg per 200 mL final medium.", "physicochemical_roles": ["BUFFER"],
     "preferred_term": "CaCO3", "supplier_catalog": {"catalog_number": "C 64", "supplier_name":
     "Fisher"}, "term": {"id": "CHEBI:3311", "label": "calcium carbonate"}}}'
+- timestamp: '2026-11-16T21:33:23.610060+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "053b2ac82a0c3681d84f53714b129366f2e7b2f9f2d8da1acc6b72c471491e88",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX collection
+    page inspected 2026-11-16. This ingredient occurrence is scoped to the optional
+    variant, not a change to the liquid parent. Separate Directions header: \"For
+    200 mL Total\"; table identifies optional CaCO3. The quoted 1 mg is a batch input;
+    the source table molarity is not adopted. Exact excerpt clarification for issue763;
+    scientific payload unchanged.", "reference": "https://utex.org/products/one-fourth-soil-plus-seawater-medium",
+    "snippet": "1 mg", "supports": "SUPPORT"}], "ingredient": {"notes": "Literal source
+    batch input: 1 mg in the 200 mL recipe. No measured final-volume concentration
+    is inferred. Fisher catalog C 64; optional formulation only.", "preferred_term":
+    "calcium carbonate"}, "source_modification_index": 0, "source_text": "Optionally
+    add 1 mg calcium carbonate (Fisher C 64) to the source 200 mL recipe before steaming.",
+    "stage": "optional carbonate addition before steaming"}], "variant_index": 0,
+    "variant_name": "1/4 Soil+Seawater Medium with optional calcium carbonate"}]}'
 references:
 - reference: UTEX:one-fourth-soil-plus-seawater-medium
 - reference: https://utex.org/products/one-fourth-soil-plus-seawater-medium
@@ -253,6 +275,26 @@ variants:
       No new concentration inferred; the source-literal amount belongs only to the
       optional formulation.. Separate basis excerpt: ''For 200 mL Total''. Locator:
       Formulation table row position 2; Directions total-volume heading.'
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: calcium carbonate
+      notes: 'Literal source batch input: 1 mg in the 200 mL recipe. No measured final-volume
+        concentration is inferred. Fisher catalog C 64; optional formulation only.'
+    stage: optional carbonate addition before steaming
+    evidence:
+    - reference: https://utex.org/products/one-fourth-soil-plus-seawater-medium
+      supports: SUPPORT
+      snippet: 1 mg
+      explanation: 'Recipe table, optional CaCO3 row; Directions, 200 mL total; primary
+        UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped
+        to the optional variant, not a change to the liquid parent. Separate Directions
+        header: "For 200 mL Total"; table identifies optional CaCO3. The quoted 1
+        mg is a batch input; the source table molarity is not adopted. Exact excerpt
+        clarification for issue763; scientific payload unchanged.'
+    source_modification_index: 0
+    source_text: Optionally add 1 mg calcium carbonate (Fisher C 64) to the source
+      200 mL recipe before steaming.
 evidence:
 - reference: https://utex.org/products/one-fourth-soil-plus-seawater-medium
   supports: SUPPORT

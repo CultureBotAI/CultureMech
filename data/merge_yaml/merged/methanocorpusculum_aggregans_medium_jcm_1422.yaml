@@ -1,0 +1,241 @@
+id: CultureMech:015916
+name: methanocorpusculum_aggregans_medium_jcm_1422
+original_name: METHANOCORPUSCULUM AGGREGANS MEDIUM
+category: archaea
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1422
+  term:
+    id: jcm.grmd:1422
+    label: METHANOCORPUSCULUM AGGREGANS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1422
+  | Anaerobic H2-CO2 (4:1, v/v, 100 kPa) medium for Methanocorpusculum aggregans;
+  trace mineral solution references JCM Medium No. 1303 (SL-10 trace element solution).'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: MgSO4·7H2O
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4·7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: CaCl2·2H2O
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Sodium formate
+  term:
+    id: CHEBI:62965
+    label: sodium formate
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Sodium formate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Yeast extract
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  term:
+    id: CHEBI:15377
+    label: water
+  concentration:
+    value: '940.0'
+    unit: ML_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: 8% NaHCO3 solution
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  concentration:
+    value: '50.0'
+    unit: ML_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: 8% NaHCO3 solution
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  notes: Filter-sterilized and added after autoclaving under H2-CO2 (4:1, v/v).
+- preferred_term: 5% L-Cysteine·HCl·H2O solution
+  term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: 5% L-Cysteine·HCl·H2O solution
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
+  notes: Autoclaved under N2 and added after autoclaving the base medium.
+- preferred_term: 5% Na2S·9H2O solution
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: 5% Na2S·9H2O solution
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  notes: Autoclaved under N2 and added after autoclaving the base medium.
+solutions:
+- preferred_term: Trace mineral solution (see Medium No. 1303)
+  term:
+    id: mediadive.solution:5312
+    label: Trace mineral solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  notes: Referenced from JCM Medium No. 1303 (SL-10 trace mineral solution).
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Mix components except 8% NaHCO3 solution, 5% L-cysteine·HCl·H2O solution
+    and 5% Na2S·9H2O solution in 940 ml distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave under a N2-CO2 (4:1, v/v) gas mixture and cool under the
+    same gas atmosphere.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Aseptically and anaerobically add 50 ml of filter-sterilized 8% NaHCO3
+    solution saturated with CO2.
+- step_number: 5
+  action: MIX
+  description: Distribute the medium into culture vessels under a stream of H2-CO2
+    (4:1, v/v) and seal with butyl rubber stoppers.
+- step_number: 6
+  action: MIX
+  description: Prior to inoculation, reduce the medium by adding 5% L-cysteine·HCl·H2O
+    and 5% Na2S·9H2O solutions (autoclaved and stored under N2) and pressurize the
+    inoculated vessels to 100 kPa with a H2-CO2 (4:1, v/v) gas mixture.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-22T02:55:00Z'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1422. Categorized under archaea (Methanocorpusculum
+    aggregans) with CHEBI/MediaIngredientMech grounding.
+- timestamp: '2026-10-22T02:55:00Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015916'
+categories:
+- archaea
+merged_from:
+- methanocorpusculum_aggregans_medium_jcm_1422
+merge_fingerprint: 2acb7d24648bbed6932fcc8ae6ab29af332c6064eda96dfb49a4060c13ddc8e4

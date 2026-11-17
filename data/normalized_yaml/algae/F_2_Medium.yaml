@@ -898,6 +898,127 @@ curation_history:
     "old_length": 13, "pointer": ["references"], "reason": "Identify the DOI article
     and its distinct supplement without inventing metadata.", "reference": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10126-021-10037-4/MediaObjects/10126_2021_10037_MOESM1_ESM.pdf",
     "snippet": "0.001"}]'
+- timestamp: '2026-11-16T21:36:31.157491+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "SET_CONCENTRATION", "evidence":
+    [{"explanation": "Primary article abstract, second-stage N repletion; primary
+    source inspected 2026-11-16. Primary abstract was inspected; full Methods unavailable.
+    This is the second-stage reported condition, not an amount to add to the first
+    stage or a universal F/2 concentration.", "reference": "doi:10.1016/j.biortech.2017.04.008",
+    "snippet": "4.41mM", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MILLIMOLAR", "value": "4.41"}, "notes": "Primary abstract was inspected;
+    full Methods unavailable. This is the second-stage reported condition, not an
+    amount to add to the first stage or a universal F/2 concentration.", "preferred_term":
+    "NaNO3"}, "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "source_modification_index":
+    1, "source_text": "Shift to a nitrogen-replete second stage with 4.41 mM NaNO3
+    for three days.", "stage": "three-day nitrogen-replete second stage after seven-day
+    F/2 culture"}], "variant_index": 0, "variant_name": "n_replete_second_stage_tetraselmis_marina"},
+    {"ingredient_changes": [{"action": "SET_CONCENTRATION", "evidence": [{"explanation":
+    "Table S1, component rows and sodium footnotes; primary source inspected 2026-11-16.
+    TableS1 trace-element heading is micromolar:0.001micromolar×1000=1nanomolar. Not10nM
+    and not an increment atop canonical F/2. Separate exact table heading: \"Trace
+    elements (μM)\"; row label \"Na2SeO3\"; cell \"0.001\". Conversion 0.001micromolar×1000=1nanomolar.",
+    "reference": "doi:10.1007/s10126-021-10037-4", "snippet": "0.001", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "NANOMOLAR", "value": "1"},
+    "notes": "TableS1 trace-element heading is micromolar:0.001micromolar×1000=1nanomolar.
+    Not10nM and not an increment atop canonical F/2.", "preferred_term": "sodium selenite"},
+    "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Use the modified F/2ASW formulation in Table S1, including
+    1 nM sodium selenite and 0.1 mM sodium metasilicate nonahydrate.", "stage": "complete
+    modified F/2ASW formulation, TableS1"}, {"action": "SET_CONCENTRATION", "evidence":
+    [{"explanation": "Table S1, component rows and sodium footnotes; primary source
+    inspected 2026-11-16. Na2SiO3.9H2O under basal seawater components(mM). Hydrate
+    specified by the source. No full parent equivalence or additional salt mass inferred.
+    Separate exact table heading: \"Basal seawater components (mM)\"; row label \"Na2SiO3·9H2O\";
+    cell \"0.1\".", "reference": "doi:10.1007/s10126-021-10037-4", "snippet": "0.1",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "MILLIMOLAR",
+    "value": "0.1"}, "notes": "Na2SiO3.9H2O under basal seawater components(mM). Hydrate
+    specified by the source. No full parent equivalence or additional salt mass inferred.",
+    "preferred_term": "sodium metasilicate nonahydrate"}, "notes": "A scoped change
+    event, not a fully expanded variant or a parent-formulation amendment. No chemical
+    identifier is inferred.", "source_modification_index": 0, "source_text": "Use
+    the modified F/2ASW formulation in Table S1, including 1 nM sodium selenite and
+    0.1 mM sodium metasilicate nonahydrate.", "stage": "complete modified F/2ASW formulation,
+    TableS1"}, {"action": "SET_CONCENTRATION", "evidence": [{"explanation": "Table
+    S1, component rows and sodium footnotes; primary source inspected 2026-11-16.
+    Discrete alternative NaCl settings; zero means no NaCl addition. These are not
+    summed or treated as a continuous dose. Trace salts contribute background sodium;
+    no total sodium concentration or universal parent equivalence asserted.", "reference":
+    "doi:10.1007/s10126-021-10037-4", "snippet": "0, 10, 20, 50, 200, or 423\n\nmM",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "MILLIMOLAR",
+    "value": "0; 10; 20; 50; 200; 423"}, "notes": "Discrete alternative NaCl settings;
+    zero means no NaCl addition. These are not summed or treated as a continuous dose.
+    Trace salts contribute background sodium; no total sodium concentration or universal
+    parent equivalence asserted.", "preferred_term": "NaCl"}, "notes": "A scoped change
+    event, not a fully expanded variant or a parent-formulation amendment. No chemical
+    identifier is inferred.", "source_modification_index": 1, "source_text": "Adjust
+    sodium concentration by altering NaCl addition to the basal medium.", "stage":
+    "separate sodium-response modified F/2ASW formulations"}], "variant_index": 2,
+    "variant_name": "modified_f_2asw_sodium_response"}]}'
+- timestamp: '2026-11-17T00:06:58.118395+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "87cec46fd41e42ee7de2dd99b3ed5d0862ae970048f8a410458478f8e2caff37",
+    "field_replacements": [], "path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+    "recipe_id": "CultureMech:000170", "variants": [{"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Methods, culture conditions. Named nutrient
+    mixture at half strength; no unreported component concentrations or parent-medium
+    equivalence inferred.", "reference": "DOI:10.1104/pp.18.00453", "snippet": "artificial
+    seawater supplemented with one-half-strength Guillard’s f solution", "supports":
+    "SUPPORT"}], "ingredient": {"preferred_term": "Guillard f solution"}, "notes":
+    "Named stock only; half-strength is a relative formulation statement, not a measured
+    absolute ingredient concentration.", "source_modification_index": 0, "source_text":
+    "Use artificial seawater supplemented with half-strength Guillard f solution.",
+    "stage": "Matsui2018 F/2ASW diatom culture formulation"}, {"action": "ADD", "evidence":
+    [{"explanation": "Cells and Culture Conditions; separate experimental arms.",
+    "reference": "DOI:10.1104/pp.18.00453", "snippet": "constant aeration with 1%
+    (v/v) CO2 (high CO2-grown cells) or ambient air containing 0.04% (v/v) CO2 (air-grown
+    cells)", "supports": "SUPPORT"}], "ingredient": {"preferred_term": "CO2"}, "notes":
+    "Gas supply only; no liquid concentration or simultaneous use of alternative gas
+    arms is implied.", "source_modification_index": 2, "source_text": "Aerate cultures
+    with ambient air or 1% CO2 depending on the experiment.", "stage": "Matsui2018
+    high-CO2 aeration arm; 1% v/v CO2"}, {"action": "ADD", "evidence": [{"explanation":
+    "Cells and Culture Conditions; separate experimental arms.", "reference": "DOI:10.1104/pp.18.00453",
+    "snippet": "constant aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient
+    air containing 0.04% (v/v) CO2 (air-grown cells)", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "ambient air"}, "notes": "Gas supply only; no liquid concentration
+    or simultaneous use of alternative gas arms is implied.", "source_modification_index":
+    2, "source_text": "Aerate cultures with ambient air or 1% CO2 depending on the
+    experiment.", "stage": "Matsui2018 ambient-air aeration arm; 0.04% v/v CO2"}],
+    "variant_index": 1, "variant_name": "f_2asw_diatom_culture"}, {"append_changes":
+    [{"action": "ADD", "evidence": [{"explanation": "Publisher primary abstract inspected
+    2026-11-16. Low-sodium comparison names two supplied gas conditions with different
+    growth outcomes. Input event makes no growth assertion or liquid-concentration
+    claim. Full Methods inaccessible.", "reference": "DOI:10.1007/s10126-021-10037-4",
+    "snippet": "aeration with air containing 5% CO2, but not with the air containing
+    0.04% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term": "CO2"},
+    "notes": "Gas supply only; no liquid concentration or simultaneous use of alternative
+    gas arms is implied.", "source_modification_index": 2, "source_text": "Vary CO2
+    availability to distinguish sodium-dependent growth effects.", "stage": "Tsuji2021
+    low-sodium aeration arm with 5% CO2 in air"}, {"action": "ADD", "evidence": [{"explanation":
+    "Publisher primary abstract inspected 2026-11-16. Low-sodium comparison names
+    two supplied gas conditions with different growth outcomes. Input event makes
+    no growth assertion or liquid-concentration claim. Full Methods inaccessible.",
+    "reference": "DOI:10.1007/s10126-021-10037-4", "snippet": "aeration with air containing
+    5% CO2, but not with the air containing 0.04% CO2", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "CO2"}, "notes": "Gas supply only; no liquid concentration
+    or simultaneous use of alternative gas arms is implied.", "source_modification_index":
+    2, "source_text": "Vary CO2 availability to distinguish sodium-dependent growth
+    effects.", "stage": "Tsuji2021 low-sodium aeration arm with 0.04% CO2 in air"}],
+    "variant_index": 2, "variant_name": "modified_f_2asw_sodium_response"}, {"variant_index":
+    0, "variant_name": "n_replete_second_stage_tetraselmis_marina"}]}, "decision_sha256":
+    "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 references:
 - reference: UTEX:f-2-medium
 - reference: https://utex.org/products/f-2-medium
@@ -1023,6 +1144,30 @@ variants:
       without conversion; the abstract separately gives the three-day second stage.
       The phosphorus-repletion condition is a separate experiment. This does not define
       the complete medium or certify a strain; original PMID evidence is preserved.'
+  ingredient_changes:
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: NaNO3
+      concentration:
+        value: '4.41'
+        unit: MILLIMOLAR
+      notes: Primary abstract was inspected; full Methods unavailable. This is the
+        second-stage reported condition, not an amount to add to the first stage or
+        a universal F/2 concentration.
+    stage: three-day nitrogen-replete second stage after seven-day F/2 culture
+    evidence:
+    - reference: doi:10.1016/j.biortech.2017.04.008
+      supports: SUPPORT
+      snippet: 4.41mM
+      explanation: Primary article abstract, second-stage N repletion; primary source
+        inspected 2026-11-16. Primary abstract was inspected; full Methods unavailable.
+        This is the second-stage reported condition, not an amount to add to the first
+        stage or a universal F/2 concentration.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 1
+    source_text: Shift to a nitrogen-replete second stage with 4.41 mM NaNO3 for three
+      days.
 - name: f_2asw_diatom_culture
   description: F/2 artificial seawater culture conditions used for marine diatom maintenance
     and transformation studies.
@@ -1046,6 +1191,51 @@ variants:
       inspected full text.'
     snippet: artificial seawater supplemented with one-half-strength Guillard’s f
       solution
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: Guillard f solution
+    stage: Matsui2018 F/2ASW diatom culture formulation
+    source_modification_index: 0
+    source_text: Use artificial seawater supplemented with half-strength Guillard
+      f solution.
+    evidence:
+    - reference: DOI:10.1104/pp.18.00453
+      supports: SUPPORT
+      snippet: artificial seawater supplemented with one-half-strength Guillard’s
+        f solution
+      explanation: Methods, culture conditions. Named nutrient mixture at half strength;
+        no unreported component concentrations or parent-medium equivalence inferred.
+    notes: Named stock only; half-strength is a relative formulation statement, not
+      a measured absolute ingredient concentration.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: Matsui2018 high-CO2 aeration arm; 1% v/v CO2
+    source_modification_index: 2
+    source_text: Aerate cultures with ambient air or 1% CO2 depending on the experiment.
+    evidence:
+    - reference: DOI:10.1104/pp.18.00453
+      supports: SUPPORT
+      snippet: constant aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient
+        air containing 0.04% (v/v) CO2 (air-grown cells)
+      explanation: Cells and Culture Conditions; separate experimental arms.
+    notes: Gas supply only; no liquid concentration or simultaneous use of alternative
+      gas arms is implied.
+  - action: ADD
+    ingredient:
+      preferred_term: ambient air
+    stage: Matsui2018 ambient-air aeration arm; 0.04% v/v CO2
+    source_modification_index: 2
+    source_text: Aerate cultures with ambient air or 1% CO2 depending on the experiment.
+    evidence:
+    - reference: DOI:10.1104/pp.18.00453
+      supports: SUPPORT
+      snippet: constant aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient
+        air containing 0.04% (v/v) CO2 (air-grown cells)
+      explanation: Cells and Culture Conditions; separate experimental arms.
+    notes: Gas supply only; no liquid concentration or simultaneous use of alternative
+      gas arms is implied.
 - name: modified_f_2asw_sodium_response
   description: Modified F/2 artificial seawater used for sodium and CO2 response experiments
     with Chaetoceros gracilis.
@@ -1074,6 +1264,111 @@ variants:
       The main methods were not inspected; possible main-text/table disagreement and
       the existing UTEX LB2658 claim remain unverified. No parent concentrations or
       growth claims change.'
+  ingredient_changes:
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: sodium selenite
+      concentration:
+        value: '1'
+        unit: NANOMOLAR
+      notes: TableS1 trace-element heading is micromolar:0.001micromolar×1000=1nanomolar.
+        Not10nM and not an increment atop canonical F/2.
+    stage: complete modified F/2ASW formulation, TableS1
+    evidence:
+    - reference: doi:10.1007/s10126-021-10037-4
+      supports: SUPPORT
+      snippet: '0.001'
+      explanation: 'Table S1, component rows and sodium footnotes; primary source
+        inspected 2026-11-16. TableS1 trace-element heading is micromolar:0.001micromolar×1000=1nanomolar.
+        Not10nM and not an increment atop canonical F/2. Separate exact table heading:
+        "Trace elements (μM)"; row label "Na2SeO3"; cell "0.001". Conversion 0.001micromolar×1000=1nanomolar.'
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Use the modified F/2ASW formulation in Table S1, including 1 nM sodium
+      selenite and 0.1 mM sodium metasilicate nonahydrate.
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: sodium metasilicate nonahydrate
+      concentration:
+        value: '0.1'
+        unit: MILLIMOLAR
+      notes: Na2SiO3.9H2O under basal seawater components(mM). Hydrate specified by
+        the source. No full parent equivalence or additional salt mass inferred.
+    stage: complete modified F/2ASW formulation, TableS1
+    evidence:
+    - reference: doi:10.1007/s10126-021-10037-4
+      supports: SUPPORT
+      snippet: '0.1'
+      explanation: 'Table S1, component rows and sodium footnotes; primary source
+        inspected 2026-11-16. Na2SiO3.9H2O under basal seawater components(mM). Hydrate
+        specified by the source. No full parent equivalence or additional salt mass
+        inferred. Separate exact table heading: "Basal seawater components (mM)";
+        row label "Na2SiO3·9H2O"; cell "0.1".'
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Use the modified F/2ASW formulation in Table S1, including 1 nM sodium
+      selenite and 0.1 mM sodium metasilicate nonahydrate.
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: NaCl
+      concentration:
+        value: 0; 10; 20; 50; 200; 423
+        unit: MILLIMOLAR
+      notes: Discrete alternative NaCl settings; zero means no NaCl addition. These
+        are not summed or treated as a continuous dose. Trace salts contribute background
+        sodium; no total sodium concentration or universal parent equivalence asserted.
+    stage: separate sodium-response modified F/2ASW formulations
+    evidence:
+    - reference: doi:10.1007/s10126-021-10037-4
+      supports: SUPPORT
+      snippet: '0, 10, 20, 50, 200, or 423
+
+
+        mM'
+      explanation: Table S1, component rows and sodium footnotes; primary source inspected
+        2026-11-16. Discrete alternative NaCl settings; zero means no NaCl addition.
+        These are not summed or treated as a continuous dose. Trace salts contribute
+        background sodium; no total sodium concentration or universal parent equivalence
+        asserted.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 1
+    source_text: Adjust sodium concentration by altering NaCl addition to the basal
+      medium.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: Tsuji2021 low-sodium aeration arm with 5% CO2 in air
+    source_modification_index: 2
+    source_text: Vary CO2 availability to distinguish sodium-dependent growth effects.
+    evidence:
+    - reference: DOI:10.1007/s10126-021-10037-4
+      supports: SUPPORT
+      snippet: aeration with air containing 5% CO2, but not with the air containing
+        0.04% CO2
+      explanation: Publisher primary abstract inspected 2026-11-16. Low-sodium comparison
+        names two supplied gas conditions with different growth outcomes. Input event
+        makes no growth assertion or liquid-concentration claim. Full Methods inaccessible.
+    notes: Gas supply only; no liquid concentration or simultaneous use of alternative
+      gas arms is implied.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: Tsuji2021 low-sodium aeration arm with 0.04% CO2 in air
+    source_modification_index: 2
+    source_text: Vary CO2 availability to distinguish sodium-dependent growth effects.
+    evidence:
+    - reference: DOI:10.1007/s10126-021-10037-4
+      supports: SUPPORT
+      snippet: aeration with air containing 5% CO2, but not with the air containing
+        0.04% CO2
+      explanation: Publisher primary abstract inspected 2026-11-16. Low-sodium comparison
+        names two supplied gas conditions with different growth outcomes. Input event
+        makes no growth assertion or liquid-concentration claim. Full Methods inaccessible.
+    notes: Gas supply only; no liquid concentration or simultaneous use of alternative
+      gas arms is implied.
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Tetraselmis marina

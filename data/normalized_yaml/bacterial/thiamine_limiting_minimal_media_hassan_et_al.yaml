@@ -108,6 +108,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T19:06:34.475226+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, archived source/Markdown provenance, short excerpts
+    and qualified scientific-name/NCBI mapping notes. Preserved all existing recipe
+    values, evidence, history and variant links. Exact formulation and study-strain/assay
+    assignments remain qualified; no new native growth or concentration claim.
+  source: PMID:233720
 media_term:
   preferred_term: MediaDB Medium 117
   term:
@@ -130,3 +138,37 @@ variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - Thiamine concentration decreased from 0.113053 mM to 0.000188423 mM; all other parsed
   ingredient concentrations match the parent.
+references:
+- reference: PMID:233720
+  title: Physiological function of superoxide dismutase in glucose-limited chemostat
+    cultures of Escherichia coli.
+  authors: Hassan HM; Fridovich I
+  year: 1977
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_and_PMC_scanned_page_shell_not_full_methods;
+    owner=MEDIADB:117; discovery_sourceID=34; source_url=https://doi.org/10.1128/jb.130.2.805-811.1977;
+    alternate_identifier=doi:10.1128/jb.130.2.805-811.1977; alternate_identifier=PMC235284;
+    raw=references_cache/papers/PMID_233720.xml; markdown=references_cache/papers/PMID_233720.md;
+    Abstract: strain and study context; exact excerpt="Escherichia coli K-12 His-
+    Thi- under glucose limitation". Reported organism=Escherichia coli K-12 His- Thi-;
+    canonical scientific name=Escherichia coli K-12; NCBITaxon:83333; actual rank=strain;
+    taxonomy_match=parent_rank_only; role=reported derivative; the reference K-12
+    node does not identify that exact auxotroph. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=83333&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-study-candidates-20261013.md.
+    The historical ATCC 23794 lead is not verified by the inspected abstract; a bounded
+    lookup miss does not prove taxon absence. The abstract supports the reported study
+    context, not the entire local recipe or every limiting-nutrient condition. The
+    three existing concentration-variant children and reciprocal parent links are
+    preserved. Their unchanged ingredient amounts and histidine/thiamine assignments
+    are not newly certified. The PMC HTML contains an abstract and scanned-page shell;
+    the linked PDF attempt returned non-PDF content. No full-methods access is claimed.
+    This citation belongs on this authoritative owner, including linked children;
+    existing parent/child links and local variant descriptions remain unchanged and
+    are not newly approved. Inventory covers selected medium-relevant passages, not
+    the entire paper. Taxonomy candidates, parental matches and study roles are qualified,
+    not cultivation evidence. Correction/retraction coverage is limited to inspected
+    publication metadata. Bounded lookup misses do not prove absence. All original
+    ingredients, amounts, evidence, history, preparation and variant links are preserved;
+    none is newly certified. No new native growth assertion, concentration evidence
+    or resolved variant.'

@@ -196,6 +196,14 @@ curation_history:
   notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T23:14:34.949513+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:6183252
 media_term:
   preferred_term: MediaDB Medium 107
   term:
@@ -207,3 +215,40 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:6183252
+  title: 'A gene between polA and glnA retards growth of Escherichia coli when present
+    in multiple copies: physiological effects of the gene for spot 42 RNA.'
+  authors: Rice PW; Dahlberg JE
+  year: 1982
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:107;
+    discovery_sourceID=32; source_url=https://doi.org/10.1128/jb.152.3.1196-1210.1982;
+    alternate_identifier=doi:10.1128/jb.152.3.1196-1210.1982; alternate_identifier=PMC221627;
+    Historical MediaDB metadata retained for comparison: title="A gene between pola
+    nad glna retards growth of escherichia coli when present in multiple copies: physiological
+    effectos of the gene for spot 42 rna"; first_author="Rice"; year=1982. Verified
+    PMID/DOI identity is distinct from unresolved historical metadata differences.
+    raw=references_cache/papers/PMID_6183252.xml; markdown=references_cache/papers/PMID_6183252.md;
+    PubMed abstract, medium-upshift observation; exact excerpt="upon upshift from
+    minimal glucose to LB broth or minimal glucose plus 1% Casamino Acids". Reported
+    organism=Escherichia coli (E. coli); canonical scientific name=Escherichia coli;
+    NCBITaxon:562; actual rank=species; taxonomy_match=exact_species_not_strain; role=experimental
+    species; exact local formulation unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Escherichia coli HB101; canonical scientific name=Escherichia
+    coli HB101; NCBITaxon:634468; actual rank=strain; taxonomy_match=canonical_name_match_secondary_strain_lead;
+    role=MediaDB strain lead, not named in inspected abstract. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=634468&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Succinate culture, minimal-glucose culture, LB upshift and casamino-acid upshift
+    must not be combined. Multicopy spot-42 plasmids, parental and revertant backgrounds
+    are distinct. The abstract does not identify the exact native MOPS formula, which
+    has no explicit glucose or succinate entry. Lag, loss of plating efficiency and
+    viability observations are not universal positive-growth evidence. Local comparison:
+    Sixteen native entries encode amino acids, MOPS and salts, without an explicit
+    glucose or succinate component. Inventory covers inspected medium-relevant passages,
+    not the whole paper or bibliography. Correction/retraction coverage is limited
+    to inspected metadata; bounded taxonomy misses do not prove absence. Original
+    ingredients, amounts, preparation, history and links are preserved, not newly
+    certified. No new native growth assertion, resolved variant or concentration evidence.'

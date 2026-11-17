@@ -104,6 +104,24 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T14:29:43.219181+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography with archived primary abstract and Markdown,
+    exact abstract excerpts, scientific names and qualified taxonomy. Kept OCR/body
+    observations provisional and recipe differences unresolved; preserved all amounts,
+    links, preparation and history. No new native growth, concentration evidence or
+    resolved variant.
+  source: doi:10.1099/00221287-128-10-2417
+- timestamp: '2026-10-14T01:58:59.601709+00:00'
+  curator: codex
+  action: ADDED_SOURCE_CHAIN_PAPER_CITATIONS
+  notes: Added verified paper/correction citations with archived sources and Markdown;
+    assessed source-specific scientific names, actual NCBI ranks and unresolved recipe
+    boundaries. Updated older source-access notes only where new evidence resolved
+    access. Preserved all existing recipe fields, evidence, links and history. No
+    new growth association, concentration evidence, amount change or resolved variant.
+  source: PMID:4866846; PMID:16350209
 media_term:
   preferred_term: MediaDB Medium 261
   term:
@@ -115,3 +133,139 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1099/00221287-128-10-2417
+  title: Glucose Repression of Carbon Source Uptake and Metabolism in Streptomyces
+    coelicolor A3(2) and its Perturbation in Mutants Resistant to 2-Deoxyglucose
+  authors: D. A. Hodgson
+  year: 1982
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; owner=MEDIADB:261; discovery_sourceID=90; source_access=publisher_abstract_plus_unverified_full_paper_OCR.
+    This imported Liquid MM owner contains asparagine. The historical source join
+    names J802; the extracted Table 2 caption instead assigns its growth assay to
+    BM. The current MM formula is not silently equated with that BM experiment. Publisher
+    abstract; exact excerpt=''Streptomyces coelicolor A3(2)''. Publisher abstract;
+    exact excerpt=''liquid minimal medium''. Publisher abstract; exact excerpt=''Three
+    glucose-derepressed mutants''. Reported organism=Streptomyces coelicolor A3(2);
+    canonical scientific name=Streptomyces coelicolor A3(2); NCBITaxon:100226; actual
+    rank=strain; taxonomy_match=exact strain; role=named publisher-abstract organism,
+    not an exact match to every derived mutant. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=100226&retmode=xml.
+    Provisional body-extraction observations, not image-verified quotations: Methods
+    and Table 1 describe A3(2)-derived strains. Reported organism=Streptomyces coelicolor
+    derivatives J802, J845, J846 and J847 from source joins; J855 and M130 from extracted
+    text; canonical scientific name=Streptomyces coelicolor A3(2); NCBITaxon:100226;
+    actual rank=strain; taxonomy_match=parent_rank_only; role=A3(2) parent candidate
+    only; exact derivative nodes unresolved and J/5 OCR ambiguity retained. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=100226&retmode=xml.
+    Table 1 extraction additionally renders labels 1098, 1190 and 5650; 5802/5847/5855
+    also occur. Their typography and cross-table identity remain unresolved; no silent
+    replacement with J-prefixed strain labels. The same verified A3(2) parent is provisional
+    for these Table 1 derivatives, not an exact taxon identity. Reported organism=Streptomyces
+    violaceoruber; canonical scientific name=Streptomyces violaceoruber; NCBITaxon:1935;
+    actual rank=species; taxonomy_match=verified species name; historical application
+    unresolved; role=extracted introduction naming discussion and separate discussion
+    comparator; not equated to the current A3(2) node. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1935&retmode=xml.
+    Reported organism=Saccharomyces cerevisiae (interpreted from OCR Sacchuromyces
+    cerevisiue/cerevisiae); canonical scientific name=Saccharomyces cerevisiae; NCBITaxon:4932;
+    actual rank=species; taxonomy_match=species-name mapping; source typography provisional;
+    role=background yeast genetics comparison, not cultivation on this Streptomyces
+    recipe. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=4932&retmode=xml.
+    The source body extraction suggests PEG 6000 rather than imported ethylene glycol,
+    hydrated salts, a distinct antifoaming component, and BMA without antifoaming
+    agent for uptake assays. These chemical and assay differences prevent exact variant
+    assignment; all are retained as unresolved observations in these notes. Germination
+    in HCM, sporulation, solid NMMB, liquid BM growth and BMA uptake are not pooled.
+    Table 2 and Table 3 experimental settings and mutant phenotypes remain distinct;
+    no doubling times transferred. The cited Hopwood 1967 base protocol (PMID:4866846)
+    now has 31 archived original page scans and OCR Markdown; its Media subsection
+    on pages 375-376 was visually inspected separately. The linked erratum PMID:16350209
+    is now archived as a publisher preview and bounded Markdown and corrects figure
+    layout, not a medium. Both have separate bibliography entries below. This access
+    update does not verify the provisional Hodgson body extraction or resolve the
+    imported chemical/assay differences. No base formulation inherited. Locators:
+    body-extraction page 1 Methods/Table 1; page 2 Table 2; page 7 Table 3; pages
+    11-12 Discussion. raw_abstract=references_cache/papers/primary_extractions/hodgson-1982-publisher-web.json;
+    source_markdown=references_cache/papers/primary_extractions/hodgson-1982-publisher-web.md;
+    unverified_body=references_cache/papers/primary_extractions/hodgson-1982-author-web.json
+    and .md. Original PDF bytes were not downloaded; attempted screenshots did not
+    yield usable images. The publisher abstract, not OCR, supplies every exact excerpt
+    above. PMID was not resolved by bounded lookup, not established absent. Correction/retraction
+    coverage is limited to inspected metadata, not an exhaustive audit. All original
+    ingredients, amounts, preparation, links and history preserved, not newly certified.
+    No new concentration evidence, native growth association, quantitative metric
+    or resolved variant. Organism inventory is limited to inspected medium-relevant
+    passages; source-extraction uncertainty is retained. Taxonomy archives=references_cache/papers/taxonomy/hodgson-streptomyces-20261013.*
+    and hobbs-streptomyces-genus-20261013.*.'
+- reference: PMID:4866846
+  title: Genetic analysis and genome structure in Streptomyces coelicolor.
+  authors: Hopwood DA
+  year: 1967
+  notes: 'source_type=journal_article; discovery_mode=archived_primary_source_chain;
+    accessed_on=2026-10-14; pmid=4866846; doi=10.1128/br.31.4.373-403.1967; source_access=31_original_scans_and_unverified_OCR_with_image_verified_Media_subsection;
+    raw=references_cache/papers/primary_scans/hopwood-1967-20261014/page-375.png;
+    markdown=references_cache/papers/primary_scans/hopwood-1967-20261014/media-assessment.md;
+    metadata_raw=references_cache/papers/PMID_4866846.xml; pmcid=PMC408290; Image-verified
+    printed page 375, Media; exact excerpt="Minimal medium (MM)". Image-verified printed
+    page 375, Media; exact excerpt="Complete medium (CM)". Reported organism/group=Streptomyces
+    coelicolor (running heading); canonical scientific name=Streptomyces coelicolor;
+    NCBITaxon:1902; actual rank=species; taxonomy_match=species_name_only_historical_strain_unresolved;
+    role=organism named by the source; heading does not resolve a later derivative.
+    Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1902&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    Reported organism/group=Streptomyces (Figure 1 caption); canonical scientific
+    name=Streptomyces; NCBITaxon:1883; actual rank=genus; taxonomy_match=exact_named_genus;
+    role=illustrative colony caption, not genus-wide growth. Lookup_on=2026-10-14;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1883&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    Citation role=base_source_in_Hodgson_1982_reference_6; this bibliographic link
+    is visible on the archived publisher page, not certification of every later methods
+    claim. The Media subsection on pages 375-376 separates agar-containing MM from
+    CM and selective supplements. MM names asparagine, glucose, potassium phosphate/hydroxide
+    and hydrated magnesium/iron sulfates. CM''s complex ingredients and its page-376
+    continuation are not part of MM. The local owner is liquid and lacks agar; its
+    imported glycol identity and Hodgson assay assignment remain unresolved. No local
+    amount, sterilization method, final volume or pH is verified by this citation.
+    No resolved variant is assigned: later chemical identity and assay boundaries
+    still prevent an exact match. The linked 1968 correction is a separate figure-layout
+    notice, not a Media correction. All 31 original scans are archived; only the named
+    Media subsection and its heading/caption supply this bounded assessment. OCR elsewhere
+    is unverified; adjacent genetic methods are excluded. raw_scans=references_cache/papers/primary_scans/hopwood-1967-20261014/;
+    unverified_OCR=references_cache/papers/primary_scans/hopwood-1967-20261014/paper.ocr.md;
+    image_verified_assessment=references_cache/papers/primary_scans/hopwood-1967-20261014/media-assessment.md.
+    Owner-specific comparison: imported liquid MM lists asparagine but lacks the source
+    agar; anhydrous/unqualified sulfate labels and imported glycol prevent exact identity.
+    Local named carbon ingredient=D-Fructose; the source MM names glucose. No amount
+    conversion or substitution is silently applied. Correction/retraction coverage
+    is limited to inspected metadata and identified notices, not exhaustive. No new
+    native growth, concentration evidence, quantitative metric or resolved variant.
+    All previous recipe fields, evidence, links and history preserved. Organism inventory
+    is restricted to the inspected passages, not a full-paper review.'
+- reference: PMID:16350209
+  title: Genetic Analysis and Genome Structure in Streptomyces coelicolor.
+  authors: David A. Hopwood
+  year: 1968
+  notes: source_type=journal_erratum; discovery_mode=archived_primary_source_chain;
+    accessed_on=2026-10-14; pmid=16350209; doi=10.1128/br.32.1.83-83b.1968; source_access=complete_lower_notice_on_publisher_public_preview;
+    raw=references_cache/papers/primary_scans/hopwood-1968-20261014/publisher-page-83.png;
+    markdown=references_cache/papers/primary_scans/hopwood-1968-20261014/lower-notice.md;
+    metadata_raw=references_cache/papers/PMID_16350209.xml; pmcid=PMC378294; Image-verified
+    lower notice on printed page 83; exact excerpt="above the legend to Fig. 6". Reported
+    organism/group=Streptomyces coelicolor (notice title); canonical scientific name=Streptomyces
+    coelicolor; NCBITaxon:1902; actual rank=species; taxonomy_match=species_name_only_historical_strain_unresolved;
+    role=title organism, not a new cultivation result. Lookup_on=2026-10-14; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1902&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/hopwood-magnetotactic-20261014.md.
+    Correction_of=PMID:4866846. The lower Hopwood notice relocates tabulated material
+    from under Figure 5 on original page 388 to above Figure 6 on page 390. It does
+    not amend a medium formula. The author David A. Hopwood is printed on the notice;
+    PubMed and the publisher metadata omit authors, so authorship here is attributed
+    to the inspected image. PubMed links the notice but omits this DOI, which is verified
+    by the publisher/Crossref title, year, volume, issue and page. The unrelated upper
+    bibliography and yeast correction on the shared page are excluded from the organism
+    inventory. Correction/retraction coverage is limited to inspected metadata and
+    identified notices, not exhaustive. No new native growth, concentration evidence,
+    quantitative metric or resolved variant. All previous recipe fields, evidence,
+    links and history preserved. Organism inventory is restricted to the inspected
+    passages, not a full-paper review.

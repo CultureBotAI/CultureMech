@@ -102,6 +102,23 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T12:48:01.534993+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_AND_SCOPED_EVIDENCE
+  notes: Added 1 verified paper citations with archived abstracts/Markdown, qualified
+    organism taxonomy and formulation limitations. No concentration evidence added.
+    Preserved all amounts, existing variant links, preparation and prior history;
+    no new native growth association or resolved variant.
+  source: doi:10.1007/s00253-006-0554-8
+- timestamp: '2026-10-14T01:06:41.461765+00:00'
+  curator: codex
+  action: CURATED_PAPER_CITATIONS_AND_PROVENANCE
+  notes: Added or enriched verified paper citations and source archive/Markdown links;
+    recorded bounded formulation and organism assessments, corrected alias/correction
+    dispositions, and consolidated only verified duplicate bibliography entries. Preserved
+    prior recipe fields, evidence, links and history. No new growth, concentration
+    or resolved-variant claim. Whitchurch review is non-operational identity only.
+  source: doi:10.1007/s00253-006-0683-0
 media_term:
   preferred_term: MediaDB Medium 193
   term:
@@ -113,3 +130,89 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1007/s00253-006-0554-8
+  title: Growth of E. coli BL21 in minimal media with different gluconeogenic carbon
+    sources and salt contents.
+  authors: Paliy O; Gunasekera TS
+  year: 2007
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; owner=MEDIADB:193; discovery_sourceID=69. PMID:16944129;
+    raw_abstract=references_cache/papers/PMID_16944129.xml; abstract_markdown=references_cache/papers/PMID_16944129.md.
+    source_access=Raw PubMed abstract, publisher preview/erratum and author-uploaded
+    PDF text extraction; original PDF/images unavailable. Bibliographic identity verified
+    from primary PubMed metadata and source cross-reference. Author-order erratum
+    inspected; unresolved disagreement retained below. Raw publisher preview/erratum=references_cache/papers/primary_html/paliy-2007-publisher-abstract.*
+    and paliy-2006-erratum.*. Author-uploaded full-text extraction=references_cache/papers/primary_extractions/paliy-2007-author-web.json
+    and .md. This is not a locally downloaded PDF; tables/chemical typography were
+    not visually verified. PubMed/main article list Paliy then Gunasekera; doi:10.1007/s00253-006-0683-0
+    is a separate erratum listing Gunasekera then Paliy and saying the displayed order
+    is correct. Author order remains unresolved; bibliography follows PubMed with
+    the conflict retained. Historical MediaDB first author agrees with the erratum.
+    Issue year is 2007; electronic publication and DOI contain 2006. This M9 acetate
+    owner belongs to a lagged carbon-source assay, not no growth. Its imported amount
+    is preserved without a new mass/molar conversion. Reported organism=Escherichia
+    coli BL21 [DE3]; canonical scientific name=Escherichia coli BL21(DE3); NCBITaxon:469008;
+    actual rank=strain; taxonomy_match=exact strain; role=primary carbon-source and
+    Table 1 experimental strain named in full text; not unmodified BL21. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=469008&retmode=xml.
+    Reported organism=Escherichia coli BL21; canonical scientific name=Escherichia
+    coli BL21; NCBITaxon:511693; actual rank=strain; taxonomy_match=exact strain;
+    role=separate Amersham comparator with similar growth patterns reported without
+    displayed data. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=511693&retmode=xml.
+    Reported organism=Escherichia coli Rosetta BL21 [DE3] pLysS; canonical scientific
+    name=Escherichia coli BL21(DE3); NCBITaxon:469008; actual rank=strain; taxonomy_match=parent_rank_only;
+    role=distinct plasmid-bearing derivative; BL21(DE3) parent only, not exact Rosetta
+    identity. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=469008&retmode=xml.
+    Reported organism=Escherichia coli NCM3722 (K12); canonical scientific name=Escherichia
+    coli K-12; NCBITaxon:83333; actual rank=strain; taxonomy_match=parent_rank_only;
+    role=reported K12 comparator; exact NCM3722 node not established by bounded queries.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=83333&retmode=xml.
+    Reported organism=Escherichia coli JM109; canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only; role=experimental
+    comparator; exact strain node not established by bounded name query. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml.
+    Reported organism=Escherichia coli MRE600; canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only; role=discussion
+    cites prior adaptation work; not a target in this recipe''s experiment. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml.
+    Author PDF extraction, p.1170 Results; exact excerpt=''We grew E. coli BL21 [DE3]
+    strain (Novagen) aerobically''. Author PDF extraction, p.1170 Methods; exact excerpt=''The
+    carbon sources were sterilized separately''. Keep carbon-source experiments, the
+    0.4% glycerol salt comparison, iron supplementation and additional phosphate separate.
+    Isotope discussion is background, not proof these assays used labeled carbon or
+    heavy water. Lagged growth is not no growth, and strain-specific comparisons do
+    not establish universal optima. M9 base relies on an uninspected Sambrook/Russell
+    manual; no complete formulation inherited. Bounded failed taxon searches are not
+    exhaustive absence claims. Organism inventory covers inspected study text, not
+    unrelated bibliography-title mentions. Imported concentrations and generic filtration
+    steps are preserved, except for the explicitly identified evidence-only annotation
+    on the N-C ammonium ingredient.No positive native target organism, quantitative
+    growth metric or resolved new variant added. Taxonomy alone is not cultivation
+    evidence. Taxonomy archives=references_cache/papers/taxonomy/ecoli-bl21-hb101-20261013.*
+    and ecoli-hahm-paliy-additional-20261013.*. '
+- reference: doi:10.1007/s00253-006-0683-0
+  title: 'Erratum to: Growth of E. coli BL21 in minimal media with different gluconeogenic
+    carbon sources and salt contents'
+  authors: Gunasekera, Thusitha S.; Paliy, Oleg
+  year: 2006
+  notes: source_type=journal_erratum; discovery_mode=cited_base_protocol_or_notice;
+    accessed_on=2026-10-14; source_access=publisher_erratum_body_and_metadata; doi=10.1007/s00253-006-0683-0;
+    raw=references_cache/papers/primary_html/paliy-2006-erratum.html; markdown=references_cache/papers/primary_html/paliy-2006-erratum.md;  Publisher
+    erratum body; exact excerpt="The sequence of the author names was incorrect.".
+    Erratum title; exact excerpt="E. coli BL21". Reported organism/group=Escherichia
+    coli BL21; canonical scientific name=Escherichia coli BL21; NCBITaxon:511693;
+    actual rank=strain; taxonomy_match=verified_title_strain; role=organism in the
+    corrected article title, not a new growth experiment. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=511693&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/ecoli-bl21-hb101-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/ecoli-bl21-hb101-20261013.md.
+    Correction_of=doi:10.1007/s00253-006-0554-8. This distinct notice addresses author
+    sequence, not medium composition. The publisher erratum lists Gunasekera then
+    Paliy; the archived main article/PubMed list Paliy then Gunasekera. This entry
+    follows the erratum's own author order without silently changing the main article.
+    Erratum issue year is 2006; the main article issue is 2007. No extra formulation
+    or growth claim follows from the notice. Correction/retraction coverage is limited
+    to inspected publication metadata and identified notices, not an exhaustive audit.
+    No new native growth assertion, concentration evidence or resolved variant. Prior
+    ingredients, preparation, evidence, links and history are preserved, not newly
+    certified.

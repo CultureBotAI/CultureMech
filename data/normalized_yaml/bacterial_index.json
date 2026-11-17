@@ -1,7 +1,7 @@
 {
   "generated": "2026-10-10T07:56:17.845607+00:00",
   "category": "bacterial",
-  "count": 14329,
+  "count": 14333,
   "recipes": {
     "CultureMech:002439": {
       "name": "0_01_lb_seawater_medium",
@@ -1325,14 +1325,14 @@
       ]
     },
     "CultureMech:015445": {
-      "name": "DAS Vitamin Cocktail",
+      "name": "das_vitamin_cocktail",
       "filename": "DAS_Vitamin_Cocktail.yaml",
       "ingredient_count": 6,
       "id": "CultureMech:015445",
       "source_id": "MediaIngredientMech:UNMAPPED_0045",
       "source": "MediaIngredientMech",
       "categories": [
-        "bacterial"
+        "algae"
       ]
     },
     "CultureMech:000243": {
@@ -1799,7 +1799,7 @@
       "has_hierarchy_enrichment": true
     },
     "CultureMech:002143": {
-      "name": "thermovenabulum_medium",
+      "name": "thermovenabulum_medium_dsmz_962a",
       "filename": "DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml",
       "ingredient_count": 34,
       "id": "CultureMech:002143",
@@ -2693,6 +2693,19 @@
         "bacterial"
       ]
     },
+    "CultureMech:015917": {
+      "name": "modified_ureaplasma_medium",
+      "filename": "JCM_J1476_MODIFIED_UREAPLASMA_MEDIUM.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015917",
+      "source_id": "jcm.grmd:1476",
+      "source": "unknown",
+      "solution_count": 3,
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true
+    },
     "CultureMech:015876": {
       "name": "gibbons_modified_medium",
       "filename": "JCM_J1477_GIBBONS_MODIFIED_MEDIUM.yaml",
@@ -2715,6 +2728,32 @@
         "bacterial"
       ]
     },
+    "CultureMech:015918": {
+      "name": "ammonia_oxidizing_bacteria_medium",
+      "filename": "JCM_J1483_AMMONIA_OXIDIZING_BACTERIA_MEDIUM.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015918",
+      "source_id": "jcm.grmd:1483",
+      "source": "unknown",
+      "solution_count": 3,
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015919": {
+      "name": "bap_medium_for_frankia_jcm_1492",
+      "filename": "JCM_J1492_BAP_MEDIUM_FOR_FRANKIA.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015919",
+      "source_id": "jcm.grmd:1492",
+      "source": "unknown",
+      "solution_count": 4,
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true
+    },
     "CultureMech:002506": {
       "name": "oatmeal_agar",
       "filename": "JCM_J148_OATMEAL_AGAR.yaml",
@@ -2736,6 +2775,19 @@
       "categories": [
         "bacterial"
       ]
+    },
+    "CultureMech:015920": {
+      "name": "autotrophic_nitrobacter_medium_jcm_1503",
+      "filename": "JCM_J1503_AUTOTROPHIC_NITROBACTER_MEDIUM.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015920",
+      "source_id": "jcm.grmd:1503",
+      "source": "unknown",
+      "solution_count": 2,
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true
     },
     "CultureMech:002509": {
       "name": "corn_meal_agar",
@@ -6245,7 +6297,7 @@
       ]
     },
     "CultureMech:004016": {
-      "name": "thermovenabulum_medium",
+      "name": "thermovenabulum_medium_dsmz_1255",
       "filename": "KOMODO_1255_THERMOVENABULUM_medium.yaml",
       "ingredient_count": 32,
       "id": "CultureMech:004016",
@@ -13375,7 +13427,7 @@
       "has_hierarchy_enrichment": true
     },
     "CultureMech:006919": {
-      "name": "thermovenabulum_medium",
+      "name": "thermovenabulum_medium_dsmz_962",
       "filename": "KOMODO_962_THERMOVENABULUM_medium.yaml",
       "ingredient_count": 33,
       "id": "CultureMech:006919",
@@ -67713,7 +67765,7 @@
       ]
     },
     "CultureMech:011215": {
-      "name": "Main sol. 104a",
+      "name": "main_sol_104a",
       "filename": "mediadive_177_Main_sol_104a.yaml",
       "ingredient_count": 9,
       "id": "CultureMech:011215",
@@ -151884,7 +151936,7 @@
       ]
     },
     "CultureMech:000714": {
-      "name": "thermovenabulum_medium",
+      "name": "thermovenabulum_medium_dsmz_1255",
       "filename": "thermovenabulum_medium.yaml",
       "ingredient_count": 32,
       "id": "CultureMech:000714",

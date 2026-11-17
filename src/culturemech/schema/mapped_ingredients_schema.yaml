@@ -123,14 +123,55 @@ classes:
         required: true
         description: Input-root-relative POSIX path to the source YAML
       component_field:
-        range: ComponentFieldEnum
+        range: string
         required: true
-        description: Root field traversed according to the record's schema shape
+        pattern: "^(ingredients|composition|(solutions/[0-9]+/)+composition|variants/[0-9]+/ingredient_changes)$"
+        description: >-
+          Root field selected by the record's schema shape (`ingredients` or
+          `composition`), or the path of an inline stock's composition such as
+          `solutions/0/composition` (#604), or a curated variant change list.
+          Variant rows are stage-scoped change events, not parent ingredients.
       component_index:
         range: integer
         required: true
         minimum_value: 0
         description: Zero-based index in component_field
+      variant_index:
+        range: integer
+        minimum_value: 0
+        description: Zero-based source variant index within this snapshot
+      variant_name:
+        pattern: '\S'
+        description: Source variant name
+      change_index:
+        range: integer
+        minimum_value: 0
+        description: Zero-based ingredient_changes index within the variant
+      change_action:
+        range: VariantOccurrenceActionEnum
+        description: Positive variant change event; REMOVE never enters this table
+      change_stage:
+        pattern: '\S'
+        description: Explicit preparation or experimental stage
+      descriptor_role:
+        equals_string: ingredient
+        description: New or affected ingredient; replaced targets remain in the change ledger
+      descriptor_path:
+        pattern: "^/variants/[0-9]+/ingredient_changes/[0-9]+/ingredient$"
+        description: Exact source descriptor coordinate within this snapshot
+      source_modification_index:
+        range: integer
+        minimum_value: 0
+        description: Zero-based source modifications index
+      source_text:
+        pattern: '\S'
+        description: Exact source modification text bound by the producer
+      evidence_json:
+        pattern: '\S'
+        description: Lossless JSON array of claim-scoped change evidence
+      change_json:
+        pattern: '\S'
+        description: Lossless JSON of the complete change, including any replaced target
       preferred_term:
         required: true
         description: Source ingredient label used as the MIM resolver query
@@ -165,6 +206,35 @@ classes:
           resolved_identifier
       grounding_reason:
         description: Human-readable explanation emitted by GroundingDecision
+    rules:
+      - preconditions:
+          slot_conditions:
+            component_field:
+              pattern: "^variants/"
+        postconditions:
+          slot_conditions:
+            variant_index:
+              required: true
+            variant_name:
+              required: true
+            change_index:
+              required: true
+            change_action:
+              required: true
+            change_stage:
+              required: true
+            descriptor_role:
+              required: true
+            descriptor_path:
+              required: true
+            source_modification_index:
+              required: true
+            source_text:
+              required: true
+            evidence_json:
+              required: true
+            change_json:
+              required: true
 
   MappedConcentrationInfo:
     description: Concentration information for a mapped ingredient
@@ -212,13 +282,17 @@ classes:
         description: Percentage of all mapped ingredients from this ontology
 
 enums:
-  ComponentFieldEnum:
-    description: Root component field selected by recipe schema shape
+  VariantOccurrenceActionEnum:
+    description: Actions retained as stage-scoped positive occurrence events
     permissible_values:
-      ingredients:
-        description: Direct components of a MediaRecipe-shaped root record
-      composition:
-        description: Direct components of a SolutionRecipe-shaped root record
+      ADD:
+        description: Added ingredient
+      REPLACE:
+        description: New ingredient of a replacement
+      SET_CONCENTRATION:
+        description: Explicit concentration event, including a reported zero dose
+      SET_AMOUNT:
+        description: Literal batch amount or percentage with unspecified basis
 
   ResolutionSourceEnum:
     description: Structured outcome class returned by the shared MIM resolver

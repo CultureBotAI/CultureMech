@@ -107,6 +107,47 @@ variants:
     explanation: The source uses the same Brucella broth basal formulation, supplemented
       with fetal bovine serum and hydrogen peroxide, to measure Helicobacter pylori
       OMU89-362 growth.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: fetal bovine serum
+      notes: Primary abstract reports 10% serum; percentage basis unspecified and
+        not inferred. Undefined mixture, no constituent identities expanded.
+    stage: Brucella-broth supplementation
+    source_modification_index: 0
+    source_text: Supplement Brucella broth with 10% fetal bovine serum.
+    evidence:
+    - reference: PMID:10609610
+      supports: SUPPORT
+      snippet: 10% fetal bovine serum
+      explanation: Primary article abstract indexed by Europe PMC; full methods not
+        reviewed. Supports only the named descriptor/event at the stated stage. Primary
+        abstract reports 10% serum; percentage basis unspecified and not inferred.
+        Undefined mixture, no constituent identities expanded. Source inspected 2026-11-16;
+        SHA256 35e84b91a28f53b591554a9a986edefa68d08c52396f8d52311133a2037812d8. No
+        parent formulation, growth, ontology identity, or missing dose is inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: hydrogen peroxide
+      concentration:
+        value: '3.5'
+        unit: MILLIMOLAR
+      notes: One explicitly reported exposure level, not a recommended growth formulation
+        or complete dose-response representation. Primary abstract only.
+    stage: reported peroxide exposure arm
+    source_modification_index: 1
+    source_text: Add hydrogen peroxide at sublethal concentrations, with maximum growth
+      stimulation reported at 3.5 mM H2O2.
+    evidence:
+    - reference: PMID:10609610
+      supports: SUPPORT
+      snippet: 3.5 mM
+      explanation: Primary article abstract indexed by Europe PMC; full methods not
+        reviewed. Supports only the named descriptor/event at the stated stage. One
+        explicitly reported exposure level, not a recommended growth formulation or
+        complete dose-response representation. Primary abstract only. Source inspected
+        2026-11-16; SHA256 35e84b91a28f53b591554a9a986edefa68d08c52396f8d52311133a2037812d8.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 curation_history:
 - timestamp: '2026-01-27T06:35:55.259218Z'
   curator: togo-import
@@ -145,6 +186,38 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-11-16T21:32:59.928498+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports
+    only the named descriptor/event at the stated stage. Primary abstract reports
+    10% serum; percentage basis unspecified and not inferred. Undefined mixture, no
+    constituent identities expanded. Source inspected 2026-11-16; SHA256 35e84b91a28f53b591554a9a986edefa68d08c52396f8d52311133a2037812d8.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "PMID:10609610", "snippet": "10% fetal bovine serum", "supports":
+    "SUPPORT"}], "ingredient": {"notes": "Primary abstract reports 10% serum; percentage
+    basis unspecified and not inferred. Undefined mixture, no constituent identities
+    expanded.", "preferred_term": "fetal bovine serum"}, "source_modification_index":
+    0, "source_text": "Supplement Brucella broth with 10% fetal bovine serum.", "stage":
+    "Brucella-broth supplementation"}, {"action": "ADD", "evidence": [{"explanation":
+    "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports
+    only the named descriptor/event at the stated stage. One explicitly reported exposure
+    level, not a recommended growth formulation or complete dose-response representation.
+    Primary abstract only. Source inspected 2026-11-16; SHA256 35e84b91a28f53b591554a9a986edefa68d08c52396f8d52311133a2037812d8.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "PMID:10609610", "snippet": "3.5 mM", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "MILLIMOLAR", "value": "3.5"}, "notes": "One explicitly
+    reported exposure level, not a recommended growth formulation or complete dose-response
+    representation. Primary abstract only.", "preferred_term": "hydrogen peroxide"},
+    "source_modification_index": 1, "source_text": "Add hydrogen peroxide at sublethal
+    concentrations, with maximum growth stimulation reported at 3.5 mM H2O2.", "stage":
+    "reported peroxide exposure arm"}], "variant_index": 0, "variant_name": "brucella_broth_fbs_h2o2_helicobacter_pylori"}]}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Helicobacter pylori

@@ -2443,6 +2443,276 @@ curation_history:
     IDs remain unchanged; unquantified quantities remain unknown. No taxa-media association
     is added.", "status": "evidence_only", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
     "snippet": "DL-2-Methylbutyric acid"}]'
+- timestamp: '2026-11-16T21:36:31.979606+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16.
+    Named10x solution refers to medium120; constituent composition not expanded.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "1 ml/l Wolin''s vitamin solution (10x, see medium 120)", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "ML_PER_L", "value": "1"},
+    "notes": "Named10x solution refers to medium120; constituent composition not expanded.",
+    "preferred_term": "Wolin''s vitamin solution (10x)"}, "notes": "A scoped change
+    event, not a fully expanded variant or a parent-formulation amendment. No chemical
+    identifier is inferred.", "source_modification_index": 0, "source_text": "Supplement
+    medium after autoclaving with 1 ml/l Wolin''s vitamin solution (10x, see medium
+    120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic
+    acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O
+    and L-Cysteine HCl x H2O.", "stage": "listed DSM strains after autoclaving from
+    sterile anoxic stocks"}, {"action": "ADD", "evidence": [{"explanation": "Pages
+    1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16.
+    ", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "0.30\ng/l DL-dithiothreitol", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "G_PER_L", "value": "0.30"}, "preferred_term": "DL-dithiothreitol"},
+    "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Supplement medium after autoclaving with 1 ml/l Wolin''s vitamin
+    solution (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme
+    M (2-mercaptoethanesulfonic acid) from anoxic stock solutions sterilized by filtration.
+    Omit Na2S x 9 H2O and L-Cysteine HCl x H2O.", "stage": "listed DSM strains after
+    autoclaving from sterile anoxic stocks"}, {"action": "ADD", "evidence": [{"explanation":
+    "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16.
+    Acid identity explicit; no sodium salt inferred.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "0.15 g/l coenzyme M", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "G_PER_L", "value": "0.15"}, "notes": "Acid identity explicit; no sodium
+    salt inferred.", "preferred_term": "2-mercaptoethanesulfonic acid (coenzyme M)"},
+    "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Supplement medium after autoclaving with 1 ml/l Wolin''s vitamin
+    solution (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme
+    M (2-mercaptoethanesulfonic acid) from anoxic stock solutions sterilized by filtration.
+    Omit Na2S x 9 H2O and L-Cysteine HCl x H2O.", "stage": "listed DSM strains after
+    autoclaving from sterile anoxic stocks"}, {"action": "REMOVE", "evidence": [{"explanation":
+    "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16.
+    ", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "Omit Na2S x 9 H2O and L-Cysteine HCl x H2O.", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "Na2S x 9 H2O"}, "notes": "A scoped change event,
+    not a fully expanded variant or a parent-formulation amendment. No chemical identifier
+    is inferred.", "source_modification_index": 0, "source_text": "Supplement medium
+    after autoclaving with 1 ml/l Wolin''s vitamin solution (10x, see medium 120),
+    0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic
+    acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O
+    and L-Cysteine HCl x H2O.", "stage": "listed DSM strain-specific omitted reductant"},
+    {"action": "REMOVE", "evidence": [{"explanation": "Pages 1–2, exact DSM strain-specific
+    instructions; primary source inspected 2026-11-16. ", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "Omit Na2S x 9 H2O and L-Cysteine HCl x H2O.", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "L-Cysteine HCl x H2O"}, "notes": "A scoped change
+    event, not a fully expanded variant or a parent-formulation amendment. No chemical
+    identifier is inferred.", "source_modification_index": 0, "source_text": "Supplement
+    medium after autoclaving with 1 ml/l Wolin''s vitamin solution (10x, see medium
+    120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic
+    acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O
+    and L-Cysteine HCl x H2O.", "stage": "listed DSM strain-specific omitted reductant"}],
+    "variant_index": 0, "variant_name": "For DSM 1093, DSM 1125, DSM 11977, DSM 11978,
+    DSM 11995, DSM 16643"}, {"ingredient_changes": [{"action": "ADD", "evidence":
+    [{"explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source
+    inspected 2026-11-16. ", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "5.0 g/l D-glucose", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "G_PER_L", "value": "5.0"}, "preferred_term": "D-glucose"}, "notes":
+    "A scoped change event, not a fully expanded variant or a parent-formulation amendment.
+    No chemical identifier is inferred.", "source_modification_index": 0, "source_text":
+    "Supplement medium with 5.0 g/l D-glucose added after autoclaving from a sterile
+    anoxic stock solution.", "stage": "DSM5522 after autoclaving from sterile anoxic
+    stock"}], "variant_index": 4, "variant_name": "For DSM 5522"}, {"ingredient_changes":
+    [{"action": "SET_CONCENTRATION", "evidence": [{"explanation": "Pages 1–2, exact
+    DSM strain-specific instructions; primary source inspected 2026-11-16. Source
+    gives no hydrate; value replaces the baseline amount rather than adding an increment.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "Increase amount of Na-acetate to 3.00 g/l.", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "G_PER_L", "value": "3.00"}, "notes":
+    "Source gives no hydrate; value replaces the baseline amount rather than adding
+    an increment.", "preferred_term": "Na-acetate"}, "notes": "A scoped change event,
+    not a fully expanded variant or a parent-formulation amendment. No chemical identifier
+    is inferred.", "source_modification_index": 0, "source_text": "Increase amount
+    of Na-acetate to 3.00 g/l.", "stage": "DSM6216 strain-specific medium formulation"}],
+    "variant_index": 5, "variant_name": "For DSM 6216"}, {"ingredient_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Pages 1–2, exact DSM strain-specific instructions;
+    primary source inspected 2026-11-16. No hydrate inferred.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "2.00 g/l Na2SO4", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "G_PER_L", "value": "2.00"}, "notes": "No hydrate inferred.", "preferred_term":
+    "Na2SO4"}, "notes": "A scoped change event, not a fully expanded variant or a
+    parent-formulation amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Supplement medium with 2.00 g/l Na2SO4.", "stage": "DSM7057
+    strain-specific supplementation"}], "variant_index": 6, "variant_name": "For DSM
+    7057"}, {"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16.
+    Literal source amount0.3g; the strain note does not repeat a per-litre basis,
+    so no concentration is inferred from the recipe volume.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "0.3 g DL-Dithiothreitol", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal source amount0.3g; the strain note does not repeat a per-litre basis,
+    so no concentration is inferred from the recipe volume.", "preferred_term": "DL-dithiothreitol"},
+    "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x
+    9 H2O.", "stage": "DSM7095 and DSM28100 strain-specific supplementation"}, {"action":
+    "REMOVE", "evidence": [{"explanation": "Pages 1–2, exact DSM strain-specific instructions;
+    primary source inspected 2026-11-16. ", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "Omit Na2S", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "Na2S x 9 H2O"}, "notes": "A scoped change event, not a fully expanded variant
+    or a parent-formulation amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x
+    9 H2O.", "stage": "DSM7095 and DSM28100 omitted reductant"}], "variant_index":
+    7, "variant_name": "For DSM 7095, DSM 28100"}, {"ingredient_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Pages 1–2, exact DSM strain-specific instructions;
+    primary source inspected 2026-11-16. Literal source amount0.3g; the strain note
+    does not repeat a per-litre basis, so no concentration is inferred from the recipe
+    volume.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "0.3 g DL-Dithiothreitol", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal source amount0.3g; the strain note does not repeat a per-litre basis,
+    so no concentration is inferred from the recipe volume.", "preferred_term": "DL-dithiothreitol"},
+    "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x
+    9 H2O. Adjust pH of final medium to 6.0.", "stage": "DSM15163 strain-specific
+    supplementation"}, {"action": "REMOVE", "evidence": [{"explanation": "Pages 1–2,
+    exact DSM strain-specific instructions; primary source inspected 2026-11-16. ",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "Omit Na2S", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "Na2S x 9 H2O"}, "notes": "A scoped change event, not a fully expanded variant
+    or a parent-formulation amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x
+    9 H2O. Adjust pH of final medium to 6.0.", "stage": "DSM15163 omitted reductant"}],
+    "variant_index": 9, "variant_name": "For DSM 15163"}, {"ingredient_changes": [{"action":
+    "REPLACE", "evidence": [{"explanation": "Pages 1–2, exact DSM strain-specific
+    instructions; primary source inspected 2026-11-16. Same-volume replacement specified;
+    no independently inferred density or final concentration. Medium1310 preparation
+    remains a named-mixture reference.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "same volume of clarified rumen fluid", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Same-volume replacement specified; no independently inferred density
+    or final concentration. Medium1310 preparation remains a named-mixture reference.",
+    "preferred_term": "clarified rumen fluid"}, "notes": "A scoped change event, not
+    a fully expanded variant or a parent-formulation amendment. No chemical identifier
+    is inferred.", "replaced_ingredient": {"preferred_term": "sludge fluid"}, "source_modification_index":
+    0, "source_text": "Replace sludge fluid with the same volume of clarified rumen
+    fluid (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone
+    and 10.00 ml/l of Wolin''s vitamin solution (see medium 141).", "stage": "DSM16632
+    strain-specific fluid replacement"}, {"action": "ADD", "evidence": [{"explanation":
+    "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16.
+    ", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "2.00 g/l Trypticase peptone", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "G_PER_L", "value": "2.00"}, "preferred_term": "Trypticase
+    peptone"}, "notes": "A scoped change event, not a fully expanded variant or a
+    parent-formulation amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Replace sludge fluid with the same volume of clarified rumen
+    fluid (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone
+    and 10.00 ml/l of Wolin''s vitamin solution (see medium 141).", "stage": "DSM16632
+    strain-specific supplement"}, {"action": "ADD", "evidence": [{"explanation": "Pages
+    1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16.
+    Source refers to medium141; not assumed equal to the10x medium120 preparation
+    in another strain variant.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "10.00 ml/l of\nWolin''s vitamin solution", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "ML_PER_L", "value": "10.00"}, "notes":
+    "Source refers to medium141; not assumed equal to the10x medium120 preparation
+    in another strain variant.", "preferred_term": "Wolin''s vitamin solution"}, "notes":
+    "A scoped change event, not a fully expanded variant or a parent-formulation amendment.
+    No chemical identifier is inferred.", "source_modification_index": 0, "source_text":
+    "Replace sludge fluid with the same volume of clarified rumen fluid (see medium
+    1310) and supplement medium with 2.00 g/l Trypticase peptone and 10.00 ml/l of
+    Wolin''s vitamin solution (see medium 141).", "stage": "DSM16632 strain-specific
+    supplement"}], "variant_index": 10, "variant_name": "For DSM 16632"}, {"ingredient_changes":
+    [{"action": "ADD", "evidence": [{"explanation": "Pages 1–2, exact DSM strain-specific
+    instructions; primary source inspected 2026-11-16. Gas mixture/pressure is a separate
+    post-inoculation condition, not a liquid ingredient dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "0.10 g/l\n2-mercaptoethanesulfonic acid (coenzyme M)", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "G_PER_L", "value": "0.10"},
+    "notes": "Gas mixture/pressure is a separate post-inoculation condition, not a
+    liquid ingredient dose.", "preferred_term": "2-mercaptoethanesulfonic acid (coenzyme
+    M)"}, "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Supplement medium after autoclaving with 0.10 g/l 2-mercaptoethanesulfonic
+    acid (coenzyme M) added from an anoxic stock solution sterilized by filtration
+    and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation.",
+    "stage": "DSM25824 after autoclaving from sterile filtered anoxic stock"}], "variant_index":
+    11, "variant_name": "For DSM 25824"}]}'
+- timestamp: '2026-11-17T00:07:00.037352+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "b671cbbe466583591ab494a297e153dbb74a5d374144b8a1c7b558c7bfc264df",
+    "field_replacements": [], "path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+    "recipe_id": "CultureMech:000643", "variants": [{"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Official instruction for DSM 2030: sterile
+    gas supplied after inoculation at 2 bar overpressure. Gas composition is not a
+    liquid dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "H2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Adjust
+    pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar overpressure after inoculation.",
+    "stage": "DSM 2030 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure"},
+    {"action": "ADD", "evidence": [{"explanation": "Official instruction for DSM 2030:
+    sterile gas supplied after inoculation at 2 bar overpressure. Gas composition
+    is not a liquid dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "CO2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Adjust
+    pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar overpressure after inoculation.",
+    "stage": "DSM 2030 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure"}],
+    "variant_index": 2, "variant_name": "For DSM 2030"}, {"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Official instruction for DSM 9575: sterile
+    gas supplied after inoculation at 2 bar overpressure. Gas composition is not a
+    liquid dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "H2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Add
+    sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure after inoculation.",
+    "stage": "DSM 9575 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure"},
+    {"action": "ADD", "evidence": [{"explanation": "Official instruction for DSM 9575:
+    sterile gas supplied after inoculation at 2 bar overpressure. Gas composition
+    is not a liquid dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "CO2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Add
+    sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure after inoculation.",
+    "stage": "DSM 9575 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure"}],
+    "variant_index": 8, "variant_name": "For DSM 9575"}, {"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Official instruction for DSM 25939: sterile
+    gas supplied after inoculation at 1 bar overpressure. Gas composition is not a
+    liquid dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "H2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Adjust
+    pH of the complete medium to 7.2 and add sterile 80% H2 and 20% CO2 gas mixture
+    to 1 bar overpressure after inoculation.", "stage": "DSM 25939 post-inoculation
+    headspace; 80% H2/20% CO2, 1 bar overpressure"}, {"action": "ADD", "evidence":
+    [{"explanation": "Official instruction for DSM 25939: sterile gas supplied after
+    inoculation at 1 bar overpressure. Gas composition is not a liquid dose.", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf", "snippet":
+    "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "CO2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Adjust
+    pH of the complete medium to 7.2 and add sterile 80% H2 and 20% CO2 gas mixture
+    to 1 bar overpressure after inoculation.", "stage": "DSM 25939 post-inoculation
+    headspace; 80% H2/20% CO2, 1 bar overpressure"}], "variant_index": 12, "variant_name":
+    "For DSM 25939"}, {"append_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Official instruction for DSM 25945: sterile gas supplied after inoculation at
+    1 bar overpressure. Gas composition is not a liquid dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "H2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Adjust
+    pH of the complete medium to 7.4 and add sterile 80% H2 and 20% CO2 gas mixture
+    to 1 bar overpressure after inoculation.", "stage": "DSM 25945 post-inoculation
+    headspace; 80% H2/20% CO2, 1 bar overpressure"}, {"action": "ADD", "evidence":
+    [{"explanation": "Official instruction for DSM 25945: sterile gas supplied after
+    inoculation at 1 bar overpressure. Gas composition is not a liquid dose.", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf", "snippet":
+    "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "CO2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Adjust
+    pH of the complete medium to 7.4 and add sterile 80% H2 and 20% CO2 gas mixture
+    to 1 bar overpressure after inoculation.", "stage": "DSM 25945 post-inoculation
+    headspace; 80% H2/20% CO2, 1 bar overpressure"}], "variant_index": 13, "variant_name":
+    "For DSM 25945"}, {"variant_index": 1, "variant_name": "For DSM 1535"}, {"variant_index":
+    3, "variant_name": "For DSM 3267, DSM 11074, DSM 11075"}, {"variant_index": 14,
+    "variant_name": "For DSM 102889"}, {"variant_index": 15, "variant_name": "For
+    DSM 108286"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 parent_media:
   id: CultureMech:000646
   path: data/normalized_yaml/bacterial/gudongella_medium.yaml
@@ -3995,6 +4265,106 @@ variants:
       g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic acid) from anoxic
       stock solutions sterilized by filtration. Omit Na2S x 9 H2O and L-Cysteine HCl x H2O.
       variants[0].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: Wolin's vitamin solution (10x)
+      concentration:
+        value: '1'
+        unit: ML_PER_L
+      notes: Named10x solution refers to medium120; constituent composition not expanded.
+    stage: listed DSM strains after autoclaving from sterile anoxic stocks
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 1 ml/l Wolin's vitamin solution (10x, see medium 120)
+      explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. Named10x solution refers to medium120; constituent composition
+        not expanded.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Supplement medium after autoclaving with 1 ml/l Wolin's vitamin solution
+      (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic
+      acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O
+      and L-Cysteine HCl x H2O.
+  - action: ADD
+    ingredient:
+      preferred_term: DL-dithiothreitol
+      concentration:
+        value: '0.30'
+        unit: G_PER_L
+    stage: listed DSM strains after autoclaving from sterile anoxic stocks
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: '0.30
+
+        g/l DL-dithiothreitol'
+      explanation: 'Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. '
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Supplement medium after autoclaving with 1 ml/l Wolin's vitamin solution
+      (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic
+      acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O
+      and L-Cysteine HCl x H2O.
+  - action: ADD
+    ingredient:
+      preferred_term: 2-mercaptoethanesulfonic acid (coenzyme M)
+      concentration:
+        value: '0.15'
+        unit: G_PER_L
+      notes: Acid identity explicit; no sodium salt inferred.
+    stage: listed DSM strains after autoclaving from sterile anoxic stocks
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 0.15 g/l coenzyme M
+      explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. Acid identity explicit; no sodium salt inferred.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Supplement medium after autoclaving with 1 ml/l Wolin's vitamin solution
+      (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic
+      acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O
+      and L-Cysteine HCl x H2O.
+  - action: REMOVE
+    ingredient:
+      preferred_term: Na2S x 9 H2O
+    stage: listed DSM strain-specific omitted reductant
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: Omit Na2S x 9 H2O and L-Cysteine HCl x H2O.
+      explanation: 'Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. '
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Supplement medium after autoclaving with 1 ml/l Wolin's vitamin solution
+      (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic
+      acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O
+      and L-Cysteine HCl x H2O.
+  - action: REMOVE
+    ingredient:
+      preferred_term: L-Cysteine HCl x H2O
+    stage: listed DSM strain-specific omitted reductant
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: Omit Na2S x 9 H2O and L-Cysteine HCl x H2O.
+      explanation: 'Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. '
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Supplement medium after autoclaving with 1 ml/l Wolin's vitamin solution
+      (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic
+      acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O
+      and L-Cysteine HCl x H2O.
 - name: For DSM 1535
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4032,6 +4402,37 @@ variants:
       Additional exact excerpt: For DSM 2030: Adjust pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar
       overpressure after inoculation.
       variants[2].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: H2
+    stage: DSM 2030 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure
+    source_modification_index: 0
+    source_text: Adjust pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar
+      overpressure after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 2030: sterile gas supplied after
+        inoculation at 2 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: DSM 2030 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure
+    source_modification_index: 0
+    source_text: Adjust pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar
+      overpressure after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 2030: sterile gas supplied after
+        inoculation at 2 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
 - name: For DSM 3267, DSM 11074, DSM 11075
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4100,6 +4501,25 @@ variants:
 
       sterile anoxic stock solution.
       variants[4].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: D-glucose
+      concentration:
+        value: '5.0'
+        unit: G_PER_L
+    stage: DSM5522 after autoclaving from sterile anoxic stock
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 5.0 g/l D-glucose
+      explanation: 'Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. '
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Supplement medium with 5.0 g/l D-glucose added after autoclaving
+      from a sterile anoxic stock solution.
 - name: For DSM 6216
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4116,6 +4536,27 @@ variants:
 
       Additional exact excerpt: For DSM 6216: Increase amount of Na-acetate to 3.00 g/l.
       variants[5].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: Na-acetate
+      concentration:
+        value: '3.00'
+        unit: G_PER_L
+      notes: Source gives no hydrate; value replaces the baseline amount rather than
+        adding an increment.
+    stage: DSM6216 strain-specific medium formulation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: Increase amount of Na-acetate to 3.00 g/l.
+      explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. Source gives no hydrate; value replaces the baseline
+        amount rather than adding an increment.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Increase amount of Na-acetate to 3.00 g/l.
 - name: For DSM 7057
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4132,6 +4573,25 @@ variants:
 
       Additional exact excerpt: For DSM 7057: Supplement medium with 2.00 g/l Na2SO4.
       variants[6].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: Na2SO4
+      concentration:
+        value: '2.00'
+        unit: G_PER_L
+      notes: No hydrate inferred.
+    stage: DSM7057 strain-specific supplementation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 2.00 g/l Na2SO4
+      explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. No hydrate inferred.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Supplement medium with 2.00 g/l Na2SO4.
 - name: For DSM 7095, DSM 28100
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4152,6 +4612,39 @@ variants:
       Additional exact excerpt: For DSM 7095, DSM 28100: Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x
       9 H2O.
       variants[7].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: DL-dithiothreitol
+      notes: Literal source amount0.3g; the strain note does not repeat a per-litre
+        basis, so no concentration is inferred from the recipe volume.
+    stage: DSM7095 and DSM28100 strain-specific supplementation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 0.3 g DL-Dithiothreitol
+      explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. Literal source amount0.3g; the strain note does not
+        repeat a per-litre basis, so no concentration is inferred from the recipe
+        volume.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x 9 H2O.
+  - action: REMOVE
+    ingredient:
+      preferred_term: Na2S x 9 H2O
+    stage: DSM7095 and DSM28100 omitted reductant
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: Omit Na2S
+      explanation: 'Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. '
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x 9 H2O.
 - name: For DSM 9575
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4172,6 +4665,37 @@ variants:
       Additional exact excerpt: For DSM 9575: Add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure after
       inoculation.
       variants[8].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: H2
+    stage: DSM 9575 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure
+    source_modification_index: 0
+    source_text: Add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure
+      after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 9575: sterile gas supplied after
+        inoculation at 2 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: DSM 9575 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure
+    source_modification_index: 0
+    source_text: Add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure
+      after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 9575: sterile gas supplied after
+        inoculation at 2 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
 - name: For DSM 15163
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4193,6 +4717,41 @@ variants:
       Additional exact excerpt: For DSM 15163: Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x 9 H2O.
       Adjust pH of final medium to 6.0.
       variants[9].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: DL-dithiothreitol
+      notes: Literal source amount0.3g; the strain note does not repeat a per-litre
+        basis, so no concentration is inferred from the recipe volume.
+    stage: DSM15163 strain-specific supplementation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 0.3 g DL-Dithiothreitol
+      explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. Literal source amount0.3g; the strain note does not
+        repeat a per-litre basis, so no concentration is inferred from the recipe
+        volume.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x 9 H2O.
+      Adjust pH of final medium to 6.0.
+  - action: REMOVE
+    ingredient:
+      preferred_term: Na2S x 9 H2O
+    stage: DSM15163 omitted reductant
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: Omit Na2S
+      explanation: 'Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. '
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x 9 H2O.
+      Adjust pH of final medium to 6.0.
 - name: For DSM 16632
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4218,6 +4777,72 @@ variants:
       medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and 10.00 ml/l of
       Wolin's vitamin solution (see medium 141).
       variants[10].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: clarified rumen fluid
+      notes: Same-volume replacement specified; no independently inferred density
+        or final concentration. Medium1310 preparation remains a named-mixture reference.
+    stage: DSM16632 strain-specific fluid replacement
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: same volume of clarified rumen fluid
+      explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. Same-volume replacement specified; no independently
+        inferred density or final concentration. Medium1310 preparation remains a
+        named-mixture reference.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    replaced_ingredient:
+      preferred_term: sludge fluid
+    source_modification_index: 0
+    source_text: Replace sludge fluid with the same volume of clarified rumen fluid
+      (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and
+      10.00 ml/l of Wolin's vitamin solution (see medium 141).
+  - action: ADD
+    ingredient:
+      preferred_term: Trypticase peptone
+      concentration:
+        value: '2.00'
+        unit: G_PER_L
+    stage: DSM16632 strain-specific supplement
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 2.00 g/l Trypticase peptone
+      explanation: 'Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. '
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Replace sludge fluid with the same volume of clarified rumen fluid
+      (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and
+      10.00 ml/l of Wolin's vitamin solution (see medium 141).
+  - action: ADD
+    ingredient:
+      preferred_term: Wolin's vitamin solution
+      concentration:
+        value: '10.00'
+        unit: ML_PER_L
+      notes: Source refers to medium141; not assumed equal to the10x medium120 preparation
+        in another strain variant.
+    stage: DSM16632 strain-specific supplement
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: '10.00 ml/l of
+
+        Wolin''s vitamin solution'
+      explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. Source refers to medium141; not assumed equal to the10x
+        medium120 preparation in another strain variant.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Replace sludge fluid with the same volume of clarified rumen fluid
+      (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and
+      10.00 ml/l of Wolin's vitamin solution (see medium 141).
 - name: For DSM 25824
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4246,6 +4871,31 @@ variants:
       sterilized by filtration and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar
       overpressure after inoculation.
       variants[11].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: 2-mercaptoethanesulfonic acid (coenzyme M)
+      concentration:
+        value: '0.10'
+        unit: G_PER_L
+      notes: Gas mixture/pressure is a separate post-inoculation condition, not a
+        liquid ingredient dose.
+    stage: DSM25824 after autoclaving from sterile filtered anoxic stock
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: '0.10 g/l
+
+        2-mercaptoethanesulfonic acid (coenzyme M)'
+      explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
+        inspected 2026-11-16. Gas mixture/pressure is a separate post-inoculation
+        condition, not a liquid ingredient dose.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Supplement medium after autoclaving with 0.10 g/l 2-mercaptoethanesulfonic
+      acid (coenzyme M) added from an anoxic stock solution sterilized by filtration
+      and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation.
 - name: For DSM 25939
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4267,6 +4917,37 @@ variants:
       Additional exact excerpt: For DSM 25939: Adjust pH of the complete medium to 7.2 and add sterile 80% H2 and 20%
       CO2 gas mixture to 1 bar overpressure after inoculation.
       variants[12].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: H2
+    stage: DSM 25939 post-inoculation headspace; 80% H2/20% CO2, 1 bar overpressure
+    source_modification_index: 0
+    source_text: Adjust pH of the complete medium to 7.2 and add sterile 80% H2 and
+      20% CO2 gas mixture to 1 bar overpressure after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 25939: sterile gas supplied after
+        inoculation at 1 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: DSM 25939 post-inoculation headspace; 80% H2/20% CO2, 1 bar overpressure
+    source_modification_index: 0
+    source_text: Adjust pH of the complete medium to 7.2 and add sterile 80% H2 and
+      20% CO2 gas mixture to 1 bar overpressure after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 25939: sterile gas supplied after
+        inoculation at 1 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
 - name: For DSM 25945
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4288,6 +4969,37 @@ variants:
       Additional exact excerpt: For DSM 25945: Adjust pH of the complete medium to 7.4 and add sterile 80% H2 and 20%
       CO2 gas mixture to 1 bar overpressure after inoculation.
       variants[13].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: H2
+    stage: DSM 25945 post-inoculation headspace; 80% H2/20% CO2, 1 bar overpressure
+    source_modification_index: 0
+    source_text: Adjust pH of the complete medium to 7.4 and add sterile 80% H2 and
+      20% CO2 gas mixture to 1 bar overpressure after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 25945: sterile gas supplied after
+        inoculation at 1 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: DSM 25945 post-inoculation headspace; 80% H2/20% CO2, 1 bar overpressure
+    source_modification_index: 0
+    source_text: Adjust pH of the complete medium to 7.4 and add sterile 80% H2 and
+      20% CO2 gas mixture to 1 bar overpressure after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 25945: sterile gas supplied after
+        inoculation at 1 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
 - name: For DSM 102889
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:

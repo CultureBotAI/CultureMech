@@ -36,12 +36,20 @@ from linkml.validator import Validator
 from linkml.validator.plugins import JsonschemaValidationPlugin
 from linkml.validator.report import Severity, ValidationResult
 
+from culturemech.validation.causal_graphs import causal_graph_validation_results
+from culturemech.validation.protein_examples import protein_example_validation_results
+from culturemech.validation.variant_ingredients import variant_ingredient_validation_results
+
 DEFAULT_SCHEMA_PATH = Path(__file__).resolve().parents[1] / "schema" / "culturemech.yaml"
 
 _VALIDATORS: dict[Path, Validator] = {}
 _VALIDATOR_LOCK = Lock()
 
 _SOLUTION_TERM_PREFIXES = ("mediadive.solution:", "MediaIngredientMech:")
+
+
+class LayerBoundaryError(ValueError):
+    """Raised when an authoritative-input writer is pointed at a generated layer (e.g. merge_yaml)."""
 
 
 class ValidationFailedError(Exception):
@@ -103,7 +111,11 @@ def validate_recipe(
     validator = _get_validator(schema_path)
     tc = target_class or infer_target_class(recipe)
     report = validator.validate(recipe, target_class=tc)
-    return [r for r in report.results if r.severity == Severity.ERROR]
+    errors = [r for r in report.results if r.severity == Severity.ERROR]
+    errors.extend(protein_example_validation_results(recipe))
+    errors.extend(causal_graph_validation_results(recipe))
+    errors.extend(variant_ingredient_validation_results(recipe))
+    return errors
 
 
 def write_validated_recipe(

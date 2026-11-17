@@ -261,6 +261,14 @@ curation_history:
   notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-14T00:09:58.559887+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added or enriched bibliographic metadata, archived source/Markdown links,
+    title/group excerpts and qualified NCBI taxonomy notes. Non-operational identity
+    review only; no experimental, formulation, variant, growth or concentration curation.
+    Preserved all original recipe fields, history and reference identifiers.
+  source: PMID:19376871
 media_term:
   preferred_term: MediaDB Medium 292
   term:
@@ -273,3 +281,34 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: PMID:19376871
+  title: Comparative genome-scale metabolic reconstruction and flux balance analysis
+    of multiple Staphylococcus aureus genomes identify novel antimicrobial drug targets.
+  authors: Lee DS; Burd H; Liu J; Almaas E; Wiest O; Barabási AL; Oltvai ZN; Kapatral
+    V
+  year: 2009
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-14; source_access=archived_PubMed_abstract; review_scope=Bibliographic
+    title and taxonomic identity only; archived abstract is not approval of any experiment
+    or formulation.; owner=MEDIADB:292; discovery_sourceID=104; source_url=https://doi.org/10.1128/JB.01743-08;
+    alternate_identifier=doi:10.1128/JB.01743-08; alternate_identifier=PMC2698402;
+    raw=references_cache/papers/PMID_19376871.xml; markdown=references_cache/papers/PMID_19376871.md;
+    Bibliographic title; exact excerpt="Staphylococcus aureus". Reported organism/group=Staphylococcus
+    aureus; canonical scientific name=Staphylococcus aureus; NCBITaxon:1280; actual
+    rank=species; taxonomy_match=exact_species; role=bibliographic-title mention only;
+    no strain, formulation, growth or experimental-outcome assertion. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1280&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/growth-next-nonoperational-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/growth-next-nonoperational-20261013.md.
+    Review is limited to publication identity, title-level organism mentions and taxonomy.
+    Abstract content is archived but not used here to assert experimental findings.
+    This is not an exhaustive abstract or whole-paper organism inventory. The pinned
+    MediaDB source-to-owner join establishes a historical bibliographic lead only,
+    not exact recipe equivalence. Formulation identity, study-specific differences
+    and variant destination remain unassessed in this non-operational citation task.
+    No cultivation conditions, optimization, virulence, growth associations or ingredient
+    amounts are extracted or curated. Correction/retraction coverage is limited to
+    archived metadata. Original ingredients, amounts, preparation, history, evidence
+    and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.

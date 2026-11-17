@@ -106,6 +106,14 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T17:38:49.917565+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, raw/Markdown source provenance, exact
+    excerpts and qualified scientific-name/NCBI mappings. Preserved recipe, assay
+    and taxonomy conflicts. Existing fields, variant links and history unchanged;
+    no new native growth, concentration evidence or resolved variant.
+  source: doi:10.1007/BF01040208
 media_term:
   preferred_term: MediaDB Medium 291
   term:
@@ -117,3 +125,47 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1007/BF01040208
+  title: Growth requirements and the establishment of a chemically defined minimal
+    medium inZymomonas mobilis
+  authors: Irene Galani; Constantin Drainas; Nilton A. Typas
+  year: 1985
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=publisher_abstract_only; PMID_unresolved_not_proven_absent;
+    owner=MEDIADB:291; discovery_sourceID=103; source_url=https://doi.org/10.1007/BF01040208;
+    raw=references_cache/papers/primary_html/later-source-103-20261013.html; markdown=references_cache/papers/primary_html/later-source-103-20261013.md;
+    Publisher abstract, strain inventory; exact excerpt="ATCC 10988, CU1, CP4 and
+    11163". Publisher abstract, assay scope; exact excerpt="at different glucose concentrations".
+    Formulation_unresolved: Publisher abstract does not enumerate the seven local
+    amounts. Glucose-dependent ethanol kinetics in minimal versus complete medium
+    do not certify the imported mM values, base preparation or an exact local variant.
+    Reported organism=Zymomonas mobilis ATCC 10988; canonical scientific name=Zymomonas
+    mobilis subsp. mobilis ATCC 10988; NCBITaxon:555217; actual rank=strain; taxonomy_match=exact_strain_designation;
+    role=study strain; local recipe match unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=555217&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/galani-tree-followup-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/galani-tree-followup-20261013.md.
+    Reported organism=Zymomonas mobilis CP4; canonical scientific name=Zymomonas mobilis
+    subsp. mobilis str. CP4 = NRRL B-14023; NCBITaxon:627343; actual rank=strain;
+    taxonomy_match=exact_strain_designation; role=study strain; local recipe match
+    unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=627343&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/galani-tree-followup-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/galani-tree-followup-20261013.md.
+    Reported organism=Zymomonas mobilis CU1 and 11163; canonical scientific name=Zymomonas
+    mobilis; NCBITaxon:542; actual rank=species; taxonomy_match=parent_rank_only;
+    role=species parent only; CU1 exact node unresolved; bare 11163 lacks a verified
+    collection prefix. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=542&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    NCIMB 11163 node 622759 is a candidate, not an assigned identity. For ATCC 10988
+    and CP4, archived current EFetch XML returns strain rank; an earlier browser surface
+    displayed no rank. The source-surface discrepancy is retained, not hidden. Publisher/Crossref
+    author spelling Nilton A. Typas and literal title inZymomonas are retained without
+    an unverified correction. PMID lookup remains unresolved, not proven absent. Bounded
+    lookup misses do not prove taxon absence. Organism inventory covers inspected
+    medium-relevant passages, not the entire paper. Images and supplements have not
+    been verified. Correction/retraction coverage is limited to inspected publication
+    metadata. Related-media candidates were searched without asserting exact formulation
+    equivalence. All prior ingredients, quantities, preparation, variant links and
+    history remain unchanged and uncertified by this citation. No new native growth
+    assertion, concentration evidence or resolved variant.'

@@ -341,6 +341,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:3's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T17:38:49.917565+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, raw/Markdown source provenance, exact
+    excerpts and qualified scientific-name/NCBI mappings. Preserved recipe, assay
+    and taxonomy conflicts. Existing fields, variant links and history unchanged;
+    no new native growth, concentration evidence or resolved variant.
+  source: PMID:11425739
 media_term:
   preferred_term: MediaDB Medium 3
   term:
@@ -352,3 +360,59 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:11425739
+  title: Development of a genetic system for Geobacter sulfurreducens.
+  authors: Coppi MV; Leang C; Sandler SJ; Lovley DR
+  year: 2001
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=PMC_full_HTML_selected_medium_relevant_passages;
+    owner=MEDIADB:3; discovery_sourceID=3; source_url=https://doi.org/10.1128/AEM.67.7.3180-3187.2001;
+    alternate_identifier=doi:10.1128/AEM.67.7.3180-3187.2001; alternate_identifier=PMC92998;
+    raw=references_cache/papers/PMID_11425739.xml; markdown=references_cache/papers/PMID_11425739.md;
+    full_raw=references_cache/papers/primary_html/pmid-11425739-20261013.html; full_markdown=references_cache/papers/primary_html/pmid-11425739-20261013.md;
+    PubMed Abstract, gene disruption; exact excerpt="the nifD gene of G. sulfurreducens
+    was disrupted". PubMed Abstract, negative-growth scope; exact excerpt="medium
+    lacking a source of fixed nitrogen". Materials and methods/Culturing conditions
+    and growth media; exact excerpt="nitrogen fixation phenotypes". Formulation_unresolved:
+    FWAFC, ammonium-free FWAFC and ammonium-plus-gaseous-nitrogen-free FWAFC are distinct
+    experiments. NBAFYE propagation/plating and competence/recovery media are separate.
+    The local ferric-dicitrate identity/amount and inherited vitamin/trace formulation
+    remain unresolved. Do not normalize the source''s unusual displayed phosphate/iron
+    formulas without checking original scientific context. A figure caption''s antibiotic
+    mass-unit wording conflicts with the methods wording; do not inherit either blindly.
+    Selected full-HTML strain table, culturing methods and results inspected. Base
+    references 17 and 19 remain reference-list leads, not inherited formula evidence.
+    Reported organism=Geobacter sulfurreducens ATCC 51573; canonical scientific name=Geobacter
+    sulfurreducens PCA; NCBITaxon:243231; actual rank=strain; taxonomy_match=collection_verified_PCA_identity;
+    role=reference strain; local FWAFC formula unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=243231&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Collection identity: https://www.atcc.org/products/51573, accessed_on=2026-10-13;
+    archived at references_cache/papers/taxonomy/coppi-atcc-51573-20261013.html and
+    .md. Reported organism=G. sulfurreducens DL1, DL1/pCD354, DL2A-D and complemented
+    derivatives; canonical scientific name=Geobacter sulfurreducens; NCBITaxon:35554;
+    actual rank=species; taxonomy_match=parent_rank_only; role=species parent for
+    separately reported single-colony, mutant and complemented states; exact derivative
+    nodes unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=35554&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Reported organism=Escherichia coli DH5alpha and JM109; canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only; role=species
+    parent for separate cloning hosts; exact strains not verified; not FWAFC targets.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Reported organism=Geobacter; canonical scientific name=Geobacter; NCBITaxon:28231;
+    actual rank=genus; taxonomy_match=genus_name; role=background genus mention, not
+    genus-wide growth. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=28231&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Negative nitrogen-fixation phenotypes are not positive growth on nitrogen-containing
+    parent medium. Bounded lookup misses do not prove taxon absence. Organism inventory
+    covers inspected medium-relevant passages, not the entire paper. Images and supplements
+    have not been verified. Correction/retraction coverage is limited to inspected
+    publication metadata. Related-media candidates were searched without asserting
+    exact formulation equivalence. All prior ingredients, quantities, preparation,
+    variant links and history remain unchanged and uncertified by this citation. No
+    new native growth assertion, concentration evidence or resolved variant.'

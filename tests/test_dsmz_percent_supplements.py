@@ -12,6 +12,7 @@ import pytest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 import repair_dsmz_percent_supplements as repair  # noqa: E402
+from audit_variant_ingredient_successor import restore_before  # noqa: E402
 
 BATCH = ROOT / "reports/ingredient_concentration_curation/20261007-percent-supplements"
 PLAN = BATCH / "plan.json"
@@ -330,7 +331,7 @@ def test_applied_successors_and_history():
     plan = json.loads(PLAN.read_text())
     total = 0
     for item in plan["records"]:
-        raw = (ROOT / item["path"]).read_bytes()
+        raw = restore_before((ROOT / item["path"]).read_bytes(), item["path"])
         assert repair.sha(raw) == item["after_sha256"]
         counts = audit.check(repair.load_yaml(item["before_text"]), repair.load_yaml(raw), item)
         total += counts["unsupported_quantity_slots_removed"]

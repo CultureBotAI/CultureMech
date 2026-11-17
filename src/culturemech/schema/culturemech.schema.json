@@ -23,6 +23,129 @@
             "title": "CategoryEnum",
             "type": "string"
         },
+        "CausalEdge": {
+            "additionalProperties": false,
+            "description": "A directed, evidence-backed causal mechanism edge describing how a growth-medium ingredient, cofactor, environmental condition, or genetic perturbation causally enables, regulates, or inhibits organism growth, transport, or physiology in the context of a medium formulation.",
+            "properties": {
+                "condition_context": {
+                    "description": "Medium condition, concentration threshold, or perturbation context under which this causal relationship holds.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Claim-scoped literature evidence supporting this directed causal relationship in the growth medium context.",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "id": {
+                    "description": "Stable record-local or CURIE identifier for this causal edge (for example, edge_cobalamin_enables_growth or CausalEdge:0001), used by Discussion.attaches_to anchors (causal_graphs#edge_x).",
+                    "pattern": "^(edge_[A-Za-z0-9_.-]+|CausalEdge:[A-Za-z0-9_.-]+)$",
+                    "type": "string"
+                },
+                "notes": {
+                    "description": "Additional curation notes or caveats",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "object_term": {
+                    "$ref": "#/$defs/CausalTerm",
+                    "description": "Ontology-grounded causal target (for example, an NCBITaxon organism, GO biological process, CHEBI metabolite/cofactor, UniProtKB protein, or PATO/METPO phenotype)."
+                },
+                "organism_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/OrganismTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Explicit NCBITaxon organism context for this causal mechanism when scoped to a specific organism or strain."
+                },
+                "predicate": {
+                    "$ref": "#/$defs/CausalPredicateEnum",
+                    "description": "Constrained causal relationship predicate connecting subject_term to object_term in the medium context."
+                },
+                "protein_terms": {
+                    "description": "Optional typed UniProtKB protein actors mediating this causal edge, linking Stage 2 causal mechanisms to Stage 3 protein examples.",
+                    "items": {
+                        "$ref": "#/$defs/UniProtTerm"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "subject_term": {
+                    "$ref": "#/$defs/CausalTerm",
+                    "description": "Ontology-grounded causal subject (for example, a CHEBI ingredient or cofactor, UniProtKB transporter/enzyme, GO biological process, or ENVO condition)."
+                }
+            },
+            "required": [
+                "id",
+                "subject_term",
+                "predicate",
+                "object_term",
+                "evidence"
+            ],
+            "title": "CausalEdge",
+            "type": "object"
+        },
+        "CausalPredicateEnum": {
+            "description": "Constrained causal predicate vocabulary for growth-medium CausalEdge assertions, mapped to Relation Ontology (RO) and Biolink predicates.",
+            "enum": [
+                "CAUSES",
+                "POSITIVELY_REGULATES",
+                "NEGATIVELY_REGULATES",
+                "ENABLES_GROWTH",
+                "INHIBITS_GROWTH",
+                "PROVIDES_COFACTOR_FOR",
+                "TRANSPORTS_SUBSTRATE",
+                "AFFECTS"
+            ],
+            "title": "CausalPredicateEnum",
+            "type": "string"
+        },
+        "CausalTerm": {
+            "additionalProperties": false,
+            "description": "An ontology-grounded entity participating as subject_term or object_term in a growth-medium CausalEdge. Accepts chemical/ingredient terms (CHEBI, FOODON, MICRO), organism taxa (NCBITaxon), biological processes and molecular functions (GO), proteins and enzymes (UniProtKB, EC), pathways (KEGG), and phenotype/environment descriptors (METPO, ENVO, PATO, NCIT, UBERON, CultureMech, MediaIngredientMech).",
+            "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "pattern": "^(CHEBI|NCBITaxon|GO|UniProtKB|EC|KEGG|METPO|ENVO|PATO|NCIT|FOODON|UBERON|MICRO|CultureMech|MediaIngredientMech):[A-Za-z0-9_.-]+$",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
+                }
+            },
+            "required": [
+                "id",
+                "label"
+            ],
+            "title": "CausalTerm",
+            "type": "object"
+        },
         "CellularMetabolicRoleEnum": {
             "description": "Role of the ingredient inside or on the cultured microbe(s) \u2014 the compound's metabolic fate or biochemical function at the cell level. One of three orthogonal role facets (with NutritionalRoleEnum and PhysicochemicalRoleEnum). Values in this facet are often organism-conditional (e.g. ELECTRON_DONOR applies only for organisms that oxidize the compound for energy; methanol is an electron donor for methylotrophs but only a carbon source for others).",
             "enum": [
@@ -204,6 +327,16 @@
                     "description": "Human-readable cofactor name (e.g., \"Thiamine pyrophosphate\", \"NAD\")",
                     "type": "string"
                 },
+                "protein_examples": {
+                    "description": "Typed, organism-specific UniProtKB protein examples requiring or biosynthesizing this cofactor, with claim-scoped evidence.",
+                    "items": {
+                        "$ref": "#/$defs/ProteinExample"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "term": {
                     "anyOf": [
                         {
@@ -255,6 +388,16 @@
                     "description": "Genes related to biosynthesis or utilization",
                     "items": {
                         "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "protein_examples": {
+                    "description": "Typed UniProtKB protein examples for cofactor biosynthesis or utilization in the target organism.",
+                    "items": {
+                        "$ref": "#/$defs/ProteinExample"
                     },
                     "type": [
                         "array",
@@ -363,9 +506,14 @@
                 "G_PER_L",
                 "MG_PER_L",
                 "MICROG_PER_L",
+                "MICROG_PER_ML",
+                "NG_PER_L",
                 "MOLAR",
                 "MILLIMOLAR",
                 "MICROMOLAR",
+                "NANOMOLAR",
+                "PICOMOLAR",
+                "PPM",
                 "PERCENT_W_V",
                 "PERCENT_W_W",
                 "PERCENT_V_V",
@@ -1570,6 +1718,16 @@
                     "$ref": "#/$defs/CategoryEnum",
                     "description": "Broad category for organization"
                 },
+                "causal_graphs": {
+                    "description": "Directed, evidence-backed causal mechanism edges describing how media ingredients, cofactors, perturbations, or strain modifications causally support, limit, or alter organism growth, nutrient uptake, or physiology in this medium formulation. Distinct from static composition/role facet assignments and from intracellular pathway graphs owned by PathwayMech or EnzymeMech.",
+                    "items": {
+                        "$ref": "#/$defs/CausalEdge"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "chemical_fingerprint": {
                     "description": "SHA256 hash using parent ingredients (hierarchy-aware)",
                     "type": [
@@ -1852,6 +2010,16 @@
                         "null"
                     ]
                 },
+                "protein_examples": {
+                    "description": "Typed, organism-specific UniProtKB protein examples supported by claim-scoped evidence for this medium formulation.",
+                    "items": {
+                        "$ref": "#/$defs/ProteinExample"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "record_kind": {
                     "$ref": "#/$defs/RecordKindEnum",
                     "description": "What kind of record this is: a growth MEDIUM, or a standalone stock SOLUTION. Normally inferred from the `term.id` prefix (`mediadive.solution:*`), and only stated explicitly for solutions that carry no upstream solution identifier \u2014 202 records imported from KOMODO as media (\"Trace element solution (medium 929)\", \"10 x M9 salts\") whose composition was flattened into their parent medium. A curated assertion, written by `just retype-solution-records` and reviewable in the diff. It is NOT derived from the name at read time: matching \"*solution*\" would silently reclassify a genuine medium such as Ringer's solution."
@@ -2114,6 +2282,26 @@
                     "description": "Evidence supporting the variant",
                     "items": {
                         "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "ingredient_changes": {
+                    "description": "Evidence-backed ingredient changes scoped to this variant and its preparation or experimental stage. These are not additions to the parent formulation. Retain modifications as the source text; removals and replaced ingredients are context, never positive occurrences.",
+                    "items": {
+                        "$ref": "#/$defs/VariantIngredientChange"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "ingredient_mentions": {
+                    "description": "Explicit ingredient names whose source assertion remains withheld. These source-bound mentions are exported separately from supported changes and never assert presence, identity grounding, or approval.",
+                    "items": {
+                        "$ref": "#/$defs/UnresolvedVariantIngredientMention"
                     },
                     "type": [
                         "array",
@@ -2383,6 +2571,16 @@
             "additionalProperties": false,
             "description": "Target organism for the medium",
             "properties": {
+                "causal_graphs": {
+                    "description": "Directed, evidence-backed causal mechanism edges specific to this target organism on the medium (for example, cofactor-dependent growth, substrate transport, selective inhibition, or auxotrophy rescue).",
+                    "items": {
+                        "$ref": "#/$defs/CausalEdge"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "cofactor_requirements": {
                     "description": "Cofactors required by this organism",
                     "items": {
@@ -2462,6 +2660,16 @@
                 "preferred_term": {
                     "description": "Organism name (e.g., \"Escherichia coli\")",
                     "type": "string"
+                },
+                "protein_examples": {
+                    "description": "Typed UniProtKB protein examples (enzymes, transporters, or regulatory proteins) specific to this target organism on the medium.",
+                    "items": {
+                        "$ref": "#/$defs/ProteinExample"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "scoped_to_variant": {
                     "description": "Name of the `variants[]` entry this organism's growth evidence is scoped to, when growth is verified only on a specific variant of the medium and NOT on the parent recipe. Must match a `variants[].name` on the same record. Downstream KG builds should attach the organism<->medium edge to the named variant rather than the parent, so variant-only evidence is not propagated as a parent-medium claim.",
@@ -2854,6 +3062,100 @@
             "title": "ProposedExperiment",
             "type": "object"
         },
+        "ProteinExample": {
+            "additionalProperties": false,
+            "description": "A typed, organism-specific UniProtKB protein example linked to a growth medium, target organism, cofactor requirement, or transporter with claim-scoped evidence.",
+            "properties": {
+                "cofactor_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ChemicalEntityTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Optional CHEBI term for the cofactor bound or utilized by this protein"
+                },
+                "ec_number": {
+                    "description": "Enzyme Commission number in EC CURIE format when enzymatic (e.g., EC:1.7.5.1)",
+                    "pattern": "^EC:[0-9]+(\\.([0-9]+|-)){0,3}$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Claim-scoped literature or database evidence supporting this organism-specific UniProtKB protein example.",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "functional_role": {
+                    "description": "Concise functional role of the protein in nutrient uptake, cofactor utilization, or growth in the medium.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "gene_symbol": {
+                    "description": "Canonical gene symbol (e.g., ompF, narG, btuB)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "locus_tag": {
+                    "description": "Ordered locus or strain-specific gene identifier (e.g., b0929)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "description": "Additional curation notes or caveats",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "organism_term": {
+                    "$ref": "#/$defs/OrganismTerm",
+                    "description": "Explicit NCBITaxon organism term to which this UniProtKB entry belongs (e.g., id: NCBITaxon:83333, label: Escherichia coli K-12)."
+                },
+                "sequence_scope": {
+                    "description": "Sequence or isoform scope when relevant (e.g., canonical, UniProtKB:P02931-1, mature peptide range).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "substrate_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ChemicalEntityTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Optional CHEBI/chemical term for the substrate or transported nutrient"
+                },
+                "uniprot_term": {
+                    "$ref": "#/$defs/UniProtTerm",
+                    "description": "Canonical UniProtKB accession and protein label for this protein example (e.g., id: UniProtKB:P02931, label: Outer membrane porin F)."
+                }
+            },
+            "required": [
+                "uniprot_term",
+                "organism_term",
+                "evidence"
+            ],
+            "title": "ProteinExample",
+            "type": "object"
+        },
         "PublicationReference": {
             "additionalProperties": false,
             "description": "Literature reference",
@@ -2935,6 +3237,19 @@
                 "SOLUTION"
             ],
             "title": "RecordKindEnum",
+            "type": "string"
+        },
+        "ReportedVariantIngredientActionEnum": {
+            "description": "",
+            "enum": [
+                "ADD",
+                "REMOVE",
+                "REPLACE",
+                "SET_CONCENTRATION",
+                "SET_AMOUNT",
+                "UNSPECIFIED"
+            ],
+            "title": "ReportedVariantIngredientActionEnum",
             "type": "string"
         },
         "SolutionDescriptor": {
@@ -3087,9 +3402,26 @@
             "additionalProperties": false,
             "description": "A standalone stock-solution record (one per YAML file). Used for pre-prepared solutions that are referenced as ingredients by MediaRecipes \u2014 e.g. MediaDive's \"Main sol.\" or \"Trace metals SL10\" records. SolutionDescriptor is the inlined-in-recipe form; this is the root form with its own id, curation history, and provenance.",
             "properties": {
+                "categories": {
+                    "description": "All categories this solution recipe appears in (for cross-category merges)",
+                    "items": {
+                        "$ref": "#/$defs/CategoryEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "category": {
                     "$ref": "#/$defs/CategoryEnum",
                     "description": "Source / collection category (algae, bacterial, fungal, \u2026)"
+                },
+                "chemical_fingerprint": {
+                    "description": "SHA256 hash using parent ingredients (hierarchy-aware)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "composition": {
                     "description": "Ingredients in the stock solution",
@@ -3195,6 +3527,23 @@
                     ],
                     "description": "Legacy MediaIngredientMech:NNNNNN identifier for this solution (pre-CHEBI-keying)."
                 },
+                "merge_fingerprint": {
+                    "description": "SHA256 hash of ingredient set for deduplication tracking",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "merged_from": {
+                    "description": "Original recipe IDs that were merged into this solution record",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "notes": {
                     "description": "Additional free-text notes",
                     "type": [
@@ -3272,6 +3621,16 @@
                     ],
                     "description": "Storage requirements"
                 },
+                "synonyms": {
+                    "description": "Alternate names from merged duplicate solution recipes",
+                    "items": {
+                        "$ref": "#/$defs/RecipeSynonym"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "term": {
                     "anyOf": [
                         {
@@ -3282,6 +3641,13 @@
                         }
                     ],
                     "description": "Ontology term identifying this solution"
+                },
+                "variant_fingerprint": {
+                    "description": "SHA256 hash including concentration and preparation variant details",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -3821,6 +4187,16 @@
                         "null"
                     ]
                 },
+                "protein_examples": {
+                    "description": "Typed UniProtKB protein examples for this transport system in the target organism.",
+                    "items": {
+                        "$ref": "#/$defs/ProteinExample"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "substrate_terms": {
                     "description": "CHEBI terms for substrates",
                     "items": {
@@ -3870,6 +4246,106 @@
             ],
             "title": "TransporterTypeEnum",
             "type": "string"
+        },
+        "UniProtTerm": {
+            "additionalProperties": false,
+            "description": "A UniProtKB protein entry term. Must use the UniProtKB CURIE prefix with a canonical 6-character or 10-character primary accession (for example, UniProtKB:P02931 or UniProtKB:A0A0H2ZRI7) and a non-empty protein label.",
+            "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "pattern": "^UniProtKB:([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})$",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
+                }
+            },
+            "required": [
+                "id",
+                "label"
+            ],
+            "title": "UniProtTerm",
+            "type": "object"
+        },
+        "UnresolvedVariantIngredientMention": {
+            "additionalProperties": false,
+            "description": "A literal named ingredient retained for review, not an approved chemical identity or formulation claim. source_label must occur verbatim in the exact bound modification. No grounding or positive-presence fields exist.",
+            "properties": {
+                "evidence": {
+                    "description": "Optional evidence or counterevidence. Even supporting evidence for a name does not promote this mention to an approved change event.",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "held_fields": {
+                    "description": "Exact dimensions still withheld. A quantity-only hold does not revoke independently supported ingredient identity or presence events.",
+                    "items": {
+                        "$ref": "#/$defs/VariantIngredientHoldFieldEnum"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "reason": {
+                    "description": "Why the source assertion is withheld and what remains unresolved",
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "reported_action": {
+                    "$ref": "#/$defs/ReportedVariantIngredientActionEnum"
+                },
+                "reported_quantity": {
+                    "description": "Uninterpreted quantity wording, never an asserted concentration",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "source_label": {
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "source_modification_index": {
+                    "minimum": 0,
+                    "type": "integer"
+                },
+                "source_text": {
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "stage": {
+                    "description": "Explicit source context, or 'unspecified in source'",
+                    "pattern": "\\S",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "source_label",
+                "reported_action",
+                "stage",
+                "source_modification_index",
+                "source_text",
+                "reason",
+                "held_fields"
+            ],
+            "title": "UnresolvedVariantIngredientMention",
+            "type": "object"
         },
         "UpdateActionEnum": {
             "description": "Type of update action applied to an imported record",
@@ -3925,6 +4401,348 @@
             ],
             "title": "UpdateEvent",
             "type": "object"
+        },
+        "VariantIngredientAmount": {
+            "additionalProperties": false,
+            "description": "A source-reported quantity without an invented concentration basis",
+            "else": {
+                "properties": {
+                    "basis": {
+                        "const": "PER_BATCH"
+                    }
+                },
+                "required": [
+                    "basis"
+                ]
+            },
+            "if": {
+                "properties": {
+                    "unit": {
+                        "const": "PERCENT"
+                    }
+                },
+                "required": [
+                    "unit"
+                ]
+            },
+            "properties": {
+                "basis": {
+                    "$ref": "#/$defs/VariantIngredientAmountBasisEnum"
+                },
+                "basis_statement": {
+                    "description": "Exact batch or percentage context and limitations established from the change evidence. Unknown final volume or percentage convention remains explicitly unknown.",
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "unit": {
+                    "$ref": "#/$defs/VariantIngredientAmountUnitEnum"
+                },
+                "value": {
+                    "description": "Literal source value or range, without conversion",
+                    "pattern": "\\S",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unit",
+                "basis",
+                "basis_statement"
+            ],
+            "then": {
+                "properties": {
+                    "basis": {
+                        "const": "UNSPECIFIED_PERCENT"
+                    }
+                },
+                "required": [
+                    "basis"
+                ]
+            },
+            "title": "VariantIngredientAmount",
+            "type": "object"
+        },
+        "VariantIngredientAmountBasisEnum": {
+            "description": "",
+            "enum": [
+                "PER_BATCH",
+                "UNSPECIFIED_PERCENT"
+            ],
+            "title": "VariantIngredientAmountBasisEnum",
+            "type": "string"
+        },
+        "VariantIngredientAmountUnitEnum": {
+            "description": "",
+            "enum": [
+                "G",
+                "MG",
+                "MICROG",
+                "ML",
+                "L",
+                "PERCENT"
+            ],
+            "title": "VariantIngredientAmountUnitEnum",
+            "type": "string"
+        },
+        "VariantIngredientChange": {
+            "additionalProperties": false,
+            "allOf": [
+                {
+                    "else": {
+                        "not": {
+                            "required": [
+                                "replaced_ingredient"
+                            ]
+                        },
+                        "properties": {
+                            "replaced_ingredient": {}
+                        }
+                    },
+                    "if": {
+                        "properties": {
+                            "action": {
+                                "const": "REPLACE"
+                            }
+                        },
+                        "required": [
+                            "action"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "replaced_ingredient": {}
+                        },
+                        "required": [
+                            "replaced_ingredient"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "action": {
+                                "const": "SET_CONCENTRATION"
+                            }
+                        },
+                        "required": [
+                            "action"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "ingredient": {
+                                "allOf": [
+                                    {
+                                        "properties": {
+                                            "concentration": {}
+                                        },
+                                        "required": [
+                                            "concentration"
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "ingredient"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "action": {
+                                "const": "SET_AMOUNT"
+                            }
+                        },
+                        "required": [
+                            "action"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "amount": {}
+                        },
+                        "required": [
+                            "amount"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "amount": {}
+                        },
+                        "required": [
+                            "amount"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "action": {
+                                "anyOf": [
+                                    {
+                                        "const": "ADD"
+                                    },
+                                    {
+                                        "const": "REPLACE"
+                                    },
+                                    {
+                                        "const": "SET_AMOUNT"
+                                    }
+                                ]
+                            },
+                            "ingredient": {
+                                "allOf": [
+                                    {
+                                        "not": {
+                                            "required": [
+                                                "concentration"
+                                            ]
+                                        },
+                                        "properties": {
+                                            "concentration": {}
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "action",
+                            "ingredient"
+                        ]
+                    }
+                }
+            ],
+            "description": "A curated ingredient change bound to one exact variant modification. Ingredient identity may remain unresolved. ADD, SET_CONCENTRATION and the new ingredient of REPLACE are scoped change events, not a fully expanded variant recipe. REMOVE and replaced_ingredient do not assert presence. Semantic validation additionally binds source_text to modifications at source_modification_index and checks relationship and evidence context.",
+            "properties": {
+                "action": {
+                    "$ref": "#/$defs/VariantIngredientChangeActionEnum",
+                    "description": "Operation on the ingredient in the stated variant stage"
+                },
+                "amount": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/VariantIngredientAmount"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Literal batch amount or percentage with unspecified basis. This is not a concentration and must not be divided by an assumed volume. Allowed for ADD, REPLACE and SET_AMOUNT; never alongside an asserted ingredient concentration."
+                },
+                "evidence": {
+                    "contains": {
+                        "allOf": [
+                            {
+                                "properties": {
+                                    "supports": {
+                                        "const": "SUPPORT"
+                                    }
+                                },
+                                "required": [
+                                    "supports"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": "Claim-scoped source evidence for this operation, ingredient and stage. At least one item must SUPPORT the claim. Each item needs its source reference, verbatim snippet and explanatory context; structural validation cannot establish the scientific truth of the evidence.",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "ingredient": {
+                    "$ref": "#/$defs/IngredientDescriptor",
+                    "allOf": [
+                        {
+                            "properties": {
+                                "preferred_term": {
+                                    "pattern": "\\S"
+                                }
+                            }
+                        }
+                    ],
+                    "description": "Ingredient added, removed, or assigned a concentration; for REPLACE, this is the new ingredient. REMOVE identifies only the omitted target."
+                },
+                "notes": {
+                    "description": "Qualifications, unresolved identity or source-basis limitations",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "replaced_ingredient": {
+                    "allOf": [
+                        {
+                            "properties": {
+                                "preferred_term": {
+                                    "pattern": "\\S"
+                                }
+                            }
+                        }
+                    ],
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/IngredientDescriptor"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Old ingredient replaced by ingredient. Required only for REPLACE and forbidden for other actions; this descriptor does not assert presence."
+                },
+                "source_modification_index": {
+                    "description": "Zero-based index into this MediaVariant's modifications list within the source snapshot. Must identify the exact source_text string.",
+                    "minimum": 0,
+                    "type": "integer"
+                },
+                "source_text": {
+                    "description": "Exact, unaltered modifications[source_modification_index] string. This binding is checked by semantic validation; it is not a substitute for external scientific evidence or a stable cross-revision ID.",
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "stage": {
+                    "description": "Explicit preparation or experimental context, such as pre-experiment stock culture or one assay treatment. Do not infer parent-medium equivalence or combine separate stages or alternative doses.",
+                    "pattern": "\\S",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "action",
+                "ingredient",
+                "stage",
+                "source_modification_index",
+                "source_text",
+                "evidence"
+            ],
+            "title": "VariantIngredientChange",
+            "type": "object"
+        },
+        "VariantIngredientChangeActionEnum": {
+            "description": "Operation on an ingredient within a named variant stage",
+            "enum": [
+                "ADD",
+                "REMOVE",
+                "REPLACE",
+                "SET_CONCENTRATION",
+                "SET_AMOUNT"
+            ],
+            "title": "VariantIngredientChangeActionEnum",
+            "type": "string"
+        },
+        "VariantIngredientHoldFieldEnum": {
+            "description": "",
+            "enum": [
+                "SOURCE_CLAIM",
+                "IDENTITY_FORM",
+                "QUANTITY",
+                "OPERATION",
+                "STAGE"
+            ],
+            "title": "VariantIngredientHoldFieldEnum",
+            "type": "string"
         },
         "VariantTypeEnum": {
             "description": "Type of chemical variant relationship to parent",

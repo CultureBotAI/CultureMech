@@ -272,6 +272,30 @@ variants:
     supports: SUPPORT
     explanation: NCBI BioProject PRJNA16377 links Halothermothrix orenii H168 to complete
       genome assembly GCA_000020485.1 and BioSample SAMN00623047.
+  ingredient_changes:
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: sodium chloride
+      concentration:
+        value: '100'
+        unit: G_PER_L
+      notes: The primary abstract states this medium concentration; it does not establish
+        complete identity with the imported parent or certify growth at every salt
+        level.
+    stage: reported isolation medium
+    source_modification_index: 1
+    source_text: Use high-salt growth conditions centered on 100 g/L NaCl, matching
+      the parent medium's approximately 101 g/L NaCl formulation.
+    evidence:
+    - reference: PMID:7520742
+      supports: SUPPORT
+      snippet: 100 g of NaCl per liter
+      explanation: Primary article abstract indexed by Europe PMC; full methods not
+        reviewed. Supports only the named descriptor/event at the stated stage. The
+        primary abstract states this medium concentration; it does not establish complete
+        identity with the imported parent or certify growth at every salt level. Source
+        inspected 2026-11-16; SHA256 af16343d832a80e5445262ea29f8763dba74effdea479ef8bdc173e715cba1a5.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 curation_history:
 - timestamp: 2026-01-27T01:15:03.fZ
   curator: komodo-web-import
@@ -325,6 +349,29 @@ curation_history:
     (replace_term). Reviewed identities: https://github.com/CultureBotAI/MediaIngredientMech/tree/24562493919391df4468a4285b7c997960cc8868.
     Publication resolver: MIM label index 9f09e4fb97fb0e6cbbd6f25baca40b36512adb88.
     MediaDive source IDs and concentrations preserved.'
+- timestamp: '2026-11-16T21:32:59.683780+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "SET_CONCENTRATION", "evidence":
+    [{"explanation": "Primary article abstract indexed by Europe PMC; full methods
+    not reviewed. Supports only the named descriptor/event at the stated stage. The
+    primary abstract states this medium concentration; it does not establish complete
+    identity with the imported parent or certify growth at every salt level. Source
+    inspected 2026-11-16; SHA256 af16343d832a80e5445262ea29f8763dba74effdea479ef8bdc173e715cba1a5.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "PMID:7520742", "snippet": "100 g of NaCl per liter", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "G_PER_L", "value": "100"},
+    "notes": "The primary abstract states this medium concentration; it does not establish
+    complete identity with the imported parent or certify growth at every salt level.",
+    "preferred_term": "sodium chloride"}, "source_modification_index": 1, "source_text":
+    "Use high-salt growth conditions centered on 100 g/L NaCl, matching the parent
+    medium''s approximately 101 g/L NaCl formulation.", "stage": "reported isolation
+    medium"}], "variant_index": 0, "variant_name": "strict_anaerobic_halothermothrix_orenii_h168_growth"}]}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Halothermothrix orenii

@@ -135,6 +135,14 @@ curation_history:
   notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T23:14:34.949513+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:7961411
 media_term:
   preferred_term: MediaDB Medium 162
   term:
@@ -146,3 +154,38 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:7961411
+  title: Effect of cell growth rate on expression of the anaerobic respiratory pathway
+    operons frdABCD, dmsABC, and narGHJI of Escherichia coli.
+  authors: Tseng CP; Hansen AK; Cotter P; Gunsalus RP
+  year: 1994
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:162;
+    discovery_sourceID=56; source_url=https://doi.org/10.1128/jb.176.21.6599-6605.1994;
+    alternate_identifier=doi:10.1128/jb.176.21.6599-6605.1994; alternate_identifier=PMC197015;
+    Historical MediaDB metadata retained for comparison: title="Effect of cell growth
+    rate on expression of the anaerobic respiratory pathway operons frdabcd, dmsabc,
+    ad narghji of escherichia coli"; first_author="Tseng"; year=1994. Verified PMID/DOI
+    identity is distinct from unresolved historical metadata differences. raw=references_cache/papers/PMID_7961411.xml;
+    markdown=references_cache/papers/PMID_7961411.md; PubMed abstract, experimental
+    design; exact excerpt="was examined during continuous culture". Reported organism=Escherichia
+    coli (E. coli); canonical scientific name=Escherichia coli; NCBITaxon:562; actual
+    rank=species; taxonomy_match=exact_species_not_strain; role=experimental species;
+    exact local formulation unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=Escherichia coli MC4100; canonical scientific name=Escherichia
+    coli str. K-12 substr. MC4100; NCBITaxon:1403831; actual rank=no rank; taxonomy_match=canonical_name_match_secondary_strain_lead;
+    role=MediaDB strain lead, not named in abstract. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1403831&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Continuous-culture growth-rate changes, aerobic/anaerobic transitions and nitrate
+    additions are separate experimental contexts. Respiratory substrates named in
+    operon descriptions are not necessarily ingredients added simultaneously. The
+    ten-entry native Vogel-Bonner formulation and all additive doses require methods-level
+    verification. Local comparison: Ten native entries include glucose, amino acids,
+    thiamine hydrochloride and sodium ammonium phosphate; no salt form or concentration
+    is changed. Inventory covers inspected medium-relevant passages, not the whole
+    paper or bibliography. Correction/retraction coverage is limited to inspected
+    metadata; bounded taxonomy misses do not prove absence. Original ingredients,
+    amounts, preparation, history and links are preserved, not newly certified. No
+    new native growth assertion, resolved variant or concentration evidence.'

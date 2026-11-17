@@ -236,6 +236,18 @@ variants:
     explanation: The source directly measured growth kinetics for seven named Mycoplasma
       hyopneumoniae isolates in modified Friis medium, supporting this condition as
       a variant of the Friis parent medium.
+  ingredient_mentions:
+  - source_label: Friis medium
+    reported_action: UNSPECIFIED
+    stage: unspecified in source
+    source_modification_index: 0
+    source_text: Use modified Friis medium as described by Friis 1975.
+    reason: Named modified whole-medium reference, without an enumerated ingredient
+      or formulation. Retain the literal medium identity as context; do not decompose
+      or assert parent equivalence.
+    held_fields:
+    - IDENTITY_FORM
+    - OPERATION
 curation_history:
 - timestamp: 2026-01-27T01:15:01.fZ
   curator: komodo-web-import
@@ -277,6 +289,22 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-11-17T00:07:02.683126+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "2c2073df6de9bee9f2990d0eac08e29de7aa25f4496b8649dd127b5921277bca",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/KOMODO_1078_FRIIS_medium.yaml",
+    "recipe_id": "CultureMech:003730", "variants": [{"append_mentions": [{"held_fields":
+    ["IDENTITY_FORM", "OPERATION"], "reason": "Named modified whole-medium reference,
+    without an enumerated ingredient or formulation. Retain the literal medium identity
+    as context; do not decompose or assert parent equivalence.", "reported_action":
+    "UNSPECIFIED", "source_label": "Friis medium", "source_modification_index": 0,
+    "source_text": "Use modified Friis medium as described by Friis 1975.", "stage":
+    "unspecified in source"}], "variant_index": 0, "variant_name": "friis_medium_mycoplasma_hyopneumoniae_isolate_growth"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Mycoplasma hyopneumoniae

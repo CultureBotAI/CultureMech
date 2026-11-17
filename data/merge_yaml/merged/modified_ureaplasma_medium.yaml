@@ -1,0 +1,170 @@
+id: CultureMech:015917
+name: modified_ureaplasma_medium
+original_name: MODIFIED UREAPLASMA MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: JCM Medium J1476
+  term:
+    id: jcm.grmd:1476
+    label: MODIFIED UREAPLASMA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1476
+  | Supplemented after autoclaving with 200 ml fetal bovine serum, 100 ml 25% (w/v)
+  fresh yeast extract solution, 5 ml 10% (w/v) urea solution, and 10 ml 0.2% (w/v)
+  phenol red solution per liter.'
+ingredients:
+- preferred_term: PPLO broth without crystal violet (BD-Difco)
+  concentration:
+    value: '21.0'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  term:
+    id: CHEBI:15377
+    label: water
+  concentration:
+    value: '700.0'
+    unit: ML_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '200.0'
+    unit: ML_PER_L
+  notes: Heat-inactivated at 56 C for 30 min; added aseptically after autoclaving.
+solutions:
+- preferred_term: 25% (w/v) Fresh yeast extract solution
+  concentration:
+    value: '100.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Yeast extract
+    term:
+      id: FOODON:03315426
+      label: yeast extract
+    concentration:
+      value: '250.0'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000616
+      label: Yeast extract
+  - preferred_term: Distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000710
+      label: Distilled water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  notes: Filter-sterilized 25% (w/v) fresh yeast extract stock; 100 ml added per liter
+    after autoclaving.
+- preferred_term: 10% (w/v) Urea solution
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Urea
+    term:
+      id: CHEBI:16199
+      label: urea
+    concentration:
+      value: '100.0'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000301
+      label: Urea
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16199
+      label: urea
+  - preferred_term: Distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000710
+      label: Distilled water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  notes: Filter-sterilized 10% (w/v) urea stock; 5 ml added per liter after autoclaving.
+- preferred_term: 0.2% (w/v) Phenol red solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Phenol red
+    term:
+      id: CHEBI:31991
+      label: phenol red
+    concentration:
+      value: '2.0'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:001075
+      label: Phenol red
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31991
+      label: phenol red
+  - preferred_term: Distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000710
+      label: Distilled water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  notes: Filter-sterilized 0.2% (w/v) phenol red stock; 10 ml added per liter after
+    autoclaving.
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve 21.0 g PPLO broth without crystal violet (BD-Difco) in 700
+    ml distilled water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min and cool to 50 C.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Aseptically add 200 ml fetal bovine serum (inactivated at 56 C for
+    30 min), 100 ml filter-sterilized 25% (w/v) fresh yeast extract solution, 5 ml
+    filter-sterilized 10% (w/v) urea solution, and 10 ml filter-sterilized 0.2% (w/v)
+    phenol red solution.
+- step_number: 4
+  action: ADJUST_PH
+  description: Mix thoroughly and adjust pH to 6.0 with sterile 1 N HCl.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-22T02:55:00Z'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1476. Structured basal broth and post-autoclave
+    filter-sterilized stock solutions with CHEBI/MediaIngredientMech grounding.
+- timestamp: '2026-10-22T02:55:00Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015917'
+categories:
+- bacterial
+merged_from:
+- modified_ureaplasma_medium
+merge_fingerprint: 3246452387fc6a92ee0762ea18c73b3ea03ba8974c8d73423a34ebcb8bd0ed5e

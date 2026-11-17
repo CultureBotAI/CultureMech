@@ -192,6 +192,14 @@ curation_history:
   notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T23:14:34.949513+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:16346276
 media_term:
   preferred_term: MediaDB Medium 88
   term:
@@ -204,3 +212,46 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: PMID:16346276
+  title: Sporulation of Clostridium acetobutylicum P262 in a Defined Medium.
+  authors: Long S; Jones DT; Woods DR
+  year: 1983
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:88;
+    discovery_sourceID=21; source_url=https://doi.org/10.1128/aem.45.4.1389-1393.1983;
+    alternate_identifier=doi:10.1128/aem.45.4.1389-1393.1983; alternate_identifier=PMC242467;
+    raw=references_cache/papers/PMID_16346276.xml; markdown=references_cache/papers/PMID_16346276.md;
+    PubMed abstract, first sentence; exact excerpt="defined minimal sporulation medium
+    for Clostridium acetobutylicum P262". Reported organism=Clostridium acetobutylicum
+    P262; canonical scientific name=Clostridium saccharobutylicum DSM 13864; NCBITaxon:1345695;
+    actual rank=strain; taxonomy_match=historical_name_type_strain_mapping; role=study
+    strain; modern identity is Clostridium saccharobutylicum DSM 13864. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1345695&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/growth-regulation-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/growth-regulation-20261013.md.
+    Reported organism=Clostridium saccharobutylicum; canonical scientific name=Clostridium
+    saccharobutylicum; NCBITaxon:169679; actual rank=species; taxonomy_match=verified_species_of_historical_strain;
+    role=modern species assignment, not a new growth claim. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=169679&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    Reported organism=other Clostridium strains; canonical scientific name=Clostridium;
+    NCBITaxon:1485; actual rank=genus; taxonomy_match=parent_rank_only; role=unnamed
+    comparison strains with different growth/sporulation outcomes; exact species unresolved.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1485&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/osmotic-next-20261013.xml; taxonomy_markdown=references_cache/papers/taxonomy/osmotic-next-20261013.md.
+    LPSN''s type-strain entry lists P262, NCP 262, DSM 13864 and ATCC BAA-117; NCBI
+    lists NCP262 as a DSM 13864 synonym. Identity authority: https://lpsn.dsmz.de/species/clostridium-saccharobutylicum;
+    archived in references_cache/papers/primary_html/osmotic-next-p262-lpsn-20261013.html
+    and .md; accessed_on=2026-10-13. The fresh NCBI EFetch rank is strain; an earlier
+    cached browser-search representation said no rank, so the dated raw authority
+    is retained. Do not inherit a newer paper''s recipe through this name mapping.
+    The abstract does not specify the complete local CAMM formula or establish species-wide
+    sporulation. Local comparison: Seventeen native entries include 333.037 mM glucose,
+    calcium carbonate and generically named ammonium phosphate; salt/hydrate identities
+    and preparation remain unverified. Inventory covers inspected medium-relevant
+    passages, not the whole paper or bibliography. Correction/retraction coverage
+    is limited to inspected metadata; bounded taxonomy misses do not prove absence.
+    Original ingredients, amounts, preparation, history and links are preserved, not
+    newly certified. No new native growth assertion, resolved variant or concentration
+    evidence.'

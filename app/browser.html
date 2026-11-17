@@ -339,6 +339,28 @@
             *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
                 transition-duration:.01ms!important;scroll-behavior:auto!important;}
         }
+
+        .results-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+        .dl-btn { display: inline-block; padding: 0.35rem 0.75rem; font-size: 0.82rem; font-weight: 600; color: #2e3a2c; background: #f2f6ef; border: 1px solid #d3ddcd; border-radius: 4px; text-decoration: none; cursor: pointer; }
+        .dl-btn:hover { background: #d3ddcd; text-decoration: none; }
+        :root[data-theme="dark"] .dl-btn { background: #24331d; border-color: #2e3a2c; color: #eaf0e6; }
+        :root[data-theme="dark"] .dl-btn:hover { background: #2e3a2c; }
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .dl-btn { background: #24331d; border-color: #2e3a2c; color: #eaf0e6; }
+            :root:not([data-theme="light"]) .dl-btn:hover { background: #2e3a2c; }
+        }
+        .cross-mech-links { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem; font-size: 0.8rem; }
+        .cross-mech-chip { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 999px; background: #edf5ea; border: 1px solid #c5d6bd; color: #2d6239; text-decoration: none; font-weight: 500; }
+        .cross-mech-chip:hover { text-decoration: underline; }
+        :root[data-theme="dark"] .cross-mech-chip { background: #24331d; border-color: #2e3a2c; color: #8ad69b; }
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .cross-mech-chip { background: #24331d; border-color: #2e3a2c; color: #8ad69b; }
+        }
+        .site-footer { border-top: 1px solid #d3ddcd; padding: 1.5rem 2rem; text-align: center; font-size: 0.85rem; color: #5b6858; margin-top: 2rem; }
+        .site-footer a { color: #4B9E5F; text-decoration: none; }
+        .site-footer a:hover { text-decoration: underline; }
+        :root[data-theme="dark"] .site-footer { border-top-color: #2e3a2c; color: #9db09a; }
+        :root[data-theme="dark"] .site-footer a { color: #6cc47f; }
     </style>
 </head>
 <body>
@@ -347,9 +369,13 @@
         <p>Microbial Growth Media Knowledge Base</p>
         <nav class="header-nav">
             <a href="index.html">Home</a>
-            <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
+            <a href="browser.html">Browse Recipes</a>
+            <a href="text_map.html">Text Map</a>
             <a href="umap.html">Media PaCMAP</a>
+            <a href="umap_graph.html">Media Graph</a>
             <a href="ingredient_umap.html">Ingredient PaCMAP</a>
+            <a href="schema.html">Schema</a>
+            <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
         </nav>
     </div>
 
@@ -376,6 +402,12 @@
             <main class="results">
                 <div class="results-header">
                     <div class="results-count" id="resultsCount" role="status" aria-live="polite" aria-atomic="true">Loading...</div>
+                    <div class="results-actions">
+                        <a class="dl-btn" href="recipes.json" download="culturemech_recipes.json">Download JSON</a>
+                        <a class="dl-btn" href="recipes.tsv" download="culturemech_recipes.tsv">Download TSV</a>
+                        <button type="button" class="dl-btn" id="exportFilteredJsonBtn">Export Filtered JSON</button>
+                        <button type="button" class="dl-btn" id="exportFilteredTsvBtn">Export Filtered TSV</button>
+                    </div>
                 </div>
                 <div id="resultsContainer">
                     <div class="loading">Loading recipes...</div>
@@ -383,6 +415,10 @@
             </main>
         </div>
     </div>
+
+    <footer class="site-footer">
+        <p><strong>CultureMech</strong> &middot; <a href="schema.html">LinkML Schema</a> &middot; <a href="recipes.json" download="culturemech_recipes.json">JSON</a> &middot; <a href="recipes.tsv" download="culturemech_recipes.tsv">TSV</a> &middot; <a href="https://github.com/CultureBotAI/CultureMech">GitHub (CultureBotAI/CultureMech)</a> &middot; <a href="https://culturebotai.github.io/mechs/">CultureBotAI Mech Suite</a> &middot; BSD-3-Clause</p>
+    </footer>
 
     <script src="schema.js"></script>
     <script src="data.js"></script>
@@ -444,6 +480,18 @@
                 document.querySelectorAll('#facetsList input').forEach(control => {
                     control.checked = Array.isArray(saved.filters?.[control.dataset.facet]) && saved.filters[control.dataset.facet].includes(control.dataset.value);
                 });
+            } else if (window.location && window.location.search && typeof URLSearchParams !== 'undefined') {
+                const params = new URLSearchParams(window.location.search);
+                const urlQ = params.get('q');
+                if (urlQ) {
+                    document.getElementById('searchInput').value = urlQ;
+                }
+                document.querySelectorAll('#facetsList input').forEach(control => {
+                    const facetVals = params.getAll(control.dataset.facet);
+                    if (facetVals.length > 0) {
+                        control.checked = facetVals.includes(control.dataset.value);
+                    }
+                });
             }
             searchQuery = normalizeQuery(document.getElementById('searchInput').value);
             selectedFilters = {};
@@ -453,6 +501,25 @@
             applyFilters();
         }
         window.addEventListener('pageshow', restoreBrowserState);
+
+        function syncUrlState() {
+            try {
+                if (!window.location || !window.location.href || typeof URL === 'undefined') return;
+                const url = new URL(window.location.href);
+                const rawQ = document.getElementById('searchInput').value.trim();
+                if (rawQ) url.searchParams.set('q', rawQ);
+                else url.searchParams.delete('q');
+                if (window.searchSchema && Array.isArray(window.searchSchema.facets)) {
+                    window.searchSchema.facets.forEach(f => url.searchParams.delete(f.field));
+                }
+                for (const [facet, values] of Object.entries(selectedFilters)) {
+                    if (Array.isArray(values)) {
+                        values.forEach(v => url.searchParams.append(facet, v));
+                    }
+                }
+                history.replaceState(history.state, '', url.toString());
+            } catch (_err) {}
+        }
 
         // Search functionality
         document.getElementById('searchInput').addEventListener('input', (e) => {
@@ -548,6 +615,7 @@
         function applyFilters() {
             if (!dataReady) return;
             try { history.replaceState({...history.state, culturemechFilters: {query: document.getElementById('searchInput').value, filters: selectedFilters}}, ''); } catch (_error) { /* Results still work when history storage is restricted. */ }
+            syncUrlState();
             filteredRecipes = allRecipes.filter(recipe => {
                 // Text search
                 if (searchQuery) {
@@ -652,6 +720,13 @@
             if (recipe.media_database_id) {
                 meta.appendChild(createMetaItem('Database', recipe.media_database_id, true));
             }
+            const mapItem = document.createElement('div');
+            mapItem.className = 'result-meta-item';
+            const mapLink = document.createElement('a');
+            mapLink.href = `text_map.html?q=${encodeURIComponent(recipe.name || '')}`;
+            mapLink.textContent = 'View in Text Map →';
+            mapItem.appendChild(mapLink);
+            meta.appendChild(mapItem);
 
             div.appendChild(meta);
 
@@ -676,6 +751,35 @@
                 desc.className = 'result-description';
                 desc.textContent = truncate(recipe.description, 200);
                 div.appendChild(desc);
+            }
+
+            // Cross-Mech links
+            const xLinks = document.createElement('div');
+            xLinks.className = 'cross-mech-links';
+            if (Array.isArray(recipe.ingredient_names) && recipe.ingredient_names.length > 0) {
+                const firstIng = recipe.ingredient_names[0];
+                const ingLink = document.createElement('a');
+                ingLink.className = 'cross-mech-chip';
+                ingLink.href = `https://culturebotai.github.io/MediaIngredientMech/browse.html?q=${encodeURIComponent(firstIng)}`;
+                ingLink.textContent = `MediaIngredientMech: ${firstIng} ↗`;
+                xLinks.appendChild(ingLink);
+            }
+            if (Array.isArray(recipe.target_organism_names) && recipe.target_organism_names.length > 0) {
+                const firstOrg = recipe.target_organism_names[0];
+                const taxLink = document.createElement('a');
+                taxLink.className = 'cross-mech-chip';
+                taxLink.href = `https://culturebotai.github.io/TaxonMech/browse.html?q=${encodeURIComponent(firstOrg)}`;
+                taxLink.textContent = `TaxonMech: ${firstOrg} ↗`;
+                xLinks.appendChild(taxLink);
+
+                const commLink = document.createElement('a');
+                commLink.className = 'cross-mech-chip';
+                commLink.href = `https://culturebotai.github.io/CommunityMech/browse.html?q=${encodeURIComponent(firstOrg)}`;
+                commLink.textContent = `CommunityMech ↗`;
+                xLinks.appendChild(commLink);
+            }
+            if (xLinks.children.length > 0) {
+                div.appendChild(xLinks);
             }
 
             return div;
@@ -731,6 +835,40 @@
         function truncate(text, length) {
             if (text.length <= length) return text;
             return text.substring(0, length) + '...';
+        }
+
+        function triggerDownload(filename, content, mimeType) {
+            const blob = new Blob([content], { type: mimeType });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        const exportJsonBtn = document.getElementById('exportFilteredJsonBtn');
+        if (exportJsonBtn) {
+            exportJsonBtn.addEventListener('click', () => {
+                triggerDownload('culturemech_filtered.json', JSON.stringify(filteredRecipes, null, 2), 'application/json');
+            });
+        }
+        const exportTsvBtn = document.getElementById('exportFilteredTsvBtn');
+        if (exportTsvBtn) {
+            exportTsvBtn.addEventListener('click', () => {
+                const cols = ['id', 'name', 'category', 'medium_type', 'physical_state', 'media_database', 'media_database_id', 'num_ingredients', 'target_organism_names', 'ingredient_names', 'html_page'];
+                const lines = [cols.join('\t')];
+                filteredRecipes.forEach(r => {
+                    lines.push(cols.map(c => {
+                        const v = r[c];
+                        const s = Array.isArray(v) ? v.join('; ') : (v == null ? '' : String(v));
+                        return s.replace(/[\t\r\n]+/g, ' ');
+                    }).join('\t'));
+                });
+                triggerDownload('culturemech_filtered.tsv', lines.join('\n'), 'text/tab-separated-values');
+            });
         }
     </script>
     <script src="theme-toggle.js"></script>

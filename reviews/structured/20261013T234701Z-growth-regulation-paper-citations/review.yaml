@@ -1,0 +1,3089 @@
+schema_version: 1.0.0
+review_id: 20261013T234701Z-growth-regulation-paper-citations
+kind: batch
+repository: culturebotai/CultureMech
+title: Growth-regulation citations with formulation and import limitations
+started_at: '2026-10-13T23:10:05Z'
+finished_at: '2026-10-13T23:47:01Z'
+reviewer:
+  identity: codex
+  kind: agent
+  independence: self_review
+  independence_basis: Curator-performed assessment, not independent adversarial review.
+skill: culturemech-add-paper-citation
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Fourteen bibliography additions to fourteen owners from twelve archived abstracts
+  and one inspected original page scan; 151 ingredients preserved. No new native growth,
+  concentration or resolved variant claims. Targeted checks passed; merge failures
+  retained.
+source:
+  git_revision: 41d4d390123c0d8320cd53e994470c88a1b86d8c
+  state: working_tree
+  inputs:
+  - path: data/normalized_yaml/bacterial/basal_solution_p.yaml
+    sha256: 07dbc01096515df70580d3a8b09aabdea381fcb2fb73400cd9e4999decabf63d
+    role: target
+  - path: data/normalized_yaml/bacterial/camm.yaml
+    sha256: 687964fcd24ef071c6c59045ae15826479531e7cd85798cab7857926cb76ccb3
+    role: target
+  - path: data/normalized_yaml/bacterial/m9_farewell.yaml
+    sha256: be243c68f1fc5b7b5e2f0b4d8e9a42e25d41750c544811f4ac6d73d4d133ad78
+    role: target
+  - path: data/normalized_yaml/bacterial/m9_lange.yaml
+    sha256: 01d3b95a80f3b4cc9fb372bf2648a2c5cab6e36cc76246a33e6c1ed87ae632ff
+    role: target
+  - path: data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+    sha256: cff2c259bd63bc892757a584e03e60335eea2332b4a98f20047d1426d47d01c9
+    role: target
+  - path: data/normalized_yaml/bacterial/m9_seo.yaml
+    sha256: 697f1acfb5edb68843631ae789f3eb197c1b5bbf333064810d4d6b708659655f
+    role: target
+  - path: data/normalized_yaml/bacterial/mj_media.yaml
+    sha256: d28c8f6d4d971ec70904e8c9d36b05983fa99e4cb2b644e502e5f0d646782109
+    role: target
+  - path: data/normalized_yaml/bacterial/mops_medium.yaml
+    sha256: 4d1bb8c5813cc838d3b43dd447712932193d4011618f382c4cb103e0f61b5083
+    role: target
+  - path: data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+    sha256: 915ddd7598d989e7e17c9bb3c7480747a1d66973c154e834f25ae0803d456096
+    role: target
+  - path: data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+    sha256: 07b2cc7a322dd5e99d27b8631699ffc7ef721a70a6822a72616d991f8df989c2
+    role: target
+  - path: data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+    sha256: e3a88358ffd81dcd1d28826d6d9b2e35855bae5b81d014c67fd17ab9282586dd
+    role: target
+  - path: data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+    sha256: 3bc80d780b7b0a0e10f61ad64f19f3ec132159feaaf8aaa09793aaad625c8627
+    role: target
+  - path: data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+    sha256: 485ca90dd0ae9e0a015ea276d47b9690a0010efe7d458ed05e2873ab07cbf484
+    role: target
+  - path: data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+    sha256: e804fa57720239b59ecc03599e74db8433e9738740a0a2d6c332f2a82f852655
+    role: target
+  - path: src/culturemech/export/kgx_export.py
+    sha256: eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: Fourteen normalized MediaDB study owners.
+  selection: Verified primary publication identities and maintained SQL source joins.
+  coverage: full
+  population_size: 14
+  reviewed_target_ids:
+  - CultureMech:007436
+  - CultureMech:007438
+  - CultureMech:007439
+  - CultureMech:007435
+  - CultureMech:007430
+  - CultureMech:006991
+  - CultureMech:006993
+  - CultureMech:007026
+  - CultureMech:007044
+  - CultureMech:007052
+  - CultureMech:007053
+  - CultureMech:007055
+  - CultureMech:007057
+  - CultureMech:007178
+  exclusions:
+  - target: Complete recipe approval and generated publication
+    reason: Formulation and import discrepancies remain unresolved.
+targets:
+- target_id: CultureMech:007436
+  path: data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+  label: p2_no_butanol_challenge
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007438
+  path: data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+  label: p2_1_butanol_challenge
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007439
+  path: data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+  label: p2_1_5_butanol_challenge
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007435
+  path: data/normalized_yaml/bacterial/camm.yaml
+  label: camm
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/camm.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007430
+  path: data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+  label: pjc_with_4_hpa
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006991
+  path: data/normalized_yaml/bacterial/m9_seo.yaml
+  label: m9_seo
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_seo.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006993
+  path: data/normalized_yaml/bacterial/mops_medium.yaml
+  label: mops_medium
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mops_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007026
+  path: data/normalized_yaml/bacterial/basal_solution_p.yaml
+  label: basal_solution_p
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/basal_solution_p.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007044
+  path: data/normalized_yaml/bacterial/mj_media.yaml
+  label: mj_media
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mj_media.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007052
+  path: data/normalized_yaml/bacterial/m9_farewell.yaml
+  label: m9_farewell
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_farewell.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007053
+  path: data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+  label: vogel_bonner_medium
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007055
+  path: data/normalized_yaml/bacterial/m9_lange.yaml
+  label: m9_lange
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_lange.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007057
+  path: data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+  label: mops_medium_vanbogelen
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007178
+  path: data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+  label: m9_moreno_bruna_et_al
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: baseline-00
+  name: just validate data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+  command: just validate data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007436
+  evidence_ids:
+  - baseline-00
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-01
+  name: just validate-strict data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007436
+  evidence_ids:
+  - baseline-01
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-02
+  name: just validate data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+  command: just validate data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007438
+  evidence_ids:
+  - baseline-02
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-03
+  name: just validate-strict data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007438
+  evidence_ids:
+  - baseline-03
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-04
+  name: just validate data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+  command: just validate data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007439
+  evidence_ids:
+  - baseline-04
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-05
+  name: just validate-strict data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007439
+  evidence_ids:
+  - baseline-05
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-06
+  name: just validate data/normalized_yaml/bacterial/camm.yaml
+  command: just validate data/normalized_yaml/bacterial/camm.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - baseline-06
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-07
+  name: just validate-strict data/normalized_yaml/bacterial/camm.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/camm.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - baseline-07
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-08
+  name: just validate data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+  command: just validate data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007430
+  evidence_ids:
+  - baseline-08
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-09
+  name: just validate-strict data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007430
+  evidence_ids:
+  - baseline-09
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-10
+  name: just validate data/normalized_yaml/bacterial/m9_seo.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_seo.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:006991
+  evidence_ids:
+  - baseline-10
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-11
+  name: just validate-strict data/normalized_yaml/bacterial/m9_seo.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_seo.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:006991
+  evidence_ids:
+  - baseline-11
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-12
+  name: just validate data/normalized_yaml/bacterial/mops_medium.yaml
+  command: just validate data/normalized_yaml/bacterial/mops_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:006993
+  evidence_ids:
+  - baseline-12
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-13
+  name: just validate-strict data/normalized_yaml/bacterial/mops_medium.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mops_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:006993
+  evidence_ids:
+  - baseline-13
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-14
+  name: just validate data/normalized_yaml/bacterial/basal_solution_p.yaml
+  command: just validate data/normalized_yaml/bacterial/basal_solution_p.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007026
+  evidence_ids:
+  - baseline-14
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-15
+  name: just validate-strict data/normalized_yaml/bacterial/basal_solution_p.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/basal_solution_p.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007026
+  evidence_ids:
+  - baseline-15
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-16
+  name: just validate data/normalized_yaml/bacterial/mj_media.yaml
+  command: just validate data/normalized_yaml/bacterial/mj_media.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007044
+  evidence_ids:
+  - baseline-16
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-17
+  name: just validate-strict data/normalized_yaml/bacterial/mj_media.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mj_media.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007044
+  evidence_ids:
+  - baseline-17
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-18
+  name: just validate data/normalized_yaml/bacterial/m9_farewell.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_farewell.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007052
+  evidence_ids:
+  - baseline-18
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-19
+  name: just validate-strict data/normalized_yaml/bacterial/m9_farewell.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_farewell.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007052
+  evidence_ids:
+  - baseline-19
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-20
+  name: just validate data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+  command: just validate data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007053
+  evidence_ids:
+  - baseline-20
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-21
+  name: just validate-strict data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007053
+  evidence_ids:
+  - baseline-21
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-22
+  name: just validate data/normalized_yaml/bacterial/m9_lange.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_lange.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007055
+  evidence_ids:
+  - baseline-22
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-23
+  name: just validate-strict data/normalized_yaml/bacterial/m9_lange.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_lange.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007055
+  evidence_ids:
+  - baseline-23
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-24
+  name: just validate data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+  command: just validate data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007057
+  evidence_ids:
+  - baseline-24
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-25
+  name: just validate-strict data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007057
+  evidence_ids:
+  - baseline-25
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-26
+  name: just validate data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007178
+  evidence_ids:
+  - baseline-26
+  summary: Actual result retained; merge failures are not waived.
+- check_id: baseline-27
+  name: just validate-strict data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007178
+  evidence_ids:
+  - baseline-27
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-00
+  name: just validate data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+  command: just validate data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007436
+  evidence_ids:
+  - post-00
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-01
+  name: just validate-strict data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007436
+  evidence_ids:
+  - post-01
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-02
+  name: just validate data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+  command: just validate data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007438
+  evidence_ids:
+  - post-02
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-03
+  name: just validate-strict data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007438
+  evidence_ids:
+  - post-03
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-04
+  name: just validate data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+  command: just validate data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007439
+  evidence_ids:
+  - post-04
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-05
+  name: just validate-strict data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007439
+  evidence_ids:
+  - post-05
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-06
+  name: just validate data/normalized_yaml/bacterial/camm.yaml
+  command: just validate data/normalized_yaml/bacterial/camm.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - post-06
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-07
+  name: just validate-strict data/normalized_yaml/bacterial/camm.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/camm.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - post-07
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-08
+  name: just validate data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+  command: just validate data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007430
+  evidence_ids:
+  - post-08
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-09
+  name: just validate-strict data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007430
+  evidence_ids:
+  - post-09
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-10
+  name: just validate data/normalized_yaml/bacterial/m9_seo.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_seo.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:006991
+  evidence_ids:
+  - post-10
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-11
+  name: just validate-strict data/normalized_yaml/bacterial/m9_seo.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_seo.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:006991
+  evidence_ids:
+  - post-11
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-12
+  name: just validate data/normalized_yaml/bacterial/mops_medium.yaml
+  command: just validate data/normalized_yaml/bacterial/mops_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:006993
+  evidence_ids:
+  - post-12
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-13
+  name: just validate-strict data/normalized_yaml/bacterial/mops_medium.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mops_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:006993
+  evidence_ids:
+  - post-13
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-14
+  name: just validate data/normalized_yaml/bacterial/basal_solution_p.yaml
+  command: just validate data/normalized_yaml/bacterial/basal_solution_p.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007026
+  evidence_ids:
+  - post-14
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-15
+  name: just validate-strict data/normalized_yaml/bacterial/basal_solution_p.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/basal_solution_p.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007026
+  evidence_ids:
+  - post-15
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-16
+  name: just validate data/normalized_yaml/bacterial/mj_media.yaml
+  command: just validate data/normalized_yaml/bacterial/mj_media.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007044
+  evidence_ids:
+  - post-16
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-17
+  name: just validate-strict data/normalized_yaml/bacterial/mj_media.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mj_media.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007044
+  evidence_ids:
+  - post-17
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-18
+  name: just validate data/normalized_yaml/bacterial/m9_farewell.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_farewell.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007052
+  evidence_ids:
+  - post-18
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-19
+  name: just validate-strict data/normalized_yaml/bacterial/m9_farewell.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_farewell.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007052
+  evidence_ids:
+  - post-19
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-20
+  name: just validate data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+  command: just validate data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007053
+  evidence_ids:
+  - post-20
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-21
+  name: just validate-strict data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007053
+  evidence_ids:
+  - post-21
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-22
+  name: just validate data/normalized_yaml/bacterial/m9_lange.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_lange.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007055
+  evidence_ids:
+  - post-22
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-23
+  name: just validate-strict data/normalized_yaml/bacterial/m9_lange.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_lange.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007055
+  evidence_ids:
+  - post-23
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-24
+  name: just validate data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+  command: just validate data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007057
+  evidence_ids:
+  - post-24
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-25
+  name: just validate-strict data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007057
+  evidence_ids:
+  - post-25
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-26
+  name: just validate data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007178
+  evidence_ids:
+  - post-26
+  summary: Actual result retained; merge failures are not waived.
+- check_id: post-27
+  name: just validate-strict data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007178
+  evidence_ids:
+  - post-27
+  summary: Actual result retained; merge failures are not waived.
+- check_id: merge-00
+  name: just verify-merges
+  command: just verify-merges
+  status: failed
+  required: true
+  exit_code: 1
+  target_ids:
+  - CultureMech:007436
+  - CultureMech:007438
+  - CultureMech:007439
+  - CultureMech:007435
+  - CultureMech:007430
+  - CultureMech:006991
+  - CultureMech:006993
+  - CultureMech:007026
+  - CultureMech:007044
+  - CultureMech:007052
+  - CultureMech:007053
+  - CultureMech:007055
+  - CultureMech:007057
+  - CultureMech:007178
+  evidence_ids:
+  - merge-00
+  summary: Actual result retained; merge failures are not waived.
+- check_id: merge-01
+  name: just audit-merge-freshness
+  command: just audit-merge-freshness
+  status: failed
+  required: true
+  exit_code: 1
+  target_ids:
+  - CultureMech:007436
+  - CultureMech:007438
+  - CultureMech:007439
+  - CultureMech:007435
+  - CultureMech:007430
+  - CultureMech:006991
+  - CultureMech:006993
+  - CultureMech:007026
+  - CultureMech:007044
+  - CultureMech:007052
+  - CultureMech:007053
+  - CultureMech:007055
+  - CultureMech:007057
+  - CultureMech:007178
+  evidence_ids:
+  - merge-01
+  summary: Actual result retained; merge failures are not waived.
+- check_id: extra-00
+  name: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007436
+  - CultureMech:007438
+  - CultureMech:007439
+  - CultureMech:007435
+  - CultureMech:007430
+  - CultureMech:006991
+  - CultureMech:006993
+  - CultureMech:007026
+  - CultureMech:007044
+  - CultureMech:007052
+  - CultureMech:007053
+  - CultureMech:007055
+  - CultureMech:007057
+  - CultureMech:007178
+  evidence_ids:
+  - extra-00
+  summary: Actual result retained; merge failures are not waived.
+- check_id: extra-01
+  name: git diff --check
+  command: git diff --check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007436
+  - CultureMech:007438
+  - CultureMech:007439
+  - CultureMech:007435
+  - CultureMech:007430
+  - CultureMech:006991
+  - CultureMech:006993
+  - CultureMech:007026
+  - CultureMech:007044
+  - CultureMech:007052
+  - CultureMech:007053
+  - CultureMech:007055
+  - CultureMech:007057
+  - CultureMech:007178
+  evidence_ids:
+  - extra-01
+  summary: Actual result retained; merge failures are not waived.
+- check_id: extra-02
+  name: /tmp/culturemech-parallel-env-20261012/bin/python /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/paper_citation_curation/20261013-growth-regulation-citations/curate.py
+    --apply
+  command: /tmp/culturemech-parallel-env-20261012/bin/python /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CultureMech/reports/paper_citation_curation/20261013-growth-regulation-citations/curate.py
+    --apply
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CultureMech:007436
+  - CultureMech:007438
+  - CultureMech:007439
+  - CultureMech:007435
+  - CultureMech:007430
+  - CultureMech:006991
+  - CultureMech:006993
+  - CultureMech:007026
+  - CultureMech:007044
+  - CultureMech:007052
+  - CultureMech:007053
+  - CultureMech:007055
+  - CultureMech:007057
+  - CultureMech:007178
+  evidence_ids:
+  - extra-02
+  summary: Actual result retained; merge failures are not waived.
+evidence:
+- evidence_id: paper-22
+  kind: primary_source
+  reference: PMID:16347502
+  locator: references_cache/papers/PMID_16347502.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 33765b8f6ae5b6c00e072b5fbaa64f511149efdae4b46310562fd0c1b2c50e00
+- evidence_id: paper-21
+  kind: primary_source
+  reference: PMID:16346276
+  locator: references_cache/papers/PMID_16346276.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 8365b105cef1aa124c7ac2d3b27ccdfa6caa6aefc2d399a513dc48f5a0d3f4c6
+- evidence_id: paper-18
+  kind: primary_source
+  reference: PMID:234937
+  locator: references_cache/papers/PMID_234937.xml; archived_PubMed_abstract_and_visually_inspected_page273_culture_paragraph
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 2b97a014277c2345f35f0711f879f5403c45147f160cd2958b1b3f9e6c0fcc34
+- evidence_id: paper-30
+  kind: primary_source
+  reference: PMID:18553628
+  locator: references_cache/papers/PMID_18553628.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: d737399da517408e6409c3add26b0e6951289b1bb632c4df7732fffb1092b759
+- evidence_id: paper-32
+  kind: primary_source
+  reference: PMID:6183252
+  locator: references_cache/papers/PMID_6183252.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 554bb64c35b60a313932a1fdb85587c2fb306140934b17cfd60ac462634f93c7
+- evidence_id: paper-43
+  kind: primary_source
+  reference: PMID:14273649
+  locator: references_cache/papers/PMID_14273649.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: b1b9defd1ee69af35040fedec9c73de22713baa02b1b2c353059ea129d12012a
+- evidence_id: paper-52
+  kind: primary_source
+  reference: PMID:16345748
+  locator: references_cache/papers/PMID_16345748.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: a4ce8eaf714d17b135d95b7fad253aa3bfa977cd166bcb283c51cda8399fa586
+- evidence_id: paper-55
+  kind: primary_source
+  reference: PMID:8932299
+  locator: references_cache/papers/PMID_8932299.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 7a9705cc05834150f022082b7a67aa163939668c9716629bc5a0cd9d1d112b0c
+- evidence_id: paper-56
+  kind: primary_source
+  reference: PMID:7961411
+  locator: references_cache/papers/PMID_7961411.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 4e1e74a5019640f32a5f2957a22c75dcec6438e35e80768973a3c2866d0957b3
+- evidence_id: paper-58
+  kind: primary_source
+  reference: PMID:7525405
+  locator: references_cache/papers/PMID_7525405.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 501f878e6fe75b3018ce7b987a3bf36a91320ed1671f7b1ecc4bee3b9d7be955
+- evidence_id: paper-60
+  kind: primary_source
+  reference: PMID:3539918
+  locator: references_cache/papers/PMID_3539918.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: 53cd2a315f158a95b7026d9fba0d985acfd3b1b64c565014e0c6fb134dfbab33
+- evidence_id: paper-71
+  kind: primary_source
+  reference: PMID:11416161
+  locator: references_cache/papers/PMID_11416161.xml; archived_PubMed_abstract
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified publication identity and abstract; not complete recipe approval.
+  support: supports
+  snapshot_sha256: f2129716aca8e6f2fdf60fb68217beb09cca16181dd097267de94c984d063e1f
+- evidence_id: page-18
+  kind: primary_source
+  reference: PMID:234937
+  locator: references_cache/papers/primary_images/hareland-1975-page273-20261013.png;
+    Page 273 left column, visually inspected Organism and cell extracts paragraph
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Primary organism and culture paragraph differ from imported organism assignment
+    and chemical identities.
+  support: supports
+  snapshot_sha256: 32c14a3c733fc4e69e59ebd681ce54228a717a1b5678ceef8a635c3790c09fc3
+- evidence_id: p262-lpsn
+  kind: authority
+  reference: https://lpsn.dsmz.de/species/clostridium-saccharobutylicum
+  locator: references_cache/papers/primary_html/osmotic-next-p262-lpsn-20261013.html;
+    Type strain entry
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: P262, NCP 262 and DSM 13864 equivalence; not cultivation evidence.
+  support: supports
+  snapshot_sha256: d7c08a9fbf99cca102e8bb82bf7f342e6e9b75d08a039199ad4b74d3022da301
+- evidence_id: taxonomy-0
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy
+  locator: references_cache/papers/taxonomy/growth-regulation-20261013.xml; ScientificName,
+    Rank, synonyms and lineage
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified actual ranks and qualified parent-only mappings, not cultivation
+    evidence.
+  support: supports
+  snapshot_sha256: df9505f21d3156cd3fc72c89ce66970ce88d8ac8627d1130b465d8a68b7a1af1
+- evidence_id: taxonomy-1
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy
+  locator: references_cache/papers/taxonomy/osmotic-next-20261013.xml; ScientificName,
+    Rank, synonyms and lineage
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Verified actual ranks and qualified parent-only mappings, not cultivation
+    evidence.
+  support: supports
+  snapshot_sha256: a3cb0ebca8c12bf65a5d0accc5f0f1fdfcef79e9dfafef4efdb4515e411f8c96
+- evidence_id: claims
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/claim-plan.json;
+    claim-plan.json
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Thirteen registered quotes, fifteen taxonomy nodes and qualified owner
+    decisions.
+  support: context_only
+  snapshot_sha256: 33e4731997b13fd9cd7922cda510915c9ecef86f8e819c48138b02b5489bb27f
+- evidence_id: archives
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/source-preparation.json;
+    source-preparation.json
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Twelve cited papers with raw source and Markdown archives.
+  support: context_only
+  snapshot_sha256: fdb107ff34e89088c4c746fac70a81e8677346aa0dee9a6a0e1787d637879a7e
+- evidence_id: readback
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/final-readback.json;
+    final-readback.json
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Only fourteen intended normalized owners changed; prior bytes recovered.
+  support: context_only
+  snapshot_sha256: 4a0777af080c51619cc7d9e6a284c8f5b7a615f748ae38fb5dce3a5db615c64a
+- evidence_id: excerpts
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/evidence-readback.json;
+    evidence-readback.json
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Fifteen excerpt occurrences checked against primary archives.
+  support: context_only
+  snapshot_sha256: ce822fb6d6ab1fab7c69423637e22f7b92affffdab439a237dbf9a412ce56684
+- evidence_id: applied
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/applied.json;
+    applied.json
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Fourteen citations, fourteen history events, 151 original ingredients preserved.
+  support: context_only
+  snapshot_sha256: 15c974168a6e3a9560edecea7cc3f008281e05c2db27ed3fe674cc84cfffe151
+- evidence_id: comparison
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/comparison.json;
+    comparison.json
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Ignored-inclusive alias and formulation search; similarity is not identity.
+  support: context_only
+  snapshot_sha256: 206c130164d5999505f6f17d51c251db4fde9429a4b68cbe2d8c702b59b87e2e
+- evidence_id: baseline-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-00.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-00.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-01.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-01.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-02.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-02.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-03.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-03.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-04.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-04.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-05.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-05.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-06.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-06.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-07.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-07.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-08.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-08.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-09.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-09.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-10.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-10.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-11.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-11.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-12
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-12.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-12.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-13
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-13.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-13.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-14
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-14.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-14.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-15
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-15.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-15.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-16
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-16.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-16.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-17
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-17.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-17.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-18
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-18.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-18.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-19
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-19.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-19.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-20
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-20.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-20.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-21
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-21.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-21.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-22
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-22.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-22.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-23
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-23.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-23.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-24
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-24.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-24.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-25
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-25.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-25.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-26
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-26.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-26.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-27
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-27.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/baseline-27.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-00.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-00.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-01.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-01.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-02.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-02.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-03.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-03.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-04.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-04.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-05.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-05.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-06.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-06.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-07.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-07.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-08.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-08.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-09.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-09.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-10.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-10.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-11.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-11.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-12
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-12.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-12.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-13
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-13.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-13.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-14
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-14.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-14.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-15
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-15.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-15.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-16
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-16.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-16.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-17
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-17.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-17.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-18
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-18.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-18.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-19
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-19.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-19.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-20
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-20.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-20.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-21
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-21.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-21.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-22
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-22.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-22.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-23
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-23.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-23.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-24
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-24.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-24.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-25
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-25.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-25.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-26
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-26.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-26.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-27
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/post-27.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/post-27.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: merge-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/merge-00.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/merge-00.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: 09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c
+- evidence_id: merge-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/merge-01.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/merge-01.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: 9f4014a63bd3c9a3cd92a9c4a44773a139ddc33d435b6b212c162d90fee395b6
+- evidence_id: extra-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/extra-00.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/extra-00.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 441bdd6ab36f5b87c9edccf771321e1c5f6c11f43bec7799e6e98cd4d756c24c
+- evidence_id: extra-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/extra-01.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/extra-01.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+- evidence_id: extra-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-growth-regulation-citations/extra-02.log
+  locator: reports/paper_citation_curation/20261013-growth-regulation-citations/extra-02.log;
+    Terminal command output
+  accessed_at: '2026-10-13T23:47:01Z'
+  summary: Exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 2c9d7f446bc39baef24d309dff15f7b44a57527cc670778056c6f3fb707d400a
+assessments:
+- assessment_id: citation-007436
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007436
+  evidence_ids:
+  - paper-22
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007436
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007436
+  evidence_ids:
+  - paper-22
+  - claims
+  - comparison
+  summary: 'The three challenge conditions, growth temperatures and two strains are
+    separate contexts. The abstract names a chemically defined medium but does not
+    supply the full P2 formula. Existing linked challenge variants are reused as bibliography
+    owners, not duplicated or newly certified. Volume-percent challenge levels do
+    not independently validate the imported millimolar amounts or their conversion
+    basis. Local comparison: Eleven native entries have no butanol; retain the unchallenged
+    owner separately from both challenge formulations. '
+- assessment_id: organism-007436
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007436
+  evidence_ids:
+  - paper-22
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Clostridium acetobutylicum: Clostridium acetobutylicum, NCBITaxon:1488,
+    actual rank species; exact_species; study species; strain-specific results remain
+    separate. Clostridium acetobutylicum ATCC 824: Clostridium acetobutylicum ATCC
+    824, NCBITaxon:272562, actual rank strain; exact_strain; experimental strain,
+    not interchangeable with SA-2. Clostridium acetobutylicum SA-2: Clostridium acetobutylicum,
+    NCBITaxon:1488, actual rank species; parent_rank_only; butanol-tolerant experimental
+    mutant; exact strain node unresolved. No new growth assertions.'
+- assessment_id: preservation-007436
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007436
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007438
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007438
+  evidence_ids:
+  - paper-22
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007438
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007438
+  evidence_ids:
+  - paper-22
+  - claims
+  - comparison
+  summary: 'The three challenge conditions, growth temperatures and two strains are
+    separate contexts. The abstract names a chemically defined medium but does not
+    supply the full P2 formula. Existing linked challenge variants are reused as bibliography
+    owners, not duplicated or newly certified. Volume-percent challenge levels do
+    not independently validate the imported millimolar amounts or their conversion
+    basis. Local comparison: Twelve native entries include 98.4633 mM butanol; the
+    existing child is CultureMech:007439. Abstract volume percent does not recertify
+    this conversion. '
+- assessment_id: organism-007438
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007438
+  evidence_ids:
+  - paper-22
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Clostridium acetobutylicum: Clostridium acetobutylicum, NCBITaxon:1488,
+    actual rank species; exact_species; study species; strain-specific results remain
+    separate. Clostridium acetobutylicum ATCC 824: Clostridium acetobutylicum ATCC
+    824, NCBITaxon:272562, actual rank strain; exact_strain; experimental strain,
+    not interchangeable with SA-2. Clostridium acetobutylicum SA-2: Clostridium acetobutylicum,
+    NCBITaxon:1488, actual rank species; parent_rank_only; butanol-tolerant experimental
+    mutant; exact strain node unresolved. No new growth assertions.'
+- assessment_id: preservation-007438
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007438
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007439
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007439
+  evidence_ids:
+  - paper-22
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007439
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007439
+  evidence_ids:
+  - paper-22
+  - claims
+  - comparison
+  summary: 'The three challenge conditions, growth temperatures and two strains are
+    separate contexts. The abstract names a chemically defined medium but does not
+    supply the full P2 formula. Existing linked challenge variants are reused as bibliography
+    owners, not duplicated or newly certified. Volume-percent challenge levels do
+    not independently validate the imported millimolar amounts or their conversion
+    basis. Local comparison: Twelve native entries include 147.695 mM butanol; the
+    existing parent is CultureMech:007438. This citation belongs on the child as well,
+    without depending on the parent''s bibliography. '
+- assessment_id: organism-007439
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007439
+  evidence_ids:
+  - paper-22
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Clostridium acetobutylicum: Clostridium acetobutylicum, NCBITaxon:1488,
+    actual rank species; exact_species; study species; strain-specific results remain
+    separate. Clostridium acetobutylicum ATCC 824: Clostridium acetobutylicum ATCC
+    824, NCBITaxon:272562, actual rank strain; exact_strain; experimental strain,
+    not interchangeable with SA-2. Clostridium acetobutylicum SA-2: Clostridium acetobutylicum,
+    NCBITaxon:1488, actual rank species; parent_rank_only; butanol-tolerant experimental
+    mutant; exact strain node unresolved. No new growth assertions.'
+- assessment_id: preservation-007439
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007439
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007435
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - paper-21
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007435
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - paper-21
+  - claims
+  - comparison
+  summary: 'LPSN''s type-strain entry lists P262, NCP 262, DSM 13864 and ATCC BAA-117;
+    NCBI lists NCP262 as a DSM 13864 synonym. Identity authority: https://lpsn.dsmz.de/species/clostridium-saccharobutylicum;
+    archived in references_cache/papers/primary_html/osmotic-next-p262-lpsn-20261013.html
+    and .md; accessed_on=2026-10-13. The fresh NCBI EFetch rank is strain; an earlier
+    cached browser-search representation said no rank, so the dated raw authority
+    is retained. Do not inherit a newer paper''s recipe through this name mapping.
+    The abstract does not specify the complete local CAMM formula or establish species-wide
+    sporulation. Local comparison: Seventeen native entries include 333.037 mM glucose,
+    calcium carbonate and generically named ammonium phosphate; salt/hydrate identities
+    and preparation remain unverified. '
+- assessment_id: organism-007435
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - paper-21
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Clostridium acetobutylicum P262: Clostridium saccharobutylicum DSM 13864,
+    NCBITaxon:1345695, actual rank strain; historical_name_type_strain_mapping; study
+    strain; modern identity is Clostridium saccharobutylicum DSM 13864. Clostridium
+    saccharobutylicum: Clostridium saccharobutylicum, NCBITaxon:169679, actual rank
+    species; verified_species_of_historical_strain; modern species assignment, not
+    a new growth claim. other Clostridium strains: Clostridium, NCBITaxon:1485, actual
+    rank genus; parent_rank_only; unnamed comparison strains with different growth/sporulation
+    outcomes; exact species unresolved. No new growth assertions.'
+- assessment_id: preservation-007435
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007430
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007430
+  evidence_ids:
+  - paper-18
+  - page-18
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007430
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007430
+  evidence_ids:
+  - paper-18
+  - page-18
+  - claims
+  - comparison
+  summary: 'Citation disposition=imported_recipe_source_with_unresolved_formulation_and_organism_assignment.
+    Page 273''s culture paragraph gives a per-liter mass amount for 4-HPA and hydrated
+    phosphate/sulfate forms. This differs from the native 5 mM carbon entry and several
+    native chemical identities. No mass-to-molar conversion or claim of exact identity
+    is made. These conflicts prevent a resolved variant or growth assignment; the
+    source-defined differences remain in citation notes for reconciliation. Purified-enzyme
+    assay concentrations, inhibitor constants and storage buffers are not culture-medium
+    amounts. The scanned page and abstract establish source relevance, not the importer''s
+    Klebsiella growth assertion. Inventory is limited to the abstract and the inspected
+    medium-relevant methods paragraph. Local comparison: Ten native entries retain
+    5 mM 4-hydroxyphenylacetate and nominal phosphate/sulfate identities. The source-reported
+    mass and hydration differences are not applied as canonical corrections. '
+- assessment_id: organism-007430
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007430
+  evidence_ids:
+  - paper-18
+  - page-18
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Pseudomonas acidovorans: Delftia acidovorans, NCBITaxon:80866, actual
+    rank species; exact_species_synonym; primary study organism; canonical name Delftia
+    acidovorans. Pseudomonas A; Pseudomonas acidovorans ATCC 17455 / British NCIB
+    10013: Delftia acidovorans, NCBITaxon:80866, actual rank species; parent_rank_only;
+    collection designations stated on page 273; exact strain node unresolved after
+    bounded lookups. Klebsiella pneumoniae: Klebsiella pneumoniae, NCBITaxon:573,
+    actual rank species; secondary_import_identity_not_primary_support; MediaDB source/medium
+    growth join only; contradicts the inspected study-organism paragraph. No new growth
+    assertions.'
+- assessment_id: preservation-007430
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007430
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-006991
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:006991
+  evidence_ids:
+  - paper-30
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-006991
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:006991
+  evidence_ids:
+  - paper-30
+  - claims
+  - comparison
+  summary: 'LB, M9, casamino-acid additions and alpha-methylglucoside treatments are
+    different assays. RSF1050 and related copy-number mutants are plasmids, not separate
+    taxa. The native proline/leucine/thiamine formulation and inhibitor doses are
+    not established by the abstract. Local comparison: Ten native entries include
+    glucose, proline, leucine and thiamine hydrochloride; casamino acids and transport-inhibitor
+    contexts remain unassigned. '
+- assessment_id: organism-006991
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:006991
+  evidence_ids:
+  - paper-30
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; exact local formulation
+    unresolved. Escherichia coli HB101: Escherichia coli HB101, NCBITaxon:634468,
+    actual rank strain; exact_strain; plasmid-free host; recombinant plasmid-bearing
+    derivatives remain distinct. No new growth assertions.'
+- assessment_id: preservation-006991
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:006991
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-006993
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:006993
+  evidence_ids:
+  - paper-32
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-006993
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:006993
+  evidence_ids:
+  - paper-32
+  - claims
+  - comparison
+  summary: 'Succinate culture, minimal-glucose culture, LB upshift and casamino-acid
+    upshift must not be combined. Multicopy spot-42 plasmids, parental and revertant
+    backgrounds are distinct. The abstract does not identify the exact native MOPS
+    formula, which has no explicit glucose or succinate entry. Lag, loss of plating
+    efficiency and viability observations are not universal positive-growth evidence.
+    Local comparison: Sixteen native entries encode amino acids, MOPS and salts, without
+    an explicit glucose or succinate component. '
+- assessment_id: organism-006993
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:006993
+  evidence_ids:
+  - paper-32
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; exact local formulation
+    unresolved. Escherichia coli HB101: Escherichia coli HB101, NCBITaxon:634468,
+    actual rank strain; canonical_name_match_secondary_strain_lead; MediaDB strain
+    lead, not named in inspected abstract. No new growth assertions.'
+- assessment_id: preservation-006993
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:006993
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007026
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007026
+  evidence_ids:
+  - paper-43
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007026
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007026
+  evidence_ids:
+  - paper-43
+  - claims
+  - comparison
+  summary: 'The two mutants, their parents, permissive/negative-growth temperatures
+    and cell-free synthetase assays are separate contexts. The five-entry basal solution
+    is not automatically a complete growth medium; the abstract does not establish
+    its supplements or nitrogen source. Local comparison: Five native entries contain
+    glucose and salts but no explicit nitrogen source; basal formulation is not certified
+    as complete medium. '
+- assessment_id: organism-007026
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007026
+  evidence_ids:
+  - paper-43
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; exact local formulation
+    unresolved. Escherichia coli I-9: Escherichia coli, NCBITaxon:562, actual rank
+    species; parent_rank_only; temperature-sensitive stringent-control mutant; exact
+    strain node unresolved. Escherichia coli IV-4: Escherichia coli, NCBITaxon:562,
+    actual rank species; parent_rank_only; temperature-sensitive relaxed-control mutant;
+    exact strain node unresolved. Escherichia coli K-10: Escherichia coli, NCBITaxon:562,
+    actual rank species; parent_rank_only; MediaDB parent-strain lead not established
+    by abstract. No new growth assertions.'
+- assessment_id: preservation-007026
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007026
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007044
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007044
+  evidence_ids:
+  - paper-52
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007044
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007044
+  evidence_ids:
+  - paper-52
+  - claims
+  - comparison
+  summary: 'The four named growth factors support their reported role, not the full
+    fifteen-entry recipe, exact salt forms, amounts or preparation. Preserve pyridoxamine
+    separately from native pyridoxamine hydrochloride and p-aminobenzoic acid separately
+    from the native anion identity. Local comparison: Fifteen native entries include
+    cellobiose, urea, MOPS and vitamins; the short abstract does not establish their
+    amounts, salt forms or preparation. '
+- assessment_id: organism-007044
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007044
+  evidence_ids:
+  - paper-52
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Clostridium thermocellum: Acetivibrio thermocellus, NCBITaxon:1515, actual
+    rank species; exact_species_synonym; study species; canonical name Acetivibrio
+    thermocellus. Clostridium thermocellum ATCC 27405: Acetivibrio thermocellus ATCC
+    27405, NCBITaxon:203119, actual rank strain; canonical_name_match_secondary_strain_lead;
+    MediaDB strain lead not named in short abstract. No new growth assertions.'
+- assessment_id: preservation-007044
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007044
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007052
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007052
+  evidence_ids:
+  - paper-55
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007052
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007052
+  evidence_ids:
+  - paper-55
+  - claims
+  - comparison
+  summary: 'Oleate supplementation is distinct from a genetic FadR perturbation. The
+    abstract does not verify the native 5 mM oleic-acid amount, exact acid/salt form
+    or complete M9 carbon-source context. Survival after prolonged stasis is not a
+    general growth assertion. Local comparison: Seven native entries use (9Z)-octadecenoic
+    acid at 5 mM with salts; this amount/form is not certified by the abstract''s
+    oleate wording. '
+- assessment_id: organism-007052
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007052
+  evidence_ids:
+  - paper-55
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; exact local formulation
+    unresolved. Escherichia coli MC4100: Escherichia coli str. K-12 substr. MC4100,
+    NCBITaxon:1403831, actual rank no rank; canonical_name_match_secondary_strain_lead;
+    MediaDB strain lead not named in abstract. Escherichia coli fadR null and fadRS219N
+    mutants: Escherichia coli, NCBITaxon:562, actual rank species; parent_rank_only;
+    genetic backgrounds distinct from FadR+ oleate supplementation; exact clones unresolved.
+    No new growth assertions.'
+- assessment_id: preservation-007052
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007052
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007053
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007053
+  evidence_ids:
+  - paper-56
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007053
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007053
+  evidence_ids:
+  - paper-56
+  - claims
+  - comparison
+  summary: 'Continuous-culture growth-rate changes, aerobic/anaerobic transitions
+    and nitrate additions are separate experimental contexts. Respiratory substrates
+    named in operon descriptions are not necessarily ingredients added simultaneously.
+    The ten-entry native Vogel-Bonner formulation and all additive doses require methods-level
+    verification. Local comparison: Ten native entries include glucose, amino acids,
+    thiamine hydrochloride and sodium ammonium phosphate; no salt form or concentration
+    is changed. '
+- assessment_id: organism-007053
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007053
+  evidence_ids:
+  - paper-56
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; exact local formulation
+    unresolved. Escherichia coli MC4100: Escherichia coli str. K-12 substr. MC4100,
+    NCBITaxon:1403831, actual rank no rank; canonical_name_match_secondary_strain_lead;
+    MediaDB strain lead, not named in abstract. No new growth assertions.'
+- assessment_id: preservation-007053
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007053
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007055
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007055
+  evidence_ids:
+  - paper-58
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007055
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007055
+  evidence_ids:
+  - paper-58
+  - claims
+  - comparison
+  summary: 'Complex medium, minimal-glucose medium, osmotic changes and starvation
+    are separate contexts. The abstract does not validate the complete native M9 recipe.
+    Citation year 1994 follows PubMed; MediaDB''s historical 1993 and corrupted sigma-symbol
+    title remain an explicit discrepancy. Publisher access returned HTTP 403, so no
+    publisher-date reconciliation is claimed. Local comparison: Eight native entries
+    include 5.6 mM glucose and thiamine; these concentrations and complete formulation
+    remain unverified. '
+- assessment_id: organism-007055
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007055
+  evidence_ids:
+  - paper-58
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; exact local formulation
+    unresolved. Escherichia coli MC4100: Escherichia coli str. K-12 substr. MC4100,
+    NCBITaxon:1403831, actual rank no rank; canonical_name_match_secondary_strain_lead;
+    MediaDB strain lead, not named in abstract. No new growth assertions.'
+- assessment_id: preservation-007055
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007055
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007057
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007057
+  evidence_ids:
+  - paper-60
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007057
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007057
+  evidence_ids:
+  - paper-60
+  - claims
+  - comparison
+  summary: 'Heat, ethanol, oxidants, antibiotic treatments and amino-acid restriction
+    are separate assays, not components to combine into one medium. The native eleven-entry
+    base and treatment doses are not specified in the abstract. Historic title wording
+    ''regulations'' differs from PubMed''s ''regulons''; identity is supported by
+    the verified PMID/DOI and authors. Local comparison: Eleven native entries include
+    glucose, thiamine, MOPS and tricine; no stress-treatment ingredient is inferred. '
+- assessment_id: organism-007057
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007057
+  evidence_ids:
+  - paper-60
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; exact local formulation
+    unresolved. Escherichia coli W3110: Escherichia coli str. K-12 substr. W3110,
+    NCBITaxon:316407, actual rank no rank; canonical_name_match_secondary_strain_lead;
+    MediaDB strain lead, not named in abstract. No new growth assertions.'
+- assessment_id: preservation-007057
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007057
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+- assessment_id: citation-007178
+  area: evidence
+  topic: Publication identity and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007178
+  evidence_ids:
+  - paper-71
+  - archives
+  - readback
+  summary: Verified identity, excerpts and archive links; disputed metadata qualified.
+- assessment_id: formulation-007178
+  area: evidence
+  topic: Source-to-local-formulation comparison
+  outcome: concern
+  target_ids:
+  - CultureMech:007178
+  evidence_ids:
+  - paper-71
+  - claims
+  - comparison
+  summary: 'Wild-type, aspP-deficient, aspP-overexpressing and vector backgrounds
+    remain distinct. The abstract links glycogen phenotype with culture glucose, but
+    does not validate the native beta-D-glucose identity, concentration or full M9
+    formula. No enzyme-assay concentrations are imported into the culture recipe.
+    Local comparison: Seven native entries include 50 mM beta-D-glucose and doubled
+    nominal phosphate values relative to some other M9 imports; similarity is not
+    identity or permission to merge. '
+- assessment_id: organism-007178
+  area: evidence
+  topic: Scientific names, ranks and study roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007178
+  evidence_ids:
+  - paper-71
+  - p262-lpsn
+  - taxonomy-0
+  - taxonomy-1
+  summary: 'Escherichia coli (E. coli): Escherichia coli, NCBITaxon:562, actual rank
+    species; exact_species_not_strain; experimental species; exact local formulation
+    unresolved. Escherichia coli BL21(DE3): Escherichia coli BL21(DE3), NCBITaxon:469008,
+    actual rank strain; canonical_name_match_secondary_strain_lead; MediaDB host lead,
+    not named in abstract. Escherichia coli BL21[pET-ASPP]: Escherichia coli BL21,
+    NCBITaxon:511693, actual rank strain; parent_rank_only; MediaDB clone lead; BL21
+    parent verified but exact engineered clone unresolved. Escherichia coli BL21[pET-28b(+)]:
+    Escherichia coli BL21, NCBITaxon:511693, actual rank strain; parent_rank_only;
+    MediaDB clone lead; BL21 parent verified but exact engineered clone unresolved.
+    Escherichia coli BL21_aspP-: Escherichia coli BL21, NCBITaxon:511693, actual rank
+    strain; parent_rank_only; MediaDB clone lead; BL21 parent verified but exact engineered
+    clone unresolved. No new growth assertions.'
+- assessment_id: preservation-007178
+  area: evidence
+  topic: Mutation and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007178
+  evidence_ids:
+  - readback
+  - applied
+  summary: References and one history event per owner added; prior values and original
+    bytes preserved; no publication.
+findings:
+- finding_id: formulation-22
+  issue_key: growth-regulation-citations-formulation-22
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 22'
+  target_ids:
+  - CultureMech:007436
+  - CultureMech:007438
+  - CultureMech:007439
+  field_paths:
+  - ingredients
+  - references
+  description: 'The three challenge conditions, growth temperatures and two strains
+    are separate contexts. The abstract names a chemically defined medium but does
+    not supply the full P2 formula. Existing linked challenge variants are reused
+    as bibliography owners, not duplicated or newly certified. Volume-percent challenge
+    levels do not independently validate the imported millimolar amounts or their
+    conversion basis. Local comparison: Eleven native entries have no butanol; retain
+    the unchallenged owner separately from both challenge formulations.  Local comparison:
+    Twelve native entries include 98.4633 mM butanol; the existing child is CultureMech:007439.
+    Abstract volume percent does not recertify this conversion.  Local comparison:
+    Twelve native entries include 147.695 mM butanol; the existing parent is CultureMech:007438.
+    This citation belongs on the child as well, without depending on the parent''s
+    bibliography. '
+  evidence_ids:
+  - paper-22
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-21
+  issue_key: growth-regulation-citations-formulation-21
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 21'
+  target_ids:
+  - CultureMech:007435
+  field_paths:
+  - ingredients
+  - references
+  description: 'LPSN''s type-strain entry lists P262, NCP 262, DSM 13864 and ATCC
+    BAA-117; NCBI lists NCP262 as a DSM 13864 synonym. Identity authority: https://lpsn.dsmz.de/species/clostridium-saccharobutylicum;
+    archived in references_cache/papers/primary_html/osmotic-next-p262-lpsn-20261013.html
+    and .md; accessed_on=2026-10-13. The fresh NCBI EFetch rank is strain; an earlier
+    cached browser-search representation said no rank, so the dated raw authority
+    is retained. Do not inherit a newer paper''s recipe through this name mapping.
+    The abstract does not specify the complete local CAMM formula or establish species-wide
+    sporulation. Local comparison: Seventeen native entries include 333.037 mM glucose,
+    calcium carbonate and generically named ammonium phosphate; salt/hydrate identities
+    and preparation remain unverified. '
+  evidence_ids:
+  - paper-21
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/camm.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-18
+  issue_key: growth-regulation-citations-formulation-18
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 18'
+  target_ids:
+  - CultureMech:007430
+  field_paths:
+  - ingredients
+  - references
+  description: 'Citation disposition=imported_recipe_source_with_unresolved_formulation_and_organism_assignment.
+    Page 273''s culture paragraph gives a per-liter mass amount for 4-HPA and hydrated
+    phosphate/sulfate forms. This differs from the native 5 mM carbon entry and several
+    native chemical identities. No mass-to-molar conversion or claim of exact identity
+    is made. These conflicts prevent a resolved variant or growth assignment; the
+    source-defined differences remain in citation notes for reconciliation. Purified-enzyme
+    assay concentrations, inhibitor constants and storage buffers are not culture-medium
+    amounts. The scanned page and abstract establish source relevance, not the importer''s
+    Klebsiella growth assertion. Inventory is limited to the abstract and the inspected
+    medium-relevant methods paragraph. Local comparison: Ten native entries retain
+    5 mM 4-hydroxyphenylacetate and nominal phosphate/sulfate identities. The source-reported
+    mass and hydration differences are not applied as canonical corrections. '
+  evidence_ids:
+  - paper-18
+  - claims
+  - comparison
+  - page-18
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-30
+  issue_key: growth-regulation-citations-formulation-30
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 30'
+  target_ids:
+  - CultureMech:006991
+  field_paths:
+  - ingredients
+  - references
+  description: 'LB, M9, casamino-acid additions and alpha-methylglucoside treatments
+    are different assays. RSF1050 and related copy-number mutants are plasmids, not
+    separate taxa. The native proline/leucine/thiamine formulation and inhibitor doses
+    are not established by the abstract. Local comparison: Ten native entries include
+    glucose, proline, leucine and thiamine hydrochloride; casamino acids and transport-inhibitor
+    contexts remain unassigned. '
+  evidence_ids:
+  - paper-30
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_seo.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-32
+  issue_key: growth-regulation-citations-formulation-32
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 32'
+  target_ids:
+  - CultureMech:006993
+  field_paths:
+  - ingredients
+  - references
+  description: 'Succinate culture, minimal-glucose culture, LB upshift and casamino-acid
+    upshift must not be combined. Multicopy spot-42 plasmids, parental and revertant
+    backgrounds are distinct. The abstract does not identify the exact native MOPS
+    formula, which has no explicit glucose or succinate entry. Lag, loss of plating
+    efficiency and viability observations are not universal positive-growth evidence.
+    Local comparison: Sixteen native entries encode amino acids, MOPS and salts, without
+    an explicit glucose or succinate component. '
+  evidence_ids:
+  - paper-32
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mops_medium.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-43
+  issue_key: growth-regulation-citations-formulation-43
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 43'
+  target_ids:
+  - CultureMech:007026
+  field_paths:
+  - ingredients
+  - references
+  description: 'The two mutants, their parents, permissive/negative-growth temperatures
+    and cell-free synthetase assays are separate contexts. The five-entry basal solution
+    is not automatically a complete growth medium; the abstract does not establish
+    its supplements or nitrogen source. Local comparison: Five native entries contain
+    glucose and salts but no explicit nitrogen source; basal formulation is not certified
+    as complete medium. '
+  evidence_ids:
+  - paper-43
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/basal_solution_p.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-52
+  issue_key: growth-regulation-citations-formulation-52
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 52'
+  target_ids:
+  - CultureMech:007044
+  field_paths:
+  - ingredients
+  - references
+  description: 'The four named growth factors support their reported role, not the
+    full fifteen-entry recipe, exact salt forms, amounts or preparation. Preserve
+    pyridoxamine separately from native pyridoxamine hydrochloride and p-aminobenzoic
+    acid separately from the native anion identity. Local comparison: Fifteen native
+    entries include cellobiose, urea, MOPS and vitamins; the short abstract does not
+    establish their amounts, salt forms or preparation. '
+  evidence_ids:
+  - paper-52
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mj_media.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-55
+  issue_key: growth-regulation-citations-formulation-55
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 55'
+  target_ids:
+  - CultureMech:007052
+  field_paths:
+  - ingredients
+  - references
+  description: 'Oleate supplementation is distinct from a genetic FadR perturbation.
+    The abstract does not verify the native 5 mM oleic-acid amount, exact acid/salt
+    form or complete M9 carbon-source context. Survival after prolonged stasis is
+    not a general growth assertion. Local comparison: Seven native entries use (9Z)-octadecenoic
+    acid at 5 mM with salts; this amount/form is not certified by the abstract''s
+    oleate wording. '
+  evidence_ids:
+  - paper-55
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_farewell.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-56
+  issue_key: growth-regulation-citations-formulation-56
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 56'
+  target_ids:
+  - CultureMech:007053
+  field_paths:
+  - ingredients
+  - references
+  description: 'Continuous-culture growth-rate changes, aerobic/anaerobic transitions
+    and nitrate additions are separate experimental contexts. Respiratory substrates
+    named in operon descriptions are not necessarily ingredients added simultaneously.
+    The ten-entry native Vogel-Bonner formulation and all additive doses require methods-level
+    verification. Local comparison: Ten native entries include glucose, amino acids,
+    thiamine hydrochloride and sodium ammonium phosphate; no salt form or concentration
+    is changed. '
+  evidence_ids:
+  - paper-56
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-58
+  issue_key: growth-regulation-citations-formulation-58
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 58'
+  target_ids:
+  - CultureMech:007055
+  field_paths:
+  - ingredients
+  - references
+  description: 'Complex medium, minimal-glucose medium, osmotic changes and starvation
+    are separate contexts. The abstract does not validate the complete native M9 recipe.
+    Citation year 1994 follows PubMed; MediaDB''s historical 1993 and corrupted sigma-symbol
+    title remain an explicit discrepancy. Publisher access returned HTTP 403, so no
+    publisher-date reconciliation is claimed. Local comparison: Eight native entries
+    include 5.6 mM glucose and thiamine; these concentrations and complete formulation
+    remain unverified. '
+  evidence_ids:
+  - paper-58
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_lange.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-60
+  issue_key: growth-regulation-citations-formulation-60
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 60'
+  target_ids:
+  - CultureMech:007057
+  field_paths:
+  - ingredients
+  - references
+  description: 'Heat, ethanol, oxidants, antibiotic treatments and amino-acid restriction
+    are separate assays, not components to combine into one medium. The native eleven-entry
+    base and treatment doses are not specified in the abstract. Historic title wording
+    ''regulations'' differs from PubMed''s ''regulons''; identity is supported by
+    the verified PMID/DOI and authors. Local comparison: Eleven native entries include
+    glucose, thiamine, MOPS and tricine; no stress-treatment ingredient is inferred. '
+  evidence_ids:
+  - paper-60
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-71
+  issue_key: growth-regulation-citations-formulation-71
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment unresolved: source 71'
+  target_ids:
+  - CultureMech:007178
+  field_paths:
+  - ingredients
+  - references
+  description: 'Wild-type, aspP-deficient, aspP-overexpressing and vector backgrounds
+    remain distinct. The abstract links glycogen phenotype with culture glucose, but
+    does not validate the native beta-D-glucose identity, concentration or full M9
+    formula. No enzyme-assay concentrations are imported into the culture recipe.
+    Local comparison: Seven native entries include 50 mM beta-D-glucose and doubled
+    nominal phosphate values relative to some other M9 imports; similarity is not
+    identity or permission to merge. '
+  evidence_ids:
+  - paper-71
+  - claims
+  - comparison
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+    role: authoritative normalized recipe
+- finding_id: organism-18
+  issue_key: growth-regulation-citations-organism-18
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Imported Klebsiella assignment is not supported by inspected primary methods
+  target_ids:
+  - CultureMech:007430
+  field_paths:
+  - references
+  description: 'Citation disposition=imported_recipe_source_with_unresolved_formulation_and_organism_assignment.
+    Page 273''s culture paragraph gives a per-liter mass amount for 4-HPA and hydrated
+    phosphate/sulfate forms. This differs from the native 5 mM carbon entry and several
+    native chemical identities. No mass-to-molar conversion or claim of exact identity
+    is made. These conflicts prevent a resolved variant or growth assignment; the
+    source-defined differences remain in citation notes for reconciliation. Purified-enzyme
+    assay concentrations, inhibitor constants and storage buffers are not culture-medium
+    amounts. The scanned page and abstract establish source relevance, not the importer''s
+    Klebsiella growth assertion. Inventory is limited to the abstract and the inspected
+    medium-relevant methods paragraph. '
+  evidence_ids:
+  - paper-18
+  - page-18
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+    role: authoritative normalized recipe
+- finding_id: metadata-58
+  issue_key: growth-regulation-citations-metadata-58
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical and PubMed publication years differ
+  target_ids:
+  - CultureMech:007055
+  field_paths:
+  - references
+  description: MediaDB says 1993, PubMed says 1994; citation follows PubMed and preserves
+    the discrepancy. Direct publisher access was unavailable.
+  evidence_ids:
+  - paper-58
+  - archives
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_lange.yaml
+    role: authoritative normalized recipe
+actions:
+- action_id: resolve-formulation-22
+  description: 'Exact local-formulation assignment unresolved: source 22'
+  finding_ids:
+  - formulation-22
+  target_ids:
+  - CultureMech:007436
+  - CultureMech:007438
+  - CultureMech:007439
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/p2_no_butanol_challenge.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-21
+  description: 'Exact local-formulation assignment unresolved: source 21'
+  finding_ids:
+  - formulation-21
+  target_ids:
+  - CultureMech:007435
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/camm.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-18
+  description: 'Exact local-formulation assignment unresolved: source 18'
+  finding_ids:
+  - formulation-18
+  target_ids:
+  - CultureMech:007430
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-30
+  description: 'Exact local-formulation assignment unresolved: source 30'
+  finding_ids:
+  - formulation-30
+  target_ids:
+  - CultureMech:006991
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_seo.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-32
+  description: 'Exact local-formulation assignment unresolved: source 32'
+  finding_ids:
+  - formulation-32
+  target_ids:
+  - CultureMech:006993
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mops_medium.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-43
+  description: 'Exact local-formulation assignment unresolved: source 43'
+  finding_ids:
+  - formulation-43
+  target_ids:
+  - CultureMech:007026
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/basal_solution_p.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-52
+  description: 'Exact local-formulation assignment unresolved: source 52'
+  finding_ids:
+  - formulation-52
+  target_ids:
+  - CultureMech:007044
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mj_media.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-55
+  description: 'Exact local-formulation assignment unresolved: source 55'
+  finding_ids:
+  - formulation-55
+  target_ids:
+  - CultureMech:007052
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_farewell.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-56
+  description: 'Exact local-formulation assignment unresolved: source 56'
+  finding_ids:
+  - formulation-56
+  target_ids:
+  - CultureMech:007053
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/vogel_bonner_medium.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-58
+  description: 'Exact local-formulation assignment unresolved: source 58'
+  finding_ids:
+  - formulation-58
+  target_ids:
+  - CultureMech:007055
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_lange.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-60
+  description: 'Exact local-formulation assignment unresolved: source 60'
+  finding_ids:
+  - formulation-60
+  target_ids:
+  - CultureMech:007057
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mops_medium_vanbogelen.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-formulation-71
+  description: 'Exact local-formulation assignment unresolved: source 71'
+  finding_ids:
+  - formulation-71
+  target_ids:
+  - CultureMech:007178
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_moreno_bruna_et_al.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile complete source recipe, assay scope and local chemical identities before
+    variant, growth or amount assertions.
+- action_id: resolve-organism-18
+  description: Imported Klebsiella assignment is not supported by inspected primary
+    methods
+  finding_ids:
+  - organism-18
+  target_ids:
+  - CultureMech:007430
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Reconcile the historical source-to-organism join against primary methods before
+    any growth assertion.
+- action_id: resolve-metadata-58
+  description: Historical and PubMed publication years differ
+  finding_ids:
+  - metadata-58
+  target_ids:
+  - CultureMech:007055
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/m9_lange.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Resolve dating convention against accessible publisher or issue metadata without
+    silently rewriting provenance.
+limitations:
+- Partial self-review, not independent review or complete record approval.
+- Twelve abstracts and the culture paragraph on Hareland page 273 were inspected;
+  not whole-paper review.
+- Actual NCBI ranks, parent-only mappings, imported strain leads and experimental
+  roles remain distinct.
+- Existing P2 variant links, separate assays, historical taxonomy and the PJC organism
+  conflict remain explicit.
+- Merge diagnostics retain actual failures; equal counts cannot establish row-level
+  equivalence.
+- No generated or GitHub publication. Remaining candidates and access gaps leave the
+  broader citation goal incomplete.

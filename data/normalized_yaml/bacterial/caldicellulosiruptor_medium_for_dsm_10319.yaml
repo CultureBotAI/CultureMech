@@ -295,6 +295,311 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 9 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-11-16T21:33:00.085247+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "REMOVE", "evidence": [{"explanation":
+    "Materials and Methods, Bacterial strains and growth on sugar substrates. Supports
+    only the named descriptor/event at the stated stage. Source explicitly omits this
+    component. Cysteine-HCl hydration is unspecified; no mapped identity asserted.
+    Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1128/AEM.01400-10", "snippet": "Trypticase", "supports":
+    "SUPPORT"}], "ingredient": {"notes": "Source explicitly omits this component.
+    Cysteine-HCl hydration is unspecified; no mapped identity asserted.", "preferred_term":
+    "Trypticase"}, "source_modification_index": 0, "source_text": "Trypticase, cysteine-HCl,
+    and resazurin omitted relative to standard DSMZ 640.", "stage": "modified DSMZ
+    640 preparation"}, {"action": "REMOVE", "evidence": [{"explanation": "Materials
+    and Methods, Bacterial strains and growth on sugar substrates. Supports only the
+    named descriptor/event at the stated stage. Source explicitly omits this component.
+    Cysteine-HCl hydration is unspecified; no mapped identity asserted. Source inspected
+    2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1128/AEM.01400-10", "snippet": "cysteine-HCl", "supports":
+    "SUPPORT"}], "ingredient": {"notes": "Source explicitly omits this component.
+    Cysteine-HCl hydration is unspecified; no mapped identity asserted.", "preferred_term":
+    "cysteine hydrochloride"}, "source_modification_index": 0, "source_text": "Trypticase,
+    cysteine-HCl, and resazurin omitted relative to standard DSMZ 640.", "stage":
+    "modified DSMZ 640 preparation"}, {"action": "REMOVE", "evidence": [{"explanation":
+    "Materials and Methods, Bacterial strains and growth on sugar substrates. Supports
+    only the named descriptor/event at the stated stage. Source explicitly omits this
+    component. Cysteine-HCl hydration is unspecified; no mapped identity asserted.
+    Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1128/AEM.01400-10", "snippet": "resazurin were not added",
+    "supports": "SUPPORT"}], "ingredient": {"notes": "Source explicitly omits this
+    component. Cysteine-HCl hydration is unspecified; no mapped identity asserted.",
+    "preferred_term": "resazurin"}, "source_modification_index": 0, "source_text":
+    "Trypticase, cysteine-HCl, and resazurin omitted relative to standard DSMZ 640.",
+    "stage": "modified DSMZ 640 preparation"}, {"action": "ADD", "evidence": [{"explanation":
+    "Materials and Methods, Bacterial strains and growth on sugar substrates. Supports
+    only the named descriptor/event at the stated stage. Source describes 10% [wt/vol]
+    Na2S·9H2O stock added to a final concentration of 0.5%. Final percentage basis
+    is not independently specified; do not substitute stock strength or infer a conversion.
+    Carbon-source alternatives remain unexpanded. Source inspected 2026-11-16; SHA256
+    ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8. No parent formulation,
+    growth, ontology identity, or missing dose is inferred.", "reference": "doi:10.1128/AEM.01400-10",
+    "snippet": "10% [wt/vol] Na2S·9H2O was added to a final concentration of 0.5%",
+    "supports": "SUPPORT"}], "ingredient": {"notes": "Source describes 10% [wt/vol]
+    Na2S·9H2O stock added to a final concentration of 0.5%. Final percentage basis
+    is not independently specified; do not substitute stock strength or infer a conversion.
+    Carbon-source alternatives remain unexpanded.", "preferred_term": "sodium sulfide
+    nonahydrate"}, "source_modification_index": 1, "source_text": "Carbon source increased
+    to 5 g/L; Na2S.9H2O added to 0.5% final.", "stage": "modified DSMZ 640 reducing-agent
+    addition"}], "variant_index": 0, "variant_name": "modified_dsmz_640_blumer_schuette_2010"}]}'
+- timestamp: '2026-11-17T00:07:07.126705+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "081e9ed585cbc51c51fa39f3a904cf48c104306607dd9575b4075cd71d24b3a5",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml",
+    "recipe_id": "CultureMech:009111", "variants": [{"append_changes": [{"action":
+    "ADD", "amount": {"basis": "PER_BATCH", "basis_statement": "Shang2013 preparation
+    stated as ''per liter distilled water''; final volume after all additions is not
+    specified.", "unit": "MG", "value": "2.5"}, "evidence": [{"explanation": "Methods
+    full formulation uses the heading ''per liter distilled water''. Absolute source-batch
+    input is retained; ADD is source-stage input, not an asserted difference from
+    every imported parent ingredient.", "reference": "doi:10.1007/s00203-013-0895-5",
+    "snippet": "2.5 mg FeCl3 × 6 H2O", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "FeCl3.6H2O"}, "notes": "No complete parent-equivalence or ferrous-to-ferric substitution
+    is inferred from source presence alone.", "source_modification_index": 0, "source_text":
+    "Shang2013 lists FeCl3.6H2O2.5mg per preparation batch containing1L distilled-water
+    input; this does not establish a final2.5mg/L concentration or the exact displaced
+    ferrous iron form.", "stage": "Shang2013 modified DSMZ640 preparation per litre
+    of water input"}, {"action": "ADD", "amount": {"basis": "PER_BATCH", "basis_statement":
+    "Shang2013 preparation stated as ''per liter distilled water''; final volume after
+    all additions is not specified.", "unit": "ML", "value": "1"}, "evidence": [{"explanation":
+    "Methods full formulation uses the heading ''per liter distilled water''. Absolute
+    source-batch input is retained; ADD is source-stage input, not an asserted difference
+    from every imported parent ingredient.", "reference": "doi:10.1007/s00203-013-0895-5",
+    "snippet": "1 ml trace element solution SL-10", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "trace element solution SL-10"}, "notes": "No complete parent-equivalence
+    or ferrous-to-ferric substitution is inferred from source presence alone.", "source_modification_index":
+    1, "source_text": "Shang2013 adds trace element solution SL-10(1mL, DSMZ320) and
+    vitamin solution(5mL, DSMZ141, filter-sterilized) per batch containing1L distilled-water
+    input; final volume is unspecified.", "stage": "Shang2013 modified DSMZ640 preparation
+    per litre of water input"}, {"action": "ADD", "amount": {"basis": "PER_BATCH",
+    "basis_statement": "Shang2013 preparation stated as ''per liter distilled water'';
+    final volume after all additions is not specified.", "unit": "ML", "value": "5"},
+    "evidence": [{"explanation": "Methods full formulation uses the heading ''per
+    liter distilled water''. Absolute source-batch input is retained; ADD is source-stage
+    input, not an asserted difference from every imported parent ingredient.", "reference":
+    "doi:10.1007/s00203-013-0895-5", "snippet": "5 ml vitamin solution", "supports":
+    "SUPPORT"}], "ingredient": {"preferred_term": "vitamin solution"}, "notes": "No
+    complete parent-equivalence or ferrous-to-ferric substitution is inferred from
+    source presence alone.", "source_modification_index": 1, "source_text": "Shang2013
+    adds trace element solution SL-10(1mL, DSMZ320) and vitamin solution(5mL, DSMZ141,
+    filter-sterilized) per batch containing1L distilled-water input; final volume
+    is unspecified.", "stage": "Shang2013 modified DSMZ640 preparation per litre of
+    water input"}, {"action": "ADD", "amount": {"basis": "PER_BATCH", "basis_statement":
+    "Shang2013 preparation stated as ''per liter distilled water''; final volume after
+    all additions is not specified.", "unit": "MG", "value": "0.5"}, "evidence": [{"explanation":
+    "Methods full formulation uses the heading ''per liter distilled water''. Absolute
+    source-batch input is retained; ADD is source-stage input, not an asserted difference
+    from every imported parent ingredient.", "reference": "doi:10.1007/s00203-013-0895-5",
+    "snippet": "0.5 mg resazurin", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "resazurin"}, "notes": "No complete parent-equivalence or ferrous-to-ferric substitution
+    is inferred from source presence alone.", "source_modification_index": 2, "source_text":
+    "Shang2013 adds resazurin0.5mg per batch containing1L distilled-water input; final
+    volume is unspecified.", "stage": "Shang2013 modified DSMZ640 preparation per
+    litre of water input"}, {"action": "ADD", "amount": {"basis": "PER_BATCH", "basis_statement":
+    "Shang2013 preparation stated as ''per liter distilled water''; final volume after
+    all additions is not specified.", "unit": "G", "value": "0.9"}, "evidence": [{"explanation":
+    "Methods full formulation uses the heading ''per liter distilled water''. Absolute
+    source-batch input is retained; ADD is source-stage input, not an asserted difference
+    from every imported parent ingredient.", "reference": "doi:10.1007/s00203-013-0895-5",
+    "snippet": "0.9 g NH4Cl", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "NH4Cl"}, "notes": "No complete parent-equivalence or ferrous-to-ferric substitution
+    is inferred from source presence alone.", "source_modification_index": 4, "source_text":
+    "Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g MgCl2.6H2O,0.75g
+    KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast extract; pH7.0,
+    prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved. This water-input
+    basis is not a stated final medium volume.", "stage": "Shang2013 modified DSMZ640
+    preparation per litre of water input"}, {"action": "ADD", "amount": {"basis":
+    "PER_BATCH", "basis_statement": "Shang2013 preparation stated as ''per liter distilled
+    water''; final volume after all additions is not specified.", "unit": "G", "value":
+    "0.9"}, "evidence": [{"explanation": "Methods full formulation uses the heading
+    ''per liter distilled water''. Absolute source-batch input is retained; ADD is
+    source-stage input, not an asserted difference from every imported parent ingredient.",
+    "reference": "doi:10.1007/s00203-013-0895-5", "snippet": "0.9 g NaCl", "supports":
+    "SUPPORT"}], "ingredient": {"preferred_term": "NaCl"}, "notes": "No complete parent-equivalence
+    or ferrous-to-ferric substitution is inferred from source presence alone.", "source_modification_index":
+    4, "source_text": "Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g
+    NaCl,0.4g MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g
+    yeast extract; pH7.0, prepared under100%N2,5mL portions in15mL Hungate tubes,
+    autoclaved. This water-input basis is not a stated final medium volume.", "stage":
+    "Shang2013 modified DSMZ640 preparation per litre of water input"}, {"action":
+    "ADD", "amount": {"basis": "PER_BATCH", "basis_statement": "Shang2013 preparation
+    stated as ''per liter distilled water''; final volume after all additions is not
+    specified.", "unit": "G", "value": "0.4"}, "evidence": [{"explanation": "Methods
+    full formulation uses the heading ''per liter distilled water''. Absolute source-batch
+    input is retained; ADD is source-stage input, not an asserted difference from
+    every imported parent ingredient.", "reference": "doi:10.1007/s00203-013-0895-5",
+    "snippet": "0.4 g MgCl2 × 6 H2O", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "MgCl2.6H2O"}, "notes": "No complete parent-equivalence or ferrous-to-ferric substitution
+    is inferred from source presence alone.", "source_modification_index": 4, "source_text":
+    "Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g MgCl2.6H2O,0.75g
+    KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast extract; pH7.0,
+    prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved. This water-input
+    basis is not a stated final medium volume.", "stage": "Shang2013 modified DSMZ640
+    preparation per litre of water input"}, {"action": "ADD", "amount": {"basis":
+    "PER_BATCH", "basis_statement": "Shang2013 preparation stated as ''per liter distilled
+    water''; final volume after all additions is not specified.", "unit": "G", "value":
+    "0.75"}, "evidence": [{"explanation": "Methods full formulation uses the heading
+    ''per liter distilled water''. Absolute source-batch input is retained; ADD is
+    source-stage input, not an asserted difference from every imported parent ingredient.",
+    "reference": "doi:10.1007/s00203-013-0895-5", "snippet": "0.75 g KH2PO4", "supports":
+    "SUPPORT"}], "ingredient": {"preferred_term": "KH2PO4"}, "notes": "No complete
+    parent-equivalence or ferrous-to-ferric substitution is inferred from source presence
+    alone.", "source_modification_index": 4, "source_text": "Shang2013 recipe per1L
+    distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g
+    cysteine-HCl.H2O,2g tryptone,1g yeast extract; pH7.0, prepared under100%N2,5mL
+    portions in15mL Hungate tubes, autoclaved. This water-input basis is not a stated
+    final medium volume.", "stage": "Shang2013 modified DSMZ640 preparation per litre
+    of water input"}, {"action": "ADD", "amount": {"basis": "PER_BATCH", "basis_statement":
+    "Shang2013 preparation stated as ''per liter distilled water''; final volume after
+    all additions is not specified.", "unit": "G", "value": "1.5"}, "evidence": [{"explanation":
+    "Methods full formulation uses the heading ''per liter distilled water''. Absolute
+    source-batch input is retained; ADD is source-stage input, not an asserted difference
+    from every imported parent ingredient.", "reference": "doi:10.1007/s00203-013-0895-5",
+    "snippet": "1.5 g K2HPO4", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "K2HPO4"}, "notes": "No complete parent-equivalence or ferrous-to-ferric substitution
+    is inferred from source presence alone.", "source_modification_index": 4, "source_text":
+    "Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g MgCl2.6H2O,0.75g
+    KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast extract; pH7.0,
+    prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved. This water-input
+    basis is not a stated final medium volume.", "stage": "Shang2013 modified DSMZ640
+    preparation per litre of water input"}, {"action": "ADD", "amount": {"basis":
+    "PER_BATCH", "basis_statement": "Shang2013 preparation stated as ''per liter distilled
+    water''; final volume after all additions is not specified.", "unit": "G", "value":
+    "0.75"}, "evidence": [{"explanation": "Methods full formulation uses the heading
+    ''per liter distilled water''. Absolute source-batch input is retained; ADD is
+    source-stage input, not an asserted difference from every imported parent ingredient.",
+    "reference": "doi:10.1007/s00203-013-0895-5", "snippet": "0.75 g cysteine-HCl
+    × H2O", "supports": "SUPPORT"}], "ingredient": {"preferred_term": "cysteine-HCl.H2O"},
+    "notes": "No complete parent-equivalence or ferrous-to-ferric substitution is
+    inferred from source presence alone.", "source_modification_index": 4, "source_text":
+    "Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g MgCl2.6H2O,0.75g
+    KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast extract; pH7.0,
+    prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved. This water-input
+    basis is not a stated final medium volume.", "stage": "Shang2013 modified DSMZ640
+    preparation per litre of water input"}, {"action": "ADD", "amount": {"basis":
+    "PER_BATCH", "basis_statement": "Shang2013 preparation stated as ''per liter distilled
+    water''; final volume after all additions is not specified.", "unit": "G", "value":
+    "2"}, "evidence": [{"explanation": "Methods full formulation uses the heading
+    ''per liter distilled water''. Absolute source-batch input is retained; ADD is
+    source-stage input, not an asserted difference from every imported parent ingredient.",
+    "reference": "doi:10.1007/s00203-013-0895-5", "snippet": "2 g tryptone", "supports":
+    "SUPPORT"}], "ingredient": {"preferred_term": "tryptone"}, "notes": "No complete
+    parent-equivalence or ferrous-to-ferric substitution is inferred from source presence
+    alone.", "source_modification_index": 4, "source_text": "Shang2013 recipe per1L
+    distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g
+    cysteine-HCl.H2O,2g tryptone,1g yeast extract; pH7.0, prepared under100%N2,5mL
+    portions in15mL Hungate tubes, autoclaved. This water-input basis is not a stated
+    final medium volume.", "stage": "Shang2013 modified DSMZ640 preparation per litre
+    of water input"}, {"action": "ADD", "amount": {"basis": "PER_BATCH", "basis_statement":
+    "Shang2013 preparation stated as ''per liter distilled water''; final volume after
+    all additions is not specified.", "unit": "G", "value": "1"}, "evidence": [{"explanation":
+    "Methods full formulation uses the heading ''per liter distilled water''. Absolute
+    source-batch input is retained; ADD is source-stage input, not an asserted difference
+    from every imported parent ingredient.", "reference": "doi:10.1007/s00203-013-0895-5",
+    "snippet": "1 g yeast extract", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "yeast extract"}, "notes": "No complete parent-equivalence or ferrous-to-ferric
+    substitution is inferred from source presence alone.", "source_modification_index":
+    4, "source_text": "Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g
+    NaCl,0.4g MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g
+    yeast extract; pH7.0, prepared under100%N2,5mL portions in15mL Hungate tubes,
+    autoclaved. This water-input basis is not a stated final medium volume.", "stage":
+    "Shang2013 modified DSMZ640 preparation per litre of water input"}, {"action":
+    "ADD", "amount": {"basis": "PER_BATCH", "basis_statement": "Shang2013 preparation
+    stated as ''per liter distilled water''; final volume after all additions is not
+    specified.", "unit": "G", "value": "10.0"}, "evidence": [{"explanation": "Methods
+    define10g substrate per litre water preparation and separate substrate experiments;
+    xylose isolation and glucose protein-analysis arms are distinct. No simultaneous
+    three-substrate medium is asserted.", "reference": "doi:10.1007/s00203-013-0895-5",
+    "snippet": "10 g/l of oat spelt xylan as substrate", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "oat spelt xylan"}, "source_modification_index":
+    3, "source_text": "Shang2013 lists10.0g substrate per preparation batch containing1L
+    distilled-water input, with separate oat spelt xylan, xylose and glucose experiments;
+    no simultaneous mixture or universal fixed-glucose removal is inferred.", "stage":
+    "Shang2013 xylanase production culture"}, {"action": "ADD", "amount": {"basis":
+    "PER_BATCH", "basis_statement": "Shang2013 preparation stated as ''per liter distilled
+    water''; final volume after all additions is not specified.", "unit": "G", "value":
+    "10.0"}, "evidence": [{"explanation": "Methods define10g substrate per litre water
+    preparation and separate substrate experiments; xylose isolation and glucose protein-analysis
+    arms are distinct. No simultaneous three-substrate medium is asserted.", "reference":
+    "doi:10.1007/s00203-013-0895-5", "snippet": "10.0 g substrate", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "xylose"}, "source_modification_index": 3, "source_text":
+    "Shang2013 lists10.0g substrate per preparation batch containing1L distilled-water
+    input, with separate oat spelt xylan, xylose and glucose experiments; no simultaneous
+    mixture or universal fixed-glucose removal is inferred.", "stage": "Shang2013
+    xylose substrate alternative"}, {"action": "ADD", "amount": {"basis": "PER_BATCH",
+    "basis_statement": "Shang2013 preparation stated as ''per liter distilled water'';
+    final volume after all additions is not specified.", "unit": "G", "value": "10.0"},
+    "evidence": [{"explanation": "Methods define10g substrate per litre water preparation
+    and separate substrate experiments; xylose isolation and glucose protein-analysis
+    arms are distinct. No simultaneous three-substrate medium is asserted.", "reference":
+    "doi:10.1007/s00203-013-0895-5", "snippet": "10.0 g substrate", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "glucose"}, "source_modification_index": 3, "source_text":
+    "Shang2013 lists10.0g substrate per preparation batch containing1L distilled-water
+    input, with separate oat spelt xylan, xylose and glucose experiments; no simultaneous
+    mixture or universal fixed-glucose removal is inferred.", "stage": "Shang2013
+    glucose substrate alternative"}], "append_mentions": [{"held_fields": ["OPERATION",
+    "IDENTITY_FORM"], "reason": "Ferric hexahydrate source input is verified; this
+    source passage does not identify a specific displaced ferrous salt or demonstrate
+    chemical-form equivalence to the parent.", "reported_action": "REPLACE", "source_label":
+    "ferrous iron", "source_modification_index": 0, "source_text": "Shang2013 lists
+    FeCl3.6H2O2.5mg per preparation batch containing1L distilled-water input; this
+    does not establish a final2.5mg/L concentration or the exact displaced ferrous
+    iron form.", "stage": "Shang2013 modified DSMZ640 preparation per litre of water
+    input"}, {"held_fields": ["OPERATION"], "reason": "Separate glucose, xylose and
+    xylan source arms are supported; an operation removing a fixed parent glucose
+    across every assay is not established by the source.", "reported_action": "REPLACE",
+    "source_label": "glucose", "source_modification_index": 3, "source_text": "Shang2013
+    lists10.0g substrate per preparation batch containing1L distilled-water input,
+    with separate oat spelt xylan, xylose and glucose experiments; no simultaneous
+    mixture or universal fixed-glucose removal is inferred.", "stage": "Shang2013
+    separate substrate arms"}], "replace_modifications": [{"expected": "Iron source
+    substituted: FeCl3.6H2O 2.5 mg/L (vs ferrous iron in parent).", "modification_index":
+    0, "replacement": "Shang2013 lists FeCl3.6H2O2.5mg per preparation batch containing1L
+    distilled-water input; this does not establish a final2.5mg/L concentration or
+    the exact displaced ferrous iron form."}, {"expected": "Added trace element solution
+    SL-10 (1 ml/L, DSMZ medium 320) and vitamin solution (5 ml/L, DSMZ medium 141,
+    filter-sterilized).", "modification_index": 1, "replacement": "Shang2013 adds
+    trace element solution SL-10(1mL, DSMZ320) and vitamin solution(5mL, DSMZ141,
+    filter-sterilized) per batch containing1L distilled-water input; final volume
+    is unspecified."}, {"expected": "Added resazurin 0.5 mg/L.", "modification_index":
+    2, "replacement": "Shang2013 adds resazurin0.5mg per batch containing1L distilled-water
+    input; final volume is unspecified."}, {"expected": "Fixed glucose replaced by
+    variable substrate at 10.0 g/L (e.g. oat spelt xylan, xylose, glucose).", "modification_index":
+    3, "replacement": "Shang2013 lists10.0g substrate per preparation batch containing1L
+    distilled-water input, with separate oat spelt xylan, xylose and glucose experiments;
+    no simultaneous mixture or universal fixed-glucose removal is inferred."}, {"expected":
+    "Per liter: 0.9 g NH4Cl, 0.9 g NaCl, 0.4 g MgCl2.6H2O, 0.75 g KH2PO4, 1.5 g K2HPO4,
+    0.75 g cysteine-HCl.H2O, 2 g tryptone, 1 g yeast extract; pH 7.0; prepared under
+    100% N2; dispensed 5 ml into 15 ml Hungate tubes; autoclaved.", "modification_index":
+    4, "replacement": "Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g
+    NaCl,0.4g MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g
+    yeast extract; pH7.0, prepared under100%N2,5mL portions in15mL Hungate tubes,
+    autoclaved. This water-input basis is not a stated final medium volume."}], "variant_index":
+    1, "variant_name": "modified_dsmz_640_shang_2013"}, {"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Methods: Bacterial strains and growth on
+    sugar substrates. This is variant0, distinct from Shang2013 variant1 in the same
+    recipe. No nitrogen purity, gas volume or dissolved concentration inferred.",
+    "reference": "doi:10.1128/AEM.01400-10", "snippet": "a 50-ml batch culture in
+    a 125-ml serum bottle under N2 headspace for 24 h", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "N2"}, "source_modification_index": 2, "source_text": "Anaerobic
+    batch cultivation under N2; 70C with orbital shaking; 50 ml in 125 ml serum bottle;
+    24 h.", "stage": "Blumer-Schuette2010 modified DSMZ640 serum-bottle headspace"}],
+    "variant_index": 0, "variant_name": "modified_dsmz_640_blumer_schuette_2010"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 high_metal: true
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)
@@ -445,20 +750,116 @@ variants:
       formulation and cultivation.
     snippet: subcultured ... into modified DSMZ medium 640 ... grown at 70C with orbital
       shaking under N2 headspace.
+  ingredient_changes:
+  - action: REMOVE
+    ingredient:
+      preferred_term: Trypticase
+      notes: Source explicitly omits this component. Cysteine-HCl hydration is unspecified;
+        no mapped identity asserted.
+    stage: modified DSMZ 640 preparation
+    source_modification_index: 0
+    source_text: Trypticase, cysteine-HCl, and resazurin omitted relative to standard
+      DSMZ 640.
+    evidence:
+    - reference: doi:10.1128/AEM.01400-10
+      supports: SUPPORT
+      snippet: Trypticase
+      explanation: Materials and Methods, Bacterial strains and growth on sugar substrates.
+        Supports only the named descriptor/event at the stated stage. Source explicitly
+        omits this component. Cysteine-HCl hydration is unspecified; no mapped identity
+        asserted. Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
+  - action: REMOVE
+    ingredient:
+      preferred_term: cysteine hydrochloride
+      notes: Source explicitly omits this component. Cysteine-HCl hydration is unspecified;
+        no mapped identity asserted.
+    stage: modified DSMZ 640 preparation
+    source_modification_index: 0
+    source_text: Trypticase, cysteine-HCl, and resazurin omitted relative to standard
+      DSMZ 640.
+    evidence:
+    - reference: doi:10.1128/AEM.01400-10
+      supports: SUPPORT
+      snippet: cysteine-HCl
+      explanation: Materials and Methods, Bacterial strains and growth on sugar substrates.
+        Supports only the named descriptor/event at the stated stage. Source explicitly
+        omits this component. Cysteine-HCl hydration is unspecified; no mapped identity
+        asserted. Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
+  - action: REMOVE
+    ingredient:
+      preferred_term: resazurin
+      notes: Source explicitly omits this component. Cysteine-HCl hydration is unspecified;
+        no mapped identity asserted.
+    stage: modified DSMZ 640 preparation
+    source_modification_index: 0
+    source_text: Trypticase, cysteine-HCl, and resazurin omitted relative to standard
+      DSMZ 640.
+    evidence:
+    - reference: doi:10.1128/AEM.01400-10
+      supports: SUPPORT
+      snippet: resazurin were not added
+      explanation: Materials and Methods, Bacterial strains and growth on sugar substrates.
+        Supports only the named descriptor/event at the stated stage. Source explicitly
+        omits this component. Cysteine-HCl hydration is unspecified; no mapped identity
+        asserted. Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: sodium sulfide nonahydrate
+      notes: Source describes 10% [wt/vol] Na2S·9H2O stock added to a final concentration
+        of 0.5%. Final percentage basis is not independently specified; do not substitute
+        stock strength or infer a conversion. Carbon-source alternatives remain unexpanded.
+    stage: modified DSMZ 640 reducing-agent addition
+    source_modification_index: 1
+    source_text: Carbon source increased to 5 g/L; Na2S.9H2O added to 0.5% final.
+    evidence:
+    - reference: doi:10.1128/AEM.01400-10
+      supports: SUPPORT
+      snippet: 10% [wt/vol] Na2S·9H2O was added to a final concentration of 0.5%
+      explanation: Materials and Methods, Bacterial strains and growth on sugar substrates.
+        Supports only the named descriptor/event at the stated stage. Source describes
+        10% [wt/vol] Na2S·9H2O stock added to a final concentration of 0.5%. Final
+        percentage basis is not independently specified; do not substitute stock strength
+        or infer a conversion. Carbon-source alternatives remain unexpanded. Source
+        inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: N2
+    stage: Blumer-Schuette2010 modified DSMZ640 serum-bottle headspace
+    source_modification_index: 2
+    source_text: Anaerobic batch cultivation under N2; 70C with orbital shaking; 50
+      ml in 125 ml serum bottle; 24 h.
+    evidence:
+    - reference: doi:10.1128/AEM.01400-10
+      supports: SUPPORT
+      snippet: a 50-ml batch culture in a 125-ml serum bottle under N2 headspace for
+        24 h
+      explanation: 'Methods: Bacterial strains and growth on sugar substrates. This
+        is variant0, distinct from Shang2013 variant1 in the same recipe. No nitrogen
+        purity, gas volume or dissolved concentration inferred.'
 - name: modified_dsmz_640_shang_2013
   relationship: DERIVED_FROM
   description: Modified DSMZ medium 640 for Thermoanaerobacterium calidifontis Rx1
     (Shang et al. 2013); ferric iron, added SL-10/vitamins/resazurin, variable substrate.
   modifications:
-  - 'Iron source substituted: FeCl3.6H2O 2.5 mg/L (vs ferrous iron in parent).'
-  - Added trace element solution SL-10 (1 ml/L, DSMZ medium 320) and vitamin solution
-    (5 ml/L, DSMZ medium 141, filter-sterilized).
-  - Added resazurin 0.5 mg/L.
-  - Fixed glucose replaced by variable substrate at 10.0 g/L (e.g. oat spelt xylan,
-    xylose, glucose).
-  - 'Per liter: 0.9 g NH4Cl, 0.9 g NaCl, 0.4 g MgCl2.6H2O, 0.75 g KH2PO4, 1.5 g K2HPO4,
-    0.75 g cysteine-HCl.H2O, 2 g tryptone, 1 g yeast extract; pH 7.0; prepared under
-    100% N2; dispensed 5 ml into 15 ml Hungate tubes; autoclaved.'
+  - Shang2013 lists FeCl3.6H2O2.5mg per preparation batch containing1L distilled-water
+    input; this does not establish a final2.5mg/L concentration or the exact displaced
+    ferrous iron form.
+  - Shang2013 adds trace element solution SL-10(1mL, DSMZ320) and vitamin solution(5mL,
+    DSMZ141, filter-sterilized) per batch containing1L distilled-water input; final
+    volume is unspecified.
+  - Shang2013 adds resazurin0.5mg per batch containing1L distilled-water input; final
+    volume is unspecified.
+  - Shang2013 lists10.0g substrate per preparation batch containing1L distilled-water
+    input, with separate oat spelt xylan, xylose and glucose experiments; no simultaneous
+    mixture or universal fixed-glucose removal is inferred.
+  - Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g MgCl2.6H2O,0.75g
+    KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast extract; pH7.0,
+    prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved. This water-input
+    basis is not a stated final medium volume.
   purpose: Capture the explicit modified DSMZ 640 recipe used to isolate and characterize
     T. calidifontis Rx1.
   evidence:
@@ -471,3 +872,376 @@ variants:
       g KH2PO4, 1.5 g K2HPO4, 2.5 mg FeCl3 x 6 H2O, 0.75 g cysteine-HCl x H2O, 2 g
       tryptone, 1 g yeast extract, 1 ml trace element solution SL-10, 0.5 mg resazurin,
       5 ml vitamin solution, 10.0 g substrate.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: FeCl3.6H2O
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 0
+    source_text: Shang2013 lists FeCl3.6H2O2.5mg per preparation batch containing1L
+      distilled-water input; this does not establish a final2.5mg/L concentration
+      or the exact displaced ferrous iron form.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 2.5 mg FeCl3 × 6 H2O
+      explanation: Methods full formulation uses the heading 'per liter distilled
+        water'. Absolute source-batch input is retained; ADD is source-stage input,
+        not an asserted difference from every imported parent ingredient.
+    amount:
+      value: '2.5'
+      unit: MG
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+    notes: No complete parent-equivalence or ferrous-to-ferric substitution is inferred
+      from source presence alone.
+  - action: ADD
+    ingredient:
+      preferred_term: trace element solution SL-10
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 1
+    source_text: Shang2013 adds trace element solution SL-10(1mL, DSMZ320) and vitamin
+      solution(5mL, DSMZ141, filter-sterilized) per batch containing1L distilled-water
+      input; final volume is unspecified.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 1 ml trace element solution SL-10
+      explanation: Methods full formulation uses the heading 'per liter distilled
+        water'. Absolute source-batch input is retained; ADD is source-stage input,
+        not an asserted difference from every imported parent ingredient.
+    amount:
+      value: '1'
+      unit: ML
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+    notes: No complete parent-equivalence or ferrous-to-ferric substitution is inferred
+      from source presence alone.
+  - action: ADD
+    ingredient:
+      preferred_term: vitamin solution
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 1
+    source_text: Shang2013 adds trace element solution SL-10(1mL, DSMZ320) and vitamin
+      solution(5mL, DSMZ141, filter-sterilized) per batch containing1L distilled-water
+      input; final volume is unspecified.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 5 ml vitamin solution
+      explanation: Methods full formulation uses the heading 'per liter distilled
+        water'. Absolute source-batch input is retained; ADD is source-stage input,
+        not an asserted difference from every imported parent ingredient.
+    amount:
+      value: '5'
+      unit: ML
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+    notes: No complete parent-equivalence or ferrous-to-ferric substitution is inferred
+      from source presence alone.
+  - action: ADD
+    ingredient:
+      preferred_term: resazurin
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 2
+    source_text: Shang2013 adds resazurin0.5mg per batch containing1L distilled-water
+      input; final volume is unspecified.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 0.5 mg resazurin
+      explanation: Methods full formulation uses the heading 'per liter distilled
+        water'. Absolute source-batch input is retained; ADD is source-stage input,
+        not an asserted difference from every imported parent ingredient.
+    amount:
+      value: '0.5'
+      unit: MG
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+    notes: No complete parent-equivalence or ferrous-to-ferric substitution is inferred
+      from source presence alone.
+  - action: ADD
+    ingredient:
+      preferred_term: NH4Cl
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 4
+    source_text: Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g
+      MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast
+      extract; pH7.0, prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved.
+      This water-input basis is not a stated final medium volume.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 0.9 g NH4Cl
+      explanation: Methods full formulation uses the heading 'per liter distilled
+        water'. Absolute source-batch input is retained; ADD is source-stage input,
+        not an asserted difference from every imported parent ingredient.
+    amount:
+      value: '0.9'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+    notes: No complete parent-equivalence or ferrous-to-ferric substitution is inferred
+      from source presence alone.
+  - action: ADD
+    ingredient:
+      preferred_term: NaCl
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 4
+    source_text: Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g
+      MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast
+      extract; pH7.0, prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved.
+      This water-input basis is not a stated final medium volume.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 0.9 g NaCl
+      explanation: Methods full formulation uses the heading 'per liter distilled
+        water'. Absolute source-batch input is retained; ADD is source-stage input,
+        not an asserted difference from every imported parent ingredient.
+    amount:
+      value: '0.9'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+    notes: No complete parent-equivalence or ferrous-to-ferric substitution is inferred
+      from source presence alone.
+  - action: ADD
+    ingredient:
+      preferred_term: MgCl2.6H2O
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 4
+    source_text: Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g
+      MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast
+      extract; pH7.0, prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved.
+      This water-input basis is not a stated final medium volume.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 0.4 g MgCl2 × 6 H2O
+      explanation: Methods full formulation uses the heading 'per liter distilled
+        water'. Absolute source-batch input is retained; ADD is source-stage input,
+        not an asserted difference from every imported parent ingredient.
+    amount:
+      value: '0.4'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+    notes: No complete parent-equivalence or ferrous-to-ferric substitution is inferred
+      from source presence alone.
+  - action: ADD
+    ingredient:
+      preferred_term: KH2PO4
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 4
+    source_text: Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g
+      MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast
+      extract; pH7.0, prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved.
+      This water-input basis is not a stated final medium volume.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 0.75 g KH2PO4
+      explanation: Methods full formulation uses the heading 'per liter distilled
+        water'. Absolute source-batch input is retained; ADD is source-stage input,
+        not an asserted difference from every imported parent ingredient.
+    amount:
+      value: '0.75'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+    notes: No complete parent-equivalence or ferrous-to-ferric substitution is inferred
+      from source presence alone.
+  - action: ADD
+    ingredient:
+      preferred_term: K2HPO4
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 4
+    source_text: Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g
+      MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast
+      extract; pH7.0, prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved.
+      This water-input basis is not a stated final medium volume.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 1.5 g K2HPO4
+      explanation: Methods full formulation uses the heading 'per liter distilled
+        water'. Absolute source-batch input is retained; ADD is source-stage input,
+        not an asserted difference from every imported parent ingredient.
+    amount:
+      value: '1.5'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+    notes: No complete parent-equivalence or ferrous-to-ferric substitution is inferred
+      from source presence alone.
+  - action: ADD
+    ingredient:
+      preferred_term: cysteine-HCl.H2O
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 4
+    source_text: Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g
+      MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast
+      extract; pH7.0, prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved.
+      This water-input basis is not a stated final medium volume.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 0.75 g cysteine-HCl × H2O
+      explanation: Methods full formulation uses the heading 'per liter distilled
+        water'. Absolute source-batch input is retained; ADD is source-stage input,
+        not an asserted difference from every imported parent ingredient.
+    amount:
+      value: '0.75'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+    notes: No complete parent-equivalence or ferrous-to-ferric substitution is inferred
+      from source presence alone.
+  - action: ADD
+    ingredient:
+      preferred_term: tryptone
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 4
+    source_text: Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g
+      MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast
+      extract; pH7.0, prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved.
+      This water-input basis is not a stated final medium volume.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 2 g tryptone
+      explanation: Methods full formulation uses the heading 'per liter distilled
+        water'. Absolute source-batch input is retained; ADD is source-stage input,
+        not an asserted difference from every imported parent ingredient.
+    amount:
+      value: '2'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+    notes: No complete parent-equivalence or ferrous-to-ferric substitution is inferred
+      from source presence alone.
+  - action: ADD
+    ingredient:
+      preferred_term: yeast extract
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 4
+    source_text: Shang2013 recipe per1L distilled-water input:0.9g NH4Cl,0.9g NaCl,0.4g
+      MgCl2.6H2O,0.75g KH2PO4,1.5g K2HPO4,0.75g cysteine-HCl.H2O,2g tryptone,1g yeast
+      extract; pH7.0, prepared under100%N2,5mL portions in15mL Hungate tubes, autoclaved.
+      This water-input basis is not a stated final medium volume.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 1 g yeast extract
+      explanation: Methods full formulation uses the heading 'per liter distilled
+        water'. Absolute source-batch input is retained; ADD is source-stage input,
+        not an asserted difference from every imported parent ingredient.
+    amount:
+      value: '1'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+    notes: No complete parent-equivalence or ferrous-to-ferric substitution is inferred
+      from source presence alone.
+  - action: ADD
+    ingredient:
+      preferred_term: oat spelt xylan
+    stage: Shang2013 xylanase production culture
+    source_modification_index: 3
+    source_text: Shang2013 lists10.0g substrate per preparation batch containing1L
+      distilled-water input, with separate oat spelt xylan, xylose and glucose experiments;
+      no simultaneous mixture or universal fixed-glucose removal is inferred.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 10 g/l of oat spelt xylan as substrate
+      explanation: Methods define10g substrate per litre water preparation and separate
+        substrate experiments; xylose isolation and glucose protein-analysis arms
+        are distinct. No simultaneous three-substrate medium is asserted.
+    amount:
+      value: '10.0'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+  - action: ADD
+    ingredient:
+      preferred_term: xylose
+    stage: Shang2013 xylose substrate alternative
+    source_modification_index: 3
+    source_text: Shang2013 lists10.0g substrate per preparation batch containing1L
+      distilled-water input, with separate oat spelt xylan, xylose and glucose experiments;
+      no simultaneous mixture or universal fixed-glucose removal is inferred.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 10.0 g substrate
+      explanation: Methods define10g substrate per litre water preparation and separate
+        substrate experiments; xylose isolation and glucose protein-analysis arms
+        are distinct. No simultaneous three-substrate medium is asserted.
+    amount:
+      value: '10.0'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+  - action: ADD
+    ingredient:
+      preferred_term: glucose
+    stage: Shang2013 glucose substrate alternative
+    source_modification_index: 3
+    source_text: Shang2013 lists10.0g substrate per preparation batch containing1L
+      distilled-water input, with separate oat spelt xylan, xylose and glucose experiments;
+      no simultaneous mixture or universal fixed-glucose removal is inferred.
+    evidence:
+    - reference: doi:10.1007/s00203-013-0895-5
+      supports: SUPPORT
+      snippet: 10.0 g substrate
+      explanation: Methods define10g substrate per litre water preparation and separate
+        substrate experiments; xylose isolation and glucose protein-analysis arms
+        are distinct. No simultaneous three-substrate medium is asserted.
+    amount:
+      value: '10.0'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Shang2013 preparation stated as 'per liter distilled water';
+        final volume after all additions is not specified.
+  ingredient_mentions:
+  - source_label: ferrous iron
+    reported_action: REPLACE
+    stage: Shang2013 modified DSMZ640 preparation per litre of water input
+    source_modification_index: 0
+    source_text: Shang2013 lists FeCl3.6H2O2.5mg per preparation batch containing1L
+      distilled-water input; this does not establish a final2.5mg/L concentration
+      or the exact displaced ferrous iron form.
+    reason: Ferric hexahydrate source input is verified; this source passage does
+      not identify a specific displaced ferrous salt or demonstrate chemical-form
+      equivalence to the parent.
+    held_fields:
+    - OPERATION
+    - IDENTITY_FORM
+  - source_label: glucose
+    reported_action: REPLACE
+    stage: Shang2013 separate substrate arms
+    source_modification_index: 3
+    source_text: Shang2013 lists10.0g substrate per preparation batch containing1L
+      distilled-water input, with separate oat spelt xylan, xylose and glucose experiments;
+      no simultaneous mixture or universal fixed-glucose removal is inferred.
+    reason: Separate glucose, xylose and xylan source arms are supported; an operation
+      removing a fixed parent glucose across every assay is not established by the
+      source.
+    held_fields:
+    - OPERATION

@@ -77,6 +77,74 @@ def mim_link_id(ingredient: dict) -> str | None:
     return None
 
 
+PLACEHOLDER_PATTERNS = (
+    r"see source",
+    r"original amount:",
+    r"unknown",
+    r"\bTBD\b",
+    r"to be determined",
+    r"check source",
+    r"refer to",
+)
+
+
+def check_placeholders(text: object) -> bool:
+    """Return True if a string (or list of strings) matches any placeholder pattern."""
+    if isinstance(text, list):
+        return any(check_placeholders(item) for item in text)
+    if isinstance(text, dict):
+        return any(check_placeholders(val) for val in text.values())
+    if not isinstance(text, str):
+        return False
+    text_lower = text.lower()
+    return any(re.search(pattern, text_lower) for pattern in PLACEHOLDER_PATTERNS)
+
+
+def _collect_placeholder_issues(record: dict, ingredients: list) -> list[dict]:
+    """Collect P3.1 placeholder issues across record notes and ingredient fields."""
+    issues = []
+    if check_placeholders(record.get("notes", "")):
+        issues.append(
+            {
+                "rule": "P3.1",
+                "priority": "P3",
+                "description": "Placeholder text found in notes field",
+            }
+        )
+    for ing in ingredients:
+        if isinstance(ing, dict):
+            preferred_term = ing.get("preferred_term", "unknown")
+            if check_placeholders(ing.get("notes", "")):
+                issues.append(
+                    {
+                        "rule": "P3.1",
+                        "priority": "P3",
+                        "description": f"Placeholder text in ingredient notes: {preferred_term}",
+                    }
+                )
+            if check_placeholders(ing.get("preferred_term", "")):
+                issues.append(
+                    {
+                        "rule": "P3.1",
+                        "priority": "P3",
+                        "description": f"Placeholder text in ingredient preferred_term: {preferred_term}",
+                    }
+                )
+    return issues
+
+
+def solution_ingredient_link_id(ingredient: dict) -> str | None:
+    """Return MIM link ID or fallback chebi_term ID for a solution composition item."""
+    link = mim_link_id(ingredient)
+    if link:
+        return link
+    if isinstance(ingredient, dict):
+        chebi = ingredient.get("chebi_term")
+        if isinstance(chebi, dict) and chebi.get("id"):
+            return chebi["id"]
+    return None
+
+
 class RecipeValidator:
     """Validate recipes against quality rules."""
 
@@ -109,13 +177,17 @@ class RecipeValidator:
             )
 
         # Check composition ingredients
-        composition = solution.get("composition", [])
+        raw_composition = solution.get("composition")
+        composition = raw_composition if isinstance(raw_composition, list) else []
         total_ingredients = len(composition)
-        linked_ingredients = sum(1 for ing in composition if mim_link_id(ing))
+        linked_ingredients = sum(1 for ing in composition if solution_ingredient_link_id(ing))
 
         coverage = (linked_ingredients / total_ingredients * 100) if total_ingredients > 0 else 0
 
-        # Solutions should have >80% MediaIngredientMech coverage
+        # P3.1: Placeholder text in solution notes or composition items
+        issues.extend(_collect_placeholder_issues(solution, composition))
+
+        # Solutions should have >80% MediaIngredientMech/CHEBI coverage
         if coverage < 80 and total_ingredients > 0:
             issues.append(
                 {
@@ -164,12 +236,15 @@ class RecipeValidator:
             mapped_file = (
                 self.mediaingredientmech_repo / "data" / "curated" / "mapped_ingredients.yaml"
             )
-            if mapped_file.exists():
-                with open(mapped_file) as f:
-                    data = yaml.safe_load(f)
-                    for item in data.get("ingredients", []):
-                        if "id" in item:
-                            ids.add(item["id"])
+            try:
+                if mapped_file.exists():
+                    with open(mapped_file) as f:
+                        data = yaml.safe_load(f) or {}
+                        for item in data.get("ingredients", []):
+                            if "id" in item:
+                                ids.add(item["id"])
+            except OSError:
+                pass
         return ids
 
     def validate_recipe(self, recipe_path: Path) -> dict:
@@ -270,7 +345,11 @@ class RecipeValidator:
             )
 
         # P2.1: Invalid MediaIngredientMech ID
-        ingredients = recipe.get("ingredients", []) + recipe.get("composition", [])
+        raw_ings = recipe.get("ingredients")
+        raw_comp = recipe.get("composition")
+        ingredients = (raw_ings if isinstance(raw_ings, list) else []) + (
+            raw_comp if isinstance(raw_comp, list) else []
+        )
         for _idx, ing in enumerate(ingredients):
             if isinstance(ing, dict):
                 mediaing_id = mim_link_id(ing)
@@ -284,43 +363,7 @@ class RecipeValidator:
                     )
 
         # P3.1: Placeholder text
-        placeholder_patterns = [
-            r"see source",
-            r"original amount:",
-            r"unknown",
-            r"\bTBD\b",
-            r"to be determined",
-            r"check source",
-            r"refer to",
-        ]
-
-        def check_placeholders(text: str) -> bool:
-            if not isinstance(text, str):
-                return False
-            text_lower = text.lower()
-            return any(re.search(pattern, text_lower) for pattern in placeholder_patterns)
-
-        # Check notes
-        if check_placeholders(recipe.get("notes", "")):
-            issues.append(
-                {
-                    "rule": "P3.1",
-                    "priority": "P3",
-                    "description": "Placeholder text found in notes field",
-                }
-            )
-
-        # Check ingredients
-        for _idx, ing in enumerate(ingredients):
-            if isinstance(ing, dict):
-                if check_placeholders(ing.get("notes", "")):
-                    issues.append(
-                        {
-                            "rule": "P3.1",
-                            "priority": "P3",
-                            "description": f'Placeholder text in ingredient notes: {ing.get("preferred_term", "unknown")}',
-                        }
-                    )
+        issues.extend(_collect_placeholder_issues(recipe, ingredients))
 
         # P3.2: Missing MediaIngredientMech linkage
         total_ingredients = len(ingredients)

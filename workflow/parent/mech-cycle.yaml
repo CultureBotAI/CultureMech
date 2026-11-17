@@ -1,0 +1,87 @@
+schema_version: 1.0.0
+id: mech-goal-cycle
+version: 1.0.0
+title: Shared six-goal Mech cycle
+stages:
+- stage: 1
+  key: add_records
+  goal_text: Use the add-record skill to review evidence and add supported new records until the bounded
+    search frontier yields no new records.
+  required_outputs: []
+- stage: 2
+  key: causal_graphs
+  goal_text: Use the causal-graph skill to review, edit, and update causal graphs in every applicable
+    record.
+  required_outputs: []
+- stage: 3
+  key: protein_examples
+  goal_text: Review all applicable records and add evidence-backed UniProt protein examples, especially
+    for gene and protein elements of causal graphs.
+  required_outputs: []
+- stage: 4
+  key: record_review
+  goal_text: Use the record-review skill to review every record and save versioned machine-readable findings
+    and human-readable reports, explicitly recording empty outcomes and carrying open or deferred findings
+    forward.
+  required_outputs:
+  - review_report
+  - review_findings
+- stage: 5
+  key: resolve_review_findings
+  goal_text: Freeze the completed review scope, group related findings into real GitHub issues, resolve
+    those groups, validate the fixes, and preserve finding-to-issue-to-fix traceability.
+  required_outputs:
+  - issue_map
+  - validation
+- stage: 6
+  key: infrastructure
+  goal_text: Freeze the INFRA_TASKS.md backlog into a bounded implementation plan, make or link GitHub
+    issues, implement and validate that plan, and retain deferred or newly discovered tasks for the next
+    cycle.
+  required_outputs:
+  - infra_snapshot
+  - implementation_plan
+  - validation
+closure_policy:
+  steps:
+  - commit_and_push_pr
+  - independent_adversarial_review
+  - make_issues
+  - address_issues
+  - independent_rereview
+  - verify_checks
+  - merge
+  - delete_branch
+  every_goal: true
+  independent_review: true
+  real_github_issues: true
+  rereview_after_fixes: true
+  verify_remote_merge: true
+  delete_only_reviewed_branch: true
+  checks_required: true
+  allow_no_change_receipt: true
+review_policy:
+  artifact_root: reviews/workflow
+  latest_index_path: reviews/workflow/latest.yaml
+  carry_forward_statuses:
+  - open
+  - deferred
+  immutable_versions: true
+  stable_finding_ids: true
+  explicit_no_findings: true
+  latest_index_after_verified_closure: true
+  require_tracked_committed: true
+  issue_group_traceability: true
+infrastructure_policy:
+  notebook_path: INFRA_TASKS.md
+  continuous_capture: true
+  issue_urls_required: true
+  freeze_scope_at_stage_start: true
+  new_tasks_next_cycle: true
+  explicit_empty_plan: true
+cycle_policy:
+  restart_stage: 1
+  restart_after_final_closure: true
+  preserve_active_goal_on_migration: true
+  bind_run_cycle_stage_and_goal: true
+  reload_profile_between_cycles_only: true

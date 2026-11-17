@@ -52,6 +52,7 @@ import hashlib
 import os
 import re
 import uuid
+import warnings
 from collections.abc import Callable, Iterator, Mapping
 from dataclasses import asdict, dataclass
 from functools import lru_cache
@@ -253,6 +254,39 @@ def transform(
         if edge:
             yield edge
 
+    # Edge Type 11: Curated UniProt Protein Examples (#659)
+    seen_protein_edge_ids: set[str] = set()
+    for example, inherited_cofactor_id, inherited_substrate_id in _iter_protein_examples_for_export(
+        record
+    ):
+        for edge in protein_example_to_edges(
+            medium_id,
+            example,
+            inherited_cofactor_id=inherited_cofactor_id,
+            inherited_substrate_id=inherited_substrate_id,
+        ):
+            edge_id = edge.get("id")
+            if edge_id in seen_protein_edge_ids:
+                continue
+            if edge_id:
+                seen_protein_edge_ids.add(edge_id)
+            yield edge
+
+    # Edge Type 12: Curated Growth-Media Causal Graphs (#658)
+    seen_causal_edge_ids: set[str] = set()
+    for causal_edge, inherited_organism_id in _iter_causal_edges_for_export(record):
+        for edge in causal_edge_to_edges(
+            medium_id,
+            causal_edge,
+            inherited_organism_id=inherited_organism_id,
+        ):
+            edge_id = edge.get("id")
+            if edge_id in seen_causal_edge_ids:
+                continue
+            if edge_id:
+                seen_causal_edge_ids.add(edge_id)
+            yield edge
+
 
 # ================================================================
 # NODE EXTRACTION (#294)
@@ -275,6 +309,7 @@ GROWTH_MEDIUM = "biolink:GrowthMedium"
 CHEMICAL_MIXTURE = "biolink:ChemicalMixture"
 COMPLEX_MOLECULAR_MIXTURE = "biolink:ComplexMolecularMixture"
 ATTRIBUTE = "biolink:Attribute"
+PROTEIN = "biolink:Protein"
 
 # medium_type -> (medium node category, medium-type node category), mirroring
 # kg-microbe's MEDIUM_DEFINED_CATEGORY / MEDIUM_COMPLEX_CATEGORY pair. Values
@@ -461,6 +496,36 @@ def nodes(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
                 )
             )
 
+    seen_proteins: set[str] = set()
+    for example, _cofactor_id, _substrate_id in _iter_protein_examples_for_export(record):
+        uniprot_id = _get_term_id(example, ["uniprot_term", "id"])
+        uniprot_label = _get_term_id(example, ["uniprot_term", "label"])
+        if uniprot_id and uniprot_id not in seen_proteins:
+            seen_proteins.add(uniprot_id)
+            yield asdict(
+                Node(
+                    id=uniprot_id,
+                    category=[PROTEIN],
+                    name=str(uniprot_label or uniprot_id),
+                )
+            )
+
+    for causal_edge, _organism_id in _iter_causal_edges_for_export(record):
+        for pt in causal_edge.get("protein_terms") or []:
+            if not isinstance(pt, dict):
+                continue
+            uniprot_id = pt.get("id")
+            uniprot_label = pt.get("label")
+            if uniprot_id and uniprot_id not in seen_proteins:
+                seen_proteins.add(uniprot_id)
+                yield asdict(
+                    Node(
+                        id=uniprot_id,
+                        category=[PROTEIN],
+                        name=str(uniprot_label or uniprot_id),
+                    )
+                )
+
 
 # ================================================================
 # EDGE EXTRACTION FUNCTIONS (following cmm-ai-automation semantic model)
@@ -478,6 +543,14 @@ def organism_grows_in_medium_edge(organism: dict, medium_id: str) -> dict | None
 
     Data preserved: Organism ID, strain info (as qualifier), evidence
     """
+    if organism.get("scoped_to_variant"):
+        warnings.warn(
+            f"Omitting variant-scoped growth for {medium_id}: "
+            f"{organism['scoped_to_variant']!r}; a parent-medium edge would broaden the evidence",
+            RuntimeWarning,
+            stacklevel=2,
+        )
+        return None
     org_id = _get_term_id(organism, ["term", "id"])
     if not org_id:
         return None
@@ -822,6 +895,311 @@ def variant_to_edge(medium_id: str, variant: dict) -> dict | None:
             {"qualifier_type_id": "biolink:relationship_type", "qualifier_value": "variant_of"}
         ],
     )
+
+
+def _iter_protein_examples_for_export(
+    record: dict[str, Any],
+) -> Iterator[tuple[dict[str, Any], str | None, str | None]]:
+    """Yield (protein_example_dict, inherited_cofactor_id, inherited_substrate_id) across a record."""
+    for example in record.get("protein_examples") or []:
+        if isinstance(example, dict):
+            yield example, None, None
+
+    for organism in record.get("target_organisms") or []:
+        if not isinstance(organism, dict):
+            continue
+        for example in organism.get("protein_examples") or []:
+            if isinstance(example, dict):
+                yield example, None, None
+        for req in organism.get("cofactor_requirements") or []:
+            if not isinstance(req, dict):
+                continue
+            cof = req.get("cofactor") if isinstance(req.get("cofactor"), dict) else {}
+            cofactor_id = _get_term_id(cof, ["term", "id"]) or _get_term_id(
+                req, ["cofactor_term", "id"]
+            )
+            for example in req.get("protein_examples") or []:
+                if isinstance(example, dict):
+                    yield example, cofactor_id, None
+            for example in cof.get("protein_examples") or []:
+                if isinstance(example, dict):
+                    yield example, cofactor_id, None
+        for transporter in organism.get("transporters") or []:
+            if not isinstance(transporter, dict):
+                continue
+            sub_terms = transporter.get("substrate_terms") or []
+            first_sub = sub_terms[0] if sub_terms and isinstance(sub_terms[0], dict) else {}
+            substrate_id = first_sub.get("id") or _get_term_id(
+                transporter, ["substrate_term", "id"]
+            )
+            for example in transporter.get("protein_examples") or []:
+                if isinstance(example, dict):
+                    yield example, None, substrate_id
+
+    for cofactor in record.get("cofactors") or []:
+        if not isinstance(cofactor, dict):
+            continue
+        cofactor_id = _get_term_id(cofactor, ["term", "id"]) or _get_term_id(
+            cofactor, ["cofactor_term", "id"]
+        )
+        for example in cofactor.get("protein_examples") or []:
+            if isinstance(example, dict):
+                yield example, cofactor_id, None
+
+    for transporter in record.get("transporters") or []:
+        if not isinstance(transporter, dict):
+            continue
+        sub_terms = transporter.get("substrate_terms") or []
+        first_sub = sub_terms[0] if sub_terms and isinstance(sub_terms[0], dict) else {}
+        substrate_id = first_sub.get("id") or _get_term_id(transporter, ["substrate_term", "id"])
+        for example in transporter.get("protein_examples") or []:
+            if isinstance(example, dict):
+                yield example, None, substrate_id
+
+    for ing in record.get("ingredients") or []:
+        if not isinstance(ing, dict):
+            continue
+        for cof in ing.get("cofactors_provided") or []:
+            if not isinstance(cof, dict):
+                continue
+            cofactor_id = _get_term_id(cof, ["term", "id"]) or _get_term_id(
+                cof, ["cofactor_term", "id"]
+            )
+            for example in cof.get("protein_examples") or []:
+                if isinstance(example, dict):
+                    yield example, cofactor_id, None
+
+    for sol in record.get("solutions") or []:
+        if not isinstance(sol, dict):
+            continue
+        for comp in sol.get("composition") or []:
+            if not isinstance(comp, dict):
+                continue
+            for cof in comp.get("cofactors_provided") or []:
+                if not isinstance(cof, dict):
+                    continue
+                cofactor_id = _get_term_id(cof, ["term", "id"]) or _get_term_id(
+                    cof, ["cofactor_term", "id"]
+                )
+                for example in cof.get("protein_examples") or []:
+                    if isinstance(example, dict):
+                        yield example, cofactor_id, None
+
+
+def protein_example_to_edges(
+    medium_id: str,
+    example: dict[str, Any],
+    *,
+    inherited_cofactor_id: str | None = None,
+    inherited_substrate_id: str | None = None,
+) -> Iterator[dict[str, Any]]:
+    """Emit KGX edges for a curated ProteinExample (#659).
+
+    Emits:
+    - Medium (CultureMech) -> biolink:related_to -> Protein (UniProtKB)
+    - Protein (UniProtKB) -> biolink:in_taxon -> Organism (NCBITaxon)
+    - Protein (UniProtKB) -> biolink:interacts_with -> Cofactor (CHEBI), if present
+    - Protein (UniProtKB) -> biolink:interacts_with -> Substrate (CHEBI), if present
+    """
+    uniprot_id = _get_term_id(example, ["uniprot_term", "id"])
+    if not uniprot_id:
+        return
+
+    organism_id = _get_term_id(example, ["organism_term", "id"])
+    cofactor_id = _get_term_id(example, ["cofactor_term", "id"]) or inherited_cofactor_id
+    substrate_id = _get_term_id(example, ["substrate_term", "id"]) or inherited_substrate_id
+
+    pubs, _ = _format_evidence(example.get("evidence"))
+    publications = pubs if pubs else None
+
+    role_qualifiers: list[dict[str, str]] = []
+    functional_role = example.get("functional_role")
+    if isinstance(functional_role, str) and functional_role.strip():
+        role_qualifiers.append(
+            {"qualifier_type_id": "biolink:role", "qualifier_value": functional_role.strip()}
+        )
+
+    yield _make_association(
+        subject=medium_id,
+        predicate="biolink:related_to",
+        obj=uniprot_id,
+        qualifiers=[
+            {
+                "qualifier_type_id": "biolink:relationship_type",
+                "qualifier_value": "protein_example",
+            },
+            *role_qualifiers,
+        ],
+        publications=publications,
+    )
+
+    if organism_id:
+        yield _make_association(
+            subject=uniprot_id,
+            predicate="biolink:in_taxon",
+            obj=organism_id,
+            qualifiers=role_qualifiers if role_qualifiers else None,
+            publications=publications,
+        )
+
+    if cofactor_id:
+        yield _make_association(
+            subject=uniprot_id,
+            predicate="biolink:interacts_with",
+            obj=cofactor_id,
+            qualifiers=[
+                {"qualifier_type_id": "biolink:relationship_type", "qualifier_value": "cofactor"},
+                *role_qualifiers,
+            ],
+            publications=publications,
+        )
+
+    if substrate_id and substrate_id != cofactor_id:
+        yield _make_association(
+            subject=uniprot_id,
+            predicate="biolink:interacts_with",
+            obj=substrate_id,
+            qualifiers=[
+                {"qualifier_type_id": "biolink:relationship_type", "qualifier_value": "substrate"},
+                *role_qualifiers,
+            ],
+            publications=publications,
+        )
+
+
+_CAUSAL_PREDICATE_MAP = {
+    "CAUSES": "biolink:causes",
+    "POSITIVELY_REGULATES": "biolink:positively_regulates",
+    "NEGATIVELY_REGULATES": "biolink:negatively_regulates",
+    "ENABLES_GROWTH": "biolink:positively_regulates",
+    "INHIBITS_GROWTH": "biolink:negatively_regulates",
+    "PROVIDES_COFACTOR_FOR": "biolink:positively_regulates",
+    "TRANSPORTS_SUBSTRATE": "biolink:positively_regulates",
+    "AFFECTS": "biolink:affects",
+}
+
+
+def _iter_causal_edges_for_export(
+    record: dict[str, Any],
+) -> Iterator[tuple[dict[str, Any], str | None]]:
+    """Yield (causal_edge_dict, inherited_organism_id) across a record."""
+    for edge in record.get("causal_graphs") or []:
+        if isinstance(edge, dict):
+            yield edge, None
+
+    for organism in record.get("target_organisms") or []:
+        if not isinstance(organism, dict):
+            continue
+        org_id = _get_term_id(organism, ["term", "id"])
+        for edge in organism.get("causal_graphs") or []:
+            if isinstance(edge, dict):
+                yield edge, org_id
+
+
+def causal_edge_to_edges(
+    medium_id: str,
+    causal_edge: dict[str, Any],
+    *,
+    inherited_organism_id: str | None = None,
+) -> Iterator[dict[str, Any]]:
+    """Emit KGX edges for a curated CausalEdge (#658).
+
+    Emits:
+    - Subject (subject_term.id) -> biolink causal predicate -> Object (object_term.id)
+    - Medium (CultureMech) -> biolink:related_to -> Subject (subject_term.id)
+    - Subject (subject_term.id) -> biolink:affects -> Organism (NCBITaxon), when organism context is distinct
+    - Subject (subject_term.id) -> biolink:interacts_with -> Protein (UniProtKB), for any protein_terms
+    - Protein (UniProtKB) -> biolink:in_taxon -> Organism (NCBITaxon), when organism context is present
+    """
+    subject_id = _get_term_id(causal_edge, ["subject_term", "id"])
+    object_id = _get_term_id(causal_edge, ["object_term", "id"])
+    predicate_token = causal_edge.get("predicate")
+    if not (subject_id and object_id and predicate_token):
+        return
+
+    biolink_pred = _CAUSAL_PREDICATE_MAP.get(str(predicate_token), "biolink:affects")
+    organism_id = _get_term_id(causal_edge, ["organism_term", "id"]) or inherited_organism_id
+
+    pubs, _ = _format_evidence(causal_edge.get("evidence"))
+    publications = pubs if pubs else None
+
+    context_qualifiers: list[dict[str, str]] = []
+    condition_context = causal_edge.get("condition_context")
+    if isinstance(condition_context, str) and condition_context.strip():
+        context_qualifiers.append(
+            {"qualifier_type_id": "biolink:role", "qualifier_value": condition_context.strip()}
+        )
+
+    yield _make_association(
+        subject=subject_id,
+        predicate=biolink_pred,
+        obj=object_id,
+        qualifiers=[
+            {
+                "qualifier_type_id": "biolink:relationship_type",
+                "qualifier_value": f"causal_edge:{predicate_token}",
+            },
+            *context_qualifiers,
+        ],
+        publications=publications,
+    )
+
+    yield _make_association(
+        subject=medium_id,
+        predicate="biolink:related_to",
+        obj=subject_id,
+        qualifiers=[
+            {
+                "qualifier_type_id": "biolink:relationship_type",
+                "qualifier_value": "causal_mechanism_component",
+            },
+            *context_qualifiers,
+        ],
+        publications=publications,
+    )
+
+    if organism_id and organism_id not in (subject_id, object_id):
+        yield _make_association(
+            subject=subject_id,
+            predicate="biolink:affects",
+            obj=organism_id,
+            qualifiers=[
+                {
+                    "qualifier_type_id": "biolink:relationship_type",
+                    "qualifier_value": "causal_edge_organism_context",
+                },
+                *context_qualifiers,
+            ],
+            publications=publications,
+        )
+
+    for pt in causal_edge.get("protein_terms") or []:
+        if not isinstance(pt, dict):
+            continue
+        uniprot_id = pt.get("id")
+        if not uniprot_id:
+            continue
+        yield _make_association(
+            subject=subject_id,
+            predicate="biolink:interacts_with",
+            obj=uniprot_id,
+            qualifiers=[
+                {
+                    "qualifier_type_id": "biolink:relationship_type",
+                    "qualifier_value": "causal_edge_protein_mediator",
+                },
+                *context_qualifiers,
+            ],
+            publications=publications,
+        )
+        if organism_id:
+            yield _make_association(
+                subject=uniprot_id,
+                predicate="biolink:in_taxon",
+                obj=organism_id,
+                qualifiers=context_qualifiers if context_qualifiers else None,
+                publications=publications,
+            )
 
 
 # ================================================================

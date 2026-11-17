@@ -1,0 +1,589 @@
+#!/usr/bin/env python3
+"""Build/verify a provenance-bound direct-ingredient candidate (2026-11-13).
+
+Inputs: normalized YAML, native aggregator/schema and packaged MIM label index.
+Outputs: six aggregation products plus a manifest in a new directory.
+Serves issue #682 and review fixes #685 (manifest pin) / #686 (relocation).
+Also covers #688 (large CSV fields) and #689 (publication cleanup boundary).
+Version 2 adds structured variant occurrences and a separate complete change
+ledger (#683); version 1 consumers must explicitly adopt the new contract.
+Never publishes a MIM release.
+"""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import hashlib
+import importlib.metadata
+import json
+import os
+import platform
+import re
+import subprocess
+import sys
+import tempfile
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_INPUT = REPO_ROOT / "data" / "normalized_yaml"
+PRODUCTS = (
+    "ingredient_occurrences.tsv",
+    "ingredients_list.tsv",
+    "mapped_ingredients.yaml",
+    "unmapped_ingredients.yaml",
+    "ingredient_aggregation_errors.tsv",
+    "variant_ingredient_changes.tsv",
+    "variant_ingredient_holds.tsv",
+)
+CONTRACT = "culturemech-direct-ingredients-v3"
+SCOPE = {
+    "included": [
+        "root ingredients or composition selected by native record shape",
+        "recursively inline solutions[].composition",
+        "variant-scoped ADD, SET_CONCENTRATION, SET_AMOUNT and new REPLACE ingredient descriptors",
+        "all structured variant change descriptors in a separate context ledger",
+        "source-bound unresolved ingredient names in a separate withheld-mention ledger",
+    ],
+    "excluded": [
+        "expansion of references to other scanned solution records",
+        "variant modification text and ingredients mentioned only in prose",
+        "copies inside referenced stocks beyond the referenced record",
+        "REMOVE and old REPLACE descriptors from positive ingredient counts",
+        "application of variant changes to a base or expanded formulation",
+    ],
+}
+
+
+class BundleError(ValueError):
+    """The candidate cannot be accepted or verified."""
+
+
+def fingerprint(path: Path) -> dict[str, Any]:
+    digest = hashlib.sha256()
+    size = 0
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+            size += len(chunk)
+    return {"sha256": digest.hexdigest(), "bytes": size}
+
+
+def corpus_inventory(input_dir: Path) -> dict[str, Any]:
+    if not input_dir.is_dir():
+        raise BundleError(f"Input directory does not exist: {input_dir}")
+    files = sorted(input_dir.rglob("*.yaml"))  # Includes ignored/hidden inputs, like native scan.
+    if not files:
+        raise BundleError("No YAML input files")
+    return {path.relative_to(input_dir).as_posix(): fingerprint(path) for path in files}
+
+
+def dependency_inventory() -> dict[str, Any]:
+    # Pin the local Python/schema closure conservatively. This also notices new
+    # imported modules without maintaining a second hand-written import graph.
+    paths = set((REPO_ROOT / "src" / "culturemech").rglob("*.py"))
+    paths.update((REPO_ROOT / "src" / "culturemech" / "schema").rglob("*.yaml"))
+    for relative in (
+        "scripts/ingredient_release_bundle.py",
+        "scripts/ingredient_occurrences.py",
+        "scripts/record_kinds.py",
+        "scripts/validate_strict.py",
+        "src/culturemech/data/mediaingredientmech/label_index.csv",
+        "src/culturemech/data/mediaingredientmech/label_index.metadata.json",
+        "pyproject.toml",
+        "uv.lock",
+    ):
+        paths.add(REPO_ROOT / relative)
+    return {path.relative_to(REPO_ROOT).as_posix(): fingerprint(path) for path in sorted(paths)}
+
+
+def git_state() -> dict[str, Any]:
+    def git(*args: str) -> str:
+        return subprocess.check_output(
+            ["git", "-C", str(REPO_ROOT), *args], text=True, encoding="utf-8"
+        ).strip()
+
+    status = git("status", "--porcelain", "--untracked-files=normal")
+    return {"commit": git("rev-parse", "HEAD"), "dirty": bool(status), "status": status}
+
+
+def environment() -> dict[str, Any]:
+    packages = {}
+    for name in ("PyYAML", "linkml", "linkml-runtime", "jsonschema"):
+        try:
+            packages[name] = importlib.metadata.version(name)
+        except importlib.metadata.PackageNotFoundError:
+            packages[name] = None
+    return {"python": platform.python_version(), "packages": packages}
+
+
+def _rows(path: Path):
+    with path.open(encoding="utf-8", newline="") as stream:
+        reader = csv.DictReader(stream, delimiter="\t")
+        while True:
+            # Native ingredient_json includes uncapped schema-valid notes. Lift
+            # csv's default 128 KiB cap only while reading a row, restoring the
+            # caller's process-global limit before yielding or propagating errors.
+            previous_limit = csv.field_size_limit()
+            try:
+                csv.field_size_limit(sys.maxsize)
+                row = next(reader)
+            except StopIteration:
+                return
+            finally:
+                csv.field_size_limit(previous_limit)
+            yield row
+
+
+def artifact_accounting(directory: Path, corpus: dict[str, Any]) -> dict[str, Any]:
+    """Reconcile native TSVs, including quoted/newline-containing cells."""
+    occurrences = mapped = 0
+    paths: set[str] = set()
+    keys: set[tuple[str, str, str]] = set()
+    categories: Counter[str] = Counter()
+    variant_occurrences: dict[tuple[str, str, str], dict[str, str]] = {}
+    for row in _rows(directory / "ingredient_occurrences.tsv"):
+        key = (row["recipe_id"], row["component_field"], row["component_index"])
+        if key in keys:
+            raise BundleError(f"Duplicate occurrence coordinate: {key}")
+        keys.add(key)
+        source_path = row["source_path"]
+        if source_path not in corpus:
+            raise BundleError(f"Occurrence outside input inventory: {source_path}")
+        paths.add(source_path)
+        categories[row["recipe_category"] or "UNKNOWN"] += 1
+        occurrences += 1
+        mapped += bool(row["resolved_identifier"])
+        if row.get("change_action"):
+            if row["change_action"] not in {
+                "ADD",
+                "SET_CONCENTRATION",
+                "SET_AMOUNT",
+                "REPLACE",
+            } or (row["descriptor_role"] != "ingredient"):
+                raise BundleError("Context-only variant descriptor in positive occurrences")
+            variant_occurrences[key] = row
+        elif row["component_field"].startswith("variants/"):
+            raise BundleError("Variant occurrence is missing its change context")
+
+    changes: dict[tuple[str, str, str], dict[str, dict[str, str]]] = {}
+    positive_changes: dict[tuple[str, str, str], dict[str, str]] = {}
+    change_mentions = mapped_change_mentions = 0
+    for row in _rows(directory / "variant_ingredient_changes.tsv"):
+        key = (row["recipe_id"], row["component_field"], row["component_index"])
+        role, action = row["descriptor_role"], row["change_action"]
+        if action not in {"ADD", "REMOVE", "REPLACE", "SET_CONCENTRATION", "SET_AMOUNT"} or (
+            role not in {"ingredient", "replaced_ingredient"}
+        ):
+            raise BundleError("Unknown variant change action or descriptor role")
+        variant_index, change_index = row["variant_index"], row["change_index"]
+        if (
+            not variant_index.isdecimal()
+            or not change_index.isdecimal()
+            or (
+                row["component_field"] != f"variants/{variant_index}/ingredient_changes"
+                or row["component_index"] != change_index
+                or row["descriptor_path"] != f"/{row['component_field']}/{change_index}/{role}"
+            )
+        ):
+            raise BundleError("Variant change coordinate disagrees with its descriptor path")
+        if row["source_path"] not in corpus:
+            raise BundleError("Variant change outside input inventory")
+        roles = changes.setdefault(key, {})
+        if role in roles:
+            raise BundleError("Duplicate variant change descriptor coordinate")
+        roles[role] = row
+        change = json.loads(row["change_json"])
+        if (
+            change["action"] != action
+            or change["stage"] != row["change_stage"]
+            or str(change["source_modification_index"]) != row["source_modification_index"]
+            or change["source_text"] != row["source_text"]
+            or change["evidence"] != json.loads(row["evidence_json"])
+            or change.get(role) != json.loads(row["ingredient_json"])
+        ):
+            raise BundleError("Variant change columns differ from the lossless source change")
+        positive = role == "ingredient" and action in {
+            "ADD",
+            "REPLACE",
+            "SET_CONCENTRATION",
+            "SET_AMOUNT",
+        }
+        if row["counts_as_presence"] != ("true" if positive else "false"):
+            raise BundleError("Variant change presence flag disagrees with its action/role")
+        if positive:
+            positive_changes[key] = {
+                field: value for field, value in row.items() if field != "counts_as_presence"
+            }
+        change_mentions += 1
+        mapped_change_mentions += bool(row["resolved_identifier"])
+    for roles in changes.values():
+        first = next(iter(roles.values()))
+        expected = (
+            {"ingredient", "replaced_ingredient"}
+            if first["change_action"] == "REPLACE"
+            else {"ingredient"}
+        )
+        if set(roles) != expected or any(
+            row["change_json"] != first["change_json"]
+            or row["variant_name"] != first["variant_name"]
+            or row["source_path"] != first["source_path"]
+            for row in roles.values()
+        ):
+            raise BundleError("Variant change descriptor membership/context is incomplete")
+    if positive_changes != variant_occurrences:
+        raise BundleError("Positive variant occurrences differ from the complete change ledger")
+
+    held_keys: set[tuple[str, str, str]] = set()
+    held_labels: set[str] = set()
+    for row in _rows(directory / "variant_ingredient_holds.tsv"):
+        if row["review_status"] != "WITHHELD" or row["counts_as_presence"] != "false":
+            raise BundleError("Unresolved mention must remain withheld and outside positive counts")
+        vi, mi = row["variant_index"], row["mention_index"]
+        if not vi.isdecimal() or not mi.isdecimal() or vi != str(int(vi)) or mi != str(int(mi)):
+            raise BundleError("Invalid withheld mention coordinate")
+        if row["descriptor_path"] != f"/variants/{vi}/ingredient_mentions/{mi}":
+            raise BundleError("Withheld mention path differs from coordinate")
+        key = (row["recipe_id"], vi, mi)
+        if key in held_keys or row["source_path"] not in corpus:
+            raise BundleError("Duplicate or out-of-corpus withheld mention")
+        held_keys.add(key)
+        mention = json.loads(row["mention_json"])
+        scalar_fields = {
+            "source_label",
+            "reported_action",
+            "stage",
+            "source_modification_index",
+            "source_text",
+            "reason",
+        }
+        required = scalar_fields | {"held_fields"}
+        if (
+            not isinstance(mention, dict)
+            or not required <= set(mention)
+            or set(mention) - required - {"reported_quantity", "evidence"}
+        ):
+            raise BundleError("Withheld mention has missing or unexpected assertion fields")
+        if (
+            any(str(mention[field]) != row[field] for field in scalar_fields)
+            or mention["held_fields"] != json.loads(row["held_fields_json"])
+            or not isinstance(mention["held_fields"], list)
+            or not mention["held_fields"]
+            or any(
+                field not in {"SOURCE_CLAIM", "IDENTITY_FORM", "QUANTITY", "OPERATION", "STAGE"}
+                for field in mention["held_fields"]
+            )
+            or mention.get("reported_quantity", "") != row["reported_quantity"]
+            or mention.get("evidence", []) != json.loads(row["evidence_json"])
+            or not row["source_label"].strip()
+            or row["source_label"] not in row["source_text"]
+            or row["reported_action"]
+            not in {"ADD", "REMOVE", "REPLACE", "SET_CONCENTRATION", "SET_AMOUNT", "UNSPECIFIED"}
+            or type(mention["source_modification_index"]) is not int
+            or mention["source_modification_index"] < 0
+        ):
+            raise BundleError("Withheld columns differ from the literal source mention")
+        held_labels.add(row["source_label"])
+
+    groups: Counter[str] = Counter()
+    grouped_occurrences: Counter[str] = Counter()
+    for row in _rows(directory / "ingredients_list.tsv"):
+        status = row["mapping_status"]
+        if status not in {"MAPPED", "UNMAPPED", "AMBIGUOUS"}:
+            raise BundleError(f"Unknown mapping status: {status}")
+        if bool(row["resolved_identifier"]) != (status == "MAPPED"):
+            raise BundleError("List status disagrees with resolved identity")
+        count = int(row["occurrence_count"])
+        if count < 1:
+            raise BundleError("Ingredient group has no occurrences")
+        groups[status] += 1
+        grouped_occurrences[status] += count
+    if sum(grouped_occurrences.values()) != occurrences:
+        raise BundleError("Ingredient-list counts do not equal occurrence count")
+    if grouped_occurrences["MAPPED"] != mapped:
+        raise BundleError("Mapped ingredient-list counts do not equal mapped occurrences")
+    errors = sum(1 for _ in _rows(directory / "ingredient_aggregation_errors.tsv"))
+    if errors:
+        raise BundleError(f"Aggregation has {errors} errors")
+    return {
+        "scanned_records": len(corpus),
+        "records_with_occurrences": len(paths),
+        "records_without_direct_occurrences": len(corpus) - len(paths),
+        "scanned_files_by_directory": dict(
+            sorted(Counter(path.split("/")[0] if "/" in path else "." for path in corpus).items())
+        ),
+        "occurrences_by_category": dict(sorted(categories.items())),
+        "occurrences": occurrences,
+        "mapped_occurrences": mapped,
+        "unresolved_occurrences": occurrences - mapped,
+        "base_direct_occurrences": occurrences - len(variant_occurrences),
+        "variant_positive_occurrences": len(variant_occurrences),
+        "variant_change_events": len(changes),
+        "variant_change_mentions": change_mentions,
+        "variant_context_only_mentions": change_mentions - len(positive_changes),
+        "variant_held_mentions": len(held_keys),
+        "variant_held_labels": len(held_labels),
+        "mapped_variant_change_mentions": mapped_change_mentions,
+        "unresolved_variant_change_mentions": change_mentions - mapped_change_mentions,
+        "variant_changes_by_action": dict(
+            sorted(
+                Counter(roles["ingredient"]["change_action"] for roles in changes.values()).items()
+            )
+        ),
+        "ingredient_groups": sum(groups.values()),
+        "groups_by_status": dict(sorted(groups.items())),
+        "errors": errors,
+    }
+
+
+def product_inventory(directory: Path, counts: dict[str, Any]) -> dict[str, Any]:
+    products = {name: fingerprint(directory / name) for name in PRODUCTS}
+    for name, count in (
+        ("ingredient_occurrences.tsv", counts["occurrences"]),
+        ("ingredients_list.tsv", counts["ingredient_groups"]),
+        ("ingredient_aggregation_errors.tsv", counts["errors"]),
+        ("variant_ingredient_changes.tsv", counts["variant_change_mentions"]),
+        ("variant_ingredient_holds.tsv", counts["variant_held_mentions"]),
+    ):
+        products[name]["data_rows"] = count
+    return products
+
+
+def _aggregate(input_dir: Path, stage: Path) -> int:
+    # Plan/verification do not import the schema validator or run aggregation.
+    sys.path.insert(0, str(REPO_ROOT / "src"))
+    sys.path.insert(0, str(REPO_ROOT / "scripts"))
+    import ingredient_occurrences
+
+    from culturemech.ingredients import mim_label_index
+
+    for module in (ingredient_occurrences, mim_label_index):
+        if not Path(module.__file__).resolve().is_relative_to(REPO_ROOT):
+            raise BundleError(f"Imported code outside pinned checkout: {module.__file__}")
+    # Verify even an empty-direct-occurrence corpus binds a valid packaged pin.
+    mim_label_index.get_default_mim_label_index.cache_clear()
+    mim_label_index.get_default_mim_label_index()
+    return ingredient_occurrences.run_aggregation(
+        input_dir=input_dir,
+        occurrences_output=stage / "ingredient_occurrences.tsv",
+        mapped_output=stage / "mapped_ingredients.yaml",
+        unmapped_output=stage / "unmapped_ingredients.yaml",
+        errors_output=stage / "ingredient_aggregation_errors.tsv",
+        list_output=stage / "ingredients_list.tsv",
+        min_occurrences=1,
+        verbose=True,
+    )
+
+
+def build(input_dir: Path, output_dir: Path | None, *, plan: bool = False) -> dict[str, Any]:
+    input_dir = input_dir.resolve()
+    if output_dir is None and not plan:
+        raise BundleError("build requires --output-dir unless --plan is selected")
+    if output_dir is not None:
+        output_dir = output_dir.absolute()
+        if output_dir.exists() or output_dir.is_symlink():
+            raise BundleError(f"Output already exists; choose a new directory: {output_dir}")
+        if output_dir.resolve().is_relative_to(input_dir):
+            raise BundleError("Output must be outside the scanned input directory")
+    before = corpus_inventory(input_dir)
+    dependencies = dependency_inventory()
+    git = git_state()
+    scope = "full_catalog_direct_ingredients" if input_dir == DEFAULT_INPUT else "subset"
+    if plan:
+        return {
+            "status": "PLAN_ONLY",
+            "scope": scope,
+            "scanned_records": len(before),
+            "input_dir": str(input_dir),
+            "output_dir": str(output_dir) if output_dir else None,
+            "git": git,
+        }
+    assert output_dir is not None
+    output_dir.parent.mkdir(parents=True, exist_ok=True)
+    stage = Path(tempfile.mkdtemp(prefix=f".{output_dir.name}.incomplete-", dir=output_dir.parent))
+    output_reserved = False
+    try:
+        if _aggregate(input_dir, stage):
+            raise BundleError("Native ingredient aggregation failed")
+        if before != corpus_inventory(input_dir) or dependencies != dependency_inventory():
+            raise BundleError("Inputs or implementation changed during aggregation")
+        if git["commit"] != git_state()["commit"]:
+            raise BundleError("Repository HEAD changed during aggregation")
+        counts = artifact_accounting(stage, before)
+        manifest = {
+            "contract": CONTRACT,
+            "status": "CANDIDATE",
+            "integrated_release": False,
+            "created_at": datetime.now(timezone.utc).isoformat(),
+            "scope": scope,
+            "coverage": SCOPE,
+            "input_dir": os.path.relpath(input_dir, REPO_ROOT),
+            "git": git,
+            "environment": environment(),
+            "inputs": before,
+            "dependencies": dependencies,
+            "mim_label_index": json.loads(
+                (
+                    REPO_ROOT
+                    / ("src/culturemech/data/mediaingredientmech/label_index.metadata.json")
+                ).read_text(encoding="utf-8")
+            ),
+            "counts": counts,
+            "products": product_inventory(stage, counts),
+        }
+        # Recheck after accounting/hashing, which can take time for large outputs.
+        if before != corpus_inventory(input_dir) or dependencies != dependency_inventory():
+            raise BundleError("Inputs or implementation changed during artifact accounting")
+        if git["commit"] != git_state()["commit"]:
+            raise BundleError("Repository HEAD changed during artifact accounting")
+        # mkdir is the exclusive no-overwrite reservation. A manifest is installed
+        # last; interrupted/failed publication never has an acceptance manifest.
+        output_dir.mkdir()
+        output_reserved = True
+        for name in PRODUCTS:
+            (stage / name).rename(output_dir / name)
+        stage.rmdir()  # Empty owned stage; cleanup must succeed before acceptance.
+        manifest_path = output_dir / "manifest.json"
+        temporary = output_dir / ".manifest.incomplete"
+        temporary.write_text(
+            json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+        )
+        temporary.rename(manifest_path)
+        return manifest
+    except Exception as exc:
+        retained = [stage] if stage.exists() else []
+        if output_reserved and output_dir.exists():
+            retained.append(output_dir)
+        locations = ", ".join(str(path) for path in retained) or "no surviving artifact directory"
+        raise BundleError(f"{exc}; incomplete evidence retained at {locations}") from exc
+
+
+def verify(
+    bundle_dir: Path,
+    input_dir: Path | None = None,
+    *,
+    expected_manifest_sha256: str | None = None,
+) -> dict[str, Any]:
+    manifest_path = bundle_dir / "manifest.json"
+    manifest_bytes = manifest_path.read_bytes()
+    manifest_sha256 = hashlib.sha256(manifest_bytes).hexdigest()
+    if expected_manifest_sha256 is not None:
+        if not re.fullmatch(r"[0-9a-f]{64}", expected_manifest_sha256):
+            raise BundleError(
+                "Expected manifest SHA256 must be 64 lowercase hexadecimal characters"
+            )
+        if manifest_sha256 != expected_manifest_sha256:
+            raise BundleError("Manifest SHA256 differs from the expected handoff pin")
+    manifest = json.loads(manifest_bytes)
+    if manifest.get("contract") != CONTRACT or manifest.get("status") != "CANDIDATE":
+        raise BundleError("Unsupported candidate manifest")
+    if manifest.get("integrated_release") is not False or manifest.get("coverage") != SCOPE:
+        raise BundleError("Candidate has an unsupported release or coverage claim")
+    if set(manifest["products"]) != set(PRODUCTS):
+        raise BundleError("Candidate product membership differs from contract")
+    source = input_dir.resolve() if input_dir else (REPO_ROOT / manifest["input_dir"]).resolve()
+    scope = manifest["scope"]
+    if scope not in {"full_catalog_direct_ingredients", "subset"}:
+        raise BundleError("Unsupported candidate scope")
+    relocated_catalog = scope == "full_catalog_direct_ingredients" and source != DEFAULT_INPUT
+    if relocated_catalog and (input_dir is None or expected_manifest_sha256 is None):
+        raise BundleError(
+            "Candidate scope does not match the input directory; full-catalog relocation "
+            "requires explicit --input-dir and --expected-manifest-sha256"
+        )
+    # Retain the origin scope. Even a byte-identical subset placed at the default
+    # input path is still a subset candidate, never a promoted catalog claim.
+    actual_mim_metadata = json.loads(
+        (
+            REPO_ROOT / "src/culturemech/data/mediaingredientmech/label_index.metadata.json"
+        ).read_text(encoding="utf-8")
+    )
+    if manifest["mim_label_index"] != actual_mim_metadata:
+        raise BundleError("Declared MIM label-index metadata differs from the pinned metadata")
+    current = corpus_inventory(source)
+    if current != manifest["inputs"]:
+        raise BundleError("Input membership or content differs from candidate")
+    if dependency_inventory() != manifest["dependencies"]:
+        raise BundleError("Implementation/schema/resolver differs from candidate")
+    counts = artifact_accounting(bundle_dir, current)
+    if (
+        counts != manifest["counts"]
+        or product_inventory(bundle_dir, counts) != manifest["products"]
+    ):
+        raise BundleError("Candidate artifacts or accounting differ from manifest")
+    if current != corpus_inventory(source) or manifest["dependencies"] != dependency_inventory():
+        raise BundleError("Inputs or implementation changed during verification")
+    if manifest_path.read_bytes() != manifest_bytes:
+        raise BundleError("Manifest changed during verification")
+    assurance = (
+        "externally_pinned_manifest" if expected_manifest_sha256 else "local_consistency_only"
+    )
+    return {
+        "status": "VERIFIED_CANDIDATE",
+        "scope": scope,
+        "counts": counts,
+        "recorded_source_commit": manifest["git"]["commit"],
+        "manifest_sha256": manifest_sha256,
+        "assurance": assurance,
+        "relocated_catalog": relocated_catalog,
+        "qualification": (
+            "Manifest matches the supplied handoff pin; current input and artifact bytes match. "
+            "This binds the declared origin to that pin, not scientific or integrated-release approval."
+            if expected_manifest_sha256
+            else "Local consistency only; recorded source commit is not independently verified. "
+            "Current input and artifact bytes match; not an integrated MIM/KGM release."
+        ),
+    }
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    commands = parser.add_subparsers(dest="command", required=True)
+    builder = commands.add_parser("build", help="Generate one new candidate bundle")
+    builder.add_argument("--input-dir", type=Path, default=DEFAULT_INPUT)
+    builder.add_argument("--output-dir", type=Path, help="Required unless --plan is selected")
+    builder.add_argument("--plan", action="store_true", help="Inventory inputs without generation")
+    verifier = commands.add_parser("verify", help="Check artifacts and current input bytes")
+    verifier.add_argument("--bundle-dir", type=Path, required=True)
+    verifier.add_argument(
+        "--input-dir",
+        type=Path,
+        help="Identical input directory; full-catalog relocation also requires the manifest pin",
+    )
+    verifier.add_argument(
+        "--expected-manifest-sha256",
+        help="SHA256 of manifest.json from the trusted handoff, checked before parsing",
+    )
+    args = parser.parse_args(argv)
+    try:
+        result = (
+            build(args.input_dir, args.output_dir, plan=args.plan)
+            if args.command == "build"
+            else verify(
+                args.bundle_dir,
+                args.input_dir,
+                expected_manifest_sha256=args.expected_manifest_sha256,
+            )
+        )
+        if args.command == "build" and not args.plan:
+            result = {key: result[key] for key in ("status", "scope", "counts")}
+        print(json.dumps(result, indent=2, sort_keys=True))
+    except (
+        BundleError,
+        OSError,
+        KeyError,
+        TypeError,
+        ValueError,
+        csv.Error,
+        subprocess.CalledProcessError,
+    ) as exc:
+        print(f"Ingredient candidate failed: {exc}", file=sys.stderr)
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

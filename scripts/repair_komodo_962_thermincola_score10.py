@@ -31,35 +31,35 @@ SIGNATURE = (
     ("NH4Cl", "0.326409", "G_PER_L"),
     ("KH2PO4", "0.326409", "G_PER_L"),
     ("MgCl2 x 6 H2O", "0.326409", "G_PER_L"),
-    ("CaCl2 x 2 H2O", "0.42640900000000004", "G_PER_L"),
+    ("CaCl2 x 2 H2O", "0.327409", "G_PER_L"),
     ("KCl", "0.326409", "G_PER_L"),
     ("Yeast extract", "0.049456", "G_PER_L"),
     ("NaHCO3", "2.4728", "G_PER_L"),
     ("Na-acetate", "2.96736", "G_PER_L"),
-    ("Nitrilotriacetic acid", "1.5", "G_PER_L"),
-    ("MgSO4 x 7 H2O", "3", "G_PER_L"),
-    ("MnSO4 x H2O", "0.5", "G_PER_L"),
-    ("NaCl", "1", "G_PER_L"),
-    ("FeSO4 x 7 H2O", "0.1", "G_PER_L"),
-    ("CoSO4 x 7 H2O", "0.18", "G_PER_L"),
-    ("ZnSO4 x 7 H2O", "0.18", "G_PER_L"),
-    ("CuSO4 x 5 H2O", "0.01", "G_PER_L"),
-    ("AlK(SO4)2 x 12 H2O", "0.02", "G_PER_L"),
-    ("H3BO3", "0.01", "G_PER_L"),
-    ("Na2MoO4 x 2 H2O", "0.01", "G_PER_L"),
-    ("NiCl2 x 6 H2O", "0.03", "G_PER_L"),
-    ("Na2SeO3 x 5 H2O", "0.0003", "G_PER_L"),
-    ("Na2WO4 x 2 H2O", "0.0004", "G_PER_L"),
-    ("Biotin", "0.02", "G_PER_L"),
-    ("Folic acid", "0.02", "G_PER_L"),
-    ("Pyridoxine hydrochloride", "0.1", "G_PER_L"),
-    ("Thiamine HCl", "0.05", "G_PER_L"),
-    ("Riboflavin", "0.05", "G_PER_L"),
-    ("Nicotinic acid", "0.05", "G_PER_L"),
-    ("Calcium D-(+)-pantothenate", "0.05", "G_PER_L"),
-    ("Vitamin B12", "0.001", "G_PER_L"),
-    ("p-Aminobenzoic acid", "0.05", "G_PER_L"),
-    ("(DL)-alpha-Lipoic acid", "0.05", "G_PER_L"),
+    ("Nitrilotriacetic acid", "0.015", "G_PER_L"),
+    ("MgSO4 x 7 H2O", "0.03", "G_PER_L"),
+    ("MnSO4 x H2O", "0.005", "G_PER_L"),
+    ("NaCl", "0.01", "G_PER_L"),
+    ("FeSO4 x 7 H2O", "0.001", "G_PER_L"),
+    ("CoSO4 x 7 H2O", "0.0018", "G_PER_L"),
+    ("ZnSO4 x 7 H2O", "0.0018", "G_PER_L"),
+    ("CuSO4 x 5 H2O", "0.0001", "G_PER_L"),
+    ("AlK(SO4)2 x 12 H2O", "0.0002", "G_PER_L"),
+    ("H3BO3", "0.0001", "G_PER_L"),
+    ("Na2MoO4 x 2 H2O", "0.0001", "G_PER_L"),
+    ("NiCl2 x 6 H2O", "0.0003", "G_PER_L"),
+    ("Na2SeO3 x 5 H2O", "0.000003", "G_PER_L"),
+    ("Na2WO4 x 2 H2O", "0.000004", "G_PER_L"),
+    ("Biotin", "0.0002", "G_PER_L"),
+    ("Folic acid", "0.0002", "G_PER_L"),
+    ("Pyridoxine hydrochloride", "0.001", "G_PER_L"),
+    ("Thiamine HCl", "0.0005", "G_PER_L"),
+    ("Riboflavin", "0.0005", "G_PER_L"),
+    ("Nicotinic acid", "0.0005", "G_PER_L"),
+    ("Calcium D-(+)-pantothenate", "0.0005", "G_PER_L"),
+    ("Vitamin B12", "0.00001", "G_PER_L"),
+    ("p-Aminobenzoic acid", "0.0005", "G_PER_L"),
+    ("(DL)-alpha-Lipoic acid", "0.0005", "G_PER_L"),
 )
 
 
@@ -67,6 +67,7 @@ SIGNATURE = (
 class Child:
     path: Path
     record_id: str
+    record_name: str
     source_term: str
     source_label: str
     relationship: str
@@ -77,6 +78,7 @@ CHILDREN = (
     Child(
         Path("bacterial/KOMODO_962_THERMOVENABULUM_medium.yaml"),
         "CultureMech:006919",
+        "thermovenabulum_medium_dsmz_962",
         "komodo.medium:962",
         "KOMODO Medium 962",
         SOURCE_DUPLICATE_RELATIONSHIP,
@@ -85,6 +87,7 @@ CHILDREN = (
     Child(
         Path("bacterial/for_dsm_14005.yaml"),
         "CultureMech:006918",
+        "for_dsm_14005",
         "komodo.medium:962.1",
         "KOMODO Medium 962.1",
         STRAIN_RELATIONSHIP,
@@ -186,7 +189,7 @@ def _child_entry(child: Child) -> dict[str, str]:
         "path": f"data/normalized_yaml/{child.path}",
         "relationship": child.relationship,
         "id": child.record_id,
-        "name": child.path.stem,
+        "name": child.record_name,
         "notes": child.notes,
     }
 

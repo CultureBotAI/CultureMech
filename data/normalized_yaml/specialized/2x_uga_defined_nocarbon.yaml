@@ -1,5 +1,5 @@
 id: CultureMech:015480
-name: 2x UGA defined nocarbon
+name: 2x_uga_defined_nocarbon
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
@@ -12,30 +12,46 @@ ingredients:
     id: CHEBI:31206
     label: ammonium chloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Magnesium sulfate heptahydrate
   concentration:
-    value: '4.00'
-    unit: MILLIMOLAR
+    value: '0.9919'
+    unit: G_PER_L
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47; Consolidated 4.00 mM basal salt (0.9859 g/L)
+    + 6.0 mg/L from 2x ATCC Wolfe''s mineral mix (0.006 g/L) = 0.9919 g/L'
 - preferred_term: Calcium chloride dihydrate
   concentration:
-    value: '0.20'
-    unit: MILLIMOLAR
+    value: '0.0314'
+    unit: G_PER_L
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
-    147.01'
+    147.01; Consolidated 0.20 mM basal salt (0.0294 g/L) + 2.0 mg/L from 2x ATCC Wolfe''s
+    mineral mix (0.002 g/L) = 0.0314 g/L'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: Sodium Chloride
   concentration:
-    value: '0.34'
-    unit: MILLIMOLAR
+    value: '0.0399'
+    unit: G_PER_L
   term:
     id: CHEBI:26710
     label: sodium chloride
-  notes: 'CAS: 7647-14-5; MW: 58.44'
+  notes: 'CAS: 7647-14-5; MW: 58.44; Consolidated 0.34 mM basal salt (0.01987 g/L)
+    + 20.0 mg/L from 2x ATCC Wolfe''s mineral mix (0.020 g/L) = 0.0399 g/L'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Monopotassium phosphate
   concentration:
     value: '10.00'
@@ -44,6 +60,9 @@ ingredients:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: EDTA
   concentration:
     value: '10.0'
@@ -53,14 +72,9 @@ ingredients:
     label: ethylenediaminetetraacetic acid
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24;
     From ATCC Wolfe''s mineral mix'
-- preferred_term: Magnesium Sulfate Heptahydrate
-  concentration:
-    value: '6.0'
-    unit: MG_PER_L
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  notes: 'CAS: 10034-99-8; MW: 246.47; From ATCC Wolfe''s mineral mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 - preferred_term: Manganese (II) sulfate monohydrate
   concentration:
     value: '10.0'
@@ -69,14 +83,9 @@ ingredients:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
   notes: 'CAS: 10034-96-5; MW: 169.02; From ATCC Wolfe''s mineral mix'
-- preferred_term: Sodium Chloride
-  concentration:
-    value: '20.0'
-    unit: MG_PER_L
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  notes: 'CAS: 7647-14-5; MW: 58.44; From ATCC Wolfe''s mineral mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Iron (II) sulfate heptahydrate
   concentration:
     value: '2.0'
@@ -84,6 +93,9 @@ ingredients:
   notes: 'CAS: 7782-63-0; MW: 278.01; From ATCC Wolfe''s mineral mix; Ontology enriched
     via CAS-RN lookup'
   term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
 - preferred_term: Cobalt(II) nitrate hexahydrate
@@ -95,15 +107,9 @@ ingredients:
   term:
     id: CHEBI:86214
     label: cobalt dinitrate hexahydrate
-- preferred_term: Calcium Chloride Dihydrate
-  concentration:
-    value: '2.0'
-    unit: MG_PER_L
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From ATCC Wolfe''s mineral
-    mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
+    label: cobalt dinitrate hexahydrate
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '2.0'
@@ -111,6 +117,9 @@ ingredients:
   notes: 'CAS: 7446-20-0; MW: 287.56; From ATCC Wolfe''s mineral mix; Ontology enriched
     via CAS-RN lookup'
   term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
 - preferred_term: Copper (II) sulfate pentahydrate
@@ -122,6 +131,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.2'
@@ -129,6 +141,9 @@ ingredients:
   notes: 'CAS: 7784-24-9; MW: 474.39; From ATCC Wolfe''s mineral mix; Ontology enriched
     via CAS-RN lookup'
   term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:86465
     label: potassium aluminium sulfate dodecahydrate
 - preferred_term: Boric Acid
@@ -139,6 +154,9 @@ ingredients:
     id: CHEBI:33118
     label: boric acid
   notes: 'CAS: 10043-35-3; MW: 61.83; From ATCC Wolfe''s mineral mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: Sodium Molybdate Dihydrate
   concentration:
     value: '0.2'
@@ -146,6 +164,9 @@ ingredients:
   notes: 'CAS: 10102-40-6; MW: 241.95; From ATCC Wolfe''s mineral mix; Ontology enriched
     via CAS-RN lookup'
   term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
 - preferred_term: Sodium selenite pentahydrate
@@ -157,6 +178,9 @@ ingredients:
   term:
     id: CHEBI:131361
     label: disodium selenite pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
 - preferred_term: Sodium tungstate dihydrate
   concentration:
     value: '0.2'
@@ -164,6 +188,9 @@ ingredients:
   notes: 'CAS: 10213-10-2; MW: 329.85; From ATCC Wolfe''s mineral mix; Ontology enriched
     via CAS-RN lookup'
   term:
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:63939
     label: sodium tungstate dihydrate
 - preferred_term: Nickel (II) chloride hexahydrate
@@ -175,6 +202,9 @@ ingredients:
   term:
     id: CHEBI:53542
     label: nickel chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
 - preferred_term: Folic Acid
   concentration:
     value: '40.0'
@@ -184,6 +214,9 @@ ingredients:
     label: folic acid
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4;
     From ATCC Wolfe''s vitamin mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: folic acid
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '200.0'
@@ -193,6 +226,9 @@ ingredients:
     label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From ATCC Wolfe''s vitamin mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
 - preferred_term: Riboflavin
   concentration:
     value: '100.0'
@@ -202,6 +238,9 @@ ingredients:
     label: riboflavin
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36;
     From ATCC Wolfe''s vitamin mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: biotin
   concentration:
     value: '40.0'
@@ -211,6 +250,9 @@ ingredients:
     label: biotin
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31;
     From ATCC Wolfe''s vitamin mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: Thiamine HCl
   concentration:
     value: '100.0'
@@ -220,6 +262,9 @@ ingredients:
     label: thiamine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-03-8; MW: 337.27;
     From ATCC Wolfe''s vitamin mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
 - preferred_term: Nicotinic Acid
   concentration:
     value: '100.0'
@@ -229,15 +274,21 @@ ingredients:
     label: nicotinic acid
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11;
     From ATCC Wolfe''s vitamin mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
 - preferred_term: calcium pantothenate
   concentration:
     value: '100.0'
     unit: MICROG_PER_L
   term:
     id: CHEBI:31345
-    label: Calcium pantothenate
+    label: calcium pantothenate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27;
     From ATCC Wolfe''s vitamin mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: calcium pantothenate
 - preferred_term: Cyanocobalamin
   concentration:
     value: '2.0'
@@ -247,6 +298,9 @@ ingredients:
     label: cyanocob(III)alamin
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37;
     From ATCC Wolfe''s vitamin mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
 - preferred_term: 4-Aminobenzoic acid
   concentration:
     value: '100.0'
@@ -254,6 +308,9 @@ ingredients:
   notes: 'CAS: 150-13-0; MW: 137.14; From ATCC Wolfe''s vitamin mix; Ontology enriched
     via CAS-RN lookup'
   term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  mediaingredientmech_chebi_term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
 - preferred_term: Lipoic acid
@@ -265,6 +322,9 @@ ingredients:
     label: lipoic acid
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW:
     206.33; From ATCC Wolfe''s vitamin mix'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: lipoic acid
 - preferred_term: Sodium phosphate dibasic
   concentration:
     value: '8.10'
@@ -273,12 +333,18 @@ ingredients:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: Sodium phosphate monobasic
   concentration:
     value: '1.90'
     unit: MILLIMOLAR
   notes: 'CAS: 558-80-7; MW: 119.98'
   term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+  mediaingredientmech_chebi_term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
 description: Variation of ENIGMA denitrification media for aerobic growth
@@ -313,5 +379,16 @@ curation_history:
   notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-10-21T03:04:48.479499+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 finding CM-C1S4-008 on CultureMech:015480 (Issues #635,
+    #645).'
+  changes: 'Normalized name to 2x_uga_defined_nocarbon, updated data_quality_flags,
+    consolidated 3 duplicate basal + Wolfe mineral salt pairs (MgSO4·7H2O 0.9919 G_PER_L,
+    CaCl2·2H2O 0.0314 G_PER_L, NaCl 0.0399 G_PER_L) from 32 to 29 unique ingredients,
+    and populated canonical mediaingredientmech_chebi_term across all 29 ingredients
+    (#635, #645).'
 data_quality_flags:
-- has_unmapped_ingredients
+- ingredients_curated
+- has_ontology_mappings

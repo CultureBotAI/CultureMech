@@ -126,6 +126,14 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T15:16:39.365769+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography with archived primary source and Markdown,
+    exact excerpts, scientific names and qualified NCBI taxonomy. Preserved recipe
+    differences and access/formulation limits; all prior quantities, links, preparation
+    and history unchanged. No new native growth or resolved variant.
+  source: PMID:7582005
 media_term:
   preferred_term: MediaDB Medium 343
   term:
@@ -150,3 +158,37 @@ variant_modifications:
 - Reviewed CDM batch/continuous cultivation records; child keeps the same defined
   base formulation but lowers glucose from 126.2 to 40.37 mM and ammonium sulfate
   from 55.24 to 37.84 mM while the remaining parsed concentrations match.
+references:
+- reference: PMID:7582005
+  title: Induction and repression of alpha-amylase production in batch and continuous
+    cultures of Aspergillus oryzae.
+  authors: Mørkeberg R; Carlsen M; Nielsen J
+  year: 1995
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=PubMed_abstract_only; alternate_identifier=doi:10.1099/13500872-141-10-2449.
+    owner=MEDIADB:343; discovery_sourceID=120; source_url=https://pubmed.ncbi.nlm.nih.gov/7582005/;
+    raw_abstract=references_cache/papers/PMID_7582005.xml; source_markdown=references_cache/papers/PMID_7582005.md.
+    PubMed abstract; exact excerpt="Aspergillus oryzae". PubMed abstract; exact excerpt="a
+    wild-type strain and two recombinant strains". PubMed abstract; exact excerpt="maltose-limited
+    chemostat". This is the existing continuous-cultivation child; the existing CONCENTRATION_VARIANT
+    links are preserved, and both owners receive the paper citation independently.
+    Local batch versus continuous glucose (126.2 versus 40.37 mM) and ammonium sulfate
+    (55.24 versus 37.84 mM) differences are not certified by this abstract. Reported
+    organism=Aspergillus oryzae; canonical scientific name=Aspergillus oryzae; NCBITaxon:5062;
+    actual rank=species; taxonomy_match=exact species; role=wild-type and two recombinant
+    study strains. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5062&retmode=xml.
+    Reported organism=Aspergillus oryzae A1560, CF1.1 and CF2.1 (historical MediaDB
+    labels); canonical scientific name=Aspergillus oryzae; NCBITaxon:5062; actual
+    rank=species; taxonomy_match=parent_rank_only; role=species parent only; abstract
+    does not provide these labels and exact strain nodes unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5062&retmode=xml.
+    The glucose-to-maltose chemostat shift is a separate experiment from the imported
+    glucose formulations. Alpha-amylase abundance, secretion and intracellular residence
+    time are not growth metrics. The historical first author Morkeberg is rendered
+    with the original PubMed diacritic in the bibliography. Taxonomy archives=references_cache/papers/taxonomy/fungal-studies-20261013.*
+    and lu-sfm-additional-20261013.*. Bounded taxonomy lookup failures are not proof
+    of taxon absence. Organism inventory covers inspected medium-relevant passages,
+    not inaccessible full text. Correction/retraction coverage is limited to inspected
+    publication metadata. All prior recipe fields and history preserved, not newly
+    certified. No new ingredient-concentration evidence, resolved variant, native
+    growth association or quantitative metric. '

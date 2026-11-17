@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-10-11T01:57:23
+# Generation date: 2026-11-16T15:43:24
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -69,27 +69,33 @@ ATCC = CurieNamespace('ATCC', 'https://www.atcc.org/products/')
 BIOSAMPLE = CurieNamespace('BioSample', 'https://www.ncbi.nlm.nih.gov/biosample/')
 CCAP = CurieNamespace('CCAP', 'https://www.ccap.ac.uk/catalogue/strain-')
 CHEBI = CurieNamespace('CHEBI', 'http://purl.obolibrary.org/obo/CHEBI_')
+CAUSALEDGE = CurieNamespace('CausalEdge', 'https://w3id.org/culturemech/CausalEdge/')
 CULTUREMECH = CurieNamespace('CultureMech', 'https://w3id.org/culturemech/')
 DOI = CurieNamespace('DOI', 'https://doi.org/')
 DSMZ = CurieNamespace('DSMZ', 'https://mediadive.dsmz.de/medium/')
 EC = CurieNamespace('EC', 'https://enzyme.expasy.org/EC/')
 ENVO = CurieNamespace('ENVO', 'http://purl.obolibrary.org/obo/ENVO_')
 FOODON = CurieNamespace('FOODON', 'http://purl.obolibrary.org/obo/FOODON_')
+GO = CurieNamespace('GO', 'http://purl.obolibrary.org/obo/GO_')
 GTDB = CurieNamespace('GTDB', 'https://gtdb.ecogenomic.org/genome?gid=')
 GENBANK = CurieNamespace('GenBank', 'https://www.ncbi.nlm.nih.gov/assembly/')
 KEGG = CurieNamespace('KEGG', 'https://www.genome.jp/entry/')
+METPO = CurieNamespace('METPO', 'http://purl.obolibrary.org/obo/METPO_')
 MICRO = CurieNamespace('MICRO', 'http://example.org/UNKNOWN/MICRO/')
 MEDIAINGREDIENTMECH = CurieNamespace('MediaIngredientMech', 'http://example.org/UNKNOWN/MediaIngredientMech/')
 NCBITAXON = CurieNamespace('NCBITaxon', 'http://purl.obolibrary.org/obo/NCBITaxon_')
 NCIT = CurieNamespace('NCIT', 'http://purl.obolibrary.org/obo/NCIT_')
 OBI = CurieNamespace('OBI', 'http://purl.obolibrary.org/obo/OBI_')
+PATO = CurieNamespace('PATO', 'http://purl.obolibrary.org/obo/PATO_')
 PMID = CurieNamespace('PMID', 'http://www.ncbi.nlm.nih.gov/pubmed/')
+RO = CurieNamespace('RO', 'http://purl.obolibrary.org/obo/RO_')
 REFSEQ = CurieNamespace('RefSeq', 'https://www.ncbi.nlm.nih.gov/datasets/genome/')
 SAG = CurieNamespace('SAG', 'https://sagdb.uni-goettingen.de/detailedList.php?str_number=')
 TOGO = CurieNamespace('TOGO', 'http://togodb.org/db/medium/')
 UBERON = CurieNamespace('UBERON', 'http://purl.obolibrary.org/obo/UBERON_')
 UO = CurieNamespace('UO', 'http://purl.obolibrary.org/obo/UO_')
 UTEX = CurieNamespace('UTEX', 'https://utex.org/products/')
+UNIPROTKB = CurieNamespace('UniProtKB', 'https://www.uniprot.org/uniprotkb/')
 BIOLINK = CurieNamespace('biolink', 'https://w3id.org/biolink/vocab/')
 CULTUREMECH = CurieNamespace('culturemech', 'https://w3id.org/culturemech/')
 GEO = CurieNamespace('geo', 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=')
@@ -132,6 +138,10 @@ class EvidenceItemReference(extended_str):
     pass
 
 
+class CausalEdgeId(extended_str):
+    pass
+
+
 class ChemicalEntityTermId(TermId):
     pass
 
@@ -165,6 +175,14 @@ class CultureMechTermId(TermId):
 
 
 class EnvironmentTermId(TermId):
+    pass
+
+
+class UniProtTermId(TermId):
+    pass
+
+
+class CausalTermId(TermId):
     pass
 
 
@@ -239,6 +257,8 @@ class MediaRecipe(YAMLRoot):
     sources: Optional[Union[Union[dict, "SourceReference"], list[Union[dict, "SourceReference"]]]] = empty_list()
     incubation_atmosphere: Optional[Union[str, "AtmosphereEnum"]] = None
     source_data: Optional[Union[dict, "SourceData"]] = None
+    protein_examples: Optional[Union[Union[dict, "ProteinExample"], list[Union[dict, "ProteinExample"]]]] = empty_list()
+    causal_graphs: Optional[Union[dict[Union[str, CausalEdgeId], Union[dict, "CausalEdge"]], list[Union[dict, "CausalEdge"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.id):
@@ -422,6 +442,12 @@ class MediaRecipe(YAMLRoot):
         if self.source_data is not None and not isinstance(self.source_data, SourceData):
             self.source_data = SourceData(**as_dict(self.source_data))
 
+        if not isinstance(self.protein_examples, list):
+            self.protein_examples = [self.protein_examples] if self.protein_examples is not None else []
+        self.protein_examples = [v if isinstance(v, ProteinExample) else ProteinExample(**as_dict(v)) for v in self.protein_examples]
+
+        self._normalize_inlined_as_list(slot_name="causal_graphs", slot_type=CausalEdge, key_name="id", keyed=True)
+
         super().__post_init__(**kwargs)
 
 
@@ -461,6 +487,12 @@ class SolutionRecipe(YAMLRoot):
     sources: Optional[Union[Union[dict, "SourceReference"], list[Union[dict, "SourceReference"]]]] = empty_list()
     notes: Optional[str] = None
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
+    categories: Optional[Union[Union[str, "CategoryEnum"], list[Union[str, "CategoryEnum"]]]] = empty_list()
+    synonyms: Optional[Union[Union[dict, "RecipeSynonym"], list[Union[dict, "RecipeSynonym"]]]] = empty_list()
+    merged_from: Optional[Union[str, list[str]]] = empty_list()
+    merge_fingerprint: Optional[str] = None
+    chemical_fingerprint: Optional[str] = None
+    variant_fingerprint: Optional[str] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.id):
@@ -528,6 +560,25 @@ class SolutionRecipe(YAMLRoot):
             self.notes = str(self.notes)
 
         self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+
+        if not isinstance(self.categories, list):
+            self.categories = [self.categories] if self.categories is not None else []
+        self.categories = [v if isinstance(v, CategoryEnum) else CategoryEnum(v) for v in self.categories]
+
+        self._normalize_inlined_as_list(slot_name="synonyms", slot_type=RecipeSynonym, key_name="name", keyed=False)
+
+        if not isinstance(self.merged_from, list):
+            self.merged_from = [self.merged_from] if self.merged_from is not None else []
+        self.merged_from = [v if isinstance(v, str) else str(v) for v in self.merged_from]
+
+        if self.merge_fingerprint is not None and not isinstance(self.merge_fingerprint, str):
+            self.merge_fingerprint = str(self.merge_fingerprint)
+
+        if self.chemical_fingerprint is not None and not isinstance(self.chemical_fingerprint, str):
+            self.chemical_fingerprint = str(self.chemical_fingerprint)
+
+        if self.variant_fingerprint is not None and not isinstance(self.variant_fingerprint, str):
+            self.variant_fingerprint = str(self.variant_fingerprint)
 
         super().__post_init__(**kwargs)
 
@@ -905,6 +956,8 @@ class OrganismDescriptor(Descriptor):
     transporters: Optional[Union[Union[dict, "TransporterAnnotation"], list[Union[dict, "TransporterAnnotation"]]]] = empty_list()
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
     strain_modifications: Optional[Union[Union[dict, "StrainModification"], list[Union[dict, "StrainModification"]]]] = empty_list()
+    protein_examples: Optional[Union[Union[dict, "ProteinExample"], list[Union[dict, "ProteinExample"]]]] = empty_list()
+    causal_graphs: Optional[Union[dict[Union[str, CausalEdgeId], Union[dict, "CausalEdge"]], list[Union[dict, "CausalEdge"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.preferred_term):
@@ -953,6 +1006,12 @@ class OrganismDescriptor(Descriptor):
         self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         self._normalize_inlined_as_list(slot_name="strain_modifications", slot_type=StrainModification, key_name="modification_type", keyed=False)
+
+        if not isinstance(self.protein_examples, list):
+            self.protein_examples = [self.protein_examples] if self.protein_examples is not None else []
+        self.protein_examples = [v if isinstance(v, ProteinExample) else ProteinExample(**as_dict(v)) for v in self.protein_examples]
+
+        self._normalize_inlined_as_list(slot_name="causal_graphs", slot_type=CausalEdge, key_name="id", keyed=True)
 
         super().__post_init__(**kwargs)
 
@@ -1009,6 +1068,7 @@ class CofactorDescriptor(Descriptor):
     ec_associations: Optional[Union[str, list[str]]] = empty_list()
     kegg_pathways: Optional[Union[str, list[str]]] = empty_list()
     enzyme_examples: Optional[Union[str, list[str]]] = empty_list()
+    protein_examples: Optional[Union[Union[dict, "ProteinExample"], list[Union[dict, "ProteinExample"]]]] = empty_list()
     biosynthesis_genes: Optional[Union[str, list[str]]] = empty_list()
     bioavailability: Optional[str] = None
     notes: Optional[str] = None
@@ -1042,6 +1102,10 @@ class CofactorDescriptor(Descriptor):
         if not isinstance(self.enzyme_examples, list):
             self.enzyme_examples = [self.enzyme_examples] if self.enzyme_examples is not None else []
         self.enzyme_examples = [v if isinstance(v, str) else str(v) for v in self.enzyme_examples]
+
+        if not isinstance(self.protein_examples, list):
+            self.protein_examples = [self.protein_examples] if self.protein_examples is not None else []
+        self.protein_examples = [v if isinstance(v, ProteinExample) else ProteinExample(**as_dict(v)) for v in self.protein_examples]
 
         if not isinstance(self.biosynthesis_genes, list):
             self.biosynthesis_genes = [self.biosynthesis_genes] if self.biosynthesis_genes is not None else []
@@ -1668,6 +1732,8 @@ class MediaVariant(YAMLRoot):
     relationship: Optional[Union[str, "MediaVariantRelationshipEnum"]] = None
     description: Optional[str] = None
     modifications: Optional[Union[str, list[str]]] = empty_list()
+    ingredient_changes: Optional[Union[Union[dict, "VariantIngredientChange"], list[Union[dict, "VariantIngredientChange"]]]] = empty_list()
+    ingredient_mentions: Optional[Union[Union[dict, "UnresolvedVariantIngredientMention"], list[Union[dict, "UnresolvedVariantIngredientMention"]]]] = empty_list()
     purpose: Optional[str] = None
     supplier_info: Optional[Union[dict, "SupplierInfo"]] = None
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
@@ -1688,11 +1754,191 @@ class MediaVariant(YAMLRoot):
             self.modifications = [self.modifications] if self.modifications is not None else []
         self.modifications = [v if isinstance(v, str) else str(v) for v in self.modifications]
 
+        self._normalize_inlined_as_list(slot_name="ingredient_changes", slot_type=VariantIngredientChange, key_name="action", keyed=False)
+
+        self._normalize_inlined_as_list(slot_name="ingredient_mentions", slot_type=UnresolvedVariantIngredientMention, key_name="source_label", keyed=False)
+
         if self.purpose is not None and not isinstance(self.purpose, str):
             self.purpose = str(self.purpose)
 
         if self.supplier_info is not None and not isinstance(self.supplier_info, SupplierInfo):
             self.supplier_info = SupplierInfo(**as_dict(self.supplier_info))
+
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class VariantIngredientChange(YAMLRoot):
+    """
+    A curated ingredient change bound to one exact variant modification. Ingredient identity may remain unresolved.
+    ADD, SET_CONCENTRATION and the new ingredient of REPLACE are scoped change events, not a fully expanded variant
+    recipe. REMOVE and replaced_ingredient do not assert presence. Semantic validation additionally binds source_text
+    to modifications at source_modification_index and checks relationship and evidence context.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["VariantIngredientChange"]
+    class_class_curie: ClassVar[str] = "culturemech:VariantIngredientChange"
+    class_name: ClassVar[str] = "VariantIngredientChange"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.VariantIngredientChange
+
+    action: Union[str, "VariantIngredientChangeActionEnum"] = None
+    ingredient: Union[dict, IngredientDescriptor] = None
+    stage: str = None
+    source_modification_index: int = None
+    source_text: str = None
+    evidence: Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]] = empty_dict()
+    replaced_ingredient: Optional[Union[dict, IngredientDescriptor]] = None
+    notes: Optional[str] = None
+    amount: Optional[Union[dict, "VariantIngredientAmount"]] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.action):
+            self.MissingRequiredField("action")
+        if not isinstance(self.action, VariantIngredientChangeActionEnum):
+            self.action = VariantIngredientChangeActionEnum(self.action)
+
+        if self._is_empty(self.ingredient):
+            self.MissingRequiredField("ingredient")
+        if not isinstance(self.ingredient, IngredientDescriptor):
+            self.ingredient = IngredientDescriptor(**as_dict(self.ingredient))
+
+        if self._is_empty(self.stage):
+            self.MissingRequiredField("stage")
+        if not isinstance(self.stage, str):
+            self.stage = str(self.stage)
+
+        if self._is_empty(self.source_modification_index):
+            self.MissingRequiredField("source_modification_index")
+        if not isinstance(self.source_modification_index, int):
+            self.source_modification_index = int(self.source_modification_index)
+
+        if self._is_empty(self.source_text):
+            self.MissingRequiredField("source_text")
+        if not isinstance(self.source_text, str):
+            self.source_text = str(self.source_text)
+
+        if self._is_empty(self.evidence):
+            self.MissingRequiredField("evidence")
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+
+        if self.replaced_ingredient is not None and not isinstance(self.replaced_ingredient, IngredientDescriptor):
+            self.replaced_ingredient = IngredientDescriptor(**as_dict(self.replaced_ingredient))
+
+        if self.notes is not None and not isinstance(self.notes, str):
+            self.notes = str(self.notes)
+
+        if self.amount is not None and not isinstance(self.amount, VariantIngredientAmount):
+            self.amount = VariantIngredientAmount(**as_dict(self.amount))
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class VariantIngredientAmount(YAMLRoot):
+    """
+    A source-reported quantity without an invented concentration basis
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["VariantIngredientAmount"]
+    class_class_curie: ClassVar[str] = "culturemech:VariantIngredientAmount"
+    class_name: ClassVar[str] = "VariantIngredientAmount"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.VariantIngredientAmount
+
+    value: str = None
+    unit: Union[str, "VariantIngredientAmountUnitEnum"] = None
+    basis: Union[str, "VariantIngredientAmountBasisEnum"] = None
+    basis_statement: str = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.value):
+            self.MissingRequiredField("value")
+        if not isinstance(self.value, str):
+            self.value = str(self.value)
+
+        if self._is_empty(self.unit):
+            self.MissingRequiredField("unit")
+        if not isinstance(self.unit, VariantIngredientAmountUnitEnum):
+            self.unit = VariantIngredientAmountUnitEnum(self.unit)
+
+        if self._is_empty(self.basis):
+            self.MissingRequiredField("basis")
+        if not isinstance(self.basis, VariantIngredientAmountBasisEnum):
+            self.basis = VariantIngredientAmountBasisEnum(self.basis)
+
+        if self._is_empty(self.basis_statement):
+            self.MissingRequiredField("basis_statement")
+        if not isinstance(self.basis_statement, str):
+            self.basis_statement = str(self.basis_statement)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class UnresolvedVariantIngredientMention(YAMLRoot):
+    """
+    A literal named ingredient retained for review, not an approved chemical identity or formulation claim.
+    source_label must occur verbatim in the exact bound modification. No grounding or positive-presence fields exist.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["UnresolvedVariantIngredientMention"]
+    class_class_curie: ClassVar[str] = "culturemech:UnresolvedVariantIngredientMention"
+    class_name: ClassVar[str] = "UnresolvedVariantIngredientMention"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.UnresolvedVariantIngredientMention
+
+    source_label: str = None
+    reported_action: Union[str, "ReportedVariantIngredientActionEnum"] = None
+    stage: str = None
+    source_modification_index: int = None
+    source_text: str = None
+    reason: str = None
+    held_fields: Union[Union[str, "VariantIngredientHoldFieldEnum"], list[Union[str, "VariantIngredientHoldFieldEnum"]]] = None
+    reported_quantity: Optional[str] = None
+    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.source_label):
+            self.MissingRequiredField("source_label")
+        if not isinstance(self.source_label, str):
+            self.source_label = str(self.source_label)
+
+        if self._is_empty(self.reported_action):
+            self.MissingRequiredField("reported_action")
+        if not isinstance(self.reported_action, ReportedVariantIngredientActionEnum):
+            self.reported_action = ReportedVariantIngredientActionEnum(self.reported_action)
+
+        if self._is_empty(self.stage):
+            self.MissingRequiredField("stage")
+        if not isinstance(self.stage, str):
+            self.stage = str(self.stage)
+
+        if self._is_empty(self.source_modification_index):
+            self.MissingRequiredField("source_modification_index")
+        if not isinstance(self.source_modification_index, int):
+            self.source_modification_index = int(self.source_modification_index)
+
+        if self._is_empty(self.source_text):
+            self.MissingRequiredField("source_text")
+        if not isinstance(self.source_text, str):
+            self.source_text = str(self.source_text)
+
+        if self._is_empty(self.reason):
+            self.MissingRequiredField("reason")
+        if not isinstance(self.reason, str):
+            self.reason = str(self.reason)
+
+        if self._is_empty(self.held_fields):
+            self.MissingRequiredField("held_fields")
+        if not isinstance(self.held_fields, list):
+            self.held_fields = [self.held_fields] if self.held_fields is not None else []
+        self.held_fields = [v if isinstance(v, VariantIngredientHoldFieldEnum) else VariantIngredientHoldFieldEnum(v) for v in self.held_fields]
+
+        if self.reported_quantity is not None and not isinstance(self.reported_quantity, str):
+            self.reported_quantity = str(self.reported_quantity)
 
         self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
@@ -1959,6 +2205,7 @@ class CofactorRequirement(YAMLRoot):
     confidence: Optional[float] = None
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]] = empty_dict()
     genes: Optional[Union[str, list[str]]] = empty_list()
+    protein_examples: Optional[Union[Union[dict, "ProteinExample"], list[Union[dict, "ProteinExample"]]]] = empty_list()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.cofactor):
@@ -1979,6 +2226,10 @@ class CofactorRequirement(YAMLRoot):
         if not isinstance(self.genes, list):
             self.genes = [self.genes] if self.genes is not None else []
         self.genes = [v if isinstance(v, str) else str(v) for v in self.genes]
+
+        if not isinstance(self.protein_examples, list):
+            self.protein_examples = [self.protein_examples] if self.protein_examples is not None else []
+        self.protein_examples = [v if isinstance(v, ProteinExample) else ProteinExample(**as_dict(v)) for v in self.protein_examples]
 
         super().__post_init__(**kwargs)
 
@@ -2001,6 +2252,7 @@ class TransporterAnnotation(YAMLRoot):
     substrate_terms: Optional[Union[dict[Union[str, ChemicalEntityTermId], Union[dict, "ChemicalEntityTerm"]], list[Union[dict, "ChemicalEntityTerm"]]]] = empty_dict()
     direction: Optional[str] = None
     genes: Optional[Union[str, list[str]]] = empty_list()
+    protein_examples: Optional[Union[Union[dict, "ProteinExample"], list[Union[dict, "ProteinExample"]]]] = empty_list()
     ec_number: Optional[str] = None
     notes: Optional[str] = None
 
@@ -2028,8 +2280,142 @@ class TransporterAnnotation(YAMLRoot):
             self.genes = [self.genes] if self.genes is not None else []
         self.genes = [v if isinstance(v, str) else str(v) for v in self.genes]
 
+        if not isinstance(self.protein_examples, list):
+            self.protein_examples = [self.protein_examples] if self.protein_examples is not None else []
+        self.protein_examples = [v if isinstance(v, ProteinExample) else ProteinExample(**as_dict(v)) for v in self.protein_examples]
+
         if self.ec_number is not None and not isinstance(self.ec_number, str):
             self.ec_number = str(self.ec_number)
+
+        if self.notes is not None and not isinstance(self.notes, str):
+            self.notes = str(self.notes)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class ProteinExample(YAMLRoot):
+    """
+    A typed, organism-specific UniProtKB protein example linked to a growth medium, target organism, cofactor
+    requirement, or transporter with claim-scoped evidence.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["ProteinExample"]
+    class_class_curie: ClassVar[str] = "culturemech:ProteinExample"
+    class_name: ClassVar[str] = "ProteinExample"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.ProteinExample
+
+    uniprot_term: Union[dict, "UniProtTerm"] = None
+    organism_term: Union[dict, "OrganismTerm"] = None
+    evidence: Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]] = empty_dict()
+    gene_symbol: Optional[str] = None
+    locus_tag: Optional[str] = None
+    ec_number: Optional[str] = None
+    sequence_scope: Optional[str] = None
+    functional_role: Optional[str] = None
+    cofactor_term: Optional[Union[dict, "ChemicalEntityTerm"]] = None
+    substrate_term: Optional[Union[dict, "ChemicalEntityTerm"]] = None
+    notes: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.uniprot_term):
+            self.MissingRequiredField("uniprot_term")
+        if not isinstance(self.uniprot_term, UniProtTerm):
+            self.uniprot_term = UniProtTerm(**as_dict(self.uniprot_term))
+
+        if self._is_empty(self.organism_term):
+            self.MissingRequiredField("organism_term")
+        if not isinstance(self.organism_term, OrganismTerm):
+            self.organism_term = OrganismTerm(**as_dict(self.organism_term))
+
+        if self._is_empty(self.evidence):
+            self.MissingRequiredField("evidence")
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+
+        if self.gene_symbol is not None and not isinstance(self.gene_symbol, str):
+            self.gene_symbol = str(self.gene_symbol)
+
+        if self.locus_tag is not None and not isinstance(self.locus_tag, str):
+            self.locus_tag = str(self.locus_tag)
+
+        if self.ec_number is not None and not isinstance(self.ec_number, str):
+            self.ec_number = str(self.ec_number)
+
+        if self.sequence_scope is not None and not isinstance(self.sequence_scope, str):
+            self.sequence_scope = str(self.sequence_scope)
+
+        if self.functional_role is not None and not isinstance(self.functional_role, str):
+            self.functional_role = str(self.functional_role)
+
+        if self.cofactor_term is not None and not isinstance(self.cofactor_term, ChemicalEntityTerm):
+            self.cofactor_term = ChemicalEntityTerm(**as_dict(self.cofactor_term))
+
+        if self.substrate_term is not None and not isinstance(self.substrate_term, ChemicalEntityTerm):
+            self.substrate_term = ChemicalEntityTerm(**as_dict(self.substrate_term))
+
+        if self.notes is not None and not isinstance(self.notes, str):
+            self.notes = str(self.notes)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class CausalEdge(YAMLRoot):
+    """
+    A directed, evidence-backed causal mechanism edge describing how a growth-medium ingredient, cofactor,
+    environmental condition, or genetic perturbation causally enables, regulates, or inhibits organism growth,
+    transport, or physiology in the context of a medium formulation.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["CausalEdge"]
+    class_class_curie: ClassVar[str] = "culturemech:CausalEdge"
+    class_name: ClassVar[str] = "CausalEdge"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.CausalEdge
+
+    id: Union[str, CausalEdgeId] = None
+    subject_term: Union[dict, "CausalTerm"] = None
+    predicate: Union[str, "CausalPredicateEnum"] = None
+    object_term: Union[dict, "CausalTerm"] = None
+    evidence: Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]] = empty_dict()
+    organism_term: Optional[Union[dict, "OrganismTerm"]] = None
+    protein_terms: Optional[Union[dict[Union[str, UniProtTermId], Union[dict, "UniProtTerm"]], list[Union[dict, "UniProtTerm"]]]] = empty_dict()
+    condition_context: Optional[str] = None
+    notes: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, CausalEdgeId):
+            self.id = CausalEdgeId(self.id)
+
+        if self._is_empty(self.subject_term):
+            self.MissingRequiredField("subject_term")
+        if not isinstance(self.subject_term, CausalTerm):
+            self.subject_term = CausalTerm(**as_dict(self.subject_term))
+
+        if self._is_empty(self.predicate):
+            self.MissingRequiredField("predicate")
+        if not isinstance(self.predicate, CausalPredicateEnum):
+            self.predicate = CausalPredicateEnum(self.predicate)
+
+        if self._is_empty(self.object_term):
+            self.MissingRequiredField("object_term")
+        if not isinstance(self.object_term, CausalTerm):
+            self.object_term = CausalTerm(**as_dict(self.object_term))
+
+        if self._is_empty(self.evidence):
+            self.MissingRequiredField("evidence")
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+
+        if self.organism_term is not None and not isinstance(self.organism_term, OrganismTerm):
+            self.organism_term = OrganismTerm(**as_dict(self.organism_term))
+
+        self._normalize_inlined_as_list(slot_name="protein_terms", slot_type=UniProtTerm, key_name="id", keyed=True)
+
+        if self.condition_context is not None and not isinstance(self.condition_context, str):
+            self.condition_context = str(self.condition_context)
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
@@ -2254,6 +2640,68 @@ class EnvironmentTerm(Term):
             self.MissingRequiredField("id")
         if not isinstance(self.id, EnvironmentTermId):
             self.id = EnvironmentTermId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class UniProtTerm(Term):
+    """
+    A UniProtKB protein entry term. Must use the UniProtKB CURIE prefix with a canonical 6-character or 10-character
+    primary accession (for example, UniProtKB:P02931 or UniProtKB:A0A0H2ZRI7) and a non-empty protein label.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["UniProtTerm"]
+    class_class_curie: ClassVar[str] = "culturemech:UniProtTerm"
+    class_name: ClassVar[str] = "UniProtTerm"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.UniProtTerm
+
+    id: Union[str, UniProtTermId] = None
+    label: str = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, UniProtTermId):
+            self.id = UniProtTermId(self.id)
+
+        if self._is_empty(self.label):
+            self.MissingRequiredField("label")
+        if not isinstance(self.label, str):
+            self.label = str(self.label)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class CausalTerm(Term):
+    """
+    An ontology-grounded entity participating as subject_term or object_term in a growth-medium CausalEdge. Accepts
+    chemical/ingredient terms (CHEBI, FOODON, MICRO), organism taxa (NCBITaxon), biological processes and molecular
+    functions (GO), proteins and enzymes (UniProtKB, EC), pathways (KEGG), and phenotype/environment descriptors
+    (METPO, ENVO, PATO, NCIT, UBERON, CultureMech, MediaIngredientMech).
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["CausalTerm"]
+    class_class_curie: ClassVar[str] = "culturemech:CausalTerm"
+    class_name: ClassVar[str] = "CausalTerm"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.CausalTerm
+
+    id: Union[str, CausalTermId] = None
+    label: str = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, CausalTermId):
+            self.id = CausalTermId(self.id)
+
+        if self._is_empty(self.label):
+            self.MissingRequiredField("label")
+        if not isinstance(self.label, str):
+            self.label = str(self.label)
 
         super().__post_init__(**kwargs)
 
@@ -2861,6 +3309,12 @@ class ConcentrationUnitEnum(EnumDefinitionImpl):
     MICROG_PER_L = PermissibleValue(
         text="MICROG_PER_L",
         description="micrograms per liter")
+    MICROG_PER_ML = PermissibleValue(
+        text="MICROG_PER_ML",
+        description="micrograms per milliliter")
+    NG_PER_L = PermissibleValue(
+        text="NG_PER_L",
+        description="nanograms per liter; retain source treatment and preparation basis")
     MOLAR = PermissibleValue(
         text="MOLAR",
         description="moles per liter",
@@ -2871,6 +3325,15 @@ class ConcentrationUnitEnum(EnumDefinitionImpl):
     MICROMOLAR = PermissibleValue(
         text="MICROMOLAR",
         description="micromoles per liter")
+    NANOMOLAR = PermissibleValue(
+        text="NANOMOLAR",
+        description="nanomoles per liter")
+    PICOMOLAR = PermissibleValue(
+        text="PICOMOLAR",
+        description="picomoles per liter")
+    PPM = PermissibleValue(
+        text="PPM",
+        description="""Parts per million as stated by the source. Mass/mass, mass/volume or volume/volume basis must not be inferred. Preserve the explicit basis or its uncertainty in ingredient notes and do not convert silently.""")
     PERCENT_W_V = PermissibleValue(
         text="PERCENT_W_V",
         description="percent weight per volume")
@@ -3227,6 +3690,116 @@ class TransporterTypeEnum(EnumDefinitionImpl):
     _defn = EnumDefinition(
         name="TransporterTypeEnum",
         description="Classification of membrane transporter systems",
+    )
+
+class VariantIngredientChangeActionEnum(EnumDefinitionImpl):
+    """
+    Operation on an ingredient within a named variant stage
+    """
+    ADD = PermissibleValue(
+        text="ADD",
+        description="Add the stated ingredient in this variant stage")
+    REMOVE = PermissibleValue(
+        text="REMOVE",
+        description="Omit the stated ingredient; does not assert positive presence")
+    REPLACE = PermissibleValue(
+        text="REPLACE",
+        description="Replace replaced_ingredient with ingredient in this variant stage")
+    SET_CONCENTRATION = PermissibleValue(
+        text="SET_CONCENTRATION",
+        description="""Assign the stated concentration in this variant stage, including an explicitly reported zero dose; does not expand the parent formulation""")
+    SET_AMOUNT = PermissibleValue(
+        text="SET_AMOUNT",
+        description="Set an explicitly reported batch amount or unspecified-basis percentage")
+
+    _defn = EnumDefinition(
+        name="VariantIngredientChangeActionEnum",
+        description="Operation on an ingredient within a named variant stage",
+    )
+
+class VariantIngredientAmountUnitEnum(EnumDefinitionImpl):
+
+    G = PermissibleValue(
+        text="G",
+        description="Gram")
+    MG = PermissibleValue(
+        text="MG",
+        description="Milligram")
+    MICROG = PermissibleValue(
+        text="MICROG",
+        description="Microgram")
+    ML = PermissibleValue(
+        text="ML",
+        description="Milliliter")
+    L = PermissibleValue(
+        text="L",
+        description="Liter")
+    PERCENT = PermissibleValue(
+        text="PERCENT",
+        description="Percentage whose mass/volume convention was not specified")
+
+    _defn = EnumDefinition(
+        name="VariantIngredientAmountUnitEnum",
+    )
+
+class VariantIngredientAmountBasisEnum(EnumDefinitionImpl):
+
+    PER_BATCH = PermissibleValue(
+        text="PER_BATCH",
+        description="Absolute input amount for the stated recipe batch, not final concentration")
+    UNSPECIFIED_PERCENT = PermissibleValue(
+        text="UNSPECIFIED_PERCENT",
+        description="The source does not specify a mass or volume percentage convention")
+
+    _defn = EnumDefinition(
+        name="VariantIngredientAmountBasisEnum",
+    )
+
+class ReportedVariantIngredientActionEnum(EnumDefinitionImpl):
+
+    ADD = PermissibleValue(
+        text="ADD",
+        description="Source reports addition; the assertion remains withheld")
+    REMOVE = PermissibleValue(
+        text="REMOVE",
+        description="Source reports omission; the assertion remains withheld")
+    REPLACE = PermissibleValue(
+        text="REPLACE",
+        description="Source reports replacement; the assertion remains withheld")
+    SET_CONCENTRATION = PermissibleValue(
+        text="SET_CONCENTRATION",
+        description="Source reports a concentration change; the assertion remains withheld")
+    SET_AMOUNT = PermissibleValue(
+        text="SET_AMOUNT",
+        description="Source reports an amount change; the assertion remains withheld")
+    UNSPECIFIED = PermissibleValue(
+        text="UNSPECIFIED",
+        description="No unambiguous ingredient operation is established")
+
+    _defn = EnumDefinition(
+        name="ReportedVariantIngredientActionEnum",
+    )
+
+class VariantIngredientHoldFieldEnum(EnumDefinitionImpl):
+
+    SOURCE_CLAIM = PermissibleValue(
+        text="SOURCE_CLAIM",
+        description="The underlying source assertion has not been established")
+    IDENTITY_FORM = PermissibleValue(
+        text="IDENTITY_FORM",
+        description="Chemical form or identity specificity remains unresolved")
+    QUANTITY = PermissibleValue(
+        text="QUANTITY",
+        description="Amount, concentration or quantity basis remains unresolved")
+    OPERATION = PermissibleValue(
+        text="OPERATION",
+        description="The ingredient operation is not established")
+    STAGE = PermissibleValue(
+        text="STAGE",
+        description="Preparation or experimental stage is not established")
+
+    _defn = EnumDefinition(
+        name="VariantIngredientHoldFieldEnum",
     )
 
 class VariantTypeEnum(EnumDefinitionImpl):
@@ -3643,6 +4216,49 @@ class SynonymTypeEnum(EnumDefinitionImpl):
     _defn = EnumDefinition(
         name="SynonymTypeEnum",
         description="Type of synonym relationship for an IngredientSynonym.",
+    )
+
+class CausalPredicateEnum(EnumDefinitionImpl):
+    """
+    Constrained causal predicate vocabulary for growth-medium CausalEdge assertions, mapped to Relation Ontology (RO)
+    and Biolink predicates.
+    """
+    CAUSES = PermissibleValue(
+        text="CAUSES",
+        description="""Subject causally produces or brings about the object state, process, or phenotype in the medium.""",
+        meaning=RO["0002410"])
+    POSITIVELY_REGULATES = PermissibleValue(
+        text="POSITIVELY_REGULATES",
+        description="""Subject increases the rate, frequency, or extent of the object process or activity in the medium.""",
+        meaning=RO["0002213"])
+    NEGATIVELY_REGULATES = PermissibleValue(
+        text="NEGATIVELY_REGULATES",
+        description="""Subject decreases or represses the rate, frequency, or extent of the object process or activity in the medium.""",
+        meaning=RO["0002212"])
+    ENABLES_GROWTH = PermissibleValue(
+        text="ENABLES_GROWTH",
+        description="""Subject nutrient, cofactor, or condition causally enables or rescues growth of the target organism in the medium.""",
+        meaning=RO["0002327"])
+    INHIBITS_GROWTH = PermissibleValue(
+        text="INHIBITS_GROWTH",
+        description="""Subject selective agent, inhibitor, or condition causally suppresses or prevents growth of the target organism in the medium.""",
+        meaning=RO["0002449"])
+    PROVIDES_COFACTOR_FOR = PermissibleValue(
+        text="PROVIDES_COFACTOR_FOR",
+        description="""Subject medium ingredient or precursor supplies the essential cofactor required for the object enzyme, pathway, or organism growth.""",
+        meaning=RO["0002411"])
+    TRANSPORTS_SUBSTRATE = PermissibleValue(
+        text="TRANSPORTS_SUBSTRATE",
+        description="""Subject transporter or uptake system mediates transport of the object medium nutrient across the cell envelope.""",
+        meaning=RO["0002313"])
+    AFFECTS = PermissibleValue(
+        text="AFFECTS",
+        description="""Subject causally alters or modulates the object state, growth metric, or physiological response in the medium.""",
+        meaning=BIOLINK["affects"])
+
+    _defn = EnumDefinition(
+        name="CausalPredicateEnum",
+        description="""Constrained causal predicate vocabulary for growth-medium CausalEdge assertions, mapped to Relation Ontology (RO) and Biolink predicates.""",
     )
 
 class DiscussionKindEnum(EnumDefinitionImpl):
@@ -4196,6 +4812,12 @@ slots.mediaRecipe__incubation_atmosphere = Slot(uri=CULTUREMECH.incubation_atmos
 slots.mediaRecipe__source_data = Slot(uri=CULTUREMECH.source_data, name="mediaRecipe__source_data", curie=CULTUREMECH.curie('source_data'),
                    model_uri=CULTUREMECH.mediaRecipe__source_data, domain=None, range=Optional[Union[dict, SourceData]])
 
+slots.mediaRecipe__protein_examples = Slot(uri=CULTUREMECH.protein_examples, name="mediaRecipe__protein_examples", curie=CULTUREMECH.curie('protein_examples'),
+                   model_uri=CULTUREMECH.mediaRecipe__protein_examples, domain=None, range=Optional[Union[Union[dict, ProteinExample], list[Union[dict, ProteinExample]]]])
+
+slots.mediaRecipe__causal_graphs = Slot(uri=CULTUREMECH.causal_graphs, name="mediaRecipe__causal_graphs", curie=CULTUREMECH.curie('causal_graphs'),
+                   model_uri=CULTUREMECH.mediaRecipe__causal_graphs, domain=None, range=Optional[Union[dict[Union[str, CausalEdgeId], Union[dict, CausalEdge]], list[Union[dict, CausalEdge]]]])
+
 slots.solutionRecipe__id = Slot(uri=CULTUREMECH.id, name="solutionRecipe__id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.solutionRecipe__id, domain=None, range=URIRef,
                    pattern=re.compile(r'^CultureMech:(?!000000)\d{6}$'))
@@ -4263,6 +4885,24 @@ slots.solutionRecipe__notes = Slot(uri=CULTUREMECH.notes, name="solutionRecipe__
 
 slots.solutionRecipe__evidence = Slot(uri=CULTUREMECH.evidence, name="solutionRecipe__evidence", curie=CULTUREMECH.curie('evidence'),
                    model_uri=CULTUREMECH.solutionRecipe__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
+
+slots.solutionRecipe__categories = Slot(uri=CULTUREMECH.categories, name="solutionRecipe__categories", curie=CULTUREMECH.curie('categories'),
+                   model_uri=CULTUREMECH.solutionRecipe__categories, domain=None, range=Optional[Union[Union[str, "CategoryEnum"], list[Union[str, "CategoryEnum"]]]])
+
+slots.solutionRecipe__synonyms = Slot(uri=CULTUREMECH.synonyms, name="solutionRecipe__synonyms", curie=CULTUREMECH.curie('synonyms'),
+                   model_uri=CULTUREMECH.solutionRecipe__synonyms, domain=None, range=Optional[Union[Union[dict, RecipeSynonym], list[Union[dict, RecipeSynonym]]]])
+
+slots.solutionRecipe__merged_from = Slot(uri=CULTUREMECH.merged_from, name="solutionRecipe__merged_from", curie=CULTUREMECH.curie('merged_from'),
+                   model_uri=CULTUREMECH.solutionRecipe__merged_from, domain=None, range=Optional[Union[str, list[str]]])
+
+slots.solutionRecipe__merge_fingerprint = Slot(uri=CULTUREMECH.merge_fingerprint, name="solutionRecipe__merge_fingerprint", curie=CULTUREMECH.curie('merge_fingerprint'),
+                   model_uri=CULTUREMECH.solutionRecipe__merge_fingerprint, domain=None, range=Optional[str])
+
+slots.solutionRecipe__chemical_fingerprint = Slot(uri=CULTUREMECH.chemical_fingerprint, name="solutionRecipe__chemical_fingerprint", curie=CULTUREMECH.curie('chemical_fingerprint'),
+                   model_uri=CULTUREMECH.solutionRecipe__chemical_fingerprint, domain=None, range=Optional[str])
+
+slots.solutionRecipe__variant_fingerprint = Slot(uri=CULTUREMECH.variant_fingerprint, name="solutionRecipe__variant_fingerprint", curie=CULTUREMECH.curie('variant_fingerprint'),
+                   model_uri=CULTUREMECH.solutionRecipe__variant_fingerprint, domain=None, range=Optional[str])
 
 slots.recipeSynonym__name = Slot(uri=CULTUREMECH.name, name="recipeSynonym__name", curie=CULTUREMECH.curie('name'),
                    model_uri=CULTUREMECH.recipeSynonym__name, domain=None, range=str)
@@ -4475,6 +5115,12 @@ slots.organismDescriptor__evidence = Slot(uri=CULTUREMECH.evidence, name="organi
 slots.organismDescriptor__strain_modifications = Slot(uri=CULTUREMECH.strain_modifications, name="organismDescriptor__strain_modifications", curie=CULTUREMECH.curie('strain_modifications'),
                    model_uri=CULTUREMECH.organismDescriptor__strain_modifications, domain=None, range=Optional[Union[Union[dict, StrainModification], list[Union[dict, StrainModification]]]])
 
+slots.organismDescriptor__protein_examples = Slot(uri=CULTUREMECH.protein_examples, name="organismDescriptor__protein_examples", curie=CULTUREMECH.curie('protein_examples'),
+                   model_uri=CULTUREMECH.organismDescriptor__protein_examples, domain=None, range=Optional[Union[Union[dict, ProteinExample], list[Union[dict, ProteinExample]]]])
+
+slots.organismDescriptor__causal_graphs = Slot(uri=CULTUREMECH.causal_graphs, name="organismDescriptor__causal_graphs", curie=CULTUREMECH.curie('causal_graphs'),
+                   model_uri=CULTUREMECH.organismDescriptor__causal_graphs, domain=None, range=Optional[Union[dict[Union[str, CausalEdgeId], Union[dict, CausalEdge]], list[Union[dict, CausalEdge]]]])
+
 slots.sourceEnvironmentDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="sourceEnvironmentDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
                    model_uri=CULTUREMECH.sourceEnvironmentDescriptor__preferred_term, domain=None, range=str)
 
@@ -4507,6 +5153,9 @@ slots.cofactorDescriptor__kegg_pathways = Slot(uri=CULTUREMECH.kegg_pathways, na
 
 slots.cofactorDescriptor__enzyme_examples = Slot(uri=CULTUREMECH.enzyme_examples, name="cofactorDescriptor__enzyme_examples", curie=CULTUREMECH.curie('enzyme_examples'),
                    model_uri=CULTUREMECH.cofactorDescriptor__enzyme_examples, domain=None, range=Optional[Union[str, list[str]]])
+
+slots.cofactorDescriptor__protein_examples = Slot(uri=CULTUREMECH.protein_examples, name="cofactorDescriptor__protein_examples", curie=CULTUREMECH.curie('protein_examples'),
+                   model_uri=CULTUREMECH.cofactorDescriptor__protein_examples, domain=None, range=Optional[Union[Union[dict, ProteinExample], list[Union[dict, ProteinExample]]]])
 
 slots.cofactorDescriptor__biosynthesis_genes = Slot(uri=CULTUREMECH.biosynthesis_genes, name="cofactorDescriptor__biosynthesis_genes", curie=CULTUREMECH.curie('biosynthesis_genes'),
                    model_uri=CULTUREMECH.cofactorDescriptor__biosynthesis_genes, domain=None, range=Optional[Union[str, list[str]]])
@@ -4752,6 +5401,12 @@ slots.mediaVariant__description = Slot(uri=CULTUREMECH.description, name="mediaV
 slots.mediaVariant__modifications = Slot(uri=CULTUREMECH.modifications, name="mediaVariant__modifications", curie=CULTUREMECH.curie('modifications'),
                    model_uri=CULTUREMECH.mediaVariant__modifications, domain=None, range=Optional[Union[str, list[str]]])
 
+slots.mediaVariant__ingredient_changes = Slot(uri=CULTUREMECH.ingredient_changes, name="mediaVariant__ingredient_changes", curie=CULTUREMECH.curie('ingredient_changes'),
+                   model_uri=CULTUREMECH.mediaVariant__ingredient_changes, domain=None, range=Optional[Union[Union[dict, VariantIngredientChange], list[Union[dict, VariantIngredientChange]]]])
+
+slots.mediaVariant__ingredient_mentions = Slot(uri=CULTUREMECH.ingredient_mentions, name="mediaVariant__ingredient_mentions", curie=CULTUREMECH.curie('ingredient_mentions'),
+                   model_uri=CULTUREMECH.mediaVariant__ingredient_mentions, domain=None, range=Optional[Union[Union[dict, UnresolvedVariantIngredientMention], list[Union[dict, UnresolvedVariantIngredientMention]]]])
+
 slots.mediaVariant__purpose = Slot(uri=CULTUREMECH.purpose, name="mediaVariant__purpose", curie=CULTUREMECH.curie('purpose'),
                    model_uri=CULTUREMECH.mediaVariant__purpose, domain=None, range=Optional[str])
 
@@ -4760,6 +5415,80 @@ slots.mediaVariant__supplier_info = Slot(uri=CULTUREMECH.supplier_info, name="me
 
 slots.mediaVariant__evidence = Slot(uri=CULTUREMECH.evidence, name="mediaVariant__evidence", curie=CULTUREMECH.curie('evidence'),
                    model_uri=CULTUREMECH.mediaVariant__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
+
+slots.variantIngredientChange__action = Slot(uri=CULTUREMECH.action, name="variantIngredientChange__action", curie=CULTUREMECH.curie('action'),
+                   model_uri=CULTUREMECH.variantIngredientChange__action, domain=None, range=Union[str, "VariantIngredientChangeActionEnum"])
+
+slots.variantIngredientChange__ingredient = Slot(uri=CULTUREMECH.ingredient, name="variantIngredientChange__ingredient", curie=CULTUREMECH.curie('ingredient'),
+                   model_uri=CULTUREMECH.variantIngredientChange__ingredient, domain=None, range=Union[dict, IngredientDescriptor])
+
+slots.variantIngredientChange__replaced_ingredient = Slot(uri=CULTUREMECH.replaced_ingredient, name="variantIngredientChange__replaced_ingredient", curie=CULTUREMECH.curie('replaced_ingredient'),
+                   model_uri=CULTUREMECH.variantIngredientChange__replaced_ingredient, domain=None, range=Optional[Union[dict, IngredientDescriptor]])
+
+slots.variantIngredientChange__stage = Slot(uri=CULTUREMECH.stage, name="variantIngredientChange__stage", curie=CULTUREMECH.curie('stage'),
+                   model_uri=CULTUREMECH.variantIngredientChange__stage, domain=None, range=str,
+                   pattern=re.compile(r'\S'))
+
+slots.variantIngredientChange__source_modification_index = Slot(uri=CULTUREMECH.source_modification_index, name="variantIngredientChange__source_modification_index", curie=CULTUREMECH.curie('source_modification_index'),
+                   model_uri=CULTUREMECH.variantIngredientChange__source_modification_index, domain=None, range=int)
+
+slots.variantIngredientChange__source_text = Slot(uri=CULTUREMECH.source_text, name="variantIngredientChange__source_text", curie=CULTUREMECH.curie('source_text'),
+                   model_uri=CULTUREMECH.variantIngredientChange__source_text, domain=None, range=str,
+                   pattern=re.compile(r'\S'))
+
+slots.variantIngredientChange__evidence = Slot(uri=CULTUREMECH.evidence, name="variantIngredientChange__evidence", curie=CULTUREMECH.curie('evidence'),
+                   model_uri=CULTUREMECH.variantIngredientChange__evidence, domain=None, range=Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]])
+
+slots.variantIngredientChange__notes = Slot(uri=CULTUREMECH.notes, name="variantIngredientChange__notes", curie=CULTUREMECH.curie('notes'),
+                   model_uri=CULTUREMECH.variantIngredientChange__notes, domain=None, range=Optional[str])
+
+slots.variantIngredientChange__amount = Slot(uri=CULTUREMECH.amount, name="variantIngredientChange__amount", curie=CULTUREMECH.curie('amount'),
+                   model_uri=CULTUREMECH.variantIngredientChange__amount, domain=None, range=Optional[Union[dict, VariantIngredientAmount]])
+
+slots.variantIngredientAmount__value = Slot(uri=CULTUREMECH.value, name="variantIngredientAmount__value", curie=CULTUREMECH.curie('value'),
+                   model_uri=CULTUREMECH.variantIngredientAmount__value, domain=None, range=str,
+                   pattern=re.compile(r'\S'))
+
+slots.variantIngredientAmount__unit = Slot(uri=CULTUREMECH.unit, name="variantIngredientAmount__unit", curie=CULTUREMECH.curie('unit'),
+                   model_uri=CULTUREMECH.variantIngredientAmount__unit, domain=None, range=Union[str, "VariantIngredientAmountUnitEnum"])
+
+slots.variantIngredientAmount__basis = Slot(uri=CULTUREMECH.basis, name="variantIngredientAmount__basis", curie=CULTUREMECH.curie('basis'),
+                   model_uri=CULTUREMECH.variantIngredientAmount__basis, domain=None, range=Union[str, "VariantIngredientAmountBasisEnum"])
+
+slots.variantIngredientAmount__basis_statement = Slot(uri=CULTUREMECH.basis_statement, name="variantIngredientAmount__basis_statement", curie=CULTUREMECH.curie('basis_statement'),
+                   model_uri=CULTUREMECH.variantIngredientAmount__basis_statement, domain=None, range=str,
+                   pattern=re.compile(r'\S'))
+
+slots.unresolvedVariantIngredientMention__source_label = Slot(uri=CULTUREMECH.source_label, name="unresolvedVariantIngredientMention__source_label", curie=CULTUREMECH.curie('source_label'),
+                   model_uri=CULTUREMECH.unresolvedVariantIngredientMention__source_label, domain=None, range=str,
+                   pattern=re.compile(r'\S'))
+
+slots.unresolvedVariantIngredientMention__reported_action = Slot(uri=CULTUREMECH.reported_action, name="unresolvedVariantIngredientMention__reported_action", curie=CULTUREMECH.curie('reported_action'),
+                   model_uri=CULTUREMECH.unresolvedVariantIngredientMention__reported_action, domain=None, range=Union[str, "ReportedVariantIngredientActionEnum"])
+
+slots.unresolvedVariantIngredientMention__stage = Slot(uri=CULTUREMECH.stage, name="unresolvedVariantIngredientMention__stage", curie=CULTUREMECH.curie('stage'),
+                   model_uri=CULTUREMECH.unresolvedVariantIngredientMention__stage, domain=None, range=str,
+                   pattern=re.compile(r'\S'))
+
+slots.unresolvedVariantIngredientMention__source_modification_index = Slot(uri=CULTUREMECH.source_modification_index, name="unresolvedVariantIngredientMention__source_modification_index", curie=CULTUREMECH.curie('source_modification_index'),
+                   model_uri=CULTUREMECH.unresolvedVariantIngredientMention__source_modification_index, domain=None, range=int)
+
+slots.unresolvedVariantIngredientMention__source_text = Slot(uri=CULTUREMECH.source_text, name="unresolvedVariantIngredientMention__source_text", curie=CULTUREMECH.curie('source_text'),
+                   model_uri=CULTUREMECH.unresolvedVariantIngredientMention__source_text, domain=None, range=str,
+                   pattern=re.compile(r'\S'))
+
+slots.unresolvedVariantIngredientMention__reason = Slot(uri=CULTUREMECH.reason, name="unresolvedVariantIngredientMention__reason", curie=CULTUREMECH.curie('reason'),
+                   model_uri=CULTUREMECH.unresolvedVariantIngredientMention__reason, domain=None, range=str,
+                   pattern=re.compile(r'\S'))
+
+slots.unresolvedVariantIngredientMention__held_fields = Slot(uri=CULTUREMECH.held_fields, name="unresolvedVariantIngredientMention__held_fields", curie=CULTUREMECH.curie('held_fields'),
+                   model_uri=CULTUREMECH.unresolvedVariantIngredientMention__held_fields, domain=None, range=Union[Union[str, "VariantIngredientHoldFieldEnum"], list[Union[str, "VariantIngredientHoldFieldEnum"]]])
+
+slots.unresolvedVariantIngredientMention__reported_quantity = Slot(uri=CULTUREMECH.reported_quantity, name="unresolvedVariantIngredientMention__reported_quantity", curie=CULTUREMECH.curie('reported_quantity'),
+                   model_uri=CULTUREMECH.unresolvedVariantIngredientMention__reported_quantity, domain=None, range=Optional[str])
+
+slots.unresolvedVariantIngredientMention__evidence = Slot(uri=CULTUREMECH.evidence, name="unresolvedVariantIngredientMention__evidence", curie=CULTUREMECH.curie('evidence'),
+                   model_uri=CULTUREMECH.unresolvedVariantIngredientMention__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.mediaRecipeReference__id = Slot(uri=CULTUREMECH.id, name="mediaRecipeReference__id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.mediaRecipeReference__id, domain=None, range=Optional[str],
@@ -4872,6 +5601,9 @@ slots.cofactorRequirement__evidence = Slot(uri=CULTUREMECH.evidence, name="cofac
 slots.cofactorRequirement__genes = Slot(uri=CULTUREMECH.genes, name="cofactorRequirement__genes", curie=CULTUREMECH.curie('genes'),
                    model_uri=CULTUREMECH.cofactorRequirement__genes, domain=None, range=Optional[Union[str, list[str]]])
 
+slots.cofactorRequirement__protein_examples = Slot(uri=CULTUREMECH.protein_examples, name="cofactorRequirement__protein_examples", curie=CULTUREMECH.curie('protein_examples'),
+                   model_uri=CULTUREMECH.cofactorRequirement__protein_examples, domain=None, range=Optional[Union[Union[dict, ProteinExample], list[Union[dict, ProteinExample]]]])
+
 slots.transporterAnnotation__name = Slot(uri=CULTUREMECH.name, name="transporterAnnotation__name", curie=CULTUREMECH.curie('name'),
                    model_uri=CULTUREMECH.transporterAnnotation__name, domain=None, range=str)
 
@@ -4890,11 +5622,76 @@ slots.transporterAnnotation__direction = Slot(uri=CULTUREMECH.direction, name="t
 slots.transporterAnnotation__genes = Slot(uri=CULTUREMECH.genes, name="transporterAnnotation__genes", curie=CULTUREMECH.curie('genes'),
                    model_uri=CULTUREMECH.transporterAnnotation__genes, domain=None, range=Optional[Union[str, list[str]]])
 
+slots.transporterAnnotation__protein_examples = Slot(uri=CULTUREMECH.protein_examples, name="transporterAnnotation__protein_examples", curie=CULTUREMECH.curie('protein_examples'),
+                   model_uri=CULTUREMECH.transporterAnnotation__protein_examples, domain=None, range=Optional[Union[Union[dict, ProteinExample], list[Union[dict, ProteinExample]]]])
+
 slots.transporterAnnotation__ec_number = Slot(uri=CULTUREMECH.ec_number, name="transporterAnnotation__ec_number", curie=CULTUREMECH.curie('ec_number'),
                    model_uri=CULTUREMECH.transporterAnnotation__ec_number, domain=None, range=Optional[str])
 
 slots.transporterAnnotation__notes = Slot(uri=CULTUREMECH.notes, name="transporterAnnotation__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.transporterAnnotation__notes, domain=None, range=Optional[str])
+
+slots.proteinExample__uniprot_term = Slot(uri=CULTUREMECH.uniprot_term, name="proteinExample__uniprot_term", curie=CULTUREMECH.curie('uniprot_term'),
+                   model_uri=CULTUREMECH.proteinExample__uniprot_term, domain=None, range=Union[dict, UniProtTerm])
+
+slots.proteinExample__organism_term = Slot(uri=CULTUREMECH.organism_term, name="proteinExample__organism_term", curie=CULTUREMECH.curie('organism_term'),
+                   model_uri=CULTUREMECH.proteinExample__organism_term, domain=None, range=Union[dict, OrganismTerm])
+
+slots.proteinExample__gene_symbol = Slot(uri=CULTUREMECH.gene_symbol, name="proteinExample__gene_symbol", curie=CULTUREMECH.curie('gene_symbol'),
+                   model_uri=CULTUREMECH.proteinExample__gene_symbol, domain=None, range=Optional[str])
+
+slots.proteinExample__locus_tag = Slot(uri=CULTUREMECH.locus_tag, name="proteinExample__locus_tag", curie=CULTUREMECH.curie('locus_tag'),
+                   model_uri=CULTUREMECH.proteinExample__locus_tag, domain=None, range=Optional[str])
+
+slots.proteinExample__ec_number = Slot(uri=CULTUREMECH.ec_number, name="proteinExample__ec_number", curie=CULTUREMECH.curie('ec_number'),
+                   model_uri=CULTUREMECH.proteinExample__ec_number, domain=None, range=Optional[str],
+                   pattern=re.compile(r'^EC:[0-9]+(\.([0-9]+|-)){0,3}$'))
+
+slots.proteinExample__sequence_scope = Slot(uri=CULTUREMECH.sequence_scope, name="proteinExample__sequence_scope", curie=CULTUREMECH.curie('sequence_scope'),
+                   model_uri=CULTUREMECH.proteinExample__sequence_scope, domain=None, range=Optional[str])
+
+slots.proteinExample__functional_role = Slot(uri=CULTUREMECH.functional_role, name="proteinExample__functional_role", curie=CULTUREMECH.curie('functional_role'),
+                   model_uri=CULTUREMECH.proteinExample__functional_role, domain=None, range=Optional[str])
+
+slots.proteinExample__cofactor_term = Slot(uri=CULTUREMECH.cofactor_term, name="proteinExample__cofactor_term", curie=CULTUREMECH.curie('cofactor_term'),
+                   model_uri=CULTUREMECH.proteinExample__cofactor_term, domain=None, range=Optional[Union[dict, ChemicalEntityTerm]])
+
+slots.proteinExample__substrate_term = Slot(uri=CULTUREMECH.substrate_term, name="proteinExample__substrate_term", curie=CULTUREMECH.curie('substrate_term'),
+                   model_uri=CULTUREMECH.proteinExample__substrate_term, domain=None, range=Optional[Union[dict, ChemicalEntityTerm]])
+
+slots.proteinExample__evidence = Slot(uri=CULTUREMECH.evidence, name="proteinExample__evidence", curie=CULTUREMECH.curie('evidence'),
+                   model_uri=CULTUREMECH.proteinExample__evidence, domain=None, range=Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]])
+
+slots.proteinExample__notes = Slot(uri=CULTUREMECH.notes, name="proteinExample__notes", curie=CULTUREMECH.curie('notes'),
+                   model_uri=CULTUREMECH.proteinExample__notes, domain=None, range=Optional[str])
+
+slots.causalEdge__id = Slot(uri=CULTUREMECH.id, name="causalEdge__id", curie=CULTUREMECH.curie('id'),
+                   model_uri=CULTUREMECH.causalEdge__id, domain=None, range=URIRef,
+                   pattern=re.compile(r'^(edge_[A-Za-z0-9_.-]+|CausalEdge:[A-Za-z0-9_.-]+)$'))
+
+slots.causalEdge__subject_term = Slot(uri=CULTUREMECH.subject_term, name="causalEdge__subject_term", curie=CULTUREMECH.curie('subject_term'),
+                   model_uri=CULTUREMECH.causalEdge__subject_term, domain=None, range=Union[dict, CausalTerm])
+
+slots.causalEdge__predicate = Slot(uri=CULTUREMECH.predicate, name="causalEdge__predicate", curie=CULTUREMECH.curie('predicate'),
+                   model_uri=CULTUREMECH.causalEdge__predicate, domain=None, range=Union[str, "CausalPredicateEnum"])
+
+slots.causalEdge__object_term = Slot(uri=CULTUREMECH.object_term, name="causalEdge__object_term", curie=CULTUREMECH.curie('object_term'),
+                   model_uri=CULTUREMECH.causalEdge__object_term, domain=None, range=Union[dict, CausalTerm])
+
+slots.causalEdge__organism_term = Slot(uri=CULTUREMECH.organism_term, name="causalEdge__organism_term", curie=CULTUREMECH.curie('organism_term'),
+                   model_uri=CULTUREMECH.causalEdge__organism_term, domain=None, range=Optional[Union[dict, OrganismTerm]])
+
+slots.causalEdge__protein_terms = Slot(uri=CULTUREMECH.protein_terms, name="causalEdge__protein_terms", curie=CULTUREMECH.curie('protein_terms'),
+                   model_uri=CULTUREMECH.causalEdge__protein_terms, domain=None, range=Optional[Union[dict[Union[str, UniProtTermId], Union[dict, UniProtTerm]], list[Union[dict, UniProtTerm]]]])
+
+slots.causalEdge__condition_context = Slot(uri=CULTUREMECH.condition_context, name="causalEdge__condition_context", curie=CULTUREMECH.curie('condition_context'),
+                   model_uri=CULTUREMECH.causalEdge__condition_context, domain=None, range=Optional[str])
+
+slots.causalEdge__evidence = Slot(uri=CULTUREMECH.evidence, name="causalEdge__evidence", curie=CULTUREMECH.curie('evidence'),
+                   model_uri=CULTUREMECH.causalEdge__evidence, domain=None, range=Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]])
+
+slots.causalEdge__notes = Slot(uri=CULTUREMECH.notes, name="causalEdge__notes", curie=CULTUREMECH.curie('notes'),
+                   model_uri=CULTUREMECH.causalEdge__notes, domain=None, range=Optional[str])
 
 slots.importMetadata__source_database = Slot(uri=CULTUREMECH.source_database, name="importMetadata__source_database", curie=CULTUREMECH.curie('source_database'),
                    model_uri=CULTUREMECH.importMetadata__source_database, domain=None, range=Union[str, "SourceDatabaseEnum"])
@@ -5110,4 +5907,20 @@ slots.CultureMechTerm_id = Slot(uri=CULTUREMECH.id, name="CultureMechTerm_id", c
 slots.EnvironmentTerm_id = Slot(uri=CULTUREMECH.id, name="EnvironmentTerm_id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.EnvironmentTerm_id, domain=EnvironmentTerm, range=Union[str, EnvironmentTermId],
                    pattern=re.compile(r'^ENVO:\d{7,8}$'))
+
+slots.UniProtTerm_id = Slot(uri=CULTUREMECH.id, name="UniProtTerm_id", curie=CULTUREMECH.curie('id'),
+                   model_uri=CULTUREMECH.UniProtTerm_id, domain=UniProtTerm, range=Union[str, UniProtTermId],
+                   pattern=re.compile(r'^UniProtKB:([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})$'))
+
+slots.UniProtTerm_label = Slot(uri=CULTUREMECH.label, name="UniProtTerm_label", curie=CULTUREMECH.curie('label'),
+                   model_uri=CULTUREMECH.UniProtTerm_label, domain=UniProtTerm, range=str,
+                   pattern=re.compile(r'\S'))
+
+slots.CausalTerm_id = Slot(uri=CULTUREMECH.id, name="CausalTerm_id", curie=CULTUREMECH.curie('id'),
+                   model_uri=CULTUREMECH.CausalTerm_id, domain=CausalTerm, range=Union[str, CausalTermId],
+                   pattern=re.compile(r'^(CHEBI|NCBITaxon|GO|UniProtKB|EC|KEGG|METPO|ENVO|PATO|NCIT|FOODON|UBERON|MICRO|CultureMech|MediaIngredientMech):[A-Za-z0-9_.-]+$'))
+
+slots.CausalTerm_label = Slot(uri=CULTUREMECH.label, name="CausalTerm_label", curie=CULTUREMECH.curie('label'),
+                   model_uri=CULTUREMECH.CausalTerm_label, domain=CausalTerm, range=str,
+                   pattern=re.compile(r'\S'))
 

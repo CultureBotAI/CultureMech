@@ -166,6 +166,14 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T15:16:39.365769+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography with archived primary source and Markdown,
+    exact excerpts, scientific names and qualified NCBI taxonomy. Preserved recipe
+    differences and access/formulation limits; all prior quantities, links, preparation
+    and history unchanged. No new native growth or resolved variant.
+  source: PMID:20406453
 media_term:
   preferred_term: MediaDB Medium 344
   term:
@@ -177,3 +185,70 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:20406453
+  title: The intra- and extracellular proteome of Aspergillus niger growing on defined
+    medium with xylose or maltose as carbon substrate.
+  authors: Lu X; Sun J; Nimtz M; Wissing J; Zeng AP; Rinas U
+  year: 2010
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=deposited_JATS_full_text_and_PubMed_abstract;
+    alternate_identifier=doi:10.1186/1475-2859-9-23. owner=MEDIADB:344; discovery_sourceID=119;
+    source_url=https://pubmed.ncbi.nlm.nih.gov/20406453/; raw_abstract=references_cache/papers/PMID_20406453.xml;
+    source_markdown=references_cache/papers/PMID_20406453.md. alternate_identifier=PMC2874515.
+    PubMed abstract; exact excerpt="Aspergillus niger AB1.13". PubMed abstract; exact
+    excerpt="xylose or maltose as carbon substrate". Materials and methods / Strain
+    and medium; exact excerpt="modified Vogel'' medium". Materials and methods / Strain
+    and medium; exact excerpt="after 68 h of growth on xylose". The study''s single-carbon
+    maltose assay is relevant to this imported Modified Vogel owner, but exact chemical-form
+    equivalence is unresolved. Methods identify uridine supplementation and hydrated
+    reagents. In particular, source calcium chloride dihydrate differs from the local
+    anhydrous label; source sodium molybdate dihydrate differs from the local anhydrous
+    term; source citric acid monohydrate is not the local citrate(3-) identity. Sodium
+    citrate, magnesium sulfate, zinc sulfate and ferrous ammonium sulfate hydration
+    is also not fully represented locally. Do not certify imported molar values merely
+    because they resemble mass-to-mole conversions. The initial single-carbon experiment
+    uses 20 g/L xylose or maltose. A separate induction experiment begins at 10 g/L
+    xylose and adds maltose after 68 hours to a final 10 g/L; this is not either single-carbon
+    owner. Its variant assignment remains formulation-unresolved pending the chemical-form
+    reconciliation; the observation is retained here rather than misrepresented as
+    exact parent growth. Reported organism=Aspergillus niger AB1.13; canonical scientific
+    name=Aspergillus niger; NCBITaxon:5061; actual rank=species; taxonomy_match=parent_rank_only;
+    role=experimental strain, uridine auxotroph and prtT regulatory mutant; species
+    parent verified, exact strain node unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml.
+    Reported organism=Aspergillus niger AB4.1 and N402; canonical scientific name=Aspergillus
+    niger; NCBITaxon:5061; actual rank=species; taxonomy_match=parent_rank_only; role=strain
+    ancestry, not independently tested growth targets; species parent only. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml.
+    Reported organism=Aspergillus niger ATCC9029 (= NRRL3 in the methods); canonical
+    scientific name=Aspergillus niger NRRL3; NCBITaxon:1451139; actual rank=strain;
+    taxonomy_match=exact NRRL3 strain; ATCC equivalence reported by paper; role=ancestor
+    only; never assigned as AB1.13 identity. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1451139&retmode=xml.
+    Reported organism=Saccharomyces cerevisiae; canonical scientific name=Saccharomyces
+    cerevisiae; NCBITaxon:4932; actual rank=species; taxonomy_match=exact species;
+    role=background protein-function comparison. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=4932&retmode=xml.
+    Reported organism=P. chrysogenum / Penicillium chrysogenum; canonical scientific
+    name=Penicillium chrysogenum; NCBITaxon:5076; actual rank=species; taxonomy_match=exact
+    species; role=background proteome comparison; abbreviation expanded using reference
+    24. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5076&retmode=xml.
+    Reported organism=A. nidulans / Aspergillus nidulans; canonical scientific name=Aspergillus
+    nidulans; NCBITaxon:162425; actual rank=species; taxonomy_match=exact species;
+    role=background protein/genome comparison. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=162425&retmode=xml.
+    Reported organism=A. fumigatus / Aspergillus fumigatus; canonical scientific name=Aspergillus
+    fumigatus; NCBITaxon:746128; actual rank=species; taxonomy_match=exact species;
+    role=background protein comparison. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=746128&retmode=xml.
+    Unspecified fission yeast remains taxonomy-unresolved. Background organisms and
+    bibliography-only names are not study-medium growth targets. PDA/uridine inoculum,
+    saline harvest, PBS washing and protein-extraction buffers are not this defined
+    growth medium. Flask and bioreactor conditions remain separate; pH adjustment
+    solution and unspecified-dose antifoam are not new ingredient concentrations.
+    source_fulltext=https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2874515/fullTextXML;
+    raw_fulltext=references_cache/papers/primary_xml/lu-2010-pmc.xml; fulltext_markdown=references_cache/papers/primary_xml/lu-2010-pmc.md.
+    Deposited JATS text includes captions, but linked figure images and supplementary
+    files were not inspected. Taxonomy archives=references_cache/papers/taxonomy/fungal-studies-20261013.*
+    and lu-sfm-additional-20261013.*. Bounded taxonomy lookup failures are not proof
+    of taxon absence. Organism inventory covers inspected medium-relevant passages,
+    not inaccessible full text. Correction/retraction coverage is limited to inspected
+    publication metadata. All prior recipe fields and history preserved, not newly
+    certified. No new ingredient-concentration evidence, resolved variant, native
+    growth association or quantitative metric. '

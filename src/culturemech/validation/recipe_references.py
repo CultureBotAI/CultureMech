@@ -18,7 +18,7 @@ from urllib.parse import parse_qs, urlsplit
 
 import pypdf
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 from linkml_reference_validator.models import (
     ReferenceContent,
     ReferenceValidationConfig,
@@ -740,8 +740,20 @@ class RecipeSourceCache:
             raise
 
 
+def _inline_title_text(title: str) -> str | None:
+    """Render only simple bibliographic formatting, without discarding title text."""
+    soup = BeautifulSoup(title, "html.parser")
+    for node in soup.descendants:
+        if isinstance(node, NavigableString):
+            if type(node) is not NavigableString:
+                return None  # Comments and declarations are not title formatting.
+        elif node.name not in {"i", "em", "b", "strong", "sub", "sup"} or node.attrs:
+            return None
+    return whitespace(soup.get_text()).lower() or None
+
+
 class RecipeTextValidator:
-    """Plugin-compatible validator; literature references retain upstream behavior."""
+    """Official-recipe checks and upstream literature validation with inline titles."""
 
     def __init__(self, config: ReferenceValidationConfig, *, cache=None, refresh=False):
         self.config = config
@@ -806,5 +818,26 @@ class RecipeTextValidator:
             if recipe_source(reference_id)
             else self.fallback.validate_title(reference_id, expected_title, path=path)
         )
+        # DOI registries can retain publisher markup in otherwise identical titles.
+        # Retry only a title mismatch; never turn an access failure into a match.
+        if (
+            reference_id.lower().startswith("doi:")
+            and not result.is_valid
+            and result.message
+            and result.message.startswith(f"Title mismatch for {reference_id}:")
+        ):
+            reference = self.fallback.fetcher.fetch(reference_id)
+            if reference and reference.title:
+                expected_text = _inline_title_text(expected_title)
+                actual_text = _inline_title_text(reference.title)
+                if expected_text is not None and expected_text == actual_text:
+                    result = ValidationResult(
+                        is_valid=True,
+                        reference_id=reference_id,
+                        supporting_text="",
+                        severity=ValidationSeverity.INFO,
+                        message=f"Title validated after rendering inline formatting for {reference_id}",
+                        path=path,
+                    )
         self.results.append(result)
         return result

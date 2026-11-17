@@ -138,6 +138,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:142's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T21:09:19.427499+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, source/Markdown archive links, short excerpts
+    and qualified scientific-name/NCBI taxonomy notes. Preserved prior recipe values
+    and history. Formula, chemical-form and strain discrepancies remain explicit;
+    no new native growth or concentration assertion.
+  source: PMID:8501045
 media_term:
   preferred_term: MediaDB Medium 142
   term:
@@ -149,3 +157,69 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:8501045
+  title: The Escherichia coli K-12 "wild types" W3110 and MG1655 have an rph frameshift
+    mutation that leads to pyrimidine starvation due to low pyrE expression levels.
+  authors: Jensen KF
+  year: 1993
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:142;
+    discovery_sourceID=45; source_url=https://doi.org/10.1128/jb.175.11.3401-3407.1993;
+    alternate_identifier=doi:10.1128/jb.175.11.3401-3407.1993; alternate_identifier=PMC204738;
+    raw=references_cache/papers/PMID_8501045.xml; markdown=references_cache/papers/PMID_8501045.md;
+    PubMed abstract, focal strains; exact excerpt="W3110 and MG1655, as well as their
+    common ancestor W1485". PubMed abstract, comparison organisms; exact excerpt="strains
+    of E. coli K-12, E. coli B, and Salmonella typhimurium.". Reported organism=Escherichia
+    coli W3110; canonical scientific name=Escherichia coli str. K-12 substr. W3110;
+    NCBITaxon:316407; actual rank=no rank; taxonomy_match=exact_strain_designation;
+    role=focal strain; actual NCBI rank is no rank. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=316407&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Escherichia coli MG1655; canonical scientific name=Escherichia
+    coli str. K-12 substr. MG1655; NCBITaxon:511145; actual rank=no rank; taxonomy_match=exact_strain_designation;
+    role=focal strain; actual NCBI rank is no rank. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=511145&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Escherichia coli K-12; canonical scientific name=Escherichia
+    coli K-12; NCBITaxon:83333; actual rank=strain; taxonomy_match=exact_named_lineage;
+    role=comparison lineage. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=83333&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Escherichia coli W1485 and HfrH; canonical scientific name=Escherichia
+    coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only; role=W1485
+    is the described common ancestor; HfrH supplies an operon; exact nodes unresolved,
+    species parent only without inferring a shared substrain identity. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Escherichia coli B; canonical scientific name=Escherichia coli
+    B; NCBITaxon:37762; actual rank=strain; taxonomy_match=exact_named_lineage; role=comparison
+    strain lineage. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=37762&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Salmonella typhimurium; canonical scientific name=Salmonella
+    enterica subsp. enterica serovar Typhimurium; NCBITaxon:90371; actual rank=no
+    rank; taxonomy_match=exact_synonym; role=comparison serovar; actual NCBI rank
+    is no rank. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=90371&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Reported organism=Kohara bacteriophage lambda 2A6; canonical scientific name=Escherichia
+    phage Lambda; NCBITaxon:2681611; actual rank=no rank; taxonomy_match=parent_rank_only;
+    role=cloning-library material; phage lineage matched, not a verified taxonomic
+    identity for clone 2A6 and not cultivation evidence. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2681611&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/followup-study-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/followup-study-20261013.md.
+    Minimal medium with and without uracil is contrasted in the abstract. Its growth
+    comparison does not supply the A+B salts formula or uracil amount. MediaDB plasmid-bearing
+    strain labels require methods-level verification. Full-text retrieval attempts
+    failed; the complete PubMed abstract is archived. The existing uracil-supplemented
+    owner is a local variant candidate, not a newly paper-verified exact formulation.
+    Local pair MEDIADB:142/143 differs by uracil; the other ten ingredient entries
+    agree. No new duplicate variant is created and the uracil amount is not certified
+    by the abstract. Inventory covers the inspected medium-relevant passages, not
+    every organism in the full paper or its bibliography. Correction/retraction coverage
+    is limited to inspected publication metadata. Bounded taxonomy misses do not establish
+    absence. All original ingredients, amounts, preparation, history and links are
+    preserved, not newly certified. No new native growth assertion, resolved variant
+    or concentration evidence.

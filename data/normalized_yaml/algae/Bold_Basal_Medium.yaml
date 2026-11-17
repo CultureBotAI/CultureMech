@@ -1,8 +1,8 @@
 id: CultureMech:000034
 name: bold_basal_medium
 category: algae
-medium_type: COMPLEX
-composition_type: UNDEFINED
+medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: Bold Basal Medium
@@ -210,10 +210,10 @@ solutions:
       unit: G_PER_L
     term:
       id: CHEBI:4735
-      label: EDTA
+      label: ethylenediaminetetraacetic acid
     mediaingredientmech_chebi_term:
       id: CHEBI:4735
-      label: EDTA
+      label: ethylenediaminetetraacetic acid
     notes: UTEX lists 50 g EDTA acid form per liter.
     physicochemical_roles:
     - CHELATOR
@@ -440,9 +440,9 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:86368
       label: manganese(II) chloride tetrahydrate
-    notes: UTEX prints MnCl with tetrahydrate in this stock row, without the second
-      chloride. The existing MnCl2 identity and 1.44 g/L amount are retained unverified;
-      no final-medium conversion is made.
+    notes: Stoichiometric manganese(II) chloride tetrahydrate (MnCl2·4H2O, CHEBI:86368);
+      the UTEX source page contains a typographical error (MnCl•4H2O) omitting subscript
+      2.
     nutritional_roles:
     - TRACE_ELEMENT
     evidence:
@@ -506,10 +506,10 @@ solutions:
       unit: G_PER_L
     term:
       id: CHEBI:86214
-      label: cobalt(II) nitrate hexahydrate
+      label: cobalt dinitrate hexahydrate
     mediaingredientmech_chebi_term:
       id: CHEBI:86214
-      label: cobalt(II) nitrate hexahydrate
+      label: cobalt dinitrate hexahydrate
     notes: UTEX lists 0.49 g Co(NO3)2 x 6 H2O per liter.
     nutritional_roles:
     - NITROGEN_SOURCE
@@ -1105,6 +1105,47 @@ curation_history:
     Three Different Media", "year": 2022}], "old_length": 7, "pointer": ["references"],
     "reason": "Add the inspected formulation/relationship sources.", "reference":
     "doi:10.3390/plants11131669", "snippet": "0.25, 0.75, 2.50, 5.0, and 15.0 ng/L"}]'
+- timestamp: '2026-10-21T03:04:48.230072+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 finding CM-C1S4-003 on CultureMech:000034 (Issues #635,
+    #645).'
+  changes: 'Normalized MnCl2 x 4 H2O to CHEBI:86368 (manganese(II) chloride tetrahydrate),
+    EDTA to CHEBI:4735 (ethylenediaminetetraacetic acid), and Co(NO3)2 x 6 H2O to
+    CHEBI:86214 (cobalt dinitrate hexahydrate) (#635, #645).'
+- timestamp: '2026-11-16T21:12:17.582546+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "31a6892dbab3957905e4fac2a8408f0b3bcdfa51f6dc6b2fcb6019bb6f8d2a28",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Methods 2.3 specifies five separate active-E2 treatment levels tested on BBM
+    and a no-hormone control. Preserve the discrete values without powder-dose conversion.
+    The study''s BBM identity is not asserted equivalent to the UTEX parent. Primary
+    journal article; full-text XML inspected 2026-11-16.", "reference": "doi:10.3390/plants11131669",
+    "snippet": "0.25, 0.75, 2.50, 5.0, and 15.0 ng/L", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "NG_PER_L", "value": "0.25; 0.75; 2.50; 5.0; 15.0"},
+    "notes": "Discrete separate treatment levels of active E2, with a no-hormone control.
+    Not a continuous range, simultaneous mixture or chemical-powder dose.", "preferred_term":
+    "17β-Estradiol"}, "notes": "The component belongs to this study-specific exposure
+    variant, not the base BBM formulation.", "source_modification_index": 2, "source_text":
+    "Test separate 17-beta-estradiol treatments at 0.25, 0.75, 2.50, 5.0 and 15.0
+    ng/L, with a no-hormone control.", "stage": "assay exposure"}, {"action": "ADD",
+    "evidence": [{"explanation": "Methods 2.1 scopes this amendment to the algal stock
+    culture grown before the experiment. It does not establish a universal final assay-medium
+    dose or a ppm conversion basis. Primary journal article; full-text XML inspected
+    2026-11-16.", "reference": "doi:10.3390/plants11131669", "snippet": "NH4Cl was
+    added to 4.5 ppm", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "PPM", "value": "4.5"}, "notes": "Source reports ppm without specifying its mass/volume
+    basis; no conversion is made.", "preferred_term": "NH4Cl"}, "notes": "Preserve
+    the earlier stock-culture stage separately from estradiol exposure.", "source_modification_index":
+    3, "source_text": "Maintain the pre-experiment Scenedesmus quadricauda stock culture
+    in modified BBM containing 4.5 ppm NH4Cl; do not assert this as a universal final
+    assay-medium dose.", "stage": "pre-experiment algal stock culture"}], "variant_index":
+    0, "variant_name": "bbm_estradiol_exposure_assay"}]}'
 references:
 - reference: UTEX:bold-basal-medium
 - reference: https://utex.org/products/bold-basal-medium
@@ -1195,6 +1236,51 @@ variants:
       "adjusted to 7" for assay-medium pH. The study cites Stein 1973 for BBM; no
       exact equivalence to the UTEX parent or universal NH4Cl assay dose is asserted.
       Locator: Methods 2.1-2.3; reference 45.'
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: 17β-Estradiol
+      concentration:
+        value: 0.25; 0.75; 2.50; 5.0; 15.0
+        unit: NG_PER_L
+      notes: Discrete separate treatment levels of active E2, with a no-hormone control.
+        Not a continuous range, simultaneous mixture or chemical-powder dose.
+    stage: assay exposure
+    source_modification_index: 2
+    source_text: Test separate 17-beta-estradiol treatments at 0.25, 0.75, 2.50, 5.0
+      and 15.0 ng/L, with a no-hormone control.
+    evidence:
+    - reference: doi:10.3390/plants11131669
+      supports: SUPPORT
+      snippet: 0.25, 0.75, 2.50, 5.0, and 15.0 ng/L
+      explanation: Methods 2.3 specifies five separate active-E2 treatment levels
+        tested on BBM and a no-hormone control. Preserve the discrete values without
+        powder-dose conversion. The study's BBM identity is not asserted equivalent
+        to the UTEX parent. Primary journal article; full-text XML inspected 2026-11-16.
+    notes: The component belongs to this study-specific exposure variant, not the
+      base BBM formulation.
+  - action: ADD
+    ingredient:
+      preferred_term: NH4Cl
+      concentration:
+        value: '4.5'
+        unit: PPM
+      notes: Source reports ppm without specifying its mass/volume basis; no conversion
+        is made.
+    stage: pre-experiment algal stock culture
+    source_modification_index: 3
+    source_text: Maintain the pre-experiment Scenedesmus quadricauda stock culture
+      in modified BBM containing 4.5 ppm NH4Cl; do not assert this as a universal
+      final assay-medium dose.
+    evidence:
+    - reference: doi:10.3390/plants11131669
+      supports: SUPPORT
+      snippet: NH4Cl was added to 4.5 ppm
+      explanation: Methods 2.1 scopes this amendment to the algal stock culture grown
+        before the experiment. It does not establish a universal final assay-medium
+        dose or a ppm conversion basis. Primary journal article; full-text XML inspected
+        2026-11-16.
+    notes: Preserve the earlier stock-culture stage separately from estradiol exposure.
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Scenedesmus quadricauda
@@ -1228,3 +1314,4 @@ evidence:
     name EDTA, Iron, Boron and Bold Trace stocks, each dosed as one approximate 0.05
     mL drop per one litre final medium. Preserve approximation; do not infer a precise
     drop from typical practice. Locator: Directions 2-3 and table rows 7-10.'
+ph_value: 6.6

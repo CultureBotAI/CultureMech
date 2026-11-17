@@ -1,0 +1,3918 @@
+# Shewanella citations and source-scoped wild-type growth
+
+- Review: 20261013T100759Z-shewanella-paper-citations
+- Repository: culturebotai/CultureMech
+- Started UTC: 2026-10-13T09:31:35Z
+- Finished UTC: 2026-10-13T10:07:59Z
+- Reviewer: codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+16 citations across eight records/four papers; eight DOI/snippet-backed inline variants and eight variant-only wild-type MR-1 growth entries. All 224 parent ingredients and prior content preserved. Strict/schema/taxonomy checks pass, but required reference checks and global merge diagnostics fail; source-normalization and export findings remain open.
+
+## Scope And Provenance
+
+Eight exact MediaDB source 72/73 owners, IDs 178-185; citation identity, source-described differences, organism roles and qualitative variant-only growth.
+
+Selection: Verified source-owner joins, not a corpus sample or full recipe review.
+Coverage: full; 8 reviewed / 8 in the declared population.
+Source: working_tree at Git base 41d4d390123c0d8320cd53e994470c88a1b86d8c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007069 | data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml | maintained | Modified m1 medium with 20 mm lactate; pinchuk et al |
+| CultureMech:007070 | data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml | maintained | Modified m1 medium with 18 mm lactate; pinchuk et al |
+| CultureMech:007071 | data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml | maintained | Modified M1 Medium with Lactate and Glycine (no NH4Cl); Pinchuk et al |
+| CultureMech:007072 | data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml | maintained | Modified M1 Medium with Acetate; Pinchuk et al |
+| CultureMech:007073 | data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml | maintained | Minimal medium (tang et al 2009) |
+| CultureMech:007074 | data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml | maintained | Minimal medium with salt stress (tang et al 2009) |
+| CultureMech:007075 | data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml | maintained | Minimal Medium w/amino acids (Tang et al 2009) |
+| CultureMech:007076 | data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml | maintained | Minimal Medium w/amino acids and salt stress (Tang et al 2009) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| just validate data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml | passed | True | CultureMech:007069 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml | passed | True | CultureMech:007069 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml | passed | True | CultureMech:007070 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml | passed | True | CultureMech:007070 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml | passed | True | CultureMech:007071 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml | passed | True | CultureMech:007071 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml | passed | True | CultureMech:007072 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml | passed | True | CultureMech:007072 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml | passed | True | CultureMech:007073 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate-strict data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml | passed | True | CultureMech:007073 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml | passed | True | CultureMech:007074 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate-strict data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml | passed | True | CultureMech:007074 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml | passed | True | CultureMech:007075 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate-strict data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml | passed | True | CultureMech:007075 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml | passed | True | CultureMech:007076 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate-strict data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml | passed | True | CultureMech:007076 | Baseline retained from prior handoff; exact source hashes reverified. |
+| just validate data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml | failed | True | CultureMech:007069 | Schema and taxonomy pass; DOI title formatting/full-text retrieval failures remain. Archived exact excerpts were manually verified. |
+| just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml | passed | True | CultureMech:007069 | Actual maintained check result. |
+| just validate data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml | failed | True | CultureMech:007070 | Schema and taxonomy pass; DOI title formatting/full-text retrieval failures remain. Archived exact excerpts were manually verified. |
+| just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml | passed | True | CultureMech:007070 | Actual maintained check result. |
+| just validate data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml | failed | True | CultureMech:007071 | Schema and taxonomy pass; DOI title formatting/full-text retrieval failures remain. Archived exact excerpts were manually verified. |
+| just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml | passed | True | CultureMech:007071 | Actual maintained check result. |
+| just validate data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml | failed | True | CultureMech:007072 | Schema and taxonomy pass; DOI title formatting/full-text retrieval failures remain. Archived exact excerpts were manually verified. |
+| just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml | passed | True | CultureMech:007072 | Actual maintained check result. |
+| just validate data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml | failed | True | CultureMech:007073 | Schema and taxonomy pass; DOI title formatting/full-text retrieval failures remain. Archived exact excerpts were manually verified. |
+| just validate-strict data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml | passed | True | CultureMech:007073 | Actual maintained check result. |
+| just validate data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml | failed | True | CultureMech:007074 | Schema and taxonomy pass; DOI title formatting/full-text retrieval failures remain. Archived exact excerpts were manually verified. |
+| just validate-strict data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml | passed | True | CultureMech:007074 | Actual maintained check result. |
+| just validate data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml | failed | True | CultureMech:007075 | Schema and taxonomy pass; DOI title formatting/full-text retrieval failures remain. Archived exact excerpts were manually verified. |
+| just validate-strict data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml | passed | True | CultureMech:007075 | Actual maintained check result. |
+| just validate data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml | failed | True | CultureMech:007076 | Schema and taxonomy pass; DOI title formatting/full-text retrieval failures remain. Archived exact excerpts were manually verified. |
+| just validate-strict data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml | passed | True | CultureMech:007076 | Actual maintained check result. |
+| just verify-merges | failed | True | CultureMech:007069, CultureMech:007070, CultureMech:007071, CultureMech:007072, CultureMech:007073, CultureMech:007074, CultureMech:007075, CultureMech:007076 | Required global merge diagnostic; no checked-in generated output replaced. |
+| just audit-merge-freshness --json | failed | True | CultureMech:007069, CultureMech:007070, CultureMech:007071, CultureMech:007072, CultureMech:007073, CultureMech:007074, CultureMech:007075, CultureMech:007076 | Required global merge diagnostic; no checked-in generated output replaced. |
+| /tmp/culturemech-parallel-env-20261012/bin/python -m pytest --no-cov -q -p no:cacheprovider tests/test_claude_skills.py tests/test_skill_frontmatter.py tests/test_fetch_pubmed_abstracts.py tests/test_record_io.py tests/test_media_variant_links.py tests/test_record_review_contract.py | passed | True | CultureMech:007069, CultureMech:007070, CultureMech:007071, CultureMech:007072, CultureMech:007073, CultureMech:007074, CultureMech:007075, CultureMech:007076 | Actual maintained check result. |
+| /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py | passed | True | CultureMech:007069, CultureMech:007070, CultureMech:007071, CultureMech:007072, CultureMech:007073, CultureMech:007074, CultureMech:007075, CultureMech:007076 | Actual maintained check result. |
+| git diff --check | passed | True | CultureMech:007069, CultureMech:007070, CultureMech:007071, CultureMech:007072, CultureMech:007073, CultureMech:007074, CultureMech:007075, CultureMech:007076 | Actual maintained check result. |
+
+## Scientific And Domain Assessments
+
+### Publication identity, source archive and provenance
+
+evidence: supported. Targets: CultureMech:007069.
+
+Two deduplicated DOI bibliography entries with PMID aliases, title, authors, year, source type, discovery mode, locators and local raw/Markdown archives. Citation does not certify the parent recipe.
+
+### Source-described assay variant and its amount evidence
+
+evidence: concern. Targets: CultureMech:007069.
+
+A recognizable source-described assay is distinguished from the parent; direct reported differences are supported, but exact chemical normalization and source-version equivalence remain incomplete.
+
+{"variant": {"name": "Pinchuk 2010 reported batch M1 with 20 mM D,L-lactate", "relationship": "SUBSTITUTED_COMPONENT_VARIANT", "description": "Figure S1, panels A and B: 20 mM D,L-lactate with ammonium chloride. The variant denotes the source-described batch assay, not an exact normalized expansion of all stock chemicals. The paper specifies Wolfe vitamin/mineral stock additions; the imported parent instead flattens those stocks into molar amounts. Their equivalence is not certified: Kieft's submitted manuscript prints H3BO4 and multiple hydrate-specific salts, while the parent contains boric acid and some anhydrous/generalized terms. The original stock formula and final-volume basis remain unresolved at ingredient-normalization level. Parent amounts, terms and generic preparation are unchanged. ", "modifications": ["Use the paper's 4.35 mM sodium dihydrogen phosphate monohydrate (NaH2PO4.H2O), not the parent's dibasic sodium phosphate.", "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.", "Use the batch formulation at pH 7.0 with 30 mM PIPES; do not import the chemostat's 3 mM PIPES, Fe(III)-NTA supplement or anaerobic formulation."], "evidence": [{"reference": "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT", "snippet": "4.35 mM NaH2PO4•H2O", "explanation": "Supports variants[].modifications phosphate identity and 4.35 mM amount only; main Methods/Bacterial Strains and Growth Media. Separate exact stock excerpt='10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution'. Separate exact PIPES excerpt='30 mM and 3 mM for batch and chemostat cultivation, respectively'; pH excerpt='modified M1 medium (pH 7.0)'. Figure S1, panels A and B: 20 mM D,L-lactate with ammonium chloride. See the archived Figure S1 or S4 for assay substrate/nitrogen identity. The variant denotes the source-described batch assay, not an exact normalized expansion of all stock chemicals. The paper specifies Wolfe vitamin/mineral stock additions; the imported parent instead flattens those stocks into molar amounts. Their equivalence is not certified: Kieft's submitted manuscript prints H3BO4 and multiple hydrate-specific salts, while the parent contains boric acid and some anhydrous/generalized terms. The original stock formula and final-volume basis remain unresolved at ingredient-normalization level. Parent amounts, terms and generic preparation are unchanged. "}]}, "preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Biotin", "concentration": {"value": "8.1863e-05", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15956", "label": "biotin"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[1].concentration", "chemical": "Nicotinate", "concentration": {"value": "0.00040614", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15940", "label": "nicotinic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[2].concentration", "chemical": "Riboflavin", "concentration": {"value": "0.00013285", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17015", "label": "riboflavin"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[3].concentration", "chemical": "Thiamine", "concentration": {"value": "0.00016622", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:18385", "label": "thiamine(1+)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Folate", "concentration": {"value": "4.531e-05", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:27470", "label": "folic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration", "chemical": "4-Aminobenzoate", "concentration": {"value": "0.0003645", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[6].concentration", "chemical": "Lipoate", "concentration": {"value": "0.0002423", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16494", "label": "lipoic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[7].concentration", "chemical": "Pantothenate", "concentration": {"value": "0.00022807", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16454", "label": "pantothenate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[8].concentration", "chemical": "Lactate", "concentration": {"value": "20.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:24996", "label": "lactate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[9].concentration", "chemical": "Vitamin B12", "concentration": {"value": "7.3781e-07", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:176843", "label": "vitamin B12"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Magnesium chloride", "concentration": {"value": "3.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[11].concentration", "chemical": "Calcium chloride anhydrous", "concentration": {"value": "0.0068", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[12].concentration", "chemical": "Boric acid", "concentration": {"value": "0.000808669", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[13].concentration", "chemical": "Dibasic sodium phosphate", "concentration": {"value": "4.35", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[14].concentration", "chemical": "Nitrilotriacetic acid", "concentration": {"value": "0.11196", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:44557", "label": "nitrilotriacetic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[15].concentration", "chemical": "Sodium molybdate", "concentration": {"value": "0.00437084", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[16].concentration", "chemical": "Sodium chloride", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[17].concentration", "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[18].concentration", "chemical": "Pyridoxine HCl", "concentration": {"value": "0.00048626", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30961", "label": "pyridoxine hydrochloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[19].concentration", "chemical": "Ammonium chloride", "concentration": {"value": "28.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[20].concentration", "chemical": "Ferrous sulfate", "concentration": {"value": "0.0107894", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[21].concentration", "chemical": "Cobalt chloride", "concentration": {"value": "0.0114981", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[22].concentration", "chemical": "Zinc sulfate", "concentration": {"value": "0.0069558", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[23].concentration", "chemical": "Manganese chloride", "concentration": {"value": "0.0044829", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[24].concentration", "chemical": "Cupric chloride", "concentration": {"value": "0.00175974", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[25].concentration", "chemical": "Sodium selenate", "concentration": {"value": "0.001", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:77775", "label": "sodium selenate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[26].concentration", "chemical": "Aluminum potassium sulfate", "concentration": {"value": "0.000105399", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86463", "label": "potassium aluminium sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[27].concentration", "chemical": "Sodium tungstate", "concentration": {"value": "0.000606318", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[28].concentration", "chemical": "Nickel Sulfate", "concentration": {"value": "0.0041849", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[29].concentration", "chemical": "PIPES", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}]}
+
+### Exact wild-type taxonomy and variant-only qualitative growth
+
+evidence: supported. Targets: CultureMech:007069.
+
+One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal to the exact variant name. Figure curves and captions were checked; no parent growth, mutant pooling, host growth, rates or optima inferred.
+
+{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"}, "scoped_to_variant": "Pinchuk 2010 reported batch M1 with 20 mM D,L-lactate", "evidence": [{"reference": "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT", "snippet": "Growth dynamics of S. oneidensis MR-1 wild-type", "explanation": "Figure S1, panels A and B: 20 mM D,L-lactate with ammonium chloride. The filled-circle wild-type growth curves were visually inspected in the one-page source PDF. The common batch methods specify 30 degrees C, with microplates for S1 or shaken crimp-sealed serum bottles for S4. No maximum OD, rate, doubling time, well dilution or optimum is inferred. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=211586&amp;retmode=xml; archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This verifies the wild-type background, not an independent exact taxonomy identity for every engineered derivative. Growth is supported only on the named source-described inline variant, not on the unmodified imported parent. Unresolved chemical normalization is retained in that variant; the source's qualitative cultivation result is not a certification of the flattened parent recipe. Current KGX export does not honor scoped_to_variant; this curation is not authorization to publish an unscoped parent edge."}]}
+
+### Export preservation of variant-only scope
+
+evidence: concern. Targets: CultureMech:007069.
+
+Native scope is explicit, but the current exporter would lose it. These associations are not publication-ready; no generated output was produced.
+
+### Publication identity, source archive and provenance
+
+evidence: supported. Targets: CultureMech:007070.
+
+Two deduplicated DOI bibliography entries with PMID aliases, title, authors, year, source type, discovery mode, locators and local raw/Markdown archives. Citation does not certify the parent recipe.
+
+### Source-described assay variant and its amount evidence
+
+evidence: concern. Targets: CultureMech:007070.
+
+A recognizable source-described assay is distinguished from the parent; direct reported differences are supported, but exact chemical normalization and source-version equivalence remain incomplete.
+
+{"variant": {"name": "Pinchuk 2010 reported batch M1 with 18 mM lactate", "relationship": "SUBSTITUTED_COMPONENT_VARIANT", "description": "Figure S4, panel A: 18 mM lactate with ammonium chloride. The variant denotes the source-described batch assay, not an exact normalized expansion of all stock chemicals. The paper specifies Wolfe vitamin/mineral stock additions; the imported parent instead flattens those stocks into molar amounts. Their equivalence is not certified: Kieft's submitted manuscript prints H3BO4 and multiple hydrate-specific salts, while the parent contains boric acid and some anhydrous/generalized terms. The original stock formula and final-volume basis remain unresolved at ingredient-normalization level. Parent amounts, terms and generic preparation are unchanged. ", "modifications": ["Use the paper's 4.35 mM sodium dihydrogen phosphate monohydrate (NaH2PO4.H2O), not the parent's dibasic sodium phosphate.", "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.", "Use the batch formulation at pH 7.0 with 30 mM PIPES; do not import the chemostat's 3 mM PIPES, Fe(III)-NTA supplement or anaerobic formulation."], "evidence": [{"reference": "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT", "snippet": "4.35 mM NaH2PO4•H2O", "explanation": "Supports variants[].modifications phosphate identity and 4.35 mM amount only; main Methods/Bacterial Strains and Growth Media. Separate exact stock excerpt='10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution'. Separate exact PIPES excerpt='30 mM and 3 mM for batch and chemostat cultivation, respectively'; pH excerpt='modified M1 medium (pH 7.0)'. Figure S4, panel A: 18 mM lactate with ammonium chloride. See the archived Figure S1 or S4 for assay substrate/nitrogen identity. The variant denotes the source-described batch assay, not an exact normalized expansion of all stock chemicals. The paper specifies Wolfe vitamin/mineral stock additions; the imported parent instead flattens those stocks into molar amounts. Their equivalence is not certified: Kieft's submitted manuscript prints H3BO4 and multiple hydrate-specific salts, while the parent contains boric acid and some anhydrous/generalized terms. The original stock formula and final-volume basis remain unresolved at ingredient-normalization level. Parent amounts, terms and generic preparation are unchanged. "}]}, "preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Biotin", "concentration": {"value": "8.1863e-05", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15956", "label": "biotin"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[1].concentration", "chemical": "Nicotinate", "concentration": {"value": "0.00040614", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15940", "label": "nicotinic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[2].concentration", "chemical": "Riboflavin", "concentration": {"value": "0.00013285", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17015", "label": "riboflavin"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[3].concentration", "chemical": "Thiamine", "concentration": {"value": "0.00016622", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:18385", "label": "thiamine(1+)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Folate", "concentration": {"value": "4.531e-05", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:27470", "label": "folic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration", "chemical": "4-Aminobenzoate", "concentration": {"value": "0.0003645", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[6].concentration", "chemical": "Lipoate", "concentration": {"value": "0.0002423", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16494", "label": "lipoic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[7].concentration", "chemical": "Pantothenate", "concentration": {"value": "0.00022807", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16454", "label": "pantothenate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[8].concentration", "chemical": "Lactate", "concentration": {"value": "18.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:24996", "label": "lactate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[9].concentration", "chemical": "Vitamin B12", "concentration": {"value": "7.3781e-07", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:176843", "label": "vitamin B12"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Magnesium chloride", "concentration": {"value": "3.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[11].concentration", "chemical": "Calcium chloride anhydrous", "concentration": {"value": "0.0068", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[12].concentration", "chemical": "Boric acid", "concentration": {"value": "0.000808669", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[13].concentration", "chemical": "Dibasic sodium phosphate", "concentration": {"value": "4.35", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[14].concentration", "chemical": "Nitrilotriacetic acid", "concentration": {"value": "0.11196", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:44557", "label": "nitrilotriacetic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[15].concentration", "chemical": "Sodium molybdate", "concentration": {"value": "0.00437084", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[16].concentration", "chemical": "Sodium chloride", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[17].concentration", "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[18].concentration", "chemical": "Pyridoxine HCl", "concentration": {"value": "0.00048626", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30961", "label": "pyridoxine hydrochloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[19].concentration", "chemical": "Ammonium chloride", "concentration": {"value": "28.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[20].concentration", "chemical": "Ferrous sulfate", "concentration": {"value": "0.0107894", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[21].concentration", "chemical": "Cobalt chloride", "concentration": {"value": "0.0114981", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[22].concentration", "chemical": "Zinc sulfate", "concentration": {"value": "0.0069558", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[23].concentration", "chemical": "Manganese chloride", "concentration": {"value": "0.0044829", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[24].concentration", "chemical": "Cupric chloride", "concentration": {"value": "0.00175974", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[25].concentration", "chemical": "Sodium selenate", "concentration": {"value": "0.001", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:77775", "label": "sodium selenate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[26].concentration", "chemical": "Aluminum potassium sulfate", "concentration": {"value": "0.000105399", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86463", "label": "potassium aluminium sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[27].concentration", "chemical": "Sodium tungstate", "concentration": {"value": "0.000606318", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[28].concentration", "chemical": "Nickel Sulfate", "concentration": {"value": "0.0041849", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[29].concentration", "chemical": "PIPES", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}]}
+
+### Exact wild-type taxonomy and variant-only qualitative growth
+
+evidence: supported. Targets: CultureMech:007070.
+
+One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal to the exact variant name. Figure curves and captions were checked; no parent growth, mutant pooling, host growth, rates or optima inferred.
+
+{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"}, "scoped_to_variant": "Pinchuk 2010 reported batch M1 with 18 mM lactate", "evidence": [{"reference": "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT", "snippet": "Growth dynamics of S. oneidensis MR-1 wild-type", "explanation": "Figure S4, panel A: 18 mM lactate with ammonium chloride. The filled-circle wild-type growth curves were visually inspected in the one-page source PDF. The common batch methods specify 30 degrees C, with microplates for S1 or shaken crimp-sealed serum bottles for S4. No maximum OD, rate, doubling time, well dilution or optimum is inferred. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=211586&amp;retmode=xml; archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This verifies the wild-type background, not an independent exact taxonomy identity for every engineered derivative. Growth is supported only on the named source-described inline variant, not on the unmodified imported parent. Unresolved chemical normalization is retained in that variant; the source's qualitative cultivation result is not a certification of the flattened parent recipe. Current KGX export does not honor scoped_to_variant; this curation is not authorization to publish an unscoped parent edge."}]}
+
+### Export preservation of variant-only scope
+
+evidence: concern. Targets: CultureMech:007070.
+
+Native scope is explicit, but the current exporter would lose it. These associations are not publication-ready; no generated output was produced.
+
+### Publication identity, source archive and provenance
+
+evidence: supported. Targets: CultureMech:007071.
+
+Two deduplicated DOI bibliography entries with PMID aliases, title, authors, year, source type, discovery mode, locators and local raw/Markdown archives. Citation does not certify the parent recipe.
+
+### Source-described assay variant and its amount evidence
+
+evidence: concern. Targets: CultureMech:007071.
+
+A recognizable source-described assay is distinguished from the parent; direct reported differences are supported, but exact chemical normalization and source-version equivalence remain incomplete.
+
+{"variant": {"name": "Pinchuk 2010 reported batch M1 with lactate and glycine nitrogen", "relationship": "SUBSTITUTED_COMPONENT_VARIANT", "description": "Figure S4, panel B: 18 mM lactate with 10 mM glycine as sole nitrogen source, no NH4Cl. The variant denotes the source-described batch assay, not an exact normalized expansion of all stock chemicals. The paper specifies Wolfe vitamin/mineral stock additions; the imported parent instead flattens those stocks into molar amounts. Their equivalence is not certified: Kieft's submitted manuscript prints H3BO4 and multiple hydrate-specific salts, while the parent contains boric acid and some anhydrous/generalized terms. The original stock formula and final-volume basis remain unresolved at ingredient-normalization level. Parent amounts, terms and generic preparation are unchanged. ", "modifications": ["Use the paper's 4.35 mM sodium dihydrogen phosphate monohydrate (NaH2PO4.H2O), not the parent's dibasic sodium phosphate.", "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.", "Use the batch formulation at pH 7.0 with 30 mM PIPES; do not import the chemostat's 3 mM PIPES, Fe(III)-NTA supplement or anaerobic formulation."], "evidence": [{"reference": "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT", "snippet": "4.35 mM NaH2PO4•H2O", "explanation": "Supports variants[].modifications phosphate identity and 4.35 mM amount only; main Methods/Bacterial Strains and Growth Media. Separate exact stock excerpt='10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution'. Separate exact PIPES excerpt='30 mM and 3 mM for batch and chemostat cultivation, respectively'; pH excerpt='modified M1 medium (pH 7.0)'. Figure S4, panel B: 18 mM lactate with 10 mM glycine as sole nitrogen source, no NH4Cl. See the archived Figure S1 or S4 for assay substrate/nitrogen identity. The variant denotes the source-described batch assay, not an exact normalized expansion of all stock chemicals. The paper specifies Wolfe vitamin/mineral stock additions; the imported parent instead flattens those stocks into molar amounts. Their equivalence is not certified: Kieft's submitted manuscript prints H3BO4 and multiple hydrate-specific salts, while the parent contains boric acid and some anhydrous/generalized terms. The original stock formula and final-volume basis remain unresolved at ingredient-normalization level. Parent amounts, terms and generic preparation are unchanged. "}]}, "preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Glycine", "concentration": {"value": "10.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15428", "label": "glycine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[1].concentration", "chemical": "Biotin", "concentration": {"value": "8.1863e-05", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15956", "label": "biotin"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[2].concentration", "chemical": "Nicotinate", "concentration": {"value": "0.00040614", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15940", "label": "nicotinic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[3].concentration", "chemical": "Riboflavin", "concentration": {"value": "0.00013285", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17015", "label": "riboflavin"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Thiamine", "concentration": {"value": "0.00016622", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:18385", "label": "thiamine(1+)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration", "chemical": "Folate", "concentration": {"value": "4.531e-05", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:27470", "label": "folic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[6].concentration", "chemical": "4-Aminobenzoate", "concentration": {"value": "0.0003645", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[7].concentration", "chemical": "Lipoate", "concentration": {"value": "0.0002423", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16494", "label": "lipoic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[8].concentration", "chemical": "Pantothenate", "concentration": {"value": "0.00022807", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16454", "label": "pantothenate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[9].concentration", "chemical": "Lactate", "concentration": {"value": "18.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:24996", "label": "lactate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Vitamin B12", "concentration": {"value": "7.3781e-07", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:176843", "label": "vitamin B12"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[11].concentration", "chemical": "Magnesium chloride", "concentration": {"value": "3.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[12].concentration", "chemical": "Calcium chloride anhydrous", "concentration": {"value": "0.0068", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[13].concentration", "chemical": "Boric acid", "concentration": {"value": "0.000808669", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[14].concentration", "chemical": "Dibasic sodium phosphate", "concentration": {"value": "4.35", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[15].concentration", "chemical": "Nitrilotriacetic acid", "concentration": {"value": "0.11196", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:44557", "label": "nitrilotriacetic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[16].concentration", "chemical": "Sodium molybdate", "concentration": {"value": "0.00437084", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[17].concentration", "chemical": "Sodium chloride", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[18].concentration", "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[19].concentration", "chemical": "Pyridoxine HCl", "concentration": {"value": "0.00048626", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30961", "label": "pyridoxine hydrochloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[20].concentration", "chemical": "Ferrous sulfate", "concentration": {"value": "0.0107894", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[21].concentration", "chemical": "Cobalt chloride", "concentration": {"value": "0.0114981", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[22].concentration", "chemical": "Zinc sulfate", "concentration": {"value": "0.0069558", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[23].concentration", "chemical": "Manganese chloride", "concentration": {"value": "0.0044829", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[24].concentration", "chemical": "Cupric chloride", "concentration": {"value": "0.00175974", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[25].concentration", "chemical": "Sodium selenate", "concentration": {"value": "0.001", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:77775", "label": "sodium selenate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[26].concentration", "chemical": "Aluminum potassium sulfate", "concentration": {"value": "0.000105399", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86463", "label": "potassium aluminium sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[27].concentration", "chemical": "Sodium tungstate", "concentration": {"value": "0.000606318", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[28].concentration", "chemical": "Nickel Sulfate", "concentration": {"value": "0.0041849", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[29].concentration", "chemical": "PIPES", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}]}
+
+### Exact wild-type taxonomy and variant-only qualitative growth
+
+evidence: supported. Targets: CultureMech:007071.
+
+One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal to the exact variant name. Figure curves and captions were checked; no parent growth, mutant pooling, host growth, rates or optima inferred.
+
+{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"}, "scoped_to_variant": "Pinchuk 2010 reported batch M1 with lactate and glycine nitrogen", "evidence": [{"reference": "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT", "snippet": "Growth dynamics of S. oneidensis MR-1 wild-type", "explanation": "Figure S4, panel B: 18 mM lactate with 10 mM glycine as sole nitrogen source, no NH4Cl. The filled-circle wild-type growth curves were visually inspected in the one-page source PDF. The common batch methods specify 30 degrees C, with microplates for S1 or shaken crimp-sealed serum bottles for S4. No maximum OD, rate, doubling time, well dilution or optimum is inferred. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=211586&amp;retmode=xml; archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This verifies the wild-type background, not an independent exact taxonomy identity for every engineered derivative. Growth is supported only on the named source-described inline variant, not on the unmodified imported parent. Unresolved chemical normalization is retained in that variant; the source's qualitative cultivation result is not a certification of the flattened parent recipe. Current KGX export does not honor scoped_to_variant; this curation is not authorization to publish an unscoped parent edge."}]}
+
+### Export preservation of variant-only scope
+
+evidence: concern. Targets: CultureMech:007071.
+
+Native scope is explicit, but the current exporter would lose it. These associations are not publication-ready; no generated output was produced.
+
+### Publication identity, source archive and provenance
+
+evidence: supported. Targets: CultureMech:007072.
+
+Two deduplicated DOI bibliography entries with PMID aliases, title, authors, year, source type, discovery mode, locators and local raw/Markdown archives. Citation does not certify the parent recipe.
+
+### Source-described assay variant and its amount evidence
+
+evidence: concern. Targets: CultureMech:007072.
+
+A recognizable source-described assay is distinguished from the parent; direct reported differences are supported, but exact chemical normalization and source-version equivalence remain incomplete.
+
+{"variant": {"name": "Pinchuk 2010 reported batch M1 with acetate", "relationship": "SUBSTITUTED_COMPONENT_VARIANT", "description": "Figure S4, panel C: 45 mM acetate with ammonium chloride. The variant denotes the source-described batch assay, not an exact normalized expansion of all stock chemicals. The paper specifies Wolfe vitamin/mineral stock additions; the imported parent instead flattens those stocks into molar amounts. Their equivalence is not certified: Kieft's submitted manuscript prints H3BO4 and multiple hydrate-specific salts, while the parent contains boric acid and some anhydrous/generalized terms. The original stock formula and final-volume basis remain unresolved at ingredient-normalization level. Parent amounts, terms and generic preparation are unchanged. ", "modifications": ["Use the paper's 4.35 mM sodium dihydrogen phosphate monohydrate (NaH2PO4.H2O), not the parent's dibasic sodium phosphate.", "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.", "Use the batch formulation at pH 7.0 with 30 mM PIPES; do not import the chemostat's 3 mM PIPES, Fe(III)-NTA supplement or anaerobic formulation."], "evidence": [{"reference": "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT", "snippet": "4.35 mM NaH2PO4•H2O", "explanation": "Supports variants[].modifications phosphate identity and 4.35 mM amount only; main Methods/Bacterial Strains and Growth Media. Separate exact stock excerpt='10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution'. Separate exact PIPES excerpt='30 mM and 3 mM for batch and chemostat cultivation, respectively'; pH excerpt='modified M1 medium (pH 7.0)'. Figure S4, panel C: 45 mM acetate with ammonium chloride. See the archived Figure S1 or S4 for assay substrate/nitrogen identity. The variant denotes the source-described batch assay, not an exact normalized expansion of all stock chemicals. The paper specifies Wolfe vitamin/mineral stock additions; the imported parent instead flattens those stocks into molar amounts. Their equivalence is not certified: Kieft's submitted manuscript prints H3BO4 and multiple hydrate-specific salts, while the parent contains boric acid and some anhydrous/generalized terms. The original stock formula and final-volume basis remain unresolved at ingredient-normalization level. Parent amounts, terms and generic preparation are unchanged. "}]}, "preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Acetate", "concentration": {"value": "45.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30089", "label": "acetate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[1].concentration", "chemical": "Biotin", "concentration": {"value": "8.1863e-05", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15956", "label": "biotin"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[2].concentration", "chemical": "Nicotinate", "concentration": {"value": "0.00040614", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15940", "label": "nicotinic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[3].concentration", "chemical": "Riboflavin", "concentration": {"value": "0.00013285", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17015", "label": "riboflavin"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Thiamine", "concentration": {"value": "0.00016622", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:18385", "label": "thiamine(1+)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration", "chemical": "Folate", "concentration": {"value": "4.531e-05", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:27470", "label": "folic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[6].concentration", "chemical": "4-Aminobenzoate", "concentration": {"value": "0.0003645", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[7].concentration", "chemical": "Lipoate", "concentration": {"value": "0.0002423", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16494", "label": "lipoic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[8].concentration", "chemical": "Pantothenate", "concentration": {"value": "0.00022807", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16454", "label": "pantothenate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[9].concentration", "chemical": "Vitamin B12", "concentration": {"value": "7.3781e-07", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:176843", "label": "vitamin B12"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Magnesium chloride", "concentration": {"value": "3.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[11].concentration", "chemical": "Calcium chloride anhydrous", "concentration": {"value": "0.0068", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[12].concentration", "chemical": "Boric acid", "concentration": {"value": "0.000808669", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[13].concentration", "chemical": "Dibasic sodium phosphate", "concentration": {"value": "4.35", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[14].concentration", "chemical": "Nitrilotriacetic acid", "concentration": {"value": "0.11196", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:44557", "label": "nitrilotriacetic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[15].concentration", "chemical": "Sodium molybdate", "concentration": {"value": "0.00437084", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[16].concentration", "chemical": "Sodium chloride", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[17].concentration", "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[18].concentration", "chemical": "Pyridoxine HCl", "concentration": {"value": "0.00048626", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30961", "label": "pyridoxine hydrochloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[19].concentration", "chemical": "Ammonium chloride", "concentration": {"value": "28.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[20].concentration", "chemical": "Ferrous sulfate", "concentration": {"value": "0.0107894", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[21].concentration", "chemical": "Cobalt chloride", "concentration": {"value": "0.0114981", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[22].concentration", "chemical": "Zinc sulfate", "concentration": {"value": "0.0069558", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[23].concentration", "chemical": "Manganese chloride", "concentration": {"value": "0.0044829", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[24].concentration", "chemical": "Cupric chloride", "concentration": {"value": "0.00175974", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[25].concentration", "chemical": "Sodium selenate", "concentration": {"value": "0.001", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:77775", "label": "sodium selenate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[26].concentration", "chemical": "Aluminum potassium sulfate", "concentration": {"value": "0.000105399", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86463", "label": "potassium aluminium sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[27].concentration", "chemical": "Sodium tungstate", "concentration": {"value": "0.000606318", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[28].concentration", "chemical": "Nickel Sulfate", "concentration": {"value": "0.0041849", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[29].concentration", "chemical": "PIPES", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}]}
+
+### Exact wild-type taxonomy and variant-only qualitative growth
+
+evidence: supported. Targets: CultureMech:007072.
+
+One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal to the exact variant name. Figure curves and captions were checked; no parent growth, mutant pooling, host growth, rates or optima inferred.
+
+{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"}, "scoped_to_variant": "Pinchuk 2010 reported batch M1 with acetate", "evidence": [{"reference": "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT", "snippet": "Growth dynamics of S. oneidensis MR-1 wild-type", "explanation": "Figure S4, panel C: 45 mM acetate with ammonium chloride. The filled-circle wild-type growth curves were visually inspected in the one-page source PDF. The common batch methods specify 30 degrees C, with microplates for S1 or shaken crimp-sealed serum bottles for S4. No maximum OD, rate, doubling time, well dilution or optimum is inferred. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=211586&amp;retmode=xml; archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This verifies the wild-type background, not an independent exact taxonomy identity for every engineered derivative. Growth is supported only on the named source-described inline variant, not on the unmodified imported parent. Unresolved chemical normalization is retained in that variant; the source's qualitative cultivation result is not a certification of the flattened parent recipe. Current KGX export does not honor scoped_to_variant; this curation is not authorization to publish an unscoped parent edge."}]}
+
+### Export preservation of variant-only scope
+
+evidence: concern. Targets: CultureMech:007072.
+
+Native scope is explicit, but the current exporter would lose it. These associations are not publication-ready; no generated output was produced.
+
+### Publication identity, source archive and provenance
+
+evidence: supported. Targets: CultureMech:007073.
+
+Two deduplicated DOI bibliography entries with PMID aliases, title, authors, year, source type, discovery mode, locators and local raw/Markdown archives. Citation does not certify the parent recipe.
+
+### Source-described assay variant and its amount evidence
+
+evidence: concern. Targets: CultureMech:007073.
+
+A recognizable source-described assay is distinguished from the parent; direct reported differences are supported, but exact chemical normalization and source-version equivalence remain incomplete.
+
+{"variant": {"name": "Tang 2009 manuscript 20 mM PIPES tracer medium", "relationship": "DERIVED_FROM", "description": "Figure 1: no NaCl stress supplement; no amino-acid supplement. Source version=OSTI author manuscript with visible red revisions; final typeset body was not obtained. This variant represents the reported assay at the stated protocol level, not a completely normalized chemical recipe. Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES and different lactate doses, with antifoam and hydrate-specific trace salts. The 2009 explicit overrides take precedence; transfer of antifoam and exact trace/hydrate equivalence remain unverified. The parent's generic filtration step is not newly certified. ", "modifications": ["Use 20 mM PIPES at pH 7 instead of the parent's 10 mM PIPES.", "Use the source's 30 mM [3-13C] sodium L-lactate (98% as reported), rather than silently treating unlabelled sodium L-lactate as the tracer substrate."], "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet": "pH=7, buffered with 20mM PIPES", "explanation": "Supports variants[].modifications PIPES amount and pH; OSTI manuscript PDF page 4, culture conditions, visually checked. The same paragraph identifies [3-13C] sodium L-lactate and gives the exact dose token '30mM'. This is the paper-described tracer assay, not a correction to parent ingredients. Figure 1: no NaCl stress supplement; no amino-acid supplement. Source version=OSTI author manuscript with visible red revisions; final typeset body was not obtained. This variant represents the reported assay at the stated protocol level, not a completely normalized chemical recipe. Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES and different lactate doses, with antifoam and hydrate-specific trace salts. The 2009 explicit overrides take precedence; transfer of antifoam and exact trace/hydrate equivalence remain unverified. The parent's generic filtration step is not newly certified. "}]}, "preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Magnesium chloride", "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[1].concentration", "chemical": "Boric acid", "concentration": {"value": "0.0032346", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[2].concentration", "chemical": "Sodium sulfate", "concentration": {"value": "1.5", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32149", "label": "sodium sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[3].concentration", "chemical": "Dibasic sodium phosphate", "concentration": {"value": "4.4", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Sodium molybdate", "concentration": {"value": "0.0017986", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration", "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[6].concentration", "chemical": "Ammonium chloride", "concentration": {"value": "28.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[7].concentration", "chemical": "Cobalt chloride", "concentration": {"value": "0.014858", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[8].concentration", "chemical": "Manganese chloride", "concentration": {"value": "0.0224145", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[9].concentration", "chemical": "Cupric chloride", "concentration": {"value": "0.000117316", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Sodium selenite", "concentration": {"value": "0.000228102", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:48843", "label": "disodium selenite"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[11].concentration", "chemical": "Zinc Chloride", "concentration": {"value": "0.0146718", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49976", "label": "zinc dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[12].concentration", "chemical": "Ferrous chloride", "concentration": {"value": "0.0502992", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30812", "label": "iron dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[13].concentration", "chemical": "Sodium tungstate", "concentration": {"value": "0.000242527", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[14].concentration", "chemical": "Nickel Sulfate", "concentration": {"value": "0.0038044", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[15].concentration", "chemical": "PIPES", "concentration": {"value": "10.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[16].concentration", "chemical": "Sodium L-lactate", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:232798", "label": "sodium L-lactate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}]}
+
+### Exact wild-type taxonomy and variant-only qualitative growth
+
+evidence: supported. Targets: CultureMech:007073.
+
+One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal to the exact variant name. Figure curves and captions were checked; no parent growth, mutant pooling, host growth, rates or optima inferred.
+
+{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"}, "scoped_to_variant": "Tang 2009 manuscript 20 mM PIPES tracer medium", "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet": "Growth kinetics of Shewanella oneidensis MR-1", "explanation": "Figure 1: no NaCl stress supplement; no amino-acid supplement. Figure 1 caption on PDF page 13 identifies four treatments; the plot on page 15 shows increasing dry biomass for each. The matched curve is open diamonds. Methods on page 4 specify duplicate cultures (n=2), 12 mL glass-tube cultures at 30 degrees C and 200 rpm. The amino-acid-plus-salt treatment is supported by Figure 1 and page 8 even though the abstract lists only three conditions. No approximate doubling time is converted into an exact database rate. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=211586&amp;retmode=xml; archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This verifies the wild-type background, not an independent exact taxonomy identity for every engineered derivative. Growth is supported only on the named source-described inline variant, not on the unmodified imported parent. Unresolved chemical normalization is retained in that variant; the source's qualitative cultivation result is not a certification of the flattened parent recipe. Current KGX export does not honor scoped_to_variant; this curation is not authorization to publish an unscoped parent edge."}]}
+
+### Export preservation of variant-only scope
+
+evidence: concern. Targets: CultureMech:007073.
+
+Native scope is explicit, but the current exporter would lose it. These associations are not publication-ready; no generated output was produced.
+
+### Publication identity, source archive and provenance
+
+evidence: supported. Targets: CultureMech:007074.
+
+Two deduplicated DOI bibliography entries with PMID aliases, title, authors, year, source type, discovery mode, locators and local raw/Markdown archives. Citation does not certify the parent recipe.
+
+### Source-described assay variant and its amount evidence
+
+evidence: concern. Targets: CultureMech:007074.
+
+A recognizable source-described assay is distinguished from the parent; direct reported differences are supported, but exact chemical normalization and source-version equivalence remain incomplete.
+
+{"variant": {"name": "Tang 2009 manuscript 20 mM PIPES tracer medium with salt", "relationship": "DERIVED_FROM", "description": "Figure 1: 330 mM added NaCl; no amino-acid supplement. Source version=OSTI author manuscript with visible red revisions; final typeset body was not obtained. This variant represents the reported assay at the stated protocol level, not a completely normalized chemical recipe. Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES and different lactate doses, with antifoam and hydrate-specific trace salts. The 2009 explicit overrides take precedence; transfer of antifoam and exact trace/hydrate equivalence remain unverified. The parent's generic filtration step is not newly certified. ", "modifications": ["Use 20 mM PIPES at pH 7 instead of the parent's 10 mM PIPES.", "Use the source's 30 mM [3-13C] sodium L-lactate (98% as reported), rather than silently treating unlabelled sodium L-lactate as the tracer substrate."], "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet": "pH=7, buffered with 20mM PIPES", "explanation": "Supports variants[].modifications PIPES amount and pH; OSTI manuscript PDF page 4, culture conditions, visually checked. The same paragraph identifies [3-13C] sodium L-lactate and gives the exact dose token '30mM'. This is the paper-described tracer assay, not a correction to parent ingredients. Figure 1: 330 mM added NaCl; no amino-acid supplement. Separate exact salt excerpt='330 mM NaCl was added to the medium.'. Source version=OSTI author manuscript with visible red revisions; final typeset body was not obtained. This variant represents the reported assay at the stated protocol level, not a completely normalized chemical recipe. Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES and different lactate doses, with antifoam and hydrate-specific trace salts. The 2009 explicit overrides take precedence; transfer of antifoam and exact trace/hydrate equivalence remain unverified. The parent's generic filtration step is not newly certified. "}]}, "preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Magnesium chloride", "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[1].concentration", "chemical": "Boric acid", "concentration": {"value": "0.0032346", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[2].concentration", "chemical": "Sodium sulfate", "concentration": {"value": "1.5", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32149", "label": "sodium sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[3].concentration", "chemical": "Dibasic sodium phosphate", "concentration": {"value": "4.4", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Sodium molybdate", "concentration": {"value": "0.0017986", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration", "chemical": "Sodium chloride", "concentration": {"value": "330.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[6].concentration", "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[7].concentration", "chemical": "Ammonium chloride", "concentration": {"value": "28.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[8].concentration", "chemical": "Cobalt chloride", "concentration": {"value": "0.014858", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[9].concentration", "chemical": "Manganese chloride", "concentration": {"value": "0.0224145", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Cupric chloride", "concentration": {"value": "0.000117316", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[11].concentration", "chemical": "Sodium selenite", "concentration": {"value": "0.000228102", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:48843", "label": "disodium selenite"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[12].concentration", "chemical": "Zinc Chloride", "concentration": {"value": "0.0146718", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49976", "label": "zinc dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[13].concentration", "chemical": "Ferrous chloride", "concentration": {"value": "0.0502992", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30812", "label": "iron dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[14].concentration", "chemical": "Sodium tungstate", "concentration": {"value": "0.000242527", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[15].concentration", "chemical": "Nickel Sulfate", "concentration": {"value": "0.0038044", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[16].concentration", "chemical": "PIPES", "concentration": {"value": "10.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[17].concentration", "chemical": "Sodium L-lactate", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:232798", "label": "sodium L-lactate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}]}
+
+### Exact wild-type taxonomy and variant-only qualitative growth
+
+evidence: supported. Targets: CultureMech:007074.
+
+One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal to the exact variant name. Figure curves and captions were checked; no parent growth, mutant pooling, host growth, rates or optima inferred.
+
+{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"}, "scoped_to_variant": "Tang 2009 manuscript 20 mM PIPES tracer medium with salt", "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet": "Growth kinetics of Shewanella oneidensis MR-1", "explanation": "Figure 1: 330 mM added NaCl; no amino-acid supplement. Figure 1 caption on PDF page 13 identifies four treatments; the plot on page 15 shows increasing dry biomass for each. The matched curve is open squares. Methods on page 4 specify duplicate cultures (n=2), 12 mL glass-tube cultures at 30 degrees C and 200 rpm. The amino-acid-plus-salt treatment is supported by Figure 1 and page 8 even though the abstract lists only three conditions. No approximate doubling time is converted into an exact database rate. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=211586&amp;retmode=xml; archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This verifies the wild-type background, not an independent exact taxonomy identity for every engineered derivative. Growth is supported only on the named source-described inline variant, not on the unmodified imported parent. Unresolved chemical normalization is retained in that variant; the source's qualitative cultivation result is not a certification of the flattened parent recipe. Current KGX export does not honor scoped_to_variant; this curation is not authorization to publish an unscoped parent edge."}]}
+
+### Export preservation of variant-only scope
+
+evidence: concern. Targets: CultureMech:007074.
+
+Native scope is explicit, but the current exporter would lose it. These associations are not publication-ready; no generated output was produced.
+
+### Publication identity, source archive and provenance
+
+evidence: supported. Targets: CultureMech:007075.
+
+Two deduplicated DOI bibliography entries with PMID aliases, title, authors, year, source type, discovery mode, locators and local raw/Markdown archives. Citation does not certify the parent recipe.
+
+### Source-described assay variant and its amount evidence
+
+evidence: concern. Targets: CultureMech:007075.
+
+A recognizable source-described assay is distinguished from the parent; direct reported differences are supported, but exact chemical normalization and source-version equivalence remain incomplete.
+
+{"variant": {"name": "Tang 2009 manuscript 20 mM PIPES tracer medium with amino acids", "relationship": "DERIVED_FROM", "description": "Figure 1: no NaCl stress supplement; 17-amino-acid supplement. Source version=OSTI author manuscript with visible red revisions; final typeset body was not obtained. This variant represents the reported assay at the stated protocol level, not a completely normalized chemical recipe. Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES and different lactate doses, with antifoam and hydrate-specific trace salts. The 2009 explicit overrides take precedence; transfer of antifoam and exact trace/hydrate equivalence remain unverified. The parent's generic filtration step is not newly certified. ", "modifications": ["Use 20 mM PIPES at pH 7 instead of the parent's 10 mM PIPES.", "Use the source's 30 mM [3-13C] sodium L-lactate (98% as reported), rather than silently treating unlabelled sodium L-lactate as the tracer substrate.", "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description."], "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet": "pH=7, buffered with 20mM PIPES", "explanation": "Supports variants[].modifications PIPES amount and pH; OSTI manuscript PDF page 4, culture conditions, visually checked. The same paragraph identifies [3-13C] sodium L-lactate and gives the exact dose token '30mM'. This is the paper-described tracer assay, not a correction to parent ingredients. Figure 1: no NaCl stress supplement; 17-amino-acid supplement. Separate exact amino-acid excerpt='a final concentration of 25 µM for each amino acid'. 25 micromolar equals 0.025 mM, but no parent amount or stereochemical identity is newly certified. Source version=OSTI author manuscript with visible red revisions; final typeset body was not obtained. This variant represents the reported assay at the stated protocol level, not a completely normalized chemical recipe. Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES and different lactate doses, with antifoam and hydrate-specific trace salts. The 2009 explicit overrides take precedence; transfer of antifoam and exact trace/hydrate equivalence remain unverified. The parent's generic filtration step is not newly certified. "}]}, "preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "L-Glutamate", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16015", "label": "L-glutamic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[1].concentration", "chemical": "Glycine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15428", "label": "glycine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[2].concentration", "chemical": "L-Methionine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16643", "label": "L-methionine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[3].concentration", "chemical": "DL-Serine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Cysteine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15356", "label": "cysteine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration", "chemical": "Histidine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:27570", "label": "histidine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[6].concentration", "chemical": "Alanine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16977", "label": "L-alanine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[7].concentration", "chemical": "DL-Tyrosine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:18186", "label": "tyrosine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[8].concentration", "chemical": "Phenylalanine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17295", "label": "L-phenylalanine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[9].concentration", "chemical": "Arginine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:29016", "label": "arginine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Magnesium chloride", "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[11].concentration", "chemical": "Boric acid", "concentration": {"value": "0.0032346", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[12].concentration", "chemical": "Sodium sulfate", "concentration": {"value": "1.5", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32149", "label": "sodium sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[13].concentration", "chemical": "Dibasic sodium phosphate", "concentration": {"value": "4.4", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[14].concentration", "chemical": "Sodium molybdate", "concentration": {"value": "0.0017986", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[15].concentration", "chemical": "Aspartate", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:29995", "label": "aspartate(2-)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[16].concentration", "chemical": "Isoleucine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17191", "label": "L-isoleucine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[17].concentration", "chemical": "Proline", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26271", "label": "proline"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[18].concentration", "chemical": "Valine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16414", "label": "L-valine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[19].concentration", "chemical": "Leucine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15603", "label": "L-leucine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[20].concentration", "chemical": "Lysine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:25094", "label": "lysine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[21].concentration", "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[22].concentration", "chemical": "Ammonium chloride", "concentration": {"value": "28.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[23].concentration", "chemical": "Cobalt chloride", "concentration": {"value": "0.014858", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[24].concentration", "chemical": "Manganese chloride", "concentration": {"value": "0.0224145", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[25].concentration", "chemical": "Cupric chloride", "concentration": {"value": "0.000117316", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[26].concentration", "chemical": "Sodium selenite", "concentration": {"value": "0.000228102", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:48843", "label": "disodium selenite"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[27].concentration", "chemical": "Zinc Chloride", "concentration": {"value": "0.0146718", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49976", "label": "zinc dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[28].concentration", "chemical": "Ferrous chloride", "concentration": {"value": "0.0502992", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30812", "label": "iron dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[29].concentration", "chemical": "Sodium tungstate", "concentration": {"value": "0.000242527", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[30].concentration", "chemical": "Nickel Sulfate", "concentration": {"value": "0.0038044", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[31].concentration", "chemical": "PIPES", "concentration": {"value": "10.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[32].concentration", "chemical": "Sodium L-lactate", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:232798", "label": "sodium L-lactate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[33].concentration", "chemical": "Threonine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26986", "label": "threonine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}]}
+
+### Exact wild-type taxonomy and variant-only qualitative growth
+
+evidence: supported. Targets: CultureMech:007075.
+
+One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal to the exact variant name. Figure curves and captions were checked; no parent growth, mutant pooling, host growth, rates or optima inferred.
+
+{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"}, "scoped_to_variant": "Tang 2009 manuscript 20 mM PIPES tracer medium with amino acids", "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet": "Growth kinetics of Shewanella oneidensis MR-1", "explanation": "Figure 1: no NaCl stress supplement; 17-amino-acid supplement. Figure 1 caption on PDF page 13 identifies four treatments; the plot on page 15 shows increasing dry biomass for each. The matched curve is filled diamonds. Methods on page 4 specify duplicate cultures (n=2), 12 mL glass-tube cultures at 30 degrees C and 200 rpm. The amino-acid-plus-salt treatment is supported by Figure 1 and page 8 even though the abstract lists only three conditions. No approximate doubling time is converted into an exact database rate. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=211586&amp;retmode=xml; archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This verifies the wild-type background, not an independent exact taxonomy identity for every engineered derivative. Growth is supported only on the named source-described inline variant, not on the unmodified imported parent. Unresolved chemical normalization is retained in that variant; the source's qualitative cultivation result is not a certification of the flattened parent recipe. Current KGX export does not honor scoped_to_variant; this curation is not authorization to publish an unscoped parent edge."}]}
+
+### Export preservation of variant-only scope
+
+evidence: concern. Targets: CultureMech:007075.
+
+Native scope is explicit, but the current exporter would lose it. These associations are not publication-ready; no generated output was produced.
+
+### Publication identity, source archive and provenance
+
+evidence: supported. Targets: CultureMech:007076.
+
+Two deduplicated DOI bibliography entries with PMID aliases, title, authors, year, source type, discovery mode, locators and local raw/Markdown archives. Citation does not certify the parent recipe.
+
+### Source-described assay variant and its amount evidence
+
+evidence: concern. Targets: CultureMech:007076.
+
+A recognizable source-described assay is distinguished from the parent; direct reported differences are supported, but exact chemical normalization and source-version equivalence remain incomplete.
+
+{"variant": {"name": "Tang 2009 manuscript 20 mM PIPES tracer medium with salt and amino acids", "relationship": "DERIVED_FROM", "description": "Figure 1: 330 mM added NaCl; 17-amino-acid supplement. Source version=OSTI author manuscript with visible red revisions; final typeset body was not obtained. This variant represents the reported assay at the stated protocol level, not a completely normalized chemical recipe. Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES and different lactate doses, with antifoam and hydrate-specific trace salts. The 2009 explicit overrides take precedence; transfer of antifoam and exact trace/hydrate equivalence remain unverified. The parent's generic filtration step is not newly certified. ", "modifications": ["Use 20 mM PIPES at pH 7 instead of the parent's 10 mM PIPES.", "Use the source's 30 mM [3-13C] sodium L-lactate (98% as reported), rather than silently treating unlabelled sodium L-lactate as the tracer substrate.", "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description."], "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet": "pH=7, buffered with 20mM PIPES", "explanation": "Supports variants[].modifications PIPES amount and pH; OSTI manuscript PDF page 4, culture conditions, visually checked. The same paragraph identifies [3-13C] sodium L-lactate and gives the exact dose token '30mM'. This is the paper-described tracer assay, not a correction to parent ingredients. Figure 1: 330 mM added NaCl; 17-amino-acid supplement. Separate exact salt excerpt='330 mM NaCl was added to the medium.'. Separate exact amino-acid excerpt='a final concentration of 25 µM for each amino acid'. 25 micromolar equals 0.025 mM, but no parent amount or stereochemical identity is newly certified. Source version=OSTI author manuscript with visible red revisions; final typeset body was not obtained. This variant represents the reported assay at the stated protocol level, not a completely normalized chemical recipe. Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES and different lactate doses, with antifoam and hydrate-specific trace salts. The 2009 explicit overrides take precedence; transfer of antifoam and exact trace/hydrate equivalence remain unverified. The parent's generic filtration step is not newly certified. "}]}, "preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "L-Glutamate", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16015", "label": "L-glutamic acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[1].concentration", "chemical": "Glycine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15428", "label": "glycine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[2].concentration", "chemical": "L-Methionine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16643", "label": "L-methionine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[3].concentration", "chemical": "DL-Serine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Cysteine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15356", "label": "cysteine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration", "chemical": "Histidine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:27570", "label": "histidine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[6].concentration", "chemical": "Alanine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16977", "label": "L-alanine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[7].concentration", "chemical": "DL-Tyrosine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:18186", "label": "tyrosine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[8].concentration", "chemical": "Phenylalanine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17295", "label": "L-phenylalanine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[9].concentration", "chemical": "Arginine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:29016", "label": "arginine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Magnesium chloride", "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[11].concentration", "chemical": "Boric acid", "concentration": {"value": "0.0032346", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[12].concentration", "chemical": "Sodium sulfate", "concentration": {"value": "1.5", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32149", "label": "sodium sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[13].concentration", "chemical": "Dibasic sodium phosphate", "concentration": {"value": "4.4", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[14].concentration", "chemical": "Sodium molybdate", "concentration": {"value": "0.0017986", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[15].concentration", "chemical": "Aspartate", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:29995", "label": "aspartate(2-)"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[16].concentration", "chemical": "Isoleucine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17191", "label": "L-isoleucine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[17].concentration", "chemical": "Proline", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26271", "label": "proline"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[18].concentration", "chemical": "Valine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16414", "label": "L-valine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[19].concentration", "chemical": "Leucine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15603", "label": "L-leucine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[20].concentration", "chemical": "Lysine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:25094", "label": "lysine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[21].concentration", "chemical": "Sodium chloride", "concentration": {"value": "330.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[22].concentration", "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[23].concentration", "chemical": "Ammonium chloride", "concentration": {"value": "28.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[24].concentration", "chemical": "Cobalt chloride", "concentration": {"value": "0.014858", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[25].concentration", "chemical": "Manganese chloride", "concentration": {"value": "0.0224145", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[26].concentration", "chemical": "Cupric chloride", "concentration": {"value": "0.000117316", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[27].concentration", "chemical": "Sodium selenite", "concentration": {"value": "0.000228102", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:48843", "label": "disodium selenite"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[28].concentration", "chemical": "Zinc Chloride", "concentration": {"value": "0.0146718", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49976", "label": "zinc dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[29].concentration", "chemical": "Ferrous chloride", "concentration": {"value": "0.0502992", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30812", "label": "iron dichloride"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[30].concentration", "chemical": "Sodium tungstate", "concentration": {"value": "0.000242527", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[31].concentration", "chemical": "Nickel Sulfate", "concentration": {"value": "0.0038044", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[32].concentration", "chemical": "PIPES", "concentration": {"value": "10.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[33].concentration", "chemical": "Sodium L-lactate", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:232798", "label": "sodium L-lactate"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[34].concentration", "chemical": "Threonine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26986", "label": "threonine"}, "disposition": "preserved; not newly certified; outside full concentration-review scope"}]}
+
+### Exact wild-type taxonomy and variant-only qualitative growth
+
+evidence: supported. Targets: CultureMech:007076.
+
+One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal to the exact variant name. Figure curves and captions were checked; no parent growth, mutant pooling, host growth, rates or optima inferred.
+
+{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"}, "scoped_to_variant": "Tang 2009 manuscript 20 mM PIPES tracer medium with salt and amino acids", "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet": "Growth kinetics of Shewanella oneidensis MR-1", "explanation": "Figure 1: 330 mM added NaCl; 17-amino-acid supplement. Figure 1 caption on PDF page 13 identifies four treatments; the plot on page 15 shows increasing dry biomass for each. The matched curve is filled squares. Methods on page 4 specify duplicate cultures (n=2), 12 mL glass-tube cultures at 30 degrees C and 200 rpm. The amino-acid-plus-salt treatment is supported by Figure 1 and page 8 even though the abstract lists only three conditions. No approximate doubling time is converted into an exact database rate. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=211586&amp;retmode=xml; archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This verifies the wild-type background, not an independent exact taxonomy identity for every engineered derivative. Growth is supported only on the named source-described inline variant, not on the unmodified imported parent. Unresolved chemical normalization is retained in that variant; the source's qualitative cultivation result is not a certification of the flattened parent recipe. Current KGX export does not honor scoped_to_variant; this curation is not authorization to publish an unscoped parent edge."}]}
+
+### Export preservation of variant-only scope
+
+evidence: concern. Targets: CultureMech:007076.
+
+Native scope is explicit, but the current exporter would lose it. These associations are not publication-ready; no generated output was produced.
+
+## Findings
+
+### pinchuk-normalization: Pinchuk variants do not certify flattened parent-stock chemistry
+
+major / open / confirmed; issue key: mediadb-72-m1-stock-normalization.
+
+The supported variant substitutes source monobasic phosphate for the parent's dibasic salt. Wolfe stock expansion, final-volume basis, literal H3BO4 and hydrate forms remain unresolved; parent amounts must not be presented as verified. The Kieft deposited version also has a date discrepancy.
+
+### tang-version: Tang variants retain deposited-version and chemical-form limits
+
+major / open / confirmed; issue key: mediadb-73-manuscript-and-base-normalization.
+
+The inspected 2009 manuscript contains visible revisions. Its explicit PIPES/tracer/supplement conditions support bounded variants, not certification of final-published equivalence, inherited antifoam, trace hydrates or all parent amino-acid stereochemistry.
+
+### kgx-scope: KGX would lose the eight new variant-only growth scopes
+
+major / open / confirmed; issue key: kgx-variant-growth-scope-loss-shewanella.
+
+The maintained exporter ignores scoped_to_variant and uses the parent medium as edge target. Keep publication blocked until it preserves variant identity or deliberately skips scoped entries with a reported diagnostic. Related older findings retain their original targets and are not closed by this review.
+
+### reference-gates: Eight required reference checks fail despite archived source inspection
+
+major / open / confirmed; issue key: shewanella-doi-validator-content-formatting.
+
+Crossref HTML/capitalization/hyphen title differences and absent full-text content prevent automated validation. Pinchuk DOI content is unavailable to the checker; Tang is abstract-only there. Verified metadata and exact excerpts were not altered to game these checks. Required failures remain explicit.
+
+## Recommended Actions And Acceptance Checks
+
+### resolve-m1
+
+Reconcile the Wolfe stock source, chemical forms and final-medium basis before parent certification.
+
+- Inspect final/source typography and stock/final-volume basis.
+- Every changed amount or chemical form requires direct DOI/PURL evidence and a literal excerpt.
+
+### resolve-tang
+
+Compare a lawful final published source and reconcile only source-supported base-protocol inheritance.
+
+- Retain separate salt, amino-acid and tracer treatments.
+- Do not silently normalize hydrates or stereochemistry; preserve unresolved values.
+
+### preserve-scope
+
+Fix and test variant-aware export before publishing these associations.
+
+- Variant-only entries must never produce an unqualified parent edge.
+- Test both scoped and ordinary targets; retain exact evidence and identity.
+
+### resolve-validation
+
+Make authoritative archive content and normalized publication metadata auditable by maintained validation without changing source claims.
+
+- Keep original metadata/source bytes and title-normalization provenance.
+- Validate body/supplement excerpts against the correct source and version, then rerun all affected gates.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| pinchuk | doi:10.1371/journal.pcbi.1000822; references_cache/papers/primary_xml/pinchuk-2010-pmc.xml; Methods/Bacterial Strains and Growth Media; reference 56; Supporting Information links | supports | Batch M1 uses 30 mM PIPES and 4.35 mM NaH2PO4.H2O, unlike the parent's dibasic sodium phosphate. Chemostat 3 mM PIPES and anaerobic overrides are separate. Wolfe stock additions do not certify the flattened parent components. |
+| s006 | doi:10.1371/journal.pcbi.1000822.s006; references_cache/papers/supplements/pinchuk-2010-s006.doc; Table S6 | supports | MR-1 deletion backgrounds are distinct from wild type; E. coli strains are cloning/mating hosts, not demonstrated targets on M1. |
+| s008 | doi:10.1371/journal.pcbi.1000822.s008; references_cache/papers/supplements/pinchuk-2010-s008.doc; Text S1 | supports | Acetate and glycine panel cross-references conflict with actual Figure S4 labels; this conflict is retained, not silently repaired. |
+| s011 | doi:10.1371/journal.pcbi.1000822.s011; references_cache/papers/supplements/pinchuk-2010-s011.pdf; Figure S1 | supports | The visually inspected filled-circle wild-type curves grow on 20 mM D,L-lactate. Mutant curves remain separate; no quantitative growth metric is imported. |
+| s014 | doi:10.1371/journal.pcbi.1000822.s014; references_cache/papers/supplements/pinchuk-2010-s014.pdf; Figure S4 | supports | Actual panels A/B/C respectively show 18 mM lactate with NH4Cl, lactate plus 10 mM glycine without NH4Cl, and 45 mM acetate with NH4Cl. Wild-type curves increase in all three. |
+| kieft | https://www.osti.gov/servlets/purl/762040; references_cache/papers/primary_pdf/kieft-1999-osti-submitted-manuscript.pdf; PDF page 6, printed page 3, lines 11-18; visually inspected | supports | The stock protocol prints H3BO4 and hydrate-specific salts. Raw manuscript and Markdown are retained; deposit/publication dates differ and exact final-version equivalence is unverified. Supporting protocol only, no transferred Thermus growth. |
+| tang2009 | https://www.osti.gov/servlets/purl/960243; references_cache/papers/primary_pdf/tang-2009-osti-author-manuscript.pdf; PDF pages 4-5, 8, 13 and 15; culture conditions, results and Figure 1; pages 4/15 visually inspected | supports | Manuscript with visible red revisions specifies 20 mM PIPES, 30 mM labeled sodium L-lactate, and separate salt/amino-acid treatments. All four Figure 1 wild-type curves increase. Final typeset body remains unavailable. |
+| tang2006 | https://www.osti.gov/servlets/purl/919764; references_cache/papers/primary_pdf/tang-2006-osti-author-manuscript.pdf; PDF page 8, lines 7-14; visually inspected; cited as Tang 2009 reference 19 | supports | The base protocol has 10 mM PIPES, distinct lactate doses, antifoam and literal hydrate-specific trace formulas. The 2009 overrides do not license automatic transfer of every base component or its three-amino-acid mixture. |
+| pubmed-20589080 | PMID:20589080; references_cache/papers/PMID_20589080.xml; Title, authors, year, ArticleIdList and notices | supports | Publication identity and DOI/PMID equivalence verified. No notice appears in this archived entry; this is not an exhaustive corrections/retractions audit. |
+| pubmed-10049886 | PMID:10049886; references_cache/papers/PMID_10049886.xml; Title, authors, year, ArticleIdList and notices | supports | Publication identity and DOI/PMID equivalence verified. No notice appears in this archived entry; this is not an exhaustive corrections/retractions audit. |
+| pubmed-19610125 | PMID:19610125; references_cache/papers/PMID_19610125.xml; Title, authors, year, ArticleIdList and notices | supports | Publication identity and DOI/PMID equivalence verified. No notice appears in this archived entry; this is not an exhaustive corrections/retractions audit. |
+| pubmed-16732598 | PMID:16732598; references_cache/papers/PMID_16732598.xml; Title, authors, year, ArticleIdList and notices | supports | Publication identity and DOI/PMID equivalence verified. No notice appears in this archived entry; this is not an exhaustive corrections/retractions audit. |
+| mr1 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=211586&amp;retmode=xml; references_cache/papers/taxonomy/shewanella-mr1-20261013.xml; TaxId, ScientificName, Rank and OtherNames | supports | Shewanella oneidensis MR-1 is a strain node; ATCC 700550 is an equivalent name. This verifies wild type, not independent exact identities for engineered derivatives. |
+| ecoli | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=562&amp;retmode=xml; references_cache/papers/taxonomy/ecoli-species-20261013.xml; TaxId, ScientificName, Rank and OtherNames | supports | Escherichia coli is a species node used only as a parent-rank lookup for reported cloning/mating strains; no positive growth entry was added. |
+| joins | MediaDB SQL 07Oct2015; references_cache/papers/mediadb/media_database.07Oct2015.sql; Exact sources 72/73 and media 178-185, frozen in preflight.json | supports | Database joins establish discovery provenance, not primary growth measurements. |
+| claims | Guarded citation curation receipt; reports/paper_citation_curation/20261013-shewanella-citations/claim-plan.json; claim-plan.json | context_only | Nine exact snippets plus complete relevant paragraphs and supplement interpretation, with separate locators; amounts and interpretations are not conflated. |
+| readback | Guarded citation curation receipt; reports/paper_citation_curation/20261013-shewanella-citations/final-readback.json; final-readback.json | context_only | All 15,910 normalized hashes verified; eight expected changes only. All 224 ingredient instances and prior bytes recoverable. Added 16 citations, eight variants and eight variant-scoped growth entries; zero parent growth or parent amount certification. |
+| archives | Guarded citation curation receipt; reports/paper_citation_curation/20261013-shewanella-citations/source-preparation.json; source-preparation.json | context_only | 48 raw/Markdown/provenance archive hashes; all four cited papers have source/abstract and attributable Markdown. Deposited versions, supplements and taxonomy retain explicit limits. |
+| evidence-readback | Guarded citation curation receipt; reports/paper_citation_curation/20261013-shewanella-citations/evidence-readback.json; evidence-readback.json | context_only | All 16 applied evidence items, nine registered excerpts and two role excerpts were rechecked directly against raw JATS/PDF/DOC sources. Bibliography metadata and exact variant/strain scope match the applied records; this does not waive reference-gate failures. |
+| plan | Guarded citation curation receipt; reports/paper_citation_curation/20261013-shewanella-citations/applied.json; applied.json | context_only | Exact additions, scopes and before/after hashes for all eight records; applied edits match preview. |
+| exporter | Current KGX exporter; src/culturemech/export/kgx_export.py; organism_grows_in_medium_edge and target_organisms export loop | context_only | The current exporter ignores scoped_to_variant and would attach the evidence to the parent medium. No graph export or publication was performed. |
+| baseline-00 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-00.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-00.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-01 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-01.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-01.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-02 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-02.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-02.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-03 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-03.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-03.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-04 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-04.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-04.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-05 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-05.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-05.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-06 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-06.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-06.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-07 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-07.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-07.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-08 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-08.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-08.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-09 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-09.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-09.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-10 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-10.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-10.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-11 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-11.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-11.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-12 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-12.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-12.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-13 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-13.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-13.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-14 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-14.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-14.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| baseline-15 | reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-15.log; reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-15.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| post-00 | reports/paper_citation_curation/20261013-shewanella-citations/post-00.log; reports/paper_citation_curation/20261013-shewanella-citations/post-00.log; Complete command output | context_only | Actual exit code 1; tool results are not scientific certification. |
+| post-01 | reports/paper_citation_curation/20261013-shewanella-citations/post-01.log; reports/paper_citation_curation/20261013-shewanella-citations/post-01.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| post-02 | reports/paper_citation_curation/20261013-shewanella-citations/post-02.log; reports/paper_citation_curation/20261013-shewanella-citations/post-02.log; Complete command output | context_only | Actual exit code 1; tool results are not scientific certification. |
+| post-03 | reports/paper_citation_curation/20261013-shewanella-citations/post-03.log; reports/paper_citation_curation/20261013-shewanella-citations/post-03.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| post-04 | reports/paper_citation_curation/20261013-shewanella-citations/post-04.log; reports/paper_citation_curation/20261013-shewanella-citations/post-04.log; Complete command output | context_only | Actual exit code 1; tool results are not scientific certification. |
+| post-05 | reports/paper_citation_curation/20261013-shewanella-citations/post-05.log; reports/paper_citation_curation/20261013-shewanella-citations/post-05.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| post-06 | reports/paper_citation_curation/20261013-shewanella-citations/post-06.log; reports/paper_citation_curation/20261013-shewanella-citations/post-06.log; Complete command output | context_only | Actual exit code 1; tool results are not scientific certification. |
+| post-07 | reports/paper_citation_curation/20261013-shewanella-citations/post-07.log; reports/paper_citation_curation/20261013-shewanella-citations/post-07.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| post-08 | reports/paper_citation_curation/20261013-shewanella-citations/post-08.log; reports/paper_citation_curation/20261013-shewanella-citations/post-08.log; Complete command output | context_only | Actual exit code 1; tool results are not scientific certification. |
+| post-09 | reports/paper_citation_curation/20261013-shewanella-citations/post-09.log; reports/paper_citation_curation/20261013-shewanella-citations/post-09.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| post-10 | reports/paper_citation_curation/20261013-shewanella-citations/post-10.log; reports/paper_citation_curation/20261013-shewanella-citations/post-10.log; Complete command output | context_only | Actual exit code 1; tool results are not scientific certification. |
+| post-11 | reports/paper_citation_curation/20261013-shewanella-citations/post-11.log; reports/paper_citation_curation/20261013-shewanella-citations/post-11.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| post-12 | reports/paper_citation_curation/20261013-shewanella-citations/post-12.log; reports/paper_citation_curation/20261013-shewanella-citations/post-12.log; Complete command output | context_only | Actual exit code 1; tool results are not scientific certification. |
+| post-13 | reports/paper_citation_curation/20261013-shewanella-citations/post-13.log; reports/paper_citation_curation/20261013-shewanella-citations/post-13.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| post-14 | reports/paper_citation_curation/20261013-shewanella-citations/post-14.log; reports/paper_citation_curation/20261013-shewanella-citations/post-14.log; Complete command output | context_only | Actual exit code 1; tool results are not scientific certification. |
+| post-15 | reports/paper_citation_curation/20261013-shewanella-citations/post-15.log; reports/paper_citation_curation/20261013-shewanella-citations/post-15.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| merge-00 | reports/paper_citation_curation/20261013-shewanella-citations/merge-00.log; reports/paper_citation_curation/20261013-shewanella-citations/merge-00.log; Complete command output | context_only | Actual exit code 1; tool results are not scientific certification. |
+| merge-01 | reports/paper_citation_curation/20261013-shewanella-citations/merge-01.log; reports/paper_citation_curation/20261013-shewanella-citations/merge-01.log; Complete command output | context_only | Actual exit code 1; tool results are not scientific certification. |
+| extra-00 | reports/paper_citation_curation/20261013-shewanella-citations/extra-00.log; reports/paper_citation_curation/20261013-shewanella-citations/extra-00.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| extra-01 | reports/paper_citation_curation/20261013-shewanella-citations/extra-01.log; reports/paper_citation_curation/20261013-shewanella-citations/extra-01.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+| extra-02 | reports/paper_citation_curation/20261013-shewanella-citations/extra-02.log; reports/paper_citation_curation/20261013-shewanella-citations/extra-02.log; Complete command output | context_only | Actual exit code 0; tool results are not scientific certification. |
+
+## Limits And Additional Notes
+
+- Focused self-review only; all parent amount entries are enumerated as preserved, not newly verified.
+- Short DOI snippets support bounded claims alongside exact locators and visually inspected figures; a short caption alone does not encode the complete assay.
+- Pinchuk Text S1 conflicts with Figure S4 panel labels. Actual figure labels define the retained assay; no conflicting-panel quantitative metric is imported.
+- Kieft is a scanned submitted version, Tang sources are deposited manuscripts, and final publisher bodies were not compared.
+- DOC conversion retains source field-code artifacts; raw files remain authoritative and figure/recipe pages were visually checked.
+- Organism inventories are bounded to relevant inspected passages, not every organism in all four papers or their bibliographies.
+- Required automated failures are not waived by manual verification. No title or excerpt was changed simply to satisfy a checker.
+- Existing global merge/freshness failures are recorded separately; no generated output was replaced.
+- 303 MediaDB candidate source-owner links remain, and that queue is not an exhaustive literature inventory.
+- Next LAB sources and unchanged baseline owners are preparation only, not completed curation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261013T100759Z-shewanella-paper-citations
+kind: batch
+repository: culturebotai/CultureMech
+title: Shewanella citations and source-scoped wild-type growth
+started_at: '2026-10-13T09:31:35Z'
+finished_at: '2026-10-13T10:07:59Z'
+reviewer:
+  identity: codex
+  kind: agent
+  independence: self_review
+  independence_basis: The curator performed this assessment; no independent scientific
+    review is claimed.
+skill: culturemech-add-paper-citation
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 16 citations across eight records/four papers; eight DOI/snippet-backed inline
+  variants and eight variant-only wild-type MR-1 growth entries. All 224 parent ingredients
+  and prior content preserved. Strict/schema/taxonomy checks pass, but required reference
+  checks and global merge diagnostics fail; source-normalization and export findings
+  remain open.
+source:
+  git_revision: 41d4d390123c0d8320cd53e994470c88a1b86d8c
+  state: working_tree
+  inputs:
+  - path: data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+    sha256: e237bf46588511f92c3d2be2936a339cbebe8ff637e9b8090b1ea33cb7a30181
+    role: target
+  - path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+    sha256: 525b234085271da5df8e15c5100c9d06fa9f69b86481841b7a235e5c715fc7cf
+    role: target
+  - path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+    sha256: d34a088fc64f1ee54530be887d8624819ba19d0f38c85cdb31dc26db0c5e2a28
+    role: target
+  - path: data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+    sha256: 965e35a934eb1c8146481a51974f0294024d5176dbeab66bc4e7d328e8b834e1
+    role: target
+  - path: data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+    sha256: 337e8e001897e6c07ee61195728641cae74af4be7d7047e151b92236ca888030
+    role: target
+  - path: data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+    sha256: cb5594d8ff5643116cc9af48087ae48fc0d2ce3724b0a44eb0707ecff0405990
+    role: target
+  - path: data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+    sha256: 43bbe710acde1f13649466e138ddede7095ed1ab6b82ac28ea45dfdaea1c9732
+    role: target
+  - path: data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+    sha256: 3aa1f6350de52f946239892c4cc133cd61ed8c147ef04f59c10138b6b4b39de7
+    role: target
+  - path: src/culturemech/export/kgx_export.py
+    sha256: eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: Eight exact MediaDB source 72/73 owners, IDs 178-185; citation identity,
+    source-described differences, organism roles and qualitative variant-only growth.
+  selection: Verified source-owner joins, not a corpus sample or full recipe review.
+  coverage: full
+  population_size: 8
+  reviewed_target_ids:
+  - CultureMech:007069
+  - CultureMech:007070
+  - CultureMech:007071
+  - CultureMech:007072
+  - CultureMech:007073
+  - CultureMech:007074
+  - CultureMech:007075
+  - CultureMech:007076
+  exclusions:
+  - target: Complete parent concentration certification, exact final-published equivalence,
+      quantitative growth and generated publication
+    reason: Not established by the inspected evidence; no citation-exhaustion or publication
+      claim.
+targets:
+- target_id: CultureMech:007069
+  path: data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+  label: Modified m1 medium with 20 mm lactate; pinchuk et al
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007070
+  path: data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+  label: Modified m1 medium with 18 mm lactate; pinchuk et al
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007071
+  path: data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+  label: Modified M1 Medium with Lactate and Glycine (no NH4Cl); Pinchuk et al
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007072
+  path: data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+  label: Modified M1 Medium with Acetate; Pinchuk et al
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007073
+  path: data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+  label: Minimal medium (tang et al 2009)
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007074
+  path: data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+  label: Minimal medium with salt stress (tang et al 2009)
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007075
+  path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+  label: Minimal Medium w/amino acids (Tang et al 2009)
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007076
+  path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+  label: Minimal Medium w/amino acids and salt stress (Tang et al 2009)
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: baseline-00
+  name: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007069
+  evidence_ids:
+  - baseline-00
+- check_id: baseline-01
+  name: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007069
+  evidence_ids:
+  - baseline-01
+- check_id: baseline-02
+  name: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007070
+  evidence_ids:
+  - baseline-02
+- check_id: baseline-03
+  name: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007070
+  evidence_ids:
+  - baseline-03
+- check_id: baseline-04
+  name: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+  command: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007071
+  evidence_ids:
+  - baseline-04
+- check_id: baseline-05
+  name: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007071
+  evidence_ids:
+  - baseline-05
+- check_id: baseline-06
+  name: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007072
+  evidence_ids:
+  - baseline-06
+- check_id: baseline-07
+  name: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007072
+  evidence_ids:
+  - baseline-07
+- check_id: baseline-08
+  name: just validate data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+  command: just validate data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007073
+  evidence_ids:
+  - baseline-08
+- check_id: baseline-09
+  name: just validate-strict data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007073
+  evidence_ids:
+  - baseline-09
+- check_id: baseline-10
+  name: just validate data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+  command: just validate data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007074
+  evidence_ids:
+  - baseline-10
+- check_id: baseline-11
+  name: just validate-strict data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007074
+  evidence_ids:
+  - baseline-11
+- check_id: baseline-12
+  name: just validate data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+  command: just validate data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007075
+  evidence_ids:
+  - baseline-12
+- check_id: baseline-13
+  name: just validate-strict data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007075
+  evidence_ids:
+  - baseline-13
+- check_id: baseline-14
+  name: just validate data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+  command: just validate data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007076
+  evidence_ids:
+  - baseline-14
+- check_id: baseline-15
+  name: just validate-strict data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Baseline retained from prior handoff; exact source hashes reverified.
+  target_ids:
+  - CultureMech:007076
+  evidence_ids:
+  - baseline-15
+- check_id: post-00
+  name: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Schema and taxonomy pass; DOI title formatting/full-text retrieval failures
+    remain. Archived exact excerpts were manually verified.
+  target_ids:
+  - CultureMech:007069
+  evidence_ids:
+  - post-00
+- check_id: post-01
+  name: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result.
+  target_ids:
+  - CultureMech:007069
+  evidence_ids:
+  - post-01
+- check_id: post-02
+  name: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Schema and taxonomy pass; DOI title formatting/full-text retrieval failures
+    remain. Archived exact excerpts were manually verified.
+  target_ids:
+  - CultureMech:007070
+  evidence_ids:
+  - post-02
+- check_id: post-03
+  name: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result.
+  target_ids:
+  - CultureMech:007070
+  evidence_ids:
+  - post-03
+- check_id: post-04
+  name: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+  command: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Schema and taxonomy pass; DOI title formatting/full-text retrieval failures
+    remain. Archived exact excerpts were manually verified.
+  target_ids:
+  - CultureMech:007071
+  evidence_ids:
+  - post-04
+- check_id: post-05
+  name: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result.
+  target_ids:
+  - CultureMech:007071
+  evidence_ids:
+  - post-05
+- check_id: post-06
+  name: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Schema and taxonomy pass; DOI title formatting/full-text retrieval failures
+    remain. Archived exact excerpts were manually verified.
+  target_ids:
+  - CultureMech:007072
+  evidence_ids:
+  - post-06
+- check_id: post-07
+  name: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result.
+  target_ids:
+  - CultureMech:007072
+  evidence_ids:
+  - post-07
+- check_id: post-08
+  name: just validate data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+  command: just validate data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Schema and taxonomy pass; DOI title formatting/full-text retrieval failures
+    remain. Archived exact excerpts were manually verified.
+  target_ids:
+  - CultureMech:007073
+  evidence_ids:
+  - post-08
+- check_id: post-09
+  name: just validate-strict data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result.
+  target_ids:
+  - CultureMech:007073
+  evidence_ids:
+  - post-09
+- check_id: post-10
+  name: just validate data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+  command: just validate data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Schema and taxonomy pass; DOI title formatting/full-text retrieval failures
+    remain. Archived exact excerpts were manually verified.
+  target_ids:
+  - CultureMech:007074
+  evidence_ids:
+  - post-10
+- check_id: post-11
+  name: just validate-strict data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result.
+  target_ids:
+  - CultureMech:007074
+  evidence_ids:
+  - post-11
+- check_id: post-12
+  name: just validate data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+  command: just validate data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Schema and taxonomy pass; DOI title formatting/full-text retrieval failures
+    remain. Archived exact excerpts were manually verified.
+  target_ids:
+  - CultureMech:007075
+  evidence_ids:
+  - post-12
+- check_id: post-13
+  name: just validate-strict data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result.
+  target_ids:
+  - CultureMech:007075
+  evidence_ids:
+  - post-13
+- check_id: post-14
+  name: just validate data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+  command: just validate data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Schema and taxonomy pass; DOI title formatting/full-text retrieval failures
+    remain. Archived exact excerpts were manually verified.
+  target_ids:
+  - CultureMech:007076
+  evidence_ids:
+  - post-14
+- check_id: post-15
+  name: just validate-strict data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result.
+  target_ids:
+  - CultureMech:007076
+  evidence_ids:
+  - post-15
+- check_id: merge-00
+  name: just verify-merges
+  command: just verify-merges
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Required global merge diagnostic; no checked-in generated output replaced.
+  target_ids:
+  - CultureMech:007069
+  - CultureMech:007070
+  - CultureMech:007071
+  - CultureMech:007072
+  - CultureMech:007073
+  - CultureMech:007074
+  - CultureMech:007075
+  - CultureMech:007076
+  evidence_ids:
+  - merge-00
+- check_id: merge-01
+  name: just audit-merge-freshness --json
+  command: just audit-merge-freshness --json
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Required global merge diagnostic; no checked-in generated output replaced.
+  target_ids:
+  - CultureMech:007069
+  - CultureMech:007070
+  - CultureMech:007071
+  - CultureMech:007072
+  - CultureMech:007073
+  - CultureMech:007074
+  - CultureMech:007075
+  - CultureMech:007076
+  evidence_ids:
+  - merge-01
+- check_id: extra-00
+  name: /tmp/culturemech-parallel-env-20261012/bin/python -m pytest --no-cov -q -p
+    no:cacheprovider tests/test_claude_skills.py tests/test_skill_frontmatter.py tests/test_fetch_pubmed_abstracts.py
+    tests/test_record_io.py tests/test_media_variant_links.py tests/test_record_review_contract.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python -m pytest --no-cov -q
+    -p no:cacheprovider tests/test_claude_skills.py tests/test_skill_frontmatter.py
+    tests/test_fetch_pubmed_abstracts.py tests/test_record_io.py tests/test_media_variant_links.py
+    tests/test_record_review_contract.py
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result.
+  target_ids:
+  - CultureMech:007069
+  - CultureMech:007070
+  - CultureMech:007071
+  - CultureMech:007072
+  - CultureMech:007073
+  - CultureMech:007074
+  - CultureMech:007075
+  - CultureMech:007076
+  evidence_ids:
+  - extra-00
+- check_id: extra-01
+  name: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result.
+  target_ids:
+  - CultureMech:007069
+  - CultureMech:007070
+  - CultureMech:007071
+  - CultureMech:007072
+  - CultureMech:007073
+  - CultureMech:007074
+  - CultureMech:007075
+  - CultureMech:007076
+  evidence_ids:
+  - extra-01
+- check_id: extra-02
+  name: git diff --check
+  command: git diff --check
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual maintained check result.
+  target_ids:
+  - CultureMech:007069
+  - CultureMech:007070
+  - CultureMech:007071
+  - CultureMech:007072
+  - CultureMech:007073
+  - CultureMech:007074
+  - CultureMech:007075
+  - CultureMech:007076
+  evidence_ids:
+  - extra-02
+evidence:
+- evidence_id: pinchuk
+  kind: primary_source
+  reference: doi:10.1371/journal.pcbi.1000822
+  locator: references_cache/papers/primary_xml/pinchuk-2010-pmc.xml; Methods/Bacterial
+    Strains and Growth Media; reference 56; Supporting Information links
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Batch M1 uses 30 mM PIPES and 4.35 mM NaH2PO4.H2O, unlike the parent's
+    dibasic sodium phosphate. Chemostat 3 mM PIPES and anaerobic overrides are separate.
+    Wolfe stock additions do not certify the flattened parent components.
+  support: supports
+  snapshot_sha256: 97a8edb03d876799e181040d894d022db9037cc799cf903004c5cdf8ff1856c1
+- evidence_id: s006
+  kind: primary_source
+  reference: doi:10.1371/journal.pcbi.1000822.s006
+  locator: references_cache/papers/supplements/pinchuk-2010-s006.doc; Table S6
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: MR-1 deletion backgrounds are distinct from wild type; E. coli strains
+    are cloning/mating hosts, not demonstrated targets on M1.
+  support: supports
+  snapshot_sha256: 5396b11e6a5eb04b29720f416c3dc9f174176b3b33994a9ae74cd2e757a228a5
+- evidence_id: s008
+  kind: primary_source
+  reference: doi:10.1371/journal.pcbi.1000822.s008
+  locator: references_cache/papers/supplements/pinchuk-2010-s008.doc; Text S1
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Acetate and glycine panel cross-references conflict with actual Figure
+    S4 labels; this conflict is retained, not silently repaired.
+  support: supports
+  snapshot_sha256: 4c440a40c721278b8db7c9e078c4faa61b655abecc1792ed2568a4ca0f652c2b
+- evidence_id: s011
+  kind: primary_source
+  reference: doi:10.1371/journal.pcbi.1000822.s011
+  locator: references_cache/papers/supplements/pinchuk-2010-s011.pdf; Figure S1
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: The visually inspected filled-circle wild-type curves grow on 20 mM D,L-lactate.
+    Mutant curves remain separate; no quantitative growth metric is imported.
+  support: supports
+  snapshot_sha256: d4c2e87296bcf262ef085213e3e74a1c432d4533dbda1773a6ec0756817c37fb
+- evidence_id: s014
+  kind: primary_source
+  reference: doi:10.1371/journal.pcbi.1000822.s014
+  locator: references_cache/papers/supplements/pinchuk-2010-s014.pdf; Figure S4
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual panels A/B/C respectively show 18 mM lactate with NH4Cl, lactate
+    plus 10 mM glycine without NH4Cl, and 45 mM acetate with NH4Cl. Wild-type curves
+    increase in all three.
+  support: supports
+  snapshot_sha256: ebf96e1dfff791d9d28487c55da9482d955148fd95ba16238545cd4fa42f05dc
+- evidence_id: kieft
+  kind: primary_source
+  reference: https://www.osti.gov/servlets/purl/762040
+  locator: references_cache/papers/primary_pdf/kieft-1999-osti-submitted-manuscript.pdf;
+    PDF page 6, printed page 3, lines 11-18; visually inspected
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: The stock protocol prints H3BO4 and hydrate-specific salts. Raw manuscript
+    and Markdown are retained; deposit/publication dates differ and exact final-version
+    equivalence is unverified. Supporting protocol only, no transferred Thermus growth.
+  support: supports
+  snapshot_sha256: f71732c4a96ac8032760801021eb5cf621351065f263f60d94b844f8bffae647
+- evidence_id: tang2009
+  kind: primary_source
+  reference: https://www.osti.gov/servlets/purl/960243
+  locator: references_cache/papers/primary_pdf/tang-2009-osti-author-manuscript.pdf;
+    PDF pages 4-5, 8, 13 and 15; culture conditions, results and Figure 1; pages 4/15
+    visually inspected
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Manuscript with visible red revisions specifies 20 mM PIPES, 30 mM labeled
+    sodium L-lactate, and separate salt/amino-acid treatments. All four Figure 1 wild-type
+    curves increase. Final typeset body remains unavailable.
+  support: supports
+  snapshot_sha256: ebbab61739c7a8c63213c57e0258f20822d165ef8188e23455ff8495689eb4be
+- evidence_id: tang2006
+  kind: primary_source
+  reference: https://www.osti.gov/servlets/purl/919764
+  locator: references_cache/papers/primary_pdf/tang-2006-osti-author-manuscript.pdf;
+    PDF page 8, lines 7-14; visually inspected; cited as Tang 2009 reference 19
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: The base protocol has 10 mM PIPES, distinct lactate doses, antifoam and
+    literal hydrate-specific trace formulas. The 2009 overrides do not license automatic
+    transfer of every base component or its three-amino-acid mixture.
+  support: supports
+  snapshot_sha256: 4d683e7e5f5c2143fcd268b8a1243001807a02d0f58403b1b2ad4dc7052ee015
+- evidence_id: pubmed-20589080
+  kind: authority
+  reference: PMID:20589080
+  locator: references_cache/papers/PMID_20589080.xml; Title, authors, year, ArticleIdList
+    and notices
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Publication identity and DOI/PMID equivalence verified. No notice appears
+    in this archived entry; this is not an exhaustive corrections/retractions audit.
+  support: supports
+  snapshot_sha256: e8fd1b5e5514d82eb372606c316ba66fe803d16b54ef6ed16e72b83788c0df81
+- evidence_id: pubmed-10049886
+  kind: authority
+  reference: PMID:10049886
+  locator: references_cache/papers/PMID_10049886.xml; Title, authors, year, ArticleIdList
+    and notices
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Publication identity and DOI/PMID equivalence verified. No notice appears
+    in this archived entry; this is not an exhaustive corrections/retractions audit.
+  support: supports
+  snapshot_sha256: 68a0fdb404da4e4f98902889e6fcc04d1868d0f3c5cd5c1b67f65fe628127f94
+- evidence_id: pubmed-19610125
+  kind: authority
+  reference: PMID:19610125
+  locator: references_cache/papers/PMID_19610125.xml; Title, authors, year, ArticleIdList
+    and notices
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Publication identity and DOI/PMID equivalence verified. No notice appears
+    in this archived entry; this is not an exhaustive corrections/retractions audit.
+  support: supports
+  snapshot_sha256: 47903efd78253920bfa60c27426be3e37a85bc77b6c089c69672e04939f24e9f
+- evidence_id: pubmed-16732598
+  kind: authority
+  reference: PMID:16732598
+  locator: references_cache/papers/PMID_16732598.xml; Title, authors, year, ArticleIdList
+    and notices
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Publication identity and DOI/PMID equivalence verified. No notice appears
+    in this archived entry; this is not an exhaustive corrections/retractions audit.
+  support: supports
+  snapshot_sha256: bc687036fea3340052b5bd00379d3d27a17a0bd4d5ab1db8989a6f12bcdf9bd0
+- evidence_id: mr1
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml
+  locator: references_cache/papers/taxonomy/shewanella-mr1-20261013.xml; TaxId, ScientificName,
+    Rank and OtherNames
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Shewanella oneidensis MR-1 is a strain node; ATCC 700550 is an equivalent
+    name. This verifies wild type, not independent exact identities for engineered
+    derivatives.
+  support: supports
+  snapshot_sha256: 242ace15df22ed93abda0ea977cee8da12577ddd18f60c98051af3c58f6c4de4
+- evidence_id: ecoli
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml
+  locator: references_cache/papers/taxonomy/ecoli-species-20261013.xml; TaxId, ScientificName,
+    Rank and OtherNames
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Escherichia coli is a species node used only as a parent-rank lookup for
+    reported cloning/mating strains; no positive growth entry was added.
+  support: supports
+  snapshot_sha256: 1d5618066f7d7b5fbf62b33b00b8928382362d9b9e017076caeb654151d980f8
+- evidence_id: joins
+  kind: database
+  reference: MediaDB SQL 07Oct2015
+  locator: references_cache/papers/mediadb/media_database.07Oct2015.sql; Exact sources
+    72/73 and media 178-185, frozen in preflight.json
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Database joins establish discovery provenance, not primary growth measurements.
+  support: supports
+  snapshot_sha256: e2c60258e2389d4ad383695eb3e01429a67eac90807fe14d02a6728777d35b5c
+- evidence_id: claims
+  kind: record_content
+  reference: Guarded citation curation receipt
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/claim-plan.json;
+    claim-plan.json
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Nine exact snippets plus complete relevant paragraphs and supplement interpretation,
+    with separate locators; amounts and interpretations are not conflated.
+  support: context_only
+  snapshot_sha256: 00b9b7593772a6cea58a319a7992935e607106e603d70dc68494fb509ebf5101
+- evidence_id: readback
+  kind: record_content
+  reference: Guarded citation curation receipt
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/final-readback.json;
+    final-readback.json
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: All 15,910 normalized hashes verified; eight expected changes only. All
+    224 ingredient instances and prior bytes recoverable. Added 16 citations, eight
+    variants and eight variant-scoped growth entries; zero parent growth or parent
+    amount certification.
+  support: context_only
+  snapshot_sha256: 5dc3fb4ab606c3f923855d1d6ebe6cb898008d3db53ce43fc66569fd4685c9c9
+- evidence_id: archives
+  kind: record_content
+  reference: Guarded citation curation receipt
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/source-preparation.json;
+    source-preparation.json
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: 48 raw/Markdown/provenance archive hashes; all four cited papers have source/abstract
+    and attributable Markdown. Deposited versions, supplements and taxonomy retain
+    explicit limits.
+  support: context_only
+  snapshot_sha256: 9c70289d94ee89554d8957116dc04dfacfa0c67e1d556cee2a893c8169cedf52
+- evidence_id: evidence-readback
+  kind: record_content
+  reference: Guarded citation curation receipt
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/evidence-readback.json;
+    evidence-readback.json
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: All 16 applied evidence items, nine registered excerpts and two role excerpts
+    were rechecked directly against raw JATS/PDF/DOC sources. Bibliography metadata
+    and exact variant/strain scope match the applied records; this does not waive
+    reference-gate failures.
+  support: context_only
+  snapshot_sha256: 2cce6387d935a0e6f42e2cf33363b9a96f11166cc7a7575a212c19b936c7840a
+- evidence_id: plan
+  kind: record_content
+  reference: Guarded citation curation receipt
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/applied.json;
+    applied.json
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Exact additions, scopes and before/after hashes for all eight records;
+    applied edits match preview.
+  support: context_only
+  snapshot_sha256: a0f139b92942b2bf10cc4cdccf0511ac5208a24c3931b76aa901fd193eeb68a2
+- evidence_id: exporter
+  kind: record_content
+  reference: Current KGX exporter
+  locator: src/culturemech/export/kgx_export.py; organism_grows_in_medium_edge and
+    target_organisms export loop
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: The current exporter ignores scoped_to_variant and would attach the evidence
+    to the parent medium. No graph export or publication was performed.
+  support: context_only
+  snapshot_sha256: eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0
+- evidence_id: baseline-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-00.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-00.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-01.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-01.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-02.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-02.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-03.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-03.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-04.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-04.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-05.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-05.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-06.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-06.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-07.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-07.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-08.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-08.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-09.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-09.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-10.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-10.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-11.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-11.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-12
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-12.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-12.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-13
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-13.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-13.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-14
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-14.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-14.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-15
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-15.log
+  locator: reports/paper_citation_curation/20261013-acinetobacter-citations/next-baseline-15.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-00.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-00.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 1; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 59ab1cda19cf0cfb60e081b6650a8e65b1dd47f5b35595f4fd892136ce10f8d5
+- evidence_id: post-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-01.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-01.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-02.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-02.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 1; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 2994c6e883ed1c54b4eac2f998c3ee0d7e58d2f37e0ca90b8c07e73aaa5d52b2
+- evidence_id: post-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-03.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-03.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-04.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-04.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 1; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 2994c6e883ed1c54b4eac2f998c3ee0d7e58d2f37e0ca90b8c07e73aaa5d52b2
+- evidence_id: post-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-05.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-05.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-06.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-06.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 1; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 2994c6e883ed1c54b4eac2f998c3ee0d7e58d2f37e0ca90b8c07e73aaa5d52b2
+- evidence_id: post-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-07.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-07.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-08.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-08.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 1; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 0d9c1dc9a8f4e25a46b0d2aff76b2b787980f6bfb7094beb26bfe33c8b53dca9
+- evidence_id: post-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-09.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-09.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-10.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-10.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 1; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 0d9c1dc9a8f4e25a46b0d2aff76b2b787980f6bfb7094beb26bfe33c8b53dca9
+- evidence_id: post-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-11.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-11.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-12
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-12.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-12.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 1; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 0d9c1dc9a8f4e25a46b0d2aff76b2b787980f6bfb7094beb26bfe33c8b53dca9
+- evidence_id: post-13
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-13.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-13.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-14
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-14.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-14.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 1; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 0d9c1dc9a8f4e25a46b0d2aff76b2b787980f6bfb7094beb26bfe33c8b53dca9
+- evidence_id: post-15
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/post-15.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/post-15.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: merge-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/merge-00.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/merge-00.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 1; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c
+- evidence_id: merge-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/merge-01.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/merge-01.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 1; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 5983f5cefee10215b2609b888c4bddb139d87466d6885a93cdb04aee7197715f
+- evidence_id: extra-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/extra-00.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/extra-00.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 4875a4c559e83a1c71e17821c04a7c19fe1c961e2c1701b9a9227cd6b7f6afeb
+- evidence_id: extra-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/extra-01.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/extra-01.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: 441bdd6ab36f5b87c9edccf771321e1c5f6c11f43bec7799e6e98cd4d756c24c
+- evidence_id: extra-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-shewanella-citations/extra-02.log
+  locator: reports/paper_citation_curation/20261013-shewanella-citations/extra-02.log;
+    Complete command output
+  accessed_at: '2026-10-13T10:07:59Z'
+  summary: Actual exit code 0; tool results are not scientific certification.
+  support: context_only
+  snapshot_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+assessments:
+- assessment_id: citation-007069
+  area: evidence
+  topic: Publication identity, source archive and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007069
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - s006
+  - s008
+  - s011
+  - s014
+  - pubmed-20589080
+  - pubmed-10049886
+  - joins
+  - archives
+  - readback
+  summary: Two deduplicated DOI bibliography entries with PMID aliases, title, authors,
+    year, source type, discovery mode, locators and local raw/Markdown archives. Citation
+    does not certify the parent recipe.
+- assessment_id: variant-007069
+  area: evidence
+  topic: Source-described assay variant and its amount evidence
+  outcome: concern
+  target_ids:
+  - CultureMech:007069
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - s006
+  - s008
+  - s011
+  - s014
+  - claims
+  - plan
+  - readback
+  summary: A recognizable source-described assay is distinguished from the parent;
+    direct reported differences are supported, but exact chemical normalization and
+    source-version equivalence remain incomplete.
+  details: '{"variant": {"name": "Pinchuk 2010 reported batch M1 with 20 mM D,L-lactate",
+    "relationship": "SUBSTITUTED_COMPONENT_VARIANT", "description": "Figure S1, panels
+    A and B: 20 mM D,L-lactate with ammonium chloride. The variant denotes the source-described
+    batch assay, not an exact normalized expansion of all stock chemicals. The paper
+    specifies Wolfe vitamin/mineral stock additions; the imported parent instead flattens
+    those stocks into molar amounts. Their equivalence is not certified: Kieft''s
+    submitted manuscript prints H3BO4 and multiple hydrate-specific salts, while the
+    parent contains boric acid and some anhydrous/generalized terms. The original
+    stock formula and final-volume basis remain unresolved at ingredient-normalization
+    level. Parent amounts, terms and generic preparation are unchanged. ", "modifications":
+    ["Use the paper''s 4.35 mM sodium dihydrogen phosphate monohydrate (NaH2PO4.H2O),
+    not the parent''s dibasic sodium phosphate.", "Retain the paper-described Wolfe
+    vitamin/mineral stocks without claiming equivalence to the parent''s flattened
+    molar stock components.", "Use the batch formulation at pH 7.0 with 30 mM PIPES;
+    do not import the chemostat''s 3 mM PIPES, Fe(III)-NTA supplement or anaerobic
+    formulation."], "evidence": [{"reference": "doi:10.1371/journal.pcbi.1000822",
+    "supports": "SUPPORT", "snippet": "4.35 mM NaH2PO4•H2O", "explanation": "Supports
+    variants[].modifications phosphate identity and 4.35 mM amount only; main Methods/Bacterial
+    Strains and Growth Media. Separate exact stock excerpt=''10 ml each of 10× Wolfe''s
+    vitamin solution and 10× mineral solution''. Separate exact PIPES excerpt=''30
+    mM and 3 mM for batch and chemostat cultivation, respectively''; pH excerpt=''modified
+    M1 medium (pH 7.0)''. Figure S1, panels A and B: 20 mM D,L-lactate with ammonium
+    chloride. See the archived Figure S1 or S4 for assay substrate/nitrogen identity.
+    The variant denotes the source-described batch assay, not an exact normalized
+    expansion of all stock chemicals. The paper specifies Wolfe vitamin/mineral stock
+    additions; the imported parent instead flattens those stocks into molar amounts.
+    Their equivalence is not certified: Kieft''s submitted manuscript prints H3BO4
+    and multiple hydrate-specific salts, while the parent contains boric acid and
+    some anhydrous/generalized terms. The original stock formula and final-volume
+    basis remain unresolved at ingredient-normalization level. Parent amounts, terms
+    and generic preparation are unchanged. "}]}, "preserved_parent_amounts": [{"field_path":
+    "ingredients[0].concentration", "chemical": "Biotin", "concentration": {"value":
+    "8.1863e-05", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15956", "label": "biotin"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[1].concentration", "chemical": "Nicotinate",
+    "concentration": {"value": "0.00040614", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:15940", "label": "nicotinic acid"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[2].concentration",
+    "chemical": "Riboflavin", "concentration": {"value": "0.00013285", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:17015", "label": "riboflavin"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[3].concentration", "chemical": "Thiamine", "concentration": {"value":
+    "0.00016622", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:18385", "label": "thiamine(1+)"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Folate",
+    "concentration": {"value": "4.531e-05", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:27470", "label": "folic acid"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "4-Aminobenzoate", "concentration": {"value": "0.0003645", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[6].concentration", "chemical": "Lipoate", "concentration": {"value":
+    "0.0002423", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16494", "label": "lipoic
+    acid"}, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[7].concentration", "chemical": "Pantothenate",
+    "concentration": {"value": "0.00022807", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:16454", "label": "pantothenate"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Lactate", "concentration": {"value": "20.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:24996", "label": "lactate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[9].concentration", "chemical": "Vitamin B12", "concentration": {"value":
+    "7.3781e-07", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:176843", "label": "vitamin
+    B12"}, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Magnesium
+    chloride", "concentration": {"value": "3.0", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[11].concentration", "chemical": "Calcium chloride anhydrous", "concentration":
+    {"value": "0.0068", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:3312", "label":
+    "calcium dichloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[12].concentration",
+    "chemical": "Boric acid", "concentration": {"value": "0.000808669", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[13].concentration", "chemical": "Dibasic sodium phosphate", "concentration":
+    {"value": "4.35", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label":
+    "disodium hydrogenphosphate"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[14].concentration",
+    "chemical": "Nitrilotriacetic acid", "concentration": {"value": "0.11196", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:44557", "label": "nitrilotriacetic acid"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[15].concentration", "chemical": "Sodium molybdate",
+    "concentration": {"value": "0.00437084", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[16].concentration", "chemical": "Sodium chloride", "concentration":
+    {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26710", "label":
+    "sodium chloride"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[17].concentration",
+    "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[18].concentration", "chemical": "Pyridoxine HCl", "concentration":
+    {"value": "0.00048626", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30961", "label":
+    "pyridoxine hydrochloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[19].concentration",
+    "chemical": "Ammonium chloride", "concentration": {"value": "28.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[20].concentration", "chemical": "Ferrous sulfate", "concentration":
+    {"value": "0.0107894", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75832", "label":
+    "iron(2+) sulfate (anhydrous)"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[21].concentration",
+    "chemical": "Cobalt chloride", "concentration": {"value": "0.0114981", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[22].concentration", "chemical": "Zinc sulfate", "concentration":
+    {"value": "0.0069558", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35176", "label":
+    "zinc sulfate"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[23].concentration",
+    "chemical": "Manganese chloride", "concentration": {"value": "0.0044829", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[24].concentration", "chemical": "Cupric chloride",
+    "concentration": {"value": "0.00175974", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[25].concentration",
+    "chemical": "Sodium selenate", "concentration": {"value": "0.001", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:77775", "label": "sodium selenate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[26].concentration", "chemical": "Aluminum potassium sulfate", "concentration":
+    {"value": "0.000105399", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86463",
+    "label": "potassium aluminium sulfate"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[27].concentration",
+    "chemical": "Sodium tungstate", "concentration": {"value": "0.000606318", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[28].concentration", "chemical": "Nickel Sulfate", "concentration":
+    {"value": "0.0041849", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[29].concentration", "chemical": "PIPES", "concentration": {"value":
+    "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Source-described inline amounts have DOI/snippet support; parent concentrations
+      are unchanged and not certified.
+    evidence_ids:
+    - pinchuk
+    - kieft
+    - s006
+    - s008
+    - s011
+    - s014
+    - claims
+  - name: formulation_match
+    value: source-described variant; not exact normalized formulation
+    definition: Unresolved stock forms, final-volume equivalence and manuscript differences
+      remain explicit.
+    evidence_ids:
+    - pinchuk
+    - kieft
+    - s006
+    - s008
+    - s011
+    - s014
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 30
+    unit: instances
+    denominator: 30
+    minimum: 0
+    maximum: 30
+    definition: Preservation only, not a verified-concentration count.
+- assessment_id: growth-007069
+  area: evidence
+  topic: Exact wild-type taxonomy and variant-only qualitative growth
+  outcome: supported
+  target_ids:
+  - CultureMech:007069
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - s006
+  - s008
+  - s011
+  - s014
+  - claims
+  - mr1
+  - ecoli
+  - readback
+  summary: One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal
+    to the exact variant name. Figure curves and captions were checked; no parent
+    growth, mutant pooling, host growth, rates or optima inferred.
+  details: '{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild
+    type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"},
+    "scoped_to_variant": "Pinchuk 2010 reported batch M1 with 20 mM D,L-lactate",
+    "evidence": [{"reference": "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT",
+    "snippet": "Growth dynamics of S. oneidensis MR-1 wild-type", "explanation": "Figure
+    S1, panels A and B: 20 mM D,L-lactate with ammonium chloride. The filled-circle
+    wild-type growth curves were visually inspected in the one-page source PDF. The
+    common batch methods specify 30 degrees C, with microplates for S1 or shaken crimp-sealed
+    serum bottles for S4. No maximum OD, rate, doubling time, well dilution or optimum
+    is inferred. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586;
+    rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+    archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+    verifies the wild-type background, not an independent exact taxonomy identity
+    for every engineered derivative. Growth is supported only on the named source-described
+    inline variant, not on the unmodified imported parent. Unresolved chemical normalization
+    is retained in that variant; the source''s qualitative cultivation result is not
+    a certification of the flattened parent recipe. Current KGX export does not honor
+    scoped_to_variant; this curation is not authorization to publish an unscoped parent
+    edge."}]}'
+  dimensions:
+  - name: taxonomy_match
+    value: exact strain NCBITaxon:211586
+    definition: Verified canonical Shewanella oneidensis MR-1 node. Engineered derivatives
+      and E. coli hosts remain separately qualified in notes.
+    evidence_ids:
+    - mr1
+    - ecoli
+- assessment_id: export-007069
+  area: evidence
+  topic: Export preservation of variant-only scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007069
+  evidence_ids:
+  - exporter
+  - readback
+  summary: Native scope is explicit, but the current exporter would lose it. These
+    associations are not publication-ready; no generated output was produced.
+- assessment_id: citation-007070
+  area: evidence
+  topic: Publication identity, source archive and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007070
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - s006
+  - s008
+  - s011
+  - s014
+  - pubmed-20589080
+  - pubmed-10049886
+  - joins
+  - archives
+  - readback
+  summary: Two deduplicated DOI bibliography entries with PMID aliases, title, authors,
+    year, source type, discovery mode, locators and local raw/Markdown archives. Citation
+    does not certify the parent recipe.
+- assessment_id: variant-007070
+  area: evidence
+  topic: Source-described assay variant and its amount evidence
+  outcome: concern
+  target_ids:
+  - CultureMech:007070
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - s006
+  - s008
+  - s011
+  - s014
+  - claims
+  - plan
+  - readback
+  summary: A recognizable source-described assay is distinguished from the parent;
+    direct reported differences are supported, but exact chemical normalization and
+    source-version equivalence remain incomplete.
+  details: '{"variant": {"name": "Pinchuk 2010 reported batch M1 with 18 mM lactate",
+    "relationship": "SUBSTITUTED_COMPONENT_VARIANT", "description": "Figure S4, panel
+    A: 18 mM lactate with ammonium chloride. The variant denotes the source-described
+    batch assay, not an exact normalized expansion of all stock chemicals. The paper
+    specifies Wolfe vitamin/mineral stock additions; the imported parent instead flattens
+    those stocks into molar amounts. Their equivalence is not certified: Kieft''s
+    submitted manuscript prints H3BO4 and multiple hydrate-specific salts, while the
+    parent contains boric acid and some anhydrous/generalized terms. The original
+    stock formula and final-volume basis remain unresolved at ingredient-normalization
+    level. Parent amounts, terms and generic preparation are unchanged. ", "modifications":
+    ["Use the paper''s 4.35 mM sodium dihydrogen phosphate monohydrate (NaH2PO4.H2O),
+    not the parent''s dibasic sodium phosphate.", "Retain the paper-described Wolfe
+    vitamin/mineral stocks without claiming equivalence to the parent''s flattened
+    molar stock components.", "Use the batch formulation at pH 7.0 with 30 mM PIPES;
+    do not import the chemostat''s 3 mM PIPES, Fe(III)-NTA supplement or anaerobic
+    formulation."], "evidence": [{"reference": "doi:10.1371/journal.pcbi.1000822",
+    "supports": "SUPPORT", "snippet": "4.35 mM NaH2PO4•H2O", "explanation": "Supports
+    variants[].modifications phosphate identity and 4.35 mM amount only; main Methods/Bacterial
+    Strains and Growth Media. Separate exact stock excerpt=''10 ml each of 10× Wolfe''s
+    vitamin solution and 10× mineral solution''. Separate exact PIPES excerpt=''30
+    mM and 3 mM for batch and chemostat cultivation, respectively''; pH excerpt=''modified
+    M1 medium (pH 7.0)''. Figure S4, panel A: 18 mM lactate with ammonium chloride.
+    See the archived Figure S1 or S4 for assay substrate/nitrogen identity. The variant
+    denotes the source-described batch assay, not an exact normalized expansion of
+    all stock chemicals. The paper specifies Wolfe vitamin/mineral stock additions;
+    the imported parent instead flattens those stocks into molar amounts. Their equivalence
+    is not certified: Kieft''s submitted manuscript prints H3BO4 and multiple hydrate-specific
+    salts, while the parent contains boric acid and some anhydrous/generalized terms.
+    The original stock formula and final-volume basis remain unresolved at ingredient-normalization
+    level. Parent amounts, terms and generic preparation are unchanged. "}]}, "preserved_parent_amounts":
+    [{"field_path": "ingredients[0].concentration", "chemical": "Biotin", "concentration":
+    {"value": "8.1863e-05", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15956", "label":
+    "biotin"}, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[1].concentration", "chemical": "Nicotinate",
+    "concentration": {"value": "0.00040614", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:15940", "label": "nicotinic acid"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[2].concentration",
+    "chemical": "Riboflavin", "concentration": {"value": "0.00013285", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:17015", "label": "riboflavin"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[3].concentration", "chemical": "Thiamine", "concentration": {"value":
+    "0.00016622", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:18385", "label": "thiamine(1+)"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Folate",
+    "concentration": {"value": "4.531e-05", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:27470", "label": "folic acid"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "4-Aminobenzoate", "concentration": {"value": "0.0003645", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[6].concentration", "chemical": "Lipoate", "concentration": {"value":
+    "0.0002423", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16494", "label": "lipoic
+    acid"}, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[7].concentration", "chemical": "Pantothenate",
+    "concentration": {"value": "0.00022807", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:16454", "label": "pantothenate"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Lactate", "concentration": {"value": "18.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:24996", "label": "lactate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[9].concentration", "chemical": "Vitamin B12", "concentration": {"value":
+    "7.3781e-07", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:176843", "label": "vitamin
+    B12"}, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Magnesium
+    chloride", "concentration": {"value": "3.0", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[11].concentration", "chemical": "Calcium chloride anhydrous", "concentration":
+    {"value": "0.0068", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:3312", "label":
+    "calcium dichloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[12].concentration",
+    "chemical": "Boric acid", "concentration": {"value": "0.000808669", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[13].concentration", "chemical": "Dibasic sodium phosphate", "concentration":
+    {"value": "4.35", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label":
+    "disodium hydrogenphosphate"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[14].concentration",
+    "chemical": "Nitrilotriacetic acid", "concentration": {"value": "0.11196", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:44557", "label": "nitrilotriacetic acid"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[15].concentration", "chemical": "Sodium molybdate",
+    "concentration": {"value": "0.00437084", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[16].concentration", "chemical": "Sodium chloride", "concentration":
+    {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26710", "label":
+    "sodium chloride"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[17].concentration",
+    "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[18].concentration", "chemical": "Pyridoxine HCl", "concentration":
+    {"value": "0.00048626", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30961", "label":
+    "pyridoxine hydrochloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[19].concentration",
+    "chemical": "Ammonium chloride", "concentration": {"value": "28.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[20].concentration", "chemical": "Ferrous sulfate", "concentration":
+    {"value": "0.0107894", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75832", "label":
+    "iron(2+) sulfate (anhydrous)"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[21].concentration",
+    "chemical": "Cobalt chloride", "concentration": {"value": "0.0114981", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[22].concentration", "chemical": "Zinc sulfate", "concentration":
+    {"value": "0.0069558", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35176", "label":
+    "zinc sulfate"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[23].concentration",
+    "chemical": "Manganese chloride", "concentration": {"value": "0.0044829", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[24].concentration", "chemical": "Cupric chloride",
+    "concentration": {"value": "0.00175974", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[25].concentration",
+    "chemical": "Sodium selenate", "concentration": {"value": "0.001", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:77775", "label": "sodium selenate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[26].concentration", "chemical": "Aluminum potassium sulfate", "concentration":
+    {"value": "0.000105399", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86463",
+    "label": "potassium aluminium sulfate"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[27].concentration",
+    "chemical": "Sodium tungstate", "concentration": {"value": "0.000606318", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[28].concentration", "chemical": "Nickel Sulfate", "concentration":
+    {"value": "0.0041849", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[29].concentration", "chemical": "PIPES", "concentration": {"value":
+    "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Source-described inline amounts have DOI/snippet support; parent concentrations
+      are unchanged and not certified.
+    evidence_ids:
+    - pinchuk
+    - kieft
+    - s006
+    - s008
+    - s011
+    - s014
+    - claims
+  - name: formulation_match
+    value: source-described variant; not exact normalized formulation
+    definition: Unresolved stock forms, final-volume equivalence and manuscript differences
+      remain explicit.
+    evidence_ids:
+    - pinchuk
+    - kieft
+    - s006
+    - s008
+    - s011
+    - s014
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 30
+    unit: instances
+    denominator: 30
+    minimum: 0
+    maximum: 30
+    definition: Preservation only, not a verified-concentration count.
+- assessment_id: growth-007070
+  area: evidence
+  topic: Exact wild-type taxonomy and variant-only qualitative growth
+  outcome: supported
+  target_ids:
+  - CultureMech:007070
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - s006
+  - s008
+  - s011
+  - s014
+  - claims
+  - mr1
+  - ecoli
+  - readback
+  summary: One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal
+    to the exact variant name. Figure curves and captions were checked; no parent
+    growth, mutant pooling, host growth, rates or optima inferred.
+  details: '{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild
+    type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"},
+    "scoped_to_variant": "Pinchuk 2010 reported batch M1 with 18 mM lactate", "evidence":
+    [{"reference": "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT", "snippet":
+    "Growth dynamics of S. oneidensis MR-1 wild-type", "explanation": "Figure S4,
+    panel A: 18 mM lactate with ammonium chloride. The filled-circle wild-type growth
+    curves were visually inspected in the one-page source PDF. The common batch methods
+    specify 30 degrees C, with microplates for S1 or shaken crimp-sealed serum bottles
+    for S4. No maximum OD, rate, doubling time, well dilution or optimum is inferred.
+    Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586;
+    rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+    archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+    verifies the wild-type background, not an independent exact taxonomy identity
+    for every engineered derivative. Growth is supported only on the named source-described
+    inline variant, not on the unmodified imported parent. Unresolved chemical normalization
+    is retained in that variant; the source''s qualitative cultivation result is not
+    a certification of the flattened parent recipe. Current KGX export does not honor
+    scoped_to_variant; this curation is not authorization to publish an unscoped parent
+    edge."}]}'
+  dimensions:
+  - name: taxonomy_match
+    value: exact strain NCBITaxon:211586
+    definition: Verified canonical Shewanella oneidensis MR-1 node. Engineered derivatives
+      and E. coli hosts remain separately qualified in notes.
+    evidence_ids:
+    - mr1
+    - ecoli
+- assessment_id: export-007070
+  area: evidence
+  topic: Export preservation of variant-only scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007070
+  evidence_ids:
+  - exporter
+  - readback
+  summary: Native scope is explicit, but the current exporter would lose it. These
+    associations are not publication-ready; no generated output was produced.
+- assessment_id: citation-007071
+  area: evidence
+  topic: Publication identity, source archive and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007071
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - s006
+  - s008
+  - s011
+  - s014
+  - pubmed-20589080
+  - pubmed-10049886
+  - joins
+  - archives
+  - readback
+  summary: Two deduplicated DOI bibliography entries with PMID aliases, title, authors,
+    year, source type, discovery mode, locators and local raw/Markdown archives. Citation
+    does not certify the parent recipe.
+- assessment_id: variant-007071
+  area: evidence
+  topic: Source-described assay variant and its amount evidence
+  outcome: concern
+  target_ids:
+  - CultureMech:007071
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - s006
+  - s008
+  - s011
+  - s014
+  - claims
+  - plan
+  - readback
+  summary: A recognizable source-described assay is distinguished from the parent;
+    direct reported differences are supported, but exact chemical normalization and
+    source-version equivalence remain incomplete.
+  details: '{"variant": {"name": "Pinchuk 2010 reported batch M1 with lactate and
+    glycine nitrogen", "relationship": "SUBSTITUTED_COMPONENT_VARIANT", "description":
+    "Figure S4, panel B: 18 mM lactate with 10 mM glycine as sole nitrogen source,
+    no NH4Cl. The variant denotes the source-described batch assay, not an exact normalized
+    expansion of all stock chemicals. The paper specifies Wolfe vitamin/mineral stock
+    additions; the imported parent instead flattens those stocks into molar amounts.
+    Their equivalence is not certified: Kieft''s submitted manuscript prints H3BO4
+    and multiple hydrate-specific salts, while the parent contains boric acid and
+    some anhydrous/generalized terms. The original stock formula and final-volume
+    basis remain unresolved at ingredient-normalization level. Parent amounts, terms
+    and generic preparation are unchanged. ", "modifications": ["Use the paper''s
+    4.35 mM sodium dihydrogen phosphate monohydrate (NaH2PO4.H2O), not the parent''s
+    dibasic sodium phosphate.", "Retain the paper-described Wolfe vitamin/mineral
+    stocks without claiming equivalence to the parent''s flattened molar stock components.",
+    "Use the batch formulation at pH 7.0 with 30 mM PIPES; do not import the chemostat''s
+    3 mM PIPES, Fe(III)-NTA supplement or anaerobic formulation."], "evidence": [{"reference":
+    "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT", "snippet": "4.35 mM
+    NaH2PO4•H2O", "explanation": "Supports variants[].modifications phosphate identity
+    and 4.35 mM amount only; main Methods/Bacterial Strains and Growth Media. Separate
+    exact stock excerpt=''10 ml each of 10× Wolfe''s vitamin solution and 10× mineral
+    solution''. Separate exact PIPES excerpt=''30 mM and 3 mM for batch and chemostat
+    cultivation, respectively''; pH excerpt=''modified M1 medium (pH 7.0)''. Figure
+    S4, panel B: 18 mM lactate with 10 mM glycine as sole nitrogen source, no NH4Cl.
+    See the archived Figure S1 or S4 for assay substrate/nitrogen identity. The variant
+    denotes the source-described batch assay, not an exact normalized expansion of
+    all stock chemicals. The paper specifies Wolfe vitamin/mineral stock additions;
+    the imported parent instead flattens those stocks into molar amounts. Their equivalence
+    is not certified: Kieft''s submitted manuscript prints H3BO4 and multiple hydrate-specific
+    salts, while the parent contains boric acid and some anhydrous/generalized terms.
+    The original stock formula and final-volume basis remain unresolved at ingredient-normalization
+    level. Parent amounts, terms and generic preparation are unchanged. "}]}, "preserved_parent_amounts":
+    [{"field_path": "ingredients[0].concentration", "chemical": "Glycine", "concentration":
+    {"value": "10.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15428", "label":
+    "glycine"}, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[1].concentration", "chemical": "Biotin",
+    "concentration": {"value": "8.1863e-05", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:15956", "label": "biotin"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[2].concentration",
+    "chemical": "Nicotinate", "concentration": {"value": "0.00040614", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:15940", "label": "nicotinic acid"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[3].concentration", "chemical": "Riboflavin", "concentration": {"value":
+    "0.00013285", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17015", "label": "riboflavin"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Thiamine",
+    "concentration": {"value": "0.00016622", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:18385", "label": "thiamine(1+)"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Folate", "concentration": {"value": "4.531e-05", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:27470", "label": "folic acid"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[6].concentration", "chemical": "4-Aminobenzoate", "concentration":
+    {"value": "0.0003645", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17836", "label":
+    "4-aminobenzoate"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[7].concentration", "chemical":
+    "Lipoate", "concentration": {"value": "0.0002423", "unit": "MILLIMOLAR"}, "term":
+    {"id": "CHEBI:16494", "label": "lipoic acid"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Pantothenate", "concentration": {"value": "0.00022807", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:16454", "label": "pantothenate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[9].concentration", "chemical": "Lactate", "concentration": {"value":
+    "18.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:24996", "label": "lactate"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Vitamin
+    B12", "concentration": {"value": "7.3781e-07", "unit": "MILLIMOLAR"}, "term":
+    {"id": "CHEBI:176843", "label": "vitamin B12"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[11].concentration",
+    "chemical": "Magnesium chloride", "concentration": {"value": "3.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[12].concentration", "chemical": "Calcium chloride anhydrous", "concentration":
+    {"value": "0.0068", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:3312", "label":
+    "calcium dichloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[13].concentration",
+    "chemical": "Boric acid", "concentration": {"value": "0.000808669", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[14].concentration", "chemical": "Dibasic sodium phosphate", "concentration":
+    {"value": "4.35", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label":
+    "disodium hydrogenphosphate"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[15].concentration",
+    "chemical": "Nitrilotriacetic acid", "concentration": {"value": "0.11196", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:44557", "label": "nitrilotriacetic acid"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[16].concentration", "chemical": "Sodium molybdate",
+    "concentration": {"value": "0.00437084", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[17].concentration", "chemical": "Sodium chloride", "concentration":
+    {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26710", "label":
+    "sodium chloride"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[18].concentration",
+    "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[19].concentration", "chemical": "Pyridoxine HCl", "concentration":
+    {"value": "0.00048626", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30961", "label":
+    "pyridoxine hydrochloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[20].concentration",
+    "chemical": "Ferrous sulfate", "concentration": {"value": "0.0107894", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[21].concentration", "chemical": "Cobalt chloride",
+    "concentration": {"value": "0.0114981", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:35696", "label": "cobalt dichloride"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[22].concentration",
+    "chemical": "Zinc sulfate", "concentration": {"value": "0.0069558", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[23].concentration", "chemical": "Manganese chloride", "concentration":
+    {"value": "0.0044829", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label":
+    "manganese(II) chloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[24].concentration",
+    "chemical": "Cupric chloride", "concentration": {"value": "0.00175974", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[25].concentration", "chemical": "Sodium selenate",
+    "concentration": {"value": "0.001", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:77775",
+    "label": "sodium selenate"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[26].concentration",
+    "chemical": "Aluminum potassium sulfate", "concentration": {"value": "0.000105399",
+    "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86463", "label": "potassium aluminium
+    sulfate"}, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[27].concentration", "chemical": "Sodium tungstate",
+    "concentration": {"value": "0.000606318", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:63940", "label": "sodium tungstate"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[28].concentration",
+    "chemical": "Nickel Sulfate", "concentration": {"value": "0.0041849", "unit":
+    "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[29].concentration",
+    "chemical": "PIPES", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:39033", "label": "PIPES"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Source-described inline amounts have DOI/snippet support; parent concentrations
+      are unchanged and not certified.
+    evidence_ids:
+    - pinchuk
+    - kieft
+    - s006
+    - s008
+    - s011
+    - s014
+    - claims
+  - name: formulation_match
+    value: source-described variant; not exact normalized formulation
+    definition: Unresolved stock forms, final-volume equivalence and manuscript differences
+      remain explicit.
+    evidence_ids:
+    - pinchuk
+    - kieft
+    - s006
+    - s008
+    - s011
+    - s014
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 30
+    unit: instances
+    denominator: 30
+    minimum: 0
+    maximum: 30
+    definition: Preservation only, not a verified-concentration count.
+- assessment_id: growth-007071
+  area: evidence
+  topic: Exact wild-type taxonomy and variant-only qualitative growth
+  outcome: supported
+  target_ids:
+  - CultureMech:007071
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - s006
+  - s008
+  - s011
+  - s014
+  - claims
+  - mr1
+  - ecoli
+  - readback
+  summary: One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal
+    to the exact variant name. Figure curves and captions were checked; no parent
+    growth, mutant pooling, host growth, rates or optima inferred.
+  details: '{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild
+    type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"},
+    "scoped_to_variant": "Pinchuk 2010 reported batch M1 with lactate and glycine
+    nitrogen", "evidence": [{"reference": "doi:10.1371/journal.pcbi.1000822", "supports":
+    "SUPPORT", "snippet": "Growth dynamics of S. oneidensis MR-1 wild-type", "explanation":
+    "Figure S4, panel B: 18 mM lactate with 10 mM glycine as sole nitrogen source,
+    no NH4Cl. The filled-circle wild-type growth curves were visually inspected in
+    the one-page source PDF. The common batch methods specify 30 degrees C, with microplates
+    for S1 or shaken crimp-sealed serum bottles for S4. No maximum OD, rate, doubling
+    time, well dilution or optimum is inferred. Scientific name and canonical label=Shewanella
+    oneidensis MR-1; NCBITaxon:211586; rank=strain; taxonomy_match=exact; ATCC 700550
+    is an NCBI equivalent name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+    archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+    verifies the wild-type background, not an independent exact taxonomy identity
+    for every engineered derivative. Growth is supported only on the named source-described
+    inline variant, not on the unmodified imported parent. Unresolved chemical normalization
+    is retained in that variant; the source''s qualitative cultivation result is not
+    a certification of the flattened parent recipe. Current KGX export does not honor
+    scoped_to_variant; this curation is not authorization to publish an unscoped parent
+    edge."}]}'
+  dimensions:
+  - name: taxonomy_match
+    value: exact strain NCBITaxon:211586
+    definition: Verified canonical Shewanella oneidensis MR-1 node. Engineered derivatives
+      and E. coli hosts remain separately qualified in notes.
+    evidence_ids:
+    - mr1
+    - ecoli
+- assessment_id: export-007071
+  area: evidence
+  topic: Export preservation of variant-only scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007071
+  evidence_ids:
+  - exporter
+  - readback
+  summary: Native scope is explicit, but the current exporter would lose it. These
+    associations are not publication-ready; no generated output was produced.
+- assessment_id: citation-007072
+  area: evidence
+  topic: Publication identity, source archive and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007072
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - s006
+  - s008
+  - s011
+  - s014
+  - pubmed-20589080
+  - pubmed-10049886
+  - joins
+  - archives
+  - readback
+  summary: Two deduplicated DOI bibliography entries with PMID aliases, title, authors,
+    year, source type, discovery mode, locators and local raw/Markdown archives. Citation
+    does not certify the parent recipe.
+- assessment_id: variant-007072
+  area: evidence
+  topic: Source-described assay variant and its amount evidence
+  outcome: concern
+  target_ids:
+  - CultureMech:007072
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - s006
+  - s008
+  - s011
+  - s014
+  - claims
+  - plan
+  - readback
+  summary: A recognizable source-described assay is distinguished from the parent;
+    direct reported differences are supported, but exact chemical normalization and
+    source-version equivalence remain incomplete.
+  details: '{"variant": {"name": "Pinchuk 2010 reported batch M1 with acetate", "relationship":
+    "SUBSTITUTED_COMPONENT_VARIANT", "description": "Figure S4, panel C: 45 mM acetate
+    with ammonium chloride. The variant denotes the source-described batch assay,
+    not an exact normalized expansion of all stock chemicals. The paper specifies
+    Wolfe vitamin/mineral stock additions; the imported parent instead flattens those
+    stocks into molar amounts. Their equivalence is not certified: Kieft''s submitted
+    manuscript prints H3BO4 and multiple hydrate-specific salts, while the parent
+    contains boric acid and some anhydrous/generalized terms. The original stock formula
+    and final-volume basis remain unresolved at ingredient-normalization level. Parent
+    amounts, terms and generic preparation are unchanged. ", "modifications": ["Use
+    the paper''s 4.35 mM sodium dihydrogen phosphate monohydrate (NaH2PO4.H2O), not
+    the parent''s dibasic sodium phosphate.", "Retain the paper-described Wolfe vitamin/mineral
+    stocks without claiming equivalence to the parent''s flattened molar stock components.",
+    "Use the batch formulation at pH 7.0 with 30 mM PIPES; do not import the chemostat''s
+    3 mM PIPES, Fe(III)-NTA supplement or anaerobic formulation."], "evidence": [{"reference":
+    "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT", "snippet": "4.35 mM
+    NaH2PO4•H2O", "explanation": "Supports variants[].modifications phosphate identity
+    and 4.35 mM amount only; main Methods/Bacterial Strains and Growth Media. Separate
+    exact stock excerpt=''10 ml each of 10× Wolfe''s vitamin solution and 10× mineral
+    solution''. Separate exact PIPES excerpt=''30 mM and 3 mM for batch and chemostat
+    cultivation, respectively''; pH excerpt=''modified M1 medium (pH 7.0)''. Figure
+    S4, panel C: 45 mM acetate with ammonium chloride. See the archived Figure S1
+    or S4 for assay substrate/nitrogen identity. The variant denotes the source-described
+    batch assay, not an exact normalized expansion of all stock chemicals. The paper
+    specifies Wolfe vitamin/mineral stock additions; the imported parent instead flattens
+    those stocks into molar amounts. Their equivalence is not certified: Kieft''s
+    submitted manuscript prints H3BO4 and multiple hydrate-specific salts, while the
+    parent contains boric acid and some anhydrous/generalized terms. The original
+    stock formula and final-volume basis remain unresolved at ingredient-normalization
+    level. Parent amounts, terms and generic preparation are unchanged. "}]}, "preserved_parent_amounts":
+    [{"field_path": "ingredients[0].concentration", "chemical": "Acetate", "concentration":
+    {"value": "45.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30089", "label":
+    "acetate"}, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[1].concentration", "chemical": "Biotin",
+    "concentration": {"value": "8.1863e-05", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:15956", "label": "biotin"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[2].concentration",
+    "chemical": "Nicotinate", "concentration": {"value": "0.00040614", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:15940", "label": "nicotinic acid"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[3].concentration", "chemical": "Riboflavin", "concentration": {"value":
+    "0.00013285", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17015", "label": "riboflavin"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Thiamine",
+    "concentration": {"value": "0.00016622", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:18385", "label": "thiamine(1+)"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Folate", "concentration": {"value": "4.531e-05", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:27470", "label": "folic acid"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[6].concentration", "chemical": "4-Aminobenzoate", "concentration":
+    {"value": "0.0003645", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17836", "label":
+    "4-aminobenzoate"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[7].concentration", "chemical":
+    "Lipoate", "concentration": {"value": "0.0002423", "unit": "MILLIMOLAR"}, "term":
+    {"id": "CHEBI:16494", "label": "lipoic acid"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Pantothenate", "concentration": {"value": "0.00022807", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:16454", "label": "pantothenate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[9].concentration", "chemical": "Vitamin B12", "concentration": {"value":
+    "7.3781e-07", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:176843", "label": "vitamin
+    B12"}, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Magnesium
+    chloride", "concentration": {"value": "3.0", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[11].concentration", "chemical": "Calcium chloride anhydrous", "concentration":
+    {"value": "0.0068", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:3312", "label":
+    "calcium dichloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[12].concentration",
+    "chemical": "Boric acid", "concentration": {"value": "0.000808669", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[13].concentration", "chemical": "Dibasic sodium phosphate", "concentration":
+    {"value": "4.35", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label":
+    "disodium hydrogenphosphate"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[14].concentration",
+    "chemical": "Nitrilotriacetic acid", "concentration": {"value": "0.11196", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:44557", "label": "nitrilotriacetic acid"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[15].concentration", "chemical": "Sodium molybdate",
+    "concentration": {"value": "0.00437084", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[16].concentration", "chemical": "Sodium chloride", "concentration":
+    {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26710", "label":
+    "sodium chloride"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[17].concentration",
+    "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[18].concentration", "chemical": "Pyridoxine HCl", "concentration":
+    {"value": "0.00048626", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30961", "label":
+    "pyridoxine hydrochloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[19].concentration",
+    "chemical": "Ammonium chloride", "concentration": {"value": "28.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[20].concentration", "chemical": "Ferrous sulfate", "concentration":
+    {"value": "0.0107894", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75832", "label":
+    "iron(2+) sulfate (anhydrous)"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[21].concentration",
+    "chemical": "Cobalt chloride", "concentration": {"value": "0.0114981", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[22].concentration", "chemical": "Zinc sulfate", "concentration":
+    {"value": "0.0069558", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35176", "label":
+    "zinc sulfate"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[23].concentration",
+    "chemical": "Manganese chloride", "concentration": {"value": "0.0044829", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[24].concentration", "chemical": "Cupric chloride",
+    "concentration": {"value": "0.00175974", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[25].concentration",
+    "chemical": "Sodium selenate", "concentration": {"value": "0.001", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:77775", "label": "sodium selenate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[26].concentration", "chemical": "Aluminum potassium sulfate", "concentration":
+    {"value": "0.000105399", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86463",
+    "label": "potassium aluminium sulfate"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[27].concentration",
+    "chemical": "Sodium tungstate", "concentration": {"value": "0.000606318", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[28].concentration", "chemical": "Nickel Sulfate", "concentration":
+    {"value": "0.0041849", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[29].concentration", "chemical": "PIPES", "concentration": {"value":
+    "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Source-described inline amounts have DOI/snippet support; parent concentrations
+      are unchanged and not certified.
+    evidence_ids:
+    - pinchuk
+    - kieft
+    - s006
+    - s008
+    - s011
+    - s014
+    - claims
+  - name: formulation_match
+    value: source-described variant; not exact normalized formulation
+    definition: Unresolved stock forms, final-volume equivalence and manuscript differences
+      remain explicit.
+    evidence_ids:
+    - pinchuk
+    - kieft
+    - s006
+    - s008
+    - s011
+    - s014
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 30
+    unit: instances
+    denominator: 30
+    minimum: 0
+    maximum: 30
+    definition: Preservation only, not a verified-concentration count.
+- assessment_id: growth-007072
+  area: evidence
+  topic: Exact wild-type taxonomy and variant-only qualitative growth
+  outcome: supported
+  target_ids:
+  - CultureMech:007072
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - s006
+  - s008
+  - s011
+  - s014
+  - claims
+  - mr1
+  - ecoli
+  - readback
+  summary: One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal
+    to the exact variant name. Figure curves and captions were checked; no parent
+    growth, mutant pooling, host growth, rates or optima inferred.
+  details: '{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild
+    type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"},
+    "scoped_to_variant": "Pinchuk 2010 reported batch M1 with acetate", "evidence":
+    [{"reference": "doi:10.1371/journal.pcbi.1000822", "supports": "SUPPORT", "snippet":
+    "Growth dynamics of S. oneidensis MR-1 wild-type", "explanation": "Figure S4,
+    panel C: 45 mM acetate with ammonium chloride. The filled-circle wild-type growth
+    curves were visually inspected in the one-page source PDF. The common batch methods
+    specify 30 degrees C, with microplates for S1 or shaken crimp-sealed serum bottles
+    for S4. No maximum OD, rate, doubling time, well dilution or optimum is inferred.
+    Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586;
+    rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+    archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+    verifies the wild-type background, not an independent exact taxonomy identity
+    for every engineered derivative. Growth is supported only on the named source-described
+    inline variant, not on the unmodified imported parent. Unresolved chemical normalization
+    is retained in that variant; the source''s qualitative cultivation result is not
+    a certification of the flattened parent recipe. Current KGX export does not honor
+    scoped_to_variant; this curation is not authorization to publish an unscoped parent
+    edge."}]}'
+  dimensions:
+  - name: taxonomy_match
+    value: exact strain NCBITaxon:211586
+    definition: Verified canonical Shewanella oneidensis MR-1 node. Engineered derivatives
+      and E. coli hosts remain separately qualified in notes.
+    evidence_ids:
+    - mr1
+    - ecoli
+- assessment_id: export-007072
+  area: evidence
+  topic: Export preservation of variant-only scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007072
+  evidence_ids:
+  - exporter
+  - readback
+  summary: Native scope is explicit, but the current exporter would lose it. These
+    associations are not publication-ready; no generated output was produced.
+- assessment_id: citation-007073
+  area: evidence
+  topic: Publication identity, source archive and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007073
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - pubmed-19610125
+  - pubmed-16732598
+  - joins
+  - archives
+  - readback
+  summary: Two deduplicated DOI bibliography entries with PMID aliases, title, authors,
+    year, source type, discovery mode, locators and local raw/Markdown archives. Citation
+    does not certify the parent recipe.
+- assessment_id: variant-007073
+  area: evidence
+  topic: Source-described assay variant and its amount evidence
+  outcome: concern
+  target_ids:
+  - CultureMech:007073
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - claims
+  - plan
+  - readback
+  summary: A recognizable source-described assay is distinguished from the parent;
+    direct reported differences are supported, but exact chemical normalization and
+    source-version equivalence remain incomplete.
+  details: '{"variant": {"name": "Tang 2009 manuscript 20 mM PIPES tracer medium",
+    "relationship": "DERIVED_FROM", "description": "Figure 1: no NaCl stress supplement;
+    no amino-acid supplement. Source version=OSTI author manuscript with visible red
+    revisions; final typeset body was not obtained. This variant represents the reported
+    assay at the stated protocol level, not a completely normalized chemical recipe.
+    Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES and different
+    lactate doses, with antifoam and hydrate-specific trace salts. The 2009 explicit
+    overrides take precedence; transfer of antifoam and exact trace/hydrate equivalence
+    remain unverified. The parent''s generic filtration step is not newly certified.
+    ", "modifications": ["Use 20 mM PIPES at pH 7 instead of the parent''s 10 mM PIPES.",
+    "Use the source''s 30 mM [3-13C] sodium L-lactate (98% as reported), rather than
+    silently treating unlabelled sodium L-lactate as the tracer substrate."], "evidence":
+    [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet": "pH=7,
+    buffered with 20mM PIPES", "explanation": "Supports variants[].modifications PIPES
+    amount and pH; OSTI manuscript PDF page 4, culture conditions, visually checked.
+    The same paragraph identifies [3-13C] sodium L-lactate and gives the exact dose
+    token ''30mM''. This is the paper-described tracer assay, not a correction to
+    parent ingredients. Figure 1: no NaCl stress supplement; no amino-acid supplement.
+    Source version=OSTI author manuscript with visible red revisions; final typeset
+    body was not obtained. This variant represents the reported assay at the stated
+    protocol level, not a completely normalized chemical recipe. Reference 19 (Tang
+    2006) was inspected: its base uses 10 mM PIPES and different lactate doses, with
+    antifoam and hydrate-specific trace salts. The 2009 explicit overrides take precedence;
+    transfer of antifoam and exact trace/hydrate equivalence remain unverified. The
+    parent''s generic filtration step is not newly certified. "}]}, "preserved_parent_amounts":
+    [{"field_path": "ingredients[0].concentration", "chemical": "Magnesium chloride",
+    "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86345",
+    "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[1].concentration",
+    "chemical": "Boric acid", "concentration": {"value": "0.0032346", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[2].concentration", "chemical": "Sodium sulfate", "concentration":
+    {"value": "1.5", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32149", "label":
+    "sodium sulfate"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[3].concentration", "chemical":
+    "Dibasic sodium phosphate", "concentration": {"value": "4.4", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[4].concentration", "chemical": "Sodium molybdate", "concentration":
+    {"value": "0.0017986", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75215", "label":
+    "sodium molybdate (anhydrous)"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[6].concentration", "chemical": "Ammonium chloride", "concentration":
+    {"value": "28.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:31206", "label":
+    "ammonium chloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[7].concentration",
+    "chemical": "Cobalt chloride", "concentration": {"value": "0.014858", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[8].concentration", "chemical": "Manganese chloride", "concentration":
+    {"value": "0.0224145", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label":
+    "manganese(II) chloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[9].concentration",
+    "chemical": "Cupric chloride", "concentration": {"value": "0.000117316", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Sodium selenite",
+    "concentration": {"value": "0.000228102", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:48843", "label": "disodium selenite"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[11].concentration",
+    "chemical": "Zinc Chloride", "concentration": {"value": "0.0146718", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:49976", "label": "zinc dichloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[12].concentration", "chemical": "Ferrous chloride", "concentration":
+    {"value": "0.0502992", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30812", "label":
+    "iron dichloride"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[13].concentration",
+    "chemical": "Sodium tungstate", "concentration": {"value": "0.000242527", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[14].concentration", "chemical": "Nickel Sulfate", "concentration":
+    {"value": "0.0038044", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[15].concentration", "chemical": "PIPES", "concentration": {"value":
+    "10.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[16].concentration", "chemical": "Sodium L-lactate",
+    "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:232798",
+    "label": "sodium L-lactate"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Source-described inline amounts have DOI/snippet support; parent concentrations
+      are unchanged and not certified.
+    evidence_ids:
+    - tang2009
+    - tang2006
+    - claims
+  - name: formulation_match
+    value: source-described variant; not exact normalized formulation
+    definition: Unresolved stock forms, final-volume equivalence and manuscript differences
+      remain explicit.
+    evidence_ids:
+    - tang2009
+    - tang2006
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 17
+    unit: instances
+    denominator: 17
+    minimum: 0
+    maximum: 17
+    definition: Preservation only, not a verified-concentration count.
+- assessment_id: growth-007073
+  area: evidence
+  topic: Exact wild-type taxonomy and variant-only qualitative growth
+  outcome: supported
+  target_ids:
+  - CultureMech:007073
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - claims
+  - mr1
+  - ecoli
+  - readback
+  summary: One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal
+    to the exact variant name. Figure curves and captions were checked; no parent
+    growth, mutant pooling, host growth, rates or optima inferred.
+  details: '{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild
+    type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"},
+    "scoped_to_variant": "Tang 2009 manuscript 20 mM PIPES tracer medium", "evidence":
+    [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet": "Growth
+    kinetics of Shewanella oneidensis MR-1", "explanation": "Figure 1: no NaCl stress
+    supplement; no amino-acid supplement. Figure 1 caption on PDF page 13 identifies
+    four treatments; the plot on page 15 shows increasing dry biomass for each. The
+    matched curve is open diamonds. Methods on page 4 specify duplicate cultures (n=2),
+    12 mL glass-tube cultures at 30 degrees C and 200 rpm. The amino-acid-plus-salt
+    treatment is supported by Figure 1 and page 8 even though the abstract lists only
+    three conditions. No approximate doubling time is converted into an exact database
+    rate. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586;
+    rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+    archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+    verifies the wild-type background, not an independent exact taxonomy identity
+    for every engineered derivative. Growth is supported only on the named source-described
+    inline variant, not on the unmodified imported parent. Unresolved chemical normalization
+    is retained in that variant; the source''s qualitative cultivation result is not
+    a certification of the flattened parent recipe. Current KGX export does not honor
+    scoped_to_variant; this curation is not authorization to publish an unscoped parent
+    edge."}]}'
+  dimensions:
+  - name: taxonomy_match
+    value: exact strain NCBITaxon:211586
+    definition: Verified canonical Shewanella oneidensis MR-1 node. Engineered derivatives
+      and E. coli hosts remain separately qualified in notes.
+    evidence_ids:
+    - mr1
+    - ecoli
+- assessment_id: export-007073
+  area: evidence
+  topic: Export preservation of variant-only scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007073
+  evidence_ids:
+  - exporter
+  - readback
+  summary: Native scope is explicit, but the current exporter would lose it. These
+    associations are not publication-ready; no generated output was produced.
+- assessment_id: citation-007074
+  area: evidence
+  topic: Publication identity, source archive and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007074
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - pubmed-19610125
+  - pubmed-16732598
+  - joins
+  - archives
+  - readback
+  summary: Two deduplicated DOI bibliography entries with PMID aliases, title, authors,
+    year, source type, discovery mode, locators and local raw/Markdown archives. Citation
+    does not certify the parent recipe.
+- assessment_id: variant-007074
+  area: evidence
+  topic: Source-described assay variant and its amount evidence
+  outcome: concern
+  target_ids:
+  - CultureMech:007074
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - claims
+  - plan
+  - readback
+  summary: A recognizable source-described assay is distinguished from the parent;
+    direct reported differences are supported, but exact chemical normalization and
+    source-version equivalence remain incomplete.
+  details: '{"variant": {"name": "Tang 2009 manuscript 20 mM PIPES tracer medium with
+    salt", "relationship": "DERIVED_FROM", "description": "Figure 1: 330 mM added
+    NaCl; no amino-acid supplement. Source version=OSTI author manuscript with visible
+    red revisions; final typeset body was not obtained. This variant represents the
+    reported assay at the stated protocol level, not a completely normalized chemical
+    recipe. Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES and
+    different lactate doses, with antifoam and hydrate-specific trace salts. The 2009
+    explicit overrides take precedence; transfer of antifoam and exact trace/hydrate
+    equivalence remain unverified. The parent''s generic filtration step is not newly
+    certified. ", "modifications": ["Use 20 mM PIPES at pH 7 instead of the parent''s
+    10 mM PIPES.", "Use the source''s 30 mM [3-13C] sodium L-lactate (98% as reported),
+    rather than silently treating unlabelled sodium L-lactate as the tracer substrate."],
+    "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet":
+    "pH=7, buffered with 20mM PIPES", "explanation": "Supports variants[].modifications
+    PIPES amount and pH; OSTI manuscript PDF page 4, culture conditions, visually
+    checked. The same paragraph identifies [3-13C] sodium L-lactate and gives the
+    exact dose token ''30mM''. This is the paper-described tracer assay, not a correction
+    to parent ingredients. Figure 1: 330 mM added NaCl; no amino-acid supplement.
+    Separate exact salt excerpt=''330 mM NaCl was added to the medium.''. Source version=OSTI
+    author manuscript with visible red revisions; final typeset body was not obtained.
+    This variant represents the reported assay at the stated protocol level, not a
+    completely normalized chemical recipe. Reference 19 (Tang 2006) was inspected:
+    its base uses 10 mM PIPES and different lactate doses, with antifoam and hydrate-specific
+    trace salts. The 2009 explicit overrides take precedence; transfer of antifoam
+    and exact trace/hydrate equivalence remain unverified. The parent''s generic filtration
+    step is not newly certified. "}]}, "preserved_parent_amounts": [{"field_path":
+    "ingredients[0].concentration", "chemical": "Magnesium chloride", "concentration":
+    {"value": "1.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:86345", "label":
+    "magnesium dichloride hexahydrate"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[1].concentration",
+    "chemical": "Boric acid", "concentration": {"value": "0.0032346", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:33118", "label": "boric acid"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[2].concentration", "chemical": "Sodium sulfate", "concentration":
+    {"value": "1.5", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32149", "label":
+    "sodium sulfate"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[3].concentration", "chemical":
+    "Dibasic sodium phosphate", "concentration": {"value": "4.4", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[4].concentration", "chemical": "Sodium molybdate", "concentration":
+    {"value": "0.0017986", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:75215", "label":
+    "sodium molybdate (anhydrous)"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Sodium chloride", "concentration": {"value": "330.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[6].concentration", "chemical": "Potassium chloride", "concentration":
+    {"value": "1.34", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32588", "label":
+    "potassium chloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[7].concentration",
+    "chemical": "Ammonium chloride", "concentration": {"value": "28.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[8].concentration", "chemical": "Cobalt chloride", "concentration":
+    {"value": "0.014858", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label":
+    "cobalt dichloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[9].concentration",
+    "chemical": "Manganese chloride", "concentration": {"value": "0.0224145", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Cupric chloride",
+    "concentration": {"value": "0.000117316", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[11].concentration",
+    "chemical": "Sodium selenite", "concentration": {"value": "0.000228102", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:48843", "label": "disodium selenite"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[12].concentration", "chemical": "Zinc Chloride", "concentration":
+    {"value": "0.0146718", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49976", "label":
+    "zinc dichloride"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[13].concentration",
+    "chemical": "Ferrous chloride", "concentration": {"value": "0.0502992", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:30812", "label": "iron dichloride"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[14].concentration", "chemical": "Sodium tungstate", "concentration":
+    {"value": "0.000242527", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63940",
+    "label": "sodium tungstate"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[15].concentration",
+    "chemical": "Nickel Sulfate", "concentration": {"value": "0.0038044", "unit":
+    "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[16].concentration",
+    "chemical": "PIPES", "concentration": {"value": "10.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:39033", "label": "PIPES"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[17].concentration",
+    "chemical": "Sodium L-lactate", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:232798", "label": "sodium L-lactate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Source-described inline amounts have DOI/snippet support; parent concentrations
+      are unchanged and not certified.
+    evidence_ids:
+    - tang2009
+    - tang2006
+    - claims
+  - name: formulation_match
+    value: source-described variant; not exact normalized formulation
+    definition: Unresolved stock forms, final-volume equivalence and manuscript differences
+      remain explicit.
+    evidence_ids:
+    - tang2009
+    - tang2006
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 18
+    unit: instances
+    denominator: 18
+    minimum: 0
+    maximum: 18
+    definition: Preservation only, not a verified-concentration count.
+- assessment_id: growth-007074
+  area: evidence
+  topic: Exact wild-type taxonomy and variant-only qualitative growth
+  outcome: supported
+  target_ids:
+  - CultureMech:007074
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - claims
+  - mr1
+  - ecoli
+  - readback
+  summary: One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal
+    to the exact variant name. Figure curves and captions were checked; no parent
+    growth, mutant pooling, host growth, rates or optima inferred.
+  details: '{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild
+    type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"},
+    "scoped_to_variant": "Tang 2009 manuscript 20 mM PIPES tracer medium with salt",
+    "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet":
+    "Growth kinetics of Shewanella oneidensis MR-1", "explanation": "Figure 1: 330
+    mM added NaCl; no amino-acid supplement. Figure 1 caption on PDF page 13 identifies
+    four treatments; the plot on page 15 shows increasing dry biomass for each. The
+    matched curve is open squares. Methods on page 4 specify duplicate cultures (n=2),
+    12 mL glass-tube cultures at 30 degrees C and 200 rpm. The amino-acid-plus-salt
+    treatment is supported by Figure 1 and page 8 even though the abstract lists only
+    three conditions. No approximate doubling time is converted into an exact database
+    rate. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586;
+    rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+    archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+    verifies the wild-type background, not an independent exact taxonomy identity
+    for every engineered derivative. Growth is supported only on the named source-described
+    inline variant, not on the unmodified imported parent. Unresolved chemical normalization
+    is retained in that variant; the source''s qualitative cultivation result is not
+    a certification of the flattened parent recipe. Current KGX export does not honor
+    scoped_to_variant; this curation is not authorization to publish an unscoped parent
+    edge."}]}'
+  dimensions:
+  - name: taxonomy_match
+    value: exact strain NCBITaxon:211586
+    definition: Verified canonical Shewanella oneidensis MR-1 node. Engineered derivatives
+      and E. coli hosts remain separately qualified in notes.
+    evidence_ids:
+    - mr1
+    - ecoli
+- assessment_id: export-007074
+  area: evidence
+  topic: Export preservation of variant-only scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007074
+  evidence_ids:
+  - exporter
+  - readback
+  summary: Native scope is explicit, but the current exporter would lose it. These
+    associations are not publication-ready; no generated output was produced.
+- assessment_id: citation-007075
+  area: evidence
+  topic: Publication identity, source archive and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007075
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - pubmed-19610125
+  - pubmed-16732598
+  - joins
+  - archives
+  - readback
+  summary: Two deduplicated DOI bibliography entries with PMID aliases, title, authors,
+    year, source type, discovery mode, locators and local raw/Markdown archives. Citation
+    does not certify the parent recipe.
+- assessment_id: variant-007075
+  area: evidence
+  topic: Source-described assay variant and its amount evidence
+  outcome: concern
+  target_ids:
+  - CultureMech:007075
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - claims
+  - plan
+  - readback
+  summary: A recognizable source-described assay is distinguished from the parent;
+    direct reported differences are supported, but exact chemical normalization and
+    source-version equivalence remain incomplete.
+  details: '{"variant": {"name": "Tang 2009 manuscript 20 mM PIPES tracer medium with
+    amino acids", "relationship": "DERIVED_FROM", "description": "Figure 1: no NaCl
+    stress supplement; 17-amino-acid supplement. Source version=OSTI author manuscript
+    with visible red revisions; final typeset body was not obtained. This variant
+    represents the reported assay at the stated protocol level, not a completely normalized
+    chemical recipe. Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES
+    and different lactate doses, with antifoam and hydrate-specific trace salts. The
+    2009 explicit overrides take precedence; transfer of antifoam and exact trace/hydrate
+    equivalence remain unverified. The parent''s generic filtration step is not newly
+    certified. ", "modifications": ["Use 20 mM PIPES at pH 7 instead of the parent''s
+    10 mM PIPES.", "Use the source''s 30 mM [3-13C] sodium L-lactate (98% as reported),
+    rather than silently treating unlabelled sodium L-lactate as the tracer substrate.",
+    "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan,
+    glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine
+    and other stereochemical terms are not certified by this generic mixture description."],
+    "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet":
+    "pH=7, buffered with 20mM PIPES", "explanation": "Supports variants[].modifications
+    PIPES amount and pH; OSTI manuscript PDF page 4, culture conditions, visually
+    checked. The same paragraph identifies [3-13C] sodium L-lactate and gives the
+    exact dose token ''30mM''. This is the paper-described tracer assay, not a correction
+    to parent ingredients. Figure 1: no NaCl stress supplement; 17-amino-acid supplement.
+    Separate exact amino-acid excerpt=''a final concentration of 25 µM for each amino
+    acid''. 25 micromolar equals 0.025 mM, but no parent amount or stereochemical
+    identity is newly certified. Source version=OSTI author manuscript with visible
+    red revisions; final typeset body was not obtained. This variant represents the
+    reported assay at the stated protocol level, not a completely normalized chemical
+    recipe. Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES and
+    different lactate doses, with antifoam and hydrate-specific trace salts. The 2009
+    explicit overrides take precedence; transfer of antifoam and exact trace/hydrate
+    equivalence remain unverified. The parent''s generic filtration step is not newly
+    certified. "}]}, "preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "L-Glutamate", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:16015", "label": "L-glutamic acid"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[1].concentration", "chemical": "Glycine", "concentration": {"value":
+    "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15428", "label": "glycine"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[2].concentration", "chemical": "L-Methionine",
+    "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16643",
+    "label": "L-methionine"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[3].concentration",
+    "chemical": "DL-Serine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"},
+    "term": null, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Cysteine",
+    "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15356",
+    "label": "cysteine"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Histidine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:27570", "label": "histidine"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[6].concentration", "chemical": "Alanine", "concentration": {"value":
+    "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16977", "label": "L-alanine"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[7].concentration", "chemical": "DL-Tyrosine",
+    "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:18186",
+    "label": "tyrosine"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Phenylalanine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:17295", "label": "L-phenylalanine"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[9].concentration", "chemical": "Arginine", "concentration": {"value":
+    "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:29016", "label": "arginine"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Magnesium
+    chloride", "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[11].concentration", "chemical": "Boric acid", "concentration": {"value":
+    "0.0032346", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:33118", "label": "boric
+    acid"}, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[12].concentration", "chemical": "Sodium sulfate",
+    "concentration": {"value": "1.5", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32149",
+    "label": "sodium sulfate"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[13].concentration",
+    "chemical": "Dibasic sodium phosphate", "concentration": {"value": "4.4", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[14].concentration", "chemical": "Sodium molybdate",
+    "concentration": {"value": "0.0017986", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[15].concentration", "chemical": "Aspartate", "concentration": {"value":
+    "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:29995", "label": "aspartate(2-)"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[16].concentration", "chemical": "Isoleucine",
+    "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17191",
+    "label": "L-isoleucine"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[17].concentration",
+    "chemical": "Proline", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:26271", "label": "proline"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[18].concentration", "chemical": "Valine", "concentration": {"value":
+    "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16414", "label": "L-valine"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[19].concentration", "chemical": "Leucine",
+    "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15603",
+    "label": "L-leucine"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[20].concentration",
+    "chemical": "Lysine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:25094", "label": "lysine"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[21].concentration",
+    "chemical": "Potassium chloride", "concentration": {"value": "1.34", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[22].concentration", "chemical": "Ammonium chloride", "concentration":
+    {"value": "28.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:31206", "label":
+    "ammonium chloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[23].concentration",
+    "chemical": "Cobalt chloride", "concentration": {"value": "0.014858", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[24].concentration", "chemical": "Manganese chloride", "concentration":
+    {"value": "0.0224145", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label":
+    "manganese(II) chloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[25].concentration",
+    "chemical": "Cupric chloride", "concentration": {"value": "0.000117316", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[26].concentration", "chemical": "Sodium selenite",
+    "concentration": {"value": "0.000228102", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:48843", "label": "disodium selenite"}, "disposition": "preserved; not newly
+    certified; outside full concentration-review scope"}, {"field_path": "ingredients[27].concentration",
+    "chemical": "Zinc Chloride", "concentration": {"value": "0.0146718", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:49976", "label": "zinc dichloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[28].concentration", "chemical": "Ferrous chloride", "concentration":
+    {"value": "0.0502992", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:30812", "label":
+    "iron dichloride"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[29].concentration",
+    "chemical": "Sodium tungstate", "concentration": {"value": "0.000242527", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:63940", "label": "sodium tungstate"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[30].concentration", "chemical": "Nickel Sulfate", "concentration":
+    {"value": "0.0038044", "unit": "MILLIMOLAR"}, "term": null, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[31].concentration", "chemical": "PIPES", "concentration": {"value":
+    "10.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:39033", "label": "PIPES"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[32].concentration", "chemical": "Sodium L-lactate",
+    "concentration": {"value": "30.0", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:232798",
+    "label": "sodium L-lactate"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[33].concentration",
+    "chemical": "Threonine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:26986", "label": "threonine"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Source-described inline amounts have DOI/snippet support; parent concentrations
+      are unchanged and not certified.
+    evidence_ids:
+    - tang2009
+    - tang2006
+    - claims
+  - name: formulation_match
+    value: source-described variant; not exact normalized formulation
+    definition: Unresolved stock forms, final-volume equivalence and manuscript differences
+      remain explicit.
+    evidence_ids:
+    - tang2009
+    - tang2006
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 34
+    unit: instances
+    denominator: 34
+    minimum: 0
+    maximum: 34
+    definition: Preservation only, not a verified-concentration count.
+- assessment_id: growth-007075
+  area: evidence
+  topic: Exact wild-type taxonomy and variant-only qualitative growth
+  outcome: supported
+  target_ids:
+  - CultureMech:007075
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - claims
+  - mr1
+  - ecoli
+  - readback
+  summary: One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal
+    to the exact variant name. Figure curves and captions were checked; no parent
+    growth, mutant pooling, host growth, rates or optima inferred.
+  details: '{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild
+    type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"},
+    "scoped_to_variant": "Tang 2009 manuscript 20 mM PIPES tracer medium with amino
+    acids", "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT",
+    "snippet": "Growth kinetics of Shewanella oneidensis MR-1", "explanation": "Figure
+    1: no NaCl stress supplement; 17-amino-acid supplement. Figure 1 caption on PDF
+    page 13 identifies four treatments; the plot on page 15 shows increasing dry biomass
+    for each. The matched curve is filled diamonds. Methods on page 4 specify duplicate
+    cultures (n=2), 12 mL glass-tube cultures at 30 degrees C and 200 rpm. The amino-acid-plus-salt
+    treatment is supported by Figure 1 and page 8 even though the abstract lists only
+    three conditions. No approximate doubling time is converted into an exact database
+    rate. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586;
+    rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+    archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+    verifies the wild-type background, not an independent exact taxonomy identity
+    for every engineered derivative. Growth is supported only on the named source-described
+    inline variant, not on the unmodified imported parent. Unresolved chemical normalization
+    is retained in that variant; the source''s qualitative cultivation result is not
+    a certification of the flattened parent recipe. Current KGX export does not honor
+    scoped_to_variant; this curation is not authorization to publish an unscoped parent
+    edge."}]}'
+  dimensions:
+  - name: taxonomy_match
+    value: exact strain NCBITaxon:211586
+    definition: Verified canonical Shewanella oneidensis MR-1 node. Engineered derivatives
+      and E. coli hosts remain separately qualified in notes.
+    evidence_ids:
+    - mr1
+    - ecoli
+- assessment_id: export-007075
+  area: evidence
+  topic: Export preservation of variant-only scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007075
+  evidence_ids:
+  - exporter
+  - readback
+  summary: Native scope is explicit, but the current exporter would lose it. These
+    associations are not publication-ready; no generated output was produced.
+- assessment_id: citation-007076
+  area: evidence
+  topic: Publication identity, source archive and provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007076
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - pubmed-19610125
+  - pubmed-16732598
+  - joins
+  - archives
+  - readback
+  summary: Two deduplicated DOI bibliography entries with PMID aliases, title, authors,
+    year, source type, discovery mode, locators and local raw/Markdown archives. Citation
+    does not certify the parent recipe.
+- assessment_id: variant-007076
+  area: evidence
+  topic: Source-described assay variant and its amount evidence
+  outcome: concern
+  target_ids:
+  - CultureMech:007076
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - claims
+  - plan
+  - readback
+  summary: A recognizable source-described assay is distinguished from the parent;
+    direct reported differences are supported, but exact chemical normalization and
+    source-version equivalence remain incomplete.
+  details: '{"variant": {"name": "Tang 2009 manuscript 20 mM PIPES tracer medium with
+    salt and amino acids", "relationship": "DERIVED_FROM", "description": "Figure
+    1: 330 mM added NaCl; 17-amino-acid supplement. Source version=OSTI author manuscript
+    with visible red revisions; final typeset body was not obtained. This variant
+    represents the reported assay at the stated protocol level, not a completely normalized
+    chemical recipe. Reference 19 (Tang 2006) was inspected: its base uses 10 mM PIPES
+    and different lactate doses, with antifoam and hydrate-specific trace salts. The
+    2009 explicit overrides take precedence; transfer of antifoam and exact trace/hydrate
+    equivalence remain unverified. The parent''s generic filtration step is not newly
+    certified. ", "modifications": ["Use 20 mM PIPES at pH 7 instead of the parent''s
+    10 mM PIPES.", "Use the source''s 30 mM [3-13C] sodium L-lactate (98% as reported),
+    rather than silently treating unlabelled sodium L-lactate as the tracer substrate.",
+    "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan,
+    glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine
+    and other stereochemical terms are not certified by this generic mixture description."],
+    "evidence": [{"reference": "doi:10.1002/btpr.227", "supports": "SUPPORT", "snippet":
+    "pH=7, buffered with 20mM PIPES", "explanation": "Supports variants[].modifications
+    PIPES amount and pH; OSTI manuscript PDF page 4, culture conditions, visually
+    checked. The same paragraph identifies [3-13C] sodium L-lactate and gives the
+    exact dose token ''30mM''. This is the paper-described tracer assay, not a correction
+    to parent ingredients. Figure 1: 330 mM added NaCl; 17-amino-acid supplement.
+    Separate exact salt excerpt=''330 mM NaCl was added to the medium.''. Separate
+    exact amino-acid excerpt=''a final concentration of 25 µM for each amino acid''.
+    25 micromolar equals 0.025 mM, but no parent amount or stereochemical identity
+    is newly certified. Source version=OSTI author manuscript with visible red revisions;
+    final typeset body was not obtained. This variant represents the reported assay
+    at the stated protocol level, not a completely normalized chemical recipe. Reference
+    19 (Tang 2006) was inspected: its base uses 10 mM PIPES and different lactate
+    doses, with antifoam and hydrate-specific trace salts. The 2009 explicit overrides
+    take precedence; transfer of antifoam and exact trace/hydrate equivalence remain
+    unverified. The parent''s generic filtration step is not newly certified. "}]},
+    "preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical":
+    "L-Glutamate", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term":
+    {"id": "CHEBI:16015", "label": "L-glutamic acid"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[1].concentration", "chemical": "Glycine", "concentration": {"value":
+    "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15428", "label": "glycine"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[2].concentration", "chemical": "L-Methionine",
+    "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16643",
+    "label": "L-methionine"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[3].concentration",
+    "chemical": "DL-Serine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"},
+    "term": null, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[4].concentration", "chemical": "Cysteine",
+    "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15356",
+    "label": "cysteine"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Histidine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:27570", "label": "histidine"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[6].concentration", "chemical": "Alanine", "concentration": {"value":
+    "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16977", "label": "L-alanine"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[7].concentration", "chemical": "DL-Tyrosine",
+    "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:18186",
+    "label": "tyrosine"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Phenylalanine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:17295", "label": "L-phenylalanine"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[9].concentration", "chemical": "Arginine", "concentration": {"value":
+    "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:29016", "label": "arginine"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[10].concentration", "chemical": "Magnesium
+    chloride", "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[11].concentration", "chemical": "Boric acid", "concentration": {"value":
+    "0.0032346", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:33118", "label": "boric
+    acid"}, "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[12].concentration", "chemical": "Sodium sulfate",
+    "concentration": {"value": "1.5", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32149",
+    "label": "sodium sulfate"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[13].concentration",
+    "chemical": "Dibasic sodium phosphate", "concentration": {"value": "4.4", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[14].concentration", "chemical": "Sodium molybdate",
+    "concentration": {"value": "0.0017986", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[15].concentration", "chemical": "Aspartate", "concentration": {"value":
+    "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:29995", "label": "aspartate(2-)"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[16].concentration", "chemical": "Isoleucine",
+    "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:17191",
+    "label": "L-isoleucine"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[17].concentration",
+    "chemical": "Proline", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:26271", "label": "proline"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[18].concentration", "chemical": "Valine", "concentration": {"value":
+    "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:16414", "label": "L-valine"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[19].concentration", "chemical": "Leucine",
+    "concentration": {"value": "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:15603",
+    "label": "L-leucine"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[20].concentration",
+    "chemical": "Lysine", "concentration": {"value": "0.025", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:25094", "label": "lysine"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[21].concentration",
+    "chemical": "Sodium chloride", "concentration": {"value": "330.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[22].concentration", "chemical": "Potassium chloride", "concentration":
+    {"value": "1.34", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:32588", "label":
+    "potassium chloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[23].concentration",
+    "chemical": "Ammonium chloride", "concentration": {"value": "28.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[24].concentration", "chemical": "Cobalt chloride", "concentration":
+    {"value": "0.014858", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:35696", "label":
+    "cobalt dichloride"}, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[25].concentration",
+    "chemical": "Manganese chloride", "concentration": {"value": "0.0224145", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}, {"field_path": "ingredients[26].concentration", "chemical": "Cupric chloride",
+    "concentration": {"value": "0.000117316", "unit": "MILLIMOLAR"}, "term": {"id":
+    "CHEBI:49553", "label": "copper(II) chloride"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[27].concentration",
+    "chemical": "Sodium selenite", "concentration": {"value": "0.000228102", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:48843", "label": "disodium selenite"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[28].concentration", "chemical": "Zinc Chloride", "concentration":
+    {"value": "0.0146718", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:49976", "label":
+    "zinc dichloride"}, "disposition": "preserved; not newly certified; outside full
+    concentration-review scope"}, {"field_path": "ingredients[29].concentration",
+    "chemical": "Ferrous chloride", "concentration": {"value": "0.0502992", "unit":
+    "MILLIMOLAR"}, "term": {"id": "CHEBI:30812", "label": "iron dichloride"}, "disposition":
+    "preserved; not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[30].concentration", "chemical": "Sodium tungstate", "concentration":
+    {"value": "0.000242527", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:63940",
+    "label": "sodium tungstate"}, "disposition": "preserved; not newly certified;
+    outside full concentration-review scope"}, {"field_path": "ingredients[31].concentration",
+    "chemical": "Nickel Sulfate", "concentration": {"value": "0.0038044", "unit":
+    "MILLIMOLAR"}, "term": null, "disposition": "preserved; not newly certified; outside
+    full concentration-review scope"}, {"field_path": "ingredients[32].concentration",
+    "chemical": "PIPES", "concentration": {"value": "10.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:39033", "label": "PIPES"}, "disposition": "preserved; not
+    newly certified; outside full concentration-review scope"}, {"field_path": "ingredients[33].concentration",
+    "chemical": "Sodium L-lactate", "concentration": {"value": "30.0", "unit": "MILLIMOLAR"},
+    "term": {"id": "CHEBI:232798", "label": "sodium L-lactate"}, "disposition": "preserved;
+    not newly certified; outside full concentration-review scope"}, {"field_path":
+    "ingredients[34].concentration", "chemical": "Threonine", "concentration": {"value":
+    "0.025", "unit": "MILLIMOLAR"}, "term": {"id": "CHEBI:26986", "label": "threonine"},
+    "disposition": "preserved; not newly certified; outside full concentration-review
+    scope"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: evidence_only
+    definition: Source-described inline amounts have DOI/snippet support; parent concentrations
+      are unchanged and not certified.
+    evidence_ids:
+    - tang2009
+    - tang2006
+    - claims
+  - name: formulation_match
+    value: source-described variant; not exact normalized formulation
+    definition: Unresolved stock forms, final-volume equivalence and manuscript differences
+      remain explicit.
+    evidence_ids:
+    - tang2009
+    - tang2006
+  metrics:
+  - name: preserved parent ingredient instances
+    value: 35
+    unit: instances
+    denominator: 35
+    minimum: 0
+    maximum: 35
+    definition: Preservation only, not a verified-concentration count.
+- assessment_id: growth-007076
+  area: evidence
+  topic: Exact wild-type taxonomy and variant-only qualitative growth
+  outcome: supported
+  target_ids:
+  - CultureMech:007076
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - claims
+  - mr1
+  - ecoli
+  - readback
+  summary: One DOI/snippet-backed wild-type MR-1 growth entry, scoped_to_variant equal
+    to the exact variant name. Figure curves and captions were checked; no parent
+    growth, mutant pooling, host growth, rates or optima inferred.
+  details: '{"preferred_term": "Shewanella oneidensis MR-1", "strain": "MR-1 (wild
+    type)", "term": {"id": "NCBITaxon:211586", "label": "Shewanella oneidensis MR-1"},
+    "scoped_to_variant": "Tang 2009 manuscript 20 mM PIPES tracer medium with salt
+    and amino acids", "evidence": [{"reference": "doi:10.1002/btpr.227", "supports":
+    "SUPPORT", "snippet": "Growth kinetics of Shewanella oneidensis MR-1", "explanation":
+    "Figure 1: 330 mM added NaCl; 17-amino-acid supplement. Figure 1 caption on PDF
+    page 13 identifies four treatments; the plot on page 15 shows increasing dry biomass
+    for each. The matched curve is filled squares. Methods on page 4 specify duplicate
+    cultures (n=2), 12 mL glass-tube cultures at 30 degrees C and 200 rpm. The amino-acid-plus-salt
+    treatment is supported by Figure 1 and page 8 even though the abstract lists only
+    three conditions. No approximate doubling time is converted into an exact database
+    rate. Scientific name and canonical label=Shewanella oneidensis MR-1; NCBITaxon:211586;
+    rank=strain; taxonomy_match=exact; ATCC 700550 is an NCBI equivalent name. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=211586&retmode=xml;
+    archive=references_cache/papers/taxonomy/shewanella-mr1-20261013.{xml,md}. This
+    verifies the wild-type background, not an independent exact taxonomy identity
+    for every engineered derivative. Growth is supported only on the named source-described
+    inline variant, not on the unmodified imported parent. Unresolved chemical normalization
+    is retained in that variant; the source''s qualitative cultivation result is not
+    a certification of the flattened parent recipe. Current KGX export does not honor
+    scoped_to_variant; this curation is not authorization to publish an unscoped parent
+    edge."}]}'
+  dimensions:
+  - name: taxonomy_match
+    value: exact strain NCBITaxon:211586
+    definition: Verified canonical Shewanella oneidensis MR-1 node. Engineered derivatives
+      and E. coli hosts remain separately qualified in notes.
+    evidence_ids:
+    - mr1
+    - ecoli
+- assessment_id: export-007076
+  area: evidence
+  topic: Export preservation of variant-only scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007076
+  evidence_ids:
+  - exporter
+  - readback
+  summary: Native scope is explicit, but the current exporter would lose it. These
+    associations are not publication-ready; no generated output was produced.
+findings:
+- finding_id: pinchuk-normalization
+  issue_key: mediadb-72-m1-stock-normalization
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Pinchuk variants do not certify flattened parent-stock chemistry
+  target_ids:
+  - CultureMech:007069
+  - CultureMech:007070
+  - CultureMech:007071
+  - CultureMech:007072
+  field_paths:
+  - ingredients
+  - variants
+  description: The supported variant substitutes source monobasic phosphate for the
+    parent's dibasic salt. Wolfe stock expansion, final-volume basis, literal H3BO4
+    and hydrate forms remain unresolved; parent amounts must not be presented as verified.
+    The Kieft deposited version also has a date discrepancy.
+  evidence_ids:
+  - pinchuk
+  - kieft
+  - claims
+  - readback
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+- finding_id: tang-version
+  issue_key: mediadb-73-manuscript-and-base-normalization
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Tang variants retain deposited-version and chemical-form limits
+  target_ids:
+  - CultureMech:007073
+  - CultureMech:007074
+  - CultureMech:007075
+  - CultureMech:007076
+  field_paths:
+  - ingredients
+  - variants
+  description: The inspected 2009 manuscript contains visible revisions. Its explicit
+    PIPES/tracer/supplement conditions support bounded variants, not certification
+    of final-published equivalence, inherited antifoam, trace hydrates or all parent
+    amino-acid stereochemistry.
+  evidence_ids:
+  - tang2009
+  - tang2006
+  - claims
+  - readback
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+- finding_id: kgx-scope
+  issue_key: kgx-variant-growth-scope-loss-shewanella
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: KGX would lose the eight new variant-only growth scopes
+  target_ids:
+  - CultureMech:007069
+  - CultureMech:007070
+  - CultureMech:007071
+  - CultureMech:007072
+  - CultureMech:007073
+  - CultureMech:007074
+  - CultureMech:007075
+  - CultureMech:007076
+  field_paths:
+  - target_organisms.scoped_to_variant
+  description: The maintained exporter ignores scoped_to_variant and uses the parent
+    medium as edge target. Keep publication blocked until it preserves variant identity
+    or deliberately skips scoped entries with a reported diagnostic. Related older
+    findings retain their original targets and are not closed by this review.
+  evidence_ids:
+  - exporter
+  - plan
+  - readback
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+- finding_id: reference-gates
+  issue_key: shewanella-doi-validator-content-formatting
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Eight required reference checks fail despite archived source inspection
+  target_ids:
+  - CultureMech:007069
+  - CultureMech:007070
+  - CultureMech:007071
+  - CultureMech:007072
+  - CultureMech:007073
+  - CultureMech:007074
+  - CultureMech:007075
+  - CultureMech:007076
+  field_paths:
+  - references
+  - variants.evidence
+  - target_organisms.evidence
+  description: Crossref HTML/capitalization/hyphen title differences and absent full-text
+    content prevent automated validation. Pinchuk DOI content is unavailable to the
+    checker; Tang is abstract-only there. Verified metadata and exact excerpts were
+    not altered to game these checks. Required failures remain explicit.
+  evidence_ids:
+  - post-00
+  - post-02
+  - post-04
+  - post-06
+  - post-08
+  - post-10
+  - post-12
+  - post-14
+  - claims
+  - archives
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+actions:
+- action_id: resolve-m1
+  description: Reconcile the Wolfe stock source, chemical forms and final-medium basis
+    before parent certification.
+  finding_ids:
+  - pinchuk-normalization
+  target_ids:
+  - CultureMech:007069
+  - CultureMech:007070
+  - CultureMech:007071
+  - CultureMech:007072
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect final/source typography and stock/final-volume basis.
+  - Every changed amount or chemical form requires direct DOI/PURL evidence and a
+    literal excerpt.
+- action_id: resolve-tang
+  description: Compare a lawful final published source and reconcile only source-supported
+    base-protocol inheritance.
+  finding_ids:
+  - tang-version
+  target_ids:
+  - CultureMech:007073
+  - CultureMech:007074
+  - CultureMech:007075
+  - CultureMech:007076
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Retain separate salt, amino-acid and tracer treatments.
+  - Do not silently normalize hydrates or stereochemistry; preserve unresolved values.
+- action_id: preserve-scope
+  description: Fix and test variant-aware export before publishing these associations.
+  finding_ids:
+  - kgx-scope
+  target_ids:
+  - CultureMech:007069
+  - CultureMech:007070
+  - CultureMech:007071
+  - CultureMech:007072
+  - CultureMech:007073
+  - CultureMech:007074
+  - CultureMech:007075
+  - CultureMech:007076
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Variant-only entries must never produce an unqualified parent edge.
+  - Test both scoped and ordinary targets; retain exact evidence and identity.
+- action_id: resolve-validation
+  description: Make authoritative archive content and normalized publication metadata
+    auditable by maintained validation without changing source claims.
+  finding_ids:
+  - reference-gates
+  target_ids:
+  - CultureMech:007069
+  - CultureMech:007070
+  - CultureMech:007071
+  - CultureMech:007072
+  - CultureMech:007073
+  - CultureMech:007074
+  - CultureMech:007075
+  - CultureMech:007076
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_with_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Keep original metadata/source bytes and title-normalization provenance.
+  - Validate body/supplement excerpts against the correct source and version, then
+    rerun all affected gates.
+limitations:
+- Focused self-review only; all parent amount entries are enumerated as preserved,
+  not newly verified.
+- Short DOI snippets support bounded claims alongside exact locators and visually
+  inspected figures; a short caption alone does not encode the complete assay.
+- Pinchuk Text S1 conflicts with Figure S4 panel labels. Actual figure labels define
+  the retained assay; no conflicting-panel quantitative metric is imported.
+- Kieft is a scanned submitted version, Tang sources are deposited manuscripts, and
+  final publisher bodies were not compared.
+- DOC conversion retains source field-code artifacts; raw files remain authoritative
+  and figure/recipe pages were visually checked.
+- Organism inventories are bounded to relevant inspected passages, not every organism
+  in all four papers or their bibliographies.
+- Required automated failures are not waived by manual verification. No title or excerpt
+  was changed simply to satisfy a checker.
+- Existing global merge/freshness failures are recorded separately; no generated output
+  was replaced.
+- 303 MediaDB candidate source-owner links remain, and that queue is not an exhaustive
+  literature inventory.
+- Next LAB sources and unchanged baseline owners are preparation only, not completed
+  curation.
+```

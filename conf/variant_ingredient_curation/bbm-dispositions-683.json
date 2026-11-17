@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "source_queue_sha256": "dd5faea741da0a11e8eb86cad2976e8bf51d42884c601e96973eba61748330ca",
+  "proposal": "conf/variant_ingredient_curation/bbm-canary-683.json",
+  "dispositions": [
+    {"queue_row_number": 21, "status": "CONDITION_ONLY", "assertion_count": 0, "reason": "Organism and experimental design context; no additional ingredient assertion."},
+    {"queue_row_number": 22, "status": "CONDITION_ONLY", "assertion_count": 0, "reason": "Growth and exposure conditions; no additional ingredient assertion."},
+    {"queue_row_number": 23, "status": "STRUCTURED", "assertion_count": 1, "reason": "17β-estradiol belongs only to the exposure assay; discrete source doses retained."},
+    {"queue_row_number": 24, "status": "STRUCTURED", "assertion_count": 1, "reason": "NH4Cl belongs only to the pre-experiment stock culture; literal ppm basis remains unresolved."}
+  ]
+}

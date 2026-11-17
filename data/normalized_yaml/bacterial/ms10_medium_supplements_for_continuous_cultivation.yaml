@@ -310,6 +310,14 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-10-13T18:20:46.076791+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified publication bibliography, archived abstract/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved all prior
+    evidence, missing amounts and variant links. Exact formulations and organism/assay
+    assignment remain unresolved; no new native growth or concentration claim.
+  source: PMID:11375180
 media_term:
   preferred_term: MediaDB Medium 412
   term:
@@ -321,3 +329,38 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:11375180
+  title: Metabolic behavior of Lactococcus lactis MG1363 in microaerobic continuous
+    cultivation at a low dilution rate.
+  authors: Jensen NB; Melchiorsen CR; Jokumsen KV; Villadsen J
+  year: 2001
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_only; owner=MEDIADB:412;
+    discovery_sourceID=126; source_url=https://doi.org/10.1128/AEM.67.6.2677-2682.2001;
+    alternate_identifier=doi:10.1128/AEM.67.6.2677-2682.2001; alternate_identifier=PMC92924;
+    raw=references_cache/papers/PMID_11375180.xml; markdown=references_cache/papers/PMID_11375180.md;
+    PubMed Abstract, study strain; exact excerpt="Lactococcus lactis subsp. cremoris
+    MG1363". PubMed Abstract, cultivation context; exact excerpt="a defined glucose-limited
+    medium". Formulation_unresolved: The archived abstract describes glucose-limited
+    continuous cultivation and oxygen-dependent metabolism, but does not enumerate
+    the 30 local components. Earlier web inspection distinguished supplemented MS10
+    culture, altered preculture and analytical reagents; a subsequent access attempt
+    returned a challenge and no verified full local archive was obtained. The inherited
+    MS10 formula, chemical forms and phosphate/preculture assignment remain unresolved.
+    Existing Nordkvist 2003 batch variants are not automatically Jensen 2001 continuous-cultivation
+    variants. Reported organism=Lactococcus lactis subsp. cremoris MG1363; canonical
+    scientific name=Lactococcus cremoris subsp. cremoris MG1363; NCBITaxon:416870;
+    actual rank=strain; taxonomy_match=verified_strain_synonym; role=continuous-cultivation
+    study strain; exact local formula unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=416870&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/physiology-additional-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/physiology-additional-candidates-20261013.md.
+    Do not substitute a modern Lactococcus lactis species node for the verified Lactococcus
+    cremoris lineage. Enzyme responses and carbon-flow percentages are not parent-medium
+    growth rates. Inventory covers inspected medium-relevant passages, not the entire
+    paper. Bounded taxonomy misses do not prove absence. Images/supplements and complete
+    inherited formulas are not certified; correction/retraction coverage is limited
+    to inspected publication metadata. All existing ingredients, concentrations (including
+    deliberately missing amounts), evidence, references, links, preparation and history
+    remain unchanged. No new native growth assertion, concentration EvidenceItem or
+    resolved variant.'

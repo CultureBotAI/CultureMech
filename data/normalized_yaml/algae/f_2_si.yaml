@@ -68,6 +68,30 @@ curation_history:
   source: CCAP:f2Si; https://www.ccap.ac.uk/wp-content/uploads/MR_f2Si.pdf
   notes: Copied the CCAP source identity from references and the original ccap-import
     event into the structured sources slot recognized by review scoring.
+- timestamp: '2026-11-16T21:36:31.554053+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation":
+    "Page 2, f/2 + Si Modified, direct addition replacing stock 5; primary source
+    inspected 2026-11-16. Page2 says omit stock5 and instead add Na2SiO3.9H2O directly
+    per litre. Parent stock5 composition is not separately added; no hydrate conversion.",
+    "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_f2Si.pdf", "snippet":
+    "omit stock 5 and instead add 0.1705 g of sodium metasilicate\n(Na2SiO3.9H2O)
+    per litre of medium.", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "G_PER_L", "value": "0.1705"}, "notes": "Page2 says omit stock5 and instead
+    add Na2SiO3.9H2O directly per litre. Parent stock5 composition is not separately
+    added; no hydrate conversion.", "preferred_term": "sodium metasilicate nonahydrate"},
+    "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "replaced_ingredient": {"preferred_term":
+    "stock 5 sodium metasilicate solution"}, "source_modification_index": 0, "source_text":
+    "Omit stock 5 and add 0.1705 g/L sodium metasilicate nonahydrate directly.", "stage":
+    "CCAP f/2+Si Modified direct-addition preparation"}], "variant_index": 0, "variant_name":
+    "f_2_si_modified"}]}'
 references:
 - reference: CCAP:f2Si
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_f2Si.pdf
@@ -292,3 +316,29 @@ variants:
   description: CCAP's higher-silicate modified formulation.
   modifications:
   - Omit stock 5 and add 0.1705 g/L sodium metasilicate nonahydrate directly.
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: sodium metasilicate nonahydrate
+      concentration:
+        value: '0.1705'
+        unit: G_PER_L
+      notes: Page2 says omit stock5 and instead add Na2SiO3.9H2O directly per litre.
+        Parent stock5 composition is not separately added; no hydrate conversion.
+    stage: CCAP f/2+Si Modified direct-addition preparation
+    evidence:
+    - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_f2Si.pdf
+      supports: SUPPORT
+      snippet: 'omit stock 5 and instead add 0.1705 g of sodium metasilicate
+
+        (Na2SiO3.9H2O) per litre of medium.'
+      explanation: Page 2, f/2 + Si Modified, direct addition replacing stock 5; primary
+        source inspected 2026-11-16. Page2 says omit stock5 and instead add Na2SiO3.9H2O
+        directly per litre. Parent stock5 composition is not separately added; no
+        hydrate conversion.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    replaced_ingredient:
+      preferred_term: stock 5 sodium metasilicate solution
+    source_modification_index: 0
+    source_text: Omit stock 5 and add 0.1705 g/L sodium metasilicate nonahydrate directly.

@@ -15,9 +15,9 @@
       ]
     },
     "CultureMech:015480": {
-      "name": "2x UGA defined nocarbon",
+      "name": "2x_uga_defined_nocarbon",
       "filename": "2x_uga_defined_nocarbon.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 29,
       "id": "CultureMech:015480",
       "source": "unknown",
       "categories": [

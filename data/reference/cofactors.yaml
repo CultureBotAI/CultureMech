@@ -259,7 +259,7 @@ cofactors:
 - preferred_term: heme C
   category: METALS
   term:
-    id: CHEBI:60052
+    id: CHEBI:60562
     label: heme C
   ec_associations:
   - 1.9.3.-
@@ -735,7 +735,7 @@ cofactors:
 - preferred_term: heme d1
   category: OTHER_SPECIALIZED
   term:
-    id: CHEBI:60052
+    id: CHEBI:61147
     label: heme d1
   ec_associations:
   - 1.7.2.1

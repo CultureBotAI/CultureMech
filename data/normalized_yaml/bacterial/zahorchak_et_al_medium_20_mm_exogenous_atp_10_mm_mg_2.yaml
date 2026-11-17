@@ -321,6 +321,14 @@ curation_history:
   action: RESTORED_CORRUPT_SOURCE_COMPOUND
   notes: Restored C00002 as ATP (CHEBI:15422) from the MediaDB row sequence; resolves
     the 2026-08-24 EMPTY_INGREDIENT_NAME review finding.
+- timestamp: '2026-10-14T00:09:58.559887+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added or enriched bibliographic metadata, archived source/Markdown links,
+    title/group excerpts and qualified NCBI taxonomy notes. Non-operational identity
+    review only; no experimental, formulation, variant, growth or concentration curation.
+    Preserved all original recipe fields, history and reference identifiers.
+  source: PMID:7152680
 media_term:
   preferred_term: MediaDB Medium 69
   term:
@@ -340,3 +348,32 @@ parent_media:
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - Same ingredient identity signature but concentration signature differs from parent.
+references:
+- reference: PMID:7152680
+  title: Effect of exogenous nucleotides on Ca2+ dependence and V antigen synthesis
+    in Yersinia pestis.
+  authors: Zahorchak RJ; Brubaker RR
+  year: 1982
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-14; source_access=archived_PubMed_abstract; review_scope=Bibliographic
+    title and taxonomic identity only; archived abstract is not approval of any experiment
+    or formulation.; owner=MEDIADB:69; discovery_sourceID=12; source_url=https://doi.org/10.1128/iai.38.3.953-959.1982;
+    alternate_identifier=doi:10.1128/iai.38.3.953-959.1982; alternate_identifier=PMC347842;
+    raw=references_cache/papers/PMID_7152680.xml; markdown=references_cache/papers/PMID_7152680.md;
+    Bibliographic title; exact excerpt="Yersinia pestis". Reported organism/group=Yersinia
+    pestis; canonical scientific name=Yersinia pestis; NCBITaxon:632; actual rank=species;
+    taxonomy_match=exact_species; role=bibliographic-title mention only; no strain,
+    formulation, growth or experimental-outcome assertion. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=632&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/growth-next-nonoperational-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/growth-next-nonoperational-20261013.md.
+    Review is limited to publication identity, title-level organism mentions and taxonomy.
+    Abstract content is archived but not used here to assert experimental findings.
+    This is not an exhaustive abstract or whole-paper organism inventory. The pinned
+    MediaDB source-to-owner join establishes a historical bibliographic lead only,
+    not exact recipe equivalence. Formulation identity, study-specific differences
+    and variant destination remain unassessed in this non-operational citation task.
+    No cultivation conditions, optimization, virulence, growth associations or ingredient
+    amounts are extracted or curated. Correction/retraction coverage is limited to
+    archived metadata. Original ingredients, amounts, preparation, history, evidence
+    and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.

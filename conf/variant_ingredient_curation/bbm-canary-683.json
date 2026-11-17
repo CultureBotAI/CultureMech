@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "issue": "https://github.com/CultureBotAI/CultureMech/issues/683",
+  "scope": "One real-record canary; two existing ingredient-bearing modification statements. No change to base ingredients or pre-existing prose.",
+  "source_inspection": {
+    "reference": "doi:10.3390/plants11131669",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9269517/fullTextXML",
+    "sha256": "3ff76eaa32856926a1815722096aa190382ec6fbfd59aff05346ab5c3d95166f",
+    "locator": "Methods 2.1, 2.2 and 2.3",
+    "inspected_on": "2026-11-16",
+    "scope_note": "Study-specific BBM; exact equivalence to the UTEX base formulation remains unestablished. The paper specifies separate active-E2 exposure levels and an earlier algal stock-culture amendment. No ppm basis or powder-dose conversion is inferred."
+  },
+  "records": [
+    {
+      "path": "data/normalized_yaml/algae/Bold_Basal_Medium.yaml",
+      "recipe_id": "CultureMech:000034",
+      "expected_sha256": "acb96b82f986ecdbeaefaa21a1795e61188087e0b961bb9b03f777816c515aa1",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "bbm_estradiol_exposure_assay",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "17β-Estradiol",
+                "concentration": {
+                  "value": "0.25; 0.75; 2.50; 5.0; 15.0",
+                  "unit": "NG_PER_L"
+                },
+                "notes": "Discrete separate treatment levels of active E2, with a no-hormone control. Not a continuous range, simultaneous mixture or chemical-powder dose."
+              },
+              "stage": "assay exposure",
+              "source_modification_index": 2,
+              "source_text": "Test separate 17-beta-estradiol treatments at 0.25, 0.75, 2.50, 5.0 and 15.0 ng/L, with a no-hormone control.",
+              "evidence": [
+                {
+                  "reference": "doi:10.3390/plants11131669",
+                  "supports": "SUPPORT",
+                  "snippet": "0.25, 0.75, 2.50, 5.0, and 15.0 ng/L",
+                  "explanation": "Methods 2.3 specifies five separate active-E2 treatment levels tested on BBM and a no-hormone control. Preserve the discrete values without powder-dose conversion. The study's BBM identity is not asserted equivalent to the UTEX parent. Primary journal article; full-text XML inspected 2026-11-16."
+                }
+              ],
+              "notes": "The component belongs to this study-specific exposure variant, not the base BBM formulation."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "NH4Cl",
+                "concentration": {
+                  "value": "4.5",
+                  "unit": "PPM"
+                },
+                "notes": "Source reports ppm without specifying its mass/volume basis; no conversion is made."
+              },
+              "stage": "pre-experiment algal stock culture",
+              "source_modification_index": 3,
+              "source_text": "Maintain the pre-experiment Scenedesmus quadricauda stock culture in modified BBM containing 4.5 ppm NH4Cl; do not assert this as a universal final assay-medium dose.",
+              "evidence": [
+                {
+                  "reference": "doi:10.3390/plants11131669",
+                  "supports": "SUPPORT",
+                  "snippet": "NH4Cl was added to 4.5 ppm",
+                  "explanation": "Methods 2.1 scopes this amendment to the algal stock culture grown before the experiment. It does not establish a universal final assay-medium dose or a ppm conversion basis. Primary journal article; full-text XML inspected 2026-11-16."
+                }
+              ],
+              "notes": "Preserve the earlier stock-culture stage separately from estradiol exposure."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

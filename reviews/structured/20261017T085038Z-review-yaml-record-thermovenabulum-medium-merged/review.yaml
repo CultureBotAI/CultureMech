@@ -1,0 +1,330 @@
+schema_version: 1.0.0
+review_id: 20261017T085038Z-review-yaml-record-thermovenabulum-medium-merged
+kind: record
+repository: CultureBotAI/CultureMech
+title: Record and concentration audit of merged THERMOVENABULUM MEDIUM (CultureMech:002143)
+started_at: '2026-10-17T08:48:38Z'
+finished_at: '2026-10-17T08:50:38Z'
+reviewer:
+  identity: antigravity-agent
+  kind: agent
+  model: claude-opus-4-6
+  independence: independent
+  independence_basis: Independent agent review against primary literature/database
+    sources and deterministic LinkML validators without modifying target records.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: 'Generated merged record data/merge_yaml/merged/THERMOVENABULUM_MEDIUM.yaml
+  (CultureMech:002143), derived from data/normalized_yaml/bacterial/DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml,
+  contains 33 flat ingredients with 93.94% CHEBI coverage (31/33) and 87.88% mediaingredientmech_chebi_term
+  coverage (29/33), and passes recipe reference and ontology term validation. However,
+  it exhibits three defects: (1) linkml-validate and scripts/validate_strict.py fail
+  on the merged file because src/culturemech/merge/merge_recipes.py emits top-level
+  merge_fingerprint and merged_from fields that are not declared in src/culturemech/schema/culturemech.yaml;
+  (2) its upstream normalized record (DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml) flattened
+  DSMZ Medium 962a''s Wolin trace element solution (10 mL/L) and vitamin solution
+  (10 mL/L) directly into top-level ingredients[10..32] at their undiluted 1 L stock
+  concentrations (inflating all 23 trace element and vitamin concentrations 100-fold,
+  e.g., Nitrilotriacetic acid 1.5 G_PER_L, MgSO4 x 7 H2O 3 G_PER_L, NaCl 1 G_PER_L,
+  Biotin 0.02 G_PER_L) and summed the base-medium CaCl2 x 2 H2O (0.326409 G_PER_L)
+  with the unscaled trace-stock CaCl2 x 2 H2O (0.1 G_PER_L) into ingredients[3].concentration.value
+  = ''0.42640900000000004'' ('' [Merged 2 duplicates: 0.326409, 0.1]''); and (3) four
+  ingredients (Yeast extract, Sodium resazurin, Meat extract, and Calcium D-(+)-pantothenate)
+  lack mediaingredientmech_chebi_term.'
+source:
+  git_revision: 4c69a62c25dd5419766533205c215b0aaa5d14f7
+  state: git_commit
+  inputs:
+  - path: data/merge_yaml/merged/THERMOVENABULUM_MEDIUM.yaml
+    sha256: c9aa366d36e9cc35a6dcf14b690a0927d725a66d980fa1ec5b2320525427d8f7
+    role: target
+  - path: data/normalized_yaml/bacterial/DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml
+    sha256: faef12985852dfdfe6d55fd632294a1097dd39f3a7d481ad4a5c2815e8973a71
+    role: context
+  - path: data/normalized_yaml/bacterial/thermovenabulum_medium.yaml
+    sha256: ba0856ddde784a86329e28fe6a186912bf49ea964dbcfd0c116c2ed6e6da4403
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: Single-record audit of generated merged recipe data/merge_yaml/merged/THERMOVENABULUM_MEDIUM.yaml
+    and its upstream normalized source DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml.
+  selection: Target merged record selected for review-yaml-record and review-ingredient-concentrations.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - target-1
+targets:
+- target_id: target-1
+  path: data/merge_yaml/merged/THERMOVENABULUM_MEDIUM.yaml
+  label: CultureMech:002143 - THERMOVENABULUM MEDIUM (merged)
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml
+    role: normalized_source_record
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: merge_generator
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/schema/culturemech.yaml
+    role: linkml_schema
+checks:
+- check_id: chk-linkml-schema-merged
+  name: LinkML schema validation on merged YAML
+  status: failed
+  required: false
+  summary: linkml-validate and validate_strict.py reject top-level merge_fingerprint
+    and merged_from slots emitted by merge_recipes.py.
+  target_ids:
+  - target-1
+  command: linkml-validate -s src/culturemech/schema/culturemech.yaml -C MediaRecipe
+    data/merge_yaml/merged/THERMOVENABULUM_MEDIUM.yaml
+  exit_code: 1
+  expected_exit_code: 0
+  evidence_ids:
+  - E2
+  scope_note: Known schema gap between merge_recipes.py output fields and MediaRecipe
+    class definition.
+- check_id: chk-references-and-terms
+  name: Recipe reference and ontology term validation
+  status: passed
+  required: true
+  summary: validate_recipe_references.py and linkml-term-validator passed with 0 errors
+    on THERMOVENABULUM_MEDIUM.yaml, and all 4 validators passed on upstream DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml.
+  target_ids:
+  - target-1
+  command: python scripts/validate_recipe_references.py --file data/merge_yaml/merged/THERMOVENABULUM_MEDIUM.yaml
+    && linkml-term-validator validate-data data/merge_yaml/merged/THERMOVENABULUM_MEDIUM.yaml
+    -s src/culturemech/schema/culturemech.yaml -t MediaRecipe --labels
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - E2
+evidence:
+- evidence_id: E1
+  kind: record_content
+  reference: data/merge_yaml/merged/THERMOVENABULUM_MEDIUM.yaml
+  locator: lines 1-401
+  accessed_at: '2026-10-17T08:49:38Z'
+  support: supports
+  summary: Merged YAML record for CultureMech:002143 with 33 flat ingredients, summed
+    CaCl2 x 2 H2O 0.42640900000000004 G_PER_L, 23 unscaled Wolin trace/vitamin stock
+    ingredients (ingredients[10..32]), merge_fingerprint, and merged_from.
+  quote: 'id: CultureMech:002143 / name: thermovenabulum_medium / CaCl2 x 2 H2O 0.42640900000000004
+    G_PER_L ('' [Merged 2 duplicates: 0.326409, 0.1]'') / Na2-fumarate 3.16518 G_PER_L
+    / Meat extract 2.96736 G_PER_L / Nitrilotriacetic acid 1.5 G_PER_L / Biotin 0.02
+    G_PER_L / merged_from: [DSMZ_962a_THERMOVENABULUM_MEDIUM]'
+  snapshot_sha256: c9aa366d36e9cc35a6dcf14b690a0927d725a66d980fa1ec5b2320525427d8f7
+- evidence_id: E2
+  kind: validation
+  reference: Validator suite output on THERMOVENABULUM_MEDIUM.yaml and DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml
+  locator: stdout
+  accessed_at: '2026-10-17T08:49:38Z'
+  support: supports
+  summary: Upstream DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml passes all 4 validators;
+    merged THERMOVENABULUM_MEDIUM.yaml passes reference and term validation but fails
+    closed-schema validation on merge_fingerprint and merged_from.
+  quote: Additional properties are not allowed ('merge_fingerprint', 'merged_from'
+    were unexpected) at /
+- evidence_id: E3
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium962a.pdf
+  locator: DSMZ Medium 962a PDF and MediaDive REST JSON (https://mediadive.dsmz.de/rest/medium/962a)
+  accessed_at: '2026-10-17T08:49:38Z'
+  support: refutes
+  summary: DSMZ Medium 962a adds 10.00 mL/L of Wolin's trace element solution (prepared
+    per 1000 mL with 1.5 g Nitrilotriacetic acid, 3.0 g MgSO4 x 7 H2O, 0.1 g CaCl2
+    x 2 H2O, etc.) and 10.00 mL/L of Vitamin solution (prepared per 1000 mL with 0.02
+    g Biotin, 0.1 g Pyridoxine HCl, 0.05 g Calcium pantothenate, etc.), requiring
+    a 0.01x dilution factor rather than 1 L stock concentrations.
+  quote: 'DSMZ Medium 962a: Base medium with 0.33 g/L CaCl2 x 2 H2O, 3.20 g/L Na2-fumarate,
+    3.00 g/L Meat extract, plus 10 mL/L Trace element solution and 10 mL/L Vitamin
+    solution.'
+assessments:
+- assessment_id: A1
+  area: grounding
+  topic: Ontology term and MediaIngredientMech grounding across 33 ingredients
+  outcome: supported
+  summary: 31/33 ingredients (93.94%) carry valid CHEBI terms and 29/33 (87.88%) carry
+    valid mediaingredientmech_chebi_term identifiers; only Yeast extract, Sodium resazurin,
+    Meat extract, and Calcium D-(+)-pantothenate lack mediaingredientmech_chebi_term.
+  target_ids:
+  - target-1
+  evidence_ids:
+  - E1
+  - E2
+  metrics:
+  - name: mediaingredientmech_coverage
+    value: 87.88
+    unit: percent
+    definition: Percentage of ingredients in THERMOVENABULUM_MEDIUM.yaml with a populated
+      mediaingredientmech_chebi_term.id (29/33).
+    denominator: 33
+    minimum: 0.0
+    maximum: 100.0
+  - name: chebi_coverage
+    value: 93.94
+    unit: percent
+    definition: Percentage of ingredients in THERMOVENABULUM_MEDIUM.yaml with a populated
+      CHEBI term.id (31/33).
+    denominator: 33
+    minimum: 0.0
+    maximum: 100.0
+- assessment_id: A2
+  area: schema
+  topic: Merged record schema compliance
+  outcome: concern
+  summary: merge_fingerprint and merged_from emitted by merge_recipes.py at lines
+    399-401 are not declared in src/culturemech/schema/culturemech.yaml.
+  target_ids:
+  - target-1
+  evidence_ids:
+  - E1
+  - E2
+- assessment_id: A3
+  area: quantity
+  topic: 100x stock solution dilution inflation and duplicate CaCl2 x 2 H2O summation
+  outcome: concern
+  summary: Unscaled inlining of Wolin's trace element solution (10 mL/L) and vitamin
+    solution (10 mL/L) into ingredients[10..32] inflates 23 ingredients 100-fold and
+    sums base CaCl2 x 2 H2O (0.326409 G_PER_L) with unscaled stock CaCl2 x 2 H2O (0.1
+    G_PER_L) into ingredients[3] = 0.42640900000000004 G_PER_L.
+  target_ids:
+  - target-1
+  evidence_ids:
+  - E1
+  - E3
+findings:
+- finding_id: F1
+  issue_key: schema.undeclared_merge_slots.merge_recipes
+  category: schema
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Merged YAML fails LinkML validation because merge_fingerprint and merged_from
+    are missing from culturemech.yaml
+  description: src/culturemech/merge/merge_recipes.py writes merge_fingerprint and
+    merged_from to every record in data/merge_yaml/merged/, but src/culturemech/schema/culturemech.yaml
+    does not define these slots on MediaRecipe or SolutionRecipe, causing linkml-validate
+    and scripts/validate_strict.py to fail with 'Additional properties are not allowed'.
+  target_ids:
+  - target-1
+  field_paths:
+  - merge_fingerprint
+  - merged_from
+  evidence_ids:
+  - E1
+  - E2
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/schema/culturemech.yaml
+    role: linkml_schema
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: merge_generator
+- finding_id: F2
+  issue_key: concentration.unscaled_stock_inlining.CultureMech_002143
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Flattened Wolin trace element and vitamin stock concentrations are inflated
+    100x and CaCl2 x 2 H2O is summed with an unscaled stock duplicate
+  description: 'In upstream DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml (and generated THERMOVENABULUM_MEDIUM.yaml),
+    the 23 components of Wolin''s trace element solution (10 mL/L) and vitamin solution
+    (10 mL/L) were flattened into top-level ingredients[10..32] at their undiluted
+    1 L stock concentrations (e.g., Nitrilotriacetic acid 1.5 G_PER_L instead of 0.015
+    G_PER_L; MgSO4 x 7 H2O 3 G_PER_L instead of 0.03 G_PER_L; Biotin 0.02 G_PER_L
+    instead of 0.0002 G_PER_L), and base CaCl2 x 2 H2O (0.326409 G_PER_L) was summed
+    with unscaled trace-stock CaCl2 x 2 H2O (0.1 G_PER_L) into ingredients[3].concentration.value
+    = ''0.42640900000000004'' ('' [Merged 2 duplicates: 0.326409, 0.1]'').'
+  target_ids:
+  - target-1
+  field_paths:
+  - ingredients[3].concentration.value
+  - ingredients[3].notes
+  - ingredients[10..32].concentration
+  evidence_ids:
+  - E1
+  - E3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml
+    role: normalized_source_record
+- finding_id: F3
+  issue_key: grounding.missing_mim_term.CultureMech_002143
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Four ingredients in THERMOVENABULUM_MEDIUM.yaml lack mediaingredientmech_chebi_term
+  description: ingredients[5] (Yeast extract, 0.049456 G_PER_L) and ingredients[9]
+    (Meat extract, 2.96736 G_PER_L) lack both term and mediaingredientmech_chebi_term,
+    while ingredients[6] (Sodium resazurin, CHEBI:8806) and ingredients[30] (Calcium
+    D-(+)-pantothenate, CHEBI:31345) have CHEBI terms but lack mediaingredientmech_chebi_term.
+  target_ids:
+  - target-1
+  field_paths:
+  - ingredients[5]
+  - ingredients[6].mediaingredientmech_chebi_term
+  - ingredients[9]
+  - ingredients[30].mediaingredientmech_chebi_term
+  evidence_ids:
+  - E1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml
+    role: normalized_source_record
+actions:
+- action_id: ACT1
+  description: Add merge_fingerprint (string) and merged_from (multivalued string)
+    slots to MediaRecipe and SolutionRecipe in src/culturemech/schema/culturemech.yaml.
+  finding_ids:
+  - F1
+  target_ids:
+  - target-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/schema/culturemech.yaml
+    role: linkml_schema
+  acceptance_checks:
+  - linkml-validate and scripts/validate_strict.py pass with 0 errors on data/merge_yaml/merged/THERMOVENABULUM_MEDIUM.yaml.
+- action_id: ACT2
+  description: Restructure DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml to represent Wolin's
+    trace element solution (10 mL/L) and vitamin solution (10 mL/L) under solutions[]
+    (or scale by 0.01x and restore base CaCl2 x 2 H2O to 0.326409 G_PER_L), backfill
+    missing mediaingredientmech_chebi_term entries, and regenerate merged records.
+  finding_ids:
+  - F2
+  - F3
+  target_ids:
+  - target-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/DSMZ_962a_THERMOVENABULUM_MEDIUM.yaml
+    role: normalized_source_record
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: merge_generator
+  acceptance_checks:
+  - Trace element and vitamin concentrations reflect the 10 mL/L dilution factor (0.01x)
+    and CaCl2 x 2 H2O is no longer summed with an unscaled stock duplicate.
+  - Sodium resazurin and Calcium D-(+)-pantothenate carry mediaingredientmech_chebi_term
+    mappings.
+limitations:
+- Review is a non-mutating observation; neither normalized nor merged YAML files were
+  modified.
+tags:
+- review-yaml-record
+- review-ingredient-concentrations
+- CultureMech_002143
+- DSMZ_962a
+- merged-recipe

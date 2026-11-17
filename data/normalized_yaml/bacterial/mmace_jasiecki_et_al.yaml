@@ -141,6 +141,14 @@ curation_history:
   notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T19:06:34.475226+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, archived source/Markdown provenance, short excerpts
+    and qualified scientific-name/NCBI mapping notes. Preserved all existing recipe
+    values, evidence, history and variant links. Exact formulation and study-strain/assay
+    assignments remain qualified; no new native growth or concentration claim.
+  source: PMID:12612607
 media_term:
   preferred_term: MediaDB Medium 141
   term:
@@ -152,3 +160,55 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:12612607
+  title: Growth-rate dependent RNA polyadenylation in Escherichia coli.
+  authors: Jasiecki J; Wegrzyn G
+  year: 2003
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_and_PMC_HTML_selected_identity_and_assay_passages;
+    owner=MEDIADB:141; discovery_sourceID=44; source_url=https://doi.org/10.1038/sj.embor.embor733;
+    alternate_identifier=doi:10.1038/sj.embor.embor733; alternate_identifier=PMC1315831;
+    raw=references_cache/papers/PMID_12612607.xml; markdown=references_cache/papers/PMID_12612607.md;
+    full_raw=references_cache/papers/primary_html/pmid-12612607-20261013.html; full_markdown=references_cache/papers/primary_html/pmid-12612607-20261013.md;
+    Methods: Bacterial strains; exact excerpt="MG1655 ( pyrE ) strain". Methods: Bacterial
+    strains; exact excerpt="VH1000". Methods: PAP I overproduction and purification,
+    separate assay; exact excerpt="JM109". Abstract: transcript origin, not free phage
+    growth; exact excerpt="bacteriophage lambda oop RNA". Reported organism=Escherichia
+    coli MG1655 (pyrE), MG1655/pKB2, MG1655/pBR322, VH1000 and VH1000-ppcnB-lacZ;
+    MG1655 delta-pcnB::kan control; canonical scientific name=Escherichia coli str.
+    K-12 substr. MG1655; NCBITaxon:511145; actual rank=no rank; taxonomy_match=parent_rank_only
+    for derived states; role=distinct experimental hosts/constructs and analytical
+    control, not interchangeable exact reference-strain identities. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=511145&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-study-candidates-20261013.md.
+    Reported organism=Escherichia coli JM109 bearing pQPAPL; canonical scientific
+    name=Escherichia coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only;
+    role=separate LB protein-production assay, not a target of the four minimal-medium
+    owners. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-study-candidates-20261013.md.
+    Reported organism=bacteriophage lambda; derived lambdaB299 vector; canonical scientific
+    name=Escherichia phage Lambda; NCBITaxon:2681611; actual rank=no rank; taxonomy_match=verified
+    lambda name; parent_rank_only for derived vector; role=transcript/vector context,
+    not free-phage growth in this recipe. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2681611&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/enteric-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/enteric-study-candidates-20261013.md.
+    The methods distinguish MMGlu, MMGly, MMSuc and MMAce, but local chemical-form
+    identity and conditional assay additions need reconciliation before exact study-to-owner
+    assignment. The local magnesium term already denotes the hexahydrate; a generic
+    preferred label alone is not an anhydrous mismatch. The paper''s sodium-phosphate
+    hydration state is not captured by the local generic term. Table 1''s pBR322 caption
+    and third-column pKB2 label disagree; no numerical result is assigned from that
+    ambiguous column. The pcnB deletion is an analytical control, not evidence of
+    negative growth. Plasmids are not additional organism taxa. No separate LB assay,
+    genotype or conditional addition is silently merged into the parent formula. No
+    resolved variant or growth assertion is added. The historical owner-to-paper join
+    is retained as discovery provenance, not proof of exact formulation equivalence.
+    Inventory covers selected medium-relevant passages, not the entire paper. Taxonomy
+    candidates, parental matches and study roles are qualified, not cultivation evidence.
+    Correction/retraction coverage is limited to inspected publication metadata. Bounded
+    lookup misses do not prove absence. All original ingredients, amounts, evidence,
+    history, preparation and variant links are preserved; none is newly certified.
+    No new native growth assertion, concentration evidence or resolved variant.'

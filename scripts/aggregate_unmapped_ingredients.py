@@ -14,6 +14,8 @@ from pathlib import Path
 
 from ingredient_occurrences import (
     build_unmapped_output,
+    default_changes_output,
+    default_holds_output,
     default_list_output,
     ensure_distinct_output_paths,
     scan_ingredient_occurrences,
@@ -44,13 +46,26 @@ def main(argv: list[str] | None = None) -> int:
         help="Ingredient list TSV (default: ingredients_list.tsv beside --occurrences-output).",
     )
     parser.add_argument("--verbose", action="store_true")
+    parser.add_argument(
+        "--changes-output",
+        type=Path,
+        default=None,
+        help="Lossless variant change TSV (default: beside occurrences).",
+    )
     args = parser.parse_args(argv)
     if args.list_output is None:
         args.list_output = default_list_output(args.occurrences_output)
+    if args.changes_output is None:
+        args.changes_output = default_changes_output(args.occurrences_output)
     if args.min_occurrences < 1:
         parser.error("--min-occurrences must be at least 1")
     ensure_distinct_output_paths(
-        args.output, args.occurrences_output, args.errors_output, args.list_output
+        args.output,
+        args.occurrences_output,
+        args.errors_output,
+        args.list_output,
+        args.changes_output,
+        default_holds_output(args.occurrences_output),
     )
 
     result = scan_ingredient_occurrences(args.input_dir)
@@ -66,6 +81,9 @@ def main(argv: list[str] | None = None) -> int:
         args.output,
         output,
         args.list_output,
+        variant_changes=result.variant_changes,
+        changes_path=args.changes_output,
+        variant_mentions=result.variant_mentions,
     )
     if args.verbose:
         print(

@@ -153,6 +153,23 @@ curation_history:
   notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T20:04:31.598558+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, source/Markdown archives, short excerpts and
+    qualified scientific-name/NCBI taxonomy notes. Preserved all recipe values, evidence,
+    history and variant links. Formulation and historical identity limitations remain
+    explicit; no new growth or concentration claim.
+  source: doi:10.1271/bbb1961.44.1985; doi:10.1099/00207713-34-1-5; PMID:21677850
+- timestamp: '2026-10-14T01:06:41.461765+00:00'
+  curator: codex
+  action: CURATED_PAPER_CITATIONS_AND_PROVENANCE
+  notes: Added or enriched verified paper citations and source archive/Markdown links;
+    recorded bounded formulation and organism assessments, corrected alias/correction
+    dispositions, and consolidated only verified duplicate bibliography entries. Preserved
+    prior recipe fields, evidence, links and history. No new growth, concentration
+    or resolved-variant claim. Whitchurch review is non-operational identity only.
+  source: doi:10.1271/bbb1961.44.1985
 media_term:
   preferred_term: MediaDB Medium 252
   term:
@@ -164,3 +181,144 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1271/bbb1961.44.1985
+  title: Isolation of strictly thermophilic and obligately autotrophic hydrogen bacteria.
+  authors: Toshiyuki KAWASUMI; Yasuo IGARASHI; Tohru KODAMA; Yasuji MINODA
+  year: 1980
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=two_page_primary_PDF_with_imperfect_text_extraction;
+    owner=MEDIADB:252; discovery_sourceID=87; source_url=https://doi.org/10.1271/bbb1961.44.1985;
+    raw=references_cache/papers/primary_pdf/source-87-followup-20261013.pdf; markdown=references_cache/papers/primary_pdf/source-87-followup-20261013.md;
+    visual_markdown=references_cache/papers/primary_pdf/source-87-identity-excerpts-20261013.md;
+    Printed page 1985, right column: strain identity; exact excerpt="strain TK-6".
+    Printed page 1986, left column: historical background; exact excerpt="Thiobacillus".
+    Printed page 1986, left column: historical background; exact excerpt="Hydrogenomonas".
+    Reported organism=TK-6, unnamed organism in the 1980 paper; canonical scientific
+    name=Hydrogenobacter thermophilus TK-6; NCBITaxon:608538; actual rank=strain;
+    taxonomy_match=historical_type_strain_lineage_supported_by_1984_and_2011_primary_papers;
+    role=isolate studied. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=608538&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Reported organism=Hydrogenobacter thermophilus (later scientific name); canonical
+    scientific name=Hydrogenobacter thermophilus; NCBITaxon:940; actual rank=species;
+    taxonomy_match=verified_species_parent; role=later species identification. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=940&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Reported organism=Thiobacillus; canonical scientific name=Thiobacillus; NCBITaxon:919;
+    actual rank=genus; taxonomy_match=verified_genus; role=background comparison only.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=919&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Historical background name Hydrogenomonas remains taxonomy_match=unresolved. The
+    search hit Hydrogenimonas is not accepted as a mapping of this 1980 mention. Both
+    PDF pages were visually checked; short identity excerpts are separately transcribed.
+    The isolation formula, solid/liquid contexts, salt alternatives and later substrate
+    assays are distinct. Local calcium and manganese chemical forms conflict with
+    the original hydrates, and trace-stock/final concentration basis needs reconciliation.
+    These unresolved differences stay here rather than being assigned a falsely exact
+    variant. The 1984 and 2011 citations support historical lineage, not identity
+    of every lab-passaged derivative or genome as one physical isolate, nor cultivation
+    on this exact owner. Alternate DOI 10.1080/00021369.1980.10864255 is now verified
+    as the same publication by both primary Crossref deposits: same title (case/terminal
+    punctuation aside), all four authors, journal, volume 44, issue 8, pages 1985-1986
+    and print year 1980. The transferred deposit''s later online date is not the print
+    publication year. Original DOI retained; no duplicate added. Alias_proof=references_cache/papers/crossref/primary-source-87-20261013.json
+    and primary-source-87-alternate-20261013.json, with respective Markdown companions.
+    Owner=CultureMech:007150; MediaDB medium=252; inspected local ingredient entries=13.
+    No new resolved inline/full variant is assigned while the study-to-local-formulation
+    mapping remains unresolved. Inventory covers the selected medium-relevant identity
+    passages, not every organism in the full paper. Correction/retraction coverage
+    is limited to inspected publication metadata. Bounded lookup misses do not prove
+    absence. All original ingredients, amounts, preparation, evidence, history and
+    variant links are preserved; none is newly certified. No new native growth assertion,
+    concentration evidence or resolved variant.'
+- reference: doi:10.1099/00207713-34-1-5
+  title: Hydrogenobacter thermophilus gen. nov. , sp. nov. , an Extremely Thermophilic,
+    Aerobic, Hydrogen-Oxidizing Bacterium
+  authors: Toshiyuki Kawasumi; Yasuo Igarashi; Tohru Kodama; Yasuji Minoda
+  year: 1984
+  notes: 'source_type=journal_article; discovery_mode=primary_source_identity_followup;
+    accessed_on=2026-10-13; source_access=publisher_abstract_selected_type_strain_identity_passage;
+    owner=MEDIADB:252; discovery_sourceID=87; source_url=https://doi.org/10.1099/00207713-34-1-5;
+    raw=references_cache/papers/primary_html/tk6-description-20261013.html; markdown=references_cache/papers/primary_html/tk6-description-20261013.md;
+    Abstract: final type-strain identification sentence; exact excerpt="type strain
+    TK-6". Abstract: final type-strain identification sentence; exact excerpt="strain
+    IAM 12695". Reported organism=Hydrogenobacter thermophilus TK-6; canonical scientific
+    name=Hydrogenobacter thermophilus TK-6; NCBITaxon:608538; actual rank=strain;
+    taxonomy_match=historical_type_strain_lineage_match; role=historical identity,
+    not exact local-medium growth. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=608538&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Reported organism=Hydrogenobacter thermophilus; canonical scientific name=Hydrogenobacter
+    thermophilus; NCBITaxon:940; actual rank=species; taxonomy_match=verified_species_parent;
+    role=later species name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=940&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Reported organism=Hydrogenobacter; canonical scientific name=Hydrogenobacter;
+    NCBITaxon:939; actual rank=genus; taxonomy_match=verified_genus; role=genus identity.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=939&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Citation role=identity_reconciliation for the 1980 isolation-medium source. The
+    final abstract sentence names TK-6 as the type strain and IAM 12695 as its deposit.
+    It does not identify the other unnamed isolates individually or certify this owner''s
+    complete formulation. Access is publisher abstract, not full methods. Owner=CultureMech:007150;
+    MediaDB medium=252; inspected local ingredient entries=13. No new resolved inline/full
+    variant is assigned while the study-to-local-formulation mapping remains unresolved.
+    Inventory covers the selected medium-relevant identity passages, not every organism
+    in the full paper. Correction/retraction coverage is limited to inspected publication
+    metadata. Bounded lookup misses do not prove absence. All original ingredients,
+    amounts, preparation, evidence, history and variant links are preserved; none
+    is newly certified. No new native growth assertion, concentration evidence or
+    resolved variant.'
+- reference: PMID:21677850
+  title: Complete genome sequence of Hydrogenobacter thermophilus type strain (TK-6).
+  authors: Zeytun A; Sikorski J; Nolan M; Lapidus A; Lucas S; Han J; Tice H; Cheng
+    JF; Tapia R; Goodwin L; Pitluck S; Liolios K; Ivanova N; Mavromatis K; Mikhailova
+    N; Ovchinnikova G; Pati A; Chen A; Palaniappan K; Ngatchou-Djao OD; Land M; Hauser
+    L; Jeffries CD; Han C; Detter JC; Ubler S; Rohde M; Tindall BJ; Göker M; Wirth
+    R; Woyke T; Bristow J; Eisen JA; Markowitz V; Hugenholtz P; Klenk HP; Kyrpides
+    NC
+  year: 2011
+  notes: 'source_type=journal_article; discovery_mode=primary_source_identity_followup;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_selected_identity_passage_and_selected_PMC_identity_sentences;
+    owner=MEDIADB:252; discovery_sourceID=87; source_url=https://doi.org/10.4056/sigs.1463589;
+    alternate_identifier=doi:10.4056/sigs.1463589; alternate_identifier=PMC3111988;
+    raw=references_cache/papers/PMID_21677850.xml; markdown=references_cache/papers/PMID_21677850.md;
+    full_raw=references_cache/papers/primary_html/tk6-genome-20261013.html; full_markdown=references_cache/papers/primary_html/tk6-genome-20261013.md;
+    Introduction: TK-6 collection equivalents and original isolation sentences; exact
+    excerpt="DSM 6534 = JCM 7687 = NBRC 102181". Introduction: TK-6 collection equivalents
+    and original isolation sentences; exact excerpt="was previously isolated by Kawasumi
+    in 1980". Reported organism=Hydrogenobacter thermophilus TK-6; canonical scientific
+    name=Hydrogenobacter thermophilus TK-6; NCBITaxon:608538; actual rank=strain;
+    taxonomy_match=historical_type_strain_lineage_match; role=historical identity,
+    not exact local-medium growth. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=608538&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Reported organism=Hydrogenobacter thermophilus; canonical scientific name=Hydrogenobacter
+    thermophilus; NCBITaxon:940; actual rank=species; taxonomy_match=verified_species_parent;
+    role=later species name. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=940&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Reported organism=Hydrogenobacter; canonical scientific name=Hydrogenobacter;
+    NCBITaxon:939; actual rank=genus; taxonomy_match=verified_genus; role=genus identity.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=939&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/older-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/older-study-candidates-20261013.md.
+    Citation role=identity_reconciliation for the 1980 isolation-medium source. The
+    selected Introduction sentences give collection equivalents and explicitly link
+    TK-6 to Kawasumi''s 1980 paper. Genome discussion distinguishes differently maintained
+    derivatives; do not claim they are genetically identical. The genome paper''s
+    cultivation uses a separately named DSMZ medium, not automatically the 1980 isolation
+    recipe. Background taxa outside the selected identity sentences are not asserted
+    as organisms for this owner. PubMed title/author rendering is retained; the PMC
+    title marks the type strain. Owner=CultureMech:007150; MediaDB medium=252; inspected
+    local ingredient entries=13. No new resolved inline/full variant is assigned while
+    the study-to-local-formulation mapping remains unresolved. Inventory covers the
+    selected medium-relevant identity passages, not every organism in the full paper.
+    Correction/retraction coverage is limited to inspected publication metadata. Bounded
+    lookup misses do not prove absence. All original ingredients, amounts, preparation,
+    evidence, history and variant links are preserved; none is newly certified. No
+    new native growth assertion, concentration evidence or resolved variant.'

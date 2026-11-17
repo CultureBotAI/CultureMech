@@ -238,6 +238,367 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T04:02:53.077876+00:00'
+  curator: codex
+  action: CURATED_PAPER_VARIANT_EVIDENCE
+  notes: Archived and verified primary paper and NCBI strain taxonomy; added one bibliography
+    entry, one study-specific inline variant and one variant-scoped HTCC1062 growth
+    association. Preserved parent concentrations, preparation and all prior history;
+    no KGX export.
+  source: doi:10.1038/ismej.2012.122
+- timestamp: '2026-10-13T04:14:08.716305+00:00'
+  curator: codex
+  action: QUALIFIED_HISTORICAL_PAPER_EVIDENCE
+  notes: Added the archived 2014 HMP-requirement and thiamin-contamination follow-up;
+    qualified the historical 2013 variant and growth interpretation. No parent amount,
+    variant amount, taxon, or growth association added or changed.
+  source: doi:10.1038/ismej.2014.61
+- timestamp: '2026-11-16T21:33:56.422509+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "311cb0ca79971c03b8a2a334da32709c3be1315c8cf63cb1dc51b31f85200317",
+    "variants": [{"ingredient_changes": [{"action": "SET_CONCENTRATION", "evidence":
+    [{"explanation": "2013 Glycine substitution experiments / 2014 Methods Organism
+    source, p.5. The 2014 PDF page was visually inspected because extracted text corrupts
+    the micro symbol. Primary source inspected 2026-11-16; no ontology identity or
+    mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122", "snippet":
+    "pyruvate (50 μm)", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "MICROMOLAR", "value": "50"}, "preferred_term": "Pyruvate"}, "source_modification_index":
+    0, "source_text": "Use 50 micromolar pyruvate instead of the parent''s 1.0 mM,
+    and 10 micromolar methionine instead of 0.05 mM DL-methionine; the paper does
+    not specify methionine stereochemistry.", "stage": "2013 Table 3 glycine-substitution
+    assay"}, {"action": "REPLACE", "evidence": [{"explanation": "The same assay paragraph
+    states the methionine dose without stereochemistry. The new descriptor deliberately
+    does not certify the imported DL form. Primary source inspected 2026-11-16; no
+    ontology identity or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "methionine (10 μm)", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MICROMOLAR", "value": "10"}, "notes": "Stereochemistry unspecified by
+    the source; imported DL-methionine identity is not certified.", "preferred_term":
+    "Methionine"}, "replaced_ingredient": {"preferred_term": "DL-methionine"}, "source_modification_index":
+    0, "source_text": "Use 50 micromolar pyruvate instead of the parent''s 1.0 mM,
+    and 10 micromolar methionine instead of 0.05 mM DL-methionine; the paper does
+    not specify methionine stereochemistry.", "stage": "2013 Table 3 glycine-substitution
+    assay"}, {"action": "REPLACE", "evidence": [{"explanation": "2013 Glycine substitution
+    experiments and Table 3: Serine is a listed substitute; Glycine is the positive
+    control at the same stated 25 micromolar dose. No stereochemistry is supplied
+    for serine. Primary source inspected 2026-11-16; no ontology identity or mass
+    conversion inferred.", "reference": "doi:10.1038/ismej.2012.122", "snippet": "Each
+    substitute was tested at a concentration of 25 μm", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "MICROMOLAR", "value": "25"}, "notes": "Source serine
+    stereochemistry is unspecified.", "preferred_term": "Serine"}, "replaced_ingredient":
+    {"preferred_term": "L-Serine"}, "source_modification_index": 1, "source_text":
+    "Use 25 micromolar serine instead of the parent''s 0.05 mM L-Serine; this is the
+    Table 3 assay, not a titration maximum or a universal optimum.", "stage": "2013
+    Table 3 glycine-substitution assay"}, {"action": "REPLACE", "evidence": [{"explanation":
+    "Carini 2013 AMS1 Table 1, explicit compound form and final concentration. Preserve
+    stated molar dose, with no molecular-weight or mass conversion. Primary source
+    inspected 2026-11-16; no ontology identity or mass conversion inferred.", "reference":
+    "doi:10.1038/ismej.2012.122", "snippet": "MgSO4·7H2O2.8 mm", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "MILLIMOLAR", "value": "2.8"}, "preferred_term":
+    "Magnesium sulfate heptahydrate"}, "replaced_ingredient": {"preferred_term": "Magnesium
+    sulfate"}, "source_modification_index": 2, "source_text": "Use magnesium sulfate
+    heptahydrate at 2.8 mM rather than the parent''s magnesium sulfate at 28.0 mM.
+    Other unchanged Table 1 base-salt and macronutrient molar amounts remain as reported
+    there.", "stage": "2013 Table 3 glycine-substitution assay"}, {"action": "REPLACE",
+    "evidence": [{"explanation": "Carini 2013 AMS1 Table 1, explicit compound form
+    and final concentration. Preserve stated molar dose, with no molecular-weight
+    or mass conversion. Primary source inspected 2026-11-16; no ontology identity
+    or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122", "snippet":
+    "CaCl2·2H2O10 mm", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "MILLIMOLAR", "value": "10"}, "preferred_term": "Calcium chloride dihydrate"},
+    "replaced_ingredient": {"preferred_term": "Calcium chloride anhydrous"}, "source_modification_index":
+    3, "source_text": "Use calcium chloride dihydrate, manganese chloride tetrahydrate,
+    zinc sulfate heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate
+    and nickel chloride hexahydrate as specified in Table 1; retain their Table 1
+    molar amounts rather than infer mass equivalents from the local anhydrous or unspecified
+    forms.", "stage": "2013 Table 3 glycine-substitution assay"}, {"action": "REPLACE",
+    "evidence": [{"explanation": "Carini 2013 AMS1 Table 1, explicit compound form
+    and final concentration. Preserve stated molar dose, with no molecular-weight
+    or mass conversion. Primary source inspected 2026-11-16; no ontology identity
+    or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122", "snippet":
+    "MnCl2·4H2O9 nm", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "NANOMOLAR", "value": "9"}, "preferred_term": "Manganese chloride tetrahydrate"},
+    "replaced_ingredient": {"preferred_term": "Manganese chloride"}, "source_modification_index":
+    3, "source_text": "Use calcium chloride dihydrate, manganese chloride tetrahydrate,
+    zinc sulfate heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate
+    and nickel chloride hexahydrate as specified in Table 1; retain their Table 1
+    molar amounts rather than infer mass equivalents from the local anhydrous or unspecified
+    forms.", "stage": "2013 Table 3 glycine-substitution assay"}, {"action": "REPLACE",
+    "evidence": [{"explanation": "Carini 2013 AMS1 Table 1, explicit compound form
+    and final concentration. Preserve stated molar dose, with no molecular-weight
+    or mass conversion. Primary source inspected 2026-11-16; no ontology identity
+    or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122", "snippet":
+    "ZnSO4·7H2O800 pM", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "PICOMOLAR", "value": "800"}, "preferred_term": "Zinc sulfate heptahydrate"},
+    "replaced_ingredient": {"preferred_term": "Zinc sulfate"}, "source_modification_index":
+    3, "source_text": "Use calcium chloride dihydrate, manganese chloride tetrahydrate,
+    zinc sulfate heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate
+    and nickel chloride hexahydrate as specified in Table 1; retain their Table 1
+    molar amounts rather than infer mass equivalents from the local anhydrous or unspecified
+    forms.", "stage": "2013 Table 3 glycine-substitution assay"}, {"action": "REPLACE",
+    "evidence": [{"explanation": "Carini 2013 AMS1 Table 1, explicit compound form
+    and final concentration. Preserve stated molar dose, with no molecular-weight
+    or mass conversion. Primary source inspected 2026-11-16; no ontology identity
+    or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122", "snippet":
+    "CoCl2·6H2O500 pM", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "PICOMOLAR", "value": "500"}, "preferred_term": "Cobalt chloride hexahydrate"},
+    "replaced_ingredient": {"preferred_term": "Cobalt chloride"}, "source_modification_index":
+    3, "source_text": "Use calcium chloride dihydrate, manganese chloride tetrahydrate,
+    zinc sulfate heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate
+    and nickel chloride hexahydrate as specified in Table 1; retain their Table 1
+    molar amounts rather than infer mass equivalents from the local anhydrous or unspecified
+    forms.", "stage": "2013 Table 3 glycine-substitution assay"}, {"action": "REPLACE",
+    "evidence": [{"explanation": "Carini 2013 AMS1 Table 1, explicit compound form
+    and final concentration. Preserve stated molar dose, with no molecular-weight
+    or mass conversion. Primary source inspected 2026-11-16; no ontology identity
+    or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122", "snippet":
+    "Na2MoO4·2H2O300 pM", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "PICOMOLAR", "value": "300"}, "preferred_term": "Sodium molybdate dihydrate"},
+    "replaced_ingredient": {"preferred_term": "Sodium molybdate"}, "source_modification_index":
+    3, "source_text": "Use calcium chloride dihydrate, manganese chloride tetrahydrate,
+    zinc sulfate heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate
+    and nickel chloride hexahydrate as specified in Table 1; retain their Table 1
+    molar amounts rather than infer mass equivalents from the local anhydrous or unspecified
+    forms.", "stage": "2013 Table 3 glycine-substitution assay"}, {"action": "REPLACE",
+    "evidence": [{"explanation": "Carini 2013 AMS1 Table 1, explicit compound form
+    and final concentration. Preserve stated molar dose, with no molecular-weight
+    or mass conversion. Primary source inspected 2026-11-16; no ontology identity
+    or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122", "snippet":
+    "NiCl2·6H2O1 nm", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "NANOMOLAR", "value": "1"}, "preferred_term": "Nickel chloride hexahydrate"},
+    "replaced_ingredient": {"preferred_term": "Nickel chloride"}, "source_modification_index":
+    3, "source_text": "Use calcium chloride dihydrate, manganese chloride tetrahydrate,
+    zinc sulfate heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate
+    and nickel chloride hexahydrate as specified in Table 1; retain their Table 1
+    molar amounts rather than infer mass equivalents from the local anhydrous or unspecified
+    forms.", "stage": "2013 Table 3 glycine-substitution assay"}, {"action": "REPLACE",
+    "evidence": [{"explanation": "Assay Methods overrides the basal iron dose with
+    1 micromolar FeCl3. Carini 2013 Table 1 specifies FeCl3·6H2O for AMS1; the basal
+    117 nM is not retained. Primary source inspected 2026-11-16; no ontology identity
+    or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122", "snippet":
+    "FeCl3 (1 μm)", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "MICROMOLAR", "value": "1"}, "notes": "Hydrate from the explicitly referenced
+    AMS1 base formulation; dose from the assay Methods.", "preferred_term": "Iron(III)
+    chloride hexahydrate"}, "replaced_ingredient": {"preferred_term": "Iron(III) chloride"},
+    "source_modification_index": 4, "source_text": "Use iron(III) chloride at 1 micromolar
+    in this assay instead of the parent''s 117 nM; Table 1 specifies the hexahydrate
+    and its basal 117 nM is overridden by the assay methods.", "stage": "2013 Table
+    3 glycine-substitution assay"}, {"action": "ADD", "evidence": [{"explanation":
+    "Carini 2013 Table 1, Vitamins, final-concentration column; the complete mixture
+    is retained for the study assay. B-number labels are literal source designations,
+    not an assertion of a particular vitamer/salt. The 2014 Methods repeats the same
+    mixture. Primary source inspected 2026-11-16; no ontology identity or mass conversion
+    inferred.", "reference": "doi:10.1038/ismej.2012.122", "snippet": "B16 μm", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "MICROMOLAR", "value": "6"},
+    "notes": "Molecular and salt forms of B-number vitamin labels remain unspecified
+    by this source.", "preferred_term": "B1"}, "source_modification_index": 5, "source_text":
+    "Replace the imported biotin/HMP vitamin selection with the complete Table 1 vitamin
+    mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12
+    700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid 60 nM. Do not substitute
+    HMP for B1 using this 2013 paper.", "stage": "2013 Table 3 glycine-substitution
+    assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013 Table 1,
+    Vitamins, final-concentration column; the complete mixture is retained for the
+    study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "B3800 nm", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "NANOMOLAR", "value": "800"},
+    "notes": "Molecular and salt forms of B-number vitamin labels remain unspecified
+    by this source.", "preferred_term": "B3"}, "source_modification_index": 5, "source_text":
+    "Replace the imported biotin/HMP vitamin selection with the complete Table 1 vitamin
+    mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12
+    700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid 60 nM. Do not substitute
+    HMP for B1 using this 2013 paper.", "stage": "2013 Table 3 glycine-substitution
+    assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013 Table 1,
+    Vitamins, final-concentration column; the complete mixture is retained for the
+    study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "B5425 nm", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "NANOMOLAR", "value": "425"},
+    "notes": "Molecular and salt forms of B-number vitamin labels remain unspecified
+    by this source.", "preferred_term": "B5"}, "source_modification_index": 5, "source_text":
+    "Replace the imported biotin/HMP vitamin selection with the complete Table 1 vitamin
+    mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12
+    700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid 60 nM. Do not substitute
+    HMP for B1 using this 2013 paper.", "stage": "2013 Table 3 glycine-substitution
+    assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013 Table 1,
+    Vitamins, final-concentration column; the complete mixture is retained for the
+    study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "B6500 nm", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "NANOMOLAR", "value": "500"},
+    "notes": "Molecular and salt forms of B-number vitamin labels remain unspecified
+    by this source.", "preferred_term": "B6"}, "source_modification_index": 5, "source_text":
+    "Replace the imported biotin/HMP vitamin selection with the complete Table 1 vitamin
+    mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12
+    700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid 60 nM. Do not substitute
+    HMP for B1 using this 2013 paper.", "stage": "2013 Table 3 glycine-substitution
+    assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013 Table 1,
+    Vitamins, final-concentration column; the complete mixture is retained for the
+    study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "B94 nm", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "NANOMOLAR", "value": "4"}, "notes":
+    "Molecular and salt forms of B-number vitamin labels remain unspecified by this
+    source.", "preferred_term": "B9"}, "source_modification_index": 5, "source_text":
+    "Replace the imported biotin/HMP vitamin selection with the complete Table 1 vitamin
+    mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12
+    700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid 60 nM. Do not substitute
+    HMP for B1 using this 2013 paper.", "stage": "2013 Table 3 glycine-substitution
+    assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013 Table 1,
+    Vitamins, final-concentration column; the complete mixture is retained for the
+    study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "B12700 pM", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "PICOMOLAR", "value": "700"},
+    "notes": "Molecular and salt forms of B-number vitamin labels remain unspecified
+    by this source.", "preferred_term": "B12"}, "source_modification_index": 5, "source_text":
+    "Replace the imported biotin/HMP vitamin selection with the complete Table 1 vitamin
+    mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12
+    700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid 60 nM. Do not substitute
+    HMP for B1 using this 2013 paper.", "stage": "2013 Table 3 glycine-substitution
+    assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013 Table 1,
+    Vitamins, final-concentration column; the complete mixture is retained for the
+    study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "Myo-inositol6 μm", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "MICROMOLAR", "value": "6"},
+    "preferred_term": "Myo-inositol"}, "source_modification_index": 5, "source_text":
+    "Replace the imported biotin/HMP vitamin selection with the complete Table 1 vitamin
+    mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12
+    700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid 60 nM. Do not substitute
+    HMP for B1 using this 2013 paper.", "stage": "2013 Table 3 glycine-substitution
+    assay"}, {"action": "ADD", "evidence": [{"explanation": "Carini 2013 Table 1,
+    Vitamins, final-concentration column; the complete mixture is retained for the
+    study assay. B-number labels are literal source designations, not an assertion
+    of a particular vitamer/salt. The 2014 Methods repeats the same mixture. Primary
+    source inspected 2026-11-16; no ontology identity or mass conversion inferred.",
+    "reference": "doi:10.1038/ismej.2012.122", "snippet": "4-Aminobenzoic acid60 nm",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "NANOMOLAR",
+    "value": "60"}, "preferred_term": "4-Aminobenzoic acid"}, "source_modification_index":
+    5, "source_text": "Replace the imported biotin/HMP vitamin selection with the
+    complete Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500
+    nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic
+    acid 60 nM. Do not substitute HMP for B1 using this 2013 paper.", "stage": "2013
+    Table 3 glycine-substitution assay"}, {"action": "REMOVE", "evidence": [{"explanation":
+    "Table 1 specifies B1 in its complete vitamin mixture, not the imported HMP substitute.
+    Remove HMP only within this source-specific alternative vitamin formulation; do
+    not assert universal HMP equivalence. Primary source inspected 2026-11-16; no
+    ontology identity or mass conversion inferred.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "B16 μm", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "4-Amino-5-hydroxymethyl-2-methylpyrimidine"}, "source_modification_index": 5,
+    "source_text": "Replace the imported biotin/HMP vitamin selection with the complete
+    Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+    4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid 60
+    nM. Do not substitute HMP for B1 using this 2013 paper.", "stage": "2013 Table
+    3 glycine-substitution assay"}], "variant_index": 0, "variant_name": "Carini 2013
+    AMS1 serine substitution assay"}]}'
+- timestamp: '2026-11-17T00:07:06.009642+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "b4aeda720f679f294ace46be3e4ae02e3038511c6f45dabb4a446a9349a1aa42",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/ams1_pyruvate_serine.yaml",
+    "recipe_id": "CultureMech:007384", "variants": [{"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Media preparation explicitly gives ordered
+    gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the
+    cited Carini2013 base preparation. No supplied volume, final dissolved gas dose
+    or whole-parent equivalence is inferred.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "sparged with 0.1 μm-filtered CO2 for 5 h", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "CO2"}, "source_modification_index": 6, "source_text":
+    "Follow the paper''s AMS1 preparation: autoclave the inorganic medium, establish
+    the bicarbonate buffer by filtered CO2 then air sparging, and add vitamins and
+    organics afterward; this differs from the imported all-ingredient filter-sterilization
+    instruction. The reported resulting pH is 7.5-7.7, not an independently optimized
+    value.", "stage": "Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered
+    CO2 sparging for 5 h"}, {"action": "ADD", "evidence": [{"explanation": "Media
+    preparation explicitly gives ordered gas supplies to establish the bicarbonate-based
+    buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied
+    volume, final dissolved gas dose or whole-parent equivalence is inferred.", "reference":
+    "doi:10.1038/ismej.2012.122", "snippet": "followed by sparging with air for 10 h",
+    "supports": "SUPPORT"}], "ingredient": {"preferred_term": "air"}, "source_modification_index":
+    6, "source_text": "Follow the paper''s AMS1 preparation: autoclave the inorganic
+    medium, establish the bicarbonate buffer by filtered CO2 then air sparging, and
+    add vitamins and organics afterward; this differs from the imported all-ingredient
+    filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not an
+    independently optimized value.", "stage": "Carini AMS1 source preparation; second:
+    air sparging for 10 h, before vitamins and organics"}], "append_mentions": [{"held_fields":
+    ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation and dose
+    are already supported in ingredient_changes. A more specific vitamer or salt form
+    is not supplied by the cited formulation; this form-only hold does not demote
+    supported label presence or dosage.", "reported_action": "UNSPECIFIED", "source_label":
+    "B1", "source_modification_index": 5, "source_text": "Replace the imported biotin/HMP
+    vitamin selection with the complete Table 1 vitamin mixture: B1 6 micromolar,
+    B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6
+    micromolar and 4-aminobenzoic acid 60 nM. Do not substitute HMP for B1 using this
+    2013 paper.", "stage": "Carini source-specific AMS1 vitamin formulation"}, {"held_fields":
+    ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation and dose
+    are already supported in ingredient_changes. A more specific vitamer or salt form
+    is not supplied by the cited formulation; this form-only hold does not demote
+    supported label presence or dosage.", "reported_action": "UNSPECIFIED", "source_label":
+    "B3", "source_modification_index": 5, "source_text": "Replace the imported biotin/HMP
+    vitamin selection with the complete Table 1 vitamin mixture: B1 6 micromolar,
+    B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6
+    micromolar and 4-aminobenzoic acid 60 nM. Do not substitute HMP for B1 using this
+    2013 paper.", "stage": "Carini source-specific AMS1 vitamin formulation"}, {"held_fields":
+    ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation and dose
+    are already supported in ingredient_changes. A more specific vitamer or salt form
+    is not supplied by the cited formulation; this form-only hold does not demote
+    supported label presence or dosage.", "reported_action": "UNSPECIFIED", "source_label":
+    "B5", "source_modification_index": 5, "source_text": "Replace the imported biotin/HMP
+    vitamin selection with the complete Table 1 vitamin mixture: B1 6 micromolar,
+    B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6
+    micromolar and 4-aminobenzoic acid 60 nM. Do not substitute HMP for B1 using this
+    2013 paper.", "stage": "Carini source-specific AMS1 vitamin formulation"}, {"held_fields":
+    ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation and dose
+    are already supported in ingredient_changes. A more specific vitamer or salt form
+    is not supplied by the cited formulation; this form-only hold does not demote
+    supported label presence or dosage.", "reported_action": "UNSPECIFIED", "source_label":
+    "B6", "source_modification_index": 5, "source_text": "Replace the imported biotin/HMP
+    vitamin selection with the complete Table 1 vitamin mixture: B1 6 micromolar,
+    B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6
+    micromolar and 4-aminobenzoic acid 60 nM. Do not substitute HMP for B1 using this
+    2013 paper.", "stage": "Carini source-specific AMS1 vitamin formulation"}, {"held_fields":
+    ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation and dose
+    are already supported in ingredient_changes. A more specific vitamer or salt form
+    is not supplied by the cited formulation; this form-only hold does not demote
+    supported label presence or dosage.", "reported_action": "UNSPECIFIED", "source_label":
+    "B9", "source_modification_index": 5, "source_text": "Replace the imported biotin/HMP
+    vitamin selection with the complete Table 1 vitamin mixture: B1 6 micromolar,
+    B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6
+    micromolar and 4-aminobenzoic acid 60 nM. Do not substitute HMP for B1 using this
+    2013 paper.", "stage": "Carini source-specific AMS1 vitamin formulation"}, {"held_fields":
+    ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation and dose
+    are already supported in ingredient_changes. A more specific vitamer or salt form
+    is not supplied by the cited formulation; this form-only hold does not demote
+    supported label presence or dosage.", "reported_action": "UNSPECIFIED", "source_label":
+    "B12", "source_modification_index": 5, "source_text": "Replace the imported biotin/HMP
+    vitamin selection with the complete Table 1 vitamin mixture: B1 6 micromolar,
+    B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6
+    micromolar and 4-aminobenzoic acid 60 nM. Do not substitute HMP for B1 using this
+    2013 paper.", "stage": "Carini source-specific AMS1 vitamin formulation"}, {"held_fields":
+    ["OPERATION", "IDENTITY_FORM", "QUANTITY"], "reason": "The source describes establishment
+    of a bicarbonate-based buffer through CO2 then air sparging. This is not an explicit
+    addition of a particular bicarbonate salt or measured final species concentration.",
+    "reported_action": "UNSPECIFIED", "source_label": "bicarbonate", "source_modification_index":
+    6, "source_text": "Follow the paper''s AMS1 preparation: autoclave the inorganic
+    medium, establish the bicarbonate buffer by filtered CO2 then air sparging, and
+    add vitamins and organics afterward; this differs from the imported all-ingredient
+    filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not an
+    independently optimized value.", "stage": "Carini AMS1 buffer after gas sparging"}],
+    "variant_index": 0, "variant_name": "Carini 2013 AMS1 serine substitution assay"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 media_term:
   preferred_term: MediaDB Medium 477
   term:
@@ -250,3 +611,715 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: doi:10.1038/ismej.2012.122
+  title: Nutrient requirements for growth of the extreme oligotroph 'Candidatus Pelagibacter
+    ubique' HTCC1062 on a defined medium.
+  authors: Carini P; Steindler L; Beszteri S; Giovannoni SJ
+  year: 2013
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    MediaDB source 149; PMID:23096402; PMCID:PMC3578571; accessed_on=2026-10-13; issue_year=2013;
+    online_publication=2012-10-25. Inspected PMC full text, Materials and methods
+    and Tables 1-3; no PubMed correction/retraction notice was present in the archived
+    record. Raw HTML and Markdown: references_cache/papers/primary_html/carini-2013-pmc.{html,md};
+    raw PubMed XML and abstract Markdown: references_cache/papers/PMID_23096402.{xml,md}.
+    Recipe comparison found vitamin, amount, hydrate and preparation differences;
+    these are scoped to ''Carini 2013 AMS1 serine substitution assay'', with the parent
+    retained. Organism inventory scope=the inspected medium methods and Table 3, not
+    every background mention in the article. Reported scientific name=Candidatus Pelagibacter
+    ubique; strain=HTCC1062; taxonomy_match=exact_strain; NCBITaxon:335992; canonical_label=Candidatus
+    Pelagibacter ubique HTCC1062; rank=strain in NCBI Taxonomy XML retrieved 2026-10-13;
+    source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335992. The
+    XML species ancestor is Candidatus Pelagibacter communis (NCBITaxon:198252); the
+    strain match preserves the paper''s historical name. MediaDB also connects HTCC7211
+    to this source; the inspected paper identifies HTCC1062, so no HTCC7211 association
+    is imported. Other substitution tests and negative controls in Tables 2-3 are
+    not growth evidence for this glycine/serine record. Linked external supplements
+    were not inspected. KGX export is withheld because its current organism edge builder
+    does not honor scoped_to_variant.'
+- reference: doi:10.1038/ismej.2014.61
+  title: Discovery of a SAR11 growth requirement for thiamin's pyrimidine precursor
+    and its distribution in the Sargasso Sea.
+  authors: Carini P; Campbell EO; Morré J; Sañudo-Wilhelmy SA; Thrash JC; Bennett
+    SE; Temperton B; Begley T; Giovannoni SJ
+  year: 2014
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference_followup;
+    PMID:24781899; PMCID:PMC4817611; accessed_on=2026-10-13; inspected_version=PMC
+    full text. Locator: Abstract and Discussion (thiamin-stock contamination). Exact
+    excerpt: ''Contaminating HMP was detected in the thiamin stock solution''. This
+    qualifies the existing 2013 study variant, not a formal retraction or a new positive
+    parent-medium growth assertion. The same strain, Candidatus Pelagibacter ubique
+    HTCC1062, maps exactly to NCBITaxon:335992, canonical label Candidatus Pelagibacter
+    ubique HTCC1062, rank=strain, verified in archived NCBI Taxonomy XML on 2026-10-13;
+    source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335992. The
+    2014 cultivation methods use oxaloacetate rather than this record''s pyruvate,
+    no routine vitamin mixture, and dark incubation; HMP/thiamin/precursor additions
+    vary by treatment. Those assays are not silently assigned to this parent or combined
+    into one new resolved variant. Only the HTCC1062 vitamin-dependence and contamination
+    passages are curated here; HMP-exudation cultures and background taxa are outside
+    this scoped organism inventory. Raw HTML/Markdown: references_cache/papers/primary_html/carini-2014-pmc.{html,md};
+    PubMed XML/abstract Markdown: references_cache/papers/PMID_24781899.{xml,md}.
+    Historical 2013 assay formulation, not evidence that thiamin substitutes for HMP:
+    Carini et al. 2014 (doi:10.1038/ismej.2014.61) found an HMP requirement and HMP
+    contamination in their thiamin stock. Trace HMP in the 2013 batches was not quantified
+    by the inspected 2013 paper; do not interpret nominal absence of added HMP as
+    HMP-independent growth.'
+variants:
+- name: Carini 2013 AMS1 serine substitution assay
+  description: 'Published AMS1 formulation used in the glycine substitution experiment,
+    serine test condition. This is not an assertion that the imported MediaDB parent
+    matches the paper. Composite concentration, vitamin, chemical-form and preparation
+    changes; methionine and serine stereochemistry is not specified in the inspected
+    methods. Historical 2013 assay formulation, not evidence that thiamin substitutes
+    for HMP: Carini et al. 2014 (doi:10.1038/ismej.2014.61) found an HMP requirement
+    and HMP contamination in their thiamin stock. Trace HMP in the 2013 batches was
+    not quantified by the inspected 2013 paper; do not interpret nominal absence of
+    added HMP as HMP-independent growth.'
+  modifications:
+  - Use 50 micromolar pyruvate instead of the parent's 1.0 mM, and 10 micromolar methionine
+    instead of 0.05 mM DL-methionine; the paper does not specify methionine stereochemistry.
+  - Use 25 micromolar serine instead of the parent's 0.05 mM L-Serine; this is the
+    Table 3 assay, not a titration maximum or a universal optimum.
+  - Use magnesium sulfate heptahydrate at 2.8 mM rather than the parent's magnesium
+    sulfate at 28.0 mM. Other unchanged Table 1 base-salt and macronutrient molar
+    amounts remain as reported there.
+  - Use calcium chloride dihydrate, manganese chloride tetrahydrate, zinc sulfate
+    heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate and nickel
+    chloride hexahydrate as specified in Table 1; retain their Table 1 molar amounts
+    rather than infer mass equivalents from the local anhydrous or unspecified forms.
+  - Use iron(III) chloride at 1 micromolar in this assay instead of the parent's 117
+    nM; Table 1 specifies the hexahydrate and its basal 117 nM is overridden by the
+    assay methods.
+  - 'Replace the imported biotin/HMP vitamin selection with the complete Table 1 vitamin
+    mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12
+    700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid 60 nM. Do not substitute
+    HMP for B1 using this 2013 paper.'
+  - 'Follow the paper''s AMS1 preparation: autoclave the inorganic medium, establish
+    the bicarbonate buffer by filtered CO2 then air sparging, and add vitamins and
+    organics afterward; this differs from the imported all-ingredient filter-sterilization
+    instruction. The reported resulting pH is 7.5-7.7, not an independently optimized
+    value.'
+  purpose: Published glycine-substitution comparison for strain HTCC1062.
+  evidence:
+  - reference: doi:10.1038/ismej.2012.122
+    supports: SUPPORT
+    snippet: pyruvate (50 μℳ), methionine (10 μℳ), FeCl 3 (1 μℳ) and vitamins.
+    explanation: 'Locator: Materials and methods, Glycine substitution experiments,
+      with Table 1 (Compound / Final concentration) and Media preparation. Supports
+      only this inline variant''s modifications, never replacement of the parent''s
+      ingredients. The immediately preceding methods phrase is ''at a concentration
+      of 25 μℳ''. Table 1 row: ''CaCl 2 ·2H 2 O 10 mℳ''; Table 1 row: ''MgSO 4 ·7H
+      2 O 2.8 mℳ''; Table 1 row: ''FeCl 3 ·6H 2 O 117 nℳ''; Table 1 row: ''MnCl 2
+      ·4H 2 O 9 nℳ''; Table 1 row: ''ZnSO 4 ·7H 2 O 800 pM''; Table 1 row: ''CoCl
+      2 ·6H 2 O 500 pM''; Table 1 row: ''Na 2 MoO 4 ·2H 2 O 300 pM''; Table 1 row:
+      ''NiCl 2 ·6H 2 O 1 nℳ''; Table 1 row: ''B 1 6 μℳ''; Table 1 row: ''B 3 800 nℳ'';
+      Table 1 row: ''B 5 425 nℳ''; Table 1 row: ''B 6 500 nℳ''; Table 1 row: ''B 7
+      4 nℳ''; Table 1 row: ''B 9 4 nℳ''; Table 1 row: ''B 12 700 pM''; Table 1 row:
+      ''Myo-inositol 6 μℳ''; Table 1 row: ''4-Aminobenzoic acid 60 nℳ''. The B-number
+      names are retained as published; no molecular-weight conversion, unreported
+      salt identity or stock dilution was inferred. Amounts are final assay concentrations.
+      The paper''s Table 1 excludes the reduced-sulfur, glycine and pyruvate additions,
+      which the assay methods supply. Media preparation separately places vitamins/organics
+      after autoclaving and sparging.'
+  ingredient_changes:
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: Pyruvate
+      concentration:
+        value: '50'
+        unit: MICROMOLAR
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 0
+    source_text: Use 50 micromolar pyruvate instead of the parent's 1.0 mM, and 10
+      micromolar methionine instead of 0.05 mM DL-methionine; the paper does not specify
+      methionine stereochemistry.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: pyruvate (50 μm)
+      explanation: 2013 Glycine substitution experiments / 2014 Methods Organism source,
+        p.5. The 2014 PDF page was visually inspected because extracted text corrupts
+        the micro symbol. Primary source inspected 2026-11-16; no ontology identity
+        or mass conversion inferred.
+  - action: REPLACE
+    ingredient:
+      preferred_term: Methionine
+      concentration:
+        value: '10'
+        unit: MICROMOLAR
+      notes: Stereochemistry unspecified by the source; imported DL-methionine identity
+        is not certified.
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 0
+    source_text: Use 50 micromolar pyruvate instead of the parent's 1.0 mM, and 10
+      micromolar methionine instead of 0.05 mM DL-methionine; the paper does not specify
+      methionine stereochemistry.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: methionine (10 μm)
+      explanation: The same assay paragraph states the methionine dose without stereochemistry.
+        The new descriptor deliberately does not certify the imported DL form. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: DL-methionine
+  - action: REPLACE
+    ingredient:
+      preferred_term: Serine
+      concentration:
+        value: '25'
+        unit: MICROMOLAR
+      notes: Source serine stereochemistry is unspecified.
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 1
+    source_text: Use 25 micromolar serine instead of the parent's 0.05 mM L-Serine;
+      this is the Table 3 assay, not a titration maximum or a universal optimum.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: Each substitute was tested at a concentration of 25 μm
+      explanation: '2013 Glycine substitution experiments and Table 3: Serine is a
+        listed substitute; Glycine is the positive control at the same stated 25 micromolar
+        dose. No stereochemistry is supplied for serine. Primary source inspected
+        2026-11-16; no ontology identity or mass conversion inferred.'
+    replaced_ingredient:
+      preferred_term: L-Serine
+  - action: REPLACE
+    ingredient:
+      preferred_term: Magnesium sulfate heptahydrate
+      concentration:
+        value: '2.8'
+        unit: MILLIMOLAR
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 2
+    source_text: Use magnesium sulfate heptahydrate at 2.8 mM rather than the parent's
+      magnesium sulfate at 28.0 mM. Other unchanged Table 1 base-salt and macronutrient
+      molar amounts remain as reported there.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: MgSO4·7H2O2.8 mm
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Magnesium sulfate
+  - action: REPLACE
+    ingredient:
+      preferred_term: Calcium chloride dihydrate
+      concentration:
+        value: '10'
+        unit: MILLIMOLAR
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 3
+    source_text: Use calcium chloride dihydrate, manganese chloride tetrahydrate,
+      zinc sulfate heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate
+      and nickel chloride hexahydrate as specified in Table 1; retain their Table
+      1 molar amounts rather than infer mass equivalents from the local anhydrous
+      or unspecified forms.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: CaCl2·2H2O10 mm
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Calcium chloride anhydrous
+  - action: REPLACE
+    ingredient:
+      preferred_term: Manganese chloride tetrahydrate
+      concentration:
+        value: '9'
+        unit: NANOMOLAR
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 3
+    source_text: Use calcium chloride dihydrate, manganese chloride tetrahydrate,
+      zinc sulfate heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate
+      and nickel chloride hexahydrate as specified in Table 1; retain their Table
+      1 molar amounts rather than infer mass equivalents from the local anhydrous
+      or unspecified forms.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: MnCl2·4H2O9 nm
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Manganese chloride
+  - action: REPLACE
+    ingredient:
+      preferred_term: Zinc sulfate heptahydrate
+      concentration:
+        value: '800'
+        unit: PICOMOLAR
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 3
+    source_text: Use calcium chloride dihydrate, manganese chloride tetrahydrate,
+      zinc sulfate heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate
+      and nickel chloride hexahydrate as specified in Table 1; retain their Table
+      1 molar amounts rather than infer mass equivalents from the local anhydrous
+      or unspecified forms.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: ZnSO4·7H2O800 pM
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Zinc sulfate
+  - action: REPLACE
+    ingredient:
+      preferred_term: Cobalt chloride hexahydrate
+      concentration:
+        value: '500'
+        unit: PICOMOLAR
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 3
+    source_text: Use calcium chloride dihydrate, manganese chloride tetrahydrate,
+      zinc sulfate heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate
+      and nickel chloride hexahydrate as specified in Table 1; retain their Table
+      1 molar amounts rather than infer mass equivalents from the local anhydrous
+      or unspecified forms.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: CoCl2·6H2O500 pM
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Cobalt chloride
+  - action: REPLACE
+    ingredient:
+      preferred_term: Sodium molybdate dihydrate
+      concentration:
+        value: '300'
+        unit: PICOMOLAR
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 3
+    source_text: Use calcium chloride dihydrate, manganese chloride tetrahydrate,
+      zinc sulfate heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate
+      and nickel chloride hexahydrate as specified in Table 1; retain their Table
+      1 molar amounts rather than infer mass equivalents from the local anhydrous
+      or unspecified forms.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: Na2MoO4·2H2O300 pM
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Sodium molybdate
+  - action: REPLACE
+    ingredient:
+      preferred_term: Nickel chloride hexahydrate
+      concentration:
+        value: '1'
+        unit: NANOMOLAR
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 3
+    source_text: Use calcium chloride dihydrate, manganese chloride tetrahydrate,
+      zinc sulfate heptahydrate, cobalt chloride hexahydrate, sodium molybdate dihydrate
+      and nickel chloride hexahydrate as specified in Table 1; retain their Table
+      1 molar amounts rather than infer mass equivalents from the local anhydrous
+      or unspecified forms.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: NiCl2·6H2O1 nm
+      explanation: Carini 2013 AMS1 Table 1, explicit compound form and final concentration.
+        Preserve stated molar dose, with no molecular-weight or mass conversion. Primary
+        source inspected 2026-11-16; no ontology identity or mass conversion inferred.
+    replaced_ingredient:
+      preferred_term: Nickel chloride
+  - action: REPLACE
+    ingredient:
+      preferred_term: Iron(III) chloride hexahydrate
+      concentration:
+        value: '1'
+        unit: MICROMOLAR
+      notes: Hydrate from the explicitly referenced AMS1 base formulation; dose from
+        the assay Methods.
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 4
+    source_text: Use iron(III) chloride at 1 micromolar in this assay instead of the
+      parent's 117 nM; Table 1 specifies the hexahydrate and its basal 117 nM is overridden
+      by the assay methods.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: FeCl3 (1 μm)
+      explanation: Assay Methods overrides the basal iron dose with 1 micromolar FeCl3.
+        Carini 2013 Table 1 specifies FeCl3·6H2O for AMS1; the basal 117 nM is not
+        retained. Primary source inspected 2026-11-16; no ontology identity or mass
+        conversion inferred.
+    replaced_ingredient:
+      preferred_term: Iron(III) chloride
+  - action: ADD
+    ingredient:
+      preferred_term: B1
+      concentration:
+        value: '6'
+        unit: MICROMOLAR
+      notes: Molecular and salt forms of B-number vitamin labels remain unspecified
+        by this source.
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B16 μm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: B3
+      concentration:
+        value: '800'
+        unit: NANOMOLAR
+      notes: Molecular and salt forms of B-number vitamin labels remain unspecified
+        by this source.
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B3800 nm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: B5
+      concentration:
+        value: '425'
+        unit: NANOMOLAR
+      notes: Molecular and salt forms of B-number vitamin labels remain unspecified
+        by this source.
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B5425 nm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: B6
+      concentration:
+        value: '500'
+        unit: NANOMOLAR
+      notes: Molecular and salt forms of B-number vitamin labels remain unspecified
+        by this source.
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B6500 nm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: B9
+      concentration:
+        value: '4'
+        unit: NANOMOLAR
+      notes: Molecular and salt forms of B-number vitamin labels remain unspecified
+        by this source.
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B94 nm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: B12
+      concentration:
+        value: '700'
+        unit: PICOMOLAR
+      notes: Molecular and salt forms of B-number vitamin labels remain unspecified
+        by this source.
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B12700 pM
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: Myo-inositol
+      concentration:
+        value: '6'
+        unit: MICROMOLAR
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: Myo-inositol6 μm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: 4-Aminobenzoic acid
+      concentration:
+        value: '60'
+        unit: NANOMOLAR
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: 4-Aminobenzoic acid60 nm
+      explanation: Carini 2013 Table 1, Vitamins, final-concentration column; the
+        complete mixture is retained for the study assay. B-number labels are literal
+        source designations, not an assertion of a particular vitamer/salt. The 2014
+        Methods repeats the same mixture. Primary source inspected 2026-11-16; no
+        ontology identity or mass conversion inferred.
+  - action: REMOVE
+    ingredient:
+      preferred_term: 4-Amino-5-hydroxymethyl-2-methylpyrimidine
+    stage: 2013 Table 3 glycine-substitution assay
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: B16 μm
+      explanation: Table 1 specifies B1 in its complete vitamin mixture, not the imported
+        HMP substitute. Remove HMP only within this source-specific alternative vitamin
+        formulation; do not assert universal HMP equivalence. Primary source inspected
+        2026-11-16; no ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: 'Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered
+      CO2 sparging for 5 h'
+    source_modification_index: 6
+    source_text: 'Follow the paper''s AMS1 preparation: autoclave the inorganic medium,
+      establish the bicarbonate buffer by filtered CO2 then air sparging, and add
+      vitamins and organics afterward; this differs from the imported all-ingredient
+      filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not
+      an independently optimized value.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: sparged with 0.1 μm-filtered CO2 for 5 h
+      explanation: Media preparation explicitly gives ordered gas supplies to establish
+        the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base
+        preparation. No supplied volume, final dissolved gas dose or whole-parent
+        equivalence is inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: air
+    stage: 'Carini AMS1 source preparation; second: air sparging for 10 h, before
+      vitamins and organics'
+    source_modification_index: 6
+    source_text: 'Follow the paper''s AMS1 preparation: autoclave the inorganic medium,
+      establish the bicarbonate buffer by filtered CO2 then air sparging, and add
+      vitamins and organics afterward; this differs from the imported all-ingredient
+      filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not
+      an independently optimized value.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: followed by sparging with air for 10 h
+      explanation: Media preparation explicitly gives ordered gas supplies to establish
+        the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base
+        preparation. No supplied volume, final dissolved gas dose or whole-parent
+        equivalence is inferred.
+  ingredient_mentions:
+  - source_label: B1
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B3
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B5
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B6
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B9
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B12
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: bicarbonate
+    reported_action: UNSPECIFIED
+    stage: Carini AMS1 buffer after gas sparging
+    source_modification_index: 6
+    source_text: 'Follow the paper''s AMS1 preparation: autoclave the inorganic medium,
+      establish the bicarbonate buffer by filtered CO2 then air sparging, and add
+      vitamins and organics afterward; this differs from the imported all-ingredient
+      filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not
+      an independently optimized value.'
+    reason: The source describes establishment of a bicarbonate-based buffer through
+      CO2 then air sparging. This is not an explicit addition of a particular bicarbonate
+      salt or measured final species concentration.
+    held_fields:
+    - OPERATION
+    - IDENTITY_FORM
+    - QUANTITY
+target_organisms:
+- preferred_term: Candidatus Pelagibacter ubique
+  term:
+    id: NCBITaxon:335992
+    label: Candidatus Pelagibacter ubique HTCC1062
+  strain: HTCC1062
+  scoped_to_variant: Carini 2013 AMS1 serine substitution assay
+  evidence:
+  - reference: doi:10.1038/ismej.2012.122
+    supports: SUPPORT
+    snippet: Serine 8.34±0.15 0.40±0.01
+    explanation: 'Locator: Table 3, serine row, read with the Glycine substitution
+      experiments and Organism source sections. The positive cell yield supports cultivation
+      only on the named study variant; no growth claim is added to the imported parent.
+      The assay used 25 micromolar glycine or serine, 50 micromolar pyruvate, 10 micromolar
+      methionine, 1 micromolar FeCl3 and Table 1 vitamins. Cultivation details report
+      20 C, shaking and a 12-hour light/dark cycle. No growth metric is normalized
+      from the table and no optimality is inferred. Reported scientific name=Candidatus
+      Pelagibacter ubique; strain=HTCC1062; taxonomy_match=exact_strain; NCBITaxon:335992;
+      canonical_label=Candidatus Pelagibacter ubique HTCC1062; rank=strain in NCBI
+      Taxonomy XML retrieved 2026-10-13; source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335992.
+      The XML species ancestor is Candidatus Pelagibacter communis (NCBITaxon:198252);
+      the strain match preserves the paper''s historical name. Historical 2013 assay
+      formulation, not evidence that thiamin substitutes for HMP: Carini et al. 2014
+      (doi:10.1038/ismej.2014.61) found an HMP requirement and HMP contamination in
+      their thiamin stock. Trace HMP in the 2013 batches was not quantified by the
+      inspected 2013 paper; do not interpret nominal absence of added HMP as HMP-independent
+      growth.'

@@ -148,6 +148,25 @@ variants:
       culture.
     explanation: Literature evidence reports higher biomass and productivity of Nostoc
       linckia in BG11 than nitrate-free BG110.
+  ingredient_mentions:
+  - source_label: nitrate
+    reported_action: REMOVE
+    stage: Nostoc BG110 comparator only
+    source_modification_index: 1
+    source_text: Compare with BG110 medium lacking nitrate.
+    reason: The primary abstract explicitly identifies nitrate absence in the separate
+      BG110 comparator. No nitrate removal from this nitrate-replete BG11 variant
+      or specific nitrate salt is inferred.
+    held_fields:
+    - OPERATION
+    - IDENTITY_FORM
+    evidence:
+    - reference: PMID:36550226
+      supports: PARTIAL
+      snippet: BG11 (i.e., in the presence of nitrate) and BG11<sub>0</sub> (in the
+        absence of nitrate)
+      explanation: Primary abstract contrast; negative comparator membership, not
+        an operational change to the BG11 treatment.
 - name: bg11_synechococcus_ucp002
   description: BG-11 cultivation condition for unaxenic Synechococcus sp. UCP002 isolated
     from the Peruvian Amazon Basin.
@@ -178,6 +197,35 @@ variants:
       mode using YM medium.
     explanation: Literature evidence directly states that strain ABC-009 was evaluated
       under photoautotrophic BG-11 cultivation conditions.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: air
+    stage: ABC-009 BG-11 ambient-air phototrophic arm
+    source_modification_index: 1
+    source_text: Compare air and 2% CO2 gas conditions.
+    evidence:
+    - reference: PMID:34584038
+      supports: SUPPORT
+      snippet: ambient air or 2% CO2 was supplied at the rate of 0.5 vvm
+      explanation: Phototrophic Methods specify alternative supplied gases. Flow and
+        gas fraction are not dissolved concentrations.
+    notes: Gas supply only; no liquid concentration or simultaneous use of alternative
+      gas arms is implied.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: ABC-009 BG-11 2% CO2 phototrophic arm
+    source_modification_index: 1
+    source_text: Compare air and 2% CO2 gas conditions.
+    evidence:
+    - reference: PMID:34584038
+      supports: SUPPORT
+      snippet: ambient air or 2% CO2 was supplied at the rate of 0.5 vvm
+      explanation: Phototrophic Methods specify alternative supplied gases. Flow and
+        gas fraction are not dissolved concentrations.
+    notes: Gas supply only; no liquid concentration or simultaneous use of alternative
+      gas arms is implied.
 curation_history:
 - timestamp: '2026-03-18T04:31:12.439728+00:00'
   curator: import_from_culturebotht.py
@@ -198,6 +246,41 @@ curation_history:
   changes: Marked exact CultureBotHT BG11-family formula as curated
   source: CultureBotHT:BG11; https://github.com/CultureBotAI/CultureBotHT
   notes: CultureBotHT imports BG11 as a BG11-family formula.
+- timestamp: '2026-11-17T00:06:58.675198+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468",
+    "field_replacements": [], "path": "data/normalized_yaml/algae/bg11.yaml", "recipe_id":
+    "CultureMech:015450", "variants": [{"append_changes": [{"action": "ADD", "evidence":
+    [{"explanation": "Phototrophic Methods specify alternative supplied gases. Flow
+    and gas fraction are not dissolved concentrations.", "reference": "PMID:34584038",
+    "snippet": "ambient air or 2% CO2 was supplied at the rate of 0.5 vvm", "supports":
+    "SUPPORT"}], "ingredient": {"preferred_term": "air"}, "notes": "Gas supply only;
+    no liquid concentration or simultaneous use of alternative gas arms is implied.",
+    "source_modification_index": 1, "source_text": "Compare air and 2% CO2 gas conditions.",
+    "stage": "ABC-009 BG-11 ambient-air phototrophic arm"}, {"action": "ADD", "evidence":
+    [{"explanation": "Phototrophic Methods specify alternative supplied gases. Flow
+    and gas fraction are not dissolved concentrations.", "reference": "PMID:34584038",
+    "snippet": "ambient air or 2% CO2 was supplied at the rate of 0.5 vvm", "supports":
+    "SUPPORT"}], "ingredient": {"preferred_term": "CO2"}, "notes": "Gas supply only;
+    no liquid concentration or simultaneous use of alternative gas arms is implied.",
+    "source_modification_index": 1, "source_text": "Compare air and 2% CO2 gas conditions.",
+    "stage": "ABC-009 BG-11 2% CO2 phototrophic arm"}], "variant_index": 2, "variant_name":
+    "bg11_scenedesmus_obliquus_abc009_photoautotrophic"}, {"append_mentions": [{"evidence":
+    [{"explanation": "Primary abstract contrast; negative comparator membership, not
+    an operational change to the BG11 treatment.", "reference": "PMID:36550226", "snippet":
+    "BG11 (i.e., in the presence of nitrate) and BG11<sub>0</sub> (in the absence
+    of nitrate)", "supports": "PARTIAL"}], "held_fields": ["OPERATION", "IDENTITY_FORM"],
+    "reason": "The primary abstract explicitly identifies nitrate absence in the separate
+    BG110 comparator. No nitrate removal from this nitrate-replete BG11 variant or
+    specific nitrate salt is inferred.", "reported_action": "REMOVE", "source_label":
+    "nitrate", "source_modification_index": 1, "source_text": "Compare with BG110
+    medium lacking nitrate.", "stage": "Nostoc BG110 comparator only"}], "variant_index":
+    0, "variant_name": "nitrate_replete_bg11_nostoc_linckia"}, {"variant_index": 1,
+    "variant_name": "bg11_synechococcus_ucp002"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 data_quality_flags:
 - has_ontology_mappings
 - has_unmapped_ingredients

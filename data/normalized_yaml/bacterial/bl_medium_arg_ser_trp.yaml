@@ -375,6 +375,83 @@ curation_history:
   notes: 'Replaced 23 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-10-13T05:14:24.464664+00:00'
+  curator: codex
+  action: CURATED_PAPER_VARIANT_EVIDENCE
+  notes: Added verified paper citation, source-defined inline variant and variant-scoped
+    strain growth evidence. Preserved parent amounts, ingredient grounding, preparation,
+    prior history and existing full-record variant links. Archived primary sources
+    and Markdown; no publication or normalized growth metric.
+  source: doi:10.1128/aem.59.12.4363-4366.1993
+- timestamp: '2026-11-16T21:33:56.739766+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "311cb0ca79971c03b8a2a334da32709c3be1315c8cf63cb1dc51b31f85200317",
+    "variants": [{"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation":
+    "p.4363 formulation paragraph identifies the calcium salt; Table 1 footnote b
+    states 2 micromolar pantothenate. Read from the primary ASM PDF via browser; anonymous
+    local download failed, so no local source hash is claimed. Primary source inspected
+    2026-11-16; no ontology identity or mass conversion inferred. Jensen p.4363 Table1
+    footnote b gives the separate amount excerpt \"2 μM pantothenate\" (micro-unit
+    typography normalized from PDF extraction). This is the pantothenate basis, not
+    2 μM calcium salt; no calcium dose or salt-molarity conversion is inferred. The
+    formulation paragraph supplies the calcium-salt identity. Exact excerpt clarification
+    for issue763; scientific payload unchanged.", "reference": "doi:10.1128/aem.59.12.4363-4366.1993",
+    "snippet": "calcium pantothenate", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Table 1 gives 2 micromolar on a pantothenate basis; no calcium-salt molarity
+    or calcium concentration is inferred.", "preferred_term": "Calcium pantothenate"},
+    "replaced_ingredient": {"preferred_term": "Pantothenate"}, "source_modification_index":
+    1, "source_text": "Use calcium pantothenate as specified in the text; Table 1
+    expresses the dose as 2 micromolar pantothenate. Do not reinterpret that as 2
+    micromolar calcium salt or add an inferred calcium concentration.", "stage": "BL
+    medium vitamin-stock preparation"}], "variant_index": 0, "variant_name": "Jensen
+    1993 BL Medium + Arg + Ser + Trp reported preparation"}]}'
+- timestamp: '2026-11-17T00:07:06.741989+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "945ad9f775f2caa82aaf6a358c3fbe0882ace7fc3d3b6e1142f7982d4bacab7d",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/bl_medium_arg_ser_trp.yaml",
+    "recipe_id": "CultureMech:007306", "variants": [{"append_changes": [{"action":
+    "SET_CONCENTRATION", "evidence": [{"explanation": "Table1 row quote normalizes
+    whitespace and superscript footnote a; header ''Concn (mM) or presence in medium''
+    and BL column establish0.52mM. Nominal MgCl2 does not promote the parent''s hexahydrate.
+    Publisher PDF page4363 inspected via browser; no locally captured hash is claimed.",
+    "reference": "doi:10.1128/aem.59.12.4363-4366.1993", "snippet": "MgCl2 0.52a 0.52",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "MILLIMOLAR",
+    "value": "0.52"}, "preferred_term": "MgCl2"}, "source_modification_index": 2,
+    "source_text": "Keep the published nominal molar formulation from Table 1 and
+    this Table 3 treatment. MgCl2 hydration and the printed molybdate formula/hydration
+    are not resolved by the inspected source; the parent''s hexahydrate/tetrahydrate
+    labels are not promoted to verified study identities. No mass or hydrate conversion
+    is performed.", "stage": "Jensen1993 nominal BL formulation, same variant-specific
+    treatment"}], "append_mentions": [{"held_fields": ["IDENTITY_FORM"], "reason":
+    "Nominal MgCl2 presence/dose is separately supported; its hydrate is unspecified.
+    The source''s printed molybdate formula/hydration is not safely reconciled to
+    the parent''s tetrahydrate. No mass/hydrate conversion or exact-salt identity
+    is approved.", "reported_action": "UNSPECIFIED", "source_label": "MgCl2", "source_modification_index":
+    2, "source_text": "Keep the published nominal molar formulation from Table 1 and
+    this Table 3 treatment. MgCl2 hydration and the printed molybdate formula/hydration
+    are not resolved by the inspected source; the parent''s hexahydrate/tetrahydrate
+    labels are not promoted to verified study identities. No mass or hydrate conversion
+    is performed.", "stage": "Jensen1993 Table1 nominal formulation"}, {"held_fields":
+    ["IDENTITY_FORM"], "reason": "Nominal MgCl2 presence/dose is separately supported;
+    its hydrate is unspecified. The source''s printed molybdate formula/hydration
+    is not safely reconciled to the parent''s tetrahydrate. No mass/hydrate conversion
+    or exact-salt identity is approved.", "reported_action": "UNSPECIFIED", "source_label":
+    "molybdate", "source_modification_index": 2, "source_text": "Keep the published
+    nominal molar formulation from Table 1 and this Table 3 treatment. MgCl2 hydration
+    and the printed molybdate formula/hydration are not resolved by the inspected
+    source; the parent''s hexahydrate/tetrahydrate labels are not promoted to verified
+    study identities. No mass or hydrate conversion is performed.", "stage": "Jensen1993
+    Table1 nominal formulation"}], "variant_index": 0, "variant_name": "Jensen 1993
+    BL Medium + Arg + Ser + Trp reported preparation"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 media_term:
   preferred_term: MediaDB Medium 405
   term:
@@ -386,3 +463,175 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: doi:10.1128/aem.59.12.4363-4366.1993
+  title: Minimal Requirements for Exponential Growth of Lactococcus lactis.
+  authors: Jensen PR; Hammer K
+  year: 1993
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    source 128; PMID:16349136; PMCID:PMC195913; accessed_on=2026-10-13. Title, authors,
+    year and DOI agree between archived PubMed and original article scans; no PubMed
+    correction/retraction notice was present. All four page scans were inspected;
+    curation here covers Table 1 and the matching Table 3 liquid treatment, not the
+    entire organism/medium inventory. Raw scans, provenance and bounded recipe-table
+    Markdown: references_cache/papers/primary_scans/jensen-1993/; raw abstract XML/Markdown:
+    references_cache/papers/PMID_16349136.{xml,md}. A PDF request returned HTML, so
+    no PDF archive is claimed. Source facts were visually checked, not accepted from
+    OCR. Numerical amounts match the selected liquid treatment; stock filtration,
+    calcium-pantothenate wording and unresolved hydrates are represented in the named
+    inline variant. Existing ingredient fields, preparation and any full-record variant
+    links are retained; none is recertified by association. Reported scientific name=Lactococcus
+    lactis subsp. lactis; strain=MG1363. taxonomy_match=exact_strain_by_designation;
+    NCBITaxon:416870; current canonical_label=Lactococcus cremoris subsp. cremoris
+    MG1363; rank=strain in NCBI Taxonomy XML retrieved 2026-10-13; source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=416870.
+    The historical subspecies wording differs from current taxonomy; retain it as
+    the reported name, not a current classification. No equivalence between all historical
+    L. lactis strains and L. cremoris is inferred. Table 2 also reports NCDO 712 and
+    C2 as Lactococcus lactis subsp. lactis on solid formulations, including negative
+    controls. Exact caption excerpt, page 4364 Table 2: ''Growth of L. lactis subsp.
+    lactis on solid medium containing six or more amino acids''; strain-column labels
+    are ''712'', ''C2'' (2 printed as subscript), and ''MG1363''. Page 4363 identifies
+    strain NCDO 712. Their mapping is parent_rank_only: Lactococcus, NCBITaxon:1357,
+    genus, verified in the archived MG1363 lineage; lookup_on=2026-10-13; source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=416870.
+    A bounded NCBI exact-name search for NCDO712/NCDO 712 and Lactococcus lactis/cremoris
+    C2 returned no taxon; this does not prove no exact entry exists. No MG1363 taxon
+    or liquid-culture growth claim is assigned to them. The Table 4 SA/M17 comparisons
+    and other cited taxa are outside this BL-liquid curation scope. KGX publication
+    remains withheld because its current exporter ignores scoped_to_variant.'
+variants:
+- name: Jensen 1993 BL Medium + Arg + Ser + Trp reported preparation
+  description: Historical Table 3 liquid-culture treatment with the source's preparation
+    and pantothenate form. Numerical parent amounts match the selected Table 1/3 treatment,
+    but unresolved hydrate details are not asserted as exact parent equivalence. This
+    preparation-qualified inline variant does not duplicate or replace the existing
+    BL/low-MOPS full-record relationship.
+  modifications:
+  - Use the paper's stock-solution filtration through 0.2-micrometer Millipore filters
+    rather than the parent's generic 0.22-micrometer filtration of the complete mixture;
+    no additional final-medium sterilization step is inferred.
+  - Use calcium pantothenate as specified in the text; Table 1 expresses the dose
+    as 2 micromolar pantothenate. Do not reinterpret that as 2 micromolar calcium
+    salt or add an inferred calcium concentration.
+  - Keep the published nominal molar formulation from Table 1 and this Table 3 treatment.
+    MgCl2 hydration and the printed molybdate formula/hydration are not resolved by
+    the inspected source; the parent's hexahydrate/tetrahydrate labels are not promoted
+    to verified study identities. No mass or hydrate conversion is performed.
+  - 'Retain this existing treatment dose: L-Arginine 1.1 mM, L-Serine 2.9 mM, L-Tryptophan
+    0.5 mM. Table 3 footnote b points to the Table 1 SA-column Arg/Ser/Trp doses;
+    the Asp and low-MOPS rows state their own doses. No new base-versus-child link
+    is created.'
+  purpose: Reported liquid batch-culture treatment for MG1363.
+  evidence:
+  - reference: doi:10.1128/aem.59.12.4363-4366.1993
+    supports: SUPPORT
+    snippet: All stock solutions were passed through Millipore filters (0.2-μm pore
+      size).
+    explanation: 'Locator: page 4363, Growth on plates containing eight amino acids,
+      preparation paragraph; the next sentence names ''calcium pantothenate''. Table
+      1 and its vitamin footnote specify the nominal amounts; page 4364 Table 3 identifies
+      the liquid treatment +Arg, Ser, and Trp. All numeric ingredient amounts were
+      compared with the original scans; micromolar footnote values were divided by
+      1000 solely for comparison to existing mM fields. No parent amount was rewritten.
+      The printed molybdate formula/hydration remains unresolved; no unsupported exact
+      chemical identity is claimed.'
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: Calcium pantothenate
+      notes: Table 1 gives 2 micromolar on a pantothenate basis; no calcium-salt molarity
+        or calcium concentration is inferred.
+    stage: BL medium vitamin-stock preparation
+    source_modification_index: 1
+    source_text: Use calcium pantothenate as specified in the text; Table 1 expresses
+      the dose as 2 micromolar pantothenate. Do not reinterpret that as 2 micromolar
+      calcium salt or add an inferred calcium concentration.
+    evidence:
+    - reference: doi:10.1128/aem.59.12.4363-4366.1993
+      supports: SUPPORT
+      snippet: calcium pantothenate
+      explanation: p.4363 formulation paragraph identifies the calcium salt; Table
+        1 footnote b states 2 micromolar pantothenate. Read from the primary ASM PDF
+        via browser; anonymous local download failed, so no local source hash is claimed.
+        Primary source inspected 2026-11-16; no ontology identity or mass conversion
+        inferred. Jensen p.4363 Table1 footnote b gives the separate amount excerpt
+        "2 μM pantothenate" (micro-unit typography normalized from PDF extraction).
+        This is the pantothenate basis, not 2 μM calcium salt; no calcium dose or
+        salt-molarity conversion is inferred. The formulation paragraph supplies the
+        calcium-salt identity. Exact excerpt clarification for issue763; scientific
+        payload unchanged.
+    replaced_ingredient:
+      preferred_term: Pantothenate
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: MgCl2
+      concentration:
+        value: '0.52'
+        unit: MILLIMOLAR
+    stage: Jensen1993 nominal BL formulation, same variant-specific treatment
+    source_modification_index: 2
+    source_text: Keep the published nominal molar formulation from Table 1 and this
+      Table 3 treatment. MgCl2 hydration and the printed molybdate formula/hydration
+      are not resolved by the inspected source; the parent's hexahydrate/tetrahydrate
+      labels are not promoted to verified study identities. No mass or hydrate conversion
+      is performed.
+    evidence:
+    - reference: doi:10.1128/aem.59.12.4363-4366.1993
+      supports: SUPPORT
+      snippet: MgCl2 0.52a 0.52
+      explanation: Table1 row quote normalizes whitespace and superscript footnote
+        a; header 'Concn (mM) or presence in medium' and BL column establish0.52mM.
+        Nominal MgCl2 does not promote the parent's hexahydrate. Publisher PDF page4363
+        inspected via browser; no locally captured hash is claimed.
+  ingredient_mentions:
+  - source_label: MgCl2
+    reported_action: UNSPECIFIED
+    stage: Jensen1993 Table1 nominal formulation
+    source_modification_index: 2
+    source_text: Keep the published nominal molar formulation from Table 1 and this
+      Table 3 treatment. MgCl2 hydration and the printed molybdate formula/hydration
+      are not resolved by the inspected source; the parent's hexahydrate/tetrahydrate
+      labels are not promoted to verified study identities. No mass or hydrate conversion
+      is performed.
+    reason: Nominal MgCl2 presence/dose is separately supported; its hydrate is unspecified.
+      The source's printed molybdate formula/hydration is not safely reconciled to
+      the parent's tetrahydrate. No mass/hydrate conversion or exact-salt identity
+      is approved.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: molybdate
+    reported_action: UNSPECIFIED
+    stage: Jensen1993 Table1 nominal formulation
+    source_modification_index: 2
+    source_text: Keep the published nominal molar formulation from Table 1 and this
+      Table 3 treatment. MgCl2 hydration and the printed molybdate formula/hydration
+      are not resolved by the inspected source; the parent's hexahydrate/tetrahydrate
+      labels are not promoted to verified study identities. No mass or hydrate conversion
+      is performed.
+    reason: Nominal MgCl2 presence/dose is separately supported; its hydrate is unspecified.
+      The source's printed molybdate formula/hydration is not safely reconciled to
+      the parent's tetrahydrate. No mass/hydrate conversion or exact-salt identity
+      is approved.
+    held_fields:
+    - IDENTITY_FORM
+target_organisms:
+- preferred_term: Lactococcus lactis subsp. lactis
+  term:
+    id: NCBITaxon:416870
+    label: Lactococcus cremoris subsp. cremoris MG1363
+  strain: MG1363
+  scoped_to_variant: Jensen 1993 BL Medium + Arg + Ser + Trp reported preparation
+  evidence:
+  - reference: doi:10.1128/aem.59.12.4363-4366.1993
+    supports: SUPPORT
+    snippet: MG1363 in unaerated batch cultures of BL medium or modified BL medium
+    explanation: 'Locator: original page 4364, Table 3 caption and treatment row +Arg,
+      Ser, and Trp; that row reports positive growth and final yield. Page 4363 liquid-culture
+      methods specify 30 C and gentle magnetic stirring; ''unaerated'' is not converted
+      into a claim of anaerobiosis. No growth-rate value, OD conversion, pH optimum
+      or broad species growth assertion is added. Reported scientific name=Lactococcus
+      lactis subsp. lactis; strain=MG1363. taxonomy_match=exact_strain_by_designation;
+      NCBITaxon:416870; current canonical_label=Lactococcus cremoris subsp. cremoris
+      MG1363; rank=strain in NCBI Taxonomy XML retrieved 2026-10-13; source=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=416870.
+      The historical subspecies wording differs from current taxonomy; retain it as
+      the reported name, not a current classification. No equivalence between all
+      historical L. lactis strains and L. cremoris is inferred.'

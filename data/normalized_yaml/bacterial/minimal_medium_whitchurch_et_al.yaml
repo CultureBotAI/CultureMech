@@ -181,6 +181,15 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:35's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-14T01:06:41.461765+00:00'
+  curator: codex
+  action: CURATED_PAPER_CITATIONS_AND_PROVENANCE
+  notes: Added or enriched verified paper citations and source archive/Markdown links;
+    recorded bounded formulation and organism assessments, corrected alias/correction
+    dispositions, and consolidated only verified duplicate bibliography entries. Preserved
+    prior recipe fields, evidence, links and history. No new growth, concentration
+    or resolved-variant claim. Whitchurch review is non-operational identity only.
+  source: PMID:11859186
 media_term:
   preferred_term: MediaDB Medium 35
   term:
@@ -193,3 +202,35 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: PMID:11859186
+  title: Extracellular DNA required for bacterial biofilm formation.
+  authors: Whitchurch CB; Tolker-Nielsen T; Ragas PC; Mattick JS
+  year: 2002
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-14; source_access=author_posted_article_text_archived_with_bounded_markdown_summary;
+    doi=10.1126/science.295.5559.1487; pmid=11859186; raw=references_cache/papers/PMID_11859186.xml;
+    markdown=references_cache/papers/PMID_11859186.md; author_text=references_cache/papers/primary_browser/bibliographic-whitchurch-2002-20261013.web.txt;
+    author_markdown=references_cache/papers/primary_browser/bibliographic-whitchurch-2002-20261013.md;
+    Source-link proof=reports/paper_citation_curation/20261014-citation-frontier-resolution/prepared-sources.json#source_owner_links/11859186.  Author-posted
+    article text, figure caption organism identity only; exact excerpt="P. aeruginosa
+    PAO1". Reported organism/group=Pseudomonas aeruginosa; canonical scientific name=Pseudomonas
+    aeruginosa; NCBITaxon:287; actual rank=species; taxonomy_match=verified_species_name;
+    role=organism mention only; no strain-specific or cultivation assertion. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=287&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Reported organism/group=Pseudomonas aeruginosa PAO1; canonical scientific name=Pseudomonas
+    aeruginosa PAO1; NCBITaxon:208964; actual rank=strain; taxonomy_match=verified_strain_name;
+    role=identity mention only; no experimental assertion. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=208964&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/growth-next-nonoperational-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/growth-next-nonoperational-20261013.md.
+    MediaDB sourceID 14 links medium 35 to this paper; historical title, first author
+    and year agree with primary PubMed metadata. Review_scope=non_operational_bibliographic_and_taxonomic_identity_only.
+    No cultivation, formulation, biofilm optimization, virulence or experimental-condition
+    curation. The author-posted text capture is not a downloaded PDF or page facsimile;
+    the figure image and supplement are not archived, and the separately displayed
+    abstract is truncated. Correction/retraction coverage is limited to inspected
+    publication metadata and identified notices, not an exhaustive audit. No new native
+    growth assertion, concentration evidence or resolved variant. Prior ingredients,
+    preparation, evidence, links and history are preserved, not newly certified.

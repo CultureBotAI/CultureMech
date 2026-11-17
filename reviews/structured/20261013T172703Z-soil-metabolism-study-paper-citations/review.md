@@ -1,0 +1,3545 @@
+# Soil-metabolism study citations and qualified formulation scope
+
+- Review: 20261013T172703Z-soil-metabolism-study-paper-citations
+- Repository: culturebotai/CultureMech
+- Started UTC: 2026-10-13T16:44:59Z
+- Finished UTC: 2026-10-13T17:27:03Z
+- Reviewer: codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Eleven citations across eleven owners and six papers; every paper has an archived abstract and Markdown, two additionally have full XML. All 128 ingredient instances preserved; no new quantities, concentration evidence, resolved variants or native growth associations.
+
+## Scope And Provenance
+
+Eleven normalized MediaDB soil-metabolism study owners.
+
+Selection: Verified historical source-owner joins; focused citation task, not complete record approval.
+Coverage: full; 11 reviewed / 11 in the declared population.
+Source: working_tree at Git base 41d4d390123c0d8320cd53e994470c88a1b86d8c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007090 | data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml | maintained | e2_medium_with_octanoate |
+| CultureMech:007093 | data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml | maintained | e2_medium_with_gluconate |
+| CultureMech:007094 | data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml | maintained | e2_medium_with_citrate |
+| CultureMech:007088 | data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml | maintained | modifed_m9_with_glucose |
+| CultureMech:007089 | data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml | maintained | modified_m9_with_toluene |
+| CultureMech:007116 | data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml | maintained | mm_glucose_fillinger_et_al |
+| CultureMech:007117 | data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml | maintained | mm_asparagine_fillinger_et_al |
+| CultureMech:007118 | data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml | maintained | gotz_minimal_medium_with_mannitol |
+| CultureMech:007119 | data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml | maintained | gotz_minimal_medium_with_malate |
+| CultureMech:007115 | data/normalized_yaml/bacterial/fry_et_al.yaml | maintained | fry_et_al |
+| CultureMech:007120 | data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml | maintained | minimal_medium_frustaci |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| just validate data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml | passed | True | CultureMech:007090 | Prior baseline reused after exact input-hash verification. |
+| just validate-strict data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml | passed | True | CultureMech:007090 | Prior baseline reused after exact input-hash verification. |
+| just validate data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml | passed | True | CultureMech:007093 | Prior baseline reused after exact input-hash verification. |
+| just validate-strict data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml | passed | True | CultureMech:007093 | Prior baseline reused after exact input-hash verification. |
+| just validate data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml | passed | True | CultureMech:007094 | Prior baseline reused after exact input-hash verification. |
+| just validate-strict data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml | passed | True | CultureMech:007094 | Prior baseline reused after exact input-hash verification. |
+| just validate data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml | passed | True | CultureMech:007088 | Prior baseline reused after exact input-hash verification. |
+| just validate-strict data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml | passed | True | CultureMech:007088 | Prior baseline reused after exact input-hash verification. |
+| just validate data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml | passed | True | CultureMech:007089 | Prior baseline reused after exact input-hash verification. |
+| just validate-strict data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml | passed | True | CultureMech:007089 | Prior baseline reused after exact input-hash verification. |
+| just validate data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml | passed | True | CultureMech:007116 | Prior baseline reused after exact input-hash verification. |
+| just validate-strict data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml | passed | True | CultureMech:007116 | Prior baseline reused after exact input-hash verification. |
+| just validate data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml | passed | True | CultureMech:007117 | Prior baseline reused after exact input-hash verification. |
+| just validate-strict data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml | passed | True | CultureMech:007117 | Prior baseline reused after exact input-hash verification. |
+| just validate data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml | passed | True | CultureMech:007118 | Prior baseline reused after exact input-hash verification. |
+| just validate-strict data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml | passed | True | CultureMech:007118 | Prior baseline reused after exact input-hash verification. |
+| just validate data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml | passed | True | CultureMech:007119 | Prior baseline reused after exact input-hash verification. |
+| just validate-strict data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml | passed | True | CultureMech:007119 | Prior baseline reused after exact input-hash verification. |
+| just validate data/normalized_yaml/bacterial/fry_et_al.yaml | passed | True | CultureMech:007115 | Prior baseline reused after exact input-hash verification. |
+| just validate-strict data/normalized_yaml/bacterial/fry_et_al.yaml | passed | True | CultureMech:007115 | Prior baseline reused after exact input-hash verification. |
+| just validate data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml | passed | True | CultureMech:007120 | Prior baseline reused after exact input-hash verification. |
+| just validate-strict data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml | passed | True | CultureMech:007120 | Prior baseline reused after exact input-hash verification. |
+| just validate data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml | passed | True | CultureMech:007090 | Actual native result; no generated files published. |
+| just validate-strict data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml | passed | True | CultureMech:007090 | Actual native result; no generated files published. |
+| just validate data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml | passed | True | CultureMech:007093 | Actual native result; no generated files published. |
+| just validate-strict data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml | passed | True | CultureMech:007093 | Actual native result; no generated files published. |
+| just validate data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml | passed | True | CultureMech:007094 | Actual native result; no generated files published. |
+| just validate-strict data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml | passed | True | CultureMech:007094 | Actual native result; no generated files published. |
+| just validate data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml | passed | True | CultureMech:007088 | Actual native result; no generated files published. |
+| just validate-strict data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml | passed | True | CultureMech:007088 | Actual native result; no generated files published. |
+| just validate data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml | passed | True | CultureMech:007089 | Actual native result; no generated files published. |
+| just validate-strict data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml | passed | True | CultureMech:007089 | Actual native result; no generated files published. |
+| just validate data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml | passed | True | CultureMech:007116 | Actual native result; no generated files published. |
+| just validate-strict data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml | passed | True | CultureMech:007116 | Actual native result; no generated files published. |
+| just validate data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml | passed | True | CultureMech:007117 | Actual native result; no generated files published. |
+| just validate-strict data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml | passed | True | CultureMech:007117 | Actual native result; no generated files published. |
+| just validate data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml | passed | True | CultureMech:007118 | Actual native result; no generated files published. |
+| just validate-strict data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml | passed | True | CultureMech:007118 | Actual native result; no generated files published. |
+| just validate data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml | passed | True | CultureMech:007119 | Actual native result; no generated files published. |
+| just validate-strict data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml | passed | True | CultureMech:007119 | Actual native result; no generated files published. |
+| just validate data/normalized_yaml/bacterial/fry_et_al.yaml | passed | True | CultureMech:007115 | Actual native result; no generated files published. |
+| just validate-strict data/normalized_yaml/bacterial/fry_et_al.yaml | passed | True | CultureMech:007115 | Actual native result; no generated files published. |
+| just validate data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml | passed | True | CultureMech:007120 | Actual native result; no generated files published. |
+| just validate-strict data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml | passed | True | CultureMech:007120 | Actual native result; no generated files published. |
+| just verify-merges | failed | True | CultureMech:007090, CultureMech:007093, CultureMech:007094, CultureMech:007088, CultureMech:007089, CultureMech:007116, CultureMech:007117, CultureMech:007118, CultureMech:007119, CultureMech:007115, CultureMech:007120 | Actual native result; no generated files published. |
+| just audit-merge-freshness --json | failed | True | CultureMech:007090, CultureMech:007093, CultureMech:007094, CultureMech:007088, CultureMech:007089, CultureMech:007116, CultureMech:007117, CultureMech:007118, CultureMech:007119, CultureMech:007115, CultureMech:007120 | Actual native result; no generated files published. |
+| /tmp/culturemech-parallel-env-20261012/bin/python -m pytest --no-cov -q -p no:cacheprovider tests/test_claude_skills.py tests/test_skill_frontmatter.py tests/test_fetch_pubmed_abstracts.py tests/test_record_io.py tests/test_media_variant_links.py tests/test_record_review_contract.py | passed | True | CultureMech:007090, CultureMech:007093, CultureMech:007094, CultureMech:007088, CultureMech:007089, CultureMech:007116, CultureMech:007117, CultureMech:007118, CultureMech:007119, CultureMech:007115, CultureMech:007120 | Actual native result; no generated files published. |
+| /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py | passed | True | CultureMech:007090, CultureMech:007093, CultureMech:007094, CultureMech:007088, CultureMech:007089, CultureMech:007116, CultureMech:007117, CultureMech:007118, CultureMech:007119, CultureMech:007115, CultureMech:007120 | Actual native result; no generated files published. |
+| git diff --check | passed | True | CultureMech:007090, CultureMech:007093, CultureMech:007094, CultureMech:007088, CultureMech:007089, CultureMech:007116, CultureMech:007117, CultureMech:007118, CultureMech:007119, CultureMech:007115, CultureMech:007120 | Actual native result; no generated files published. |
+
+## Scientific And Domain Assessments
+
+### Publication identity and source provenance
+
+evidence: supported. Targets: CultureMech:007090.
+
+Verified title, authors, year, DOI/PMID equivalence and exact excerpts. Raw abstract and Markdown retained; fuller access is explicitly qualified.
+
+### Formulation and separate assay scope
+
+evidence: concern. Targets: CultureMech:007090.
+
+Historical MediaDB source links these three E2 owners to the study, but an exact study-to-local formulation assignment remains unresolved. Deposited methods distinguish three flask carbon sources and reduced nitrogen from a more concentrated gluconate bioreactor recipe. The octanoate owner lists ethyl octanoate, a different chemical from paper sodium octanoate. The gluconate and citrate owners list gluconic acid and citrate anion rather than the paper's specified sodium salts. The imported sodium ammonium phosphate amount and hydrated trace compounds also need reconciliation. These conflicts are not certified study variants and are not corrected by this bibliography addition. Base E2 reference 36 is Durner 2001 (PMID:11135197); its archived abstract does not enumerate the inherited formula. Do not transfer the separate bioreactor salts, trace stock, titrants or antifoam to the flask owners, or equate LB inoculum with the experimental medium. Inspected locations=Methods/Strains and media, Shake flask experiments, Fermentations in bioreactor; selected Background and Discussion passages. PHA yield, intracellular metabolite pools and fluxes are not ingredient concentrations. The paper expressly distinguishes these results from optimized processes. 
+
+{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Magnesium chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Ethyl octanoate", "term": null, "concentration": {"value": "10.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "concentration": {"value": "43.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical": "Cobaltous sulfate", "term": {"id": "CHEBI:53470", "label": "cobalt(2+) sulfate"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "concentration": {"value": "27.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration", "chemical": "Ferrous sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration", "chemical": "Zinc sulfate", "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical": "Cupric chloride", "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical": "Sodium ammonium phosphate", "term": null, "concentration": {"value": "0.47", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}
+
+### Scientific names, actual ranks and experimental roles
+
+evidence: supported. Targets: CultureMech:007090.
+
+Pseudomonas putida KT2440: Pseudomonas putida KT2440, NCBITaxon:160488, actual rank strain; exact strain; experimental strain; returned NCBI canonical label and rank retained, with Pseudomonas alloputida KT2440 as an equivalent name. Pseudomonas putida KT2442: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only; distinct experimental derivative, not KT2440; no exact node established by bounded lookup. Pseudomonas putida mt-2 and Pseudomonas putida PaW85: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only; distinct ancestor/prior-study and background-derivative mentions, not current target assertions; exact nodes unresolved. Escherichia coli: Escherichia coli, NCBITaxon:562, actual rank species; exact species; RNA-polymerase mechanistic comparison, not cultivation on these owners. Pseudomonas aeruginosa: Pseudomonas aeruginosa, NCBITaxon:287, actual rank species; exact species; OprD mechanistic comparison, not cultivation on these owners.
+
+### Scoped edits and export boundary
+
+evidence: supported. Targets: CultureMech:007090.
+
+Only bibliography/qualified notes and one history event added. No variants, growth associations, metrics, quantities or generated publication added; all prior fields retained.
+
+### Publication identity and source provenance
+
+evidence: supported. Targets: CultureMech:007093.
+
+Verified title, authors, year, DOI/PMID equivalence and exact excerpts. Raw abstract and Markdown retained; fuller access is explicitly qualified.
+
+### Formulation and separate assay scope
+
+evidence: concern. Targets: CultureMech:007093.
+
+Historical MediaDB source links these three E2 owners to the study, but an exact study-to-local formulation assignment remains unresolved. Deposited methods distinguish three flask carbon sources and reduced nitrogen from a more concentrated gluconate bioreactor recipe. The octanoate owner lists ethyl octanoate, a different chemical from paper sodium octanoate. The gluconate and citrate owners list gluconic acid and citrate anion rather than the paper's specified sodium salts. The imported sodium ammonium phosphate amount and hydrated trace compounds also need reconciliation. These conflicts are not certified study variants and are not corrected by this bibliography addition. Base E2 reference 36 is Durner 2001 (PMID:11135197); its archived abstract does not enumerate the inherited formula. Do not transfer the separate bioreactor salts, trace stock, titrants or antifoam to the flask owners, or equate LB inoculum with the experimental medium. Inspected locations=Methods/Strains and media, Shake flask experiments, Fermentations in bioreactor; selected Background and Discussion passages. PHA yield, intracellular metabolite pools and fluxes are not ingredient concentrations. The paper expressly distinguishes these results from optimized processes. 
+
+{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "D-Gluconic acid", "term": null, "concentration": {"value": "13.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Magnesium chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "concentration": {"value": "43.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical": "Cobaltous sulfate", "term": {"id": "CHEBI:53470", "label": "cobalt(2+) sulfate"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "concentration": {"value": "27.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration", "chemical": "Ferrous sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration", "chemical": "Zinc sulfate", "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical": "Cupric chloride", "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical": "Sodium ammonium phosphate", "term": null, "concentration": {"value": "0.47", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}
+
+### Scientific names, actual ranks and experimental roles
+
+evidence: supported. Targets: CultureMech:007093.
+
+Pseudomonas putida KT2440: Pseudomonas putida KT2440, NCBITaxon:160488, actual rank strain; exact strain; experimental strain; returned NCBI canonical label and rank retained, with Pseudomonas alloputida KT2440 as an equivalent name. Pseudomonas putida KT2442: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only; distinct experimental derivative, not KT2440; no exact node established by bounded lookup. Pseudomonas putida mt-2 and Pseudomonas putida PaW85: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only; distinct ancestor/prior-study and background-derivative mentions, not current target assertions; exact nodes unresolved. Escherichia coli: Escherichia coli, NCBITaxon:562, actual rank species; exact species; RNA-polymerase mechanistic comparison, not cultivation on these owners. Pseudomonas aeruginosa: Pseudomonas aeruginosa, NCBITaxon:287, actual rank species; exact species; OprD mechanistic comparison, not cultivation on these owners.
+
+### Scoped edits and export boundary
+
+evidence: supported. Targets: CultureMech:007093.
+
+Only bibliography/qualified notes and one history event added. No variants, growth associations, metrics, quantities or generated publication added; all prior fields retained.
+
+### Publication identity and source provenance
+
+evidence: supported. Targets: CultureMech:007094.
+
+Verified title, authors, year, DOI/PMID equivalence and exact excerpts. Raw abstract and Markdown retained; fuller access is explicitly qualified.
+
+### Formulation and separate assay scope
+
+evidence: concern. Targets: CultureMech:007094.
+
+Historical MediaDB source links these three E2 owners to the study, but an exact study-to-local formulation assignment remains unresolved. Deposited methods distinguish three flask carbon sources and reduced nitrogen from a more concentrated gluconate bioreactor recipe. The octanoate owner lists ethyl octanoate, a different chemical from paper sodium octanoate. The gluconate and citrate owners list gluconic acid and citrate anion rather than the paper's specified sodium salts. The imported sodium ammonium phosphate amount and hydrated trace compounds also need reconciliation. These conflicts are not certified study variants and are not corrected by this bibliography addition. Base E2 reference 36 is Durner 2001 (PMID:11135197); its archived abstract does not enumerate the inherited formula. Do not transfer the separate bioreactor salts, trace stock, titrants or antifoam to the flask owners, or equate LB inoculum with the experimental medium. Inspected locations=Methods/Strains and media, Shake flask experiments, Fermentations in bioreactor; selected Background and Discussion passages. PHA yield, intracellular metabolite pools and fluxes are not ingredient concentrations. The paper expressly distinguishes these results from optimized processes. 
+
+{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Citrate", "term": {"id": "CHEBI:16947", "label": "citrate(3-)"}, "concentration": {"value": "13.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Magnesium chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "concentration": {"value": "43.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical": "Cobaltous sulfate", "term": {"id": "CHEBI:53470", "label": "cobalt(2+) sulfate"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "concentration": {"value": "27.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration", "chemical": "Ferrous sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration", "chemical": "Zinc sulfate", "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical": "Cupric chloride", "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical": "Sodium ammonium phosphate", "term": null, "concentration": {"value": "0.47", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}
+
+### Scientific names, actual ranks and experimental roles
+
+evidence: supported. Targets: CultureMech:007094.
+
+Pseudomonas putida KT2440: Pseudomonas putida KT2440, NCBITaxon:160488, actual rank strain; exact strain; experimental strain; returned NCBI canonical label and rank retained, with Pseudomonas alloputida KT2440 as an equivalent name. Pseudomonas putida KT2442: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only; distinct experimental derivative, not KT2440; no exact node established by bounded lookup. Pseudomonas putida mt-2 and Pseudomonas putida PaW85: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only; distinct ancestor/prior-study and background-derivative mentions, not current target assertions; exact nodes unresolved. Escherichia coli: Escherichia coli, NCBITaxon:562, actual rank species; exact species; RNA-polymerase mechanistic comparison, not cultivation on these owners. Pseudomonas aeruginosa: Pseudomonas aeruginosa, NCBITaxon:287, actual rank species; exact species; OprD mechanistic comparison, not cultivation on these owners.
+
+### Scoped edits and export boundary
+
+evidence: supported. Targets: CultureMech:007094.
+
+Only bibliography/qualified notes and one history event added. No variants, growth associations, metrics, quantities or generated publication added; all prior fields retained.
+
+### Publication identity and source provenance
+
+evidence: supported. Targets: CultureMech:007088.
+
+Verified title, authors, year, DOI/PMID equivalence and exact excerpts. Raw abstract and Markdown retained; fuller access is explicitly qualified.
+
+### Formulation and separate assay scope
+
+evidence: concern. Targets: CultureMech:007088.
+
+The two imported M9 owners differ in glucose versus toluene. Deposited physical-culture methods specify the carbon sources but do not enumerate all imported base salts or quantities. Base M9 reference 90 is Abril 1989 (PMID:2687253); its archived abstract lacks the complete formulation and PubMed flags an erratum. Correction DOI lead=10.1128/jb.172.6.3534b.1990; correction scope remains unresolved because the scan was not visually verified. The correction page's linked PMID:2160949 identifies a different Paracoccus correction and is rejected as an alias. No base-formula details are inherited from that unresolved chain. Keep physical growth, oxygen-consumption resuspension, saline biomass washes, and in silico iM9/iLB separate. Simulated exchange constraints in mmol/gDW/h are not concentrations or empirical growth. Inspected locations=Methods/In vivo determination of oxygen consumption and cell culture condition, Biomass function and in silico medium composition; selected model-comparison body passages. Matching one carbon dose or medium name does not certify the full local thirteen-component recipe. Exact variant destination remains unresolved. 
+
+{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "D-Glucose", "term": {"id": "CHEBI:17634", "label": "D-glucose"}, "concentration": {"value": "17.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Magnesium chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "concentration": {"value": "0.00038", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Boric acid", "term": {"id": "CHEBI:33118", "label": "boric acid"}, "concentration": {"value": "0.013", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "concentration": {"value": "220.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical": "Nickel chloride", "term": {"id": "CHEBI:34887", "label": "nickel dichloride"}, "concentration": {"value": "0.00021", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Sodium molybdate", "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "concentration": {"value": "0.00031", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "concentration": {"value": "86.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration", "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "4.3", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration", "chemical": "Ammonium chloride", "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "concentration": {"value": "187.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical": "Cobalt chloride", "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "concentration": {"value": "0.0039", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical": "Sodium dihydrogen phosphate", "term": {"id": "CHEBI:37585", "label": "sodium dihydrogenphosphate"}, "concentration": {"value": "194.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[11].concentration", "chemical": "Cupric chloride", "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "concentration": {"value": "0.00015", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[12].concentration", "chemical": "Zinc Chloride", "term": {"id": "CHEBI:49976", "label": "zinc dichloride"}, "concentration": {"value": "0.00092", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}
+
+### Scientific names, actual ranks and experimental roles
+
+evidence: supported. Targets: CultureMech:007088.
+
+Pseudomonas putida KT2440 harboring the TOL plasmid: Pseudomonas putida KT2440, NCBITaxon:160488, actual rank strain; verified strain node; specific plasmid-bearing derivative unresolved; physical-culture study organism; TOL-bearing status must not be generalized to all KT2440. Pseudomonas putida KT2442 and Pseudomonas putida mt-2: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only; distinct prior-study and ancestral contexts, not physical-growth targets established here. Pseudomonas putida F1: Pseudomonas putida F1, NCBITaxon:351746, actual rank strain; exact strain; prior-study comparison, not the experimental strain on these owners. Escherichia coli: Escherichia coli, NCBITaxon:562, actual rank species; exact species; biomass and oxygen-model template, not empirical growth on these media. Pseudomonas aeruginosa PAO1 and PA14: Pseudomonas aeruginosa, NCBITaxon:287, actual rank species; parent_rank_only; distinct genetic/model comparator strains; exact strain nodes not established in this review and no current-media growth asserted.
+
+### Scoped edits and export boundary
+
+evidence: supported. Targets: CultureMech:007088.
+
+Only bibliography/qualified notes and one history event added. No variants, growth associations, metrics, quantities or generated publication added; all prior fields retained.
+
+### Publication identity and source provenance
+
+evidence: supported. Targets: CultureMech:007089.
+
+Verified title, authors, year, DOI/PMID equivalence and exact excerpts. Raw abstract and Markdown retained; fuller access is explicitly qualified.
+
+### Formulation and separate assay scope
+
+evidence: concern. Targets: CultureMech:007089.
+
+The two imported M9 owners differ in glucose versus toluene. Deposited physical-culture methods specify the carbon sources but do not enumerate all imported base salts or quantities. Base M9 reference 90 is Abril 1989 (PMID:2687253); its archived abstract lacks the complete formulation and PubMed flags an erratum. Correction DOI lead=10.1128/jb.172.6.3534b.1990; correction scope remains unresolved because the scan was not visually verified. The correction page's linked PMID:2160949 identifies a different Paracoccus correction and is rejected as an alias. No base-formula details are inherited from that unresolved chain. Keep physical growth, oxygen-consumption resuspension, saline biomass washes, and in silico iM9/iLB separate. Simulated exchange constraints in mmol/gDW/h are not concentrations or empirical growth. Inspected locations=Methods/In vivo determination of oxygen consumption and cell culture condition, Biomass function and in silico medium composition; selected model-comparison body passages. Matching one carbon dose or medium name does not certify the full local thirteen-component recipe. Exact variant destination remains unresolved. 
+
+{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Toluene", "term": {"id": "CHEBI:17578", "label": "toluene"}, "concentration": {"value": "6.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Magnesium chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "concentration": {"value": "0.00038", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Boric acid", "term": {"id": "CHEBI:33118", "label": "boric acid"}, "concentration": {"value": "0.013", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "concentration": {"value": "220.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical": "Nickel chloride", "term": {"id": "CHEBI:34887", "label": "nickel dichloride"}, "concentration": {"value": "0.00021", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Sodium molybdate", "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "concentration": {"value": "0.00031", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "concentration": {"value": "86.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration", "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "4.3", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration", "chemical": "Ammonium chloride", "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "concentration": {"value": "187.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical": "Cobalt chloride", "term": {"id": "CHEBI:35696", "label": "cobalt dichloride"}, "concentration": {"value": "0.0039", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical": "Sodium dihydrogen phosphate", "term": {"id": "CHEBI:37585", "label": "sodium dihydrogenphosphate"}, "concentration": {"value": "194.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[11].concentration", "chemical": "Cupric chloride", "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "concentration": {"value": "0.00015", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[12].concentration", "chemical": "Zinc Chloride", "term": {"id": "CHEBI:49976", "label": "zinc dichloride"}, "concentration": {"value": "0.00092", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}
+
+### Scientific names, actual ranks and experimental roles
+
+evidence: supported. Targets: CultureMech:007089.
+
+Pseudomonas putida KT2440 harboring the TOL plasmid: Pseudomonas putida KT2440, NCBITaxon:160488, actual rank strain; verified strain node; specific plasmid-bearing derivative unresolved; physical-culture study organism; TOL-bearing status must not be generalized to all KT2440. Pseudomonas putida KT2442 and Pseudomonas putida mt-2: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only; distinct prior-study and ancestral contexts, not physical-growth targets established here. Pseudomonas putida F1: Pseudomonas putida F1, NCBITaxon:351746, actual rank strain; exact strain; prior-study comparison, not the experimental strain on these owners. Escherichia coli: Escherichia coli, NCBITaxon:562, actual rank species; exact species; biomass and oxygen-model template, not empirical growth on these media. Pseudomonas aeruginosa PAO1 and PA14: Pseudomonas aeruginosa, NCBITaxon:287, actual rank species; parent_rank_only; distinct genetic/model comparator strains; exact strain nodes not established in this review and no current-media growth asserted.
+
+### Scoped edits and export boundary
+
+evidence: supported. Targets: CultureMech:007089.
+
+Only bibliography/qualified notes and one history event added. No variants, growth associations, metrics, quantities or generated publication added; all prior fields retained.
+
+### Publication identity and source provenance
+
+evidence: supported. Targets: CultureMech:007116.
+
+Verified title, authors, year, DOI/PMID equivalence and exact excerpts. Raw abstract and Markdown retained; fuller access is explicitly qualified.
+
+### Formulation and separate assay scope
+
+evidence: concern. Targets: CultureMech:007116.
+
+The two local seven-component owners exchange glucose and asparagine while retaining the other six entries. The abstract does not enumerate their amounts, chemical forms or preparation. It separates failure of the gapA mutant on glycolytic carbon sources from growth on gluconeogenic sources and the opposite gapB phenotype. Do not turn either negative result into universal growth. Purified-enzyme Km, cofactor activities and reporter expression are not medium doses. Full methods remain uninspected and no resolved variant is assigned. 
+
+{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "D-Glucose", "term": {"id": "CHEBI:17634", "label": "D-glucose"}, "concentration": {"value": "25.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Tryptophan", "term": {"id": "CHEBI:27897", "label": "tryptophan"}, "concentration": {"value": "0.244822", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "concentration": {"value": "80.3673", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "concentration": {"value": "44.0898", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "0.811458", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Ammonium sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium sulfate"}, "concentration": {"value": "15.1355", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Sodium citrate", "term": {"id": "CHEBI:53258", "label": "sodium citrate"}, "concentration": {"value": "3.4002", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}
+
+### Scientific names, actual ranks and experimental roles
+
+evidence: supported. Targets: CultureMech:007116.
+
+Bacillus subtilis: Bacillus subtilis, NCBITaxon:1423, actual rank species; exact species; reported study species. Bacillus subtilis wild type, gapA mutant and gapB mutant: Bacillus subtilis, NCBITaxon:1423, actual rank species; parent_rank_only; distinct experimental backgrounds; exact mutant nodes unresolved. Bacillus subtilis 168CA, GM1500 and GM1501: Bacillus subtilis, NCBITaxon:1423, actual rank species; parent_rank_only; historical MediaDB discovery designations, not abstract-verified mutant-to-strain assignments.
+
+### Scoped edits and export boundary
+
+evidence: supported. Targets: CultureMech:007116.
+
+Only bibliography/qualified notes and one history event added. No variants, growth associations, metrics, quantities or generated publication added; all prior fields retained.
+
+### Publication identity and source provenance
+
+evidence: supported. Targets: CultureMech:007117.
+
+Verified title, authors, year, DOI/PMID equivalence and exact excerpts. Raw abstract and Markdown retained; fuller access is explicitly qualified.
+
+### Formulation and separate assay scope
+
+evidence: concern. Targets: CultureMech:007117.
+
+The two local seven-component owners exchange glucose and asparagine while retaining the other six entries. The abstract does not enumerate their amounts, chemical forms or preparation. It separates failure of the gapA mutant on glycolytic carbon sources from growth on gluconeogenic sources and the opposite gapB phenotype. Do not turn either negative result into universal growth. Purified-enzyme Km, cofactor activities and reporter expression are not medium doses. Full methods remain uninspected and no resolved variant is assigned. 
+
+{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Tryptophan", "term": {"id": "CHEBI:27897", "label": "tryptophan"}, "concentration": {"value": "0.244822", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "concentration": {"value": "80.3673", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Asparagine", "term": {"id": "CHEBI:22653", "label": "asparagine"}, "concentration": {"value": "25.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "concentration": {"value": "44.0898", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "0.811458", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Ammonium sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium sulfate"}, "concentration": {"value": "15.1355", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Sodium citrate", "term": {"id": "CHEBI:53258", "label": "sodium citrate"}, "concentration": {"value": "3.4002", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}
+
+### Scientific names, actual ranks and experimental roles
+
+evidence: supported. Targets: CultureMech:007117.
+
+Bacillus subtilis: Bacillus subtilis, NCBITaxon:1423, actual rank species; exact species; reported study species. Bacillus subtilis wild type, gapA mutant and gapB mutant: Bacillus subtilis, NCBITaxon:1423, actual rank species; parent_rank_only; distinct experimental backgrounds; exact mutant nodes unresolved. Bacillus subtilis 168CA, GM1500 and GM1501: Bacillus subtilis, NCBITaxon:1423, actual rank species; parent_rank_only; historical MediaDB discovery designations, not abstract-verified mutant-to-strain assignments.
+
+### Scoped edits and export boundary
+
+evidence: supported. Targets: CultureMech:007117.
+
+Only bibliography/qualified notes and one history event added. No variants, growth associations, metrics, quantities or generated publication added; all prior fields retained.
+
+### Publication identity and source provenance
+
+evidence: supported. Targets: CultureMech:007118.
+
+Verified title, authors, year, DOI/PMID equivalence and exact excerpts. Raw abstract and Markdown retained; fuller access is explicitly qualified.
+
+### Formulation and separate assay scope
+
+evidence: concern. Targets: CultureMech:007118.
+
+The two fifteen-component Gotz owners differ in mannitol versus (S)-malate and both list ammonium sulfate. Abstract and publisher preview distinguish nitrogen-starved and nitrogen-sufficient conditions but do not identify which local nitrogen level matches each assay. No nitrogen-free recipe or exact variant is inferred. EPS composition ratios and plant infectivity are not ingredient amounts or bacterial growth metrics. Publisher archive=references_cache/papers/primary_html/pmid-16802172-20261013.html; publisher_markdown=references_cache/papers/primary_html/pmid-16802172-20261013.md. This is an abstract/subscription preview, not full methods. 
+
+{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Biotin", "term": {"id": "CHEBI:15956", "label": "biotin"}, "concentration": {"value": "8.2e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Riboflavin", "term": {"id": "CHEBI:17015", "label": "riboflavin"}, "concentration": {"value": "5.3e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Pyridoxine", "term": {"id": "CHEBI:16709", "label": "pyridoxine"}, "concentration": {"value": "0.00012", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Mannitol", "term": {"id": "CHEBI:29864", "label": "mannitol"}, "concentration": {"value": "27.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical": "4-Aminobenzoate", "term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "concentration": {"value": "0.00015", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "concentration": {"value": "0.1", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "concentration": {"value": "6.1", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration", "chemical": "Sodium molybdate", "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration", "chemical": "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "concentration": {"value": "0.1", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical": "Thiamine HCl", "term": {"id": "CHEBI:49105", "label": "thiamine hydrochloride"}, "concentration": {"value": "6.6e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical": "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "concentration": {"value": "3.9", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[11].concentration", "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[12].concentration", "chemical": "Ferrous sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}, "concentration": {"value": "0.001", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[13].concentration", "chemical": "Ammonium sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium sulfate"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[14].concentration", "chemical": "MOPS", "term": {"id": "CHEBI:39074", "label": "MOPS"}, "concentration": {"value": "40.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}
+
+### Scientific names, actual ranks and experimental roles
+
+evidence: supported. Targets: CultureMech:007118.
+
+Bradyrhizobium japonicum USDA 110: Bradyrhizobium diazoefficiens USDA 110, NCBITaxon:224911, actual rank strain; verified historical-synonym strain match; experimental strain now labeled Bradyrhizobium diazoefficiens USDA 110 by the retrieved NCBI node. Bradyrhizobium japonicum USDA 110-derived DeltaP22: Bradyrhizobium diazoefficiens, NCBITaxon:1355477, actual rank species; parent_rank_only; distinct experimental mutant; species parent Bradyrhizobium diazoefficiens verified, not an exact DeltaP22 match. soybean: Glycine max, NCBITaxon:3847, actual rank species; verified common-name species match; Glycine max plant host, not a culture-medium growth target.
+
+### Scoped edits and export boundary
+
+evidence: supported. Targets: CultureMech:007118.
+
+Only bibliography/qualified notes and one history event added. No variants, growth associations, metrics, quantities or generated publication added; all prior fields retained.
+
+### Publication identity and source provenance
+
+evidence: supported. Targets: CultureMech:007119.
+
+Verified title, authors, year, DOI/PMID equivalence and exact excerpts. Raw abstract and Markdown retained; fuller access is explicitly qualified.
+
+### Formulation and separate assay scope
+
+evidence: concern. Targets: CultureMech:007119.
+
+The two fifteen-component Gotz owners differ in mannitol versus (S)-malate and both list ammonium sulfate. Abstract and publisher preview distinguish nitrogen-starved and nitrogen-sufficient conditions but do not identify which local nitrogen level matches each assay. No nitrogen-free recipe or exact variant is inferred. EPS composition ratios and plant infectivity are not ingredient amounts or bacterial growth metrics. Publisher archive=references_cache/papers/primary_html/pmid-16802172-20261013.html; publisher_markdown=references_cache/papers/primary_html/pmid-16802172-20261013.md. This is an abstract/subscription preview, not full methods. 
+
+{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Biotin", "term": {"id": "CHEBI:15956", "label": "biotin"}, "concentration": {"value": "8.2e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical": "(S)-Malate", "term": null, "concentration": {"value": "27.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Riboflavin", "term": {"id": "CHEBI:17015", "label": "riboflavin"}, "concentration": {"value": "5.3e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Pyridoxine", "term": {"id": "CHEBI:16709", "label": "pyridoxine"}, "concentration": {"value": "0.00012", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical": "4-Aminobenzoate", "term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "concentration": {"value": "0.00015", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "concentration": {"value": "0.1", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "concentration": {"value": "6.1", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration", "chemical": "Sodium molybdate", "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration", "chemical": "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "concentration": {"value": "0.1", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical": "Thiamine HCl", "term": {"id": "CHEBI:49105", "label": "thiamine hydrochloride"}, "concentration": {"value": "6.6e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical": "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "concentration": {"value": "3.9", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[11].concentration", "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[12].concentration", "chemical": "Ferrous sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}, "concentration": {"value": "0.001", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[13].concentration", "chemical": "Ammonium sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium sulfate"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[14].concentration", "chemical": "MOPS", "term": {"id": "CHEBI:39074", "label": "MOPS"}, "concentration": {"value": "40.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}
+
+### Scientific names, actual ranks and experimental roles
+
+evidence: supported. Targets: CultureMech:007119.
+
+Bradyrhizobium japonicum USDA 110: Bradyrhizobium diazoefficiens USDA 110, NCBITaxon:224911, actual rank strain; verified historical-synonym strain match; experimental strain now labeled Bradyrhizobium diazoefficiens USDA 110 by the retrieved NCBI node. Bradyrhizobium japonicum USDA 110-derived DeltaP22: Bradyrhizobium diazoefficiens, NCBITaxon:1355477, actual rank species; parent_rank_only; distinct experimental mutant; species parent Bradyrhizobium diazoefficiens verified, not an exact DeltaP22 match. soybean: Glycine max, NCBITaxon:3847, actual rank species; verified common-name species match; Glycine max plant host, not a culture-medium growth target.
+
+### Scoped edits and export boundary
+
+evidence: supported. Targets: CultureMech:007119.
+
+Only bibliography/qualified notes and one history event added. No variants, growth associations, metrics, quantities or generated publication added; all prior fields retained.
+
+### Publication identity and source provenance
+
+evidence: supported. Targets: CultureMech:007115.
+
+Verified title, authors, year, DOI/PMID equivalence and exact excerpts. Raw abstract and Markdown retained; fuller access is explicitly qualified.
+
+### Formulation and separate assay scope
+
+evidence: concern. Targets: CultureMech:007115.
+
+The historical source join supports adding this paper, not certifying the twelve imported ingredient amounts. The archived abstract does not enumerate the full formulation. A bounded PMC browser extraction provided later leads about hydrated salts, an antifoam addition and separate carbon experiments; original full article HTML/PDF was not archived and figures were not inspected. Those leads require full-formula reconciliation and are not promoted to amount evidence. Direct XML/HTML retrieval failures are access-route failures, not proof the full text is unavailable elsewhere. Glucose-citrate background cultures must not be combined with the current glucose experiments. Intracellular PEP/glucose-6-P are not recipe additions; no scalar growth metric is inferred from reduced-growth wording. Full-text lead assessment=reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-followup-source-notes.md. 
+
+{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "D-Glucose", "term": {"id": "CHEBI:17634", "label": "D-glucose"}, "concentration": {"value": "44.405", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Tryptophan", "term": {"id": "CHEBI:27897", "label": "tryptophan"}, "concentration": {"value": "0.195858", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Magnesium chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "concentration": {"value": "0.122965", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "concentration": {"value": "0.100409", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical": "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "concentration": {"value": "15.6142", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Sodium sulfate", "term": {"id": "CHEBI:32149", "label": "sodium sulfate"}, "concentration": {"value": "1.99944", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Potassium chloride", "term": {"id": "CHEBI:32588", "label": "potassium chloride"}, "concentration": {"value": "2.01204", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration", "chemical": "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "concentration": {"value": "7.34829", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration", "chemical": "Ammonium chloride", "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "concentration": {"value": "18.6947", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical": "Manganese chloride", "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"}, "concentration": {"value": "0.0672435", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical": "Iron(III) chloride", "term": null, "concentration": {"value": "0.00799112", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[11].concentration", "chemical": "Sodium nitrate", "term": {"id": "CHEBI:63005", "label": "sodium nitrate"}, "concentration": {"value": "2.00012", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}
+
+### Scientific names, actual ranks and experimental roles
+
+evidence: supported. Targets: CultureMech:007115.
+
+Bacillus subtilis: Bacillus subtilis, NCBITaxon:1423, actual rank species; exact species; study species. Bacillus subtilis ATCC 6051 and experimental pyk mutant: Bacillus subtilis, NCBITaxon:1423, actual rank species; parent_rank_only; distinct wild-type and mutant cultures in the bounded primary-page follow-up; species type-material listing is not an exact strain-node mapping. Bacillus subtilis ATCC6051_pyk+: Bacillus subtilis, NCBITaxon:1423, actual rank species; parent_rank_only; historical SQL designation only; do not infer wild-type/mutant identity from its plus sign. Escherichia coli pyk mutants: Escherichia coli, NCBITaxon:562, actual rank species; parent_rank_only; metabolic comparator mutants, not targets on this recipe; species verified, derivative identities unresolved.
+
+### Scoped edits and export boundary
+
+evidence: supported. Targets: CultureMech:007115.
+
+Only bibliography/qualified notes and one history event added. No variants, growth associations, metrics, quantities or generated publication added; all prior fields retained.
+
+### Publication identity and source provenance
+
+evidence: supported. Targets: CultureMech:007120.
+
+Verified title, authors, year, DOI/PMID equivalence and exact excerpts. Raw abstract and Markdown retained; fuller access is explicitly qualified.
+
+### Formulation and separate assay scope
+
+evidence: concern. Targets: CultureMech:007120.
+
+The historical source join links this glycerol minimal-medium owner to the study, but the abstract does not enumerate its thirteen ingredients. Keep yeast-extract comparator media, ALA-supplementation tests and inhibitor assays separate from the imported base formulation. Comparable respiration, heme measurements and qualitative growth are separate claims, not certified amounts or scalar growth metrics. Full methods remain uninspected. 
+
+{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration", "chemical": "Glycerol", "term": {"id": "CHEBI:17754", "label": "glycerol"}, "concentration": {"value": "43.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Biotin", "term": {"id": "CHEBI:15956", "label": "biotin"}, "concentration": {"value": "0.00041", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "concentration": {"value": "0.34", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Boric acid", "term": {"id": "CHEBI:33118", "label": "boric acid"}, "concentration": {"value": "0.16", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical": "Dibasic sodium phosphate", "term": {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "concentration": {"value": "2.1", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Sodium molybdate", "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "concentration": {"value": "0.0024", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "concentration": {"value": "1.7", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration", "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "0.41", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration", "chemical": "Ammonium chloride", "term": {"id": "CHEBI:31206", "label": "ammonium chloride"}, "concentration": {"value": "4.7", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical": "Zinc sulfate", "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "concentration": {"value": "0.0064", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical": "Manganese chloride", "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"}, "concentration": {"value": "0.0025", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[11].concentration", "chemical": "Cupric sulfate", "term": {"id": "CHEBI:23414", "label": "copper(II) sulfate"}, "concentration": {"value": "0.002", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[12].concentration", "chemical": "Iron(III) chloride", "term": null, "concentration": {"value": "0.0037", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}
+
+### Scientific names, actual ranks and experimental roles
+
+evidence: supported. Targets: CultureMech:007120.
+
+Bradyrhizobium japonicum hemA mutant MLG1 and unnamed parent strain: Bradyrhizobium japonicum, NCBITaxon:375, actual rank species; parent_rank_only; distinct experimental cultures under the reported species; exact identities unresolved; historical SQL USDA110 is not primary evidence of MLG1 ancestry. Rhizobium meliloti analogous hemA mutants: Sinorhizobium meliloti, NCBITaxon:382, actual rank species; parent_rank_only; reported species synonym maps to Sinorhizobium meliloti; comparator mutants show conditional negative results, not growth on this record. Escherichia coli analogous hemA mutants: Escherichia coli, NCBITaxon:562, actual rank species; parent_rank_only; species verified but mutant identities unresolved; comparator negative growth without ALA is not a positive target relationship.
+
+### Scoped edits and export boundary
+
+evidence: supported. Targets: CultureMech:007120.
+
+Only bibliography/qualified notes and one history event added. No variants, growth associations, metrics, quantities or generated publication added; all prior fields retained.
+
+## Findings
+
+### formulation-75: Exact study-to-recipe formulation remains unresolved: source 75
+
+major / open / confirmed; issue key: soil-metabolism-study-citations-formulation-75.
+
+Historical MediaDB source links these three E2 owners to the study, but an exact study-to-local formulation assignment remains unresolved. Deposited methods distinguish three flask carbon sources and reduced nitrogen from a more concentrated gluconate bioreactor recipe. The octanoate owner lists ethyl octanoate, a different chemical from paper sodium octanoate. The gluconate and citrate owners list gluconic acid and citrate anion rather than the paper's specified sodium salts. The imported sodium ammonium phosphate amount and hydrated trace compounds also need reconciliation. These conflicts are not certified study variants and are not corrected by this bibliography addition. Base E2 reference 36 is Durner 2001 (PMID:11135197); its archived abstract does not enumerate the inherited formula. Do not transfer the separate bioreactor salts, trace stock, titrants or antifoam to the flask owners, or equate LB inoculum with the experimental medium. Inspected locations=Methods/Strains and media, Shake flask experiments, Fermentations in bioreactor; selected Background and Discussion passages. PHA yield, intracellular metabolite pools and fluxes are not ingredient concentrations. The paper expressly distinguishes these results from optimized processes. 
+
+### formulation-74: Exact study-to-recipe formulation remains unresolved: source 74
+
+major / open / confirmed; issue key: soil-metabolism-study-citations-formulation-74.
+
+The two imported M9 owners differ in glucose versus toluene. Deposited physical-culture methods specify the carbon sources but do not enumerate all imported base salts or quantities. Base M9 reference 90 is Abril 1989 (PMID:2687253); its archived abstract lacks the complete formulation and PubMed flags an erratum. Correction DOI lead=10.1128/jb.172.6.3534b.1990; correction scope remains unresolved because the scan was not visually verified. The correction page's linked PMID:2160949 identifies a different Paracoccus correction and is rejected as an alias. No base-formula details are inherited from that unresolved chain. Keep physical growth, oxygen-consumption resuspension, saline biomass washes, and in silico iM9/iLB separate. Simulated exchange constraints in mmol/gDW/h are not concentrations or empirical growth. Inspected locations=Methods/In vivo determination of oxygen consumption and cell culture condition, Biomass function and in silico medium composition; selected model-comparison body passages. Matching one carbon dose or medium name does not certify the full local thirteen-component recipe. Exact variant destination remains unresolved. 
+
+### formulation-79: Exact study-to-recipe formulation remains unresolved: source 79
+
+major / open / confirmed; issue key: soil-metabolism-study-citations-formulation-79.
+
+The two local seven-component owners exchange glucose and asparagine while retaining the other six entries. The abstract does not enumerate their amounts, chemical forms or preparation. It separates failure of the gapA mutant on glycolytic carbon sources from growth on gluconeogenic sources and the opposite gapB phenotype. Do not turn either negative result into universal growth. Purified-enzyme Km, cofactor activities and reporter expression are not medium doses. Full methods remain uninspected and no resolved variant is assigned. 
+
+### formulation-81: Exact study-to-recipe formulation remains unresolved: source 81
+
+major / open / confirmed; issue key: soil-metabolism-study-citations-formulation-81.
+
+The two fifteen-component Gotz owners differ in mannitol versus (S)-malate and both list ammonium sulfate. Abstract and publisher preview distinguish nitrogen-starved and nitrogen-sufficient conditions but do not identify which local nitrogen level matches each assay. No nitrogen-free recipe or exact variant is inferred. EPS composition ratios and plant infectivity are not ingredient amounts or bacterial growth metrics. Publisher archive=references_cache/papers/primary_html/pmid-16802172-20261013.html; publisher_markdown=references_cache/papers/primary_html/pmid-16802172-20261013.md. This is an abstract/subscription preview, not full methods. 
+
+### formulation-78: Exact study-to-recipe formulation remains unresolved: source 78
+
+major / open / confirmed; issue key: soil-metabolism-study-citations-formulation-78.
+
+The historical source join supports adding this paper, not certifying the twelve imported ingredient amounts. The archived abstract does not enumerate the full formulation. A bounded PMC browser extraction provided later leads about hydrated salts, an antifoam addition and separate carbon experiments; original full article HTML/PDF was not archived and figures were not inspected. Those leads require full-formula reconciliation and are not promoted to amount evidence. Direct XML/HTML retrieval failures are access-route failures, not proof the full text is unavailable elsewhere. Glucose-citrate background cultures must not be combined with the current glucose experiments. Intracellular PEP/glucose-6-P are not recipe additions; no scalar growth metric is inferred from reduced-growth wording. Full-text lead assessment=reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-followup-source-notes.md. 
+
+### formulation-82: Exact study-to-recipe formulation remains unresolved: source 82
+
+major / open / confirmed; issue key: soil-metabolism-study-citations-formulation-82.
+
+The historical source join links this glycerol minimal-medium owner to the study, but the abstract does not enumerate its thirteen ingredients. Keep yeast-extract comparator media, ALA-supplementation tests and inhibitor assays separate from the imported base formulation. Comparable respiration, heme measurements and qualitative growth are separate claims, not certified amounts or scalar growth metrics. Full methods remain uninspected. 
+
+## Recommended Actions And Acceptance Checks
+
+### resolve-formulation-75
+
+Exact study-to-recipe formulation remains unresolved: source 75
+
+- Inspect full methods and inherited base recipes/corrections; reconcile chemical forms and amounts separately; preserve strain, assay, plasmid and nitrogen-condition scope before approving variants, concentrations or growth.
+
+### resolve-formulation-74
+
+Exact study-to-recipe formulation remains unresolved: source 74
+
+- Inspect full methods and inherited base recipes/corrections; reconcile chemical forms and amounts separately; preserve strain, assay, plasmid and nitrogen-condition scope before approving variants, concentrations or growth.
+
+### resolve-formulation-79
+
+Exact study-to-recipe formulation remains unresolved: source 79
+
+- Inspect full methods and inherited base recipes/corrections; reconcile chemical forms and amounts separately; preserve strain, assay, plasmid and nitrogen-condition scope before approving variants, concentrations or growth.
+
+### resolve-formulation-81
+
+Exact study-to-recipe formulation remains unresolved: source 81
+
+- Inspect full methods and inherited base recipes/corrections; reconcile chemical forms and amounts separately; preserve strain, assay, plasmid and nitrogen-condition scope before approving variants, concentrations or growth.
+
+### resolve-formulation-78
+
+Exact study-to-recipe formulation remains unresolved: source 78
+
+- Inspect full methods and inherited base recipes/corrections; reconcile chemical forms and amounts separately; preserve strain, assay, plasmid and nitrogen-condition scope before approving variants, concentrations or growth.
+
+### resolve-formulation-82
+
+Exact study-to-recipe formulation remains unresolved: source 82
+
+- Inspect full methods and inherited base recipes/corrections; reconcile chemical forms and amounts separately; preserve strain, assay, plasmid and nitrogen-condition scope before approving variants, concentrations or growth.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| paper-75 | doi:10.1186/1475-2859-10-25; references_cache/papers/PMID_21513516.xml; Article identity and abstract | supports | Verified identity and inspected abstract; not complete formulation or parent-medium growth approval. |
+| paper-74 | doi:10.1186/1752-0509-2-79; references_cache/papers/PMID_18793442.xml; Article identity and abstract | supports | Verified identity and inspected abstract; not complete formulation or parent-medium growth approval. |
+| paper-79 | doi:10.1074/jbc.275.19.14031; references_cache/papers/PMID_10799476.xml; Article identity and abstract | supports | Verified identity and inspected abstract; not complete formulation or parent-medium growth approval. |
+| paper-81 | doi:10.1007/s00203-006-0127-3; references_cache/papers/PMID_16802172.xml; Article identity and abstract | supports | Verified identity and inspected abstract; not complete formulation or parent-medium growth approval. |
+| paper-78 | doi:10.1128/AEM.66.9.4045-4049.2000; references_cache/papers/PMID_10966427.xml; Article identity and abstract | supports | Verified identity and inspected abstract; not complete formulation or parent-medium growth approval. |
+| paper-82 | doi:10.1128/jb.173.3.1145-1150.1991; references_cache/papers/PMID_1846857.xml; Article identity and abstract | supports | Verified identity and inspected abstract; not complete formulation or parent-medium growth approval. |
+| body-75 | doi:10.1186/1475-2859-10-25; references_cache/papers/primary_xml/pmc3107774-20261013.xml; Methods and selected medium-relevant body passages | supports | Deposited full XML inspected in the stated sections; linked figures, supplements and inherited full base recipes are not certified. |
+| body-74 | doi:10.1186/1752-0509-2-79; references_cache/papers/primary_xml/pmc2569920-20261013.xml; Methods and selected medium-relevant body passages | supports | Deposited full XML inspected in the stated sections; linked figures, supplements and inherited full base recipes are not certified. |
+| publisher-81 | doi:10.1007/s00203-006-0127-3; references_cache/papers/primary_html/pmid-16802172-20261013.html; Abstract/subscription preview | supports | Publisher preview corroborates the abstract; it is not full methods. |
+| taxonomy | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy; references_cache/papers/taxonomy/soil-metabolism-studies-20261013.xml; TaxId, ScientificName, Rank and OtherNames | supports | Verified actual species/strain ranks and synonym relationships; taxonomy alone does not support growth. |
+| additional-taxonomy | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy; references_cache/papers/taxonomy/soil-metabolism-additional-20261013.xml; TaxId, ScientificName, Rank and OtherNames | supports | Verified actual species/strain ranks and synonym relationships; taxonomy alone does not support growth. |
+| joins | MediaDB SQL 07Oct2015; references_cache/papers/mediadb/media_database.07Oct2015.sql; Sources 75, 74, 79, 78, 81 and 82 | supports | Historical source-owner joins support discovery relevance, not automatic concentration or growth certification. |
+| claims | Guarded curation receipt; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/claim-plan.json; claim-plan.json | context_only | Twenty-four exact snippets, twelve taxonomy nodes and qualified source decisions; followup_assessment supersedes earlier access-only limitations. |
+| archives | Guarded curation receipt; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/source-preparation.json; source-preparation.json | context_only | Forty-two hashed archive files; all six cited papers have raw abstracts and attributable Markdown; two have full XML. |
+| readback | Guarded curation receipt; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/final-readback.json; final-readback.json | context_only | All 15,910 normalized hashes checked: exactly eleven intended edits; original bytes recoverable. |
+| excerpts | Guarded curation receipt; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/evidence-readback.json; evidence-readback.json | context_only | Forty-seven exact note-excerpt occurrences checked; no new native claim-level EvidenceItem assertions. |
+| applied | Guarded curation receipt; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/applied.json; applied.json | context_only | Eleven citations/history events; all 128 ingredient instances and prior fields preserved. |
+| baseline-00 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-00.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-00.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-01 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-01.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-01.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-02 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-02.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-02.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-03 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-03.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-03.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-04 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-04.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-04.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-05 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-05.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-05.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-06 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-06.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-06.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-07 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-07.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-07.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-08 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-08.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-08.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-09 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-09.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-09.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-10 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-10.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-10.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-11 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-11.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-11.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-12 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-12.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-12.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-13 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-13.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-13.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-14 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-14.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-14.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-15 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-15.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-15.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-16 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-16.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-16.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-17 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-17.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-17.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-18 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-18.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-18.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-19 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-19.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-19.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-20 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-20.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-20.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| baseline-21 | reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-21.log; reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-21.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-00 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-00.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-00.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-01 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-01.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-01.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-02 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-02.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-02.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-03 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-03.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-03.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-04 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-04.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-04.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-05 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-05.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-05.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-06 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-06.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-06.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-07 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-07.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-07.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-08 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-08.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-08.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-09 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-09.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-09.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-10 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-10.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-10.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-11 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-11.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-11.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-12 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-12.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-12.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-13 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-13.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-13.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-14 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-14.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-14.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-15 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-15.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-15.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-16 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-16.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-16.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-17 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-17.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-17.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-18 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-18.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-18.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-19 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-19.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-19.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-20 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-20.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-20.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| post-21 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-21.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-21.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| merge-00 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/merge-00.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/merge-00.log; Complete command output | context_only | Actual exit code 1; not scientific certification. |
+| merge-01 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/merge-01.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/merge-01.log; Complete command output | context_only | Actual exit code 1; not scientific certification. |
+| extra-00 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/extra-00.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/extra-00.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| extra-01 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/extra-01.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/extra-01.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+| extra-02 | reports/paper_citation_curation/20261013-soil-metabolism-study-citations/extra-02.log; reports/paper_citation_curation/20261013-soil-metabolism-study-citations/extra-02.log; Complete command output | context_only | Actual exit code 0; not scientific certification. |
+
+## Limits And Additional Notes
+
+- Partial scientific self-review; all 128 amounts enumerated as preserved, not certified.
+- Two full XML articles inspected in selected sections; remaining scientific support is abstract-level. Publisher preview and bounded browser leads do not certify complete methods.
+- Bounded taxonomy lookups do not prove derivative-node absence. Actual ranks and historical synonyms are retained.
+- Base-recipe abstracts are archived but full formulas and an Abril correction remain unresolved. PMID 2160949 is explicitly rejected as a correction alias.
+- Remaining 189 MediaDB candidate links and 90 prose identifier groups overlap; qualified ancillary/rejected identifiers are not automatically addable papers. Neither queue establishes citation exhaustion.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261013T172703Z-soil-metabolism-study-paper-citations
+kind: batch
+repository: culturebotai/CultureMech
+title: Soil-metabolism study citations and qualified formulation scope
+started_at: '2026-10-13T16:44:59Z'
+finished_at: '2026-10-13T17:27:03Z'
+reviewer:
+  identity: codex
+  kind: agent
+  independence: self_review
+  independence_basis: Curator-performed assessment, not independent adversarial review.
+skill: culturemech-add-paper-citation
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Eleven citations across eleven owners and six papers; every paper has an
+  archived abstract and Markdown, two additionally have full XML. All 128 ingredient
+  instances preserved; no new quantities, concentration evidence, resolved variants
+  or native growth associations.
+source:
+  git_revision: 41d4d390123c0d8320cd53e994470c88a1b86d8c
+  state: working_tree
+  inputs:
+  - path: data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+    sha256: f5c5ad8aff55faf7017aa898e100def729a646ca2a6f96e4b396bd0eb679f820
+    role: target
+  - path: data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+    sha256: ec00e10f2771a3015de40005be6d801c76cfcadba97a3f7f8cc3b35506249405
+    role: target
+  - path: data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+    sha256: 9dbb8f6748a77834385684b44ef41242e2572a8778cbe0e072e36f27768c5b5c
+    role: target
+  - path: data/normalized_yaml/bacterial/fry_et_al.yaml
+    sha256: 33c7de2d4c51b99cc4d9a21238a44b2f783add03f213107b2f930952d2896617
+    role: target
+  - path: data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+    sha256: b795b5ae42e1cea75fa24a3cbb20346f9d69784a95e7e415e328d2228f3b41d1
+    role: target
+  - path: data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+    sha256: f4f2140787bd0652ccee09362145256cd89d7f5ab3c021dba22bb7aa785b4360
+    role: target
+  - path: data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+    sha256: fd0e01d3bb1ac3c0de10e8928f775041227867b2dfc62a90b7c480229f78d512
+    role: target
+  - path: data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+    sha256: 5214045bd498587c9598cc814763462264a51d651add4df0050ca868217aca18
+    role: target
+  - path: data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+    sha256: 4bcbe025ae9da267ea954c54e2a0341cec0fe6d7df22ef4946c96fefc24142b6
+    role: target
+  - path: data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+    sha256: 3e71ae1d1937533e0660c51a1959467b3007e577b861c83006963ca14855000b
+    role: target
+  - path: data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+    sha256: cbc6e262d69303d042d57b90710af9820292593090b4d3e72704e67d6326c293
+    role: target
+  - path: src/culturemech/export/kgx_export.py
+    sha256: eacbc2e7b363488cc1ed96e91737f54244dc1a2425dfa05c77ba89d0a5cd10e0
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: Eleven normalized MediaDB soil-metabolism study owners.
+  selection: Verified historical source-owner joins; focused citation task, not complete
+    record approval.
+  coverage: full
+  population_size: 11
+  reviewed_target_ids:
+  - CultureMech:007090
+  - CultureMech:007093
+  - CultureMech:007094
+  - CultureMech:007088
+  - CultureMech:007089
+  - CultureMech:007116
+  - CultureMech:007117
+  - CultureMech:007118
+  - CultureMech:007119
+  - CultureMech:007115
+  - CultureMech:007120
+  exclusions:
+  - target: Complete formulation certification and generated publication
+    reason: Full base formulas, chemical identities or exact study assignments remain
+      unresolved; no generated publication requested.
+targets:
+- target_id: CultureMech:007090
+  path: data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+  label: e2_medium_with_octanoate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007093
+  path: data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+  label: e2_medium_with_gluconate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007094
+  path: data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+  label: e2_medium_with_citrate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007088
+  path: data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+  label: modifed_m9_with_glucose
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007089
+  path: data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+  label: modified_m9_with_toluene
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007116
+  path: data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+  label: mm_glucose_fillinger_et_al
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007117
+  path: data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+  label: mm_asparagine_fillinger_et_al
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007118
+  path: data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+  label: gotz_minimal_medium_with_mannitol
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007119
+  path: data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+  label: gotz_minimal_medium_with_malate
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007115
+  path: data/normalized_yaml/bacterial/fry_et_al.yaml
+  label: fry_et_al
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/fry_et_al.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007120
+  path: data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+  label: minimal_medium_frustaci
+  kind: maintained
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: baseline-00
+  name: just validate data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+  command: just validate data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007090
+  evidence_ids:
+  - baseline-00
+- check_id: baseline-01
+  name: just validate-strict data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007090
+  evidence_ids:
+  - baseline-01
+- check_id: baseline-02
+  name: just validate data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+  command: just validate data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007093
+  evidence_ids:
+  - baseline-02
+- check_id: baseline-03
+  name: just validate-strict data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007093
+  evidence_ids:
+  - baseline-03
+- check_id: baseline-04
+  name: just validate data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+  command: just validate data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007094
+  evidence_ids:
+  - baseline-04
+- check_id: baseline-05
+  name: just validate-strict data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007094
+  evidence_ids:
+  - baseline-05
+- check_id: baseline-06
+  name: just validate data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+  command: just validate data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007088
+  evidence_ids:
+  - baseline-06
+- check_id: baseline-07
+  name: just validate-strict data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007088
+  evidence_ids:
+  - baseline-07
+- check_id: baseline-08
+  name: just validate data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+  command: just validate data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007089
+  evidence_ids:
+  - baseline-08
+- check_id: baseline-09
+  name: just validate-strict data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007089
+  evidence_ids:
+  - baseline-09
+- check_id: baseline-10
+  name: just validate data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007116
+  evidence_ids:
+  - baseline-10
+- check_id: baseline-11
+  name: just validate-strict data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007116
+  evidence_ids:
+  - baseline-11
+- check_id: baseline-12
+  name: just validate data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007117
+  evidence_ids:
+  - baseline-12
+- check_id: baseline-13
+  name: just validate-strict data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007117
+  evidence_ids:
+  - baseline-13
+- check_id: baseline-14
+  name: just validate data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+  command: just validate data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007118
+  evidence_ids:
+  - baseline-14
+- check_id: baseline-15
+  name: just validate-strict data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007118
+  evidence_ids:
+  - baseline-15
+- check_id: baseline-16
+  name: just validate data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+  command: just validate data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007119
+  evidence_ids:
+  - baseline-16
+- check_id: baseline-17
+  name: just validate-strict data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007119
+  evidence_ids:
+  - baseline-17
+- check_id: baseline-18
+  name: just validate data/normalized_yaml/bacterial/fry_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/fry_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007115
+  evidence_ids:
+  - baseline-18
+- check_id: baseline-19
+  name: just validate-strict data/normalized_yaml/bacterial/fry_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/fry_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007115
+  evidence_ids:
+  - baseline-19
+- check_id: baseline-20
+  name: just validate data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+  command: just validate data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007120
+  evidence_ids:
+  - baseline-20
+- check_id: baseline-21
+  name: just validate-strict data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Prior baseline reused after exact input-hash verification.
+  target_ids:
+  - CultureMech:007120
+  evidence_ids:
+  - baseline-21
+- check_id: post-00
+  name: just validate data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+  command: just validate data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007090
+  evidence_ids:
+  - post-00
+- check_id: post-01
+  name: just validate-strict data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007090
+  evidence_ids:
+  - post-01
+- check_id: post-02
+  name: just validate data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+  command: just validate data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007093
+  evidence_ids:
+  - post-02
+- check_id: post-03
+  name: just validate-strict data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007093
+  evidence_ids:
+  - post-03
+- check_id: post-04
+  name: just validate data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+  command: just validate data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007094
+  evidence_ids:
+  - post-04
+- check_id: post-05
+  name: just validate-strict data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007094
+  evidence_ids:
+  - post-05
+- check_id: post-06
+  name: just validate data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+  command: just validate data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007088
+  evidence_ids:
+  - post-06
+- check_id: post-07
+  name: just validate-strict data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007088
+  evidence_ids:
+  - post-07
+- check_id: post-08
+  name: just validate data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+  command: just validate data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007089
+  evidence_ids:
+  - post-08
+- check_id: post-09
+  name: just validate-strict data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007089
+  evidence_ids:
+  - post-09
+- check_id: post-10
+  name: just validate data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007116
+  evidence_ids:
+  - post-10
+- check_id: post-11
+  name: just validate-strict data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007116
+  evidence_ids:
+  - post-11
+- check_id: post-12
+  name: just validate data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007117
+  evidence_ids:
+  - post-12
+- check_id: post-13
+  name: just validate-strict data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007117
+  evidence_ids:
+  - post-13
+- check_id: post-14
+  name: just validate data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+  command: just validate data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007118
+  evidence_ids:
+  - post-14
+- check_id: post-15
+  name: just validate-strict data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007118
+  evidence_ids:
+  - post-15
+- check_id: post-16
+  name: just validate data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+  command: just validate data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007119
+  evidence_ids:
+  - post-16
+- check_id: post-17
+  name: just validate-strict data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007119
+  evidence_ids:
+  - post-17
+- check_id: post-18
+  name: just validate data/normalized_yaml/bacterial/fry_et_al.yaml
+  command: just validate data/normalized_yaml/bacterial/fry_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007115
+  evidence_ids:
+  - post-18
+- check_id: post-19
+  name: just validate-strict data/normalized_yaml/bacterial/fry_et_al.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/fry_et_al.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007115
+  evidence_ids:
+  - post-19
+- check_id: post-20
+  name: just validate data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+  command: just validate data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007120
+  evidence_ids:
+  - post-20
+- check_id: post-21
+  name: just validate-strict data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+  command: just validate-strict data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007120
+  evidence_ids:
+  - post-21
+- check_id: merge-00
+  name: just verify-merges
+  command: just verify-merges
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007090
+  - CultureMech:007093
+  - CultureMech:007094
+  - CultureMech:007088
+  - CultureMech:007089
+  - CultureMech:007116
+  - CultureMech:007117
+  - CultureMech:007118
+  - CultureMech:007119
+  - CultureMech:007115
+  - CultureMech:007120
+  evidence_ids:
+  - merge-00
+- check_id: merge-01
+  name: just audit-merge-freshness --json
+  command: just audit-merge-freshness --json
+  status: failed
+  required: true
+  exit_code: 1
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007090
+  - CultureMech:007093
+  - CultureMech:007094
+  - CultureMech:007088
+  - CultureMech:007089
+  - CultureMech:007116
+  - CultureMech:007117
+  - CultureMech:007118
+  - CultureMech:007119
+  - CultureMech:007115
+  - CultureMech:007120
+  evidence_ids:
+  - merge-01
+- check_id: extra-00
+  name: /tmp/culturemech-parallel-env-20261012/bin/python -m pytest --no-cov -q -p
+    no:cacheprovider tests/test_claude_skills.py tests/test_skill_frontmatter.py tests/test_fetch_pubmed_abstracts.py
+    tests/test_record_io.py tests/test_media_variant_links.py tests/test_record_review_contract.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python -m pytest --no-cov -q
+    -p no:cacheprovider tests/test_claude_skills.py tests/test_skill_frontmatter.py
+    tests/test_fetch_pubmed_abstracts.py tests/test_record_io.py tests/test_media_variant_links.py
+    tests/test_record_review_contract.py
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007090
+  - CultureMech:007093
+  - CultureMech:007094
+  - CultureMech:007088
+  - CultureMech:007089
+  - CultureMech:007116
+  - CultureMech:007117
+  - CultureMech:007118
+  - CultureMech:007119
+  - CultureMech:007115
+  - CultureMech:007120
+  evidence_ids:
+  - extra-00
+- check_id: extra-01
+  name: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  command: /tmp/culturemech-parallel-env-20261012/bin/python scripts/validate_claude_skills.py
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007090
+  - CultureMech:007093
+  - CultureMech:007094
+  - CultureMech:007088
+  - CultureMech:007089
+  - CultureMech:007116
+  - CultureMech:007117
+  - CultureMech:007118
+  - CultureMech:007119
+  - CultureMech:007115
+  - CultureMech:007120
+  evidence_ids:
+  - extra-01
+- check_id: extra-02
+  name: git diff --check
+  command: git diff --check
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual native result; no generated files published.
+  target_ids:
+  - CultureMech:007090
+  - CultureMech:007093
+  - CultureMech:007094
+  - CultureMech:007088
+  - CultureMech:007089
+  - CultureMech:007116
+  - CultureMech:007117
+  - CultureMech:007118
+  - CultureMech:007119
+  - CultureMech:007115
+  - CultureMech:007120
+  evidence_ids:
+  - extra-02
+evidence:
+- evidence_id: paper-75
+  kind: primary_source
+  reference: doi:10.1186/1475-2859-10-25
+  locator: references_cache/papers/PMID_21513516.xml; Article identity and abstract
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Verified identity and inspected abstract; not complete formulation or parent-medium
+    growth approval.
+  support: supports
+  snapshot_sha256: 9cd754c9d6137ea1c8f2b21c0cf26827d6f041e61b7f6ce3124e4fb8df509e59
+- evidence_id: paper-74
+  kind: primary_source
+  reference: doi:10.1186/1752-0509-2-79
+  locator: references_cache/papers/PMID_18793442.xml; Article identity and abstract
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Verified identity and inspected abstract; not complete formulation or parent-medium
+    growth approval.
+  support: supports
+  snapshot_sha256: 663ae865a273525ad30e5190e8567d107e8588ec9b1bf49ea097f10e2bc6942a
+- evidence_id: paper-79
+  kind: primary_source
+  reference: doi:10.1074/jbc.275.19.14031
+  locator: references_cache/papers/PMID_10799476.xml; Article identity and abstract
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Verified identity and inspected abstract; not complete formulation or parent-medium
+    growth approval.
+  support: supports
+  snapshot_sha256: 5f8d90d59aac64ca690660cfc1c1e9ed6fada5dcad975173337693e4935a2bd0
+- evidence_id: paper-81
+  kind: primary_source
+  reference: doi:10.1007/s00203-006-0127-3
+  locator: references_cache/papers/PMID_16802172.xml; Article identity and abstract
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Verified identity and inspected abstract; not complete formulation or parent-medium
+    growth approval.
+  support: supports
+  snapshot_sha256: a894c3dbca16e532d21b73e7360fb46d3f90c6bd0cb92d74ab068ae53689eb06
+- evidence_id: paper-78
+  kind: primary_source
+  reference: doi:10.1128/AEM.66.9.4045-4049.2000
+  locator: references_cache/papers/PMID_10966427.xml; Article identity and abstract
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Verified identity and inspected abstract; not complete formulation or parent-medium
+    growth approval.
+  support: supports
+  snapshot_sha256: 30d35ef277bd3782a5dc74fc6598cf5dc0e96f33412ac2fb2c9ce3d74162d749
+- evidence_id: paper-82
+  kind: primary_source
+  reference: doi:10.1128/jb.173.3.1145-1150.1991
+  locator: references_cache/papers/PMID_1846857.xml; Article identity and abstract
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Verified identity and inspected abstract; not complete formulation or parent-medium
+    growth approval.
+  support: supports
+  snapshot_sha256: 46b83c58441786cb6ee302b61b3a8a362df4c8ce5dbb3008a5ab6d59ebe3c192
+- evidence_id: body-75
+  kind: primary_source
+  reference: doi:10.1186/1475-2859-10-25
+  locator: references_cache/papers/primary_xml/pmc3107774-20261013.xml; Methods and
+    selected medium-relevant body passages
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Deposited full XML inspected in the stated sections; linked figures, supplements
+    and inherited full base recipes are not certified.
+  support: supports
+  snapshot_sha256: 6d766a50f3d93add704454abf2c57aaf035043832ae1bff81ad2e3b3b1728fd8
+- evidence_id: body-74
+  kind: primary_source
+  reference: doi:10.1186/1752-0509-2-79
+  locator: references_cache/papers/primary_xml/pmc2569920-20261013.xml; Methods and
+    selected medium-relevant body passages
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Deposited full XML inspected in the stated sections; linked figures, supplements
+    and inherited full base recipes are not certified.
+  support: supports
+  snapshot_sha256: 0db2fb3af0714e22abdef6df1009def3779539e4471dad2dbbf1fb5a0ef4f2b1
+- evidence_id: publisher-81
+  kind: primary_source
+  reference: doi:10.1007/s00203-006-0127-3
+  locator: references_cache/papers/primary_html/pmid-16802172-20261013.html; Abstract/subscription
+    preview
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Publisher preview corroborates the abstract; it is not full methods.
+  support: supports
+  snapshot_sha256: 17a25671f2aa904227926f5ecf4a833a5148456c4a5694f6f9e0e1f805087517
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy
+  locator: references_cache/papers/taxonomy/soil-metabolism-studies-20261013.xml;
+    TaxId, ScientificName, Rank and OtherNames
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Verified actual species/strain ranks and synonym relationships; taxonomy
+    alone does not support growth.
+  support: supports
+  snapshot_sha256: 782733fd1dbb2416aadfbac632bdf36bc52e1fafc11698dddef6f2e76141c253
+- evidence_id: additional-taxonomy
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy
+  locator: references_cache/papers/taxonomy/soil-metabolism-additional-20261013.xml;
+    TaxId, ScientificName, Rank and OtherNames
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Verified actual species/strain ranks and synonym relationships; taxonomy
+    alone does not support growth.
+  support: supports
+  snapshot_sha256: 17d7450cb9bb344623175e20ccf3df7cb26d2104b1f2041627625c14bc20289a
+- evidence_id: joins
+  kind: database
+  reference: MediaDB SQL 07Oct2015
+  locator: references_cache/papers/mediadb/media_database.07Oct2015.sql; Sources 75,
+    74, 79, 78, 81 and 82
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Historical source-owner joins support discovery relevance, not automatic
+    concentration or growth certification.
+  support: supports
+  snapshot_sha256: e2c60258e2389d4ad383695eb3e01429a67eac90807fe14d02a6728777d35b5c
+- evidence_id: claims
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/claim-plan.json;
+    claim-plan.json
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Twenty-four exact snippets, twelve taxonomy nodes and qualified source
+    decisions; followup_assessment supersedes earlier access-only limitations.
+  support: context_only
+  snapshot_sha256: f931bedeb49507b371b5e653b7c0f2b22dabf977fefbcf01681e14f93fd3fe25
+- evidence_id: archives
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/source-preparation.json;
+    source-preparation.json
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Forty-two hashed archive files; all six cited papers have raw abstracts
+    and attributable Markdown; two have full XML.
+  support: context_only
+  snapshot_sha256: e553441de05979b3db4f362760306314c3b7444535465195a62d3878a44c41f7
+- evidence_id: readback
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/final-readback.json;
+    final-readback.json
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: 'All 15,910 normalized hashes checked: exactly eleven intended edits; original
+    bytes recoverable.'
+  support: context_only
+  snapshot_sha256: 084dac3701744f5859a3e9a7d9b36b9d39cc2ab40485cc9ff3e8f933256fdabc
+- evidence_id: excerpts
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/evidence-readback.json;
+    evidence-readback.json
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Forty-seven exact note-excerpt occurrences checked; no new native claim-level
+    EvidenceItem assertions.
+  support: context_only
+  snapshot_sha256: 1fb44abaf5ce307612cceff0dd45beb43f9ce7ae6137b988e61c4f0c55d833e6
+- evidence_id: applied
+  kind: record_content
+  reference: Guarded curation receipt
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/applied.json;
+    applied.json
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Eleven citations/history events; all 128 ingredient instances and prior
+    fields preserved.
+  support: context_only
+  snapshot_sha256: f77691b9177723336187e66acf2d3a407a7a189da97fe96e4274b7af1bc482d7
+- evidence_id: baseline-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-00.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-00.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-01.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-01.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-02.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-02.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-03.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-03.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-04.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-04.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-05.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-05.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-06.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-06.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-07.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-07.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-08.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-08.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-09.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-09.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-10.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-10.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-11.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-11.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-12
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-12.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-12.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-13
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-13.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-13.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-14
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-14.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-14.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-15
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-15.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-15.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-16
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-16.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-16.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-17
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-17.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-17.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-18
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-18.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-18.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-19
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-19.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-19.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: baseline-20
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-20.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-20.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8e85fad3683d76bd6c3fb545f47c457c6d20f0a3795b6abae6b05d87f12134d1
+- evidence_id: baseline-21
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-21.log
+  locator: reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-baseline-21.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-00.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-00.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-01.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-01.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-02.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-02.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-03
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-03.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-03.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-04
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-04.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-04.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-05
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-05.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-05.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-06
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-06.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-06.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-07
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-07.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-07.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-08
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-08.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-08.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-09
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-09.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-09.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-10
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-10.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-10.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-11
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-11.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-11.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-12
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-12.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-12.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-13
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-13.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-13.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-14
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-14.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-14.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-15
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-15.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-15.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-16
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-16.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-16.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-17
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-17.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-17.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-18
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-18.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-18.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-19
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-19.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-19.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: post-20
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-20.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-20.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 0a17e57921aaa892f17d530716a1d18d9c62576b0a0b41caff18b955cf84c818
+- evidence_id: post-21
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-21.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/post-21.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 43d41e93d345e8e6931f22d3052c43d862f37370ea812df8ff8db7d2f6e5247a
+- evidence_id: merge-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/merge-00.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/merge-00.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: 09a2922082db841587410042dc33d7d3f72b2601f1d6b6f2b33322471ee47f2c
+- evidence_id: merge-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/merge-01.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/merge-01.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 1; not scientific certification.
+  support: context_only
+  snapshot_sha256: 235002b1833cb00795cd3af9fb436cc9e6c032a2393662acf46448bea7fe6cd0
+- evidence_id: extra-00
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/extra-00.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/extra-00.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 8336f03279402b2cecba37df628046d8cfbb16a3420cfab6a079d3d7e6685ec2
+- evidence_id: extra-01
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/extra-01.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/extra-01.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: 441bdd6ab36f5b87c9edccf771321e1c5f6c11f43bec7799e6e98cd4d756c24c
+- evidence_id: extra-02
+  kind: validation
+  reference: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/extra-02.log
+  locator: reports/paper_citation_curation/20261013-soil-metabolism-study-citations/extra-02.log;
+    Complete command output
+  accessed_at: '2026-10-13T17:27:03Z'
+  summary: Actual exit code 0; not scientific certification.
+  support: context_only
+  snapshot_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+assessments:
+- assessment_id: citation-007090
+  area: evidence
+  topic: Publication identity and source provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007090
+  evidence_ids:
+  - paper-75
+  - body-75
+  - archives
+  - readback
+  summary: Verified title, authors, year, DOI/PMID equivalence and exact excerpts.
+    Raw abstract and Markdown retained; fuller access is explicitly qualified.
+- assessment_id: formulation-007090
+  area: evidence
+  topic: Formulation and separate assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007090
+  evidence_ids:
+  - paper-75
+  - body-75
+  - claims
+  - excerpts
+  summary: 'Historical MediaDB source links these three E2 owners to the study, but
+    an exact study-to-local formulation assignment remains unresolved. Deposited methods
+    distinguish three flask carbon sources and reduced nitrogen from a more concentrated
+    gluconate bioreactor recipe. The octanoate owner lists ethyl octanoate, a different
+    chemical from paper sodium octanoate. The gluconate and citrate owners list gluconic
+    acid and citrate anion rather than the paper''s specified sodium salts. The imported
+    sodium ammonium phosphate amount and hydrated trace compounds also need reconciliation.
+    These conflicts are not certified study variants and are not corrected by this
+    bibliography addition. Base E2 reference 36 is Durner 2001 (PMID:11135197); its
+    archived abstract does not enumerate the inherited formula. Do not transfer the
+    separate bioreactor salts, trace stock, titrants or antifoam to the flask owners,
+    or equate LB inoculum with the experimental medium. Inspected locations=Methods/Strains
+    and media, Shake flask experiments, Fermentations in bioreactor; selected Background
+    and Discussion passages. PHA yield, intracellular metabolite pools and fluxes
+    are not ingredient concentrations. The paper expressly distinguishes these results
+    from optimized processes. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Magnesium chloride", "term": {"id": "CHEBI:86345", "label": "magnesium
+    dichloride hexahydrate"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[1].concentration",
+    "chemical": "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label":
+    "calcium dichloride"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration",
+    "chemical": "Ethyl octanoate", "term": null, "concentration": {"value": "10.0",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[3].concentration", "chemical": "Potassium dibasic phosphate", "term":
+    {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "concentration":
+    {"value": "43.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[4].concentration", "chemical": "Cobaltous
+    sulfate", "term": {"id": "CHEBI:53470", "label": "cobalt(2+) sulfate"}, "concentration":
+    {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[5].concentration", "chemical": "Potassium
+    dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen
+    phosphate"}, "concentration": {"value": "27.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration",
+    "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium
+    sulfate"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration",
+    "chemical": "Ferrous sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+)
+    sulfate (anhydrous)"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Zinc sulfate", "term": {"id": "CHEBI:35176", "label": "zinc sulfate"},
+    "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical":
+    "Cupric chloride", "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"},
+    "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical":
+    "Sodium ammonium phosphate", "term": null, "concentration": {"value": "0.47",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new concentration certification; original values preserved.
+    evidence_ids:
+    - paper-75
+    - body-75
+  metrics:
+  - name: preserved ingredient instances
+    value: 11
+    unit: instances
+    denominator: 11
+    minimum: 0
+    maximum: 11
+    definition: Preservation, not scientific certification.
+- assessment_id: organism-007090
+  area: evidence
+  topic: Scientific names, actual ranks and experimental roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007090
+  evidence_ids:
+  - paper-75
+  - body-75
+  - taxonomy
+  - additional-taxonomy
+  - claims
+  summary: 'Pseudomonas putida KT2440: Pseudomonas putida KT2440, NCBITaxon:160488,
+    actual rank strain; exact strain; experimental strain; returned NCBI canonical
+    label and rank retained, with Pseudomonas alloputida KT2440 as an equivalent name.
+    Pseudomonas putida KT2442: Pseudomonas putida, NCBITaxon:303, actual rank species;
+    parent_rank_only; distinct experimental derivative, not KT2440; no exact node
+    established by bounded lookup. Pseudomonas putida mt-2 and Pseudomonas putida
+    PaW85: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only;
+    distinct ancestor/prior-study and background-derivative mentions, not current
+    target assertions; exact nodes unresolved. Escherichia coli: Escherichia coli,
+    NCBITaxon:562, actual rank species; exact species; RNA-polymerase mechanistic
+    comparison, not cultivation on these owners. Pseudomonas aeruginosa: Pseudomonas
+    aeruginosa, NCBITaxon:287, actual rank species; exact species; OprD mechanistic
+    comparison, not cultivation on these owners.'
+- assessment_id: preservation-007090
+  area: evidence
+  topic: Scoped edits and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007090
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/qualified notes and one history event added. No variants,
+    growth associations, metrics, quantities or generated publication added; all prior
+    fields retained.
+- assessment_id: citation-007093
+  area: evidence
+  topic: Publication identity and source provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007093
+  evidence_ids:
+  - paper-75
+  - body-75
+  - archives
+  - readback
+  summary: Verified title, authors, year, DOI/PMID equivalence and exact excerpts.
+    Raw abstract and Markdown retained; fuller access is explicitly qualified.
+- assessment_id: formulation-007093
+  area: evidence
+  topic: Formulation and separate assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007093
+  evidence_ids:
+  - paper-75
+  - body-75
+  - claims
+  - excerpts
+  summary: 'Historical MediaDB source links these three E2 owners to the study, but
+    an exact study-to-local formulation assignment remains unresolved. Deposited methods
+    distinguish three flask carbon sources and reduced nitrogen from a more concentrated
+    gluconate bioreactor recipe. The octanoate owner lists ethyl octanoate, a different
+    chemical from paper sodium octanoate. The gluconate and citrate owners list gluconic
+    acid and citrate anion rather than the paper''s specified sodium salts. The imported
+    sodium ammonium phosphate amount and hydrated trace compounds also need reconciliation.
+    These conflicts are not certified study variants and are not corrected by this
+    bibliography addition. Base E2 reference 36 is Durner 2001 (PMID:11135197); its
+    archived abstract does not enumerate the inherited formula. Do not transfer the
+    separate bioreactor salts, trace stock, titrants or antifoam to the flask owners,
+    or equate LB inoculum with the experimental medium. Inspected locations=Methods/Strains
+    and media, Shake flask experiments, Fermentations in bioreactor; selected Background
+    and Discussion passages. PHA yield, intracellular metabolite pools and fluxes
+    are not ingredient concentrations. The paper expressly distinguishes these results
+    from optimized processes. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "D-Gluconic acid", "term": null, "concentration": {"value": "13.0",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[1].concentration", "chemical": "Magnesium chloride", "term": {"id":
+    "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "concentration":
+    {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Calcium
+    chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"},
+    "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical":
+    "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium
+    hydrogen phosphate"}, "concentration": {"value": "43.0", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration",
+    "chemical": "Cobaltous sulfate", "term": {"id": "CHEBI:53470", "label": "cobalt(2+)
+    sulfate"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label":
+    "potassium dihydrogen phosphate"}, "concentration": {"value": "27.0", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[6].concentration", "chemical": "Magnesium sulfate", "term": {"id":
+    "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "1.0",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[7].concentration", "chemical": "Ferrous sulfate", "term": {"id":
+    "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}, "concentration": {"value":
+    "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"},
+    {"field_path": "ingredients[8].concentration", "chemical": "Zinc sulfate", "term":
+    {"id": "CHEBI:35176", "label": "zinc sulfate"}, "concentration": {"value": "0.01",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[9].concentration", "chemical": "Cupric chloride", "term": {"id":
+    "CHEBI:49553", "label": "copper(II) chloride"}, "concentration": {"value": "0.01",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[10].concentration", "chemical": "Sodium ammonium phosphate", "term":
+    null, "concentration": {"value": "0.47", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new concentration certification; original values preserved.
+    evidence_ids:
+    - paper-75
+    - body-75
+  metrics:
+  - name: preserved ingredient instances
+    value: 11
+    unit: instances
+    denominator: 11
+    minimum: 0
+    maximum: 11
+    definition: Preservation, not scientific certification.
+- assessment_id: organism-007093
+  area: evidence
+  topic: Scientific names, actual ranks and experimental roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007093
+  evidence_ids:
+  - paper-75
+  - body-75
+  - taxonomy
+  - additional-taxonomy
+  - claims
+  summary: 'Pseudomonas putida KT2440: Pseudomonas putida KT2440, NCBITaxon:160488,
+    actual rank strain; exact strain; experimental strain; returned NCBI canonical
+    label and rank retained, with Pseudomonas alloputida KT2440 as an equivalent name.
+    Pseudomonas putida KT2442: Pseudomonas putida, NCBITaxon:303, actual rank species;
+    parent_rank_only; distinct experimental derivative, not KT2440; no exact node
+    established by bounded lookup. Pseudomonas putida mt-2 and Pseudomonas putida
+    PaW85: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only;
+    distinct ancestor/prior-study and background-derivative mentions, not current
+    target assertions; exact nodes unresolved. Escherichia coli: Escherichia coli,
+    NCBITaxon:562, actual rank species; exact species; RNA-polymerase mechanistic
+    comparison, not cultivation on these owners. Pseudomonas aeruginosa: Pseudomonas
+    aeruginosa, NCBITaxon:287, actual rank species; exact species; OprD mechanistic
+    comparison, not cultivation on these owners.'
+- assessment_id: preservation-007093
+  area: evidence
+  topic: Scoped edits and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007093
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/qualified notes and one history event added. No variants,
+    growth associations, metrics, quantities or generated publication added; all prior
+    fields retained.
+- assessment_id: citation-007094
+  area: evidence
+  topic: Publication identity and source provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007094
+  evidence_ids:
+  - paper-75
+  - body-75
+  - archives
+  - readback
+  summary: Verified title, authors, year, DOI/PMID equivalence and exact excerpts.
+    Raw abstract and Markdown retained; fuller access is explicitly qualified.
+- assessment_id: formulation-007094
+  area: evidence
+  topic: Formulation and separate assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007094
+  evidence_ids:
+  - paper-75
+  - body-75
+  - claims
+  - excerpts
+  summary: 'Historical MediaDB source links these three E2 owners to the study, but
+    an exact study-to-local formulation assignment remains unresolved. Deposited methods
+    distinguish three flask carbon sources and reduced nitrogen from a more concentrated
+    gluconate bioreactor recipe. The octanoate owner lists ethyl octanoate, a different
+    chemical from paper sodium octanoate. The gluconate and citrate owners list gluconic
+    acid and citrate anion rather than the paper''s specified sodium salts. The imported
+    sodium ammonium phosphate amount and hydrated trace compounds also need reconciliation.
+    These conflicts are not certified study variants and are not corrected by this
+    bibliography addition. Base E2 reference 36 is Durner 2001 (PMID:11135197); its
+    archived abstract does not enumerate the inherited formula. Do not transfer the
+    separate bioreactor salts, trace stock, titrants or antifoam to the flask owners,
+    or equate LB inoculum with the experimental medium. Inspected locations=Methods/Strains
+    and media, Shake flask experiments, Fermentations in bioreactor; selected Background
+    and Discussion passages. PHA yield, intracellular metabolite pools and fluxes
+    are not ingredient concentrations. The paper expressly distinguishes these results
+    from optimized processes. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Citrate", "term": {"id": "CHEBI:16947", "label": "citrate(3-)"},
+    "concentration": {"value": "13.0", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical":
+    "Magnesium chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride
+    hexahydrate"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration",
+    "chemical": "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label":
+    "calcium dichloride"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration",
+    "chemical": "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label":
+    "dipotassium hydrogen phosphate"}, "concentration": {"value": "43.0", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[4].concentration", "chemical": "Cobaltous sulfate", "term": {"id":
+    "CHEBI:53470", "label": "cobalt(2+) sulfate"}, "concentration": {"value": "0.01",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[5].concentration", "chemical": "Potassium dihydrogen phosphate",
+    "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate"}, "concentration":
+    {"value": "27.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Magnesium
+    sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}, "concentration":
+    {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"},
+    {"field_path": "ingredients[7].concentration", "chemical": "Ferrous sulfate",
+    "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}, "concentration":
+    {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[8].concentration", "chemical": "Zinc
+    sulfate", "term": {"id": "CHEBI:35176", "label": "zinc sulfate"}, "concentration":
+    {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[9].concentration", "chemical": "Cupric
+    chloride", "term": {"id": "CHEBI:49553", "label": "copper(II) chloride"}, "concentration":
+    {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[10].concentration", "chemical": "Sodium
+    ammonium phosphate", "term": null, "concentration": {"value": "0.47", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new concentration certification; original values preserved.
+    evidence_ids:
+    - paper-75
+    - body-75
+  metrics:
+  - name: preserved ingredient instances
+    value: 11
+    unit: instances
+    denominator: 11
+    minimum: 0
+    maximum: 11
+    definition: Preservation, not scientific certification.
+- assessment_id: organism-007094
+  area: evidence
+  topic: Scientific names, actual ranks and experimental roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007094
+  evidence_ids:
+  - paper-75
+  - body-75
+  - taxonomy
+  - additional-taxonomy
+  - claims
+  summary: 'Pseudomonas putida KT2440: Pseudomonas putida KT2440, NCBITaxon:160488,
+    actual rank strain; exact strain; experimental strain; returned NCBI canonical
+    label and rank retained, with Pseudomonas alloputida KT2440 as an equivalent name.
+    Pseudomonas putida KT2442: Pseudomonas putida, NCBITaxon:303, actual rank species;
+    parent_rank_only; distinct experimental derivative, not KT2440; no exact node
+    established by bounded lookup. Pseudomonas putida mt-2 and Pseudomonas putida
+    PaW85: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only;
+    distinct ancestor/prior-study and background-derivative mentions, not current
+    target assertions; exact nodes unresolved. Escherichia coli: Escherichia coli,
+    NCBITaxon:562, actual rank species; exact species; RNA-polymerase mechanistic
+    comparison, not cultivation on these owners. Pseudomonas aeruginosa: Pseudomonas
+    aeruginosa, NCBITaxon:287, actual rank species; exact species; OprD mechanistic
+    comparison, not cultivation on these owners.'
+- assessment_id: preservation-007094
+  area: evidence
+  topic: Scoped edits and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007094
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/qualified notes and one history event added. No variants,
+    growth associations, metrics, quantities or generated publication added; all prior
+    fields retained.
+- assessment_id: citation-007088
+  area: evidence
+  topic: Publication identity and source provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007088
+  evidence_ids:
+  - paper-74
+  - body-74
+  - archives
+  - readback
+  summary: Verified title, authors, year, DOI/PMID equivalence and exact excerpts.
+    Raw abstract and Markdown retained; fuller access is explicitly qualified.
+- assessment_id: formulation-007088
+  area: evidence
+  topic: Formulation and separate assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007088
+  evidence_ids:
+  - paper-74
+  - body-74
+  - claims
+  - excerpts
+  summary: 'The two imported M9 owners differ in glucose versus toluene. Deposited
+    physical-culture methods specify the carbon sources but do not enumerate all imported
+    base salts or quantities. Base M9 reference 90 is Abril 1989 (PMID:2687253); its
+    archived abstract lacks the complete formulation and PubMed flags an erratum.
+    Correction DOI lead=10.1128/jb.172.6.3534b.1990; correction scope remains unresolved
+    because the scan was not visually verified. The correction page''s linked PMID:2160949
+    identifies a different Paracoccus correction and is rejected as an alias. No base-formula
+    details are inherited from that unresolved chain. Keep physical growth, oxygen-consumption
+    resuspension, saline biomass washes, and in silico iM9/iLB separate. Simulated
+    exchange constraints in mmol/gDW/h are not concentrations or empirical growth.
+    Inspected locations=Methods/In vivo determination of oxygen consumption and cell
+    culture condition, Biomass function and in silico medium composition; selected
+    model-comparison body passages. Matching one carbon dose or medium name does not
+    certify the full local thirteen-component recipe. Exact variant destination remains
+    unresolved. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "D-Glucose", "term": {"id": "CHEBI:17634", "label": "D-glucose"},
+    "concentration": {"value": "17.0", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical":
+    "Magnesium chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride
+    hexahydrate"}, "concentration": {"value": "0.00038", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration",
+    "chemical": "Boric acid", "term": {"id": "CHEBI:33118", "label": "boric acid"},
+    "concentration": {"value": "0.013", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical":
+    "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium
+    hydrogen phosphate"}, "concentration": {"value": "220.0", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration",
+    "chemical": "Nickel chloride", "term": {"id": "CHEBI:34887", "label": "nickel
+    dichloride"}, "concentration": {"value": "0.00021", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Sodium molybdate", "term": {"id": "CHEBI:75215", "label": "sodium
+    molybdate (anhydrous)"}, "concentration": {"value": "0.00031", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration",
+    "chemical": "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium
+    chloride"}, "concentration": {"value": "86.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration",
+    "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium
+    sulfate"}, "concentration": {"value": "4.3", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Ammonium chloride", "term": {"id": "CHEBI:31206", "label": "ammonium
+    chloride"}, "concentration": {"value": "187.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration",
+    "chemical": "Cobalt chloride", "term": {"id": "CHEBI:35696", "label": "cobalt
+    dichloride"}, "concentration": {"value": "0.0039", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[10].concentration",
+    "chemical": "Sodium dihydrogen phosphate", "term": {"id": "CHEBI:37585", "label":
+    "sodium dihydrogenphosphate"}, "concentration": {"value": "194.0", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[11].concentration",
+    "chemical": "Cupric chloride", "term": {"id": "CHEBI:49553", "label": "copper(II)
+    chloride"}, "concentration": {"value": "0.00015", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[12].concentration",
+    "chemical": "Zinc Chloride", "term": {"id": "CHEBI:49976", "label": "zinc dichloride"},
+    "concentration": {"value": "0.00092", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new concentration certification; original values preserved.
+    evidence_ids:
+    - paper-74
+    - body-74
+  metrics:
+  - name: preserved ingredient instances
+    value: 13
+    unit: instances
+    denominator: 13
+    minimum: 0
+    maximum: 13
+    definition: Preservation, not scientific certification.
+- assessment_id: organism-007088
+  area: evidence
+  topic: Scientific names, actual ranks and experimental roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007088
+  evidence_ids:
+  - paper-74
+  - body-74
+  - taxonomy
+  - additional-taxonomy
+  - claims
+  summary: 'Pseudomonas putida KT2440 harboring the TOL plasmid: Pseudomonas putida
+    KT2440, NCBITaxon:160488, actual rank strain; verified strain node; specific plasmid-bearing
+    derivative unresolved; physical-culture study organism; TOL-bearing status must
+    not be generalized to all KT2440. Pseudomonas putida KT2442 and Pseudomonas putida
+    mt-2: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only;
+    distinct prior-study and ancestral contexts, not physical-growth targets established
+    here. Pseudomonas putida F1: Pseudomonas putida F1, NCBITaxon:351746, actual rank
+    strain; exact strain; prior-study comparison, not the experimental strain on these
+    owners. Escherichia coli: Escherichia coli, NCBITaxon:562, actual rank species;
+    exact species; biomass and oxygen-model template, not empirical growth on these
+    media. Pseudomonas aeruginosa PAO1 and PA14: Pseudomonas aeruginosa, NCBITaxon:287,
+    actual rank species; parent_rank_only; distinct genetic/model comparator strains;
+    exact strain nodes not established in this review and no current-media growth
+    asserted.'
+- assessment_id: preservation-007088
+  area: evidence
+  topic: Scoped edits and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007088
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/qualified notes and one history event added. No variants,
+    growth associations, metrics, quantities or generated publication added; all prior
+    fields retained.
+- assessment_id: citation-007089
+  area: evidence
+  topic: Publication identity and source provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007089
+  evidence_ids:
+  - paper-74
+  - body-74
+  - archives
+  - readback
+  summary: Verified title, authors, year, DOI/PMID equivalence and exact excerpts.
+    Raw abstract and Markdown retained; fuller access is explicitly qualified.
+- assessment_id: formulation-007089
+  area: evidence
+  topic: Formulation and separate assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007089
+  evidence_ids:
+  - paper-74
+  - body-74
+  - claims
+  - excerpts
+  summary: 'The two imported M9 owners differ in glucose versus toluene. Deposited
+    physical-culture methods specify the carbon sources but do not enumerate all imported
+    base salts or quantities. Base M9 reference 90 is Abril 1989 (PMID:2687253); its
+    archived abstract lacks the complete formulation and PubMed flags an erratum.
+    Correction DOI lead=10.1128/jb.172.6.3534b.1990; correction scope remains unresolved
+    because the scan was not visually verified. The correction page''s linked PMID:2160949
+    identifies a different Paracoccus correction and is rejected as an alias. No base-formula
+    details are inherited from that unresolved chain. Keep physical growth, oxygen-consumption
+    resuspension, saline biomass washes, and in silico iM9/iLB separate. Simulated
+    exchange constraints in mmol/gDW/h are not concentrations or empirical growth.
+    Inspected locations=Methods/In vivo determination of oxygen consumption and cell
+    culture condition, Biomass function and in silico medium composition; selected
+    model-comparison body passages. Matching one carbon dose or medium name does not
+    certify the full local thirteen-component recipe. Exact variant destination remains
+    unresolved. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Toluene", "term": {"id": "CHEBI:17578", "label": "toluene"}, "concentration":
+    {"value": "6.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"},
+    {"field_path": "ingredients[1].concentration", "chemical": "Magnesium chloride",
+    "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"}, "concentration":
+    {"value": "0.00038", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Boric
+    acid", "term": {"id": "CHEBI:33118", "label": "boric acid"}, "concentration":
+    {"value": "0.013", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[3].concentration", "chemical": "Potassium
+    dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen
+    phosphate"}, "concentration": {"value": "220.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration",
+    "chemical": "Nickel chloride", "term": {"id": "CHEBI:34887", "label": "nickel
+    dichloride"}, "concentration": {"value": "0.00021", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Sodium molybdate", "term": {"id": "CHEBI:75215", "label": "sodium
+    molybdate (anhydrous)"}, "concentration": {"value": "0.00031", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration",
+    "chemical": "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium
+    chloride"}, "concentration": {"value": "86.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration",
+    "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium
+    sulfate"}, "concentration": {"value": "4.3", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Ammonium chloride", "term": {"id": "CHEBI:31206", "label": "ammonium
+    chloride"}, "concentration": {"value": "187.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration",
+    "chemical": "Cobalt chloride", "term": {"id": "CHEBI:35696", "label": "cobalt
+    dichloride"}, "concentration": {"value": "0.0039", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[10].concentration",
+    "chemical": "Sodium dihydrogen phosphate", "term": {"id": "CHEBI:37585", "label":
+    "sodium dihydrogenphosphate"}, "concentration": {"value": "194.0", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[11].concentration",
+    "chemical": "Cupric chloride", "term": {"id": "CHEBI:49553", "label": "copper(II)
+    chloride"}, "concentration": {"value": "0.00015", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[12].concentration",
+    "chemical": "Zinc Chloride", "term": {"id": "CHEBI:49976", "label": "zinc dichloride"},
+    "concentration": {"value": "0.00092", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new concentration certification; original values preserved.
+    evidence_ids:
+    - paper-74
+    - body-74
+  metrics:
+  - name: preserved ingredient instances
+    value: 13
+    unit: instances
+    denominator: 13
+    minimum: 0
+    maximum: 13
+    definition: Preservation, not scientific certification.
+- assessment_id: organism-007089
+  area: evidence
+  topic: Scientific names, actual ranks and experimental roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007089
+  evidence_ids:
+  - paper-74
+  - body-74
+  - taxonomy
+  - additional-taxonomy
+  - claims
+  summary: 'Pseudomonas putida KT2440 harboring the TOL plasmid: Pseudomonas putida
+    KT2440, NCBITaxon:160488, actual rank strain; verified strain node; specific plasmid-bearing
+    derivative unresolved; physical-culture study organism; TOL-bearing status must
+    not be generalized to all KT2440. Pseudomonas putida KT2442 and Pseudomonas putida
+    mt-2: Pseudomonas putida, NCBITaxon:303, actual rank species; parent_rank_only;
+    distinct prior-study and ancestral contexts, not physical-growth targets established
+    here. Pseudomonas putida F1: Pseudomonas putida F1, NCBITaxon:351746, actual rank
+    strain; exact strain; prior-study comparison, not the experimental strain on these
+    owners. Escherichia coli: Escherichia coli, NCBITaxon:562, actual rank species;
+    exact species; biomass and oxygen-model template, not empirical growth on these
+    media. Pseudomonas aeruginosa PAO1 and PA14: Pseudomonas aeruginosa, NCBITaxon:287,
+    actual rank species; parent_rank_only; distinct genetic/model comparator strains;
+    exact strain nodes not established in this review and no current-media growth
+    asserted.'
+- assessment_id: preservation-007089
+  area: evidence
+  topic: Scoped edits and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007089
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/qualified notes and one history event added. No variants,
+    growth associations, metrics, quantities or generated publication added; all prior
+    fields retained.
+- assessment_id: citation-007116
+  area: evidence
+  topic: Publication identity and source provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007116
+  evidence_ids:
+  - paper-79
+  - archives
+  - readback
+  summary: Verified title, authors, year, DOI/PMID equivalence and exact excerpts.
+    Raw abstract and Markdown retained; fuller access is explicitly qualified.
+- assessment_id: formulation-007116
+  area: evidence
+  topic: Formulation and separate assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007116
+  evidence_ids:
+  - paper-79
+  - claims
+  - excerpts
+  summary: 'The two local seven-component owners exchange glucose and asparagine while
+    retaining the other six entries. The abstract does not enumerate their amounts,
+    chemical forms or preparation. It separates failure of the gapA mutant on glycolytic
+    carbon sources from growth on gluconeogenic sources and the opposite gapB phenotype.
+    Do not turn either negative result into universal growth. Purified-enzyme Km,
+    cofactor activities and reporter expression are not medium doses. Full methods
+    remain uninspected and no resolved variant is assigned. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "D-Glucose", "term": {"id": "CHEBI:17634", "label": "D-glucose"},
+    "concentration": {"value": "25.0", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical":
+    "Tryptophan", "term": {"id": "CHEBI:27897", "label": "tryptophan"}, "concentration":
+    {"value": "0.244822", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Potassium
+    dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen
+    phosphate"}, "concentration": {"value": "80.3673", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[3].concentration",
+    "chemical": "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label":
+    "potassium dihydrogen phosphate"}, "concentration": {"value": "44.0898", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[4].concentration", "chemical": "Magnesium sulfate", "term": {"id":
+    "CHEBI:32599", "label": "magnesium sulfate"}, "concentration": {"value": "0.811458",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[5].concentration", "chemical": "Ammonium sulfate", "term": {"id":
+    "CHEBI:62946", "label": "ammonium sulfate"}, "concentration": {"value": "15.1355",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[6].concentration", "chemical": "Sodium citrate", "term": {"id": "CHEBI:53258",
+    "label": "sodium citrate"}, "concentration": {"value": "3.4002", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new concentration certification; original values preserved.
+    evidence_ids:
+    - paper-79
+  metrics:
+  - name: preserved ingredient instances
+    value: 7
+    unit: instances
+    denominator: 7
+    minimum: 0
+    maximum: 7
+    definition: Preservation, not scientific certification.
+- assessment_id: organism-007116
+  area: evidence
+  topic: Scientific names, actual ranks and experimental roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007116
+  evidence_ids:
+  - paper-79
+  - taxonomy
+  - additional-taxonomy
+  - claims
+  summary: 'Bacillus subtilis: Bacillus subtilis, NCBITaxon:1423, actual rank species;
+    exact species; reported study species. Bacillus subtilis wild type, gapA mutant
+    and gapB mutant: Bacillus subtilis, NCBITaxon:1423, actual rank species; parent_rank_only;
+    distinct experimental backgrounds; exact mutant nodes unresolved. Bacillus subtilis
+    168CA, GM1500 and GM1501: Bacillus subtilis, NCBITaxon:1423, actual rank species;
+    parent_rank_only; historical MediaDB discovery designations, not abstract-verified
+    mutant-to-strain assignments.'
+- assessment_id: preservation-007116
+  area: evidence
+  topic: Scoped edits and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007116
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/qualified notes and one history event added. No variants,
+    growth associations, metrics, quantities or generated publication added; all prior
+    fields retained.
+- assessment_id: citation-007117
+  area: evidence
+  topic: Publication identity and source provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007117
+  evidence_ids:
+  - paper-79
+  - archives
+  - readback
+  summary: Verified title, authors, year, DOI/PMID equivalence and exact excerpts.
+    Raw abstract and Markdown retained; fuller access is explicitly qualified.
+- assessment_id: formulation-007117
+  area: evidence
+  topic: Formulation and separate assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007117
+  evidence_ids:
+  - paper-79
+  - claims
+  - excerpts
+  summary: 'The two local seven-component owners exchange glucose and asparagine while
+    retaining the other six entries. The abstract does not enumerate their amounts,
+    chemical forms or preparation. It separates failure of the gapA mutant on glycolytic
+    carbon sources from growth on gluconeogenic sources and the opposite gapB phenotype.
+    Do not turn either negative result into universal growth. Purified-enzyme Km,
+    cofactor activities and reporter expression are not medium doses. Full methods
+    remain uninspected and no resolved variant is assigned. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Tryptophan", "term": {"id": "CHEBI:27897", "label": "tryptophan"},
+    "concentration": {"value": "0.244822", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical":
+    "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium
+    hydrogen phosphate"}, "concentration": {"value": "80.3673", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration",
+    "chemical": "Asparagine", "term": {"id": "CHEBI:22653", "label": "asparagine"},
+    "concentration": {"value": "25.0", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical":
+    "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium
+    dihydrogen phosphate"}, "concentration": {"value": "44.0898", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration",
+    "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium
+    sulfate"}, "concentration": {"value": "0.811458", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Ammonium sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium
+    sulfate"}, "concentration": {"value": "15.1355", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[6].concentration",
+    "chemical": "Sodium citrate", "term": {"id": "CHEBI:53258", "label": "sodium citrate"},
+    "concentration": {"value": "3.4002", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new concentration certification; original values preserved.
+    evidence_ids:
+    - paper-79
+  metrics:
+  - name: preserved ingredient instances
+    value: 7
+    unit: instances
+    denominator: 7
+    minimum: 0
+    maximum: 7
+    definition: Preservation, not scientific certification.
+- assessment_id: organism-007117
+  area: evidence
+  topic: Scientific names, actual ranks and experimental roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007117
+  evidence_ids:
+  - paper-79
+  - taxonomy
+  - additional-taxonomy
+  - claims
+  summary: 'Bacillus subtilis: Bacillus subtilis, NCBITaxon:1423, actual rank species;
+    exact species; reported study species. Bacillus subtilis wild type, gapA mutant
+    and gapB mutant: Bacillus subtilis, NCBITaxon:1423, actual rank species; parent_rank_only;
+    distinct experimental backgrounds; exact mutant nodes unresolved. Bacillus subtilis
+    168CA, GM1500 and GM1501: Bacillus subtilis, NCBITaxon:1423, actual rank species;
+    parent_rank_only; historical MediaDB discovery designations, not abstract-verified
+    mutant-to-strain assignments.'
+- assessment_id: preservation-007117
+  area: evidence
+  topic: Scoped edits and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007117
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/qualified notes and one history event added. No variants,
+    growth associations, metrics, quantities or generated publication added; all prior
+    fields retained.
+- assessment_id: citation-007118
+  area: evidence
+  topic: Publication identity and source provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007118
+  evidence_ids:
+  - paper-81
+  - publisher-81
+  - archives
+  - readback
+  summary: Verified title, authors, year, DOI/PMID equivalence and exact excerpts.
+    Raw abstract and Markdown retained; fuller access is explicitly qualified.
+- assessment_id: formulation-007118
+  area: evidence
+  topic: Formulation and separate assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007118
+  evidence_ids:
+  - paper-81
+  - publisher-81
+  - claims
+  - excerpts
+  summary: 'The two fifteen-component Gotz owners differ in mannitol versus (S)-malate
+    and both list ammonium sulfate. Abstract and publisher preview distinguish nitrogen-starved
+    and nitrogen-sufficient conditions but do not identify which local nitrogen level
+    matches each assay. No nitrogen-free recipe or exact variant is inferred. EPS
+    composition ratios and plant infectivity are not ingredient amounts or bacterial
+    growth metrics. Publisher archive=references_cache/papers/primary_html/pmid-16802172-20261013.html;
+    publisher_markdown=references_cache/papers/primary_html/pmid-16802172-20261013.md.
+    This is an abstract/subscription preview, not full methods. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Biotin", "term": {"id": "CHEBI:15956", "label": "biotin"}, "concentration":
+    {"value": "8.2e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Riboflavin",
+    "term": {"id": "CHEBI:17015", "label": "riboflavin"}, "concentration": {"value":
+    "5.3e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"},
+    {"field_path": "ingredients[2].concentration", "chemical": "Pyridoxine", "term":
+    {"id": "CHEBI:16709", "label": "pyridoxine"}, "concentration": {"value": "0.00012",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[3].concentration", "chemical": "Mannitol", "term": {"id": "CHEBI:29864",
+    "label": "mannitol"}, "concentration": {"value": "27.0", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[4].concentration",
+    "chemical": "4-Aminobenzoate", "term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"},
+    "concentration": {"value": "0.00015", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[5].concentration", "chemical":
+    "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"},
+    "concentration": {"value": "0.1", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical":
+    "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium
+    hydrogen phosphate"}, "concentration": {"value": "6.1", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration",
+    "chemical": "Sodium molybdate", "term": {"id": "CHEBI:75215", "label": "sodium
+    molybdate (anhydrous)"}, "concentration": {"value": "0.01", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium
+    chloride"}, "concentration": {"value": "0.1", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration",
+    "chemical": "Thiamine HCl", "term": {"id": "CHEBI:49105", "label": "thiamine hydrochloride"},
+    "concentration": {"value": "6.6e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical":
+    "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium
+    dihydrogen phosphate"}, "concentration": {"value": "3.9", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[11].concentration",
+    "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium
+    sulfate"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[12].concentration",
+    "chemical": "Ferrous sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+)
+    sulfate (anhydrous)"}, "concentration": {"value": "0.001", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[13].concentration",
+    "chemical": "Ammonium sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium
+    sulfate"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[14].concentration",
+    "chemical": "MOPS", "term": {"id": "CHEBI:39074", "label": "MOPS"}, "concentration":
+    {"value": "40.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new concentration certification; original values preserved.
+    evidence_ids:
+    - paper-81
+    - publisher-81
+  metrics:
+  - name: preserved ingredient instances
+    value: 15
+    unit: instances
+    denominator: 15
+    minimum: 0
+    maximum: 15
+    definition: Preservation, not scientific certification.
+- assessment_id: organism-007118
+  area: evidence
+  topic: Scientific names, actual ranks and experimental roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007118
+  evidence_ids:
+  - paper-81
+  - publisher-81
+  - taxonomy
+  - additional-taxonomy
+  - claims
+  summary: 'Bradyrhizobium japonicum USDA 110: Bradyrhizobium diazoefficiens USDA
+    110, NCBITaxon:224911, actual rank strain; verified historical-synonym strain
+    match; experimental strain now labeled Bradyrhizobium diazoefficiens USDA 110
+    by the retrieved NCBI node. Bradyrhizobium japonicum USDA 110-derived DeltaP22:
+    Bradyrhizobium diazoefficiens, NCBITaxon:1355477, actual rank species; parent_rank_only;
+    distinct experimental mutant; species parent Bradyrhizobium diazoefficiens verified,
+    not an exact DeltaP22 match. soybean: Glycine max, NCBITaxon:3847, actual rank
+    species; verified common-name species match; Glycine max plant host, not a culture-medium
+    growth target.'
+- assessment_id: preservation-007118
+  area: evidence
+  topic: Scoped edits and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007118
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/qualified notes and one history event added. No variants,
+    growth associations, metrics, quantities or generated publication added; all prior
+    fields retained.
+- assessment_id: citation-007119
+  area: evidence
+  topic: Publication identity and source provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007119
+  evidence_ids:
+  - paper-81
+  - publisher-81
+  - archives
+  - readback
+  summary: Verified title, authors, year, DOI/PMID equivalence and exact excerpts.
+    Raw abstract and Markdown retained; fuller access is explicitly qualified.
+- assessment_id: formulation-007119
+  area: evidence
+  topic: Formulation and separate assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007119
+  evidence_ids:
+  - paper-81
+  - publisher-81
+  - claims
+  - excerpts
+  summary: 'The two fifteen-component Gotz owners differ in mannitol versus (S)-malate
+    and both list ammonium sulfate. Abstract and publisher preview distinguish nitrogen-starved
+    and nitrogen-sufficient conditions but do not identify which local nitrogen level
+    matches each assay. No nitrogen-free recipe or exact variant is inferred. EPS
+    composition ratios and plant infectivity are not ingredient amounts or bacterial
+    growth metrics. Publisher archive=references_cache/papers/primary_html/pmid-16802172-20261013.html;
+    publisher_markdown=references_cache/papers/primary_html/pmid-16802172-20261013.md.
+    This is an abstract/subscription preview, not full methods. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Biotin", "term": {"id": "CHEBI:15956", "label": "biotin"}, "concentration":
+    {"value": "8.2e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[1].concentration", "chemical": "(S)-Malate",
+    "term": null, "concentration": {"value": "27.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[2].concentration",
+    "chemical": "Riboflavin", "term": {"id": "CHEBI:17015", "label": "riboflavin"},
+    "concentration": {"value": "5.3e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical":
+    "Pyridoxine", "term": {"id": "CHEBI:16709", "label": "pyridoxine"}, "concentration":
+    {"value": "0.00012", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[4].concentration", "chemical": "4-Aminobenzoate",
+    "term": {"id": "CHEBI:17836", "label": "4-aminobenzoate"}, "concentration": {"value":
+    "0.00015", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"},
+    {"field_path": "ingredients[5].concentration", "chemical": "Calcium chloride anhydrous",
+    "term": {"id": "CHEBI:3312", "label": "calcium dichloride"}, "concentration":
+    {"value": "0.1", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"},
+    {"field_path": "ingredients[6].concentration", "chemical": "Potassium dibasic
+    phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"},
+    "concentration": {"value": "6.1", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[7].concentration", "chemical":
+    "Sodium molybdate", "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"},
+    "concentration": {"value": "0.01", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[8].concentration", "chemical":
+    "Sodium chloride", "term": {"id": "CHEBI:26710", "label": "sodium chloride"},
+    "concentration": {"value": "0.1", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[9].concentration", "chemical":
+    "Thiamine HCl", "term": {"id": "CHEBI:49105", "label": "thiamine hydrochloride"},
+    "concentration": {"value": "6.6e-05", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical":
+    "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium
+    dihydrogen phosphate"}, "concentration": {"value": "3.9", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[11].concentration",
+    "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium
+    sulfate"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[12].concentration",
+    "chemical": "Ferrous sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+)
+    sulfate (anhydrous)"}, "concentration": {"value": "0.001", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[13].concentration",
+    "chemical": "Ammonium sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium
+    sulfate"}, "concentration": {"value": "1.0", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[14].concentration",
+    "chemical": "MOPS", "term": {"id": "CHEBI:39074", "label": "MOPS"}, "concentration":
+    {"value": "40.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new concentration certification; original values preserved.
+    evidence_ids:
+    - paper-81
+    - publisher-81
+  metrics:
+  - name: preserved ingredient instances
+    value: 15
+    unit: instances
+    denominator: 15
+    minimum: 0
+    maximum: 15
+    definition: Preservation, not scientific certification.
+- assessment_id: organism-007119
+  area: evidence
+  topic: Scientific names, actual ranks and experimental roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007119
+  evidence_ids:
+  - paper-81
+  - publisher-81
+  - taxonomy
+  - additional-taxonomy
+  - claims
+  summary: 'Bradyrhizobium japonicum USDA 110: Bradyrhizobium diazoefficiens USDA
+    110, NCBITaxon:224911, actual rank strain; verified historical-synonym strain
+    match; experimental strain now labeled Bradyrhizobium diazoefficiens USDA 110
+    by the retrieved NCBI node. Bradyrhizobium japonicum USDA 110-derived DeltaP22:
+    Bradyrhizobium diazoefficiens, NCBITaxon:1355477, actual rank species; parent_rank_only;
+    distinct experimental mutant; species parent Bradyrhizobium diazoefficiens verified,
+    not an exact DeltaP22 match. soybean: Glycine max, NCBITaxon:3847, actual rank
+    species; verified common-name species match; Glycine max plant host, not a culture-medium
+    growth target.'
+- assessment_id: preservation-007119
+  area: evidence
+  topic: Scoped edits and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007119
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/qualified notes and one history event added. No variants,
+    growth associations, metrics, quantities or generated publication added; all prior
+    fields retained.
+- assessment_id: citation-007115
+  area: evidence
+  topic: Publication identity and source provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007115
+  evidence_ids:
+  - paper-78
+  - archives
+  - readback
+  summary: Verified title, authors, year, DOI/PMID equivalence and exact excerpts.
+    Raw abstract and Markdown retained; fuller access is explicitly qualified.
+- assessment_id: formulation-007115
+  area: evidence
+  topic: Formulation and separate assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007115
+  evidence_ids:
+  - paper-78
+  - claims
+  - excerpts
+  summary: 'The historical source join supports adding this paper, not certifying
+    the twelve imported ingredient amounts. The archived abstract does not enumerate
+    the full formulation. A bounded PMC browser extraction provided later leads about
+    hydrated salts, an antifoam addition and separate carbon experiments; original
+    full article HTML/PDF was not archived and figures were not inspected. Those leads
+    require full-formula reconciliation and are not promoted to amount evidence. Direct
+    XML/HTML retrieval failures are access-route failures, not proof the full text
+    is unavailable elsewhere. Glucose-citrate background cultures must not be combined
+    with the current glucose experiments. Intracellular PEP/glucose-6-P are not recipe
+    additions; no scalar growth metric is inferred from reduced-growth wording. Full-text
+    lead assessment=reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-followup-source-notes.md. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "D-Glucose", "term": {"id": "CHEBI:17634", "label": "D-glucose"},
+    "concentration": {"value": "44.405", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[1].concentration", "chemical":
+    "Tryptophan", "term": {"id": "CHEBI:27897", "label": "tryptophan"}, "concentration":
+    {"value": "0.195858", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[2].concentration", "chemical": "Magnesium
+    chloride", "term": {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate"},
+    "concentration": {"value": "0.122965", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[3].concentration", "chemical":
+    "Calcium chloride anhydrous", "term": {"id": "CHEBI:3312", "label": "calcium dichloride"},
+    "concentration": {"value": "0.100409", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[4].concentration", "chemical":
+    "Potassium dibasic phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium
+    hydrogen phosphate"}, "concentration": {"value": "15.6142", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[5].concentration",
+    "chemical": "Sodium sulfate", "term": {"id": "CHEBI:32149", "label": "sodium sulfate"},
+    "concentration": {"value": "1.99944", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[6].concentration", "chemical":
+    "Potassium chloride", "term": {"id": "CHEBI:32588", "label": "potassium chloride"},
+    "concentration": {"value": "2.01204", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[7].concentration", "chemical":
+    "Potassium dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium
+    dihydrogen phosphate"}, "concentration": {"value": "7.34829", "unit": "MILLIMOLAR"},
+    "disposition": "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Ammonium chloride", "term": {"id": "CHEBI:31206", "label": "ammonium
+    chloride"}, "concentration": {"value": "18.6947", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration",
+    "chemical": "Manganese chloride", "term": {"id": "CHEBI:63041", "label": "manganese(II)
+    chloride"}, "concentration": {"value": "0.0672435", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[10].concentration",
+    "chemical": "Iron(III) chloride", "term": null, "concentration": {"value": "0.00799112",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[11].concentration", "chemical": "Sodium nitrate", "term": {"id":
+    "CHEBI:63005", "label": "sodium nitrate"}, "concentration": {"value": "2.00012",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new concentration certification; original values preserved.
+    evidence_ids:
+    - paper-78
+  metrics:
+  - name: preserved ingredient instances
+    value: 12
+    unit: instances
+    denominator: 12
+    minimum: 0
+    maximum: 12
+    definition: Preservation, not scientific certification.
+- assessment_id: organism-007115
+  area: evidence
+  topic: Scientific names, actual ranks and experimental roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007115
+  evidence_ids:
+  - paper-78
+  - taxonomy
+  - additional-taxonomy
+  - claims
+  summary: 'Bacillus subtilis: Bacillus subtilis, NCBITaxon:1423, actual rank species;
+    exact species; study species. Bacillus subtilis ATCC 6051 and experimental pyk
+    mutant: Bacillus subtilis, NCBITaxon:1423, actual rank species; parent_rank_only;
+    distinct wild-type and mutant cultures in the bounded primary-page follow-up;
+    species type-material listing is not an exact strain-node mapping. Bacillus subtilis
+    ATCC6051_pyk+: Bacillus subtilis, NCBITaxon:1423, actual rank species; parent_rank_only;
+    historical SQL designation only; do not infer wild-type/mutant identity from its
+    plus sign. Escherichia coli pyk mutants: Escherichia coli, NCBITaxon:562, actual
+    rank species; parent_rank_only; metabolic comparator mutants, not targets on this
+    recipe; species verified, derivative identities unresolved.'
+- assessment_id: preservation-007115
+  area: evidence
+  topic: Scoped edits and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007115
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/qualified notes and one history event added. No variants,
+    growth associations, metrics, quantities or generated publication added; all prior
+    fields retained.
+- assessment_id: citation-007120
+  area: evidence
+  topic: Publication identity and source provenance
+  outcome: supported
+  target_ids:
+  - CultureMech:007120
+  evidence_ids:
+  - paper-82
+  - archives
+  - readback
+  summary: Verified title, authors, year, DOI/PMID equivalence and exact excerpts.
+    Raw abstract and Markdown retained; fuller access is explicitly qualified.
+- assessment_id: formulation-007120
+  area: evidence
+  topic: Formulation and separate assay scope
+  outcome: concern
+  target_ids:
+  - CultureMech:007120
+  evidence_ids:
+  - paper-82
+  - claims
+  - excerpts
+  summary: 'The historical source join links this glycerol minimal-medium owner to
+    the study, but the abstract does not enumerate its thirteen ingredients. Keep
+    yeast-extract comparator media, ALA-supplementation tests and inhibitor assays
+    separate from the imported base formulation. Comparable respiration, heme measurements
+    and qualitative growth are separate claims, not certified amounts or scalar growth
+    metrics. Full methods remain uninspected. '
+  details: '{"preserved_parent_amounts": [{"field_path": "ingredients[0].concentration",
+    "chemical": "Glycerol", "term": {"id": "CHEBI:17754", "label": "glycerol"}, "concentration":
+    {"value": "43.0", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[1].concentration", "chemical": "Biotin",
+    "term": {"id": "CHEBI:15956", "label": "biotin"}, "concentration": {"value": "0.00041",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[2].concentration", "chemical": "Calcium chloride anhydrous", "term":
+    {"id": "CHEBI:3312", "label": "calcium dichloride"}, "concentration": {"value":
+    "0.34", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"},
+    {"field_path": "ingredients[3].concentration", "chemical": "Boric acid", "term":
+    {"id": "CHEBI:33118", "label": "boric acid"}, "concentration": {"value": "0.16",
+    "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}, {"field_path":
+    "ingredients[4].concentration", "chemical": "Dibasic sodium phosphate", "term":
+    {"id": "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "concentration":
+    {"value": "2.1", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly certified"},
+    {"field_path": "ingredients[5].concentration", "chemical": "Sodium molybdate",
+    "term": {"id": "CHEBI:75215", "label": "sodium molybdate (anhydrous)"}, "concentration":
+    {"value": "0.0024", "unit": "MILLIMOLAR"}, "disposition": "preserved; not newly
+    certified"}, {"field_path": "ingredients[6].concentration", "chemical": "Potassium
+    dihydrogen phosphate", "term": {"id": "CHEBI:63036", "label": "potassium dihydrogen
+    phosphate"}, "concentration": {"value": "1.7", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[7].concentration",
+    "chemical": "Magnesium sulfate", "term": {"id": "CHEBI:32599", "label": "magnesium
+    sulfate"}, "concentration": {"value": "0.41", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[8].concentration",
+    "chemical": "Ammonium chloride", "term": {"id": "CHEBI:31206", "label": "ammonium
+    chloride"}, "concentration": {"value": "4.7", "unit": "MILLIMOLAR"}, "disposition":
+    "preserved; not newly certified"}, {"field_path": "ingredients[9].concentration",
+    "chemical": "Zinc sulfate", "term": {"id": "CHEBI:35176", "label": "zinc sulfate"},
+    "concentration": {"value": "0.0064", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[10].concentration", "chemical":
+    "Manganese chloride", "term": {"id": "CHEBI:63041", "label": "manganese(II) chloride"},
+    "concentration": {"value": "0.0025", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[11].concentration", "chemical":
+    "Cupric sulfate", "term": {"id": "CHEBI:23414", "label": "copper(II) sulfate"},
+    "concentration": {"value": "0.002", "unit": "MILLIMOLAR"}, "disposition": "preserved;
+    not newly certified"}, {"field_path": "ingredients[12].concentration", "chemical":
+    "Iron(III) chloride", "term": null, "concentration": {"value": "0.0037", "unit":
+    "MILLIMOLAR"}, "disposition": "preserved; not newly certified"}]}'
+  dimensions:
+  - name: concentration_decision
+    value: unsupported
+    definition: No new concentration certification; original values preserved.
+    evidence_ids:
+    - paper-82
+  metrics:
+  - name: preserved ingredient instances
+    value: 13
+    unit: instances
+    denominator: 13
+    minimum: 0
+    maximum: 13
+    definition: Preservation, not scientific certification.
+- assessment_id: organism-007120
+  area: evidence
+  topic: Scientific names, actual ranks and experimental roles
+  outcome: supported
+  target_ids:
+  - CultureMech:007120
+  evidence_ids:
+  - paper-82
+  - taxonomy
+  - additional-taxonomy
+  - claims
+  summary: 'Bradyrhizobium japonicum hemA mutant MLG1 and unnamed parent strain: Bradyrhizobium
+    japonicum, NCBITaxon:375, actual rank species; parent_rank_only; distinct experimental
+    cultures under the reported species; exact identities unresolved; historical SQL
+    USDA110 is not primary evidence of MLG1 ancestry. Rhizobium meliloti analogous
+    hemA mutants: Sinorhizobium meliloti, NCBITaxon:382, actual rank species; parent_rank_only;
+    reported species synonym maps to Sinorhizobium meliloti; comparator mutants show
+    conditional negative results, not growth on this record. Escherichia coli analogous
+    hemA mutants: Escherichia coli, NCBITaxon:562, actual rank species; parent_rank_only;
+    species verified but mutant identities unresolved; comparator negative growth
+    without ALA is not a positive target relationship.'
+- assessment_id: preservation-007120
+  area: evidence
+  topic: Scoped edits and export boundary
+  outcome: supported
+  target_ids:
+  - CultureMech:007120
+  evidence_ids:
+  - readback
+  - applied
+  summary: Only bibliography/qualified notes and one history event added. No variants,
+    growth associations, metrics, quantities or generated publication added; all prior
+    fields retained.
+findings:
+- finding_id: formulation-75
+  issue_key: soil-metabolism-study-citations-formulation-75
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-recipe formulation remains unresolved: source 75'
+  target_ids:
+  - CultureMech:007090
+  - CultureMech:007093
+  - CultureMech:007094
+  field_paths:
+  - ingredients
+  - references
+  description: 'Historical MediaDB source links these three E2 owners to the study,
+    but an exact study-to-local formulation assignment remains unresolved. Deposited
+    methods distinguish three flask carbon sources and reduced nitrogen from a more
+    concentrated gluconate bioreactor recipe. The octanoate owner lists ethyl octanoate,
+    a different chemical from paper sodium octanoate. The gluconate and citrate owners
+    list gluconic acid and citrate anion rather than the paper''s specified sodium
+    salts. The imported sodium ammonium phosphate amount and hydrated trace compounds
+    also need reconciliation. These conflicts are not certified study variants and
+    are not corrected by this bibliography addition. Base E2 reference 36 is Durner
+    2001 (PMID:11135197); its archived abstract does not enumerate the inherited formula.
+    Do not transfer the separate bioreactor salts, trace stock, titrants or antifoam
+    to the flask owners, or equate LB inoculum with the experimental medium. Inspected
+    locations=Methods/Strains and media, Shake flask experiments, Fermentations in
+    bioreactor; selected Background and Discussion passages. PHA yield, intracellular
+    metabolite pools and fluxes are not ingredient concentrations. The paper expressly
+    distinguishes these results from optimized processes. '
+  evidence_ids:
+  - paper-75
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-74
+  issue_key: soil-metabolism-study-citations-formulation-74
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-recipe formulation remains unresolved: source 74'
+  target_ids:
+  - CultureMech:007088
+  - CultureMech:007089
+  field_paths:
+  - ingredients
+  - references
+  description: 'The two imported M9 owners differ in glucose versus toluene. Deposited
+    physical-culture methods specify the carbon sources but do not enumerate all imported
+    base salts or quantities. Base M9 reference 90 is Abril 1989 (PMID:2687253); its
+    archived abstract lacks the complete formulation and PubMed flags an erratum.
+    Correction DOI lead=10.1128/jb.172.6.3534b.1990; correction scope remains unresolved
+    because the scan was not visually verified. The correction page''s linked PMID:2160949
+    identifies a different Paracoccus correction and is rejected as an alias. No base-formula
+    details are inherited from that unresolved chain. Keep physical growth, oxygen-consumption
+    resuspension, saline biomass washes, and in silico iM9/iLB separate. Simulated
+    exchange constraints in mmol/gDW/h are not concentrations or empirical growth.
+    Inspected locations=Methods/In vivo determination of oxygen consumption and cell
+    culture condition, Biomass function and in silico medium composition; selected
+    model-comparison body passages. Matching one carbon dose or medium name does not
+    certify the full local thirteen-component recipe. Exact variant destination remains
+    unresolved. '
+  evidence_ids:
+  - paper-74
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-79
+  issue_key: soil-metabolism-study-citations-formulation-79
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-recipe formulation remains unresolved: source 79'
+  target_ids:
+  - CultureMech:007116
+  - CultureMech:007117
+  field_paths:
+  - ingredients
+  - references
+  description: 'The two local seven-component owners exchange glucose and asparagine
+    while retaining the other six entries. The abstract does not enumerate their amounts,
+    chemical forms or preparation. It separates failure of the gapA mutant on glycolytic
+    carbon sources from growth on gluconeogenic sources and the opposite gapB phenotype.
+    Do not turn either negative result into universal growth. Purified-enzyme Km,
+    cofactor activities and reporter expression are not medium doses. Full methods
+    remain uninspected and no resolved variant is assigned. '
+  evidence_ids:
+  - paper-79
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-81
+  issue_key: soil-metabolism-study-citations-formulation-81
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-recipe formulation remains unresolved: source 81'
+  target_ids:
+  - CultureMech:007118
+  - CultureMech:007119
+  field_paths:
+  - ingredients
+  - references
+  description: 'The two fifteen-component Gotz owners differ in mannitol versus (S)-malate
+    and both list ammonium sulfate. Abstract and publisher preview distinguish nitrogen-starved
+    and nitrogen-sufficient conditions but do not identify which local nitrogen level
+    matches each assay. No nitrogen-free recipe or exact variant is inferred. EPS
+    composition ratios and plant infectivity are not ingredient amounts or bacterial
+    growth metrics. Publisher archive=references_cache/papers/primary_html/pmid-16802172-20261013.html;
+    publisher_markdown=references_cache/papers/primary_html/pmid-16802172-20261013.md.
+    This is an abstract/subscription preview, not full methods. '
+  evidence_ids:
+  - paper-81
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-78
+  issue_key: soil-metabolism-study-citations-formulation-78
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-recipe formulation remains unresolved: source 78'
+  target_ids:
+  - CultureMech:007115
+  field_paths:
+  - ingredients
+  - references
+  description: 'The historical source join supports adding this paper, not certifying
+    the twelve imported ingredient amounts. The archived abstract does not enumerate
+    the full formulation. A bounded PMC browser extraction provided later leads about
+    hydrated salts, an antifoam addition and separate carbon experiments; original
+    full article HTML/PDF was not archived and figures were not inspected. Those leads
+    require full-formula reconciliation and are not promoted to amount evidence. Direct
+    XML/HTML retrieval failures are access-route failures, not proof the full text
+    is unavailable elsewhere. Glucose-citrate background cultures must not be combined
+    with the current glucose experiments. Intracellular PEP/glucose-6-P are not recipe
+    additions; no scalar growth metric is inferred from reduced-growth wording. Full-text
+    lead assessment=reports/paper_citation_curation/20261013-cyanobacterial-study-citations/next-followup-source-notes.md. '
+  evidence_ids:
+  - paper-78
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/fry_et_al.yaml
+    role: authoritative normalized recipe
+- finding_id: formulation-82
+  issue_key: soil-metabolism-study-citations-formulation-82
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact study-to-recipe formulation remains unresolved: source 82'
+  target_ids:
+  - CultureMech:007120
+  field_paths:
+  - ingredients
+  - references
+  description: 'The historical source join links this glycerol minimal-medium owner
+    to the study, but the abstract does not enumerate its thirteen ingredients. Keep
+    yeast-extract comparator media, ALA-supplementation tests and inhibitor assays
+    separate from the imported base formulation. Comparable respiration, heme measurements
+    and qualitative growth are separate claims, not certified amounts or scalar growth
+    metrics. Full methods remain uninspected. '
+  evidence_ids:
+  - paper-82
+  - claims
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+    role: authoritative normalized recipe
+actions:
+- action_id: resolve-formulation-75
+  description: 'Exact study-to-recipe formulation remains unresolved: source 75'
+  finding_ids:
+  - formulation-75
+  target_ids:
+  - CultureMech:007090
+  - CultureMech:007093
+  - CultureMech:007094
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/e2_medium_with_octanoate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/e2_medium_with_gluconate.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/e2_medium_with_citrate.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect full methods and inherited base recipes/corrections; reconcile chemical
+    forms and amounts separately; preserve strain, assay, plasmid and nitrogen-condition
+    scope before approving variants, concentrations or growth.
+- action_id: resolve-formulation-74
+  description: 'Exact study-to-recipe formulation remains unresolved: source 74'
+  finding_ids:
+  - formulation-74
+  target_ids:
+  - CultureMech:007088
+  - CultureMech:007089
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect full methods and inherited base recipes/corrections; reconcile chemical
+    forms and amounts separately; preserve strain, assay, plasmid and nitrogen-condition
+    scope before approving variants, concentrations or growth.
+- action_id: resolve-formulation-79
+  description: 'Exact study-to-recipe formulation remains unresolved: source 79'
+  finding_ids:
+  - formulation-79
+  target_ids:
+  - CultureMech:007116
+  - CultureMech:007117
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mm_glucose_fillinger_et_al.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/mm_asparagine_fillinger_et_al.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect full methods and inherited base recipes/corrections; reconcile chemical
+    forms and amounts separately; preserve strain, assay, plasmid and nitrogen-condition
+    scope before approving variants, concentrations or growth.
+- action_id: resolve-formulation-81
+  description: 'Exact study-to-recipe formulation remains unresolved: source 81'
+  finding_ids:
+  - formulation-81
+  target_ids:
+  - CultureMech:007118
+  - CultureMech:007119
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/gotz_minimal_medium_with_mannitol.yaml
+    role: authoritative normalized recipe
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/gotz_minimal_medium_with_malate.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect full methods and inherited base recipes/corrections; reconcile chemical
+    forms and amounts separately; preserve strain, assay, plasmid and nitrogen-condition
+    scope before approving variants, concentrations or growth.
+- action_id: resolve-formulation-78
+  description: 'Exact study-to-recipe formulation remains unresolved: source 78'
+  finding_ids:
+  - formulation-78
+  target_ids:
+  - CultureMech:007115
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/fry_et_al.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect full methods and inherited base recipes/corrections; reconcile chemical
+    forms and amounts separately; preserve strain, assay, plasmid and nitrogen-condition
+    scope before approving variants, concentrations or growth.
+- action_id: resolve-formulation-82
+  description: 'Exact study-to-recipe formulation remains unresolved: source 82'
+  finding_ids:
+  - formulation-82
+  target_ids:
+  - CultureMech:007120
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: data/normalized_yaml/bacterial/minimal_medium_frustaci.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect full methods and inherited base recipes/corrections; reconcile chemical
+    forms and amounts separately; preserve strain, assay, plasmid and nitrogen-condition
+    scope before approving variants, concentrations or growth.
+limitations:
+- Partial scientific self-review; all 128 amounts enumerated as preserved, not certified.
+- Two full XML articles inspected in selected sections; remaining scientific support
+  is abstract-level. Publisher preview and bounded browser leads do not certify complete
+  methods.
+- Bounded taxonomy lookups do not prove derivative-node absence. Actual ranks and
+  historical synonyms are retained.
+- Base-recipe abstracts are archived but full formulas and an Abril correction remain
+  unresolved. PMID 2160949 is explicitly rejected as a correction alias.
+- Remaining 189 MediaDB candidate links and 90 prose identifier groups overlap; qualified
+  ancillary/rejected identifiers are not automatically addable papers. Neither queue
+  establishes citation exhaustion.
+```

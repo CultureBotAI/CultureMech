@@ -376,6 +376,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:189's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T21:53:14.388328+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:15915565
 media_term:
   preferred_term: MediaDB Medium 189
   term:
@@ -387,3 +395,97 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:15915565
+  title: Protein production by auto-induction in high density shaking cultures.
+  authors: Studier FW
+  year: 2005
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract_and_selected_primary_full_text_passages_with_visual_table_checks;
+    owner=MEDIADB:189; discovery_sourceID=68; source_url=https://doi.org/10.1016/j.pep.2005.01.016;
+    alternate_identifier=doi:10.1016/j.pep.2005.01.016; raw=references_cache/papers/PMID_15915565.xml;
+    markdown=references_cache/papers/PMID_15915565.md; full_raw=references_cache/papers/primary_pdf/expression-metabolism-source-68-20261013.pdf;
+    full_markdown=references_cache/papers/primary_pdf/studier-2005-plain-20261013.md;
+    PDF page 5 / article page 211: Growth media; whitespace-normalized PDF extraction,
+    checked visually; exact excerpt="MnCl 2 and ZnSO 4". PDF page 5 / article page
+    211: amino-acid mixture; exact excerpt="mixture of 18 amino acids". The full source
+    was inspected selectively at PDF pages 2-5 and 9-13 (article pages 208-211 and
+    215-219), including visual checks of Tables 1, 3 and 5 and Growth media. Table
+    1 specifies LSG and PA-5052; LG appears in Table 3 and the surrounding L-medium
+    experiments. The Growth media trace mixture uses zinc sulfate, whereas every selected
+    native owner contains zinc chloride. This chemical-form discrepancy may be an
+    import error rather than a biological variant. The paper also distinguishes stock
+    assembly/sterilization from the native generic whole-medium filtration step. Do
+    not silently correct either discrepancy or certify exact source-to-local formulation
+    equivalence. Quantitative growth, pH and expression results remain assay-specific
+    and are not imported. Reported organism=Escherichia coli BL21(DE3); canonical
+    scientific name=Escherichia coli BL21(DE3); NCBITaxon:469008; actual rank=strain;
+    taxonomy_match=exact_taxon; role=experimental host; its actual NCBI rank is strain.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=469008&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-20261013.md.
+    Reported organism=Escherichia coli BL21; canonical scientific name=Escherichia
+    coli BL21; NCBITaxon:511693; actual rank=strain; taxonomy_match=exact_taxon; role=strain
+    ancestry and BL21-AI derivation context. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=511693&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-20261013.md.
+    Reported organism=Escherichia coli B; canonical scientific name=Escherichia coli
+    B; NCBITaxon:37762; actual rank=strain; taxonomy_match=exact_taxon; role=strain
+    ancestry, not an independent cultivation assertion. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=37762&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-additional-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-additional-20261013.md.
+    Reported organism=Escherichia coli B834, B834(DE3), BL21-AI and BL21-Gold(DE3)RIL;
+    canonical scientific name=Escherichia coli; NCBITaxon:562; actual rank=species;
+    taxonomy_match=parent_rank_only; role=reported hosts/derivatives; species parent
+    verified, exact derivative nodes unresolved. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-20261013.md.
+    Reported organism=Escherichia coli B832(DE3)RIL/P21 as printed in Table 5; canonical
+    scientific name=Escherichia coli; NCBITaxon:562; actual rank=species; taxonomy_match=parent_rank_only;
+    role=table spelling differs from B834 in the methods; no silent strain correction
+    or equivalence assertion. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-20261013.md.
+    Reported organism=bacteriophage T7; canonical scientific name=Escherichia phage
+    T7; NCBITaxon:10760; actual rank=no rank; taxonomy_match=exact_taxon; role=polymerase
+    and protein-expression genetic context, not phage growth in these media. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=10760&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-20261013.md.
+    Reported organism=phage lambda, including the DE3 derivative; canonical scientific
+    name=Escherichia phage Lambda; NCBITaxon:2681611; actual rank=no rank; taxonomy_match=parent_rank_only;
+    role=verified phage lineage; the DE3 derivative is not an exact taxonomy match.
+    Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2681611&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-additional-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-additional-20261013.md.
+    Reported organism=phage P1; canonical scientific name=Escherichia phage P1; NCBITaxon:2886926;
+    actual rank=no rank; taxonomy_match=exact_taxon; role=historical transduction
+    context only. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2886926&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-additional-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-additional-20261013.md.
+    Reported organism=human; canonical scientific name=Homo sapiens; NCBITaxon:9606;
+    actual rank=species; taxonomy_match=exact_species; role=RNA/protein donor context,
+    not a medium target; cell line unspecified. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=9606&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-additional-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-additional-20261013.md.
+    Reported organism=yeast protein donors; canonical scientific name=Fungi; NCBITaxon:4751;
+    actual rank=kingdom; taxonomy_match=parent_rank_only; role=broad verified fungal
+    parent only; no scientific species or donor strain inferred from the generic word
+    yeast. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=4751&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-additional-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-additional-20261013.md.
+    Table 1 PA-5052 contains 18 amino acids with no cysteine or tyrosine. The methods
+    specify monosodium glutamate, asparagine monohydrate, arginine/lysine hydrochlorides
+    and histidine hydrochloride monohydrate, unlike the corresponding native free-compound
+    entries. The native lysine amount also does not align with the uniformly specified
+    amino-acid mass concentration; lactose is explicitly alpha-lactose monohydrate
+    in the source but generic lactose in the owner. Table 5 is an experimental modification,
+    not the Table 1 formula: glycerol, amino-acid levels, vitamins and the trace mixture
+    differ. The assay lists B832(DE3)RIL/P21, whereas methods say B834. These study
+    modifications and unresolved import identities are preserved here pending a defensible
+    parent/variant mapping; no Table 5 outcome is assigned to native PA-5052. Inventory
+    covers inspected medium-relevant passages, not the whole paper or bibliography.
+    Correction/retraction coverage is limited to inspected metadata; bounded taxonomy
+    misses do not prove absence. Original ingredients, amounts, preparation, history
+    and links are preserved, not newly certified. No new native growth assertion,
+    resolved variant or concentration evidence.'

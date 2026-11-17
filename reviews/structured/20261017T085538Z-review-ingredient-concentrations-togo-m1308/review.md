@@ -1,0 +1,396 @@
+# Ingredient concentration and record audit of TOGO M1308 Methylotroph Medium (CultureMech:007843)
+
+- Review: 20261017T085538Z-review-ingredient-concentrations-togo-m1308
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-17T08:53:38Z
+- Finished UTC: 2026-10-17T08:55:38Z
+- Reviewer: antigravity-agent (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Normalized bacterial MediaRecipe TOGO_M1308_Methylotroph_Medium.yaml (CultureMech:007843) passes all four deterministic validators with 0 errors, 100.0% top-level CHEBI coverage (9/9), and 77.78% top-level MediaIngredientMech coverage (7/9). Primary-source verification against TOGO Medium M1308 / JCM Medium 1219 (https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219) confirms that all 9 top-level ingredients (Distilled water 0.97 L, CaCl2・2H2O 0.07 G_PER_L, KH2PO4 0.27 G_PER_L, MgCl2・6H2O 0.2 G_PER_L, NaNO3 0.42 G_PER_L, Na2SO4 0.014 G_PER_L, HEPES 4.77 G_PER_L, KOH variable VARIABLE, and Methanol 0.00081 L) and 5 nested stock solutions (Trace element solution M278 0.01 L, Se/W solution M278 0.01 L, Trace vitamins M190 0.01 L, 10 mM CuCl2 solution 0.002 L, and 10 mM CeCl3 solution 0.002 L) match the published JCM 1219 formulation. Three limitations remain: (1) the explicit liquid additions sum to 1.00481 L (970 mL water + 30 mL M278/M190 stocks + 4 mL CuCl2/CeCl3 stocks + 0.81 mL methanol = 1004.81 mL, plus 6 N KOH titrant) while the 6 base solutes are stored as nominal G_PER_L, and CaCl2・2H2O and MgCl2・6H2O lack evidence[] blocks; (2) top-level medium_type: COMPLEX and composition_type: UNDEFINED misclassify a strictly defined synthetic mineral/vitamin medium; and (3) CaCl2・2H2O, MgCl2・6H2O, and all 24 nested solutions[].composition[] items lack mediaingredientmech_chebi_term (and 6/24 nested items lack CHEBI term).
+
+## Scope And Provenance
+
+Single-record ingredient concentration, unit, osmolarity/buffered phosphate, and ontology audit of CultureMech:007843 (TOGO M1308 Methylotroph Medium).
+
+Selection: Target record selected for review-ingredient-concentrations and review-yaml-record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base 4c69a62c25dd5419766533205c215b0aaa5d14f7.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| target-1 | data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml | maintained | CultureMech:007843 - Methylotroph Medium (TOGO M1308) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| LinkML schema validation | passed | True | target-1 | linkml-validate passed with 0 errors on TOGO_M1308_Methylotroph_Medium.yaml. |
+| Strict schema, recipe reference, and ontology term validation | passed | True | target-1 | validate_strict.py, validate_recipe_references.py, and linkml-term-validator passed with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Base salt, buffer, lanthanide/copper supplement, and methanol concentration fidelity
+
+quantity: supported. Targets: target-1.
+
+All 9 top-level ingredients and 5 nested stock solutions match JCM 1219 / TOGO M1308 in mass, molarity (10 MILLIMOLAR CuCl2 and CeCl3 stocks -&gt; ~19.9 µM final each), and liquid addition volume (0.97 + 0.03 + 0.004 + 0.00081 = 1.00481 L).
+
+### Cumulative 1.00481 L liquid denominator, DEFINED vs COMPLEX classification, and hydrate/nested MIM linkage
+
+representation: concern. Targets: target-1.
+
+Explicit liquid additions total 1.00481 L (~0.48% above 1.0 L), medium_type: COMPLEX / composition_type: UNDEFINED misclassify a chemically defined medium, and CaCl2・2H2O, MgCl2・6H2O, and all 24 nested stock components lack mediaingredientmech_chebi_term.
+
+## Findings
+
+### F1: Chemically defined methylotroph medium is misclassified as medium_type: COMPLEX and composition_type: UNDEFINED
+
+minor / open / confirmed; issue key: representation.defined_misclassified_as_complex.CultureMech_007843.
+
+Every top-level ingredient and nested stock component in TOGO_M1308_Methylotroph_Medium.yaml is a pure chemical with defined concentration, yet medium_type is set to COMPLEX and composition_type is set to UNDEFINED.
+
+### F2: Full-width interpunct hydrates (CaCl2・2H2O, MgCl2・6H2O) and all 24 nested stock components lack mediaingredientmech_chebi_term
+
+minor / open / confirmed; issue key: grounding.missing_mim_term.CultureMech_007843.hydrates_and_nested_solutions.
+
+ingredients[1] (CaCl2・2H2O, CHEBI:86158) and ingredients[3] (MgCl2・6H2O, CHEBI:86345) lack both evidence[] and mediaingredientmech_chebi_term because the full-width Japanese interpunct ('・') bypassed string matching; in addition, 0/24 nested solutions[0..4].composition[] items carry mediaingredientmech_chebi_term and 6/24 (CoCl2 x 6 H2O, Na2MoO4 x 2 H2O, NiCl2 x 6 H2O, Na2SeO3 x 5 H2O, Lipoic acid, CuCl2) lack CHEBI term.
+
+### F3: Explicit liquid additions sum to 1.00481 L while base solutes are stored as nominal G_PER_L
+
+informational / open / confirmed; issue key: quantity.volume_denominator_offset.CultureMech_007843.
+
+The liquid components sum to 0.97 L Distilled water + 3 x 0.01 L stocks + 2 x 0.002 L stocks + 0.00081 L Methanol = 1.00481 L (plus variable 6 N KOH), creating a ~0.48% difference between nominal per-liter masses and final post-addition concentrations.
+
+## Recommended Actions And Acceptance Checks
+
+### ACT1
+
+Set medium_type and composition_type to DEFINED, backfill evidence[] and mediaingredientmech_chebi_term on CaCl2・2H2O and MgCl2・6H2O, and enrich CHEBI/MIM terms on nested solutions[0..4].composition[].
+
+- medium_type and composition_type are set to DEFINED.
+- All 9 top-level ingredients and 24 nested solution components carry CHEBI and mediaingredientmech_chebi_term identifiers.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| E1 | data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml; lines 1-1055 | supports | Normalized YAML record for CultureMech:007843 with 9 top-level ingredients (Distilled water 0.97 L, 6 base solutes in G_PER_L, KOH VARIABLE, Methanol 0.00081 L) and 5 nested solutions[] (24 nested composition items). |
+| E2 | Four-validator suite execution on TOGO_M1308_Methylotroph_Medium.yaml; stdout | supports | All four required validators exited with code 0. |
+| E3 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219; JCM Medium No. 1219 / TOGO Medium M1308 recipe specification | supports | JCM Medium 1219 (Methylotroph Medium) specifies 4.77 g HEPES, 0.42 g NaNO3, 0.27 g KH2PO4, 0.20 g MgCl2・6H2O, 0.07 g CaCl2・2H2O, 0.014 g Na2SO4, 970 mL Distilled water (pH 6.8 with 6 N KOH), supplemented after autoclaving with 10 mL M278 trace element solution, 10 mL M278 Se/W solution, 10 mL M190 trace vitamins, 2 mL 10 mM CuCl2, 2 mL 10 mM CeCl3, and 0.81 mL Methanol (total liquid volume 1004.81 mL). |
+
+## Limits And Additional Notes
+
+- Review is a non-mutating observation; target YAML file was not modified.
+- Base salt concentrations are stored at nominal 1.0 L G_PER_L values (~0.48% above the 1.00481 L sum of liquid components).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261017T085538Z-review-ingredient-concentrations-togo-m1308
+kind: record
+repository: CultureBotAI/CultureMech
+title: Ingredient concentration and record audit of TOGO M1308 Methylotroph Medium
+  (CultureMech:007843)
+started_at: '2026-10-17T08:53:38Z'
+finished_at: '2026-10-17T08:55:38Z'
+reviewer:
+  identity: antigravity-agent
+  kind: agent
+  model: claude-opus-4-6
+  independence: independent
+  independence_basis: Independent agent review against primary literature/database
+    sources and deterministic LinkML validators without modifying target records.
+skill: review-ingredient-concentrations
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Normalized bacterial MediaRecipe TOGO_M1308_Methylotroph_Medium.yaml (CultureMech:007843)
+  passes all four deterministic validators with 0 errors, 100.0% top-level CHEBI coverage
+  (9/9), and 77.78% top-level MediaIngredientMech coverage (7/9). Primary-source verification
+  against TOGO Medium M1308 / JCM Medium 1219 (https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219)
+  confirms that all 9 top-level ingredients (Distilled water 0.97 L, CaCl2・2H2O 0.07
+  G_PER_L, KH2PO4 0.27 G_PER_L, MgCl2・6H2O 0.2 G_PER_L, NaNO3 0.42 G_PER_L, Na2SO4
+  0.014 G_PER_L, HEPES 4.77 G_PER_L, KOH variable VARIABLE, and Methanol 0.00081 L)
+  and 5 nested stock solutions (Trace element solution M278 0.01 L, Se/W solution
+  M278 0.01 L, Trace vitamins M190 0.01 L, 10 mM CuCl2 solution 0.002 L, and 10 mM
+  CeCl3 solution 0.002 L) match the published JCM 1219 formulation. Three limitations
+  remain: (1) the explicit liquid additions sum to 1.00481 L (970 mL water + 30 mL
+  M278/M190 stocks + 4 mL CuCl2/CeCl3 stocks + 0.81 mL methanol = 1004.81 mL, plus
+  6 N KOH titrant) while the 6 base solutes are stored as nominal G_PER_L, and CaCl2・2H2O
+  and MgCl2・6H2O lack evidence[] blocks; (2) top-level medium_type: COMPLEX and composition_type:
+  UNDEFINED misclassify a strictly defined synthetic mineral/vitamin medium; and (3)
+  CaCl2・2H2O, MgCl2・6H2O, and all 24 nested solutions[].composition[] items lack mediaingredientmech_chebi_term
+  (and 6/24 nested items lack CHEBI term).'
+source:
+  git_revision: 4c69a62c25dd5419766533205c215b0aaa5d14f7
+  state: git_commit
+  inputs:
+  - path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    sha256: 60f4887855bc7f9554ad424bb50e916a77cc0c9bb0df3cdc7b7739801ffb6226
+    role: target
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: Single-record ingredient concentration, unit, osmolarity/buffered phosphate,
+    and ontology audit of CultureMech:007843 (TOGO M1308 Methylotroph Medium).
+  selection: Target record selected for review-ingredient-concentrations and review-yaml-record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - target-1
+targets:
+- target_id: target-1
+  path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+  label: CultureMech:007843 - Methylotroph Medium (TOGO M1308)
+  record_class: MediaRecipe
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    role: maintained_record
+checks:
+- check_id: chk-linkml-schema
+  name: LinkML schema validation
+  status: passed
+  required: true
+  summary: linkml-validate passed with 0 errors on TOGO_M1308_Methylotroph_Medium.yaml.
+  target_ids:
+  - target-1
+  command: linkml-validate -s src/culturemech/schema/culturemech.yaml -C MediaRecipe
+    data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - E2
+- check_id: chk-strict-references-terms
+  name: Strict schema, recipe reference, and ontology term validation
+  status: passed
+  required: true
+  summary: validate_strict.py, validate_recipe_references.py, and linkml-term-validator
+    passed with 0 errors.
+  target_ids:
+  - target-1
+  command: python scripts/validate_strict.py data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    && python scripts/validate_recipe_references.py --file data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    && linkml-term-validator validate-data data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    -s src/culturemech/schema/culturemech.yaml -t MediaRecipe --labels
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - E2
+evidence:
+- evidence_id: E1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+  locator: lines 1-1055
+  accessed_at: '2026-10-17T08:54:38Z'
+  support: supports
+  summary: Normalized YAML record for CultureMech:007843 with 9 top-level ingredients
+    (Distilled water 0.97 L, 6 base solutes in G_PER_L, KOH VARIABLE, Methanol 0.00081
+    L) and 5 nested solutions[] (24 nested composition items).
+  quote: 'id: CultureMech:007843 / medium_type: COMPLEX / Distilled water 0.97 L /
+    CaCl2・2H2O 0.07 G_PER_L / KH2PO4 0.27 G_PER_L / MgCl2・6H2O 0.2 G_PER_L / NaNO3
+    0.42 G_PER_L / Na2SO4 0.014 G_PER_L / HEPES 4.77 G_PER_L / KOH VARIABLE / Methanol
+    0.00081 L / solutions: [M278 trace 0.01 L, M278 Se/W 0.01 L, M190 vitamins 0.01
+    L, 10 mM CuCl2 0.002 L, 10 mM CeCl3 0.002 L]'
+  snapshot_sha256: 60f4887855bc7f9554ad424bb50e916a77cc0c9bb0df3cdc7b7739801ffb6226
+- evidence_id: E2
+  kind: validation
+  reference: Four-validator suite execution on TOGO_M1308_Methylotroph_Medium.yaml
+  locator: stdout
+  accessed_at: '2026-10-17T08:54:38Z'
+  support: supports
+  summary: All four required validators exited with code 0.
+  quote: 'No issues found / VALID: 1 files passed all checks / VALID: All recipe references
+    resolved / Validation passed'
+- evidence_id: E3
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219
+  locator: JCM Medium No. 1219 / TOGO Medium M1308 recipe specification
+  accessed_at: '2026-10-17T08:54:38Z'
+  support: supports
+  summary: JCM Medium 1219 (Methylotroph Medium) specifies 4.77 g HEPES, 0.42 g NaNO3,
+    0.27 g KH2PO4, 0.20 g MgCl2・6H2O, 0.07 g CaCl2・2H2O, 0.014 g Na2SO4, 970 mL Distilled
+    water (pH 6.8 with 6 N KOH), supplemented after autoclaving with 10 mL M278 trace
+    element solution, 10 mL M278 Se/W solution, 10 mL M190 trace vitamins, 2 mL 10
+    mM CuCl2, 2 mL 10 mM CeCl3, and 0.81 mL Methanol (total liquid volume 1004.81
+    mL).
+  quote: HEPES 4.77 g, NaNO3 0.42 g, KH2PO4 0.27 g, MgCl2・6H2O 0.20 g, CaCl2・2H2O
+    0.07 g, Na2SO4 0.014 g, Distilled water 970.0 ml, Trace element solution (M278)
+    10.0 ml, Se/W solution (M278) 10.0 ml, Trace vitamins (M190) 10.0 ml, 10 mM CuCl2
+    solution 2.0 ml, 10 mM CeCl3 solution 2.0 ml, Methanol 0.81 ml, 6 N KOH to pH
+    6.8.
+assessments:
+- assessment_id: A1
+  area: quantity
+  topic: Base salt, buffer, lanthanide/copper supplement, and methanol concentration
+    fidelity
+  outcome: supported
+  summary: All 9 top-level ingredients and 5 nested stock solutions match JCM 1219
+    / TOGO M1308 in mass, molarity (10 MILLIMOLAR CuCl2 and CeCl3 stocks -> ~19.9
+    µM final each), and liquid addition volume (0.97 + 0.03 + 0.004 + 0.00081 = 1.00481
+    L).
+  target_ids:
+  - target-1
+  evidence_ids:
+  - E1
+  - E2
+  - E3
+  metrics:
+  - name: chebi_coverage
+    value: 100.0
+    unit: percent
+    definition: Percentage of top-level ingredients in TOGO_M1308_Methylotroph_Medium.yaml
+      with a populated CHEBI term.id (9/9).
+    denominator: 9
+    minimum: 0.0
+    maximum: 100.0
+  - name: mediaingredientmech_coverage
+    value: 77.78
+    unit: percent
+    definition: Percentage of top-level ingredients in TOGO_M1308_Methylotroph_Medium.yaml
+      with a populated mediaingredientmech_chebi_term.id (7/9).
+    denominator: 9
+    minimum: 0.0
+    maximum: 100.0
+  - name: nested_solution_chebi_coverage
+    value: 75.0
+    unit: percent
+    definition: Percentage of nested solutions[].composition[] items with a populated
+      CHEBI term.id (18/24).
+    denominator: 24
+    minimum: 0.0
+    maximum: 100.0
+- assessment_id: A2
+  area: representation
+  topic: Cumulative 1.00481 L liquid denominator, DEFINED vs COMPLEX classification,
+    and hydrate/nested MIM linkage
+  outcome: concern
+  summary: 'Explicit liquid additions total 1.00481 L (~0.48% above 1.0 L), medium_type:
+    COMPLEX / composition_type: UNDEFINED misclassify a chemically defined medium,
+    and CaCl2・2H2O, MgCl2・6H2O, and all 24 nested stock components lack mediaingredientmech_chebi_term.'
+  target_ids:
+  - target-1
+  evidence_ids:
+  - E1
+  - E3
+findings:
+- finding_id: F1
+  issue_key: representation.defined_misclassified_as_complex.CultureMech_007843
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: 'Chemically defined methylotroph medium is misclassified as medium_type:
+    COMPLEX and composition_type: UNDEFINED'
+  description: Every top-level ingredient and nested stock component in TOGO_M1308_Methylotroph_Medium.yaml
+    is a pure chemical with defined concentration, yet medium_type is set to COMPLEX
+    and composition_type is set to UNDEFINED.
+  target_ids:
+  - target-1
+  field_paths:
+  - medium_type
+  - composition_type
+  evidence_ids:
+  - E1
+  - E3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    role: maintained_record
+- finding_id: F2
+  issue_key: grounding.missing_mim_term.CultureMech_007843.hydrates_and_nested_solutions
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Full-width interpunct hydrates (CaCl2・2H2O, MgCl2・6H2O) and all 24 nested
+    stock components lack mediaingredientmech_chebi_term
+  description: ingredients[1] (CaCl2・2H2O, CHEBI:86158) and ingredients[3] (MgCl2・6H2O,
+    CHEBI:86345) lack both evidence[] and mediaingredientmech_chebi_term because the
+    full-width Japanese interpunct ('・') bypassed string matching; in addition, 0/24
+    nested solutions[0..4].composition[] items carry mediaingredientmech_chebi_term
+    and 6/24 (CoCl2 x 6 H2O, Na2MoO4 x 2 H2O, NiCl2 x 6 H2O, Na2SeO3 x 5 H2O, Lipoic
+    acid, CuCl2) lack CHEBI term.
+  target_ids:
+  - target-1
+  field_paths:
+  - ingredients[1].evidence
+  - ingredients[1].mediaingredientmech_chebi_term
+  - ingredients[3].evidence
+  - ingredients[3].mediaingredientmech_chebi_term
+  - solutions[0..4].composition
+  evidence_ids:
+  - E1
+  - E3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    role: maintained_record
+- finding_id: F3
+  issue_key: quantity.volume_denominator_offset.CultureMech_007843
+  category: quantity
+  severity: informational
+  status: open
+  certainty: confirmed
+  title: Explicit liquid additions sum to 1.00481 L while base solutes are stored
+    as nominal G_PER_L
+  description: The liquid components sum to 0.97 L Distilled water + 3 x 0.01 L stocks
+    + 2 x 0.002 L stocks + 0.00081 L Methanol = 1.00481 L (plus variable 6 N KOH),
+    creating a ~0.48% difference between nominal per-liter masses and final post-addition
+    concentrations.
+  target_ids:
+  - target-1
+  field_paths:
+  - ingredients[0..8].concentration
+  - solutions[0..4].volume
+  evidence_ids:
+  - E1
+  - E3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    role: maintained_record
+actions:
+- action_id: ACT1
+  description: Set medium_type and composition_type to DEFINED, backfill evidence[]
+    and mediaingredientmech_chebi_term on CaCl2・2H2O and MgCl2・6H2O, and enrich CHEBI/MIM
+    terms on nested solutions[0..4].composition[].
+  finding_ids:
+  - F1
+  - F2
+  - F3
+  target_ids:
+  - target-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    role: maintained_record
+  acceptance_checks:
+  - medium_type and composition_type are set to DEFINED.
+  - All 9 top-level ingredients and 24 nested solution components carry CHEBI and
+    mediaingredientmech_chebi_term identifiers.
+limitations:
+- Review is a non-mutating observation; target YAML file was not modified.
+- Base salt concentrations are stored at nominal 1.0 L G_PER_L values (~0.48% above
+  the 1.00481 L sum of liquid components).
+tags:
+- review-ingredient-concentrations
+- review-yaml-record
+- CultureMech_007843
+- TOGO_M1308
+- ATCC_784
+```

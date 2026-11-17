@@ -269,6 +269,14 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:295's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-10-13T16:00:31.974764+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, archived abstract/Markdown provenance,
+    exact excerpts and qualified scientific-name/NCBI mappings. Preserved formulation,
+    assay and metadata limits. Existing recipe fields and history unchanged; no new
+    native growth, concentration evidence or resolved variant.
+  source: PMID:8132452
 media_term:
   preferred_term: MediaDB Medium 295
   term:
@@ -281,3 +289,42 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: PMID:8132452
+  title: Oscillating behavior of carbohydrate granule formation and dinitrogen fixation
+    in the cyanobacterium Cyanothece sp. strain ATCC 51142.
+  authors: Schneegurt MA; Sherman DM; Nayar S; Sherman LA
+  year: 1994
+  notes: source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=PubMed_abstract_only; alternate_identifier=doi:10.1128/jb.176.6.1586-1597.1994;
+    owner=MEDIADB:295; discovery_sourceID=108; source_url=https://pubmed.ncbi.nlm.nih.gov/8132452/;
+    raw_abstract=references_cache/papers/PMID_8132452.xml; source_markdown=references_cache/papers/PMID_8132452.md.
+    alternate_identifier=PMC205243. PubMed abstract; exact excerpt="Cyanothece sp.
+    ATCC strain 51142". PubMed abstract; exact excerpt="diurnal light-dark cycles".
+    The historical source-owner join links this ASP2 record to the study, but the
+    abstract does not enumerate its 24 ingredients, nitrate amount or preparation.
+    Nitrogen-fixing and light-dark observations do not certify this nitrate-containing
+    recipe or a nitrate-free variant. Reported organism=Cyanothece sp. ATCC strain
+    51142; canonical scientific name=Crocosphaera subtropica ATCC 51142; NCBITaxon:43989;
+    actual rank=strain; taxonomy_match=verified equivalent-name strain match; role=study
+    organism; NCBI retains Cyanothece sp. ATCC 51142 as an equivalent name of Crocosphaera
+    subtropica ATCC 51142. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=43989&retmode=xml.
+    Stored carbohydrate, nitrogen fixation and granule abundance are not ingredient
+    doses or direct growth-rate measurements. Bibliography authors follow the publisher
+    contributor list and matching Crossref metadata. PubMed XML additionally contains
+    the literal CollectiveName New Collective Author; a fresh fetch reproduced it.
+    That unresolved metadata discrepancy is retained here, not silently treated as
+    an upstream correction. publisher_source=https://journals.asm.org/doi/10.1128/jb.176.6.1586-1597.1994;
+    locator=contributor list; publisher_extraction=references_cache/papers/primary_extractions/schneegurt-1994-publisher-web.json;
+    publisher_markdown=references_cache/papers/primary_extractions/schneegurt-1994-publisher-web.md.
+    This archive is a browser-tool landing-page extraction, not original HTML or a
+    full paper PDF. Original PDF retrieval failed; unverified body-text leads are
+    not formulation evidence here. Taxonomy archive=references_cache/papers/taxonomy/cyanobacterial-studies-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/cyanobacterial-studies-20261013.md.
+    Bounded lookup misses do not prove taxon absence. Organism inventory is limited
+    to inspected abstract passages, not the inaccessible full paper. Correction/retraction
+    coverage is limited to inspected publication metadata. Existing related-media
+    candidates were checked without asserting exact formulation equivalence. All prior
+    ingredients, quantities, preparation and history remain unchanged and uncertified
+    by this citation. No new native growth assertion, concentration evidence or resolved
+    variant.

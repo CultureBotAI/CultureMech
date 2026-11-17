@@ -344,13 +344,18 @@
                 transition-duration:.01ms!important;scroll-behavior:auto!important;}
         }
 
+        .page-layout { max-width: 1700px; margin: 0 auto; display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 20px; align-items: start; }
+        .facet-sidebar { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; }
+        .facet-sidebar .facets { margin: 0; }
+        .facet-sidebar .facet-groups { flex-direction: column; gap: 1rem; }
+        .main-column { min-width: 0; }
         .container { grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
         .plot-panel { min-width: 0; overflow-wrap: anywhere; }
         .plot-panel svg { width: 100%; height: auto; }
         .plot-panel input { max-width: 100%; }
         .filter-container { flex-wrap: wrap; }
         .snapshot-note { max-width: 65rem; margin: .5rem auto; overflow-wrap: anywhere; }
-        @media (max-width: 1100px) { .container { grid-template-columns: minmax(0, 1fr); } }
+        @media (max-width: 1100px) { .page-layout { grid-template-columns: minmax(0, 1fr); } .facet-sidebar { position: static; max-height: none; } .container { grid-template-columns: minmax(0, 1fr); } }
         @media (max-width: 600px) { body { padding: 12px; } .plot-panel { padding: 12px; } header h1 { font-size: 1.6rem; } }
     </style>
 </head>
@@ -360,8 +365,21 @@
         <p>Retained media and stock-solution maps</p><p class="snapshot-note">These are historical coordinate snapshots retained in the repository as of 2026-10-05; the original embedding generation date is not recorded. Each panel covers only the records with coordinates in its own embedding dataset, not the current browser corpus. Missing points do not imply missing recipes or biological similarity. Use the browser for current record coverage.</p>
         <a href="index.html" class="nav-link">Home</a>
         <a href="browser.html" class="nav-link">← Back to Media Browser</a>
+        <a href="text_map.html" class="nav-link">Text Map</a>
+        <a href="umap.html" class="nav-link">Media PaCMAP</a>
+        <a href="umap_graph.html" class="nav-link">Media Graph</a>
+        <a href="ingredient_umap.html" class="nav-link">Ingredient PaCMAP</a>
+        <a href="schema.html" class="nav-link">Schema</a>
+        <a href="https://culturebotai.github.io/mechs/" class="nav-link">All Mech projects</a>
     </header>
 
+    <div class="page-layout">
+    <aside class="facet-sidebar" aria-label="Facet filters">
+        <!-- Category facet panel: filters points in BOTH plots by category -->
+        <div class="facets" id="facet-panel"></div>
+    </aside>
+
+    <div class="main-column">
     <div class="container">
         <!-- Left Panel: Derived Embeddings -->
         <div class="plot-panel">
@@ -426,9 +444,6 @@
         </div>
     </div>
 
-    <!-- Category facet panel: filters points in BOTH plots by category -->
-    <div class="facets" id="facet-panel"></div>
-
     <!-- Accessible, keyboard-reachable data-table fallback (dataviz #10) -->
     <details class="data-table-details">
         <summary>View data as table</summary>
@@ -444,6 +459,8 @@
             </table>
         </div>
     </details>
+    </div>
+    </div>
 
     <div class="tooltip" id="tooltip"></div>
 
@@ -692,9 +709,31 @@
 
         buildFacets();
 
+        function syncQueryParam(q) {
+            try {
+                const url = new URL(window.location.href);
+                if (q) url.searchParams.set('q', q); else url.searchParams.delete('q');
+                window.history.replaceState({}, '', url.toString());
+            } catch (_e) {}
+        }
+
         // Search: recompose filters for the affected panel.
-        d3.select("#search-derived").on("input", () => applyPanelFilters(derivedComponents));
-        d3.select("#search-direct").on("input", () => applyPanelFilters(directComponents));
+        d3.select("#search-derived").on("input", function() {
+            syncQueryParam(this.value.trim());
+            applyPanelFilters(derivedComponents);
+        });
+        d3.select("#search-direct").on("input", function() {
+            syncQueryParam(this.value.trim());
+            applyPanelFilters(directComponents);
+        });
+
+        try {
+            const urlQ = new URLSearchParams(window.location.search).get('q');
+            if (urlQ) {
+                document.getElementById('search-derived').value = urlQ;
+                document.getElementById('search-direct').value = urlQ;
+            }
+        } catch (_e) {}
 
         // Entity-type filter buttons: update panel state then recompose.
         document.querySelectorAll('.filter-btn').forEach(btn => {

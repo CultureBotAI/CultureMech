@@ -411,6 +411,47 @@ curation_history:
     ingredients[8].concentration: {"unit": "G_PER_L", "value": "0.005"} -> {"unit":
     "G_PER_L", "value": "0.005"} (evidence_only); ingredients[9].concentration: {"unit":
     "G_PER_L", "value": "15"} -> {"unit": "G_PER_L", "value": "15"} (evidence_only)'
+- timestamp: '2026-11-17T00:07:06.297511+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "70c9a60e78318dadf34e18aa0c80cbc6740241207f20999985cdb140e0826f14",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/beijerinckia_medium_lmg_18.yaml",
+    "recipe_id": "CultureMech:001213", "variants": [{"append_mentions": [{"held_fields":
+    ["SOURCE_CLAIM"], "reason": "Exact1979 Brierley/Thornton primary full Methods
+    remain subscription-only. Abstract does not verify the local ingredient/omission
+    quantities; preserve literal labels without approving the claim.", "reported_action":
+    "REMOVE", "source_label": "CaCO3", "source_modification_index": 0, "source_text":
+    "CaCO3 omitted relative to standard Becking medium.", "stage": "reported Becking
+    pH5 variant"}, {"held_fields": ["SOURCE_CLAIM"], "reason": "Exact1979 Brierley/Thornton
+    primary full Methods remain subscription-only. Abstract does not verify the local
+    ingredient/omission quantities; preserve literal labels without approving the
+    claim.", "reported_action": "UNSPECIFIED", "source_label": "glucose", "source_modification_index":
+    2, "source_text": "Base recipe context: glucose 20 g/L, KH2PO4 1.0 g/L, MgSO4.7H2O
+    0.5 g/L (CaCO3 2.0 g/L before omission); soil cultures 21 d at 30C.", "stage":
+    "reported Becking pH5 variant"}, {"held_fields": ["SOURCE_CLAIM"], "reason": "Exact1979
+    Brierley/Thornton primary full Methods remain subscription-only. Abstract does
+    not verify the local ingredient/omission quantities; preserve literal labels without
+    approving the claim.", "reported_action": "UNSPECIFIED", "source_label": "KH2PO4",
+    "source_modification_index": 2, "source_text": "Base recipe context: glucose 20
+    g/L, KH2PO4 1.0 g/L, MgSO4.7H2O 0.5 g/L (CaCO3 2.0 g/L before omission); soil
+    cultures 21 d at 30C.", "stage": "reported Becking pH5 variant"}, {"held_fields":
+    ["SOURCE_CLAIM"], "reason": "Exact1979 Brierley/Thornton primary full Methods
+    remain subscription-only. Abstract does not verify the local ingredient/omission
+    quantities; preserve literal labels without approving the claim.", "reported_action":
+    "UNSPECIFIED", "source_label": "MgSO4.7H2O", "source_modification_index": 2, "source_text":
+    "Base recipe context: glucose 20 g/L, KH2PO4 1.0 g/L, MgSO4.7H2O 0.5 g/L (CaCO3
+    2.0 g/L before omission); soil cultures 21 d at 30C.", "stage": "reported Becking
+    pH5 variant"}, {"held_fields": ["SOURCE_CLAIM"], "reason": "Exact1979 Brierley/Thornton
+    primary full Methods remain subscription-only. Abstract does not verify the local
+    ingredient/omission quantities; preserve literal labels without approving the
+    claim.", "reported_action": "REMOVE", "source_label": "CaCO3", "source_modification_index":
+    2, "source_text": "Base recipe context: glucose 20 g/L, KH2PO4 1.0 g/L, MgSO4.7H2O
+    0.5 g/L (CaCO3 2.0 g/L before omission); soil cultures 21 d at 30C.", "stage":
+    "reported Becking pH5 variant"}], "variant_index": 0, "variant_name": "becking_medium_ph5_no_caco3"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Beijerinckia lactocogenes
@@ -443,6 +484,61 @@ variants:
       pH 5) for Beijerinckia culturing.
     snippet: the same medium without CaCO3 adjusted to pH 5 was used for culturing
       of Beijerinckia-type organisms.
+  ingredient_mentions:
+  - source_label: CaCO3
+    reported_action: REMOVE
+    stage: reported Becking pH5 variant
+    source_modification_index: 0
+    source_text: CaCO3 omitted relative to standard Becking medium.
+    reason: Exact1979 Brierley/Thornton primary full Methods remain subscription-only.
+      Abstract does not verify the local ingredient/omission quantities; preserve
+      literal labels without approving the claim.
+    held_fields:
+    - SOURCE_CLAIM
+  - source_label: glucose
+    reported_action: UNSPECIFIED
+    stage: reported Becking pH5 variant
+    source_modification_index: 2
+    source_text: 'Base recipe context: glucose 20 g/L, KH2PO4 1.0 g/L, MgSO4.7H2O
+      0.5 g/L (CaCO3 2.0 g/L before omission); soil cultures 21 d at 30C.'
+    reason: Exact1979 Brierley/Thornton primary full Methods remain subscription-only.
+      Abstract does not verify the local ingredient/omission quantities; preserve
+      literal labels without approving the claim.
+    held_fields:
+    - SOURCE_CLAIM
+  - source_label: KH2PO4
+    reported_action: UNSPECIFIED
+    stage: reported Becking pH5 variant
+    source_modification_index: 2
+    source_text: 'Base recipe context: glucose 20 g/L, KH2PO4 1.0 g/L, MgSO4.7H2O
+      0.5 g/L (CaCO3 2.0 g/L before omission); soil cultures 21 d at 30C.'
+    reason: Exact1979 Brierley/Thornton primary full Methods remain subscription-only.
+      Abstract does not verify the local ingredient/omission quantities; preserve
+      literal labels without approving the claim.
+    held_fields:
+    - SOURCE_CLAIM
+  - source_label: MgSO4.7H2O
+    reported_action: UNSPECIFIED
+    stage: reported Becking pH5 variant
+    source_modification_index: 2
+    source_text: 'Base recipe context: glucose 20 g/L, KH2PO4 1.0 g/L, MgSO4.7H2O
+      0.5 g/L (CaCO3 2.0 g/L before omission); soil cultures 21 d at 30C.'
+    reason: Exact1979 Brierley/Thornton primary full Methods remain subscription-only.
+      Abstract does not verify the local ingredient/omission quantities; preserve
+      literal labels without approving the claim.
+    held_fields:
+    - SOURCE_CLAIM
+  - source_label: CaCO3
+    reported_action: REMOVE
+    stage: reported Becking pH5 variant
+    source_modification_index: 2
+    source_text: 'Base recipe context: glucose 20 g/L, KH2PO4 1.0 g/L, MgSO4.7H2O
+      0.5 g/L (CaCO3 2.0 g/L before omission); soil cultures 21 d at 30C.'
+    reason: Exact1979 Brierley/Thornton primary full Methods remain subscription-only.
+      Abstract does not verify the local ingredient/omission quantities; preserve
+      literal labels without approving the claim.
+    held_fields:
+    - SOURCE_CLAIM
 references:
 - reference: https://mediadive.dsmz.de/rest/medium/1736
   title: 'MediaDive medium 1736: BEIJERINCKIA MEDIUM (LMG 18)'

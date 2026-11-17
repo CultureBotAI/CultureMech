@@ -48,6 +48,12 @@ def build_parser() -> argparse.ArgumentParser:
         help="Ingredient list TSV (default: ingredients_list.tsv beside --occurrences-output).",
     )
     parser.add_argument(
+        "--changes-output",
+        type=Path,
+        default=None,
+        help="Lossless variant change TSV (default: variant_ingredient_changes.tsv beside occurrences).",
+    )
+    parser.add_argument(
         "--min-occurrences",
         type=int,
         default=1,
@@ -68,6 +74,7 @@ def main(argv: list[str] | None = None) -> int:
         unmapped_output=args.unmapped_output,
         errors_output=args.errors_output,
         list_output=args.list_output,
+        changes_output=args.changes_output,
         min_occurrences=args.min_occurrences,
         verbose=args.verbose,
     )

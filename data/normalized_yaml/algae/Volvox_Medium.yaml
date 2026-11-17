@@ -337,12 +337,188 @@ curation_history:
   notes: UTEX prepares Volvox Medium at pH 8.0 from calcium nitrate, magnesium sulfate,
     sodium glycerophosphate, potassium chloride, glycylglycine, P-IV Metal Solution,
     Vitamin B12, and Biotin Vitamin Solution.
+- timestamp: '2026-10-14T05:57:54.705159+00:00'
+  curator: codex
+  action: ADDED_POLYTOMELLA_VOLVOX_LITERATURE_CITATIONS
+  notes: Added archived publication metadata, exact cultivation excerpts and qualified
+    scientific-name/NCBI rank mappings. These are named-medium bibliography links,
+    not certification of the exact local formulation. Unresolved chemical forms, percentage
+    bases, base-recipe details and strain identities remain in citation notes. No
+    native growth assertion, concentration change or resolved variant; all previous
+    fields and claims are preserved. No export or publication.
+  source: doi:10.1093/molbev/msq110; doi:10.1093/gbe/evv027; doi:10.1104/pp.16.01628
+  changes: Added 3 bibliography entries with source archive/Markdown paths; no variants,
+    target organisms, concentration evidence or amount changes.
 references:
 - reference: UTEX:volvox-medium
 - reference: https://utex.org/products/volvox-medium
 - reference: https://utex.org/products/p-iv-metal-solution
 - reference: https://utex.org/products/vitamin-b-12
 - reference: https://utex.org/products/biotin-vitamin-solution
+- reference: doi:10.1093/molbev/msq110
+  title: Low nucleotide diversity for the expanded organelle and nuclear genomes of
+    Volvox carteri supports the mutational-hazard hypothesis.
+  authors: Smith DR; Lee RW
+  year: 2010
+  notes: source_type=journal_article; discovery_mode=primary_literature_followup;
+    accessed_on=2026-10-14; PMID:20430860; source_url=https://www.arrogantgenome.com/wp-content/uploads/2013/12/Volvox_carteri_diversity.pdf;
+    raw_archive=references_cache/papers/primary_pdf/volvox-2010-author-egjm-bristol-followup-20261014.pdf;
+    markdown_archive=references_cache/papers/primary_pdf/volvox-2010-author-egjm-bristol-followup-20261014.md;
+    access_scope=full primary article; bounded cultivation passages, not a whole-paper
+    organism inventory; locator=PDF page 3, printed 2246, Materials and Methods /
+    Strains and Culture Conditions and Table 1; exact excerpt="The V. carteri strains
+    were grown in Volvox medium"; This is a named Volvox-medium literature citation,
+    not proof that the study used this exact source-specific formulation. The current
+    SAG and UTEX recipes differ in mineral stock additions and vitamins; do not collapse
+    them into one exact formula. The paper cites Provasoli and Pintner (1960) for
+    Volvox medium without reproducing its formula. Eight Table 1 strains include the
+    UTEX 2908 derivative used for sequence verification; the population comparison
+    uses seven independent geographical isolates. The study conditions are not universal
+    parent requirements. Original base chapter details and correspondence to the current
+    SAG/UTEX stock and vitamin encodings remain unresolved. Reported scientific name=Volvox
+    carteri f. nagariensis; strain=UTEX 2908; canonical scientific name=Volvox carteri
+    f. nagariensis; NCBITaxon:3068; actual rank=forma; taxonomy_match=exact_name_at_forma_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3068; lookup_date=2026-10-14;
+    source_scope=Table 1 strains and shared Volvox cultivation paragraph; disposition=citation_note_only;
+    exact local recipe match unresolved. NCBI rank is forma, not species or strain.
+    UTEX 2908 is a dissociator derivative of UTEX 1885 used for sequence verification;
+    eight table rows do not represent eight independent geographical isolates. Reported
+    scientific name=Volvox carteri f. nagariensis; strain=UTEX 1885; canonical scientific
+    name=Volvox carteri f. nagariensis; NCBITaxon:3068; actual rank=forma; taxonomy_match=exact_name_at_forma_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3068; lookup_date=2026-10-14;
+    source_scope=Table 1 strains and shared Volvox cultivation paragraph; disposition=citation_note_only;
+    exact local recipe match unresolved. NCBI rank is forma, not species or strain.
+    UTEX 2908 is a dissociator derivative of UTEX 1885 used for sequence verification;
+    eight table rows do not represent eight independent geographical isolates. Reported
+    scientific name=Volvox carteri f. nagariensis; strain=UTEX 2864; canonical scientific
+    name=Volvox carteri f. nagariensis; NCBITaxon:3068; actual rank=forma; taxonomy_match=exact_name_at_forma_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3068; lookup_date=2026-10-14;
+    source_scope=Table 1 strains and shared Volvox cultivation paragraph; disposition=citation_note_only;
+    exact local recipe match unresolved. NCBI rank is forma, not species or strain.
+    UTEX 2908 is a dissociator derivative of UTEX 1885 used for sequence verification;
+    eight table rows do not represent eight independent geographical isolates. Reported
+    scientific name=Volvox carteri f. nagariensis; strain=UTEX 2903; canonical scientific
+    name=Volvox carteri f. nagariensis; NCBITaxon:3068; actual rank=forma; taxonomy_match=exact_name_at_forma_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3068; lookup_date=2026-10-14;
+    source_scope=Table 1 strains and shared Volvox cultivation paragraph; disposition=citation_note_only;
+    exact local recipe match unresolved. NCBI rank is forma, not species or strain.
+    UTEX 2908 is a dissociator derivative of UTEX 1885 used for sequence verification;
+    eight table rows do not represent eight independent geographical isolates. Reported
+    scientific name=Volvox carteri f. nagariensis; strain=NIES 397; canonical scientific
+    name=Volvox carteri f. nagariensis; NCBITaxon:3068; actual rank=forma; taxonomy_match=exact_name_at_forma_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3068; lookup_date=2026-10-14;
+    source_scope=Table 1 strains and shared Volvox cultivation paragraph; disposition=citation_note_only;
+    exact local recipe match unresolved. NCBI rank is forma, not species or strain.
+    UTEX 2908 is a dissociator derivative of UTEX 1885 used for sequence verification;
+    eight table rows do not represent eight independent geographical isolates. Reported
+    scientific name=Volvox carteri f. nagariensis; strain=NIES 398; canonical scientific
+    name=Volvox carteri f. nagariensis; NCBITaxon:3068; actual rank=forma; taxonomy_match=exact_name_at_forma_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3068; lookup_date=2026-10-14;
+    source_scope=Table 1 strains and shared Volvox cultivation paragraph; disposition=citation_note_only;
+    exact local recipe match unresolved. NCBI rank is forma, not species or strain.
+    UTEX 2908 is a dissociator derivative of UTEX 1885 used for sequence verification;
+    eight table rows do not represent eight independent geographical isolates. Reported
+    scientific name=Volvox carteri f. nagariensis; strain=Isanuma F; canonical scientific
+    name=Volvox carteri f. nagariensis; NCBITaxon:3068; actual rank=forma; taxonomy_match=exact_name_at_forma_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3068; lookup_date=2026-10-14;
+    source_scope=Table 1 strains and shared Volvox cultivation paragraph; disposition=citation_note_only;
+    exact local recipe match unresolved. NCBI rank is forma, not species or strain.
+    UTEX 2908 is a dissociator derivative of UTEX 1885 used for sequence verification;
+    eight table rows do not represent eight independent geographical isolates. Reported
+    scientific name=Volvox carteri f. nagariensis; strain=Isanuma M; canonical scientific
+    name=Volvox carteri f. nagariensis; NCBITaxon:3068; actual rank=forma; taxonomy_match=exact_name_at_forma_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3068; lookup_date=2026-10-14;
+    source_scope=Table 1 strains and shared Volvox cultivation paragraph; disposition=citation_note_only;
+    exact local recipe match unresolved. NCBI rank is forma, not species or strain.
+    UTEX 2908 is a dissociator derivative of UTEX 1885 used for sequence verification;
+    eight table rows do not represent eight independent geographical isolates. Taxonomy
+    names/ranks were checked against the archived NCBI response at references_cache/papers/taxonomy/polytomella-volvox-20261014.xml.
+    A species/forma name match is not an exact strain identification. Formulation
+    disposition=unresolved_exact_match; differences and unspecified fields remain
+    in these citation notes. No resolved inline or linked variant, canonical concentration
+    change, positive target_organisms entry, or growth metric is added. Existing record
+    claims and optional variants are preserved, not comprehensively recertified. The
+    archived PubMed notice list is empty; not a claim of exhaustive notice discovery.
+- reference: doi:10.1093/gbe/evv027
+  title: Massive and widespread organelle genomic expansion in the green algal genus
+    Dunaliella.
+  authors: Del Vasto M; Figueroa-Martinez F; Featherston J; González MA; Reyes-Prieto
+    A; Durand PM; Smith DR
+  year: 2015
+  notes: source_type=journal_article; discovery_mode=primary_literature_followup;
+    accessed_on=2026-10-14; PMID:25663488; PMCID:PMC5322560; source_url=https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5322560/fullTextXML;
+    raw_archive=references_cache/papers/primary_xml/ccap-19-18-PMC5322560-20261014.xml;
+    markdown_archive=references_cache/papers/primary_xml/ccap-19-18-PMC5322560-20261014.md;
+    access_scope=full primary article; bounded cultivation passages, not a whole-paper
+    organism inventory; locator=JATS Materials and Methods, paragraph beginning Chlamydomonas
+    leiostraca SAG 11-49; exact excerpt="was grown in Volvox medium (Provasoli and
+    Pintner 1960)"; This is a named Volvox-medium literature citation, not proof that
+    the study used this exact source-specific formulation. The current SAG and UTEX
+    recipes differ in mineral stock additions and vitamins; do not collapse them into
+    one exact formula. Del Vasto et al. (2015) identify C. leiostraca SAG 11-49 culture
+    in Volvox medium citing Provasoli and Pintner (1960); their P. uvella UTEX 964
+    culture is in Polytoma medium, not Volvox. No detailed Volvox formula is restated.
+    Keep the distinct organisms, shaking conditions and study light cycle separate
+    from the 2017 paper. PubMed classifies this journal publication as a Letter. Reported
+    scientific name=Polytoma uvella; strain=UTEX 964; canonical scientific name=Polytoma
+    uvella; NCBITaxon:40532; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40532;
+    lookup_date=2026-10-14; source_scope=Polytomella medium in 2017; Polytoma medium
+    in 2015, not interchangeable wording; disposition=citation_note_only; exact local
+    recipe match unresolved. Reported scientific name=Chlamydomonas leiostraca; strain=SAG
+    11-49; canonical scientific name=Chlamydomonas leiostraca; NCBITaxon:1034604;
+    actual rank=species; taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1034604;
+    lookup_date=2026-10-14; source_scope=Volvox medium; separate from the P. uvella
+    culture; disposition=citation_note_only; exact local recipe match unresolved.
+    Taxonomy names/ranks were checked against the archived NCBI response at references_cache/papers/taxonomy/polytomella-volvox-20261014.xml.
+    A species/forma name match is not an exact strain identification. Formulation
+    disposition=unresolved_exact_match; differences and unspecified fields remain
+    in these citation notes. No resolved inline or linked variant, canonical concentration
+    change, positive target_organisms entry, or growth metric is added. Existing record
+    claims and optional variants are preserved, not comprehensively recertified. The
+    archived PubMed notice list is empty; not a claim of exhaustive notice discovery.
+- reference: doi:10.1104/pp.16.01628
+  title: The Plastid Genome of Polytoma uvella Is the Largest Known among Colorless
+    Algae and Plants and Reflects Contrasting Evolutionary Paths to Nonphotosynthetic
+    Lifestyles.
+  authors: Figueroa-Martinez F; Nedelcu AM; Smith DR; Reyes-Prieto A
+  year: 2017
+  notes: source_type=journal_article; discovery_mode=primary_literature_followup;
+    accessed_on=2026-10-14; PMID:27932420; PMCID:PMC5291040; source_url=https://www.arrogantgenome.com/wp-content/uploads/2013/12/Polytoma_ptDNA.pdf;
+    raw_archive=references_cache/papers/primary_pdf/polytoma-2017-author-egjm-bristol-followup-20261014.pdf;
+    markdown_archive=references_cache/papers/primary_pdf/polytoma-2017-author-egjm-bristol-followup-20261014.md;
+    access_scope=full primary article; bounded cultivation passages, not a whole-paper
+    organism inventory; locator=PDF page 10, printed 941, Materials and Methods /
+    Algal Cultures; exact excerpt="Cultures of Chlamydomonas leiostraca (strain SAG
+    11-49) were maintained in standard Volvox medium (Kirk et al., 1999)"; This is
+    a named Volvox-medium literature citation, not proof that the study used this
+    exact source-specific formulation. The current SAG and UTEX recipes differ in
+    mineral stock additions and vitamins; do not collapse them into one exact formula.
+    The study keeps P. uvella UTEX 964 in Polytomella medium and C. leiostraca SAG
+    11-49 in standard Volvox medium citing Kirk et al. (1999). Its Polytomella percentages
+    do not specify a w/v basis or acetate hydration. Its Volvox recipe is not reproduced.
+    Species, shaking and other study conditions must not be transferred between these
+    two cultures. The 2015 paper instead says Polytoma medium and reports a different
+    light cycle; neither wording nor condition is silently replaced. PubMed links
+    PMID:28377793 as CommentIn; its archived abstract identifies an evolutionary addendum,
+    not a cultivation correction. This limited notice check is not exhaustive. Reported
+    scientific name=Polytoma uvella; strain=UTEX 964; canonical scientific name=Polytoma
+    uvella; NCBITaxon:40532; actual rank=species; taxonomy_match=exact_name_at_species_rank;
+    lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40532;
+    lookup_date=2026-10-14; source_scope=Polytomella medium in 2017; Polytoma medium
+    in 2015, not interchangeable wording; disposition=citation_note_only; exact local
+    recipe match unresolved. Reported scientific name=Chlamydomonas leiostraca; strain=SAG
+    11-49; canonical scientific name=Chlamydomonas leiostraca; NCBITaxon:1034604;
+    actual rank=species; taxonomy_match=exact_name_at_species_rank; lookup_url=https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1034604;
+    lookup_date=2026-10-14; source_scope=Volvox medium; separate from the P. uvella
+    culture; disposition=citation_note_only; exact local recipe match unresolved.
+    Taxonomy names/ranks were checked against the archived NCBI response at references_cache/papers/taxonomy/polytomella-volvox-20261014.xml.
+    A species/forma name match is not an exact strain identification. Formulation
+    disposition=unresolved_exact_match; differences and unspecified fields remain
+    in these citation notes. No resolved inline or linked variant, canonical concentration
+    change, positive target_organisms entry, or growth metric is added. Existing record
+    claims and optional variants are preserved, not comprehensively recertified. Notice
+    metadata and the inspected commentary abstract are retained separately.
 original_name: Volvox Medium
 data_quality_flags:
 - has_ontology_mappings

@@ -112,6 +112,14 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-10-13T21:53:14.388328+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATIONS_WITH_SCOPED_NOTES
+  notes: Added verified bibliography, raw/Markdown archive links, excerpts and qualified
+    scientific-name/NCBI taxonomy notes. Preserved prior recipe values and history.
+    Study differences, import discrepancies and unresolved strain/formulation scope
+    remain explicit; no new native growth or concentration assertion.
+  source: PMID:5337843
 media_term:
   preferred_term: MediaDB Medium 134
   term:
@@ -124,3 +132,37 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+references:
+- reference: PMID:5337843
+  title: Glucose and gluconate metabolism in an Escherichia coli mutant lacking phosphoglucose
+    isomerase.
+  authors: Fraenkel DG; Levisohn SR
+  year: 1967
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=archived_PubMed_abstract; owner=MEDIADB:134;
+    discovery_sourceID=42; source_url=https://doi.org/10.1128/jb.93.5.1571-1578.1967;
+    alternate_identifier=doi:10.1128/jb.93.5.1571-1578.1967; alternate_identifier=PMC276651;
+    raw=references_cache/papers/PMID_5337843.xml; markdown=references_cache/papers/PMID_5337843.md;
+    PubMed abstract: parental strain; exact excerpt="Escherichia coli strain K-10".
+    The abstract distinguishes parental K-10 from its pgi mutant and carbon-source-specific
+    outcomes. MediaDB lists K-10 but does not by itself identify the mutant in each
+    assay. M63, its salts, chemical forms and amounts are not specified in the inspected
+    abstract; no complete local formulation is certified. Historical source-title
+    spellings ''eschericia'' and ''isolerase'' differ from the verified PubMed title;
+    the PMID, authors, year and study identity agree. Reported organism=Escherichia
+    coli K-10 and its pgi mutant; canonical scientific name=Escherichia coli; NCBITaxon:562;
+    actual rank=species; taxonomy_match=parent_rank_only; role=experimental organisms;
+    verified species parent, exact strain nodes unresolved. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/expression-metabolism-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/expression-metabolism-20261013.md.
+    The local M63 glucose/fructose/gluconate group differs in carbon source and amount.
+    Its glucose owner encodes 100 mM sodium dihydrogen phosphate versus 11 mM in the
+    fructose/gluconate owners. The latter two share their remaining six entries, but
+    the glucose recipe is not solely a carbon-source substitution. Source verification
+    is required before correction or resolved variant linkage. Inventory covers inspected
+    medium-relevant passages, not the whole paper or bibliography. Correction/retraction
+    coverage is limited to inspected metadata; bounded taxonomy misses do not prove
+    absence. Original ingredients, amounts, preparation, history and links are preserved,
+    not newly certified. No new native growth assertion, resolved variant or concentration
+    evidence.'

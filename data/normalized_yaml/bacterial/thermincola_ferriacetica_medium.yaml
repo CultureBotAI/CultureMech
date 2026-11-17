@@ -52,9 +52,10 @@ ingredients:
     id: CHEBI:86158
     label: calcium chloride dihydrate
   concentration:
-    value: '0.42640900000000004'
+    value: '0.327409'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.326409, 0.1]'
+  notes: Base medium CaCl2 x 2 H2O (0.326409 g/L) plus 1:100 diluted Wolin trace element
+    solution (0.001 g/L from 0.1 g/L stock added at 10 mL/L).
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -97,7 +98,7 @@ ingredients:
     id: CHEBI:44557
     label: nitrilotriacetic acid
   concentration:
-    value: '1.5'
+    value: '0.015'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
@@ -107,7 +108,7 @@ ingredients:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
   concentration:
-    value: '3'
+    value: '0.03'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
@@ -117,7 +118,7 @@ ingredients:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
   concentration:
-    value: '0.5'
+    value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
@@ -127,7 +128,7 @@ ingredients:
     id: CHEBI:26710
     label: sodium chloride
   concentration:
-    value: '1'
+    value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
@@ -137,7 +138,7 @@ ingredients:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
   concentration:
-    value: '0.1'
+    value: '0.001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
@@ -147,7 +148,7 @@ ingredients:
     id: CHEBI:91244
     label: cobalt(2+) sulfate heptahydrate
   concentration:
-    value: '0.18'
+    value: '0.0018'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91244
@@ -157,7 +158,7 @@ ingredients:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
   concentration:
-    value: '0.18'
+    value: '0.0018'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
@@ -167,7 +168,7 @@ ingredients:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
   concentration:
-    value: '0.01'
+    value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
@@ -177,7 +178,7 @@ ingredients:
     id: CHEBI:86465
     label: potassium aluminium sulfate dodecahydrate
   concentration:
-    value: '0.02'
+    value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86465
@@ -187,7 +188,7 @@ ingredients:
     id: CHEBI:33118
     label: boric acid
   concentration:
-    value: '0.01'
+    value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
@@ -197,7 +198,7 @@ ingredients:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
   concentration:
-    value: '0.01'
+    value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
@@ -207,7 +208,7 @@ ingredients:
     id: CHEBI:34887
     label: nickel dichloride
   concentration:
-    value: '0.03'
+    value: '0.0003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
@@ -217,7 +218,7 @@ ingredients:
     id: CHEBI:131361
     label: disodium selenite pentahydrate
   concentration:
-    value: '0.0003'
+    value: '0.000003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131361
@@ -227,7 +228,7 @@ ingredients:
     id: CHEBI:63939
     label: sodium tungstate dihydrate
   concentration:
-    value: '0.0004'
+    value: '0.000004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
@@ -237,7 +238,7 @@ ingredients:
     id: CHEBI:15956
     label: biotin
   concentration:
-    value: '0.02'
+    value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
@@ -247,7 +248,7 @@ ingredients:
     id: CHEBI:27470
     label: folic acid
   concentration:
-    value: '0.02'
+    value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
@@ -257,7 +258,7 @@ ingredients:
     id: CHEBI:30961
     label: pyridoxine hydrochloride
   concentration:
-    value: '0.1'
+    value: '0.001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
@@ -267,7 +268,7 @@ ingredients:
     id: CHEBI:49105
     label: thiamine hydrochloride
   concentration:
-    value: '0.05'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
@@ -277,7 +278,7 @@ ingredients:
     id: CHEBI:17015
     label: riboflavin
   concentration:
-    value: '0.05'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
@@ -287,24 +288,27 @@ ingredients:
     id: CHEBI:15940
     label: nicotinic acid
   concentration:
-    value: '0.05'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15940
     label: nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
-    value: '0.05'
+    value: '0.0005'
     unit: G_PER_L
   term:
     id: CHEBI:31345
-    label: Calcium pantothenate
+    label: calcium pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: calcium pantothenate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:176843
     label: vitamin B12
   concentration:
-    value: '0.001'
+    value: '0.00001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:176843
@@ -314,7 +318,7 @@ ingredients:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
   concentration:
-    value: '0.05'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
@@ -324,7 +328,7 @@ ingredients:
     id: CHEBI:16494
     label: lipoic acid
   concentration:
-    value: '0.05'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16494
@@ -388,11 +392,20 @@ curation_history:
   changes: Re-rooted KOMODO Medium 962 Thermincola exact topology
   source: DSMZ Medium 962; KOMODO Medium 962, 962.1
   notes: Moved exact KOMODO Medium 962 and its strain wrapper under DSMZ Medium 962.
+- timestamp: '2026-10-21T03:02:37.754040+00:00'
+  curator: stage5-remediation-v1.0
+  action: CURATED
+  notes: 'Resolved Stage 4 findings CM-C1S4-009 and CM-C1S4-010 on CultureMech:002142
+    (Issues #634, #635, #645).'
+  changes: 'Applied 1/1000 trace-element and vitamin stock dilution factors, consolidated
+    CaCl2 x 2 H2O (0.327409 G_PER_L in DSMZ 962/962a; 0.0988142 G_PER_L in DSMZ 1255),
+    normalized canonical OBO ChEBI labels across all mapped ingredients, and synchronized
+    parent/child variant topology (#634, #635, #645).'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_962_THERMOVENABULUM_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006919
-  name: KOMODO_962_THERMOVENABULUM_medium
+  name: thermovenabulum_medium_dsmz_962
   notes: KOMODO Medium 962 has the same 33-ingredient signature as DSMZ Medium 962.
 - path: data/normalized_yaml/bacterial/for_dsm_14005.yaml
   relationship: STRAIN_SPECIFIC_VARIANT

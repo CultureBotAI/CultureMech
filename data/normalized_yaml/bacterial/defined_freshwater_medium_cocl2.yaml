@@ -434,6 +434,23 @@ curation_history:
   notes: Restored the medium's own name in media_term.term.label, original_name. The
     MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
     recovered from media_database.07Oct2015.sql.
+- timestamp: '2026-10-13T17:38:49.917565+00:00'
+  curator: codex
+  action: ADDED_PAPER_CITATION_WITH_SCOPED_NOTES
+  notes: Added verified paper bibliography, raw/Markdown source provenance, exact
+    excerpts and qualified scientific-name/NCBI mappings. Preserved recipe, assay
+    and taxonomy conflicts. Existing fields, variant links and history unchanged;
+    no new native growth, concentration evidence or resolved variant.
+  source: PMID:19772637
+- timestamp: '2026-10-14T01:06:41.461765+00:00'
+  curator: codex
+  action: CURATED_PAPER_CITATIONS_AND_PROVENANCE
+  notes: Added or enriched verified paper citations and source archive/Markdown links;
+    recorded bounded formulation and organism assessments, corrected alias/correction
+    dispositions, and consolidated only verified duplicate bibliography entries. Preserved
+    prior recipe fields, evidence, links and history. No new growth, concentration
+    or resolved-variant claim. Whitchurch review is non-operational identity only.
+  source: PMID:8387263
 media_term:
   preferred_term: MediaDB Medium 390
   term:
@@ -445,3 +462,96 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+references:
+- reference: PMID:19772637
+  title: Genome-scale comparison and constraint-based metabolic reconstruction of
+    the facultative anaerobic Fe(III)-reducer Rhodoferax ferrireducens.
+  authors: Risso C; Sun J; Zhuang K; Mahadevan R; DeBoy R; Ismail W; Shrivastava S;
+    Huot H; Kothari S; Daugherty S; Bui O; Schilling CH; Lovley DR; Methé BA
+  year: 2009
+  notes: 'source_type=journal_article; discovery_mode=MediaDB_source_cross_reference;
+    accessed_on=2026-10-13; source_access=deposited_full_XML_selected_methods_and_model_passages;
+    owner=MEDIADB:390; discovery_sourceID=139; source_url=https://doi.org/10.1186/1471-2164-10-447;
+    alternate_identifier=doi:10.1186/1471-2164-10-447; alternate_identifier=PMC2755013;
+    raw=references_cache/papers/PMID_19772637.xml; markdown=references_cache/papers/PMID_19772637.md;
+    full_raw=references_cache/papers/primary_xml/pmc2755013-20261013.xml; full_markdown=references_cache/papers/primary_xml/pmc2755013-20261013.md;
+    Methods/Bacterial strains and culturing conditions; exact excerpt="A defined freshwater
+    medium was used to culture and propagate this bacterium". Methods/Estimation of
+    energy parameters; exact excerpt="three independent experiments". Formulation_unresolved:
+    The two 39-ingredient freshwater owners combine multiple alternative electron
+    donors and acceptors. Methods and the independent-experiment statement do not
+    establish that all were added together. Cobalt sulfate versus cobalt chloride
+    and all inherited base quantities remain unresolved. No composite-assay recipe
+    is certified. Selected full-XML methods and model sections inspected, not figures/supplements.
+    Base reference 51 is Lovley 1993 PMID:8387263, doi:10.1007/BF00290916; verified
+    archived abstract does not enumerate the freshwater formula. HPLC eluents, isotonic
+    wash, SDS lysis and model flux constraints must remain separate from medium. Reported
+    organism=Rhodoferax ferrireducens DMS 15236 (ATCC BAA-621); canonical scientific
+    name=Rhodoferax ferrireducens T118; NCBITaxon:338969; actual rank=strain; taxonomy_match=verified_ATCC_strain_synonym;
+    role=study organism; source DMS spelling preserved, not silently corrected. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=338969&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    The returned strain node also lists DSM 15236; matching is justified by ATCC BAA-621.
+    Reported organism=Escherichia coli; canonical scientific name=Escherichia coli;
+    NCBITaxon:562; actual rank=species; taxonomy_match=species_name; role=model template/comparator,
+    not growth on this owner. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=562&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Reported organism=Geobacter sulfurreducens; canonical scientific name=Geobacter
+    sulfurreducens; NCBITaxon:35554; actual rank=species; taxonomy_match=species_name;
+    role=model template/comparator, not growth on this owner. Lookup_on=2026-10-13;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=35554&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Reported organism=Bacillus subtilis; canonical scientific name=Bacillus subtilis;
+    NCBITaxon:1423; actual rank=species; taxonomy_match=species_name; role=biomass/model
+    comparison, not growth on this owner. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1423&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-study-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-study-candidates-20261013.md.
+    Reported organism=bovine serum albumin; canonical scientific name=Bos taurus;
+    NCBITaxon:9913; actual rank=species; taxonomy_match=species_material_origin; role=Bos
+    taurus analytical material, not a cultured target. Lookup_on=2026-10-13; https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=9913&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/environmental-additional-candidates-20261013.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/environmental-additional-candidates-20261013.md.
+    Bounded lookup misses do not prove taxon absence. Organism inventory covers inspected
+    medium-relevant passages, not the entire paper. Images and supplements have not
+    been verified. Correction/retraction coverage is limited to inspected publication
+    metadata. Related-media candidates were searched without asserting exact formulation
+    equivalence. All prior ingredients, quantities, preparation, variant links and
+    history remain unchanged and uncertified by this citation. No new native growth
+    assertion, concentration evidence or resolved variant.'
+- reference: PMID:8387263
+  title: Geobacter metallireducens gen. nov. sp. nov., a microorganism capable of
+    coupling the complete oxidation of organic compounds to the reduction of iron
+    and other metals.
+  authors: Lovley DR; Giovannoni SJ; White DC; Champine JE; Phillips EJ; Gorby YA;
+    Goodwin S
+  year: 1993
+  notes: source_type=journal_article; discovery_mode=cited_base_protocol_or_notice;
+    accessed_on=2026-10-14; source_access=PubMed_abstract_not_full_text; doi=10.1007/BF00290916;
+    pmid=8387263; raw=references_cache/papers/PMID_8387263.xml; markdown=references_cache/papers/PMID_8387263.md;
+    Source-link proof=reports/paper_citation_curation/20261014-citation-frontier-resolution/prepared-sources.json#source_owner_links/8387263.  PubMed
+    abstract, opening; exact excerpt="strain GS-15". PubMed abstract, phylogenetic
+    comparison; exact excerpt="Desulfuromonas acetoxidans". Reported organism/group=Geobacter
+    metallireducens GS-15; canonical scientific name=Geobacter metallireducens GS-15;
+    NCBITaxon:269799; actual rank=strain; taxonomy_match=verified_named_strain; role=organism
+    characterized in the cited base paper, not the current Rhodoferax study. Lookup_on=2026-10-14;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=269799&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-20261014.md.
+    Reported organism/group=Desulfuromonas acetoxidans; canonical scientific name=Desulfuromonas
+    acetoxidans; NCBITaxon:891; actual rank=species; taxonomy_match=exact_species;
+    role=phylogenetic comparator, not cultivation on this owner. Lookup_on=2026-10-14;
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=891&retmode=xml;
+    taxonomy_archive=references_cache/papers/taxonomy/citation-frontier-20261014.xml;
+    taxonomy_markdown=references_cache/papers/taxonomy/citation-frontier-20261014.md.
+    Citation role=cited_base_protocol. Risso 2009 reference 51 points to this paper
+    for defined freshwater medium. The abstract does not enumerate that recipe. It
+    cannot resolve the local cobalt chloride/sulfate alternatives, inherited amounts,
+    or the imported combination of separate electron-donor/acceptor experiments. No
+    base-paper organism or outcome is transferred to the Rhodoferax owner. Correction/retraction
+    coverage is limited to inspected publication metadata and identified notices,
+    not an exhaustive audit. No new native growth assertion, concentration evidence
+    or resolved variant. Prior ingredients, preparation, evidence, links and history
+    are preserved, not newly certified.

@@ -1,0 +1,125 @@
+authority: verified_closure
+entries:
+- cycle: 1
+  goal_evidence:
+    path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/evidence.yaml
+    sha256: a10907eb4a96adc166694ee37eedc99fafb144abaefd8abe0d130185470437fd
+  receipt_sha256: cf85d9e4326681fc8238114c401cdf821c0086d99cc43b991e5992970ddc6180
+  stage: 4
+  verification:
+    checks:
+    - bucket: pass
+      name: history
+      state: SUCCESS
+    - bucket: pass
+      name: consistency
+      state: SUCCESS
+    - bucket: pass
+      name: plausibility
+      state: SUCCESS
+    - bucket: pass
+      name: label-drift-report / label-correspondence
+      state: SUCCESS
+    - bucket: pass
+      name: Changed Python quality + wheel smoke
+      state: SUCCESS
+    - bucket: pass
+      name: validate
+      state: SUCCESS
+    - bucket: pass
+      name: vendored-sync
+      state: SUCCESS
+    - bucket: pass
+      name: Fast tests
+      state: SUCCESS
+    - bucket: pass
+      name: Full corpus and integration suite
+      state: SUCCESS
+    head_sha: e0016088c5dc263c3414d6d0bf4e3b4c269cd4e4
+    merge_commit_sha: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    merged_at: '2026-10-21T02:14:58Z'
+    pr_number: 632
+    status: merged
+    verified_at: '2026-10-21T02:24:29.091184+00:00'
+- cycle: 1
+  goal_evidence:
+    path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/evidence.yaml
+    sha256: 4df846ec65c3aaafc78a9cb379afa743aca8a5a42df197290a7b03da0738c41e
+  receipt_sha256: ecbd579e6da9d86c9a025fbd56a8c0ec8e1a30e025ca272292f8aaf7bd57f972
+  stage: 5
+  verification:
+    checks:
+    - bucket: pass
+      name: Fast tests
+      state: SUCCESS
+    - bucket: pass
+      name: Full corpus and integration suite
+      state: SUCCESS
+    - bucket: pass
+      name: consistency
+      state: SUCCESS
+    - bucket: pass
+      name: plausibility
+      state: SUCCESS
+    - bucket: pass
+      name: label-drift-report / label-correspondence
+      state: SUCCESS
+    - bucket: pass
+      name: Changed Python quality + wheel smoke
+      state: SUCCESS
+    - bucket: pass
+      name: validate
+      state: SUCCESS
+    - bucket: pass
+      name: history
+      state: SUCCESS
+    - bucket: pass
+      name: vendored-sync
+      state: SUCCESS
+    head_sha: cb07347bfee7480cd9001c93803474e1a81f7283
+    merge_commit_sha: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    merged_at: '2026-10-21T20:04:58Z'
+    pr_number: 654
+    status: merged
+    verified_at: '2026-10-21T20:08:55.813422+00:00'
+- cycle: 1
+  goal_evidence:
+    path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/evidence.yaml
+    sha256: 6fc6b255760e4dd166cce59f2cba06d44f429c49d6b43167fcc7030e9f2bdac2
+  receipt_sha256: d763281ff580e87c9a88969e1d063d953175cfa8df8371adf6bc72bdf0ce7fe0
+  stage: 6
+  verification:
+    checks:
+    - bucket: pass
+      name: plausibility
+      state: SUCCESS
+    - bucket: pass
+      name: label-drift-report / label-correspondence
+      state: SUCCESS
+    - bucket: pass
+      name: Changed Python quality + wheel smoke
+      state: SUCCESS
+    - bucket: pass
+      name: validate
+      state: SUCCESS
+    - bucket: pass
+      name: history
+      state: SUCCESS
+    - bucket: pass
+      name: consistency
+      state: SUCCESS
+    - bucket: pass
+      name: vendored-sync
+      state: SUCCESS
+    - bucket: pass
+      name: Fast tests
+      state: SUCCESS
+    - bucket: pass
+      name: Full corpus and integration suite
+      state: SUCCESS
+    head_sha: 0d360f41b29a1701bd8c642835e9907d6cbf1777
+    merge_commit_sha: 98c2c080ee1b68ab3961fbba0bd50cef81d458ef
+    merged_at: '2026-10-22T02:10:27Z'
+    pr_number: 655
+    status: merged
+    verified_at: '2026-10-22T02:20:25.477340+00:00'

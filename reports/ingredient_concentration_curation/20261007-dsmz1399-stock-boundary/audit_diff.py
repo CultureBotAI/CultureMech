@@ -91,6 +91,14 @@ UTEX_SOIL_SEAWATER_PLAN = PLAN.parent.parent / "20261010-utex-soil-seawater/plan
 UTEX_ORGANIC_FIVE_PLAN = PLAN.parent.parent / "20261010-utex-organic-five/plan.json"
 UTEX_SIX_BLENDS_PLAN = PLAN.parent.parent / "20261010-utex-six-blends/plan.json"
 UTEX_VOLVOCACEAN_BG11_PLAN = PLAN.parent.parent / "20261010-utex-volvocacean-bg11/plan-v2.json"
+PAPER_CITATION_PLAN = PLAN.parent.parent / "20261015-paper-citation-successors/plan.json"
+STAGE5_REMEDIATION_PLAN = (
+    PLAN.parent.parent / "20261021-stage5-review-remediation-successors/plan.json"
+)
+VARIANT_INGREDIENT_PLAN = PLAN.parent.parent / "20261116-variant-ingredient-occurrences/plan.json"
+VARIANT_COMPLETENESS_PLAN = (
+    PLAN.parent.parent / "20261116-variant-ingredient-completeness/plan.json"
+)
 counts = collections.Counter()
 
 
@@ -136,6 +144,26 @@ def provenance_counts(node):
 
 
 def invert_review(before, after, item):
+    if item.get("action") == "REGISTERED_VARIANT_COMPLETENESS_SUCCESSOR":
+        from audit_variant_completeness_successor import check
+
+        counts.update(check(before, after, item))
+        return
+    if item.get("action") == "REGISTERED_VARIANT_INGREDIENT_SUCCESSOR":
+        from audit_variant_ingredient_successor import check
+
+        counts.update(check(before, after, item))
+        return
+    if item.get("action") == "REGISTERED_STAGE5_REVIEW_REMEDIATION_SUCCESSOR":
+        from audit_stage5_review_remediation_successor import check
+
+        counts.update(check(before, after, item))
+        return
+    if item.get("action") == "REGISTERED_PAPER_CITATION_SUCCESSOR":
+        from audit_paper_citation_successor import check
+
+        counts.update(check(before, after, item))
+        return
     if item.get("action") == "CURATED_UTEX_VOLVOCACEAN_BG11_CONCENTRATION_EVIDENCE":
         from review_utex_volvocacean_bg11 import check
 
@@ -1492,6 +1520,10 @@ def review_plans():
         UTEX_ORGANIC_FIVE_PLAN,
         UTEX_SIX_BLENDS_PLAN,
         UTEX_VOLVOCACEAN_BG11_PLAN,
+        PAPER_CITATION_PLAN,
+        STAGE5_REMEDIATION_PLAN,
+        VARIANT_INGREDIENT_PLAN,
+        VARIANT_COMPLETENESS_PLAN,
     )
 
 

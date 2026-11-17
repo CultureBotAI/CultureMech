@@ -1,0 +1,2910 @@
+id: https://w3id.org/culturemech
+name: culturemech
+title: CultureMech - Microbial Growth Media Schema
+description: |
+  LinkML schema for modeling microbial culture media recipes and formulations.
+  Follows the dismech architecture pattern with descriptor classes for ontology grounding.
+
+license: BSD-3-Clause
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  culturemech: https://w3id.org/culturemech/
+  biolink: https://w3id.org/biolink/vocab/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  # Chemicals
+  CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+  # Organisms
+  NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+  # Media databases (authoritative sources)
+  DSMZ: https://mediadive.dsmz.de/medium/
+  TOGO: http://togodb.org/db/medium/
+  ATCC: https://www.atcc.org/products/
+  NCIT: http://purl.obolibrary.org/obo/NCIT_
+  # Algae culture collections
+  UTEX: https://utex.org/products/
+  CCAP: https://www.ccap.ac.uk/catalogue/strain-
+  SAG: https://sagdb.uni-goettingen.de/detailedList.php?str_number=
+  # Lab procedures
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  # Environmental conditions
+  ENVO: http://purl.obolibrary.org/obo/ENVO_
+  # Units
+  UO: http://purl.obolibrary.org/obo/UO_
+  # Anatomy (for tissue extracts)
+  UBERON: http://purl.obolibrary.org/obo/UBERON_
+  # Food products (peptone, yeast extract, wheat germ, etc.)
+  FOODON: http://purl.obolibrary.org/obo/FOODON_
+  # Upstream MediaDive compound URI (kept alongside CHEBI grounding on solution composition entries)
+  mediadive.compound: https://mediadive.dsmz.de/compound/
+  # References
+  PMID: http://www.ncbi.nlm.nih.gov/pubmed/
+  DOI: https://doi.org/
+  # Pathways
+  KEGG: https://www.genome.jp/entry/
+  EC: https://enzyme.expasy.org/EC/
+  # Data repositories
+  geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
+  sra: https://www.ncbi.nlm.nih.gov/sra/
+  # Genomic taxonomy
+  GTDB: https://gtdb.ecogenomic.org/genome?gid=
+  # Genome assemblies
+  RefSeq: https://www.ncbi.nlm.nih.gov/datasets/genome/
+  GenBank: https://www.ncbi.nlm.nih.gov/assembly/
+  BioSample: https://www.ncbi.nlm.nih.gov/biosample/
+  # Suppliers
+  sigma: https://www.sigmaaldrich.com/catalog/product/
+  thermofisher: https://www.thermofisher.com/order/catalog/product/
+
+default_prefix: culturemech
+default_range: string
+
+imports:
+  - linkml:types
+  # Shared, byte-identical Mech module: Discussion (knowledge gaps) + Dataset
+  # (+ DatasetTypeEnum/DatasetRepositoryEnum). Replaces the former local Dataset
+  # class + DatasetTypeEnum. Vendored + sha-pinned across the Mechs — claw#7.
+  - mech_shared
+  # MIM-authored ingredient role facet enums (NutritionalRoleEnum /
+  # PhysicochemicalRoleEnum / CellularMetabolicRoleEnum). Vendored + sha-pinned;
+  # source of truth lives in MediaIngredientMech#129 + #134. Referenced by the
+  # three faceted role slots on IngredientDescriptor.
+  - mim_roles
+
+# ================================================================
+# ROOT CLASS
+# ================================================================
+
+classes:
+  MediaRecipe:
+    class_uri: culturemech:MediaRecipe
+    description: >-
+      A complete growth medium formulation for culturing microorganisms.
+      This is the root entity - one per YAML file.
+    attributes:
+      id:
+        description: >-
+          Stable canonical external CultureMech identifier for this media recipe.
+          Immutable after issuance and never reused; lifecycle is published in
+          data/culturemech_recipe_catalog.tsv.
+        range: string
+        identifier: true
+        required: true
+        pattern: "^CultureMech:(?!000000)\\d{6}$"
+
+      id_lineage_token:
+        description: >-
+          Internal immutable lineage witness for legacy records that predate the
+          ID-assignment curation event. This is not an external identifier and
+          must never be copied to another record or changed after publication.
+        range: string
+        pattern: "^legacy:[0-9a-f]{64}$"
+
+      name:
+        description: Human-readable medium name (e.g., "LB Broth", "M9 Minimal Medium")
+        required: true
+        range: string
+
+      original_name:
+        description: >-
+          Original name from source database before filename sanitization.
+          May contain special characters like /, :, %, (, ), ', ", <, >, &, #, etc.
+          This field preserves the exact name as it appears in the source database.
+        range: string
+        required: false
+
+      category:
+        description: Broad category for organization
+        range: CategoryEnum
+        recommended: true
+
+      categories:
+        description: All categories this recipe appears in (for cross-category merges)
+        range: CategoryEnum
+        multivalued: true
+        comments:
+          - Used when recipes from different categories are merged based on identical ingredients
+          - Preserves all original category assignments
+
+      high_metal:
+        description: >-
+          Indicates media with total metal concentration above the 90th percentile threshold (≥1049.84 mM).
+          Metals include Fe, Cu, Zn, Mn, Co, Ni, Mo, Se, W, V, Cr, Ca, Mg, K, Na.
+          Based on automated concentration analysis of ingredient composition.
+        range: boolean
+        recommended: false
+        comments:
+          - Threshold computed from distribution of 9,599 media with detectable metal content
+          - Useful for identifying high-metal media for metal toxicity studies or bioremediation applications
+
+      high_ree:
+        description: >-
+          Indicates media with total rare earth element (REE) concentration above the 90th percentile threshold (≥1030.48 mM).
+          REEs include lanthanides (La, Ce, Pr, Nd, Pm, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, Lu) plus Sc and Y.
+          Based on automated concentration analysis of ingredient composition.
+        range: boolean
+        recommended: false
+        comments:
+          - Threshold computed from distribution of 9,130 media with detectable REE content
+          - Useful for identifying specialized media for REE extraction or bioaccumulation research
+
+      synonyms:
+        description: Alternate names from merged duplicate recipes
+        range: RecipeSynonym
+        multivalued: true
+        inlined_as_list: true
+        comments:
+          - Populated during merge process when duplicate recipes are consolidated
+          - Tracks all non-canonical names with their source provenance
+
+      merged_from:
+        description: Original recipe IDs that were merged into this record
+        range: string
+        multivalued: true
+        comments:
+          - List of recipe file IDs that were consolidated into this canonical record
+          - "Format: source_id_sanitized_name (e.g., TOGO_M3236_Luria_Bertani_LB_medium)"
+
+      merge_fingerprint:
+        description: SHA256 hash of ingredient set for deduplication tracking
+        range: string
+        comments:
+          - Generated from sorted list of CHEBI IDs and normalized ingredient names
+          - Includes both direct ingredients and solution compositions
+          - Order-independent, concentration-independent
+
+      chemical_fingerprint:
+        description: SHA256 hash using parent ingredients (hierarchy-aware)
+        range: string
+        comments:
+          - Treats chemical variants as equivalent (CaCl2·2H2O = CaCl2)
+          - Uses parent CHEBI IDs from MediaIngredientMech hierarchy
+          - Enables smart merging of hydrates, salt forms, and anhydrous variants
+          - Generated only when hierarchy enrichment is available
+
+      variant_fingerprint:
+        description: SHA256 hash preserving variant distinctions
+        range: string
+        comments:
+          - Keeps hydrates separate from anhydrous forms
+          - Uses parent CHEBI + variant type (HYDRATE, ANHYDROUS, SALT_FORM, etc.)
+          - Preserves important chemical specificity during merge
+          - Generated only when hierarchy enrichment is available
+
+      fingerprint_version:
+        description: Version of fingerprinting algorithm used
+        range: string
+        comments:
+          - Example "hierarchy-chemical-v1.0" or "original-v1.0"
+          - Enables tracking algorithm changes over time
+          - Used to determine which fingerprints are comparable
+
+      merge_metadata:
+        description: Metadata about merge process and quality
+        range: MergeMetadata
+        inlined: true
+        comments:
+          - Provides transparency about merge decisions
+          - Enables quality analysis and debugging
+          - Populated during hierarchy-aware merge pipeline
+
+      media_term:
+        description: Reference to authoritative media database
+        range: MediaTypeDescriptor
+        recommended: true
+
+      kg_microbe_match:
+        description: >-
+          KG-Microbe mediadive.medium node ID for exact ingredient match.
+          Populated when this recipe's ingredients exactly match a medium in KG-Microbe
+          (ignoring concentrations, considering hierarchical ingredient resolution).
+        range: string
+        required: false
+        pattern: "^mediadive\\.medium:[0-9a-zA-Z_-]+$"
+        comments:
+          - Format mediadive.medium:514, mediadive.medium:693, mediadive.medium:92
+          - Match criteria same ingredient set (CHEBI/FOODON IDs) regardless of concentrations
+          - Handles hierarchical ingredients (commercial products vs constituent chemicals)
+          - Enables validation against authoritative DSMZ formulations
+
+      description:
+        description: Overview of the medium and its purpose
+        range: string
+        multivalued: false
+
+      target_organisms:
+        description: Organisms for which this medium is designed
+        range: OrganismDescriptor
+        multivalued: true
+        recommended: true
+        inlined_as_list: true
+
+      source_environment:
+        description: >-
+          Environment(s) from which target organisms originate or for which
+          this medium is designed. Enables environment-based queries and linking
+          to CommunityMech environmental metadata.
+        range: SourceEnvironmentDescriptor
+        multivalued: true
+        required: false
+        inlined_as_list: true
+        comments:
+          - Optional field for backward compatibility
+          - Multivalued to support media used for multiple environments
+          - Use when environment is known or can be inferred from target organisms
+          - Enables queries like "find all media for marine organisms"
+
+      organism_culture_type:
+        description: >-
+          Whether this medium targets a pure isolate culture or a
+          mixed microbial community
+        range: OrganismCultureTypeEnum
+        recommended: true
+
+      record_kind:
+        description: >-
+          What kind of record this is: a growth MEDIUM, or a standalone stock
+          SOLUTION. Normally inferred from the `term.id` prefix
+          (`mediadive.solution:*`), and only stated explicitly for solutions that
+          carry no upstream solution identifier — 202 records imported from KOMODO
+          as media ("Trace element solution (medium 929)", "10 x M9 salts") whose
+          composition was flattened into their parent medium.
+          A curated assertion, written by `just retype-solution-records` and
+          reviewable in the diff. It is NOT derived from the name at read time:
+          matching "*solution*" would silently reclassify a genuine medium such as
+          Ringer's solution.
+        range: RecordKindEnum
+      medium_type:
+        description: >-
+          MAINTAINED compatibility axis, derived from composition_type. It is the
+          single-valued classification published to downstream consumers: kgx_export
+          emits one edge per record from this slot, so it is load-bearing rather than
+          vestigial. Populate it on every record, and keep it consistent with
+          composition_type — DEFINED maps to DEFINED, UNDEFINED and SEMI_DEFINED both
+          map to COMPLEX. BUFFER and NEGATIVE_CONTROL have no composition_type
+          counterpart and are curated directly. Use `just curate-medium-type` to stamp
+          it; a guard fails the build if any record is missing it or contradicts
+          composition_type.
+        range: MediumTypeEnum
+
+      composition_type:
+        description: >-
+          Composition axis — how chemically defined the medium is (DEFINED / UNDEFINED /
+          SEMI_DEFINED). Supersedes the DEFINED/COMPLEX values of the deprecated
+          medium_type slot.
+        range: MediumCompositionTypeEnum
+        recommended: true
+
+      nutritional_class:
+        description: >-
+          Nutritional-level axis — MINIMAL / RICH / GENERAL_PURPOSE. Orthogonal to
+          composition_type and functional_role.
+        range: MediumNutritionalClassEnum
+
+      functional_role:
+        description: >-
+          Functional-role axis — what the medium is designed to do (SELECTIVE, DIFFERENTIAL,
+          ENRICHMENT, GENERAL_PURPOSE, TRANSPORT, ASSAY, ENUMERATION). Multivalued: a medium
+          may have more than one role.
+        range: MediumFunctionalRoleEnum
+        multivalued: true
+
+      physical_state:
+        description: Physical form of the medium
+        range: PhysicalStateEnum
+        required: true
+
+      ph_value:
+        description: Target pH value
+        range: float
+
+      ph_range:
+        description: Acceptable pH range. Structured as PhRange (min/max floats; notes for unparseable values).
+        range: PhRange
+        inlined: true
+
+      # Algae-specific culture conditions
+      light_intensity:
+        description: Light intensity for photosynthetic organisms (e.g., "50 µmol photons m⁻² s⁻¹")
+        range: string
+        comments:
+          - For algae and cyanobacteria cultures
+          - "Common units: µE/m²/s, µmol photons m⁻² s⁻¹, lux, or foot-candles"
+
+      light_cycle:
+        description: Photoperiod light:dark cycle (e.g., "16:8", "continuous light", "24:0")
+        range: string
+        comments:
+          - For algae and cyanobacteria cultures
+          - "Format: hours_light:hours_dark"
+
+      light_quality:
+        description: Light spectrum or wavelength (e.g., "cool white fluorescent", "red LED 660nm")
+        range: string
+        comments:
+          - For algae and cyanobacteria cultures
+
+      temperature_range:
+        description: Optimal temperature range (e.g., "20-25°C", "room temperature")
+        range: string
+
+      temperature_value:
+        description: Specific culture temperature in Celsius
+        range: float
+
+      salinity:
+        description: Salt concentration for marine/brackish media (e.g., "35 ppt", "3.5%")
+        range: string
+        comments:
+          - For marine algae and halophilic organisms
+
+      aeration:
+        description: Gas exchange method (e.g., "0.5% CO2 in air", "bubbling", "shaking at 150 rpm")
+        range: string
+
+      culture_vessel:
+        description: Recommended culture container (e.g., "Erlenmeyer flask", "test tube", "petri dish")
+        range: string
+
+      ingredients:
+        description: Chemical and biological ingredients
+        range: IngredientDescriptor
+        multivalued: true
+        required: true
+        inlined_as_list: true
+
+      solutions:
+        description: Pre-prepared stock solutions used as ingredients
+        range: SolutionDescriptor
+        multivalued: true
+        inlined_as_list: true
+
+      preparation_steps:
+        description: Ordered steps to prepare the medium
+        range: PreparationStep
+        multivalued: true
+        recommended: true
+        inlined_as_list: true
+
+      sterilization:
+        description: Sterilization method and parameters
+        range: SterilizationDescriptor
+        recommended: true
+        inlined: true
+
+      storage:
+        description: Storage conditions for prepared medium
+        range: StorageConditions
+        inlined: true
+
+      applications:
+        description: Use cases and applications
+        range: string
+        multivalued: true
+
+      variants:
+        description: Related formulations or modifications
+        range: MediaVariant
+        multivalued: true
+        inlined_as_list: true
+
+      parent_media:
+        description: >-
+          Canonical parent medium when this record is a child/variant
+          formulation. Used for parent-child media variant modeling where each
+          variant remains a full MediaRecipe YAML record.
+        range: MediaRecipeReference
+        inlined: true
+
+      variant_children:
+        description: >-
+          Child MediaRecipe YAML records that are variants of this canonical
+          parent medium.
+        range: MediaRecipeReference
+        multivalued: true
+        inlined_as_list: true
+
+      variant_relationship:
+        description: >-
+          Relationship type to the parent medium when this recipe is a child
+          variant record.
+        range: MediaVariantRelationshipEnum
+
+      variant_modifications:
+        description: >-
+          Summary of how this child formulation differs from its parent medium.
+        range: string
+        multivalued: true
+
+      references:
+        description: Original literature sources
+        range: PublicationReference
+        multivalued: true
+        inlined_as_list: true
+
+      notes:
+        description: Additional context, historical notes, tips
+        range: string
+
+      evidence:
+        description: Evidence supporting formulation claims
+        range: EvidenceItem
+        multivalued: true
+        recommended: false
+        inlined_as_list: true
+
+      datasets:
+        description: Public datasets (omics/sequence/phenotype) generated using this medium
+        range: Dataset
+        multivalued: true
+        inlined_as_list: true
+
+      discussions:
+        description: >-
+          Open questions, knowledge gaps, controversies, and curation todos
+          attached to this medium (shared Discussion supertype; anchor
+          `attaches_to` into e.g. `composition#<ingredient>` / `conditions#<x>`).
+        range: Discussion
+        multivalued: true
+        inlined_as_list: true
+
+      import_metadata:
+        description: >-
+          Import tracking and versioning information.
+          Enables reproducible imports, provenance tracking, and update workflows.
+        range: ImportMetadata
+        inlined: true
+        recommended: true
+        comments:
+          - Populated for all imported media (excludes manually created recipes)
+          - Essential for tracking source database versions and updates
+          - Enables reproducibility and audit trails
+
+      curation_history:
+        description: Audit trail of curation events
+        range: CurationEvent
+        multivalued: true
+        inlined_as_list: true
+
+      data_quality_flags:
+        description: Data quality indicators for transparency
+        range: string
+        multivalued: true
+        comments:
+          - Used to mark recipes with known quality issues
+          - "Common values: incomplete_composition, pending_curation, low_confidence"
+
+      sources:
+        description: >-
+          Upstream database attribution(s) for this record (e.g. MediaDive,
+          CultureBotHT). Multivalued for cross-listings.
+        range: SourceReference
+        multivalued: true
+        inlined_as_list: true
+
+      incubation_atmosphere:
+        description: Atmospheric conditions for incubation
+        range: AtmosphereEnum
+        comments:
+          - Indicates whether the organism requires aerobic, anaerobic, or microaerophilic conditions
+          - Imported from CommunityMech when available
+
+      source_data:
+        description: Provenance tracking for records imported from other repositories
+        range: SourceData
+        inlined: true
+        comments:
+          - Records imported from CommunityMech include community IDs and evidence
+          - Preserves bidirectional linking between repositories
+
+  SolutionRecipe:
+    class_uri: culturemech:SolutionRecipe
+    description: >-
+      A standalone stock-solution record (one per YAML file). Used for
+      pre-prepared solutions that are referenced as ingredients by
+      MediaRecipes — e.g. MediaDive's "Main sol." or "Trace metals SL10"
+      records. SolutionDescriptor is the inlined-in-recipe form; this is
+      the root form with its own id, curation history, and provenance.
+    attributes:
+      id:
+        description: >-
+          Stable canonical external CultureMech identifier for this solution record.
+          Immutable after issuance and never reused; lifecycle is published in
+          data/culturemech_recipe_catalog.tsv.
+        range: string
+        identifier: true
+        required: true
+        pattern: "^CultureMech:(?!000000)\\d{6}$"
+
+      id_lineage_token:
+        description: >-
+          Internal immutable lineage witness for legacy records that predate the
+          ID-assignment curation event. This is not an external identifier and
+          must never be copied to another record or changed after publication.
+        range: string
+        pattern: "^legacy:[0-9a-f]{64}$"
+
+      preferred_term:
+        description: Solution name (e.g., "Trace Metal Solution", "Vitamin Stock")
+        required: true
+        range: string
+
+      term:
+        description: Ontology term identifying this solution
+        range: Term
+        inlined: true
+
+      mediaingredientmech_term:
+        description: Legacy MediaIngredientMech:NNNNNN identifier for this solution (pre-CHEBI-keying).
+        range: MediaIngredientMechTerm
+        recommended: false
+        inlined: true
+
+      mediaingredientmech_chebi_term:
+        description: CHEBI-keyed linkage to a curated MediaIngredientMech ingredient (current MIM schema).
+        range: MediaIngredientMechChebiTerm
+        recommended: false
+        inlined: true
+
+      culturemech_term:
+        description: Reference to another CultureMech recipe (if this solution is also catalogued there)
+        range: CultureMechTerm
+        recommended: false
+        inlined: true
+
+      category:
+        description: Source / collection category (algae, bacterial, fungal, …)
+        range: CategoryEnum
+
+      composition:
+        description: Ingredients in the stock solution
+        range: IngredientDescriptor
+        multivalued: true
+        required: true
+        inlined_as_list: true
+
+      solutions:
+        description: Nested stock solutions added while preparing this stock solution
+        range: SolutionDescriptor
+        multivalued: true
+        inlined_as_list: true
+
+      ingredients:
+        description: >-
+          Placeholder/stub ingredient entries from upstream imports (kept
+          alongside the authoritative `composition`). Intended to be
+          empty or carry a "See source for composition" marker.
+        range: IngredientDescriptor
+        multivalued: true
+        recommended: false
+        inlined_as_list: true
+
+      concentration:
+        description: Working concentration when added to a medium
+        range: ConcentrationValue
+        inlined: true
+
+      preparation_notes:
+        description: How to prepare the stock solution
+        range: string
+
+      storage_conditions:
+        description: Storage requirements
+        range: StorageConditions
+        inlined: true
+
+      shelf_life:
+        description: Stability duration (e.g., "6 months at 4°C")
+        range: string
+
+      references:
+        description: Source references for this solution
+        range: PublicationReference
+        multivalued: true
+        inlined_as_list: true
+
+      source_data:
+        description: Provenance tracking for imported solution records
+        range: SourceData
+        inlined: true
+
+      curation_history:
+        description: Audit trail of curation events
+        range: CurationEvent
+        multivalued: true
+        inlined_as_list: true
+
+      data_quality_flags:
+        description: Data quality indicators
+        range: string
+        multivalued: true
+
+      sources:
+        description: Upstream database attribution(s) for this solution record.
+        range: SourceReference
+        multivalued: true
+        inlined_as_list: true
+
+      notes:
+        description: Additional free-text notes
+        range: string
+
+      evidence:
+        description: >-
+          Evidence for solution-level formulation, nested stock additions and
+          preparation claims. Ingredient concentration evidence belongs on the
+          relevant composition entry. Scope each claim to its exact field path
+          and preparation stage in the evidence explanation.
+        range: EvidenceItem
+        multivalued: true
+        recommended: false
+        inlined_as_list: true
+
+  RecipeSynonym:
+    description: An alternate name for a recipe from a specific source
+    attributes:
+      name:
+        description: Alternate recipe name (non-canonical)
+        required: true
+        range: string
+
+      source:
+        description: Source database (KOMODO, MediaDive, TOGO, etc.)
+        required: true
+        range: string
+
+      source_id:
+        description: Original identifier in source database
+        range: string
+
+      original_category:
+        description: Original category assignment before merge
+        range: CategoryEnum
+
+  MergeMetadata:
+    description: Metadata about merge process and quality
+    attributes:
+      merge_version:
+        description: Version of merge pipeline used
+        range: string
+        comments:
+          - Example "hierarchy-v1.0"
+          - Enables tracking pipeline changes
+
+      merge_mode:
+        description: Merge mode used (conservative/aggressive/variant-aware)
+        range: MergeModeEnum
+        comments:
+          - CONSERVATIVE - Only merge with explicit rules or exact match
+          - AGGRESSIVE - Merge all variants with same parent
+          - VARIANT_AWARE - Balanced approach, merge some variants
+
+      merge_reason:
+        description: Why these recipes were merged together
+        range: MergeReasonEnum
+        comments:
+          - Indicates which merge rule triggered the merge
+          - Used for quality analysis and debugging
+
+      merge_confidence:
+        description: Confidence score for merge decision (0.0-1.0)
+        range: float
+        comments:
+          - 1.0 = Explicit merge rule (highest confidence)
+          - 0.9 = Identical fingerprint
+          - 0.8 = Same parent ingredients
+          - 0.7 = Hydration variant only
+
+      hierarchy_conflicts:
+        description: Ingredients with conflicting merge signals
+        range: string
+        multivalued: true
+        comments:
+          - Used to flag potential quality issues
+          - Example "CaCl2 has multiple parent assignments"
+
+      fingerprint_mode:
+        description: Fingerprinting mode used (chemical/variant/original)
+        range: FingerprintModeEnum
+        comments:
+          - Indicates which fingerprint algorithm was used
+          - Enables comparing merge results across modes
+
+# ================================================================
+# BASE DESCRIPTOR PATTERN (following dismech)
+# ================================================================
+
+  Descriptor:
+    abstract: true
+    description: >-
+      Base class for descriptor pattern.
+      Descriptors have a human-readable preferred_term and optional ontology term.
+
+  Term:
+    abstract: true
+    description: >-
+      Base class for ontology term references.
+      Subclasses specify id_prefixes for validation.
+    attributes:
+      id:
+        description: Ontology identifier (CURIE)
+        identifier: true
+        required: true
+        range: string
+      label:
+        slot_uri: rdfs:label
+        description: >-
+          CANONICAL ontology label for `id` (e.g. "magnesium sulfate" for
+          CHEBI:32599). Verified against the ontology by the id↔label gate;
+          the sibling `preferred_term` holds the free/source name.
+        range: string
+      confidence:
+        description: Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.
+        range: float
+      match_type:
+        description: Provenance/method of the term mapping (e.g. "kg_fallback", "exact", "manual_curated").
+        range: TermMatchTypeEnum
+
+# ================================================================
+# DESCRIPTOR CLASSES
+# ================================================================
+
+  MediaTypeDescriptor:
+    is_a: Descriptor
+    description: Classification and authoritative database reference for the medium
+    attributes:
+      preferred_term:
+        description: Medium designation in source database (e.g., "DSMZ Medium 1", "LB")
+        required: true
+        range: string
+      term:
+        description: Authoritative media database identifier
+        range: MediaDatabaseTerm
+        recommended: true
+        inlined: true
+
+  IngredientDescriptor:
+    is_a: Descriptor
+    description: Chemical or biological ingredient in a medium
+    attributes:
+      preferred_term:
+        description: Human-readable ingredient name (e.g., "Glucose", "Yeast Extract")
+        required: true
+        range: string
+
+      term:
+        description: Primary ontology grounding (CHEBI, FOODON, UBERON, ENVO, or upstream mediadive.compound).
+        range: ChemicalEntityTerm
+        # NOTE: intentionally NO `binds_value_of: id` canonical-label binding.
+        # `term`/`chebi_term` carry CURATOR-intended formula/common-name labels
+        # (e.g. CHEBI:15377 "Distilled water", CHEBI:26710 "NaCl") that are
+        # deliberately not the OBO canonical label. Enforcing the canonical
+        # label here (linkml-term-validator --labels, Engine A) would directly
+        # contradict the Engine-B label waiver (conf/id_label_targets.yaml:
+        # label_waived_keys: [term, chebi_term]) and flag the very rows that
+        # waiver exists to accept. id-existence is still checked by Engine B.
+        # Canonical-label bindings ARE kept on organism/environment/precursor/
+        # substrate terms, whose labels are canonical.
+        recommended: true
+        inlined: true
+
+      chebi_term:
+        description: CHEBI-only grounding kept alongside `term` when `term` carries the upstream identifier (e.g. mediadive.compound on solution compositions).
+        range: ChebiTerm
+        # No canonical-label binding — see the `term` slot note above; same
+        # curator-label policy and Engine-B waiver apply.
+        recommended: false
+        inlined: true
+
+      mediaingredientmech_term:
+        description: Legacy MediaIngredientMech:NNNNNN identifier for this ingredient (pre-CHEBI-keying).
+        range: MediaIngredientMechTerm
+        recommended: false
+        inlined: true
+
+      mediaingredientmech_chebi_term:
+        description: CHEBI-keyed linkage to a curated MediaIngredientMech ingredient (current MIM schema).
+        range: MediaIngredientMechChebiTerm
+        recommended: false
+        inlined: true
+
+      culturemech_term:
+        description: Reference to another CultureMech media recipe used as component
+        range: CultureMechTerm
+        recommended: false
+        inlined: true
+        comments:
+          - Used when this ingredient is actually a complete medium or stock solution
+          - "Example: A medium that uses BG-11 as a base would reference CultureMech:009592"
+
+      parent_ingredient:
+        description: Reference to parent chemical entity from MediaIngredientMech
+        range: IngredientReference
+        recommended: false
+        inlined: true
+        comments:
+          - Links to canonical parent in MediaIngredientMech hierarchy
+          - Example CaCl2·2H2O → parent is "Calcium chloride"
+
+      variant_type:
+        description: Type of chemical variant
+        range: VariantTypeEnum
+        recommended: false
+        comments:
+          - Describes relationship to parent (HYDRATE, SALT_FORM, ANHYDROUS, etc.)
+          - Populated from MediaIngredientMech metadata
+
+      concentration:
+        description: >-
+          Amount of ingredient. Recommended but not required: pH-adjustment
+          ingredients (HCl/H2SO4/NaOH/KOH titrated "to pH") and similar
+          "to-effect" reagents legitimately lack a fixed concentration.
+        range: ConcentrationValue
+        recommended: true
+        inlined: true
+
+      modifier:
+        description: Modification in variants (INCREASED, DECREASED)
+        range: ModifierEnum
+
+      chemical_formula:
+        description: Molecular formula (e.g., "C6H12O6")
+        range: string
+
+      synonyms:
+        description: >-
+          Alternate names for this ingredient (e.g. brand names, abbreviations).
+          Each entry is an `IngredientSynonym` with `synonym_text` and `synonym_type`.
+        range: IngredientSynonym
+        multivalued: true
+        inlined_as_list: true
+
+      source:
+        description: Provenance attribution for this ingredient entry.
+        range: string
+
+      curation_metadata:
+        description: >-
+          Structured curation metadata for this ingredient mapping (mapping
+          quality, confidence score, ontology source, etc.).
+        range: IngredientCurationMetadata
+        inlined: true
+
+      data_quality_flags:
+        description: Ingredient-level data quality indicators.
+        range: string
+        multivalued: true
+
+      molecular_weight:
+        description: Molecular weight in g/mol
+        range: float
+
+      supplier_catalog:
+        description: Supplier information for sourcing
+        range: SupplierInfo
+        inlined: true
+
+      notes:
+        description: Preparation notes specific to this ingredient
+        range: string
+
+      nutritional_roles:
+        description: >-
+          What element or macronutrient this ingredient supplies to the
+          medium (facet 1 of 3). Multiple values allowed — L-cysteine
+          → [AMINO_ACID_SOURCE, SULFUR_SOURCE]. Vocabulary imported
+          from MIM (`mim_roles.NutritionalRoleEnum`); MIM owns the ingredient
+          identity layer + evidence-bearing assignment surface, this slot
+          carries CultureMech recipe-scoped assertions or overrides.
+        range: NutritionalRoleEnum
+        multivalued: true
+
+      physicochemical_roles:
+        description: >-
+          Chemical or physical function this ingredient performs in the
+          medium (facet 2 of 3), independent of what element it supplies —
+          BUFFER, CHELATOR, REDUCING_AGENT, PH_INDICATOR, etc. Vocabulary
+          imported from MIM (`mim_roles.PhysicochemicalRoleEnum`).
+        range: PhysicochemicalRoleEnum
+        multivalued: true
+
+      cellular_metabolic_roles:
+        description: >-
+          Role of this ingredient inside/on the cultured microbe (facet 3
+          of 3) — SUBSTRATE, ELECTRON_DONOR, COFACTOR, INHIBITOR, etc.
+          Often organism-conditional (e.g., methanol → ELECTRON_DONOR only
+          for methylotrophs). Vocabulary imported from MIM
+          (`mim_roles.CellularMetabolicRoleEnum`).
+        range: CellularMetabolicRoleEnum
+        multivalued: true
+
+      role_curie:
+        description: >-
+          Escape-hatch CURIE(s) for out-of-vocabulary role terms not covered
+          by the three facet enums. Should resolve within a recognized role
+          namespace (CHEBI role subtree under CHEBI:50906, METPO, ENVO, GO,
+          PATO, NCIT). Use sparingly — prefer a facet enum value where one
+          fits.
+        range: uriorcurie
+        multivalued: true
+
+      cofactors_provided:
+        description: Cofactors supplied by this ingredient
+        range: CofactorDescriptor
+        multivalued: true
+        inlined_as_list: true
+
+      evidence:
+        description: Evidence for this ingredient's role
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+  SolutionDescriptor:
+    is_a: Descriptor
+    description: A pre-prepared stock solution used as an ingredient
+    attributes:
+      preferred_term:
+        description: Solution name (e.g., "Trace Metal Solution", "Vitamin Stock")
+        required: true
+        range: string
+
+      name:
+        description: Human-readable solution label (kept alongside preferred_term).
+        range: string
+
+      notes:
+        description: Free-text notes about this solution as used in the parent recipe.
+        range: string
+
+      source:
+        description: Provenance attribution for this solution entry.
+        range: string
+
+      term:
+        description: Ontology term if available
+        range: Term
+        inlined: true
+
+      mediaingredientmech_term:
+        description: Legacy MediaIngredientMech:NNNNNN identifier for this solution component (pre-CHEBI-keying).
+        range: MediaIngredientMechTerm
+        recommended: false
+        inlined: true
+
+      mediaingredientmech_chebi_term:
+        description: CHEBI-keyed linkage to a curated MediaIngredientMech ingredient (current MIM schema).
+        range: MediaIngredientMechChebiTerm
+        recommended: false
+        inlined: true
+
+      culturemech_term:
+        description: Reference to another CultureMech media recipe for this solution
+        range: CultureMechTerm
+        recommended: false
+        inlined: true
+        comments:
+          - Used when this solution is defined as a complete recipe in CultureMech
+          - "Example: Bold Trace Stock (CultureMech:015441)"
+
+      composition:
+        description: >-
+          Ingredients in the stock solution. Optional when the solution is
+          referenced by name only (no inline composition copied from the source).
+        range: IngredientDescriptor
+        multivalued: true
+        inlined_as_list: true
+
+      solutions:
+        description: Nested stock solutions added while preparing this stock solution
+        range: SolutionDescriptor
+        multivalued: true
+        inlined_as_list: true
+
+      concentration:
+        description: Working concentration when added to medium
+        range: ConcentrationValue
+        inlined: true
+        comments:
+          - >-
+            ASSERTED values only — a figure read from this medium's own source.
+            A value inferred from other media goes in `concentration_candidates`
+            and must never be written here, so a reader can always tell what the
+            source said from what a tool concluded.
+
+      concentration_candidates:
+        description: >-
+          Proposed working concentrations that are NOT asserted — each carries the
+          basis it rests on and the evidence for it. Never overwrites
+          `concentration`; a curator promotes one by hand after checking it.
+        range: ConcentrationCandidate
+        multivalued: true
+        recommended: false
+        inlined_as_list: true
+        comments:
+          - >-
+            Multivalued because the evidence genuinely disagrees. The DSMZ stock
+            "Trace element solution SL-10" is added at 1 ml/L in ten MediaDive
+            media and at 0.05 ml/L in J537 (TREPONEMA ISOPTEROCOLA) — a 20x
+            spread. A single inferred-value slot would force a tool to pick one
+            and hide the other; an array lets both stand with their support until
+            someone reads that medium's own recipe.
+          - >-
+            Introduced for the #150 cocktail repair, where a flattened stock's
+            addition volume is often recoverable only by inference.
+
+      preparation_notes:
+        description: How to prepare the stock solution
+        range: string
+
+      storage_conditions:
+        description: Storage requirements for the stock
+        range: StorageConditions
+        inlined: true
+
+      shelf_life:
+        description: Stability duration (e.g., "6 months at 4°C")
+        range: string
+
+  OrganismDescriptor:
+    is_a: Descriptor
+    description: Target organism for the medium
+    attributes:
+      preferred_term:
+        description: Organism name (e.g., "Escherichia coli")
+        required: true
+        identifier: true
+        range: string
+
+      term:
+        description: NCBITaxon identifier
+        range: OrganismTerm
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+        required: false
+        inlined: true
+
+      scoped_to_variant:
+        description: >-
+          Name of the `variants[]` entry this organism's growth evidence is
+          scoped to, when growth is verified only on a specific variant of the
+          medium and NOT on the parent recipe. Must match a `variants[].name`
+          on the same record. Downstream KG builds should attach the
+          organism<->medium edge to the named variant rather than the parent,
+          so variant-only evidence is not propagated as a parent-medium claim.
+        range: string
+
+      gtdb_term:
+        description: GTDB genome or lineage identifier (alternative to NCBITaxon)
+        range: GTDBTerm
+        inlined: true
+
+      genome_assembly_id:
+        description: >-
+          Genome assembly accession(s) for this organism, complementing gtdb_term.
+          Accepts RefSeq (GCF_), GenBank (GCA_), or BioSample (SAMN) identifiers.
+        range: string
+        multivalued: true
+        pattern: "^(GCF_|GCA_|SAMN)[0-9.]+$"
+        comments:
+          - "Examples: GCF_000005845.2, GCA_000005845.2, SAMN02604091"
+          - Complements gtdb_term for cases where assembly accession is the primary genome reference
+
+      strain:
+        description: Specific strain designation (e.g., "K-12", "MG1655")
+        range: string
+
+      growth_phase:
+        description: Target growth phase (e.g., "exponential", "stationary")
+        range: GrowthPhaseEnum
+
+      growth_metrics:
+        description: Quantitative growth measurements observed for this organism on this medium
+        range: GrowthMetrics
+        multivalued: true
+        inlined_as_list: true
+        comments:
+          - Captures empirical growth performance (max OD, doubling time, growth rate, etc.)
+          - Each entry should be tied to a literature reference via its evidence list
+
+      community_role:
+        description: Functional role in microbial community (e.g., PRIMARY_DEGRADER, SYNERGIST, COMMENSAL, COMPETITOR).
+        range: CommunityOrganismRoleEnum
+        multivalued: true
+
+      target_abundance:
+        description: Target relative abundance in community (0.0-1.0)
+        range: float
+
+      community_function:
+        description: Specific functional contribution to community
+        range: string
+        multivalued: true
+
+      cofactor_requirements:
+        description: Cofactors required by this organism
+        range: CofactorRequirement
+        multivalued: true
+        inlined_as_list: true
+
+      transporters:
+        description: Annotated transport systems
+        range: TransporterAnnotation
+        multivalued: true
+        inlined_as_list: true
+
+      evidence:
+        description: Evidence supporting growth on this medium
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+      strain_modifications:
+        description: >-
+          Genotype/phenotype modifications relative to the wild-type or
+          type strain. Strain-level (carries across observations) and
+          distinct from per-observation `growth_metrics[].perturbations`.
+        range: StrainModification
+        multivalued: true
+        inlined_as_list: true
+
+  SourceEnvironmentDescriptor:
+    is_a: Descriptor
+    description: >-
+      Environment from which target organisms originate or for which
+      the medium is designed. Enables environment-based discovery and
+      cross-repository linking with CommunityMech.
+    attributes:
+      preferred_term:
+        description: Human-readable environment name (e.g., "peatland", "marine", "soil")
+        required: true
+        range: string
+
+      term:
+        description: ENVO ontology term for the environment
+        range: EnvironmentTerm
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+        recommended: true
+        inlined: true
+        comments:
+          - Recommended but not required to allow media without known environment
+          - Use ENVO Browser to find appropriate terms
+
+      notes:
+        description: Additional environmental context, conditions, or specificity
+        range: string
+        required: false
+
+    comments:
+      - Follows dismech Descriptor pattern used throughout CultureMech
+      - Multivalued when added to MediaRecipe (media can serve multiple environments)
+      - Optional field - backward compatible with existing records
+
+  CofactorDescriptor:
+    is_a: Descriptor
+    description: A cofactor or coenzyme required for enzymatic activity
+    attributes:
+      preferred_term:
+        description: Human-readable cofactor name (e.g., "Thiamine pyrophosphate", "NAD")
+        required: true
+        range: string
+
+      term:
+        description: CHEBI term for the cofactor
+        range: ChemicalEntityTerm
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+        recommended: true
+        inlined: true
+
+      category:
+        description: High-level classification
+        range: CofactorCategoryEnum
+        recommended: true
+
+      precursor:
+        description: Precursor molecule (e.g., thiamine → TPP)
+        range: string
+
+      precursor_term:
+        description: CHEBI term for precursor
+        range: ChemicalEntityTerm
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+        inlined: true
+
+      ec_associations:
+        description: EC numbers of enzymes using this cofactor
+        range: string
+        multivalued: true
+
+      kegg_pathways:
+        description: KEGG pathway IDs for biosynthesis
+        range: string
+        multivalued: true
+
+      enzyme_examples:
+        description: Example enzymes requiring this cofactor
+        range: string
+        multivalued: true
+
+      biosynthesis_genes:
+        description: Genes involved in cofactor biosynthesis
+        range: string
+        multivalued: true
+
+      bioavailability:
+        description: Uptake and availability characteristics
+        range: string
+
+      notes:
+        description: Additional information about the cofactor
+        range: string
+
+# ================================================================
+# SUPPORTING CLASSES
+# ================================================================
+
+  SourceReference:
+    description: >-
+      Upstream database attribution for a record. Carried alongside
+      curation_history; multivalued because a record can have multiple
+      upstream sources (e.g. originally from MediaDive, also catalogued in
+      CultureBotHT).
+    attributes:
+      database:
+        description: Source database/repository name (e.g. CultureBotHT, MediaDive).
+        range: string
+        required: true
+      database_id:
+        description: Identifier or name in the source database.
+        range: string
+      url:
+        description: Direct URL to the source record.
+        range: string
+
+  IngredientSynonym:
+    description: An alternate name for an ingredient (e.g. brand name, abbreviation).
+    attributes:
+      synonym_text:
+        description: The alternate name string.
+        range: string
+        required: true
+      synonym_type:
+        description: Synonym match type (e.g. EXACT, RELATED, BROAD).
+        range: SynonymTypeEnum
+
+  IngredientCurationMetadata:
+    description: >-
+      Structured metadata describing how an ingredient mapping was produced
+      (mapping quality, confidence, source). Populated by curation pipelines.
+    attributes:
+      mapping_quality:
+        description: Quality tier of the mapping (e.g. EXACT, LLM_ASSISTED, KG_FALLBACK).
+        range: string
+      confidence_score:
+        description: Confidence score for the mapping (0.0-1.0).
+        range: float
+      curation_date:
+        description: When the curation was performed (ISO-8601).
+        range: string
+      ontology_source:
+        description: Ontology used as the mapping target (e.g. CHEBI).
+        range: string
+
+  IngredientReference:
+    description: Reference to canonical ingredient
+    attributes:
+      preferred_term:
+        description: Name of parent ingredient
+        required: true
+        range: string
+
+      mediaingredientmech_id:
+        description: MediaIngredientMech ID
+        range: string
+        pattern: "^MediaIngredientMech:\\d{6}$"
+
+  ConcentrationValue:
+    description: Quantified concentration with units
+    attributes:
+      value:
+        description: Numeric value or range
+        range: string
+        required: true
+
+      unit:
+        description: Concentration unit
+        range: ConcentrationUnitEnum
+        required: true
+
+      per_volume:
+        description: Volume basis (e.g., "per liter", "per 100 mL")
+        range: string
+
+  ConcentrationCandidate:
+    description: >-
+      A concentration that has been PROPOSED but not asserted, carrying the basis
+      it rests on and the evidence for it.
+
+      This exists so an inferred value can be recorded without being mistaken for
+      one that was read from a source. A candidate never overwrites an asserted
+      `concentration`; promoting it is a curation decision, made after checking the
+      record's own source.
+    attributes:
+      value:
+        description: Numeric value or range, as the evidence gives it.
+        range: string
+        required: true
+
+      unit:
+        description: Concentration unit
+        range: ConcentrationUnitEnum
+        required: true
+
+      basis:
+        description: What kind of claim this is — how the value was arrived at.
+        range: ConcentrationBasisEnum
+        required: true
+
+      support:
+        description: >-
+          The evidence, stated so it can be re-checked, e.g. "10 of 11 MediaDive
+          media citing this stock add it at this volume".
+        range: string
+        recommended: true
+
+      counterevidence:
+        description: >-
+          Evidence AGAINST this candidate, where any is known. Recorded because a
+          candidate offered without its known counterexample invites the reader to
+          trust it more than the evidence allows.
+        range: string
+
+      source:
+        description: Citation or URL the support was read from.
+        range: string
+        recommended: true
+
+      proposed_by:
+        description: Script or curator that proposed the value.
+        range: string
+
+      proposed_on:
+        description: ISO-8601 date the proposal was made.
+        range: string
+
+  GrowthMetrics:
+    description: >-
+      Quantitative growth measurements for an organism on a medium.
+      Captures empirical growth performance (max OD, doubling time, growth rate)
+      observed under defined conditions. Every non-empty record must cite at least
+      one literature reference via the evidence list.
+    attributes:
+      max_od600:
+        description: Maximum optical density observed (default wavelength 600 nm)
+        range: float
+
+      max_od_wavelength_nm:
+        description: Wavelength at which OD was measured, in nanometers (default 600)
+        range: integer
+        ifabsent: int(600)
+
+      doubling_time_minutes:
+        description: Population doubling time in minutes
+        range: float
+
+      growth_rate_per_hour:
+        description: Specific growth rate μ in h⁻¹ (inverse hours)
+        range: float
+
+      temperature_celsius:
+        description: Temperature at which the measurement was taken, in degrees Celsius
+        range: float
+
+      ph_at_measurement:
+        description: Medium pH at the time of measurement
+        range: float
+
+      measurement_conditions:
+        description: >-
+          Free-text description of measurement context (e.g., "shake flask, 200 rpm",
+          "microtiter plate, 96-well, plate reader Tecan Spark")
+        range: string
+
+      evidence:
+        description: Literature evidence supporting these growth measurements
+        range: EvidenceItem
+        multivalued: true
+        required: true
+        inlined_as_list: true
+        comments:
+          - Required for any populated GrowthMetrics record
+          - Each evidence item should cite the paper reporting the measurement
+
+      is_max_attainment:
+        description: >-
+          TRUE when the metric represents max-attained / standard / textbook
+          growth on this medium for this organism. FALSE when it's
+          conditional on a perturbation, mutation, or non-default condition
+          (in which case `perturbations` and/or the OrganismDescriptor's
+          `strain_modifications` should be populated). Optional; absence
+          means "not asserted either way".
+        range: boolean
+
+      growth_mode:
+        description: Cultivation mode under which the metric was measured.
+        range: GrowthModeEnum
+
+      perturbations:
+        description: >-
+          Applied stresses, modifications, or non-default conditions that
+          accompanied this growth observation. When non-empty,
+          `is_max_attainment` should typically be FALSE.
+        range: PerturbationContext
+        multivalued: true
+        inlined_as_list: true
+
+      nutrient_overrides:
+        description: >-
+          C/N/S/electron-source nutrients used in this observation that
+          differ from the recipe's prescribed ingredients (e.g.,
+          "succinate as sole carbon source", "L-phenylalanine as sole
+          nitrogen source").
+        range: NutrientOverride
+        multivalued: true
+        inlined_as_list: true
+
+  PerturbationContext:
+    description: >-
+      A non-default condition under which a growth metric was observed —
+      chemical stress, temperature stress, nutrient limitation, adaptation,
+      or non-batch culture mode. When PerturbationContext is non-empty,
+      GrowthMetrics.is_max_attainment should be FALSE (the metric is
+      conditional, not a max claim).
+    attributes:
+      perturbation_type:
+        description: Class of perturbation applied during the observation.
+        range: PerturbationTypeEnum
+        required: true
+
+      descriptor:
+        description: >-
+          Free-text description (e.g. "Cr(VI) at 10 mg/L",
+          "magnetosome-deficient strain", "cellulose-adapted",
+          "induced at OD600=0.6").
+        range: string
+
+      target:
+        description: >-
+          Subject of the perturbation — gene/locus for genetic, stressor
+          compound for chemical, limiting nutrient for nutritional,
+          substrate for adaptation.
+        range: string
+
+      level:
+        description: Quantitative level of the perturbation (e.g. 10.0 for 10 mg/L Cr(VI), 4.0 for 4 °C).
+        range: float
+
+      level_unit:
+        description: Unit for `level` (e.g. "mg/L", "mM", "%", "°C", "µmol·m⁻²·s⁻¹").
+        range: string
+
+      ontology_id:
+        description: >-
+          Optional ontology CURIE for the perturbation type or agent
+          (CHEBI for chemical agents, ENVO for environmental stress,
+          NCIT for genetic-modification class, PATO for phenotypic
+          qualities). Curator-supplied; pipeline does not auto-resolve.
+          Renamed from `ontology_term` (G13) to align with the
+          `<provenance>_id` convention used for bare-string CURIEs
+          elsewhere in the schema. The typed-Term-object convention is
+          `<provenance>_term`.
+        range: string
+        pattern: "^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$"
+
+      evidence:
+        description: Literature evidence supporting the perturbation claim.
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+  StrainModification:
+    description: >-
+      A genotype/phenotype modification of the OrganismDescriptor's
+      strain relative to the wild-type or type strain. Applies to the
+      strain itself (carries across all media on which it grows), as
+      distinct from PerturbationContext which applies per-observation.
+    attributes:
+      modification_type:
+        description: Class of modification applied to the strain.
+        range: StrainModificationTypeEnum
+        required: true
+
+      target:
+        description: >-
+          Gene/locus name, phenotype label, or substrate the modification
+          targets (e.g. "magnetosome operon", "spo0A", "cellulose
+          utilization").
+        range: string
+
+      description:
+        description: Curator free-text describing the modification.
+        range: string
+
+      ontology_id:
+        description: >-
+          Optional CURIE — NCIT:C120956 (Knockout), NCIT:C17026
+          (Genetic Modification), PATO:0015009 (mutant), etc.
+          Renamed from `ontology_term` (G13) to align with the
+          `<provenance>_id` convention used for bare-string CURIEs.
+        range: string
+        pattern: "^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$"
+
+      evidence:
+        description: Literature evidence supporting the modification claim.
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+  NutrientOverride:
+    description: >-
+      A nutrient source used in this observation that differs from the
+      medium's nominal recipe — typically a "sole carbon source",
+      "sole nitrogen source", or specific electron donor/acceptor
+      pairing the original recipe doesn't enforce. Distinct from the
+      medium's prescribed `ingredients`; represents experimental
+      substitution at observation time.
+    attributes:
+      role:
+        description: >-
+          Functional role the override supplies to the experiment (e.g.
+          CARBON_SOURCE, NITROGEN_SOURCE, SULFUR_SOURCE, PHOSPHATE_SOURCE).
+          Retargeted from the retired NutrientRoleEnum to the MIM-imported
+          NutritionalRoleEnum (which is broader — 12 values covering all
+          macronutrient / vitamin / cofactor supply categories). Values
+          that used to fit under NutrientRoleEnum but not NutritionalRoleEnum
+          (ELECTRON_DONOR, ELECTRON_ACCEPTOR) belong on the cellular-metabolic
+          facet of the *ingredient* the override supplies, not on the
+          override itself.
+        range: NutritionalRoleEnum
+        required: true
+
+      source:
+        description: e.g. "succinate", "L-phenylalanine", "acetate".
+        range: string
+        required: true
+
+      ontology_id:
+        description: Preferred CHEBI / FOODON CURIE for the source compound.
+        range: string
+        pattern: "^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$"
+
+      is_sole_source:
+        description: TRUE when this is the only source for that role in the experiment.
+        range: boolean
+
+      evidence:
+        description: Literature evidence supporting the nutrient-override claim.
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+  TemperatureValue:
+    description: Temperature with units
+    attributes:
+      value:
+        description: Numeric temperature value
+        range: float
+        required: true
+
+      unit:
+        description: Temperature unit
+        range: TemperatureUnitEnum
+        required: true
+
+  PhRange:
+    description: >-
+      Acceptable pH range for a medium. Use `min` and `max` (floats) for
+      parseable ranges; `notes` preserves the original free-text whenever
+      a value can't be parsed cleanly (avoids data loss during migration).
+    attributes:
+      min:
+        description: Lower bound of the acceptable pH range (inclusive).
+        range: float
+      max:
+        description: Upper bound of the acceptable pH range (inclusive).
+        range: float
+      notes:
+        description: >-
+          Free-text qualifier or the original unparseable value
+          (e.g. "varies by species", "alkaline 9-10 for halophiles").
+        range: string
+
+  PreparationStep:
+    description: A step in medium preparation
+    attributes:
+      step_number:
+        description: Sequential order
+        range: integer
+        required: true
+
+      action:
+        description: Action type
+        range: PreparationActionEnum
+        required: true
+
+      description:
+        description: Detailed instruction
+        range: string
+        required: true
+
+      temperature:
+        description: Temperature for this step
+        range: TemperatureValue
+        inlined: true
+
+      duration:
+        description: Time duration (e.g., "15 minutes", "overnight")
+        range: string
+
+      equipment:
+        description: Required equipment (e.g., "autoclave", "magnetic stirrer")
+        range: string
+
+      notes:
+        description: Additional tips or warnings
+        range: string
+
+  SterilizationDescriptor:
+    description: Sterilization method and parameters
+    attributes:
+      method:
+        description: Sterilization technique
+        range: SterilizationMethodEnum
+        required: true
+
+      temperature:
+        description: Temperature setting
+        range: TemperatureValue
+        inlined: true
+
+      pressure:
+        description: Pressure in psi or kPa (for autoclaving)
+        range: float
+
+      duration:
+        description: Sterilization duration
+        range: string
+
+      notes:
+        description: Special instructions (e.g., "Filter-sterilize heat-labile components separately")
+        range: string
+
+  StorageConditions:
+    description: Storage requirements for prepared medium
+    attributes:
+      temperature:
+        description: Storage temperature
+        range: TemperatureValue
+        required: true
+        inlined: true
+
+      light_condition:
+        description: Light exposure requirement
+        range: LightConditionEnum
+
+      shelf_life:
+        description: Duration of stability
+        range: string
+
+      container_type:
+        description: Recommended container (e.g., "glass bottle", "polypropylene tube")
+        range: string
+
+      notes:
+        description: Additional storage tips
+        range: string
+
+  MediaVariant:
+    description: A variant or modification of the base recipe
+    attributes:
+      name:
+        description: Variant name (e.g., "Low Salt LB", "LB + Ampicillin")
+        required: true
+        identifier: true
+        range: string
+
+      relationship:
+        description: >-
+          Typed relationship to the base recipe, drawn from the same enum
+          that MediaRecipeReference.relationship uses. Curators should set
+          this whenever a clean enum value applies; the free-text
+          `modifications` slot remains for nuance or for variants whose
+          relationship is genuinely composite.
+        range: MediaVariantRelationshipEnum
+        recommended: true
+
+      description:
+        description: Purpose and context
+        range: string
+
+      modifications:
+        description: What differs from base recipe
+        range: string
+        multivalued: true
+
+      purpose:
+        description: Why this variant exists
+        range: string
+
+      supplier_info:
+        description: Commercial supplier if premix
+        range: SupplierInfo
+        inlined: true
+
+      evidence:
+        description: Evidence supporting the variant
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+  MediaRecipeReference:
+    description: Reference to another CultureMech media recipe record
+    attributes:
+      id:
+        description: Stable CultureMech identifier for the referenced media record
+        range: string
+        pattern: "^CultureMech:\\d{6}$"
+
+      name:
+        description: Referenced media recipe name
+        range: string
+
+      path:
+        description: Repository-relative YAML path for the referenced media record
+        range: string
+        pattern: "^data/normalized_yaml/.+\\.ya?ml$"
+
+      relationship:
+        description: Parent-child relationship type for this link
+        range: MediaVariantRelationshipEnum
+
+      notes:
+        description: Curator notes about the relationship or unresolved mapping
+        range: string
+
+      evidence:
+        description: Evidence supporting the media parent-child relationship
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+  SupplierInfo:
+    description: Commercial supplier information
+    attributes:
+      supplier_name:
+        description: Vendor name (e.g., "Sigma-Aldrich", "Thermo Fisher")
+        range: string
+        required: true
+
+      catalog_number:
+        description: Product catalog number
+        range: string
+
+      product_url:
+        description: Direct product link
+        range: uri
+
+      notes:
+        description: Additional sourcing notes
+        range: string
+
+  PublicationReference:
+    description: Literature reference
+    attributes:
+      reference:
+        description: Citation (PMID, DOI, or historical reference)
+        range: string
+        required: true
+        implements:
+          - linkml:authoritative_reference
+        comments:
+          - Use format PMID:12345678 or doi:10.1038/... for automatic validation.
+
+      title:
+        description: Publication title
+        range: string
+
+      authors:
+        description: Author list
+        range: string
+
+      year:
+        description: Publication year
+        range: integer
+
+      notes:
+        description: Additional context about the reference
+        range: string
+
+  EvidenceItem:
+    description: Evidence supporting a claim about media formulation or performance
+    attributes:
+      reference:
+        description: Citation (PMID, DOI, or historical reference)
+        range: string
+        required: true
+        identifier: true
+        implements:
+          - linkml:authoritative_reference
+        comments:
+          - This is automatically validated by the linkml-reference-validator tool.
+          - Use format PMID:12345678 or doi:10.1038/... for automatic validation.
+          - Acts as the natural identifier inside an `evidence:` list (no duplicates within a single record's evidence array).
+
+      supports:
+        description: Level of support
+        range: EvidenceItemSupportEnum
+        required: true
+
+      snippet:
+        description: Exact quote from paper (if PMID/DOI available)
+        range: string
+        implements:
+          - linkml:excerpt
+        comments:
+          - This is automatically validated by the linkml-reference-validator tool.
+          - Must be an exact substring of the cited paper's text.
+
+      explanation:
+        description: Why this evidence supports the claim
+        range: string
+        required: true
+
+  CurationEvent:
+    description: Audit trail entry for curation
+    attributes:
+      timestamp:
+        description: ISO 8601 timestamp with a plausible 21st-century curation year
+        range: string
+        required: true
+        pattern: "^20[0-9]{2}-"
+
+      curator:
+        description: Name or identifier of curator
+        range: string
+        required: true
+
+      action:
+        description: Action taken (created, updated, validated, etc.)
+        range: string
+        required: true
+
+      notes:
+        description: Additional context
+        range: string
+
+      changes:
+        description: >-
+          Structured summary of what changed in this event (free-text or
+          semi-structured; used by automated curators e.g. `Set category
+          to 'bacterial' (was: MISSING)`).
+        range: string
+
+      source:
+        description: >-
+          Source attribution for this curation event (e.g. a source PDF,
+          a sibling CultureMech recipe, an external dataset).
+        range: string
+
+  SourceData:
+    description: Provenance information for imported records
+    attributes:
+      origin:
+        description: Source repository name
+        range: string
+        required: true
+        examples:
+          - value: CommunityMech
+        comments:
+          - Indicates which X-Mech repository this record was imported from
+
+      community_ids:
+        description: List of CommunityMech IDs this recipe was derived from
+        range: string
+        multivalued: true
+        comments:
+          - Enables bidirectional linking from CultureMech to CommunityMech
+          - Format CommunityMech:NNNNNN
+
+      import_date:
+        description: Date of import (ISO 8601)
+        range: string
+        comments:
+          - ISO 8601 date format YYYY-MM-DD
+
+      evidence:
+        description: Evidence records from source repository
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        comments:
+          - Preserves evidence from original CommunityMech record
+          - Maintains literature references and provenance
+
+      notes:
+        description: Import notes and additional context
+        range: string
+
+      mediaingredientmech_id:
+        description: >-
+          MediaIngredientMech identifier for this imported solution record
+          (carried when origin is `MediaIngredientMech`). Format
+          `UNMAPPED_NNNN` or `MediaIngredientMech:NNNNNN`.
+        range: string
+
+  CofactorRequirement:
+    description: Cofactor requirement for an organism
+    attributes:
+      cofactor:
+        description: Required cofactor
+        range: CofactorDescriptor
+        required: true
+        inlined: true
+
+      can_biosynthesize:
+        description: Whether organism can synthesize this cofactor
+        range: boolean
+        required: true
+
+      confidence:
+        description: Confidence level (0.0-1.0) based on genome annotation
+        range: float
+
+      evidence:
+        description: Supporting evidence for requirement
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+      genes:
+        description: Genes related to biosynthesis or utilization
+        range: string
+        multivalued: true
+
+  TransporterAnnotation:
+    description: Annotation of a transporter or transport system
+    attributes:
+      name:
+        description: Transporter name or gene name
+        required: true
+        range: string
+
+      transporter_type:
+        description: Classification of transporter
+        range: TransporterTypeEnum
+        required: true
+
+      substrates:
+        description: Transported substrates
+        range: string
+        multivalued: true
+
+      substrate_terms:
+        description: CHEBI terms for substrates
+        range: ChemicalEntityTerm
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+        multivalued: true
+        inlined_as_list: true
+
+      direction:
+        description: Transport direction (import, export, bidirectional)
+        range: string
+
+      genes:
+        description: Gene names or locus tags
+        range: string
+        multivalued: true
+
+      ec_number:
+        description: EC number if enzymatic
+        range: string
+
+      notes:
+        description: Additional functional notes
+        range: string
+
+# ================================================================
+# ONTOLOGY TERM CLASSES
+# ================================================================
+
+  ChemicalEntityTerm:
+    is_a: Term
+    description: >-
+      A term identifying a chemical or biological ingredient. Primarily CHEBI,
+      with FOODON / UBERON / ENVO accepted for ingredients (food products,
+      anatomical tissues, environmental samples) where no CHEBI equivalent
+      exists upstream. `mediadive.compound:*` is also accepted as the
+      upstream MediaDive grounding kept alongside CHEBI mappings on
+      solution-composition entries. MICRO (Ontology of Prokaryotic
+      Phenotypic and Metabolic Characters) is accepted for enzymatic
+      protein digests (tryptone, peptone, proteose peptone, soy peptone,
+      casein hydrolysate) which ChEBI cannot represent because
+      CHEBI:59999 "chemical substance" requires constant composition.
+    slot_usage:
+      id:
+        pattern: "^(CHEBI|FOODON|MICRO|UBERON|ENVO|mediadive\\.compound):\\w+$"
+    id_prefixes:
+      - CHEBI
+      - FOODON
+      - MICRO
+      - UBERON
+      - ENVO
+      - mediadive.compound
+
+  ChebiTerm:
+    is_a: Term
+    description: >-
+      A strictly-CHEBI term reference. Use for the `chebi_term` slot where
+      the contract is "this is the CHEBI grounding specifically" — distinct
+      from the polymorphic `ChemicalEntityTerm` used by `term` slots that
+      may carry upstream non-CHEBI IDs.
+    slot_usage:
+      id:
+        pattern: "^CHEBI:\\d+$"
+    id_prefixes:
+      - CHEBI
+
+  OrganismTerm:
+    is_a: Term
+    description: An NCBITaxon term representing an organism
+    slot_usage:
+      id:
+        pattern: "^NCBITaxon:\\d+$"
+    id_prefixes:
+      - NCBITaxon
+
+  GTDBTerm:
+    is_a: Term
+    description: >-
+      A GTDB genome identifier. id = GTDB accession (e.g. GTDB:RS_GCF_000006945.2),
+      label = full GTDB lineage string (e.g. d__Bacteria;p__Proteobacteria;...)
+    id_prefixes:
+      - GTDB
+
+  MediaDatabaseTerm:
+    is_a: Term
+    description: Identifier from authoritative media database
+    id_prefixes:
+      - mediadive.medium  # MediaDive REST API format (for kg-microbe compatibility)
+      - komodo.medium     # KOMODO ModelSEED format (for kg-microbe compatibility)
+      - DSMZ
+      - TOGO
+      - ATCC
+      - NCIT
+
+  MediaIngredientMechTerm:
+    is_a: Term
+    description: >-
+      A legacy MediaIngredientMech identifier (MediaIngredientMech:NNNNNN)
+      for a media ingredient. MediaIngredientMech has since migrated to a
+      CHEBI-keyed schema and no longer mints these IDs; for new linkages use
+      `mediaingredientmech_chebi_term` instead. Retained for the existing
+      corpus, which still carries these IDs.
+    slot_usage:
+      id:
+        pattern: "^MediaIngredientMech:\\d{6}$"
+    id_prefixes:
+      - MediaIngredientMech
+
+  MediaIngredientMechChebiTerm:
+    is_a: Term
+    description: >-
+      CHEBI-keyed linkage to a MediaIngredientMech curated ingredient.
+      MediaIngredientMech migrated from minting `MediaIngredientMech:NNNNNN`
+      ids to keying its curated ingredient entities by CHEBI; this term records
+      the matched MIM entity's CHEBI identifier (with the MIM `preferred_term`
+      as label). Distinct from the ingredient's own `term`/`chebi_term`
+      grounding: it asserts "this ingredient corresponds to a curated MIM
+      ingredient", even though the id coincides with the CHEBI grounding.
+    slot_usage:
+      id:
+        pattern: "^CHEBI:\\d+$"
+    id_prefixes:
+      - CHEBI
+
+  CultureMechTerm:
+    is_a: Term
+    description: A CultureMech identifier for a media recipe used as component
+    slot_usage:
+      id:
+        pattern: "^CultureMech:\\d{6}$"
+        description: CultureMech identifier (e.g., "CultureMech:009592")
+    id_prefixes:
+      - CultureMech
+    comments:
+      - Used when one medium references another medium as an ingredient or component
+      - "Example: BG-11 Trace Metals Solution (CultureMech:015441) used in BG-11 Medium"
+
+  EnvironmentTerm:
+    is_a: Term
+    description: An ENVO term representing an environmental system or biome
+    slot_usage:
+      id:
+        pattern: "^ENVO:\\d{7,8}$"
+        description: ENVO identifier (7-8 digit format)
+    id_prefixes:
+      - ENVO
+    comments:
+      - ENVO prefix already defined in schema prefixes
+      - Pattern allows both 7 and 8 digit ENVO IDs
+      - "Examples: ENVO:00000044 (peatland), ENVO:00002149 (sea water)"
+
+  ImportMetadata:
+    description: >-
+      Tracking information for imported media records.
+      Enables versioning, provenance tracking, and reproducible updates.
+    attributes:
+      source_database:
+        description: Source database from which this medium was imported
+        range: SourceDatabaseEnum
+        required: true
+
+      source_id:
+        description: >-
+          Original identifier in source database (e.g., "Medium 1234", "M3205").
+          Preserved for traceability and update tracking.
+        range: string
+        required: true
+
+      import_version:
+        description: >-
+          Import version following format vMAJOR.MINOR.PATCH_YYYY-MM-DD.
+          Example: v1.0.0_2026-01-27
+        range: string
+        required: true
+        pattern: "^v\\d+\\.\\d+\\.\\d+_\\d{4}-\\d{2}-\\d{2}$"
+
+      import_date:
+        description: ISO 8601 timestamp when this record was imported
+        range: string
+        required: true
+
+      import_skill:
+        description: >-
+          Name of the skill or script that performed the import.
+          Example: "import-mediadive", "import-togo-skill"
+        range: string
+
+      last_updated:
+        description: ISO 8601 timestamp of most recent update
+        range: string
+
+      update_history:
+        description: >-
+          Chronological log of all updates applied to this record.
+          Enables full audit trail from initial import to present.
+        range: UpdateEvent
+        multivalued: true
+        inlined_as_list: true
+
+  UpdateEvent:
+    description: >-
+      Record of a single update to an imported media recipe.
+      Captures what changed, when, and why.
+    attributes:
+      timestamp:
+        description: ISO 8601 timestamp when update was applied
+        range: string
+        required: true
+
+      import_version:
+        description: Import version that applied this update
+        range: string
+        required: true
+
+      action:
+        description: Type of update action performed
+        range: UpdateActionEnum
+        required: true
+
+      fields_changed:
+        description: >-
+          List of field names that were modified in this update.
+          Example: ["ingredients", "ph_value", "description"]
+        range: string
+        multivalued: true
+
+      notes:
+        description: >-
+          Human-readable explanation of the update.
+          Why was this change made? What was the context?
+        range: string
+
+# ================================================================
+# ENUMERATIONS
+# ================================================================
+
+enums:
+  RecordKindEnum:
+    description: >-
+      Whether a normalized_yaml record describes a growth medium or a standalone
+      stock solution. See the `record_kind` slot: this is stated only where the
+      `term.id` prefix cannot carry the distinction.
+    permissible_values:
+      MEDIUM:
+        description: A growth medium.
+      SOLUTION:
+        description: >-
+          A standalone stock solution (trace elements, vitamins, buffers). Excluded
+          from media-level audits and from the deep-research ranking.
+  MediumTypeEnum:
+    description: >-
+      Single-axis classification of culture medium, MAINTAINED alongside the three
+      orthogonal axes rather than replaced by them. It conflates composition,
+      nutritional level and functional role into one slot, which is why
+      MediumCompositionTypeEnum (composition_type), MediumNutritionalClassEnum
+      (nutritional_class) and MediumFunctionalRoleEnum (functional_role) exist and
+      are the primary axes for new curation. This enum remains the published
+      single-valued view: populate BOTH, and keep this slot derived from
+      composition_type. The per-value "Migrates to" notes below define that
+      derivation and are parsed by the consistency guard, so they are load-bearing
+      documentation rather than historical commentary.
+    permissible_values:
+      DEFINED:
+        description: Chemically defined medium with known composition. Migrates to
+          composition_type=DEFINED.
+        meaning: NCIT:C64372
+      COMPLEX:
+        description: Medium with undefined components (e.g., yeast extract). Migrates to
+          composition_type=UNDEFINED.
+        meaning: NCIT:C64371
+      SELECTIVE:
+        description: Medium that selects for specific organisms. Migrates to
+          functional_role=[SELECTIVE].
+      DIFFERENTIAL:
+        description: Medium that differentiates organism types. Migrates to
+          functional_role=[DIFFERENTIAL].
+      ENRICHMENT:
+        description: Medium that enriches for specific organisms. Migrates to
+          functional_role=[ENRICHMENT].
+      MINIMAL:
+        description: Medium with minimal nutrients required for growth. Migrates to
+          nutritional_class=MINIMAL.
+      BUFFER:
+        description: Buffer solution (e.g. PBS) — not a growth medium per se but stored alongside media for context.
+      NEGATIVE_CONTROL:
+        description: Negative-control "medium" used as an experimental baseline (e.g. distilled water).
+
+  MediumCompositionTypeEnum:
+    description: >-
+      Composition axis: how chemically defined the medium is. Single-valued and
+      orthogonal to nutritional level (MediumNutritionalClassEnum) and functional role
+      (MediumFunctionalRoleEnum).
+    permissible_values:
+      DEFINED:
+        description: Chemically defined (synthetic) medium; every component and its exact
+          quantity is known. Synonyms —synthetic.
+        meaning: NCIT:C64372
+      UNDEFINED:
+        description: Medium containing one or more chemically undefined components (e.g.
+          yeast extract, peptone, casamino acids, tissue or plant extracts). Multi-axis
+          counterpart of MediumTypeEnum value COMPLEX, which remains maintained
+          and derived from this slot. Synonyms —complex.
+        meaning: NCIT:C64371
+      SEMI_DEFINED:
+        description: Predominantly defined medium supplemented with a small amount of one
+          or more undefined components (e.g. a defined base plus a trace of yeast extract).
+          Synonyms —semisynthetic.
+
+  MediumNutritionalClassEnum:
+    description: >-
+      Nutritional-level axis: how nutrient-rich the medium is. Single-valued and
+      orthogonal to composition (MediumCompositionTypeEnum) and functional role
+      (MediumFunctionalRoleEnum).
+    permissible_values:
+      MINIMAL:
+        description: Provides only the minimal nutrients required for growth of the target
+          organism — typically a defined medium with a single carbon/energy source plus
+          essential salts (e.g. M9).
+      RICH:
+        description: Provides nutrients in excess (abundant amino acids, peptides, vitamins,
+          and carbon sources), supporting rapid growth of fastidious or general organisms
+          (e.g. LB, TSB, BHI).
+      GENERAL_PURPOSE:
+        description: Standard nutrient level for routine cultivation — neither deliberately
+          minimal nor deliberately enriched. Use when a medium is not clearly MINIMAL or RICH.
+
+  MediumFunctionalRoleEnum:
+    description: >-
+      Functional-role axis: what the medium is designed to do. MULTIVALUED — a medium may
+      be both selective and differential, etc. Orthogonal to composition
+      (MediumCompositionTypeEnum) and nutritional level (MediumNutritionalClassEnum).
+    permissible_values:
+      GENERAL_PURPOSE:
+        description: Non-selective, non-differential medium for routine growth of a broad
+          range of organisms. Synonyms —non-selective, basal.
+      SELECTIVE:
+        description: Suppresses or prevents growth of unwanted organisms (via antibiotics,
+          dyes, bile salts, NaCl, pH, etc.) to favor a target group.
+      DIFFERENTIAL:
+        description: Distinguishes organism types by a visible biochemical reaction (e.g.
+          color change from fermentation, or hemolysis) without necessarily inhibiting growth.
+      ENRICHMENT:
+        description: Promotes growth of a target organism to detectable numbers from a mixed
+          population, typically prior to isolation.
+      TRANSPORT:
+        description: Maintains organism viability without significant multiplication during
+          transport or storage.
+      ASSAY:
+        description: Standardized medium for a specific assay (e.g. antibiotic potency,
+          vitamin or growth-factor bioassay).
+      ENUMERATION:
+        description: Supports viable-count / colony enumeration (e.g. heterotrophic plate
+          count media such as R2A).
+
+  PhysicalStateEnum:
+    description: Physical form of the medium
+    permissible_values:
+      LIQUID:
+        description: Liquid broth medium
+      SOLID_AGAR:
+        description: Solidified with agar
+      SEMISOLID:
+        description: Reduced agar concentration for motility testing
+      BIPHASIC:
+        description: Both liquid and solid phases
+
+  ConcentrationBasisEnum:
+    description: >-
+      How a proposed concentration was arrived at. Ordered from strongest to
+      weakest, because the distinction is the whole point of recording a candidate
+      rather than an asserted value.
+    permissible_values:
+      READ_FROM_THIS_MEDIUM:
+        description: >-
+          Printed in this medium's own source. This is an asserted value and
+          belongs in `concentration`, not here; the term exists so a promotion can
+          record what it was promoted on.
+      READ_FROM_STOCK_DEFINITION:
+        description: >-
+          Read from the cited definition of the stock solution itself (e.g. DSMZ
+          medium 84 defines its trace element solution and the volume it is added
+          at), for a medium that references that stock by name.
+      CROSS_MEDIUM_INFERENCE:
+        description: >-
+          Taken from OTHER media that use the same named stock, not from this
+          medium's own source. Defensible when the stock's volume is consistent
+          across many media, and wrong whenever a medium departs from the norm —
+          which does happen (SL-10 is 1 ml/L in ten media and 0.05 ml/L in J537).
+      TYPICAL_VALUE:
+        description: >-
+          A conventional value for this class of stock, with no per-medium
+          evidence at all. The weakest basis; recorded only to be checked.
+    comments:
+      - >-
+        A candidate whose basis is CROSS_MEDIUM_INFERENCE or TYPICAL_VALUE must
+        not be promoted into `concentration` without reading the record's own
+        source — that is the check the basis exists to prompt.
+
+  ConcentrationUnitEnum:
+    description: Units for concentration
+    permissible_values:
+      G_PER_L:
+        description: grams per liter
+        meaning: UO:0000175
+      MG_PER_L:
+        description: milligrams per liter
+      MICROG_PER_L:
+        description: micrograms per liter
+      MOLAR:
+        description: moles per liter
+        meaning: UO:0000062
+      MILLIMOLAR:
+        description: millimoles per liter
+      MICROMOLAR:
+        description: micromoles per liter
+      PERCENT_W_V:
+        description: percent weight per volume
+      PERCENT_W_W:
+        description: percent weight per weight
+      PERCENT_V_V:
+        description: percent volume per volume
+      ML_PER_L:
+        description: milliliters per liter (for solution/component additions)
+      MG_PER_ML:
+        description: milligrams per milliliter
+      FOLD_DILUTION:
+        description: dilution factor expressed as 1:N (e.g. "10-fold dilution")
+      L:
+        description: liters — used for volume-only entries like "Make up to 1 L" final-volume markers.
+      VARIABLE:
+        description: variable or unspecified concentration
+
+  TemperatureUnitEnum:
+    description: Units for temperature
+    permissible_values:
+      CELSIUS:
+        description: Degrees Celsius
+        meaning: UO:0000027
+      FAHRENHEIT:
+        description: Degrees Fahrenheit
+      KELVIN:
+        description: Kelvin
+        meaning: UO:0000012
+
+  AtmosphereEnum:
+    description: Atmospheric conditions for incubation
+    permissible_values:
+      AEROBIC:
+        description: Oxygen-rich atmosphere
+      ANAEROBIC:
+        description: Oxygen-free atmosphere
+      MICROAEROPHILIC:
+        description: Low oxygen atmosphere (typically 2-10% O2)
+
+  PreparationActionEnum:
+    description: Controlled vocabulary for preparation steps
+    permissible_values:
+      DISSOLVE:
+        description: Dissolve ingredients in solvent
+      MIX:
+        description: Mix or stir components
+      HEAT:
+        description: Apply heat
+      COOL:
+        description: Cool to specified temperature
+      AUTOCLAVE:
+        description: Steam sterilization under pressure
+      FILTER:
+        description: Remove solids or particles by filtration
+      FILTER_STERILIZE:
+        description: Filter through 0.22 μm membrane
+      ADJUST_PH:
+        description: Adjust pH with acid or base
+      ADD_AGAR:
+        description: Add agar for solidification
+      POUR_PLATES:
+        description: Dispense into petri dishes
+      ALIQUOT:
+        description: Divide into smaller portions
+      STORE:
+        description: Store under specified conditions
+
+  SterilizationMethodEnum:
+    description: Sterilization techniques
+    permissible_values:
+      AUTOCLAVE:
+        description: Steam sterilization under pressure (121°C, 15 psi, 15-20 min)
+      FILTER:
+        description: Filtration through 0.22 μm filter
+      DRY_HEAT:
+        description: Dry heat sterilization (160-180°C)
+      TYNDALLIZATION:
+        description: Intermittent sterilization for heat-sensitive media
+      NONE:
+        description: No sterilization (non-sterile media)
+
+  LightConditionEnum:
+    description: Light exposure requirements
+    permissible_values:
+      DARK:
+        description: Store in complete darkness
+      LIGHT_PROTECTED:
+        description: Protect from light (amber bottle or foil wrap)
+      AMBIENT:
+        description: Normal laboratory lighting
+
+  ModifierEnum:
+    description: Modification type for variants
+    permissible_values:
+      INCREASED:
+        description: Elevated concentration relative to base recipe
+      DECREASED:
+        description: Reduced concentration relative to base recipe
+      ABSENT:
+        description: Ingredient omitted in this variant
+
+  EvidenceItemSupportEnum:
+    description: Level of evidence support
+    permissible_values:
+      SUPPORT:
+        description: Evidence supports the claim
+      REFUTE:
+        description: Evidence refutes the claim
+      PARTIAL:
+        description: Evidence partially supports the claim
+      NO_EVIDENCE:
+        description: No evidence found
+      WRONG_STATEMENT:
+        description: Statement is incorrect
+
+  CategoryEnum:
+    description: Organizational category for media recipes
+    permissible_values:
+      bacterial:
+        description: Media for bacterial cultivation
+      fungal:
+        description: Media for fungal cultivation
+      archaea:
+        description: Media for archaeal cultivation
+      specialized:
+        description: Specialized or multi-domain media
+      algae:
+        description: Media for algal cultivation
+      imported:
+        description: Imported from external sources (to be recategorized)
+
+  OrganismCultureTypeEnum:
+    description: Whether the medium targets a pure isolate or a mixed microbial community
+    permissible_values:
+      isolate:
+        description: Pure culture of one or more specific strains
+      community:
+        description: Mixed/consortium culture of multiple organisms
+
+  CofactorCategoryEnum:
+    description: High-level classification of cofactor types
+    permissible_values:
+      VITAMINS:
+        description: Vitamins and vitamin-derived cofactors
+      METALS:
+        description: Metal ions and metal-containing cofactors
+      NUCLEOTIDES:
+        description: Nucleotide cofactors
+      ENERGY_TRANSFER:
+        description: Energy transfer and group transfer cofactors
+      OTHER_SPECIALIZED:
+        description: Specialized cofactors (PQQ, F420, etc.)
+
+  CommunityOrganismRoleEnum:
+    description: >-
+      Role an organism plays in a microbial community (formerly `CellularRoleEnum`;
+      renamed 2026-07-19 for consistency with the MIM #120 rename and to
+      disambiguate from a forthcoming `CellularMetabolicRoleEnum` on ingredient
+      records — these values describe organisms, not ingredients).
+    permissible_values:
+      PRIMARY_DEGRADER:
+        description: Primary degrader with direct substrate degradation capability (40-60% abundance)
+      REDUCTIVE_DEGRADER:
+        description: Specialized degrader using reductive pathways
+      OXIDATIVE_DEGRADER:
+        description: Specialized degrader using oxidative pathways
+      BIOTRANSFORMER:
+        description: Converts substrates to intermediates without complete degradation
+      SYNERGIST:
+        description: Provides complementary metabolic functions (15-30% abundance)
+      BRIDGE_ORGANISM:
+        description: Biosynthesizes and provides essential cofactors to community
+      ELECTRON_SHUTTLE:
+        description: Facilitates electron transfer between community members
+      DETOXIFIER:
+        description: Handles and detoxifies metabolic intermediates
+      COMMENSAL:
+        description: General commensal organism
+      COMPETITOR:
+        description: Competitive organism
+
+  TransporterTypeEnum:
+    description: Classification of membrane transporter systems
+    permissible_values:
+      ABC:
+        description: ATP-binding cassette transporter
+      MFS:
+        description: Major facilitator superfamily transporter
+      PTS:
+        description: Phosphotransferase system
+      TONB:
+        description: TonB-dependent receptor
+      SYMPORTER:
+        description: Symporter or co-transporter
+      ANTIPORTER:
+        description: Antiporter or exchanger
+      UNIPORTER:
+        description: Uniporter or channel
+      PORIN:
+        description: Porin or outer membrane protein
+      SIDEROPHORE_RECEPTOR:
+        description: Siderophore receptor for iron uptake
+      DEHALOGENASE:
+        description: Dehalogenase enzyme for halogenated compounds
+      FLUORIDE_EXPORTER:
+        description: Fluoride-specific exporter
+
+  VariantTypeEnum:
+    description: Type of chemical variant relationship to parent
+    permissible_values:
+      HYDRATE:
+        description: Hydrated form of parent chemical
+      SALT_FORM:
+        description: Different salt form of parent chemical
+      ANHYDROUS:
+        description: Anhydrous form of parent chemical
+      NAMED_HYDRATE:
+        description: Named hydrate (monohydrate, heptahydrate, etc.)
+      CHEMICAL_VARIANT:
+        description: Other chemical variant of parent
+
+  MediaVariantRelationshipEnum:
+    description: Type of parent-child relationship between media recipes
+    permissible_values:
+      CONCENTRATION_VARIANT:
+        description: Same recognizable base medium with one or more concentration changes
+      PHYSICAL_STATE_VARIANT:
+        description: Same recognizable base medium with broth, agar, semisolid, or biphasic state change
+      SUPPLEMENTED_VARIANT:
+        description: Parent medium plus added supplement, antibiotic, blood, serum, carbon source, or other component
+      OMITTED_COMPONENT_VARIANT:
+        description: Parent medium with one or more components omitted
+      SUBSTITUTED_COMPONENT_VARIANT:
+        description: Parent medium with one or more components substituted
+      PH_VARIANT:
+        description: Parent medium adjusted to a different pH or pH range
+      SALINITY_VARIANT:
+        description: Parent medium adjusted to a different salt or salinity level
+      STRAIN_SPECIFIC_VARIANT:
+        description: Parent medium modified for a specific organism or strain
+      SOURCE_DUPLICATE:
+        description: Separate source record for the same formulation as the parent
+      DERIVED_FROM:
+        description: Broad parent-child relationship when a more specific relationship is not yet curated
+      UNCERTAIN:
+        description: Candidate relationship that requires additional source or formulation review
+
+  MergeReasonEnum:
+    description: Reason why recipes were merged together
+    permissible_values:
+      EXPLICIT_MERGE_RULE:
+        description: Merged due to explicit rule from MediaIngredientMech
+      IDENTICAL_FINGERPRINT:
+        description: Merged due to identical ingredient fingerprints
+      SAME_PARENT_INGREDIENTS:
+        description: Merged due to same parent ingredients (aggressive mode)
+      HYDRATION_VARIANT_ONLY:
+        description: Merged due to only hydration differences (variant-aware mode)
+      NO_MATCH:
+        description: Not merged - no matching criteria met
+
+  SourceDatabaseEnum:
+    description: External databases from which media recipes are imported
+    permissible_values:
+      MEDIADIVE:
+        description: MediaDive (DSMZ) media database
+        meaning: https://mediadive.dsmz.de/
+      TOGO:
+        description: TOGO Medium database (Japan)
+        meaning: http://togodb.org/db/medium/
+      KOMODO:
+        description: KOMODO media database (Korea)
+      MEDIADB:
+        description: MediaDB database
+      UTEX:
+        description: UTEX Culture Collection of Algae
+        meaning: https://utex.org/
+      CCAP:
+        description: Culture Collection of Algae and Protozoa
+        meaning: https://www.ccap.ac.uk/
+      SAG:
+        description: Culture Collection of Algae at Göttingen University
+        meaning: https://sagdb.uni-goettingen.de/
+      CULTUREBOTHT:
+        description: CultureBotHT repository
+      COMMUNITYMECH:
+        description: CommunityMech (X-Mech) integration
+      BACDIVE:
+        description: BacDive bacterial database
+        meaning: https://bacdive.dsmz.de/
+      NBRC:
+        description: NITE Biological Resource Center
+        meaning: https://www.nite.go.jp/nbrc/
+      ATCC:
+        description: American Type Culture Collection
+        meaning: https://www.atcc.org/
+      MANUAL:
+        description: Manually curated (not imported from external database)
+
+  UpdateActionEnum:
+    description: Type of update action applied to an imported record
+    permissible_values:
+      INITIAL_IMPORT:
+        description: First import from source database
+      ENRICHED:
+        description: Additional metadata or enrichment added
+      CORRECTED:
+        description: Errors or inconsistencies corrected
+      MERGED:
+        description: Merged with duplicate or related records
+      REFRESHED:
+        description: Updated from source database refresh
+      NORMALIZED:
+        description: Format or structure normalized to schema
+
+  PerturbationTypeEnum:
+    description: >-
+      Class of perturbation applied during a growth observation. Used by
+      PerturbationContext.perturbation_type to flag conditional growth
+      claims so downstream consumers can distinguish them from
+      max-attainment / standard-condition observations.
+    permissible_values:
+      GENETIC_MODIFICATION:
+        description: Knockout, deletion, insertion, or point mutation acting at observation time.
+        meaning: NCIT:C17026
+      CHEMICAL_STRESS:
+        description: Heavy metals, antibiotics, oxidative agents, salts at non-default levels.
+        meaning: NCIT:C25574
+      TEMPERATURE_STRESS:
+        description: Temperature outside the organism's optimum range (heat or cold shock).
+      OXIDATIVE_STRESS:
+        description: Reactive oxygen species, peroxide, paraquat, etc.
+      NUTRIENT_LIMITATION:
+        description: Sole-source / depletion / unusual substrate as growth driver.
+      ADAPTATION:
+        description: Serial passage / experimental evolution to grow on a substrate or condition.
+      GROWTH_PHASE:
+        description: Slow-growth, lag, or stationary-phase observations distinct from exponential max.
+      CULTURE_MODE:
+        description: Chemostat, fed-batch, or biofilm vs. standard batch.
+      PH_STRESS:
+        description: pH outside the organism's optimum.
+      OTHER:
+        description: Use sparingly; prefer a more specific value above.
+
+  StrainModificationTypeEnum:
+    description: >-
+      Class of genetic or selection-derived modification carried by a
+      strain relative to the wild-type or type strain.
+    permissible_values:
+      KNOCKOUT:
+        description: Targeted gene disruption (most commonly via insertion).
+        meaning: NCIT:C120956
+      DELETION:
+        description: Targeted gene or operon deletion.
+      INSERTION:
+        description: Targeted gene or marker insertion.
+      POINT_MUTATION:
+        description: Single-nucleotide or small-residue substitution.
+      OVEREXPRESSION:
+        description: Gene placed under stronger promoter / on multi-copy vector.
+      COMPLEMENTATION:
+        description: Wild-type allele restored on knockout background.
+      ADAPTATION:
+        description: Serial selection / experimental evolution producing a stable phenotype.
+      SELECTION:
+        description: Strain isolated by selective pressure (e.g. plate selection, enrichment).
+      OTHER:
+        description: Use sparingly; prefer a more specific value above.
+
+  GrowthModeEnum:
+    description: >-
+      Cultivation mode under which a growth metric was measured.
+      Distinct from MediaRecipe.culture_vessel which describes the
+      vessel itself.
+    permissible_values:
+      BATCH:
+        description: Standard closed-system batch culture.
+      CHEMOSTAT:
+        description: Continuous culture with controlled dilution rate.
+      TURBIDOSTAT:
+        description: Continuous culture controlled to maintain a target turbidity.
+      CONTINUOUS_FLOW:
+        description: Other continuous-flow cultivation modes.
+      FED_BATCH:
+        description: Batch culture with controlled nutrient feed.
+      BIOFILM:
+        description: Surface-attached / biofilm cultivation.
+      SOLID_SURFACE:
+        description: Plate / agar / solid-substrate cultivation.
+      UNSPECIFIED:
+        description: Mode not stated in the source paper.
+
+
+  # ----------------------------------------------------------------------
+  # Audit-followup enums (G12). All values are derived from existing slot
+  # descriptions / observed in-corpus values; introducing them turns the
+  # corresponding `range: string` slots into typed enums so the linkml
+  # validator (and downstream consumers) get real type checking.
+  # ----------------------------------------------------------------------
+
+  MergeModeEnum:
+    description: Merge pipeline mode used by `MergeMetadata.merge_mode`.
+    permissible_values:
+      CONSERVATIVE:
+        description: Only merge on identical fingerprints.
+      AGGRESSIVE:
+        description: Merge across hydration / parent-ingredient equivalence.
+      VARIANT_AWARE:
+        description: Use the hierarchy-aware variant fingerprint to merge.
+
+  FingerprintModeEnum:
+    description: Algorithm used to compute the ingredient fingerprint.
+    permissible_values:
+      ORIGINAL:
+        description: Original ingredient set, no hierarchy resolution.
+      CHEMICAL:
+        description: Parent CHEBI IDs from MediaIngredientMech hierarchy.
+      VARIANT:
+        description: Parent CHEBI + variant type (HYDRATE / ANHYDROUS / SALT_FORM).
+
+  GrowthPhaseEnum:
+    description: Target microbial growth phase for a measurement / inoculum.
+    permissible_values:
+      LAG:
+        description: Lag phase (no significant net growth).
+      EXPONENTIAL:
+        description: Exponential / log phase.
+      STATIONARY:
+        description: Stationary phase.
+      DEATH:
+        description: Death / decline phase.
+      UNSPECIFIED:
+        description: Phase not stated by the source.
+
+  TermMatchTypeEnum:
+    description: >-
+      Provenance of an ontology-term mapping (`Term.match_type`). Values
+      use the lowercase-snake convention emitted by upstream grounding
+      pipelines (kg-microbe, manual curation). Three values are observed
+      in the current corpus (kg_fallback, exact_match,
+      synonym_match_ambiguous); the others are reserved for explicit
+      curator use.
+    permissible_values:
+      exact_match:
+        description: Exact label / synonym match.
+      kg_fallback:
+        description: Inferred from the kg-microbe ingredient graph as a fallback.
+      synonym_match_ambiguous:
+        description: Multiple equally-good synonym matches; mapping is uncertain.
+      manual_curated:
+        description: Human curator selected this term.
+      automated_expert_mapping:
+        description: Produced by an automated expert-mapping pipeline (e.g. LLM-assisted).
+      fuzzy:
+        description: Fuzzy / approximate string match.
+      corpus_consensus:
+        description: >-
+          Borrowed from the unanimous reliable grounding of the same
+          ingredient label elsewhere in the corpus (G25 Phase 1) — used to
+          replace a low-confidence kg_fallback chebi_term without an external
+          lookup.
+
+  SynonymTypeEnum:
+    description: Type of synonym relationship for an IngredientSynonym.
+    permissible_values:
+      EXACT:
+        description: Exact synonym.
+      RELATED:
+        description: Related but not interchangeable.
+      BROAD:
+        description: Broader concept.
+      NARROW:
+        description: Narrower concept.
+      ABBREVIATION:
+        description: Abbreviation or shorthand (e.g. "TSB" for "Tryptic Soy Broth").

@@ -1,12 +1,12 @@
 ---
 name: list-ingredients
-description: "Produce the corpus-wide list of distinct ingredients across all CultureMech normalized recipe records, with identifiers, mapping status, and occurrence/recipe counts. Use when asked for a list, inventory, or table of all ingredients, the most common ingredients, or which ingredients are unmapped. Read-only over recipe data; not for grounding fixes or record edits."
+description: "Compile CultureMech's catalog-wide structured ingredient inventory and reproducible source bundle for a MIM/KG-Microbe handoff. Use for ingredient lists, unmapped inventories, coverage/currentness checks, or preparing an integrated mapping release. Preserves recipe data and unresolved identities; does not publish mappings or infer ingredients from prose."
 allowed-tools: Bash, Read
 metadata:
   category: reporting
   requires_database: false
   requires_internet: false
-  version: 1.1.0
+  version: 3.0.0
 ---
 
 # List ingredients across the corpus
@@ -21,12 +21,47 @@ This runs `scripts/aggregate_ingredients.py`, which scans
 `data/normalized_yaml/` once and resolves each direct ingredient through the
 pinned MediaIngredientMech label index. A full run takes several minutes.
 
+## Reproducible MIM / KG-Microbe handoff
+
+For a release candidate or a claim that an existing list is current, use the
+bundle wrapper rather than relying on output timestamps. Read
+[the integrated release guide](../../../docs/ingredient_release.md) for the
+producer/consumer boundaries and exact scope.
+
+```bash
+just plan-ingredient-release
+just build-ingredient-release output/ingredient-release-candidate
+just verify-ingredient-release output/ingredient-release-candidate
+```
+
+Use a new destination for each attempt. The wrapper reuses the native scanner,
+preserves the ordinary `output/` files, records input membership/content and
+code/schema/MIM-index hashes, and verifies output hashes and row accounting.
+A missing or changed input invalidates the bundle. A manifest is reproducibility
+evidence, not scientific review or permission to install a mapping release.
+For downstream intake, run `just verify-ingredient-handoff BUNDLE SHA256` using
+the manifest digest independently recorded in the reviewed producer handoff.
+The ordinary verifier checks local consistency; it cannot authenticate a
+manifest supplied alongside the same untrusted products.
+
+Before a first full run with changed code, use one actual recipe in an isolated
+input directory through the same `build`/`verify` CLI. Report it as a subset
+canary; then run the default full-catalog input. Do not substitute a category
+scan or previously generated YAML summary for the authoritative corpus.
+
+Keep the current MIM campaign's frozen inputs intact. Hand off the new bundle's
+manifest digest and source scope for explicit adoption. The bundled MIM label
+index and the new MIM SSSOM are different versioned products; do not refresh the
+index implicitly or call a candidate a released KGM input.
+
 ## Outputs (`output/`, generated and gitignored — never commit or hand-edit)
 
 | File | Content |
 | --- | --- |
 | `ingredients_list.tsv` | **The list.** One row per distinct ingredient, sorted by distinct recipe count. |
-| `ingredient_occurrences.tsv` | Canonical table: one row per ingredient per record, uncapped. |
+| `ingredient_occurrences.tsv` | Canonical table: one row per structured descriptor position, including scoped variant targets, uncapped. |
+| `variant_ingredient_changes.tsv` | Complete variant change ledger, including removals and both replacement sides. |
+| `variant_ingredient_holds.tsv` | Verbatim unresolved source labels, held fields and context; never positive occurrences. |
 | `mapped_ingredients.yaml` / `unmapped_ingredients.yaml` | Summary views that embed every occurrence (large). |
 | `ingredient_aggregation_errors.tsv` | Input failures. A non-empty report means nothing else was replaced. |
 
@@ -61,7 +96,19 @@ are CSV-quoted, so `wc -l`, `grep`, `cut`, and `awk` can misread rows.
 - Blank or whitespace-only labels are kept as
   `blank:<recipe_id>:<field>:<index>` rows.
 - The list counts direct `ingredients` (media) or `composition` (solutions)
-  entries only; ingredients inside referenced stock solutions are not expanded.
+  entries, plus the `composition` of stocks written inline in a record's
+  `solutions[]` (#604). Ingredients inside referenced stock solutions are not
+  expanded; the referenced record counts them once.
+- Separately modeled variant records and reviewed inline `ingredient_changes`
+  are included. ADD, SET_CONCENTRATION, SET_AMOUNT and the introduced REPLACE descriptor
+  enter the list; REMOVE and displaced descriptors remain only in the ledger.
+  Preserve variant, stage, source binding, quantity and evidence. These operations
+  are not automatically applied to the parent. The ledger's `counts_as_presence`
+  means inventory inclusion, not proof of nonzero presence in every condition.
+- Mentions remaining only in `variants[].modifications`, notes or other prose
+  are not extracted. Say **all structured direct ingredients and variant change
+  targets across the catalog**, not all chemical mentions or fully expanded
+  formulations. Report unresolved identities and uncurated prose separately.
 - The list is never filtered by `--min-occurrences`. Its row count equals
   `total_mapped_count + total_unmapped_count` from the YAML views at the default
   `min_occurrences=1`.
@@ -69,9 +116,59 @@ are CSV-quoted, so `wc -l`, `grep`, `cut`, and `awk` can misread rows.
 ## Verification
 
 - `just aggregate-mapped-ingredients` and `just aggregate-unmapped-ingredients`
-  also refresh the list together with `ingredient_occurrences.tsv`. Without
+  also refresh the list, change ledger and hold ledger with `ingredient_occurrences.tsv`. Without
   `--list-output`, every command writes the list beside `--occurrences-output`;
   `aggregate-all-ingredients` is the one command that refreshes every output.
+  Both ledgers default beside the occurrence TSV; `--changes-output` overrides
+  the change ledger only. The hold ledger remains beside the occurrence TSV.
 - Confirm `ingredient_aggregation_errors.tsv` has only a header row.
 - Report counts from this run, with the commit, rather than from a prior run;
   the corpus changes continuously. See `docs/unmapped_ingredients_guide.md`.
+
+## Review variant-only prose
+
+For ingredient mentions outside the structured list, read
+[the variant prose inventory guide](../../../docs/variant_prose_inventory.md).
+It exposes every `variants[].modifications[]` entry, including nonchemical
+changes, and retains context-only variants without modifications:
+
+```bash
+just plan-variant-prose
+just build-variant-prose output/variant-prose-candidate
+just verify-variant-prose output/variant-prose-candidate
+```
+
+Run one real recipe through the same CLI first after changing the producer.
+Preserve the resulting TSV, manifest and independently recorded manifest digest.
+Use the script's `--expected-manifest-sha256` verifier option for a pinned
+handoff. A changed source snapshot or producer requires a new output directory.
+
+Every row is `UNREVIEWED`; it is a source review unit, not an extracted chemical
+or approved mapping. Keep exact prose, evidence, source hashes and zero-based
+variant/modification indices. A stock-culture amendment and an assay treatment
+may describe different experimental stages. Resolve that context through the
+record-curation workflow before adding structured ingredients. This queue
+advances #683 but does not close its scientific curation or change MIM's frozen
+campaign inputs. It does not scan every other notes/protocol field for mentions.
+
+When authorized to close the prose gap, follow
+[structured variant curation](../../../docs/variant_prose_inventory.md#curate-structured-variant-ingredients).
+Review primary evidence and exact source bytes; prepare explicit hash-bound
+decisions, save the claim review, preview through `curate_variant_ingredients.py`,
+and run one actual record through apply/build/verify before a batch. Preserve
+condition-only rows and evidence/model holds in the disposition ledger. Do not
+turn an absolute batch amount into a final concentration to satisfy a unit enum.
+
+For follow-up corrections or unresolved names, use `curate_variant_completeness.py`
+with exact record hashes and replacement beforeimages. `SET_AMOUNT` retains a
+literal batch input; an unspecified percentage basis stays unspecified. Put
+unresolved names in `ingredient_mentions` with verbatim source labels and explicit
+held fields; a quantity hold must not erase an independently supported identity.
+Use a new receipt for every preview/apply. Canary-to-batch replay requires the
+completed receipt and its independently recorded digest; verify persisted recipe
+bytes and the exported ledgers before proceeding.
+
+Use the version 3 bundle contract in [the release guide](../../../docs/ingredient_release.md).
+Independently pin its manifest and all seven products. MIM must explicitly admit
+the full change ledger and `variant_ingredient_holds.tsv`, retaining unresolved
+labels with no positive-presence assertion. Do not overwrite its active frozen intake.
