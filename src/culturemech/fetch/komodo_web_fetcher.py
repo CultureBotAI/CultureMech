@@ -16,7 +16,7 @@ import logging
 import re
 import time
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 import requests
 from bs4 import BeautifulSoup
@@ -33,7 +33,9 @@ class KomodoWebFetcher:
     including DSMZ recipe mappings for later integration.
     """
 
-    BASE_URL = "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList"
+    BASE_URL = (
+        "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList"
+    )
 
     def __init__(self, output_dir: Path, timeout: float = 30.0):
         """
@@ -47,10 +49,12 @@ class KomodoWebFetcher:
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.timeout = timeout
         self.session = requests.Session()
-        self.session.headers.update({
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "User-Agent": "CultureMech/0.1.0 (github.com/KG-Hub/CultureMech)"
-        })
+        self.session.headers.update(
+            {
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "User-Agent": "CultureMech/0.1.0 (github.com/KG-Hub/CultureMech)",
+            }
+        )
 
     def fetch_all(self):
         """
@@ -102,7 +106,7 @@ class KomodoWebFetcher:
             logger.error(f"Failed to fetch KOMODO table: {e}")
             raise
 
-    def _parse_table(self, html_content: str) -> List[Dict[str, Any]]:
+    def _parse_table(self, html_content: str) -> list[dict[str, Any]]:
         """
         Parse HTML table into structured records.
 
@@ -115,17 +119,17 @@ class KomodoWebFetcher:
         - Column 5: Is SubMedium (true/false)
         - Column 6: Instructions (DSMZ PDF link)
         """
-        soup = BeautifulSoup(html_content, 'html.parser')
+        soup = BeautifulSoup(html_content, "html.parser")
 
         # Find the table by ID or just get the first table
-        table = soup.find('table', {'id': 'Table0'})
+        table = soup.find("table", {"id": "Table0"})
         if not table:
-            table = soup.find('table')
+            table = soup.find("table")
         if not table:
             raise ValueError("No table found in HTML content")
 
         # Extract rows (skip header row)
-        all_rows = table.find_all('tr')
+        all_rows = table.find_all("tr")
         if len(all_rows) < 2:
             raise ValueError(f"Table has insufficient rows: {len(all_rows)}")
 
@@ -133,13 +137,13 @@ class KomodoWebFetcher:
 
         media_records = []
         for row in rows:
-            cols = row.find_all('td')
+            cols = row.find_all("td")
             if len(cols) < 7:
                 continue  # Skip incomplete rows
 
             # Extract ID (may be inside an <a> tag)
             id_cell = cols[0]
-            id_link = id_cell.find('a')
+            id_link = id_cell.find("a")
             if id_link:
                 medium_id = id_link.get_text(strip=True)
             else:
@@ -147,7 +151,7 @@ class KomodoWebFetcher:
 
             # Extract pH info (handle "null" string as None)
             ph_text = cols[2].get_text(strip=True)
-            if ph_text == 'null' or not ph_text:
+            if ph_text == "null" or not ph_text:
                 ph_info = None
             else:
                 ph_info = ph_text
@@ -155,11 +159,11 @@ class KomodoWebFetcher:
             # Extract DSMZ medium number from PDF link
             dsmz_number = None
             instructions_cell = cols[6]
-            link = instructions_cell.find('a')
-            if link and 'href' in link.attrs:
-                href = link['href']
+            link = instructions_cell.find("a")
+            if link and "href" in link.attrs:
+                href = link["href"]
                 # Extract number from: DSMZ_Medium123.pdf
-                match = re.search(r'DSMZ_Medium(\w+)\.pdf', href)
+                match = re.search(r"DSMZ_Medium(\w+)\.pdf", href)
                 if match:
                     dsmz_number = match.group(1)
 
@@ -167,17 +171,17 @@ class KomodoWebFetcher:
                 "id": medium_id,
                 "name": cols[1].get_text(strip=True),
                 "ph_info": ph_info,
-                "is_complex": cols[3].get_text(strip=True).lower() == 'true',
-                "is_aerobic": cols[4].get_text(strip=True).lower() == 'true',
-                "is_submedium": cols[5].get_text(strip=True).lower() == 'true',
-                "dsmz_medium_number": dsmz_number
+                "is_complex": cols[3].get_text(strip=True).lower() == "true",
+                "is_aerobic": cols[4].get_text(strip=True).lower() == "true",
+                "is_submedium": cols[5].get_text(strip=True).lower() == "true",
+                "dsmz_medium_number": dsmz_number,
             }
 
             media_records.append(record)
 
         return media_records
 
-    def _process_records(self, records: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    def _process_records(self, records: list[dict[str, Any]]) -> list[dict[str, Any]]:
         """
         Process and validate records.
 
@@ -190,20 +194,20 @@ class KomodoWebFetcher:
 
         for record in records:
             # Parse pH info
-            ph_info = self._parse_ph_info(record.get('ph_info'))
+            ph_info = self._parse_ph_info(record.get("ph_info"))
 
             processed_record = {
                 **record,
-                'ph_value': ph_info.get('value'),
-                'ph_range': ph_info.get('range'),
-                'ph_buffer': ph_info.get('buffer')
+                "ph_value": ph_info.get("value"),
+                "ph_range": ph_info.get("range"),
+                "ph_buffer": ph_info.get("buffer"),
             }
 
             processed.append(processed_record)
 
         return processed
 
-    def _parse_ph_info(self, ph_info: Optional[str]) -> Dict[str, Optional[str]]:
+    def _parse_ph_info(self, ph_info: str | None) -> dict[str, str | None]:
         """
         Parse pH information into structured format.
 
@@ -219,49 +223,48 @@ class KomodoWebFetcher:
         result = {"value": None, "range": None, "buffer": None}
 
         # Check for buffer (comma-separated)
-        if ',' in ph_info:
-            parts = [p.strip() for p in ph_info.split(',')]
+        if "," in ph_info:
+            parts = [p.strip() for p in ph_info.split(",")]
             ph_part = parts[0]
             buffer = parts[1] if len(parts) > 1 else None
-            result['buffer'] = buffer
+            result["buffer"] = buffer
         else:
             ph_part = ph_info
 
         # Check for range (hyphen or dash)
-        if '-' in ph_part and not ph_part.startswith('-'):
+        if "-" in ph_part and not ph_part.startswith("-"):
             # Range format: "7.5 - 8.0"
-            range_match = re.search(r'(\d+\.?\d*)\s*-\s*(\d+\.?\d*)', ph_part)
+            range_match = re.search(r"(\d+\.?\d*)\s*-\s*(\d+\.?\d*)", ph_part)
             if range_match:
-                result['range'] = f"{range_match.group(1)}-{range_match.group(2)}"
+                result["range"] = f"{range_match.group(1)}-{range_match.group(2)}"
         else:
             # Single value
-            value_match = re.search(r'(\d+\.?\d*)', ph_part)
+            value_match = re.search(r"(\d+\.?\d*)", ph_part)
             if value_match:
-                result['value'] = value_match.group(1)
+                result["value"] = value_match.group(1)
 
         return result
 
-    def _export_data(self, records: List[Dict[str, Any]]):
+    def _export_data(self, records: list[dict[str, Any]]):
         """Export data to JSON files with statistics."""
 
         # Export media records
         media_path = self.save_json(
-            {"count": len(records), "data": records},
-            "komodo_web_media.json"
+            {"count": len(records), "data": records}, "komodo_web_media.json"
         )
         logger.info(f"  ✓ Saved {media_path.name}")
 
         # Analyze DSMZ mappings
-        with_dsmz = [r for r in records if r.get('dsmz_medium_number')]
-        without_dsmz = [r for r in records if not r.get('dsmz_medium_number')]
+        with_dsmz = [r for r in records if r.get("dsmz_medium_number")]
+        without_dsmz = [r for r in records if not r.get("dsmz_medium_number")]
 
         # Analyze medium types
-        complex_media = [r for r in records if r.get('is_complex')]
-        defined_media = [r for r in records if not r.get('is_complex')]
+        complex_media = [r for r in records if r.get("is_complex")]
+        defined_media = [r for r in records if not r.get("is_complex")]
 
         # Analyze aerobic classification
-        aerobic_media = [r for r in records if r.get('is_aerobic')]
-        anaerobic_media = [r for r in records if not r.get('is_aerobic')]
+        aerobic_media = [r for r in records if r.get("is_aerobic")]
+        anaerobic_media = [r for r in records if not r.get("is_aerobic")]
 
         # Export statistics
         stats = {
@@ -272,41 +275,36 @@ class KomodoWebFetcher:
             "dsmz_mappings": {
                 "with_mapping": len(with_dsmz),
                 "without_mapping": len(without_dsmz),
-                "coverage_percent": (len(with_dsmz) / len(records) * 100) if len(records) > 0 else 0
+                "coverage_percent": (
+                    (len(with_dsmz) / len(records) * 100) if len(records) > 0 else 0
+                ),
             },
-            "medium_types": {
-                "complex": len(complex_media),
-                "defined": len(defined_media)
-            },
+            "medium_types": {"complex": len(complex_media), "defined": len(defined_media)},
             "aerobic_classification": {
                 "aerobic": len(aerobic_media),
-                "anaerobic": len(anaerobic_media)
+                "anaerobic": len(anaerobic_media),
             },
-            "submedia_count": len([r for r in records if r.get('is_submedium')])
+            "submedia_count": len([r for r in records if r.get("is_submedium")]),
         }
         stats_path = self.save_json(stats, "fetch_stats.json")
         logger.info(f"  ✓ Saved {stats_path.name}")
 
         # Export DSMZ mapping table
         dsmz_mappings = [
-            {
-                "komodo_id": r['id'],
-                "dsmz_medium_number": r['dsmz_medium_number'],
-                "name": r['name']
-            }
-            for r in records if r.get('dsmz_medium_number')
+            {"komodo_id": r["id"], "dsmz_medium_number": r["dsmz_medium_number"], "name": r["name"]}
+            for r in records
+            if r.get("dsmz_medium_number")
         ]
         mapping_path = self.save_json(
-            {"count": len(dsmz_mappings), "mappings": dsmz_mappings},
-            "komodo_dsmz_mappings.json"
+            {"count": len(dsmz_mappings), "mappings": dsmz_mappings}, "komodo_dsmz_mappings.json"
         )
         logger.info(f"  ✓ Saved {mapping_path.name}")
 
         # Create README
         self._create_readme(stats)
-        logger.info(f"  ✓ Saved README.md")
+        logger.info("  ✓ Saved README.md")
 
-    def _create_readme(self, stats: Dict[str, Any]):
+    def _create_readme(self, stats: dict[str, Any]):
         """Create README documentation."""
         readme_content = f"""# KOMODO Web Table Raw Data
 
@@ -320,7 +318,7 @@ class KomodoWebFetcher:
 
 ## Database Information
 
-**Database**: KOMODO (Knowledge base Of Microbial and Mammalian cells Defined and Optimized media)
+**Database**: KOMODO (Known Media Database)
 **Type**: Web table scraping
 **Purpose**: Media metadata extraction with DSMZ recipe mappings
 
@@ -431,13 +429,13 @@ uv run python -m culturemech.fetch.komodo_web_fetcher \\
 
 ## Citations
 
-> KOMODO - Knowledge base Of Microbial and Mammalian cells Defined and Optimized media
-> ModelSEED Project
+> Oberhardt et al. (2015), Nature Communications 6:8493 (doi:10.1038/ncomms9493; PMID:26460590)
+> KOMODO (Known Media Database) — ModelSEED Project
 > https://komodo.modelseed.org
 """
 
         readme_path = self.output_dir / "README.md"
-        with open(readme_path, 'w', encoding='utf-8') as f:
+        with open(readme_path, "w", encoding="utf-8") as f:
             f.write(readme_content)
 
     def save_json(self, data: Any, filename: str) -> Path:
@@ -452,14 +450,13 @@ def main():
     """CLI entry point."""
     import argparse
 
-    parser = argparse.ArgumentParser(
-        description="Fetch KOMODO media metadata from web table"
-    )
+    parser = argparse.ArgumentParser(description="Fetch KOMODO media metadata from web table")
     parser.add_argument(
-        "-o", "--output",
+        "-o",
+        "--output",
         type=Path,
         default=Path("raw/komodo_web"),
-        help="Output directory (default: raw/komodo_web)"
+        help="Output directory (default: raw/komodo_web)",
     )
 
     args = parser.parse_args()
